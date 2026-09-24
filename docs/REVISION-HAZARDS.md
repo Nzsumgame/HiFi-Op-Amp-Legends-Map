@@ -3,6 +3,7 @@
 | Family | Vendor | When | What changed | Risk | Confidence |
 |---|---|---|---|---|---|
 | [NE5532](families/NE5532.md) | Texas Instruments | Process/fab PCN reportedly dated Nov 15, 2023 (diyAudio);… | TI replaced the NE5532/NE5532A/SA5532/SA5532A silicon with a redesign on a newer process in RFAB, without changing the part numbers. | high – same part number but lower voltage rating, slower slew, halved ESD, no input… | high |
+| [AD823](families/AD823.md) | Analog Devices | 2012 (AD823A datasheet Rev. | The original AD823 datasheet revisions (0 to E) show only format, unit-typo, abs-max, figure, ordering and editorial changes; its only known production change… | medium - same dual SOIC pinout and 3-36 V supply, but there is no DIP (DIP rollers need… | high |
 | [LM318](families/LM318.md) | Texas Instruments vs National… | Concurrent: TI's own LM318 existed by 1989; both lines… | Two different LM318 dies appear to be sold under the same generic number: TI's own LM318 (TI macromodel dated 1989) and National's original LM318 (now LM318-N). | medium - same pinout and nominal headline specs, but different dies and datasheets. | low |
 | [LM833](families/LM833.md) | Texas Instruments | July 2010 (TI's own LM833, SLOS481) / after the 2011… | TI sells two different LM833 devices (TI E2E 430833: 'two different devices'). | medium - same pinout and similar headline specs, but a different die and output stage;… | high |
 | [LM833](families/LM833.md) | Texas Instruments | Merge confirmed by TI on E2E (thread 1652528) and… | TI confirmed on its E2E forum (thread titled 'NE5532, LM833, RC4580 and MC33078 all now the same die') that these parts now share one die; part numbers are… | medium - same part number, new silicon; | high |
@@ -10,7 +11,19 @@
 | [OPAx132](families/OPAx132.md) | Texas Instruments | Datasheet SBOS054C, August 2024. | TI moved the OPA132 to a new fab and design. | medium - pin-compatible drop-in (TI says pre-Rev C layouts need no redesign), but offset… | high |
 | [OPA604](families/OPA604.md) | Texas Instruments | c. 2015-2016 (reported in diyAudio 'OPA2604 is dead', 24… | Unannounced supply derating of the same part number: a document quoted on diyAudio (2016) says the OPA2604 no longer supports ±24 V and must be constrained to… | medium - designs that rely on the OPA2604's unique ±24 V rating may drift or run hot… | medium |
 | [OPA627](families/OPA627.md) | Texas Instruments | SBOS165B (April 2024) / SBOS165C (January 2025); after… | TI's 2024-2025 rewrite deleted the 'Difet' wording, added a new B-grade SOIC (OPA627BU), and dropped offset-trim pins on the molded packages. | medium - Offset-trim circuits may not work on new SOIC parts, and the electrical spec… | medium |
+| [TLE2071](families/TLE2071.md) | Texas Instruments | PCN dated December 2023 (PCN 20231219013.1); effective… | TI PCN 20231219013.1 (Digi-Key copy) lists TLE2071 orderables. | medium (provisional) - the scope is unread; if it is a fab or die change, pre- and… | low |
 | [AD797](families/AD797.md) | Analog Devices | 2026 (PCN 26_0029 Rev. -; exact publication and first-ship… | ADI PCN 26_0029, 'Qualification of ADI Camas Wafer Fab CB Processes', qualifies the Camas, WA wafer fab for Complementary Bipolar (CB) products, and a search… | low — same process qualified at a second fab, no stated data-sheet or marking change;… | medium |
+| [AD823](families/AD823.md) | Analog Devices | 2026 (PCN 26_0029 Rev. -; exact issue and implementation… | ADI PCN 26_0029 moves production to 'the existing qualified process at the Analog Devices Camas, WA Fab to ensure a reliable and continuous supply', with 'no… | low - ADI states no fit/form/function impact and the datasheet is unchanged. | medium |
+| [AD825](families/AD825.md) | Analog Devices | c. 2010 (inferred from ADI's PCN numbering 10_xxxx);… | A search summary says ADI PCN 10_0117 Rev. | low - no evidence of a die or pinout change, but the PCN content is unverified | low |
+| [AD8599](families/AD8599.md) | Analog Devices | PCN 25_0091 Rev. -: published 6 Jun 2025, effective 8 Sep… | 'Qualification of ADI Camas Wafer Fab Bipolar Process': ADI qualified its Camas, WA fab to build ADI bipolar-process products. | low - same process transferred and data sheet unchanged per ADI; whether it applies to… | low |
+| [AD8599](families/AD8599.md) | Analog Devices | PCN 10_0004, 23 Nov 2010 | Package material only, not a die change: the mold compound for SOIC narrow-body assembly at Amkor changed to halogen-free material. | low - package material change only | medium |
+| [AD8610](families/AD8610.md) | Analog Devices | 2026 (PCN 26_0028 Rev. -; exact date not seen) | PCN 26_0028 qualifies an Analog Devices Ireland (ADLK/Limerick) wafer-fab site for products on the XF26/XF18/XF12/XF8 processes, reusing the process already… | low - a fab-site qualification with no stated data sheet change; the AD8610/AD8620… | low |
+| [AD8610](families/AD8610.md) | Analog Devices | 2007 onward (PCN 07_0024, later revised to Rev. | After Sumitomo discontinued certain materials, ADI changed the mold compound (and in some cases the die-attach material) for SOT23, MiniSO, MQFP, PDIP, PLCC,… | low - package material change; same die and pinout | medium |
+| [AD8610](families/AD8610.md) | Analog Devices | 2010-11-23 (PCN 10_0004), 2017 (PCN 17_0079), 2021-03-22… | Search shows these three ADI PCNs list AD8610/AD8620 variants. | low - content unknown and no spec change reported; flagged for follow-up | low |
+| [ADA4075-2](families/ADA4075-2.md) | Analog Devices | 2022 (PCN 22_0142 Rev. -; exact issue date not read) | ADI added its Wilmington, MA fab (ADWL) as an alternate wafer fab to Limerick, Ireland (ADLK) for 'High Voltage Bipolar Products'. | low - alternate-fab qualification with no datasheet change; not a new die design | low |
+| [ADA4627](families/ADA4627.md) | Analog Devices | PCN 14_0038 Rev. -, 2014-02-13 (date per search summary) | Assembly-site transfer for 3x3 mm LFCSP products to Amkor Philippines. | low - assembly-only change, and only on the LFCSP, which is rarely used for rolling. | low |
+| [ADA4898](families/ADA4898.md) | Analog Devices | PCN 22_0142 released 04-Apr-2023, effective 07-Jul-2023 | ADI added its Wilmington, MA fab (ADWL) as an alternate wafer fab to Limerick, Ireland (ADLK) for 'High Voltage Bipolar Products', including ADA4898-2. | low - same design and datasheet; fab-to-fab variation only | medium |
+| [ADA4898](families/ADA4898.md) | Analog Devices | Datasheet Rev. F (ADI-listed 01/19/2026); an earlier… | This is a package outline re-designation, not a die change. | low - documentation/outline change; check the EP land-pattern against the current drawing | low |
 | [LF353](families/LF353.md) | Texas Instruments / National… | TI has published its own LF353 since March 1987. | One generic number with two separately documented specs. | low - same pinout, function and DC specs; only minor AC-spec differences | medium |
 | [LF353](families/LF353.md) | National Semiconductor | between the 1980 databook and the August 2000 DS005649 | National dropped the tighter-offset A and B grades and the TO-99 metal can for the LF353, and added SO-8. | low - same die family and pinout; the TO-99 can has a different footprint | high |
 | [LF353](families/LF353.md) | STMicroelectronics vs Texas… | ongoing (ST datasheet era not verified) | ST specifies its LF353 differently from TI: 4 MHz, 15 nV/rtHz, 0.01% THD headline. | low - drop-in, but ST's LF353 is rated only to 32 V against TI's 36 V | medium |
@@ -19,6 +32,8 @@
 | [LF356](families/LF356.md) | National Semiconductor | between the 1980 databook and the May 2000 DS005646 edition | A possible compensation-capacitor change in the decompensated LF157/LF357, or just a documentation correction. | low – the guaranteed specs are the same and it may be purely editorial. | low |
 | [LF356](families/LF356.md) | Linear Technology / PMI (second sources) | c.1978 (PMI); c.1990 (LT models) | Second-source dies were not necessarily National's. | low – same pinout and function; the second sources claim tighter DC specs. | low |
 | [LM318](families/LM318.md) | Linear Technology | c. 1989-1990 (LTC 1990 Linear Databook) | LTC made its own LM318 second source plus an improved LT118A/LT318A. | low - drop-in second source per LTC databook, but datasheet deltas are unverified. | low |
+| [LT1361](families/LT1361.md) | Analog Devices | 2021 (PCN 21_0060 Rev A; a Rev B also exists; exact dates… | MARKING ONLY, NOT A DIE CHANGE: the top mark on legacy Linear 8-SOICN products changed from ink to laser. | low - marking change only; same die and package | medium |
+| [LT1361](families/LT1361.md) | Analog Devices | October 2024 (PCN 24_0236 Rev -) | MARKING ONLY, NOT A DIE CHANGE: the bottom-side trace-code marking moved into the top-side laser mark to standardise marking across ADI packages. | low - marking change only | medium |
 | [MUSES05](families/MUSES05.md) | Nisshinbo Micro Devices | Suspended by June 2024 at the latest (new_western_elec… | Vendor-documented halt and restart under the same part number. | low - same part number, package and datasheet Ver.1.0, and the vendor presents it as a… | medium |
 | [MUSES8920](families/MUSES8920.md) | Nisshinbo Micro Devices | After New JRC merged into Nisshinbo Micro Devices (2022). | Nisshinbo ended MUSES8920 production and replaced it with MUSES8920A, stating electrical characteristics, circuit and sound quality are unchanged. | low - same dual op-amp pinout and stated-equivalent characteristics, with a slightly… | medium |
 | [NE5532](families/NE5532.md) | Signetics / Philips | about 2000 (pad-printed to laser-marked transition; | Japanese blogs (radiokits.jp / takinx) report that later laser-marked Philips parts behave differently at the input-protection diodes, and that many did not… | low – no documented spec change; folklore | low |
@@ -31,18 +46,22 @@
 | [4558](families/4558.md) | Nisshinbo Micro Devices (NJM4558 vs… | NJM4558C datasheet at ver.06 (dates not seen). | Nisshinbo sells the NJM4558C as a separate product with different specs from the classic NJM4558 (1.5 V/µs vs 1 V/µs, 3.5 MHz vs 3 MHz). | low - same function as a dual op-amp. | medium |
 | [NJM4580](families/NJM4580.md) | Texas Instruments | Production change 2024-2025 (RFAB PCNs); | A TI E2E thread titled 'NE5532, LM833, RC4580 and MC33078 all now the same die' confirms the consolidation. | low for RC4580 (it is the donor die; headline specs unchanged), but its own… | high |
 | [NJM4580](families/NJM4580.md) | Texas Instruments | PCNs November 2023 - February 2025 (20231114002.1;… | PCN 20240429005.1 is titled 'Qualification of RFAB using qualified Process Technology, Die Revision, Datasheet, and additional Assembly site/BOM options for… | low (uncertain): headline specs appear unchanged. | low |
-| [OP27](families/OP27.md) | Linear Technology / Texas Instruments… | c.1989-1990s | LTC second-sourced the part and published OP-27/OP-37 data sheets in its 1990 databook. | low – all are pin-compatible OP07/OP27-pinout singles specified to the same OP-27/OP-37… | low |
-| [OP27](families/OP27.md) | Analog Devices | between Rev E (12/05) and Rev F (5/06) | Pb-free (RoHS) lead-finish versions were added to the ordering guide in Rev F (5/06). | low – same die specs and pinout; only lead finish (and reflow profile) differ. | high |
+| [OP249](families/OP249.md) | Analog Devices | About 2010 (inferred from the PCN number 10_0062; exact… | PCN 10_0062, 'OP249 Data sheet and Die Changes'. | low - same pinout and function; only the offset/TCVos specs were revised, which matters… | medium |
+| [OP27](families/OP27.md) | Texas Instruments (second source) vs… | from Feb 1989 (SLOS100) to at least 2010 | TI makes its own OP27A/OP27C (SLOS100, Rev E Feb 2010) and an OP37, under the same part numbers as PMI/ADI. | low – same pinout, sockets and headline specs; differences would be in unspecified… | medium |
+| [OP27](families/OP27.md) | Linear Technology (now ADI 'OP27-LTC')… | late 1980s onward; ADI lists both after the 2017 LTC merger | Two OP27 product lines now sit under ADI: the PMI-heritage OP27 and the Linear Technology OP27 (op27-ltc.html). | low – pin-compatible and specified to the same OP-27/OP-37 grade names; unspecified… | medium |
+| [OP27](families/OP27.md) | Analog Devices | between Rev E (12/05) and Rev F (5/06) | Pb-free lead-finish versions were added in Rev F. | low – same specs and pinout; only lead finish differs. | high |
 | [OPAx132](families/OPAx132.md) | Texas Instruments | Presumably the same 2024 fab change (SBOS054C); unconfirmed | SBOS054C covers all three parts, and TI calls the OPA132 change a 'new FAB change and design'. | low - no pin-function change documented for the dual or quad | low |
 | [OPA1611](families/OPA1611.md) | Texas Instruments | PCN# 20260223007.1, dated about 24 Feb 2026 per the search… | A TI change notification with a Group 1 qualification report lists OPA1612AID among roughly 40 unrelated devices: op-amps such as the OPA2187, OPA2210 and… | low — the nature of the change is unconfirmed, and no datasheet, pinout or spec change… | low |
 | [OPA627](families/OPA627.md) | Burr-Brown -> Texas Instruments | after 2000 (TI acquisition); exact transfer date unknown | Soomal (2016) ranks Taiwan-made parts second only to US-made, and ahead of SE-Asian-made. | low - Same pinout and specs. | low |
-| [OPA828](families/OPA828.md) | Texas Instruments | October 2022 (preview, SBOS671C) / December 2022… | This is a package extension, not a documented die change. | low - the parts use different footprints, suffixes and markings, so they cannot be… | medium |
-| [AD823](families/AD823.md) | Analog Devices | 2012 (AD823A datasheet Rev. | The original AD823's datasheet revisions show no die, process or fab change: Rev. 0 to E changes are format, unit typos, abs-max, figure, ordering and… | Medium. Same dual SOIC pinout and 3-36 V supply, but there is no DIP version, so DIP… | high |
+| [OPA828](families/OPA828.md) | Texas Instruments | November 2022 (PCN20221117006), coinciding with SBOS671C… | 'Same part number, different datasheet' hazard, not a die change. | low - it is a spec-only PCN with the same device and markings. | high |
+| [OPA828](families/OPA828.md) | Texas Instruments | October 2022 (preview, SBOS671C) / December 2022… | A package extension, not a documented die change. | low - different footprints, suffixes and markings mean the parts cannot be confused. | medium |
 | [LME49720](families/LME49720.md) | Texas Instruments | PCN 20180308002 issued March 2018 (Mouser copy 20180309,… | TI moved LM4562/LME49720 wafer fabrication from a 150 mm (6-inch) line to RFAB in Richardson, TX, on a newer process with a die-shrink redesign. | low: same pinout, part number and datasheet limits. | medium |
 | [MC33078](families/MC33078.md) | Texas Instruments | Confirmed on TI E2E in 2026 (thread 1652528, around June… | TI E2E thread 1652528, 'NE5532, LM833, RC4580 and MC33078 all now the same die', reports that TI has unified the four dies while keeping the part numbers. | low: no MC33078 datasheet change or PCN was found, and the evidence points to NE5532… | medium |
 | [MC33078](families/MC33078.md) | Texas Instruments / STMicroelectronics… | TI since October 2004; | Same part number, different silicon across vendors. | low: the pinout and headline specs match. | low |
 | [NJM4556](families/NJM4556.md) | NEC (vs JRC) | 1980s (uPC4556 on late-1980s Taito boards per MAME notes) | Same '4556' number, different silicon. | high: a decompensated part is not a drop-in for unity-gain buffer or driver roles, and… | medium |
 | [NJM4580](families/NJM4580.md) | Texas Instruments vs New JRC / Nisshinbo | April 2003 (TI RC4580 introduced) - present | TI's RC4580 is a pin- and function-compatible second source. | low: drop-in pinout and similar supply range, with slightly lower GBW on the TI part. | medium |
+| [OP275](families/OP275.md) | Analog Devices | 2007 onward (PCN 07_0024; the Rev. | Assembly-material change. | low: the die design, pinout and datasheet are unchanged; only materials changed. | low |
+| [OP275](families/OP275.md) | Analog Devices | RoHS transition (date not confirmed) | Lead-free ordering codes replaced the leaded GP and GS codes. | low: the ordering code differs, but the pinout and datasheet are the same. | medium |
 | [OPAx134](families/OPAx134.md) | Texas Instruments | PCN 20231219018.1 (fab move, Dec 2023); | TI moved the OPAx134 die to a new wafer fab under the same part numbers as part of its exit from 150 mm fabs. | medium: pin- and function-compatible for normal audio use per TI, but offset-trim… | high |
 | [OPA827](families/OPA827.md) | Texas Instruments | 2024 (PCN#20240628012.1, dated 28 Jun 2024) | TI PCN#20240628012.1 lists OPA827AID among the affected devices. | low: no datasheet revision followed (still Rev I from 2016), and there is no evidence of… | low |
 | [OPA827](families/OPA827.md) | Texas Instruments | February 2012 (SBOS376 Rev G) | The datasheet specs changed at the move from Mixed Status to Production Data: Vos, drift and Ib limits were revised, and SR and ISC minimums were added. | low: same pinout and packages, and no known die change | low |
@@ -88,6 +107,41 @@ TI replaced the NE5532/NE5532A/SA5532/SA5532A silicon with a redesign on a newer
 - [e2e.ti.com/support/audio-group/audio/f…format-change-thanks](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1294367/ne5532-please-help-provide-pcn-file-about-ne5532dr-symbolization-format-change-thanks)
 - [youtube.com/watch?v=22ZmmZ67SMY](https://www.youtube.com/watch?v=22ZmmZ67SMY)
 - [groupdiy.com/threads/ne5532-manufacturing-changes.94322/](https://groupdiy.com/threads/ne5532-manufacturing-changes.94322/)
+
+## AD823 (dual 16 MHz JFET-input, rail-to-rail output) + AD823A (2012 XFCB redesign): Analog Devices, 2012 (AD823A datasheet Rev.
+
+*When:* 2012 (AD823A datasheet Rev. A 5/12, Rev. B 6/12)
+
+The original AD823 datasheet revisions (0 to E) show only format, unit-typo, abs-max, figure, ordering and editorial changes; its only known production change is the 2026 fab transfer (see the separate entry). ADI separately created a materially different die under a near-identical name. The AD823A uses the XFCB dielectrically isolated complementary-bipolar process with a two-stage folded-cascode design, while the original uses the CB process with a nested integrator. Pinout and supply range match; specs, drive and packages differ.
+
+**How to tell old from new:** Separate part 'AD823A' with double-A order codes (AD823AARZ vs the original AD823ARZ). SOIC_N and MSOP only; MSOP branding H34. Datasheet D09439 'Wide Supply Dual, 17 MHz...' vs the original D00901 'Dual, 16 MHz...'. Hazard: the original AD823 datasheet labels its A-grade column 'AD823A' and original SOIC codes are AD823AR/ARZ, so a listing that just says 'AD823A' is ambiguous. SOIC top-marking differences are unverified.
+
+| Parameter | Before | After |
+|---|---|---|
+| Process / topology | CB process, nested integrator, complementary common-emitter RRO | XFCB (dielectrically isolated), two-stage with folded-cascode first stage, RRO |
+| -3 dB BW, G=+1 (5 V) | 16 MHz typ / 12 MHz min | 17 MHz typ / 14.1 MHz min |
+| Slew rate (5 V, G=-1, 4 V step) | 22 V/µs typ / 14 min | 30 V/µs typ / 25 min |
+| e_n at 10 kHz | 16 nV/√Hz | 14 nV/√Hz (13 at ±15 V) |
+| Linear output current, 0.5 V from rails | 16 mA (5 V) / 17 mA (±15 V) | 40 mA (5 V) / 44 mA (±15 V) |
+| Short-circuit current (5 V, source/sink) | 40 / 30 mA | 50 / 101 mA |
+| Vos max / drift (5 V) | 0.8 mV / 2 µV/°C | 0.7 mV / 1 µV/°C |
+| Ib typ, and max at TMAX (5 V) | 3 pA; 5 nA at TMAX | 0.3 pA; 25 pA at TMAX |
+| Open-loop gain (5 V, 2 kΩ) | 45 V/mV typ | 175 V/mV typ |
+| Input capacitance | 1.8 pF | 0.6 pF differential / 1.3 pF common-mode |
+| Crosstalk at 1 kHz | -105 dB | -123 dB |
+| Distortion (20 kHz, 2 V p-p, 5 V) | -108 dBc (RL = 600 Ω) | -108 dBc SFDR (G = -1, RF = RG = 4 kΩ); -99 dBc (G = +1, RL = 1 kΩ); test conditions differ |
+| Closed-loop output impedance (low frequency) | <0.2 Ω | <0.01 Ω |
+| Packages / θJA SOIC | PDIP-8, SOIC-8 / 160 °C/W | SOIC-8, MSOP-8 / 120 °C/W (MSOP 133 °C/W) |
+| Input common-mode abs max | ±VS | ±VS ± 0.7 V |
+| Quiescent current total (5 V; ±15 V) | 5.2 typ / 5.6 max mA; 7.0 / 8.4 mA | 5.1 typ / 5.7 max mA; 6.3 / 8.4 mA |
+
+**Audio impact:** No listening or measurement reports for the AD823A were found. On paper it fixes the AD823's main headphone weakness with about 2.5x the linear output current, and it adds lower noise, higher slew and lower closed-loop Zout. The praised AD823 sound comes from the original CB part (mostly PDIP AD823AN/ANZ) and should not be assumed to carry over.
+
+- [analog.com/media/en/technical-document…ta-sheets/AD823A.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD823A.pdf)
+- [analog.com/media/en/technical-document…ata-sheets/AD823.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD823.pdf)
+- [github.com/myhumankit/Detecteur_de_muo…atasheets/AD823A.pdf](https://github.com/myhumankit/Detecteur_de_muons/blob/main/Datasheets/AD823A.pdf)
+- [github.com/oihdesigns/Micro-DMM/blob/m…a%20Sheets/ad823.pdf](https://github.com/oihdesigns/Micro-DMM/blob/main/Component%20Data%20Sheets/ad823.pdf)
+- [github.com/gburgyan/electronics-parts/…asheets/AD823ANZ.pdf](https://github.com/gburgyan/electronics-parts/blob/main/datasheets/AD823ANZ.pdf)
 
 ## LM118 / LM218 / LM318 (fast bipolar single op-amp, 15 MHz / 50 V/us): Texas Instruments vs National…, Concurrent: TI's own LM318 existed by 1989; both lines…
 
@@ -218,6 +272,18 @@ TI's 2024-2025 rewrite deleted the 'Difet' wording, added a new B-grade SOIC (OP
 - [e2e.ti.com/support/amplifiers-group/am…opa627au-end-of-life](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1386960/opa627-is-the-opa627au-end-of-life)
 - [cimarrontechnology.com/wp-content/uploads/2021/06/opa627.pdf](https://www.cimarrontechnology.com/wp-content/uploads/2021/06/opa627.pdf)
 
+## TLE2071 / TLE2072 / TLE2074 (TI Excalibur low-noise high-speed JFET-input): Texas Instruments, PCN dated December 2023 (PCN 20231219013.1); effective…
+
+*When:* PCN dated December 2023 (PCN 20231219013.1); effective date unknown
+
+TI PCN 20231219013.1 (Digi-Key copy) lists TLE2071 orderables. A search summary mentions wafer-fab-site, die-revision and assembly-site fields, but those may just be TI's standard PCN checkbox headings, so it is not confirmed that a fab or die change occurred. Whether TLE2072/TLE2074 are also covered is unknown.
+
+**How to tell old from new:** Unknown. The PCN text was not read, and TI PCNs normally distinguish new material by date code or lot trace code.
+
+**Audio impact:** Unknown. No datasheet revision after SLOS181C (Dec 2009) was found, which suggests no published spec change.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20231219013.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5784/PCN20231219013.1.pdf)
+
 ## AD797 (ultralow-noise, ultralow-distortion bipolar single): Analog Devices, 2026 (PCN 26_0029 Rev. -; exact publication and first-ship…
 
 *When:* 2026 (PCN 26_0029 Rev. -; exact publication and first-ship dates not captured)
@@ -230,6 +296,169 @@ ADI PCN 26_0029, 'Qualification of ADI Camas Wafer Fab CB Processes', qualifies 
 
 - [mm.digikey.com/Volume0/opasdata/d22000…_0029_Rev_-_Form.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf)
 - [mm.digikey.com/Volume0/opasdata/d22000…_0087_Rev_-_Form.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6899/ADI_PCN_25_0087_Rev_-_Form.pdf)
+
+## AD823 (dual 16 MHz JFET-input, rail-to-rail output) + AD823A (2012 XFCB redesign): Analog Devices, 2026 (PCN 26_0029 Rev. -; exact issue and implementation…
+
+*When:* 2026 (PCN 26_0029 Rev. -; exact issue and implementation dates not confirmed)
+
+ADI PCN 26_0029 moves production to 'the existing qualified process at the Analog Devices Camas, WA Fab to ensure a reliable and continuous supply', with 'no expected impact to fit, form, function or reliability'. A web-search summary lists AD823ANZ and AD823ARZ among the affected parts. This is a same-part-number, different-fab hazard. Whether the die layout itself changes was not visible.
+
+**How to tell old from new:** Not confirmed. The PCN's identification and date-code section was not read. ADI PCNs usually separate old and new stock by date code or lot after the implementation date. Part number, marking scheme and datasheet (Rev. E) stay the same.
+
+| Parameter | Before | After |
+|---|---|---|
+| Wafer fab | previous ADI fab (not named in the sources seen) | ADI Camas, WA fab (existing qualified process) |
+
+**Audio impact:** Unknown. ADI claims no fit, form or function change and the datasheet limits are unchanged. There are no listening or measurement comparisons of pre- and post-transfer stock. Rollers who prize older AD823ANZ stock should record date codes.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…_0029_Rev_-_Form.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf)
+- [farnell.com/datasheets/4778405.pdf](https://www.farnell.com/datasheets/4778405.pdf)
+
+## AD825 (single high-speed JFET-input op amp): Analog Devices, c. 2010 (inferred from ADI's PCN numbering 10_xxxx);…
+
+*When:* c. 2010 (inferred from ADI's PCN numbering 10_xxxx); notice is at Rev. A
+
+A search summary says ADI PCN 10_0117 Rev. A lists AD825AR/AD825ARZ. The nature of the change (die, fab, assembly, test or packing) is unknown. No evidence of a die change or a pin change was found. Datasheet revisions F and G show no silicon-related changes in the captured history.
+
+**How to tell old from new:** Unknown; the notice content was not read.
+
+**Audio impact:** unknown
+
+- [analog.com/media/en/pcn/ADI_PCN_10_0117_Rev_A_Form.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_10_0117_Rev_A_Form.pdf)
+
+## AD8597 / AD8599 (single/dual ultralow-noise, ultralow-distortion bipolar): Analog Devices, PCN 25_0091 Rev. -: published 6 Jun 2025, effective 8 Sep…
+
+*When:* PCN 25_0091 Rev. -: published 6 Jun 2025, effective 8 Sep 2025. A Rev. A was issued later.
+
+'Qualification of ADI Camas Wafer Fab Bipolar Process': ADI qualified its Camas, WA fab to build ADI bipolar-process products. Search returned this PCN for an AD8597/AD8599 PCN query, but no result confirmed that these parts are on its affected list.
+
+**How to tell old from new:** Not established. Check the affected-parts list in PCN 25_0091 and its Rev. A. Parts with date codes after Sep 2025 may come from Camas.
+
+| Parameter | Before | After |
+|---|---|---|
+| Wafer fab site | existing ADI bipolar fab (site not confirmed) | ADI Camas, WA qualified |
+
+**Audio impact:** ADI states that parts use ADI-specified flows, materials and process controls 'ensuring no degradation of quality and reliability performance'. No measurements of Camas-built parts are known.
+
+- [analog.com/media/en/pcn/ADI_PCN_25_0091_Rev_-_Form.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_25_0091_Rev_-_Form.pdf)
+- [analog.com/media/en/PCN/ADI_PCN_25_0091_Rev_A_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_25_0091_Rev_A_Form.pdf)
+- [analog.com/media/en/PCN/ADI_PCN_25_009…ipolar%20Process.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_25_0091_Rev_-_Qualification%20of%20ADI%20Camas%20Wafer%20Fab%20Bipolar%20Process.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…_0091_Rev_-_Form.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7135/ADI_PCN_25_0091_Rev_-_Form.pdf)
+
+## AD8597 / AD8599 (single/dual ultralow-noise, ultralow-distortion bipolar): Analog Devices, PCN 10_0004, 23 Nov 2010
+
+*When:* PCN 10_0004, 23 Nov 2010
+
+Package material only, not a die change: the mold compound for SOIC narrow-body assembly at Amkor changed to halogen-free material. ADI says fit, form, function and reliability are unaffected.
+
+**How to tell old from new:** Date code after the PCN effectivity. The die is unchanged.
+
+| Parameter | Before | After |
+|---|---|---|
+| SOIC mold compound (Amkor) | previous compound | halogen-free compound |
+
+**Audio impact:** None expected (package material only).
+
+- [analog.com/media/en/pcn/ADI_PCN_10_0004_Rev_-_Form.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_10_0004_Rev_-_Form.pdf)
+
+## AD8610 / AD8620 (single/dual precision low-noise JFET): Analog Devices, 2026 (PCN 26_0028 Rev. -; exact date not seen)
+
+*When:* 2026 (PCN 26_0028 Rev. -; exact date not seen)
+
+PCN 26_0028 qualifies an Analog Devices Ireland (ADLK/Limerick) wafer-fab site for products on the XF26/XF18/XF12/XF8 processes, reusing the process already qualified at Limerick. A search summary says AD8610 and AD8620 parts are listed. The full parts list and the direction of the transfer were not read.
+
+**How to tell old from new:** Not identifiable from marking. Trace by ADI date code or lot against the PCN effective date.
+
+**Audio impact:** None expected, since the PCN describes the same qualified process. Not measured.
+
+- [mouser.com/PCN/ADI_ADI_PCN_26_0028_Rev___Form.pdf](https://www.mouser.com/PCN/ADI_ADI_PCN_26_0028_Rev___Form.pdf)
+
+## AD8610 / AD8620 (single/dual precision low-noise JFET): Analog Devices, 2007 onward (PCN 07_0024, later revised to Rev.
+
+*When:* 2007 onward (PCN 07_0024, later revised to Rev. E)
+
+After Sumitomo discontinued certain materials, ADI changed the mold compound (and in some cases the die-attach material) for SOT23, MiniSO, MQFP, PDIP, PLCC, SOIC, SSOP and TSSOP packages. A search summary says the PCN's lists include AD8610/AD8620 variants. This is a package-material change, not a die change.
+
+**How to tell old from new:** Not identifiable from marking. Use the date code after the PCN effective date.
+
+**Audio impact:** None expected (package materials only).
+
+- [analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf)
+- [analog.com/media/en/pcn/ADI_PCN_07_002…v_E_Parts%20List.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Parts%20List.pdf)
+
+## AD8610 / AD8620 (single/dual precision low-noise JFET): Analog Devices, 2010-11-23 (PCN 10_0004), 2017 (PCN 17_0079), 2021-03-22…
+
+*When:* 2010-11-23 (PCN 10_0004), 2017 (PCN 17_0079), 2021-03-22 (PCN 21_0001)
+
+Search shows these three ADI PCNs list AD8610/AD8620 variants. What each one changes (fab, assembly, test or materials) was not seen. They are recorded so they can be checked; there is no evidence of a die change.
+
+**How to tell old from new:** Unknown; the PCN contents were not read.
+
+**Audio impact:** Unknown.
+
+- [analog.com/media/en/pcn/ADI_PCN_10_0004_Rev_-_Form.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_10_0004_Rev_-_Form.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN_17_0079_Rev-.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2372/PCN_17_0079_Rev-.pdf)
+- [analog.com/media/en/PCN/ADI_PCN_21_0001_Rev_-_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_21_0001_Rev_-_Form.pdf)
+- [mouser.com/PCN/ADI_PCN_21_0001.pdf](https://www.mouser.com/PCN/ADI_PCN_21_0001.pdf)
+
+## ADA4075-2 (ADI dual ultralow-noise, low-power bipolar audio op amp): Analog Devices, 2022 (PCN 22_0142 Rev. -; exact issue date not read)
+
+*When:* 2022 (PCN 22_0142 Rev. -; exact issue date not read)
+
+ADI added its Wilmington, MA fab (ADWL) as an alternate wafer fab to Limerick, Ireland (ADLK) for 'High Voltage Bipolar Products'. One search summary says ADA4075-2/ADA4075-2ARZ is on this PCN; a second summary of the PCN excerpt did not name it. Inclusion is therefore unconfirmed.
+
+**How to tell old from new:** Not identifiable from the marking in the available evidence. Per the PCN, traceability is by date code or lot after the implementation date. Check the ADI PCN form's affected-parts list.
+
+**Audio impact:** None expected. ADI states no impact to fit, form, function or reliability, and the same process is transferred to an alternate fab.
+
+- [analog.com/media/en/PCN/ADI_PCN_22_0142_Rev_-_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_22_0142_Rev_-_Form.pdf)
+- [analog.com/en/products/ada4075-2.html](https://www.analog.com/en/products/ada4075-2.html)
+
+## ADA4627-1 / ADA4637-1 (ADI single JFET-input; ADA4637-1 decompensated): Analog Devices, PCN 14_0038 Rev. -, 2014-02-13 (date per search summary)
+
+*When:* PCN 14_0038 Rev. -, 2014-02-13 (date per search summary)
+
+Assembly-site transfer for 3x3 mm LFCSP products to Amkor Philippines. This is an assembly change, not a die change. The search engine surfaced it for an ADA4627-1ARZ/ADA4637-1ARZ query, but inclusion of these parts is not confirmed, and it applies to LFCSP only (not SOIC ARZ/BRZ).
+
+**How to tell old from new:** After the change, parts carry a laser-marked pin-1 indicator. Country of origin and date code would separate assembly sites. Not verified per part.
+
+| Parameter | Before | After |
+|---|---|---|
+| Assembly site | previous site (not stated) | Amkor Philippines |
+| Pin-1 indicator | not stated | laser-marked |
+
+**Audio impact:** None expected: same die, package assembly only.
+
+- [analog.com/media/en/pcn/ADI_PCN_14_0038_Rev_-_Form.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_14_0038_Rev_-_Form.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…_0038_Rev_-_Form.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/500/ADI_PCN_14_0038_Rev_-_Form.pdf)
+
+## ADA4898-1 / ADA4898-2 (single/dual 0.9 nV/√Hz high-voltage bipolar): Analog Devices, PCN 22_0142 released 04-Apr-2023, effective 07-Jul-2023
+
+*When:* PCN 22_0142 released 04-Apr-2023, effective 07-Jul-2023
+
+ADI added its Wilmington, MA fab (ADWL) as an alternate wafer fab to Limerick, Ireland (ADLK) for 'High Voltage Bipolar Products', including ADA4898-2. The PCN states no impact to fit, form, function or reliability.
+
+**How to tell old from new:** No marking distinction is stated. Parts with date codes after mid-2023 may come from either Limerick (ADLK) or Wilmington (ADWL). Whether ADA4898-1 is also covered is unconfirmed.
+
+**Audio impact:** None stated. The same process is run at a second fab, so no datasheet spec changed.
+
+- [analog.com/media/en/PCN/ADI_PCN_22_0142_Rev_-_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_22_0142_Rev_-_Form.pdf)
+
+## ADA4898-1 / ADA4898-2 (single/dual 0.9 nV/√Hz high-voltage bipolar): Analog Devices, Datasheet Rev. F (ADI-listed 01/19/2026); an earlier…
+
+*When:* Datasheet Rev. F (ADI-listed 01/19/2026); an earlier outline update was in Rev. D (5/12)
+
+This is a package outline re-designation, not a die change. The ADA4898-1 SOIC_N_EP outline moved from RD-8-1 to RD-8-4, with updated outline dimensions and ordering-guide changes. No PCN was found. Whether the physical exposed-pad size changed is unconfirmed.
+
+**How to tell old from new:** The datasheet package code for the single changed from RD-8-1 to RD-8-4. Compare the exposed-pad dimensions in the outline drawing of the revision you hold.
+
+| Parameter | Before | After |
+|---|---|---|
+| Package outline code (ADA4898-1) | RD-8-1 | RD-8-4 |
+
+**Audio impact:** None expected electrically. The only possible effect is on footprint and thermal pad matching.
+
+- [analog.com/media/en/technical-document…ADA4898-1_4898-2.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4898-1_4898-2.pdf)
 
 ## LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): Texas Instruments / National…, TI has published its own LF353 since March 1987.
 
@@ -383,6 +612,39 @@ LTC made its own LM318 second source plus an improved LT118A/LT318A. The LTC and
 
 - [github.com/kicad-spice-library/KiCad-S…e_complete/OPLTC.LIB](https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/OPLTC.LIB)
 - [github.com/kicad-spice-library/KiCad-S…omplete/lin_tech.lib](https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/lin_tech.lib)
+
+## LT1360 / LT1361 / LT1362 (50MHz, 800V/us C-Load bipolar single/dual/quad): Analog Devices, 2021 (PCN 21_0060 Rev A; a Rev B also exists; exact dates…
+
+*When:* 2021 (PCN 21_0060 Rev A; a Rev B also exists; exact dates not confirmed)
+
+MARKING ONLY, NOT A DIE CHANGE: the top mark on legacy Linear 8-SOICN products changed from ink to laser. Included so that both marking styles are recognised as genuine.
+
+**How to tell old from new:** Older parts have an ink top mark; newer parts have a laser top mark. This applies to 8-SOICN packages assembled at ADPG, UTAC and Carsem.
+
+| Parameter | Before | After |
+|---|---|---|
+| Top-side mark method | ink | laser |
+
+**Audio impact:** None expected (package marking only).
+
+- [mm.digikey.com/Volume0/opasdata/d22000…CN_21_0060_Rev_A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5335/PCN_21_0060_Rev_A.pdf)
+- [analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf)
+
+## LT1360 / LT1361 / LT1362 (50MHz, 800V/us C-Load bipolar single/dual/quad): Analog Devices, October 2024 (PCN 24_0236 Rev -)
+
+*When:* October 2024 (PCN 24_0236 Rev -)
+
+MARKING ONLY, NOT A DIE CHANGE: the bottom-side trace-code marking moved into the top-side laser mark to standardise marking across ADI packages.
+
+**How to tell old from new:** Older parts carry the trace code on the bottom of the package; newer parts carry it on the top-side laser mark.
+
+| Parameter | Before | After |
+|---|---|---|
+| Trace code location | package bottom | top-side laser mark |
+
+**Audio impact:** None expected (marking only).
+
+- [mouser.com/PCN/ADI_PCN_24_0236.pdf](https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf)
 
 ## MUSES05 (J-FET single, two-chip MUSES flagship, DFN12-CA8): Nisshinbo Micro Devices, Suspended by June 2024 at the latest (new_western_elec…
 
@@ -626,31 +888,75 @@ PCN 20240429005.1 is titled 'Qualification of RFAB using qualified Process Techn
 - [diyaudio.com/community/threads/ti-chan…ys-no-impact.441303/](https://www.diyaudio.com/community/threads/ti-changed-ne5532-and-opa134-for-the-worse-and-says-no-impact.441303/)
 - [ti.com/product/RC4580](https://www.ti.com/product/RC4580)
 
-## OP27 / OP37 (PMI/ADI low-noise precision bipolar; OP37 = decompensated, gain ≥5): Linear Technology / Texas Instruments…, c.1989-1990s
+## OP249 (PMI / Analog Devices dual precision high-speed JFET): Analog Devices, About 2010 (inferred from the PCN number 10_0062; exact…
 
-*When:* c.1989-1990s
+*When:* About 2010 (inferred from the PCN number 10_0062; exact issue and effective dates not captured)
 
-LTC second-sourced the part and published OP-27/OP-37 data sheets in its 1990 databook. Whether LTC used its own die is unknown. The earlier inference from LTC's OP27A macromodel matching its LT1007 model is withdrawn, because both are behavioural models built from the same LTC template (written 11-21-1989) and say nothing about the die. TI's involvement rests only on MicroSim-generated macromodels in a third-party 'ti' folder. No side-by-side specs or measurements were found.
+PCN 10_0062, 'OP249 Data sheet and Die Changes'. After OP249 moved to ADI's ADWIL wafer fab, it showed more Vos variation. ADI made a minor mask change to improve a diode's performance and stability, and moved ceramic-DIP products to a lower-stress passivation. Both changes had already been qualified on the military version. The PCN also attached a comparison of old and new datasheet specifications.
 
-**How to tell old from new:** Vendor logo on the package. LTC used the hyphenated 'OP-27' name in its databook references. Actual package marking formats were not verified.
+**How to tell old from new:** No marking change is documented in the search summary. Date code relative to the PCN effective date is the only likely discriminator. The ceramic-DIP passivation change affects CERDIP parts (for example OP249FZ and probably OP249AZ).
 
-**Audio impact:** Unknown. No listening or measurement comparisons found.
+| Parameter | Before | After |
+|---|---|---|
+| Offset voltage and Vos temperature coefficient limits (data sheet Table 4) | earlier limits (values not captured) | changed (the Rev. I history lists 'Changes to Offset Voltage Parameter and Offset Voltage Temperature Coefficient Parameter, Table 4'); linking this to the PCN is an inference |
+| OP249F columns (data sheet Table 3) | present | deleted (per the revision history; timing relative to the PCN not verified) |
 
+**Audio impact:** Probably negligible for audio. The change targets offset stability and variation. AC performance (slew, GBW, noise) is not reported as changed.
+
+- [analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_Form.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_Form.pdf)
+- [analog.com/media/en/technical-document…ata-sheets/OP249.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf)
+
+## OP27 / OP37 (PMI/ADI low-noise precision bipolar; OP37 = decompensated, gain ≥5): Texas Instruments (second source) vs…, from Feb 1989 (SLOS100) to at least 2010
+
+*When:* from Feb 1989 (SLOS100) to at least 2010
+
+TI makes its own OP27A/OP27C (SLOS100, Rev E Feb 2010) and an OP37, under the same part numbers as PMI/ADI. Whether TI's die is its own design or licensed is not documented. The headline noise specs match ADI's (3 nV/√Hz, 2.7 Hz corner). TI's OP27C (100 µV max Vos) is not the same grade as the discontinued PMI OP27C.
+
+**How to tell old from new:** TI logo and TI ordering codes; the TI datasheet is SLOS100. TI's OP27 grades are A and C only, while ADI's current grades are A/E/G.
+
+| Parameter | Before | After |
+|---|---|---|
+| Grade set | PMI/ADI: A/E/G (older B/C/F) | TI: A/C |
+| Vos max, lower grade | ADI OP27G: 100 µV (Rev F) | TI OP27C: 100 µV |
+
+**Audio impact:** Unknown. No measurement comparisons were found.
+
+- [ti.com/lit/gpn/OP27](https://www.ti.com/lit/gpn/OP27)
+- [ti.com/product/OP27](https://www.ti.com/product/OP27)
+- [alldatasheet.com/datasheet-pdf/pdf/27251/TI/OP27A.html](https://www.alldatasheet.com/datasheet-pdf/pdf/27251/TI/OP27A.html)
+- [alldatasheet.com/html-pdf/27258/TI/OP37G/19/1/OP37G.html](https://www.alldatasheet.com/html-pdf/27258/TI/OP37G/19/1/OP37G.html)
+
+## OP27 / OP37 (PMI/ADI low-noise precision bipolar; OP37 = decompensated, gain ≥5): Linear Technology (now ADI 'OP27-LTC')…, late 1980s onward; ADI lists both after the 2017 LTC merger
+
+*When:* late 1980s onward; ADI lists both after the 2017 LTC merger
+
+Two OP27 product lines now sit under ADI: the PMI-heritage OP27 and the Linear Technology OP27 (op27-ltc.html). The LTC datasheets are mirrored on alldatasheet. Whether the LTC die is an independent design is unconfirmed, and the matching LTC macromodel template is not evidence either way.
+
+**How to tell old from new:** LTC logo. ADI's separate 'OP27-LTC' product page. LTC's A/C/E/G grade set, whereas ADI (PMI line) uses A/E/G.
+
+| Parameter | Before | After |
+|---|---|---|
+| Grade set | PMI/ADI: A/E/G | LTC: A/C/E/G |
+
+**Audio impact:** Unknown. No measurements found.
+
+- [analog.com/en/products/op27-ltc.html](https://www.analog.com/en/products/op27-ltc.html)
+- [alldatasheet.com/datasheet-pdf/pdf/70889/LINER/OP-27.html](https://www.alldatasheet.com/datasheet-pdf/pdf/70889/LINER/OP-27.html)
+- [alldatasheet.com/datasheet-pdf/pdf/70891/LINER/OP-27A.html](https://www.alldatasheet.com/datasheet-pdf/pdf/70891/LINER/OP-27A.html)
 - [github.com/kicad-spice-library/KiCad-S…e_complete/OPLTC.LIB](https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/OPLTC.LIB)
-- [github.com/kicad-spice-library/KiCad-S…omplete/lin_tech.lib](https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/lin_tech.lib)
-- [github.com/thecowgoesmoo/SPICEyPedals/…subckt/ti/op-27g.mod](https://github.com/thecowgoesmoo/SPICEyPedals/blob/60f67a6fdb14b9d7c83630b1cade358bfdd4e638/PartModels/modelos_subckt/ti/op-27g.mod)
 
 ## OP27 / OP37 (PMI/ADI low-noise precision bipolar; OP37 = decompensated, gain ≥5): Analog Devices, between Rev E (12/05) and Rev F (5/06)
 
 *When:* between Rev E (12/05) and Rev F (5/06)
 
-Pb-free (RoHS) lead-finish versions were added to the ordering guide in Rev F (5/06). This is a package and lead-finish change, not a documented die change: Rev F has a single specification table covering both leaded and Pb-free codes. The OP37 datasheet seen (Rev B, 12/02) predates Pb-free codes.
+Pb-free lead-finish versions were added in Rev F. This is a package and lead-finish change, not a documented die change; one spec table covers both leaded and Pb-free parts.
 
-**How to tell old from new:** Trailing 'Z' after the package letter P or S in the ordering code (Rev F footnote 'Z = Pb-free part'). Do not confuse it with the CERDIP 'Z' package suffix in OP27AZ/EZ/GZ.
+**How to tell old from new:** A trailing Z after P or S in the ordering code ('Z = Pb-free part'). Not the CERDIP Z in OP27AZ/EZ/GZ.
 
-**Audio impact:** None expected. No reports of audible or measured differences found.
+**Audio impact:** None expected.
 
 - [github.com/tardate/Datasheets/blob/main/components/OP27.pdf](https://github.com/tardate/Datasheets/blob/main/components/OP27.pdf)
+- [media.digikey.com/pdf/Data%20Sheets/An…ices%20PDFs/OP27.pdf](https://media.digikey.com/pdf/Data%20Sheets/Analog%20Devices%20PDFs/OP27.pdf)
 
 ## OPA132 / OPA2132 / OPA4132 (Burr-Brown/TI high-speed FET-input, SoundPlus): Texas Instruments, Presumably the same 2024 fab change (SBOS054C); unconfirmed
 
@@ -694,13 +1000,31 @@ Soomal (2016) ranks Taiwan-made parts second only to US-made, and ahead of SE-As
 - [github.com/h2dcc/soomal.github.io/blob…posts/10100006526.md](https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100006526.md)
 - [maimai-audio.blog.jp/archives/26518228.html](https://maimai-audio.blog.jp/archives/26518228.html)
 
+## OPA828 / OPA2828 (45 MHz, 150 V/us SiGe JFET-input, "next-generation OPA627/OPA827"): Texas Instruments, November 2022 (PCN20221117006), coinciding with SBOS671C…
+
+*When:* November 2022 (PCN20221117006), coinciding with SBOS671C (Oct 2022) / SBOS671D (Dec 2022)
+
+'Same part number, different datasheet' hazard, not a die change. TI's PCN20221117006 announced a specification change for the SOIC OPA828ID/IDR 'to accurately reflect device characteristics', with no expected impact on fit, form, function, quality or reliability and no device change. SOIC limits in Rev C/D therefore differ from Rev B in at least one parameter, which was not identified in this pass. A 2019 TI E2E thread titled 'OPA828: Output swing specification disagrees with datasheet figures' may be related (unconfirmed).
+
+**How to tell old from new:** No marking or orderable change: TI states there are no changes to product identification. Parts cannot be told apart physically. Only the datasheet revision differs: SBOS671B (Dec 2018) or earlier gives the old limits; SBOS671C/D gives the revised limits.
+
+| Parameter | Before | After |
+|---|---|---|
+| OPA828ID/IDR datasheet limits (specific parameters not identified) | SBOS671B (Dec 2018) values | SBOS671C/D values per PCN20221117006 |
+
+**Audio impact:** None expected: the silicon is unchanged, and noise, GBW, slew rate and THD+N typicals appear the same in the Rev-B-era text and Rev D. The only practical risk is a design-margin check against old Rev B limits.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20221117006.0.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5336/PCN20221117006.0.pdf)
+- [mouser.com/PCN/Texas_Instruments_PCN20…2022111813034746.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20221117006_2022111813034746.pdf)
+- [e2e.ti.com/support/amplifiers-group/am…th-datasheet-figures](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/801601/opa828-output-swing-specification-disagrees-with-datasheet-figures)
+
 ## OPA828 / OPA2828 (45 MHz, 150 V/us SiGe JFET-input, "next-generation OPA627/OPA827"): Texas Instruments, October 2022 (preview, SBOS671C) / December 2022…
 
 *When:* October 2022 (preview, SBOS671C) / December 2022 (production, SBOS671D)
 
-This is a package extension, not a documented die change. TI added a thermally enhanced DGN package for the single and introduced the dual OPA2828 in DGN only. The DGN parts carry a separate, tighter DC spec set than the SOIC OPA828. TI does not state that a new die, process or fab is involved, and no PCN was found. The SOIC (D) part appears to keep its original 2018 specification: TI's Rev C log lists no D-limit change, the Rev-B-era features text shows the same D typicals (50 uV, 0.45 uV/C, 1 pA), and the Rev-B-based PSpice model uses 0.45 uV/C drift. Whether the DGN part uses revised silicon or only a different trim, test or package flow is unknown. AC specs (noise, GBW, slew rate, THD+N) are common to both packages.
+A package extension, not a documented die change. TI added a thermally enhanced DGN package for the single and introduced the dual OPA2828 in DGN only (web-confirmed). DGN parts carry a separate, tighter DC spec set than the SOIC OPA828. TI does not say that a new die, process or fab is involved, and no DGN-specific PCN was found. The SOIC part is the same device, but its datasheet limits were revised at the same time (see PCN20221117006). Whether the DGN part uses revised silicon or only a different trim, test or package flow is unknown. AC specs (noise, GBW, slew rate, THD+N) are common to both packages.
 
-**How to tell old from new:** Orderable suffix DGN (HVSSOP-8 PowerPAD) vs D (SOIC-8). Top marking '2RAJ' (OPA828 DGN) or '2QGJ' (OPA2828 DGN) vs 'OPA828' (SOIC). The spec rows first appear in datasheet Rev C/D. SOIC parts have no documented change.
+**How to tell old from new:** Orderable suffix DGN (HVSSOP-8 PowerPAD) vs D (SOIC-8). Top marking '2RAJ' (OPA828 DGN) or '2QGJ' (OPA2828 DGN) vs 'OPA828' (SOIC). The spec rows first appear in datasheet Rev C/D.
 
 | Parameter | Before | After |
 |---|---|---|
@@ -711,44 +1035,12 @@ This is a package extension, not a documented die change. TI added a thermally e
 | CMRR min / typ | D: 108 / 115 dB | DGN: 103 / 108 dB |
 | RthJA | SOIC: 121.5 C/W | DGN: 56.7 C/W (single), 49.9 C/W (dual) |
 
-**Audio impact:** Negligible for audio. The deltas are DC precision (offset, drift, bias) and a few dB of CMRR; noise, GBW, slew rate and THD+N are specified identically. The DGN runs cooler because of the PowerPAD, which also keeps JFET bias current lower. The main practical impact is packaging: the dual needs a PowerPAD-capable adapter.
+**Audio impact:** Negligible for audio. The deltas are DC precision and a few dB of CMRR; noise, GBW, slew rate and THD+N are specified identically. The DGN runs cooler because of the PowerPAD. The dual needs a PowerPAD-capable adapter.
 
 - [ti.com/lit/ds/symlink/opa828.pdf](https://www.ti.com/lit/ds/symlink/opa828.pdf)
+- [ti.com/product/OPA2828](https://www.ti.com/product/OPA2828)
 - [github.com/BloomTechBackend/bd-maps-pa…partstech2019-10.txt](https://github.com/BloomTechBackend/bd-maps-parts-discovery/blob/main/src/main/resources/partcatalogs/partstech2019-10.txt)
 - [github.com/stefaweb/Q17-Amplifier/blob…-LTspice/OPAx828.lib](https://github.com/stefaweb/Q17-Amplifier/blob/main/Q17-LTspice/OPAx828.lib)
-
-## AD823 (dual 16 MHz JFET-input, rail-to-rail output) + AD823A (2012 XFCB redesign): Analog Devices, 2012 (AD823A datasheet Rev.
-
-*When:* 2012 (AD823A datasheet Rev. A 5/12, Rev. B 6/12)
-
-The original AD823's datasheet revisions show no die, process or fab change: Rev. 0 to E changes are format, unit typos, abs-max, figure, ordering and editorial only. Tables 1-3 values are numerically identical between Rev. A and Rev. E, and no PCN was found. ADI did create a materially different die under a near-identical name. The AD823A uses the XFCB dielectrically isolated complementary-bipolar process with a two-stage design (folded-cascode first stage). The original uses the CB process with a nested-integrator design. Pinout and supply range match, but specs, drive and package options differ.
-
-**How to tell old from new:** Separate part 'AD823A'. Order codes carry a double A (AD823AARZ vs the original AD823ARZ). Packages are SOIC_N and MSOP only, with MSOP branding H34. Datasheet doc D09439 is titled 'Wide Supply Dual, 17 MHz...'; the original is D00901 'Dual, 16 MHz...'. Hazard: the original AD823 datasheet (Rev. A) labels its A-grade spec column 'AD823A', and original SOIC codes are AD823AR/ARZ, so a listing that just says 'AD823A' is ambiguous. SOIC top-marking differences are unverified.
-
-| Parameter | Before | After |
-|---|---|---|
-| Process / topology | CB process, nested integrator, complementary common-emitter RRO | XFCB (dielectrically isolated), two-stage with folded-cascode first stage, RRO |
-| -3 dB BW, G=+1 (5 V) | 16 MHz typ / 12 MHz min | 17 MHz typ / 14.1 MHz min |
-| Slew rate (5 V, G=-1, 4 V step) | 22 V/µs typ / 14 min | 30 V/µs typ / 25 min |
-| e_n at 10 kHz | 16 nV/√Hz | 14 nV/√Hz (13 at ±15 V) |
-| Linear output current, 0.5 V from rails | 16 mA (5 V) / 17 mA (±15 V) | 40 mA (5 V) / 44 mA (±15 V) |
-| Short-circuit current (5 V, source/sink) | 40 / 30 mA | 50 / 101 mA |
-| Vos max / drift (5 V) | 0.8 mV / 2 µV/°C | 0.7 mV / 1 µV/°C |
-| Ib typ, and max at TMAX (5 V) | 3 pA; 5 nA at TMAX | 0.3 pA; 25 pA at TMAX |
-| Open-loop gain (5 V, 2 kΩ) | 45 V/mV typ | 175 V/mV typ |
-| Input capacitance | 1.8 pF | 0.6 pF differential / 1.3 pF common-mode |
-| Crosstalk at 1 kHz | -105 dB | -123 dB |
-| Distortion (20 kHz, 2 V p-p, 5 V) | -108 dBc (RL = 600 Ω) | -108 dBc SFDR (G = -1, RF = RG = 4 kΩ); -99 dBc (G = +1, RL = 1 kΩ). Test conditions differ. |
-| Closed-loop output impedance (low frequency) | <0.2 Ω | <0.01 Ω |
-| Packages / θJA SOIC | PDIP-8, SOIC-8 / 160 °C/W | SOIC-8, MSOP-8 / 120 °C/W (MSOP 133 °C/W) |
-| Input common-mode abs max | ±VS | ±VS ± 0.7 V |
-| Quiescent current total (5 V; ±15 V) | 5.2 typ / 5.6 max mA; 7.0 / 8.4 mA | 5.1 typ / 5.7 max mA; 6.3 / 8.4 mA |
-
-**Audio impact:** No listening or measurement reports for the AD823A were found. On paper it fixes the AD823's main headphone weakness with about 2.5x the linear output current. It also has lower noise, higher slew and closed-loop output impedance below 0.01 Ω (versus below 0.2 Ω). Do not assume the praised AD823 sound carries over: the community reputation comes from the original CB-process part, mostly the PDIP AD823AN/ANZ.
-
-- [github.com/myhumankit/Detecteur_de_muo…atasheets/AD823A.pdf](https://github.com/myhumankit/Detecteur_de_muons/blob/main/Datasheets/AD823A.pdf)
-- [github.com/oihdesigns/Micro-DMM/blob/m…a%20Sheets/ad823.pdf](https://github.com/oihdesigns/Micro-DMM/blob/main/Component%20Data%20Sheets/ad823.pdf)
-- [github.com/gburgyan/electronics-parts/…asheets/AD823ANZ.pdf](https://github.com/gburgyan/electronics-parts/blob/main/datasheets/AD823ANZ.pdf)
 
 ## LM4562 / LME49720 / LME49710 / LME49740 (National ultra-low-distortion bipolar audio op-amps): Texas Instruments, PCN 20180308002 issued March 2018 (Mouser copy 20180309,…
 
@@ -851,6 +1143,33 @@ TI's RC4580 is a pin- and function-compatible second source. No evidence was fou
 - [headphonesty.com/2026/07/industry-trus…uilt-boards-failing/](https://www.headphonesty.com/2026/07/industry-trusted-op-amp-rebuilt-boards-failing/)
 - [github.com/vgreff/LTSpiceLibraries/blo…glib/sub/NJM4580.lib](https://github.com/vgreff/LTSpiceLibraries/blob/8913bcc7bd392af5bc4ad8df433bb4477ff6b8e6/LTSpice/vglib/sub/NJM4580.lib)
 
+## OP275 (dual 'Butler' bipolar/JFET audio op-amp, Analog Devices): Analog Devices, 2007 onward (PCN 07_0024; the Rev.
+
+*When:* 2007 onward (PCN 07_0024; the Rev. E reissue date was not seen)
+
+Assembly-material change. Sumitomo discontinued mold compounds 6300H, 6650RL, 6710S, 6730B and 7050B, so ADI changed the mold compound, and in some cases the die-attach material, for PDIP, SOIC and other packages, together with a polyimide implementation. Two searches linked OP275 to this PCN, but the parts list was not read.
+
+**How to tell old from new:** Not visible in the part number. Compare the date code or lot against the PCN effective date in the PCN 07_0024 Rev. E parts list.
+
+**Audio impact:** None expected. Only package and die-coat materials changed, and no electrical spec change was reported.
+
+- [analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf)
+- [analog.com/media/en/pcn/ADI_PCN_07_002…v_E_Parts%20List.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Parts%20List.pdf)
+
+## OP275 (dual 'Butler' bipolar/JFET audio op-amp, Analog Devices): Analog Devices, RoHS transition (date not confirmed)
+
+*When:* RoHS transition (date not confirmed)
+
+Lead-free ordering codes replaced the leaded GP and GS codes. Distributors list OP275GS as obsolete and OP275GPZ and OP275GSZ as production or active. No die change was reported.
+
+**How to tell old from new:** The RoHS parts carry a Z suffix in the ordering code. On recent parts the top mark reads 'OP275G'.
+
+**Audio impact:** None reported.
+
+- [worldwayelec.com/pro/analog-devices/op275gs/160728](https://www.worldwayelec.com/pro/analog-devices/op275gs/160728)
+- [octopart.com/part/analog-devices/OP275GPZ](https://octopart.com/part/analog-devices/OP275GPZ)
+- [digikey.com/en/products/detail/analog-…-inc/OP275GSZ/625165](https://www.digikey.com/en/products/detail/analog-devices-inc/OP275GSZ/625165)
+
 ## OPA134 / OPA2134 / OPA4134 (Burr-Brown SoundPlus FET-input audio op-amp): Texas Instruments, PCN 20231219018.1 (fab move, Dec 2023);
 
 *When:* PCN 20231219018.1 (fab move, Dec 2023); SBOS058B (about Aug 2024, current PDF Nov 2024); PCN 20240902002.1 (3 Sep 2024). New-die parts confirmed with 2025 date codes (TI E2E 1626121, March 2026).
@@ -922,27 +1241,28 @@ The datasheet specs changed at the move from Mixed Status to Production Data: Vo
 
 ## THS4631 (single high-voltage, high-slew-rate, wideband JFET-input op amp): Texas Instruments, Published in SLOS451C (March 2025).
 
-*When:* Published in SLOS451C (March 2025). TI was still serving Rev B, with the legacy limits, in a PDF generated 2019-03-21, and TI's PSpice model dated 2020-11-02 still uses the Rev B Iq and Isc values (11.5 mA; +98/−95 mA). The re-characterisation therefore went public between 2019 and March 2025. No PCN was located, and the physical change date is unknown.
+*When:* Published in SLOS451C (March 2025). Rev B (Aug 2011) was still current in 2019, and TI's PSpice model dated 2020-11-02 still uses the Rev B Iq and Isc values. No PCN was located, and the physical change date is unknown. The Sep-2023 PDN20230907001 discontinued only the D and DGN tube SKUs; it is a SKU action, not evidence of a die change.
 
-Rev C re-characterises the THS4631 on 'new silicon data'. Output current rises sharply (typ 98 to 180 mA; min at 25 °C 90 to 120 mA), and quiescent current rises (typ 11.5 to 12.5 mA; max 13 to 14.5 mA). The 0.1 dB flatness with an 8.2 pF feedback capacitor is re-specified from 38 to 6 MHz. The new pin table also describes the PowerPAD as tied to V− instead of electrically isolated. Headline specs are unchanged: 7 nV/√Hz, 20 fA/√Hz, 210 MHz GBW, 1000 V/µs, ±500 µV Vos max, 100 pA Ib max. The spec changes are vendor-documented. That they reflect a new die, process, fab or leadframe attach is an inference; TI does not say so. The pattern resembles other TI legacy-part refreshes of 2024–2025.
+Rev C re-characterises the THS4631 on 'new silicon data'. Output current rises sharply (98 to 180 mA typ), quiescent current rises (11.5 to 12.5 mA typ; 13 to 14.5 mA max), and 0.1 dB flatness with CF=8.2 pF is re-specified from 38 to 6 MHz. The new pin table ties the PowerPAD to V−, while the layout text still says isolated. Headline specs are unchanged: 7 nV/√Hz, 210 MHz GBW, 1000 V/µs, ±500 µV Vos max, 100 pA Ib max. A die, fab or process change is an inference; TI does not state it.
 
-**How to tell old from new:** By datasheet only. SLOS451C (Rev C, March 2025) says 'Updated graphs with new silicon data' and carries new limits; SLOS451B (Aug 2011) describes the legacy part. The top marking is unchanged ('4631' on D/DDA, 'ADK' on DGN, the same in the 2017 and 2025 addenda), so the marking cannot tell old from new. No date-code cutoff or PCN number was found. The '.A'/'.B' orderable suffixes in the 2025 addendum are a TI-wide addendum convention (they also appear on NE5532, TL071, LF353, OPA1652 and OPA1611), so they are not evidence of a THS4631 die change.
+**How to tell old from new:** By datasheet only. SLOS451C (Rev C, March 2025) says 'Updated graphs with new silicon data' and carries new limits; SLOS451B (Aug 2011) describes the legacy part. The top marking is unchanged ('4631' on D/DDA, 'ADK' on DGN in both the 2017 and 2025 addenda), and no date-code cutoff or PCN was found. The '.A'/'.B' orderable suffixes are TI-wide and not evidence of a die change.
 
 | Parameter | Before | After |
 |---|---|---|
-| Static output current, sourcing (RL=20 Ω) | 98 mA typ; 90 mA min (25 °C); 85 mA (0–70 °C); 80 mA min (−40 to 85 °C) | 180 mA typ; 120 mA min (25 °C); 90 mA min (−40 to 85 °C) |
-| Static output current, sinking (RL=20 Ω) | 95 mA typ; 85 mA min (25 °C); 80 mA (0–70 °C and −40 to 85 °C) | −180 mA typ; −120 mA (25 °C); −90 mA (−40 to 85 °C) |
+| Static output current, sourcing (RL=20 Ω) | 98 mA typ; 90 mA min (25 °C); 80 mA min (−40 to 85 °C) | 180 mA typ; 120 mA min (25 °C); 90 mA min (−40 to 85 °C) |
+| Static output current, sinking (RL=20 Ω) | 95 mA typ; 85 mA min (25 °C); 80 mA (−40 to 85 °C) | −180 mA typ; −120 mA (25 °C); −90 mA (−40 to 85 °C) |
 | Quiescent current typ | 11.5 mA | 12.5 mA (not listed in the revision history) |
 | Quiescent current max | 13 mA (25 °C); 14 mA (over temp) | 14.5 mA (25 °C); 15 mA (−40 to 85 °C) |
 | 0.1 dB flatness, G=2, RF=499 Ω, CF=8.2 pF | 38 MHz typ | 6 MHz typ |
 | 0.1 dB flatness, G=2, RF=499 Ω, no CF | not specified | 20 MHz typ |
-| PowerPAD / thermal pad electrical connection | 'Electrically isolated from all other pins'; ground recommended; VS− to VS+ allowed | Pin table: 'internally connected to V−', must be soldered to V−. The layout section still says isolated/ground (self-contradictory). |
+| PowerPAD electrical connection | 'Electrically isolated'; ground recommended; VS− to VS+ allowed | Pin table: internally connected to V−. The layout text in the same Rev C still says isolated/ground. |
 
-**Audio impact:** No listening or measurement comparison of old and new lots was found. In practice: more idle heat, already the main known problem in DIP-adapter use; much stronger static drive, useful for low-impedance and headphone loads; and a different AC response with feedback capacitance. That last point matters because the THS4631 is already oscillation-prone in I/V stages, so Zobel and CF values tuned on old parts may need re-checking. The Japanese sound impressions (c. 2018–2020) were formed on pre-Rev-C silicon.
+**Audio impact:** No listening or measurement comparison of old and new lots was found. Expect more idle heat, stronger static drive and a different response with feedback capacitance. The part is already oscillation-prone in I/V stages, so Zobel and CF values tuned on old parts may need re-checking. The Japanese impressions (c. 2018–2020) predate Rev C.
 
+- [ti.com/lit/ds/slos451c/slos451c.pdf](https://www.ti.com/lit/ds/slos451c/slos451c.pdf)
+- [ti.com/lit/ds/symlink/ths4631.pdf](https://www.ti.com/lit/ds/symlink/ths4631.pdf)
 - [github.com/wirthda/usb-oscilloscope/bl…ts/ths4631_opamp.pdf](https://github.com/wirthda/usb-oscilloscope/blob/main/docs/datasheets/ths4631_opamp.pdf)
 - [github.com/studyHooligen/DataSheet/blo…mplifier/ths4631.pdf](https://github.com/studyHooligen/DataSheet/blob/master/opAmplifier/ths4631.pdf)
-- [ti.com/lit/ds/symlink/ths4631.pdf](https://www.ti.com/lit/ds/symlink/ths4631.pdf)
 - [github.com/wirthda/usb-oscilloscope/bl…ce/LIB/ths4631_b.lib](https://github.com/wirthda/usb-oscilloscope/blob/main/sim/PSpice/LIB/ths4631_b.lib)
 
 ## TL071 / TL072 / TL074 (incl. TL07xH next-gen die): Texas Instruments, Oct 2020 (SLOS080O, preview); production TL072H Jun 2021…

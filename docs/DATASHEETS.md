@@ -631,57 +631,101 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | 02916 (pubcode D02916-0-1/19(L)) | L (latest seen; presumed current) | 1/2019 | [analog.com/media/en/technical-document…eets/AD8065_8066.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8065_8066.pdf) | vendor_current | medium |
+| Analog Devices | 02916 (pubcode D02916-0-1/19(L)) | L (current as of Sept 2026 search; no Rev. M surfaced) | 1/2019 | [analog.com/media/en/technical-document…eets/AD8065_8066.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8065_8066.pdf) | vendor_current | high |
 | Analog Devices | D02916-0-1/19(L) | L | 1/2019 | [raw.githubusercontent.com/VagueDefine/…0260603105136022.pdf](https://raw.githubusercontent.com/VagueDefine/WangLei/HEAD/content/200HARDWARE/100%E7%A1%AC%E4%BB%B6%E7%94%B5%E8%B7%AF/03-%E8%8A%AF%E7%89%87%E9%80%89%E5%9E%8B/0000assets/1%E3%80%81%E6%94%BE%E5%A4%A7%E5%99%A8%E9%80%89%E6%8B%A9/file-20260603105136022.pdf) | third_party_mirror | high |
+| Analog Devices (via Farnell) | 02916 | K | 8/2016 (per revision history) | [farnell.com/datasheets/2147155.pdf](https://www.farnell.com/datasheets/2147155.pdf) | distributor_mirror | medium |
+| Analog Devices (via Mouser) | 02916 | J | 8/2010 (per revision history) | [mouser.com/datasheet/2/609/adi_ad8065_8066-1215462.pdf](https://www.mouser.com/datasheet/2/609/adi_ad8065_8066-1215462.pdf) | distributor_mirror | medium |
+| Analog Devices (via DigiKey) | 02916 | I | 3/2009 (per revision history) | [media.digikey.com/pdf/Data%20Sheets/An…20PDFs/AD8065,66.pdf](https://media.digikey.com/pdf/Data%20Sheets/Analog%20Devices%20PDFs/AD8065,66.pdf) | distributor_mirror | medium |
 | Analog Devices | C02916-0-11/03(D) | D | 11/2003 (copyright 2003; PDF created 2003-10-23, modified 2003-11-04) | [media.githubusercontent.com/media/ZERO…5%A4%A7%E5%99%A8.pdf](https://media.githubusercontent.com/media/ZERO-A-ONE/FZU-IS-404/HEAD/%E5%A4%A7%E4%B8%89/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/%E8%8A%AF%E7%89%87%E6%89%8B%E5%86%8C/%E5%BC%80%E5%8F%91%E6%9D%BF%E8%8A%AF%E7%89%87%E8%B5%84%E6%96%99/AD8065%2CAD8066%E9%AB%98%E6%80%A7%E8%83%BD%E8%BF%90%E7%AE%97%E6%94%BE%E5%A4%A7%E5%99%A8.pdf) | third_party_mirror | high |
+| Analog Devices (via Octopart) | 02916 | unknown (title has no 'Data Sheet' prefix, which in the mirrors seen matches Rev. I/J-era styling; unconfirmed) | unknown | [datasheet.octopart.com/AD8066ARZ-Analo…atasheet-9575005.pdf](https://datasheet.octopart.com/AD8066ARZ-Analog-Devices-datasheet-9575005.pdf) | distributor_mirror | low |
+| Analog Devices (via alldatasheet) | 02916 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/83610/AD/AD8066.html](https://www.alldatasheet.com/datasheet-pdf/pdf/83610/AD/AD8066.html) | third_party_mirror | low |
+| Analog Devices (via alldatasheet) | 02916 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/539180/AD/AD8066ARMZ.html](https://www.alldatasheet.com/datasheet-pdf/pdf/539180/AD/AD8066ARMZ.html) | third_party_mirror | low |
+| Analog Devices (via Radiolocman) | 02916 | L | 1/2019 | [radiolocman.com/datasheet/pdf.html?di=55129](https://www.radiolocman.com/datasheet/pdf.html?di=55129) | third_party_mirror | medium |
+| Analog Devices (via usermanual.wiki) | 02916 | L | 1/2019 | [usermanual.wiki/m/039286c824088bf02472…74f9838d903a6a64771f](https://usermanual.wiki/m/039286c824088bf0247246598fb23163278c826121a874f9838d903a6a64771f) | third_party_mirror | medium |
+| Analog Devices (via datasheet4u / datasheetbank) | 02916 | unknown | unknown | [datasheet4u.com/datasheet-pdf/AnalogDe…6/pdf.php?id=1088486](https://datasheet4u.com/datasheet-pdf/AnalogDevices/AD8066/pdf.php?id=1088486) | third_party_mirror | low |
 | Analog Devices | 02916 | unknown (whatever was current c. 2009) | unknown | [analog.com/static/imported-files/data_sheets/AD8065_8066.pdf](http://www.analog.com/static/imported-files/data_sheets/AD8065_8066.pdf) | vendor_legacy | medium |
 | Analog Devices (Japan) | 02916 (JP translation) | unknown | unknown | [analog.com/media/jp/technical-document…s/AD8065_8066_JP.pdf](https://www.analog.com/media/jp/technical-documentation/data-sheets/AD8065_8066_JP.pdf) | vendor_legacy | low |
-| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad8066.html](https://www.analog.com/en/products/ad8066.html) | product_page | medium |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad8066.html](https://www.analog.com/en/products/ad8066.html) | product_page | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad8065.html](https://www.analog.com/en/products/ad8065.html) | product_page | high |
 
 ## [AD823 (dual 16 MHz JFET-input, rail-to-rail output) + AD823A (2012 XFCB redesign)](families/AD823.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
+| Analog Devices | D00901-0-11/11(E) | E | 11/11 | [analog.com/media/en/technical-document…ata-sheets/AD823.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD823.pdf) | vendor_current | high |
+| Analog Devices | AD823 | n/a |  | [analog.com/en/products/ad823.html](https://www.analog.com/en/products/ad823.html) | product_page | high |
+| Analog Devices | D00901-0-11/11(E) | E | 11/11 | [github.com/oihdesigns/Micro-DMM/blob/m…a%20Sheets/ad823.pdf](https://github.com/oihdesigns/Micro-DMM/blob/main/Component%20Data%20Sheets/ad823.pdf) | third_party_mirror | high |
 | Analog Devices | AD823 data sheet (pubcode 00901) | 0 | 5/95 |  | vendor_legacy | high |
+| Analog Devices | C00901-0-5/04(A) | A | 5/04 | [futurlec.com/Datasheet/AnalogDevices/AD823AN.pdf](https://futurlec.com/Datasheet/AnalogDevices/AD823AN.pdf) | third_party_mirror | high |
 | Analog Devices | C00901-0-5/04(A) | A | 5/04 | [github.com/gburgyan/electronics-parts/…asheets/AD823ANZ.pdf](https://github.com/gburgyan/electronics-parts/blob/main/datasheets/AD823ANZ.pdf) | third_party_mirror | high |
 | Analog Devices | D00901 (Rev. B) | B | 2/07 |  | vendor_legacy | high |
+| Analog Devices | D00901 | unknown (possibly B, 2/07) | 2007 (per URL label) | [datasheetq.com/en/AD823-ADI-2007](https://www.datasheetq.com/en/AD823-ADI-2007) | third_party_mirror | low |
 | Analog Devices | D00901 (Rev. C) | C | 5/10 |  | vendor_legacy | high |
 | Analog Devices | D00901 (Rev. D) | D | 6/10 |  | vendor_legacy | high |
-| Analog Devices | D00901-0-11/11(E) | E | 11/11 | [github.com/oihdesigns/Micro-DMM/blob/m…a%20Sheets/ad823.pdf](https://github.com/oihdesigns/Micro-DMM/blob/main/Component%20Data%20Sheets/ad823.pdf) | third_party_mirror | high |
-| Analog Devices | D00901 | E presumed (not directly verified) |  | [analog.com/media/en/technical-document…ata-sheets/AD823.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD823.pdf) | vendor_current | medium |
+| Analog Devices | 00901 | unknown |  | [datasheet.octopart.com/AD823ARZ-Analog…atasheet-9933992.pdf](https://datasheet.octopart.com/AD823ARZ-Analog-Devices-datasheet-9933992.pdf) | distributor_mirror | low |
+| Analog Devices | 00901 | unknown (possibly 0) |  | [datasheet4u.com/datasheets/Analog-Devices/AD823/142597](https://datasheet4u.com/datasheets/Analog-Devices/AD823/142597) | third_party_mirror | low |
+| Analog Devices | 00901 | unknown (possibly 0) |  | [datasheetcatalog.com/datasheets_pdf/A/D/8/2/AD823.shtml](https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/2/AD823.shtml) | third_party_mirror | low |
+| Analog Devices | 00901 | unknown |  | [digchip.com/datasheets/parts/datasheet/041/AD823.php](https://www.digchip.com/datasheets/parts/datasheet/041/AD823.php) | third_party_mirror | low |
+| Analog Devices | 00901 | unknown |  | [elcodis.com/parts/1341771/AD823AN.html](https://elcodis.com/parts/1341771/AD823AN.html) | third_party_mirror | low |
+| Analog Devices | D09439-0-6/12(B) | B | 6/12 | [analog.com/media/en/technical-document…ta-sheets/AD823A.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD823A.pdf) | vendor_current | high |
 | Analog Devices | D09439-0-5/12(A) | A | 5/12 |  | vendor_legacy | high |
 | Analog Devices | D09439-0-6/12(B) | B | 6/12 | [github.com/myhumankit/Detecteur_de_muo…atasheets/AD823A.pdf](https://github.com/myhumankit/Detecteur_de_muons/blob/main/Datasheets/AD823A.pdf) | third_party_mirror | high |
-| Analog Devices | D09439 | unknown (B or later) |  | [analog.com/media/en/technical-document…ta-sheets/AD823A.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD823A.pdf) | vendor_current | medium |
-| Analog Devices | D09439 | unknown |  | [static.chipdip.ru/lib/696/DOC011696628.pdf](https://static.chipdip.ru/lib/696/DOC011696628.pdf) | distributor_mirror | medium |
+| Analog Devices | D09439 | B | 6/12 | [radiolocman.com/datasheet/pdf.html?di=171865](https://www.radiolocman.com/datasheet/pdf.html?di=171865) | third_party_mirror | medium |
+| Analog Devices | D09439 | unknown |  | [alldatasheet.com/datasheet-pdf/pdf/1955068/AD/AD823A.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1955068/AD/AD823A.html) | third_party_mirror | low |
+| Analog Devices | D09439 | unknown |  | [datasheetq.com/en/pdf-html/189347/ADI/1page/AD823A.html](https://www.datasheetq.com/en/pdf-html/189347/ADI/1page/AD823A.html) | third_party_mirror | low |
+| Analog Devices | D09439 | unknown |  | [static.chipdip.ru/lib/696/DOC011696628.pdf](https://static.chipdip.ru/lib/696/DOC011696628.pdf) | distributor_mirror | low |
 
 ## [AD8597 / AD8599 (single/dual ultralow-noise, ultralow-distortion bipolar)](families/AD8599.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | AD8597/AD8599 | unknown (current) | unknown | [analog.com/media/en/technical-document…eets/AD8597_8599.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8597_8599.pdf) | vendor_current | high |
-| Analog Devices | AD8597/AD8599 | unknown (an early revision was served here by Dec 2009) | unknown | [analog.com/static/imported-files/data_sheets/AD8597_8599.pdf](http://www.analog.com/static/imported-files/data_sheets/AD8597_8599.pdf) | vendor_legacy | high |
-| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad8599.html](https://www.analog.com/en/products/ad8599.html) | product_page | low |
-| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad8597.html](https://www.analog.com/en/products/ad8597.html) | product_page | low |
+| Analog Devices | AD8597/AD8599 | F | 08/20/2015 per search-result metadata (unconfirmed; may be conflated with the AD8599-EP Rev. 0 date) | [analog.com/media/en/technical-document…eets/AD8597_8599.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8597_8599.pdf) | vendor_current | high |
+| Analog Devices | AD8599-EP | 0 | 8/15 (08/20/2015) | [analog.com/media/en/technical-document…sheets/AD8599-EP.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8599-EP.pdf) | vendor_current | high |
+| Analog Devices | AD8599 | A | 2007 | [bdtic.com/datasheet/adi/AD8599.pdf](https://www.bdtic.com/datasheet/adi/AD8599.pdf) | third_party_mirror | medium |
+| Analog Devices | AD8597/AD8599 | F | unknown | [radiolocman.com/datasheet/pdf.html?di=170475](https://www.radiolocman.com/datasheet/pdf.html?di=170475) | third_party_mirror | high |
+| Analog Devices | AD8599 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/171341/AD/AD8599.html](https://www.alldatasheet.com/datasheet-pdf/pdf/171341/AD/AD8599.html) | third_party_mirror | medium |
+| Analog Devices | AD8597/AD8599 | unknown | unknown | [farnell.com/datasheets/1877551.pdf](https://www.farnell.com/datasheets/1877551.pdf) | distributor_mirror | medium |
+| Analog Devices | AD8597/AD8599 | unknown | unknown | [marutsu.co.jp/contents/shop/marutsu/datasheet/AD8599.pdf](https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/AD8599.pdf) | distributor_mirror | medium |
+| Analog Devices | AD8597/AD8599 | unknown | unknown | [radiolocman.com/datasheet/data.html?di=349687](https://www.radiolocman.com/datasheet/data.html?di=349687) | third_party_mirror | medium |
+| Analog Devices | AD8599-EP | unknown (likely 0) | unknown | [digikey.com/htmldatasheets/production/…0/0/1/ad8599-ep.html](https://www.digikey.com/htmldatasheets/production/3206450/0/0/1/ad8599-ep.html) | distributor_mirror | medium |
+| Analog Devices | AD8597/AD8599 | unknown (an early combined revision was served here by Dec 2009) | unknown | [analog.com/static/imported-files/data_sheets/AD8597_8599.pdf](http://www.analog.com/static/imported-files/data_sheets/AD8597_8599.pdf) | vendor_legacy | medium |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad8599.html](https://www.analog.com/en/products/ad8599.html) | product_page | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad8597.html](https://www.analog.com/en/products/ad8597.html) | product_page | high |
 
 ## [AD8610 / AD8620 (single/dual precision low-noise JFET)](families/AD8610.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | AD8610/AD8620 (ADI uses no literature number) | not verified (current ADI 'Rev.' letter unknown) | not verified | [analog.com/media/en/technical-document…eets/AD8610_8620.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf) | vendor_current | high |
+| Analog Devices | AD8610/AD8620 (ADI uses no literature number) | Rev. F is the newest letter seen (mirrors). Whether the live ADI file is still Rev. F, or a later G, is not confirmed. A search for Rev. G/H found nothing. | Rev. F reported as 02/10/2009 (from a search summary; the printed date was not seen) | [analog.com/media/en/technical-document…eets/AD8610_8620.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf) | vendor_current | high |
 | Analog Devices | AD8610/AD8620 | unknown (whatever was current around 2016-2019) | unknown | [analog.com/media/en/technical-document…eets/AD8610_8620.pdf](http://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf) | vendor_legacy | medium |
-| Analog Devices | AD8610/AD8620 | unknown (older than the /media/en/ copies) | unknown | [analog.com/static/imported-files/data_sheets/AD8610_8620.pdf](http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf) | vendor_legacy | medium |
+| Analog Devices | AD8610/AD8620 | unknown (older than the /media/en/ copies) | unknown | [analog.com/static/imported-files/data_sheets/ad8610_8620.pdf](https://www.analog.com/static/imported-files/data_sheets/ad8610_8620.pdf) | vendor_legacy | high |
+| Analog Devices (third-party mirror by RadioLocman) | AD8610/AD8620 (RadioLocman di=121341) | Rev. F | 2009 (reported as 02/10/2009) | [radiolocman.com/datasheet/pdf.html?di=121341&p=19](https://www.radiolocman.com/datasheet/pdf.html?di=121341&p=19) | third_party_mirror | medium |
+| Analog Devices (distributor mirror by AiChipLink) | AD8610/AD8620 | Rev. D | unknown | [file.aichiplink.com/r/datasheets/analo…-datasheets-5501.pdf](https://file.aichiplink.com/r/datasheets/analogdevices-ad8610armzreel-datasheets-5501.pdf) | distributor_mirror | medium |
+| Analog Devices (third-party mirror by DatasheetQ) | AD8610/AD8620 | Rev. D (per URL slug 'RevD') | unknown | [datasheetq.com/AD8610-doc-ADI-RevD](https://www.datasheetq.com/AD8610-doc-ADI-RevD) | third_party_mirror | medium |
+| Analog Devices (distributor mirror by Octopart) | AD8610/AD8620 | unknown | unknown | [datasheet.octopart.com/AD8610ARZ-Analo…atasheet-9733451.pdf](https://datasheet.octopart.com/AD8610ARZ-Analog-Devices-datasheet-9733451.pdf) | distributor_mirror | medium |
+| Analog Devices (third-party mirror by datasheet.su) | AD8610/AD8620 | unknown | unknown | [pdf4.datasheet.su/131220.pdf](https://pdf4.datasheet.su/131220.pdf) | third_party_mirror | medium |
+| Analog Devices (Internet Archive, ManualLib upload) | AD8610/AD8620 (manuallib-id-2588235) | unknown | unknown | [archive.org/details/manuallib-id-2588235](https://archive.org/details/manuallib-id-2588235) | archive | medium |
 | Analog Devices (third-party mirror by ChipDip) | DOC000150035 (ChipDip id) | unknown | unknown | [static.chipdip.ru/lib/150/DOC000150035.pdf](https://static.chipdip.ru/lib/150/DOC000150035.pdf) | third_party_mirror | low |
-| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad8610.html](https://www.analog.com/en/products/ad8610.html) | product_page | low |
-| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad8620.html](https://www.analog.com/en/products/ad8620.html) | product_page | low |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad8610.html](https://www.analog.com/en/products/ad8610.html) | product_page | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad8620.html](https://www.analog.com/en/products/ad8620.html) | product_page | high |
 
 ## [ADA4627-1 / ADA4637-1 (ADI single JFET-input; ADA4637-1 decompensated)](families/ADA4627.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | unknown | unknown (earliest known; ADA4627-1-only, before the ADA4637-1) | on or before 2009-12-22 | [analog.com/static/imported-files/data_sheets/ADA4627-1.pdf](http://www.analog.com/static/imported-files/data_sheets/ADA4627-1.pdf) | vendor_legacy | medium |
-| Analog Devices | unknown | unknown (current) | unknown | [analog.com/en/products/ada4627-1.html](https://www.analog.com/en/products/ada4627-1.html) | product_page | low |
-| Analog Devices | unknown | unknown (current) | unknown | [analog.com/en/products/ada4637-1.html](https://www.analog.com/en/products/ada4637-1.html) | product_page | low |
-| Mouser (distributor) | n/a | n/a | unknown | [mouser.com/ProductDetail/Analog-Devices/ADA4637-1ARZ](https://www.mouser.com/ProductDetail/Analog-Devices/ADA4637-1ARZ) | product_page | low |
+| Analog Devices | ADA4627-1_4637-1 (ADI file name; footer D-code not seen) | F | unknown as printed. One search summary associated Rev. F with 08/02/2010, which is doubtful for a sixth revision; unconfirmed. | [analog.com/media/en/technical-document…ADA4627-1_4637-1.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf) | vendor_current | high |
+| Analog Devices | n/a | n/a (current) | n/a | [analog.com/en/products/ada4627-1.html](https://www.analog.com/en/products/ada4627-1.html) | product_page | high |
+| Analog Devices | n/a | n/a (current) | n/a | [analog.com/en/products/ada4637-1.html](https://www.analog.com/en/products/ada4637-1.html) | product_page | high |
+| Analog Devices | unknown | unknown (earliest known; ADA4627-1 only) | on or before 2009-12-22 | [analog.com/static/imported-files/data_sheets/ADA4627-1.pdf](http://www.analog.com/static/imported-files/data_sheets/ADA4627-1.pdf) | vendor_legacy | low |
+| Analog Devices (via Octopart) | unknown | unknown; possibly a preliminary Rev. PrA (a search summary mentioned 'Rev. PrA', but the PDF it came from is unclear) | unknown (about 2010) | [datasheet.octopart.com/ADA4637-1BRZ-An…tasheet-10549678.pdf](https://datasheet.octopart.com/ADA4637-1BRZ-Analog-Devices-datasheet-10549678.pdf) | distributor_mirror | medium |
+| Analog Devices (via datasheetq) | unknown | A (from the URL slug 'ADI-RevA') | unknown | [datasheetq.com/ADA4627-1-doc-ADI-RevA](https://www.datasheetq.com/ADA4627-1-doc-ADI-RevA) | third_party_mirror | medium |
+| Analog Devices (via Alldatasheet) | unknown | unknown (the low ID suggests an early revision; inference) | unknown | [alldatasheet.com/datasheet-pdf/pdf/300883/AD/ADA4627-1.html](https://www.alldatasheet.com/datasheet-pdf/pdf/300883/AD/ADA4627-1.html) | third_party_mirror | medium |
+| Analog Devices (via Alldatasheet) | unknown | unknown (older upload) | unknown | [alldatasheet.com/datasheet-pdf/pdf/393617/AD/ADA4637-1.html](https://www.alldatasheet.com/datasheet-pdf/pdf/393617/AD/ADA4637-1.html) | third_party_mirror | medium |
+| Analog Devices (via Alldatasheet) | unknown | unknown (probably a later revision) | unknown | [alldatasheet.com/datasheet-pdf/pdf/1963386/AD/ADA4637-1.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1963386/AD/ADA4637-1.html) | third_party_mirror | medium |
+| Analog Devices (via Digi-Key) | ADA4627-1_4637-1 | unknown (probably recent) | unknown | [digikey.com/htmldatasheets/production/…627-1-ada4637-1.html](https://www.digikey.com/htmldatasheets/production/752954/0/0/1/ada4627-1-ada4637-1.html) | distributor_mirror | medium |
+| Analog Devices (via RadioLocman) | unknown | unknown | unknown | [radiolocman.com/datasheet/data.html?di=349203&%2FADA4637-1=](https://www.radiolocman.com/datasheet/data.html?di=349203&%2FADA4637-1=) | third_party_mirror | medium |
+| Analog Devices (via DataSheetAll) | unknown | unknown | unknown | [datasheetall.com/adi/ada4627-1/](https://www.datasheetall.com/adi/ada4627-1/) | third_party_mirror | medium |
+| Mouser (distributor) | n/a | n/a | n/a | [mouser.com/en/ProductDetail/Analog-Dev…Fx4Bw8xndm%2Fw%3D%3D](https://www.mouser.com/en/ProductDetail/Analog-Devices/ADA4637-1ARZ?qs=BpaRKvA4VqFx4Bw8xndm%2Fw%3D%3D) | product_page | high |
 
 ## [LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input)](families/LF353.md)
 
@@ -801,14 +845,32 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices (Linear Technology document) | 1469fb | B | 1/11 (footer 'LT 0111 REV B'; original copyright 2000) | [analog.com/media/en/technical-document…ta-sheets/1469fb.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/1469fb.pdf) | vendor_current | low |
-| Linear Technology (third-party GitHub mirror) | 1469fb | B | 1/11 (PDF CreationDate 2011-01-06, ModDate 2011-01-10, Adobe InDesign CS5) | [github.com/Vitorbnc/electronics-datash…ter/ICs/lt1469fb.pdf](https://github.com/Vitorbnc/electronics-datasheets/blob/master/ICs/lt1469fb.pdf) | third_party_mirror | high |
-| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/lt1469.html](https://www.analog.com/en/products/lt1469.html) | product_page | low |
-| Analog Devices | unknown (LT1468 datasheet code not found) | unknown | unknown | [analog.com/en/products/lt1468.html](https://www.analog.com/en/products/lt1468.html) | product_page | low |
+| Analog Devices (Linear Technology document) | 1469fb | B | 1/11 (footer 'LT 0111 REV B'; original copyright 2000) | [analog.com/media/en/technical-document…ta-sheets/1469fb.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/1469fb.pdf) | vendor_current | high |
+| Linear Technology (third-party GitHub mirror) | 1469fb | B | 1/11 (PDF CreationDate 2011-01-06, ModDate 2011-01-10) | [github.com/Vitorbnc/electronics-datash…ter/ICs/lt1469fb.pdf](https://github.com/Vitorbnc/electronics-datasheets/blob/master/ICs/lt1469fb.pdf) | third_party_mirror | high |
+| Analog Devices (Linear Technology document) | 14692f | original (no revision letter in file code) | unknown | [analog.com/media/en/technical-document…ta-sheets/14692f.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/14692f.pdf) | vendor_current | medium |
+| Analog Devices (Linear Technology document) | 1468fb | B | unknown | [analog.com/media/en/technical-document…ta-sheets/1468fb.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/1468fb.pdf) | vendor_current | medium |
+| Analog Devices (Linear Technology document) | 14682fb | B | unknown | [analog.com/media/en/technical-document…a-sheets/14682fb.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/14682fb.pdf) | vendor_current | medium |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/lt1469.html](https://www.analog.com/en/products/lt1469.html) | product_page | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/lt1469-2.html](https://www.analog.com/en/products/lt1469-2.html) | product_page | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/lt1468.html](https://www.analog.com/en/products/lt1468.html) | product_page | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/lt1468-2.html](https://www.analog.com/en/products/lt1468-2.html) | product_page | low |
 | Linear Technology | n/a | n/a | pre-2017 | [linear.com/product/LT1469](http://www.linear.com/product/LT1469) | vendor_legacy | medium |
 | Linear Technology | n/a | n/a | pre-2017 | [linear.com/product/LT1468](http://www.linear.com/product/LT1468) | vendor_legacy | medium |
 | Linear Technology | n/a | n/a | pre-2017 | [linear.com/product/LT1468-2](http://www.linear.com/product/LT1468-2) | vendor_legacy | medium |
 | Linear Technology | n/a | n/a | pre-2017 | [linear.com/product/LT1469-2](http://www.linear.com/product/LT1469-2) | vendor_legacy | medium |
+| Linear Technology (alldatasheet mirror) | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/70456/LINER/LT1469.html](https://www.alldatasheet.com/datasheet-pdf/pdf/70456/LINER/LT1469.html) | third_party_mirror | medium |
+| Linear Technology (alldatasheet mirror) | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/257…/LINER/LT1469_1.html](https://www.alldatasheet.com/datasheet-pdf/pdf/257793/LINER/LT1469_1.html) | third_party_mirror | medium |
+| Linear Technology (alldatasheet mirror) | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/257814/LINER/1469.html](https://www.alldatasheet.com/datasheet-pdf/pdf/257814/LINER/1469.html) | third_party_mirror | medium |
+| Linear Technology (alldatasheet mirror) | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/1043925/LINER/LT1469.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1043925/LINER/LT1469.html) | third_party_mirror | medium |
+| Linear Technology (datasheetq mirror) | unknown | unknown | unknown | [datasheetq.com/pdf-html/452586/Linear/…/LT1469.html?lang=en](https://www.datasheetq.com/pdf-html/452586/Linear/5page/LT1469.html?lang=en) | third_party_mirror | medium |
+| Linear Technology (datasheetspdf / datasheet4u mirror) | unknown | unknown | unknown | [datasheetspdf.com/pdf/51794/LinearTechnology/LT1469/1](https://datasheetspdf.com/pdf/51794/LinearTechnology/LT1469/1) | third_party_mirror | medium |
+| Linear Technology (radiolocman mirror) | unknown | unknown | unknown | [radiolocman.com/datasheet/data.html?%2FLT1469=&di=339815](https://radiolocman.com/datasheet/data.html?%2FLT1469=&di=339815) | third_party_mirror | medium |
+| Analog Devices (radiolocman mirror) | unknown | unknown | unknown | [radiolocman.com/datasheet/data.html?%2FLT1469=&di=525593](https://www.radiolocman.com/datasheet/data.html?%2FLT1469=&di=525593) | distributor_mirror | medium |
+| Linear Technology (datasheetarchive) | unknown | unknown | unknown | [datasheetarchive.com/LT1469%20-datasheet.html](https://www.datasheetarchive.com/LT1469%20-datasheet.html) | third_party_mirror | medium |
+| Linear Technology (Boston University mirror) | unknown | unknown | unknown | [ohm.bu.edu/~pbohn/STM-Z-BERKELEY/Data_…_zbox/PCB/LT1468.pdf](http://ohm.bu.edu/~pbohn/STM-Z-BERKELEY/Data_Sheets/stm_zbox/PCB/LT1468.pdf) | third_party_mirror | medium |
+| Linear Technology (alldatasheet mirror) | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/70455/LINER/LT1468.html](https://www.alldatasheet.com/datasheet-pdf/pdf/70455/LINER/LT1468.html) | third_party_mirror | medium |
+| Linear Technology / Analog Devices (radiolocman mirror) | unknown | unknown | unknown | [radiolocman.com/datasheet/data.html?di=339759](https://www.radiolocman.com/datasheet/data.html?di=339759) | third_party_mirror | medium |
+| Linear Technology (datasheet4u / datasheetcatalog mirrors) | unknown | unknown | unknown | [datasheet4u.com/datasheet/Linear-Technology/LT1468-51789](https://datasheet4u.com/datasheet/Linear-Technology/LT1468-51789) | third_party_mirror | medium |
 
 ## [MUSES03 (JFET-input single, two-chip MUSES flagship)](families/MUSES03.md)
 
@@ -915,24 +977,59 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
+| Analog Devices | unknown (series C00317 per Rev F; Rev H pubcode not seen) | H | not confirmed (one search summary gave 16 Dec 2016; unconfirmed) | [analog.com/media/en/technical-document…data-sheets/op27.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/op27.pdf) | vendor_current | high |
+| Analog Devices | unknown | H | unknown | [mouser.com/datasheet/2/609/OP27-1626182.pdf](https://www.mouser.com/datasheet/2/609/OP27-1626182.pdf) | distributor_mirror | high |
+| Analog Devices | unknown | H | unknown | [datasheet.octopart.com/OP27GZ-Analog-D…tasheet-67895395.pdf](https://datasheet.octopart.com/OP27GZ-Analog-Devices-datasheet-67895395.pdf) | distributor_mirror | medium |
+| Analog Devices | unknown | H | unknown | [radiolocman.com/datasheet/pdf.html?di=170597](https://www.radiolocman.com/datasheet/pdf.html?di=170597) | third_party_mirror | medium |
+| Analog Devices | unknown | G | unknown | [dtsheet.com/doc/1387743/op27--rev.-g----analog-devices](https://dtsheet.com/doc/1387743/op27--rev.-g----analog-devices) | third_party_mirror | medium |
+| Analog Devices | C00317-0-5/06(F) (per GitHub copy) | F | 5/06 | [media.digikey.com/pdf/Data%20Sheets/An…ices%20PDFs/OP27.pdf](https://media.digikey.com/pdf/Data%20Sheets/Analog%20Devices%20PDFs/OP27.pdf) | distributor_mirror | high |
 | Analog Devices | C00317-0-5/06(F) | F | 5/06 (©2006) | [github.com/tardate/Datasheets/blob/main/components/OP27.pdf](https://github.com/tardate/Datasheets/blob/main/components/OP27.pdf) | third_party_mirror | high |
-| Analog Devices | unknown (Rev F used C00317) | unknown (F or later) | unknown | [analog.com/media/en/technical-document…data-sheets/OP27.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/OP27.pdf) | vendor_current | low |
+| Analog Devices | unknown (C00317 series) | C | 1/03 (per Rev F history) | [yumpu.com/en/document/view/30241975/op…ier-data-sheet-rev-c](https://www.yumpu.com/en/document/view/30241975/op27-low-noise-precision-operational-amplifier-data-sheet-rev-c) | third_party_mirror | medium |
+| Analog Devices | unknown | C (inferred from filename; unconfirmed) | unknown | [mit.edu/~6.301/OP27c.pdf](https://www.mit.edu/~6.301/OP27c.pdf) | third_party_mirror | low |
+| Analog Devices | unknown | unknown (PageMaker-era, probably Rev A–C; unconfirmed) | unknown | [silicon-ark.co.uk/datasheets/op27-gata…t-analog-devices.pdf](https://www.silicon-ark.co.uk/datasheets/op27-gatasheet-analog-devices.pdf) | third_party_mirror | low |
+| Analog Devices | unknown | unknown (Rev D–F layout title; unconfirmed) | unknown | [datasheet.octopart.com/OP27GPZ-Analog-…atasheet-9570635.pdf](https://datasheet.octopart.com/OP27GPZ-Analog-Devices-datasheet-9570635.pdf) | distributor_mirror | low |
+| Analog Devices | unknown | unknown (unconfirmed) | unknown | [archiv.ew.tf.fau.de/lager/datasheet/v007.pdf](https://archiv.ew.tf.fau.de/lager/datasheet/v007.pdf) | third_party_mirror | low |
+| Analog Devices | unknown | unknown (unconfirmed) | unknown | [alldatasheet.com/datasheet-pdf/pdf/49010/AD/OP-27.html](https://www.alldatasheet.com/datasheet-pdf/pdf/49010/AD/OP-27.html) | third_party_mirror | low |
 | Analog Devices | unknown | unknown (quoted specs match Rev F) | cited 2013 | [analog.com/static/imported-files/data_sheets/OP27.pdf](http://www.analog.com/static/imported-files/data_sheets/OP27.pdf) | vendor_legacy | low |
-| Analog Devices | C00319–0–12/02(B) | B | 12/02 (©2002) | [github.com/reivax-boucoi/Datasheets/bl…_low_noise_opamp.pdf](https://github.com/reivax-boucoi/Datasheets/blob/master/OP37_low_noise_opamp.pdf) | third_party_mirror | high |
-| Analog Devices | unknown (Rev B used C00319) | unknown (B or later) | unknown | [analog.com/media/en/technical-document…data-sheets/OP37.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/OP37.pdf) | vendor_current | low |
+| Analog Devices | C00319–0–12/02(B) | B | 12/02 (©2002) | [analog.com/media/en/technical-document…data-sheets/OP37.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/OP37.pdf) | vendor_current | high |
+| Analog Devices | C00319–0–12/02(B) | B | 12/02 | [github.com/reivax-boucoi/Datasheets/bl…_low_noise_opamp.pdf](https://github.com/reivax-boucoi/Datasheets/blob/master/OP37_low_noise_opamp.pdf) | third_party_mirror | high |
+| Analog Devices | unknown | B | unknown | [radiolocman.com/datasheet/pdf.html?di=170593](https://www.radiolocman.com/datasheet/pdf.html?di=170593) | third_party_mirror | medium |
+| Analog Devices | unknown | B (inferred from filename; unconfirmed) | unknown | [mit.edu/~6.301/OP37b.pdf](https://www.mit.edu/~6.301/OP37b.pdf) | third_party_mirror | low |
+| Analog Devices | unknown | A | 2/02 (per Rev B history) | [datasheetq.com/en/preview/OP37-ADI-RevA](https://www.datasheetq.com/en/preview/OP37-ADI-RevA) | third_party_mirror | medium |
+| Analog Devices | unknown | unknown (unconfirmed) | unknown | [alldatasheet.com/datasheet-pdf/pdf/49054/AD/OP37.html](https://www.alldatasheet.com/datasheet-pdf/pdf/49054/AD/OP37.html) | third_party_mirror | low |
 | Analog Devices | unknown | unknown | cited in 2022 Altium log | [analog.com/static/imported-files/data_sheets/OP37.pdf](http://www.analog.com/static/imported-files/data_sheets/OP37.pdf) | vendor_legacy | low |
-| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/op27.html](https://www.analog.com/en/products/op27.html) | product_page | low |
-| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/op37.html](https://www.analog.com/en/products/op37.html) | product_page | low |
+| Analog Devices | unknown | A | unknown | [datasheet.octopart.com/OP227EY-Analog-…datasheet-136169.pdf](https://datasheet.octopart.com/OP227EY-Analog-Devices-datasheet-136169.pdf) | distributor_mirror | medium |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/op27.html](https://www.analog.com/en/products/op27.html) | product_page | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/op37.html](https://www.analog.com/en/products/op37.html) | product_page | high |
+| Analog Devices (Linear Technology line) | n/a | n/a | n/a | [analog.com/en/products/op27-ltc.html](https://www.analog.com/en/products/op27-ltc.html) | product_page | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/op27s.html](https://www.analog.com/en/products/op27s.html) | product_page | medium |
+| Analog Devices (probably Linear Technology legacy) | unknown | unknown | unknown | [analog.com/media/en/technical-document…sheets/OP27-OP37.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/OP27-OP37.pdf) | vendor_legacy | low |
+| Linear Technology | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/70889/LINER/OP-27.html](https://www.alldatasheet.com/datasheet-pdf/pdf/70889/LINER/OP-27.html) | third_party_mirror | medium |
+| unknown (probably Linear Technology) | unknown | unknown | unknown | [atrinelec.com/download/datasheet/OP37GP(Atrinelec.com).pdf](https://www.atrinelec.com/download/datasheet/OP37GP(Atrinelec.com%29.pdf) | third_party_mirror | low |
 | Linear Technology | unknown | unknown | 1990 databook |  | archive | medium |
+| Texas Instruments | SLOS100E | E | February 1989, revised February 2010 | [ti.com/lit/gpn/OP27](https://www.ti.com/lit/gpn/OP27) | vendor_current | high |
+| Texas Instruments | SLOS100B (per search summary) | B | August 1994 | [alldatasheet.com/datasheet-pdf/pdf/27251/TI/OP27A.html](https://www.alldatasheet.com/datasheet-pdf/pdf/27251/TI/OP27A.html) | third_party_mirror | medium |
+| Texas Instruments | unknown | unknown | unknown | [alldatasheet.com/html-pdf/27258/TI/OP37G/19/1/OP37G.html](https://www.alldatasheet.com/html-pdf/27258/TI/OP37G/19/1/OP37G.html) | third_party_mirror | medium |
 
 ## [OP275 (dual 'Butler' bipolar/JFET audio op-amp, Analog Devices)](families/OP275.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | OP275 | C (per the Altium ADI managed-component record and a third-party note; not read from the PDF) | unknown | [analog.com/media/en/technical-document…ata-sheets/OP275.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf) | vendor_current | medium |
-| Analog Devices | OP275 | unknown (the same Altium record gives 'Rev. C' as the datasheet version) | unknown (ADI's 'static/imported-files' URL scheme, used before the /media/ scheme) | [analog.com/static/imported-files/data_sheets/OP275.pdf](http://www.analog.com/static/imported-files/data_sheets/OP275.pdf) | vendor_legacy | medium |
-| Analog Devices | OP275 | n/a | n/a | [analog.com/en/products/op275.html](https://www.analog.com/en/products/op275.html) | product_page | low |
-| Analog Devices (copy bundled with KiCad) | OP275 | unknown (an old copy from the KiCad library era, probably pre-2010) | unknown | [github.com/ndwns/freebsd-ports/blob/6c…/cad/kicad/pkg-plist](https://github.com/ndwns/freebsd-ports/blob/6cbdf212e6b7917890cb93c9d813955771ecf37d/cad/kicad/pkg-plist) | third_party_mirror | low |
+| Analog Devices | OP275 | C | not seen (one search summary tied Rev. C to 1995; unconfirmed, possibly confused with the 3/95 SPICE model Rev. C) | [analog.com/media/en/technical-document…ata-sheets/OP275.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf) | vendor_current | high |
+| Analog Devices | OP275 | C (presumed; redirects to the current PDF) | n/a | [analog.com/OP275/datasheet](https://www.analog.com/OP275/datasheet) | vendor_current | medium |
+| Analog Devices | OP275 | n/a | n/a | [analog.com/en/products/op275.html](https://www.analog.com/en/products/op275.html) | product_page | high |
+| Analog Devices | OP275 | unknown | unknown (ADI 'static/imported-files' scheme, before /media/) | [analog.com/static/imported-files/data_sheets/OP275.pdf](http://www.analog.com/static/imported-files/data_sheets/OP275.pdf) | vendor_legacy | low |
+| Analog Devices (Futurlec copy) | OP275 | A | unknown (pre-RoHS; lists OP275GP) | [futurlec.com/Datasheet/Linear/OP275GP.pdf](https://www.futurlec.com/Datasheet/Linear/OP275GP.pdf) | third_party_mirror | medium |
+| Analog Devices (pken.net copy) | OP275 | A | unknown | [pken.net/ish_mm/datasheet/ad/op275.pdf](https://www.pken.net/ish_mm/datasheet/ad/op275.pdf) | third_party_mirror | medium |
+| Analog Devices (RadioLocman copy) | OP275 | C | not stated in the snippet | [radiolocman.com/datasheet/pdf.html?di=121467](https://www.radiolocman.com/datasheet/pdf.html?di=121467) | third_party_mirror | medium |
+| Analog Devices (RadioLocman copy) | OP275 | unknown | unknown | [radiolocman.com/datasheet/data.html?di=351501](https://www.radiolocman.com/datasheet/data.html?di=351501) | third_party_mirror | medium |
+| Analog Devices (alldatasheet copy) | OP275 | unknown (older pre-RoHS edition; also filed under OP275GP ID 49048, OP275GS ID 49049, OP275G ID 49052) | unknown | [alldatasheet.com/datasheet-pdf/pdf/49047/AD/OP275.html](https://www.alldatasheet.com/datasheet-pdf/pdf/49047/AD/OP275.html) | third_party_mirror | medium |
+| Analog Devices (Octopart copy) | OP275 | unknown | unknown | [datasheet.octopart.com/OP275GSZ-Analog…atasheet-9742324.pdf](https://datasheet.octopart.com/OP275GSZ-Analog-Devices-datasheet-9742324.pdf) | distributor_mirror | medium |
+| Analog Devices (Digi-Key datasheet page) | OP275 | unknown | unknown | [digikey.com/en/datasheets/analogdevice…og-devices-inc-op275](https://digikey.com/en/datasheets/analogdevicesinc/analog-devices-inc-op275) | distributor_mirror | medium |
+| Analog Devices (Internet Archive item) | OP275 | unknown (probably C) | uploaded 2015-10-17 (from the item name) | [archive.org/details/20151017DatasheetOP275](https://archive.org/details/20151017DatasheetOP275) | archive | medium |
+| Analog Devices (datasheet4u copy) | OP275 | unknown | unknown | [datasheet4u.com/datasheet-pdf/AnalogDe…75/pdf.php?id=475420](https://datasheet4u.com/datasheet-pdf/AnalogDevices/OP275/pdf.php?id=475420) | third_party_mirror | medium |
+| Analog Devices (Datasheet Archive) | OP275 | unknown | unknown | [datasheetarchive.com/OP275GP-datasheet.html](https://www.datasheetarchive.com/OP275GP-datasheet.html) | third_party_mirror | medium |
+| Analog Devices (copy bundled with KiCad) | OP275 | unknown (probably pre-2010) | unknown | [github.com/ndwns/freebsd-ports/blob/6c…/cad/kicad/pkg-plist](https://github.com/ndwns/freebsd-ports/blob/6cbdf212e6b7917890cb93c9d813955771ecf37d/cad/kicad/pkg-plist) | third_party_mirror | low |
 | Analog Devices | op275.cir | Rev. C | 3/95 | [github.com/ska-sa/roach1_hardware/blob…%20Devices/op275.cir](https://github.com/ska-sa/roach1_hardware/blob/HEAD/SimLib/Analog%20Devices/op275.cir) | third_party_mirror | high |
 | Analog Devices | op275g.cir | Rev. B | 10/92 | [github.com/ska-sa/roach1_hardware/blob…20Devices/op275g.cir](https://github.com/ska-sa/roach1_hardware/blob/HEAD/SimLib/Analog%20Devices/op275g.cir) | third_party_mirror | high |
 | Analog Devices (OrCAD/PSpice anlg_dev.lib copy) | anlg_dev.lib (OP-275/AD) | unlabelled (appears to predate Rev. C) | unknown | [github.com/GerardoTaboada/spice-opamps…2a/opamp_models.json](https://github.com/GerardoTaboada/spice-opamps/blob/e75d379008385e1266871ddd4f7d6f203bffdc2a/opamp_models.json) | third_party_mirror | medium |
@@ -941,13 +1038,33 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Texas Instruments | unknown (TI SBOS number for OPA2111 not found) | unknown | unknown | [ti.com/lit/ds/symlink/opa2111.pdf](https://www.ti.com/lit/ds/symlink/opa2111.pdf) | vendor_current | low |
-| Texas Instruments | SBOS138 (per TI TINA model header; not seen on the datasheet) | unknown | unknown | [ti.com/lit/gpn/opa111](http://www.ti.com/lit/gpn/opa111) | vendor_legacy | low |
-| Texas Instruments | unknown | unknown | unknown | [ti.com/lit/gpn/opa2111](http://www.ti.com/lit/gpn/opa2111) | vendor_legacy | low |
-| Texas Instruments | SBOS138 (per TI model header) | unknown | unknown | [ti.com/product/OPA111](https://www.ti.com/product/OPA111) | product_page | low |
-| Texas Instruments | unknown | unknown | unknown | [tij.co.jp/product/jp/OPA2111](https://www.tij.co.jp/product/jp/OPA2111) | product_page | medium |
-| Burr-Brown | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/567…RR-BROWN/OPA111.html](https://www.alldatasheet.com/datasheet-pdf/pdf/56724/BURR-BROWN/OPA111.html) | third_party_mirror | medium |
-| Burr-Brown | unknown | unknown | unknown | [octopart.com/part/burr-brown/OPA2111AM](https://octopart.com/part/burr-brown/OPA2111AM) | distributor_mirror | medium |
+| Burr-Brown / Texas Instruments | SBOS138 (Burr-Brown PDS-526K) | PDS-526K | August 1995 | [datasheet.octopart.com/OPA111AM-Texas-…tasheet-10400812.pdf](https://datasheet.octopart.com/OPA111AM-Texas-Instruments-datasheet-10400812.pdf) | distributor_mirror | medium |
+| Burr-Brown / Texas Instruments | SBOS140 (Burr-Brown PDS-540E) | PDS-540E | October 1993 | [e2e.ti.com/cfs-file/__key/communityser…files/14/OPA2111.PDF](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/OPA2111.PDF) | third_party_mirror | medium |
+| Texas Instruments | SBOS140 (presumed) | unknown | unknown | [ti.com/lit/ds/symlink/opa2111.pdf](https://www.ti.com/lit/ds/symlink/opa2111.pdf) | vendor_current | low |
+| Texas Instruments | SBOS138 | unknown | unknown | [ti.com/lit/gpn/opa111](http://www.ti.com/lit/gpn/opa111) | vendor_legacy | low |
+| Texas Instruments | SBOS140 (presumed) | unknown | unknown | [ti.com/lit/gpn/opa2111](http://www.ti.com/lit/gpn/opa2111) | vendor_legacy | low |
+| Texas Instruments | SBOS138 | n/a | n/a | [ti.com/product/OPA111/technicaldocuments](http://www.ti.com/product/OPA111/technicaldocuments) | product_page | medium |
+| Texas Instruments | SBOS140 | n/a | n/a | [ti.com/product/OPA2111/toolssoftware](http://www.ti.com/product/OPA2111/toolssoftware) | product_page | medium |
+| Texas Instruments | SBOS140 | n/a | n/a | [tij.co.jp/product/jp/OPA2111](https://www.tij.co.jp/product/jp/OPA2111) | product_page | medium |
+| Burr-Brown | SBOS138 / PDS-526 (letter not pinned) | unknown (likely PDS-526K) | unknown | [alldatasheet.com/datasheet-pdf/pdf/567…RR-BROWN/OPA111.html](https://www.alldatasheet.com/datasheet-pdf/pdf/56724/BURR-BROWN/OPA111.html) | third_party_mirror | medium |
+| Burr-Brown | SBOS140 / PDS-540 (letter not pinned) | unknown (likely PDS-540E) | unknown | [alldatasheet.com/datasheet-pdf/pdf/567…R-BROWN/OPA2111.html](https://www.alldatasheet.com/datasheet-pdf/pdf/56736/BURR-BROWN/OPA2111.html) | third_party_mirror | medium |
+| Texas Instruments | SBOS140 (presumed) | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/847966/TI1/OPA2111.html](https://www.alldatasheet.com/datasheet-pdf/pdf/847966/TI1/OPA2111.html) | third_party_mirror | medium |
+| Texas Instruments | SBOS138 (presumed) | unknown | unknown | [alldatasheet.net/datasheet-pdf/pdf/847950/TI1/OPA111.html](https://www.alldatasheet.net/datasheet-pdf/pdf/847950/TI1/OPA111.html) | third_party_mirror | medium |
+| Texas Instruments | SBOS138 | unknown (likely PDS-526K) | unknown | [radiolocman.com/datasheet/data.html?di=305427](https://www.radiolocman.com/datasheet/data.html?di=305427) | third_party_mirror | medium |
+| Texas Instruments | SBOS140 | unknown (likely PDS-540E) | unknown | [radiolocman.com/datasheet/data.html?di=305543](https://www.radiolocman.com/datasheet/data.html?di=305543) | third_party_mirror | medium |
+| Texas Instruments | SBOS138 | unknown | unknown | [eicom.ru/pdf/datasheet/Texas_Instrumen…s/OPA111/OPA111.html](https://eicom.ru/pdf/datasheet/Texas_Instruments_PDFs/OPA111/OPA111.html) | third_party_mirror | medium |
+| Burr-Brown | PDS-526 (letter not pinned) | unknown | unknown | [datasheet4u.com/datasheet-pdf/Burr-Bro…11/pdf.php?id=475531](https://datasheet4u.com/datasheet-pdf/Burr-Brown/OPA111/pdf.php?id=475531) | third_party_mirror | medium |
+| Burr-Brown | PDS-540 (letter not pinned) | unknown | unknown | [datasheet4u.com/datasheets/Burr-Brown/OPA2111/475544](https://datasheet4u.com/datasheets/Burr-Brown/OPA2111/475544) | third_party_mirror | medium |
+| Burr-Brown | PDS-540 (letter not pinned) | unknown | unknown | [radio-hobby.org/uploads/datasheet/15/opa2/opa2111.pdf](https://radio-hobby.org/uploads/datasheet/15/opa2/opa2111.pdf) | third_party_mirror | medium |
+| Burr-Brown | PDS-540 (letter not pinned) | unknown | unknown | [datasheetcatalog.com/datasheets_pdf/O/P/A/2/OPA2111.shtml](https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/2/OPA2111.shtml) | third_party_mirror | medium |
+| Burr-Brown | unknown | unknown | unknown | [studylib.net/doc/18470146/opa2111-datasheet](https://studylib.net/doc/18470146/opa2111-datasheet) | third_party_mirror | medium |
+| Texas Instruments | SBOS138 / SBOS140 (presumed) | unknown | unknown | [digchip.com/datasheets/parts/datasheet/477/OPA111AM.php](https://www.digchip.com/datasheets/parts/datasheet/477/OPA111AM.php) | third_party_mirror | medium |
+| Burr-Brown | unknown | unknown | unknown | [chipdocs.com/datasheets/datasheet-pdf/…own-Corp/OPA111.html](http://www.chipdocs.com/datasheets/datasheet-pdf/BurrBrown-Corp/OPA111.html) | third_party_mirror | medium |
+| Burr-Brown | PDS-526 / PDS-540 (earlier letters, not seen) | pre-1993 (letter not seen) | 1989 | [archive.org/stream/bitsavers_burrBrown…s_Data_Book_djvu.txt](https://archive.org/stream/bitsavers_burrBrowndwnIntegratedCircuitsDataBook_93705610/1989_Burr-Brown_Integrated_Circuits_Data_Book_djvu.txt) | archive | medium |
+| Burr-Brown | PDS-526 (earlier letter, not seen) | pre-1989 (letter not seen) | 1986 | [archive.org/stream/bitsavers_burrBrown…s_Data_Book_djvu.txt](https://archive.org/stream/bitsavers_burrBrowndwnIntegratedCircuitsDataBook_95857617/1986_Burr-Brown_Integrated_Circuits_Data_Book_djvu.txt) | archive | medium |
+| Burr-Brown | unknown | unknown | 1984 | [usermanual.wiki/Document/1984BurrBrown…aBook.717472892/help](https://usermanual.wiki/Document/1984BurrBrownProductDataBook.717472892/help) | third_party_mirror | low |
+| Burr-Brown | unknown | unknown | unknown | [octopart.com/opa2111am-burr+brown-22628912](https://octopart.com/opa2111am-burr+brown-22628912) | distributor_mirror | medium |
+| Texas Instruments | SBOS138 (presumed) | unknown | unknown | [mouser.com/en/ProductDetail/Texas-Inst…FmqEmg3YiKM1Vg%3D%3D](https://www.mouser.com/en/ProductDetail/Texas-Instruments/OPA111AM?qs=rLYyFdxB%2FmqEmg3YiKM1Vg%3D%3D) | distributor_mirror | medium |
 
 ## [OPA1622 (dual bipolar-input, high-output-current headphone-driver op-amp)](families/OPA1622.md)
 
@@ -1015,8 +1132,21 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Burr-Brown | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/177…R-BROWN/OPA2107.html](https://www.alldatasheet.com/datasheet-pdf/pdf/177039/BURR-BROWN/OPA2107.html) | third_party_mirror | low |
-| Texas Instruments | unknown | n/a | unknown | [ti.com/product/OPA2107](https://www.ti.com/product/OPA2107) | product_page | low |
+| Texas Instruments | SBOS161 | A | January 1989, revised July 2003 | [ti.com/lit/ds/symlink/opa2107.pdf](https://www.ti.com/lit/ds/symlink/opa2107.pdf) | vendor_current | high |
+| Texas Instruments | SBOS161 | A (latest) | July 2003 | [ti.com/lit/gpn/opa2107](https://www.ti.com/lit/gpn/opa2107) | vendor_current | medium |
+| Texas Instruments | n/a | n/a | n/a | [ti.com/product/OPA2107](https://www.ti.com/product/OPA2107) | product_page | high |
+| Burr-Brown | PDS-863 | B | printed October 1993 ((c)1989) | [alldatasheet.com/datasheet-pdf/pdf/177…R-BROWN/OPA2107.html](https://www.alldatasheet.com/datasheet-pdf/pdf/177039/BURR-BROWN/OPA2107.html) | third_party_mirror | low |
+| Burr-Brown | PDS-863 | E | printed April 1998 ((c)1989) | [pdf.dzsc.com/OPA/OPA2107.pdf](https://pdf.dzsc.com/OPA/OPA2107.pdf) | third_party_mirror | low |
+| Burr-Brown | PDS-863 | unknown (Burr-Brown edition) | unknown | [www2.ung.si/~sstanic/belle/monitor/schemes/bb2107.pdf](https://www2.ung.si/~sstanic/belle/monitor/schemes/bb2107.pdf) | third_party_mirror | low |
+| Burr-Brown | unknown | unknown | unknown | [farnell.com/datasheets/9308.pdf](https://www.farnell.com/datasheets/9308.pdf) | distributor_mirror | low |
+| Burr-Brown | PDS-863 | unknown (B or E) | unknown | [datasheetspdf.com/pdf/475543/Burr-Brown/OPA2107/1](https://datasheetspdf.com/pdf/475543/Burr-Brown/OPA2107/1) | third_party_mirror | low |
+| Burr-Brown | unknown | unknown | unknown | [manualmachine.com/datasheet/opa2107ap/…atasheet-burr-brown/](https://manualmachine.com/datasheet/opa2107ap/4144735-datasheet-burr-brown/) | third_party_mirror | low |
+| Burr-Brown | unknown | unknown | unknown | [chipfind.net/datasheet/burr-brown/opa2107.htm](https://www.chipfind.net/datasheet/burr-brown/opa2107.htm) | third_party_mirror | low |
+| Texas Instruments | SBOS161 | unknown (probably A) | unknown | [alldatasheet.com/datasheet-pdf/pdf/219…6/TI2/OPA2107AP.html](https://www.alldatasheet.com/datasheet-pdf/pdf/2195756/TI2/OPA2107AP.html) | third_party_mirror | low |
+| Texas Instruments | SBOS161 | unknown | unknown | [eicom.ru/pdf/datasheet/Texas_Instrumen…OPA2107/OPA2107.html](https://eicom.ru/pdf/datasheet/Texas_Instruments_PDFs/OPA2107/OPA2107.html) | third_party_mirror | low |
+| Texas Instruments | SBOS161 | unknown | unknown | [radiolocman.com/datasheet/data.html?di=259167](https://www.radiolocman.com/datasheet/data.html?di=259167) | third_party_mirror | low |
+| Burr-Brown | Data Book Supplement 33b | 1990 | 1990 | [bitsavers.org/components/burrBrown/_da…k_Supplement_33b.pdf](http://www.bitsavers.org/components/burrBrown/_dataBooks/1990_Burr-Brown_Integrated_Circuits_Data_Book_Supplement_33b.pdf) | archive | low |
+| Texas Instruments | n/a | n/a | n/a | [digikey.com/en/products/detail/texas-i…nts/OPA2107AP/251135](https://www.digikey.com/en/products/detail/texas-instruments/OPA2107AP/251135) | product_page | high |
 
 ## [OPA827 (single low-noise precision JFET-input)](families/OPA827.md)
 
@@ -1052,6 +1182,14 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments | SBOS671B | B | SEPTEMBER 2018 - REVISED DECEMBER 2018 |  | vendor_revision_specific | high |
 | Texas Instruments | SBOS671A | A | November 2018 |  | vendor_revision_specific | medium |
 | Texas Instruments | SBOS671 | - (original) | September 2018 |  | vendor_revision_specific | medium |
+| Texas Instruments (Octopart mirror) | SBOS671 (letter not shown in search summary) | pre-Rev C, likely B (unconfirmed) | unknown | [datasheet.octopart.com/OPA828IDR-Texas…asheet-164894880.pdf](https://datasheet.octopart.com/OPA828IDR-Texas-Instruments-datasheet-164894880.pdf) | distributor_mirror | low |
+| Texas Instruments (Michigan State University mirror) | SBOS671 (letter not shown in search summary) | pre-Rev C, likely B (unconfirmed) | unknown | [web.pa.msu.edu/people/edmunds/SET_Curv…/opa828_bb_opamp.pdf](https://web.pa.msu.edu/people/edmunds/SET_Curve_Tracer/Electrical_Components/opa828_bb_opamp.pdf) | third_party_mirror | low |
+| Texas Instruments (alldatasheet mirror) | SBOS671 (letter unknown) | unknown (possibly older; unconfirmed) | unknown | [alldatasheet.com/datasheet-pdf/pdf/1082236/TI1/OPA828.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1082236/TI1/OPA828.html) | third_party_mirror | low |
+| Texas Instruments (ic114 mirror) | SBOS671 (letter unknown) | unknown (unconfirmed) | unknown | [product.ic114.com/PDF/O/OPA828.PDF](http://product.ic114.com/PDF/O/OPA828.PDF) | third_party_mirror | low |
+| Texas Instruments (alldatasheet mirror) | SBOS671 (letter unknown) | C or later, probably D (unconfirmed) | unknown | [alldatasheet.com/datasheet-pdf/pdf/1569997/TI/OPAX828.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1569997/TI/OPAX828.html) | third_party_mirror | low |
+| Texas Instruments (alldatasheet mirror) | SBOS671 (letter unknown) | C or D (unconfirmed; possibly C) | unknown | [alldatasheet.com/html-pdf/1477199/TI/O…/333/10/OPA2828.html](https://www.alldatasheet.com/html-pdf/1477199/TI/OPA2828/333/10/OPA2828.html) | third_party_mirror | low |
+| Texas Instruments (datasheet4u mirror) | SBOS671 (letter unknown) | C or later (unconfirmed) | unknown | [datasheet4u.com/datasheets/etcTI/OPA2828/1566625](https://datasheet4u.com/datasheets/etcTI/OPA2828/1566625) | third_party_mirror | low |
+| Texas Instruments (Digi-Key mirror of PCN) | PCN20221117006 | 0 | November 2022 (number encodes 2022-11-17; Mouser copy filed 2022-11-18) | [mm.digikey.com/Volume0/opasdata/d22000…PCN20221117006.0.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5336/PCN20221117006.0.pdf) | distributor_mirror | high |
 | Texas Instruments (text copy in a third-party dataset) | SBOS671 (revision not stated; content consistent with Rev B) | B-era (inferred) | file named 2019-10; repo commit 2022-06-21 | [github.com/BloomTechBackend/bd-maps-pa…partstech2019-10.txt](https://github.com/BloomTechBackend/bd-maps-parts-discovery/blob/main/src/main/resources/partcatalogs/partstech2019-10.txt) | third_party_mirror | medium |
 | Texas Instruments (GitHub mirror) | SBOS671D | D | SEPTEMBER 2018 - REVISED DECEMBER 2022 | [github.com/indare/pcb_work/blob/main/A…opamps/TI_OPA828.pdf](https://github.com/indare/pcb_work/blob/main/Audio/datasheets/opamps/TI_OPA828.pdf) | third_party_mirror | high |
 | Texas Instruments (GitHub mirror) | SBOS671D | D | SEPTEMBER 2018 - REVISED DECEMBER 2022 | [github.com/philipturner/transimpedance…atasheets/OPA828.pdf](https://github.com/philipturner/transimpedance-amplifier/blob/main/Models/Datasheets/OPA828.pdf) | third_party_mirror | high |
@@ -1063,27 +1201,54 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments | SBOS377 | L | OCTOBER 2006 – REVISED JANUARY 2020 | [ti.com/lit/ds/symlink/opa211.pdf](https://www.ti.com/lit/ds/symlink/opa211.pdf) | vendor_current | high |
 | Texas Instruments | SBOS377 | L | OCTOBER 2006 – REVISED JANUARY 2020 | [github.com/dfnr2/terra-eda-library/blo…sheets/ti/opa211.pdf](https://github.com/dfnr2/terra-eda-library/blob/HEAD/datasheets/ti/opa211.pdf) | third_party_mirror | high |
 | Texas Instruments | SBOS377 | (original) | OCTOBER 2006 |  | vendor_revision_specific | medium |
-| Texas Instruments | SBOS377G | G | May 2009 |  | vendor_revision_specific | high |
+| Texas Instruments | SBOS377A | A | OCTOBER 2006 – REVISED FEBRUARY 2007 |  | vendor_revision_specific | medium |
+| Texas Instruments | SBOS377F | F | OCTOBER 2006 – REVISED NOVEMBER 2008 | [kyohritsu.com/eclib/OTHER/DATASHEET/opa211.pdf](https://www.kyohritsu.com/eclib/OTHER/DATASHEET/opa211.pdf) | third_party_mirror | medium |
+| Texas Instruments | SBOS377G | G | OCTOBER 2006 – REVISED MAY 2009 | [mouser.com/datasheet/2/405/sbos377g-125789.pdf](https://www.mouser.com/datasheet/2/405/sbos377g-125789.pdf) | distributor_mirror | high |
 | Texas Instruments | SBOS377H | H | November 2015 |  | vendor_revision_specific | high |
-| Texas Instruments | SBOS377I | I | June 2016 |  | vendor_revision_specific | high |
+| Texas Instruments | SBOS377I | I | OCTOBER 2006 – REVISED JUNE 2016 | [radiolocman.com/datasheet/data.html?di=305537](https://www.radiolocman.com/datasheet/data.html?di=305537) | third_party_mirror | medium |
 | Texas Instruments | SBOS377J | J | February 2018 |  | vendor_revision_specific | high |
 | Texas Instruments | SBOS377K | K | SEPTEMBER 2018 |  | vendor_revision_specific | high |
+| Texas Instruments | SBOS377 | unknown (new-format layout, so H or later) | unknown | [datasheet.octopart.com/OPA211AID-Texas…asheet-100176885.pdf](https://datasheet.octopart.com/OPA211AID-Texas-Instruments-datasheet-100176885.pdf) | distributor_mirror | low |
+| Texas Instruments | SBOS377 | unknown (new-format layout, so H or later) | unknown | [convexoptimization.com/TOOLS/opa211.pdf](https://convexoptimization.com/TOOLS/opa211.pdf) | third_party_mirror | low |
+| Texas Instruments | SBOS377 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/221188/TI/OPA211.html](https://www.alldatasheet.com/datasheet-pdf/pdf/221188/TI/OPA211.html) | third_party_mirror | low |
+| Texas Instruments | SBOS377 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/221128/TI/OPA2211.html](https://www.alldatasheet.com/datasheet-pdf/pdf/221128/TI/OPA2211.html) | third_party_mirror | low |
+| Texas Instruments | SBOS638 | (original) | JUNE 2012 | [ti.com/lit/ds/symlink/opa211-ep.pdf](https://www.ti.com/lit/ds/symlink/opa211-ep.pdf) | vendor_current | medium |
+| Texas Instruments | SBOS638 | unknown | unknown | [datasheet.octopart.com/OPA211MDGKTEP-T…tasheet-41216692.pdf](https://datasheet.octopart.com/OPA211MDGKTEP-Texas-Instruments-datasheet-41216692.pdf) | distributor_mirror | low |
+| Texas Instruments | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/772560/TI/OPA2211-EP.html](https://www.alldatasheet.com/datasheet-pdf/pdf/772560/TI/OPA2211-EP.html) | third_party_mirror | low |
 | Texas Instruments | SBOS377 | n/a | n/a | [ti.com/product/OPA211](https://www.ti.com/product/OPA211) | product_page | high |
 | Texas Instruments | SBOS377 | n/a | n/a | [ti.com/product/OPA2211A](https://www.ti.com/product/OPA2211A) | product_page | high |
 | Texas Instruments | SBOS377 | n/a | n/a | [ti.com/product/ja-jp/OPA211](https://www.ti.com/product/ja-jp/OPA211) | product_page | high |
+| Texas Instruments | SBOS638 | n/a | n/a | [ti.com/product/OPA211-EP](https://www.ti.com/product/OPA211-EP) | product_page | high |
+| Texas Instruments | unknown | n/a | n/a | [ti.com/product/OPA2211-EP](https://www.ti.com/product/OPA2211-EP) | product_page | high |
 
 ## [OPA227 / OPA228 (OPA2227 / OPA2228 / OPA4227 / OPA4228)](families/OPAx227.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Texas Instruments (Burr-Brown product line) | SBOS110A | A | SBOS110A - MAY 1998 - REVISED JANUARY 2005 | [raw.githubusercontent.com/zuoliangyu/N…%E6%96%99/OPA227.pdf](https://raw.githubusercontent.com/zuoliangyu/NUEDC_TOPIC/2703761d73fa152f63abf20e3c6584b6b0102b05/%E7%BB%BC%E5%90%88%E6%B5%8B%E8%AF%84/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/OPA227.pdf) | third_party_mirror | high |
-| Texas Instruments | SBOS110 | current; SBOS110B (June 2015) per TI PSpice model headers dated 2019 and 2022 | REVISED JUNE 2015 (per model headers; the PDF itself was not read) | [ti.com/lit/ds/symlink/opa227.pdf](https://www.ti.com/lit/ds/symlink/opa227.pdf) | vendor_current | medium |
-| Texas Instruments | SBOS110 | current (believed B, June 2015) | unverified | [ti.com/lit/ds/symlink/opa2227.pdf](https://www.ti.com/lit/ds/symlink/opa2227.pdf) | vendor_current | medium |
-| Texas Instruments | SBOS110 | current (believed B, June 2015) | unverified | [ti.com/lit/ds/symlink/opa228.pdf](https://www.ti.com/lit/ds/symlink/opa228.pdf) | vendor_current | medium |
-| Texas Instruments | SBOS110 | current (believed B, June 2015) | unverified | [ti.com/lit/ds/symlink/opa2228.pdf](https://www.ti.com/lit/ds/symlink/opa2228.pdf) | vendor_current | medium |
+| Texas Instruments | SBOS110C | C | November 2022 (per change log 'Changes from Revision B to Revision C (November 2022)') | [ti.com/lit/ds/sbos110c/sbos110c.pdf](https://www.ti.com/lit/ds/sbos110c/sbos110c.pdf) | vendor_revision_specific | high |
+| Texas Instruments | SBOS110 | current (Rev C as of Sep 2026) | November 2022 | [ti.com/lit/ds/symlink/opa227.pdf](https://www.ti.com/lit/ds/symlink/opa227.pdf) | vendor_current | high |
+| Texas Instruments | SBOS110 | current (Rev C as of Sep 2026) | November 2022 | [ti.com/lit/gpn/OPA4227](https://www.ti.com/lit/gpn/OPA4227) | vendor_current | high |
+| Texas Instruments | SBOS110 | current (Rev C per TI product pages) | not seen | [ti.com/lit/ds/symlink/opa2227.pdf](https://www.ti.com/lit/ds/symlink/opa2227.pdf) | vendor_current | medium |
+| Texas Instruments | SBOS110 | current (Rev C per TI product pages) | not seen | [ti.com/lit/ds/symlink/opa228.pdf](https://www.ti.com/lit/ds/symlink/opa228.pdf) | vendor_current | medium |
+| Texas Instruments | SBOS110 | current (Rev C per TI product pages) | not seen | [ti.com/lit/ds/symlink/opa2228.pdf](https://www.ti.com/lit/ds/symlink/opa2228.pdf) | vendor_current | medium |
 | Texas Instruments (Japan) | unknown (TI JP translation number not seen) | unknown | unknown | [ti.com/jp/lit/ds/symlink/opa2227.pdf](https://www.ti.com/jp/lit/ds/symlink/opa2227.pdf) | vendor_current | medium |
-| Burr-Brown / Texas Instruments | SBOS110 or SBOS110A (unconfirmed) | unknown: original (May 1998) or A (Jan 2005) | unknown | [users.ece.utexas.edu/~valvano/Datasheets/OPA227.pdf](https://users.ece.utexas.edu/~valvano/Datasheets/OPA227.pdf) | third_party_mirror | low |
-| Texas Instruments | SBOS110 | unknown (possibly B) | unknown | [mouser.com/datasheet/2/405/opa4228-445576.pdf](https://www.mouser.com/datasheet/2/405/opa4228-445576.pdf) | distributor_mirror | low |
+| Texas Instruments (via RS Components) | SBOS110B | B | REVISED JUNE 2015 | [docs.rs-online.com/fe35/A700000006723709.pdf](https://docs.rs-online.com/fe35/A700000006723709.pdf) | distributor_mirror | medium |
+| Texas Instruments (via Radiolocman) | SBOS110B | B | REVISED JUNE 2015 | [radiolocman.com/datasheet/data.html?di=305611](https://www.radiolocman.com/datasheet/data.html?di=305611) | third_party_mirror | medium |
+| Burr-Brown / Texas Instruments | SBOS110A | A | January 2005 (per search summary) | [users.ece.utexas.edu/~valvano/Datasheets/OPA227.pdf](https://users.ece.utexas.edu/~valvano/Datasheets/OPA227.pdf) | third_party_mirror | medium |
+| Texas Instruments (Burr-Brown product line) | SBOS110A | A | SBOS110A - MAY 1998 - REVISED JANUARY 2005 | [raw.githubusercontent.com/zuoliangyu/N…%E6%96%99/OPA227.pdf](https://raw.githubusercontent.com/zuoliangyu/NUEDC_TOPIC/2703761d73fa152f63abf20e3c6584b6b0102b05/%E7%BB%BC%E5%90%88%E6%B5%8B%E8%AF%84/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/OPA227.pdf) | third_party_mirror | high |
+| Burr-Brown (via Octopart) | SBOS110 (revision letter not seen) | unknown: original (1998) or A | unknown | [datasheet.octopart.com/OPA4227UA-Burr-…datasheet-114273.pdf](https://datasheet.octopart.com/OPA4227UA-Burr-Brown-datasheet-114273.pdf) | distributor_mirror | low |
+| Burr-Brown (via CERN) | SBOS110 (revision letter not seen) | unknown | unknown | [sy-dep-epc-lpc.web.cern.ch/components/…C%20(BURR-BROWN).pdf](https://sy-dep-epc-lpc.web.cern.ch/components/datasheets/epc-lpc%20(converters%29/OPA2227%20IC%20(BURR-BROWN%29.pdf) | third_party_mirror | low |
+| Burr-Brown (via kontest.ru) | SBOS110 (revision letter not seen) | unknown | unknown | [kontest.ru/datasheet/burr-brown/opa2227[1].pdf](https://kontest.ru/datasheet/burr-brown/opa2227[1].pdf) | third_party_mirror | low |
+| Texas Instruments (via Mouser) | SBOS110 | unknown (B or C) | unknown | [mouser.com/datasheet/2/405/opa4228-445576.pdf](https://www.mouser.com/datasheet/2/405/opa4228-445576.pdf) | distributor_mirror | low |
+| Texas Instruments (via Octopart) | SBOS110 | unknown (B or C) | unknown | [datasheet.octopart.com/OPA2227UA-Texas…asheet-159115568.pdf](https://datasheet.octopart.com/OPA2227UA-Texas-Instruments-datasheet-159115568.pdf) | distributor_mirror | low |
+| Texas Instruments (via Octopart) | SBOS110 | unknown | unknown | [datasheet.octopart.com/OPA227U-Texas-I…atasheet-8441645.pdf](https://datasheet.octopart.com/OPA227U-Texas-Instruments-datasheet-8441645.pdf) | distributor_mirror | low |
+| Texas Instruments (via Farnell) | SBOS110 | unknown (B or later, per 'OPAx' naming) | unknown | [farnell.com/datasheets/3935153.pdf](https://www.farnell.com/datasheets/3935153.pdf) | distributor_mirror | low |
+| Texas Instruments (via DigiKey) | SBOS110 | unknown | unknown | [digikey.com/en/htmldatasheets/producti…673238/0/0/1/opa227p](https://www.digikey.com/en/htmldatasheets/production/673238/0/0/1/opa227p) | distributor_mirror | low |
+| Texas Instruments (via Alldatasheet) | SBOS110 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/204172/TI/OPA227.html](https://www.alldatasheet.com/datasheet-pdf/pdf/204172/TI/OPA227.html) | third_party_mirror | low |
+| Texas Instruments (via Radiolocman) | SBOS110 | unknown | unknown | [radiolocman.com/datasheet/data.html?di=305629](https://www.radiolocman.com/datasheet/data.html?di=305629) | third_party_mirror | low |
+| Texas Instruments (via Mantech) | SBOS110 | unknown | unknown | [mantech.co.za/datasheets/products/OPA227_TEXAS.pdf](https://www.mantech.co.za/datasheets/products/OPA227_TEXAS.pdf) | distributor_mirror | low |
+| Texas Instruments (via Studylib) | SBOS110 | unknown | unknown | [studylib.net/doc/18723923/opa227--opa2…28--opa2228--opa4228](https://studylib.net/doc/18723923/opa227--opa2227--opa4227--opa228--opa2228--opa4228) | third_party_mirror | low |
+| Texas Instruments | n/a | n/a | n/a | [ti.com/product/OPA227](https://www.ti.com/product/OPA227) | product_page | high |
 | Texas Instruments | n/a | n/a | n/a | [ti.com/product/OPA2227](https://www.ti.com/product/OPA2227) | product_page | high |
 | Texas Instruments | n/a | n/a | n/a | [ti.com/product/OPA2228](https://www.ti.com/product/OPA2228) | product_page | high |
 
@@ -1091,37 +1256,90 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
+| Analog Devices | D00823-0-11/18(I) | Rev. I | 11/2018 | [analog.com/media/en/technical-document…ata-sheets/AD712.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD712.pdf) | vendor_current | high |
 | Analog Devices | D00823-0-11/18(I) | Rev. I | 11/2018 | [github.com/Vitorbnc/electronics-datash…4cec9a/ICs/AD712.pdf](https://github.com/Vitorbnc/electronics-datasheets/blob/6c6d127ab8b1a71b1036b54df74e0b97874cec9a/ICs/AD712.pdf) | third_party_mirror | high |
-| Analog Devices | unknown | unknown | unknown | [analog.com/static/imported-files/data_sheets/AD712.pdf](http://www.analog.com/static/imported-files/data_sheets/AD712.pdf) | vendor_legacy | medium |
-| Analog Devices | unknown | unknown (current) | unknown | [analog.com/media/en/technical-document…ata-sheets/AD711.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD711.pdf) | vendor_current | medium |
-| Analog Devices | unknown | unknown | unknown | [analog.com/static/imported-files/data_sheets/AD711.pdf](http://www.analog.com/static/imported-files/data_sheets/AD711.pdf) | vendor_legacy | medium |
-| Analog Devices | unknown | unknown | c. 2011 or earlier (linked by the MIT OCW MAS.836 Spring 2011 course) | [analog.com/static/imported-files/data_sheets/AD713.pdf](http://www.analog.com/static/imported-files/data_sheets/AD713.pdf) | vendor_legacy | medium |
-| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad712.html](https://www.analog.com/en/products/ad712.html) | product_page | medium |
-| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad711.html](https://www.analog.com/en/products/ad711.html) | product_page | medium |
+| Analog Devices | unknown | Rev. H | 07/2010 | [datasheetcatalog.com/datasheets_pdf/A/D/7/1/AD712.shtml](https://www.datasheetcatalog.com/datasheets_pdf/A/D/7/1/AD712.shtml) | third_party_mirror | medium |
+| Analog Devices | unknown | Rev. G (per search summary) | 8/2006 (Rev. G date from the Rev. I history) | [datasheet.octopart.com/AD712JNZ-Analog…atasheet-9622412.pdf](https://datasheet.octopart.com/AD712JNZ-Analog-Devices-datasheet-9622412.pdf) | distributor_mirror | medium |
+| Analog Devices | unknown | unknown (older copy; the 'Dual ...' title means it predates Rev. H) | unknown | [alldatasheet.com/datasheet-pdf/pdf/48163/AD/AD712.html](https://www.alldatasheet.com/datasheet-pdf/pdf/48163/AD/AD712.html) | third_party_mirror | low |
+| Analog Devices | unknown | Rev. 0 | unknown | [analog.com/media/en/technical-document…-sheets/AD712-EP.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD712-EP.pdf) | vendor_current | high |
+| Analog Devices | unknown | unknown | unknown | [analog.com/static/imported-files/data_sheets/AD712.pdf](http://www.analog.com/static/imported-files/data_sheets/AD712.pdf) | vendor_legacy | low |
+| Analog Devices | unknown | Rev. E | unknown (old-format data sheet) | [analog.com/media/en/technical-document…ata-sheets/AD711.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD711.pdf) | vendor_current | high |
+| Analog Devices | unknown | Rev. E | unknown (uploaded to the mirror 2017-04-20) | [radiolocman.com/datasheet/pdf.html?di=171885](https://www.radiolocman.com/datasheet/pdf.html?di=171885) | third_party_mirror | medium |
+| Analog Devices | unknown | Rev. E | unknown | [studylib.net/doc/25493162/ad711-precis…bifet-op-amp--rev.e-](https://studylib.net/doc/25493162/ad711-precision--low-cost--high-speed--bifet-op-amp--rev.e-) | third_party_mirror | medium |
+| Analog Devices | unknown | unknown (probably older than Rev. E) | unknown | [alldatasheet.com/datasheet-pdf/pdf/48159/AD/AD711.html](https://www.alldatasheet.com/datasheet-pdf/pdf/48159/AD/AD711.html) | third_party_mirror | low |
+| Analog Devices | unknown | unknown | unknown | [datasheetcatalog.com/datasheets_pdf/A/D/7/1/AD711.shtml](https://www.datasheetcatalog.com/datasheets_pdf/A/D/7/1/AD711.shtml) | third_party_mirror | low |
+| Analog Devices | unknown | unknown | unknown | [analog.com/static/imported-files/data_sheets/AD711.pdf](http://www.analog.com/static/imported-files/data_sheets/AD711.pdf) | vendor_legacy | low |
+| Analog Devices | unknown | Rev. F | unknown | [analog.com/media/en/technical-document…ata-sheets/ad713.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ad713.pdf) | vendor_current | high |
+| Analog Devices | unknown | Rev. C | unknown | [radiolocman.com/datasheet/pdf.html?di=120129](https://www.radiolocman.com/datasheet/pdf.html?di=120129) | third_party_mirror | medium |
+| Analog Devices | unknown | unknown (older title wording) | unknown | [farnell.com/datasheets/77832.pdf](https://www.farnell.com/datasheets/77832.pdf) | distributor_mirror | low |
+| Analog Devices | unknown | unknown | c. 2011 or earlier (linked by the MIT OCW MAS.836 Spring 2011 course) | [analog.com/static/imported-files/data_sheets/AD713.pdf](http://www.analog.com/static/imported-files/data_sheets/AD713.pdf) | vendor_legacy | low |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad711.html](https://www.analog.com/en/products/ad711.html) | product_page | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad712.html](https://www.analog.com/en/products/ad712.html) | product_page | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ad713.html](https://www.analog.com/en/products/ad713.html) | product_page | high |
 
 ## [AD743 / AD745 (ultralow-noise BiFET single op amps; AD745 = decompensated high-speed version)](families/AD743.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | AD745 data sheet | unknown (not verified) | unknown | [analog.com/media/en/technical-document…ata-sheets/AD745.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD745.pdf) | vendor_current | medium |
-| Analog Devices | AD745 data sheet | unknown (older revision likely frozen in Wayback copies) | unknown | [analog.com/static/imported-files/data_sheets/AD745.pdf](http://www.analog.com/static/imported-files/data_sheets/AD745.pdf) | vendor_legacy | medium |
-| Analog Devices | AD743 data sheet | unknown (not verified) | unknown | [analog.com/en/products/ad743.html](https://www.analog.com/en/products/ad743.html) | product_page | medium |
-| Analog Devices | AD745 data sheet | unknown (not verified) | unknown | [analog.com/en/products/ad745.html](https://www.analog.com/en/products/ad745.html) | product_page | medium |
+| Analog Devices | AD743 data sheet | E | unknown (not shown in search summary) | [analog.com/media/en/technical-document…ata-sheets/AD743.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD743.pdf) | vendor_current | high |
+| Analog Devices | AD745 data sheet | D | unknown (not shown in search summary) | [analog.com/media/en/technical-document…ata-sheets/AD745.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD745.pdf) | vendor_current | high |
+| Analog Devices | AD745 data sheet | D | unknown | [analog.com/AD745/datasheet](https://www.analog.com/AD745/datasheet) | vendor_current | medium |
+| Analog Devices | AD745 data sheet | unknown (possibly an older revision in Wayback) | unknown | [analog.com/static/imported-files/data_sheets/AD745.pdf](http://www.analog.com/static/imported-files/data_sheets/AD745.pdf) | vendor_legacy | low |
+| Analog Devices | AD743 data sheet | E (linked PDF) | unknown | [analog.com/en/products/ad743.html](https://www.analog.com/en/products/ad743.html) | product_page | high |
+| Analog Devices | AD745 data sheet | D (linked PDF) | unknown | [analog.com/en/products/ad745.html](https://www.analog.com/en/products/ad745.html) | product_page | high |
+| Analog Devices | AD743 data sheet | E | unknown | [radiolocman.com/datasheet/pdf.html?di=170573](https://www.radiolocman.com/datasheet/pdf.html?di=170573) | third_party_mirror | high |
+| Analog Devices | AD745 data sheet | D | unknown | [radiolocman.com/datasheet/pdf.html?di=170571&p=5](https://www.radiolocman.com/datasheet/pdf.html?di=170571&p=5) | third_party_mirror | high |
+| Analog Devices | AD745 data sheet | unknown | unknown | [frc.utexas.edu/page11/files/AD745.pdf](https://www.frc.utexas.edu/page11/files/AD745.pdf) | third_party_mirror | medium |
+| Analog Devices | AD743 data sheet | E | unknown | [pdf4pro.com/view/ad743-ultralow-noise-…et-rev-e-3678ff.html](https://pdf4pro.com/view/ad743-ultralow-noise-bifet-op-amp-data-sheet-rev-e-3678ff.html) | third_party_mirror | medium |
+| Analog Devices | AD743 data sheet | unknown | unknown | [pdf4pro.com/view/ad743-ultralow-noise-…ta-sheet-17c893.html](https://pdf4pro.com/view/ad743-ultralow-noise-bifet-op-amp-data-sheet-17c893.html) | third_party_mirror | medium |
+| Analog Devices | AD743 data sheet | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/549295/AD/AD743.html](https://www.alldatasheet.com/datasheet-pdf/pdf/549295/AD/AD743.html) | third_party_mirror | medium |
+| Analog Devices | AD743 data sheet | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/549292/AD/AD743AN.html](https://www.alldatasheet.com/datasheet-pdf/pdf/549292/AD/AD743AN.html) | third_party_mirror | medium |
+| Analog Devices | AD745 data sheet | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/553785/AD/AD745.html](https://www.alldatasheet.com/datasheet-pdf/pdf/553785/AD/AD745.html) | third_party_mirror | medium |
+| Analog Devices | AD745 data sheet | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/549299/AD/AD745.html](https://www.alldatasheet.com/datasheet-pdf/pdf/549299/AD/AD745.html) | third_party_mirror | medium |
+| Analog Devices | AD743 data sheet | unknown | unknown | [datasheetcatalog.com/datasheets_pdf/A/D/7/4/AD743.shtml](http://www.datasheetcatalog.com/datasheets_pdf/A/D/7/4/AD743.shtml) | third_party_mirror | medium |
+| Analog Devices | AD745 data sheet | unknown | unknown | [datasheetcatalog.com/datasheets_pdf/A/D/7/4/AD745.shtml](https://www.datasheetcatalog.com/datasheets_pdf/A/D/7/4/AD745.shtml) | third_party_mirror | medium |
+| Analog Devices | AD743 data sheet | unknown | unknown | [static.chipdip.ru/lib/143/DOC000143683.pdf](https://static.chipdip.ru/lib/143/DOC000143683.pdf) | distributor_mirror | medium |
+| Analog Devices | AD745 data sheet | unknown | unknown | [digikey.com/htmldatasheets/production/50832/0/0/1/ad745.html](https://www.digikey.com/htmldatasheets/production/50832/0/0/1/ad745.html) | distributor_mirror | medium |
+| Analog Devices | AD743 / AD745 data sheets | unknown | unknown | [digchip.com/datasheets/parts/datasheet/041/AD743.php](https://www.digchip.com/datasheets/parts/datasheet/041/AD743.php) | third_party_mirror | medium |
+| Analog Devices | AD743 data sheet | unknown | unknown | [datasheet4u.com/datasheet/AnalogDevices/AD743-1392142](https://datasheet4u.com/datasheet/AnalogDevices/AD743-1392142) | third_party_mirror | medium |
+| Analog Devices | AD745 data sheet | unknown | unknown | [datasheetbank.com/en/preview/AD745-ADI](https://www.datasheetbank.com/en/preview/AD745-ADI) | third_party_mirror | medium |
+| Analog Devices | AD743 data sheet | unknown | unknown | [manualmachine.com/datasheet/ad743/7452…heet-analog-devices/](https://manualmachine.com/datasheet/ad743/7452089-datasheet-analog-devices/) | third_party_mirror | medium |
 
 ## [AD744 / AD746 (precision 500 ns-settling BiFET single / dual)](families/AD744.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | AD744 data sheet | unknown | unknown (URL linked in 2014 and in the Autodesk Eagle library) | [analog.com/static/imported-files/data_sheets/AD744.pdf](http://www.analog.com/static/imported-files/data_sheets/AD744.pdf) | vendor_legacy | high |
-| Analog Devices | AD746 data sheet | unknown | unknown | [analog.com/static/imported-files/data_sheets/AD746.pdf](http://www.analog.com/static/imported-files/data_sheets/AD746.pdf) | vendor_legacy | high |
-| Analog Devices | - | - | - | [analog.com/en/products/ad744.html](https://www.analog.com/en/products/ad744.html) | product_page | medium |
+| Analog Devices | AD744 data sheet | Rev. D (per radiolocman mirror label) | unknown | [analog.com/media/en/technical-document…ata-sheets/ad744.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ad744.pdf) | vendor_current | medium |
+| Analog Devices | AD744 data sheet | Rev. D | unknown | [radiolocman.com/datasheet/pdf.html?di=120133](https://www.radiolocman.com/datasheet/pdf.html?di=120133) | third_party_mirror | medium |
+| Analog Devices | AD744 data sheet | unknown | unknown (linked in 2014 and in Eagle libraries) | [analog.com/static/imported-files/data_sheets/AD744.pdf](http://www.analog.com/static/imported-files/data_sheets/AD744.pdf) | vendor_legacy | high |
+| Analog Devices | AD744 data sheet | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/48210/AD/AD744.html](https://www.alldatasheet.com/datasheet-pdf/pdf/48210/AD/AD744.html) | third_party_mirror | medium |
+| Analog Devices | AD744 data sheet | unknown | unknown | [datasheet.octopart.com/AD744KNZ-Analog…atasheet-9746244.pdf](https://datasheet.octopart.com/AD744KNZ-Analog-Devices-datasheet-9746244.pdf) | distributor_mirror | medium |
+| Analog Devices | AD744 data sheet | unknown | unknown | [datasheetcatalog.com/datasheets_pdf/A/D/7/4/AD744.shtml](https://www.datasheetcatalog.com/datasheets_pdf/A/D/7/4/AD744.shtml) | third_party_mirror | medium |
+| Analog Devices | AD744 data sheet | unknown | unknown | [manualmachine.com/datasheet/ad744krree…heet-analog-devices/](https://manualmachine.com/datasheet/ad744krreel/4000928-datasheet-analog-devices/) | third_party_mirror | low |
+| Analog Devices | AD744 data sheet | unknown | unknown | [doc.platan.ru/pdf/datasheets/analogdevices/AD744-877391.pdf](https://doc.platan.ru/pdf/datasheets/analogdevices/AD744-877391.pdf) | distributor_mirror | medium |
+| Analog Devices | AD746 data sheet | Rev. B | unknown | [analog.com/media/en/technical-document…ata-sheets/AD746.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD746.pdf) | vendor_current | high |
+| Analog Devices | AD746 data sheet | unknown | unknown | [analog.com/static/imported-files/data_sheets/AD746.pdf](http://www.analog.com/static/imported-files/data_sheets/AD746.pdf) | vendor_legacy | low |
+| Analog Devices | AD746 data sheet | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/48213/AD/AD746.html](https://www.alldatasheet.com/datasheet-pdf/pdf/48213/AD/AD746.html) | third_party_mirror | medium |
+| Analog Devices | AD746 data sheet | unknown | unknown | [datasheets.globalspec.com/ds/analog-de…98-bcd7-57bbc4b0023b](https://datasheets.globalspec.com/ds/analog-devices/ad746jrz/d8907686-99f0-4b98-bcd7-57bbc4b0023b) | third_party_mirror | medium |
+| Analog Devices | - | - | - | [analog.com/en/products/ad744.html](https://www.analog.com/en/products/ad744.html) | product_page | high |
+| Analog Devices | - | - | - | [analog.com/en/products/ad746.html](https://www.analog.com/en/products/ad746.html) | product_page | high |
 
 ## [AD825 (single high-speed JFET-input op amp)](families/AD825.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | AD825 | unknown (current web copy; revision letter not read) | unknown | [analog.com/media/en/technical-document…ata-sheets/AD825.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD825.pdf) | vendor_current | medium |
-| Analog Devices | AD825 | unknown | unknown (the URL was in use before ADI's 2016 site migration) | [analog.com/static/imported-files/data_sheets/AD825.pdf](http://www.analog.com/static/imported-files/data_sheets/AD825.pdf) | vendor_legacy | medium |
+| Analog Devices | AD825 | G | 4/14 (April 2014) | [analog.com/media/en/technical-document…ata-sheets/AD825.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD825.pdf) | vendor_current | high |
+| Analog Devices | AD825 | n/a | n/a | [analog.com/en/products/ad825.html](https://www.analog.com/en/products/ad825.html) | product_page | high |
+| Analog Devices (via RadioLocman) | AD825 | G | 4/14 | [radiolocman.com/datasheet/pdf.html?di=171867](https://www.radiolocman.com/datasheet/pdf.html?di=171867) | third_party_mirror | high |
+| Analog Devices (University of Toronto copy) | AD825 | G | 4/14 | [physics.utoronto.ca/~astummer/Archives…5,%2026MHz%2030V.pdf](https://www.physics.utoronto.ca/~astummer/Archives/2016_DigiPid/Docs/AnaDev%20AD825,%2026MHz%2030V.pdf) | third_party_mirror | high |
+| Analog Devices (via device.report) | AD825 | G | 4/14 | [device.report/m/143a0f6fa26b05c2602c74…ba8d0729eb61b2e533cf](https://device.report/m/143a0f6fa26b05c2602c74d84f4223df6f727677f9e6ba8d0729eb61b2e533cf) | third_party_mirror | medium |
+| Analog Devices (Carnegie Observatories copy) | AD825 | A | unknown (before 2/01; probably late 1990s) | [instrumentation.obs.carnegiescience.edu/ccd/parts/AD825.pdf](https://instrumentation.obs.carnegiescience.edu/ccd/parts/AD825.pdf) | third_party_mirror | high |
+| Analog Devices (via 100y.com.tw) | AD825 | C | unknown (before 2/01) | [100y.com.tw/pdf_file/AD825.pdf](https://www.100y.com.tw/pdf_file/AD825.pdf) | distributor_mirror | high |
+| Analog Devices (via AllDatasheet) | AD825 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/48428/AD/AD825.html](https://www.alldatasheet.com/datasheet-pdf/pdf/48428/AD/AD825.html) | third_party_mirror | medium |
+| Analog Devices (via AllDatasheet) | AD825 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/225378/AD/AD825.html](https://www.alldatasheet.com/datasheet-pdf/pdf/225378/AD/AD825.html) | third_party_mirror | medium |
+| Analog Devices (via datasheet4u / datasheetq) | AD825 | unknown | unknown | [datasheet4u.com/datasheet/Analog-Devices/AD825-142611](https://datasheet4u.com/datasheet/Analog-Devices/AD825-142611) | third_party_mirror | medium |
+| Analog Devices (via Futurlec) | AD825 | unknown | unknown | [futurlec.com/AnalogDevices/AD825ARpr.shtml](https://www.futurlec.com/AnalogDevices/AD825ARpr.shtml) | product_page | medium |
+| Analog Devices | AD825 | unknown | unknown (the path was in use before ADI's c. 2016 site migration) | [analog.com/static/imported-files/data_sheets/AD825.pdf](http://www.analog.com/static/imported-files/data_sheets/AD825.pdf) | vendor_legacy | low |
 | Analog Devices (via Mouser) | AD825 | unknown | unknown | [mouser.com/ProductDetail/Analog-Device…XCzn9bfJNaSDbw%3D%3D](https://www.mouser.com/ProductDetail/Analog-Devices/AD825AR?qs=%2FtpEQrCGXCzn9bfJNaSDbw%3D%3D) | product_page | low |
 | Analog Devices (via Mouser) | AD825 | unknown | unknown | [mouser.com/ProductDetail/Analog-Device…XCxOEwDf7bhYPw%3D%3D](https://www.mouser.com/ProductDetail/Analog-Devices/AD825ARZ?qs=%2FtpEQrCGXCxOEwDf7bhYPw%3D%3D) | product_page | low |
 
@@ -1129,14 +1347,52 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | AD826 | unknown (current, not observed) | unknown | [analog.com/media/en/technical-document…ata-sheets/AD826.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf) | vendor_current | medium |
-| Analog Devices | AD826 | Rev. C | unknown | [analog.com/static/imported-files/data_sheets/AD826.pdf](http://www.analog.com/static/imported-files/data_sheets/AD826.pdf) | vendor_legacy | medium |
+| Analog Devices | AD826 | Rev. C | 4/10 (April 2010) | [analog.com/media/en/technical-document…ata-sheets/AD826.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf) | vendor_current | high |
+| Analog Devices | AD826 | Rev. C | 4/10 | [analog.com/static/imported-files/data_sheets/AD826.pdf](http://www.analog.com/static/imported-files/data_sheets/AD826.pdf) | vendor_legacy | medium |
+| Analog Devices | AD826 | Rev. C | 4/10 | [radiolocman.com/datasheet/pdf.html?di=171829](https://www.radiolocman.com/datasheet/pdf.html?di=171829) | third_party_mirror | high |
+| Analog Devices | AD826 | Rev. C | 4/10 | [radiolocman.com/datasheet/pdf.html?di=121451](https://www.radiolocman.com/datasheet/pdf.html?di=121451) | third_party_mirror | medium |
+| Analog Devices | AD826 | Rev. B (per search summary) | unknown (pre-2010) | [alldatasheet.com/datasheet-pdf/pdf/48429/AD/AD826.html](https://www.alldatasheet.com/datasheet-pdf/pdf/48429/AD/AD826.html) | third_party_mirror | low |
+| Analog Devices | AD826 | unknown (probably Rev. C; '_15' suggests a 2015 upload) | unknown | [alldatasheet.com/datasheet-pdf/pdf/659677/AD/AD826_15.html](https://www.alldatasheet.com/datasheet-pdf/pdf/659677/AD/AD826_15.html) | third_party_mirror | low |
+| Analog Devices | AD826 | unknown | unknown | [pccomponents.com/datasheets/ANAL-AD826AN.PDF](https://pccomponents.com/datasheets/ANAL-AD826AN.PDF) | distributor_mirror | low |
+| Analog Devices | AD826 | unknown | unknown | [static.chipdip.ru/lib/827/DOC031827006.pdf](https://static.chipdip.ru/lib/827/DOC031827006.pdf) | distributor_mirror | low |
+| Analog Devices | AD826 | unknown | unknown | [radiolocman.com/datasheet/data.html?di=351355](https://www.radiolocman.com/datasheet/data.html?di=351355) | third_party_mirror | low |
+| Analog Devices | AD826 | n/a | n/a | [analog.com/en/products/ad826.html](https://www.analog.com/en/products/ad826.html) | product_page | high |
 
-## [AD845 (ADI precision JFET-input single, J/K/A/B/S grades)](families/AD845.md)
+## [AD843 (34 MHz CBFET JFET-input single op-amp)](families/AD843.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | n/a (product page) | unknown | unknown | [analog.com/en/products/ad845.html](https://www.analog.com/en/products/ad845.html) | product_page | low |
+| Analog Devices | AD843 (ADI data sheet; no separate literature number found) | D | unknown (not shown in search summary) | [analog.com/media/en/technical-document…ata-sheets/AD843.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf) | vendor_current | medium |
+| Analog Devices | AD843 | unknown | unknown | [analog.com/static/imported-files/data_sheets/AD843.pdf](https://www.analog.com/static/imported-files/data_sheets/AD843.pdf) | vendor_legacy | medium |
+| Analog Devices | AD843 | n/a | n/a | [analog.com/en/products/ad843.html](https://www.analog.com/en/products/ad843.html) | product_page | high |
+| Analog Devices (Octopart mirror) | AD843 | unknown | unknown | [datasheet.octopart.com/AD843KN-Analog-…s-datasheet-7595.pdf](https://datasheet.octopart.com/AD843KN-Analog-Devices-datasheet-7595.pdf) | distributor_mirror | medium |
+| Analog Devices (Digi-Key mirror) | AD843 | unknown | unknown | [digikey.com/htmldatasheets/production/51948/0/0/1/ad843.html](https://www.digikey.com/htmldatasheets/production/51948/0/0/1/ad843.html) | distributor_mirror | medium |
+| Analog Devices (alldatasheet mirror) | AD843 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/575873/AD/AD843.html](https://www.alldatasheet.com/datasheet-pdf/pdf/575873/AD/AD843.html) | third_party_mirror | medium |
+| Analog Devices (alldatasheet mirror) | AD843 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/48472/AD/AD843KN.html](https://www.alldatasheet.com/datasheet-pdf/pdf/48472/AD/AD843KN.html) | third_party_mirror | medium |
+| Analog Devices (datasheetcatalog mirror) | AD843 | unknown | unknown | [datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD843.shtml](https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD843.shtml) | third_party_mirror | medium |
+| Analog Devices (digchip mirror) | AD843 | unknown | unknown | [digchip.com/datasheets/parts/datasheet/041/AD843.php](https://www.digchip.com/datasheets/parts/datasheet/041/AD843.php) | third_party_mirror | medium |
+| Analog Devices (datasheetq mirror) | AD843 | unknown | unknown | [datasheetq.com/AD843JN-ADI](https://www.datasheetq.com/AD843JN-ADI) | third_party_mirror | medium |
+
+## [AD845 (ADI 16 MHz CBFET JFET-input single, J/K/A/B/S grades)](families/AD845.md)
+
+| Vendor | Document | Rev | Date | Link | Kind | Conf. |
+|---|---|---|---|---|---|---|
+| Analog Devices | AD845 (ADI data sheet) | E | unknown (printed date not seen) | [analog.com/media/en/technical-document…ata-sheets/AD845.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD845.pdf) | vendor_current | medium |
+| Analog Devices | n/a (product page) | E (linked datasheet, per search summary) | n/a | [analog.com/en/products/ad845.html](https://www.analog.com/en/products/ad845.html) | product_page | high |
+| radiolocman.com | AD845 | E | unknown (listing shows a 2017-08-15 file date, possibly the upload date) | [radiolocman.com/datasheet/pdf.html?di=121495](https://www.radiolocman.com/datasheet/pdf.html?di=121495) | third_party_mirror | medium |
+| radiolocman.com | AD845 | unknown | unknown | [radiolocman.com/datasheet/data.html?di=351783](https://www.radiolocman.com/datasheet/data.html?di=351783) | third_party_mirror | medium |
+| Digi-Key (distributor) | AD845 | unknown (likely E) | unknown | [digikey.at/htmldatasheets/production/825325/0/0/1/ad845.html](https://www.digikey.at/htmldatasheets/production/825325/0/0/1/ad845.html) | distributor_mirror | medium |
+| Octopart (distributor aggregator) | AD845 | unknown | unknown | [datasheet.octopart.com/AD845KNZ-Analog…atasheet-9718557.pdf](https://datasheet.octopart.com/AD845KNZ-Analog-Devices-datasheet-9718557.pdf) | distributor_mirror | medium |
+| alldatasheet.com | AD845 | unknown (low ID suggests an older scan; unconfirmed) | unknown | [alldatasheet.com/datasheet-pdf/pdf/48467/AD/AD845.html](https://www.alldatasheet.com/datasheet-pdf/pdf/48467/AD/AD845.html) | third_party_mirror | low |
+| alldatasheet.com | AD845 | unknown | unknown | [alldatasheet.com/html-pdf/48469/AD/AD845KN/99/4/AD845KN.html](https://www.alldatasheet.com/html-pdf/48469/AD/AD845KN/99/4/AD845KN.html) | third_party_mirror | low |
+| alldatasheet.com | AD845 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/562285/AD/AD845KN.html](https://www.alldatasheet.com/datasheet-pdf/pdf/562285/AD/AD845KN.html) | third_party_mirror | medium |
+| alldatasheet.com | AD845 | unknown (Z-suffix era, likely E) | unknown | [alldatasheet.com/datasheet-pdf/pdf/540312/AD/AD845JNZ.html](https://www.alldatasheet.com/datasheet-pdf/pdf/540312/AD/AD845JNZ.html) | third_party_mirror | medium |
+| alldatasheet.com | AD845 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/101…6/AD/AD845JR-16.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1011846/AD/AD845JR-16.html) | third_party_mirror | medium |
+| datasheetcatalog.com | AD845 | unknown (this site usually freezes circa-2000 copies; unconfirmed) | unknown | [datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD845.shtml](https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD845.shtml) | third_party_mirror | low |
+| kontest.ru | AD845 | unknown | unknown | [kontest.ru/datasheet/ad/ad845.pdf](https://www.kontest.ru/datasheet/ad/ad845.pdf) | third_party_mirror | medium |
+| digchip.com | AD845 | unknown | unknown | [digchip.com/datasheets/parts/datasheet/041/AD845.php](https://www.digchip.com/datasheets/parts/datasheet/041/AD845.php) | third_party_mirror | medium |
+| futurlec.com | AD845 | unknown | unknown | [futurlec.com/AnalogDevices/AD845JN.shtml](https://www.futurlec.com/AnalogDevices/AD845JN.shtml) | distributor_mirror | low |
+| datasheet4u.com | AD845 | unknown | unknown | [datasheet4u.com/datasheets/Analog-Devices/AD845/1088521](https://datasheet4u.com/datasheets/Analog-Devices/AD845/1088521) | third_party_mirror | medium |
 | Mouser (distributor) | n/a (distributor page) | n/a | unknown | [mouser.com/ProductDetail/Analog-Device…fS60ab%252BuTA%3D%3D](https://www.mouser.com/ProductDetail/Analog-Devices/AD845JNZ?qs=%2FtpEQrCGXCyqfS60ab%252BuTA%3D%3D) | product_page | low |
 | Mouser (distributor) | n/a (distributor page) | n/a | unknown | [mouser.com/ProductDetail/Analog-Device…XCxjbQpMOvCCgA%3D%3D](https://www.mouser.com/ProductDetail/Analog-Devices/AD845JN?qs=%2FtpEQrCGXCxjbQpMOvCCgA%3D%3D) | product_page | low |
 
@@ -1144,27 +1400,57 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | AD847 | unknown (not observed this run) | unknown | [analog.com/media/en/technical-document…ata-sheets/ad847.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ad847.pdf) | vendor_current | medium |
-| Analog Devices | AD827 | unknown | unknown | [analog.com/en/products/ad827.html](https://www.analog.com/en/products/ad827.html) | product_page | high |
-| Analog Devices | AD847 | unknown | unknown | [analog.com/en/products/ad847.html](https://www.analog.com/en/products/ad847.html) | product_page | medium |
-| Analog Devices | ad847.cir | current vendor copy unknown; third-party copies show Rev. A 12/90 and Rev. B 08/2006 | unknown | [analog.com/media/en/simulation-models/…delType=spice-models](https://www.analog.com/media/en/simulation-models/spice-models/ad847.cir?modelType=spice-models) | vendor_current | medium |
-| Mouser Electronics (distributor) | n/a | n/a | unknown (URL list scrape date unknown) | [mouser.com/ProductDetail/Analog-Device…%252BCu3Ds21BQ%3D%3D](https://www.mouser.com/ProductDetail/Analog-Devices/AD827JNZ?qs=%2FtpEQrCGXCyN%252BCu3Ds21BQ%3D%3D) | product_page | medium |
-| Mouser Electronics (distributor) | n/a | n/a | unknown | [mouser.com/ProductDetail/Analog-Device…wi%2Fm1CdjScgw%3D%3D](https://www.mouser.com/ProductDetail/Analog-Devices/AD847JNZ?qs=%2FtpEQrCGXCwi%2Fm1CdjScgw%3D%3D) | product_page | medium |
+| Analog Devices | AD847 | F | unknown (not shown in search summaries) | [analog.com/media/en/technical-document…ata-sheets/AD847.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD847.pdf) | vendor_current | high |
+| Analog Devices | AD827 | C | 8/02 (Rev. B to Rev. C, per revision history) | [analog.com/media/en/technical-document…ata-sheets/AD827.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD827.pdf) | vendor_current | medium |
+| Analog Devices | AD847S | unknown | unknown | [analog.com/media/en/technical-document…ta-sheets/ad847s.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ad847s.pdf) | vendor_current | medium |
+| Analog Devices | AD827 | n/a | n/a | [analog.com/en/products/ad827.html](https://www.analog.com/en/products/ad827.html) | product_page | high |
+| Analog Devices | AD847 | n/a | n/a | [analog.com/en/products/ad847.html](https://www.analog.com/en/products/ad847.html) | product_page | high |
+| Radiolocman (third-party mirror) | AD847 | F | unknown | [radiolocman.com/datasheet/pdf.html?di=121493](https://www.radiolocman.com/datasheet/pdf.html?di=121493) | third_party_mirror | high |
+| Radiolocman (third-party mirror) | AD827 | C | 8/02 | [radiolocman.com/datasheet/pdf.html?di=121479](https://www.radiolocman.com/datasheet/pdf.html?di=121479) | third_party_mirror | high |
+| Alldatasheet (third-party mirror) | AD847 | unknown (12 pages; possibly Rev. F) | unknown | [alldatasheet.com/datasheet-pdf/pdf/48469/AD/AD847.html](https://www.alldatasheet.com/datasheet-pdf/pdf/48469/AD/AD847.html) | third_party_mirror | medium |
+| Alldatasheet (third-party mirror) | AD827 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/48430/AD/AD827.html](https://www.alldatasheet.com/datasheet-pdf/pdf/48430/AD/AD827.html) | third_party_mirror | medium |
+| Octopart (distributor aggregator mirror) | AD847 | unknown (likely current Rev. F) | unknown | [datasheet.octopart.com/AD847JNZ-Analog…atasheet-9606624.pdf](https://datasheet.octopart.com/AD847JNZ-Analog-Devices-datasheet-9606624.pdf) | distributor_mirror | medium |
+| Farnell (distributor mirror) | AD847 | unknown | unknown | [farnell.com/datasheets/2147045.pdf](https://www.farnell.com/datasheets/2147045.pdf) | distributor_mirror | medium |
+| Distrelec (distributor mirror) | AD847 | unknown | unknown | [media.distrelec.com/Web/Downloads/_t/d…es_AD847_eng_tds.pdf](https://media.distrelec.com/Web/Downloads/_t/ds/Analog_Devices_AD847_eng_tds.pdf) | distributor_mirror | medium |
+| Datasheetcatalog / Digchip / Futurlec / Datasheetarchive (third-party mirrors) | AD847 / AD827 | unknown (these older mirrors often freeze pre-2002 revisions) | unknown | [datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD847.shtml](https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD847.shtml) | third_party_mirror | medium |
+| Analog Devices | ad847.cir | current vendor copy unknown; third-party copies show Rev. A 12/90 and Rev. B 08/2006 | unknown | [analog.com/media/en/simulation-models/…delType=spice-models](https://www.analog.com/media/en/simulation-models/spice-models/ad847.cir?modelType=spice-models) | vendor_current | low |
+| Mouser Electronics (distributor) | n/a | n/a | n/a | [mouser.com/ProductDetail/Analog-Device…%252BCu3Ds21BQ%3D%3D](https://www.mouser.com/ProductDetail/Analog-Devices/AD827JNZ?qs=%2FtpEQrCGXCyN%252BCu3Ds21BQ%3D%3D) | product_page | high |
+| Digi-Key (distributor) | n/a | n/a | n/a | [digikey.com/en/products/detail/analog-…nc/AD827JR-16/611658](https://www.digikey.com/en/products/detail/analog-devices-inc/AD827JR-16/611658) | product_page | high |
+| Mouser Electronics (distributor) | n/a | n/a | n/a | [mouser.com/ProductDetail/Analog-Device…wi%2Fm1CdjScgw%3D%3D](https://www.mouser.com/ProductDetail/Analog-Devices/AD847JNZ?qs=%2FtpEQrCGXCwi%2Fm1CdjScgw%3D%3D) | product_page | low |
 
 ## [ADA4075-2 (ADI dual ultralow-noise, low-power bipolar audio op amp)](families/ADA4075-2.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | ADA4075-2 | unknown (current revision not retrieved) | unknown | [analog.com/media/en/technical-document…sheets/ADA4075-2.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4075-2.pdf) | vendor_current | medium |
-| Analog Devices | ADA4075-2 | unknown (probably an early revision) | unknown (URL in use from about 2009 to the mid-2010s) | [analog.com/static/imported-files/data_sheets/ADA4075-2.pdf](https://www.analog.com/static/imported-files/data_sheets/ADA4075-2.pdf) | vendor_legacy | high |
-| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ada4075-2.html](https://www.analog.com/en/products/ada4075-2.html) | product_page | medium |
+| Analog Devices | ADA4075-2 | C | 11/2013 | [analog.com/media/en/technical-document…sheets/ADA4075-2.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4075-2.pdf) | vendor_current | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ada4075-2.html](https://www.analog.com/en/products/ada4075-2.html) | product_page | high |
+| Analog Devices | ADA4075-2 | B | 12/2011 | [datasheet.octopart.com/ADA4075-2ARZ-An…tasheet-10672103.pdf](https://datasheet.octopart.com/ADA4075-2ARZ-Analog-Devices-datasheet-10672103.pdf) | distributor_mirror | high |
+| Analog Devices | ADA4075-2 | 0 | 10/2008 | [manuallib.com/download/pdf8/ANALOG-DEV…A4075-2-HANDBOOK.PDF](https://www.manuallib.com/download/pdf8/ANALOG-DEVICES-ADA4075-2-HANDBOOK.PDF) | third_party_mirror | high |
+| Analog Devices | ADA4075-2 | C | 11/2013 | [media.distrelec.com/Web/Downloads/_t/d…_ADA4075_eng_tds.pdf](https://media.distrelec.com/Web/Downloads/_t/ds/Analog_Devices_ADA4075_eng_tds.pdf) | distributor_mirror | high |
+| Analog Devices | ADA4075-2 | C | 11/2013 | [rlocman.ru/datasheet/pdf.html?di=121237&p=2](https://www.rlocman.ru/datasheet/pdf.html?di=121237&p=2) | third_party_mirror | high |
+| Analog Devices | ADA4075-2 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/1969636/AD/ADA4075-2.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1969636/AD/ADA4075-2.html) | third_party_mirror | medium |
+| Analog Devices | ADA4075-2 | unknown | unknown | [studylib.net/doc/11672948/ultralow-noi…ada4075-2-data-sh...](https://studylib.net/doc/11672948/ultralow-noise-amplifier-at-lower-power-ada4075-2-data-sh...) | third_party_mirror | medium |
+| Analog Devices | ADA4075-2 | unknown | unknown | [manualmachine.com/datasheet/ada40752/8…heet-analog-devices/](https://manualmachine.com/datasheet/ada40752/8372908-datasheet-analog-devices/) | third_party_mirror | medium |
+| Analog Devices | ADA4075-2 | unknown | unknown | [digchip.com/datasheets/1130479-ada4075-2.html](https://www.digchip.com/datasheets/1130479-ada4075-2.html) | third_party_mirror | medium |
+| Analog Devices | ADA4075-2 | unknown (probably an early revision) | unknown (URL in use from about 2009 to the mid-2010s) | [analog.com/static/imported-files/data_sheets/ADA4075-2.pdf](https://www.analog.com/static/imported-files/data_sheets/ADA4075-2.pdf) | vendor_legacy | low |
+| DigiKey | n/a | n/a | n/a | [digikey.com/en/products/detail/analog-…075-2ACPZ-R7/2237640](https://www.digikey.com/en/products/detail/analog-devices-inc/ADA4075-2ACPZ-R7/2237640) | product_page | high |
 
 ## [ADA4898-1 / ADA4898-2 (single/dual 0.9 nV/√Hz high-voltage bipolar)](families/ADA4898.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | ADA4898-1/ADA4898-2 data sheet (combined single/dual) | current (third-party 2026 note says Rev. E; another third-party DB says Rev F; unconfirmed) | unknown | [analog.com/media/en/technical-document…ada4898-1_4898-2.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf) | vendor_current | high |
-| Analog Devices | ADA4898-1/ADA4898-2 data sheet | Rev. E (per third-party citation) | unknown | [radiolocman.com/datasheet/data.html?di=349231](https://www.radiolocman.com/datasheet/data.html?di=349231) | third_party_mirror | medium |
+| Analog Devices | ADA4898-1/ADA4898-2 data sheet (combined single/dual; ADI uses no separate literature number) | Rev. F | 01/19/2026 (date ADI lists, per search summary; printed month/year not seen) | [analog.com/media/en/technical-document…ADA4898-1_4898-2.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4898-1_4898-2.pdf) | vendor_current | high |
+| Analog Devices | ADA4898-1/ADA4898-2 data sheet | current (redirect); one search index entry still shows the stale title 'Rev. D' | n/a | [analog.com/ADA4898-2/datasheet](https://www.analog.com/ADA4898-2/datasheet) | vendor_current | medium |
+| Analog Devices | ADA4898-1/ADA4898-2 data sheet | unknown (pre-2014 ADI URL scheme; 'Data Sheet' title style suggests the Rev. C/D era; unconfirmed) | unknown | [analog.com/static/imported-files/data_…ADA4898-1_4898-2.pdf](http://www.analog.com/static/imported-files/data_sheets/ADA4898-1_4898-2.pdf) | vendor_legacy | medium |
+| Analog Devices | ADA4898-1/ADA4898-2 data sheet | Rev. D | 5/12 | [studylib.net/doc/18403727/ada4898-1-ada4898-2--rev.-d-](https://studylib.net/doc/18403727/ada4898-1-ada4898-2--rev.-d-) | third_party_mirror | medium |
+| Analog Devices | ADA4898-1/ADA4898-2 data sheet | Rev. E (per a GitHub component review only; unconfirmed) | unknown | [radiolocman.com/datasheet/data.html?di=349231](https://www.radiolocman.com/datasheet/data.html?di=349231) | third_party_mirror | medium |
+| Analog Devices | ADA4898-1/ADA4898-2 data sheet | unknown | unknown | [radiolocman.com/datasheet/data.html?di=349495](https://www.radiolocman.com/datasheet/data.html?di=349495) | third_party_mirror | low |
+| Analog Devices | ADA4898-1 data sheet | unknown (low alldatasheet ID suggests an early, possibly single-only Rev. 0/A/B copy; unconfirmed) | unknown | [alldatasheet.com/datasheet-pdf/pdf/240426/AD/ADA4898-1.html](https://www.alldatasheet.com/datasheet-pdf/pdf/240426/AD/ADA4898-1.html) | third_party_mirror | low |
+| Analog Devices | ADA4898-1/ADA4898-2 data sheet | unknown (Rev. C or later, since it covers the -2; unconfirmed) | unknown | [alldatasheet.com/datasheet-pdf/pdf/549493/AD/ADA4898-2.html](https://www.alldatasheet.com/datasheet-pdf/pdf/549493/AD/ADA4898-2.html) | third_party_mirror | low |
+| Analog Devices | ADA4898-1/ADA4898-2 data sheet | unknown (high ID suggests a recent upload, possibly Rev. E/F; unconfirmed) | unknown | [alldatasheet.com/datasheet-pdf/pdf/1969661/AD/ADA4898-1.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1969661/AD/ADA4898-1.html) | third_party_mirror | low |
+| Analog Devices | ADA4898-1 data sheet | unknown | unknown | [digchip.com/datasheets/1120937-ada4898-1.html](https://www.digchip.com/datasheets/1120937-ada4898-1.html) | third_party_mirror | low |
+| Analog Devices | ADA4898-1/ADA4898-2 data sheet | unknown | unknown | [scribd.com/document/638032069/ADA4898-1-4898-2](https://www.scribd.com/document/638032069/ADA4898-1-4898-2) | third_party_mirror | low |
+| Analog Devices | ADA4898-1/ADA4898-2 data sheet | unknown | unknown | [datasheet4u.com/datasheets/Analog-Devices/ADA4898-2/717257](https://datasheet4u.com/datasheets/Analog-Devices/ADA4898-2/717257) | third_party_mirror | low |
 | Analog Devices | ADA4898-1/ADA4898-2 data sheet | unknown | unknown | [static.chipdip.ru/lib/677/DOC011677565.pdf](https://static.chipdip.ru/lib/677/DOC011677565.pdf) | distributor_mirror | low |
 | Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ada4898-1.html](https://www.analog.com/en/products/ada4898-1.html) | product_page | high |
 | Analog Devices | n/a | n/a | n/a | [analog.com/en/products/ada4898-2.html](https://www.analog.com/en/products/ada4898-2.html) | product_page | high |
@@ -1240,34 +1526,84 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices (Linear Technology document) | 1115fa | A | unknown (not visible in any result seen) | [analog.com/media/en/technical-document…-sheets/lt1115fa.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf) | vendor_current | medium |
-| Analog Devices | lt1115 | unknown (probably serves the current Rev A) | unknown | [analog.com/media/en/technical-document…ta-sheets/lt1115.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115.pdf) | vendor_current | low |
-| Linear Technology | linear.com/docs/1612 | unknown (the link served the then-current revision) | unknown (link seen in library copies dated 2017-2019) | [linear.com/docs/1612](http://www.linear.com/docs/1612) | vendor_legacy | medium |
+| Analog Devices (Linear Technology document) | 1115fa | A | unknown (not shown in search results) | [analog.com/media/en/technical-document…-sheets/lt1115fa.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf) | vendor_current | high |
+| Analog Devices | lt1115 | unknown | unknown | [analog.com/media/en/technical-document…ta-sheets/lt1115.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115.pdf) | vendor_current | low |
+| Linear Technology | linear.com/docs/1612 | unknown (the link served the then-current revision) | unknown (link seen in library copies dated 2017-2019) | [linear.com/docs/1612](http://www.linear.com/docs/1612) | vendor_legacy | low |
 | Linear Technology | LT1115 (pre-Rev A) | original | Dec 1989 |  | vendor_legacy | low |
 | Analog Devices | - | - | - | [analog.com/en/products/lt1115.html](https://www.analog.com/en/products/lt1115.html) | product_page | high |
+| Analog Devices | - | - | - | [analog.com/en/products/lt1115/sample-buy.html](https://www.analog.com/en/products/lt1115/sample-buy.html) | product_page | high |
+| DigiKey (distributor) | 1115fa (probable) | unknown (probably A) | unknown | [digikey.com/htmldatasheets/production/…39/0/0/1/lt1115.html](https://www.digikey.com/htmldatasheets/production/80239/0/0/1/lt1115.html) | distributor_mirror | medium |
+| DigiKey (distributor) | - | - | - | [digikey.com/en/products/base-product/a…-inc/505/LT1115/3877](https://www.digikey.com/en/products/base-product/analog-devices-inc/505/LT1115/3877) | product_page | medium |
+| Mouser (distributor) | - | - | - | [mouser.com/ProductDetail/Analog-Device…QUWk8x4PZzUG3w%3D%3D](https://www.mouser.com/ProductDetail/Analog-Devices/LT1115CN8PBF?qs=ytflclh7QUWk8x4PZzUG3w%3D%3D) | product_page | medium |
+| Mouser (distributor) | - | - | - | [mouser.com/ProductDetail/Analog-Device…QUV1TE7xHI4owQ%3D%3D](https://www.mouser.com/ProductDetail/Analog-Devices/LT1115CSW?qs=ytflclh7QUV1TE7xHI4owQ%3D%3D) | product_page | medium |
+| alldatasheet (third party) | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/70309/LINER/LT1115.html](https://www.alldatasheet.com/datasheet-pdf/pdf/70309/LINER/LT1115.html) | third_party_mirror | medium |
+| alldatasheet (third party) | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/257452/LINEAR/LT1115.html](https://www.alldatasheet.com/datasheet-pdf/pdf/257452/LINEAR/LT1115.html) | third_party_mirror | medium |
+| datasheetcatalog (third party) | unknown | unknown (older mirror; possibly pre-Rev A) | unknown | [datasheetcatalog.com/datasheets_pdf/L/T/1/1/LT1115.shtml](https://www.datasheetcatalog.com/datasheets_pdf/L/T/1/1/LT1115.shtml) | third_party_mirror | medium |
+| digchip (third party) | unknown | unknown | unknown | [digchip.com/datasheets/parts/datasheet/262/LT1115.php](https://www.digchip.com/datasheets/parts/datasheet/262/LT1115.php) | third_party_mirror | medium |
+| radiolocman (third party) | unknown | unknown | unknown | [radiolocman.com/datasheet/data.html?di=338779](https://www.radiolocman.com/datasheet/data.html?di=338779) | third_party_mirror | medium |
+| radiolocman (third party) | unknown | unknown (probably 1115fa) | unknown | [radiolocman.com/datasheet/pdf.html?di=151181](https://www.radiolocman.com/datasheet/pdf.html?di=151181) | third_party_mirror | medium |
+| datasheet4u (third party) | unknown | unknown | unknown | [datasheet4u.com/datasheets/Linear/LT1115/1384323](https://datasheet4u.com/datasheets/Linear/LT1115/1384323) | third_party_mirror | medium |
+| studylib (third party) | unknown | unknown | unknown | [studylib.net/doc/18040096/lt1115---ult…ortion--audio-op-amp](https://studylib.net/doc/18040096/lt1115---ultra-low-noise--low-distortion--audio-op-amp) | third_party_mirror | medium |
+| Scribd (third party) | unknown | unknown (probably 1115fa) | unknown | [scribd.com/document/937398071/LT1115-Datasheet](https://www.scribd.com/document/937398071/LT1115-Datasheet) | third_party_mirror | medium |
+| manuals.plus (third party) | unknown | unknown | unknown | [manuals.plus/m/8ea94eb766861a12ae5a231…dd7475717bb16792ed34](https://manuals.plus/m/8ea94eb766861a12ae5a2311b5a35806e15365a6cc9add7475717bb16792ed34) | third_party_mirror | medium |
 | Reichelt (distributor) | - | unknown | - | [reichelt.com/de/en/operational-amplifi…115-cn8-p148545.html](https://www.reichelt.com/de/en/operational-amplifier-dip-8-lt-1115-cn8-p148545.html) | product_page | low |
 
 ## [LT1122 (fast-settling JFET-input single op-amp, grades A/B/C/D)](families/LT1122.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Linear Technology | unknown (LTC footer code such as '1122fx' not seen) | unknown | unknown | [cds.linear.com/docs/Datasheet/lt1122.pdf](http://cds.linear.com/docs/Datasheet/lt1122.pdf) | vendor_legacy | low |
-| Analog Devices (Linear Technology) | unknown | unknown | unknown (captured for the Stanford TECS/Fonduer op-amp dataset, c. 2019-2020) | [zenodo.org/record/4558344/files/mouser…ps.tar.xz?download=1](https://zenodo.org/record/4558344/files/mouser_opamps.tar.xz?download=1) | third_party_mirror | low |
+| Analog Devices (Linear Technology) | 1122fb | B | 02/14 (print code LT 0214 REV B) | [analog.com/media/en/technical-document…ta-sheets/1122fb.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/1122fb.pdf) | vendor_current | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/lt1122.html](https://www.analog.com/en/products/lt1122.html) | product_page | high |
+| Linear Technology | unknown | unknown (probably pre-2014 original or Rev A) | unknown | [cds.linear.com/docs/Datasheet/lt1122.pdf](http://cds.linear.com/docs/Datasheet/lt1122.pdf) | vendor_legacy | low |
+| Analog Devices Inc. (Digi-Key) | probably 1122fb | unknown (probably B) | unknown | [digikey.co.uk/htmldatasheets/productio…46/0/0/1/lt1122.html](https://www.digikey.co.uk/htmldatasheets/production/80346/0/0/1/lt1122.html) | distributor_mirror | medium |
+| Linear Technology (RS Components copy) | unknown | unknown | unknown | [docs.rs-online.com/640c/0900766b814f5463.pdf](https://docs.rs-online.com/640c/0900766b814f5463.pdf) | distributor_mirror | medium |
+| Linear Technology (Alldatasheet copy) | unknown | unknown (lower site id suggests an older upload) | unknown | [alldatasheet.com/datasheet-pdf/pdf/70317/LINER/LT1122.html](https://www.alldatasheet.com/datasheet-pdf/pdf/70317/LINER/LT1122.html) | third_party_mirror | medium |
+| Linear Technology (Alldatasheet copy) | unknown | unknown (higher site id suggests a newer upload, possibly 1122fb) | unknown | [alldatasheet.com/datasheet-pdf/pdf/695855/LINER/LT1122.html](https://www.alldatasheet.com/datasheet-pdf/pdf/695855/LINER/LT1122.html) | third_party_mirror | medium |
+| Linear Technology (Datasheetcatalog copy) | unknown | unknown (site mostly holds 1990s-2000s scans) | unknown | [datasheetcatalog.com/datasheets_pdf/L/T/1/1/LT1122.shtml](https://www.datasheetcatalog.com/datasheets_pdf/L/T/1/1/LT1122.shtml) | third_party_mirror | medium |
+| Linear Technology (DatasheetQ copies) | unknown | unknown (site lists two versions) | unknown | [datasheetq.com/en/preview/LT1122-Linear](https://www.datasheetq.com/en/preview/LT1122-Linear) | third_party_mirror | medium |
+| Linear Technology (Digchip copy) | unknown | unknown | unknown | [digchip.com/datasheets/parts/datasheet/262/LT1122CM.php](https://www.digchip.com/datasheets/parts/datasheet/262/LT1122CM.php) | third_party_mirror | low |
+| Linear Technology (Datasheetspdf copy) | unknown | unknown | unknown | [datasheetspdf.com/datasheet-pdf/1078518/LT1122.html](https://datasheetspdf.com/datasheet-pdf/1078518/LT1122.html) | third_party_mirror | medium |
+| Analog Devices (Linear Technology) | unknown (probably 1122fb) | unknown (probably B, current since 02/14) | unknown (captured for the Stanford TECS/Fonduer dataset, c. 2019-2020) | [zenodo.org/record/4558344/files/mouser…ps.tar.xz?download=1](https://zenodo.org/record/4558344/files/mouser_opamps.tar.xz?download=1) | third_party_mirror | low |
 
 ## [LT1357 / LT1358 / LT1359 (single/dual/quad 25 MHz, 600 V/µs C-Load bipolar)](families/LT1358.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Linear Technology / Analog Devices (Mouser distributor copy) | 135859f | B (file code 135859fb) | unknown | [mouser.de/datasheet/2/609/135859fb-2953807.pdf](https://www.mouser.de/datasheet/2/609/135859fb-2953807.pdf) | distributor_mirror | medium |
+| Analog Devices (Linear Technology legacy) | 135859f | B (file code 135859fb) | unknown (not shown in search results) | [analog.com/media/en/technical-document…-sheets/135859fb.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/135859fb.pdf) | vendor_current | high |
+| Analog Devices (Linear Technology legacy) | 1357f | A (file code 1357fa) | unknown (not shown in search results) | [analog.com/media/en/technical-document…ta-sheets/1357fa.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/1357fa.pdf) | vendor_current | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/lt1358.html](https://www.analog.com/en/products/lt1358.html) | product_page | high |
+| Linear Technology / Analog Devices (Mouser distributor copy) | 135859f | B (file code 135859fb, from the file name) | unknown | [mouser.de/datasheet/2/609/135859fb-2953807.pdf](https://www.mouser.de/datasheet/2/609/135859fb-2953807.pdf) | distributor_mirror | low |
+| Analog Devices Inc. (DigiKey HTML copy) | 135859f | not shown in search results (ADI-branded, so probably Rev B) | unknown | [digikey.com/en/htmldatasheets/producti…358-lt1359-datasheet](https://www.digikey.com/en/htmldatasheets/production/80202/0/0/1/lt1358-lt1359-datasheet) | distributor_mirror | medium |
+| Linear Technology (alldatasheet copy) | 135859f | unknown (Linear-branded; possibly an older revision) | unknown | [alldatasheet.com/datasheet-pdf/pdf/70420/LINER/LT1358.html](https://www.alldatasheet.com/datasheet-pdf/pdf/70420/LINER/LT1358.html) | third_party_mirror | medium |
+| Linear Technology (radiolocman copy) | 135859f | unknown (Linear-branded) | unknown | [radiolocman.com/datasheet/data.html?di=339481](https://www.radiolocman.com/datasheet/data.html?di=339481) | third_party_mirror | medium |
+| Analog Devices (radiolocman copy) | 135859f | unknown (ADI-branded) | unknown | [radiolocman.com/datasheet/data.html?di=524267](https://www.radiolocman.com/datasheet/data.html?di=524267) | third_party_mirror | medium |
+| Linear Technology (datasheet4u copy) | 135859f | unknown | unknown | [datasheet4u.com/datasheets/Linear-Technology/LT1358/51465](https://datasheet4u.com/datasheets/Linear-Technology/LT1358/51465) | third_party_mirror | medium |
+| Linear Technology (Farnell copy) | 1357f | unknown | unknown | [farnell.com/datasheets/60377.pdf](https://www.farnell.com/datasheets/60377.pdf) | distributor_mirror | medium |
+| Linear Technology (datasheet.hk copy) | 1357f | unknown | unknown | [datasheet.hk/download.php?id=1083661&p…%5Clt1357_357960.pdf](http://www.datasheet.hk/download.php?id=1083661&pdfid=2B76D4287F747D2DF4D7062C0BFF77F3&file=0049%5Clt1357_357960.pdf) | third_party_mirror | medium |
 | Analog Devices | lt1355-56-57-58 (from the URL file name; unverified) | E (as cited) | 2023 (as cited) | [analog.com/media/en/technical-document…/lt1355-56-57-58.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/lt1355-56-57-58.pdf) | vendor_current | low |
 
 ## [LT1360 / LT1361 / LT1362 (50MHz, 800V/us C-Load bipolar single/dual/quad)](families/LT1361.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices (Linear Technology legacy doc) | 1360fa | A | unknown (footer not seen) | [analog.com/media/en/technical-document…ta-sheets/1360fa.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/1360fa.pdf) | vendor_revision_specific | medium |
-| Linear Technology | unknown (Linear file code not seen) | unknown | no date (as cited) | [linear.com/product/LT1361](http://www.linear.com/product/LT1361) | product_page | medium |
-| Linear Technology | unknown | unknown | unknown | [linear.com/product/LT1362](http://www.linear.com/product/LT1362) | product_page | medium |
+| Analog Devices (Linear Technology legacy doc) | 13612fa | A (from the Linear 'fa' file code) | not seen (Linear-era copyright 1994 per search snippet) | [analog.com/media/en/technical-document…a-sheets/13612fa.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/13612fa.pdf) | vendor_current | high |
+| Analog Devices (Linear Technology legacy doc) | 1360fa | A (from the Linear 'fa' file code) | ADI product page lists 'Data Sheet 08/28/2007' (web listing date; printed footer date not seen) | [analog.com/media/en/technical-document…ta-sheets/1360fa.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/1360fa.pdf) | vendor_current | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/lt1361.html](https://www.analog.com/en/products/lt1361.html) | product_page | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/lt1362.html](https://www.analog.com/en/products/lt1362.html) | product_page | high |
+| Analog Devices | n/a | n/a | n/a | [analog.com/en/products/lt1360.html](https://www.analog.com/en/products/lt1360.html) | product_page | high |
+| Linear Technology | n/a | n/a | n/a | [linear.com/product/LT1361](http://www.linear.com/product/LT1361) | product_page | low |
+| Linear Technology | n/a | n/a | n/a | [linear.com/product/LT1362](http://www.linear.com/product/LT1362) | product_page | low |
+| Linear Technology (Alldatasheet mirror) | 13612f/13612fa (not shown) | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/70422/LINER/LT1361.html](https://www.alldatasheet.com/datasheet-pdf/pdf/70422/LINER/LT1361.html) | third_party_mirror | medium |
+| Linear Technology (Alldatasheet mirror) | not shown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/698014/LINER/LT1361.html](https://www.alldatasheet.com/datasheet-pdf/pdf/698014/LINER/LT1361.html) | third_party_mirror | medium |
+| Linear Technology (Alldatasheet mirror, mis-attributed) | not shown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/561597/LINEAR/LT1361.html](https://www.alldatasheet.com/datasheet-pdf/pdf/561597/LINEAR/LT1361.html) | third_party_mirror | low |
+| Linear Technology (Alldatasheet mirror) | not shown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/70421/LINER/LT1360.html](https://www.alldatasheet.com/datasheet-pdf/pdf/70421/LINER/LT1360.html) | third_party_mirror | medium |
+| Linear Technology (Radiolocman mirror) | not shown | unknown | unknown | [radiolocman.com/datasheet/data.html?di=339517&%2FLT1361=](https://www.radiolocman.com/datasheet/data.html?di=339517&%2FLT1361=) | third_party_mirror | medium |
+| Analog Devices (Radiolocman mirror) | not shown | unknown | unknown | [radiolocman.com/datasheet/data.html?di=525769](https://www.radiolocman.com/datasheet/data.html?di=525769) | third_party_mirror | medium |
+| Analog Devices (Radiolocman mirror) | not shown | unknown | unknown | [radiolocman.com/datasheet/data.html?di=525761](https://www.radiolocman.com/datasheet/data.html?di=525761) | third_party_mirror | medium |
+| Analog Devices (Radiolocman mirror) | not shown | unknown | unknown | [radiolocman.com/datasheet/data.html?di=525799](https://www.radiolocman.com/datasheet/data.html?di=525799) | third_party_mirror | medium |
+| Linear Technology (Datasheet4U mirror) | not shown | unknown | unknown | [datasheet4u.com/datasheets/Linear-Technology/LT1361/51475](https://datasheet4u.com/datasheets/Linear-Technology/LT1361/51475) | third_party_mirror | medium |
+| Linear Technology (Datasheet4U mirror) | not shown | unknown | unknown | [datasheet4u.com/datasheet-pdf/LinearTe…360/pdf.php?id=51472](https://datasheet4u.com/datasheet-pdf/LinearTechnology/LT1360/pdf.php?id=51472) | third_party_mirror | medium |
+| Linear Technology (Datasheetcatalog mirror) | not shown | unknown | unknown | [datasheetcatalog.com/datasheets_pdf/L/T/1/3/LT1360.shtml](https://www.datasheetcatalog.com/datasheets_pdf/L/T/1/3/LT1360.shtml) | third_party_mirror | medium |
 | Analog Devices / Linear Technology (LCSC mirror) | unknown | unknown (contents not viewed) | uploaded 2020-08-24 (per URL path) | [atta.szlcsc.com/upload/public/pdf/sour…41BDE101BF52A14A.pdf](https://atta.szlcsc.com/upload/public/pdf/source/20200824/C579720_E3C843831E8BF30D41BDE101BF52A14A.pdf) | distributor_mirror | low |
 
 ## [MUSES8832 (dual low-voltage bipolar, rail-to-rail output)](families/MUSES8832.md)
@@ -1343,7 +1679,17 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Analog Devices | OP249 (ADI data sheet; internal document number not verified) | unknown (current revision not read) | unknown | [analog.com/media/en/technical-document…ata-sheets/OP249.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf) | vendor_current | medium |
+| Analog Devices | OP249 (ADI data sheet; no separate literature number) | I | unknown (not shown in search results) | [analog.com/media/en/technical-document…ata-sheets/OP249.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf) | vendor_current | high |
+| Analog Devices | OP249 | I (as indexed) | unknown | [analog.com/static/imported-files/data_sheets/op249.pdf](https://www.analog.com/static/imported-files/data_sheets/op249.pdf) | vendor_legacy | medium |
+| Analog Devices | OP249 | n/a | n/a | [analog.com/en/products/op249.html](https://www.analog.com/en/products/op249.html) | product_page | high |
+| Analog Devices | OP249 | F | unknown | [datasheet.octopart.com/OP249GPZ-Analog…atasheet-8484613.pdf](https://datasheet.octopart.com/OP249GPZ-Analog-Devices-datasheet-8484613.pdf) | distributor_mirror | medium |
+| Analog Devices | OP249 | E | unknown | [datasheet.octopart.com/OP249GP-Analog-…-datasheet-21299.pdf](https://datasheet.octopart.com/OP249GP-Analog-Devices-datasheet-21299.pdf) | distributor_mirror | medium |
+| Analog Devices | OP249 | C | unknown | [resana.ir/assets/1400-07/op249.pdf](https://resana.ir/assets/1400-07/op249.pdf) | third_party_mirror | medium |
+| Analog Devices | OP249 | unknown (older title style; probably Rev. F or earlier) | unknown | [datasheet.octopart.com/OP249GSZ-Analog…atasheet-9716335.pdf](https://datasheet.octopart.com/OP249GSZ-Analog-Devices-datasheet-9716335.pdf) | distributor_mirror | low |
+| Analog Devices | OP249 | I | unknown | [radiolocman.com/datasheet/pdf.html?di=171873&p=3](https://www.radiolocman.com/datasheet/pdf.html?di=171873&p=3) | third_party_mirror | medium |
+| Analog Devices | OP249 | unknown | unknown | [digikey.com/htmldatasheets/production/50783/0/0/1/op249.html](https://www.digikey.com/htmldatasheets/production/50783/0/0/1/op249.html) | distributor_mirror | low |
+| Analog Devices | OP249 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/49045/AD/OP249.html](https://www.alldatasheet.com/datasheet-pdf/pdf/49045/AD/OP249.html) | third_party_mirror | low |
+| Analog Devices | OP249 | unknown (older title style) | unknown | [datasheetcatalog.com/datasheets_pdf/O/P/2/4/OP249.shtml](http://www.datasheetcatalog.com/datasheets_pdf/O/P/2/4/OP249.shtml) | third_party_mirror | low |
 
 ## [OPA1602 / OPA1604 (TI SoundPlus dual/quad bipolar-input, 2.5 nV/√Hz)](families/OPA1602.md)
 
@@ -1400,32 +1746,58 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments (via Mouser UK) | SBOS724 | unknown | unknown | [mouser.co.uk/ProductDetail/Texas-Instr…6uTz90CW1g8NkQ%3D%3D](https://www.mouser.co.uk/ProductDetail/Texas-Instruments/OPA1688ID?qs=yajEpaT76uTz90CW1g8NkQ%3D%3D) | product_page | low |
 | Texas Instruments (via Arrow) | SBOS724 | unknown | unknown | [arrow.com/en/products/opa1688id/texas-instruments](https://www.arrow.com/en/products/opa1688id/texas-instruments) | product_page | low |
 
-## [OPA156 / OPA2156 (TI 36 V low-noise RRIO CMOS precision)](families/OPA2156.md)
+## [OPA2156 / OPA156 (TI 36 V ultra-low-noise CMOS rail-to-rail I/O precision; single OPA156 unconfirmed)](families/OPA2156.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Texas Instruments | SBOS900 | unknown (latest at fetch time; B or later) | unknown | [ti.com/lit/ds/symlink/opa2156.pdf](https://www.ti.com/lit/ds/symlink/opa2156.pdf) | vendor_current | medium |
-| Texas Instruments | SBOS900B | B | SEPTEMBER 2018 - REVISED JUNE 2019 | [ti.com/product/OPA2156](https://www.ti.com/product/OPA2156) | product_page | medium |
+| Texas Instruments | SBOS900B | B (latest seen; no rev C found) | SEPTEMBER 2018 - REVISED JUNE 2019 | [ti.com/lit/ds/symlink/opa2156.pdf](https://www.ti.com/lit/ds/symlink/opa2156.pdf) | vendor_current | medium |
+| Texas Instruments | SBOS900 | current (B as of search) | - | [ti.com/lit/gpn/OPA2156](http://www.ti.com/lit/gpn/OPA2156) | vendor_current | medium |
+| Texas Instruments (China) | ZHCSIQ3B | B (latest seen) | SEPTEMBER 2018 - REVISED JUNE 2019 | [ti.com.cn/cn/lit/ds/symlink/opa2156.pdf](https://www.ti.com.cn/cn/lit/ds/symlink/opa2156.pdf) | vendor_current | medium |
+| Texas Instruments | SBOS900A | A | SEPTEMBER 2018 - REVISED DECEMBER 2018 | [alldatasheet.com/datasheet-pdf/pdf/1082239/TI1/OPA2156.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1082239/TI1/OPA2156.html) | third_party_mirror | low |
+| Texas Instruments | SBOS900 | unknown (A or B) | - | [alldatasheet.net/html-marking/1154466/…277/4/OPA2156ID.html](https://www.alldatasheet.net/html-marking/1154466/TI1/OPA2156ID/277/4/OPA2156ID.html) | third_party_mirror | medium |
+| Texas Instruments | SBOS900 | unknown | - | [digikey.com/en/htmldatasheets/producti…061362/0/0/1/opa2156](https://www.digikey.com/en/htmldatasheets/production/5061362/0/0/1/opa2156) | distributor_mirror | medium |
+| Texas Instruments | SBOS900 | unknown | - | [datasheet4u.com/datasheet/etcTI/OPA2156-1568602](https://datasheet4u.com/datasheet/etcTI/OPA2156-1568602) | third_party_mirror | low |
+| Texas Instruments (China) | ZHCSIQ3 | unknown (A or B) | - | [rfz1.com/Private/ProductFiles/63701465…3503231885859536.pdf](https://www.rfz1.com/Private/ProductFiles/6370146582023503231885859536.pdf) | third_party_mirror | low |
+| Texas Instruments | SBOS900 | - | - | [ti.com/product/OPA2156](https://www.ti.com/product/OPA2156) | product_page | high |
+| Mouser | - | - | - | [au.mouser.com/en/new/texas-instruments/ti-opa2156-op-amp](https://au.mouser.com/en/new/texas-instruments/ti-opa2156-op-amp) | product_page | medium |
 
 ## [THS4631 (single high-voltage, high-slew-rate, wideband JFET-input op amp)](families/THS4631.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
 | Texas Instruments | SLOS451C | C | SLOS451C – DECEMBER 2004 – REVISED MARCH 2025 | [ti.com/lit/ds/symlink/ths4631.pdf](https://www.ti.com/lit/ds/symlink/ths4631.pdf) | vendor_current | high |
-| Texas Instruments | SLOS451C | C | SLOS451C – DECEMBER 2004 – REVISED MARCH 2025 (PDF CreationDate 2025-06-02; package addendum 23-May-2025) | [github.com/wirthda/usb-oscilloscope/bl…ts/ths4631_opamp.pdf](https://github.com/wirthda/usb-oscilloscope/blob/main/docs/datasheets/ths4631_opamp.pdf) | third_party_mirror | high |
-| Texas Instruments | SLOS451B | B | SLOS451B – DECEMBER 2004 – REVISED AUGUST 2011 (PDF CreationDate 2019-03-21; package addendum 12-Aug-2017) | [github.com/studyHooligen/DataSheet/blo…mplifier/ths4631.pdf](https://github.com/studyHooligen/DataSheet/blob/master/opAmplifier/ths4631.pdf) | third_party_mirror | high |
-| Texas Instruments | SLOS451A | A | SLOS451A – DECEMBER 2004 – REVISED MARCH 2005 |  | archive | high |
+| Texas Instruments | SLOS451C | C | SLOS451C – DECEMBER 2004 – REVISED MARCH 2025 | [ti.com/lit/ds/slos451c/slos451c.pdf](https://www.ti.com/lit/ds/slos451c/slos451c.pdf) | vendor_revision_specific | high |
+| Texas Instruments | SLOS451C | C | REVISED MARCH 2025 (PDF CreationDate 2025-06-02; package addendum 23-May-2025) | [github.com/wirthda/usb-oscilloscope/bl…ts/ths4631_opamp.pdf](https://github.com/wirthda/usb-oscilloscope/blob/main/docs/datasheets/ths4631_opamp.pdf) | third_party_mirror | medium |
+| Texas Instruments | SLOS451B | B | SLOS451B – DECEMBER 2004 – REVISED AUGUST 2011 (PDF CreationDate 2019-03-21; package addendum 12-Aug-2017) | [github.com/studyHooligen/DataSheet/blo…mplifier/ths4631.pdf](https://github.com/studyHooligen/DataSheet/blob/master/opAmplifier/ths4631.pdf) | third_party_mirror | medium |
+| Texas Instruments | SLOS451B | B (per search summary) | REVISED AUGUST 2011 (per search summary) | [kyohritsu.com/eclib/OTHER/DATASHEET/TI/ths4631.pdf](https://www.kyohritsu.com/eclib/OTHER/DATASHEET/TI/ths4631.pdf) | distributor_mirror | low |
+| Texas Instruments | SLOS451A | A | SLOS451A – DECEMBER 2004 – REVISED MARCH 2005 | [datasheet.octopart.com/THS4631D-Texas-…datasheet-150388.pdf](https://datasheet.octopart.com/THS4631D-Texas-Instruments-datasheet-150388.pdf) | distributor_mirror | medium |
+| Texas Instruments | SLOS451 | unknown (old TI format, pre-2025) | unknown | [datasheet.octopart.com/THS4631DGN-Texa…asheet-166161802.pdf](https://datasheet.octopart.com/THS4631DGN-Texas-Instruments-datasheet-166161802.pdf) | distributor_mirror | low |
+| Texas Instruments | SLOS451 | unknown (old TI format, pre-2025) | unknown | [media.digikey.com/pdf/Data%20Sheets/Te…s%20PDFs/THS4631.pdf](https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/THS4631.pdf) | distributor_mirror | low |
+| Texas Instruments | SLOS451 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/128592/TI/THS4631.html](https://www.alldatasheet.com/datasheet-pdf/pdf/128592/TI/THS4631.html) | third_party_mirror | low |
 | Texas Instruments | SLOS451 | * (original) | December 2004 |  | archive | high |
 
 ## [TLE2071 / TLE2072 / TLE2074 (TI Excalibur low-noise high-speed JFET-input)](families/TLE2071.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Texas Instruments | unknown (SLOS-series number not verified) | unknown (current) | unknown (a 2022+ citation of the TI copy gives December 2009) | [ti.com/lit/ds/symlink/tle2071.pdf](https://www.ti.com/lit/ds/symlink/tle2071.pdf) | vendor_current | medium |
-| Texas Instruments | unknown | unknown (latest as of the citation) | December 2009 (as cited) | [ti.com/lit/gpn/tle2071](https://www.ti.com/lit/gpn/tle2071) | product_page | medium |
-| Texas Instruments | unknown | unknown (current) | unknown | [ti.com/lit/gpn/tle2072](https://www.ti.com/lit/gpn/tle2072) | product_page | medium |
-| Texas Instruments | unknown | unknown (older edition that includes the Y chip form) | March 2000 (as cited: 'Marts 2000') | [komponenten.es.aau.dk/fileadmin/kompon…t/Linear/TLE2071.pdf](http://www.komponenten.es.aau.dk/fileadmin/komponenten/Data_Sheet/Linear/TLE2071.pdf) | third_party_mirror | medium |
-| Texas Instruments | unknown | unknown (probably the revision current when uploaded; the '1810181614' filename stamp suggests 2018-10-18) | unknown | [lcsc.com/datasheet/lcsc_datasheet_1810…LE2072IDR_C30340.pdf](https://www.lcsc.com/datasheet/lcsc_datasheet_1810181614_Texas-Instruments-TLE2072IDR_C30340.pdf) | distributor_mirror | medium |
+| Texas Instruments | SLOS181 | C (latest found) | February 1997, revised December 2009 | [ti.com/lit/ds/symlink/tle2074a.pdf](https://www.ti.com/lit/ds/symlink/tle2074a.pdf) | vendor_current | medium |
+| Texas Instruments | SLOS181 | current (presumably C) | presumably revised December 2009 | [ti.com/lit/ds/symlink/tle2071.pdf](https://www.ti.com/lit/ds/symlink/tle2071.pdf) | vendor_current | low |
+| Texas Instruments | SLOS181 | current | - | [ti.com/lit/gpn/tle2071](https://www.ti.com/lit/gpn/tle2071) | product_page | medium |
+| Texas Instruments | SLOS181 | current | - | [ti.com/lit/gpn/tle2072](https://www.ti.com/lit/gpn/tle2072) | product_page | low |
+| Texas Instruments | SLOS181 | current | - | [ti.com/lit/gpn/TLE2074AM](https://www.ti.com/lit/gpn/TLE2074AM) | product_page | medium |
+| Texas Instruments | SLOS181 | A | February 1997, revised March 2000 | [denethor.wlu.ca/pc300/datasheets/TLE2074.pdf](http://denethor.wlu.ca/pc300/datasheets/TLE2074.pdf) | third_party_mirror | medium |
+| Texas Instruments | SLOS181 | probably A (inferred from the March 2000 date and the Y form in the title) | March 2000 (as cited: 'Marts 2000') | [komponenten.es.aau.dk/fileadmin/kompon…t/Linear/TLE2071.pdf](http://www.komponenten.es.aau.dk/fileadmin/komponenten/Data_Sheet/Linear/TLE2071.pdf) | third_party_mirror | low |
+| Texas Instruments | SLOS181 | unknown (the title includes the Y form, so rev A or earlier) | unknown | [yumpu.com/en/document/view/26492228/tl…1-sp-elektroniikka/7](https://www.yumpu.com/en/document/view/26492228/tle2071-sp-elektroniikka/7) | third_party_mirror | low |
+| Texas Instruments | SLOS181 (presumed) | unknown (low alldatasheet ID, so an early upload; possibly rev A) | unknown | [alldatasheet.com/datasheet-pdf/pdf/28975/TI/TLE2071.html](https://www.alldatasheet.com/datasheet-pdf/pdf/28975/TI/TLE2071.html) | third_party_mirror | low |
+| Texas Instruments | SLOS181 (presumed) | unknown (early upload) | unknown | [alldatasheet.com/datasheet-pdf/pdf/28932/TI/TLE207X.html](https://www.alldatasheet.com/datasheet-pdf/pdf/28932/TI/TLE207X.html) | third_party_mirror | low |
+| Texas Instruments | SLOS181 (presumed) | unknown (later upload; SLOS181B or C?) | unknown | [alldatasheet.com/datasheet-pdf/pdf/201891/TI/TLE2072.html](https://www.alldatasheet.com/datasheet-pdf/pdf/201891/TI/TLE2072.html) | third_party_mirror | low |
+| Texas Instruments | SLOS181 (presumed) | unknown (the E4 lead-free suffix and 83 pages suggest rev B or C with package addendum) | unknown | [alldatasheet.com/html-pdf/219217/TI/TL…2/7/TLE2071CPE4.html](https://www.alldatasheet.com/html-pdf/219217/TI/TLE2071CPE4/232/7/TLE2071CPE4.html) | third_party_mirror | low |
+| Texas Instruments | SLOS181 (presumed) | unknown (recent upload, probably C) | unknown | [alldatasheet.com/datasheet-pdf/pdf/843865/TI1/TLE2074.html](https://www.alldatasheet.com/datasheet-pdf/pdf/843865/TI1/TLE2074.html) | third_party_mirror | low |
+| Texas Instruments | SLOS181 (presumed) | unknown | unknown | [radiolocman.com/datasheet/data.html?/TLE2071=&di=330743](https://www.radiolocman.com/datasheet/data.html?/TLE2071=&di=330743) | third_party_mirror | low |
+| Texas Instruments | SLOS181 (presumed) | unknown | unknown | [datasheet4u.com/datasheets/etcTI/TLE2071/1442194](https://datasheet4u.com/datasheets/etcTI/TLE2071/1442194) | third_party_mirror | low |
+| Texas Instruments | SLOS181 (presumed) | unknown (filename stamp 1810181614 suggests a 2018 upload, so probably C) | unknown | [lcsc.com/datasheet/lcsc_datasheet_1810…LE2072IDR_C30340.pdf](https://www.lcsc.com/datasheet/lcsc_datasheet_1810181614_Texas-Instruments-TLE2072IDR_C30340.pdf) | distributor_mirror | low |
+| Texas Instruments | SGLS226 | B | unknown | [ti.com/lit/ds/sgls226b/sgls226b.pdf](https://www.ti.com/lit/ds/sgls226b/sgls226b.pdf) | vendor_revision_specific | medium |
+| Texas Instruments | SGLS226 | current | - | [ti.com/lit/ds/symlink/tle2071a-q1.pdf](https://www.ti.com/lit/ds/symlink/tle2071a-q1.pdf) | vendor_current | medium |
 
 ## [TLE2081 / TLE2082 / TLE2084 (TI Excalibur high-speed JFET-input)](families/TLE2081.md)
 
@@ -1437,11 +1809,19 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
 |---|---|---|---|---|---|---|
-| Texas Instruments | SLOS431 | B (latest revision seen) | MARCH 2004 - REVISED FEBRUARY 2015 | [ti.com/lit/ds/symlink/tpa6120a2.pdf](https://www.ti.com/lit/ds/symlink/tpa6120a2.pdf) | vendor_current | medium |
-| Texas Instruments | SLOS431 | unknown (link cited in 2011; would then have served the original or Rev A) | unknown | [ti.com/litv/slos431](http://www.ti.com/litv/slos431) | vendor_legacy | low |
-| Texas Instruments | n/a | n/a | n/a | [ti.com/product/TPA6120A2](http://www.ti.com/product/TPA6120A2) | product_page | high |
-| Texas Instruments | SLOS431 | original (no letter) | MARCH 2004 |  | archive | medium |
-| Texas Instruments | SLOS431A | A | unknown (between March 2004 and February 2015) |  | archive | low |
+| Texas Instruments | SLOS431B | B (latest found) | MARCH 2004 - REVISED FEBRUARY 2015 | [ti.com/lit/ds/symlink/tpa6120a2.pdf](https://www.ti.com/lit/ds/symlink/tpa6120a2.pdf) | vendor_current | high |
+| Texas Instruments | SLOS431 | current (B) | n/a | [ti.com/lit/gpn/tpa6120a2](https://www.ti.com/lit/gpn/tpa6120a2) | vendor_current | high |
+| Texas Instruments | SLOS431A | A | MARCH 2004 - REVISED JULY 2014 |  | archive | medium |
+| Texas Instruments | SLOS431 | original (no letter) | MARCH 2004 | [media.digikey.com/pdf/Data%20Sheets/Te…20PDFs/TPA6120A2.pdf](https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/TPA6120A2.pdf) | distributor_mirror | medium |
+| Texas Instruments | SLOS431 | likely original (old template; unconfirmed) | unknown (pre-2014 template) | [datasheet.octopart.com/TPA6120A2DWPG4-…tasheet-27709005.pdf](https://datasheet.octopart.com/TPA6120A2DWPG4-Texas-Instruments-datasheet-27709005.pdf) | distributor_mirror | low |
+| Texas Instruments | SLOS431 | A or B (new template; unconfirmed) | unknown (2014 or later) | [datasheet.octopart.com/TPA6120A2RGYT-T…tasheet-34156799.pdf](https://datasheet.octopart.com/TPA6120A2RGYT-Texas-Instruments-datasheet-34156799.pdf) | distributor_mirror | low |
+| Texas Instruments | SLOS431 | likely B (unconfirmed) | file stamped 2018-09-28 (upload date, not revision date) | [datasheet.lcsc.com/lcsc/1809280203_Tex…120A2DWPR_C70439.pdf](https://datasheet.lcsc.com/lcsc/1809280203_Texas-Instruments-TPA6120A2DWPR_C70439.pdf) | distributor_mirror | low |
+| Texas Instruments | SLOS431 | unknown (low site ID suggests an early copy; unconfirmed) | unknown | [alldatasheet.com/datasheet-pdf/pdf/98801/TI/TPA6120A2.html](https://www.alldatasheet.com/datasheet-pdf/pdf/98801/TI/TPA6120A2.html) | third_party_mirror | low |
+| Texas Instruments | SLOS431 | unknown | unknown | [datasheet4u.com/datasheets/etcTI/TPA6120A2/1413221](https://datasheet4u.com/datasheets/etcTI/TPA6120A2/1413221) | third_party_mirror | low |
+| Texas Instruments | SLOS431 | likely original (old 'Amplifer' title; unconfirmed) | unknown | [datasheetdir.com/TPA6120A2+Headphone](http://www.datasheetdir.com/TPA6120A2+Headphone) | third_party_mirror | low |
+| Texas Instruments | SLOS431 | unknown (cited in 2011, so it would have served the original) | unknown | [ti.com/litv/slos431](http://www.ti.com/litv/slos431) | vendor_legacy | low |
+| Texas Instruments | SLOU169 | unknown | unknown | [ti.com/lit/pdf/slou169](https://www.ti.com/lit/pdf/slou169) | vendor_current | medium |
+| Texas Instruments | n/a | n/a | n/a | [ti.com/product/TPA6120A2](https://www.ti.com/product/TPA6120A2) | product_page | high |
 
 ## [µPC4570 (NEC / Renesas ultra-low-noise dual bipolar)](families/uPC4570.md)
 

@@ -134,6 +134,8 @@ def family_page(fam: dict) -> str:
     L += table(["Vendor", "Document", "Rev", "Date", "Link", "Kind", "Conf.", "Notes"],
                [[d.get("vendor"), d.get("doc_number"), d.get("revision"), d.get("date"), link(d.get("url", "")),
                  d.get("url_kind"), d.get("confidence"), d.get("notes")] for d in fam.get("datasheets", [])])
+    if fam.get("revision_chain_summary"):
+        L += ["### Revision chain status", "", esc(fam["revision_chain_summary"]), ""]
     if fam.get("revision_history"):
         L += ["### Datasheet revision history", ""]
         L += table(["Vendor", "Document", "Rev", "Date", "Changes"],
