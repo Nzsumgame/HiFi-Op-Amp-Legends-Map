@@ -6,8 +6,6 @@
 
 **Technology:** J-FET input, single channel. Two-chip construction puts the input stage and the output stage on separate dies to reduce interference between them (NJR 2021-06-23 release; EE Times Japan 2021-06-24). A Japanese press summary says a 'full-balance differential amplifier circuit' (フルバランス型差動増幅回路) improves response, dynamic range and distortion; the exact source page was not pinned. Package is DFN12-CA8 (ESON12-CA8) with an exposed pad and an oxygen-free copper (OFC) frame, which the vendor says gives both sound quality and heat dissipation. The datasheet cites 'advanced circuit design and special material and assembly technology'. Headline specs almost match the MUSES03 datasheet Ver.4.2: 7.5 nV/rtHz, 5 pA, 12 MHz, 5.8 mA and +/-3.5 to +/-18 V are the same. The visible headline difference is slew rate, 40 V/us against 35 V/us.
 
-> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (1 recorded: Unclassified).
-
 ## Why enthusiasts rate it
 
 NJR/Nisshinbo position it as the MUSES op-amp with the highest sound quality. EE Times Japan headlined it as a new flagship of sound-first op-amps made 'regardless of productivity' (生産性度外視). PHILE WEB's 2021 listening report says it shows left-right staging and renders three-dimensional depth 'even more deeply'. On Head-Fi's Opamp thread (pages 490-497), a roller calls it roughly twice as fast as MUSES03 and a refinement of the MUSES sound, with more speed, resolution, air and reverb but less vocal body. The same roller ranks it with the Burson V7 Vivid as the most resolving parts tried, and says MUSES03 still wins on some tracks because of its physicality and weight. That poster adds that people who dislike MUSES03 will probably dislike MUSES05 too. Japanese DIY blogs use it in Quad405-clone op-amp swaps, T.b.sound amp builds, KORG HA-K headphone amps and DUO dual adapters. One Quad405-clone comparison could not clearly tell MUSES03D and MUSES05 apart. No independent measurements (ASR, diyAudio, Samuel Groner) were found.
@@ -62,16 +60,21 @@ NJR/Nisshinbo position it as the MUSES op-amp with the highest sound quality. EE
 
 ## Silicon changes under the same part number
 
-### 1. Unclassified: Nisshinbo Micro Devices, Suspended by June 2024 at the latest (new_western_elec…
+None documented. (Absence of evidence is not evidence of absence. Compare datasheet revisions.)
 
-Vendor-documented halt and restart under the same part number. The EN spec page says the suspended MUSES05 will resume production as MUSES05 after adjustments to production materials. An earlier sweep reported new_western_elec's 2024 factory-visit account that the scarce material is a process material rather than a constituent of the finished op-amp; that detail was not re-confirmed in this pass. The vendor does not say whether the die, die attach, mould or OFC frame/assembly is affected.
+## Other change notes (lifecycle, packaging, successors, lore)
 
-- **When:** Suspended by June 2024 at the latest (new_western_elec factory-visit post, 2024-06). Restart: the JA MUSES05 page says production has resumed, while the EN spec page still says the timing will be announced (both re-checked Sept 2026). A @NisshinboMicro X post 'MUSES05 シリーズ' (2026-06-29 UTC) promotes it again, and Akizuki's DIP kit was reported in stock on 2026-07-31 (X stock-alert post, 2026-08-01 UTC). The exact restart date is not published in any source found.
+### 1. Lifecycle: Nisshinbo Micro Devices, General sale began February 2022.
+
+The vendor documents a halt and a restart under the same part number. The EN spec page says the suspended MUSES05 will resume production as MUSES05 after adjustments to production materials. An earlier sweep reported new_western_elec's 2024 factory-visit account that the scarce material is a process material, not a part of the finished op-amp; this pass did not re-confirm that. The vendor does not say whether the die, die attach, mould or OFC frame/assembly is affected. This 'production material adjustment' is the only possible same-part-number silicon or process risk in the family, and it is undocumented.
+
+- **When:** General sale began February 2022. Production was suspended by June 2024 at the latest (new_western_elec factory-visit post, 2024-06). Restart: the JA MUSES05 page says production has resumed, while the EN spec page still says the timing will be announced (both re-checked Sept 2026). A @NisshinboMicro X post 'MUSES05 シリーズ' (2026-06-29 UTC) promotes it again, and Akizuki's DIP kit was reported in stock on 2026-07-31 (X stock-alert post, 2026-08-01 UTC). No source gives the exact restart date.
 - **Affected:** MUSES05, MUSES05-TE3
-- **How to tell old from new:** No documented way to tell lots apart was found: no PCN number, no datasheet version after Ver.1.0, no new orderable suffix and no marking change. The date code on the DFN marking is a plausible clue but unverified.
+- **How to tell old from new:** No documented way to tell lots apart was found: no PCN number, no datasheet version after Ver.1.0, no new orderable suffix and no marking change. The date code on the DFN marking is a plausible clue but is unverified.
 - **Audio impact:** Unknown. No listening comparison or measurement of pre- and post-restart lots was found.
-- **Drop-in risk:** low - same part number, package and datasheet Ver.1.0, and the vendor presents it as a production-material adjustment; but no before/after spec table or PCN has been published
+- **Drop-in risk:** low - same part number, package and datasheet Ver.1.0, and the vendor describes it as a production-material adjustment. No before/after spec table or PCN has been published.
 - **Confidence:** medium
+- **Verification:** A WebSearch for 'MUSES05 生産再開' returned the Nisshinbo JA page stating production has resumed and the EN wording that timing will be announced later, which matches the entry. The PR Times release confirms general sale from Feb 2022. No PCN or restart date was found.
 
 Sources:
 
@@ -80,6 +83,7 @@ Sources:
 - [nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html](https://nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html)
 - [x.com/NisshinboMicro/status/2071398037201850657](https://x.com/NisshinboMicro/status/2071398037201850657)
 - [x.com/LeoUila/status/2083370920455143845](https://x.com/LeoUila/status/2083370920455143845)
+- [prtimes.jp/main/html/rd/p/000000037.000071712.html](https://prtimes.jp/main/html/rd/p/000000037.000071712.html)
 
 ## Datasheets
 

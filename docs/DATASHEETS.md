@@ -32,6 +32,18 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Analog Devices (datasheet4u mirror) | AD797 | unknown | not captured | [datasheet4u.com/datasheet-pdf/AnalogDe…7/pdf.php?id=1186795](https://datasheet4u.com/datasheet-pdf/AnalogDevices/AD797/pdf.php?id=1186795) | third_party_mirror | medium |
 | Analog Devices (Futurlec page) | AD797 | unknown | not captured | [futurlec.com/AnalogDevices/AD797AN.shtml](https://futurlec.com/AnalogDevices/AD797AN.shtml) | third_party_mirror | medium |
 | Analog Devices (DataSheetAll mirror) | AD797 | unknown | not captured | [datasheetall.com/adi/ad797/](https://www.datasheetall.com/adi/ad797/) | third_party_mirror | medium |
+| Analog Devices | AD797 (JP) | G | not shown in search summary | [analog.com/media/jp/technical-document…-sheets/ad797_jp.pdf](https://www.analog.com/media/jp/technical-documentation/data-sheets/ad797_jp.pdf) | vendor_current | high |
+| Analog Devices (TME distributor mirror) | D00846-0 (AD797) | K | March 2015 (per Rev. K footer) | [tme.eu/Document/3ffe680f7663775baa5806353b126681/AD797.pdf](https://www.tme.eu/Document/3ffe680f7663775baa5806353b126681/AD797.pdf) | distributor_mirror | high |
+| Analog Devices (TME distributor mirror) | AD797 | E | not shown | [tme.eu/Document/1bd140bef78d618f6f9132…4f2fd4a/ad797anz.pdf](https://www.tme.eu/Document/1bd140bef78d618f6f91323d74f2fd4a/ad797anz.pdf) | distributor_mirror | high |
+| Analog Devices (nickersonm.com lab/personal mirror) | AD797 | E | not shown | [jila1.nickersonm.com/AD797ANZ.pdf](https://jila1.nickersonm.com/AD797ANZ.pdf) | third_party_mirror | high |
+| Analog Devices (Octopart mirror) | AD797 | revision not shown (title has no letter; one search summary asserted Rev. G, unverified) | not shown | [datasheet.octopart.com/AD797ANZ-Analog…atasheet-9571263.pdf](https://datasheet.octopart.com/AD797ANZ-Analog-Devices-datasheet-9571263.pdf) | distributor_mirror | low |
+| Analog Devices (alldatasheet mirror) | AD797 | revision not shown | not shown | [alldatasheet.com/datasheet-pdf/pdf/1976356/AD/AD797.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1976356/AD/AD797.html) | third_party_mirror | low |
+| Analog Devices (datasheetq mirror) | AD797 | revision not shown | not shown | [datasheetq.com/en/AD797-ADI](https://www.datasheetq.com/en/AD797-ADI) | third_party_mirror | low |
+| Analog Devices (datasheetq mirror) | AD797 | revision not shown | not shown | [datasheetq.com/AD797-doc-ADI](https://www.datasheetq.com/AD797-doc-ADI) | third_party_mirror | low |
+| Analog Devices (datasheet4u mirror) | AD797 | revision not shown | not shown | [datasheet4u.com/datasheets/Analog-Devices/AD797/1186795](https://datasheet4u.com/datasheets/Analog-Devices/AD797/1186795) | third_party_mirror | low |
+| Analog Devices (datasheetcafe mirror) | AD797 | revision not shown | not shown | [datasheetcafe.com/ad797-datasheet-op-amp/](https://www.datasheetcafe.com/ad797-datasheet-op-amp/) | third_party_mirror | low |
+| Analog Devices (datasheetarchive listing) | AD797 | revision not shown (listing of multiple copies) | not shown | [datasheetarchive.com/AD797*-datasheet.html](https://www.datasheetarchive.com/AD797*-datasheet.html) | third_party_mirror | low |
+| Analog Devices (Scribd mirror) | AD797 | revision not shown | not shown | [scribd.com/document/406461759/AD797-pdf](https://www.scribd.com/document/406461759/AD797-pdf) | third_party_mirror | low |
 
 ## [LM833 / LM833-N (LM837 quad)](families/LM833.md)
 
@@ -253,6 +265,14 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | New JRC | MUSES01 | unknown | unknown | [yumpu.com/en/document/view/39394172/mu…-product-information](https://www.yumpu.com/en/document/view/39394172/muses01-semiconductor-product-information) | third_party_mirror | medium |
 | New JRC | MUSES01 | unknown | unknown | [ic-hongda.com/pdf/muses01-datasheet/4166560.html](https://www.ic-hongda.com/pdf/muses01-datasheet/4166560.html) | third_party_mirror | medium |
 | New JRC | MUSES01 | unknown | unknown | [digikey.com/htmldatasheets/production/…3/0/0/1/muses01.html](https://www.digikey.com/htmldatasheets/production/663073/0/0/1/muses01.html) | distributor_mirror | low |
+| New JRC | MUSES01 (alldatasheet part name MUSES01_15) | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/808…NJRC/MUSES01_15.html](https://www.alldatasheet.com/datasheet-pdf/pdf/808059/NJRC/MUSES01_15.html) | third_party_mirror | low |
+| New JRC | MUSES01 | revision not shown | unknown | [dtsheet.com/doc/1304583/muses01-data-sheet](https://dtsheet.com/doc/1304583/muses01-data-sheet) | third_party_mirror | low |
+| New JRC | MUSES01 | revision not shown | unknown | [datasheet.jp/pdf/679182/MUSES01.html](http://www.datasheet.jp/pdf/679182/MUSES01.html) | third_party_mirror | low |
+| New JRC | MUSES01 | revision not shown | unknown | [datasheetspdf.com/pdf/679182/NewJapanRadio/MUSES01/1](https://datasheetspdf.com/pdf/679182/NewJapanRadio/MUSES01/1) | third_party_mirror | low |
+| New JRC | MUSES01_E | revision not shown | unknown | [slideshare.net/slideshow/muses01-e/16286764](https://www.slideshare.net/slideshow/muses01-e/16286764) | third_party_mirror | low |
+| Nisshinbo Micro Devices | - | revision not shown | unknown | [octopart.com/muses01-new+japan+radio-19085716](https://octopart.com/muses01-new+japan+radio-19085716) | product_page | low |
+| Nisshinbo Micro Devices | - | revision not shown | unknown | [digikey.com/en/products/detail/njr-cor…njrc/MUSES01/2202385](https://www.digikey.com/en/products/detail/njr-corporation-njrc/MUSES01/2202385) | product_page | low |
+| Nisshinbo Micro Devices | - | - | - | [nisshinbo-microdevices.co.jp/en/MUSES/](https://www.nisshinbo-microdevices.co.jp/en/MUSES/) | product_page | medium |
 
 ## [MUSES02 / MUSES02D (dual bipolar-input, OFC lead frame)](families/MUSES02.md)
 
@@ -854,6 +874,38 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Diodes Incorporated | DS31865 | Rev. 2-4 | December 2023 | [diodes.com/datasheet/download/TL072.pdf](https://www.diodes.com/datasheet/download/TL072.pdf) | vendor_current | high |
 | Motorola | unknown | unknown |  | [studylib.net/doc/18637375/tl071c-ac-tl…ow-noise--jfet-input](https://studylib.net/doc/18637375/tl071c-ac-tl072c-ac-tl074c-ac-low-noise--jfet-input) | third_party_mirror | low |
 | JRC / Nisshinbo | n/a | n/a |  | [nisshinbo-microdevices.co.jp/en/produc…ec/?product=njm072ca](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm072ca) | product_page | medium |
+| Texas Instruments | SLOS080 | revision not shown |  | [mouser.com/datasheet/2/405/texas%20ins…ts_tl072-1208707.pdf](https://www.mouser.com/datasheet/2/405/texas%20instruments_tl072-1208707.pdf) | distributor_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [neurophysics.ucsd.edu/courses/physics_120/TI071.pdf](https://neurophysics.ucsd.edu/courses/physics_120/TI071.pdf) | third_party_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [alldatasheet.com/html-pdf/206601/TI/TL071/78/3/TL071.html](https://www.alldatasheet.com/html-pdf/206601/TI/TL071/78/3/TL071.html) | third_party_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [logosfoundation.org/elektron/mixers/tl071.pdf](https://www.logosfoundation.org/elektron/mixers/tl071.pdf) | third_party_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [electronicoscaldas.com/datasheet/TL071…TL074A-TL074B_TI.pdf](https://www.electronicoscaldas.com/datasheet/TL071-TL071A-TL071B-TL072-TL072A-TL072B-TL074-TL074A-TL074B_TI.pdf) | distributor_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [aionfx.com/app/files/datasheets/texas-instruments-tl072.pdf](https://aionfx.com/app/files/datasheets/texas-instruments-tl072.pdf) | third_party_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [dexhal.cz/data/files/tl071(1).pdf](https://www.dexhal.cz/data/files/tl071(1%29.pdf) | distributor_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [datasheet4u.com/datasheet/etcTI/TL071-1396328](https://datasheet4u.com/datasheet/etcTI/TL071-1396328) | third_party_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [yumpu.com/en/document/view/25322032/lo…mplifiers-multimania](https://www.yumpu.com/en/document/view/25322032/low-noise-jfet-input-operational-amplifiers-multimania) | third_party_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [radiolocman.com/datasheet/data.html?di=328435&%2FTL072=](https://www.radiolocman.com/datasheet/data.html?di=328435&%2FTL072=) | third_party_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [alldatasheet.com/datasheet-pdf/pdf/764831/TI/TL072.html](https://www.alldatasheet.com/datasheet-pdf/pdf/764831/TI/TL072.html) | third_party_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [datasheet.octopart.com/TL072ID-Texas-I…atasheet-7835781.pdf](https://datasheet.octopart.com/TL072ID-Texas-Instruments-datasheet-7835781.pdf) | third_party_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [datasheet.octopart.com/TL072IP-Texas-I…atasheet-8317744.pdf](https://datasheet.octopart.com/TL072IP-Texas-Instruments-datasheet-8317744.pdf) | third_party_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [mouser.com/datasheet/2/405/tl074-557399.pdf](https://www.mouser.com/datasheet/2/405/tl074-557399.pdf) | distributor_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [scribd.com/document/340345307/tl072-pdf](https://www.scribd.com/document/340345307/tl072-pdf) | third_party_mirror | low |
+| Texas Instruments | SLOS080 | revision not shown (likely current) |  | [ti.com/jp/lit/ds/symlink/tl074.pdf](https://www.ti.com/jp/lit/ds/symlink/tl074.pdf) | vendor_current | low |
+| Texas Instruments | SLOS080 | revision not shown |  | [datasheets.com/texas-instruments/tl072](https://www.datasheets.com/texas-instruments/tl072) | product_page | low |
+| Motorola | not shown | revision not shown |  | [www2.ensc.sfu.ca/reference/data-sheets/TL07X.PDF](https://www2.ensc.sfu.ca/reference/data-sheets/TL07X.PDF) | third_party_mirror | low |
+| Motorola | not shown | revision not shown (filename suggests Rev 1) |  | [sfu.ca/~ljilja/ENSC220/Labs/Lab_writeups/tl071crev1.pdf](https://www.sfu.ca/~ljilja/ENSC220/Labs/Lab_writeups/tl071crev1.pdf) | third_party_mirror | low |
+| Motorola | not shown | revision not shown |  | [pdf.datasheetcatalog.com/datasheet/motorola/TL072ACP.pdf](https://pdf.datasheetcatalog.com/datasheet/motorola/TL072ACP.pdf) | third_party_mirror | low |
+| Motorola | not shown | revision not shown |  | [datasheetcatalog.com/datasheets_pdf/T/L/0/7/TL071C.shtml](http://www.datasheetcatalog.com/datasheets_pdf/T/L/0/7/TL071C.shtml) | third_party_mirror | low |
+| Motorola | not shown | revision not shown |  | [alldatasheet.com/datasheet-pdf/pdf/5772/MOTOROLA/TL071C.html](https://www.alldatasheet.com/datasheet-pdf/pdf/5772/MOTOROLA/TL071C.html) | third_party_mirror | low |
+| Motorola | not shown | revision not shown |  | [silicon-ark.co.uk/datasheets/tl071-tl0…tasheet-motorola.pdf](https://www.silicon-ark.co.uk/datasheets/tl071-tl074-datasheet-motorola.pdf) | distributor_mirror | low |
+| Motorola | not shown | revision not shown |  | [datasheet4u.com/datasheet-pdf/Motorola…1C/pdf.php?id=321069](https://datasheet4u.com/datasheet-pdf/Motorola/TL071C/pdf.php?id=321069) | third_party_mirror | low |
+| Motorola | not shown | revision not shown |  | [datasheetspdf.com/pdf/321069/Motorola/TL071C/1](https://datasheetspdf.com/pdf/321069/Motorola/TL071C/1) | third_party_mirror | low |
+| STMicroelectronics | DocID2298 (presumed) | revision not shown |  | [radiolocman.com/datasheet/pdf.html?di=179807](https://www.radiolocman.com/datasheet/pdf.html?di=179807) | third_party_mirror | low |
+| STMicroelectronics | DocID2298 (presumed) | revision not shown |  | [alldatasheet.com/datasheet-pdf/pdf/159…ECTRONICS/TL072.html](https://www.alldatasheet.com/datasheet-pdf/pdf/159225/STMICROELECTRONICS/TL072.html) | third_party_mirror | low |
+| STMicroelectronics | DocID2297 (presumed) | revision not shown |  | [alldatasheet.com/datasheet-pdf/pdf/253…ECTRONICS/TL074.html](https://www.alldatasheet.com/datasheet-pdf/pdf/25382/STMICROELECTRONICS/TL074.html) | third_party_mirror | low |
+| STMicroelectronics | DocID2297 (presumed) | revision not shown |  | [radiolocman.com/datasheet/pdf.html?di=167737](https://www.radiolocman.com/datasheet/pdf.html?di=167737) | third_party_mirror | low |
+| SGS-Thomson Microelectronics | not shown | revision not shown | 1998 (per search summary) | [manualmachine.com/datasheet/tl072cn/44…on-microelectronics/](https://manualmachine.com/datasheet/tl072cn/4451986-datasheet-sgs-thomson-microelectronics/) | third_party_mirror | low |
+| SGS-Thomson Microelectronics | not shown | revision not shown |  | [chipdocs.com/pndecoder/datasheets/STM/TL072CN.html](http://www.chipdocs.com/pndecoder/datasheets/STM/TL072CN.html) | third_party_mirror | low |
+| STMicroelectronics | DocID2298 | n/a |  | [st.com/en/amplifiers-and-comparators/tl072.html](https://www.st.com/en/amplifiers-and-comparators/tl072.html) | product_page | medium |
 
 ## [NJM4558 / JRC4558D / RC4558 (dual general-purpose bipolar "dual 741")](families/4558.md)
 

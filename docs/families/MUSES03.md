@@ -6,8 +6,6 @@
 
 **Technology:** JFET-input single op-amp. Launch coverage (EE Times Japan 'Only one channel, yet two chips!' and Stereo Sound, both 2017-03-24) describes a two-chip build with separate input-stage and output-stage dies. Datasheet Ver.4.2 (JP and EN editions) does not mention the die split; the EN title is 'High-Quality Sound, J-FET Input, Single Operational Amplifier for Premium Audio'. The only package is DIP8(MUSES), with an oxygen-free-copper lead frame. Output peak current is 250 mA abs max. The datasheet graphs show asymmetric drive at ±15 V: about +12.6 V but only about -10 V into 50 Ω. On the Vo-vs-Io graph the negative swing collapses above about 150 mA (about -6 V at 250 mA), while the positive swing holds about +12.8 V.
 
-> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (1 recorded: Unclassified).
-
 ## Why enthusiasts rate it
 
 Launched in March 2017 as New JRC's MUSES flagship single. Launch press (Stereo Sound: 'Will it reach the summit of op-amps?'; EE Times Japan) focused on the two-die design and the 0.00003% THD. Head-Fi Opamp-thread posters (seen as search summaries, not full threads) credit its midrange and a deliberately 'slow' presentation that gives vocals and instruments physical presence and holography. They call it neutral with a slightly darker tone than the OPA828 or AD797BRZ, and one poster found the OPA828 emotionally flat on vocals by comparison. Posters describe the later MUSES05 as a refinement with more speed, resolution and air, and the MUSES03 as having more body. They also rate the MUSES03 less resolving than the Burson V7 Vivid. The PHILE WEB MUSES05 launch report credits the MUSES05 with deeper staging. Views are not unanimous: a Japanese blogger could not tell the MUSES03D from the MUSES05 in a Quad405 copy amp. No independent bench measurements (ASR, Samuel Groner) were found.
@@ -66,21 +64,28 @@ Launched in March 2017 as New JRC's MUSES flagship single. Launch press (Stereo 
 
 ## Silicon changes under the same part number
 
-### 1. Unclassified: Nisshinbo Micro Devices (ex-New JRC), On Nisshinbo's discontinued-products list by 18 October…
+None documented. (Absence of evidence is not evidence of absence. Compare datasheet revisions.)
 
-Nisshinbo discontinued the MUSES03 JFET-input single. A June 2024 factory-visit post by new_western_elec reports that MUSES03 and then MUSES05 went out of production, and suggests MUSES03 may have ended for manufacturing-process reasons, which was not confirmed at the visit. The same sources say MUSES01 and MUSES02 remained in production. Unlike the known MUSES05 case, no restart under the same part number and no named successor was found.
+## Other change notes (lifecycle, packaging, successors, lore)
 
-- **When:** On Nisshinbo's discontinued-products list by 18 October 2023 (blog entry, updated 25 Oct). Stock briefly reappeared in October 2023, and sales were confirmed ended by January 2024.
+### 1. Lifecycle: Nisshinbo Micro Devices (ex-New JRC), Launched March 2017 (vendor news 2017-03-24).
+
+Nisshinbo discontinued the MUSES03 JFET-input single. A June 2024 factory-visit post by new_western_elec reports that MUSES03 and then MUSES05 went out of production. It suggests MUSES03 may have ended for manufacturing-process reasons, which was not confirmed at the visit. The same sources say MUSES01 and MUSES02 remained in production. Unlike MUSES05, no restart under the same part number and no named successor was found.
+
+- **When:** Launched March 2017 (vendor news 2017-03-24). It was on Nisshinbo's discontinued-products list by 18 October 2023 (blog entry, updated 25 Oct). Stock briefly reappeared in October 2023, and the end of sales was confirmed by January 2024.
 - **Affected:** MUSES03, MUSES03D
-- **How to tell old from new:** Any new-stock MUSES03 offered after early 2024 is remaining inventory, or counterfeit.
-- **Audio impact:** No silicon change. Supply has ended, and no same-sound successor is named.
-- **Drop-in risk:** medium - no drop-in replacement named by the vendor; remaining stock is finite and there is counterfeit exposure on auction and marketplace listings.
+- **How to tell old from new:** Any new-stock MUSES03 offered after early 2024 is remaining inventory or counterfeit.
+- **Audio impact:** No silicon change. Supply has ended, and no successor with the same sound has been named.
+- **Drop-in risk:** medium - the vendor names no drop-in replacement, remaining stock is finite, and auction and marketplace listings carry counterfeit exposure.
 - **Confidence:** medium
+- **Verification:** A WebSearch for 'MUSES03 生産終了 日清紡' returned the iiikun blog entry ('20231018 MUSES03 生産終了品になってました'), the new_western_elec factory-visit post and marketplace listings marked 生産終了. This confirms the discontinuation. The vendor's own discontinued-list page was not seen directly.
 
 Sources:
 
 - [iiikun15a.blog.jp/archives/22108332.html](https://iiikun15a.blog.jp/archives/22108332.html)
 - [nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html](https://nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html)
+- [nisshinbo-microdevices.co.jp/ja/about/…7/semi_20170324.html](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2017/semi_20170324.html)
+- [eleshop.jp/shop/g/gHBM121/](https://eleshop.jp/shop/g/gHBM121/)
 
 ## Datasheets
 
