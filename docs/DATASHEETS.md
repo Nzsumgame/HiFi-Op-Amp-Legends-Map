@@ -1044,6 +1044,13 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Analog Devices | AD811 | n/a | n/a | [analog.com/en/products/ad811.html](https://www.analog.com/en/products/ad811.html) | product_page | low |
 | Analog Devices | AD811 | unknown | unknown | [analog.com/static/imported-files/data_sheets/AD811.pdf](https://www.analog.com/static/imported-files/data_sheets/AD811.pdf) | vendor_legacy | low |
 
+## [AD815 (Analog Devices dual high-output-current current-feedback driver op-amp)](families/AD815.md)
+
+| Vendor | Document | Rev | Date | Link | Kind | Conf. |
+|---|---|---|---|---|---|---|
+| Analog Devices | AD815 | unknown | unknown | [analog.com/media/en/technical-document…ata-sheets/AD815.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/AD815.pdf) | vendor_current | low |
+| Analog Devices | AD815 | n/a | n/a | [analog.com/en/products/ad815.html](https://www.analog.com/en/products/ad815.html) | product_page | low |
+
 ## [AD823 (dual 16 MHz JFET-input, rail-to-rail output) + AD823A (2012 XFCB redesign)](families/AD823.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
@@ -1109,6 +1116,12 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Analog Devices | AD844 | revision not shown | Unknown | [futurlec.com/AnalogDevices/AD844AN.shtml](https://www.futurlec.com/AnalogDevices/AD844AN.shtml) | distributor_mirror | low |
 | Analog Devices | AD844 | revision not shown | Unknown | [scribd.com/document/373710257/AD844](https://www.scribd.com/document/373710257/AD844) | third_party_mirror | low |
 | Analog Devices | AD844 | revision not shown | Unknown | [allaboutcircuits.com/electronic-compon…4AN--Analog-Devices/](https://www.allaboutcircuits.com/electronic-components/datasheet/AD844AN--Analog-Devices/) | third_party_mirror | low |
+
+## [AD846 (Analog Devices 450 V/us precision current-feedback op-amp)](families/AD846.md)
+
+| Vendor | Document | Rev | Date | Link | Kind | Conf. |
+|---|---|---|---|---|---|---|
+| Analog Devices | unknown (file name prefix 270284 appears to be an ADI internal ID, not a doc number) | unknown | unknown | [analog.com/media/en/technical-document…eets/270284AD846.pdf](https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf) | vendor_legacy | low |
 
 ## [AD8597 / AD8599 (single/dual ultralow-noise, ultralow-distortion bipolar)](families/AD8599.md)
 

@@ -22251,7 +22251,7 @@
   {
    "id": "AD815",
    "name": "AD815 (Analog Devices dual high-output-current current-feedback driver op-amp)",
-   "tagline": "",
+   "tagline": "ADI's brawny dual current-feedback line driver (~500 mA per side) that DIY builders drive headphones and preamp outputs with directly.",
    "technology": "Dual bipolar current-feedback, high-output-current (about 500 mA) differential or dual line driver; EOL",
    "manufacturers": [
     "Analog Devices"
@@ -22259,48 +22259,95 @@
    "part_numbers": [
     {
      "pn": "AD815",
-     "channels": 0,
+     "channels": 2,
      "vendors": [
       "Analog Devices"
      ],
-     "status": "unknown",
-     "notes": ""
+     "status": "obsolete (unconfirmed)",
+     "notes": "Family/base part number. Discovery sweep reports EOL and poor availability; no web confirmation of ADI lifecycle status."
     },
     {
      "pn": "AD815ARB-24",
-     "channels": 0,
+     "channels": 2,
      "vendors": [
       "Analog Devices"
      ],
-     "status": "unknown",
-     "notes": ""
+     "status": "obsolete (unconfirmed)",
+     "notes": "24-lead SOIC (package from model memory, unconfirmed)."
     },
     {
      "pn": "AD815AVR",
-     "channels": 0,
+     "channels": 2,
      "vendors": [
       "Analog Devices"
      ],
-     "status": "unknown",
-     "notes": ""
+     "status": "obsolete (unconfirmed)",
+     "notes": "Surface-mount power package, believed 15-lead DDPAK-style (model memory, unconfirmed)."
     },
     {
      "pn": "AD815AY",
-     "channels": 0,
+     "channels": 2,
      "vendors": [
       "Analog Devices"
      ],
-     "status": "unknown",
-     "notes": ""
+     "status": "obsolete (unconfirmed)",
+     "notes": "Through-hole power SIP, believed 15-lead (model memory, unconfirmed); needs heatsinking."
     }
    ],
-   "lineage": [],
-   "key_specs": [],
+   "lineage": [
+    {
+     "vendor": "Analog Devices",
+     "role": "originator / sole source",
+     "period": "1990s to EOL (dates unconfirmed)",
+     "notes": "No second source known. Designed as an ADSL/xDSL differential line driver; DIY audio builders adopted it later. Launch and obsolescence dates not confirmed."
+    }
+   ],
+   "key_specs": [
+    {
+     "parameter": "Output current",
+     "value": "500 mA minimum per amplifier",
+     "condition": "RL = 5 ohm",
+     "source": "unconfirmed (model memory; consistent with draft technology field). Verify against the ADI AD815 datasheet."
+    },
+    {
+     "parameter": "-3 dB bandwidth",
+     "value": "120 MHz (typ)",
+     "condition": "datasheet test conditions",
+     "source": "unconfirmed (model memory). Verify against the ADI AD815 datasheet."
+    },
+    {
+     "parameter": "Slew rate",
+     "value": "900 V/us (typ, differential)",
+     "condition": "differential configuration",
+     "source": "unconfirmed (model memory). Verify against the ADI AD815 datasheet."
+    },
+    {
+     "parameter": "Output DC offset (in DIY use)",
+     "value": "up to about 50 mV",
+     "condition": "user-reported in DIY builds, not a datasheet limit",
+     "source": "https://www.head-fi.org/threads/ad815.181226/ (discovery sweep summary)"
+    }
+   ],
    "reputation": {
-    "summary": "DIY headphone amps and preamps have been built around it: a Head-Fi 'AD815' thread, the s3t.it 'The Buffa' headphone amp, a long pinkfishmedia 'AD815 preamp build thread', and Linear Audio's 'AD815 Power Amp' article. Users say it 'sounds great' as a headphone amp. Preamp builders describe deep, punchy, well-controlled bass, really nice mids and detailed but smooth treble. Caveats: high DC offset (up to about 50 mV), EOL status and poor availability. TI's THS6012 is cited as a near-equivalent, which some find a bit cleaner in the treble.",
-    "sonic_descriptors": [],
-    "typical_uses": [],
-    "caveats": [],
+    "summary": "Niche DIY favourite, not a mainstream 'rolling' op-amp. It shows up in a Head-Fi 'AD815' thread, the s3t.it 'The Buffa' headphone amp, a long pinkfishmedia 'AD815 preamp build thread' and Linear Audio's 'AD815 Power Amp' article. Head-Fi users say it 'sounds great' as a headphone amp. Pinkfishmedia preamp builders describe deep, punchy, well-controlled bass, really nice mids and detailed but smooth treble. TI's THS6012 is cited as a near-equivalent, and some builders find it a bit cleaner in the treble. These are subjective forum impressions.",
+    "sonic_descriptors": [
+     "deep, punchy, well-controlled bass (pinkfishmedia preamp builders)",
+     "really nice mids (pinkfishmedia)",
+     "detailed but smooth treble (pinkfishmedia)",
+     "'sounds great' as a headphone amp (Head-Fi)"
+    ],
+    "typical_uses": [
+     "Headphone amplifier output stage (e.g. s3t.it 'The Buffa')",
+     "Line-level preamp / buffer stage (pinkfishmedia build thread)",
+     "Small power amplifier (Linear Audio 'AD815 Power Amp')",
+     "Portable headphone amp paired with OPA132 (Head-Fi development thread)"
+    ],
+    "caveats": [
+     "High output DC offset reported (up to about 50 mV); a DC servo or output coupling may be needed",
+     "EOL, with poor availability of genuine parts",
+     "Power packages (SIP/DDPAK) need proper heatsinking at high output current",
+     "Current-feedback topology: the feedback resistor sets stability, so no capacitors directly in the feedback path and no plain voltage-feedback socket swaps"
+    ],
     "sources": [
      "https://www.head-fi.org/threads/ad815.181226/",
      "https://pinkfishmedia.net/forum/threads/ad815-preamp-build-thread.46481/page-5",
@@ -22309,15 +22356,51 @@
      "https://www.head-fi.org/threads/new-portable-headphone-amplifier-opa132-ad815-development.492155/"
     ]
    },
-   "datasheets": [],
+   "datasheets": [
+    {
+     "vendor": "Analog Devices",
+     "title": "AD815 High Output Current Differential Driver",
+     "doc_number": "AD815",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD815.pdf",
+     "url_kind": "vendor_current",
+     "notes": "unconfirmed. URL follows ADI's standard data-sheet path pattern and could not be web-checked (search budget exhausted). Revision letter and date unknown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices",
+     "title": "AD815 product page",
+     "doc_number": "AD815",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.analog.com/en/products/ad815.html",
+     "url_kind": "product_page",
+     "notes": "unconfirmed. Standard ADI product-page pattern, not web-checked. Would show the lifecycle status (obsolete or not).",
+     "confidence": "low"
+    }
+   ],
    "revision_history": [],
    "silicon_changes": [],
-   "counterfeit_notes": "",
-   "alternatives": [],
+   "counterfeit_notes": "No part-specific counterfeit reports were found (no web search ran). As an EOL, hard-to-find ADI part, marketplace stock (eBay/AliExpress) may be pulls or remarked devices. Check the package style (15-lead power SIP/DDPAK, 24-lead SOIC), the ADI logo and date-code format, and the quiescent current and DC offset before trusting it.",
+   "alternatives": [
+    "THS6012 (TI dual 500 mA current-feedback line driver; DIY builders cite it as a near-equivalent, some find it cleaner in the treble; check pinout and package)",
+    "AD8016 (ADI dual high-output-current xDSL line driver; later ADI part, not pin-compatible; unconfirmed as a sonic substitute)"
+   ],
    "ti_literature_numbers": [],
-   "archive_seed_urls": [],
+   "archive_seed_urls": [
+    "https://www.analog.com/en/products/ad815.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD815.pdf",
+    "https://www.analog.com/static/imported-files/data_sheets/AD815.pdf"
+   ],
    "open_questions": [
-    "Added by completeness round 2; needs research beyond the praise evidence."
+    "Current ADI datasheet revision letter and date (not web-verified)",
+    "Older datasheet revisions and distributor or third-party mirrors holding them (none found; search budget exhausted)",
+    "ADI lifecycle status, and the PCN or obsolescence date and last-time-buy notice",
+    "Whether lead-free (Z-suffix) or -REEL variants existed, and the full orderable part-number list",
+    "Whether any die or fab change happened during the part's life (no evidence either way)",
+    "Confirm the headline specs (500 mA, 120 MHz, 900 V/us), supply range, and voltage/current noise from the datasheet",
+    "Whether THS6012 is pin- or package-compatible with the AD815 SIP/DDPAK"
    ],
    "sources": [
     "https://www.head-fi.org/threads/ad815.181226/",
@@ -22327,12 +22410,28 @@
     "https://www.head-fi.org/threads/new-portable-headphone-amplifier-opa132-ad815-development.492155/"
    ],
    "verification": {
-    "status": "not-web-verified",
+    "status": "partially-verified",
     "refuted_claims": [],
-    "corrections": [],
-    "unverified_urls": [],
+    "corrections": [
+     "Set channels to 2 for all part numbers (the device is a dual; the draft had 0)",
+     "Part statuses changed from 'unknown' to 'obsolete (unconfirmed)', following the discovery sweep's EOL report; ADI lifecycle not web-verified",
+     "Filled tagline, sonic_descriptors, typical_uses, caveats and alternatives from the discovery praise summary, attributed to the forum sources",
+     "Added key_specs from model memory, each marked unconfirmed",
+     "Added the ADI datasheet and product page at standard ADI URL patterns, marked low confidence and unconfirmed",
+     "No web research ran: the first WebSearch call returned 'web search budget exhausted (200 of 200)', so no claim was web-confirmed"
+    ],
+    "unverified_urls": [
+     "https://www.analog.com/media/en/technical-documentation/data-sheets/AD815.pdf",
+     "https://www.analog.com/en/products/ad815.html",
+     "https://www.analog.com/static/imported-files/data_sheets/AD815.pdf",
+     "https://www.head-fi.org/threads/ad815.181226/",
+     "https://pinkfishmedia.net/forum/threads/ad815-preamp-build-thread.46481/page-5",
+     "https://linearaudio.net/ad815-power-amp",
+     "https://s3t.it/headphone-amplifiers/ad815-the-buffa/",
+     "https://www.head-fi.org/threads/new-portable-headphone-amplifier-opa132-ad815-development.492155/"
+    ],
     "claims_confirmed": [],
-    "web_searches_used": 0
+    "web_searches_used": 1
    },
    "tier": "B",
    "category": "headphone-driver",
@@ -23840,47 +23939,70 @@
   {
    "id": "AD846",
    "name": "AD846 (Analog Devices 450 V/us precision current-feedback op-amp)",
-   "tagline": "",
-   "technology": "Single precision bipolar current-feedback op-amp, 450 V/us, stable in open loop; obsolete",
+   "tagline": "Obsolete ADI precision current-feedback op-amp that diyAudio builders rate highly for DAC I/V stages; the AD1862 DAC datasheet reportedly suggested it for I/V.",
+   "technology": "Single-channel bipolar current-feedback op-amp, 450 V/us slew (per datasheet title); obsolete (ADI datasheet sits in its obsolete-data-sheets library). Earlier draft wording 'stable in open loop' could not be checked and was removed.",
    "manufacturers": [
     "Analog Devices"
    ],
    "part_numbers": [
     {
      "pn": "AD846",
-     "channels": 0,
+     "channels": 1,
      "vendors": [
       "Analog Devices"
      ],
-     "status": "unknown",
-     "notes": ""
+     "status": "obsolete (inferred from ADI obsolete-data-sheets URL path; not confirmed per orderable PN)",
+     "notes": "Base part number. The full list of orderable grades and packages has not been checked."
     },
     {
      "pn": "AD846AN",
-     "channels": 0,
+     "channels": 1,
      "vendors": [
       "Analog Devices"
      ],
-     "status": "unknown",
-     "notes": ""
+     "status": "obsolete (inferred; unconfirmed)",
+     "notes": "A grade; under ADI's suffix convention N = plastic DIP. diyAudio's 'AD 846 AN' thread refers to this part."
     },
     {
      "pn": "AD846BQ",
-     "channels": 0,
+     "channels": 1,
      "vendors": [
       "Analog Devices"
      ],
-     "status": "unknown",
-     "notes": ""
+     "status": "obsolete (inferred; unconfirmed)",
+     "notes": "B grade; under ADI's suffix convention Q = cerdip. Not confirmed this round."
     }
    ],
-   "lineage": [],
-   "key_specs": [],
+   "lineage": [
+    {
+     "vendor": "Analog Devices",
+     "role": "Original designer and sole manufacturer",
+     "period": "Introduction date not confirmed; now obsolete (obsolescence date or PDN not found)",
+     "notes": "No second sources known."
+    }
+   ],
+   "key_specs": [
+    {
+     "parameter": "Slew rate",
+     "value": "450 V/us",
+     "condition": "typ; per datasheet title as carried in record name",
+     "source": "Datasheet title (https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf); not re-verified this round"
+    }
+   ],
    "reputation": {
-    "summary": "diyAudio posters call it a 'great sounding' and 'very good sounding' op-amp for DAC I/V conversion, saying 'you could do a lot worse by random substitution'. One thread is titled 'AD 846 AN is there a better sounding opamp out there', and after it went obsolete users started an 'AD 846 replacement' thread. It is also discussed in 'Best opamp for I/V conversion?'. The AD1862 DAC datasheet recommended it for I/V.",
-    "sonic_descriptors": [],
-    "typical_uses": [],
-    "caveats": [],
+    "summary": "On diyAudio, posters call it a 'great sounding' and 'very good sounding' op-amp for DAC I/V conversion, saying 'you could do a lot worse by random substitution'. One thread is titled 'AD 846 AN is there a better sounding opamp out there'. After the part went obsolete, users started an 'AD 846 replacement' thread. It also comes up in 'Best opamp for I/V conversion?'. The earlier sweep reported that the AD1862 DAC datasheet recommended it for I/V; this has not been re-checked. The praise is anecdotal forum opinion.",
+    "sonic_descriptors": [
+     "'great sounding' (diyAudio poster)",
+     "'very good sounding' (diyAudio poster)"
+    ],
+    "typical_uses": [
+     "DAC current-to-voltage (I/V) conversion, e.g. after the AD1862"
+    ],
+    "caveats": [
+     "Obsolete: new supply is gone and parts now come from old stock or marketplaces",
+     "Current-feedback topology: feedback resistor value sets stability and bandwidth, so it is not a drop-in swap for voltage-feedback op-amps in every circuit",
+     "Sonic praise comes from anecdotal forum posts"
+    ],
     "sources": [
      "https://www.diyaudio.com/community/threads/ad-846-an-is-ther-a-better-sounding-opamp-out-there.5807/",
      "https://www.diyaudio.com/community/threads/ad-846-replacement.118303/",
@@ -23888,15 +24010,39 @@
      "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf"
     ]
    },
-   "datasheets": [],
+   "datasheets": [
+    {
+     "vendor": "Analog Devices",
+     "title": "AD846 Precision, 450 V/us Current-Feedback Op Amp (obsolete data sheet)",
+     "doc_number": "unknown (file name prefix 270284 appears to be an ADI internal ID, not a doc number)",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf",
+     "url_kind": "vendor_legacy",
+     "notes": "Unconfirmed this round. The earlier web sweep supplied this URL as evidence, but the revision letter and date were not seen. It is filed under ADI's obsolete-data-sheets path.",
+     "confidence": "low"
+    }
+   ],
    "revision_history": [],
    "silicon_changes": [],
-   "counterfeit_notes": "",
-   "alternatives": [],
+   "counterfeit_notes": "No specific counterfeit reports were found; searches were unavailable. As with any obsolete ADI part, stock from eBay, AliExpress or brokers may be remarked or pulled. Check the package, markings and date code against the datasheet, and test slew and bandwidth before trusting it.",
+   "alternatives": [
+    "AD844 (ADI current-feedback op-amp and closest in-house relative; pinout and specs differ, so check before substituting; unverified as a recommended replacement)",
+    "See the diyAudio 'AD 846 replacement' thread for community-suggested substitutes (contents not verified)"
+   ],
    "ti_literature_numbers": [],
-   "archive_seed_urls": [],
+   "archive_seed_urls": [
+    "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf"
+   ],
    "open_questions": [
-    "Added by completeness round 2; needs research beyond the praise evidence."
+    "Latest datasheet revision letter and date, and any ADI document number",
+    "Complete orderable PN list (other A/B/S grades, cerdip/plastic/883B/SMD variants) and each one's obsolescence date or PDN",
+    "Key specs from the datasheet: offset voltage/drift, voltage and current noise, bandwidth, settling time, supply range",
+    "Whether the AD1862 datasheet actually names the AD846 for the I/V stage",
+    "Whether any die or process change occurred during production (none known)",
+    "Replacements recommended in the diyAudio 'AD 846 replacement' thread",
+    "Distributor or third-party mirrors (alldatasheet, datasheetarchive etc.) that hold older revisions",
+    "Legacy analog.com URLs for Wayback seeding (e.g. the product page); not added because none were confirmed"
    ],
    "sources": [
     "https://www.diyaudio.com/community/threads/ad-846-an-is-ther-a-better-sounding-opamp-out-there.5807/",
@@ -23905,12 +24051,24 @@
     "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf"
    ],
    "verification": {
-    "status": "not-web-verified",
+    "status": "partially-verified",
     "refuted_claims": [],
-    "corrections": [],
-    "unverified_urls": [],
+    "corrections": [
+     "WebSearch budget was exhausted at the first call (session limit 200/200), so no claims could be web-confirmed. The record holds draft and discovery content only, with no web confirmation.",
+     "Channel count changed from 0 to 1 on all PNs to match the draft's own 'single' technology description.",
+     "Removed the unverified phrase 'stable in open loop' from the technology field.",
+     "PN status changed from 'unknown' to 'obsolete (inferred)' because the ADI datasheet URL is in the obsolete-data-sheets library. Not confirmed per PN.",
+     "Added the ADI obsolete datasheet as a low-confidence datasheet entry with unknown revision and date.",
+     "Added a tagline, lineage, one key spec (450 V/us from the title), caveats, typical use, counterfeit guidance and open questions."
+    ],
+    "unverified_urls": [
+     "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf",
+     "https://www.diyaudio.com/community/threads/ad-846-an-is-ther-a-better-sounding-opamp-out-there.5807/",
+     "https://www.diyaudio.com/community/threads/ad-846-replacement.118303/",
+     "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-3"
+    ],
     "claims_confirmed": [],
-    "web_searches_used": 0
+    "web_searches_used": 1
    },
    "tier": "B",
    "category": "high-speed-video-crossover",
@@ -55417,6 +55575,86 @@
    "revision_chain_summary": "Only one vendor made this part: Analog Devices, which originated the ADA4075-2 and is its sole source. It is the dual op amp on ADI's iPolar process. No second source, acquirer re-issue or die change is known, and none of the revision notes mentions a die change. The document is the ADA4075-2 data sheet, oldest to newest:\n(1) Rev. 0, 10/08 (initial version). Copy: manuallib.com (title shows 'Rev. 0').\n(2) Rev. A, 8/09. This adds the 8-lead 2 mm x 2 mm LFCSP. It is still the MISSING link: none of the 4 searches found a copy whose title or summary shows Rev. A. There are 2 candidates. farnell.com/datasheets/2178476.pdf uses the older title style ('Ultralow Noise Amplifier at Lower Power ADA4075-2', without 'Data Sheet'), so it is probably Rev. 0 or A. The legacy analog.com/static/imported-files/data_sheets/ADA4075-2.pdf would be Wayback captures from 2009 to 2011. Both are listed as archive seeds for checking.\n(3) Rev. B, 12/11. Copy: datasheet.octopart.com (title shows 'Rev. B').\n(4) Rev. C, 11/13, current. Copies: analog.com media (upper- and lowercase), the analog.com/ADA4075-2/datasheet short link, distrelec, rlocman, and a new distributor copy at shop.richardsonrfpd.com.\nSeveral third-party copies still have no revision shown: datasheet4u/datasheetspdf ID 1099729, datasheetarchive, alldatasheet 529384 and 1969636, studylib, manualmachine and digchip. Two sets of revision-history entries in the existing file disagree about the per-revision changes. The later set (Rev. A: LFCSP added; Rev. B: Features changed; Rev. C: Balanced Line Receiver changed) matches the known package history best. The searches found nothing that resolves the disagreement."
   },
   {
+   "id": "ADA4625",
+   "name": "ADA4625-1 / ADA4625-2 (ADI 36 V low-noise JFET-input, rail-to-rail output)",
+   "tagline": "",
+   "technology": "JFET-input precision op-amp, 36 V single or split supply, 3.3 nV/rtHz, 18 MHz GBW, rail-to-rail output",
+   "manufacturers": [
+    "Analog Devices"
+   ],
+   "part_numbers": [
+    {
+     "pn": "ADA4625-1",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "ADA4625-2",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "A diyAudio member tried it as a DAC I/V converter and was 'amazed by the sound quality, almost like a CFA op amp' (in the OPA828 vs OPA627 thread). A Head-Fi Opamp-thread poster put it in a headphone amp, 'really liked it', and described a 'great clean sound' that 'seems to help low end a lot'. diyAudio also has dedicated threads on it: 'ADA4625 -- 3.3nV/rtHz JFET opamp' and 'ADA4625-2 for phono preamp use'. One rolling comment calls it a good JFET option but 'somewhat cold' in tone.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://www.diyaudio.com/community/threads/opa828-opa2828-vs-opa627.400109/page-2",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-456",
+     "https://www.diyaudio.com/community/threads/ada4625-2-for-phono-preamp-use.358271/",
+     "https://www.diyaudio.com/community/threads/ada4625-3-3nv-rt-hz-jfet-opamp.316924/"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 3."
+   ],
+   "sources": [
+    "https://www.diyaudio.com/community/threads/opa828-opa2828-vs-opa627.400109/page-2",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-456",
+    "https://www.diyaudio.com/community/threads/ada4625-2-for-phono-preamp-use.358271/",
+    "https://www.diyaudio.com/community/threads/ada4625-3-3nv-rt-hz-jfet-opamp.316924/"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "jfet-input",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-3:measure-en"
+    ],
+    "evidence_urls": [
+     "https://www.diyaudio.com/community/threads/opa828-opa2828-vs-opa627.400109/page-2",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-456",
+     "https://www.diyaudio.com/community/threads/ada4625-2-for-phono-preamp-use.358271/",
+     "https://www.diyaudio.com/community/threads/ada4625-3-3nv-rt-hz-jfet-opamp.316924/"
+    ]
+   }
+  },
+  {
    "id": "ADA4898",
    "name": "ADA4898-1 / ADA4898-2 (single/dual 0.9 nV/√Hz high-voltage bipolar)",
    "tagline": "A 0.9 nV/√Hz, 55 V/µs bipolar op amp that runs on ±5 V to ±16 V; some diyAudio DAC builders favour it for I/V stages.",
@@ -61076,6 +61314,111 @@
     ]
    },
    "revision_chain_summary": "National/TI SNAS455 (LME49880 datasheet), oldest to newest:\n(1) Original National edition, December 2009. The date comes from the original-date field of the SNAS455C header. The likely copy is the National-era alldatasheet NSC 394354 entry (14 pages, 502 KB), but its revision letter was not shown. MISSING: a copy confirmed to be the original edition.\n(2) SNAS455A. Implied only; no date, copy or change text was found. MISSING.\n(3) SNAS455B, dated April 22, 2010 (National era). New this round: the date appeared in a search summary that did not say which copy it came from. The partsconnexion SEMI-76009 PDF (listed as 'possibly B') is still the most likely copy, but the snippet did not tie the date to it. MISSING: a confirmed copy and the change text.\n(4) SNAS455C, 'DECEMBER 2009 – REVISED APRIL 2013', the TI-format re-issue. Current ti.com symlink, kyohritsu and digikey copies. Change text not seen.\nNo revisions after C were found. The part is obsolete, with OPA1642 as the recommended replacement. No second sources exist.\nNew mirror URLs this round, all with the revision not shown: datasheetarchive.com index, electronicsdatasheets.com TI part page, alldatasheet.net copy of TI entry 841156.\nArchive seed: I added only the http form of the known TI symlink. The legacy National URL (www.national.com/ds/LM/...) was never seen in any result, so I left it out of the seed list instead of guessing it. A Wayback lookup of national.com's LME49880 datasheet/product-folder paths is the best remaining route to editions A and B."
+  },
+  {
+   "id": "LMH6643",
+   "name": "LMH6642 / LMH6643 / LMH6644 (National/TI 130 MHz high-output-current rail-to-rail-output op-amp)",
+   "tagline": "",
+   "technology": "Low-power bipolar voltage-feedback op-amp with rail-to-rail output. 130 MHz, about 75 mA output current; a video-class high-speed part.",
+   "manufacturers": [
+    "National Semiconductor",
+    "Texas Instruments"
+   ],
+   "part_numbers": [
+    {
+     "pn": "LMH6643",
+     "channels": 0,
+     "vendors": [
+      "National Semiconductor",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "LMH6642",
+     "channels": 0,
+     "vendors": [
+      "National Semiconductor",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "LMH6644",
+     "channels": 0,
+     "vendors": [
+      "National Semiconductor",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "FiiO and iBasso used it as the output buffer or headphone driver. FiiO used it in the E10K, where it replaced the AD8397 and FiiO advertised better transient response and drive, and in the X3-II, X5 and E18. It was a common stock buffer in iBasso portable amps; one account says units shipped with either the THS4032 or the LMH6643. In the Head-Fi iBasso D1/D2/D10 rolling threads it was part of the recommended combination (ADA4841-2 L/R + LMH6643 buffers + LT6234 DAC), which users described as having 'very good tonal balance, soundstage and detail with a clean, open sound'. Users called it warm and relaxed and noted 'an intimate detail in the upper register that makes some music sound very good'. It was also rated, with the AD8397, as 'hard to beat for buffers' for driving low-impedance headphones, and as working 'very well as a ground opamp'. Some comments were mixed: as a buffer it loses 'a bit of impact and boldness', and some users preferred the LME49721 or OPA2727.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://www.head-fi.org/threads/the-fiio-e10k-all-new-dac-and-amp-stages.726304/page-2",
+     "https://www.fiio.com/e10k",
+     "https://www.head-fi.org/showcase/fiio-x3-2nd-gen-ultraportable-hi-res-dap.20614/reviews?order=rating&direction=asc&page=2",
+     "https://www.head-fi.org/threads/lme49721-torn-discussion.429045/",
+     "https://www.head-fi.org/threads/new-portable-amp-dac-ibasso-d1-with-updates-on-the-first-page.251541/",
+     "https://www.head-fi.org/threads/new-portable-amp-dac-ibasso-d1-with-updates-on-the-first-page.251541/page-131",
+     "https://www.diyaudio.com/community/threads/lmh6643-amplifier.224504/",
+     "https://www.ti.com/product/LMH6643"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 3."
+   ],
+   "sources": [
+    "https://www.head-fi.org/threads/the-fiio-e10k-all-new-dac-and-amp-stages.726304/page-2",
+    "https://www.fiio.com/e10k",
+    "https://www.head-fi.org/showcase/fiio-x3-2nd-gen-ultraportable-hi-res-dap.20614/reviews?order=rating&direction=asc&page=2",
+    "https://www.head-fi.org/threads/lme49721-torn-discussion.429045/",
+    "https://www.head-fi.org/threads/new-portable-amp-dac-ibasso-d1-with-updates-on-the-first-page.251541/",
+    "https://www.head-fi.org/threads/new-portable-amp-dac-ibasso-d1-with-updates-on-the-first-page.251541/page-131",
+    "https://www.diyaudio.com/community/threads/lmh6643-amplifier.224504/",
+    "https://www.ti.com/product/LMH6643"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "high-speed-video-crossover",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-3:oem-portable"
+    ],
+    "evidence_urls": [
+     "https://www.head-fi.org/threads/the-fiio-e10k-all-new-dac-and-amp-stages.726304/page-2",
+     "https://www.fiio.com/e10k",
+     "https://www.head-fi.org/showcase/fiio-x3-2nd-gen-ultraportable-hi-res-dap.20614/reviews?order=rating&direction=asc&page=2",
+     "https://www.head-fi.org/threads/lme49721-torn-discussion.429045/",
+     "https://www.head-fi.org/threads/new-portable-amp-dac-ibasso-d1-with-updates-on-the-first-page.251541/",
+     "https://www.head-fi.org/threads/new-portable-amp-dac-ibasso-d1-with-updates-on-the-first-page.251541/page-131",
+     "https://www.diyaudio.com/community/threads/lmh6643-amplifier.224504/",
+     "https://www.ti.com/product/LMH6643"
+    ]
+   }
   },
   {
    "id": "LT1057",
@@ -70755,6 +71098,190 @@
     ]
    },
    "revision_chain_summary": "NO NEW RESEARCH WAS DONE. My first WebSearch call (\"SBOS900\" OPA2156 \"revised\" datasheet) was refused because the shared session budget was already used up (200 of 200 WebSearch calls). As instructed, I stopped and added nothing. No URLs, revision letters or dates were invented.\n\nThe chain below is restated from scratchpad/chains/OPA2156.json. Texas Instruments is the only vendor; there are no second sources or acquirer re-issues.\n\nTI SBOS900, oldest to newest:\n(1) SBOS900 original (*), September 2018. This date is inferred from the \"SEPTEMBER 2018\" first-publication date printed on Revs A and B. Its contents and status (preview or production data) are unknown. No copy has been found. MISSING.\n(2) SBOS900A, \"SEPTEMBER 2018 - REVISED DECEMBER 2018\". Held only by the low-confidence alldatasheet copy 1082239/TI1. The change log was not retrieved.\n(3) SBOS900B, \"SEPTEMBER 2018 - REVISED JUNE 2019\". This is the current ti.com symlink and the latest revision seen; no Rev C has been found. The change log was not retrieved.\n\nChinese counterpart ZHCSIQ3: ZHCSIQ3A (December 2018) is referenced but no copy was confirmed to hold it. ZHCSIQ3B (June 2019) is on the ti.com.cn symlink. The original ZHCSIQ3 is missing.\n\nStill missing:\n- A copy of the original SBOS900 (*) from September 2018.\n- A confirmed copy of ZHCSIQ3A.\n- The Revision History tables (change summaries) for A and B.\n- The revisions held by the digikey htmldatasheet, datasheet4u, rfz1, alldatasheet 2222729/TI2 and scribd copies.\n- Whether a single-channel OPA156 exists. It is still unconfirmed.\n\nLegacy URL seeds such as focus.ti.com do not apply. The part dates from 2018, after TI stopped using that domain."
+  },
+  {
+   "id": "OPA2209",
+   "name": "OPA209 / OPA2209 / OPA4209 (TI 36 V, 2.2 nV/rtHz bipolar, rail-to-rail output)",
+   "tagline": "",
+   "technology": "Bipolar-input precision op-amp, 36 V, 2.2 nV/rtHz, 18 MHz GBW, rail-to-rail output, 2.5 mA max supply current",
+   "manufacturers": [
+    "Texas Instruments"
+   ],
+   "part_numbers": [
+    {
+     "pn": "OPA209",
+     "channels": 0,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA2209",
+     "channels": 0,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA4209",
+     "channels": 0,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "Several op-amp rollers name it a favourite in Head-Fi's 'The Opamp thread' and in the xDuoo XD-05 op-amp rolling threads. One poster calls it their 'favorite bipolar' and credits it with 'amazing resolution and detail level', 'great soundstage depth', an airy sound and 'the best treble detail and clarity'. Other posters rank it with the OPA2189 and OPA1692 among the top three duals on specs. Some comparisons are more mixed: one found it 'somewhat laid back' like the OP275, and another found its background brighter or noisier than the OPA1692's.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://www.head-fi.org/threads/xduoo-xd-05-basic-opamp-rolling-what-are-you-running.949790/",
+     "https://www.head-fi.org/threads/xduoo-xd-05-portable-dac-amp-introduction-impressions.789886/page-91",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-392",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-385",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-391"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 3."
+   ],
+   "sources": [
+    "https://www.head-fi.org/threads/xduoo-xd-05-basic-opamp-rolling-what-are-you-running.949790/",
+    "https://www.head-fi.org/threads/xduoo-xd-05-portable-dac-amp-introduction-impressions.789886/page-91",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-392",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-385",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-391"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "bipolar-modern-low-noise",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-3:measure-en"
+    ],
+    "evidence_urls": [
+     "https://www.head-fi.org/threads/xduoo-xd-05-basic-opamp-rolling-what-are-you-running.949790/",
+     "https://www.head-fi.org/threads/xduoo-xd-05-portable-dac-amp-introduction-impressions.789886/page-91",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-392",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-385",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-391"
+    ]
+   }
+  },
+  {
+   "id": "OPA2210",
+   "name": "OPA210 / OPA2210 / OPA4210 (TI 36 V super-beta precision bipolar, 2.2 nV/rtHz)",
+   "tagline": "",
+   "technology": "Super-beta complementary-bipolar precision op-amp, 36 V, 2.2 nV/rtHz, 0.3 nA bias current, 5 uV offset, 6.4 V/us, rail-to-rail output",
+   "manufacturers": [
+    "Texas Instruments"
+   ],
+   "part_numbers": [
+    {
+     "pn": "OPA210",
+     "channels": 0,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA2210",
+     "channels": 0,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA4210",
+     "channels": 0,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "Jim Hagerman (Hagerman Audio Labs) sells an OPA2210 op-amp upgrade for his Bugle MC phono preamp. TNT-Audio published a listening test of the Bugle MC fitted with OPA2210s: it reports a promised 6 dB noise reduction and says the reviewer was surprised how different the Bugle sounded. Audiophonics sells the OPA2210 as a DIP8 rolling unit, and its user reviews report more clarity and better bass, with some caveats. The part also comes up in diyAudio's 'What's the best dual I/V opamp these days???' thread. The evidence is mixed: in Head-Fi's Opamp thread one user reported hum after a swap and another heard no difference from the LM833 or OPA2107.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://www.tnt-audio.com/ampli/hagerman_bugle_opa2210_e.html",
+     "https://hagerman-audio-labs.myshopify.com/products/opamp-upgrade",
+     "https://www.audiophonics.fr/en/opa/opa2210-dual-opa-dip8-unit-p-18337.html",
+     "https://www.diyaudio.com/community/threads/whats-the-best-dual-i-v-opamp-these-days.336309/page-4",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-465"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 3."
+   ],
+   "sources": [
+    "https://www.tnt-audio.com/ampli/hagerman_bugle_opa2210_e.html",
+    "https://hagerman-audio-labs.myshopify.com/products/opamp-upgrade",
+    "https://www.audiophonics.fr/en/opa/opa2210-dual-opa-dip8-unit-p-18337.html",
+    "https://www.diyaudio.com/community/threads/whats-the-best-dual-i-v-opamp-these-days.336309/page-4",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-465"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "bipolar-modern-low-noise",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-3:measure-en"
+    ],
+    "evidence_urls": [
+     "https://www.tnt-audio.com/ampli/hagerman_bugle_opa2210_e.html",
+     "https://hagerman-audio-labs.myshopify.com/products/opamp-upgrade",
+     "https://www.audiophonics.fr/en/opa/opa2210-dual-opa-dip8-unit-p-18337.html",
+     "https://www.diyaudio.com/community/threads/whats-the-best-dual-i-v-opamp-these-days.336309/page-4",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-465"
+    ]
+   }
   },
   {
    "id": "OPA2350",
