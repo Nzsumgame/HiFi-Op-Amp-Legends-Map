@@ -1,6 +1,6 @@
 # Revision hazards: same part number, different silicon
 
-## Silicon and specification changes (61)
+## Silicon and specification changes (63)
 
 | Family | Kind | Vendor | When | What changed | Risk | Conf. |
 |---|---|---|---|---|---|---|
@@ -65,6 +65,8 @@
 | [OPA828](families/OPA828.md) | Datasheet respec | Texas Instruments | November 2022 (PCN20221117006), coinciding with SBOS671C… | 'Same part number, different datasheet' hazard, not a die change. | low - it is a spec-only PCN with the same device and markings. | high |
 | [THS4032](families/THS4032.md) | Datasheet respec | Texas Instruments | Between SLOS224C (Apr 2000) and the current new-format… | There is no evidence of a die change; only the datasheet headline specs moved. | low: pinout and package unchanged; no PCN found; the differences appear to be… | medium |
 | [uPC4570](families/uPC4570.md) | Datasheet respec | Renesas Electronics (ex-NEC) | New Renesas datasheet R03DS0135EJ0100 Rev.1.00 dated 17… | Renesas replaced the NEC-era uPC4570 datasheet with a new Renesas document, R03DS0135EJ. | low - same die as far as documented. | low |
+| [AD822](families/AD822.md) | Unclassified | Analog Devices | 2026 (by PCN number; exact date not confirmed) | ADI PCN 26_0029 lists AD820, AD822 and AD824 variants together with the AD823 and AD8224 JFET-input amplifiers. | medium - a 2026 PCN covers the whole JFET-RRO family, but the nature of the change is… | low |
+| [OP285](families/OP285.md) | Unclassified | Analog Devices | 2017 (PDN 17_0038 issued as Rev. -, later revised to Rev. | Product discontinuance of the non-RoHS OP285GS variants, with OP285GSZ named as the pin-compatible replacement. | low - pin-compatible Z-suffix replacement named in the PDN | medium |
 
 ## Other change notes (48)
 
@@ -2465,3 +2467,30 @@ Soomal (2016) ranks Taiwan-made parts second only to US-made, and ahead of SE-As
 
 - [github.com/h2dcc/soomal.github.io/blob…posts/10100006526.md](https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100006526.md)
 - [maimai-audio.blog.jp/archives/26518228.html](https://maimai-audio.blog.jp/archives/26518228.html)
+
+### AD820 / AD822 / AD824 (ADI single-supply rail-to-rail-output JFET-input): Unclassified, Analog Devices, 2026 (by PCN number; exact date not confirmed)
+
+*When:* 2026 (by PCN number; exact date not confirmed)
+
+ADI PCN 26_0029 lists AD820, AD822 and AD824 variants together with the AD823 and AD8224 JFET-input amplifiers. Search results did not show what the change is (fab/process, assembly, test or package). A multi-product JFET-family PCN could mean a process or fab change, but that is unconfirmed.
+
+**How to tell old from new:** Covered by ADI PCN 26_0029 Rev. -. Check the PCN for how to tell pre- and post-change parts apart (date code or other marking).
+
+**Audio impact:** Unknown until the PCN text is read.
+
+- [farnell.com/datasheets/4778405.pdf](https://www.farnell.com/datasheets/4778405.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…_0029_Rev_-_Form.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf)
+
+### OP285 (ADI dual 9 MHz precision 'Butler' bipolar/JFET audio op-amp): Unclassified, Analog Devices, 2017 (PDN 17_0038 issued as Rev. -, later revised to Rev.
+
+*When:* 2017 (PDN 17_0038 issued as Rev. -, later revised to Rev. B and Rev. C)
+
+Product discontinuance of the non-RoHS OP285GS variants, with OP285GSZ named as the pin-compatible replacement. The sources found document no die change. This is a part-number/lead-finish transition, not a case of the same part number with different silicon.
+
+**How to tell old from new:** Non-Z SOIC part numbers are discontinued. The replacement carries the Z suffix: OP285GSZ (and its -REEL/-REEL7 versions).
+
+**Audio impact:** None expected. No electrical or die change is documented.
+
+- [analog.com/media/en/PCN/ADI_PDN_17_0038_Rev_C_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PDN_17_0038_Rev_C_Form.pdf)
+- [mouser.com/PCN/ADI_ADI_PDN_17_0038_Rev_B_Form.pdf](https://www.mouser.com/PCN/ADI_ADI_PDN_17_0038_Rev_B_Form.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…PDN_17_0038_Rev-.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2206/PDN_17_0038_Rev-.pdf)
