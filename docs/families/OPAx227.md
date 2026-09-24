@@ -6,6 +6,8 @@
 
 **Technology:** Bipolar, precision low-noise, laser-trimmed, with input bias-current cancellation and back-to-back differential input clamp diodes. OPA227 is unity-gain stable (8 MHz, 2.3 V/us). OPA228 is decompensated for G>=5 (33 MHz, 10 V/us on TI's product page; 11 V/us typ in the Rev A table). The singles have offset trim on pins 1/8 (OP-27 compatible) in Rev A, and datasheet text surfaced in 2026 searches still describes pins 1/8 trim. No trim-to-NC change was found for this family, unlike OPA132/OPA627.
 
+> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (1 recorded).
+
 ## Why enthusiasts rate it
 
 Tangent (tangentsoft) made the OPA2227 the default op-amp for his PIMETA amp. He described it as sounding very like the OPA132/OPA134, minus the bass bloom. He found the decompensated OPA228 more resolving and 'lively' than the OPA132, but it oscillated in his low-gain CMoy, so he preferred the OPA227. On Head-Fi the OPA2227 divides opinion: some users call it 'horribly dull and laid back', while others call the OPA2228 'waaaay better' and 'pleasant sounding', provided gain is 5 or more or the part is compensated. Japanese C-Area wiki rates the OPA2228 as flat, high-resolution, smooth and realistic. It describes the OPA2227 as OPA2134-like but leaning to the low end (Zigsow: 'bass stands out'). No Audio Science Review or Samuel Groner measurements were located. These are subjective community impressions, not measurements.
@@ -69,7 +71,28 @@ Tangent (tangentsoft) made the OPA2227 the default op-amp for his PIMETA amp. He
 
 ## Silicon changes under the same part number
 
-None documented. (Absence of evidence is not evidence of absence. Compare datasheet revisions.)
+### 1. Texas Instruments: PCN 20230306000.1 (March 2023), referenced in TI E2E…
+
+In E2E thread 1360546 ('OPA2227: TI Logo Format Change'), a customer asks about OPA2227 parts with a different logo format. The search summary of TI's reply cites PCN# 20230306000.1 (and PCN# 20220615003.1) as introducing new fab sites for the OPA2227, with parts from those sites being new chips. The retrieved sources did not give the PCN 20230306000.1 title, a device list or any spec changes. A separate 2026 PCN (20251017000.1A, RFAB plus die revision) appeared in an OPA227-keyword search but is not confirmed to list OPA227-family parts. The OPAx227/x228 datasheet seen is SBOS110B (June 2015), which shows no die-change note.
+
+- **When:** PCN 20230306000.1 (March 2023), referenced in TI E2E thread 1360546, about 2024. A later PCN 20251017000.1A (8 Jan 2026), 'Qualification of RFAB as an additional Fab site, Die Revision and BOM option', surfaced in an OPA227 search, but its device list was not confirmed.
+- **Affected:** OPA2227 (orderables not itemised in retrieved sources)
+- **How to tell old from new:** A marking-style change (TI logo format) was raised on E2E. TI's reply, as summarised, says PCN# 20230306000.1 introduced new fab sites and that chips from those sites are 'entirely new', so their marking style is not treated as a change. No die-revision letters were retrieved.
+- **Audio impact:** Unknown. The OPA2227/OPA2228 is valued for its low noise and low distortion. A new-fab chip could differ in HF behaviour or noise even with the same limits. No listener or measurement reports were found.
+- **Drop-in risk:** low: the evidence is an indirect E2E summary with no confirmed device list or spec changes. Treat it as a watch item.
+- **Confidence:** low
+
+| Parameter | Before | After |
+|---|---|---|
+| Wafer fab | original Burr-Brown/TI fab | new fab site(s) per PCN 20230306000.1 (site not named in the retrieved summary) |
+| Top marking | previous TI logo format | new logo/marking format (E2E 1360546) |
+| Electrical specs | SBOS110B | no change retrieved |
+
+Sources:
+
+- [e2e.ti.com/support/amplifiers-group/am…i-logo-format-change](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1360546/opa2227-ti-logo-format-change)
+- [mm.digikey.com/Volume0/opasdata/d22000…CN20251017000.1A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8882/PCN20251017000.1A.pdf)
+- [ti.com/lit/gpn/OPA4227](https://www.ti.com/lit/gpn/OPA4227)
 
 ## Datasheets
 

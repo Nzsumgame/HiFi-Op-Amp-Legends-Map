@@ -4,7 +4,7 @@
 |---|---|---|---|---|---|
 | [NE5532](families/NE5532.md) | Texas Instruments | Process/fab PCN reportedly dated Nov 15, 2023 (diyAudio);… | TI replaced the NE5532/NE5532A/SA5532/SA5532A silicon with a redesign on a newer process in RFAB, without changing the part numbers. | high – same part number but lower voltage rating, slower slew, halved ESD, no input… | high |
 | [AD823](families/AD823.md) | Analog Devices | 2012 (AD823A datasheet Rev. | The original AD823 datasheet revisions (0 to E) show only format, unit-typo, abs-max, figure, ordering and editorial changes; its only known production change… | medium - same dual SOIC pinout and 3-36 V supply, but there is no DIP (DIP rollers need… | high |
-| [LM318](families/LM318.md) | Texas Instruments vs National… | Concurrent: TI's own LM318 existed by 1989; both lines… | Two different LM318 dies appear to be sold under the same generic number: TI's own LM318 (TI macromodel dated 1989) and National's original LM318 (now LM318-N). | medium - same pinout and nominal headline specs, but different dies and datasheets. | low |
+| [LM318](families/LM318.md) | Texas Instruments (TI-legacy) vs… | Concurrent since 1976 (TI SLOS063 original date) and… | TI sells two separately documented LM318 product lines with the same generic number: its own second source (datasheet since June 1976) and National's original… | medium - same pinout and headline specs (15 MHz, 50 V/us min), but separate designs and… | medium |
 | [LM833](families/LM833.md) | Texas Instruments | July 2010 (TI's own LM833, SLOS481) / after the 2011… | TI sells two different LM833 devices (TI E2E 430833: 'two different devices'). | medium - same pinout and similar headline specs, but a different die and output stage;… | high |
 | [LM833](families/LM833.md) | Texas Instruments | Merge confirmed by TI on E2E (thread 1652528) and… | TI confirmed on its E2E forum (thread titled 'NE5532, LM833, RC4580 and MC33078 all now the same die') that these parts now share one die; part numbers are… | medium - same part number, new silicon; | high |
 | [NE5534](families/NE5534.md) | Multiple second sources… | 1980s-present | Each vendor sells its own part under the same generic number. | medium - check stability and compensation when swapping brands in unity or low-gain… | low |
@@ -12,6 +12,7 @@
 | [OPA604](families/OPA604.md) | Texas Instruments | c. 2015-2016 (reported in diyAudio 'OPA2604 is dead', 24… | Unannounced supply derating of the same part number: a document quoted on diyAudio (2016) says the OPA2604 no longer supports ±24 V and must be constrained to… | medium - designs that rely on the OPA2604's unique ±24 V rating may drift or run hot… | medium |
 | [OPA627](families/OPA627.md) | Texas Instruments | SBOS165B (April 2024) / SBOS165C (January 2025); after… | TI's 2024-2025 rewrite deleted the 'Difet' wording, added a new B-grade SOIC (OPA627BU), and dropped offset-trim pins on the molded packages. | medium - Offset-trim circuits may not work on new SOIC parts, and the electrical spec… | medium |
 | [TLE2071](families/TLE2071.md) | Texas Instruments | PCN dated December 2023 (PCN 20231219013.1); effective… | TI PCN 20231219013.1 (Digi-Key copy) lists TLE2071 orderables. | medium (provisional) - the scope is unread; if it is a fab or die change, pre- and… | low |
+| [TLE2081](families/TLE2081.md) | Texas Instruments | Datasheet SLOS182 rev C, March 2026 (a die change is NOT… | This is a possible hazard only. | medium - unconfirmed; only datasheet text edits were seen, with no electrical deltas or… | low |
 | [AD797](families/AD797.md) | Analog Devices | 2026 (PCN 26_0029 Rev. -; exact publication and first-ship… | ADI PCN 26_0029, 'Qualification of ADI Camas Wafer Fab CB Processes', qualifies the Camas, WA wafer fab for Complementary Bipolar (CB) products, and a search… | low — same process qualified at a second fab, no stated data-sheet or marking change;… | medium |
 | [AD823](families/AD823.md) | Analog Devices | 2026 (PCN 26_0029 Rev. -; exact issue and implementation… | ADI PCN 26_0029 moves production to 'the existing qualified process at the Analog Devices Camas, WA Fab to ensure a reliable and continuous supply', with 'no… | low - ADI states no fit/form/function impact and the datasheet is unchanged. | medium |
 | [AD825](families/AD825.md) | Analog Devices | c. 2010 (inferred from ADI's PCN numbering 10_xxxx);… | A search summary says ADI PCN 10_0117 Rev. | low - no evidence of a die or pinout change, but the PCN content is unverified | low |
@@ -28,10 +29,11 @@
 | [LF353](families/LF353.md) | National Semiconductor | between the 1980 databook and the August 2000 DS005649 | National dropped the tighter-offset A and B grades and the TO-99 metal can for the LF353, and added SO-8. | low - same die family and pinout; the TO-99 can has a different footprint | high |
 | [LF353](families/LF353.md) | STMicroelectronics vs Texas… | ongoing (ST datasheet era not verified) | ST specifies its LF353 differently from TI: 4 MHz, 15 nV/rtHz, 0.01% THD headline. | low - drop-in, but ST's LF353 is rated only to 32 V against TI's 36 V | medium |
 | [LF353](families/LF353.md) | Texas Instruments (LF347) | after 2011 (exact date unknown) | By 2021 a user listed TI's ex-National SNOSBH1D alongside the lf347.pdf symlink for LF347N. | low - same function and pinout (LM348-compatible per TI SLOS013B) | low |
-| [LF356](families/LF356.md) | National Semiconductor | 1975 to before 1980 (earliest production) | The earliest documented LF156 pinout differs: pin 8 had a bias-reference function, and the typical AC figures differed (15 V/µs, 1.4 µs settling, versus 12… | low – affects only rare 1975-era LF156 metal cans. | medium |
-| [LF356](families/LF356.md) | National Semiconductor | between the 1980 databook and the May 2000 DS005646 edition | A possible compensation-capacitor change in the decompensated LF157/LF357, or just a documentation correction. | low – the guaranteed specs are the same and it may be purely editorial. | low |
-| [LF356](families/LF356.md) | Linear Technology / PMI (second sources) | c.1978 (PMI); c.1990 (LT models) | Second-source dies were not necessarily National's. | low – same pinout and function; the second sources claim tighter DC specs. | low |
-| [LM318](families/LM318.md) | Linear Technology | c. 1989-1990 (LTC 1990 Linear Databook) | LTC made its own LM318 second source plus an improved LT118A/LT318A. | low - drop-in second source per LTC databook, but datasheet deltas are unverified. | low |
+| [LF356](families/LF356.md) | Texas Instruments | PCN 20180920003.1; FFAB BI-FET qualification approved… | TI issued a PCN with a qualification report for 'FFAB BIFET Technology Qualification' that lists LF356 wafer, metal-can, SOIC and PDIP devices. | low – same datasheet, pinout and limits; a fab transfer with no published parametric… | medium |
+| [LF356](families/LF356.md) | National Semiconductor | 1975 to before 1980 (earliest production) | The earliest documented LF156 pinout differs (pin 8 bias reference) and typical AC figures differed (15 V/µs, 1.4 µs vs 12 V/µs, 1.5 µs from 1980). | low – affects only rare 1975-era LF156 metal cans; tie pin 8 to V+ when not trimming… | medium |
+| [LF356](families/LF356.md) | National Semiconductor | between the 1980 databook and the May 2000 DS005646 edition | A possible compensation-capacitor change in the decompensated LF157/LF357, or just a documentation correction. | low – guaranteed specs are the same and it may be purely editorial. | low |
+| [LF356](families/LF356.md) | Second sources (PMI, Linear… | c.1978 (PMI); c.1990 (LT models); | Second-source dies were not necessarily National's. | low – same pinout and function; specs may differ by vendor. | low |
+| [LM318](families/LM318.md) | Linear Technology | c. 1989-1990 (LTC 1990 Linear Databook) | LTC made its own LM318 second source plus an improved LT118A/LT318A. | low - intended as a drop-in second source, but datasheet deltas are unverified. | low |
 | [LT1361](families/LT1361.md) | Analog Devices | 2021 (PCN 21_0060 Rev A; a Rev B also exists; exact dates… | MARKING ONLY, NOT A DIE CHANGE: the top mark on legacy Linear 8-SOICN products changed from ink to laser. | low - marking change only; same die and package | medium |
 | [LT1361](families/LT1361.md) | Analog Devices | October 2024 (PCN 24_0236 Rev -) | MARKING ONLY, NOT A DIE CHANGE: the bottom-side trace-code marking moved into the top-side laser mark to standardise marking across ADI packages. | low - marking change only | medium |
 | [MUSES05](families/MUSES05.md) | Nisshinbo Micro Devices | Suspended by June 2024 at the latest (new_western_elec… | Vendor-documented halt and restart under the same part number. | low - same part number, package and datasheet Ver.1.0, and the vendor presents it as a… | medium |
@@ -55,20 +57,27 @@
 | [OPA627](families/OPA627.md) | Burr-Brown -> Texas Instruments | after 2000 (TI acquisition); exact transfer date unknown | Soomal (2016) ranks Taiwan-made parts second only to US-made, and ahead of SE-Asian-made. | low - Same pinout and specs. | low |
 | [OPA828](families/OPA828.md) | Texas Instruments | November 2022 (PCN20221117006), coinciding with SBOS671C… | 'Same part number, different datasheet' hazard, not a die change. | low - it is a spec-only PCN with the same device and markings. | high |
 | [OPA828](families/OPA828.md) | Texas Instruments | October 2022 (preview, SBOS671C) / December 2022… | A package extension, not a documented die change. | low - different footprints, suffixes and markings mean the parts cannot be confused. | medium |
+| [LF353](families/LF353.md) | Texas Instruments (TI's own LF353, not… | PCN 20220615003.1 (June 2022, Sherman SFAB to Richardson… | TI moved its own LF353 from SFAB (Sherman) to RFAB (Richardson) on a new die. | medium: the part is pin-compatible with unchanged guaranteed limits, but TI confirms an… | high |
+| [LF353](families/LF353.md) | Texas Instruments (LF347 quad) | PCN 20221219006.1, December 2022. | A search summary of the Mouser-hosted PCN 20221219006.1 ('Qualification of new Fab site (RFAB)...') puts LF347N in the Group 2 device list for 'RFAB/Process… | medium: the RFAB process migration is PCN-listed, but the actual electrical deltas for… | medium |
 | [LME49720](families/LME49720.md) | Texas Instruments | PCN 20180308002 issued March 2018 (Mouser copy 20180309,… | TI moved LM4562/LME49720 wafer fabrication from a 150 mm (6-inch) line to RFAB in Richardson, TX, on a newer process with a die-shrink redesign. | low: same pinout, part number and datasheet limits. | medium |
 | [MC33078](families/MC33078.md) | Texas Instruments | Confirmed on TI E2E in 2026 (thread 1652528, around June… | TI E2E thread 1652528, 'NE5532, LM833, RC4580 and MC33078 all now the same die', reports that TI has unified the four dies while keeping the part numbers. | low: no MC33078 datasheet change or PCN was found, and the evidence points to NE5532… | medium |
 | [MC33078](families/MC33078.md) | Texas Instruments / STMicroelectronics… | TI since October 2004; | Same part number, different silicon across vendors. | low: the pinout and headline specs match. | low |
 | [NJM4556](families/NJM4556.md) | NEC (vs JRC) | 1980s (uPC4556 on late-1980s Taito boards per MAME notes) | Same '4556' number, different silicon. | high: a decompensated part is not a drop-in for unity-gain buffer or driver roles, and… | medium |
+| [4558](families/4558.md) | Texas Instruments (RC4558) | Datasheet SLOS073H, revised October 2024 (previous… | TI reissued the RC4558 datasheet as Rev H in October 2024, ten years after Rev G. | low: the evidence is a datasheet re-spec only, with no PCN or E2E confirmation of a die… | low |
 | [NJM4580](families/NJM4580.md) | Texas Instruments vs New JRC / Nisshinbo | April 2003 (TI RC4580 introduced) - present | TI's RC4580 is a pin- and function-compatible second source. | low: drop-in pinout and similar supply range, with slightly lower GBW on the TI part. | medium |
 | [OP275](families/OP275.md) | Analog Devices | 2007 onward (PCN 07_0024; the Rev. | Assembly-material change. | low: the die design, pinout and datasheet are unchanged; only materials changed. | low |
 | [OP275](families/OP275.md) | Analog Devices | RoHS transition (date not confirmed) | Lead-free ordering codes replaced the leaded GP and GS codes. | low: the ordering code differs, but the pinout and datasheet are the same. | medium |
 | [OPAx134](families/OPAx134.md) | Texas Instruments | PCN 20231219018.1 (fab move, Dec 2023); | TI moved the OPAx134 die to a new wafer fab under the same part numbers as part of its exit from 150 mm fabs. | medium: pin- and function-compatible for normal audio use per TI, but offset-trim… | high |
+| [OPA1611](families/OPA1611.md) | Texas Instruments | PCN 20260223007.1 dated 24 Feb 2026; estimated sample… | This refines the existing OPA1611 known-hazard entry. | low: assembly-material change only, with no die or datasheet change. | high |
+| [OPAx227](families/OPAx227.md) | Texas Instruments | PCN 20230306000.1 (March 2023), referenced in TI E2E… | In E2E thread 1360546 ('OPA2227: TI Logo Format Change'), a customer asks about OPA2227 parts with a different logo format. | low: the evidence is an indirect E2E summary with no confirmed device list or spec… | low |
 | [OPA827](families/OPA827.md) | Texas Instruments | 2024 (PCN#20240628012.1, dated 28 Jun 2024) | TI PCN#20240628012.1 lists OPA827AID among the affected devices. | low: no datasheet revision followed (still Rev I from 2016), and there is no evidence of… | low |
 | [OPA827](families/OPA827.md) | Texas Instruments | February 2012 (SBOS376 Rev G) | The datasheet specs changed at the move from Mixed Status to Production Data: Vos, drift and Ib limits were revised, and SR and ISC minimums were added. | low: same pinout and packages, and no known die change | low |
 | [THS4631](families/THS4631.md) | Texas Instruments | Published in SLOS451C (March 2025). | Rev C re-characterises the THS4631 on 'new silicon data'. | medium: pinout, package and headline AC specs are unchanged. | medium |
 | [TL07x](families/TL07x.md) | Texas Instruments | Oct 2020 (SLOS080O, preview); production TL072H Jun 2021… | A new die on a 'modern process', sold as the 'next-generation' TL07x. | medium: signal pinout is identical for the dual and quad, but the noise doubles and… | high |
 | [TL07x](families/TL07x.md) | Texas Instruments | PCN 20221219006.1 issued 21 Dec 2022 (samples until 20 Jan… | Through PCN 20221219006.1 (Dec 2022), TI moved ordinary TL072/TL074 (and per the datasheet, TL071) C/AC/BC/I grades onto a revised die in the RFAB fab, with… | medium: pin-compatible drop-in, but noise doubles and saturation and protection… | high |
 | [TL07x](families/TL07x.md) | STMicroelectronics | Ongoing (ST TL072 DocID2298 Rev 8, June 2014; | The second-source die has its own spec set, which differs from the TI legacy die on paper: lower noise and higher bandwidth. | low: same pinout and supply class. | medium |
+| [TLE2071](families/TLE2071.md) | Texas Instruments | PCN 20231219013.1 (19 December 2023) | A search summary of the Digi-Key-hosted TI PCN 20231219013.1 says the notice changes the wafer fab site to RFAB, revises the die and changes the assembly site. | medium: the die change is PCN-documented, but no electrical deltas were retrieved. | medium |
+| [TLE2081](families/TLE2081.md) | Texas Instruments | PCN 20231219013.1 (19 December 2023) | Search summaries name TLE2081IDR, TLE2082IDR, TLE2082ACP and TLE2082ACDR in the same TI PCN 20231219013.1 as the TLE207x. | medium: the die change is PCN-documented, but no electrical deltas were retrieved. | medium |
 
 ## NE5532 / NE5532A / SA5532 / SE5532 (dual low-noise bipolar; incl. NJM5532, KA5532, BA15532, RC5532): Texas Instruments, Process/fab PCN reportedly dated Nov 15, 2023 (diyAudio);…
 
@@ -143,20 +152,23 @@ The original AD823 datasheet revisions (0 to E) show only format, unit-typo, abs
 - [github.com/oihdesigns/Micro-DMM/blob/m…a%20Sheets/ad823.pdf](https://github.com/oihdesigns/Micro-DMM/blob/main/Component%20Data%20Sheets/ad823.pdf)
 - [github.com/gburgyan/electronics-parts/…asheets/AD823ANZ.pdf](https://github.com/gburgyan/electronics-parts/blob/main/datasheets/AD823ANZ.pdf)
 
-## LM118 / LM218 / LM318 (fast bipolar single op-amp, 15 MHz / 50 V/us): Texas Instruments vs National…, Concurrent: TI's own LM318 existed by 1989; both lines…
+## LM118 / LM218 / LM318 (fast bipolar single op-amp, 15 MHz / 50 V/us): Texas Instruments (TI-legacy) vs…, Concurrent since 1976 (TI SLOS063 original date) and…
 
-*When:* Concurrent: TI's own LM318 existed by 1989; both lines have sat in the TI catalogue since the 2011 National acquisition
+*When:* Concurrent since 1976 (TI SLOS063 original date) and within the TI catalogue since the 2011 National acquisition
 
-Two different LM318 dies appear to be sold under the same generic number: TI's own LM318 (TI macromodel dated 1989) and National's original LM318 (now LM318-N). A third-party audio SPICE modeller (Shtybel Nazar, s-audio.systems) keeps separate LM318NS and LM318TI models with different internal parameters. No vendor document comparing them was seen.
+TI sells two separately documented LM318 product lines with the same generic number: its own second source (datasheet since June 1976) and National's original (now LM318-N). The die difference is inferred from their separate origins. A third-party audio SPICE modeller also keeps separate National and TI models with different parameters. No vendor document compares the two.
 
-**How to tell old from new:** Product page / datasheet: ti.com/product/LM318 (lm318.pdf) vs ti.com/product/LM318-N (lm318-n.pdf, 'LM118/LM218/LM318 Operational Amplifiers'). Package code: TI style D/DR/P for TI-legacy vs National style M/N/H/J (N/NOPB) for ex-National.
+**How to tell old from new:** By datasheet: SLOS063 ('High-Performance Operational Amplifiers', ti.com/product/LM318, lm318.pdf) vs SNOSBS8 ('LM118-N/LM218-N/LM318-N Operational Amplifiers', ti.com/product/LM318-N, lm318-n.pdf). By package code: TI style D/DR/P/PSR = TI-legacy; National style N/M/MX/H/J and /NOPB = ex-National.
 
 **Audio impact:** Unknown. Compensation, slew and stability margins may differ, so a part swap can change behaviour in fast or feed-forward-compensated circuits.
 
+- [ti.com/product/LM318](https://www.ti.com/product/LM318)
+- [ti.com/product/LM318-N](https://www.ti.com/product/LM318-N)
+- [ti.com/lit/gpn/LM318](https://www.ti.com/lit/gpn/LM318)
+- [ti.com/lit/ds/symlink/lm318-n.pdf](https://www.ti.com/lit/ds/symlink/lm318-n.pdf)
+- [radiolocman.com/datasheet/data.html?di=297739](https://www.radiolocman.com/datasheet/data.html?di=297739)
 - [github.com/kicad-spice-library/KiCad-S…nstruments/lm318.mod](https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/Manufacturer/Texas%20Instruments/lm318.mod)
 - [github.com/dunkelstern/electret_preamp…ltspice/LM318_SN.lib](https://github.com/dunkelstern/electret_preamp/blob/main/ltspice/LM318_SN.lib)
-- [github.com/stavros-tsioulis/voltdocs-p…log/lm318/entry.yaml](https://github.com/stavros-tsioulis/voltdocs-public/blob/f49eba34eb5a93ee912aa7793b39d19e6d66c7a4/entries/modules/analog/lm318/entry.yaml)
-- [github.com/lgc0208/lgc0208.github.io](https://github.com/lgc0208/lgc0208.github.io)
 
 ## LM833 / LM833-N (LM837 quad): Texas Instruments, July 2010 (TI's own LM833, SLOS481) / after the 2011…
 
@@ -283,6 +295,23 @@ TI PCN 20231219013.1 (Digi-Key copy) lists TLE2071 orderables. A search summary 
 **Audio impact:** Unknown. No datasheet revision after SLOS181C (Dec 2009) was found, which suggests no published spec change.
 
 - [mm.digikey.com/Volume0/opasdata/d22000…PCN20231219013.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5784/PCN20231219013.1.pdf)
+
+## TLE2081 / TLE2082 / TLE2084 (TI Excalibur high-speed JFET-input): Texas Instruments, Datasheet SLOS182 rev C, March 2026 (a die change is NOT…
+
+*When:* Datasheet SLOS182 rev C, March 2026 (a die change is NOT confirmed)
+
+This is a possible hazard only. Rev C removed 'BiFET', the slew-rate bullet and 'On-chip offset voltage trimming' from Features, rewrote the Description and dropped 'JFET-Input' from the title. TI made similar edits in datasheet refreshes that accompanied new dies on other legacy parts, but no PCN, new-die statement or electrical delta for the TLE208x was found.
+
+**How to tell old from new:** No PCN found. Compare the rev C electrical tables against rev B (June 2001). If TI issued a new die, parts would be told apart by date code or lot and PCN, not by part number.
+
+| Parameter | Before | After |
+|---|---|---|
+| Features list | BiFET technology, slew-rate figure, on-chip offset voltage trimming listed (rev B) | these items deleted (rev C) |
+| Document title | TLE208x, TLE208xA, TLE208xY EXCALIBUR HIGH-SPEED JFET-INPUT OPERATIONAL AMPLIFIERS | TLE208x and TLE208xA Excalibur High-Speed Operational Amplifiers |
+
+**Audio impact:** Unknown. If the input stage, trim or process changed, noise, offset, slew and sound may differ from the parts Head-Fi reviewed c.2007–09.
+
+- [ti.com/lit/ds/symlink/tle2084.pdf](https://www.ti.com/lit/ds/symlink/tle2084.pdf)
 
 ## AD797 (ultralow-noise, ultralow-distortion bipolar single): Analog Devices, 2026 (PCN 26_0029 Rev. -; exact publication and first-ship…
 
@@ -545,13 +574,29 @@ By 2021 a user listed TI's ex-National SNOSBH1D alongside the lf347.pdf symlink 
 - [github.com/chenshuo/nuedc/blob/main/do…opamp/lf347-2000.pdf](https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf347-2000.pdf)
 - [github.com/KVentayen/Resources/blob/ma…/Datsheet%20List.tex](https://github.com/KVentayen/Resources/blob/master/Electrical,%20Computer%20Engineering/Component%20Datasheets/Datsheet%20List.tex)
 
+## LF355 / LF356 / LF357 (LF155 series): Texas Instruments, PCN 20180920003.1; FFAB BI-FET qualification approved…
+
+*When:* PCN 20180920003.1; FFAB BI-FET qualification approved 19-Sep-2018 (implementation date not seen)
+
+TI issued a PCN with a qualification report for 'FFAB BIFET Technology Qualification' that lists LF356 wafer, metal-can, SOIC and PDIP devices. LF356s built after the change may use die from a different wafer fab than National-era parts. The previous fab and any mask or design changes are not stated in what was seen (the move from National's heritage fab is inferred, not confirmed).
+
+**How to tell old from new:** Not visible in the marking; datasheet SNOSBH0D is unchanged. Only TI lot trace / date codes after PCN implementation would indicate FFAB wafers. Check the PCN affected-device list and implementation date with TI or a distributor.
+
+| Parameter | Before | After |
+|---|---|---|
+| Wafer fab | previous (National-heritage) fab, not named in the search result | FFAB |
+
+**Audio impact:** None documented. Datasheet limits unchanged; no measurements comparing pre- and post-transfer lots are known.
+
+- [farnell.com/datasheets/2674716.pdf](https://www.farnell.com/datasheets/2674716.pdf)
+
 ## LF355 / LF356 / LF357 (LF155 series): National Semiconductor, 1975 to before 1980 (earliest production)
 
 *When:* 1975 to before 1980 (earliest production)
 
-The earliest documented LF156 pinout differs: pin 8 had a bias-reference function, and the typical AC figures differed (15 V/µs, 1.4 µs settling, versus 12 V/µs and 1.5 µs from 1980). This suggests an early mask or metal change before volume production. That is inferred from datasheet wording, not confirmed by National.
+The earliest documented LF156 pinout differs (pin 8 bias reference) and typical AC figures differed (15 V/µs, 1.4 µs vs 12 V/µs, 1.5 µs from 1980). This suggests an early mask or metal change before volume production; inferred from datasheet wording, not confirmed by National.
 
-**How to tell old from new:** The 1975 'New Products' sheet labels pin 8 'current source reference' and says it must be tied to pin 7 when offset adjust is unused; the 1980 and later datasheets show pin 8 as NC. Any affected parts would be metal-can LF156s with c.1975–76 date codes. No PCN is known.
+**How to tell old from new:** The 1975 'New Products' sheet labels pin 8 'current source reference' and says to tie it to pin 7 when offset adjust is unused; 1980 and later datasheets show pin 8 as NC. Affected parts would be metal-can LF156s with c.1975–76 date codes. No PCN known.
 
 | Parameter | Before | After |
 |---|---|---|
@@ -559,7 +604,7 @@ The earliest documented LF156 pinout differs: pin 8 had a bias-reference functio
 | Slew rate (LF156, typ) | 15 V/µs | 12 V/µs |
 | Settling to 0.01% (typ) | 1.4 µs | 1.5 µs |
 
-**Audio impact:** None known. Relevant only to collectors fitting very early metal-can LF156s into modern boards where pin 8 is left open.
+**Audio impact:** None known. Relevant only to very early metal-can LF156s fitted where pin 8 is left open.
 
 - [github.com/chenshuo/nuedc/blob/main/do…opamp/lf156-1975.pdf](https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf156-1975.pdf)
 - [github.com/chenshuo/nuedc/blob/main/do…opamp/lf156-1980.pdf](https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf156-1980.pdf)
@@ -568,45 +613,46 @@ The earliest documented LF156 pinout differs: pin 8 had a bias-reference functio
 
 *When:* between the 1980 databook and the May 2000 DS005646 edition
 
-A possible compensation-capacitor change in the decompensated LF157/LF357, or just a documentation correction. The spec tables for GBW (20 MHz) and slew rate (50 V/µs) did not change.
+A possible compensation-capacitor change in the decompensated LF157/LF357, or just a documentation correction. GBW (20 MHz) and slew (50 V/µs) specs did not change.
 
-**How to tell old from new:** The datasheet schematic note changes from 'C = 2 pF on LF157' (1980) to '3 pF in LF357 series' (2000, 2001, and TI Rev D). The capacitive-load claim in the feature list changes from 10,000 pF to 5,000 pF, although the application hint still says CL(max) 0.01 µF. No date code or PCN boundary is known.
+**How to tell old from new:** Schematic note changes from 'C = 2 pF on LF157' (1980) to '3 pF in LF357 series' (2000, 2001, TI Rev D). Feature-list capacitive-load claim changes from 10,000 pF to 5,000 pF although the application hint still says 0.01 µF. No date code or PCN boundary known.
 
 | Parameter | Before | After |
 |---|---|---|
 | Compensation capacitor note (LF157/LF357) | 2 pF | 3 pF |
 | Feature-list capacitive-load claim | 10,000 pF | 5,000 pF |
 
-**Audio impact:** Unknown. If real, a slightly lower-bandwidth, more stable LF357 in later lots; the guaranteed specs are unchanged.
+**Audio impact:** Unknown; guaranteed specs unchanged.
 
 - [github.com/chenshuo/nuedc/blob/main/do…opamp/lf156-1980.pdf](https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf156-1980.pdf)
 - [github.com/KAAHistory/KTIB/blob/master…dware/PSU/LF356N.pdf](https://github.com/KAAHistory/KTIB/blob/master/Hardware/PSU/LF356N.pdf)
 - [github.com/mattbellis/PHYS-3330/blob/m…/ds-LF356-OP-Amp.pdf](https://github.com/mattbellis/PHYS-3330/blob/main/resources/manuals-and-data-sheets/ds-LF356-OP-Amp.pdf)
 
-## LF355 / LF356 / LF357 (LF155 series): Linear Technology / PMI (second sources), c.1978 (PMI); c.1990 (LT models)
+## LF355 / LF356 / LF357 (LF155 series): Second sources (PMI, Linear…, c.1978 (PMI); c.1990 (LT models);
 
-*When:* c.1978 (PMI); c.1990 (LT models)
+*When:* c.1978 (PMI); c.1990 (LT models); ST date unknown
 
-Second-source dies were not necessarily National's. Electronics (June 1978) says PMI was second-sourcing 'a better-performing LF356'. LT's 1990 macromodels tag all its LF155/156/355/356 (and A) parts 'Low IOS 10pA max', against National's 20 pA (LF15x) and 50 pA (LF35x) maximums. No LT or PMI datasheet was found to confirm the full spec set.
+Second-source dies were not necessarily National's. Electronics (June 1978) says PMI second-sourced 'a better-performing LF356'. LT's 1990 macromodels claim 'Low IOS 10pA max'. ST published its own LF355/LF356/LF357 datasheet ('Wide bandwidth single J-FET operational amplifiers'), whose spec set was not examined.
 
-**How to tell old from new:** Look for the manufacturer logo: an LT logo, or a PMI logo on a 1970s part. National and TI parts carry the NS or TI logo.
+**How to tell old from new:** Manufacturer logo: PMI, LT or ST/SGS logo versus NS or TI.
 
 | Parameter | Before | After |
 |---|---|---|
 | Input offset current (max, 25 °C) | National: 20 pA (LF15x/25x/356B), 50 pA (LF35x) | LT second source: 10 pA (per macromodel header) |
 
-**Audio impact:** Negligible for audio. The differences are in DC precision.
+**Audio impact:** Negligible for audio; differences are in DC precision as far as known.
 
 - [github.com/chenshuo/nuedc/blob/main/do…mp/lf356-1978jun.pdf](https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf356-1978jun.pdf)
 - [github.com/kicad-spice-library/KiCad-S…e_complete/OPLTC.LIB](https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/master/Models/uncategorized/spice_complete/OPLTC.LIB)
+- [alldatasheet.com/datasheet-pdf/pdf/227…ECTRONICS/LF356.html](https://www.alldatasheet.com/datasheet-pdf/pdf/22739/STMICROELECTRONICS/LF356.html)
 
 ## LM118 / LM218 / LM318 (fast bipolar single op-amp, 15 MHz / 50 V/us): Linear Technology, c. 1989-1990 (LTC 1990 Linear Databook)
 
 *When:* c. 1989-1990 (LTC 1990 Linear Databook)
 
-LTC made its own LM318 second source plus an improved LT118A/LT318A. The LTC and s-audio.systems models give LT318A different parameters from the National LM318. Actual datasheet deltas were not seen.
+LTC made its own LM318 second source plus an improved LT118A/LT318A. The SPICE models give LT318A different parameters from the National LM318. Datasheet deltas were not seen and nothing was web-verified.
 
-**How to tell old from new:** LTC logo/marking. The LT prefix marks the improved grade (LT118A/LT318A). S8 suffix = SO-8.
+**How to tell old from new:** LTC logo/marking. The LT prefix marks the improved grade. S8 suffix = SO-8.
 
 **Audio impact:** Unknown.
 
@@ -1042,6 +1088,49 @@ A package extension, not a documented die change. TI added a thermally enhanced 
 - [github.com/BloomTechBackend/bd-maps-pa…partstech2019-10.txt](https://github.com/BloomTechBackend/bd-maps-parts-discovery/blob/main/src/main/resources/partcatalogs/partstech2019-10.txt)
 - [github.com/stefaweb/Q17-Amplifier/blob…-LTspice/OPAx828.lib](https://github.com/stefaweb/Q17-Amplifier/blob/main/Q17-LTspice/OPAx828.lib)
 
+## LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): Texas Instruments (TI's own LF353, not…, PCN 20220615003.1 (June 2022, Sherman SFAB to Richardson…
+
+*When:* PCN 20220615003.1 (June 2022, Sherman SFAB to Richardson RFAB) and PCN 20230627002.1 (June 2023). TI E2E threads 1442987 and 1512001 discuss parts shipped after these PCNs.
+
+TI moved its own LF353 from SFAB (Sherman) to RFAB (Richardson) on a new die. On TI E2E (thread 1512001), TI says PCNs 20220615003.1 and 20230627002.1 'introduced an entirely new die' with an entirely new design. The guaranteed datasheet limits did not change, but circuits may depend on behaviour beyond those limits. In E2E thread 1442987 ('LF353: new part parameter change'), TI says the bandwidth of the new part rose to about 4.5 MHz because of the fab change. Users report behaviour and stability differences between old and new parts.
+
+**How to tell old from new:** The part number and marking are unchanged. The PCN 20230627002.1 search summary shows the die-revision field changing from C/E/F/H to A. In practice, the date code or lot relative to the PCN first-ship dates is the only external clue. TI says a new fab site produces an 'entirely new' chip. The National-design LF353-N (LF353N/NOPB, LF353M/NOPB, LF353MX/NOPB) is a separate product and is not covered by these PCNs.
+
+| Parameter | Before | After |
+|---|---|---|
+| Wafer fab | SFAB, Sherman TX (SHE/USA) | RFAB, Richardson TX (RFB/USA), per the PCN 20220615003.1 search summary |
+| Die revision (PCN field) | C, E, F, H | A (PCN 20230627002.1 search summary) |
+| Gain-bandwidth (typical, actual behaviour) | 3 MHz typ (TI datasheet SLOS012C) | about 4.5 MHz (TI E2E statement for the new die; datasheet limits unchanged) |
+| Guaranteed datasheet limits | SLOS012C limits | unchanged, per TI E2E |
+
+**Audio impact:** A wider real bandwidth on the new die changes phase margin and HF behaviour in active filters, tone stacks, buffers driving cable or capacitive loads, and unity-gain followers. E2E reports mention stability problems in existing designs. Swapping a new-die LF353 into a vintage design can change how it sounds or cause oscillation, even though the paper specs are identical. Noise and THD differences were not quantified in any retrieved source.
+
+- [e2e.ti.com/support/amplifiers-group/am…/1512001/lf353-lf353](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1512001/lf353-lf353)
+- [e2e.ti.com/support/amplifiers-group/am…art-parameter-change](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1442987/lf353-new-part-parameter-change)
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20220615003.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4885/PCN20220615003.1.pdf)
+- [e2e.ti.com/cfs-file/__key/communityser…14/pcnAttachment.pdf](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/pcnAttachment.pdf)
+- [e2e.ti.com/cfs-file/__key/communityser…00_LF353D_2D00_1.pdf](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN_2D002D00_LF353D_2D00_1.pdf)
+- [ti.com/lit/ds/symlink/lf353.pdf](https://www.ti.com/lit/ds/symlink/lf353.pdf)
+
+## LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): Texas Instruments (LF347 quad), PCN 20221219006.1, December 2022.
+
+*When:* PCN 20221219006.1, December 2022. This is the same PCN as the TL072/TL074 RFAB move; per the existing TL07x record it was issued 21 Dec 2022 with a proposed first ship of 20 Mar 2023.
+
+A search summary of the Mouser-hosted PCN 20221219006.1 ('Qualification of new Fab site (RFAB)...') puts LF347N in the Group 2 device list for 'RFAB/Process migration and adding MLA Assembly site'. It is the same notice that moved the TL072/TL074 onto a revised RFAB die. The LF347 quad therefore probably moved to the new RFAB process and die along with its TL07x siblings. No LF347-specific datasheet deltas were retrieved.
+
+**How to tell old from new:** The part number is unchanged. No marking or die-revision letter was retrieved, so identification is by date code relative to the first-ship date.
+
+| Parameter | Before | After |
+|---|---|---|
+| Wafer fab / process | legacy 150 mm fab (SFAB) | RFAB process migration (PCN 20221219006.1 Group 2) |
+| Assembly site | existing sites | MLA added as an assembly site option |
+| Electrical specs | not retrieved | not retrieved |
+
+**Audio impact:** Unknown from sources. If it follows the TL07x and LF353 RFAB dies, expect different real-world bandwidth, slew and input behaviour under the same part number. The quad is common in vintage mixers and synths, so behaviour swaps in legacy circuits are the main risk.
+
+- [mouser.com/PCN/Texas_Instruments_PCN20…0221221091103261.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20221219006_20221221091103261.pdf)
+- [ti.com/lit/gpn/LF347](https://www.ti.com/lit/gpn/LF347)
+
 ## LM4562 / LME49720 / LME49710 / LME49740 (National ultra-low-distortion bipolar audio op-amps): Texas Instruments, PCN 20180308002 issued March 2018 (Mouser copy 20180309,…
 
 *When:* PCN 20180308002 issued March 2018 (Mouser copy 20180309, revision -001 dated 20180326); new-die supply from c.2018-2019
@@ -1122,6 +1211,29 @@ Same '4556' number, different silicon. NEC's uPC4556 is a decompensated high-spe
 - [alldatasheet.com/datasheet-pdf/pdf/6766/NEC/UPC4556.html](https://www.alldatasheet.com/datasheet-pdf/pdf/6766/NEC/UPC4556.html)
 - [alldatasheet.com/datasheet-pdf/pdf/6767/NEC/UPC4556C.html](https://www.alldatasheet.com/datasheet-pdf/pdf/6767/NEC/UPC4556C.html)
 - [datasheetcatalog.com/datasheets_pdf/U/P/C/4/UPC4556.shtml](https://www.datasheetcatalog.com/datasheets_pdf/U/P/C/4/UPC4556.shtml)
+
+## NJM4558 / JRC4558D / RC4558 (dual general-purpose bipolar "dual 741"): Texas Instruments (RC4558), Datasheet SLOS073H, revised October 2024 (previous…
+
+*When:* Datasheet SLOS073H, revised October 2024 (previous revision G, 2014). This coincides with TI's 2024 SFAB-to-RFAB PCN wave, for example PCN 20240723003.1 (SFAB JI1 150 mm to RFAB TIB 300 mm, first ship 21 Oct 2024), but no retrieved source ties RC4558 to a specific PCN.
+
+TI reissued the RC4558 datasheet as Rev H in October 2024, ten years after Rev G. The current TI description gives new audio-style headline specs: 4 MHz GBW, 6.5 nV/√Hz, 0.0001% THD+N and a 10-30 V supply. The TI product-page title still says 3 MHz, and older listings show 3 MHz. The timing matches TI's 2024 RFAB die revisions of the sibling parts (NE5532, LM833, RC4580, MC33078), which the known hazards say now share one die. A spec rewrite of this size usually means new silicon. No PCN naming RC4558 was retrieved, so the die change is inferred, not confirmed.
+
+**How to tell old from new:** The part number is unchanged. The only visible flag is the datasheet revision: SLOS073H (Oct 2024) versus SLOS073G (2014). Distributor listings still show the older 3 MHz headline (RS: 'RC4558DR ... Op Amp, 3MHz').
+
+| Parameter | Before | After |
+|---|---|---|
+| Gain-bandwidth headline | 3 MHz typ (older TI documentation, product-page title, RS listing) | 4 MHz typ (current Rev H description) |
+| Noise headline | not verified for Rev G | 6.5 nV/√Hz typ (at 10 kHz per search summary) |
+| THD+N headline | not stated in older revisions (not verified) | 0.0001% |
+| Datasheet revision | SLOS073G (2014) | SLOS073H (October 2024) |
+
+**Audio impact:** If this is a new die, likely shared with or derived from TI's consolidated NE5532/LM833/RC4580 audio die, RC4558 parts made after 2024 in guitar pedals (for example Tube Screamer clones) and consumer audio may measure and sound different from legacy TI RC4558s. That includes slew, bandwidth and clipping and recovery behaviour, which pedal builders care about.
+
+- [ti.com/lit/ds/symlink/rc4558.pdf](https://www.ti.com/lit/ds/symlink/rc4558.pdf)
+- [ti.com/product/RC4558](https://www.ti.com/product/RC4558)
+- [scribd.com/document/861405864/RC4558-D…fier-datasheet-Rev-H](https://www.scribd.com/document/861405864/RC4558-Dual-General-Purpose-Operational-Amplifier-datasheet-Rev-H)
+- [uk.rs-online.com/web/p/op-amps/6609969](https://uk.rs-online.com/web/p/op-amps/6609969)
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20240723003.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6348/PCN20240723003.1.pdf)
 
 ## NJM4580 / JRC4580 (incl. TI RC4580) (dual audio bipolar): Texas Instruments vs New JRC / Nisshinbo, April 2003 (TI RC4580 introduced) - present
 
@@ -1206,6 +1318,43 @@ TI moved the OPAx134 die to a new wafer fab under the same part numbers as part 
 - [github.com/frankie-eight-days/eevblog-…ripts/22ZmmZ67SMY.md](https://github.com/frankie-eight-days/eevblog-wiki/blob/8f04e3ddd3972c58bd354a5c9adffa92e4b63b45/transcripts/22ZmmZ67SMY.md)
 - [github.com/dshills/KiCadAI/blob/101a96…enance/registry.json](https://github.com/dshills/KiCadAI/blob/101a96fd1bf095a4b82727508f0a1e72177bc3f7/data/model-provenance/registry.json)
 - [github.com/aklofas/kicad-happy-testhar…ants_verification.md](https://github.com/aklofas/kicad-happy-testharness/blob/8bae5a0c5a74d2d41366f0a9ee4f9cfa12b2a043/reference/spice_constants_verification.md)
+
+## OPA1611 / OPA1612 (TI SoundPlus bipolar-input, 1.1 nV/√Hz single/dual): Texas Instruments, PCN 20260223007.1 dated 24 Feb 2026; estimated sample…
+
+*When:* PCN 20260223007.1 dated 24 Feb 2026; estimated sample availability 25 Apr 2026; proposed first ship 25 May 2026
+
+This refines the existing OPA1611 known-hazard entry. A Mouser-hosted copy of PCN# 20260223007.1 is titled 'Add Cu as Alternative Wire Base Metal for Selected Device(s)'. It qualifies a new assembly material set that adds Cu as an additional bond-wire option. It is not a fab, process or die revision, so this PCN is not a silicon change for OPA1612.
+
+**How to tell old from new:** The part number and die are unchanged. This is an assembly change that adds a copper bond-wire option. There is no external marking cue.
+
+| Parameter | Before | After |
+|---|---|---|
+| Bond wire | existing wire metal (presumably Au) | Cu added as an alternative bond wire |
+| Die / fab | unchanged | unchanged |
+
+**Audio impact:** Negligible. A bond-wire metal change does not affect the op-amp's electrical design. Claims of an audible difference would be anecdotal.
+
+- [mouser.com/PCN/Texas_Instruments_PCN20…7.1_Notification.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20260223007.1_Notification.pdf)
+
+## OPA227 / OPA228 (OPA2227 / OPA2228 / OPA4227 / OPA4228): Texas Instruments, PCN 20230306000.1 (March 2023), referenced in TI E2E…
+
+*When:* PCN 20230306000.1 (March 2023), referenced in TI E2E thread 1360546, about 2024. A later PCN 20251017000.1A (8 Jan 2026), 'Qualification of RFAB as an additional Fab site, Die Revision and BOM option', surfaced in an OPA227 search, but its device list was not confirmed.
+
+In E2E thread 1360546 ('OPA2227: TI Logo Format Change'), a customer asks about OPA2227 parts with a different logo format. The search summary of TI's reply cites PCN# 20230306000.1 (and PCN# 20220615003.1) as introducing new fab sites for the OPA2227, with parts from those sites being new chips. The retrieved sources did not give the PCN 20230306000.1 title, a device list or any spec changes. A separate 2026 PCN (20251017000.1A, RFAB plus die revision) appeared in an OPA227-keyword search but is not confirmed to list OPA227-family parts. The OPAx227/x228 datasheet seen is SBOS110B (June 2015), which shows no die-change note.
+
+**How to tell old from new:** A marking-style change (TI logo format) was raised on E2E. TI's reply, as summarised, says PCN# 20230306000.1 introduced new fab sites and that chips from those sites are 'entirely new', so their marking style is not treated as a change. No die-revision letters were retrieved.
+
+| Parameter | Before | After |
+|---|---|---|
+| Wafer fab | original Burr-Brown/TI fab | new fab site(s) per PCN 20230306000.1 (site not named in the retrieved summary) |
+| Top marking | previous TI logo format | new logo/marking format (E2E 1360546) |
+| Electrical specs | SBOS110B | no change retrieved |
+
+**Audio impact:** Unknown. The OPA2227/OPA2228 is valued for its low noise and low distortion. A new-fab chip could differ in HF behaviour or noise even with the same limits. No listener or measurement reports were found.
+
+- [e2e.ti.com/support/amplifiers-group/am…i-logo-format-change](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1360546/opa2227-ti-logo-format-change)
+- [mm.digikey.com/Volume0/opasdata/d22000…CN20251017000.1A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8882/PCN20251017000.1A.pdf)
+- [ti.com/lit/gpn/OPA4227](https://www.ti.com/lit/gpn/OPA4227)
 
 ## OPA827 (single low-noise precision JFET-input): Texas Instruments, 2024 (PCN#20240628012.1, dated 28 Jun 2024)
 
@@ -1344,3 +1493,42 @@ The second-source die has its own spec set, which differs from the TI legacy die
 - [st.com/resource/en/datasheet/tl074.pdf](https://www.st.com/resource/en/datasheet/tl074.pdf)
 - [uk.rs-online.com/web/p/op-amps/1656766](https://uk.rs-online.com/web/p/op-amps/1656766)
 - [github.com/bandrews/whichpart/blob/HEA…/components/C6961.md](https://github.com/bandrews/whichpart/blob/HEAD/basicpart/content/components/C6961.md)
+
+## TLE2071 / TLE2072 / TLE2074 (TI Excalibur low-noise high-speed JFET-input): Texas Instruments, PCN 20231219013.1 (19 December 2023)
+
+*When:* PCN 20231219013.1 (19 December 2023)
+
+A search summary of the Digi-Key-hosted TI PCN 20231219013.1 says the notice changes the wafer fab site to RFAB, revises the die and changes the assembly site. It names TLE2071ACDR, TLE2072ACP, TLE2072CP and TLE2072CDR among the affected devices. It also says the die was changed as a result of the process change and thermal characteristics were updated. This is another Excalibur JFET part moved out of a 150 mm fab onto a new die under the same part number.
+
+**How to tell old from new:** The part number is unchanged. A search summary of the PCN shows the die-revision field changing from A/B/C/H to A, with RFAB (Richardson, USA) as the chip site. The datasheet stayed at SLOS181C (Dec 2009) in the search results, so no datasheet flag was seen. Identification is by date code or lot after the first-ship date.
+
+| Parameter | Before | After |
+|---|---|---|
+| Wafer fab | legacy fab (not named in the retrieved summary) | RFAB, Richardson USA |
+| Die revision (PCN field) | A, B, C, H | A |
+| Thermal characteristics | per the existing datasheet | updated values in the PCN (numbers not retrieved) |
+| Datasheet electrical limits | SLOS181C (Dec 2009) | no newer revision seen in search results |
+
+**Audio impact:** Unknown in detail. The TLE207x is chosen for its low noise and 9-10 MHz speed. A redesigned die may change noise, slew, output behaviour and stability margin even with unchanged datasheet limits, as happened with the LF353 and TL07x.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20231219013.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5784/PCN20231219013.1.pdf)
+- [ti.com/lit/ds/symlink/tle2074a.pdf](https://www.ti.com/lit/ds/symlink/tle2074a.pdf)
+
+## TLE2081 / TLE2082 / TLE2084 (TI Excalibur high-speed JFET-input): Texas Instruments, PCN 20231219013.1 (19 December 2023)
+
+*When:* PCN 20231219013.1 (19 December 2023)
+
+Search summaries name TLE2081IDR, TLE2082IDR, TLE2082ACP and TLE2082ACDR in the same TI PCN 20231219013.1 as the TLE207x. The notice covers a wafer fab site change to RFAB, a die revision and an assembly site change. The die was changed as a result of the process change.
+
+**How to tell old from new:** The part number is unchanged. Per the search summary, the die-revision field changes to A and RFAB becomes the chip site. Identification is by date code relative to the first-ship date.
+
+| Parameter | Before | After |
+|---|---|---|
+| Wafer fab | legacy fab (not named in the retrieved summary) | RFAB, Richardson USA |
+| Die revision (PCN field) | A, B, C, H (as summarised for the PCN) | A |
+| Datasheet electrical limits | not retrieved | not retrieved |
+
+**Audio impact:** Unknown. The same new-die caveats apply as for the TLE207x: possible changes in slew, bandwidth and stability margin under the same part number.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20231219013.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5784/PCN20231219013.1.pdf)
+- [ti.com/product/TLE2082](https://www.ti.com/product/TLE2082)
