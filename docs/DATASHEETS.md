@@ -1327,6 +1327,13 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | National Semiconductor | unknown | revision not shown | unknown | [chipfind.net/datasheet/nsc/lm6172.htm](https://www.chipfind.net/datasheet/nsc/lm6172.htm) | third_party_mirror | low |
 | National Semiconductor / Texas Instruments | unknown | revision not shown | unknown | [datasheetspdf.com/datasheet/LM6172.html](https://datasheetspdf.com/datasheet/LM6172.html) | third_party_mirror | low |
 
+## [LME49713 (National / TI high-fidelity current-feedback audio op-amp)](families/LME49713.md)
+
+| Vendor | Document | Rev | Date | Link | Kind | Conf. |
+|---|---|---|---|---|---|---|
+| Texas Instruments | unknown (TI SNAS-series literature number, not confirmed) | unknown | unknown | [ti.com/lit/ds/symlink/lme49713.pdf](https://www.ti.com/lit/ds/symlink/lme49713.pdf) | vendor_current | low |
+| Texas Instruments | n/a | n/a | n/a | [ti.com/product/LME49713](https://www.ti.com/product/LME49713) | product_page | low |
+
 ## [LME49860 / LME49870 (±22 V, 44 V bipolar dual / single)](families/LME49860.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
@@ -3159,6 +3166,20 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments (RadioLocman mirror) | SBOS477 | unknown |  | [radiolocman.com/datasheet/data.html?di=305473&%2FOPA1652=](https://www.radiolocman.com/datasheet/data.html?di=305473&%2FOPA1652=) | third_party_mirror | low |
 | Texas Instruments (datasheetspdf / datasheet4u mirror) | SBOS477 | unknown |  | [datasheetspdf.com/pdf/1405490/etcTI/OPA1652/1](https://datasheetspdf.com/pdf/1405490/etcTI/OPA1652/1) | third_party_mirror | low |
 | Texas Instruments (studylib mirror) | SBOS477 | unknown |  | [studylib.net/doc/18736623/opa1652---texas-instruments](https://studylib.net/doc/18736623/opa1652---texas-instruments) | third_party_mirror | low |
+| Texas Instruments (PDF4PRO mirror, second copy) | SBOS477 | B | DECEMBER 2011 – REVISED DECEMBER 2016 | [pdf4pro.com/amp/view/sbos477b-december…ber-2016-5b384c.html](https://pdf4pro.com/amp/view/sbos477b-december-2011-revised-december-2016-5b384c.html) | third_party_mirror | medium |
+| Texas Instruments (IC114 mirror) | SBOS477 | (original, no letter) | DECEMBER 2011 | [product.ic114.com/PDF/O/OPA1652.PDF](http://product.ic114.com/PDF/O/OPA1652.PDF) | third_party_mirror | medium |
+| Texas Instruments (Octopart datasheet cache, OPA1654AID) | SBOS477 | (original, no letter) | DECEMBER 2011 | [datasheet.octopart.com/OPA1654AID-Texa…tasheet-11522104.pdf](https://datasheet.octopart.com/OPA1654AID-Texas-Instruments-datasheet-11522104.pdf) | distributor_mirror | medium |
+| Texas Instruments | SBOS477 | current (presumably B, the same file as the symlink) |  | [ti.com/lit/gpn/opa1652](https://www.ti.com/lit/gpn/opa1652) | vendor_current | medium |
+| Texas Instruments (RadioLocman mirror, OPA1654AID) | SBOS477 | revision not shown |  | [radiolocman.com/datasheet/data.html?di=161021](https://www.radiolocman.com/datasheet/data.html?di=161021) | third_party_mirror | low |
+| Texas Instruments (RadioLocman mirror, OPA1654) | SBOS477 | revision not shown |  | [radiolocman.com/datasheet/data.html?di=305475](https://www.radiolocman.com/datasheet/data.html?di=305475) | third_party_mirror | low |
+| Texas Instruments (rlocman.ru mirror, OPA1654) | SBOS477 | revision not shown |  | [rlocman.ru/datasheet/data.html?di=305475](https://www.rlocman.ru/datasheet/data.html?di=305475) | third_party_mirror | low |
+| Texas Instruments (datasheet4u mirror, OPA1654) | SBOS477 | revision not shown |  | [datasheet4u.com/datasheets/etcTI/OPA1654/1405491](https://datasheet4u.com/datasheets/etcTI/OPA1654/1405491) | third_party_mirror | low |
+| Texas Instruments (Alldatasheet mirror) | SBOS477 | revision not shown |  | [alldatasheet.com/datasheet-pdf/pdf/457276/TI1/OPA1652.html](https://www.alldatasheet.com/datasheet-pdf/pdf/457276/TI1/OPA1652.html) | third_party_mirror | low |
+| Texas Instruments (Alldatasheet mirror, mistitled 'OP1652') | SBOS477 | revision not shown |  | [alldatasheet.com/datasheet-pdf/pdf/457286/TI1/OP1652.html](https://www.alldatasheet.com/datasheet-pdf/pdf/457286/TI1/OP1652.html) | third_party_mirror | low |
+| Texas Instruments (IC37 mirror) | SBOS477 | revision not shown |  | [pdf.ic37.com/TI/OPA16_datasheet_12490070/OPA16_12.html](https://pdf.ic37.com/TI/OPA16_datasheet_12490070/OPA16_12.html) | third_party_mirror | low |
+| Texas Instruments (DatasheetCafe mirror) | SBOS477 | revision not shown |  | [datasheetcafe.com/opa1652-datasheet-pdf/](https://www.datasheetcafe.com/opa1652-datasheet-pdf/) | third_party_mirror | low |
+| Texas Instruments (Mouser product page) | SBOS477 | revision not shown |  | [mouser.com/ProductDetail/Texas-Instrum…SwBBvQAEBFbpyQ%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/OPA1652AIDGKR?qs=3jfYfyvUSwBBvQAEBFbpyQ%3D%3D) | product_page | low |
+| Texas Instruments (Mouser Europe product page) | SBOS477 | revision not shown |  | [eu.mouser.com/en/ProductDetail/Texas-I…SwDaKYurdwKtOA%3D%3D](https://eu.mouser.com/en/ProductDetail/Texas-Instruments/OPA1652AID?qs=3jfYfyvUSwDaKYurdwKtOA%3D%3D) | product_page | low |
 
 ## [OPA1688 / OPA1689 (TI SoundPlus OPA168x: 36 V, 10 MHz CMOS audio op-amp with a rail-to-rail high-drive output; dual / quad)](families/OPA1688.md)
 
@@ -3215,6 +3236,11 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Alldatasheet (third party) | SBOS900 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/2222729/TI2/OPA2156.html](https://www.alldatasheet.com/datasheet-pdf/pdf/2222729/TI2/OPA2156.html) | third_party_mirror | low |
 | Alldatasheet (third party) | SBOS900 | unknown | unknown | [alldatasheet.net/datasheet-pdf/marking…6/TI1/OPA2156ID.html](https://www.alldatasheet.net/datasheet-pdf/marking/1154466/TI1/OPA2156ID.html) | third_party_mirror | low |
 | Scribd (third party) | SBOS900 | unknown | unknown | [scribd.com/document/836955714/Opa-2156](https://www.scribd.com/document/836955714/Opa-2156) | third_party_mirror | low |
+| Texas Instruments | SBOS900 | revision not shown | - | [digikey.fr/htmldatasheets/production/5…62/0/0/1/opa2156.pdf](https://www.digikey.fr/htmldatasheets/production/5061362/0/0/1/opa2156.pdf) | distributor_mirror | low |
+| Texas Instruments | SBOS900 | revision not shown | - | [alldatasheet.net/html-marking/1154469/…9/18/OPA2156IDR.html](https://www.alldatasheet.net/html-marking/1154469/TI1/OPA2156IDR/1289/18/OPA2156IDR.html) | third_party_mirror | low |
+| Mouser | - | - | - | [mouser.com/new/texas-instruments/ti-opa2156-op-amp/](https://www.mouser.com/new/texas-instruments/ti-opa2156-op-amp/) | product_page | medium |
+| Digi-Key | - | - | - | [digikey.com/en/products/base-product/t…ts/296/OPA2156/27241](https://www.digikey.com/en/products/base-product/texas-instruments/296/OPA2156/27241) | product_page | low |
+| Octopart | - | - | - | [octopart.com/opa2156id-texas+instruments-95825378](https://octopart.com/opa2156id-texas+instruments-95825378) | product_page | low |
 
 ## [OPA350 / OPA2350 / OPA4350 (Burr-Brown CMOS rail-to-rail single-supply)](families/OPA2350.md)
 

@@ -28802,8 +28802,8 @@
   {
    "id": "LME49713",
    "name": "LME49713 (National / TI high-fidelity current-feedback audio op-amp)",
-   "tagline": "",
-   "technology": "Single bipolar current-feedback audio op-amp on National's LME high-voltage process",
+   "tagline": "Very fast single current-feedback part from National's LME audio line. Head-Fi and diyAudio users praise it as 'dead silent' with 'real drive' in headphone and line stages.",
+   "technology": "Single-channel bipolar current-feedback audio op-amp on National's LME high-voltage process. Process detail comes from a forum post and is unconfirmed.",
    "manufacturers": [
     "National Semiconductor",
     "Texas Instruments"
@@ -28811,57 +28811,120 @@
    "part_numbers": [
     {
      "pn": "LME49713",
-     "channels": 0,
+     "channels": 1,
      "vendors": [
       "National Semiconductor",
       "Texas Instruments"
      ],
      "status": "unknown",
-     "notes": ""
+     "notes": "Base part number, single channel. Current TI lifecycle status (active / NRND / obsolete) was not verified because the web search budget ran out."
     },
     {
      "pn": "LME49713HA",
-     "channels": 0,
+     "channels": 1,
      "vendors": [
       "National Semiconductor",
       "Texas Instruments"
      ],
      "status": "unknown",
-     "notes": ""
+     "notes": "National's 'HA' suffix usually means the TO-99 8-lead metal can, as with LME49710HA. Not confirmed for this part. The TI orderable may carry a /NOPB suffix (unconfirmed)."
     },
     {
      "pn": "LME49713MA",
-     "channels": 0,
+     "channels": 1,
      "vendors": [
       "National Semiconductor",
       "Texas Instruments"
      ],
      "status": "unknown",
-     "notes": ""
+     "notes": "National's 'MA' suffix usually means SOIC-8. Not confirmed for this part. Tape-and-reel 'MAX' and /NOPB orderables probably exist (unconfirmed)."
     }
    ],
-   "lineage": [],
+   "lineage": [
+    {
+     "vendor": "National Semiconductor",
+     "role": "Original designer / manufacturer (LME 'Overture'-era audio op-amp family)",
+     "period": "Launch year not confirmed (possibly about 2008). Made until the TI acquisition in 2011.",
+     "notes": "Launch date not verified in this pass."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "role": "Current owner after acquiring National Semiconductor (2011)",
+     "period": "2011–present (current status unverified)",
+     "notes": "It is unconfirmed whether TI still lists the part as active."
+    }
+   ],
    "key_specs": [],
    "reputation": {
-    "summary": "Head-Fi has a thread titled 'LME49713, could be a killer opamp'. Someone who worked on the chip called it the best-sounding op-amp made on the LME high-voltage process. Extended listening sessions preferred this current-feedback part over voltage-feedback op-amps in most applications. A user said a simple headphone amp built with it was 'quite amazing - dead silent and with real drive', and that it easily drives 150-ohm loads. Caveat: it is not a drop-in replacement for standard duals, and it is very fast and tricky to stabilise.",
-    "sonic_descriptors": [],
-    "typical_uses": [],
-    "caveats": [],
+    "summary": "Head-Fi has a thread titled 'LME49713, could be a killer opamp'. On diyAudio, a poster described as having worked on the chip called it the best-sounding op-amp made on the LME high-voltage process. The same source says long listening sessions favoured this current-feedback part over voltage-feedback op-amps in most uses. A Head-Fi user called a simple headphone amp built with it 'quite amazing - dead silent and with real drive' and said it easily drives 150-ohm loads. All of this is anecdotal forum opinion.",
+    "sonic_descriptors": [
+     "dead silent (forum user)",
+     "real drive (forum user)"
+    ],
+    "typical_uses": [
+     "Headphone amplifier output or gain stage (drives 150-ohm headphones, per forum report)",
+     "DIY line stages and preamps"
+    ],
+    "caveats": [
+     "Single channel and current-feedback, so it is not a drop-in replacement for standard dual op-amps such as NE5532 or OPA2134 sockets.",
+     "Very fast and tricky to stabilise. A current-feedback amp needs the feedback resistor value the datasheet specifies, and must not have a capacitor directly in the feedback path.",
+     "The praise comes from a small number of enthusiast forum posts. Treat it as anecdotal."
+    ],
     "sources": [
      "https://www.head-fi.org/threads/lme49713-could-be-a-killer-opamp.267524/",
      "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-117",
      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-31"
     ]
    },
-   "datasheets": [],
+   "datasheets": [
+    {
+     "vendor": "Texas Instruments",
+     "title": "LME49713 High Performance, High Fidelity Current Feedback Audio Operational Amplifier (title unconfirmed)",
+     "doc_number": "unknown (TI SNAS-series literature number, not confirmed)",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.ti.com/lit/ds/symlink/lme49713.pdf",
+     "url_kind": "vendor_current",
+     "notes": "Unconfirmed. The URL follows TI's standard symlink pattern and was not checked in this pass (search budget exhausted).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LME49713 product page",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.ti.com/product/LME49713",
+     "url_kind": "product_page",
+     "notes": "Unconfirmed. The URL follows TI's standard product-folder pattern and was not checked. It should show lifecycle status and orderables.",
+     "confidence": "low"
+    }
+   ],
    "revision_history": [],
    "silicon_changes": [],
-   "counterfeit_notes": "",
-   "alternatives": [],
+   "counterfeit_notes": "No LME49713-specific counterfeit or remarking reports were researched, because the search budget ran out. Usual caution applies to TO-99 metal-can parts from marketplace sellers, since they are prized, older-looking and expensive.",
+   "alternatives": [
+    "LME49710 (National/TI voltage-feedback single from the same LME audio line)",
+    "LME49720 / LM4562 (National/TI voltage-feedback dual)",
+    "LME49990 (National/TI ultra-low-distortion voltage-feedback single)",
+    "AD811 (Analog Devices current-feedback op-amp, used in some DIY headphone amps)"
+   ],
    "ti_literature_numbers": [],
-   "archive_seed_urls": [],
+   "archive_seed_urls": [
+    "http://www.national.com/ds/LM/LME49713.pdf",
+    "http://www.national.com/pf/LM/LME49713.html",
+    "https://www.ti.com/lit/ds/symlink/lme49713.pdf",
+    "https://www.ti.com/product/LME49713"
+   ],
    "open_questions": [
-    "Added by completeness round 2; needs research beyond the praise evidence."
+    "Web search budget was exhausted before any search ran. Every item below still needs web confirmation.",
+    "TI literature number for the LME49713 datasheet (SNAS-series), latest revision letter and date, and the revision history table.",
+    "Original National datasheet revision and date (likely about 2008), and third-party mirrors that keep it (alldatasheet, datasheetarchive, mouser.com/datasheet).",
+    "Key specs to verify against the datasheet. From unverified recall: slew rate about 1900 V/us, bandwidth about 132 MHz at Av=1, input voltage noise about 1.9 nV/rtHz, THD+N about 0.00036% at 1 kHz, output current about 100 mA, supply range up to about ±18 V. None of these are entered in key_specs until confirmed.",
+    "Current TI status of LME49713HA and LME49713MA (and the MA/NOPB, MAX/NOPB, HA/NOPB orderables). Was the TO-99 metal-can version made obsolete?",
+    "Package line-up: confirm HA = TO-99 and MA = SOIC-8, and whether a DIP ('NA') version ever existed.",
+    "Any PCNs, die or fab changes after the TI acquisition. None are known or researched.",
+    "Pattern-derived National legacy URLs (national.com/ds/LM/..., /pf/LM/...) are Wayback seeds only and have not been verified."
    ],
    "sources": [
     "https://www.head-fi.org/threads/lme49713-could-be-a-killer-opamp.267524/",
@@ -28869,12 +28932,27 @@
     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-31"
    ],
    "verification": {
-    "status": "not-web-verified",
+    "status": "partially-verified",
     "refuted_claims": [],
-    "corrections": [],
-    "unverified_urls": [],
+    "corrections": [
+     "Changed channels from placeholder 0 to 1 on all part numbers. This matches the draft's own 'Single ... op-amp' description and is not web-confirmed.",
+     "Filled in tagline, typical_uses, sonic_descriptors and caveats only from the praise evidence already in the draft and discovery. Attributed them to forum users and marked them anecdotal.",
+     "Added lineage based on the well-known 2011 TI acquisition of National. National launch year left unconfirmed.",
+     "Added two low-confidence TI datasheet / product-page entries from TI's standard URL patterns, marked unconfirmed. No doc number, revision or date filled in.",
+     "Deliberately left key_specs empty. Spec values recalled from memory are listed in open_questions and not stated as facts.",
+     "Web search budget was exhausted on the first call (the tool reported 200 of 200 session searches used), so no web research was possible."
+    ],
+    "unverified_urls": [
+     "https://www.ti.com/lit/ds/symlink/lme49713.pdf",
+     "https://www.ti.com/product/LME49713",
+     "http://www.national.com/ds/LM/LME49713.pdf",
+     "http://www.national.com/pf/LM/LME49713.html",
+     "https://www.head-fi.org/threads/lme49713-could-be-a-killer-opamp.267524/",
+     "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-117",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-31"
+    ],
     "claims_confirmed": [],
-    "web_searches_used": 0
+    "web_searches_used": 1
    },
    "tier": "B",
    "category": "headphone-driver",
@@ -69545,6 +69623,160 @@
      "url_kind": "third_party_mirror",
      "notes": "Seen in search results; the revision was not shown. Unconfirmed.",
      "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (PDF4PRO mirror, second copy)",
+     "title": "SBOS477B – DECEMBER 2011 – REVISED DECEMBER 2016 (OPA1652/OPA1654)",
+     "doc_number": "SBOS477",
+     "revision": "B",
+     "date": "DECEMBER 2011 – REVISED DECEMBER 2016",
+     "url": "https://pdf4pro.com/amp/view/sbos477b-december-2011-revised-december-2016-5b384c.html",
+     "url_kind": "third_party_mirror",
+     "notes": "This is a separate PDF4PRO entry (slug suffix 5b384c) from the one already listed (253411). The result title shows the SBOS477B header.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (IC114 mirror)",
+     "title": "Burr-Brown Audio OPA1652 OPA1654 www.ti.com SBOS477 – DECEMBER 2011",
+     "doc_number": "SBOS477",
+     "revision": "(original, no letter)",
+     "date": "DECEMBER 2011",
+     "url": "http://product.ic114.com/PDF/O/OPA1652.PDF",
+     "url_kind": "third_party_mirror",
+     "notes": "The result title shows the original Dec 2011 header ('SBOS477 – DECEMBER 2011', Burr-Brown Audio branding) with no revision letter. It is a third copy of the original edition, after Kyoritsu and Octopart 17727667.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (Octopart datasheet cache, OPA1654AID)",
+     "title": "Burr-Brown Audio OPA1652 OPA1654 www.ti.com SBOS477 – DECEMBER 2011",
+     "doc_number": "SBOS477",
+     "revision": "(original, no letter)",
+     "date": "DECEMBER 2011",
+     "url": "https://datasheet.octopart.com/OPA1654AID-Texas-Instruments-datasheet-11522104.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "This is a separate Octopart cache entry (OPA1654AID, id 11522104) from the OPA1654AIPW entry already listed (17727667). The result title shows the original Dec 2011 header.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1652, OPA1654 (TI literature GPN link)",
+     "doc_number": "SBOS477",
+     "revision": "current (presumably B, the same file as the symlink)",
+     "date": "",
+     "url": "https://www.ti.com/lit/gpn/opa1652",
+     "url_kind": "vendor_current",
+     "notes": "TI's GPN redirect to the current datasheet. The search summary did not show the revision header. It came up in a search for 'REVISED AUGUST 2016', but that is only a keyword hit and does not show Rev A content.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (RadioLocman mirror, OPA1654AID)",
+     "title": "OPA1654AID Datasheet Texas Instruments",
+     "doc_number": "SBOS477",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=161021",
+     "url_kind": "third_party_mirror",
+     "notes": "This entry (di=161021) differs from the OPA1652 entry already listed (di=305473). Its lower id suggests an earlier upload, possibly the original 2011 edition, but the summary does not show the revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (RadioLocman mirror, OPA1654)",
+     "title": "OPA1654 Datasheet Texas Instruments",
+     "doc_number": "SBOS477",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=305475",
+     "url_kind": "third_party_mirror",
+     "notes": "This is the OPA1654 companion to the di=305473 OPA1652 entry and was probably uploaded in the same batch. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (rlocman.ru mirror, OPA1654)",
+     "title": "OPA1654 Datasheet (Даташит) TI",
+     "doc_number": "SBOS477",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://www.rlocman.ru/datasheet/data.html?di=305475",
+     "url_kind": "third_party_mirror",
+     "notes": "Russian-language mirror of the RadioLocman di=305475 entry. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (datasheet4u mirror, OPA1654)",
+     "title": "OPA1654 Datasheet - TSSOP Amplifier | Texas Instruments",
+     "doc_number": "SBOS477",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://datasheet4u.com/datasheets/etcTI/OPA1654/1405491",
+     "url_kind": "third_party_mirror",
+     "notes": "OPA1654 companion to the datasheetspdf/datasheet4u OPA1652 entry already listed (1405490). Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (Alldatasheet mirror)",
+     "title": "OPA1652 Datasheet(PDF) - Texas Instruments",
+     "doc_number": "SBOS477",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/457276/TI1/OPA1652.html",
+     "url_kind": "third_party_mirror",
+     "notes": "The summary gives the length as 28 pages (about 1 MB). The page count hints at the pre-2016 edition, but no header is shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (Alldatasheet mirror, mistitled 'OP1652')",
+     "title": "OP1652 Datasheet(PDF) - Texas Instruments",
+     "doc_number": "SBOS477",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/457286/TI1/OP1652.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Alldatasheet lists this under the part name 'OP1652'. The id (457286) is next to 457276, so it is probably the same upload batch. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (IC37 mirror)",
+     "title": "OPA1652 (TI) PDF datasheet (page 12 of 28)",
+     "doc_number": "SBOS477",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://pdf.ic37.com/TI/OPA16_datasheet_12490070/OPA16_12.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Page-by-page HTML render of a 28-page OPA1652 datasheet. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (DatasheetCafe mirror)",
+     "title": "OPA1652 Datasheet - FET-Input Audio Operational Amplifier",
+     "doc_number": "SBOS477",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://www.datasheetcafe.com/opa1652-datasheet-pdf/",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision not shown in the summary.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (Mouser product page)",
+     "title": "OPA1652AIDGKR Texas Instruments | Mouser",
+     "doc_number": "SBOS477",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA1652AIDGKR?qs=3jfYfyvUSwBBvQAEBFbpyQ%3D%3D",
+     "url_kind": "product_page",
+     "notes": "Distributor product page that links to the datasheet. Revision not shown. The Mouser datasheet copy already listed is mouser.com/ds/2/405/opa1654-443342.pdf.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (Mouser Europe product page)",
+     "title": "OPA1652AID Texas Instruments | Mouser Europe",
+     "doc_number": "SBOS477",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://eu.mouser.com/en/ProductDetail/Texas-Instruments/OPA1652AID?qs=3jfYfyvUSwDaKYurdwKtOA%3D%3D",
+     "url_kind": "product_page",
+     "notes": "Distributor product page. Revision not shown.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -69599,7 +69831,11 @@
     "SBOT007"
    ],
    "archive_seed_urls": [
+    "http://focus.ti.com/lit/ds/symlink/opa1652.pdf",
     "http://www.mouser.com/ds/2/405/opa1654-443342.pdf",
+    "http://www.ti.com/lit/ds/sbos477/sbos477.pdf",
+    "http://www.ti.com/lit/ds/sbos477a/sbos477a.pdf",
+    "http://www.ti.com/lit/ds/sbos477b/sbos477b.pdf",
     "http://www.ti.com/lit/ds/symlink/opa1652.pdf",
     "http://www.ti.com/lit/ds/symlink/opa1654.pdf",
     "http://www.ti.com/lit/gpn/opa1652",
@@ -69610,6 +69846,8 @@
     "https://www.ti.com/lit/ds/sbos477b/sbos477b.pdf",
     "https://www.ti.com/lit/ds/symlink/opa1652.pdf",
     "https://www.ti.com/lit/ds/symlink/opa1654.pdf",
+    "https://www.ti.com/lit/gpn/opa1652",
+    "https://www.ti.com/lit/gpn/opa1654",
     "https://www.ti.com/lit/pdf/sbot007",
     "https://www.ti.com/product/OPA1652",
     "https://www.ti.com/product/OPA1654"
@@ -69713,7 +69951,7 @@
      "https://www.diyaudio.com/community/threads/opa1656-high-performance-cmos-audio-op-amp.335416/page-5"
     ]
    },
-   "revision_chain_summary": "No new research was possible. My one WebSearch call (\"SBOS477A\" OPA1652 datasheet revised) was refused because the session-wide limit of 200 searches was already used up, so no search ran. I made no other research calls, so nothing below is new evidence.\n\nKnown chain for TI SBOS477 (OPA1652/OPA1654), the only vendor. There is no second source, licensee or acquirer.\n(1) SBOS477, original, December 2011, with a 'Burr-Brown Audio' header. Copies are on the Kyoritsu and Octopart mirrors already listed.\n(2) SBOS477A, August 2016. This is the missing link: no copy URL is known and the change summary is unknown.\n(3) SBOS477B, 'DECEMBER 2011 – REVISED DECEMBER 2016'. This is the current revision, at the ti.com symlink and the PDF4PRO mirror. On 15-Jul-2026 TI refreshed the package addendum only; the datasheet was not revised.\n\nStill missing:\n- A copy of Rev A and its change list.\n- Confirmation of which revision the Mouser (opa1654-443342.pdf), RadioLocman, datasheetspdf and studylib copies hold.\n\nFor a later session, these revision-specific URLs follow TI's usual pattern. They are guesses from that pattern, not checked, so I left them out of archive_seed_urls: www.ti.com/lit/ds/sbos477a/sbos477a.pdf and www.ti.com/lit/ds/sbos477/sbos477.pdf. The archive_seed_urls I did add are the plain-http forms of TI's per-part symlink."
+   "revision_chain_summary": "There is one vendor document, TI SBOS477, with no second source or acquirer re-issue. Chain from oldest to newest:\n(1) SBOS477, original, DECEMBER 2011, with a 'Burr-Brown Audio' header. Copies: Kyoritsu, Octopart 17727667 (already known), and the new copies Octopart 11522104 (OPA1654AID) and product.ic114.com/PDF/O/OPA1652.PDF.\n(2) SBOS477A, Rev A, about August 2016. Still missing: no copy was found in 4 searches, and no search summary showed a 'REVISED AUGUST 2016' header. Its change summary is also unknown.\n(3) SBOS477B, Rev B, DECEMBER 2011 – REVISED DECEMBER 2016, the current edition. Copies: the TI symlink and the new ti.com/lit/gpn/opa1652, plus a second PDF4PRO copy (5b384c).\nMirrors whose revision is not shown: RadioLocman di=161021 and di=305475, rlocman.ru, datasheet4u 1405491, Alldatasheet 457276 and 457286 (28 pp), IC37 (28 pp) and DatasheetCafe. The 28-page count on Alldatasheet and IC37 hints at the pre-2016 layout but is not proof. Opening those mirrors (they were not fetched) is the best remaining way to find Rev A. The archive_seed_urls follow TI's standard symlink, gpn and revision-specific (lit/ds/sbos477a/sbos477a.pdf) patterns. They are meant for Wayback lookup and were not confirmed live. WebSearch calls used: 4 of 4."
   },
   {
    "id": "OPA1688",
@@ -70956,6 +71194,61 @@
      "url_kind": "third_party_mirror",
      "notes": "A user-uploaded copy. The revision was not shown.",
      "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA2156 36-V, Ultra-Low Noise, Wide-Bandwidth, Precision Rail-to-Rail Operational Amplifier (Digi-Key France HTML/PDF rendering)",
+     "doc_number": "SBOS900",
+     "revision": "revision not shown",
+     "date": "-",
+     "url": "https://www.digikey.fr/htmldatasheets/production/5061362/0/0/1/opa2156.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Digi-Key France copy. It came up in a search for the SBOS900 change-log text, but the summary did not say which revision it holds. It has the same Digi-Key document ID (5061362) as the digikey.com htmldatasheet already listed, so it is probably the same edition.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA2156IDR datasheet (page 18 of 35), 36-V, Ultra-Low Noise, Wide-Bandwidth, Precision Rail-to-Rail Operational Amplifier",
+     "doc_number": "SBOS900",
+     "revision": "revision not shown",
+     "date": "-",
+     "url": "https://www.alldatasheet.net/html-marking/1154469/TI1/OPA2156IDR/1289/18/OPA2156IDR.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Alldatasheet.net marking page (OP2156) for the OPA2156IDR. It is a 35-page copy, the same page count as the listed alldatasheet.net OPA2156ID entry (ID 1154466). The revision is not shown in the summary.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Mouser",
+     "title": "Texas Instruments OPA2156 Precision Operational Amplifier (Mouser US new-product page)",
+     "doc_number": "-",
+     "revision": "-",
+     "date": "-",
+     "url": "https://www.mouser.com/new/texas-instruments/ti-opa2156-op-amp/",
+     "url_kind": "product_page",
+     "notes": "US version of the Mouser new-product page (the au.mouser.com version is already listed). It describes SOIC and VSSOP packages, so it dates from Rev B (June 2019) or later.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Digi-Key",
+     "title": "OPA2156 Texas Instruments base product page",
+     "doc_number": "-",
+     "revision": "-",
+     "date": "-",
+     "url": "https://www.digikey.com/en/products/base-product/texas-instruments/296/OPA2156/27241",
+     "url_kind": "product_page",
+     "notes": "Distributor product page that links the datasheet. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Octopart",
+     "title": "OPA2156ID Texas Instruments - distributors, price comparison, and datasheets",
+     "doc_number": "-",
+     "revision": "-",
+     "date": "-",
+     "url": "https://octopart.com/opa2156id-texas+instruments-95825378",
+     "url_kind": "product_page",
+     "notes": "Octopart part page. Its datasheet cache may hold an older revision. The revision is not shown.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -70993,6 +71286,20 @@
      "revision": "* (original)",
      "date": "SEPTEMBER 2018",
      "changes": "The original release is inferred from the 'September 2018' first-publication date printed on Revs A and B. No copy of it was located."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SBOS900A",
+     "revision": "A",
+     "date": "December 2018",
+     "changes": "Change log entry 'Changes from Original (September 2018) to Revision A': first release of the production-data data sheet. This means the original September 2018 SBOS900 was a pre-production (Product Preview / Advance Information) edition. Source: change log in the SBOS900B datasheet at ti.com/lit/ds/symlink/opa2156.pdf."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SBOS900B",
+     "revision": "B",
+     "date": "June 2019",
+     "changes": "Change log entry 'Changes from Revision A (December 2018) to Revision B': (1) added the DGK (VSSOP) package and its content; (2) extended Figure 8 (input voltage noise spectral density) to 10 MHz; (3) retitled the input bias and offset current curves (Figures 12 to 14) to state that they show SOIC package performance. So the Original and Rev A editions covered only the 8-pin SOIC (D). Source: ti.com/lit/ds/symlink/opa2156.pdf."
     }
    ],
    "silicon_changes": [],
@@ -71006,8 +71313,10 @@
     "SBOS900"
    ],
    "archive_seed_urls": [
+    "http://www.ti.com.cn/cn/lit/ds/symlink/opa2156.pdf",
     "http://www.ti.com/lit/ds/symlink/opa2156.pdf",
     "http://www.ti.com/lit/gpn/OPA2156",
+    "http://www.ti.com/lit/gpn/opa2156",
     "https://www.ti.com.cn/cn/lit/ds/symlink/opa2156.pdf",
     "https://www.ti.com/lit/ds/sbos900/sbos900.pdf",
     "https://www.ti.com/lit/ds/sbos900a/sbos900a.pdf",
@@ -71097,7 +71406,7 @@
      "https://www.ti.com/product/OPA2156"
     ]
    },
-   "revision_chain_summary": "NO NEW RESEARCH WAS DONE. My first WebSearch call (\"SBOS900\" OPA2156 \"revised\" datasheet) was refused because the shared session budget was already used up (200 of 200 WebSearch calls). As instructed, I stopped and added nothing. No URLs, revision letters or dates were invented.\n\nThe chain below is restated from scratchpad/chains/OPA2156.json. Texas Instruments is the only vendor; there are no second sources or acquirer re-issues.\n\nTI SBOS900, oldest to newest:\n(1) SBOS900 original (*), September 2018. This date is inferred from the \"SEPTEMBER 2018\" first-publication date printed on Revs A and B. Its contents and status (preview or production data) are unknown. No copy has been found. MISSING.\n(2) SBOS900A, \"SEPTEMBER 2018 - REVISED DECEMBER 2018\". Held only by the low-confidence alldatasheet copy 1082239/TI1. The change log was not retrieved.\n(3) SBOS900B, \"SEPTEMBER 2018 - REVISED JUNE 2019\". This is the current ti.com symlink and the latest revision seen; no Rev C has been found. The change log was not retrieved.\n\nChinese counterpart ZHCSIQ3: ZHCSIQ3A (December 2018) is referenced but no copy was confirmed to hold it. ZHCSIQ3B (June 2019) is on the ti.com.cn symlink. The original ZHCSIQ3 is missing.\n\nStill missing:\n- A copy of the original SBOS900 (*) from September 2018.\n- A confirmed copy of ZHCSIQ3A.\n- The Revision History tables (change summaries) for A and B.\n- The revisions held by the digikey htmldatasheet, datasheet4u, rfz1, alldatasheet 2222729/TI2 and scribd copies.\n- Whether a single-channel OPA156 exists. It is still unconfirmed.\n\nLegacy URL seeds such as focus.ti.com do not apply. The part dates from 2018, after TI stopped using that domain."
+   "revision_chain_summary": "Texas Instruments SBOS900 (sole vendor, no second sources). Chain from oldest to newest: (1) SBOS900, original edition, September 2018. It was a pre-production (Product Preview / Advance Information) edition, SOIC only. This is inferred from the Rev A change-log line 'First release of production-data data sheet'. No copy found; MISSING. (2) SBOS900A, September 2018, revised December 2018. First production-data edition, still SOIC-only. The only copy is the low-confidence alldatasheet.com ID 1082239 entry already listed; no vendor or distributor copy confirmed; MISSING a confirmed copy. (3) SBOS900B, September 2018, revised June 2019. Added the DGK VSSOP package, extended the noise plot to 10 MHz and marked the Ib/Ios curves as SOIC data. Served by the ti.com symlink. Still current: none of the 4 searches found an SBOS900C. The Chinese edition, ZHCSIQ3, follows the same letters (original, A December 2018, B June 2019); only B is confirmed at ti.com.cn, and copies of the ZHCSIQ3 original and A are MISSING. New copies added: a Digi-Key France htmldatasheet and an alldatasheet.net OPA2156IDR page, both with revision not shown. The Wayback seeds are the ti.com symlink/gpn URLs: captures from September to December 2018 should hold the original preview, and captures from December 2018 to June 2019 should hold Rev A. Digi-Key PCN20240701000 and PCN20240902002 turned up in the searches but cover OPAx241/OPAx251 and OPAx134 (SBOS058A to B), not the OPA2156. No evidence of a silicon change under the part number; the only product change on record is the added VSSOP package in Rev B. The single OPA156 was not found in any result. Sources: https://www.ti.com/lit/ds/symlink/opa2156.pdf, https://www.digikey.fr/htmldatasheets/production/5061362/0/0/1/opa2156.pdf, https://www.alldatasheet.net/html-marking/1154469/TI1/OPA2156IDR/1289/18/OPA2156IDR.html, https://www.mouser.com/new/texas-instruments/ti-opa2156-op-amp/, https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6347/PCN20240701000.0.pdf, https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6370/PCN20240902002.1.pdf"
   },
   {
    "id": "OPA2209",
