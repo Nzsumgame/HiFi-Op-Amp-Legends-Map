@@ -1407,6 +1407,303 @@
      "url_kind": "product_page",
      "notes": "Legacy product URL also seen: http://www.onsemi.com/PowerSolutions/product.do?id=LM833DG",
      "confidence": "high"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM833 Dual Audio Operational Amplifier",
+     "doc_number": "DS005218 (National DS number, from the file name)",
+     "revision": "revision not shown",
+     "date": "unknown (probably an older pre-2004 National edition; datasheetcatalog mostly holds files from around 2000)",
+     "url": "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS005218.PDF",
+     "url_kind": "third_party_mirror",
+     "notes": "The file name gives National's DS number DS005218 for the LM833. A search summary of DS005218 copies quotes 'high gain bandwidth 15MHz (typical) and 10MHz (minimum)', 'slew rate 7 V/us (typical) and 5V/us (minimum)', 0.002% distortion, 60 deg phase margin. The summary does not show the edition date.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM833 Dual Audio Operational Amplifier",
+     "doc_number": "DS005218 (per search summary)",
+     "revision": "revision not shown",
+     "date": "(c) 2004 per search summary (not tied to one copy)",
+     "url": "https://www.jameco.com/Jameco/Products/ProdDS/1309253.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Came up for both a 'DS0 ... May 2004' search and a 'DS005218' search. The search summary said the National datasheets are '(c) 2004, DS005218', with order numbers LM833M/MX/N/MM/MMX in M08A, N08E and MUA08A packages. That summary may mix several copies.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM833 Dual Audio Operational Amplifier General Description",
+     "doc_number": "DS005218 (per search summary)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.jameco.com/Jameco/Products/ProdDS/120942.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Top result for the query '\"DS005218\" LM833'. It is a separate Jameco file from 1309253.pdf, so it may be a different National edition.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM833 Dual Audio Operational Amplifier General Description",
+     "doc_number": "DS005218 (per search summary)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.sm5cbw.se/audio/ic-data/LM833.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Hobby site copy that came up for the query '\"DS005218\" LM833'.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM833 Dual Audio Operational Amplifier General Description",
+     "doc_number": "DS005218 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet.octopart.com/LM833MM/NOPB-National-Semiconductor-datasheet-9811680.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Octopart cache file labeled National Semiconductor. Came up for both the DS005218 and 'May 2004' searches.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "NATIONAL SEMICONDUCTOR (LM833M/NOPB) DUAL ...",
+     "doc_number": "DS005218 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet.octopart.com/LM833M/NOPB-National-Semiconductor-datasheet-8191293.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The title looks like a distributor (Farnell/Newark-style) cover wrapped around the National datasheet. Came up for the DS005218 search.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "NATIONAL SEMICONDUCTOR (LM833MX/NOPB) DUAL ...",
+     "doc_number": "DS005218 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet.octopart.com/LM833MX-NOPB-Texas-Instruments-datasheet-7578376.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Octopart lists it under Texas Instruments, but the title says National Semiconductor. The title looks like a distributor cover around the National datasheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM833 Dual Audio Operational Amplifier - bidulic",
+     "doc_number": "DS005218 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://p.pdfhall.com/lm833-dual-audio-operational-amplifier-bidulic-bidulic_5b70245d097c47ee718b45af.html",
+     "url_kind": "third_party_mirror",
+     "notes": "pdfhall HTML rendering. Came up for the DS005218 search.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (ex-National)",
+     "title": "LM833 Dual Audio Operational Amplifier: Literature Number: SNOSBD8D",
+     "doc_number": "SNOSBD8D",
+     "revision": "D",
+     "date": "unknown",
+     "url": "https://www.scribd.com/doc/102660047/lm833",
+     "url_kind": "third_party_mirror",
+     "notes": "The Scribd title shows 'Literature Number: SNOSBD8D': the National LM833 datasheet under a TI cover, from before the LM833-N rename.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (ex-National)",
+     "title": "LM833 LM833 Dual Audio Operational Amplifier Literature Number: SNOSBD8D",
+     "doc_number": "SNOSBD8D",
+     "revision": "D",
+     "date": "unknown",
+     "url": "https://datasheet.octopart.com/LM833M-National-Semiconductor-datasheet-10846346.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Same Octopart file id (10846346) as the LM833M-NOPB copy already listed, but reached through a different URL (under the National Semiconductor label). The title shows SNOSBD8D.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (ex-National, Japan)",
+     "title": "LM833 LM833 Dual Audio Operational Amplifier Literature Number: JAJSB49",
+     "doc_number": "JAJSB49",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/TI/lm833n.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Japanese-language copy of the National LM833 datasheet under a TI cover, literature number JAJSB49. It is the TI Japan counterpart of the SNOSBD8 document; which English edition it translates is not shown.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (ex-National)",
+     "title": "LM833-N www.ti.com SNOSBD8E - MAY 2004 - REVISED MAY 2012",
+     "doc_number": "SNOSBD8E",
+     "revision": "E",
+     "date": "MAY 2004 - REVISED MAY 2012",
+     "url": "https://datasheet.octopart.com/LM833M-Texas-Instruments-datasheet-28360528.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The header shown in the search title confirms SNOSBD8E.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "onsemi",
+     "title": "LM833, NCV833 - (c) Semiconductor Components Industries, LLC, 2011 September, 2011 - Rev. 6",
+     "doc_number": "LM833/D",
+     "revision": "Rev. 6",
+     "date": "September, 2011",
+     "url": "https://media.digikey.com/pdf/Data%20Sheets/ON%20Semiconductor%20PDFs/LM833,NCV833.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The footer shown in the search title confirms Rev. 6, September 2011.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "onsemi",
+     "title": "LM833 Datasheet by ON Semiconductor | Digi-Key Electronics",
+     "doc_number": "LM833/D (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digikey.com/htmldatasheets/production/99691/0/0/1/lm833.html",
+     "url_kind": "distributor_mirror",
+     "notes": "Digi-Key HTML rendering of the ON Semiconductor datasheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "onsemi (presumed)",
+     "title": "LM833 Low Noise Op Amp Overview (lm833-rev2-pdf)",
+     "doc_number": "LM833/D (presumed)",
+     "revision": "revision not shown (the file name says 'rev2', unverified)",
+     "date": "unknown",
+     "url": "https://www.scribd.com/document/426804758/lm833-rev2-pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Came up for an onsemi LM833/D revision search. The Scribd slug 'lm833-rev2' may point to an early onsemi Rev. 2. Neither the vendor nor the revision is confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "LM833 Datasheet - SOP amplifier | STMicroelectronics",
+     "doc_number": "Doc ID 2169 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/STMicroelectronics/LM833/1394947",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheet4u copy of the ST LM833 datasheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "LM833DT Datasheet STMicroelectronics",
+     "doc_number": "Doc ID 2169 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=147172",
+     "url_kind": "third_party_mirror",
+     "notes": "radiolocman copy under the part number LM833DT.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "LM833DT Datasheet(PDF) - STMicroelectronics",
+     "doc_number": "Doc ID 2169 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/527770/STMICROELECTRONICS/LM833DT.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A second alldatasheet ST entry (id 527770, separate from the already listed 22771). The much higher id suggests a later upload, possibly a newer edition.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "LM833 Datasheet PDF - STMicroelectronics",
+     "doc_number": "Doc ID 2169 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/LM833-doc-ST-Microelectronics",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetq copy of the ST LM833 datasheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "LM833_05 Datasheet PDF - STMicroelectronics",
+     "doc_number": "Doc ID 2169 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown (the '_05' suffix may mean a 2005 edition; unverified)",
+     "url": "https://www.datasheetq.com/LM833_05-doc-ST-Microelectronics",
+     "url_kind": "third_party_mirror",
+     "notes": "A separate datasheetq ST entry with the suffix '_05'. It may be an ST edition from before Rev 3 (August 2009), such as a 2005 revision. This is not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "LM833 datasheet, Pinout, application circuits Low Noise Dual Operational Amplifier",
+     "doc_number": "Doc ID 2169 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://www.datasheetdir.com/STMICROELECTRONICS-LM833+Operational-Amplifiers",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetdir page for the ST LM833.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "LM833DT STMicroelectronics - Datasheet PDF & Technical Specs",
+     "doc_number": "Doc ID 2169 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.allaboutcircuits.com/electronic-components/datasheet/LM833DT--STMicroelectronics/",
+     "url_kind": "third_party_mirror",
+     "notes": "allaboutcircuits component page that links the ST datasheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Motorola",
+     "title": "LM833N Datasheet(PDF) - Motorola, Inc",
+     "doc_number": "LM833/D (Motorola, presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/3070/MOTOROLA/LM833N.html",
+     "url_kind": "third_party_mirror",
+     "notes": "The alldatasheet entry for LM833N (id 3070). It sits next to the already listed LM833 entry (id 3069), so it is probably the same Motorola document.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Motorola",
+     "title": "LM833 datasheet, amplifier equivalent, Motorola Inc",
+     "doc_number": "LM833/D (Motorola, presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetspdf.com/pdf/54287/MotorolaInc/LM833/1",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetspdf copy of the Motorola LM833 datasheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Motorola",
+     "title": "LM833 Datasheet PDF - Motorola => Freescale",
+     "doc_number": "LM833/D (Motorola, presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/LM833-doc-Motorola",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetq copy of the Motorola LM833 datasheet (the site labels it 'Motorola => Freescale').",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Motorola",
+     "title": "LM833N Datasheet PDF - Motorola => Freescale",
+     "doc_number": "LM833/D (Motorola, presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/LM833N-doc-Motorola",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetq LM833N entry. Probably the same Motorola document as the LM833 entry.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Motorola",
+     "title": "LM833 Motorola Dual Low Noise, Audio Amplifier ChipFind Datasheet Archive",
+     "doc_number": "LM833/D (Motorola, presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.chipfind.net/datasheet/motorola/lm833n.htm",
+     "url_kind": "third_party_mirror",
+     "notes": "ChipFind archive page for the Motorola LM833N.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -1486,6 +1783,34 @@
      "revision": ".1",
      "date": "not shown in search",
      "changes": "Search summaries say its device list includes LM833DR, RC4580IP, MC33078DR and NE5532AP. One summary linked it to an RC4580 wire-bond (Au to Cu) change, probably conflated with an E2E China RC4580 thread; subject unverified."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "DS005218",
+     "revision": "edition not identified",
+     "date": "(c) 2004 per search summary",
+     "changes": "National's own LM833 datasheet under DS number DS005218. A search summary gives order numbers LM833M, LM833MX, LM833N, LM833MM, LM833MMX in M08A, N08E and MUA08A packages. It also quotes GBW 15 MHz typ / 10 MHz min, SR 7 V/us typ / 5 V/us min, 0.002% THD, 60 deg phase margin, 4.5 nV/rtHz and 140 dB dynamic range. Any earlier (pre-2004) edition dates were not found."
+    },
+    {
+     "vendor": "Texas Instruments (ex-National, Japan)",
+     "doc_number": "JAJSB49",
+     "revision": "not shown",
+     "date": "not shown",
+     "changes": "Japanese translation of the National LM833 datasheet under a TI literature-number cover (kyohritsu.com copy)."
+    },
+    {
+     "vendor": "Motorola",
+     "doc_number": "LM833/D",
+     "revision": "Rev 0 (per search summary only)",
+     "date": "1996 (per search summary only)",
+     "changes": "A search summary described the eletrodex.org Motorola 'SEMICONDUCTOR TECHNICAL DATA' copy as a '1996 (Rev 0)' document. The footer text itself was not shown. Treat this as low confidence."
+    },
+    {
+     "vendor": "onsemi",
+     "doc_number": "LM833/D",
+     "revision": "Rev. 6",
+     "date": "September, 2011",
+     "changes": "Two more copies are confirmed Rev. 6 by their search-title footers: mouser LM833-D-93350.pdf (already listed with revision unknown) and media.digikey.com LM833,NCV833.pdf. By Rev. 6 the document already covered NCV833 (Digi-Key file name 'LM833,NCV833'). Change log not retrieved."
     }
    ],
    "silicon_changes": [
@@ -1745,7 +2070,8 @@
      "https://www.ti.com/product/LM833-N",
      "https://gearspace.com/board/geekzone/1464976-headsup-ti-has-changed-ne5532-k-version-2024-gt-opax134-lhm6518.html"
     ]
-   }
+   },
+   "revision_chain_summary": "TI SLOS481 (TI's own LM833): original JULY 2010 -> A (REVISED AUGUST 2010) -> B (REVISED OCTOBER 2014). Searches for SLOS481C/SLOS481D found nothing, so there is no evidence of a Rev C+. The original July 2010 edition is still missing as a confirmed copy. The best candidate is the already-listed Octopart LM833P ...-10089682.pdf, which uses the old lowercase TI-style title 'dual high-speed audio operational amplifier'; its revision is unconfirmed.\n\nNational LM833: DS number found. National's datasheet is DS005218 (pdf.datasheetcatalog.com/.../DS005218.PDF; a search summary gives (c) 2004). Individual National edition dates (pre-2004 editions) are still missing. Copies whose edition is not shown: Jameco 120942 and 1309253, sm5cbw.se, and Octopart 9811680, 8191293 and 7578376. No legacy national.com URL came up in any search.\n\nTI SNOSBD8 (ex-National): A, B and C are still missing, and no search result mentioned them. D is confirmed (new copies: Scribd 102660047, Octopart LM833M-National ...-10846346); its date is still unknown. E is MAY 2004 - REVISED MAY 2012 (new copy: Octopart ...-28360528). Related document found: JAJSB49, the Japanese TI edition of the National LM833 datasheet (kyohritsu copy); its date is not shown. The 'MAY 2004' origin date in SNOSBD8 matches the (c) 2004 DS005218 edition.\n\nMotorola LM833/D: one search summary says the eletrodex copy is '1996 Rev 0' (low confidence, footer not shown). Other Motorola revisions and dates are still missing. New copies with no revision shown: alldatasheet 3070, datasheetspdf 54287, datasheetq (2 entries), chipfind.\n\nonsemi LM833/D: Rev. 6 (September 2011) -> [Rev. 7 missing] -> Rev. 8 (July 2025). Rev. 6 is now also confirmed for the already-listed mouser LM833-D-93350.pdf (search-title footer) and for a new copy at media.digikey.com (LM833,NCV833.pdf). Rev. 0-5 (ON Semi era, around 2000-2010) are still missing. The Scribd 'lm833-rev2-pdf' copy may be an early revision, but neither its vendor nor its revision is confirmed.\n\nST Doc ID 2169: only Rev 3 (August 2009) is confirmed. Rev 1, Rev 2 and anything after Rev 3 are still missing. The datasheetq entry 'LM833_05' may be a 2005 edition (unverified). A second alldatasheet entry (527770, LM833DT) may be a newer upload. New copies with no revision shown: datasheet4u 1394947, radiolocman di=147172, datasheetdir, allaboutcircuits.\n\nSide notes: the already-listed docs.lightningmaps.org lm833.pdf showed up once with the title 'LM833-N Dual Audio Operational Amplifier (Rev. E)'. It may therefore be SNOSBD8E rather than a pure National copy, but another search showed it with the National 'General Description' title, so this is ambiguous. No legacy vendor URLs (focus.ti.com, national.com) came up, so archive_seed_urls is empty."
   },
   {
    "id": "LME49720",
@@ -2361,6 +2687,369 @@
      "url_kind": "distributor_mirror",
      "notes": "Unconfirmed URL. National-branded copy. Also reported (unconfirmed): alldatasheet NSC 190918.",
      "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM4562 Dual High Performance, High Fidelity Audio Operational Amplifier (May 2007 edition)",
+     "doc_number": "201572 (National DS number, presumed) / SNAS326",
+     "revision": "May 2007 edition (title reads 'May 2007 LM4562 ...'; probably National internal rev 1.4 of 05/03/07, inferred from the date)",
+     "date": "May 2007",
+     "url": "https://radio-hobby.org/uploads/datasheets/lm/LM4562.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "New National edition not listed before. It sits between the Sept 2006 revs and the Oct 2007 edition (BU copy).",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM4562 High Fidelity Audio Operational Amplifier (datasheet4u id 559726)",
+     "doc_number": "201572 (presumed)",
+     "revision": "revision not shown (search summary says an August 2006 version; the same search surfaced the rev 1.0-1.5 history table, so it may be the Oct 2007 edition)",
+     "date": "August 2006 (per search summary, unconfirmed)",
+     "url": "https://datasheet4u.com/datasheet-pdf/NationalSemiconductor/LM4562/pdf.php?id=559726",
+     "url_kind": "third_party_mirror",
+     "notes": "This could be the original Aug 2006 edition. Check the header date and the revision-history table.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM4562 Datasheet - SOIC Amplifier (datasheet4u page, id 559726)",
+     "doc_number": "201572 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/National-Semiconductor/LM4562/559726",
+     "url_kind": "third_party_mirror",
+     "notes": "HTML landing page for the same file id 559726 as above.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM4562 Data Sheet | National Semiconductor (datasheetspdf id 559726)",
+     "doc_number": "201572 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetspdf.com/pdf/559726/NationalSemiconductor/LM4562/1",
+     "url_kind": "third_party_mirror",
+     "notes": "Same file id as datasheet4u 559726. It came up in the search that returned the National rev history 1.0 (08/16/06) through 1.5 (10/17/07).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM4562NA Datasheet (alldatasheet 156192)",
+     "doc_number": "201572 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/156192/NSC/LM4562NA.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Separate alldatasheet entry for LM4562NA, filed under NSC.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM4562 datasheet (1/33 pages) NSC, alldatasheet.net html view",
+     "doc_number": "201572 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.net/html-pdf/156190/NSC/LM4562/53/1/LM4562.html",
+     "url_kind": "third_party_mirror",
+     "notes": "33-page HTML view of alldatasheet file 156190, which is already listed under its .com pdf URL.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM4562 Datasheet (alldatasheet 838783, TI1)",
+     "doc_number": "SNAS326",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/838783/TI1/LM4562.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under TI; probably J or K, not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor or Texas Instruments (unclear)",
+     "title": "LM4562 Dual High Performance, High Fidelity Audio Operational Amplifier",
+     "doc_number": "201572 / SNAS326",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://electronics-diy.com/pdf/LM4562.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Hobby-site copy.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "lm4562na National Semiconductor datasheet (elcodis)",
+     "doc_number": "201572 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://elcodis.com/parts/6131756/lm4562na.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Elcodis part page with an attached National datasheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM4562NA/NOPB Datasheet (radiolocman di=274487)",
+     "doc_number": "SNAS326",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=274487",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under TI.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (National content)",
+     "title": "LM4562 LM4562 Dual High Performance, High Fidelity Audio Operational Amplifier (LM4562_AudioOP_National.pdf)",
+     "doc_number": "SNAS326 / 201572",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.raffia.ch/content/datasheets/volume06/LM4562_AudioOP_National.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "The doubled 'LM4562 LM4562' title is the same pattern as the qobuz copy. That pattern matches TI's 2011-2012 rewrap of National datasheets with a 'Literature Number: SNAS326x' footer, so this may be SNAS326I (Jan 2010). Not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM4562 Dual High Performance, High Fidelity Audio Operational Amplifier datasheet (Rev. K)",
+     "doc_number": "SNAS326",
+     "revision": "K (per document title)",
+     "date": "REVISED DECEMBER 2013 (K date per known chain)",
+     "url": "https://www.scribd.com/document/861406292/LM4562-Dual-High-Performance-High-Fidelity-Audio-Operational-Amplifier-datasheet-Rev-K",
+     "url_kind": "third_party_mirror",
+     "notes": "Scribd re-upload of the current TI revision.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM4562 (TI gpn redirect)",
+     "doc_number": "SNAS326",
+     "revision": "current (K)",
+     "date": "n/a",
+     "url": "https://www.ti.com/lit/gpn/LM4562",
+     "url_kind": "vendor_current",
+     "notes": "TI generic-part-number link to the current datasheet.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "October 2007 LME49720 Dual High Performance, High Fidelity Audio Operational Amplifier",
+     "doc_number": "SNAS393 (National DS number unconfirmed; 300038 per prior pass)",
+     "revision": "October 2007 edition (National internal rev 1.2, 10/22/07; matches SNAS393B)",
+     "date": "October 2007",
+     "url": "https://www.electrokit.com/upload/product/40359/40359720/LME49720.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Electrokit (Swedish distributor) copy. The title shows the October 2007 date.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LME49720 Dual High Performance, High Fidelity Audio Operational Amplifier (Octopart LME49720MA, National)",
+     "doc_number": "SNAS393 (National)",
+     "revision": "revision not shown (a search summary mentions an Oct 2007 date and rev history 1.0 03/30/07 and 1.1 05/03/07, but the source copy is unclear)",
+     "date": "unknown",
+     "url": "https://datasheet.octopart.com/LME49720MA-National-Semiconductor-datasheet-15941894.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Octopart datasheet cache. This is a different file id from the listed 9818030.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LME49720HA/NOPB Datasheet National Semiconductor (radiolocman di=77846)",
+     "doc_number": "SNAS393 (National)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=77846",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under National Semiconductor.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LME49720HA/NOPB Datasheet (alldatasheet 517700)",
+     "doc_number": "SNAS393",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/517700/TI/LME49720HA/NOPB.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under TI. The low file id suggests an early TI rewrap of National content. Unconfirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LME49720NA/NOPB Datasheet (alldatasheet 517703)",
+     "doc_number": "SNAS393",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/517703/TI/LME49720NA/NOPB.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under TI.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LME49720HA/NOPB National Semiconductor datasheet (elcodis)",
+     "doc_number": "SNAS393 (National)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://elcodis.com/parts/1319396/LME49720HANOPB.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Elcodis part page with an attached National datasheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (Japan)",
+     "title": "LME49720 Dual High Performance Hi-Fi Audio Op Amp (Japanese translation)",
+     "doc_number": "SNAS393 (Japanese translation; JA literature number not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.ti.com/jp/lit/ds/symlink/lme49720.pdf",
+     "url_kind": "vendor_current",
+     "notes": "TI Japan's current Japanese datasheet.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LME49710 High Performance, High Fidelity Audio Operational Amplifier (Octopart LME49710MA/NOPB, National)",
+     "doc_number": "SNAS376 (National DS number probably 202104, inferred from graphic numbers 20210489/90)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet.octopart.com/LME49710MA/NOPB-National-Semiconductor-datasheet-9706660.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "National-era copy in the Octopart cache. It came up in the search that returned the LME49710 rev history 1.0-1.3.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LME49710 Datasheet (alldatasheet 229221, NSC)",
+     "doc_number": "SNAS376 (National)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/229221/NSC/LME49710.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under NSC.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LME49710 Datasheet Texas Instruments (radiolocman di=300405)",
+     "doc_number": "SNAS376",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://radiolocman.com/datasheet/data.html?%2FLME49710=&di=300405",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under TI.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LME49710 Datasheet - PDIP Amplifier | National Semiconductor (datasheet4u 567863)",
+     "doc_number": "SNAS376 (National)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/National-Semiconductor/LME49710/567863",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under National.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LME49710 SNAS376C -NOVEMBER 2006-REVISED APRIL 2013",
+     "doc_number": "SNAS376",
+     "revision": "C",
+     "date": "NOVEMBER 2006 - REVISED APRIL 2013",
+     "url": "https://www.mouser.com/datasheet/2/405/snas376c-316843.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Mouser revision-specific filename (snas376c). The header shows SNAS376C.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LME49710 SNAS376C -NOVEMBER 2006-REVISED APRIL 2013",
+     "doc_number": "SNAS376",
+     "revision": "C",
+     "date": "NOVEMBER 2006 - REVISED APRIL 2013",
+     "url": "https://www.rcscomponents.kiev.ua/datasheets/lme49710na.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "RCS Components (Kyiv) distributor copy. The header shows SNAS376C.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LME49710 SNAS376C -NOVEMBER 2006-REVISED APRIL 2013 (Octopart LME49710HA-NOPB)",
+     "doc_number": "SNAS376",
+     "revision": "C",
+     "date": "NOVEMBER 2006 - REVISED APRIL 2013",
+     "url": "https://datasheet.octopart.com/LME49710HA-NOPB-Texas-Instruments-datasheet-102491025.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Octopart cache. The header shows SNAS376C.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LME49740 SNAS377B -FEBRUARY 2007-REVISED APRIL 2013",
+     "doc_number": "SNAS377",
+     "revision": "B",
+     "date": "FEBRUARY 2007 - REVISED APRIL 2013",
+     "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1/LME49740.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "DigiKey media copy. The header shows SNAS377B.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LME49740 SNAS377B -FEBRUARY 2007-REVISED APRIL 2013",
+     "doc_number": "SNAS377",
+     "revision": "B",
+     "date": "FEBRUARY 2007 - REVISED APRIL 2013",
+     "url": "https://audioxpress.com/assets/upload/files/lme49740.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "audioXpress copy. The header shows SNAS377B.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LME49740 Datasheet (alldatasheet 190918, NSC)",
+     "doc_number": "SNAS377 (National)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/190918/NSC/LME49740.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under NSC. It came up in the search that returned the LME49740 rev history 1.0 and 1.01. It could be the original Feb 2007 edition or the Feb 2008 one.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "National Semiconductor or Texas Instruments (unclear)",
+     "title": "LME49740 Quad High Performance, High Fidelity Audio Operational Amplifier",
+     "doc_number": "SNAS377",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.hifituning24.de/downloads/lme49740.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Copy on a hobby / audio-tuning shop site.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LME49740 Datasheet (alldatasheet 841149, TI1)",
+     "doc_number": "SNAS377",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/841149/TI1/LME49740.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under TI. Probably B, not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LME49740NA/NOPB Datasheet (alldatasheet 841152, TI1)",
+     "doc_number": "SNAS377",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/841152/TI1/LME49740NA/NOPB.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under TI.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -2468,6 +3157,111 @@
      "revision": "B",
      "date": "April 2013",
      "changes": "TI-format revision; latest found (confirmed by the Mouser copy header). Changes not seen."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "201572 / SNAS326 (LM4562)",
+     "revision": "National rev 1.0",
+     "date": "08/16/06",
+     "changes": "Initial release (per the datasheet's own revision-history table)."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "201572 / SNAS326 (LM4562)",
+     "revision": "National rev 1.1",
+     "date": "08/22/06",
+     "changes": "Updated the Instantaneous Short Circuit Current specification."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "201572 / SNAS326 (LM4562)",
+     "revision": "National rev 1.2",
+     "date": "09/12/06",
+     "changes": "Updated the three ±15V CMRR Typical Performance Curves."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "201572 / SNAS326 (LM4562)",
+     "revision": "National rev 1.3",
+     "date": "09/26/06",
+     "changes": "Updated the interstage filter capacitor values in the page-1 Typical Application schematic."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "201572 / SNAS326 (LM4562)",
+     "revision": "National rev 1.4",
+     "date": "05/03/07",
+     "changes": "Added the 'general note' under the Electrical Characteristics table. This is the May 2007 edition (radio-hobby.org copy)."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "201572 / SNAS326 (LM4562)",
+     "revision": "National rev 1.5",
+     "date": "10/17/07",
+     "changes": "Replaced all the PSRR curves. This is the October 2007 edition (BU copy)."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "SNAS393 (LME49720)",
+     "revision": "National rev 1.0",
+     "date": "03/30/07",
+     "changes": "Initial release (the March 2007 original)."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "SNAS393 (LME49720)",
+     "revision": "National rev 1.1",
+     "date": "05/03/07",
+     "changes": "Change text not shown in the summary. It has the same date as LM4562 rev 1.4 (EC-table general note). Probably SNAS393A, unconfirmed."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "SNAS393 (LME49720)",
+     "revision": "National rev 1.2",
+     "date": "10/22/07",
+     "changes": "Replaced all the PSRR curves. This is the October 2007 edition and matches SNAS393B."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "SNAS376 (LME49710)",
+     "revision": "National rev 1.0",
+     "date": "11/16/07 as printed (very likely a typo for 11/16/06, since the datasheet is dated Nov 2006 and rev 1.1 is 12/12/06)",
+     "changes": "Initial release."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "SNAS376 (LME49710)",
+     "revision": "National rev 1.1",
+     "date": "12/12/06",
+     "changes": "Added Typical Performance curves."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "SNAS376 (LME49710)",
+     "revision": "National rev 1.2",
+     "date": "01/15/07",
+     "changes": "Added more curves and made some text edits."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "SNAS376 (LME49710)",
+     "revision": "National rev 1.3",
+     "date": "03/09/07",
+     "changes": "Fixed graphics 20210489 and 20210490. This is the March 2007 edition and matches SNAS376B. The graphic numbering suggests National DS number 202104 (inference)."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "SNAS377 (LME49740)",
+     "revision": "National rev 1.0",
+     "date": "02/28/07",
+     "changes": "Initial WEB release."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "SNAS377 (LME49740)",
+     "revision": "National rev 1.01",
+     "date": "02/08/08",
+     "changes": "Fixed the package captions (printed as 'LME4970MA', sic) from Dual-In-Line to Molded Package (SO). This corroborates the prior-pass SNAS377A date of Feb 8, 2008."
     }
    ],
    "silicon_changes": [
@@ -2594,6 +3388,10 @@
     "http://www.national.com/pf/LM/LM4562.html",
     "http://www.national.com/pf/LM/LME49720.html",
     "http://www.op316.com/pdf/ic/lme49720.pdf",
+    "http://www.ti.com/lit/ds/symlink/lm4562.pdf",
+    "http://www.ti.com/lit/ds/symlink/lme49710.pdf",
+    "http://www.ti.com/lit/ds/symlink/lme49720.pdf",
+    "http://www.ti.com/lit/ds/symlink/lme49740.pdf",
     "https://datasheet.octopart.com/LM4562HA-NOPB-Texas-Instruments-datasheet-21221798.pdf",
     "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/754/PCN20180308002.pdf",
     "https://www.capi-gear.com/catalog/images/gallery/opamps/IC/LME49710-data.pdf",
@@ -2774,7 +3572,8 @@
      "http://nwavguy.blogspot.com/2011/08/op-amp-measurements.html",
      "http://www.sg-acoustics.ch/analogue_audio/ic_opamps/pdf/opamp_distortion.pdf"
     ]
-   }
+   },
+   "revision_chain_summary": "LM4562 (National DS201572 / TI SNAS326). The datasheet's own National revision table gives rev 1.0 (08/16/06, initial) -> 1.1 (08/22/06, short-circuit current spec) -> 1.2 (09/12/06, CMRR curves) -> 1.3 (09/26/06, application schematic capacitor values) -> 1.4 (05/03/07, EC-table general note; May 2007 edition at radio-hobby.org) -> 1.5 (10/17/07, all PSRR curves replaced; Oct 2007 edition, BU copy). The chain then jumps to SNAS326I (Jan 2010). Search summaries tie SNAS326I to the qobuz copy (already listed, not re-added); raffia.ch has the same doubled-title TI-rewrap pattern. TI revisions follow: J (Apr 2013) -> K (Dec 2013). Still missing: how TI letters A-H map onto National revs 1.0-1.5 (no summary showed a SNAS326A-H letter); any 2008-2009 National edition (rev 1.6+); a confirmed copy of the Aug/Sept 2006 editions (datasheet4u/datasheetspdf id 559726 may be one, per an 'August 2006' summary, unconfirmed). LME49720 (SNAS393). Rev 1.0 03/30/07 (Mar 2007 original; elitesecurity copy) -> 1.1 05/03/07 (probably SNAS393A; no copy found) -> 1.2 10/22/07 (PSRR curves; = SNAS393B Oct 2007: Mouser snas393b, op316, electrokit, and the kyohritsu Japanese copy, whose title reads '2007年10月') -> C Apr 2013 -> D Nov 2016. Still missing: a copy of the May 2007 edition and a confirmed National DS number. LME49710 (SNAS376). Rev 1.0 (table prints 11/16/07, surely Nov 2006) -> 1.1 12/12/06 -> 1.2 01/15/07 -> 1.3 03/09/07 (= SNAS376B Mar 2007) -> C Apr 2013 (new copies: Mouser snas376c, rcscomponents, Octopart 102491025). Still missing: copies of the Nov 2006, Dec 2006 and Jan 2007 editions, and the letter for SNAS376A. The National DS number is probably 202104, inferred from graphic IDs 20210489/90. LME49740 (SNAS377). Rev 1.0 02/28/07 (initial web release) -> 1.01 02/08/08 (SO package caption fix; = SNAS377A, now corroborated; Octopart 15941898 National copy) -> B Apr 2013 (new copies: DigiKey, audioXpress). Still missing: a confirmed copy of the Feb 2007 original (alldatasheet 190918 NSC may be it) and the National DS number. The archive seeds follow the standard national.com/ds/LM/ and ti.com symlink patterns; no search result confirmed them. No SNAS393A, SNAS376A or SNAS326A-H letter appeared in any search result."
   },
   {
    "id": "MC33078",
@@ -3479,6 +4278,237 @@
      "url_kind": "third_party_mirror",
      "notes": "Unconfirmed: not seen in web search. Also reportedly at https://datasheet4u.com/datasheets/Unisonic-Technologies/MC33078/972477.",
      "confidence": "low"
+    },
+    {
+     "vendor": "Motorola",
+     "title": "DUAL/QUAD LOW NOISE OPERATIONAL AMPLIFIERS (MC33078/MC33079)",
+     "doc_number": "MC33078/D (probable)",
+     "revision": "revision not shown",
+     "date": "unknown (pre-2000 Motorola branding)",
+     "url": "https://www.rf-microwave.com/resources/products_attachments/5a43871ca5304.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "rf-microwave.com attachment for its Motorola MC33078D product. The search title matches the Motorola original. It may be the same 1996 Rev 0 edition as the futurlec copy, but that is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Motorola",
+     "title": "MC33078D Motorola, Dual low noise operational amplifier, SMD SOIC-8",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.rf-microwave.com/en/motorola/mc33078d/dual-low-noise-operational-amplifier/mc33078d/",
+     "url_kind": "product_page",
+     "notes": "Surplus-distributor product page for Motorola-marked MC33078D stock. It links the Motorola datasheet PDF above.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Motorola",
+     "title": "MC33078 Datasheet PDF (Pinout) - DUAL/QUAD LOW NOISE OPERATIONAL AMPLIFIERS",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://www.datasheet39.com/PDF/467372/MC33078-datasheet.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Uses the same ID (467372) as the datasheet4u Motorola copy already listed, so it is probably the same scan.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Motorola",
+     "title": "MC33079D - Motorola / Freescale Semiconductor - Datasheet.Company",
+     "doc_number": "MC33078/D (probable; covers MC33079)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://pdf.datasheet.company/58cd5227/freescale.com/MC33079D.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Motorola-era copy indexed under a freescale.com source path. It suggests the Motorola datasheet was once hosted on freescale.com.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "onsemi",
+     "title": "MC33078, MC33079 Low Noise Dual/Quad Operational Amplifiers",
+     "doc_number": "MC33078/D",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.yumpu.com/en/document/view/38763494/mc33078-mc33079-low-noise-dual-quad-operational-amplifiers",
+     "url_kind": "third_party_mirror",
+     "notes": "The title has no NCV parts, which suggests a revision before Rev. 9 (Nov 2011). The exact revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "onsemi",
+     "title": "MC33078, MC33079 Low Noise Dual/Quad Operational Amplifiers",
+     "doc_number": "MC33078/D",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://media-pim.rubix.com/medias/technical_datasheet/06/19/1300000121906/174.pdf?v=230516034910+0200&attachment=true",
+     "url_kind": "distributor_mirror",
+     "notes": "Rubix distributor PIM copy. The title has no NCV parts, which suggests a revision before Rev. 9. The exact revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "onsemi",
+     "title": "MC33078P Datasheet(PDF) - ON Semiconductor",
+     "doc_number": "MC33078/D",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/12018/ONSEMI/MC33078P.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A companion to alldatasheet ID 12016 (already listed). The low ID suggests an early-2000s ON revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "onsemi",
+     "title": "MC33078 - Low Noise Dual/Quad Operational Amplifiers | ON Semiconductor Datasheet",
+     "doc_number": "MC33078/D",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/ON-Semiconductor/MC33078/1495630",
+     "url_kind": "third_party_mirror",
+     "notes": "The title has no NCV parts, which suggests a revision before Rev. 9. The exact revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "onsemi",
+     "title": "MC33078-D Datasheet pdf - Low Noise Dual/Quad Operational Amplifiers - ON Semiconductor",
+     "doc_number": "MC33078/D",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://www.datasheetcatalog.com/datasheets_pdf/M/C/3/3/MC33078-D.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetcatalog's ON-branded copy, separate from its Motorola MC33078D page. It is probably an early-2000s ON revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "onsemi",
+     "title": "MC33078DR2G onsemi, Op Amp, 16MHz, 8-Pin SOIC",
+     "doc_number": "MC33078/D",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://uk.rs-online.com/web/p/op-amps/6896721",
+     "url_kind": "product_page",
+     "notes": "RS UK product page. It may link an RS-hosted copy of the datasheet, revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "MC33078DR Datasheet Texas Instruments, Download PDF",
+     "doc_number": "SLLS633",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=224647&%2FMC33078DR=",
+     "url_kind": "third_party_mirror",
+     "notes": "A separate RadioLocman entry (di=224647) from the listed di=303635 copy. A different ID could mean a different SLLS633 revision (the original, A or B), but the revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "MC33078 Datasheet(PDF) - Texas Instruments",
+     "doc_number": "SLLS633",
+     "revision": "revision not shown (high ID suggests a recent upload, probably C)",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1809749/TI1/MC33078.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A newer alldatasheet TI entry (manufacturer code TI1), separate from the listed ID 177246.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "MC33078DR Texas Instruments, Op Amps, 16MHz 0.1 MHz, 18 V, 8-Pin SOIC",
+     "doc_number": "SLLS633",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://uk.rs-online.com/web/p/op-amps/2088615",
+     "url_kind": "product_page",
+     "notes": "RS UK product page for the TI MC33078DR. It may link an RS-hosted datasheet, revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "MC33078D Datasheet(PDF) - STMicroelectronics",
+     "doc_number": "unknown (ST DocID 2177 family)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/23288/STMICROELECTRONICS/MC33078D.html",
+     "url_kind": "third_party_mirror",
+     "notes": "From the same low-ID batch (23287-23290) as the listed alldatasheet ST copy. It is probably an early ST revision older than Rev 6 (2012).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "MC33078N Datasheet(PDF) - STMicroelectronics",
+     "doc_number": "unknown (ST DocID 2177 family)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/23289/STMICROELECTRONICS/MC33078N.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Same batch as ID 23287. The MC33078N (DIP) naming suggests an early revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "33078 Datasheet(PDF) - STMicroelectronics",
+     "doc_number": "unknown (ST DocID 2177 family)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/23290/STMICROELECTRONICS/33078.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Same batch as ID 23287.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "MC33078 Datasheet PDF - STMicroelectronics",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/MC33078-doc-ST-Microelectronics",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetq's ST copy. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "MC33078 by STMicroelectronics Datasheet | DigiKey",
+     "doc_number": "DocID 2177 (probable)",
+     "revision": "revision not shown (probably Rev 6, current)",
+     "date": "unknown",
+     "url": "https://www.digikey.com/en/htmldatasheets/production/111320/0/0/1/mc33078",
+     "url_kind": "distributor_mirror",
+     "notes": "DigiKey's HTML rendering of the ST datasheet. A mirror also exists at digikey.hk/htmldatasheets/production/111320/0/0/1/mc33078.html.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "MC33078 Low noise dual operational amplifier (STMicroelectronics)",
+     "doc_number": "DocID 2177 (probable)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetspdf.com/pdf/1495629/STMicroelectronics/MC33078/1",
+     "url_kind": "third_party_mirror",
+     "notes": "Same ID (1495629) as the listed datasheet4u ST copy, so it is probably the same document. The 'Low noise dual operational amplifier' title matches the current ST datasheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "MC33078 datasheet, Pinout, application circuits Low Noise Dual Operational Amplifier",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://www.datasheetdir.com/STMICROELECTRONICS-MC33078+Operational-Amplifiers",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetdir's ST copy. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "title": "Datasheet Archive: ST MC33078 datasheets",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetarchive.com/st%20mc33078-datasheet.html",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetarchive index page for ST MC33078. It may hold several ST and SGS-Thomson editions, but none are shown in the summary.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -3572,6 +4602,20 @@
      "revision": "unknown",
      "date": "November 2012 (unconfirmed)",
      "changes": "Current ST datasheet. An older SGS-Thomson version exists. Revision-history contents not captured."
+    },
+    {
+     "vendor": "Motorola",
+     "doc_number": "MC33078/D",
+     "revision": "Rev 0",
+     "date": "1996",
+     "changes": "Per the search summary of the futurlec copy: '(c) Motorola, Inc. 1996, Rev 0'. This is Motorola's standalone 'DUAL/QUAD LOW NOISE OPERATIONAL AMPLIFIERS' datasheet (MC33078D/P, MC33079D/P). It lists +/-5 V to +/-18 V dual supply, 4.5 nV/rtHz, 16 MHz GBW, 7.0 V/us and a 36 V (VCC to VEE) maximum supply. It is the earliest standalone edition found. Earlier material from about 1990 would be in Motorola linear data books, not a /D sheet."
+    },
+    {
+     "vendor": "STMicroelectronics",
+     "doc_number": "DocID 2177",
+     "revision": "Rev 6",
+     "date": "November 2012",
+     "changes": "The current st.com datasheet ('Low noise dual operational amplifier'), marked 'This is information on a product in full production. November 2012'. Per the search summary, this revision changed the qualified status of the MC33078YDT (automotive) order code and made minor corrections throughout. Revs 1-5 are not dated. The earliest ST/SGS-Thomson editions are probably the alldatasheet 23287-23290 copies and the studylib SGS-Thomson copy."
     }
    ],
    "silicon_changes": [
@@ -3846,7 +4890,8 @@
      "https://gearspace.com/board/geekzone/1464976-headsup-ti-has-changed-ne5532-k-version-2024-gt-opax134-lhm6518.html",
      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100002186.md"
     ]
-   }
+   },
+   "revision_chain_summary": "Motorola MC33078/D: Rev 0 (1996) is now identified from the futurlec copy ('(c) Motorola, Inc. 1996, Rev 0'). Several more Motorola-branded copies were found (rf-microwave.com PDF, datasheet39 ID 467372, datasheet.company freescale.com path), but none shows its revision. MISSING: any Motorola edition after Rev 0 (1997-1999) and pre-1996 data-book editions.\n\nonsemi MC33078/D: Rev 1 (Feb 2001) -> Rev 2 (Jan 2002) -> [Rev 3 MISSING] -> Rev 4 (Sep 2003) -> Rev 5 (Apr 2005) -> [Rev 6, Rev 7 MISSING, about 2005-2008] -> Rev 8 (Jan 2009) -> Rev 9 (Nov 2011, NCV parts added) -> Rev 10 (Jul 2025, current). The http://www.onsemi.com/pub/Collateral/MC33078-D.PDF copy now uses the 'DATA SHEET www.onsemi.com' template, so it serves Rev 10 content. The already-listed https pub/Collateral entry is therefore probably Rev 10 too. Several copies without NCV in the title (yumpu, Rubix, datasheet4u 1495630, datasheetcatalog MC33078-D, alldatasheet 12018) are candidates for the missing Rev 3, 6 or 7, but none shows its revision.\n\nTI SLLS633: original (Oct 2004) -> A (Feb 2005) -> [B MISSING: date and copy not found] -> C (Nov 2006, current). No copy showing the original or Rev B header surfaced. RadioLocman di=224647 (a different ID from the listed di=303635) and alldatasheet 1809749 are new TI copies with the revision not shown. SLOS495 (MC33078-EP): original about Oct 2006; later revisions unknown.\n\nST MC33078: identified as DocID 2177, with Rev 6 dated November 2012 (current; MC33078YDT qualified status updated, minor corrections). MISSING: Revs 1-5 and their dates, and the SGS-Thomson-era edition date. Candidates: alldatasheet 23287/23288/23289/23290 and the studylib SGS-Thomson copy.\n\nUTC: nothing new.\n\nNote: the focus.ti.com archive seed is built from TI's standard legacy symlink pattern and was not seen in the search results. The onsemi http seed was seen."
   },
   {
    "id": "MUSES01",
@@ -10121,6 +11166,248 @@
      "url_kind": "product_page",
      "notes": "Distributor product overview seen in earlier-session search results.",
      "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "RC4580 Dual Audio Operational Amplifier datasheet (Rev. E)",
+     "doc_number": "SLOS412E",
+     "revision": "E",
+     "date": "APRIL 2003 – REVISED NOVEMBER 2024",
+     "url": "https://www.ti.com/lit/pdf/slos412",
+     "url_kind": "vendor_current",
+     "notes": "TI literature-number redirect. The search title reads '(Rev. E)'. It always serves the current revision, so it is not a stable archive of Rev E.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "RC4580-Q1 Dual Audio Operational Amplifier",
+     "doc_number": "SLOS707A",
+     "revision": "A",
+     "date": "DECEMBER 2010 – REVISED JULY 2012",
+     "url": "https://datasheet.octopart.com/RC4580QPWRQ1-Texas-Instruments-datasheet-11812388.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Octopart datasheet cache. The search title shows the header 'RC4580-Q1 www.ti.com SLOS707A –DECEMBER 2010–REVISED JULY 2012'.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "Dual Audio Operational Amplifier, RC4580-Q1 datasheet (Rev. A)",
+     "doc_number": "SLOS707A",
+     "revision": "A",
+     "date": "REVISED JULY 2012 (per Rev A header seen elsewhere)",
+     "url": "https://taoic.oss-cn-hangzhou.aliyuncs.com/sku/pdf/e7ed3f2a7908a8bf59b6752e623291add4d899ba.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Copy on a Chinese distributor's Aliyun OSS bucket (taoic). The search title says Rev. A, but the header text was not shown.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "RC4580-Q1 Datasheet(PDF) - Texas Instruments",
+     "doc_number": "SLOS707 (revision not shown)",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/463698/TI1/RC4580-Q1.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Alldatasheet copy of the RC4580-Q1 datasheet. The revision is not shown in the search summary.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "RC4580-Q1 data sheet, product information and support",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.ti.com/product/RC4580-Q1",
+     "url_kind": "product_page",
+     "notes": "TI product folder for the automotive RC4580-Q1. It links the current SLOS707 revision.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "RC4580 (Rev. C",
+     "doc_number": "SLOS412C",
+     "revision": "C (per search title)",
+     "date": "APRIL 2003 – REVISED MARCH 2004 (Rev C header seen on sibling Octopart copies with the same 153412 id)",
+     "url": "https://datasheet.octopart.com/RC4580-Texas-Instruments-datasheet-153412.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Octopart cache under the bare 'RC4580' part name. It has the same datasheet id (153412) as the known Rev C copies filed under RC4580IPWR and RC4580ID. The search title reads 'RC4580 (Rev. C'.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "RC4580 Datasheet Index: Compare All Manufacturers | Datasheet4U",
+     "doc_number": "SLOS412 (revision not shown)",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheetspdf.com/datasheet/RC4580.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Index page on datasheetspdf.com (Datasheet4U network) for RC4580. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "NJM4580CG Datasheet(PDF) - New Japan Radio",
+     "doc_number": "NJM4580 (CG variant listing)",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1475568/NJRC/NJM4580CG.html",
+     "url_kind": "third_party_mirror",
+     "notes": "372 KB and 7 pages, compared with 248 KB and 5 pages for the older alldatasheet NJM4580 entries (7451/7454). The alldatasheet id is much higher, so this is probably a later, longer edition (a guess only). The Ver. date is not shown in the search summary.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "NJM4580M Datasheet(PDF) - New Japan Radio",
+     "doc_number": "NJM4580",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7453/NJRC/NJM4580M.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Part of the early alldatasheet NJRC upload series (ids 7451-7457). These may be the same file as 7451 (NJM4580). The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "NJM4580L Datasheet(PDF) - New Japan Radio",
+     "doc_number": "NJM4580",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7454/NJRC/NJM4580L.html",
+     "url_kind": "third_party_mirror",
+     "notes": "248 KB, 5 pages, the same size as the 7451 NJM4580 entry. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "NJM4580E Datasheet(PDF) - New Japan Radio",
+     "doc_number": "NJM4580",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7455/NJRC/NJM4580E.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Early alldatasheet NJRC upload series. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "NJM4580MD Datasheet(PDF) - New Japan Radio",
+     "doc_number": "NJM4580",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7457/NJRC/NJM4580MD.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Early alldatasheet NJRC upload series. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "NJM4580 DUAL OPERATIONAL AMPLIFIER (New Japan Radio)",
+     "doc_number": "NJM4580",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheet4u.com/datasheet/New-Japan-Radio/NJM4580-455110",
+     "url_kind": "third_party_mirror",
+     "notes": "Alternative datasheet4u URL form for id 455110. This is likely the same file as the known /datasheets/New-Japan-Radio/NJM4580/455110 entry. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "NJM4580L Datasheet pdf - DUAL OPERATIONAL AMPLIFIER - New Japan Radio",
+     "doc_number": "NJM4580",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/N/J/M/4/NJM4580L.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "Datasheetcatalog page for NJM4580L. datasheetcatalog mostly holds early-2000s copies, but the revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "NJM4580 datasheet - Operational Amplifier",
+     "doc_number": "NJM4580",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/237/NJM4580.php",
+     "url_kind": "third_party_mirror",
+     "notes": "Second digchip entry, separate from the known /2/330/ entry. It may be a different edition. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "Digchip NJM4580 download",
+     "doc_number": "NJM4580",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.digchip.com/datasheets/download_datasheet.php?id=1078154&part-number=NJM4580",
+     "url_kind": "third_party_mirror",
+     "notes": "Digchip direct-download link (id 1078154). The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM4580 Datasheet by NJR Corporation/NJRC | Digi-Key Electronics",
+     "doc_number": "NJM4580_E",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.digikey.com/htmldatasheets/production/1428088/0/0/1/njm4580.html",
+     "url_kind": "distributor_mirror",
+     "notes": "DigiKey HTML rendering of the NJR English datasheet, attributed to 'NJR Corporation/NJRC', so it is probably the 2012-era NJR edition. The Ver. date is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Nisshinbo Micro Devices",
+     "title": "NJM4580D Nisshinbo Micro Devices Inc. | DigiKey",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM4580D/673772",
+     "url_kind": "product_page",
+     "notes": "DigiKey product page for NJM4580D (DIP8). It links the datasheet DigiKey currently holds.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Nisshinbo Micro Devices",
+     "title": "NJM4580L Nisshinbo Micro Devices Inc. | DigiKey",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.digikey.com/en/products/detail/njr-corporation-njrc/NJM4580L/10671733",
+     "url_kind": "product_page",
+     "notes": "DigiKey product page for NJM4580L (SIP8). The URL slug still says njr-corporation-njrc.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Nisshinbo Micro Devices",
+     "title": "NJM4580R-TE2 Nisshinbo Micro Devices (RS Components)",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://at.rs-online.com/web/p/operationsverstarker/2448616",
+     "url_kind": "product_page",
+     "notes": "RS product page for NJM4580R-TE2 (MSOP8). RS product pages usually link a docs.rs-online.com datasheet copy, but the edition was not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Nisshinbo Micro Devices",
+     "title": "NJM4580M-D NISSHINBO, Op Amp, 15MHz, 8-Pin DMP (RS Components)",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://sg.rs-online.com/web/p/op-amps/0535155",
+     "url_kind": "product_page",
+     "notes": "RS product page for the D-rank NJM4580M-D. RS stock no. 0535155 is an old number, so its datasheet link may be an older NJR edition (the known Ver.2012-02-24 RS copy may belong to this listing). Not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "Datasheet Archive: NJM4580, NE5532 datasheets",
+     "doc_number": "NJM4580",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.datasheetarchive.com/NJM4580,%20ne5532-datasheet.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Datasheetarchive search/landing page listing NJM4580 datasheets. It may hold older scanned JRC catalog pages. No revision is shown.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -10345,6 +11632,8 @@
     "SLOS707"
    ],
    "archive_seed_urls": [
+    "http://focus.ti.com/lit/ds/symlink/rc4580-q1.pdf",
+    "http://focus.ti.com/lit/ds/symlink/rc4580.pdf",
     "http://semicon.njr.co.jp/eng/PDF/NJM4580_E.pdf",
     "http://semicon.njr.co.jp/jpn/PDF/NJM4580_J.pdf",
     "http://www.e-ele.net/NJM4580.pdf",
@@ -10377,6 +11666,7 @@
     "https://www.ti.com/lit/ds/symlink/rc4580-q1.pdf",
     "https://www.ti.com/lit/ds/symlink/rc4580.pdf",
     "https://www.ti.com/lit/gpn/RC4580",
+    "https://www.ti.com/lit/pdf/slos412",
     "https://www.ti.com/product/RC4580"
    ],
    "open_questions": [
@@ -10532,7 +11822,8 @@
      "https://nabe.adiary.jp/opamp-compare",
      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100001717.md"
     ]
-   }
+   },
+   "revision_chain_summary": "TI SLOS412 (RC4580), oldest to newest: original April 2003 (no copy found) -> A (not found) -> B (not found) -> C (Revised March 2004; Octopart 153412 copies, E2E copy, and a new Octopart 'RC4580' copy titled Rev. C) -> D (Revised November 2014; Mouser, mikroe, Octopart and others) -> E (Revised November 2024; ti.com, plus the new ti.com/lit/pdf/slos412 redirect). A search for 'SLOS412A' OR 'SLOS412B' returned only the C/D/E copies, so no copy of the original, Rev A or Rev B was found. They may never have been published between April 2003 and March 2004, or they may survive only in Wayback captures of focus.ti.com/lit/ds/symlink/rc4580.pdf from 2003-2004 (that seed URL follows the TI URL pattern and was not seen in search results). Still missing: the original, A and B.\n\nTI SLOS707 (RC4580-Q1): original December 2010 (no copy found) -> A (Revised July 2012; confirmed by the new Octopart RC4580QPWRQ1 copy 11812388, and a taoic/aliyuncs copy titled Rev. A). No revision later than A was found; ti.com symlink still serves Rev A. Still missing: the December 2010 original.\n\nJRC/NJR/Nisshinbo NJM4580 (Japanese and English): Ver.2003-03-13 (JP; Marutsu, op316, e-ele, confirmed again this round) -> Ver.2012-02-24 (JP; RS) -> Ver.2012-09-14 (EN on Mouser, JP on Akizuki) -> 20250303 (Nisshinbo EN/JP). Searches for Ver. editions before 2003, for 2014/2016/2018 editions, and for editions between 2012 and 2025 (NJR-to-Nisshinbo transition, 2019-2024) found nothing. New copies with the edition not shown: the alldatasheet NJRC series 7453/7454/7455/7457 (5 pages, 248 KB, likely the same early edition as 7451); alldatasheet 1475568 NJM4580CG (7 pages, 372 KB, probably a later and longer edition; worth checking whether it is a 2012-2022 NJR edition); digchip 237 and download id 1078154; datasheetcatalog NJM4580L; the DigiKey htmldatasheet; and RS product pages. Still missing: any pre-2003 JRC edition (the 1990s JRC data book), an English edition before 2012-09-14, and any NJR/Nisshinbo edition between 2012-09-14 and 2025-03-03. Next steps: check the edition inside the alldatasheet 1475568 and digchip 237 copies, and query Wayback for the njr.com / semicon.njr.co.jp seeds."
   },
   {
    "id": "OPA1611",
@@ -26393,27 +27684,83 @@
    ],
    "silicon_changes": [
     {
+     "kind": "package-or-assembly",
      "vendor": "Analog Devices (Linear Technology)",
-     "when": "PCN 21_0060 (11 Nov 2021; Rev A and B exist), PCN 22_0241 (Rev A), PCN 24_0234 and PCN 24_0236 (8 Oct 2024)",
+     "when": "PCN 21_0060, 11 Nov 2021 (Rev -, Rev A and Rev B exist)",
      "part_numbers_affected": [
-      "LT1363 (per PCN 21_0060 summary)",
-      "LT1364 (per PCN 21_0060, 22_0241, 24_0234, 24_0236 summaries)"
+      "LT1363CS8 (incl. #PBF / #TRPBF)",
+      "LT1364CS8 (incl. #PBF / #TRPBF)"
      ],
-     "identification": "Unknown. The change type was not retrieved.",
-     "summary": "Search summaries say LT1363/LT1364 appear in the affected-parts lists of four ADI PCNs: 21_0060, 22_0241, 24_0234 and 24_0236. The change descriptions, whether wafer fab, assembly, wire or mold compound, were not visible in any search result. This is a watch item only: it is not established that any of them is a silicon or process change. The ADI 8-K (January 2018) announced closure of the ex-LTC Hillview (Milpitas) fab, with production moving to Camas, Wilmington, Limerick and external foundries. No retrieved source ties LT1364 to that transfer.",
-     "spec_deltas": [],
-     "audio_impact": "Unknown",
-     "compatibility_risk": "low - no evidence of an electrical change; flagged for follow-up because the PCN contents are unread.",
+     "identification": "Older parts have an ink top mark and newer parts have a laser top mark (8-SOICN). The top-mark text is still '1363' or '1364'.",
+     "summary": "Marking only, not a die change. On legacy Linear 8-SOICN products the top mark changed from ink to laser. Both marking styles are genuine. This resolves part of the completeness-sweep watch item.",
+     "spec_deltas": [
+      {
+       "parameter": "Top-side mark method",
+       "before": "ink",
+       "after": "laser"
+      }
+     ],
+     "audio_impact": "None expected (marking only).",
+     "compatibility_risk": "low - marking change only; same die and package.",
      "sources": [
       "https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_-_Form.pdf",
       "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5335/PCN_21_0060_Rev_A.pdf",
-      "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5781/PCN_22_0241_Rev_A.pdf",
-      "https://www.mouser.com/PCN/ADI_PCN_24_0234.pdf",
-      "https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf",
-      "https://www.sec.gov/Archives/edgar/data/0000006281/000119312518024527/d525969d8k.htm"
+      "https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf"
      ],
-     "confidence": "low",
-     "found_by": "completeness sweep"
+     "confidence": "medium",
+     "verification": "Search summary of PCN 21_0060 Rev B lists LT1363CS8#TRPBF and LT1364CS8. The ink-to-laser description comes from the LT1361-family pass for the same PCN. The PDF itself was not read."
+    },
+    {
+     "kind": "package-or-assembly",
+     "vendor": "Analog Devices (Linear Technology)",
+     "when": "PCN 22_0241 (Rev - and Rev A; Rev A dated 18 Dec 2023 per search summary). Effective from date code 2242 (2022 week 42).",
+     "part_numbers_affected": [
+      "LT1364 (variants not itemised; per PCN 22_0241 affected-parts summary)"
+     ],
+     "identification": "By date code: parts coded 2242 or later use the new epoxy. There is no visible marking difference.",
+     "summary": "Assembly material change. The epoxy formulation changed from Henkel 8290 to Henkel 8290A (Loctite Ablestik 8290 is a die-attach paste). ADI states no impact to fit, form or function, with improved reliability, and the material declaration is updated. The die and wafer process are unchanged.",
+     "spec_deltas": [
+      {
+       "parameter": "Die-attach epoxy",
+       "before": "Henkel 8290",
+       "after": "Henkel 8290A"
+      }
+     ],
+     "audio_impact": "None expected (assembly material only; no electrical specification change).",
+     "compatibility_risk": "low - assembly material change qualified to industry standards; same die.",
+     "sources": [
+      "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5781/PCN_22_0241_Rev_A.pdf",
+      "https://www.mouser.com/PCN/ADI_PCN_22_0241.pdf"
+     ],
+     "confidence": "medium",
+     "verification": "WebSearch summaries of PCN 22_0241 give the Henkel 8290 to 8290A epoxy change, the 2242 date-code cut-in and 'no impact to fit, form, function'. A separate summary lists LT1361, LT1362 and LT1364 among the affected LT13xx parts. The PDF itself was not read."
+    },
+    {
+     "kind": "package-or-assembly",
+     "vendor": "Analog Devices (Linear Technology)",
+     "when": "October 2024 (PCN 24_0234 Rev - and PCN 24_0236 Rev -; 8 Oct 2024 per sweep summary)",
+     "part_numbers_affected": [
+      "LT1364 (per PCN 24_0234 / 24_0236 summaries)"
+     ],
+     "identification": "Older parts carry the trace code on the bottom of the package. Newer parts carry it in the top-side laser mark. The change is identified by date code.",
+     "summary": "Marking only, not a die change. The bottom-side trace-code mark moved into the top-side laser mark, to standardise marking across ADI packages and for environmental reasons. ADI states no impact to form, fit, function or reliability. PCN 24_0234 and PCN 24_0236 are companion notices for the same change on different package groups.",
+     "spec_deltas": [
+      {
+       "parameter": "Trace code location",
+       "before": "package bottom",
+       "after": "top-side laser mark"
+      }
+     ],
+     "audio_impact": "None expected (marking only).",
+     "compatibility_risk": "low - marking change only.",
+     "sources": [
+      "https://www.mouser.com/PCN/ADI_PCN_24_0234.pdf",
+      "https://www.farnell.com/datasheets/4419216.pdf",
+      "https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf",
+      "https://www.analog.com/media/en/PCN/ADI_PCN_24_0236_Rev_-_Form.pdf"
+     ],
+     "confidence": "medium",
+     "verification": "WebSearch summaries confirm that PCN 24_0234 moves the bottom trace code to the top-side laser mark, with no form, fit, function or reliability impact. A search for LT1364 plus the trace-code PCNs returned 24_0234 and 24_0236 together with the LT1364 product pages. The per-part listing was not read."
     }
    ],
    "counterfeit_notes": "No LT1363/4/5-specific counterfeit, PCN or die-change reports were found by web search (2026-09). The 'genuine Linear parts carry a distinctive white print' hint traces to new_western_elec's October 2019 post on fake OPA627/OPA637/OPA2604/MUSES01 parts; it is not an LT1364-specific statement (low confidence). That post calls slew-rate measurement the most effective fake test. Practical checks: SO-8 marking should read '1364' per the datasheet; a genuine dual draws about 12.6 mA quiescent at +/-15 V (6.3 mA per amplifier typ, 15 mA max); a square-wave test at AV = -2 should show roughly 1000 V/us (750 min), which a remarked slow bipolar dual would fail. Buy from ADI or authorised distributors (DigiKey, Mouser, Arrow) or established Japanese retailers such as Akizuki. #PBF/#TRPBF suffixes are ordering variants, not a sign of a fake.",
@@ -26497,7 +27844,9 @@
     "refuted_claims": [
      "Discovery hazard hint 'No die change after ADI took over Linear': no web source, PCN or die-history statement found (searched PCN/die change/counterfeit for LT1364). Treated as unsupported; not recorded as a silicon change.",
      "Discovery hint 'genuine Linear parts have a distinctive white silk print' as an LT1364-specific identifier: no LT1364-specific source found; it traces only to a general 2019 counterfeit post about other op-amps (kept in counterfeit_notes as low confidence).",
-     "Search-summary wording that the 13645fa Rev A datasheet is 'dated 1994' or is 'the original 1994' document: 1994 is the copyright year; the Rev A print code is LT/TP 0400 (April 2000)."
+     "Search-summary wording that the 13645fa Rev A datasheet is 'dated 1994' or is 'the original 1994' document: 1994 is the copyright year; the Rev A print code is LT/TP 0400 (April 2000).",
+     "[change register] The completeness-sweep watch item (LT1363/LT1364 listed in PCNs 21_0060, 22_0241, 24_0234 and 24_0236, change type unknown) is replaced by the three package-or-assembly entries above. All four PCNs were identified: ink-to-laser mark, die-attach epoxy 8290 to 8290A, and trace code moved to the top mark (two PCNs). None is a die or wafer-process change.",
+     "[change register] The sweep entry implied a possible fab transfer via the Hillview closure (ADI 8-K, Jan 2018, https://www.sec.gov/Archives/edgar/data/0000006281/000119312518024527/d525969d8k.htm). No fab-transfer entry is created because no PCN was found that ties LT1363/LT1364 to a wafer-fab move. PCN 19_0067 covers 0.35 um BCD products moved from Hillview to Vanguard. PCN 25_0091, the Camas bipolar qualification (June 2025), names AD624, AD712 and AD8221 as qualification vehicles, not LT136x. This is unconfirmed rather than refuted."
     ],
     "corrections": [
      "Reputation: the 'much greater transparency and less grain' quote is a comparison with the OPA2134 (Head-Fi), not the OPA627; the summary and descriptors now say so. Added the Head-Fi view that OPA6x7 parts 'lose pace and rhythm' versus the fast, detailed LT1364, and the 'equally good, different flavours' OPA627 comparison. The AD8610 grouping is flagged as not re-confirmed.",
@@ -42793,55 +44142,376 @@
   {
    "id": "AD8512",
    "name": "AD8510 / AD8512 (ADI precision JFET-input dual)",
-   "tagline": "",
-   "technology": "Low-noise, low-bias, wide-bandwidth precision JFET-input dual",
+   "tagline": "ADI's 8 MHz JFET-input dual with 8 nV/√Hz noise and 0.0005% THD+N. A Chinese DIY forum post compares its sound to the AD823 and says it suits headphone amps.",
+   "technology": "Precision JFET-input op-amp: very low noise (8 nV/√Hz at 1 kHz), low input bias current, 8 MHz GBW, 20 V/µs slew, dual supply ±5 V to ±15 V. Comes as single (AD8510), dual (AD8512) and quad (AD8513).",
    "manufacturers": [
     "Analog Devices"
    ],
    "part_numbers": [
     {
+     "pn": "AD8510",
+     "channels": 1,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "production (unconfirmed)",
+     "notes": "Single. Covered by the shared AD8510/AD8512/AD8513 datasheet. Recalled from memory, not web-confirmed: A and B offset grades in SOIC-8 (R) and MSOP-8 (RM), e.g. AD8510ARZ, AD8510ARMZ, AD8510BRZ."
+    },
+    {
      "pn": "AD8512",
-     "channels": 0,
+     "channels": 2,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "production",
+     "notes": "Dual; this is the catalogue's lead part. ADI lists its status as Production. AD8512ARZ is confirmed (Octopart datasheet link). AD8512ARMZ (MSOP-8) and AD8512BRZ (B grade, tighter Vos) are recalled from memory and unconfirmed. Older non-RoHS parts without the Z suffix (AD8512AR/ARM/BR) are probably obsolete (unconfirmed)."
+    },
+    {
+     "pn": "AD8513",
+     "channels": 4,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "production (unconfirmed)",
+     "notes": "Quad. Added to the datasheet later, because early editions are titled 'AD8510/AD8512' only. Packages are SOIC-14 and TSSOP-14 (from memory, unconfirmed)."
+    },
+    {
+     "pn": "AD8512-EP",
+     "channels": 2,
      "vendors": [
       "Analog Devices"
      ],
      "status": "unknown",
-     "notes": ""
+     "notes": "Enhanced Product (defense/aerospace flow) version of the dual, with its own separate datasheet (radiolocman listing). Status not checked."
     }
    ],
-   "lineage": [],
-   "key_specs": [],
+   "lineage": [
+    {
+     "vendor": "Analog Devices",
+     "role": "originator / sole source",
+     "period": "early 2000s to present (introduction year not confirmed)",
+     "notes": "The datasheet reached Rev. K in January 2010. The earliest editions covered only the AD8510/AD8512 (RS mirror title); the AD8513 quad was added later."
+    },
+    {
+     "vendor": "Analog Devices",
+     "role": "wafer-fab change (PCN 25_0156)",
+     "period": "2025",
+     "notes": "PCN 25_0156 lists AD8510/AD8512/AD8513 part numbers. It moves production to an existing qualified process at ADI's Camas, WA fab to secure supply. The previous fab is not stated in the search summaries."
+    }
+   ],
+   "key_specs": [
+    {
+     "parameter": "Input voltage noise density",
+     "value": "8 nV/√Hz typ",
+     "condition": "f = 1 kHz",
+     "source": "ADI datasheet Rev. K (ad8510_8512_8513.pdf), via web search summary"
+    },
+    {
+     "parameter": "Input voltage noise density",
+     "value": "7.6 nV/√Hz typ",
+     "condition": "f = 10 kHz",
+     "source": "ADI datasheet / product page, via web search summary"
+    },
+    {
+     "parameter": "Gain-bandwidth product",
+     "value": "8 MHz",
+     "condition": "typ",
+     "source": "ADI datasheet Rev. K, via web search summary"
+    },
+    {
+     "parameter": "Slew rate",
+     "value": "20 V/µs",
+     "condition": "typ",
+     "source": "ADI datasheet Rev. K, via web search summary"
+    },
+    {
+     "parameter": "THD+N",
+     "value": "0.0005%",
+     "condition": "1 kHz, G = +1, RL = 2 kΩ",
+     "source": "ADI datasheet Rev. K, via web search summary"
+    },
+    {
+     "parameter": "Settling time",
+     "value": "500 ns",
+     "condition": "to 0.1%",
+     "source": "ADI datasheet Rev. K front page, via web search summary"
+    },
+    {
+     "parameter": "Offset voltage",
+     "value": "400 µV max",
+     "condition": "front-page figure (grade not stated in summary)",
+     "source": "ADI datasheet Rev. K front page, via web search summary"
+    },
+    {
+     "parameter": "Offset drift (TCVos)",
+     "value": "1 µV/°C typ",
+     "condition": "",
+     "source": "ADI datasheet Rev. K front page, via web search summary"
+    },
+    {
+     "parameter": "Input bias current",
+     "value": "25 pA typ",
+     "condition": "front-page figure (JFET input; rises steeply with temperature)",
+     "source": "ADI datasheet Rev. K front page, via web search summary"
+    },
+    {
+     "parameter": "Supply voltage",
+     "value": "±5 V to ±15 V",
+     "condition": "dual-supply operation",
+     "source": "ADI datasheet Rev. K front page, via web search summary"
+    },
+    {
+     "parameter": "Supply current",
+     "value": "2.5 mA per amplifier",
+     "condition": "AD8510/AD8512, −40 °C to +125 °C (limit)",
+     "source": "ADI datasheet, via web search summary"
+    }
+   ],
    "reputation": {
-    "summary": "A Chinese enthusiast thread on erji.net ('谈谈自己用过的一些运放', op-amps I have used) describes it as sounding almost identical to the AD823, with more output current and lower supply current. The poster finds it slightly harsh but 'not unpleasant and equally appealing', and considers it viable for headphone amps.",
-    "sonic_descriptors": [],
-    "typical_uses": [],
-    "caveats": [],
+    "summary": "This is a niche, tier-C reputation. The main praise found is a single post in a Chinese erji.net thread ('谈谈自己用过的一些运放', op-amps I have used). The poster says it sounds almost the same as the AD823, with more output current and lower supply current. They call it slightly harsh but 'not unpleasant and equally appealing', and think it works in headphone amps. No wider consensus in Western audio forums was confirmed in this pass.",
+    "sonic_descriptors": [
+     "close to AD823 (per one erji.net poster)",
+     "slightly harsh / forward but not unpleasant (same source)"
+    ],
+    "typical_uses": [
+     "op-amp swaps in DIY headphone amplifiers (erji.net report)",
+     "general low-noise JFET-input audio gain stages (inferred from specs)"
+    ],
+    "caveats": [
+     "Praise comes from a single forum source and should not be generalised.",
+     "Needs at least ±5 V (about 10 V total). The output is not rail-to-rail.",
+     "Sold only in SMD packages (SOIC/MSOP/TSSOP), so DIP sockets need an adapter.",
+     "JFET input bias current roughly doubles for every 10 °C rise, so it is best kept away from hot spots."
+    ],
     "sources": [
      "http://www.erji.net/forum.php?mod=viewthread&tid=2120812",
      "https://www.analog.com/en/products/ad8512.html"
     ]
    },
-   "datasheets": [],
-   "revision_history": [],
-   "silicon_changes": [],
-   "counterfeit_notes": "",
-   "alternatives": [],
+   "datasheets": [
+    {
+     "vendor": "Analog Devices",
+     "title": "AD8510/AD8512/AD8513: Precision, Very Low Noise, Low Input Bias Current, Wide Bandwidth JFET Operational Amplifiers",
+     "doc_number": "AD8510_8512_8513",
+     "revision": "K",
+     "date": "2010-01 (listed as 01/21/2010 by radiolocman)",
+     "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8510_8512_8513.pdf",
+     "url_kind": "vendor_current",
+     "notes": "The current ADI edition; the search result title reads 'AD8510/AD8512/AD8513 (Rev. K)'. No newer revision was found as of Sep 2026.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Analog Devices",
+     "title": "AD8510/AD8512/AD8513 datasheet (short link)",
+     "doc_number": "AD8510_8512_8513",
+     "revision": "K (current, resolves to latest)",
+     "date": "2010-01",
+     "url": "https://www.analog.com/AD8510/datasheet",
+     "url_kind": "vendor_current",
+     "notes": "ADI short-link redirect to the current datasheet.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Analog Devices",
+     "title": "AD8512 product page",
+     "doc_number": "AD8512",
+     "revision": "n/a",
+     "date": "",
+     "url": "https://www.analog.com/en/products/ad8512.html",
+     "url_kind": "product_page",
+     "notes": "Status listed as Production. Sibling pages exist: https://www.analog.com/en/products/ad8510.html and https://www.analog.com/en/products/ad8513.html",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Analog Devices (mirror by radiolocman)",
+     "title": "Datasheet AD8510, AD8512, AD8513 Analog Devices, Revision: K",
+     "doc_number": "AD8510_8512_8513",
+     "revision": "K",
+     "date": "2010-01-21 (as listed)",
+     "url": "https://www.radiolocman.com/datasheet/pdf.html?di=170505",
+     "url_kind": "third_party_mirror",
+     "notes": "Mirror of Rev. K.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Analog Devices (mirror by radiolocman)",
+     "title": "Datasheet AD8510, AD8512, AD8513 Analog Devices, Revision: K",
+     "doc_number": "AD8510_8512_8513",
+     "revision": "K",
+     "date": "2010-01",
+     "url": "https://www.radiolocman.com/datasheet/pdf.html?di=121323",
+     "url_kind": "third_party_mirror",
+     "notes": "Second radiolocman listing, also labelled Rev. K.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Analog Devices (mirror by RS Components)",
+     "title": "AD8510/AD8512 Precision, Very Low Noise, Low Input Bias Current, Wide Bandwidth JFET Operational Amplifiers",
+     "doc_number": "AD8510_8512",
+     "revision": "unknown (early edition that predates the AD8513, going by its title)",
+     "date": "unknown",
+     "url": "https://docs.rs-online.com/17b1/0900766b801ce1ae.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The title names only the AD8510/AD8512, so this frozen copy is likely an older revision from before the quad was added. The revision letter was not visible in the search summary.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Analog Devices (mirror by Octopart)",
+     "title": "AD8510/AD8512/AD8513 (AD8512ARZ datasheet)",
+     "doc_number": "AD8510_8512_8513",
+     "revision": "unknown (edition that includes the AD8513)",
+     "date": "unknown",
+     "url": "https://datasheet.octopart.com/AD8512ARZ-Analog-Devices-datasheet-9617219.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Revision letter not shown in the search summary.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Analog Devices (mirror by alldatasheet)",
+     "title": "AD8512 Datasheet (PDF)",
+     "doc_number": "AD8510_8512 / AD8510_8512_8513",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/83236/AD/AD8512.html",
+     "url_kind": "third_party_mirror",
+     "notes": "The low alldatasheet ID suggests an early upload, possibly an old revision. Revision unconfirmed. The AD8510 copy is at https://www.alldatasheet.com/datasheet-pdf/pdf/83235/AD/AD8510.html",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Analog Devices (Internet Archive)",
+     "title": "ANALOG DEVICES AD8510/AD8512/AD8513 handbook1",
+     "doc_number": "AD8510_8512_8513",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://archive.org/details/manuallib-id-2621082",
+     "url_kind": "archive",
+     "notes": "archive.org copy (from manuallib) of an edition that includes the AD8513. Revision letter not known.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Analog Devices (mirror by radiolocman)",
+     "title": "Datasheet AD8512-EP Analog Devices",
+     "doc_number": "AD8512-EP",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/pdf.html?di=166159",
+     "url_kind": "third_party_mirror",
+     "notes": "Separate datasheet for the Enhanced Product dual. The vendor URL was not confirmed.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Analog Devices (mirror by datasheet4u)",
+     "title": "AD8512 Datasheet",
+     "doc_number": "AD8510_8512_8513",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/Analog-Devices/AD8512/1088524",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision not shown.",
+     "confidence": "medium"
+    }
+   ],
+   "revision_history": [
+    {
+     "vendor": "Analog Devices",
+     "doc_number": "AD8510_8512_8513",
+     "revision": "K",
+     "date": "2010-01",
+     "changes": "Latest edition. The change list from Rev. J was not retrieved."
+    },
+    {
+     "vendor": "Analog Devices",
+     "doc_number": "AD8510_8512 (early title)",
+     "revision": "early edition (letter unknown)",
+     "date": "unknown (early 2000s)",
+     "changes": "Covered only the AD8510/AD8512 (RS mirror title). A later revision added the AD8513 quad. Revisions 0 through J exist by implication, but their dates are unconfirmed."
+    }
+   ],
+   "silicon_changes": [
+    {
+     "vendor": "Analog Devices",
+     "when": "2025 (PCN 25_0156 Rev. -)",
+     "part_numbers_affected": [
+      "AD8510",
+      "AD8512",
+      "AD8513"
+     ],
+     "identification": "Not established. The search summaries did not show a date-code or trace-code cutover, so check the PCN's effective date and date codes.",
+     "summary": "Wafer-fab change: production of the listed AD8510/AD8512/AD8513 part numbers uses an existing qualified process at ADI's Camas, WA fab to ensure continuous supply. ADI says it expects no impact on fit, form, function or reliability. The datasheet was not revised (still Rev. K).",
+     "spec_deltas": [],
+     "audio_impact": "None claimed by ADI; datasheet limits are unchanged. As with any fab or process move, typical noise, bias-current and offset distributions could shift within those limits, which is not verified.",
+     "compatibility_risk": "low: same part numbers and datasheet limits, and the vendor states no fit/form/function change",
+     "sources": [
+      "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7560/ADI_PCN_25_0156_Rev_-_Form.pdf"
+     ],
+     "confidence": "medium",
+     "kind": "fab-or-process-transfer"
+    }
+   ],
+   "counterfeit_notes": "No specific counterfeit reports for this family were found in this pass. It is a mid-price SMD-only ADI JFET part, so relabelled or reclaimed units on marketplace listings are a generic risk. Buy from authorised distributors and check the ADI marking and date codes.",
+   "alternatives": [
+    "AD8620 (ADI dual JFET, AD8610 family)",
+    "ADA4610-2 (ADI low-noise precision RRO JFET dual)",
+    "AD823 (ADI JFET dual, which the erji.net source says sounds similar)",
+    "OPA1642 (TI JFET audio dual)",
+    "OPA2140 (TI precision JFET dual)",
+    "OPA2134 (TI audio FET dual)"
+   ],
    "ti_literature_numbers": [],
-   "archive_seed_urls": [],
+   "archive_seed_urls": [
+    "http://www.analog.com/static/imported-files/data_sheets/AD8510_8512_8513.pdf",
+    "https://datasheet.octopart.com/AD8512ARZ-Analog-Devices-datasheet-9617219.pdf",
+    "https://docs.rs-online.com/17b1/0900766b801ce1ae.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7560/ADI_PCN_25_0156_Rev_-_Form.pdf",
+    "https://www.analog.com/AD8510/datasheet",
+    "https://www.analog.com/en/products/ad8510.html",
+    "https://www.analog.com/en/products/ad8512.html",
+    "https://www.analog.com/en/products/ad8513.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8510_8512_8513.pdf"
+   ],
    "open_questions": [
-    "New family added by the completeness pass: everything except the praise evidence still needs research."
+    "Dates and change lists for Rev. 0 to Rev. J. Which revision added the AD8513? Which revisions do the RS, alldatasheet and Octopart copies hold?",
+    "PCN 25_0156 details: previous fab, effective and last-ship dates, how to tell Camas-built units apart (date or trace code), exact orderable list, and whether ADI hosts a copy on analog.com.",
+    "Will a post-PCN datasheet revision (Rev. L) appear with changed typicals?",
+    "Lifecycle status of the AD8510, AD8513, AD8512-EP and the older non-RoHS (non-Z) orderables.",
+    "Is there audio praise beyond the single erji.net thread (e.g. diyaudio, head-fi)?"
    ],
    "sources": [
     "http://www.erji.net/forum.php?mod=viewthread&tid=2120812",
-    "https://www.analog.com/en/products/ad8512.html"
+    "https://www.analog.com/en/products/ad8512.html",
+    "https://www.analog.com/en/products/ad8510.html",
+    "https://www.analog.com/en/products/ad8513.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8510_8512_8513.pdf",
+    "https://www.radiolocman.com/datasheet/pdf.html?di=170505",
+    "https://docs.rs-online.com/17b1/0900766b801ce1ae.pdf",
+    "https://datasheet.octopart.com/AD8512ARZ-Analog-Devices-datasheet-9617219.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7560/ADI_PCN_25_0156_Rev_-_Form.pdf",
+    "https://www.radiolocman.com/datasheet/pdf.html?di=166159"
    ],
    "verification": {
-    "status": "not-web-verified",
+    "status": "verified-with-corrections",
     "refuted_claims": [],
-    "corrections": [],
-    "unverified_urls": [],
-    "claims_confirmed": [],
-    "web_searches_used": 0
+    "corrections": [
+     "AD8512 channels changed from 0 to 2 and status from unknown to production (ADI product page).",
+     "Added family members AD8510 (single), AD8513 (quad; same datasheet) and AD8512-EP (separate Enhanced Product datasheet).",
+     "Added the current datasheet AD8510_8512_8513 Rev. K (Jan 2010) and mirrors, including an early 'AD8510/AD8512'-only edition on RS Components.",
+     "Added the silicon/process change PCN 25_0156 (2025, move to ADI's Camas, WA fab) for AD8510/AD8512/AD8513.",
+     "Filled key_specs from the Rev. K front page, and scoped the reputation to a single attributed erji.net source."
+    ],
+    "unverified_urls": [
+     "http://www.analog.com/static/imported-files/data_sheets/AD8510_8512_8513.pdf",
+     "https://www.analog.com/AD8510/datasheet"
+    ],
+    "claims_confirmed": [
+     "The current ADI datasheet is AD8510/AD8512/AD8513 Rev. K (https://www.analog.com/media/en/technical-documentation/data-sheets/ad8510_8512_8513.pdf).",
+     "Rev. K is listed as dated 01/21/2010 (https://www.radiolocman.com/datasheet/pdf.html?di=170505).",
+     "PCN 25_0156 lists AD8510/AD8512/AD8513 part numbers and describes using an existing qualified process at ADI's Camas, WA fab, with no expected fit/form/function/reliability impact (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7560/ADI_PCN_25_0156_Rev_-_Form.pdf).",
+     "Specs of 8 MHz GBW, 20 V/µs slew, 7.6 nV/√Hz at 10 kHz and 0.0005% THD+N (1 kHz, G=+1, RL=2k), with AD8512 status Production (https://www.analog.com/en/products/ad8512.html).",
+     "Front-page specs: 8 nV/√Hz at 1 kHz, 400 µV max Vos, 1 µV/°C TCVos, 25 pA Ib, 500 ns settling to 0.1%, ±5 V to ±15 V (https://www.analog.com/media/en/technical-documentation/data-sheets/ad8510_8512_8513.pdf).",
+     "An early edition titled 'AD8510/AD8512' (no AD8513) is mirrored by RS (https://docs.rs-online.com/17b1/0900766b801ce1ae.pdf).",
+     "An AD8512-EP datasheet exists (https://www.radiolocman.com/datasheet/pdf.html?di=166159)."
+    ],
+    "web_searches_used": 6
    },
    "tier": "C",
    "category": "jfet-input",
@@ -49903,15 +51573,16 @@
    ],
    "silicon_changes": [
     {
-     "vendor": "Analog Devices",
-     "when": "2021 (PCN 21_0060 Rev A; a Rev B also exists; exact dates not confirmed)",
+     "kind": "package-or-assembly",
+     "vendor": "Analog Devices (Linear Technology)",
+     "when": "PCN 21_0060, 11 Nov 2021 (Rev -, Rev A and Rev B exist)",
      "part_numbers_affected": [
       "LT1361CS8",
       "LT1361CS8#PBF",
       "LT1361CS8#TRPBF"
      ],
-     "identification": "Older parts have an ink top mark; newer parts have a laser top mark. This applies to 8-SOICN packages assembled at ADPG, UTAC and Carsem.",
-     "summary": "MARKING ONLY, NOT A DIE CHANGE: the top mark on legacy Linear 8-SOICN products changed from ink to laser. Included so that both marking styles are recognised as genuine.",
+     "identification": "Older parts have an ink top mark and newer parts have a laser top mark. This applies to 8-SOICN packages assembled at ADPG, UTAC and Carsem.",
+     "summary": "Marking only, not a die change. On legacy Linear 8-SOICN products the top mark changed from ink to laser. This entry records both marking styles as genuine. The completeness-sweep mention of 21_0060 is merged here.",
      "spec_deltas": [
       {
        "parameter": "Top-side mark method",
@@ -49920,22 +51591,51 @@
       }
      ],
      "audio_impact": "None expected (package marking only).",
-     "compatibility_risk": "low - marking change only; same die and package",
+     "compatibility_risk": "low - marking change only; same die and package.",
      "sources": [
+      "https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_-_Form.pdf",
       "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5335/PCN_21_0060_Rev_A.pdf",
       "https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf"
      ],
-     "confidence": "medium"
+     "confidence": "medium",
+     "verification": "WebSearch confirms that PCN 21_0060 Rev B (11 Nov 2021) is an ADI notice covering Linear 8-SOIC parts (LT1363CS8, LT1364CS8). The LT1361CS8 listing and the ink-to-laser detail come from an earlier pass. The PDF itself was not read."
     },
     {
-     "vendor": "Analog Devices",
-     "when": "October 2024 (PCN 24_0236 Rev -)",
+     "kind": "package-or-assembly",
+     "vendor": "Analog Devices (Linear Technology)",
+     "when": "PCN 22_0241 (Rev - and Rev A; Rev A dated 18 Dec 2023 per search summary). Effective from date code 2242.",
+     "part_numbers_affected": [
+      "LT1361 (variants not itemised)",
+      "LT1362 (variants not itemised)"
+     ],
+     "identification": "By date code: parts coded 2242 or later use the new epoxy. There is no visible marking difference.",
+     "summary": "Assembly material change. The epoxy formulation changed from Henkel 8290 to Henkel 8290A (Ablestik 8290 is a die-attach paste). ADI states no impact to fit, form or function, with improved reliability. The die and wafer process are unchanged.",
+     "spec_deltas": [
+      {
+       "parameter": "Die-attach epoxy",
+       "before": "Henkel 8290",
+       "after": "Henkel 8290A"
+      }
+     ],
+     "audio_impact": "None expected (assembly material only).",
+     "compatibility_risk": "low - assembly material change; same die.",
+     "sources": [
+      "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5781/PCN_22_0241_Rev_A.pdf",
+      "https://www.mouser.com/PCN/ADI_PCN_22_0241.pdf"
+     ],
+     "confidence": "medium",
+     "verification": "A WebSearch summary of PCN 22_0241 lists LT1361, LT1362 and LT1364 among the affected LT13xx/LT14xx op amps. It gives the change as Henkel 8290 to 8290A epoxy, effective from date code 2242, with no fit, form or function impact. The PDF itself was not read."
+    },
+    {
+     "kind": "package-or-assembly",
+     "vendor": "Analog Devices (Linear Technology)",
+     "when": "October 2024 (PCN 24_0236 Rev -, 8 Oct 2024; companion PCN 24_0234 Rev -)",
      "part_numbers_affected": [
       "LT1361CS8#PBF",
       "LT1362 (variants per search summary)"
      ],
-     "identification": "Older parts carry the trace code on the bottom of the package; newer parts carry it on the top-side laser mark.",
-     "summary": "MARKING ONLY, NOT A DIE CHANGE: the bottom-side trace-code marking moved into the top-side laser mark to standardise marking across ADI packages.",
+     "identification": "Older parts carry the trace code on the bottom of the package. Newer parts carry it in the top-side laser mark. The change is identified by date code.",
+     "summary": "Marking only, not a die change. The bottom-side trace-code mark moved into the top-side laser mark to standardise marking across ADI packages. ADI states no impact to form, fit, function or reliability. The completeness-sweep mentions of 24_0234 and 24_0236 are merged here.",
      "spec_deltas": [
       {
        "parameter": "Trace code location",
@@ -49944,31 +51644,15 @@
       }
      ],
      "audio_impact": "None expected (marking only).",
-     "compatibility_risk": "low - marking change only",
-     "sources": [
-      "https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf"
-     ],
-     "confidence": "medium"
-    },
-    {
-     "vendor": "Analog Devices (Linear Technology)",
-     "when": "PCN 21_0060 (11 Nov 2021), PCN 22_0241, PCN 24_0234, PCN 24_0236 (8 Oct 2024)",
-     "part_numbers_affected": [
-      "LT1361 (variants not itemised)"
-     ],
-     "identification": "Unknown. The change type was not retrieved.",
-     "summary": "Search summaries list LT1361 among the affected parts of the same four ADI PCNs as LT1364: 21_0060, 22_0241, 24_0234 and 24_0236. The nature of the changes was not retrieved. This is a watch item, not a confirmed die or process change.",
-     "spec_deltas": [],
-     "audio_impact": "Unknown",
-     "compatibility_risk": "low - no evidence of an electrical change; follow-up needed.",
+     "compatibility_risk": "low - marking change only.",
      "sources": [
       "https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf",
-      "https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf",
-      "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5781/PCN_22_0241_Rev_A.pdf",
-      "https://www.mouser.com/PCN/ADI_PCN_24_0234.pdf"
+      "https://www.analog.com/media/en/PCN/ADI_PCN_24_0236_Rev_-_Form.pdf",
+      "https://www.mouser.com/PCN/ADI_PCN_24_0234.pdf",
+      "https://www.farnell.com/datasheets/4419216.pdf"
      ],
-     "confidence": "low",
-     "found_by": "completeness sweep"
+     "confidence": "medium",
+     "verification": "WebSearch confirms that PCN 24_0234 and 24_0236 are the bottom-to-top trace-code marking migration, with no form, fit, function or reliability impact. The LT1361CS8#PBF listing comes from an earlier pass. The per-part list was not read."
     }
    ],
    "counterfeit_notes": "No counterfeit or remarking reports specific to the LT1360/LT1361/LT1362 were found. Genuine LT1361CS8 parts come in several marking styles: an ink top mark on older parts, a laser top mark after ADI PCN 21_0060, and, after PCN 24_0236 (Oct 2024), the trace code on top instead of the bottom. A marking-style difference alone does not prove a fake. Buy from ADI or authorized distributors; pulled or grey-market high-speed LTC parts are common on marketplace sites. A DIP-8 'LT1361' deserves scrutiny: the DIP-8 orderable LT1361CN8#PBF appears only in a part sitemap and is unconfirmed.",
@@ -50032,7 +51716,9 @@
    "verification": {
     "status": "verified-with-corrections",
     "refuted_claims": [
-     "Draft lineage said 'No die, fab or PCN change under ADI was found'. ADI PCN 21_0060 (ink to laser top mark, 8-SOICN) and PCN 24_0236 (Oct 2024, trace code moved to the top laser mark) both list LT1361CS8 variants. Both change marking only, not the die."
+     "Draft lineage said 'No die, fab or PCN change under ADI was found'. ADI PCN 21_0060 (ink to laser top mark, 8-SOICN) and PCN 24_0236 (Oct 2024, trace code moved to the top laser mark) both list LT1361CS8 variants. Both change marking only, not the die.",
+     "[change register] The completeness-sweep watch item (LT1361 in PCNs 21_0060, 22_0241, 24_0234 and 24_0236, change type unknown) was resolved and merged. 21_0060 is merged into the ink-to-laser entry, 24_0234 and 24_0236 into the trace-code entry, and 22_0241 becomes the new die-attach epoxy entry. None is a die or process change.",
+     "[change register] No fab-transfer entry is created. Searches found no PCN tying LT1360, LT1361 or LT1362 to the Hillview fab closure (PCN 19_0067 covers only 0.35 um BCD products moved to Vanguard) or to the 2025 Camas bipolar qualification (PCN 25_0091 names AD624, AD712 and AD8221)."
     ],
     "corrections": [
      "The LT1361/LT1362 datasheet file code '13612fa' was confirmed; its analog.com URL was promoted from an inferred archive seed to a high-confidence vendor_current datasheet entry.",
@@ -50944,63 +52630,326 @@
   },
   {
    "id": "NJM2043",
-   "name": "NJM2043 (New JRC low-noise dual, NJM4558 lineage)",
-   "tagline": "",
-   "technology": "Legacy JRC bipolar dual, an NJM4558-lineage low-noise part",
+   "name": "NJM2043 / NJM2043DD (New JRC low-noise dual, NJM4558 lineage)",
+   "tagline": "Low-noise NJM4558 derivative with twice the output current. The DD rank is noise-screened for RIAA use, and one Japanese listener praised its clear treble.",
+   "technology": "Bipolar dual op-amp built on New JRC's planar epitaxial process. It is an NJM4558 derivative with improved input and output stages, giving lower noise, about 2x the output current (25 mA), 6 V/us slew rate and 14 MHz unity-gain bandwidth. Marketed as a 'Low-noise dual pre-amplifier'.",
    "manufacturers": [
-    "New JRC / Nisshinbo Micro Devices"
+    "New Japan Radio (New JRC)",
+    "Nisshinbo Micro Devices (successor)"
    ],
    "part_numbers": [
     {
      "pn": "NJM2043",
-     "channels": 0,
+     "channels": 2,
      "vendors": [
       "New JRC / Nisshinbo Micro Devices"
      ],
-     "status": "unknown",
-     "notes": ""
+     "status": "discontinued",
+     "notes": "Base type. The datasheet lists DIP8, DMP8 and SIP8 package outlines. Distributors list it as discontinued."
+    },
+    {
+     "pn": "NJM2043D",
+     "channels": 2,
+     "vendors": [
+      "New JRC / Nisshinbo Micro Devices"
+     ],
+     "status": "discontinued",
+     "notes": "DIP8, standard (unscreened) grade. Distributor listings show it as discontinued. Stock may remain at brokers."
     },
     {
      "pn": "NJM2043DD",
-     "channels": 0,
+     "channels": 2,
      "vendors": [
       "New JRC / Nisshinbo Micro Devices"
      ],
+     "status": "discontinued (retail stock still sold, e.g. Akizuki)",
+     "notes": "DIP8, D-rank low-noise selected version, guaranteed VNI <= 1.4 uV (Rs=2.2 kOhm, RIAA). Same design as the NJM2043D, screened for noise. This is the version enthusiasts praise."
+    },
+    {
+     "pn": "NJM2043M",
+     "channels": 2,
+     "vendors": [
+      "New JRC / Nisshinbo Micro Devices"
+     ],
+     "status": "discontinued (likely; not individually confirmed)",
+     "notes": "DMP8 (SOP-8 type) surface-mount package."
+    },
+    {
+     "pn": "NJM2043L",
+     "channels": 2,
+     "vendors": [
+      "New JRC / Nisshinbo Micro Devices"
+     ],
+     "status": "discontinued (likely; not individually confirmed)",
+     "notes": "SIP8 package."
+    },
+    {
+     "pn": "NJM2043S",
+     "channels": 2,
+     "vendors": [
+      "Nisshinbo Micro Devices"
+     ],
      "status": "unknown",
-     "notes": ""
+     "notes": "Unconfirmed. Seen only on a Jotrin broker listing. The package is unknown and it is not in the Ver.2003-03-17 package table as summarised."
     }
    ],
-   "lineage": [],
-   "key_specs": [],
+   "lineage": [
+    {
+     "vendor": "New Japan Radio (New JRC)",
+     "role": "originator / manufacturer",
+     "period": "unknown introduction (datasheet Ver.2003-03-17 is the latest dated version found) to 2021",
+     "notes": "Designed as a low-noise version of the NJM4558, with improved input and output stages and about 2x the output current."
+    },
+    {
+     "vendor": "New Japan Radio (New JRC)",
+     "role": "discontinuation",
+     "period": "notice dated 2018-12-20",
+     "notes": "New JRC's 20 Dec 2018 EOL notice covers products hit by the termination of its 4-inch wafer line. One search summary said NJM2043 is on that list, but I could not see the list itself (medium/low confidence). Distributors now show the NJM2043D and NJM2043DD as discontinued."
+    },
+    {
+     "vendor": "Nisshinbo Micro Devices",
+     "role": "successor company (distributor listings)",
+     "period": "2022-",
+     "notes": "New JRC became part of Nisshinbo Micro Devices. Distributors (Octopart, Master Electronics, TrustedParts) list the NJM2043D and NJM2043DD under Nisshinbo as discontinued."
+    }
+   ],
+   "key_specs": [
+    {
+     "parameter": "Channels",
+     "value": "2",
+     "condition": "",
+     "source": "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf"
+    },
+    {
+     "parameter": "Slew rate",
+     "value": "6 V/us typ",
+     "condition": "datasheet typical",
+     "source": "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf"
+    },
+    {
+     "parameter": "Unity-gain bandwidth",
+     "value": "14 MHz typ",
+     "condition": "datasheet typical",
+     "source": "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf"
+    },
+    {
+     "parameter": "Operating supply voltage",
+     "value": "+/-4 V to +/-22 V",
+     "condition": "operating range",
+     "source": "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf"
+    },
+    {
+     "parameter": "Output current",
+     "value": "25 mA",
+     "condition": "'high output current' feature; about 2x the NJM4558 according to Akizuki",
+     "source": "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf"
+    },
+    {
+     "parameter": "Equivalent input noise voltage (DD rank)",
+     "value": "<= 1.4 uV max",
+     "condition": "Rs=2.2 kOhm, RIAA weighting; NJM2043DD selected parts only",
+     "source": "https://akizukidenshi.com/catalog/g/g102369/"
+    }
+   ],
    "reputation": {
-    "summary": "In a Japanese enthusiast listening comparison (C-Area @WIKI), the NJM2043DD was the most pleasing of the NJM4558-series op-amps tested. The reviewer notes exceptional high-frequency clarity and a relatively flat balance suited to classical music.",
-    "sonic_descriptors": [],
-    "typical_uses": [],
-    "caveats": [],
+    "summary": "The praise comes mainly from one Japanese enthusiast listening comparison (C-Area @WIKI). It rated the NJM2043DD the most pleasing of the NJM4558-lineage op-amps tested, noting unusually clear treble for a 4558-type and a fairly flat balance that suited classical music. Akizuki markets it as a low-noise-selected, improved 4558. Other opinions differ: a Zigsow user review is titled 'コレジャナイ音質' ('not the sound I wanted').",
+    "sonic_descriptors": [
+     "clear treble, unusual for a 4558-type (one reviewer)",
+     "relatively flat balance, suited to classical music (one reviewer)"
+    ],
+    "typical_uses": [
+     "Phono/RIAA and other pre-amplifier stages (the DD rank is noise-graded under RIAA conditions)",
+     "Tone-control and line stages in legacy Japanese audio gear",
+     "DIP8 op-amp rolling in DIY audio"
+    ],
+    "caveats": [
+     "The praise rests mostly on one hobbyist listening test; others disagree (Zigsow review)",
+     "Discontinued; buy from reputable stock (e.g. Akizuki) rather than anonymous marketplaces",
+     "The DD rank differs from the D only by noise screening, not by design"
+    ],
     "sources": [
-     "https://w.atwiki.jp/higemouse/pages/50.html"
+     "https://w.atwiki.jp/higemouse/pages/50.html",
+     "https://akizukidenshi.com/catalog/g/g102369/",
+     "https://zigsow.jp/item/326108/review/325414"
     ]
    },
-   "datasheets": [],
-   "revision_history": [],
+   "datasheets": [
+    {
+     "vendor": "New Japan Radio (New JRC)",
+     "title": "NJM2043 LOW-NOISE DUAL PRE-AMPLIFIER",
+     "doc_number": "NJM2043_E",
+     "revision": "Ver.2003-03-17",
+     "date": "2003-03-17",
+     "url": "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Mouser copy of the English datasheet, with the version printed in the header. It covers DIP8/DMP8/SIP8 (D/M/L) and the D-rank noise grade. Latest dated version found.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "New Japan Radio (New JRC)",
+     "title": "NJM2043 Datasheet (PDF) - New Japan Radio",
+     "doc_number": "NJM2043",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7233/NJRC/NJM2043.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision held is not shown in the search summary. It may be an older, pre-2003 copy.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "New Japan Radio (New JRC)",
+     "title": "NJM2043 Low-Noise Dual Pre-Amplifier",
+     "doc_number": "NJM2043",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/N/J/M/2/NJM2043.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision held is not shown in the search summary. Datasheetcatalog often freezes early-2000s or older copies.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "New Japan Radio (New JRC)",
+     "title": "NJM2043 LOW-NOISE DUAL PRE-AMPLIFIER",
+     "doc_number": "NJM2043",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/New-Japan-Radio/NJM2043/454856",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision held is not shown in the search summary. The same document id (454856) appears on datasheet39.com.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "New Japan Radio (New JRC)",
+     "title": "NJM2043 datasheet - Low-noise Dual Pre-amplifier",
+     "doc_number": "NJM2043",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/330/NJM2043.php",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision held is not shown in the search summary.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Japan Radio Corporation (New JRC)",
+     "title": "NJM2043DD Datasheet PDF",
+     "doc_number": "NJM2043",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/NJM2043DD-doc-JRC",
+     "url_kind": "third_party_mirror",
+     "notes": "DD-specific index page. Revision held is not shown in the search summary.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Japan Radio Corporation (New JRC)",
+     "title": "NJM-2043D LOW-NOISE DUAL PRE-AMPLIFIER",
+     "doc_number": "NJM2043",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.datasheetbank.com/en/preview/NJM-2043D-JRC",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision held is not shown in the search summary.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "various",
+     "title": "Datasheet Archive: NJM2043 datasheets",
+     "doc_number": "NJM2043",
+     "revision": "multiple / unknown",
+     "date": "unknown",
+     "url": "https://www.datasheetarchive.com/?q=njm2043",
+     "url_kind": "third_party_mirror",
+     "notes": "Search index that may hold older scanned revisions. Contents were not viewed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Akizuki Denshi (retailer)",
+     "title": "2回路入汎用オペアンプ ローノイズ選別品 NJM2043DD",
+     "doc_number": "g102369",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://akizukidenshi.com/catalog/g/g102369/",
+     "url_kind": "product_page",
+     "notes": "Japanese retail page. It describes the part as an NJM4558 with improved input/output stages and about 2x output current, with DD noise <= 1.4 uV (Rs=2.2 kOhm, RIAA).",
+     "confidence": "high"
+    }
+   ],
+   "revision_history": [
+    {
+     "vendor": "New Japan Radio (New JRC)",
+     "doc_number": "NJM2043_E",
+     "revision": "Ver.2003-03-17",
+     "date": "2003-03-17",
+     "changes": "Change log not available. This is the latest dated version found; earlier versions may survive on third-party mirrors."
+    }
+   ],
    "silicon_changes": [],
-   "counterfeit_notes": "",
-   "alternatives": [],
+   "counterfeit_notes": "No part-specific counterfeit reports were found. The part is discontinued (DIP8 NJM2043D/DD still circulate on eBay, Reverb and brokers), so relabelled 4558-type parts are a plausible risk. The DD low-noise rank uses the same die as the D and can only be checked by measuring noise, so a remarked D sold as DD would be undetectable by inspection. Prefer known retail stock such as Akizuki.",
+   "alternatives": [
+    "NJM4558DD (same lineage, low-noise selected; still sold by Akizuki)",
+    "NJM4580 (New JRC low-noise, high-output-current dual)",
+    "NJM2068 (New JRC low-noise audio dual)",
+    "NE5532 (classic low-noise bipolar dual)"
+   ],
    "ti_literature_numbers": [],
-   "archive_seed_urls": [],
+   "archive_seed_urls": [
+    "http://www.njr.com/semicon/PDF/NJM2043_E.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/739/181220_EOL.pdf",
+    "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/obsolete.html",
+    "https://www.njr.co.jp/products/semicon/PDF/NJM2043_E.pdf"
+   ],
    "open_questions": [
-    "New family added by the completeness pass: everything except the praise evidence still needs research."
+    "Is NJM2043 explicitly listed in New JRC's 20 Dec 2018 4-inch-wafer-line EOL notice, and what were the last-time-buy and last-ship dates?",
+    "Were there datasheet versions before Ver.2003-03-17, and which ones do the alldatasheet, datasheetcatalog and datasheet4u copies hold?",
+    "Is there a Japanese datasheet (NJM2043_J) with a different version date?",
+    "What is 'NJM2043S' (Jotrin listing): a real package variant or a broker typo?",
+    "The equivalent input noise density (nV/rtHz) and THD figures were not captured.",
+    "The two njr.com / njr.co.jp archive seed URLs are guessed from New JRC's usual URL pattern (the filename NJM2043_E is confirmed by Mouser) and need checking in the Wayback Machine."
    ],
    "sources": [
-    "https://w.atwiki.jp/higemouse/pages/50.html"
+    "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/7233/NJRC/NJM2043.html",
+    "https://akizukidenshi.com/catalog/g/g102369/",
+    "https://w.atwiki.jp/higemouse/pages/50.html",
+    "https://zigsow.jp/item/326108/review/325414",
+    "https://octopart.com/part/nisshinbo-micro-devices-inc/NJM2043DD",
+    "https://www.trustedparts.com/en/part/njr/NJM2043DD",
+    "https://www.onlinecomponents.com/en/productdetail/nisshinbo-micro-devices-inc/njm2043d-11971622.html",
+    "https://gb.profusion.uk/uk/njm2043m",
+    "https://www.profusionplc.com/parts/njm2043d",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/739/181220_EOL.pdf",
+    "https://www.mouser.com/PCN/NJR_181220_NJR_Discon_Letter_4inches_Termnation.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/obsolete.html"
    ],
    "verification": {
-    "status": "not-web-verified",
+    "status": "verified-with-corrections",
     "refuted_claims": [],
-    "corrections": [],
-    "unverified_urls": [],
-    "claims_confirmed": [],
-    "web_searches_used": 0
+    "corrections": [
+     "Channels changed from 0 to 2 for all part numbers (dual op-amp).",
+     "Statuses changed from 'unknown' to discontinued. Distributors list the NJM2043D and NJM2043DD as discontinued.",
+     "NJM2043DD is the D-rank low-noise selected DIP8 version (VNI <= 1.4 uV, Rs=2.2 kOhm, RIAA), not just a package code.",
+     "Added part numbers NJM2043D (DIP8), NJM2043M (DMP8) and NJM2043L (SIP8), plus NJM2043S (unconfirmed broker listing).",
+     "Filled in the technology, key specs, datasheet (NJM2043_E Ver.2003-03-17), lineage and alternatives, which were empty in the draft.",
+     "Named the manufacturers separately: New Japan Radio as originator, Nisshinbo Micro Devices as successor."
+    ],
+    "unverified_urls": [
+     "http://www.njr.com/semicon/PDF/NJM2043_E.pdf",
+     "https://www.njr.co.jp/products/semicon/PDF/NJM2043_E.pdf",
+     "https://www.datasheetarchive.com/?q=njm2043"
+    ],
+    "claims_confirmed": [
+     "The English datasheet is 'NJM2043 LOW-NOISE DUAL PRE-AMPLIFIER', Ver.2003-03-17 (https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf)",
+     "It is a bipolar low-noise version of the NJM4558, with 6 V/us slew rate and 14 MHz unity-gain bandwidth, on New JRC's planar epitaxial process (https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf)",
+     "Operating voltage is +/-4 V to +/-22 V and output current is 25 mA (https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf)",
+     "Packages are DIP8/DMP8/SIP8 as NJM2043D/M/L (https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf)",
+     "NJM2043DD is the low-noise selected version, with VNI <= 1.4 uV (Rs=2.2 kOhm, RIAA); the NJM4558 input/output stages were improved and output current is about 2x (https://akizukidenshi.com/catalog/g/g102369/)",
+     "The NJM2043D and NJM2043DD are listed as discontinued under Nisshinbo Micro Devices (https://octopart.com/part/nisshinbo-micro-devices-inc/NJM2043DD, https://www.onlinecomponents.com/en/productdetail/nisshinbo-micro-devices-inc/njm2043d-11971622.html)",
+     "New JRC issued an EOL notice dated 2018-12-20 on terminating its 4-inch wafer line (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/739/181220_EOL.pdf). Whether NJM2043 is on its list was not directly confirmed.",
+     "The C-Area @WIKI review praises the NJM2043DD for clear treble and a flat balance suited to classical music (https://w.atwiki.jp/higemouse/pages/50.html)",
+     "A dissenting Zigsow user review exists, titled 'コレジャナイ音質' (https://zigsow.jp/item/326108/review/325414)"
+    ],
+    "web_searches_used": 6
    },
    "tier": "C",
    "category": "legacy-general-purpose",
@@ -51335,72 +53284,279 @@
   {
    "id": "NJM8830",
    "name": "NJM8830 (Nisshinbo ultra-low-distortion, ultra-low-noise full-swing audio dual)",
-   "tagline": "",
-   "technology": "Audio dual with full-swing output. Vendor figures: 0.000012% THD, 2.5 nV/√Hz, ±100 mA output. The search did not confirm the input type.",
+   "tagline": "Nisshinbo's 2022 bipolar audio dual: 0.000012% THD, 2.5 nV/√Hz, 100 mA rail-to-rail output. A low-voltage (±5.25 V max) specialist for headphone and DAC stages.",
+   "technology": "Dual audio op amp with bipolar input and rail-to-rail (full-swing) output. Vendor typicals: THD+N 0.000012% at 1 kHz, 2.5 nV/√Hz at 1 kHz, GBW 90 MHz, slew rate 30 V/µs, output current ±100 mA. It runs only from ±2.0 V to ±5.25 V (4 to 10.5 V total). It comes only in SMD packages, HSOP8-M1 and DFN8-W1 (ESON8-W1); there is no DIP version.",
    "manufacturers": [
-    "Nisshinbo Micro Devices (New JRC)"
+    "Nisshinbo Micro Devices Inc. (NJM prefix from New Japan Radio / New JRC)"
    ],
    "part_numbers": [
     {
      "pn": "NJM8830",
-     "channels": 0,
+     "channels": 2,
      "vendors": [
-      "Nisshinbo Micro Devices (New JRC)"
+      "Nisshinbo Micro Devices Inc."
      ],
-     "status": "unknown",
-     "notes": ""
+     "status": "active (mass production announced 2022-06-07; no NRND/EOL notice found)",
+     "notes": "Family name. The datasheet covers the HSOP8-M1 and DFN8-W1 (ESON8-W1) packages. The orderable suffix for the DFN8-W1 version was not confirmed."
     },
     {
      "pn": "NJM8830GM1",
-     "channels": 0,
+     "channels": 2,
      "vendors": [
-      "Nisshinbo Micro Devices (New JRC)"
+      "Nisshinbo Micro Devices Inc."
      ],
-     "status": "unknown",
-     "notes": ""
+     "status": "active",
+     "notes": "HSOP8-M1 package. Akizuki sells it (g117507), plus a DIP8 conversion kit (g118285)."
+    },
+    {
+     "pn": "NJM8830GM1-TE1",
+     "channels": 2,
+     "vendors": [
+      "Nisshinbo Micro Devices Inc."
+     ],
+     "status": "active",
+     "notes": "Tape-and-reel orderable of NJM8830GM1, listed at LCSC (C19941438) and other distributors."
     }
    ],
-   "lineage": [],
-   "key_specs": [],
+   "lineage": [
+    {
+     "vendor": "Nisshinbo Micro Devices Inc.",
+     "role": "originator / sole source",
+     "period": "2022-present",
+     "notes": "Production start announced 2022-06-07. It carries the NJM prefix inherited from New Japan Radio (NJR), which merged into Nisshinbo Micro Devices. No second source is known."
+    }
+   ],
+   "key_specs": [
+    {
+     "parameter": "THD+N",
+     "value": "0.000012% typ",
+     "condition": "f = 1 kHz (full test conditions not captured)",
+     "source": "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm8830"
+    },
+    {
+     "parameter": "Input voltage noise density",
+     "value": "2.5 nV/√Hz typ",
+     "condition": "f = 1 kHz",
+     "source": "https://www.mouser.com/datasheet/2/294/NJM8830_E-2953374.pdf"
+    },
+    {
+     "parameter": "Gain-bandwidth product",
+     "value": "90 MHz typ",
+     "condition": "datasheet typical",
+     "source": "https://www.mouser.com/datasheet/2/294/NJM8830_E-2953374.pdf"
+    },
+    {
+     "parameter": "Slew rate",
+     "value": "30 V/µs typ",
+     "condition": "datasheet typical",
+     "source": "https://www.mouser.com/datasheet/2/294/NJM8830_E-2953374.pdf"
+    },
+    {
+     "parameter": "Output current",
+     "value": "±100 mA typ",
+     "condition": "datasheet typical",
+     "source": "https://www.phileweb.com/news/audio/202206/09/23408.html"
+    },
+    {
+     "parameter": "Operating supply voltage",
+     "value": "±2.0 V to ±5.25 V",
+     "condition": "operating range; the absolute maximum was not captured",
+     "source": "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm8830"
+    },
+    {
+     "parameter": "Supply current",
+     "value": "6.5 mA (Japanese launch coverage); ~6 mA per diyAudio",
+     "condition": "total vs per-channel and test conditions not confirmed",
+     "source": "https://akizukidenshi.com/catalog/g/g117507/"
+    },
+    {
+     "parameter": "Input type / output",
+     "value": "Bipolar input; rail-to-rail (full-swing) output",
+     "condition": "",
+     "source": "https://www.phileweb.com/news/audio/202206/09/23408.html"
+    },
+    {
+     "parameter": "Packages",
+     "value": "HSOP8-M1 (GM1); DFN8-W1 (ESON8-W1)",
+     "condition": "",
+     "source": "https://www.alldatasheet.com/datasheet-pdf/pdf/1474106/NISSHINBO/NJM8830.html"
+    }
+   ],
    "reputation": {
-    "summary": "Nisshinbo launched it in 2022 (vendor news 2022-06-07; PHILE WEB and AV Watch covered it), and Akizuki sells it to hobbyists. Japanese enthusiasts who swapped it in report positively: a Threads user who put it in an FX-Audio amp calls the result 'メッチャ高音質' (extremely high sound quality), another swap in place of a MUSES8920E reportedly gave stronger bass and punch, and there is a Minkara parts review of a DIY install.",
-    "sonic_descriptors": [],
-    "typical_uses": [],
-    "caveats": [],
+    "summary": "Nisshinbo launched it in June 2022, with coverage in PHILE WEB, Nikkan Kogyo and PR Times, and Akizuki sells it to hobbyists with a DIP8 conversion kit. Japanese hobbyists who swapped it in report positive results. A Threads user who fitted it in an FX-Audio amp calls the sound 'メッチャ高音質' (extremely high sound quality), and another swap in place of a MUSES8920E reportedly gave stronger bass and punch. A diyAudio thread ('NJM8830 – A New Challenger in the Hi-Fi Op-Amp Arena') posts bench tests: in its comparison the NJM8830 beats the OPA1642A but does not surpass the OPA1612A, with less overshoot and faster settling in a transient test. One diyAudio poster calls it a strong IEM or low-impedance headphone driver rather than a general-purpose op amp.",
+    "sonic_descriptors": [
+     "'extremely high sound quality' (Threads user, FX-Audio swap)",
+     "stronger bass and punch vs MUSES8920E (Japanese swap report)",
+     "low overshoot, fast settling on square-wave tests (diyAudio bench posts)"
+    ],
+    "typical_uses": [
+     "IEM / low-impedance headphone driver",
+     "preamplifier and active-filter stages on low-voltage rails (vendor positioning)",
+     "DAC output / buffer stages in 5 V-class audio gear",
+     "op-amp rolling via the HSOP8-to-DIP8 adapter (Akizuki kit)"
+    ],
+    "caveats": [
+     "Maximum operating supply is only ±5.25 V (10.5 V total). Do not fit it in sockets fed from ±12 V or ±15 V rails.",
+     "SMD only (HSOP8-M1 / DFN8-W1), so socket swaps need an adapter board.",
+     "Supply current of about 6 to 6.5 mA; a diyAudio poster calls it unsuitable for portable gear.",
+     "The 90 MHz GBW means adapter and socket installs need short, well-decoupled layouts to avoid instability (general engineering caution).",
+     "In the diyAudio comparison it measured below the OPA1612A.",
+     "Praise is mostly Japanese hobbyist anecdotes plus one diyAudio measurement thread; there are no controlled listening tests."
+    ],
     "sources": [
+     "https://www.diyaudio.com/community/threads/njm8830-a-new-challenger-in-the-hi-fi-op-amp-arena.428201/",
      "https://www.threads.com/@jin35y/post/DB1_rPJTrsn",
      "https://minkara.carview.co.jp/userid/1685829/car/2513951/12496185/parts.aspx",
      "https://note.com/marukoh/n/n5604d529d769",
      "https://akizukidenshi.com/catalog/g/g117507/",
+     "https://akizukidenshi.com/catalog/g/g118285/",
      "https://www.phileweb.com/news/audio/202206/09/23408.html",
      "https://www.nisshinbo-microdevices.co.jp/en/about/info/20220607.html"
     ]
    },
-   "datasheets": [],
+   "datasheets": [
+    {
+     "vendor": "Nisshinbo Micro Devices",
+     "title": "NJM8830 Ultralow Distortion, Ultralow Noise, Rail-to-Rail Output Dual Audio Operational Amplifier (English datasheet)",
+     "doc_number": "NJM8830_E",
+     "revision": "current (Ver. number not captured)",
+     "date": "unknown",
+     "url": "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM8830_E.pdf",
+     "url_kind": "vendor_current",
+     "notes": "Canonical vendor PDF; the URL was confirmed via search. Nisshinbo labels datasheet revisions 'Ver.x.x', and the current version and date were not captured.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Nisshinbo Micro Devices",
+     "title": "NJM8830 Series product page",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm8830",
+     "url_kind": "product_page",
+     "notes": "Vendor product page with the spec summary and datasheet link.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Mouser (mirror of Nisshinbo)",
+     "title": "Datasheet NJM8830 Ultralow Distortion, Ultralow Noise, Rail-to-Rail Output",
+     "doc_number": "NJM8830_E",
+     "revision": "unknown (likely initial release)",
+     "date": "2022-05-20 (PDF date per search index)",
+     "url": "https://www.mouser.com/datasheet/2/294/NJM8830_E-2953374.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Launch-era copy (May 2022, before the June 2022 production announcement). It may freeze the first revision; the Ver. number was not confirmed.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "LCSC (mirror of Nisshinbo)",
+     "title": "Nisshinbo Micro Devices Inc. NJM8830GM1-TE1 Datasheet",
+     "doc_number": "NJM8830_E",
+     "revision": "unknown",
+     "date": "uploaded c. 2024-01-22 (from filename timestamp)",
+     "url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2401221619_Nisshinbo-Micro-Devices-Inc--NJM8830GM1-TE1_C19941438.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Upload date inferred from the '2401221619' filename stamp. Revision not captured.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "AllDatasheet (mirror of Nisshinbo)",
+     "title": "NJM8830 Datasheet (PDF) - Nisshinbo Micro Devices Inc.",
+     "doc_number": "NJM8830_E",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1474106/NISSHINBO/NJM8830.html",
+     "url_kind": "third_party_mirror",
+     "notes": "19 pages, 921 KB. Revision not captured.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Datasheet4U (mirror of Nisshinbo)",
+     "title": "NJM8830 Datasheet PDF (Dual Audio Operational Amplifier)",
+     "doc_number": "NJM8830_E",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/Nisshinbo/NJM8830/1588345",
+     "url_kind": "third_party_mirror",
+     "notes": "About 916 KB. Revision not captured.",
+     "confidence": "medium"
+    }
+   ],
    "revision_history": [],
    "silicon_changes": [],
-   "counterfeit_notes": "",
-   "alternatives": [],
+   "counterfeit_notes": "No counterfeit reports found. It is a recent, single-source part sold through authorized channels (Mouser, LCSC, Akizuki). It comes only in HSOP8-M1 and DFN8-W1 packages, so any 'DIP-8 NJM8830' is either an adapter board (such as Akizuki's GM1 DIP conversion kit) or a mislabeled or fake part.",
+   "alternatives": [
+    "OPA1612 (measured ahead of it in the diyAudio comparison; ±2.25 V to ±18 V capable)",
+    "OPA1642 (measured behind it in the diyAudio comparison)",
+    "MUSES8920 (the part it replaced in a reported Japanese swap)",
+    "OPA1622 (high-output-current audio op amp for headphone drive)"
+   ],
    "ti_literature_numbers": [],
-   "archive_seed_urls": [],
+   "archive_seed_urls": [
+    "https://www.lcsc.com/datasheet/lcsc_datasheet_2401221619_Nisshinbo-Micro-Devices-Inc--NJM8830GM1-TE1_C19941438.pdf",
+    "https://www.mouser.com/datasheet/2/294/NJM8830_E-2953374.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/about/info/20220607.html",
+    "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM8830_E.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm8830"
+   ],
    "open_questions": [
-    "New family added by the completeness pass: everything except the praise evidence still needs research."
+    "Current datasheet 'Ver.' number and date, and whether any revision since the May 2022 Mouser copy changed specs.",
+    "URL of the Japanese datasheet (NJM8830_J) was not confirmed.",
+    "Orderable suffix for the DFN8-W1 (ESON8-W1) version was not confirmed.",
+    "Whether the 6.5 mA supply current is total or per channel, and at what supply voltage.",
+    "Absolute maximum supply voltage, input offset and bias current, and full THD+N test conditions were not captured.",
+    "No PCN, die change or package change found; none is expected yet for a 2022 part, so recheck periodically."
    ],
    "sources": [
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm8830",
+    "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM8830_E.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/about/info/20220607.html",
+    "https://www.mouser.com/datasheet/2/294/NJM8830_E-2953374.pdf",
+    "https://www.lcsc.com/datasheet/lcsc_datasheet_2401221619_Nisshinbo-Micro-Devices-Inc--NJM8830GM1-TE1_C19941438.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/1474106/NISSHINBO/NJM8830.html",
+    "https://datasheet4u.com/datasheets/Nisshinbo/NJM8830/1588345",
+    "https://www.diyaudio.com/community/threads/njm8830-a-new-challenger-in-the-hi-fi-op-amp-arena.428201/",
+    "https://www.phileweb.com/news/audio/202206/09/23408.html",
+    "https://www.nikkan.co.jp/releases/view/139199",
+    "https://prtimes.jp/main/html/rd/p/000000048.000071712.html",
+    "https://components101.com/news/ultralow-noise-rail-to-rail-output-dual-audio-operational-amplifier-for-preamplifiers-and-active-filters",
+    "https://akizukidenshi.com/catalog/g/g117507/",
+    "https://akizukidenshi.com/catalog/g/g118285/",
     "https://www.threads.com/@jin35y/post/DB1_rPJTrsn",
     "https://minkara.carview.co.jp/userid/1685829/car/2513951/12496185/parts.aspx",
-    "https://note.com/marukoh/n/n5604d529d769",
-    "https://akizukidenshi.com/catalog/g/g117507/",
-    "https://www.phileweb.com/news/audio/202206/09/23408.html",
-    "https://www.nisshinbo-microdevices.co.jp/en/about/info/20220607.html"
+    "https://note.com/marukoh/n/n5604d529d769"
    ],
    "verification": {
-    "status": "not-web-verified",
+    "status": "verified-with-corrections",
     "refuted_claims": [],
-    "corrections": [],
-    "unverified_urls": [],
-    "claims_confirmed": [],
-    "web_searches_used": 0
+    "corrections": [
+     "Channel count changed from 0 to 2 (dual) on all part numbers.",
+     "Input type was 'not confirmed'; it is bipolar input with rail-to-rail output.",
+     "Part status was 'unknown'; it is active (production started June 2022, still listed and distributed, no EOL notice found).",
+     "Added the NJM8830GM1-TE1 reel orderable and the Akizuki DIP8 conversion kit.",
+     "Added the vendor datasheet, Mouser, LCSC, AllDatasheet and Datasheet4U copies, plus the product page.",
+     "Filled key_specs: 90 MHz GBW, 30 V/µs, ±2.0 V to ±5.25 V supply, about 6 to 6.5 mA supply current, HSOP8-M1 and DFN8-W1 packages.",
+     "Added a caveat that the supply is limited to ±5.25 V, so it cannot be dropped into ±15 V op-amp sockets.",
+     "No silicon changes, PCNs or revision hazards found; silicon_changes stays empty."
+    ],
+    "unverified_urls": [
+     "https://www.threads.com/@jin35y/post/DB1_rPJTrsn",
+     "https://minkara.carview.co.jp/userid/1685829/car/2513951/12496185/parts.aspx",
+     "https://note.com/marukoh/n/n5604d529d769"
+    ],
+    "claims_confirmed": [
+     "Vendor English datasheet at nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM8830_E.pdf (https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM8830_E.pdf)",
+     "Nisshinbo news 'Start Production; the NJM8830, High Performance Audio Operational Amplifier', 2022-06-07 (https://www.nisshinbo-microdevices.co.jp/en/about/info/20220607.html)",
+     "Typicals of 0.000012% THD, 2.5 nV/√Hz at 1 kHz, 90 MHz GBW, 30 V/µs and 100 mA output current (https://www.mouser.com/datasheet/2/294/NJM8830_E-2953374.pdf)",
+     "Operating supply ±2.0 V to ±5.25 V; packages HSOP8-M1 and DFN8-W1 (ESON8-W1) (https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm8830)",
+     "Mouser datasheet copy dated 2022-05-20 per search index (https://www.mouser.com/datasheet/2/294/NJM8830_E-2953374.pdf)",
+     "AllDatasheet copy is 19 pages / 921 KB (https://www.alldatasheet.com/datasheet-pdf/pdf/1474106/NISSHINBO/NJM8830.html)",
+     "LCSC hosts an NJM8830GM1-TE1 datasheet copy (https://www.lcsc.com/datasheet/lcsc_datasheet_2401221619_Nisshinbo-Micro-Devices-Inc--NJM8830GM1-TE1_C19941438.pdf)",
+     "Bipolar construction, dual, 6.5 mA supply current (https://www.phileweb.com/news/audio/202206/09/23408.html)",
+     "Akizuki sells NJM8830GM1 and a GM1 DIP8 conversion kit (https://akizukidenshi.com/catalog/g/g117507/, https://akizukidenshi.com/catalog/g/g118285/)",
+     "diyAudio thread: beats OPA1642A but not OPA1612A; about 6 mA supply current; suited to IEM or low-impedance headphone drive (https://www.diyaudio.com/community/threads/njm8830-a-new-challenger-in-the-hi-fi-op-amp-arena.428201/)"
+    ],
+    "web_searches_used": 6
    },
    "tier": "C",
    "category": "japanese-audio-series",
@@ -54485,66 +56641,390 @@
   {
    "id": "OPA1692",
    "name": "OPA1692 (TI SoundPlus low-power, low-noise dual bipolar-input audio op-amp)",
-   "tagline": "",
-   "technology": "Bipolar-input, low-power SoundPlus audio dual. Search results give 4.2 nV/√Hz, -127 dB distortion at 1 kHz, 650 µA per channel, ±50 mA output, 3.5 V to 36 V supply and rail-to-rail output.",
+   "tagline": "Draws only 650 µA per channel yet gives 4.2 nV/√Hz and -127 dB distortion. Low-power audio builders and Head-Fi op-amp rollers rate it highly.",
+   "technology": "Bipolar-input, low-power SoundPlus dual audio op-amp (TI, 2017). Rail-to-rail output swings to within 200 mV of the supplies into 2 kΩ. 4.2 nV/√Hz at 1 kHz, -127 dB distortion at 1 kHz, 650 µA per channel. Web search summaries give 5.1 MHz GBW and 23 V/µs slew. The earlier sweep gave a 3.5 V to 36 V supply and ±50 mA output; this pass did not confirm those two.",
    "manufacturers": [
     "Texas Instruments"
    ],
    "part_numbers": [
     {
      "pn": "OPA1692",
-     "channels": 0,
+     "channels": 2,
      "vendors": [
       "Texas Instruments"
      ],
-     "status": "unknown",
-     "notes": ""
+     "status": "active (TI product page live; lifecycle label not explicitly confirmed)",
+     "notes": "Family/base part. Datasheet SBOS566. Comes in SOIC-8 (D) and VSSOP-8 (DGK)."
     },
     {
      "pn": "OPA1692ID",
-     "channels": 0,
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "active (TI part-details page and Mouser listing exist; lifecycle not explicitly confirmed)",
+     "notes": "SOIC-8 (D). Listed as affected in TI's 5 Nov 2018 datasheet-change notice. Top marking is OP1692."
+    },
+    {
+     "pn": "OPA1692IDR",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "active (TI part-details page exists; lifecycle not explicitly confirmed)",
+     "notes": "SOIC-8 (D), tape and reel. Listed in the Nov 2018 notice. Top marking is OP1692."
+    },
+    {
+     "pn": "OPA1692IDGKR",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "active (TI part-details page exists; lifecycle not explicitly confirmed)",
+     "notes": "VSSOP-8 (DGK), tape and reel. Listed in the Nov 2018 notice."
+    },
+    {
+     "pn": "OPA1692IDGKT",
+     "channels": 2,
      "vendors": [
       "Texas Instruments"
      ],
      "status": "unknown",
-     "notes": ""
+     "notes": "VSSOP-8 (DGK), small reel. Listed in the Nov 2018 notice; current orderability not checked."
+    },
+    {
+     "pn": "OPA1694",
+     "channels": 4,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "uncertain (announced, then withdrawn from datasheet; release not confirmed)",
+     "notes": "Quad sibling in the original SBOS566 (June 2017), in SOIC-14 and TSSOP-14. Per an E2E thread, rev A (Dec 2017) removed all OPA1694 references. E2E users were still waiting for it later ('Eagerly awaiting OPA1694')."
     }
    ],
-   "lineage": [],
-   "key_specs": [],
+   "lineage": [
+    {
+     "vendor": "Texas Instruments",
+     "role": "originator / sole source",
+     "period": "2017-present",
+     "notes": "SoundPlus audio line. First datasheet SBOS566, June 2017. Related TI low-power bipolar audio family: OPA166x (OPA1662/OPA1664)."
+    }
+   ],
+   "key_specs": [
+    {
+     "parameter": "Input voltage noise density",
+     "value": "4.2 nV/√Hz",
+     "condition": "f = 1 kHz",
+     "source": "TI SBOS566 (via ti.com/product/OPA1692 and alldatasheet summaries)"
+    },
+    {
+     "parameter": "Distortion (THD+N)",
+     "value": "-127 dB",
+     "condition": "1 kHz",
+     "source": "TI SBOS566 (via search summaries)"
+    },
+    {
+     "parameter": "Quiescent current",
+     "value": "650 µA per channel",
+     "condition": "typ",
+     "source": "TI SBOS566 / ti.com/product/OPA1692"
+    },
+    {
+     "parameter": "Gain-bandwidth product",
+     "value": "5.1 MHz",
+     "condition": "typ (search-summary value; check against the datasheet table)",
+     "source": "ti.com/product/OPA1692 (search summary)"
+    },
+    {
+     "parameter": "Slew rate",
+     "value": "23 V/µs",
+     "condition": "typ (search-summary value; check against the datasheet table)",
+     "source": "ti.com/product/OPA1692 (search summary)"
+    },
+    {
+     "parameter": "Output swing",
+     "value": "within 200 mV of supply rails",
+     "condition": "RL = 2 kΩ",
+     "source": "TI SBOS566 (search summary)"
+    },
+    {
+     "parameter": "Supply voltage",
+     "value": "3.5 V to 36 V (±1.75 V to ±18 V)",
+     "condition": "total supply",
+     "source": "draft / earlier sweep; not re-confirmed in this pass"
+    },
+    {
+     "parameter": "Output current",
+     "value": "±50 mA",
+     "condition": "typ",
+     "source": "draft / earlier sweep; not re-confirmed in this pass"
+    }
+   ],
    "reputation": {
-    "summary": "Cycfi Research's blog 'OPA1692: The perfect Op Amp for low power audio?' reports that it 'sounds fast, dynamic and had good timing on most CDs', though the LME49723 separated instruments better in one track. In Head-Fi's 'The Opamp thread' it is ranked among the three best on specs (with the OPA2209 and OPA2189), and posters prefer it over the OPA1678.",
-    "sonic_descriptors": [],
-    "typical_uses": [],
-    "caveats": [],
+    "summary": "Cycfi Research's 2017 blog post 'OPA1692: The perfect Op Amp for low power audio?' says it 'sounds fast, dynamic and had good timing on most CDs', though the LME49723 separated instruments better on one track. In Head-Fi's 'The Opamp thread', posters rank it among the three best on specs (with the OPA2209 and OPA2189) and prefer it to the OPA1678. The praise comes from a few listener reports, not from measurements.",
+    "sonic_descriptors": [
+     "fast (Cycfi)",
+     "dynamic (Cycfi)",
+     "good timing (Cycfi)"
+    ],
+    "typical_uses": [
+     "low-power / battery audio stages (Cycfi's framing)",
+     "op-amp rolling in DIP-8 sockets using SOIC-to-DIP adapters",
+     "portable preamp and filter stages"
+    ],
+    "caveats": [
+     "SMD only (SOIC-8, VSSOP-8), so DIP sockets need an adapter",
+     "Cycfi preferred the LME49723 for instrument separation on one track",
+     "Praise rests on a small number of subjective reports"
+    ],
     "sources": [
      "https://www.cycfi.com/2017/08/opa1692-the-perfect-opamp-for-low-power-audio/",
      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-392",
      "https://zenode.ai/series/11xsta38loh-texas-instruments-OPA1692"
     ]
    },
-   "datasheets": [],
-   "revision_history": [],
-   "silicon_changes": [],
-   "counterfeit_notes": "",
-   "alternatives": [],
-   "ti_literature_numbers": [],
-   "archive_seed_urls": [],
+   "datasheets": [
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1692 Low-Power, Low-Noise and Low-Distortion SoundPlus™ Audio Operational Amplifiers",
+     "doc_number": "SBOS566",
+     "revision": "C",
+     "date": "October 2018 (original June 2017)",
+     "url": "https://www.ti.com/lit/gpn/OPA1692",
+     "url_kind": "vendor_current",
+     "notes": "TI's generic datasheet link. The TI product page shows Rev. C. No later revision turned up in the Sep 2026 searches.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1692 product page",
+     "doc_number": "SBOS566",
+     "revision": "C",
+     "date": "October 2018",
+     "url": "https://www.ti.com/product/OPA1692",
+     "url_kind": "product_page",
+     "notes": "Product page. Part-details pages exist at /product/OPA1692/part-details/OPA1692ID, OPA1692IDR and OPA1692IDGKR.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1692 低消費電力、低ノイズ… (Japanese translation)",
+     "doc_number": "SBOS566 (JA translation)",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.ti.com/jp/lit/ds/symlink/opa1692.pdf",
+     "url_kind": "vendor_current",
+     "notes": "TI Japan translated datasheet. TI translations can lag the English revision, and this one's revision was not seen.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (Scribd upload)",
+     "title": "OPA1692 Low-Power, Low-Noise and Low-Distortion SoundPlus™ Audio Operational Amplifiers (sbos566c)",
+     "doc_number": "SBOS566",
+     "revision": "C",
+     "date": "October 2018",
+     "url": "https://www.scribd.com/document/394624916/sbos566c",
+     "url_kind": "third_party_mirror",
+     "notes": "Frozen copy of rev C (file name sbos566c).",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments (alldatasheet mirror)",
+     "title": "OPA1692 Low-Power, Low-Noise and Low-Distortion Audio Operational Amplifiers (23 pages)",
+     "doc_number": "SBOS566",
+     "revision": "likely original (June 2017)",
+     "date": "likely June 2017",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/954302/TI1/OPA1692.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Unconfirmed. Earlier 23-page copy without 'SoundPlus' in the title; alldatasheet also lists OPA1694 (954304) and opa1692idgk (954305) from the same upload batch. It probably predates rev A's removal of the OPA1694, but the revision letter was not seen.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (alldatasheet mirror)",
+     "title": "OPA1692 Low-Power, Low-Noise and Low-Distortion SoundPlus Audio Operational Amplifiers (42 pages)",
+     "doc_number": "SBOS566",
+     "revision": "unknown (later revision, possibly B or C)",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1096308/TI1/OPA1692.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Unconfirmed revision. A later, larger copy. Related pages: alldatasheet.net marking pages 1096309 (OPA1692ID) and 1096312 (OPA1692IDR), which show marking OP1692.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (ic114 mirror)",
+     "title": "OPA1692, OPA1694",
+     "doc_number": "SBOS566",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "http://product.ic114.com/PDF/O/OPA1692.PDF",
+     "url_kind": "third_party_mirror",
+     "notes": "Unconfirmed revision. Its header names the OPA1694 too, so it may be the original June 2017 issue.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (Digi-Key HTML datasheet)",
+     "title": "OPA1692 Datasheet by Texas Instruments",
+     "doc_number": "SBOS566",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.digikey.co.il/he/htmldatasheets/production/2845979/0/0/1/opa1692idgkr.html",
+     "url_kind": "distributor_mirror",
+     "notes": "Unconfirmed revision. Digi-Key HTML rendering (Hebrew site).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (datasheet4u mirror)",
+     "title": "OPA1692 - Audio Operational Amplifier",
+     "doc_number": "SBOS566",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet/etcTI/OPA1692-1561162",
+     "url_kind": "third_party_mirror",
+     "notes": "Unconfirmed revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (Farnell mirror)",
+     "title": "TI notification: datasheet specification change, OPA1692 (SBOS566B to SBOS566C)",
+     "doc_number": "TI notification (number not captured)",
+     "revision": "n/a",
+     "date": "2018-11-05",
+     "url": "https://www.farnell.com/datasheets/2721178.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Change notice, not a datasheet. Datasheet-only spec change 'to accurately reflect device characteristics'; the device itself did not change. Affects OPA1692ID, OPA1692IDGKR, OPA1692IDGKT and OPA1692IDR.",
+     "confidence": "high"
+    }
+   ],
+   "revision_history": [
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SBOS566",
+     "revision": "original",
+     "date": "June 2017",
+     "changes": "First release. Covered the OPA1692 dual and the OPA1694 quad (SOIC-14/TSSOP-14). Advance Information status, as implied by rev A's change note."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SBOS566A",
+     "revision": "A",
+     "date": "December 2017 (per E2E; medium confidence)",
+     "changes": "Changed from Advance Information to Production Data. Per a TI E2E thread, removed all references to the OPA1694."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SBOS566B",
+     "revision": "B",
+     "date": "unknown (between Dec 2017 and Oct 2018)",
+     "changes": "Exists: it is the 'before' version in the Nov 2018 change notice. Contents not retrieved."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SBOS566C",
+     "revision": "C",
+     "date": "October 2018",
+     "changes": "Specification changes 'to accurately reflect device characteristics'. The device did not change, and TI expected no impact on fit, form, function, quality or reliability. Announced in a TI notification dated 5 Nov 2018. Exact parameter changes not retrieved. Latest revision found."
+    }
+   ],
+   "silicon_changes": [
+    {
+     "vendor": "Texas Instruments",
+     "when": "Datasheet SBOS566C October 2018; notification 5 Nov 2018",
+     "part_numbers_affected": [
+      "OPA1692ID",
+      "OPA1692IDR",
+      "OPA1692IDGKR",
+      "OPA1692IDGKT"
+     ],
+     "identification": "None needed. The silicon did not change, so parts built before and after Nov 2018 are the same device. Only the datasheet limits and typicals differ between SBOS566B and SBOS566C.",
+     "summary": "No silicon change is known. The only TI notice found is a datasheet-only specification change (SBOS566B to SBOS566C) to 'accurately reflect device characteristics', with no change to the device. Which parameters changed was not retrieved, so specs quoted from rev B or earlier copies may differ from rev C.",
+     "spec_deltas": [],
+     "audio_impact": "None expected, since the die is the same. When comparing specs, use rev C values.",
+     "compatibility_risk": "low - datasheet-only change; the notice says there is no device change",
+     "sources": [
+      "https://www.farnell.com/datasheets/2721178.pdf",
+      "https://www.scribd.com/document/394624916/sbos566c"
+     ],
+     "confidence": "high",
+     "kind": "datasheet-respec"
+    }
+   ],
+   "counterfeit_notes": "No specific counterfeit reports found. The top-side marking is 'OP1692' (TI package marking, mirrored on alldatasheet.net). The part is SMD only (SOIC-8, VSSOP-8). Marketplace sellers (e.g. eBay) sell 'OPA1692IDR' pre-soldered on DIP-8 adapters for op-amp rolling. Buy from TI or authorized distributors (Mouser, Digi-Key, Farnell) and check the OP1692 marking and TI logo/date code.",
+   "alternatives": [
+    "OPA1662 (TI OPA166x low-power bipolar SoundPlus, higher current)",
+    "LME49723 (compared by Cycfi)",
+    "OPA1678 (Head-Fi comparison; posters preferred OPA1692)",
+    "OPA2209",
+    "OPA2189"
+   ],
+   "ti_literature_numbers": [
+    "SBOS566"
+   ],
+   "archive_seed_urls": [
+    "https://www.ti.com/jp/lit/ds/symlink/opa1692.pdf",
+    "https://www.ti.com/lit/ds/sbos566c/sbos566c.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa1692.pdf",
+    "https://www.ti.com/lit/gpn/OPA1692",
+    "https://www.ti.com/product/OPA1692"
+   ],
    "open_questions": [
-    "New family added by the completeness pass: everything except the praise evidence still needs research."
+    "What date and changes does SBOS566B carry?",
+    "Which specifications changed from SBOS566B to SBOS566C (Nov 2018 notice), and what is the notice's number?",
+    "Is there a revision after C (for example, one reinstating the OPA1694)? The 42-page alldatasheet copy is much larger than the 23-page early copy.",
+    "Was the OPA1694 quad ever released to production?",
+    "Confirm GBW (5.1 MHz) and slew rate (23 V/µs) against the rev C table; both values come only from search summaries.",
+    "Confirm the 3.5 V to 36 V supply range and ±50 mA output current.",
+    "Confirm the current TI lifecycle status of each orderable, especially OPA1692IDGKT.",
+    "Which revisions do the alldatasheet 954302 / 1096308, ic114, Digi-Key and datasheet4u copies hold?"
    ],
    "sources": [
+    "https://www.ti.com/product/OPA1692",
+    "https://www.ti.com/lit/gpn/OPA1692",
+    "https://www.scribd.com/document/394624916/sbos566c",
+    "https://www.farnell.com/datasheets/2721178.pdf",
+    "https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/630559/opa1692-quad-version-opa1694-unfindable",
+    "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/776455/opa1692-eagerly-awaiting-opa1694-for-use-in-my-current-product",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/954302/TI1/OPA1692.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/1096308/TI1/OPA1692.html",
+    "https://www.alldatasheet.net/datasheet-pdf/marking/1096309/TI1/OPA1692ID.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/954304/TI1/OPA1694.html",
+    "http://product.ic114.com/PDF/O/OPA1692.PDF",
+    "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA1692ID?qs=byeeYqUIh0OJsuillYOrzQ%3D%3D",
     "https://www.cycfi.com/2017/08/opa1692-the-perfect-opamp-for-low-power-audio/",
     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-392",
     "https://zenode.ai/series/11xsta38loh-texas-instruments-OPA1692"
    ],
    "verification": {
-    "status": "not-web-verified",
+    "status": "verified-with-corrections",
     "refuted_claims": [],
-    "corrections": [],
-    "unverified_urls": [],
-    "claims_confirmed": [],
-    "web_searches_used": 0
+    "corrections": [
+     "Channels corrected from 0 to 2 for OPA1692 and its orderables. Added OPA1692IDR, OPA1692IDGKR and OPA1692IDGKT, plus the OPA1694 quad sibling (status uncertain).",
+     "Part statuses changed from 'unknown' to 'active' (TI product and part-details pages exist; the lifecycle label itself is unconfirmed). OPA1692IDGKT stays 'unknown'.",
+     "Added datasheet SBOS566 (current rev C, Oct 2018) and its revision history: original June 2017, rev A Dec 2017, rev B date unknown, rev C Oct 2018.",
+     "Added the 5 Nov 2018 TI datasheet-change notice. It is a spec-only change with no device change, recorded as a low-risk non-silicon hazard.",
+     "Supply range (3.5 V to 36 V) and ±50 mA output from the draft are kept but marked not re-confirmed."
+    ],
+    "unverified_urls": [
+     "https://www.alldatasheet.com/datasheet-pdf/pdf/954302/TI1/OPA1692.html",
+     "https://www.alldatasheet.com/datasheet-pdf/pdf/1096308/TI1/OPA1692.html",
+     "http://product.ic114.com/PDF/O/OPA1692.PDF",
+     "https://www.digikey.co.il/he/htmldatasheets/production/2845979/0/0/1/opa1692idgkr.html",
+     "https://datasheet4u.com/datasheet/etcTI/OPA1692-1561162",
+     "https://www.ti.com/lit/ds/symlink/opa1692.pdf",
+     "https://www.ti.com/lit/ds/sbos566c/sbos566c.pdf",
+     "https://www.ti.com/jp/lit/ds/symlink/opa1692.pdf"
+    ],
+    "claims_confirmed": [
+     "Datasheet is SBOS566; rev C is dated October 2018 and the original June 2017 (https://www.scribd.com/document/394624916/sbos566c, https://www.farnell.com/datasheets/2721178.pdf)",
+     "The TI product page references datasheet Rev. C (https://www.ti.com/product/OPA1692)",
+     "Rev A changed the datasheet from Advance Information to Production Data (https://www.ti.com/lit/gpn/OPA1692)",
+     "Rev A (Dec 2017) removed all OPA1694 references, per an E2E thread (https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/630559/opa1692-quad-version-opa1694-unfindable)",
+     "TI notice dated 5 Nov 2018: SBOS566B to SBOS566C spec change 'to accurately reflect device characteristics', no device change, affecting OPA1692ID/IDGKR/IDGKT/IDR (https://www.farnell.com/datasheets/2721178.pdf)",
+     "Original SBOS566 covered both the OPA1692 and the OPA1694 (quad, SOIC-14/TSSOP-14) (http://product.ic114.com/PDF/O/OPA1692.PDF, https://www.alldatasheet.com/datasheet-pdf/pdf/954304/TI1/OPA1694.html)",
+     "4.2 nV/√Hz noise and -127 dB distortion at 1 kHz (https://www.alldatasheet.com/html-pdf/954302/TI1/OPA1692/294/5/OPA1692.html)",
+     "650 µA/ch quiescent current, output within 200 mV of the rails into 2 kΩ, GBW 5.1 MHz and slew 23 V/µs, per the search summary of the TI product page (https://www.ti.com/product/OPA1692)",
+     "Top marking is OP1692 (https://www.alldatasheet.net/datasheet-pdf/marking/1096309/TI1/OPA1692ID.html)"
+    ],
+    "web_searches_used": 6
    },
    "tier": "C",
    "category": "bipolar-modern-low-noise",
@@ -57394,55 +59874,493 @@
   {
    "id": "TLE2142",
    "name": "TLE2141 / TLE2142 / TLE2144 (TI Excalibur low-noise high-speed bipolar)",
-   "tagline": "",
-   "technology": "TI Excalibur low-noise precision bipolar dual",
+   "tagline": "TI Excalibur complementary-bipolar amp: 10.5 nV/rtHz, 5.9 MHz, runs on up to ±22 V and drives 10 nF loads. A niche pick found in some high-end DAC output stages.",
+   "technology": "Complementary bipolar (TI Excalibur process), internally compensated; single (TLE2141), dual (TLE2142), quad (TLE2144); A-suffix = tighter-precision grade",
    "manufacturers": [
     "Texas Instruments"
    ],
    "part_numbers": [
     {
-     "pn": "TLE2142",
-     "channels": 0,
+     "pn": "TLE2141",
+     "channels": 1,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "active (listed in TI PCN20250730004, July 2025 fab/die transition)",
+     "notes": "Single. Datasheet SLOS183."
+    },
+    {
+     "pn": "TLE2141A",
+     "channels": 1,
      "vendors": [
       "Texas Instruments"
      ],
      "status": "unknown",
-     "notes": ""
+     "notes": "Tighter-precision grade (the family title says 'TLE214x, TLE214xA'). Orderable status not confirmed."
+    },
+    {
+     "pn": "TLE2142",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "active (TI product page and orderables such as TLE2142CP / TLE2142IP listed; lifecycle not explicitly confirmed)",
+     "notes": "Dual; the audio-relevant member. C/I/M temperature grades."
+    },
+    {
+     "pn": "TLE2142A",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": "Tighter-precision dual grade; TI gpn link ti.com/lit/gpn/TLE2142A exists."
+    },
+    {
+     "pn": "TLE2144",
+     "channels": 4,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "active (TI product page exists; lifecycle not explicitly confirmed)",
+     "notes": "Quad."
+    },
+    {
+     "pn": "TLE2144A",
+     "channels": 4,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": "Tighter-precision quad grade; not confirmed as orderable."
+    },
+    {
+     "pn": "TLE2142-Q1",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "active (TI product page exists; lifecycle not confirmed)",
+     "notes": "Automotive-qualified version with its own datasheet (literature number not seen)."
+    },
+    {
+     "pn": "TLE2142-EP",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": "Enhanced Product version; separate datasheet seen on alldatasheet."
+    },
+    {
+     "pn": "TLE2144-EP",
+     "channels": 4,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": "Enhanced Product quad; separate datasheet seen on alldatasheet."
+    },
+    {
+     "pn": "TLE2142AM / TLE2142AM-D / TLE2142M-D",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": "Military-temperature and '-D' die/wafer products, each with a TI product page. Lifecycle not confirmed."
+    },
+    {
+     "pn": "TLE2142Y",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "likely obsolete (unconfirmed)",
+     "notes": "Chip-form version named in the older standalone datasheet 'TLE2142, TLE2142A, TLE2142Y'."
     }
    ],
-   "lineage": [],
-   "key_specs": [],
+   "lineage": [
+    {
+     "vendor": "Texas Instruments",
+     "role": "originator",
+     "period": "early 1990s to present",
+     "notes": "Part of TI's Excalibur complementary-bipolar line. Standalone per-device datasheets (e.g., 'TLE2142, TLE2142A, TLE2142Y') came first. A combined TLE214x/TLE214xA datasheet, SLOS183, followed in February 1997."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "role": "fab transition",
+     "period": "2025 onward",
+     "notes": "PCN20250730004.1 (31 Jul 2025) adds RFAB (Richardson) as a fab site using TIB process technology, alongside DL-LIN (Dallas). The die revision moves from B to C and the datasheet from SLOS183D to SLOS183E. First ship 29 Oct 2025."
+    }
+   ],
+   "key_specs": [
+    {
+     "parameter": "Input voltage noise density",
+     "value": "10.5 nV/√Hz",
+     "condition": "f = 1 kHz, typ",
+     "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+    },
+    {
+     "parameter": "Input voltage noise density",
+     "value": "15 nV/√Hz",
+     "condition": "f = 10 Hz, typ",
+     "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+    },
+    {
+     "parameter": "Gain-bandwidth product",
+     "value": "5.9 MHz",
+     "condition": "typ",
+     "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+    },
+    {
+     "parameter": "Slew rate",
+     "value": "27 V/µs min",
+     "condition": "datasheet features list",
+     "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+    },
+    {
+     "parameter": "Settling time",
+     "value": "340–400 ns",
+     "condition": "features list (to 0.1% / 0.01% class)",
+     "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+    },
+    {
+     "parameter": "Saturation recovery",
+     "value": "150 ns",
+     "condition": "typ",
+     "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+    },
+    {
+     "parameter": "Short-circuit output current",
+     "value": "20 mA min",
+     "condition": "features list",
+     "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+    },
+    {
+     "parameter": "Capacitive load capability",
+     "value": "10,000 pF",
+     "condition": "stable driving large capacitive loads",
+     "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+    },
+    {
+     "parameter": "Supply voltage range",
+     "value": "±2 V to ±22 V",
+     "condition": "performance relatively independent of supply over this range",
+     "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+    }
+   ],
    "reputation": {
-    "summary": "In Head-Fi rolling threads, a poster notes that a 4300-euro Acoustic Arts DAC uses eight TLE2142s in its output stage. One user liked its tonality, body and bass; another said it did not impress them compared with the LM4562.",
-    "sonic_descriptors": [],
-    "typical_uses": [],
-    "caveats": [],
+    "summary": "A niche, lightly discussed part among hi-fi hobbyists. In Head-Fi op-amp rolling threads, one poster says a 4300-euro Acoustic Arts DAC uses eight TLE2142s in its output stage. One user liked its tonality, body and bass. Another was not impressed compared with the LM4562. There is no broad consensus.",
+    "sonic_descriptors": [
+     "good tonality (one Head-Fi user)",
+     "body (one Head-Fi user)",
+     "good bass (one Head-Fi user)"
+    ],
+    "typical_uses": [
+     "DAC output stages (per a Head-Fi report on an Acoustic Arts DAC)",
+     "op-amp rolling in headphone amps / DACs",
+     "high-rail (up to ±22 V) line stages"
+    ],
+    "caveats": [
+     "Praise is sparse and mixed: one Head-Fi user preferred the LM4562.",
+     "Parts made from late October 2025 may be die revision C (RFAB, TIB process). No listening or measurement comparisons with older die B stock have been found.",
+     "The Acoustic Arts DAC claim is second-hand from a forum post and has not been independently verified."
+    ],
     "sources": [
      "https://www.head-fi.org/threads/audio-gd-discrete-op-amps-reviewed-opa-earth-opa-moon-opa-sun-v-2.397691/page-16",
      "https://www.head-fi.org/threads/best-sounding-cheep-op-amp-for-cmoys-opa2227-opa2228-ad8066-other.243642/page-4"
     ]
    },
-   "datasheets": [],
-   "revision_history": [],
-   "silicon_changes": [],
-   "counterfeit_notes": "",
-   "alternatives": [],
-   "ti_literature_numbers": [],
-   "archive_seed_urls": [],
+   "datasheets": [
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE214x, TLE214xA Excalibur Low-Noise High-Speed Precision Operational Amplifiers",
+     "doc_number": "SLOS183",
+     "revision": "E",
+     "date": "July 2025",
+     "url": "https://www.ti.com/lit/ds/symlink/tle2142.pdf",
+     "url_kind": "vendor_current",
+     "notes": "Current TI datasheet in the new format ('1 Features'). Issued with PCN20250730004 (die rev B to C, RFAB). The July 2025 date comes from a search summary, not the PDF page.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE214x, TLE214xA Excalibur Low-Noise High-Speed Precision Operational Amplifiers",
+     "doc_number": "SLOS183",
+     "revision": "E",
+     "date": "July 2025",
+     "url": "https://www.ti.com/lit/ds/slos183e/slos183e.pdf",
+     "url_kind": "vendor_revision_specific",
+     "notes": "Revision-specific TI URL for rev E.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE214x, TLE214xA EXCALIBUR LOW-NOISE HIGH-SPEED PRECISION OPERATIONAL AMPLIFIERS",
+     "doc_number": "SLOS183",
+     "revision": "D",
+     "date": "February 1997, revised October 2012",
+     "url": "https://www.radiolocman.com/datasheet/data.html?%2FTLE2142=&di=330795",
+     "url_kind": "third_party_mirror",
+     "notes": "Search summaries give SLOS183D (Feb 1997, rev Oct 2012) as the pre-2025 revision. This mirror probably freezes rev D, but that is inferred from the summary and not confirmed on the page.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2141 datasheet (TLE214x family)",
+     "doc_number": "SLOS183",
+     "revision": "D (probable)",
+     "date": "October 2012 (probable)",
+     "url": "https://radiolocman.com/datasheet/data.html?%2FTLE2141=&di=330783",
+     "url_kind": "third_party_mirror",
+     "notes": "Mirror of the TLE2141 datasheet from the same SLOS183 family document. Revision unconfirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE214x, TLE214xA EXCALIBUR LOW-NOISE HIGH-SPEED PRECISION OPERATIONAL AMPLIFIERS",
+     "doc_number": "SLOS183",
+     "revision": "unknown (old all-caps format, D or earlier)",
+     "date": "unknown",
+     "url": "https://www.ti.com/lit/gpn/TLE2142A",
+     "url_kind": "vendor_legacy",
+     "notes": "TI gpn redirect indexed with the old-format title. It probably resolves to the current revision now. Unconfirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142, TLE2142A, TLE2142Y EXCALIBUR LOW-NOISE HIGH-SPEED PRECISION OPERATIONAL AMPLIFIERS",
+     "doc_number": "unknown (pre-SLOS183 standalone TLE2142 datasheet)",
+     "revision": "unknown",
+     "date": "unknown (pre-1997, likely)",
+     "url": "https://www.icbase.com/File/PDF/TTI/TTI20590106.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Older standalone TLE2142 datasheet that includes the Y (chip) version. Its literature number and date were not seen. Unconfirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142 Datasheet (alldatasheet, TI)",
+     "doc_number": "SLOS183 (presumed)",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/228137/TI/TLE2142.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision not shown in the search summary. Unconfirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142 Datasheet (alldatasheet, TI1)",
+     "doc_number": "SLOS183 (presumed)",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/955854/TI1/TLE2142.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A later alldatasheet upload (higher ID). Revision unconfirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE214X Datasheet (alldatasheet)",
+     "doc_number": "SLOS183 (presumed)",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/28934/TI/TLE214X.html",
+     "url_kind": "third_party_mirror",
+     "notes": "An early alldatasheet upload (low ID), so it may hold an older revision. Unconfirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2141 / TLE2142 datasheet (TLE2141-etcTI.pdf)",
+     "doc_number": "unknown",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet/etcTI/TLE2142-1442138",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision not shown. Unconfirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142-Q1 Excalibur Low-Noise High-Speed Precision Operational Amplifier",
+     "doc_number": "unknown",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.ti.com/lit/ds/symlink/tle2142-q1.pdf",
+     "url_kind": "vendor_current",
+     "notes": "Separate automotive datasheet. Literature number and revision not seen.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142-EP Datasheet",
+     "doc_number": "unknown",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/254693/TI/TLE2142-EP.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Enhanced Product datasheet mirror. Unconfirmed details.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2144-EP Datasheet",
+     "doc_number": "unknown",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/254694/TI/TLE2144-EP.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Enhanced Product quad datasheet mirror. Unconfirmed details.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142 product page",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.ti.com/product/TLE2142",
+     "url_kind": "product_page",
+     "notes": "TI product folder. TLE2141 and TLE2144 have sibling pages at ti.com/product/TLE2141 and ti.com/product/TLE2144.",
+     "confidence": "high"
+    }
+   ],
+   "revision_history": [
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SLOS183",
+     "revision": "(original)",
+     "date": "February 1997",
+     "changes": "First combined TLE214x/TLE214xA family datasheet, replacing the per-device datasheets."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SLOS183",
+     "revision": "D",
+     "date": "October 2012",
+     "changes": "Last old-format revision. Detailed changes not seen. Dates of revisions A–C unknown."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SLOS183",
+     "revision": "E",
+     "date": "July 2025",
+     "changes": "Moved to TI's new datasheet format. Issued under PCN20250730004 (RFAB fab option, die revision B to C, BOM options). The specific spec-table changes were not seen."
+    }
+   ],
+   "silicon_changes": [
+    {
+     "vendor": "Texas Instruments",
+     "when": "PCN20250730004.1 issued 31 Jul 2025; proposed first ship 29 Oct 2025",
+     "part_numbers_affected": [
+      "TLE2141 (confirmed in PCN listing)",
+      "TLE2142 (likely; same SLOS183 datasheet, not explicitly confirmed)",
+      "TLE2144 (likely; not explicitly confirmed)"
+     ],
+     "identification": "Die revision C (was B) and RFAB fab-site codes on reel/box labels. Date codes after late October 2025. Datasheet SLOS183E instead of SLOS183D. Existing DL-LIN (Dallas) die-B material may ship in parallel.",
+     "summary": "TI qualified RFAB (Richardson) using TIB process technology as an extra fab alongside DL-LIN (Dallas), with a die revision from B to C, a datasheet update from SLOS183D to SLOS183E, and new assembly BOM options. This is part of TI's multiyear move off 200 mm factories. TI states there is no anticipated impact on form, fit, function, quality or reliability.",
+     "spec_deltas": [
+      {
+       "parameter": "Die revision",
+       "before": "B",
+       "after": "C"
+      },
+      {
+       "parameter": "Wafer fab",
+       "before": "DL-LIN (Dallas)",
+       "after": "DL-LIN or RFAB (Richardson, TIB process)"
+      },
+      {
+       "parameter": "Datasheet",
+       "before": "SLOS183D (Oct 2012)",
+       "after": "SLOS183E (Jul 2025)"
+      }
+     ],
+     "audio_impact": "Unknown. A new die on a different process under the same part number could change noise, distortion or stability details. No measurements or listening comparisons found.",
+     "compatibility_risk": "medium: new die and process under an unchanged part number. TI claims no form/fit/function change, but the SLOS183E spec tables have not been compared with rev D.",
+     "sources": [
+      "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7170/PCN20250730004.1.pdf",
+      "https://www.ti.com/lit/ds/slos183e/slos183e.pdf"
+     ],
+     "confidence": "medium",
+     "kind": "fab-or-process-transfer"
+    }
+   ],
+   "counterfeit_notes": "No specific counterfeit reports found in this pass. As with other TI DIP op-amps sold on marketplaces, buy from authorized distributors. Note that genuine post-October-2025 stock may be die revision C from RFAB.",
+   "alternatives": [
+    "LM4562 / LME49720 (named in a Head-Fi comparison)",
+    "NE5532",
+    "TLE2072 (TI Excalibur JFET-input sibling)",
+    "OPA2134"
+   ],
+   "ti_literature_numbers": [
+    "SLOS183"
+   ],
+   "archive_seed_urls": [
+    "https://www.ti.com/lit/ds/slos183d/slos183d.pdf",
+    "https://www.ti.com/lit/ds/slos183e/slos183e.pdf",
+    "https://www.ti.com/lit/ds/symlink/tle2142-q1.pdf",
+    "https://www.ti.com/lit/ds/symlink/tle2142.pdf",
+    "https://www.ti.com/lit/gpn/TLE2142A",
+    "https://www.ti.com/product/TLE2141",
+    "https://www.ti.com/product/TLE2142",
+    "https://www.ti.com/product/TLE2144"
+   ],
    "open_questions": [
-    "New family added by the completeness pass: everything except the praise evidence still needs research."
+    "Dates and change lists for SLOS183 revisions A, B and C. Literature numbers of the pre-1997 standalone TLE2141/TLE2142/TLE2144 datasheets.",
+    "Does PCN20250730004 explicitly list TLE2142, TLE2144, the A grades, -Q1 and -EP? Which spec values changed from SLOS183D to SLOS183E?",
+    "Lifecycle status of each orderable (C/I/M grades, A grades, Y chip versions, -EP, AM-D/M-D).",
+    "Literature numbers and revisions of the TLE2142-Q1 and TLE2142-EP / TLE2144-EP datasheets.",
+    "Do die rev C (RFAB) parts measure or sound different from die rev B?",
+    "Which revision is held by each mirror (radiolocman, alldatasheet IDs 28934/228137/955854, datasheet4u, icbase)?"
    ],
    "sources": [
+    "https://www.ti.com/lit/ds/symlink/tle2142.pdf",
+    "https://www.ti.com/lit/ds/slos183e/slos183e.pdf",
+    "https://www.ti.com/product/TLE2142",
+    "https://www.ti.com/product/TLE2141",
+    "https://www.ti.com/product/TLE2144",
+    "https://www.ti.com/product/TLE2142-Q1",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7170/PCN20250730004.1.pdf",
+    "https://www.radiolocman.com/datasheet/data.html?%2FTLE2142=&di=330795",
+    "https://www.icbase.com/File/PDF/TTI/TTI20590106.pdf",
     "https://www.head-fi.org/threads/audio-gd-discrete-op-amps-reviewed-opa-earth-opa-moon-opa-sun-v-2.397691/page-16",
     "https://www.head-fi.org/threads/best-sounding-cheep-op-amp-for-cmoys-opa2227-opa2228-ad8066-other.243642/page-4"
    ],
    "verification": {
-    "status": "not-web-verified",
+    "status": "verified-with-corrections",
     "refuted_claims": [],
-    "corrections": [],
-    "unverified_urls": [],
-    "claims_confirmed": [],
-    "web_searches_used": 0
+    "corrections": [
+     "Draft part_numbers had only TLE2142 with channels 0 and status unknown. Set it to 2 channels and added TLE2141 (1 ch), TLE2144 (4 ch), the A grades, -Q1, -EP, AM/M-D and the Y chip version.",
+     "Technology changed from 'precision bipolar dual' to complementary bipolar Excalibur process covering single/dual/quad.",
+     "Filled in the empty datasheets, revision_history, key_specs, silicon_changes, lineage, ti_literature_numbers (SLOS183) and archive seeds from web-confirmed facts."
+    ],
+    "unverified_urls": [
+     "https://www.ti.com/lit/ds/slos183d/slos183d.pdf",
+     "https://www.ti.com/lit/gpn/TLE2142A",
+     "https://www.icbase.com/File/PDF/TTI/TTI20590106.pdf",
+     "https://radiolocman.com/datasheet/data.html?%2FTLE2141=&di=330783",
+     "https://www.alldatasheet.com/datasheet-pdf/pdf/228137/TI/TLE2142.html",
+     "https://www.alldatasheet.com/datasheet-pdf/pdf/955854/TI1/TLE2142.html",
+     "https://www.alldatasheet.com/datasheet-pdf/pdf/28934/TI/TLE214X.html",
+     "https://datasheet4u.com/datasheet/etcTI/TLE2142-1442138",
+     "https://www.alldatasheet.com/datasheet-pdf/pdf/254693/TI/TLE2142-EP.html",
+     "https://www.alldatasheet.com/datasheet-pdf/pdf/254694/TI/TLE2144-EP.html"
+    ],
+    "claims_confirmed": [
+     "The family datasheet is SLOS183 'TLE214x, TLE214xA Excalibur Low-Noise High-Speed Precision Operational Amplifiers'; rev D is Feb 1997, revised Oct 2012 (https://www.radiolocman.com/datasheet/data.html?%2FTLE2142=&di=330795)",
+     "Current revision SLOS183E is dated July 2025 and is in the new format (https://www.ti.com/lit/ds/slos183e/slos183e.pdf)",
+     "PCN20250730004.1 (31 Jul 2025, first ship 29 Oct 2025) adds RFAB with TIB process, changes die rev B to C, and moves TLE2141's datasheet from SLOS183D to SLOS183E; no anticipated form/fit/function impact (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7170/PCN20250730004.1.pdf)",
+     "Specs: 10.5 nV/√Hz at 1 kHz, 15 nV/√Hz at 10 Hz, 5.9 MHz GBW, 27 V/µs min slew, 340–400 ns settling, 150 ns saturation recovery, 20 mA min short-circuit current, 10,000 pF load capability (https://www.ti.com/lit/ds/symlink/tle2142.pdf)",
+     "Performance is relatively independent of supply over ±2 V to ±22 V (https://www.ti.com/lit/ds/symlink/tle2142.pdf)",
+     "An older standalone 'TLE2142, TLE2142A, TLE2142Y' datasheet exists on a third-party mirror (https://www.icbase.com/File/PDF/TTI/TTI20590106.pdf)",
+     "TLE2142-Q1 has its own TI datasheet and product page (https://www.ti.com/lit/ds/symlink/tle2142-q1.pdf)",
+     "TI product pages exist for TLE2142AM, TLE2142AM-D and TLE2142M-D (https://www.ti.com/product/TLE2142AM-D)"
+    ],
+    "web_searches_used": 6
    },
    "tier": "C",
    "category": "bipolar-modern-low-noise",

@@ -74,6 +74,33 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Mouser (TI) | SLOS481 | n/a | not shown | [mouser.com/new/texas-instruments/ti-lm833-amplifiers/](https://www.mouser.com/new/texas-instruments/ti-lm833-amplifiers/) | product_page | medium |
 | STMicroelectronics | Doc ID 2169 | n/a | n/a | [st.com/en/amplifiers-and-comparators/lm833.html](https://www.st.com/en/amplifiers-and-comparators/lm833.html) | product_page | high |
 | onsemi | LM833/D | n/a | n/a | [onsemi.com/products/standard-products/…ifiers-op-amps/lm833](https://www.onsemi.com/products/standard-products/amplifiers-comparators/operational-amplifiers-op-amps/lm833) | product_page | high |
+| National Semiconductor | DS005218 (National DS number, from the file name) | revision not shown | unknown (probably an older pre-2004 National edition; datasheetcatalog mostly holds files from around 2000) | [pdf.datasheetcatalog.com/datasheet/nat…nductor/DS005218.PDF](http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS005218.PDF) | third_party_mirror | medium |
+| National Semiconductor | DS005218 (per search summary) | revision not shown | (c) 2004 per search summary (not tied to one copy) | [jameco.com/Jameco/Products/ProdDS/1309253.pdf](https://www.jameco.com/Jameco/Products/ProdDS/1309253.pdf) | distributor_mirror | low |
+| National Semiconductor | DS005218 (per search summary) | revision not shown | unknown | [jameco.com/Jameco/Products/ProdDS/120942.pdf](https://www.jameco.com/Jameco/Products/ProdDS/120942.pdf) | distributor_mirror | low |
+| National Semiconductor | DS005218 (per search summary) | revision not shown | unknown | [sm5cbw.se/audio/ic-data/LM833.pdf](https://www.sm5cbw.se/audio/ic-data/LM833.pdf) | third_party_mirror | low |
+| National Semiconductor | DS005218 (presumed) | revision not shown | unknown | [datasheet.octopart.com/LM833MM/NOPB-Na…atasheet-9811680.pdf](https://datasheet.octopart.com/LM833MM/NOPB-National-Semiconductor-datasheet-9811680.pdf) | distributor_mirror | low |
+| National Semiconductor | DS005218 (presumed) | revision not shown | unknown | [datasheet.octopart.com/LM833M/NOPB-Nat…atasheet-8191293.pdf](https://datasheet.octopart.com/LM833M/NOPB-National-Semiconductor-datasheet-8191293.pdf) | distributor_mirror | low |
+| National Semiconductor | DS005218 (presumed) | revision not shown | unknown | [datasheet.octopart.com/LM833MX-NOPB-Te…atasheet-7578376.pdf](https://datasheet.octopart.com/LM833MX-NOPB-Texas-Instruments-datasheet-7578376.pdf) | distributor_mirror | low |
+| National Semiconductor | DS005218 (presumed) | revision not shown | unknown | [p.pdfhall.com/lm833-dual-audio-operati…97c47ee718b45af.html](https://p.pdfhall.com/lm833-dual-audio-operational-amplifier-bidulic-bidulic_5b70245d097c47ee718b45af.html) | third_party_mirror | low |
+| Texas Instruments (ex-National) | SNOSBD8D | D | unknown | [scribd.com/doc/102660047/lm833](https://www.scribd.com/doc/102660047/lm833) | third_party_mirror | medium |
+| Texas Instruments (ex-National) | SNOSBD8D | D | unknown | [datasheet.octopart.com/LM833M-National…tasheet-10846346.pdf](https://datasheet.octopart.com/LM833M-National-Semiconductor-datasheet-10846346.pdf) | distributor_mirror | medium |
+| Texas Instruments (ex-National, Japan) | JAJSB49 | revision not shown | unknown | [kyohritsu.com/eclib/OTHER/DATASHEET/TI/lm833n.pdf](https://www.kyohritsu.com/eclib/OTHER/DATASHEET/TI/lm833n.pdf) | third_party_mirror | medium |
+| Texas Instruments (ex-National) | SNOSBD8E | E | MAY 2004 - REVISED MAY 2012 | [datasheet.octopart.com/LM833M-Texas-In…tasheet-28360528.pdf](https://datasheet.octopart.com/LM833M-Texas-Instruments-datasheet-28360528.pdf) | distributor_mirror | medium |
+| onsemi | LM833/D | Rev. 6 | September, 2011 | [media.digikey.com/pdf/Data%20Sheets/ON…DFs/LM833,NCV833.pdf](https://media.digikey.com/pdf/Data%20Sheets/ON%20Semiconductor%20PDFs/LM833,NCV833.pdf) | distributor_mirror | high |
+| onsemi | LM833/D (presumed) | revision not shown | unknown | [digikey.com/htmldatasheets/production/99691/0/0/1/lm833.html](https://www.digikey.com/htmldatasheets/production/99691/0/0/1/lm833.html) | distributor_mirror | low |
+| onsemi (presumed) | LM833/D (presumed) | revision not shown (the file name says 'rev2', unverified) | unknown | [scribd.com/document/426804758/lm833-rev2-pdf](https://www.scribd.com/document/426804758/lm833-rev2-pdf) | third_party_mirror | low |
+| STMicroelectronics | Doc ID 2169 (presumed) | revision not shown | unknown | [datasheet4u.com/datasheets/STMicroelectronics/LM833/1394947](https://datasheet4u.com/datasheets/STMicroelectronics/LM833/1394947) | third_party_mirror | low |
+| STMicroelectronics | Doc ID 2169 (presumed) | revision not shown | unknown | [radiolocman.com/datasheet/data.html?di=147172](https://www.radiolocman.com/datasheet/data.html?di=147172) | third_party_mirror | low |
+| STMicroelectronics | Doc ID 2169 (presumed) | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/527…TRONICS/LM833DT.html](https://www.alldatasheet.com/datasheet-pdf/pdf/527770/STMICROELECTRONICS/LM833DT.html) | third_party_mirror | low |
+| STMicroelectronics | Doc ID 2169 (presumed) | revision not shown | unknown | [datasheetq.com/LM833-doc-ST-Microelectronics](https://www.datasheetq.com/LM833-doc-ST-Microelectronics) | third_party_mirror | low |
+| STMicroelectronics | Doc ID 2169 (presumed) | revision not shown | unknown (the '_05' suffix may mean a 2005 edition; unverified) | [datasheetq.com/LM833_05-doc-ST-Microelectronics](https://www.datasheetq.com/LM833_05-doc-ST-Microelectronics) | third_party_mirror | low |
+| STMicroelectronics | Doc ID 2169 (presumed) | revision not shown | unknown | [datasheetdir.com/STMICROELECTRONICS-LM…erational-Amplifiers](http://www.datasheetdir.com/STMICROELECTRONICS-LM833+Operational-Amplifiers) | third_party_mirror | low |
+| STMicroelectronics | Doc ID 2169 (presumed) | revision not shown | unknown | [allaboutcircuits.com/electronic-compon…-STMicroelectronics/](https://www.allaboutcircuits.com/electronic-components/datasheet/LM833DT--STMicroelectronics/) | third_party_mirror | low |
+| Motorola | LM833/D (Motorola, presumed) | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/3070/MOTOROLA/LM833N.html](https://www.alldatasheet.com/datasheet-pdf/pdf/3070/MOTOROLA/LM833N.html) | third_party_mirror | low |
+| Motorola | LM833/D (Motorola, presumed) | revision not shown | unknown | [datasheetspdf.com/pdf/54287/MotorolaInc/LM833/1](https://datasheetspdf.com/pdf/54287/MotorolaInc/LM833/1) | third_party_mirror | low |
+| Motorola | LM833/D (Motorola, presumed) | revision not shown | unknown | [datasheetq.com/LM833-doc-Motorola](https://www.datasheetq.com/LM833-doc-Motorola) | third_party_mirror | low |
+| Motorola | LM833/D (Motorola, presumed) | revision not shown | unknown | [datasheetq.com/LM833N-doc-Motorola](https://www.datasheetq.com/LM833N-doc-Motorola) | third_party_mirror | low |
+| Motorola | LM833/D (Motorola, presumed) | revision not shown | unknown | [chipfind.net/datasheet/motorola/lm833n.htm](https://www.chipfind.net/datasheet/motorola/lm833n.htm) | third_party_mirror | low |
 
 ## [LM4562 / LME49720 / LME49710 / LME49740 (National ultra-low-distortion bipolar audio op-amps)](families/LME49720.md)
 
@@ -111,6 +138,39 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments | SNAS377 | B | FEBRUARY 2007 - REVISED APRIL 2013 | [mouser.com/datasheet/2/282/lme49740-224076.pdf](https://www.mouser.com/datasheet/2/282/lme49740-224076.pdf) | distributor_mirror | high |
 | Texas Instruments | SNAS377 | B (per prior pass) | REVISED APRIL 2013 (per prior pass) | [farnell.com/datasheets/1994351.pdf](https://www.farnell.com/datasheets/1994351.pdf) | distributor_mirror | low |
 | National Semiconductor | SNAS377 (National DS number unknown) | A? (a prior-pass search summary cites SNAS377A dated Feb 8, 2008) | 2008 (unconfirmed) | [datasheet.octopart.com/LME49740NA-Nati…tasheet-15941898.pdf](https://datasheet.octopart.com/LME49740NA-National-Semiconductor-datasheet-15941898.pdf) | distributor_mirror | low |
+| National Semiconductor | 201572 (National DS number, presumed) / SNAS326 | May 2007 edition (title reads 'May 2007 LM4562 ...'; probably National internal rev 1.4 of 05/03/07, inferred from the date) | May 2007 | [radio-hobby.org/uploads/datasheets/lm/LM4562.pdf](https://radio-hobby.org/uploads/datasheets/lm/LM4562.pdf) | third_party_mirror | medium |
+| National Semiconductor | 201572 (presumed) | revision not shown (search summary says an August 2006 version; the same search surfaced the rev 1.0-1.5 history table, so it may be the Oct 2007 edition) | August 2006 (per search summary, unconfirmed) | [datasheet4u.com/datasheet-pdf/National…62/pdf.php?id=559726](https://datasheet4u.com/datasheet-pdf/NationalSemiconductor/LM4562/pdf.php?id=559726) | third_party_mirror | low |
+| National Semiconductor | 201572 (presumed) | revision not shown | unknown | [datasheet4u.com/datasheets/National-Se…ductor/LM4562/559726](https://datasheet4u.com/datasheets/National-Semiconductor/LM4562/559726) | third_party_mirror | low |
+| National Semiconductor | 201572 (presumed) | revision not shown | unknown | [datasheetspdf.com/pdf/559726/NationalSemiconductor/LM4562/1](https://datasheetspdf.com/pdf/559726/NationalSemiconductor/LM4562/1) | third_party_mirror | low |
+| National Semiconductor | 201572 (presumed) | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/156192/NSC/LM4562NA.html](https://www.alldatasheet.com/datasheet-pdf/pdf/156192/NSC/LM4562NA.html) | third_party_mirror | low |
+| National Semiconductor | 201572 (presumed) | revision not shown | unknown | [alldatasheet.net/html-pdf/156190/NSC/LM4562/53/1/LM4562.html](https://www.alldatasheet.net/html-pdf/156190/NSC/LM4562/53/1/LM4562.html) | third_party_mirror | low |
+| Texas Instruments | SNAS326 | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/838783/TI1/LM4562.html](https://www.alldatasheet.com/datasheet-pdf/pdf/838783/TI1/LM4562.html) | third_party_mirror | low |
+| National Semiconductor or Texas Instruments (unclear) | 201572 / SNAS326 | revision not shown | unknown | [electronics-diy.com/pdf/LM4562.pdf](https://electronics-diy.com/pdf/LM4562.pdf) | third_party_mirror | low |
+| National Semiconductor | 201572 (presumed) | revision not shown | unknown | [elcodis.com/parts/6131756/lm4562na.html](https://elcodis.com/parts/6131756/lm4562na.html) | third_party_mirror | low |
+| Texas Instruments | SNAS326 | revision not shown | unknown | [radiolocman.com/datasheet/data.html?di=274487](https://www.radiolocman.com/datasheet/data.html?di=274487) | third_party_mirror | low |
+| Texas Instruments (National content) | SNAS326 / 201572 | revision not shown | unknown | [raffia.ch/content/datasheets/volume06/…AudioOP_National.pdf](https://www.raffia.ch/content/datasheets/volume06/LM4562_AudioOP_National.pdf) | third_party_mirror | low |
+| Texas Instruments | SNAS326 | K (per document title) | REVISED DECEMBER 2013 (K date per known chain) | [scribd.com/document/861406292/LM4562-D…fier-datasheet-Rev-K](https://www.scribd.com/document/861406292/LM4562-Dual-High-Performance-High-Fidelity-Audio-Operational-Amplifier-datasheet-Rev-K) | third_party_mirror | medium |
+| Texas Instruments | SNAS326 | current (K) | n/a | [ti.com/lit/gpn/LM4562](https://www.ti.com/lit/gpn/LM4562) | vendor_current | medium |
+| National Semiconductor | SNAS393 (National DS number unconfirmed; 300038 per prior pass) | October 2007 edition (National internal rev 1.2, 10/22/07; matches SNAS393B) | October 2007 | [electrokit.com/upload/product/40359/40359720/LME49720.pdf](https://www.electrokit.com/upload/product/40359/40359720/LME49720.pdf) | distributor_mirror | medium |
+| National Semiconductor | SNAS393 (National) | revision not shown (a search summary mentions an Oct 2007 date and rev history 1.0 03/30/07 and 1.1 05/03/07, but the source copy is unclear) | unknown | [datasheet.octopart.com/LME49720MA-Nati…tasheet-15941894.pdf](https://datasheet.octopart.com/LME49720MA-National-Semiconductor-datasheet-15941894.pdf) | third_party_mirror | low |
+| National Semiconductor | SNAS393 (National) | revision not shown | unknown | [radiolocman.com/datasheet/data.html?di=77846](https://www.radiolocman.com/datasheet/data.html?di=77846) | third_party_mirror | low |
+| Texas Instruments | SNAS393 | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/517…LME49720HA/NOPB.html](https://www.alldatasheet.com/datasheet-pdf/pdf/517700/TI/LME49720HA/NOPB.html) | third_party_mirror | low |
+| Texas Instruments | SNAS393 | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/517…LME49720NA/NOPB.html](https://www.alldatasheet.com/datasheet-pdf/pdf/517703/TI/LME49720NA/NOPB.html) | third_party_mirror | low |
+| National Semiconductor | SNAS393 (National) | revision not shown | unknown | [elcodis.com/parts/1319396/LME49720HANOPB.html](https://elcodis.com/parts/1319396/LME49720HANOPB.html) | third_party_mirror | low |
+| Texas Instruments (Japan) | SNAS393 (Japanese translation; JA literature number not shown) | revision not shown | unknown | [ti.com/jp/lit/ds/symlink/lme49720.pdf](https://www.ti.com/jp/lit/ds/symlink/lme49720.pdf) | vendor_current | medium |
+| National Semiconductor | SNAS376 (National DS number probably 202104, inferred from graphic numbers 20210489/90) | revision not shown | unknown | [datasheet.octopart.com/LME49710MA/NOPB…atasheet-9706660.pdf](https://datasheet.octopart.com/LME49710MA/NOPB-National-Semiconductor-datasheet-9706660.pdf) | third_party_mirror | low |
+| National Semiconductor | SNAS376 (National) | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/229221/NSC/LME49710.html](https://www.alldatasheet.com/datasheet-pdf/pdf/229221/NSC/LME49710.html) | third_party_mirror | low |
+| Texas Instruments | SNAS376 | revision not shown | unknown | [radiolocman.com/datasheet/data.html?%2FLME49710=&di=300405](https://radiolocman.com/datasheet/data.html?%2FLME49710=&di=300405) | third_party_mirror | low |
+| National Semiconductor | SNAS376 (National) | revision not shown | unknown | [datasheet4u.com/datasheets/National-Se…ctor/LME49710/567863](https://datasheet4u.com/datasheets/National-Semiconductor/LME49710/567863) | third_party_mirror | low |
+| Texas Instruments | SNAS376 | C | NOVEMBER 2006 - REVISED APRIL 2013 | [mouser.com/datasheet/2/405/snas376c-316843.pdf](https://www.mouser.com/datasheet/2/405/snas376c-316843.pdf) | distributor_mirror | high |
+| Texas Instruments | SNAS376 | C | NOVEMBER 2006 - REVISED APRIL 2013 | [rcscomponents.kiev.ua/datasheets/lme49710na.pdf](https://www.rcscomponents.kiev.ua/datasheets/lme49710na.pdf) | distributor_mirror | high |
+| Texas Instruments | SNAS376 | C | NOVEMBER 2006 - REVISED APRIL 2013 | [datasheet.octopart.com/LME49710HA-NOPB…asheet-102491025.pdf](https://datasheet.octopart.com/LME49710HA-NOPB-Texas-Instruments-datasheet-102491025.pdf) | third_party_mirror | high |
+| Texas Instruments | SNAS377 | B | FEBRUARY 2007 - REVISED APRIL 2013 | [mm.digikey.com/Volume0/opasdata/d22000…docus/1/LME49740.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1/LME49740.pdf) | distributor_mirror | high |
+| Texas Instruments | SNAS377 | B | FEBRUARY 2007 - REVISED APRIL 2013 | [audioxpress.com/assets/upload/files/lme49740.pdf](https://audioxpress.com/assets/upload/files/lme49740.pdf) | third_party_mirror | high |
+| National Semiconductor | SNAS377 (National) | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/190918/NSC/LME49740.html](https://www.alldatasheet.com/datasheet-pdf/pdf/190918/NSC/LME49740.html) | third_party_mirror | low |
+| National Semiconductor or Texas Instruments (unclear) | SNAS377 | revision not shown | unknown | [hifituning24.de/downloads/lme49740.pdf](https://www.hifituning24.de/downloads/lme49740.pdf) | third_party_mirror | low |
+| Texas Instruments | SNAS377 | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/841149/TI1/LME49740.html](https://www.alldatasheet.com/datasheet-pdf/pdf/841149/TI1/LME49740.html) | third_party_mirror | low |
+| Texas Instruments | SNAS377 | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/841…LME49740NA/NOPB.html](https://www.alldatasheet.com/datasheet-pdf/pdf/841152/TI1/LME49740NA/NOPB.html) | third_party_mirror | low |
 
 ## [MC33078 / MC33079 (low-noise bipolar dual/quad)](families/MC33078.md)
 
@@ -152,6 +212,27 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | STMicroelectronics | unknown | unknown (low ID suggests an early ST revision) | unknown | [alldatasheet.com/datasheet-pdf/pdf/232…TRONICS/MC33078.html](https://www.alldatasheet.com/datasheet-pdf/pdf/23287/STMICROELECTRONICS/MC33078.html) | third_party_mirror | medium |
 | SGS-Thomson | unknown | unknown | unknown (pre-1998 branding) | [studylib.net/doc/18632877/mc33078-datasheet](https://studylib.net/doc/18632877/mc33078-datasheet) | third_party_mirror | medium |
 | Unisonic Technologies | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/738969/UTC/MC33078.html](https://www.alldatasheet.com/datasheet-pdf/pdf/738969/UTC/MC33078.html) | third_party_mirror | low |
+| Motorola | MC33078/D (probable) | revision not shown | unknown (pre-2000 Motorola branding) | [rf-microwave.com/resources/products_at…ts/5a43871ca5304.pdf](https://www.rf-microwave.com/resources/products_attachments/5a43871ca5304.pdf) | distributor_mirror | low |
+| Motorola | n/a | n/a | n/a | [rf-microwave.com/en/motorola/mc33078d/…-amplifier/mc33078d/](https://www.rf-microwave.com/en/motorola/mc33078d/dual-low-noise-operational-amplifier/mc33078d/) | product_page | low |
+| Motorola | unknown | revision not shown | unknown | [datasheet39.com/PDF/467372/MC33078-datasheet.html](http://www.datasheet39.com/PDF/467372/MC33078-datasheet.html) | third_party_mirror | low |
+| Motorola | MC33078/D (probable; covers MC33079) | revision not shown | unknown | [pdf.datasheet.company/58cd5227/freescale.com/MC33079D.html](https://pdf.datasheet.company/58cd5227/freescale.com/MC33079D.html) | third_party_mirror | low |
+| onsemi | MC33078/D | revision not shown | unknown | [yumpu.com/en/document/view/38763494/mc…erational-amplifiers](https://www.yumpu.com/en/document/view/38763494/mc33078-mc33079-low-noise-dual-quad-operational-amplifiers) | third_party_mirror | low |
+| onsemi | MC33078/D | revision not shown | unknown | [media-pim.rubix.com/medias/technical_d…0200&attachment=true](https://media-pim.rubix.com/medias/technical_datasheet/06/19/1300000121906/174.pdf?v=230516034910+0200&attachment=true) | distributor_mirror | low |
+| onsemi | MC33078/D | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/120…ONSEMI/MC33078P.html](https://www.alldatasheet.com/datasheet-pdf/pdf/12018/ONSEMI/MC33078P.html) | third_party_mirror | low |
+| onsemi | MC33078/D | revision not shown | unknown | [datasheet4u.com/datasheets/ON-Semiconductor/MC33078/1495630](https://datasheet4u.com/datasheets/ON-Semiconductor/MC33078/1495630) | third_party_mirror | low |
+| onsemi | MC33078/D | revision not shown | unknown | [datasheetcatalog.com/datasheets_pdf/M/C/3/3/MC33078-D.shtml](http://www.datasheetcatalog.com/datasheets_pdf/M/C/3/3/MC33078-D.shtml) | third_party_mirror | low |
+| onsemi | MC33078/D | n/a | n/a | [uk.rs-online.com/web/p/op-amps/6896721](https://uk.rs-online.com/web/p/op-amps/6896721) | product_page | low |
+| Texas Instruments | SLLS633 | revision not shown | unknown | [radiolocman.com/datasheet/data.html?di=224647&%2FMC33078DR=](https://www.radiolocman.com/datasheet/data.html?di=224647&%2FMC33078DR=) | third_party_mirror | low |
+| Texas Instruments | SLLS633 | revision not shown (high ID suggests a recent upload, probably C) | unknown | [alldatasheet.com/datasheet-pdf/pdf/1809749/TI1/MC33078.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1809749/TI1/MC33078.html) | third_party_mirror | low |
+| Texas Instruments | SLLS633 | n/a | n/a | [uk.rs-online.com/web/p/op-amps/2088615](https://uk.rs-online.com/web/p/op-amps/2088615) | product_page | low |
+| STMicroelectronics | unknown (ST DocID 2177 family) | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/232…RONICS/MC33078D.html](https://www.alldatasheet.com/datasheet-pdf/pdf/23288/STMICROELECTRONICS/MC33078D.html) | third_party_mirror | low |
+| STMicroelectronics | unknown (ST DocID 2177 family) | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/232…RONICS/MC33078N.html](https://www.alldatasheet.com/datasheet-pdf/pdf/23289/STMICROELECTRONICS/MC33078N.html) | third_party_mirror | low |
+| STMicroelectronics | unknown (ST DocID 2177 family) | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/232…ECTRONICS/33078.html](https://www.alldatasheet.com/datasheet-pdf/pdf/23290/STMICROELECTRONICS/33078.html) | third_party_mirror | low |
+| STMicroelectronics | unknown | revision not shown | unknown | [datasheetq.com/MC33078-doc-ST-Microelectronics](https://www.datasheetq.com/MC33078-doc-ST-Microelectronics) | third_party_mirror | low |
+| STMicroelectronics | DocID 2177 (probable) | revision not shown (probably Rev 6, current) | unknown | [digikey.com/en/htmldatasheets/producti…111320/0/0/1/mc33078](https://www.digikey.com/en/htmldatasheets/production/111320/0/0/1/mc33078) | distributor_mirror | low |
+| STMicroelectronics | DocID 2177 (probable) | revision not shown | unknown | [datasheetspdf.com/pdf/1495629/STMicroelectronics/MC33078/1](https://datasheetspdf.com/pdf/1495629/STMicroelectronics/MC33078/1) | third_party_mirror | low |
+| STMicroelectronics | unknown | revision not shown | unknown | [datasheetdir.com/STMICROELECTRONICS-MC…erational-Amplifiers](http://www.datasheetdir.com/STMICROELECTRONICS-MC33078+Operational-Amplifiers) | third_party_mirror | low |
+| STMicroelectronics | unknown | revision not shown | unknown | [datasheetarchive.com/st%20mc33078-datasheet.html](https://www.datasheetarchive.com/st%20mc33078-datasheet.html) | third_party_mirror | low |
 
 ## [MUSES01 / NJM5720 (New JRC / Nisshinbo J-FET-input dual, OFC lead frame)](families/MUSES01.md)
 
@@ -434,6 +515,28 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | New Japan Radio (JRC) | NJM4580 | unknown | unknown | [scribd.com/document/23880293/NJM4580-Opamp-Data-Sheet](https://www.scribd.com/document/23880293/NJM4580-Opamp-Data-Sheet) | third_party_mirror | low |
 | Nisshinbo Micro Devices | unknown | unknown | unknown | [lcsc.com/datasheet/C4548955.pdf](https://www.lcsc.com/datasheet/C4548955.pdf) | distributor_mirror | low |
 | Nisshinbo Micro Devices | n/a | n/a | n/a | [mouser.com/new/nisshinbo/njr-njm4580-audio-amplifiers/](https://www.mouser.com/new/nisshinbo/njr-njm4580-audio-amplifiers/) | product_page | medium |
+| Texas Instruments | SLOS412E | E | APRIL 2003 – REVISED NOVEMBER 2024 | [ti.com/lit/pdf/slos412](https://www.ti.com/lit/pdf/slos412) | vendor_current | high |
+| Texas Instruments | SLOS707A | A | DECEMBER 2010 – REVISED JULY 2012 | [datasheet.octopart.com/RC4580QPWRQ1-Te…tasheet-11812388.pdf](https://datasheet.octopart.com/RC4580QPWRQ1-Texas-Instruments-datasheet-11812388.pdf) | distributor_mirror | high |
+| Texas Instruments | SLOS707A | A | REVISED JULY 2012 (per Rev A header seen elsewhere) | [taoic.oss-cn-hangzhou.aliyuncs.com/sku…623291add4d899ba.pdf](https://taoic.oss-cn-hangzhou.aliyuncs.com/sku/pdf/e7ed3f2a7908a8bf59b6752e623291add4d899ba.pdf) | third_party_mirror | medium |
+| Texas Instruments | SLOS707 (revision not shown) | revision not shown | not shown | [alldatasheet.com/datasheet-pdf/pdf/463698/TI1/RC4580-Q1.html](https://www.alldatasheet.com/datasheet-pdf/pdf/463698/TI1/RC4580-Q1.html) | third_party_mirror | low |
+| Texas Instruments | n/a | n/a | n/a | [ti.com/product/RC4580-Q1](https://www.ti.com/product/RC4580-Q1) | product_page | high |
+| Texas Instruments | SLOS412C | C (per search title) | APRIL 2003 – REVISED MARCH 2004 (Rev C header seen on sibling Octopart copies with the same 153412 id) | [datasheet.octopart.com/RC4580-Texas-In…datasheet-153412.pdf](https://datasheet.octopart.com/RC4580-Texas-Instruments-datasheet-153412.pdf) | distributor_mirror | medium |
+| Texas Instruments | SLOS412 (revision not shown) | revision not shown | not shown | [datasheetspdf.com/datasheet/RC4580.html](https://datasheetspdf.com/datasheet/RC4580.html) | third_party_mirror | low |
+| New Japan Radio (JRC) | NJM4580 (CG variant listing) | revision not shown | not shown | [alldatasheet.com/datasheet-pdf/pdf/147…/NJRC/NJM4580CG.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1475568/NJRC/NJM4580CG.html) | third_party_mirror | low |
+| New Japan Radio (JRC) | NJM4580 | revision not shown | not shown | [alldatasheet.com/datasheet-pdf/pdf/7453/NJRC/NJM4580M.html](https://www.alldatasheet.com/datasheet-pdf/pdf/7453/NJRC/NJM4580M.html) | third_party_mirror | low |
+| New Japan Radio (JRC) | NJM4580 | revision not shown | not shown | [alldatasheet.com/datasheet-pdf/pdf/7454/NJRC/NJM4580L.html](https://www.alldatasheet.com/datasheet-pdf/pdf/7454/NJRC/NJM4580L.html) | third_party_mirror | low |
+| New Japan Radio (JRC) | NJM4580 | revision not shown | not shown | [alldatasheet.com/datasheet-pdf/pdf/7455/NJRC/NJM4580E.html](https://www.alldatasheet.com/datasheet-pdf/pdf/7455/NJRC/NJM4580E.html) | third_party_mirror | low |
+| New Japan Radio (JRC) | NJM4580 | revision not shown | not shown | [alldatasheet.com/datasheet-pdf/pdf/7457/NJRC/NJM4580MD.html](https://www.alldatasheet.com/datasheet-pdf/pdf/7457/NJRC/NJM4580MD.html) | third_party_mirror | low |
+| New Japan Radio (JRC) | NJM4580 | revision not shown | not shown | [datasheet4u.com/datasheet/New-Japan-Radio/NJM4580-455110](https://datasheet4u.com/datasheet/New-Japan-Radio/NJM4580-455110) | third_party_mirror | low |
+| New Japan Radio (JRC) | NJM4580 | revision not shown | not shown | [datasheetcatalog.com/datasheets_pdf/N/J/M/4/NJM4580L.shtml](https://www.datasheetcatalog.com/datasheets_pdf/N/J/M/4/NJM4580L.shtml) | third_party_mirror | low |
+| New Japan Radio (JRC) | NJM4580 | revision not shown | not shown | [digchip.com/datasheets/parts/datasheet/237/NJM4580.php](https://www.digchip.com/datasheets/parts/datasheet/237/NJM4580.php) | third_party_mirror | low |
+| New Japan Radio (JRC) | NJM4580 | revision not shown | not shown | [digchip.com/datasheets/download_datash…&part-number=NJM4580](https://www.digchip.com/datasheets/download_datasheet.php?id=1078154&part-number=NJM4580) | third_party_mirror | low |
+| New Japan Radio (NJR) | NJM4580_E | revision not shown | not shown | [digikey.com/htmldatasheets/production/…8/0/0/1/njm4580.html](https://www.digikey.com/htmldatasheets/production/1428088/0/0/1/njm4580.html) | distributor_mirror | low |
+| Nisshinbo Micro Devices | n/a | n/a | n/a | [digikey.com/en/products/detail/nisshin…-inc/NJM4580D/673772](https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM4580D/673772) | product_page | medium |
+| Nisshinbo Micro Devices | n/a | n/a | n/a | [digikey.com/en/products/detail/njr-cor…rc/NJM4580L/10671733](https://www.digikey.com/en/products/detail/njr-corporation-njrc/NJM4580L/10671733) | product_page | medium |
+| Nisshinbo Micro Devices | n/a | n/a | n/a | [at.rs-online.com/web/p/operationsverstarker/2448616](https://at.rs-online.com/web/p/operationsverstarker/2448616) | product_page | low |
+| Nisshinbo Micro Devices | n/a | n/a | n/a | [sg.rs-online.com/web/p/op-amps/0535155](https://sg.rs-online.com/web/p/op-amps/0535155) | product_page | low |
+| New Japan Radio (JRC) | NJM4580 | revision not shown | not shown | [datasheetarchive.com/NJM4580,%20ne5532-datasheet.html](https://www.datasheetarchive.com/NJM4580,%20ne5532-datasheet.html) | third_party_mirror | low |
 
 ## [OPA1611 / OPA1612 (TI SoundPlus bipolar-input, 1.1 nV/√Hz single/dual)](families/OPA1611.md)
 
@@ -1681,6 +1784,22 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Digi-Key (distributor) | n/a | n/a | n/a | [digikey.com/en/products/detail/analog-…nc/AD827JR-16/611658](https://www.digikey.com/en/products/detail/analog-devices-inc/AD827JR-16/611658) | product_page | high |
 | Mouser Electronics (distributor) | n/a | n/a | n/a | [mouser.com/ProductDetail/Analog-Device…wi%2Fm1CdjScgw%3D%3D](https://www.mouser.com/ProductDetail/Analog-Devices/AD847JNZ?qs=%2FtpEQrCGXCwi%2Fm1CdjScgw%3D%3D) | product_page | low |
 
+## [AD8510 / AD8512 (ADI precision JFET-input dual)](families/AD8512.md)
+
+| Vendor | Document | Rev | Date | Link | Kind | Conf. |
+|---|---|---|---|---|---|---|
+| Analog Devices | AD8510_8512_8513 | K | 2010-01 (listed as 01/21/2010 by radiolocman) | [analog.com/media/en/technical-document…ad8510_8512_8513.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ad8510_8512_8513.pdf) | vendor_current | high |
+| Analog Devices | AD8510_8512_8513 | K (current, resolves to latest) | 2010-01 | [analog.com/AD8510/datasheet](https://www.analog.com/AD8510/datasheet) | vendor_current | medium |
+| Analog Devices | AD8512 | n/a |  | [analog.com/en/products/ad8512.html](https://www.analog.com/en/products/ad8512.html) | product_page | high |
+| Analog Devices (mirror by radiolocman) | AD8510_8512_8513 | K | 2010-01-21 (as listed) | [radiolocman.com/datasheet/pdf.html?di=170505](https://www.radiolocman.com/datasheet/pdf.html?di=170505) | third_party_mirror | high |
+| Analog Devices (mirror by radiolocman) | AD8510_8512_8513 | K | 2010-01 | [radiolocman.com/datasheet/pdf.html?di=121323](https://www.radiolocman.com/datasheet/pdf.html?di=121323) | third_party_mirror | medium |
+| Analog Devices (mirror by RS Components) | AD8510_8512 | unknown (early edition that predates the AD8513, going by its title) | unknown | [docs.rs-online.com/17b1/0900766b801ce1ae.pdf](https://docs.rs-online.com/17b1/0900766b801ce1ae.pdf) | distributor_mirror | medium |
+| Analog Devices (mirror by Octopart) | AD8510_8512_8513 | unknown (edition that includes the AD8513) | unknown | [datasheet.octopart.com/AD8512ARZ-Analo…atasheet-9617219.pdf](https://datasheet.octopart.com/AD8512ARZ-Analog-Devices-datasheet-9617219.pdf) | distributor_mirror | medium |
+| Analog Devices (mirror by alldatasheet) | AD8510_8512 / AD8510_8512_8513 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/83236/AD/AD8512.html](https://www.alldatasheet.com/datasheet-pdf/pdf/83236/AD/AD8512.html) | third_party_mirror | medium |
+| Analog Devices (Internet Archive) | AD8510_8512_8513 | unknown | unknown | [archive.org/details/manuallib-id-2621082](https://archive.org/details/manuallib-id-2621082) | archive | medium |
+| Analog Devices (mirror by radiolocman) | AD8512-EP | unknown | unknown | [radiolocman.com/datasheet/pdf.html?di=166159](https://www.radiolocman.com/datasheet/pdf.html?di=166159) | third_party_mirror | medium |
+| Analog Devices (mirror by datasheet4u) | AD8510_8512_8513 | unknown | unknown | [datasheet4u.com/datasheets/Analog-Devices/AD8512/1088524](https://datasheet4u.com/datasheets/Analog-Devices/AD8512/1088524) | third_party_mirror | medium |
+
 ## [AD8655 / AD8656 (ADI low-noise precision CMOS, rail-to-rail, 5 V)](families/AD8656.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
@@ -2011,6 +2130,20 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Nisshinbo Micro Devices | n/a (product page) | n/a | n/a | [nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8921.html](https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8921.html) | product_page | high |
 | Nisshinbo Micro Devices (listed by Akizuki Denshi) | n/a (distributor listing) | links Ver.1.0 PDF | n/a | [akizukidenshi.com/catalog/g/g131734/](https://akizukidenshi.com/catalog/g/g131734/) | product_page | high |
 
+## [NJM2043 / NJM2043DD (New JRC low-noise dual, NJM4558 lineage)](families/NJM2043.md)
+
+| Vendor | Document | Rev | Date | Link | Kind | Conf. |
+|---|---|---|---|---|---|---|
+| New Japan Radio (New JRC) | NJM2043_E | Ver.2003-03-17 | 2003-03-17 | [mouser.com/datasheet/2/294/NJM2043_E-218482.pdf](https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf) | distributor_mirror | high |
+| New Japan Radio (New JRC) | NJM2043 | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/7233/NJRC/NJM2043.html](https://www.alldatasheet.com/datasheet-pdf/pdf/7233/NJRC/NJM2043.html) | third_party_mirror | medium |
+| New Japan Radio (New JRC) | NJM2043 | unknown | unknown | [datasheetcatalog.com/datasheets_pdf/N/J/M/2/NJM2043.shtml](https://www.datasheetcatalog.com/datasheets_pdf/N/J/M/2/NJM2043.shtml) | third_party_mirror | medium |
+| New Japan Radio (New JRC) | NJM2043 | unknown | unknown | [datasheet4u.com/datasheets/New-Japan-Radio/NJM2043/454856](https://datasheet4u.com/datasheets/New-Japan-Radio/NJM2043/454856) | third_party_mirror | medium |
+| New Japan Radio (New JRC) | NJM2043 | unknown | unknown | [digchip.com/datasheets/parts/datasheet/330/NJM2043.php](https://www.digchip.com/datasheets/parts/datasheet/330/NJM2043.php) | third_party_mirror | medium |
+| Japan Radio Corporation (New JRC) | NJM2043 | unknown | unknown | [datasheetq.com/NJM2043DD-doc-JRC](https://www.datasheetq.com/NJM2043DD-doc-JRC) | third_party_mirror | medium |
+| Japan Radio Corporation (New JRC) | NJM2043 | unknown | unknown | [datasheetbank.com/en/preview/NJM-2043D-JRC](https://www.datasheetbank.com/en/preview/NJM-2043D-JRC) | third_party_mirror | medium |
+| various | NJM2043 | multiple / unknown | unknown | [datasheetarchive.com/?q=njm2043](https://www.datasheetarchive.com/?q=njm2043) | third_party_mirror | low |
+| Akizuki Denshi (retailer) | g102369 | n/a | n/a | [akizukidenshi.com/catalog/g/g102369/](https://akizukidenshi.com/catalog/g/g102369/) | product_page | high |
+
 ## [NJM8801 (New JRC / Nisshinbo high-quality audio bipolar dual, 'mass-production MUSES')](families/NJM8801.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
@@ -2022,6 +2155,17 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | New JRC (legacy Japanese site) | NJM8801 | n/a | n/a | [njr.co.jp/electronic_device/products/NJM8801.html](https://www.njr.co.jp/electronic_device/products/NJM8801.html) | product_page | high |
 | DigiKey | DigiKey 2442899 | unknown | unknown | [digikey.com/en/products/detail/nisshin…inc/NJM8801E/2442899](https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM8801E/2442899) | product_page | medium |
 | Mouser | NJM8801E | unknown | unknown | [mouser.com/ProductDetail/Nisshinbo/NJM…8N40dtsGaEGlFg%3D%3D](https://www.mouser.com/ProductDetail/Nisshinbo/NJM8801E?qs=yQ3iditm8N40dtsGaEGlFg%3D%3D) | product_page | medium |
+
+## [NJM8830 (Nisshinbo ultra-low-distortion, ultra-low-noise full-swing audio dual)](families/NJM8830.md)
+
+| Vendor | Document | Rev | Date | Link | Kind | Conf. |
+|---|---|---|---|---|---|---|
+| Nisshinbo Micro Devices | NJM8830_E | current (Ver. number not captured) | unknown | [nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM8830_E.pdf](https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM8830_E.pdf) | vendor_current | medium |
+| Nisshinbo Micro Devices | n/a | n/a | n/a | [nisshinbo-microdevices.co.jp/en/produc…pec/?product=njm8830](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm8830) | product_page | high |
+| Mouser (mirror of Nisshinbo) | NJM8830_E | unknown (likely initial release) | 2022-05-20 (PDF date per search index) | [mouser.com/datasheet/2/294/NJM8830_E-2953374.pdf](https://www.mouser.com/datasheet/2/294/NJM8830_E-2953374.pdf) | distributor_mirror | medium |
+| LCSC (mirror of Nisshinbo) | NJM8830_E | unknown | uploaded c. 2024-01-22 (from filename timestamp) | [lcsc.com/datasheet/lcsc_datasheet_2401…M1-TE1_C19941438.pdf](https://www.lcsc.com/datasheet/lcsc_datasheet_2401221619_Nisshinbo-Micro-Devices-Inc--NJM8830GM1-TE1_C19941438.pdf) | distributor_mirror | medium |
+| AllDatasheet (mirror of Nisshinbo) | NJM8830_E | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/147…SSHINBO/NJM8830.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1474106/NISSHINBO/NJM8830.html) | third_party_mirror | medium |
+| Datasheet4U (mirror of Nisshinbo) | NJM8830_E | unknown | unknown | [datasheet4u.com/datasheets/Nisshinbo/NJM8830/1588345](https://datasheet4u.com/datasheets/Nisshinbo/NJM8830/1588345) | third_party_mirror | medium |
 
 ## [NJM8901 / NJM8901E (New JRC entry-tier JFET-input audio dual)](families/NJM8901.md)
 
@@ -2128,6 +2272,21 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments (via Mouser UK) | SBOS724 | unknown | unknown | [mouser.co.uk/ProductDetail/Texas-Instr…6uTz90CW1g8NkQ%3D%3D](https://www.mouser.co.uk/ProductDetail/Texas-Instruments/OPA1688ID?qs=yajEpaT76uTz90CW1g8NkQ%3D%3D) | product_page | low |
 | Texas Instruments (via Arrow) | SBOS724 | unknown | unknown | [arrow.com/en/products/opa1688id/texas-instruments](https://www.arrow.com/en/products/opa1688id/texas-instruments) | product_page | low |
 
+## [OPA1692 (TI SoundPlus low-power, low-noise dual bipolar-input audio op-amp)](families/OPA1692.md)
+
+| Vendor | Document | Rev | Date | Link | Kind | Conf. |
+|---|---|---|---|---|---|---|
+| Texas Instruments | SBOS566 | C | October 2018 (original June 2017) | [ti.com/lit/gpn/OPA1692](https://www.ti.com/lit/gpn/OPA1692) | vendor_current | high |
+| Texas Instruments | SBOS566 | C | October 2018 | [ti.com/product/OPA1692](https://www.ti.com/product/OPA1692) | product_page | high |
+| Texas Instruments | SBOS566 (JA translation) | unknown | unknown | [ti.com/jp/lit/ds/symlink/opa1692.pdf](https://www.ti.com/jp/lit/ds/symlink/opa1692.pdf) | vendor_current | medium |
+| Texas Instruments (Scribd upload) | SBOS566 | C | October 2018 | [scribd.com/document/394624916/sbos566c](https://www.scribd.com/document/394624916/sbos566c) | third_party_mirror | high |
+| Texas Instruments (alldatasheet mirror) | SBOS566 | likely original (June 2017) | likely June 2017 | [alldatasheet.com/datasheet-pdf/pdf/954302/TI1/OPA1692.html](https://www.alldatasheet.com/datasheet-pdf/pdf/954302/TI1/OPA1692.html) | third_party_mirror | low |
+| Texas Instruments (alldatasheet mirror) | SBOS566 | unknown (later revision, possibly B or C) | unknown | [alldatasheet.com/datasheet-pdf/pdf/1096308/TI1/OPA1692.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1096308/TI1/OPA1692.html) | third_party_mirror | low |
+| Texas Instruments (ic114 mirror) | SBOS566 | unknown | unknown | [product.ic114.com/PDF/O/OPA1692.PDF](http://product.ic114.com/PDF/O/OPA1692.PDF) | third_party_mirror | low |
+| Texas Instruments (Digi-Key HTML datasheet) | SBOS566 | unknown | unknown | [digikey.co.il/he/htmldatasheets/produc…/1/opa1692idgkr.html](https://www.digikey.co.il/he/htmldatasheets/production/2845979/0/0/1/opa1692idgkr.html) | distributor_mirror | low |
+| Texas Instruments (datasheet4u mirror) | SBOS566 | unknown | unknown | [datasheet4u.com/datasheet/etcTI/OPA1692-1561162](https://datasheet4u.com/datasheet/etcTI/OPA1692-1561162) | third_party_mirror | low |
+| Texas Instruments (Farnell mirror) | TI notification (number not captured) | n/a | 2018-11-05 | [farnell.com/datasheets/2721178.pdf](https://www.farnell.com/datasheets/2721178.pdf) | distributor_mirror | high |
+
 ## [OPA2156 / OPA156 (TI 36 V ultra-low-noise CMOS rail-to-rail I/O precision; single OPA156 unconfirmed)](families/OPA2156.md)
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. |
@@ -2224,6 +2383,25 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments (via radiolocman) | SLOS182 | probably B (unconfirmed) | unknown | [radiolocman.com/datasheet/data.html?/TLE2081=&di=330771](https://www.radiolocman.com/datasheet/data.html?/TLE2081=&di=330771) | third_party_mirror | low |
 | DatasheetCatalog (third party) | SLOS182 (letter unknown) | unknown | unknown | [datasheetcatalog.com/datasheets_pdf/T/L/E/2/TLE2081.shtml](https://www.datasheetcatalog.com/datasheets_pdf/T/L/E/2/TLE2081.shtml) | third_party_mirror | low |
 | ManualMachine (third party) | SLOS182 (letter unknown) | unknown | unknown | [manualmachine.com/texasinstruments/tle…n/4449201-datasheet/](https://manualmachine.com/texasinstruments/tle2084cn/4449201-datasheet/) | third_party_mirror | low |
+
+## [TLE2141 / TLE2142 / TLE2144 (TI Excalibur low-noise high-speed bipolar)](families/TLE2142.md)
+
+| Vendor | Document | Rev | Date | Link | Kind | Conf. |
+|---|---|---|---|---|---|---|
+| Texas Instruments | SLOS183 | E | July 2025 | [ti.com/lit/ds/symlink/tle2142.pdf](https://www.ti.com/lit/ds/symlink/tle2142.pdf) | vendor_current | medium |
+| Texas Instruments | SLOS183 | E | July 2025 | [ti.com/lit/ds/slos183e/slos183e.pdf](https://www.ti.com/lit/ds/slos183e/slos183e.pdf) | vendor_revision_specific | medium |
+| Texas Instruments | SLOS183 | D | February 1997, revised October 2012 | [radiolocman.com/datasheet/data.html?%2FTLE2142=&di=330795](https://www.radiolocman.com/datasheet/data.html?%2FTLE2142=&di=330795) | third_party_mirror | medium |
+| Texas Instruments | SLOS183 | D (probable) | October 2012 (probable) | [radiolocman.com/datasheet/data.html?%2FTLE2141=&di=330783](https://radiolocman.com/datasheet/data.html?%2FTLE2141=&di=330783) | third_party_mirror | low |
+| Texas Instruments | SLOS183 | unknown (old all-caps format, D or earlier) | unknown | [ti.com/lit/gpn/TLE2142A](https://www.ti.com/lit/gpn/TLE2142A) | vendor_legacy | low |
+| Texas Instruments | unknown (pre-SLOS183 standalone TLE2142 datasheet) | unknown | unknown (pre-1997, likely) | [icbase.com/File/PDF/TTI/TTI20590106.pdf](https://www.icbase.com/File/PDF/TTI/TTI20590106.pdf) | third_party_mirror | low |
+| Texas Instruments | SLOS183 (presumed) | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/228137/TI/TLE2142.html](https://www.alldatasheet.com/datasheet-pdf/pdf/228137/TI/TLE2142.html) | third_party_mirror | low |
+| Texas Instruments | SLOS183 (presumed) | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/955854/TI1/TLE2142.html](https://www.alldatasheet.com/datasheet-pdf/pdf/955854/TI1/TLE2142.html) | third_party_mirror | low |
+| Texas Instruments | SLOS183 (presumed) | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/28934/TI/TLE214X.html](https://www.alldatasheet.com/datasheet-pdf/pdf/28934/TI/TLE214X.html) | third_party_mirror | low |
+| Texas Instruments | unknown | unknown | unknown | [datasheet4u.com/datasheet/etcTI/TLE2142-1442138](https://datasheet4u.com/datasheet/etcTI/TLE2142-1442138) | third_party_mirror | low |
+| Texas Instruments | unknown | unknown | unknown | [ti.com/lit/ds/symlink/tle2142-q1.pdf](https://www.ti.com/lit/ds/symlink/tle2142-q1.pdf) | vendor_current | medium |
+| Texas Instruments | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/254693/TI/TLE2142-EP.html](https://www.alldatasheet.com/datasheet-pdf/pdf/254693/TI/TLE2142-EP.html) | third_party_mirror | low |
+| Texas Instruments | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/254694/TI/TLE2144-EP.html](https://www.alldatasheet.com/datasheet-pdf/pdf/254694/TI/TLE2144-EP.html) | third_party_mirror | low |
+| Texas Instruments | n/a | n/a | n/a | [ti.com/product/TLE2142](https://www.ti.com/product/TLE2142) | product_page | high |
 
 ## [TPA6120A2 (TI dual current-feedback headphone amplifier)](families/TPA6120A2.md)
 

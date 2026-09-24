@@ -1,9 +1,12 @@
 # Revision hazards: same part number, different silicon
 
-## Silicon and specification changes (104)
+## Silicon and specification changes (103)
 
 | Family | Kind | Vendor | When | What changed | Risk | Conf. |
 |---|---|---|---|---|---|---|
+| [TLE2142](families/TLE2142.md) | Fab / process transfer | Texas Instruments | PCN20250730004.1 issued 31 Jul 2025; proposed first ship… | TI qualified RFAB (Richardson) using TIB process technology as an extra fab alongside DL-LIN (Dallas), with a die revision from B to C, a datasheet update… | medium: new die and process under an unchanged part number. | medium |
+| [AD8512](families/AD8512.md) | Fab / process transfer | Analog Devices | 2025 (PCN 25_0156 Rev. -) | Wafer-fab change: production of the listed AD8510/AD8512/AD8513 part numbers uses an existing qualified process at ADI's Camas, WA fab to ensure continuous… | low: same part numbers and datasheet limits, and the vendor states no fit/form/function… | medium |
+| [OPA1692](families/OPA1692.md) | Datasheet respec | Texas Instruments | Datasheet SBOS566C October 2018; notification 5 Nov 2018 | No silicon change is known. | low - datasheet-only change; the notice says there is no device change | high |
 | [NE5532](families/NE5532.md) | Unclassified | Texas Instruments | Process/fab PCN reportedly dated Nov 15, 2023 (diyAudio);… | TI replaced the NE5532/NE5532A/SA5532/SA5532A silicon with a redesign on a newer process in RFAB, without changing the part numbers. | high – same part number but lower voltage rating, slower slew, halved ESD, no input… | high |
 | [NE5532](families/NE5532.md) | Unclassified | Texas Instruments | PCN 20231114002.1 dated 2023-11-15; | This surfaced while chasing LM4562 leads, and no link to LM4562 was found. | high - same part number, and per Hackaday it is incompatible with legacy designs. | medium |
 | [NE5532](families/NE5532.md) | Unclassified | Texas Instruments | Datasheet SLOS075 moved from Rev J (Jan 2015) to Rev K… | On E2E, TI confirmed that the NE5532, LM833, MC33078 and RC4580 now use the same die. | high - Designs running at +/-18 to +/-22 V exceed the new limits. | medium |
@@ -64,10 +67,6 @@
 | [LME49720](families/LME49720.md) | Unclassified | Texas Instruments | PCN 20180308002 dated 2018-03-09 (proposed first ship… | PCN 20180308002 is titled 'Transfer of select VIP3 devices from GFAB to DFAB (DL-LIN) Wafer Fab site'. | low - same process family (VIP3), same part number and pinout, and no datasheet change… | medium |
 | [LME49720](families/LME49720.md) | Unclassified | Texas Instruments | PDN 20170721000C (2017), linked to the GFAB closure | TI discontinued select GFAB-sourced devices. | low - discontinuance only. | medium |
 | [LM833](families/LM833.md) | Unclassified | onsemi (ON Semiconductor, ex-Motorola) | Initial PCN 11528 issued 19 July 2001 | The same ON Semiconductor PCN 11528 lists LM833D, LM833DR2 and LM833N for transfer from the Motorola BMC wafer fab in Mesa, AZ to ON's Tesla wafer fab in… | low - same design and part numbers. | medium |
-| [LT1361](families/LT1361.md) | Unclassified | Analog Devices | 2021 (PCN 21_0060 Rev A; a Rev B also exists; exact dates… | MARKING ONLY, NOT A DIE CHANGE: the top mark on legacy Linear 8-SOICN products changed from ink to laser. | low - marking change only; same die and package | medium |
-| [LT1361](families/LT1361.md) | Unclassified | Analog Devices | October 2024 (PCN 24_0236 Rev -) | MARKING ONLY, NOT A DIE CHANGE: the bottom-side trace-code marking moved into the top-side laser mark to standardise marking across ADI packages. | low - marking change only | medium |
-| [LT1361](families/LT1361.md) | Unclassified | Analog Devices (Linear Technology) | PCN 21_0060 (11 Nov 2021), PCN 22_0241, PCN 24_0234, PCN… | Search summaries list LT1361 among the affected parts of the same four ADI PCNs as LT1364: 21_0060, 22_0241, 24_0234 and 24_0236. | low - no evidence of an electrical change; follow-up needed. | low |
-| [LT1364](families/LT1364.md) | Unclassified | Analog Devices (Linear Technology) | PCN 21_0060 (11 Nov 2021; | Search summaries say LT1363/LT1364 appear in the affected-parts lists of four ADI PCNs: 21_0060, 22_0241, 24_0234 and 24_0236. | low - no evidence of an electrical change; flagged for follow-up because the PCN… | low |
 | [MC33078](families/MC33078.md) | Unclassified | Texas Instruments | Confirmed on TI E2E in 2026 (thread 1652528, around June… | TI E2E thread 1652528, 'NE5532, LM833, RC4580 and MC33078 all now the same die', reports that TI has unified the four dies while keeping the part numbers. | low: no MC33078 datasheet change or PCN was found, and the evidence points to NE5532… | medium |
 | [MC33078](families/MC33078.md) | Unclassified | Texas Instruments / STMicroelectronics… | TI since October 2004; | Same part number, different silicon across vendors. | low: the pinout and headline specs match. | low |
 | [MC33078](families/MC33078.md) | Unclassified | onsemi (ON Semiconductor, ex-Motorola) | Initial PCN 11528 issued 19 July 2001. | ON Semiconductor PCN 11528 announced the transfer and qualification of devices then made in the Motorola BMC wafer fab in Mesa, AZ to ON's Tesla wafer fab in… | low - same design and part numbers; any difference would be process-spread within the… | medium |
@@ -109,7 +108,182 @@
 | [TL07x](families/TL07x.md) | Unclassified | STMicroelectronics | Ongoing (ST TL072 DocID2298 Rev 8, June 2014; | The second-source die has its own spec set, which differs from the TI legacy die on paper: lower noise and higher bandwidth. | low: same pinout and supply class. | medium |
 | [uPC4570](families/uPC4570.md) | Unclassified | Renesas Electronics (ex-NEC) | New Renesas datasheet R03DS0135EJ0100 Rev.1.00 dated 17… | Renesas replaced the NEC-era µPC4570 datasheet (G10528EJ8V0DS00) with a new Renesas document, R03DS0135EJ: Rev.1.00 in January 2019 and Rev.2.00 in February… | low - same die as far as documented; watch the Rev.2.00 limits and the new orderable… | low |
 
+## Other change notes (6)
+
+| Family | Kind | Vendor | When | What changed | Risk | Conf. |
+|---|---|---|---|---|---|---|
+| [LT1361](families/LT1361.md) | Package / assembly | Analog Devices (Linear Technology) | PCN 21_0060, 11 Nov 2021 (Rev -, Rev A and Rev B exist) | Marking only, not a die change. | low - marking change only; same die and package. | medium |
+| [LT1361](families/LT1361.md) | Package / assembly | Analog Devices (Linear Technology) | PCN 22_0241 (Rev - and Rev A; | Assembly material change. | low - assembly material change; same die. | medium |
+| [LT1361](families/LT1361.md) | Package / assembly | Analog Devices (Linear Technology) | October 2024 (PCN 24_0236 Rev -, 8 Oct 2024; companion PCN… | Marking only, not a die change. | low - marking change only. | medium |
+| [LT1364](families/LT1364.md) | Package / assembly | Analog Devices (Linear Technology) | PCN 21_0060, 11 Nov 2021 (Rev -, Rev A and Rev B exist) | Marking only, not a die change. | low - marking change only; same die and package. | medium |
+| [LT1364](families/LT1364.md) | Package / assembly | Analog Devices (Linear Technology) | PCN 22_0241 (Rev - and Rev A; | Assembly material change. | low - assembly material change qualified to industry standards; same die. | medium |
+| [LT1364](families/LT1364.md) | Package / assembly | Analog Devices (Linear Technology) | October 2024 (PCN 24_0234 Rev - and PCN 24_0236 Rev -; 8… | Marking only, not a die change. | low - marking change only. | medium |
+
 ## Details
+
+### TLE2141 / TLE2142 / TLE2144 (TI Excalibur low-noise high-speed bipolar): Fab / process transfer, Texas Instruments, PCN20250730004.1 issued 31 Jul 2025; proposed first ship…
+
+*When:* PCN20250730004.1 issued 31 Jul 2025; proposed first ship 29 Oct 2025
+
+TI qualified RFAB (Richardson) using TIB process technology as an extra fab alongside DL-LIN (Dallas), with a die revision from B to C, a datasheet update from SLOS183D to SLOS183E, and new assembly BOM options. This is part of TI's multiyear move off 200 mm factories. TI states there is no anticipated impact on form, fit, function, quality or reliability.
+
+**How to tell old from new:** Die revision C (was B) and RFAB fab-site codes on reel/box labels. Date codes after late October 2025. Datasheet SLOS183E instead of SLOS183D. Existing DL-LIN (Dallas) die-B material may ship in parallel.
+
+| Parameter | Before | After |
+|---|---|---|
+| Die revision | B | C |
+| Wafer fab | DL-LIN (Dallas) | DL-LIN or RFAB (Richardson, TIB process) |
+| Datasheet | SLOS183D (Oct 2012) | SLOS183E (Jul 2025) |
+
+**Audio impact:** Unknown. A new die on a different process under the same part number could change noise, distortion or stability details. No measurements or listening comparisons found.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20250730004.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7170/PCN20250730004.1.pdf)
+- [ti.com/lit/ds/slos183e/slos183e.pdf](https://www.ti.com/lit/ds/slos183e/slos183e.pdf)
+
+### AD8510 / AD8512 (ADI precision JFET-input dual): Fab / process transfer, Analog Devices, 2025 (PCN 25_0156 Rev. -)
+
+*When:* 2025 (PCN 25_0156 Rev. -)
+
+Wafer-fab change: production of the listed AD8510/AD8512/AD8513 part numbers uses an existing qualified process at ADI's Camas, WA fab to ensure continuous supply. ADI says it expects no impact on fit, form, function or reliability. The datasheet was not revised (still Rev. K).
+
+**How to tell old from new:** Not established. The search summaries did not show a date-code or trace-code cutover, so check the PCN's effective date and date codes.
+
+**Audio impact:** None claimed by ADI; datasheet limits are unchanged. As with any fab or process move, typical noise, bias-current and offset distributions could shift within those limits, which is not verified.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…_0156_Rev_-_Form.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7560/ADI_PCN_25_0156_Rev_-_Form.pdf)
+
+### OPA1692 (TI SoundPlus low-power, low-noise dual bipolar-input audio op-amp): Datasheet respec, Texas Instruments, Datasheet SBOS566C October 2018; notification 5 Nov 2018
+
+*When:* Datasheet SBOS566C October 2018; notification 5 Nov 2018
+
+No silicon change is known. The only TI notice found is a datasheet-only specification change (SBOS566B to SBOS566C) to 'accurately reflect device characteristics', with no change to the device. Which parameters changed was not retrieved, so specs quoted from rev B or earlier copies may differ from rev C.
+
+**How to tell old from new:** None needed. The silicon did not change, so parts built before and after Nov 2018 are the same device. Only the datasheet limits and typicals differ between SBOS566B and SBOS566C.
+
+**Audio impact:** None expected, since the die is the same. When comparing specs, use rev C values.
+
+- [farnell.com/datasheets/2721178.pdf](https://www.farnell.com/datasheets/2721178.pdf)
+- [scribd.com/document/394624916/sbos566c](https://www.scribd.com/document/394624916/sbos566c)
+
+### LT1360 / LT1361 / LT1362 (50MHz, 800V/us C-Load bipolar single/dual/quad): Package / assembly, Analog Devices (Linear Technology), PCN 21_0060, 11 Nov 2021 (Rev -, Rev A and Rev B exist)
+
+*When:* PCN 21_0060, 11 Nov 2021 (Rev -, Rev A and Rev B exist)
+
+Marking only, not a die change. On legacy Linear 8-SOICN products the top mark changed from ink to laser. This entry records both marking styles as genuine. The completeness-sweep mention of 21_0060 is merged here.
+
+**How to tell old from new:** Older parts have an ink top mark and newer parts have a laser top mark. This applies to 8-SOICN packages assembled at ADPG, UTAC and Carsem.
+
+| Parameter | Before | After |
+|---|---|---|
+| Top-side mark method | ink | laser |
+
+**Audio impact:** None expected (package marking only).
+
+**Verification:** WebSearch confirms that PCN 21_0060 Rev B (11 Nov 2021) is an ADI notice covering Linear 8-SOIC parts (LT1363CS8, LT1364CS8). The LT1361CS8 listing and the ink-to-laser detail come from an earlier pass. The PDF itself was not read.
+
+- [analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_-_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_-_Form.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…CN_21_0060_Rev_A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5335/PCN_21_0060_Rev_A.pdf)
+- [analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf)
+
+### LT1360 / LT1361 / LT1362 (50MHz, 800V/us C-Load bipolar single/dual/quad): Package / assembly, Analog Devices (Linear Technology), PCN 22_0241 (Rev - and Rev A;
+
+*When:* PCN 22_0241 (Rev - and Rev A; Rev A dated 18 Dec 2023 per search summary). Effective from date code 2242.
+
+Assembly material change. The epoxy formulation changed from Henkel 8290 to Henkel 8290A (Ablestik 8290 is a die-attach paste). ADI states no impact to fit, form or function, with improved reliability. The die and wafer process are unchanged.
+
+**How to tell old from new:** By date code: parts coded 2242 or later use the new epoxy. There is no visible marking difference.
+
+| Parameter | Before | After |
+|---|---|---|
+| Die-attach epoxy | Henkel 8290 | Henkel 8290A |
+
+**Audio impact:** None expected (assembly material only).
+
+**Verification:** A WebSearch summary of PCN 22_0241 lists LT1361, LT1362 and LT1364 among the affected LT13xx/LT14xx op amps. It gives the change as Henkel 8290 to 8290A epoxy, effective from date code 2242, with no fit, form or function impact. The PDF itself was not read.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…CN_22_0241_Rev_A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5781/PCN_22_0241_Rev_A.pdf)
+- [mouser.com/PCN/ADI_PCN_22_0241.pdf](https://www.mouser.com/PCN/ADI_PCN_22_0241.pdf)
+
+### LT1360 / LT1361 / LT1362 (50MHz, 800V/us C-Load bipolar single/dual/quad): Package / assembly, Analog Devices (Linear Technology), October 2024 (PCN 24_0236 Rev -, 8 Oct 2024; companion PCN…
+
+*When:* October 2024 (PCN 24_0236 Rev -, 8 Oct 2024; companion PCN 24_0234 Rev -)
+
+Marking only, not a die change. The bottom-side trace-code mark moved into the top-side laser mark to standardise marking across ADI packages. ADI states no impact to form, fit, function or reliability. The completeness-sweep mentions of 24_0234 and 24_0236 are merged here.
+
+**How to tell old from new:** Older parts carry the trace code on the bottom of the package. Newer parts carry it in the top-side laser mark. The change is identified by date code.
+
+| Parameter | Before | After |
+|---|---|---|
+| Trace code location | package bottom | top-side laser mark |
+
+**Audio impact:** None expected (marking only).
+
+**Verification:** WebSearch confirms that PCN 24_0234 and 24_0236 are the bottom-to-top trace-code marking migration, with no form, fit, function or reliability impact. The LT1361CS8#PBF listing comes from an earlier pass. The per-part list was not read.
+
+- [mouser.com/PCN/ADI_PCN_24_0236.pdf](https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf)
+- [analog.com/media/en/PCN/ADI_PCN_24_0236_Rev_-_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_24_0236_Rev_-_Form.pdf)
+- [mouser.com/PCN/ADI_PCN_24_0234.pdf](https://www.mouser.com/PCN/ADI_PCN_24_0234.pdf)
+- [farnell.com/datasheets/4419216.pdf](https://www.farnell.com/datasheets/4419216.pdf)
+
+### LT1363 / LT1364 / LT1365 (single/dual/quad 70 MHz, 1000 V/us C-Load bipolar): Package / assembly, Analog Devices (Linear Technology), PCN 21_0060, 11 Nov 2021 (Rev -, Rev A and Rev B exist)
+
+*When:* PCN 21_0060, 11 Nov 2021 (Rev -, Rev A and Rev B exist)
+
+Marking only, not a die change. On legacy Linear 8-SOICN products the top mark changed from ink to laser. Both marking styles are genuine. This resolves part of the completeness-sweep watch item.
+
+**How to tell old from new:** Older parts have an ink top mark and newer parts have a laser top mark (8-SOICN). The top-mark text is still '1363' or '1364'.
+
+| Parameter | Before | After |
+|---|---|---|
+| Top-side mark method | ink | laser |
+
+**Audio impact:** None expected (marking only).
+
+**Verification:** Search summary of PCN 21_0060 Rev B lists LT1363CS8#TRPBF and LT1364CS8. The ink-to-laser description comes from the LT1361-family pass for the same PCN. The PDF itself was not read.
+
+- [analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_-_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_-_Form.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…CN_21_0060_Rev_A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5335/PCN_21_0060_Rev_A.pdf)
+- [analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf)
+
+### LT1363 / LT1364 / LT1365 (single/dual/quad 70 MHz, 1000 V/us C-Load bipolar): Package / assembly, Analog Devices (Linear Technology), PCN 22_0241 (Rev - and Rev A;
+
+*When:* PCN 22_0241 (Rev - and Rev A; Rev A dated 18 Dec 2023 per search summary). Effective from date code 2242 (2022 week 42).
+
+Assembly material change. The epoxy formulation changed from Henkel 8290 to Henkel 8290A (Loctite Ablestik 8290 is a die-attach paste). ADI states no impact to fit, form or function, with improved reliability, and the material declaration is updated. The die and wafer process are unchanged.
+
+**How to tell old from new:** By date code: parts coded 2242 or later use the new epoxy. There is no visible marking difference.
+
+| Parameter | Before | After |
+|---|---|---|
+| Die-attach epoxy | Henkel 8290 | Henkel 8290A |
+
+**Audio impact:** None expected (assembly material only; no electrical specification change).
+
+**Verification:** WebSearch summaries of PCN 22_0241 give the Henkel 8290 to 8290A epoxy change, the 2242 date-code cut-in and 'no impact to fit, form, function'. A separate summary lists LT1361, LT1362 and LT1364 among the affected LT13xx parts. The PDF itself was not read.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…CN_22_0241_Rev_A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5781/PCN_22_0241_Rev_A.pdf)
+- [mouser.com/PCN/ADI_PCN_22_0241.pdf](https://www.mouser.com/PCN/ADI_PCN_22_0241.pdf)
+
+### LT1363 / LT1364 / LT1365 (single/dual/quad 70 MHz, 1000 V/us C-Load bipolar): Package / assembly, Analog Devices (Linear Technology), October 2024 (PCN 24_0234 Rev - and PCN 24_0236 Rev -; 8…
+
+*When:* October 2024 (PCN 24_0234 Rev - and PCN 24_0236 Rev -; 8 Oct 2024 per sweep summary)
+
+Marking only, not a die change. The bottom-side trace-code mark moved into the top-side laser mark, to standardise marking across ADI packages and for environmental reasons. ADI states no impact to form, fit, function or reliability. PCN 24_0234 and PCN 24_0236 are companion notices for the same change on different package groups.
+
+**How to tell old from new:** Older parts carry the trace code on the bottom of the package. Newer parts carry it in the top-side laser mark. The change is identified by date code.
+
+| Parameter | Before | After |
+|---|---|---|
+| Trace code location | package bottom | top-side laser mark |
+
+**Audio impact:** None expected (marking only).
+
+**Verification:** WebSearch summaries confirm that PCN 24_0234 moves the bottom trace code to the top-side laser mark, with no form, fit, function or reliability impact. A search for LT1364 plus the trace-code PCNs returned 24_0234 and 24_0236 together with the LT1364 product pages. The per-part listing was not read.
+
+- [mouser.com/PCN/ADI_PCN_24_0234.pdf](https://www.mouser.com/PCN/ADI_PCN_24_0234.pdf)
+- [farnell.com/datasheets/4419216.pdf](https://www.farnell.com/datasheets/4419216.pdf)
+- [mouser.com/PCN/ADI_PCN_24_0236.pdf](https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf)
+- [analog.com/media/en/PCN/ADI_PCN_24_0236_Rev_-_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_24_0236_Rev_-_Form.pdf)
 
 ### NE5532 / NE5532A / SA5532 / SE5532 (dual low-noise bipolar; incl. NJM5532, KA5532, BA15532, RC5532): Unclassified, Texas Instruments, Process/fab PCN reportedly dated Nov 15, 2023 (diyAudio);…
 
@@ -1274,71 +1448,6 @@ The same ON Semiconductor PCN 11528 lists LM833D, LM833DR2 and LM833N for transf
 
 - [onsemi.com/pub/docs/pcn/11528.pdf](https://www.onsemi.com/pub/docs/pcn/11528.pdf)
 - [onsemi.com/pdf/datasheet/lm833-d.pdf](https://www.onsemi.com/pdf/datasheet/lm833-d.pdf)
-
-### LT1360 / LT1361 / LT1362 (50MHz, 800V/us C-Load bipolar single/dual/quad): Unclassified, Analog Devices, 2021 (PCN 21_0060 Rev A; a Rev B also exists; exact dates…
-
-*When:* 2021 (PCN 21_0060 Rev A; a Rev B also exists; exact dates not confirmed)
-
-MARKING ONLY, NOT A DIE CHANGE: the top mark on legacy Linear 8-SOICN products changed from ink to laser. Included so that both marking styles are recognised as genuine.
-
-**How to tell old from new:** Older parts have an ink top mark; newer parts have a laser top mark. This applies to 8-SOICN packages assembled at ADPG, UTAC and Carsem.
-
-| Parameter | Before | After |
-|---|---|---|
-| Top-side mark method | ink | laser |
-
-**Audio impact:** None expected (package marking only).
-
-- [mm.digikey.com/Volume0/opasdata/d22000…CN_21_0060_Rev_A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5335/PCN_21_0060_Rev_A.pdf)
-- [analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf)
-
-### LT1360 / LT1361 / LT1362 (50MHz, 800V/us C-Load bipolar single/dual/quad): Unclassified, Analog Devices, October 2024 (PCN 24_0236 Rev -)
-
-*When:* October 2024 (PCN 24_0236 Rev -)
-
-MARKING ONLY, NOT A DIE CHANGE: the bottom-side trace-code marking moved into the top-side laser mark to standardise marking across ADI packages.
-
-**How to tell old from new:** Older parts carry the trace code on the bottom of the package; newer parts carry it on the top-side laser mark.
-
-| Parameter | Before | After |
-|---|---|---|
-| Trace code location | package bottom | top-side laser mark |
-
-**Audio impact:** None expected (marking only).
-
-- [mouser.com/PCN/ADI_PCN_24_0236.pdf](https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf)
-
-### LT1360 / LT1361 / LT1362 (50MHz, 800V/us C-Load bipolar single/dual/quad): Unclassified, Analog Devices (Linear Technology), PCN 21_0060 (11 Nov 2021), PCN 22_0241, PCN 24_0234, PCN…
-
-*When:* PCN 21_0060 (11 Nov 2021), PCN 22_0241, PCN 24_0234, PCN 24_0236 (8 Oct 2024)
-
-Search summaries list LT1361 among the affected parts of the same four ADI PCNs as LT1364: 21_0060, 22_0241, 24_0234 and 24_0236. The nature of the changes was not retrieved. This is a watch item, not a confirmed die or process change.
-
-**How to tell old from new:** Unknown. The change type was not retrieved.
-
-**Audio impact:** Unknown
-
-- [mouser.com/PCN/ADI_PCN_24_0236.pdf](https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf)
-- [analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf)
-- [mm.digikey.com/Volume0/opasdata/d22000…CN_22_0241_Rev_A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5781/PCN_22_0241_Rev_A.pdf)
-- [mouser.com/PCN/ADI_PCN_24_0234.pdf](https://www.mouser.com/PCN/ADI_PCN_24_0234.pdf)
-
-### LT1363 / LT1364 / LT1365 (single/dual/quad 70 MHz, 1000 V/us C-Load bipolar): Unclassified, Analog Devices (Linear Technology), PCN 21_0060 (11 Nov 2021;
-
-*When:* PCN 21_0060 (11 Nov 2021; Rev A and B exist), PCN 22_0241 (Rev A), PCN 24_0234 and PCN 24_0236 (8 Oct 2024)
-
-Search summaries say LT1363/LT1364 appear in the affected-parts lists of four ADI PCNs: 21_0060, 22_0241, 24_0234 and 24_0236. The change descriptions, whether wafer fab, assembly, wire or mold compound, were not visible in any search result. This is a watch item only: it is not established that any of them is a silicon or process change. The ADI 8-K (January 2018) announced closure of the ex-LTC Hillview (Milpitas) fab, with production moving to Camas, Wilmington, Limerick and external foundries. No retrieved source ties LT1364 to that transfer.
-
-**How to tell old from new:** Unknown. The change type was not retrieved.
-
-**Audio impact:** Unknown
-
-- [analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_-_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_-_Form.pdf)
-- [mm.digikey.com/Volume0/opasdata/d22000…CN_21_0060_Rev_A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5335/PCN_21_0060_Rev_A.pdf)
-- [mm.digikey.com/Volume0/opasdata/d22000…CN_22_0241_Rev_A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5781/PCN_22_0241_Rev_A.pdf)
-- [mouser.com/PCN/ADI_PCN_24_0234.pdf](https://www.mouser.com/PCN/ADI_PCN_24_0234.pdf)
-- [mouser.com/PCN/ADI_PCN_24_0236.pdf](https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf)
-- [sec.gov/Archives/edgar/data/0000006281…24527/d525969d8k.htm](https://www.sec.gov/Archives/edgar/data/0000006281/000119312518024527/d525969d8k.htm)
 
 ### MC33078 / MC33079 (low-noise bipolar dual/quad): Unclassified, Texas Instruments, Confirmed on TI E2E in 2026 (thread 1652528, around June…
 
