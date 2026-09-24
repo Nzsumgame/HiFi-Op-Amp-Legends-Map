@@ -30917,6 +30917,237 @@
      "url_kind": "product_page",
      "notes": "Japanese retail listing, confirmed by a search-result title in an earlier sweep; not re-checked in this pass.",
      "confidence": "medium"
+    },
+    {
+     "vendor": "Linear Technology (via Datasheetspdf.com)",
+     "title": "LT1364/LT1365 Dual and Quad 70MHz, 1000V/us Op Amps",
+     "doc_number": "unknown (probably 13645f or 13645fa)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetspdf.com/datasheet-pdf/51484/LT1364.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Linear-branded copy. It uses the same file ID (51484) as the Datasheet4U LT1364 copy, so it is probably the same file. The search summary does not show a revision or print code.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Datasheet4U)",
+     "title": "LT1364 Datasheet - Amps | Linear Technology",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet-pdf/LinearTechnology/LT1364/pdf.php?id=51484",
+     "url_kind": "third_party_mirror",
+     "notes": "The PDF viewer page for the Datasheet4U LT1364 entry 51484 (the listing page datasheet4u.com/datasheets/Linear-Technology/LT1364/51484 is already known). The search summary does not show a revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via DigChip)",
+     "title": "LT1365 (LT1364/LT1365 Dual and Quad 70MHz, 1000V/us Op Amps)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/262/LT1365.php",
+     "url_kind": "third_party_mirror",
+     "notes": "A second DigChip entry, in folder 262, separate from the known 2/041/LT1364.php entry. It might be a different crawl or revision. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Alldatasheet)",
+     "title": "LT1363 70MHz, 1000V/us Op Amp",
+     "doc_number": "unknown (probably 1363f or 1363fa)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/70423/LINER/LT1363.html",
+     "url_kind": "third_party_mirror",
+     "notes": "12 pages, 251 KB. The low Alldatasheet ID (7042x) shows an early-2000s upload, so this copy may be the original 1994 edition or an early Rev A. The revision is not shown in the summary. The 1-of-12-pages HTML view is at https://www.alldatasheet.com/html-pdf/70423/LINER/LT1363/125/1/LT1363.html.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Alldatasheet.net)",
+     "title": "LT1363 70MHz, 1000V/us Op Amp",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.net/datasheet-pdf/view/70423/LINER/LT1363.html",
+     "url_kind": "third_party_mirror",
+     "notes": "The alldatasheet.net mirror of Alldatasheet ID 70423 (the same file as the .com entry). The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (via RadioLocman)",
+     "title": "LT1363 Datasheet Analog Devices",
+     "doc_number": "unknown (probably 1363fa)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=525791",
+     "url_kind": "third_party_mirror",
+     "notes": "An ADI-branded RadioLocman entry, separate from the known Linear-branded di=339533. It is probably the ADI re-host of 1363fa, but the revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Datasheetspdf.com)",
+     "title": "LT1363 Datasheet - 70MHz/ 1000V/us Op Amp",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetspdf.com/datasheet/LT1363.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A Linear-branded LT1363 copy. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Datasheet4U)",
+     "title": "LT1363 Datasheet - Amp | Linear Technology",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet-pdf/LinearTechnology/LT1363/pdf.php?id=51481",
+     "url_kind": "third_party_mirror",
+     "notes": "The PDF viewer for the Datasheet4U LT1363 entry 51481 (the listing page is already known). The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Alldatasheet)",
+     "title": "LT1365CN - Dual and Quad 70MHz, 1000V/us Op Amps",
+     "doc_number": "unknown (probably 13645f or 13645fa)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/70425/LINER/LT1365CN.html",
+     "url_kind": "third_party_mirror",
+     "notes": "265 KB, 12 pages. The size matches the Datasheet4U LT1365 file (265.75 KB, id 51487). An early-2000s Alldatasheet ID (70425), so it may predate or match Rev A. A separate search listed the same ID 70425 under LT1363CS8, so the part attribution on Alldatasheet may be mixed. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Alldatasheet)",
+     "title": "LT1363CS8 70MHz, 1000V/us Op Amp",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/70425/LINER/LT1363CS8.html",
+     "url_kind": "third_party_mirror",
+     "notes": "This URL carries the same Alldatasheet file ID (70425) as the LT1365CN entry. Which datasheet the file actually holds (the LT1363 single or the LT1364/5 dual/quad) is not confirmed. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Alldatasheet)",
+     "title": "LT1365CS - Dual and Quad 70MHz, 1000V/us Op Amps",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/70427/LINER/LT1365CS.html",
+     "url_kind": "third_party_mirror",
+     "notes": "An early-2000s Alldatasheet ID (70427). The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Alldatasheet.net)",
+     "title": "LT1365 - Dual and Quad 70MHz, 1000V/us Op Amps",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.net/datasheet-pdf/view/70429/LINER/LT1365.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Alldatasheet ID 70429, an early-2000s upload; the download page is at https://www.alldatasheet.net/datasheet-pdf/download/70429/LINER/LT1365.html. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Alldatasheet)",
+     "title": "LT1365 - Dual and Quad 70MHz, 1000V/us Op Amps",
+     "doc_number": "unknown (probably 13645fa)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/698033/LINER/LT1365.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A later Alldatasheet upload (ID 698033), the partner of the known 698032 LT1364 entry. It is probably the Rev A file, but the revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Datasheetspdf.com)",
+     "title": "LT1365 Datasheet - Dual and Quad 70MHz/ 1000V/us Op Amps",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetspdf.com/datasheet/LT1365.html",
+     "url_kind": "third_party_mirror",
+     "notes": "The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Datasheet4U)",
+     "title": "LT1365, LT1 Datasheet PDF (Linear Technology) - Dual and Quad 70MHz/ 1000V/us Op Amps",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet/Linear-Technology/LT1365-51487",
+     "url_kind": "third_party_mirror",
+     "notes": "Datasheet4U entry 51487, 265.75 KB (the same size as the Alldatasheet 70425 file). The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Datasheet4U)",
+     "title": "LT1365 - Dual and Quad 70MHz/ 1000V/us Op Amps | Linear Technology Datasheet",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheet4u.com/datasheet-pdf/LinearTechnology/LT1365/pdf.php?id=51487",
+     "url_kind": "third_party_mirror",
+     "notes": "The PDF viewer for Datasheet4U entry 51487 (265.75 KB). The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via DatasheetCatalog)",
+     "title": "LT1365 Datasheet pdf - Dual and Quad 70MHz, 1000V/us Op Amps",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://www.datasheetcatalog.com/datasheets_pdf/L/T/1/3/LT1365.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "DatasheetCatalog files are mostly early-2000s crawls, so this copy may hold a pre-Rev-A or early Rev A edition. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via Alldatasheet)",
+     "title": "LT1363 Datasheet(PDF) - Linear Technology",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1043767/LINER/LT1363.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A recent Alldatasheet upload (ID 1043767), the third LT1363 file there alongside 70423 and 70425. It may be the 1363fa Rev A, but the revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via DataSheetAll)",
+     "title": "LT1363 Datasheet PDF Download",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetall.com/linear/lt1363/",
+     "url_kind": "third_party_mirror",
+     "notes": "The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (via IC-ON-LINE / maxim4u.com)",
+     "title": "View LT1364_989092.PDF datasheet online",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://www.maxim4u.com/view_online.php?id=1452508&file=0095%5Clt1364_989092.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "An IC-ON-LINE mirror of an LT1364 PDF. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Jameco (distributor)",
+     "title": "Jameco product datasheet 1734840 (title shown only as the Jameco cover sheet)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.jameco.com/Jameco/Products/ProdDS/1734840.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "This appeared in a search for LT1364CS8 / LT1363CS8 / LT1365CS datasheets, but the summary showed only Jameco's generic cover-sheet text. Neither the part it covers nor its revision was confirmed, so verify before use.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -31162,7 +31393,8 @@
      "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-41",
      "https://tangentsoft.com/audio/opamps.html"
     ]
-   }
+   },
+   "revision_chain_summary": "Linear Technology LT1364/LT1365 document (13645f): the original 1994 edition (13645f, copyright 1994) is still missing. No copy found by search showed a pre-Rev-A print code. The next link is Rev A 13645fa, 04/2000 (LT/TP 0400 2K REV A, already known). Analog Devices has re-hosted 13645fa unchanged since 2017; no 13645fb was found. Linear Technology LT1363 document (1363f): the original 1994 edition (1363f) is missing. Rev A 1363fa is known, but its print-code date is still missing; the ADI re-host is unchanged. No second sources or other vendors' versions of LT1363/4/5 turned up. The best places to look for the missing 1994 originals are the early-2000s crawl copies found in this pass: Alldatasheet IDs 70423 (LT1363, 12 pages, 251 KB), 70425 (LT1365CN/LT1363CS8, 12 pages, 265 KB), 70427 (LT1365CS) and 70429 (LT1365); DatasheetCatalog LT1365.shtml and LT1363.shtml; Datasheet4U 51481/51484/51487 (the 51487 file, 265.75 KB, matches the Alldatasheet 70425 size); DigChip 262/LT1365; and maxim4u lt1364_989092.pdf. Later uploads are more likely Rev A: Alldatasheet 698032/698033/1043767 and the ADI-branded RadioLocman di=525791. None of these search summaries showed a revision letter or LT/TP or LT/GP print code, so all are recorded as 'revision not shown'. Still to confirm: the 1994 original print code and contents for both documents, the 1363fa Rev A date, and whether Rev A changed any limits. The legacy linear.com URL patterns (e.g. www.linear.com/docs/Datasheet/...) were not confirmed by search, so only the known cds.linear.com URLs are given as archive seeds."
   },
   {
    "id": "LT1469",
@@ -31714,6 +31946,182 @@
      "url_kind": "third_party_mirror",
      "notes": "URL seen in search, as was https://www.datasheetcatalog.com/datasheets_pdf/L/T/1/4/LT1468.shtml. These are old catalog sites that often hold original issues; the revision was not shown.",
      "confidence": "medium"
+    },
+    {
+     "vendor": "Linear Technology (RS Components distributor copy)",
+     "title": "LT1469 Dual 90MHz, 22V/us 16-Bit Accurate Operational Amplifier",
+     "doc_number": "unknown (probably 1469f family)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://docs.rs-online.com/cb1b/0900766b805aab5a.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The search title's extracted text starts 'LT1469 1 The LT(R)1469 is a dual, precision high speed operational...'. It has none of the '1469fb' footer code that ADI's current Rev B shows ('LT1469 1 1469fb ...'). That hints at an older layout (the original 2000 edition or Rev A), but the header and footer were not seen.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (datasheet4u mirror)",
+     "title": "LT1469 Datasheet - Linear Technology",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet-pdf/LinearTechnology/LT1469/pdf.php?id=51794",
+     "url_kind": "third_party_mirror",
+     "notes": "This is the PDF view of datasheet4u id 51794, the same id as the known datasheetspdf.com/pdf/51794 copy.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (datasheet4u mirror)",
+     "title": "LT1469 datasheet, amplifier equivalent, Linear Technology",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet/Linear-Technology/LT1469-51794",
+     "url_kind": "third_party_mirror",
+     "notes": "The HTML landing page for datasheet4u id 51794.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (alldatasheet mirror)",
+     "title": "LT1469 Datasheet(PDF) - Linear Technology",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/257820/LINER/LT1469.html",
+     "url_kind": "third_party_mirror",
+     "notes": "This alldatasheet LT1469 upload (id 257820) is separate from the ids already listed (70456, 257793, 257814, 1043925).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (alldatasheet mirror)",
+     "title": "LT1468 Datasheet(PDF) - Linear Technology",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/257777/LINER/LT1468.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A second alldatasheet LT1468 upload (id 257777); id 70455 is already listed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (alldatasheet mirror)",
+     "title": "LT1468-2 Datasheet(PDF) - Linear Technology",
+     "doc_number": "unknown (14682f family)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/698037/LINER/LT1468-2.html",
+     "url_kind": "third_party_mirror",
+     "notes": "LT1468-2 (AV>=2, 200MHz) datasheet mirror.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (alldatasheet mirror)",
+     "title": "LT1468 Datasheet(PDF) - Analog Devices",
+     "doc_number": "unknown (probably 1468fb)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1970190/AD/LT1468.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under ADI rather than LINER, so it is probably the post-2017 ADI-hosted file (1468fb). Not verified.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (radiolocman mirror)",
+     "title": "Datasheet LT1468 Analog Devices - Preview and Download",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/pdf.html?di=151143",
+     "url_kind": "third_party_mirror",
+     "notes": "radiolocman id 151143, filed under Analog Devices. It is distinct from the Linear-attributed id 339759 already listed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (DigiKey HTML datasheet)",
+     "title": "LT1468 by Analog Devices Inc. Datasheet | DigiKey",
+     "doc_number": "unknown (probably 1468fb)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digikey.com/en/htmldatasheets/production/80221/0/0/1/lt1468-datasheet",
+     "url_kind": "distributor_mirror",
+     "notes": "DigiKey HTML rendering of the LT1468 datasheet (production id 80221).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (DigiKey France HTML datasheet)",
+     "title": "LT1468 Datasheet by Analog Devices Inc. | Digi-Key Electronics",
+     "doc_number": "unknown (probably 1468fb)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digikey.fr/htmldatasheets/production/80221/0/0/1/lt1468-datasheet.html",
+     "url_kind": "distributor_mirror",
+     "notes": "The same DigiKey production id 80221 as the .com copy.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (datasheetq mirror)",
+     "title": "LT1468 Datasheet PDF - Linear Technology",
+     "doc_number": "unknown (1468fa if the label is right)",
+     "revision": "A (per the mirror's URL label 'RevA'; header/footer not seen)",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/LT1468-doc-Linear-RevA",
+     "url_kind": "third_party_mirror",
+     "notes": "This is the only copy found that is labelled as an LT1468 Rev A, i.e. the edition before the 1468fb that ADI serves now. The revision comes only from the mirror's URL naming.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (datasheetq mirror)",
+     "title": "LT1468 Datasheet PDF - Linear Technology",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/en/pdf-html/452581-V2/Linear/1page/LT1468.html",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetq id 452581, version V2.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (datasheetq mirror)",
+     "title": "LT1468-2 Datasheet PDF - Linear Technology",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/LT1468-2-doc-Linear",
+     "url_kind": "third_party_mirror",
+     "notes": "LT1468-2 datasheet mirror.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (Linear Technology document)",
+     "title": "LT1468 - 90MHz, 22V/us 16-Bit Accurate Operational Amplifier",
+     "doc_number": "1468fb",
+     "revision": "B",
+     "date": "unknown",
+     "url": "https://www.analog.com/LT1468/datasheet",
+     "url_kind": "vendor_current",
+     "notes": "ADI short-link redirect. The search title shows 'LT1468 1 1468fb', so it currently serves Rev B (the same content as 1468fb.pdf).",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Analog Devices (Linear Technology Magazine article)",
+     "title": "LT1468: An Operational Amplifier for Fast, 16-Bit Systems",
+     "doc_number": "n/a (technical article, not a datasheet)",
+     "revision": "n/a",
+     "date": "11/01/1998",
+     "url": "https://www.analog.com/en/resources/technical-articles/lt1468-an-operational-amplifier-for-fast-16-bit-systems.html",
+     "url_kind": "product_page",
+     "notes": "The LT1468 introduction article, republished by ADI with the date 11/01/1998 (Linear Technology Magazine, November 1998). It dates the LT1468 die to about 1998, before the LT1469 dual (about 2000).",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Analog Devices (PCN, Mouser copy)",
+     "title": "Product/Process Change Notice - PCN 24_0236 Rev. -",
+     "doc_number": "ADI PCN 24_0236",
+     "revision": "Rev. -",
+     "date": "unknown (numbering suggests 2024; not shown)",
+     "url": "https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "This is not a datasheet. The summary says it lists LT1468-2 and LT1469 part numbers with package designations, but it does not say what changed (fab, assembly or die). Check it for evidence of a silicon or process change under the same part number.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -31765,6 +32173,34 @@
      "revision": "n/a",
      "date": "01/23/21",
      "changes": "'LT1468-2 Updated label to reflect 200MHz.' This fixes only the simulation symbol label; no matching LT1469-2 label fix was found."
+    },
+    {
+     "vendor": "Linear Technology",
+     "doc_number": "1468f (code inferred, not seen)",
+     "revision": "original",
+     "date": "c. November 1998 (introduction article dated 11/01/1998)",
+     "changes": "First release of the LT1468 single, which predates the LT1469 dual (about 2000). The Boston University copy (ohm.bu.edu .../LT1468.pdf, already listed) shows text with no '1468fb' code, so it may be this original edition (unverified)."
+    },
+    {
+     "vendor": "Linear Technology",
+     "doc_number": "1468fa (inferred)",
+     "revision": "A",
+     "date": "unknown",
+     "changes": "A datasheetq copy is labelled 'LT1468-doc-Linear-RevA', which suggests a Rev A existed between the original and 1468fb. What changed was not seen."
+    },
+    {
+     "vendor": "Linear Technology",
+     "doc_number": "14682fb",
+     "revision": "B",
+     "date": "11/12 (footer 'LT 1112 REV B - PRINTED IN USA', from the search summary)",
+     "changes": "The LT1468-2 datasheet reached Rev B in November 2012. What changed was not shown in the summary."
+    },
+    {
+     "vendor": "Analog Devices",
+     "doc_number": "ADI PCN 24_0236",
+     "revision": "Rev. -",
+     "date": "unknown (PCN number suggests 2024)",
+     "changes": "The product/process change notice covers LT1468-2 and LT1469 part numbers. The nature of the change was not shown; this is not a datasheet revision."
     }
    ],
    "silicon_changes": [],
@@ -31786,12 +32222,15 @@
     "http://cds.linear.com/docs/en/datasheet/1469fb.pdf",
     "http://www.linear.com/pdf/1468f.pdf",
     "http://www.linear.com/pdf/1468fa.pdf",
+    "http://www.linear.com/pdf/1468fb.pdf",
     "http://www.linear.com/pdf/1469f.pdf",
     "http://www.linear.com/pdf/1469fa.pdf",
+    "http://www.linear.com/pdf/1469fb.pdf",
     "http://www.linear.com/product/LT1468",
     "http://www.linear.com/product/LT1468-2",
     "http://www.linear.com/product/LT1469",
     "http://www.linear.com/product/LT1469-2",
+    "https://www.analog.com/LT1468/datasheet",
     "https://www.analog.com/en/products/lt1468-2.html",
     "https://www.analog.com/en/products/lt1468.html",
     "https://www.analog.com/en/products/lt1469-2.html",
@@ -31906,7 +32345,8 @@
      "https://www.diyaudio.com/community/threads/killer-i-v-opamp.83291/",
      "http://www.sg-acoustics.ch/analogue_audio/ic_opamps/pdf/opamp_distortion.pdf"
     ]
-   }
+   },
+   "revision_chain_summary": "Linear Technology (sole source; ADI since 2017), no second sources. LT1468 (single): original datasheet c. Nov 1998 (magazine intro article dated 11/01/1998; no copy confirmed; the BU mirror may be it) -> Rev A (suggested only by the datasheetq 'LT1468-doc-Linear-RevA' label; date unknown) -> Rev B 1468fb (current ADI file; date still unknown). LT1468-2: Rev B 14682fb dated 11/12 (footer 'LT 1112 REV B'); original and Rev A still missing. LT1469 (dual): original 1469f c. 2000 (the RS copy docs.rs-online.com/cb1b/0900766b805aab5a.pdf may be a pre-Rev-B edition, but its revision was not shown) -> Rev A (not seen, undated) -> Rev B 1469fb 1/11 ('LT 0111 REV B', current). LT1469-2: 14692f only, undated. Still missing: dated copies of original 1468f and 1469f, both Rev A editions (1468fa, 1469fa, 14682fa) and their change summaries, the 1468fb date, and the 14692f date. Also still to read: ADI PCN 24_0236 (Mouser copy), which covers LT1468-2 and LT1469 and may record a process or silicon change. The archive_seed_urls on cds.linear.com and www.linear.com/pdf were built from Linear's known URL patterns for Wayback lookups; none appeared in search results."
   },
   {
    "id": "MUSES03",
@@ -32270,6 +32710,138 @@
      "url_kind": "product_page",
      "notes": "Seen in search results. Other listings: https://eleshop.jp/shop/g/gHBM121/, https://www.profusionplc.com/parts/muses03 and https://us.profusion.uk/int/muses03.",
      "confidence": "medium"
+    },
+    {
+     "vendor": "New Japan Radio Co., Ltd. (New JRC), copy held by Mouser",
+     "title": "MUSES03 High-Quality Sound, J-FET Input, Single Operational Amplifier for Premium Audio (English edition, MUSES03_E)",
+     "doc_number": "MUSES03 (EN), Mouser datasheet cache 2/294/MUSES03_E-1123594",
+     "revision": "revision not shown (the filename MUSES03_E matches NJR's English PDF name, so probably Ver.4.2, but this is unverified)",
+     "date": "unknown",
+     "url": "https://www.mouser.com/datasheet/2/294/MUSES03_E-1123594.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Found through a search for the Mouser product page, which lists MUSES03 as End of Life and links this datasheet PDF. The search summary did not show the header or footer, so the Ver. is not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "digchip.com (mirror of New Japan Radio)",
+     "title": "MUSES03 datasheet - High-Quality Sound, J-FET Input, Single Operational Amplifier",
+     "doc_number": "digchip datasheet 2/330",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/2/330/MUSES03.php",
+     "url_kind": "third_party_mirror",
+     "notes": "Third-party mirror; the search summary shows no Ver. string.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "AllDatasheet (mirror of NJRC), .net domain",
+     "title": "MUSES03 pdf / datasheet view (NJRC)",
+     "doc_number": "alldatasheet 1244750",
+     "revision": "revision not shown (same document ID as the known alldatasheet.com entry, 844.57 KB, 11 pages, consistent with Ver.4.2)",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.net/datasheet-pdf/view/1244750/NJRC/MUSES03.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Same file as alldatasheet.com ID 1244750, shown through the .net viewer. It is not a separate revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "AllDatasheet (mirror of NJRC), HTML page viewer",
+     "title": "MUSES03 datasheet (7/11 Pages) NJRC | High-Quality Sound, J-FET Input, Single Operational Amplifier for Premium Audio",
+     "doc_number": "alldatasheet 1244750 (html page 7 of 11)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://htmlapp.alldatasheet.com/html-pdf/1244750/NJRC/MUSES03/819/7/MUSES03.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Page-by-page HTML render of alldatasheet ID 1244750 (11 pages). Same document as the known alldatasheet entry.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "AllDatasheet Japan (mirror of New Japan Radio)",
+     "title": "MUSES03 データシート(PDF) - New Japan Radio",
+     "doc_number": "alldatasheet 1244750",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.jp/datasheet-pdf/pdf/1244750/NJRC/MUSES03.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Japanese-domain copy of alldatasheet ID 1244750 (844 KB, 11 pages). Same file, not a different revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "datasheet4u (mirror of New Japan Radio)",
+     "title": "MUSES03 datasheet, amplifier equivalent, New Japan Radio",
+     "doc_number": "datasheet4u id 1330550",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheet4u.com/datasheet-pdf/New%20Japan%20Radio/MUSES03/pdf.php?id=1330550",
+     "url_kind": "third_party_mirror",
+     "notes": "Alternate URL for the known datasheet4u id 1330550. It is the same document, not a new revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Octopart (Nisshinbo Micro Devices Inc. listing)",
+     "title": "MUSES03 Nisshinbo Micro Devices Inc. - Amplifiers - Op Amps - Distributors, Price Comparison, and Datasheets",
+     "doc_number": "octopart 126653949",
+     "revision": "n/a (product page; revision of the linked datasheet not shown)",
+     "date": "unknown",
+     "url": "https://octopart.com/muses03-nisshinbo+micro+devices+inc.-126653949",
+     "url_kind": "product_page",
+     "notes": "Octopart lists the part under Nisshinbo Micro Devices Inc. The search summary says it is 'at end of life and scheduled for obsolescence by the manufacturer'.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Mouser (NJR-branded product URL)",
+     "title": "MUSES03 Nisshinbo | Mouser",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "unknown",
+     "url": "https://www.mouser.com/ProductDetail/NJR/MUSES03/?qs=G%2F5vCLrg9vzIpmwYxc4nng%3D%3D",
+     "url_kind": "product_page",
+     "notes": "Older NJR-branded path to the same Mouser product (same qs token as the known /Nisshinbo/ URL). It shows End of Life status and links the MUSES03_E-1123594.pdf datasheet.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "New Japan Radio Co., Ltd. (New JRC)",
+     "title": "MUSES03 | 製品情報 | 新日本無線株式会社 (NJR)",
+     "doc_number": "n/a (JP product page)",
+     "revision": "n/a",
+     "date": "unknown",
+     "url": "https://www.njr.co.jp/electronic_device/products/MUSES03.html",
+     "url_kind": "vendor_legacy",
+     "notes": "Legacy Japanese NJR product page. The JP datasheet (Ver.4.2, njr.co.jp footer) was probably linked here. Good Wayback seed for recovering earlier JP datasheet versions.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "New Japan Radio Co., Ltd. (New JRC)",
+     "title": "MUSES03 | Products | New Japan Radio (NJR)",
+     "doc_number": "n/a (EN product page)",
+     "revision": "n/a",
+     "date": "unknown",
+     "url": "https://www.njr.com/electronic_device/products/MUSES03.html",
+     "url_kind": "vendor_legacy",
+     "notes": "Legacy English NJR product page under /electronic_device/products/, a different path from the known /semicon/products/ page. Good Wayback seed for the EN datasheet MUSES03_E.pdf.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "New Japan Radio Co., Ltd. (New JRC)",
+     "title": "MUSES03 | New product news for Electronic Devices | New Japan Radio (NJR) - sample release announcement",
+     "doc_number": "semi_20161011",
+     "revision": "n/a (news release)",
+     "date": "2016-10-11 (per URL and NJR news list)",
+     "url": "https://www.njr.com/news/2016/semi_20161011.html",
+     "url_kind": "vendor_legacy",
+     "notes": "Original njr.com URL of the sample-release announcement. It settles the earlier date conflict: the sample announcement file is semi_20161011, not semi_20160902. A search summary says samples were provided from December 2016.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Nisshinbo Micro Devices (archive of New JRC news)",
+     "title": "MUSES03 | New product news for Electronic Devices | Nisshinbo Micro Device(NJR) | News",
+     "doc_number": "semi_20161011",
+     "revision": "n/a (news release)",
+     "date": "2016-10-11",
+     "url": "https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2016/semi_20161011.html",
+     "url_kind": "vendor_current",
+     "notes": "Nisshinbo's archived copy of the 2016-10-11 MUSES03 sample-release news. It replaces the uncertain semi_20160902.html guess in the known list.",
+     "confidence": "high"
     }
    ],
    "revision_history": [
@@ -32307,6 +32879,20 @@
      "revision": "EOL",
      "date": "by 2023-10-18 (iiikun15a post dated 20231018, amended 1025; nw-electric post 2023-11)",
      "changes": "MUSES03 is reported as listed 生産終了品 (discontinued). No PCN or last-time-buy notice number was found. No Nisshinbo-branded re-issue of the datasheet was found."
+    },
+    {
+     "vendor": "New JRC",
+     "doc_number": "NJR news semi_20161011 (njr.com/news/2016 and Nisshinbo EN archive)",
+     "revision": "sample release announcement",
+     "date": "2016-10-11",
+     "changes": "Confirmed file name semi_20161011.html on both njr.com and the Nisshinbo archive, which settles the earlier semi_20160902 date conflict. A search summary says MUSES03 samples were provided from December 2016. No preliminary or sampling-period datasheet (a Ver. below 4.2) was located."
+    },
+    {
+     "vendor": "New JRC / Nisshinbo (distributor status)",
+     "doc_number": "Mouser / Octopart listing",
+     "revision": "EOL",
+     "date": "unknown (observed 2026)",
+     "changes": "Mouser lists MUSES03 as End of Life and hosts MUSES03_E-1123594.pdf. Octopart (Nisshinbo Micro Devices Inc. listing) says it is at end of life and scheduled for obsolescence. No PCN number was shown."
     }
    ],
    "silicon_changes": [
@@ -32350,6 +32936,7 @@
     "https://akizukidenshi.com/goodsaffix/MUSES03_J-1.pdf",
     "https://www.digikey.com/en/products/detail/njr-corporation-njrc/MUSES03/10671518",
     "https://www.mouser.com/ProductDetail/Nisshinbo/MUSES03?qs=G%2F5vCLrg9vzIpmwYxc4nng%3D%3D",
+    "https://www.mouser.com/datasheet/2/294/MUSES03_E-1123594.pdf",
     "https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES03.html",
     "https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2016/semi_20160902.html",
     "https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2017/semi_20170328.html",
@@ -32361,7 +32948,10 @@
     "https://www.nisshinbo-microdevices.co.jp/ja/design-support/discon/obsolete.html",
     "https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES03_J.pdf",
     "https://www.nisshinbo-microdevices.co.jp/ja/products/operational-amplifier/spec/?product=muses03",
+    "https://www.njr.co.jp/electronic_device/products/MUSES03.html",
     "https://www.njr.com/electronic_device/PDF/MUSES03_E.pdf",
+    "https://www.njr.com/electronic_device/products/MUSES03.html",
+    "https://www.njr.com/news/2016/semi_20161011.html",
     "https://www.njr.com/semicon/PDF/MUSES03_E.pdf",
     "https://www.njr.com/semicon/products/MUSES03.html",
     "https://www.pawpaw.cn/media/documents/2022-01/MUSES03.pdf"
@@ -32486,7 +33076,8 @@
      "https://nw-electric.way-nifty.com/blog/2023/11/post-31270f.html",
      "https://zigsow.jp/item/332359/review/337894"
     ]
-   }
+   },
+   "revision_chain_summary": "New JRC / Nisshinbo MUSES03 datasheet, JP edition (njr.co.jp footer) and EN edition MUSES03_E (njr.com footer). The only revision found anywhere is Ver.4.2, dated 2017 by PDF metadata (created 2017-04-27, modified 2017-05-01). All mirrors found in this pass hold the same 11-page, 844 KB file as alldatasheet ID 1244750: alldatasheet .com/.net/.jp/htmlapp, datasheet4u id 1330550, digchip, datasheetspdf and pawpaw.cn (Ver.4.2). That points to one widely distributed edition. Mouser's cached copy (datasheet/2/294/MUSES03_E-1123594.pdf) is new, but its Ver. is not shown. The timeline is: sample announcement 2016-10-11 (semi_20161011, samples from Dec 2016), sales start 2017-03-24 JP / 2017-03-28 EN, datasheet Ver.4.2 in 2017, Nisshinbo-era listing from 2022, then EOL / discontinued by about 2023-10. Missing links: (1) Ver.1.x–4.1, including any preliminary or sampling datasheet from Oct 2016 to Mar 2017; NJR's internal version numbering suggests earlier drafts existed but none turned up in any mirror. (2) Any Nisshinbo-branded re-issue (nisshinbo-microdevices.co.jp/en/pdf/datasheet/ path pattern seen for MUSES72323_E.pdf, but no MUSES03 file was found there). (3) Wayback captures of njr.co.jp/electronic_device/products/MUSES03.html and njr.com/electronic_device/products/MUSES03.html, which could show whether the linked PDF changed between 2016 and 2022. There is no second source, since MUSES is NJR-proprietary."
   },
   {
    "id": "MUSES8820",
@@ -32802,6 +33393,72 @@
      "url_kind": "product_page",
      "notes": "Confirmed in search results; also reachable under the /njr-corporation-njrc/MUSES8820E/2442898 path.",
      "confidence": "high"
+    },
+    {
+     "vendor": "New Japan Radio (New JRC)",
+     "title": "MUSES8820 High Quality Audio Dual Operational Amplifier (English datasheet, legacy NJR semicon site)",
+     "doc_number": "MUSES8820_E",
+     "revision": "revision not shown",
+     "date": "unknown (NJR era, pre-2022)",
+     "url": "http://semicon.njr.co.jp/eng/PDF/MUSES8820_E.pdf",
+     "url_kind": "vendor_legacy",
+     "notes": "This is the original NJR English datasheet URL. Search summaries cite it as the source link for the alldatasheet/NJR copy. Its snapshots in the Wayback Machine could hold the 2010-2011 editions and the 2012-05-14 and 2013-12-06 editions. It was not fetched, so the revision it holds is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (alldatasheet HTML page view)",
+     "title": "MUSES8820 datasheet (2/12 Pages) NJRC | High Quality Audio Dual Operational Amplifier",
+     "doc_number": "MUSES8820_E",
+     "revision": "probably Ver.2013-12-06 (search summary only; header not quoted)",
+     "date": "2013-12-06 (unverified)",
+     "url": "https://www.alldatasheet.com/html-pdf/1353965/NJRC/MUSES8820/233/2/MUSES8820.html",
+     "url_kind": "third_party_mirror",
+     "notes": "HTML page view of alldatasheet document 1353965, which is 12 pages and 424 KB. It is the same document as the already-listed alldatasheet PDF page, but a different URL. One search summary said this copy is Ver.2013-12-06, but the result title did not show the version header.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (dtsheet mirror)",
+     "title": "MUSES8820 Data Sheet",
+     "doc_number": "MUSES8820_E",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://dtsheet.com/doc/1304433/muses8820-data-sheet",
+     "url_kind": "third_party_mirror",
+     "notes": "Third-party datasheet mirror. The search summary does not show the version header.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Nisshinbo Micro Devices (LCSC distributor listing)",
+     "title": "MUSES8820D | Nisshinbo Micro Devices Inc. | LCSC Electronics (C4548965)",
+     "doc_number": "n/a",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.lcsc.com/product-detail/Audio-Amplifiers_Nisshinbo-Micro-Devices-Inc-MUSES8820D_C4548965.html",
+     "url_kind": "product_page",
+     "notes": "LCSC product page for MUSES8820D, listed under Nisshinbo, so the page is from the Nisshinbo era. It links to a datasheet copy that probably sits on datasheet.lcsc.com, but that PDF URL did not appear in the results, so its revision is unknown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (ChipsFind listing)",
+     "title": "MUSES8820D New Japan Radio (NJR) | Chips Find",
+     "doc_number": "n/a",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.chipsfind.com/part-item/02487978-MUSES8820D",
+     "url_kind": "third_party_mirror",
+     "notes": "Parts and datasheet aggregator listing for MUSES8820D under the NJR vendor name. It may link to a datasheet copy. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (Pro Audio Design Forum link list)",
+     "title": "JRC MUSES Datasheet Links - The Pro Audio Design Forum",
+     "doc_number": "n/a",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.proaudiodesignforum.com/forum/php/viewtopic.php?f=12&t=605",
+     "url_kind": "third_party_mirror",
+     "notes": "Forum thread that collects JRC MUSES datasheet links, which probably point to the legacy semicon.njr.co.jp PDFs. Those links are useful as seeds for dated Wayback captures of early editions. It is not itself a datasheet copy.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -32832,6 +33489,7 @@
    ],
    "ti_literature_numbers": [],
    "archive_seed_urls": [
+    "http://semicon.njr.co.jp/eng/PDF/MUSES8820_E.pdf",
     "http://www.njr.co.jp/products/semicon/PDF/MUSES8820_E.pdf",
     "http://www.njr.co.jp/products/semicon/PDF/MUSES8820_J.pdf",
     "http://www.njr.com/semicon/PDF/MUSES8820_E.pdf",
@@ -32846,7 +33504,8 @@
     "https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES8820_J.pdf",
     "https://www.njr.co.jp/products/MUSES/series/MUSES8820.html",
     "https://www.njr.com/MUSES/series/MUSES8820.html",
-    "https://www.phileweb.com/news/audio/201003/01/9756.html"
+    "https://www.phileweb.com/news/audio/201003/01/9756.html",
+    "https://www.proaudiodesignforum.com/forum/php/viewtopic.php?f=12&t=605"
    ],
    "open_questions": [
     "What is the current Nisshinbo-era MUSES8820_E/_J version, and did it change any spec, absolute maximum rating or package option relative to Ver.2013-12-06?",
@@ -32943,7 +33602,8 @@
      "https://tanupon2000.com/article/12925",
      "https://nw-electric.way-nifty.com/blog/2025/11/post-38fcc1.html"
     ]
-   }
+   },
+   "revision_chain_summary": "Vendor document MUSES8820_E, New JRC then Nisshinbo, the only vendor; there are no second sources. The known chain, oldest to newest: [missing: launch edition(s) from about Mar 2010 to 2011, which the PHILE WEB launch news and the 2010-2011 Head-Fi thread 536589 'Anyone tried JRC MUSES 8820' imply] -> Ver.2012-05-14 (DigiKey media.digikey.com and mm.digikey.com mirrors) -> Ver.2013-12-06 (Mouser MUSES8820_E-259018.pdf; probably also the alldatasheet 1353965 copy and Scribd) -> [missing: any post-2013 NJR edition, or a re-issue in the Nisshinbo format from 2022 on; the current nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES8820_E.pdf has no version in any search summary]. Six searches found no Ver.2010 or Ver.2011 edition and no Nisshinbo-era version string. The best route to the early editions is the legacy vendor URL http://semicon.njr.co.jp/eng/PDF/MUSES8820_E.pdf, now in archive seeds, through Wayback captures from 2010 to 2012. New copies with the revision not shown: dtsheet.com doc 1304433, the alldatasheet html-pdf page view, the LCSC C4548965 listing and the ChipsFind listing. The Japanese edition (MUSES8820_J) was not found. No silicon or part-number change is known."
   },
   {
    "id": "NJM2068",
@@ -33339,6 +33999,237 @@
      "url_kind": "distributor_mirror",
      "notes": "Unconfirmed. From the discovery notes only; web search surfaced the Mouser file 217911 (Ver.2011-03-18) instead.",
      "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 2回路入り低雑音オペアンプ (Japanese edition)",
+     "doc_number": "NJM2068_J (Japanese edition; hosted by Marutsu as njm2068d.pdf)",
+     "revision": "Ver.2003-03-14",
+     "date": "2003-03-14",
+     "url": "https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/njm2068d.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The search-result title reads 'NJM2068 - 1 - Ver.2003-03-14 2 回路入り低雑音オペアンプ'. This is the oldest Japanese-edition copy found, 3 days older than the English Ver.2003-03-17. It is a new link in the chain.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 LOW-NOISE DUAL OPERATIONAL AMPLIFIER",
+     "doc_number": "NJM2068_E",
+     "revision": "Ver.2011-03-18",
+     "date": "2011-03-18",
+     "url": "https://www.mouser.com/datasheet/2/294/NJM2068_E-1917171.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "This is a newer Mouser /datasheet/2/294/ upload (id 1917171), probably from the Nisshinbo-era listing. The result title shows 'NJM2068 - 1 - Ver.2011-03-18'.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 LOW-NOISE DUAL OPERATIONAL AMPLIFIER",
+     "doc_number": "NJM2068_E",
+     "revision": "Ver.2011-03-18",
+     "date": "2011-03-18",
+     "url": "https://datasheet.octopart.com/NJM2068V-TE1-NJR-datasheet-13544402.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The Octopart cache filed this under NJM2068V-TE1 / NJR. It has the same cache id (13544402) as the known Nisshinbo-labelled copy, but the URL is different. The title shows Ver.2011-03-18.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 Datasheet(PDF) - New Japan Radio",
+     "doc_number": "NJM2068_E (assumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1540191/NJRC/NJM2068.html",
+     "url_kind": "third_party_mirror",
+     "notes": "This alldatasheet entry is much newer (id 1540191) than the 7240 and 512047-512052 entries, so it could be a later edition, but the Ver. date is not shown in the search summary. It is mirrored at alldatasheet.jp/datasheet-pdf/pdf/1540191/NJRC/NJM2068.html.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068DD Datasheet(PDF) - New Japan Radio",
+     "doc_number": "NJM2068_E (6-page edition set, ids 512047-512052)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/512052/NJRC/NJM2068DD.html",
+     "url_kind": "third_party_mirror",
+     "notes": "This is part of the same alldatasheet upload set as the NJM2068E entry (512051). Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068M Datasheet(PDF) - New Japan Radio",
+     "doc_number": "NJM2068_E (6-page edition set, ids 512047-512052)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/512049/NJRC/NJM2068M.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Part of the 512047-512052 set. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068MD Datasheet(PDF) - New Japan Radio",
+     "doc_number": "NJM2068_E (6-page edition set, ids 512047-512052)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/512047/NJRC/NJM2068MD.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Part of the 512047-512052 set. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068L Datasheet(PDF) - New Japan Radio",
+     "doc_number": "NJM2068_E (6-page edition set, ids 512047-512052)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/512050/NJRC/NJM2068L.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Part of the 512047-512052 set. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 datasheet(1/5 Pages) NJRC | LOW-NOISE DUAL OPERATIONAL AMPLIFIER",
+     "doc_number": "NJM2068_E",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.net/html-pdf/7240/NJRC/NJM2068.html",
+     "url_kind": "third_party_mirror",
+     "notes": "An HTML page view of the same 5-page alldatasheet document (id 7240) that is already listed at alldatasheet.com. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 Datasheet, OPERATIONAL AMPLIFIER",
+     "doc_number": "NJM2068_E (assumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetspdf.com/pdf/454863/NewJapanRadio/NJM2068/1",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetspdf.com id 454863 is the same id as the datasheet4u entry. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 Datasheet - DIP AMPLIFIER | New Japan Radio",
+     "doc_number": "NJM2068_E (assumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet-pdf/NewJapanRadio/NJM2068/pdf.php?id=454863",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheet4u id 454863. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR) / 'JRC'",
+     "title": "NJM2068 Datasheet PDF - Japan Radio Corporation",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/NJM2068-doc-JRC",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under 'JRC'. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR) / 'JRC'",
+     "title": "JRC2068 Datasheet - NJM2068 - Operational Amplifier - JRC",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetcafe.com/jrc2068-datasheet-pdf/",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under the JRC2068 marking. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 Datasheet pdf - Low-Noise Dual Operational Amplifier - New Japan Radio",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/N/J/M/2/NJM2068.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "This datasheetcatalog listing typically holds older 2000s-era uploads. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 datasheet - Low-noise Dual Operational Amplifier",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/330/NJM2068.php",
+     "url_kind": "third_party_mirror",
+     "notes": "Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 datasheet - Low-Noise Dual Operational ...",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/2/330/NJM2068.php",
+     "url_kind": "third_party_mirror",
+     "notes": "A second digchip entry, which may be a different upload. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 Low-Noise Op-Amp Datasheet (njm2068l)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.scribd.com/document/544651656/njm2068l",
+     "url_kind": "third_party_mirror",
+     "notes": "User upload on Scribd. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 Low-Noise Op Amp Datasheet (2068DD Desym Amp Datasheet)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://es.scribd.com/doc/227663670/2068DD-Desym-Amp-Datasheet",
+     "url_kind": "third_party_mirror",
+     "notes": "User upload on Scribd (c.2014 by doc id). Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 Datasheet Overview",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.scribd.com/document/465735150/NJM-2068-pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "User upload on Scribd. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJR NJM2068M Datasheet",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.scribd.com/document/1032948612/NJR-NJM2068M-datasheet",
+     "url_kind": "third_party_mirror",
+     "notes": "User upload on Scribd. Ver. not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "title": "NJM2068 | 製品情報 | 新日本無線株式会社 (NJR)",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.njr.co.jp/electronic_device/products/NJM2068.html",
+     "url_kind": "product_page",
+     "notes": "The legacy Japanese NJR product page, from before the Nisshinbo migration. It is a good Wayback seed for recovering the NJM2068_J / NJM2068_E PDFs it linked to over time.",
+     "confidence": "high"
     }
    ],
    "revision_history": [
@@ -33362,6 +34253,20 @@
      "revision": "unknown",
      "date": "unknown",
      "changes": "The 6-page edition on alldatasheet (ids 512047-512052) names NJM2068E, a part not in the 5-page Ver.2011-03-18. That suggests a package was added (EMP8/SOP8?). Ver. and date not seen."
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "doc_number": "NJM2068_J (Japanese edition)",
+     "revision": "Ver.2003-03-14",
+     "date": "2003-03-14",
+     "changes": "This is the oldest Japanese-edition Ver. found (Marutsu copy njm2068d.pdf; title '2回路入り低雑音オペアンプ'). It is dated 3 days before the English Ver.2003-03-17, so the J and E editions of the 2003 issue were released together. No change log is printed, and differences from the Japanese Ver.2011-03-18 (Akizuki copy) are not established."
+    },
+    {
+     "vendor": "New Japan Radio (NJR)",
+     "doc_number": "NJM2068_E",
+     "revision": "Ver.2011-03-18",
+     "date": "2011-03-18",
+     "changes": "More copies were confirmed by result titles: the Mouser URL njr_njm2068_e-551643.pdf (already listed, revision previously 'unknown') holds Ver.2011-03-18, as do Mouser NJM2068_E-1917171.pdf and Octopart NJM2068V-TE1 (13544402). No change log is printed. The search summary repeats the content: 0.56 uV typ noise, 6 V/us, 27 MHz, packages DIP8/DMP8/SIP8/SSOP8, operating voltage +/-4 to +/-18 V."
     }
    ],
    "silicon_changes": [],
@@ -33378,6 +34283,7 @@
    "ti_literature_numbers": [],
    "archive_seed_urls": [
     "http://semicon.njr.co.jp/eng/PDF/NJM2068_E.pdf",
+    "http://www.njr.co.jp/electronic_device/products/NJM2068.html",
     "http://www.njr.co.jp/products/semicon/PDF/NJM2068_E.pdf",
     "http://www.njr.co.jp/products/semicon/PDF/NJM2068_J.pdf",
     "http://www.njr.com/semicon/PDF/NJM2068_E.pdf",
@@ -33386,12 +34292,14 @@
     "https://datasheet.octopart.com/NJM2068DD-Nisshinbo-Micro-Devices-Inc.-datasheet-13544402.pdf",
     "https://datasheet.octopart.com/NJM2068M-NJR-datasheet-141065.pdf",
     "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7957/PdfFile_174588.pdf",
+    "https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/njm2068d.pdf",
     "https://www.mouser.com/ds/2/294/NJM2068_E-217911.pdf",
     "https://www.mouser.com/ds/2/294/njr_njm2068_e-551643.pdf",
     "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM2068_E.pdf",
     "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm2068",
     "https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/NJM2068_J.pdf",
     "https://www.njr.co.jp/electronic_device/PDF/NJM2068_J.pdf",
+    "https://www.njr.co.jp/electronic_device/products/NJM2068.html",
     "https://www.njr.com/electronic_device/PDF/NJM2068_E.pdf"
    ],
    "open_questions": [
@@ -33493,7 +34401,8 @@
      "https://akizukidenshi.com/goodsaffix/NJM2068_j.pdf",
      "https://www.jh4vaj.com/archives/44066"
     ]
-   }
+   },
+   "revision_chain_summary": "NJR (New JRC) NJM2068 datasheet chain, oldest to newest. It is dated by 'Ver.YYYY-MM-DD' footers only, with no change logs.\n(1) Japanese edition NJM2068_J Ver.2003-03-14. NEW: Marutsu copy https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/njm2068d.pdf.\n(2) English edition NJM2068_E Ver.2003-03-17: Octopart NJM2068M copy (already known).\n(3) Ver.2011-03-18 in both editions. English: Mouser 217911, Mouser 551643 (now confirmed Ver.2011-03-18 by its title; the existing entry says 'unknown' and should be updated), NEW Mouser /datasheet/2/294/NJM2068_E-1917171.pdf, Octopart 13544402 (NJM2068DD-Nisshinbo and NEW NJM2068V-TE1-NJR URLs), and the GitHub copy. Japanese: Akizuki.\n(4) An undated 6-page NJM2068_E edition that adds NJM2068E, from alldatasheet ids 512047-512052 (the NEW entries added here are 512047 MD, 512049 M, 512050 L and 512052 DD; Ver. not shown).\n(5) A possibly later alldatasheet upload, id 1540191 (NEW; Ver. not shown).\n(6) The current Nisshinbo-hosted NJM2068_E PDF (Ver. not verified; the Nisshinbo-labelled Octopart copy is still Ver.2011-03-18, and no Nisshinbo-numbered reissue such as 'Ver.2.x' turned up in search).\nMissing links:\n- any pre-2003 edition (JRC databook era, 1980s-1990s; the introduction date is still unknown);\n- the Ver. date of the 6-page NJM2068E edition and of alldatasheet 1540191;\n- any Ver. between 2003 and 2011;\n- the Ver. currently served by nisshinbo-microdevices.co.jp and njr.com/electronic_device/PDF/;\n- the Japanese NJM2068_J PDF URL on njr.co.jp. The legacy product page https://www.njr.co.jp/electronic_device/products/NJM2068.html was added as a Wayback seed.\nNo second-source vendors were found; searches of datasheetcatalog, datasheetarchive, radiolocman and chipdip found only NJR/JRC copies. The many third-party mirrors added (datasheet4u/datasheetspdf 454863, datasheetq, datasheetcafe JRC2068, datasheetcatalog, digchip x2, Scribd x4, alldatasheet.net) do not show their Ver. in search summaries and are recorded at low confidence."
   },
   {
    "id": "NJM2114",
@@ -33879,6 +34788,138 @@
      "url_kind": "product_page",
      "notes": "Family listing seen in search. Per-package lifecycle not captured.",
      "confidence": "medium"
+    },
+    {
+     "vendor": "New Japan Radio (NJR), copy hosted by Mouser",
+     "title": "NJM2114 - 1 - Ver.2012-07-26 (High Performance Low-Noise Dual Operational Amplifier, English)",
+     "doc_number": "NJM2114_E (Mouser file NJM2114_E-364314.pdf)",
+     "revision": "Ver.2012-07-26",
+     "date": "2012-07-26",
+     "url": "https://www.mouser.com/datasheet/2/294/NJM2114_E-364314.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The search result title shows the page-1 footer 'NJM2114 - 1 - Ver.2012-07-26'. The result lists the NJM2114M-TE1/-TE2/-TE3, NJM2114MD-TE3, NJM2114DD, NJM2114MD and NJM2114L variants. This is a second copy of the edition already recorded from rxelectronics.ph.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "New Japan Radio (NJR), Japanese edition",
+     "title": "NJM2114 Japanese datasheet (in NJR's old_pdf legacy folder)",
+     "doc_number": "NJM2114_J",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.njr.co.jp/electronic_device/PDF/old_pdf/NJM2114_J.pdf",
+     "url_kind": "vendor_legacy",
+     "notes": "Japanese NJR edition in NJR's 'old_pdf' directory. The folder name suggests a superseded or archived edition, but the search summary shows no Ver. footer. It is a candidate for the pre-Nisshinbo edition.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR), IC-ON-LINE / datasheet.hk mirror",
+     "title": "NJM2114_32683.PDF - high performance low-noise dual operational amplifier",
+     "doc_number": "njm2114_32683.pdf (datasheet.hk id 1022989)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://www.datasheet.hk/view_download.php?id=1022989&file=0004%5Cnjm2114_32683.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Third-party mirror. The file name differs from NJR's naming, so it may be an older scrape. Its version is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Japan Radio Corporation (JRC), datasheetq mirror",
+     "title": "NJM2114 Datasheet PDF - Japan Radio Corporation",
+     "doc_number": "datasheetq NJM2114-JRC",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/en/preview/NJM2114-JRC",
+     "url_kind": "third_party_mirror",
+     "notes": "Mirror that attributes the part to JRC. Its version is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Japan Radio Corporation (JRC), qdatasheet mirror",
+     "title": "NJM2114D Datasheet PDF Japan Radio Corporation",
+     "doc_number": "qdatasheet fac=JRC pn=NJM2114D",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.qdatasheet.com/datasheet.jsp?fac=JRC&pn=NJM2114D",
+     "url_kind": "third_party_mirror",
+     "notes": "Its version is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR), datasheetdir mirror",
+     "title": "NJM2114 datasheet, pinout, application circuits - High Performance Low-Noise Dual Operational Amplifier",
+     "doc_number": "datasheetdir NJM2114",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://www.datasheetdir.com/NJM2114+Operational-Amplifiers",
+     "url_kind": "third_party_mirror",
+     "notes": "Its version is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR), datasheet4u mirror (direct PDF view)",
+     "title": "NJM2114 HIGH PERFORMANCE LOW-NOISE DUAL OPERATIONAL AMPLIFIER (New Japan Radio)",
+     "doc_number": "datasheet4u 454881",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet-pdf/NewJapanRadio/NJM2114/pdf.php?id=454881",
+     "url_kind": "third_party_mirror",
+     "notes": "Direct PDF view of the same datasheet4u document (id 454881) already recorded under the /datasheets/ page URL. It is listed here because the URL is different, not because it is a different edition.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJR), datasheet4u mirror",
+     "title": "2114D Datasheet - TO-252 NJM2114D",
+     "doc_number": "datasheet4u 704694",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/New-Japan-Radio/2114D/704694",
+     "url_kind": "third_party_mirror",
+     "notes": "This is a separate datasheet4u document (id 704694) from 454881 and may be a different upload or edition. The 'TO-252' package label comes from the aggregator's metadata and is probably wrong: NJM2114D is DIP8. Its version is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJRC), alldatasheet mirror",
+     "title": "NJM2114DD datasheet (PDF) - New Japan Radio",
+     "doc_number": "alldatasheet id 7263 (NJM2114DD)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.jp/datasheet-pdf/pdf/7263/NJRC/NJM2114DD.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A third early alldatasheet upload (ids 7258, 7259 and 7263 are close together, so these are probably all the same old NJRC edition). Its version is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (NJRC), alldatasheet mirror",
+     "title": "NJM2114D datasheet (PDF) - New Japan Radio",
+     "doc_number": "alldatasheet id 2287944 (NJM2114D)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.jp/datasheet-pdf/pdf/2287944/NJRC/NJM2114D.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Its alldatasheet id is much higher than 7258/7259/7263, so it was uploaded much later. It may be a newer edition, such as Ver.2012-07-26 or later, but this is unverified. Its version is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Alldatasheet (aggregator listing)",
+     "title": "NJM2114 Datasheet, PDF - Alldatasheet (search listing)",
+     "doc_number": "alldatasheet search NJM2114",
+     "revision": "revision not shown (the listing may link several editions: ids 7258, 7259, 7263, 2287944)",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/view.jsp?Searchword=NJM2114&sField=4",
+     "url_kind": "third_party_mirror",
+     "notes": "An index page that links all of alldatasheet's NJM2114 uploads. Use it to compare the early and later editions.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "RS Components Japan (distributor)",
+     "title": "NJM2114M op-amp, surface mount, 2 circuits, dual supply | RS Components",
+     "doc_number": "RS 178-2401 (NJM2114M)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://jp.rs-online.com/web/p/op-amps/1782401",
+     "url_kind": "product_page",
+     "notes": "A distributor product page that offers a datasheet link. Its version is not shown.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -33924,6 +34965,7 @@
    "ti_literature_numbers": [],
    "archive_seed_urls": [
     "http://semicon.njr.co.jp/eng/PDF/NJM2114_E.pdf",
+    "http://www.njr.co.jp/electronic_device/PDF/old_pdf/NJM2114_J.pdf",
     "http://www.njr.co.jp/products/semicon/PDF/NJM2114_E.pdf",
     "http://www.njr.com/semicon/PDF/NJM2114_E.pdf",
     "http://www.op316.com/pdf/ic/njm2114.pdf",
@@ -33932,12 +34974,14 @@
     "https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/njm2114d.pdf",
     "https://www.marutsu.co.jp/pc/i/557442/",
     "https://www.mouser.com/PCN/NJR_181220_NJR_Discon_Letter_4inches_Termnation.pdf",
+    "https://www.mouser.com/datasheet/2/294/NJM2114_E-364314.pdf",
     "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/",
     "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/obsolete.html",
     "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM2114_E.pdf",
     "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm2114",
     "https://www.nisshinbo-microdevices.co.jp/ja/design-support/discon/njx_discon.html",
     "https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/NJM2114_J.pdf",
+    "https://www.njr.co.jp/electronic_device/PDF/old_pdf/NJM2114_J.pdf",
     "https://www.njr.co.jp/electronic_device/semiconductor/design/discon.html",
     "https://www.njr.com/semicon/PDF/NJM2114_E.pdf",
     "https://www.rxelectronics.ph/datasheet/57/njm2114l.pdf"
@@ -34047,7 +35091,8 @@
      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-113",
      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100008984.md"
     ]
-   }
+   },
+   "revision_chain_summary": "NJM2114 has a single source: New JRC/NJR, now Nisshinbo Micro Devices. No second source and no TI/NatSemi/ADI-style lettered chain is known.\n\nThe NJR English datasheet NJM2114_E has only one confirmed footer version, Ver.2012-07-26. It is held by rxelectronics.ph (already known) and now also by Mouser (NJM2114_E-364314.pdf), whose search-result title shows 'NJM2114 - 1 - Ver.2012-07-26'.\n\nThe following links are still missing:\n(1) Any pre-2012 NJR edition, meaning the original introduction datasheet (likely late 1990s or early 2000s). It is not dated anywhere yet. The early alldatasheet uploads (ids 7258, 7259, 7263), the datasheet.hk njm2114_32683.pdf and the njr.co.jp old_pdf/NJM2114_J.pdf are the best candidates, but no footer version was visible.\n(2) Any post-2012 NJR reissue or Nisshinbo-era edition (the current nisshinbo-microdevices.co.jp NJM2114_E.pdf). Its footer version has not been captured. Alldatasheet id 2287944 is a later upload that may hold it.\n(3) The version of the Japanese NJM2114_J edition, which is unknown.\n\nSearches for footers from Ver.2003 to Ver.2009 and for any 'Ver.20xx' footer returned nothing beyond Ver.2012-07-26.\n\nThe next step is Wayback Machine checks of http://www.njr.com/semicon/PDF/NJM2114_E.pdf, njr.co.jp old_pdf/NJM2114_J.pdf and the Nisshinbo URL to date each edition."
   },
   {
    "id": "NJM4556",
@@ -34517,6 +35562,116 @@
      "url_kind": "third_party_mirror",
      "notes": "Seen in search results. It describes the uPC4556 as an AC-enhanced uPC4558 whose decompensation guarantees 20 MHz GBW at gains above 20 dB; about 10 pages. Other mirrors: alldatasheet ids 6766 (UPC4556) and 6767 (UPC4556C), datasheetcatalog, datasheetq. This is not an NJM4556 datasheet.",
      "confidence": "medium"
+    },
+    {
+     "vendor": "New JRC (NJR)",
+     "title": "NJM4556A - Dual High Current Operational Amplifier (NJM4556AD / NJM4556AM / NJM4556AV / NJM4556AL), English",
+     "doc_number": "NJM4556A (EN)",
+     "revision": "Ver.2003-03-18",
+     "date": "2003-03-18",
+     "url": "https://media.digikey.com/pdf/Data%20Sheets/NJR%20PDFs/NJM4556A.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The search-result title reads 'NJM4556A - 1 - Ver.2003-03-18 NJM4556AD NJM4556AM NJM4556AV NJM4556AL'. This is the earliest English NJM4556A edition found. It is five days newer than the Japanese Ver.2003-03-13 (Akizuki copy). It already lists all four packages, including the SSOP8 (AV).",
+     "confidence": "high"
+    },
+    {
+     "vendor": "New JRC (NJR)",
+     "title": "NJM4556A Datasheet - NJR Corporation/NJRC (DigiKey datasheet viewer)",
+     "doc_number": "NJM4556A_E",
+     "revision": "Ver.2011-06-08",
+     "date": "2011-06-08",
+     "url": "https://digikey.com/en/datasheets/njr-corporationnjrc/njr-corporationnjrc-njm4556a_e",
+     "url_kind": "distributor_mirror",
+     "notes": "The search summary says 'NJM4556A - Ver.2011-06-08 is available as a PDF datasheet from DigiKey'. The same viewer page also appears at digikey.de/en/datasheets/... and digikey.co.uk/en/datasheets/.... The revision is taken from the summary, not the page title, so confidence is medium.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "New JRC (NJR)",
+     "title": "NJM4556A Datasheet(PDF) - New Japan Radio (alldatasheet doc 7445)",
+     "doc_number": "NJM4556A",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7445/NJRC/NJM4556A.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A different alldatasheet document ID (7445) from the listed 7448 (NJM4556AL) and 7450 (NJM4556) copies. The summary gives 239 Kbytes, 5 pages. The early low ID suggests an early-2000s upload, possibly the 2003 edition, but this is not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New JRC (NJR)",
+     "title": "NJM4556AD datasheet (PDF) - New Japan Radio (alldatasheet.jp doc 7446)",
+     "doc_number": "NJM4556A",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.jp/datasheet-pdf/pdf/7446/NJRC/NJM4556AD.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Japanese alldatasheet mirror under a separate document ID (7446, NJM4556AD).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "JRC (New Japan Radio)",
+     "title": "njm4556d.pdf (Matsumoto Musen webshop)",
+     "doc_number": "NJM4556 (NJM4556D)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.matsumoto-musen.co.jp/0_webshop/files/ic/njm4556d.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "A Japanese parts shop's copy, filed under the original non-A part NJM4556D. This may be an edition of the original NJM4556 (pre-A) datasheet, which would make it useful evidence of the original part. The search summary does not show its content or revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "JRC (New Japan Radio)",
+     "title": "NJM4556 DUAL HIGH CURRENT OPERATIONAL AMPLIFIER (New Japan Radio) - datasheet4u id 1101698",
+     "doc_number": "NJM4556",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet-pdf/NewJapanRadio/NJM4556/pdf.php?id=1101698",
+     "url_kind": "third_party_mirror",
+     "notes": "This is the non-A NJM4556 datasheet. The same document is at https://datasheet4u.com/datasheets/New-Japan-Radio/NJM4556/1101698 (titled 'NJM4556 Datasheet - SOP AMPLIFIER') and at www.datasheet4u.com/datasheet-pdf/New%20Japan%20Radio/NJM4556/pdf.php?id=1101698.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New JRC (NJR)",
+     "title": "NJM4556A, NJM Datasheet PDF (New Japan Radio) - datasheet4u id 455100",
+     "doc_number": "NJM4556A",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet/New-Japan-Radio/NJM4556A-455100",
+     "url_kind": "third_party_mirror",
+     "notes": "The same document ID 455100 is mirrored on the Japanese sister site at http://www.datasheet.jp/pdf/455100/NJM4556A.html.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New JRC (NJR)",
+     "title": "NJM4556A Datasheet PDF - Japan Radio Corporation (datasheetq)",
+     "doc_number": "NJM4556A",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/NJM4556A-doc-NJRC",
+     "url_kind": "third_party_mirror",
+     "notes": "The summary gives 4 pages and 199.7 kB. The alldatasheet copies are 5 pages and 239 KB, so this may be a different (possibly older) edition. Not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New JRC (NJR)",
+     "title": "NJM4556A datasheet - Dual High Current Operational Amplifier (digchip)",
+     "doc_number": "NJM4556A",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/330/NJM4556A.php",
+     "url_kind": "third_party_mirror",
+     "notes": "There is also a second digchip page at https://www.digchip.com/datasheets/parts/datasheet/2/330/NJM4556A.php, titled 'Dual High Current Operational Amplifier. The NJM4556A'.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "JRC (New Japan Radio)",
+     "title": "NJM4556D DataSheet - New Japan Radio Co., Ltd. - Datasheets360.com",
+     "doc_number": "NJM4556 (NJM4556D)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheets360.com/part/detail/njm4556d/-3137595544822529180/",
+     "url_kind": "third_party_mirror",
+     "notes": "Part-detail page for the non-A NJM4556D, with a datasheet link. The document's content and edition are not shown.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -34547,6 +35702,13 @@
      "revision": "20250306",
      "date": "2025-03-06",
      "changes": "Reissued under Nisshinbo. The EN edition adds 'NJM4556AD and NJM4556AL are the NRND products' (re-confirmed from the vendor PDF title) and NRND tags on the DIP8/SIP8 outlines. Terminology changed from 'Operating Voltage/Current' to 'Supply Voltage/Current'. No change to any limit, typical value, rating, pinout, equivalent circuit or graph compared with Ver.2011-06-08. No die change is indicated and no PCN number was found."
+    },
+    {
+     "vendor": "New JRC (NJR)",
+     "doc_number": "NJM4556A (EN)",
+     "revision": "Ver.2003-03-18",
+     "date": "2003-03-18",
+     "changes": "Earliest English NJM4556A edition found (DigiKey media copy). It follows the Japanese Ver.2003-03-13 by five days. The title already lists NJM4556AD/AM/AV/AL, so the SSOP8 (AV) was offered by March 2003. Differences from Ver.2011-06-08 are unknown; the search summary shows only the title."
     }
    ],
    "silicon_changes": [
@@ -34666,16 +35828,19 @@
     "http://semicon.njr.co.jp/eng/PDF/NJM4556A_E.pdf",
     "http://semicon.njr.co.jp/eng/PDF/NJM4556_E.pdf",
     "http://semicon.njr.co.jp/jpn/PDF/NJM4556A_J.pdf",
+    "http://www.datasheet.jp/pdf/455100/NJM4556A.html",
     "http://www.njr.co.jp/products/semicon/PDF/NJM4556A_E.pdf",
     "http://www.njr.co.jp/products/semicon/PDF/NJM4556A_J.pdf",
     "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf",
     "https://akizukidenshi.com/goodsaffix/njm4556a.pdf",
     "https://akizukidenshi.com/goodsaffix/njm4556a_j.pdf",
     "https://componentsearchengine.com/Datasheets/1/NJM4556AV-TE1.pdf",
+    "https://media.digikey.com/pdf/Data%20Sheets/NJR%20PDFs/NJM4556A.pdf",
     "https://www.alldatasheet.com/datasheet-pdf/pdf/7448/NJRC/NJM4556AL.html",
     "https://www.alldatasheet.com/datasheet-pdf/pdf/7450/NJRC/NJM4556.html",
     "https://www.datasheetbank.com/datasheet/JRC/NJM4556.html",
     "https://www.lcsc.com/datasheet/lcsc_datasheet_2412090938_JRC-NJM4556AL_C78948.pdf",
+    "https://www.matsumoto-musen.co.jp/0_webshop/files/ic/njm4556d.pdf",
     "https://www.mouser.com/datasheet/2/294/NJM4556A_E-1917507.pdf",
     "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/",
     "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM4556A_E.pdf",
@@ -34815,7 +35980,8 @@
      "https://akizukidenshi.com/goodsaffix/njm4556a.pdf",
      "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf"
     ]
-   }
+   },
+   "revision_chain_summary": "JRC original NJM4556 (non-A, D/M/S/L packages): no dated edition was found. Copies exist, but none shows a revision: alldatasheet 7450 (already listed), datasheetbank (already listed), datasheet4u id 1101698, datasheets360 NJM4556D, and Matsumoto Musen njm4556d.pdf. The njm4556d.pdf copy is the best candidate for an original pre-A edition. Its date, and any 1980s/1990s JRC databook edition, are still MISSING.\n\nNew JRC NJM4556A English: Ver.2003-03-18 (NEW; media.digikey.com NJM4556A.pdf) -> Ver.2011-06-08 (smartstand GitHub copy, njr.com legacy URL; DigiKey viewer per the summary) -> Ver.2020-03-26 (Mouser) -> Nisshinbo 20250306 (NRND for AD/AL). No edition between 2011 and 2020 surfaced in searches for Ver.2013/2014/2016/2018.\n\nNew JRC NJM4556A Japanese: Ver.2003-03-13 (Akizuki) -> Ver.2011-06-08 (Akizuki) -> Nisshinbo 20250306. A Japanese counterpart of the Ver.2020-03-26 English edition is still MISSING.\n\nOpen question: the datasheetq copy is 4 pages and 199.7 kB, while the alldatasheet copies are 5 pages and 239 KB. It may be a different or older edition; unverified. No PCN or die-change note was found.\n\nNEC uPC4556 is a different part and not a second source. Its NEC document number is still unknown, and none of the 6 searches addressed it. No other second sources were found."
   },
   {
    "id": "OP27",
@@ -35471,6 +36637,182 @@
      "url_kind": "third_party_mirror",
      "notes": "21-page TI OP37 sheet. Literature number not seen.",
      "confidence": "medium"
+    },
+    {
+     "vendor": "Precision Monolithics Inc. (PMI)",
+     "title": "Precision Monolithics Inc - PMI Databook 1988 (archive.org full-text stream)",
+     "doc_number": "n/a (databook)",
+     "revision": "1988 databook edition (single datasheet revision not shown)",
+     "date": "1988",
+     "url": "https://archive.org/stream/PrecisionMonolithicsInc-PMI-Databook_1988_DL/PrecisionMonolithicsInc-PMI-Databook_1988_DL_djvu.txt",
+     "url_kind": "archive",
+     "notes": "Originator edition. The search summary says this 1988 PMI databook has the OP-27 (Low-Noise Precision Operational Amplifier) and the OP-37 (Low-Noise Precision High-Speed Operational Amplifier) data sheets. The PMI data-sheet revision or date code inside was not shown. It predates the ADI acquisition, so it is evidence of original PMI silicon.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Precision Monolithics Inc. (PMI)",
+     "title": "Precision Monolithics Inc-PMI Databook_1988_DL (archive.org item page)",
+     "doc_number": "n/a (databook)",
+     "revision": "1988 databook edition (revision not shown)",
+     "date": "1988",
+     "url": "https://archive.org/details/PrecisionMonolithicsInc-PMI-AMP-01",
+     "url_kind": "archive",
+     "notes": "Item page for the same 1988 PMI databook. The search engine shows this item ID with the 'Databook_1988_DL' title, so the item ID and the title appear swapped. Revision not shown.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Precision Monolithics Inc. (PMI)",
+     "title": "PMI 1984 data book (Precision Monolithics Incorporated, Santa Clara, CA)",
+     "doc_number": "n/a (databook)",
+     "revision": "1984 databook edition (revision not shown)",
+     "date": "1984",
+     "url": "https://archive.org/details/pmi1984databook00prec",
+     "url_kind": "archive",
+     "notes": "Originator-era full-line databook. The search summary did not list its contents, so an OP-27/OP-37 entry is expected but was not confirmed by the summary. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Precision Monolithics Inc. (PMI)",
+     "title": "1982 PMI Linear Integrated Circuits Product Catalog",
+     "doc_number": "n/a (catalog)",
+     "revision": "1982 catalog (revision not shown)",
+     "date": "1982",
+     "url": "https://www.bitsavers.org/components/pmi/_dataBooks/1982_PMI_Linear_Integrated_Circuits_Product_Catalog.pdf",
+     "url_kind": "archive",
+     "notes": "This is the earliest PMI publication found, about 2 years after the 12/20/80 Electronic Design introduction. It may be a short-form catalog rather than full data sheets. OP-27 content was not shown in the summary.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Linear Technology (hosted by Analog Devices)",
+     "title": "OP-27/OP-37 Low Noise, High Speed Precision Operational Amplifiers",
+     "doc_number": "unknown (file name op-27_op-37fb)",
+     "revision": "revision not shown (LTC file-name suffix 'fb' usually marks Rev B under LTC naming; unconfirmed)",
+     "date": "unknown",
+     "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/op-27_op-37fb.pdf",
+     "url_kind": "vendor_current",
+     "notes": "This is the Linear Technology second-source data sheet, now served from analog.com and probably behind the OP27-LTC product page. The summary text reads 'wideband noise is only 3nV/√Hz ... 1/f corner 2.7Hz ... offset voltage is 10µV ... decompensated OP-37 ... 63MHz and 17V/µs'. Its LTC typos ('magnatude', 'respactively') match the alldatasheet LTC copy (70889/LINER, 11 pages, 788 KB).",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OP27A, OP27C, OP27E, OP27G, OP37A, OP37C, OP37E, OP37G Low-Noise High-Speed Precision Operational Amplifiers (handbook scan)",
+     "doc_number": "unknown (probably an earlier SLOS100 edition; not confirmed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://archive.org/details/manuallib-id-2713994",
+     "url_kind": "archive",
+     "notes": "This earlier TI edition covers 8 grades (OP27A/C/E/G and OP37A/C/E/G): A/C at -55 to 125 °C, E/G at -25 to 85 °C, OP37 minimum slew 11 V/µs. The current SLOS100E covers only OP27A/OP27C, so this edition predates the E/G and OP37 deletion. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OP27A, OP27C, OP27E, OP27G OP37A, OP37C, OP37E, OP37G LOW-NOISE HIGH-SPEED PRECISION OPERATIONAL-AMPLIFIER",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://docplayer.net/56152930-Op27a-op27c-op27e-op27g-op37a-op37c-op37e-op37g-low-noise-high-speed-precision-operational-amplifier.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A copy of the TI combined OP27/OP37 8-grade edition. The header or footer revision was not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OP37G (TI) datasheet, 21 pages",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://pdf.ic37.com/TI/OP37G_datasheet_771874/OP37G_4.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A 21-page TI OP37G data sheet, probably the combined OP27/OP37 edition. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OP27 Datasheet Texas Instruments",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?%2FOP27=&di=305423",
+     "url_kind": "third_party_mirror",
+     "notes": "A radiolocman copy of the TI OP27 data sheet. Revision not shown (could be SLOS100E).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices",
+     "title": "OP27 Datasheet(PDF) - Analog Devices",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48504/AD/OP27.html",
+     "url_kind": "third_party_mirror",
+     "notes": "This is a different alldatasheet entry (48504) from the known OP-27 entry (49010). Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices",
+     "title": "OP27EP Datasheet pdf - Low-Noise, Precision Operational Amplifier - Analog Devices",
+     "doc_number": "unknown",
+     "revision": "revision not shown (the hyphenated 'Low-Noise' title matches the pre-2005 Rev A–C style; unconfirmed)",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/O/P/2/7/OP27EP.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "A datasheetcatalog mirror of the ADI OP27. Its title style matches the MIT OP27c copy ('OP27 | Low-Noise, Precision Operational Amplifier'), so it is possibly Rev A, B or C. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices",
+     "title": "OP27GS Datasheet pdf - Low-Noise, Precision Operational Amplifier - Analog Devices",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/O/P/2/7/OP27GS.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "Probably the same file as the OP27EP entry. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices",
+     "title": "Low Noise, Precision Operational Amplifier OP27",
+     "doc_number": "unknown",
+     "revision": "revision not shown (the title has no 'Data Sheet ... Rev. H', which suggests the Rev D–G layout; unconfirmed)",
+     "date": "unknown",
+     "url": "https://www.jameco.com/Jameco/Products/ProdDS/115318.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Jameco distributor copy. The title style ('Low Noise, Precision Operational Amplifier OP27', no hyphen) is the post-2005 ADI format, used from Rev D onward. Could be Rev D, E, F or G. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices",
+     "title": "OP27 Datasheet Analog Devices",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=351895",
+     "url_kind": "third_party_mirror",
+     "notes": "This radiolocman entry (351895) is different from the known di=170597 Rev H entry. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "unknown (probably Analog Devices)",
+     "title": "OP27 Datasheet PDF - Precision Operational Amplifier",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetcafe.com/op27-datasheet-pdf/",
+     "url_kind": "third_party_mirror",
+     "notes": "A hobby datasheet site. Neither the vendor nor the revision was shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "unknown",
+     "title": "OP27C datasheet & application notes - Datasheet Archive",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetarchive.com/OP27C-datasheet.html",
+     "url_kind": "third_party_mirror",
+     "notes": "An OP27C listing on datasheetarchive, which often holds old PMI and TI scans. The vendor and revision were not shown.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -35557,6 +36899,27 @@
      "revision": "Rev. B (12/90) → later",
      "date": "12/90; LTspice revision 05/23/19",
      "changes": "Model only. The LTspice changelog says '05/23/19 Revised the model of the OP27 and OP37'."
+    },
+    {
+     "vendor": "Precision Monolithics Inc. (PMI)",
+     "doc_number": "PMI databook editions containing OP-27/OP-37",
+     "revision": "1982 catalog → 1984 data book → 1988 databook → 1990 Volume 10 data book",
+     "date": "1982; 1984; 1988; 1990",
+     "changes": "These are originator-era publications. The 1988 databook is confirmed to contain the OP-27 and OP-37. OP-27 inclusion in the 1982 catalog and the 1984 data book was not shown. The 1990 'Volume 10 Data Book Analog Integrated Circuits' is on bitsavers according to an All About Circuits forum thread (URL not seen). Per-datasheet PMI revision codes and changes were not seen."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SLOS100 (earlier edition; exact revision letter not shown)",
+     "revision": "unknown (8-grade edition) → later OP27A/OP27C-only edition (SLOS100E, Feb 2010)",
+     "date": "unknown",
+     "changes": "The earlier TI edition covered OP27A/C/E/G and OP37A/C/E/G: A/C grades at -55 to 125 °C, E/G grades at -25 to 85 °C, OP37 minimum slew 11 V/µs. By SLOS100E only OP27A and OP27C remain, so the E/G grades and all OP37 grades were dropped in an intermediate revision that was not identified."
+    },
+    {
+     "vendor": "Linear Technology",
+     "doc_number": "OP-27/OP-37 (file op-27_op-37fb)",
+     "revision": "unknown (the file suffix suggests Rev B; unconfirmed)",
+     "date": "unknown",
+     "changes": "The LTC second-source sheet claims offset 10 µV, drift 0.2 µV/°C and 0.2 µV/month, CMRR 126 dB, gain 2 million, and OP-37 at 63 MHz GBW and 17 V/µs. The revision chain was not seen."
     }
    ],
    "silicon_changes": [
@@ -35672,7 +37035,9 @@
     "https://www.analog.com/media/en/technical-documentation/data-sheets/OP27-OP37.pdf",
     "https://www.analog.com/media/en/technical-documentation/data-sheets/OP27.pdf",
     "https://www.analog.com/media/en/technical-documentation/data-sheets/OP37.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/op-27_op-37fb.pdf",
     "https://www.analog.com/media/en/technical-documentation/data-sheets/op27.pdf",
+    "https://www.bitsavers.org/components/pmi/_dataBooks/1982_PMI_Linear_Integrated_Circuits_Product_Catalog.pdf",
     "https://www.mit.edu/~6.301/OP27c.pdf",
     "https://www.mit.edu/~6.301/OP37b.pdf",
     "https://www.ti.com/lit/gpn/OP27",
@@ -35770,7 +37135,8 @@
      "https://www.analog.com/en/products/op37.html",
      "https://www.diyaudio.com/community/threads/op27-how-good-is-it.84374/page-2"
     ]
-   }
+   },
+   "revision_chain_summary": "Searches used: 6 of 6.\n\nPMI (originator): no standalone PMI OP-27/OP-37 data sheet with a date or revision was found. The PMI data-book editions found:\n- 1982 PMI Linear IC Product Catalog (bitsavers)\n- 1984 PMI Data Book (archive.org pmi1984databook00prec)\n- 1988 PMI Databook (archive.org; the search summary confirms OP-27 and OP-37 are in it)\n- 1990 PMI \"Volume 10\" Data Book on bitsavers, mentioned in an All About Circuits forum thread (URL not seen)\nStill missing: a standalone PMI data sheet near the Dec 1980 launch, and PMI revision codes.\n\nADI OP27 (C00317):\n- Rev 0: missing (PMI/ADI 1990s)\n- Rev A, 9/01: missing\n- Rev B: missing; date unknown\n- Rev C, 1/03: yumpu and MIT copies\n- Rev D, 9/05: missing\n- Rev E, 12/05: missing\n- Rev F, 5/06: Digikey and GitHub copies\n- Rev G: dtsheet copy; date unknown\n- Rev H (current): analog.com, Mouser, Octopart, radiolocman 170597\n\nNew undated copies whose revision was not shown:\n- alldatasheet 48504, and datasheetcatalog OP27EP/OP27GS: the hyphenated 'Low-Noise' title suggests Rev A–C.\n- Jameco 115318: the title suggests the Rev D–G layout.\n- radiolocman 351895\nStill missing: copies of Rev 0, A, B, D and E, and the dates of Rev G and Rev H.\n\nADI OP37 (C00319):\n- Rev 0: missing\n- Rev A, 2/02: datasheetq copy\n- Rev B, 12/02: current on analog.com\nNothing new found. Rev 0 (PMI-era or 1990s ADI) is still missing.\n\nLinear Technology OP-27/OP-37:\n- 1990 databook (p. 2-345; no URL)\n- alldatasheet 70889 copy\n- New: analog.com/media/.../op-27_op-37fb.pdf, the LTC second-source sheet. The 'fb' suffix is probably LTC Rev B, but the revision is not shown.\nStill missing: earlier LTC revisions and their dates.\n\nTI SLOS100:\n- Original: Feb 1989\n- Rev B: Aug 1994\n- Rev C and Rev D: missing, dates unknown\n- Rev E: Feb 2010\nNew: an earlier TI edition covering 8 grades (OP27A/C/E/G and OP37A/C/E/G) exists at archive.org manuallib-id-2713994, docplayer 56152930 and ic37 OP37G (21 pp). The known atrinelec OP37GP file carries the same title, so it is probably TI, not LTC. The revision letter of that edition was not shown. The current SLOS100E covers only OP27A/OP27C, so a later revision dropped the E/G and OP37 grades; which revision is unknown. A TI OP27 copy also exists at radiolocman 305423 (revision not shown).\nStill missing: SLOS100 original, A, C and D copies, and the revision at which the OP37 grades were removed."
   },
   {
    "id": "OP275",
@@ -36188,6 +37554,171 @@
      "url_kind": "third_party_mirror",
      "notes": "Identical to Rev. C except C7 = 1.59 pF (common-mode zero near 100 kHz), which matches Rev. C's note 'Corrected common-mode zero location'.",
      "confidence": "medium"
+    },
+    {
+     "vendor": "Analog Devices (Reichelt Elektronik copy)",
+     "title": "OP275 Dual Bipolar/JFET, Audio Operational Amplifier",
+     "doc_number": "OP275",
+     "revision": "B",
+     "date": "not shown in the search summary",
+     "url": "https://cdn-reichelt.de/documents/datenblatt/A200/DATASHEET_OP275-AD-EN.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The search result's title text reads 'REV. B Information furnished by Analog Devices is believed to be accurate and...', which is the page-1 footer of the old ADI layout. This is the first copy found of the Rev. B edition, which fills the gap between the Rev. A copies (Futurlec, pken.net) and the current Rev. C. Worth archiving before the distributor replaces it.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Analog Devices (Octopart datasheet cache, OP275GPZ entry)",
+     "title": "OP275* Dual Bipolar/JFET, Audio Operational Amplifier",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet.octopart.com/OP275GPZ-Analog-Devices-datasheet-9742324.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "This is the OP275GPZ URL for the same cache ID (9742324) as the OP275GSZ copy already listed. The title keeps the patent asterisk ('OP275*'). The snippet shows only 'Information furnished by Analog Devices...' without the revision letter.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (datasheetcatalog.com copy)",
+     "title": "OP275 Datasheet pdf - Dual Bipolar/JFET, Audio Operational Amplifier - Analog Devices",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/O/P/2/7/OP275.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetcatalog mostly holds editions from before about 2005, so this is probably an early (Rev. A or B) copy, but the summary does not show the revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (datasheetcatalog.com copy)",
+     "title": "OP275GS Datasheet pdf - Dual Bipolar/JFET, Audio Operational Amplifier - Analog Devices",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/O/P/2/7/OP275GS.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "OP275GS (SOIC, before the lead-free Z suffix) entry. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (alldatasheet copy, OP275GS entry)",
+     "title": "OP275GS Datasheet(PDF) - Analog Devices",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/49049/AD/OP275GS.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Summary: 189 KB, 12 pages. This is the same alldatasheet file set as ID 49047, which is already listed. It is listed here because this URL was not recorded before.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (alldatasheet copy, OP275G entry)",
+     "title": "OP275G Datasheet(PDF) - Analog Devices",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/49052/AD/OP275G.html",
+     "url_kind": "third_party_mirror",
+     "notes": "This is the OP275G entry (ID 49052) of the alldatasheet 12-page copy. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (DatasheetBank copy)",
+     "title": "OP275 Datasheet PDF, Analog Devices : Dual Bipolar/JFET, Audio Operational Amplifer",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetbank.com/datasheet/ADI/OP275.html",
+     "url_kind": "third_party_mirror",
+     "notes": "The index page. The viewer is at https://www.datasheetbank.com/en/pdf-view/OP275-ADI and the download is at https://pdf.datasheetbank.com/datasheet-download/71480/1/ADI/OP275. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (DatasheetBank download)",
+     "title": "OP275 - Analog Devices Datasheet PDF VIEW DOWNLOAD",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://pdf.datasheetbank.com/datasheet-download/71480/1/ADI/OP275",
+     "url_kind": "third_party_mirror",
+     "notes": "Direct download (ID 71480). The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (DatasheetQ copy)",
+     "title": "OP275_ Datasheet PDF - Analog Devices",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/OP275_-doc-ADI",
+     "url_kind": "third_party_mirror",
+     "notes": "This is the 'OP275_' entry, which may be a different file from the 'OP275' entry at https://www.datasheetq.com/en/OP275-ADI. Neither shows its revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (DatasheetQ copy)",
+     "title": "OP275 Datasheet PDF - Analog Devices",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/en/OP275-ADI",
+     "url_kind": "third_party_mirror",
+     "notes": "The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (datasheetspdf.com copy)",
+     "title": "OP275 Datasheet, Operational Amplifier.",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetspdf.com/pdf/475420/AnalogDevices/OP275/1",
+     "url_kind": "third_party_mirror",
+     "notes": "It has the same ID (475420) as the datasheet4u copy already listed, so it is probably the same file. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (datasheet4u copy, new-style page)",
+     "title": "OP275 Amplifier Datasheet - Analog Devices | Download PDF & Specs",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet/Analog-Devices/OP275-475420",
+     "url_kind": "third_party_mirror",
+     "notes": "This is the newer datasheet4u URL for ID 475420; the old pdf.php URL is already listed. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (Datasheet Archive, OP275GPZ entry)",
+     "title": "Datasheet Archive: OP275GPZ datasheets",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetarchive.com/OP275GPZ-datasheet.html",
+     "url_kind": "third_party_mirror",
+     "notes": "This is the OP275GPZ (lead-free) index. The OP275GP index is already listed. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (Datasheets.com)",
+     "title": "OP275GPZ Datasheet | Analog devices",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheets.com/analog-devices/OP275GPZ",
+     "url_kind": "third_party_mirror",
+     "notes": "The revision is not shown. It is probably the current Rev. C, because it is a lead-free (Z) part entry.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (circuits-diy.com hobby page)",
+     "title": "OP275GP Dual JFET Op-Amp - Datasheet",
+     "doc_number": "OP275",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.circuits-diy.com/op275gp-dual-jfet-op-amp-datasheet/",
+     "url_kind": "third_party_mirror",
+     "notes": "A hobby-site page that reproduces or links the OP275GP datasheet. The revision is not shown.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -36218,6 +37749,13 @@
      "revision": "Rev. C",
      "date": "3/95",
      "changes": "Model only: corrected the common-mode zero location (C7 = 159.15 pF, 1 kHz, versus 1.59 pF in the older OrCAD copy). Typical values: EOS 0.5 mV, IOS 1 nA."
+    },
+    {
+     "vendor": "Analog Devices",
+     "doc_number": "OP275 data sheet",
+     "revision": "REV. B",
+     "date": "unknown (not shown in the search summary)",
+     "changes": "This edition is now confirmed by a Reichelt distributor copy (cdn-reichelt.de .../DATASHEET_OP275-AD-EN.pdf) whose page-1 footer reads 'REV. B'. It comes between the pre-RoHS REV. A (Futurlec OP275GP.pdf, pken.net) and the current Rev. C. The change log was not seen."
     }
    ],
    "silicon_changes": [
@@ -36281,6 +37819,7 @@
     "http://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf",
     "http://www.analog.com/productSelection/pdf/OP275_b.pdf",
     "http://www.analog.com/static/imported-files/data_sheets/OP275.pdf",
+    "https://cdn-reichelt.de/documents/datenblatt/A200/DATASHEET_OP275-AD-EN.pdf",
     "https://www.analog.com/OP275/datasheet",
     "https://www.analog.com/en/products/op275.html",
     "https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Parts%20List.pdf",
@@ -36390,7 +37929,8 @@
      "https://nabe.adiary.jp/opamp-compare",
      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100000605.md"
     ]
-   }
+   },
+   "revision_chain_summary": "I used all 6 of 6 WebSearch calls.\n\nAnalog Devices OP275 is the only vendor document; there are no second sources.\n\n**Revision chain known now (oldest to newest):**\n1. **Rev. 0 / original PMI-era edition (about 1992–93):** still missing. No copy or date was found. The SPICE model Rev. B dated 10/92 suggests the part existed by late 1992.\n2. **REV. A:** undated and pre-RoHS (lists OP275GP). Held by the Futurlec OP275GP.pdf and pken.net copies.\n3. **REV. B:** NEW. Held by the Reichelt copy at https://cdn-reichelt.de/documents/datenblatt/A200/DATASHEET_OP275-AD-EN.pdf. Its page-1 footer 'REV. B Information furnished by Analog Devices...' shows in the search result title. Date not seen.\n4. **Rev. C:** current. Held by analog.com/media/.../OP275.pdf and RadioLocman di=121467. Date not seen.\n\n**Still missing:**\n- The dates of Rev. A, B and C. The old-layout ADI sheets carry no revision-history table, and no footer date showed in any snippet.\n- Any Rev. 0 or PMI-branded original.\n- Whether Rev. C (or an unlabelled later reprint) added the lead-free Z part numbers. This matters for the RoHS-era change.\n\n**Where to look next:** Several third-party copies may hold Rev. A or B, but their revision was not shown: datasheetcatalog OP275 and OP275GS, alldatasheet IDs 49047/49049/49052 (12 pages, 189 KB), DatasheetBank 71480, DatasheetQ, datasheet4u/datasheetspdf 475420, and Octopart 9742324. Opening them would identify the editions.\n\nNo silicon change under the same part number was documented. A diyAudio thread ('OP275 dual OPA, might be many fake source originated in China', https://www.diyaudio.com/community/threads/op275-dual-opa-might-be-many-fake-source-originated-in-china.309442/) covers counterfeits, not a real die revision."
   },
   {
    "id": "OPA111",
@@ -36934,6 +38474,237 @@
      "url_kind": "distributor_mirror",
      "notes": "Mouser product page, confirmed in search results. Stock status and linked datasheet revision were not seen.",
      "confidence": "medium"
+    },
+    {
+     "vendor": "Burr-Brown (Japan edition)",
+     "title": "OPA111 ローノイズ高精度Difet オペアンプ (Low Noise Precision Difet Op Amp), Japanese-language Burr-Brown catalog sheet",
+     "doc_number": "PDS-526 (Japanese edition)",
+     "revision": "K (from file name 'OPA111revK')",
+     "date": "not shown (English PDS-526K is August 1995)",
+     "url": "http://lam29.lebra.nihon-u.ac.jp/archives/BB_catalog/pdf/OPA111revK.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Nihon University LEBRA lab archive of Burr-Brown catalog PDFs. File name shows rev K. The title is Japanese, so this is a Burr-Brown Japan translation of PDS-526K. The date is not shown in the search summary.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Burr-Brown (Japan edition)",
+     "title": "OPA111 ローノイズ高精度Difet オペアンプ (mirror)",
+     "doc_number": "PDS-526 (Japanese edition)",
+     "revision": "K (from file name 'OPA111revK')",
+     "date": "not shown",
+     "url": "http://www.lebra.nihon-u.ac.jp/archives/BB_catalog/pdf/OPA111revK.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "The same file on the main LEBRA host (www.lebra.nihon-u.ac.jp).",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "BB OPA111 (Low Noise Precision Difet Operational Amplifier)",
+     "doc_number": "PDS-526 (letter not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://neurophysics.ucsd.edu/lab/FET%20OP%20AMPS/BB%20OPA111.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "UCSD neurophysics lab copy in its 'FET OP AMPS' folder. The search summary does not show the revision. Because a lab collected it, it may be an older pre-TI edition.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "OPA111 Low Noise Precision Difet Operational Amplifier (alldatasheet viewer)",
+     "doc_number": "PDS-526 (letter not shown for this URL)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://pdf1.alldatasheet.com/datasheet-pdf/view/56724/BURR-BROWN/OPA111.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Viewer page for alldatasheet entry 56724, the same entry as the known /datasheet-pdf/pdf/56724/ URL. The summary for this search named PDS-526K with a 1984 date but did not tie either to a specific URL.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "OPA111 Burr-Brown Low Noise Precision Difet OPERATIONAL AMPLIFIER (ChipFind Datasheet Archive)",
+     "doc_number": "PDS-526 (letter not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.chipfind.net/datasheet/burr-brown/opa111.htm",
+     "url_kind": "third_party_mirror",
+     "notes": "ChipFind archive page for the Burr-Brown OPA111.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "OPA111 datasheet (digchip)",
+     "doc_number": "PDS-526 / SBOS138 (not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/477/OPA111.php",
+     "url_kind": "third_party_mirror",
+     "notes": "Plain OPA111 page on digchip. It differs from the already-listed OPA111AM.php page.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "ti OPA111, Low Noise Precision DiFET Operational Amplifier (OPA111BM)",
+     "doc_number": "SBOS138 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/477/OPA111BM.php",
+     "url_kind": "third_party_mirror",
+     "notes": "digchip OPA111BM page with TI branding.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA111BM Datasheet(PDF) - Texas Instruments",
+     "doc_number": "SBOS138 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/847952/TI1/OPA111BM.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet TI1 entry 847952 (OPA111BM). It sits next to the already-listed 847950 (OPA111) entry, so it is probably the same TI legacy re-issue of PDS-526K.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "OPA111AM Datasheet pdf - Low Noise Precision Difet OPERATIONAL AMPLIFIER - Burr Brown",
+     "doc_number": "PDS-526 (letter not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/1/OPA111AM.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetcatalog Burr-Brown copy (OPA111AM entry).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "OPA111 Datasheet pdf - Low Noise Precision Difet OPERATIONAL AMPLIFIER - Burr Brown",
+     "doc_number": "PDS-526 (letter not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/1/OPA111.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetcatalog Burr-Brown copy (OPA111 entry).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "OPA111BM OPA111 BM Op Amp IC Burr Brown (distributor product page)",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.westfloridacomponents.com/T541PE04/OPA111BM+OPA111+BM+Op+Amp+IC+Burr+Brown.html",
+     "url_kind": "product_page",
+     "notes": "Surplus distributor page for Burr-Brown-marked OPA111BM parts. Useful as evidence of original BB silicon, not as a datasheet revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "OPA2111 Dual Low Noise Precision Difet OPERATIONAL AMPLIFIER (alldatasheet HTML page 1/13)",
+     "doc_number": "PDS-540 (search summary for this result set showed PDS-540E)",
+     "revision": "revision not shown for this URL (PDS-540E likely)",
+     "date": "unknown (PDS-540E = October 1993)",
+     "url": "https://www.alldatasheet.com/html-pdf/56736/BURR-BROWN/OPA2111/501/1/OPA2111.html",
+     "url_kind": "third_party_mirror",
+     "notes": "HTML page view of alldatasheet entry 56736 (13 pages). The summary named PDS-540E but did not tie it to a specific URL.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "OPA2111 Dual Low Noise Precision Difet OPERATIONAL AMPLIFIER (alldatasheet HTML page 9/13)",
+     "doc_number": "PDS-540 (letter not shown for this URL)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/html-pdf/56736/BURR-BROWN/OPA2111/4549/9/OPA2111.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Page 9 of the same 13-page alldatasheet entry 56736.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "OPA2111 Burr-Brown Dual Low Noise Precision Difet OPERATIONAL AMPLIFIER (ChipFind)",
+     "doc_number": "PDS-540 (letter not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://www.chipfind.net/datasheet/burr-brown/opa2111am.htm",
+     "url_kind": "third_party_mirror",
+     "notes": "ChipFind archive page for the Burr-Brown OPA2111AM.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "OPA2111 Datasheet, Amplifier, Burr-Brown (datasheet4u)",
+     "doc_number": "PDS-540 (letter not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet/Burr-Brown/OPA2111-475544",
+     "url_kind": "third_party_mirror",
+     "notes": "Another URL form of datasheet4u id 475544. The already-listed URL is /datasheets/Burr-Brown/OPA2111/475544.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "OPA2111 Datasheet - Burr-Brown (datasheet4u pdf.php)",
+     "doc_number": "PDS-540 (letter not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet-pdf/Burr-Brown/OPA2111/pdf.php?id=475544",
+     "url_kind": "third_party_mirror",
+     "notes": "PDF endpoint for datasheet4u id 475544.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "Full text of \"TEXAS INSTRUMENTS OPA2111 Manual\" (manuallib copy on Internet Archive)",
+     "doc_number": "SBOS140",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://archive.org/stream/manuallib-id-2548374/2548374_djvu.txt",
+     "url_kind": "archive",
+     "notes": "Internet Archive OCR text of a manuallib copy of the TI OPA2111 datasheet. It came up in a search for SBOS138/SBOS140, and the summary tied SBOS140 to the OPA2111. The PDS letter is not shown, but it is probably the TI legacy re-issue of PDS-540E.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "1984 Burr-Brown Product Data Book (bitsavers scan on Internet Archive)",
+     "doc_number": "data book (OPA111 PDS-526 first edition, if included)",
+     "revision": "revision not shown",
+     "date": "1984",
+     "url": "https://archive.org/details/bitsavers_burrBrowndwnProductDataBook_111008507",
+     "url_kind": "archive",
+     "notes": "The main Internet Archive item for the 1984 BB Product Data Book. The already-listed usermanual.wiki copy is a mirror of it. The search summary does not show whether the OPA111 is in it. It is the candidate source for the earliest PDS-526 letter.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "1984 Burr-Brown Product Data Book: Analog Signal Processing Components (manuals.plus copy)",
+     "doc_number": "data book",
+     "revision": "revision not shown",
+     "date": "1984",
+     "url": "https://manuals.plus/m/e67aa78627cac1eefb988bfad306bb78f37a85b7d12fa7cfefc11cd8b0357377",
+     "url_kind": "third_party_mirror",
+     "notes": "Another copy of the 1984 BB Product Data Book. Whether the OPA111 is in it is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "Burr-Brown Linear Products 1995 (IC data book)",
+     "doc_number": "data book (would carry the PDS-526 and PDS-540 letters current in 1995)",
+     "revision": "revision not shown",
+     "date": "1995",
+     "url": "https://www.rsp-italy.it/Electronics/Databooks/Burr%20Brown/_contents/Burr-Brown%20Linear%20products%20%20-%201995.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Full 1995 BB Linear Products data book on rsp-italy.it. The search summary does not show whether it has the OPA111/OPA2111 or which letters. By date it would hold PDS-526J/K and PDS-540E.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown",
+     "title": "Burr Brown Databooks (index)",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.rsp-italy.it/Electronics/Databooks/Burr%20Brown/index.htm",
+     "url_kind": "third_party_mirror",
+     "notes": "Index of scanned Burr-Brown data books on rsp-italy.it. Other editions there may hold earlier OPA111/OPA2111 letters.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -36957,6 +38728,20 @@
      "revision": "K",
      "date": "August 1995",
      "changes": "Latest known OPA111 datasheet, redistributed by TI as SBOS138 with a legacy cover page. Change details not seen, and no later TI revision letter was found."
+    },
+    {
+     "vendor": "Burr-Brown",
+     "doc_number": "PDS-526 (OPA111)",
+     "revision": "first edition (letter not seen)",
+     "date": "1984 (copyright year)",
+     "changes": "The search summary of the PDS-526K copy gives 1984, most likely the copyright line, so the first OPA111 datasheet probably dates from 1984. That fits the OPA111 appearing around the 1984 BB Product Data Book. The first letter and its specs have not been seen."
+    },
+    {
+     "vendor": "Burr-Brown (Japan)",
+     "doc_number": "PDS-526 Japanese edition (OPA111)",
+     "revision": "K (from file name OPA111revK)",
+     "date": "not shown",
+     "changes": "Japanese translation of the rev K OPA111 datasheet, titled 'OPA111 ローノイズ高精度Difet オペアンプ', held in the Nihon University LEBRA Burr-Brown catalog archive. Change details are not shown."
     }
    ],
    "silicon_changes": [
@@ -37008,17 +38793,25 @@
    "archive_seed_urls": [
     "http://focus.ti.com/lit/ds/symlink/opa111.pdf",
     "http://focus.ti.com/lit/ds/symlink/opa2111.pdf",
+    "http://lam29.lebra.nihon-u.ac.jp/archives/BB_catalog/pdf/OPA111revK.pdf",
     "http://www.burr-brown.com/download/datasheets/OPA111.pdf",
     "http://www.burr-brown.com/download/datasheets/OPA2111.pdf",
+    "http://www.chipfind.net/datasheet/burr-brown/opa2111am.htm",
+    "http://www.lebra.nihon-u.ac.jp/archives/BB_catalog/pdf/OPA111revK.pdf",
+    "http://www.ti.com/lit/ds/symlink/opa111.pdf",
     "http://www.ti.com/lit/gpn/opa111",
     "http://www.ti.com/lit/gpn/opa2111",
     "http://www.ti.com/product/OPA111/technicaldocuments",
     "http://www.ti.com/product/OPA2111/toolssoftware",
+    "https://archive.org/details/bitsavers_burrBrowndwnProductDataBook_111008507",
     "https://datasheet.octopart.com/OPA111AM-Texas-Instruments-datasheet-10400812.pdf",
     "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/OPA2111.PDF",
+    "https://neurophysics.ucsd.edu/lab/FET%20OP%20AMPS/BB%20OPA111.pdf",
     "https://www.alldatasheet.com/datasheet-pdf/pdf/56724/BURR-BROWN/OPA111.html",
     "https://www.alldatasheet.com/datasheet-pdf/pdf/56736/BURR-BROWN/OPA2111.html",
+    "https://www.chipfind.net/datasheet/burr-brown/opa111.htm",
     "https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/2/OPA2111.shtml",
+    "https://www.rsp-italy.it/Electronics/Databooks/Burr%20Brown/index.htm",
     "https://www.ti.com/lit/ds/sbos138/sbos138.pdf",
     "https://www.ti.com/lit/ds/sbos140/sbos140.pdf",
     "https://www.ti.com/lit/ds/symlink/opa111.pdf",
@@ -37132,7 +38925,8 @@
      "https://tiiduka.blogspot.com/2010/12/lovely-cube-headamp-11-opa2111am.html",
      "https://www.head-fi.org/threads/anyone-tried-the-opa-2111.52255/"
     ]
-   }
+   },
+   "revision_chain_summary": "OPA111, Burr-Brown PDS-526: first edition about 1984 (from the copyright year in the search summary; letter not seen) -> letters A to J (1984 to about 1994) all MISSING, with candidate sources in the 1984 BB Product Data Book (archive.org bitsavers item 111008507), the 1986 and 1989 BB IC Data Books (already listed), and the 1995 BB Linear Products book on rsp-italy.it -> PDS-526K, August 1995 (latest BB letter; octopart and TI copies already listed), plus a NEW Japanese-language rev K edition at lam29/www.lebra.nihon-u.ac.jp (OPA111revK.pdf, undated). TI SBOS138: legacy re-issue of PDS-526K with a TI cover page. No TI lettered revision (SBOS138A and so on) turned up in the searches. OPA2111, Burr-Brown PDS-540: first edition date unknown (in the 1989 BB IC Data Book at the latest; possibly 1986) -> letters A to D MISSING -> PDS-540E, October 1993 (latest). TI SBOS140: legacy re-issue of PDS-540E. No lettered TI revision found. A NEW archive.org manuallib OCR copy of the TI OPA2111 datasheet was added (revision not shown). No second-source vendor (National, ADI, Motorola, Philips, JRC, ST) turned up. The OPA111/OPA2111 still appear to be Burr-Brown/TI only. Still missing: every PDS-526 letter before K with its date, every PDS-540 letter before E, and any SBOS138/SBOS140 revision letters and dates. Most new copies (alldatasheet viewers, chipfind, digchip, datasheetcatalog, datasheet4u alternates, UCSD lab copy) do not show their revision in the search summaries. The focus.ti.com and ti.com symlink seed URLs were built from TI's standard URL pattern rather than seen in results. Treat them as Wayback lookup seeds only. WebSearch calls used: 6 of 6."
   },
   {
    "id": "OPA1622",
@@ -37470,6 +39264,83 @@
      "url_kind": "third_party_mirror",
      "notes": "This page exists (seen in web search). The revision it holds was not shown.",
      "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1622 SoundPlus High-Fidelity, Bipolar-Input, Audio Operational Amplifier (RadioLocman copy, bare-URL form)",
+     "doc_number": "SBOS727B",
+     "revision": "B",
+     "date": "NOVEMBER 2015 - REVISED MAY 2016",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=305463",
+     "url_kind": "third_party_mirror",
+     "notes": "Same RadioLocman document (di=305463) as the listed '&%2FOPA1622=' URL, but in bare form. A search summary of this page gave the header 'SBOS727B, November 2015, revised May 2016', so the listed RadioLocman entry can now be read as rev B.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1622 by Texas Instruments Datasheet (DigiKey HTML datasheet, OPA1622IDRCT)",
+     "doc_number": "SBOS727 (revision not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digikey.com/en/htmldatasheets/production/1854367/0/0/1/opa1622idrct",
+     "url_kind": "distributor_mirror",
+     "notes": "DigiKey's HTML rendering of the TI datasheet. It came up in a search for SBOS727B revision history, but the summary did not tie the revision to this copy.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1622 SoundPlus 高保真、双极输入音频运算放大器 (Chinese-language TI datasheet, hqbuy CDN copy)",
+     "doc_number": "ZHCSEE5B (per search summary; unverified)",
+     "revision": "B (per search summary)",
+     "date": "unknown",
+     "url": "https://dfsimgcdn2.hqbuy.com/group5/M00/00/B6/wKiCy2DeetGAFWBCADDIBXPAwaA048.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "TI Chinese translation of SBOS727. One search summary named its revision as ZHCSEE5B. A follow-up search for 'ZHCSEE5' returned nothing to confirm it. This may be the same translation as the listed elecfans copy, whose ZHCS number was not seen. The translation probably tracks English rev B, but that is not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1622 Datasheet, Operational Amplifier (datasheetspdf.com)",
+     "doc_number": "SBOS727 (revision not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetspdf.com/pdf/1407316/etcTI/OPA1622/1",
+     "url_kind": "third_party_mirror",
+     "notes": "Uses the same document ID (1407316) as the listed datasheet4u copy, so it is likely the same file. The search summary quoted the rev B front-page text (2.8 nV/rtHz, -119.2 dB THD+N, +145/-130 mA), but no revision header was shown for this copy.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1622 datasheet - SoundPlus Audio Operational Amplifier (digchip)",
+     "doc_number": "SBOS727 (revision not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/2/477/OPA1622.php",
+     "url_kind": "third_party_mirror",
+     "notes": "Hobby/aggregator mirror. Revision not shown in the search summary.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1622 datasheet, amplifier equivalent, Texas Instruments (datasheet4u pdf.php)",
+     "doc_number": "SBOS727 (revision not shown)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet-pdf/Texas%20Instruments/OPA1622/pdf.php?id=1407316",
+     "url_kind": "third_party_mirror",
+     "notes": "Another URL form of the listed datasheet4u document 1407316. Another alias, https://datasheet4u.com/datasheet/etcTI/OPA1622-1407316, also exists. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1622 SoundPlus Audio Operational Amplifier - TI (Mouser new-product page)",
+     "doc_number": "SBOS727",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.mouser.com/en/new/texas-instruments/ti-opa1622-amplifier/",
+     "url_kind": "product_page",
+     "notes": "Mouser's new-product introduction page, probably from around the 2015-2016 launch. It can serve as a Wayback seed for a launch-era mouser.com/ds or datasheet link. No revision shown.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -37493,6 +39364,13 @@
      "revision": "B",
      "date": "May 2016",
      "changes": "Still the current revision as of Sept 2026 (TI symlink). The change-log entries were not seen, so it is unknown whether specs changed or the rev A pin-table error was fixed. No OPA1622-specific PCN was found."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SBOS727B",
+     "revision": "B",
+     "date": "May 2016",
+     "changes": "According to the Revision History text returned from the SBOS727B symlink: the pin number of the V+ pin was changed in the Pin Functions table, which fixes the rev A typo that gave V+ as pin 8, and the format of the Supply voltage parameter was changed in the Recommended Operating Conditions table. The search summary put these items under 'Original to Revision A' together with 'Changed from product preview to production data'. The known rev A log lists only the preview-to-production change, and rev A still has the pin typo, so they belong to the Rev A to Rev B (May 2016) entry. No change to electrical specifications or silicon is indicated. This is a documentation fix only."
     }
    ],
    "silicon_changes": [],
@@ -37508,9 +39386,14 @@
     "SBOS727"
    ],
    "archive_seed_urls": [
+    "http://www.ti.com.cn/cn/lit/ds/symlink/opa1622.pdf",
+    "http://www.ti.com/lit/ds/sbos727/sbos727.pdf",
     "http://www.ti.com/lit/ds/symlink/opa1622.pdf",
     "http://www.ti.com/lit/gpn/opa1622",
+    "http://www.ti.com/product/OPA1622",
     "https://www.alldatasheet.com/datasheet-pdf/pdf/772558/TI/OPA1622.html",
+    "https://www.digikey.com/en/htmldatasheets/production/1854367/0/0/1/opa1622idrct",
+    "https://www.mouser.com/en/new/texas-instruments/ti-opa1622-amplifier/",
     "https://www.ti.com/cn/lit/gpn/opa1622",
     "https://www.ti.com/lit/ds/sbos727/sbos727.pdf",
     "https://www.ti.com/lit/ds/sbos727a/sbos727a.pdf",
@@ -37613,7 +39496,8 @@
      "https://www.diyaudio.com/community/threads/ampcasq-an-opa1622-integrated-headamp-project.304684/page-10",
      "https://nabe.adiary.jp/0627"
     ]
-   }
+   },
+   "revision_chain_summary": "TI SBOS727 (English, the only vendor; no second sources exist). Chain, oldest to newest: (1) SBOS727 original, Product Preview, Nov 2015. Still missing: no copy has been found, and this Wayback-only revision is the chain's main gap. (2) SBOS727A, Nov 2015, revised Nov 2015, production data. Held by the known GitHub raw copy, and probably by alldatasheet 772558 (unconfirmed). (3) SBOS727B, Nov 2015, revised May 2016. Held by the TI symlink and by RadioLocman di=305463, whose header was confirmed in this pass. Rev B's changes, now captured, are the V+ pin-number fix in the Pin Functions table and a reformatted supply-voltage line in the Recommended Operating Conditions table, with no spec or silicon change. No SBOS727C was found in any search, so rev B is still current as of Sept 2026. TI Chinese translation ZHCSEE5: rev B (ZHCSEE5B) was reported by one search summary for the hqbuy CDN copy but not corroborated. Its dates, its earlier revisions (original and A), and whether the elecfans copy is the same revision are all unknown. New mirrors with no revision shown: DigiKey HTML datasheet, datasheetspdf.com (same ID 1407316 as datasheet4u), digchip, and a datasheet4u pdf.php alias. The archive seeds are TI URL patterns (the http symlink, lit/ds/sbos727/sbos727.pdf and the ti.com.cn symlink) and are meant for Wayback lookups of the Nov 2015 Product Preview and rev A. focus.ti.com is not relevant because it was retired before OPA1622 launched in 2015."
   },
   {
    "id": "OPA1642",
@@ -38072,6 +39956,182 @@
      "url_kind": "product_page",
      "notes": "The single's folder is at https://www.ti.com/product/OPA1641-Q1.",
      "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1641/OPA1642/OPA1644 SoundPlus JFET-input audio op amps (SBOS484D, revision-specific path)",
+     "doc_number": "SBOS484",
+     "revision": "D",
+     "date": "DECEMBER 2009 – REVISED APRIL 2016",
+     "url": "https://www.ti.com/lit/ds/sbos484d/sbos484d.pdf?ts=1770813410952",
+     "url_kind": "vendor_revision_specific",
+     "notes": "Revision-specific TI path /lit/ds/sbos484d/sbos484d.pdf, found in search with a ts= cache-buster. The URL itself names Rev D. The search title is the new-format first-page graph axis text, not the Burr-Brown Audio banner. This is the only TI revision-specific path seen. By the same pattern, sbos484/sbos484a/sbos484b/sbos484c paths may exist, but none was seen.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Octopart (TI copy)",
+     "title": "OPA1642 OPA1641 OPA1644 Burr-Brown Audio (OPA1642AID listing)",
+     "doc_number": "SBOS484",
+     "revision": "revision not shown (old Burr-Brown Audio format, so Original, A or B)",
+     "date": "",
+     "url": "https://datasheet.octopart.com/OPA1642AID-Texas-Instruments-datasheet-11537749.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "A different Octopart cache file (id 11537749) from the listed 10256784 and 62126618 copies. Its title shows the pre-2015 Burr-Brown Audio layout, which rules out Rev C and Rev D. It came up for a 'DECEMBER 2009' query, but the summary did not show the revised-date line.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Octopart (TI copy)",
+     "title": "OPA1642 OPA1641 OPA1644 Burr-Brown Audio (OPA1642AIDR listing)",
+     "doc_number": "SBOS484",
+     "revision": "B (probable)",
+     "date": "DECEMBER 2009 – REVISED AUGUST 2010 (probable)",
+     "url": "https://datasheet.octopart.com/OPA1642AIDR-Texas-Instruments-datasheet-10256784.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Same Octopart file id (10256784) as the listed OPA1641AID URL, so probably the identical file. It came up for a 'REVISED AUGUST 2010' query, and the search summary grouped it with the Kyohritsu and Reichelt copies as SBOS484B. Old Burr-Brown Audio format. The header line was not shown word for word for this specific file.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Reichelt (TI copy)",
+     "title": "OPA1642 OPA1641 OPA1644 Burr-Brown Audio",
+     "doc_number": "SBOS484",
+     "revision": "B (probable)",
+     "date": "DECEMBER 2009 – REVISED AUGUST 2010 (probable)",
+     "url": "https://cdn-reichelt.de/documents/datenblatt/A200/OPA_1642_DB.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Reichelt Elektronik (German distributor) datasheet copy in the old Burr-Brown Audio format. It came up for a 'REVISED AUGUST 2010' query, and the search summary attributed SBOS484B (Aug 2010) to this result group (Kyohritsu, Octopart, Reichelt). Per-file header text was not shown.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "RadioLocman (TI copy)",
+     "title": "OPA1641 Datasheet Texas Instruments",
+     "doc_number": "SBOS484",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=305467",
+     "url_kind": "third_party_mirror",
+     "notes": "OPA1641 entry (di=305467), next to the listed OPA1642 entry di=305469. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "PDFSLIDE.NET (TI copy)",
+     "title": "(PDF) Opa 1642",
+     "doc_number": "SBOS484",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://pdfslide.net/documents/opa-1642.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A user-uploaded document mirror. It came up for an 'SBOS484B OR SBOS484C' query, but the summary did not tie it to a letter.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "DOKUMEN.TIPS (TI copy)",
+     "title": "(PDF) Opa 1642",
+     "doc_number": "SBOS484",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://dokumen.tips/documents/opa-1642.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Probably the same upload as the pdfslide.net copy (sister sites). Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Datasheet4U (TI copy)",
+     "title": "OPA1642 datasheet | Specifications & PDF Download",
+     "doc_number": "SBOS484",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://datasheet4u.com/share_search.php?sWord=OPA1642",
+     "url_kind": "third_party_mirror",
+     "notes": "A search-results page on datasheet4u, not a single file. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "RS Components (TI copy)",
+     "title": "OPA1644AID Texas Instruments, Audio, Op Amp, 11MHz 100 Hz, 4.5 → 36 V, 14-Pin SOIC",
+     "doc_number": "SBOS484",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://uk.rs-online.com/web/p/op-amps/8122511",
+     "url_kind": "product_page",
+     "notes": "RS UK stock number 8122511 product page, which normally links an RS-hosted datasheet copy. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1642 | Buy TI Parts (OPA1642AIDGKT part details)",
+     "doc_number": "SBOS484",
+     "revision": "current (D)",
+     "date": "",
+     "url": "https://www.ti.com/product/OPA1642/part-details/OPA1642AIDGKT",
+     "url_kind": "product_page",
+     "notes": "TI orderable part-details page for the VSSOP-8 small reel. It links the current datasheet.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA164x-Q1 SoundPlus JFET-Input, Automotive-Grade, Audio Operational Amplifiers (gpn link)",
+     "doc_number": "SBOS791",
+     "revision": "current (A)",
+     "date": "JUNE 2017 – REVISED NOVEMBER 2017 (current)",
+     "url": "https://www.ti.com/lit/gpn/OPA1642-Q1",
+     "url_kind": "vendor_current",
+     "notes": "TI generic-part-number literature redirect to the current SBOS791 PDF. The title is confirmed by search.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "opa1641-q1.pdf",
+     "doc_number": "SBOS791",
+     "revision": "current (A)",
+     "date": "JUNE 2017 – REVISED NOVEMBER 2017 (current)",
+     "url": "https://www.ti.com/lit/ds/symlink/opa1641-q1.pdf",
+     "url_kind": "vendor_current",
+     "notes": "OPA1641-Q1 symlink serving the shared SBOS791 datasheet (the listed symlink is opa1642-q1.pdf).",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1641-Q1 data sheet, product information and support",
+     "doc_number": "SBOS791",
+     "revision": "current (A)",
+     "date": "",
+     "url": "https://www.ti.com/product/OPA1641-Q1",
+     "url_kind": "product_page",
+     "notes": "TI product page for the single automotive part.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Sisoog datasheet cache (TI copy)",
+     "title": "SBOS791 first page (graph axis text '4 4.5 5 ... –10 –8 ...')",
+     "doc_number": "SBOS791",
+     "revision": "revision not shown",
+     "date": "",
+     "url": "https://datasheet.sisoog.com/file/7a657573/datasheet/97d13f4d0490cda816aa85f3b880dbbbcb4ad2f8.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Iranian datasheet cache. It came up for an 'SBOS791 ... JUNE 2017' query, and the first-page text matches the SBOS791 layout. The summary did not show whether this is the original June 2017 issue or Rev A. It is a candidate for the missing original SBOS791 copy.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "DZSC (TI copy)",
+     "title": "SBOS791 first page (graph axis text)",
+     "doc_number": "SBOS791",
+     "revision": "revision not shown (probably A; the path date 2018-10-27 is after Nov 2017)",
+     "date": "",
+     "url": "https://file2.dzsc.com/product/18/10/27/363756_150716839.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Chinese distributor/portal file. The upload path /18/10/27/ suggests October 2018, which is after Rev A (November 2017), so it probably holds Rev A. The revision is not shown in the summary.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Digi-Key (TI PCN copy)",
+     "title": "mm.digikey.com PCN20240902002.1",
+     "doc_number": "PCN20240902002",
+     "revision": "n/a (PCN, not a datasheet)",
+     "date": "2024-09-02 (from PCN number, probable)",
+     "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6370/PCN20240902002.1.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Digi-Key-hosted TI product change notification that came up for an OPA1644/SBOS484 query. The search did not show its content or its affected-device list, so its relevance to OPA164x is unconfirmed. Check it for any fab, assembly or die change, since the family's datasheet lists no silicon revision.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -38149,6 +40209,8 @@
    "archive_seed_urls": [
     "http://focus.ti.com/lit/ds/symlink/opa1641.pdf",
     "http://focus.ti.com/lit/ds/symlink/opa1642.pdf",
+    "http://www.ti.com/product/OPA1644/toolssoftware",
+    "https://cdn-reichelt.de/documents/datenblatt/A200/OPA_1642_DB.pdf",
     "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/TI/opa1641.pdf",
     "https://www.mouser.com/datasheet/2/405/opa1642-407646.pdf",
     "https://www.ti.com/lit/ds/sbos484/sbos484.pdf",
@@ -38265,7 +40327,8 @@
      "https://www.ti.com/product/OPA1641",
      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100007196.md"
     ]
-   }
+   },
+   "revision_chain_summary": "TI SBOS484 (OPA1641/OPA1642/OPA1644; sole source, no second sources found), oldest to newest:\n- Original, Dec 2009: no copy confirmed. Old-format Burr-Brown Audio copies without a shown revision are candidates: Octopart 11537749 (new find), Octopart 10256784, Kontest, Digchip.\n- Rev A, Apr 2010: still missing. No copy found, and a targeted \"SBOS484A\" search returned nothing that holds it.\n- Rev B, Aug 2010: probable copies at Kyohritsu (already listed), Octopart OPA1642AIDR-10256784 (same file id as the listed copy) and Reichelt cdn-reichelt.de OPA_1642_DB.pdf (new). The search summary tied the 'REVISED AUGUST 2010' match to this result group, but did not show the header line for each file.\n- Rev C, Dec 2015: existence re-confirmed by search, but no copy is identified as holding it. It is still missing as a specific URL; Octopart 62126618 and Kosmodrom remain 'C or D'.\n- Rev D, Apr 2016 (current): TI symlinks plus a new TI revision-specific path, www.ti.com/lit/ds/sbos484d/sbos484d.pdf.\nMissing links: a copy of the original Dec 2009 issue with a confirmed header; any Rev A copy; a confirmed Rev C copy; TI revision-specific paths sbos484/sbos484a/sbos484b/sbos484c (by pattern they may exist, but none was seen); any legacy focus.ti.com URL (a targeted search found none).\n\nTI SBOS791 (OPA1641-Q1/OPA1642-Q1):\n- Original, Jun 2017: no copy confirmed. Sisoog cache (new) is a candidate, revision not shown.\n- Rev A, Nov 2017 (current): TI symlinks for opa1642-q1 and opa1641-q1, the lit/gpn/OPA1642-Q1 redirect, and DZSC (upload path dated Oct 2018, so probably Rev A).\nMissing link: a confirmed copy of the original June 2017 issue.\n\nA Digi-Key-hosted TI PCN (PCN20240902002) came up in an OPA1644 search. Its content and scope are unverified, and it should be checked for any silicon or fab change.\n\nNo revision-history entries were added: dates for B (Aug 2010), C (Dec 2015), D (Apr 2016) and SBOS791 (Jun 2017 / Nov 2017) were only re-confirmed, with no new change text."
   },
   {
    "id": "OPA1656",
@@ -38678,6 +40741,61 @@
      "url_kind": "product_page",
      "notes": "TI product folder; confirmed by web search. Part-details page: ti.com/product/OPA1655/part-details/OPA1655DBVR.",
      "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA165x Ultra-Low-Noise, Low-Distortion, FET-Input, Burr-Brown Audio Operational Amplifiers",
+     "doc_number": "SBOS901",
+     "revision": "B (probable)",
+     "date": "SBOS901B - MARCH 2019 - REVISED DECEMBER 2021 (probable)",
+     "url": "https://docs.rs-online.com/d4ba/A700000009184805.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "RS Components copy. It was the top hit for an exact search on \"SBOS901B\", and the search summary said SBOS901B was revised in December 2021. The OPA165x title fits Rev B or later. The header line itself was not seen in a snippet.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1655, 56 by Texas Instruments Datasheet | DigiKey (HTML datasheet)",
+     "doc_number": "SBOS901",
+     "revision": "B or C (revision not shown)",
+     "date": "revision not shown",
+     "url": "https://www.digikey.com/en/htmldatasheets/production/3832248/0/0/1/opa1656id",
+     "url_kind": "distributor_mirror",
+     "notes": "DigiKey HTML rendering of the datasheet. The title covers the OPA1655, so it must be Rev B (Dec 2021) or later. It came up in a search on \"SBOS901C\", but the snippet does not show the header.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1656 Datasheet - SOIC Amplifier | Texas Instruments",
+     "doc_number": "SBOS901",
+     "revision": "revision not shown",
+     "date": "revision not shown",
+     "url": "https://datasheet4u.com/datasheets/etcTI/OPA1656/1405489",
+     "url_kind": "third_party_mirror",
+     "notes": "Mirror on datasheet4u. It uses the same document ID (1405489) as the datasheetspdf.com copy already listed, so it is probably the same file. The snippet does not show which revision it is.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1655 Datasheet - SOT-23 Amplifier | Texas Instruments",
+     "doc_number": "SBOS901",
+     "revision": "B or C (revision not shown)",
+     "date": "revision not shown",
+     "url": "https://datasheet4u.com/datasheets/etcTI/OPA1655/1535534",
+     "url_kind": "third_party_mirror",
+     "notes": "Mirror on datasheet4u filed under OPA1655, so it is Rev B or later. The snippet does not show the header.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA1656 データシート(PDF) - Texas Instruments",
+     "doc_number": "SBOS901",
+     "revision": "revision not shown",
+     "date": "revision not shown",
+     "url": "https://www.alldatasheet.jp/datasheet-pdf/pdf/1132713/TI1/OPA1656.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Japanese alldatasheet mirror. It has the same document ID (1132713) as the alldatasheet.com copy already listed (TI1 upload, likely an older edition), but the snippet does not show the revision.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -38708,6 +40826,13 @@
      "revision": "C",
      "date": "September 2022",
      "changes": "OPA1655 DBV (SOT-23-5) package changed from preview to production data. No revision records a change to electrical specs, absolute max ratings or pin functions, and none points to new silicon. Web search (Sep 2026) still shows Rev C as the latest; no Rev D."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "JAJSH26C",
+     "revision": "C",
+     "date": "September 2022",
+     "changes": "Japanese translation of SBOS901C, titled 'OPA165x 超低ノイズ、低歪み、FET 入力、 Burr-Brown オーディオ・オペアンプ'. Search summaries give the number as JAJSH26C, first issued March 2019 and revised September 2022, served at ti.com/jp/lit/ds/symlink/opa1656.pdf. The earlier JAJSH26 letters (*, A, B) were not found."
     }
    ],
    "silicon_changes": [],
@@ -38835,7 +40960,8 @@
      "https://www.audiosciencereview.com/forum/index.php?threads/measured-effect-of-op-amp-rolling-on-a-phono-equalizer-input-shorted-noise.49014/",
      "https://community.fosiaudio.com/threads/za3-op-amp-results-opa1656-burson-v7-classic.75255/"
     ]
-   }
+   },
+   "revision_chain_summary": "TI SBOS901 (English), oldest to newest:\n- Rev * (Advance Information, March 2019). Copy found: the existing chipdip URL https://static.chipdip.ru/lib/809/DOC005809868.pdf. Its search title begins 'ADVANCE INFORMATION Frequency (Hz) Voltage Noise Density', so the earlier label 'A or * (unconfirmed)' should become Rev *, medium confidence.\n- Rev A (production data, July 2019). Copy found: the existing cimarrontechnology.com copy, uploaded 2021/06. It is titled 'OPA1656 Ultra-Low-Noise...' rather than the OPA165x title that came with Rev B, which supports Rev A. The existing unikeyic copy has the same title stem as the chipdip copy but without 'ADVANCE INFORMATION', so it may be Rev A (not confirmed).\n- Rev B (December 2021, OPA1655 added, retitled OPA165x). New copy: RS docs.rs-online.com/d4ba/A700000009184805.pdf, medium confidence. The existing Mouser copy opa1656-1953342.pdf also came up for an exact 'SBOS901B' search and carries the OPA165x title, so it is probably Rev B too. The existing alldatasheet 1357767 copy is OPA165x, so Rev B or later.\n- Rev C (September 2022, the current TI symlinks). New Rev B-or-later mirrors: DigiKey HTML datasheet and datasheet4u OPA1655/1535534. No Rev D was seen.\n\nTI JAJSH26 (Japanese translation):\n- JAJSH26C (March 2019, revised September 2022) is at ti.com/jp/lit/ds/symlink/opa1656.pdf.\n- Missing: the JAJSH26 *, A and B letters. No copies were found.\n\nOther vendors: none. TI/Burr-Brown is the sole source, so there are no Burr-Brown PDS, second-source or legacy-domain editions; the part postdates focus.ti.com.\n\nStill missing:\n- A copy confirmed to hold Rev A by its header line.\n- Confirmed revision letters for the datasheetspdf/datasheet4u 1405489 and alldatasheet 1132713 mirrors.\n- Rev * and Rev A snapshots of ti.com/lit/ds/symlink/opa1656.pdf in the Wayback Machine (seeds listed)."
   },
   {
    "id": "OPA2107",
@@ -39259,6 +41385,149 @@
      "url_kind": "archive",
      "notes": "This databook came up in a search for 'OPA2107 PDS- 1989'. The OPA2107's (c)1989 introduction makes it a likely first-edition source, but the summary did not confirm that the OPA2107 is inside.",
      "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (Burr-Brown product), third-party mirror",
+     "title": "OPA2107 Datasheet - SOIC AMPLIFIER | Burr-Brown (datasheet4u)",
+     "doc_number": "SBOS161",
+     "revision": "A (per search summary: 'SBOS161A, January 1989, revised July 2003')",
+     "date": "January 1989, revised July 2003",
+     "url": "https://datasheet4u.com/datasheets/Burr-Brown/OPA2107/475543",
+     "url_kind": "third_party_mirror",
+     "notes": "A search summary says this copy contains SBOS161A (January 1989, revised July 2003), even though the site labels it Burr-Brown. It shares ID 475543 with the datasheetspdf.com copy that is already listed as 'B or E'. That copy is probably the same TI SBOS161A file, not a Burr-Brown PDS edition.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Burr-Brown (TI), third-party mirror",
+     "title": "OPA2107, OPA2107 Datasheet, OPA2107 PDF - Burr-Brown (datasheet-pdf.com)",
+     "doc_number": "unknown (probably the same file as datasheet4u/datasheetspdf ID 475543)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet-pdf.com/PDF/OPA2107-Datasheet-Burr-Brown-475543",
+     "url_kind": "third_party_mirror",
+     "notes": "Same mirror ID (475543) as the datasheet4u and datasheetspdf copies. The search summary does not show the edition.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments, third-party mirror",
+     "title": "OPA2107 Datasheet Texas Instruments, Download PDF (RadioLocman di=305535)",
+     "doc_number": "SBOS161 (assumed from TI attribution)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=305535&%2FOPA2107=",
+     "url_kind": "third_party_mirror",
+     "notes": "A second RadioLocman entry, separate from the listed di=259167. The search summary says only 'SBOS161A, Jan 1989 revised July 2003' in general terms and does not tie it to this copy.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown (TI), third-party mirror",
+     "title": "OPA2107 datasheet (3/11 Pages) BURR-BROWN | Precision Dual Difet Operational Amplifier (alldatasheet HTML view)",
+     "doc_number": "PDS-863 (per the existing alldatasheet 177039 record)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://html.alldatasheet.com/html-pdf/177039/BURR-BROWN/OPA2107/1812/3/OPA2107.html",
+     "url_kind": "third_party_mirror",
+     "notes": "HTML page view (page 3 of 11) of alldatasheet document 177039, the file already listed as PDS-863B with low confidence. The copy is 11 pages.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown (TI), third-party mirror",
+     "title": "OPA2107AP Datasheet(PDF) - Burr-Brown (TI) (alldatasheet 177040)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/177040/BURR-BROWN/OPA2107AP.html",
+     "url_kind": "third_party_mirror",
+     "notes": "685 KB, 11 pages, per the search summary. It is probably the same file as 177039, filed under the AP part number.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown (TI), third-party mirror",
+     "title": "OPA2107AU Datasheet(PDF) - Burr-Brown (TI) (alldatasheet 177041)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/177041/BURR-BROWN/OPA2107AU.html",
+     "url_kind": "third_party_mirror",
+     "notes": "685 KB, 11 pages, per the search summary. It is probably the same file as 177039, filed under the AU part number.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown, third-party mirror",
+     "title": "OPA2107 Datasheet pdf - Precision Dual Difet OPERATIONAL AMPLIFIER - Burr Brown (datasheetcatalog)",
+     "doc_number": "unknown (Burr-Brown PDS-863 edition)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/2/OPA2107.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "The upper-case 'Precision Dual Difet OPERATIONAL AMPLIFIER' title matches the Burr-Brown PDS typesetting, not the TI SBOS161 format. The edition is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown, third-party mirror",
+     "title": "OPA2107AP Datasheet pdf - Precision Dual Difet Operational Amplifier - Burr Brown (datasheetcatalog)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://www.datasheetcatalog.com/datasheets_pdf/O/P/A/2/OPA2107AP.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "Page for the AP part number. The edition is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown, third-party mirror",
+     "title": "OPA2107AU Datasheet pdf - Precision Dual Difet Operational Amplifier - Burr Brown (datasheetcatalog)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/2/OPA2107AU.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "Page for the AU part number. The edition is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "unknown (Burr-Brown/TI), third-party mirror",
+     "title": "OPA2107 datasheet (digchip)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/477/OPA2107.php",
+     "url_kind": "third_party_mirror",
+     "notes": "The search summary shows no edition.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "unknown (Burr-Brown/TI), third-party mirror",
+     "title": "Datasheet Archive: OPA2107 datasheets",
+     "url": "https://datasheetarchive.com/OPA2107-datasheet.html",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url_kind": "third_party_mirror",
+     "notes": "Aggregated listing page that may hold several OPA2107 editions and databook extracts. No editions were shown in the search summary.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA2107 Texas Instruments - Distributors, Price Comparison, and Datasheets | Octopart",
+     "doc_number": "n/a",
+     "revision": "revision not shown",
+     "date": "n/a",
+     "url": "https://octopart.com/part/texas-instruments/OPA2107",
+     "url_kind": "product_page",
+     "notes": "Octopart aggregator page that offers a datasheet download (cache). The edition is not shown, but it is probably the current TI SBOS161A.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "Mouser product detail - Texas Instruments OPA2107AP",
+     "doc_number": "n/a",
+     "revision": "revision not shown",
+     "date": "n/a",
+     "url": "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA2107AP?qs=7nS3%2BbEUL6u2bEm4i5B9fA%3D%3D",
+     "url_kind": "product_page",
+     "notes": "Mouser distributor page for OPA2107AP. The search did not surface a mouser.com/datasheet copy.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -39310,6 +41579,13 @@
      "revision": "A",
      "date": "January 1989 - Revised July 2003",
      "changes": "The TI-era SBOS-numbered edition, which lists 1 mV max VOS, 10 uV/C max drift, 10 pA max IB and 8 nV/rtHz at 10 kHz. The changes from the Burr-Brown PDS editions were not captured."
+    },
+    {
+     "vendor": "Burr-Brown",
+     "doc_number": "PDS-863",
+     "revision": "pre-E edition (letter not shown; original, A, B, C or D)",
+     "date": "between January 1989 and April 1998 (exact date not shown)",
+     "changes": "Search-result titles show two versions of the front-page offset limit. The rtellason.com copy reads 'LOW VOS: 500µV max'. The PDS-863E copy (pdf.dzsc.com, April 1998), the Meditronik copy and the TI SBOS161A read 'LOW VOS: 1mV max'. So the VOS limit was relaxed from 500 µV to 1 mV in some edition up to and including PDS-863E. Which edition made the change is not shown."
     }
    ],
    "silicon_changes": [],
@@ -39439,7 +41715,8 @@
      "https://www.head-fi.org/threads/opa2107-wow.187020/page-3",
      "https://zigsow.jp/item/283956/review/261160"
     ]
-   }
+   },
+   "revision_chain_summary": "Searches used: 6 of 6.\n\nBURR-BROWN PDS-863 (oldest to newest):\n(1) Original edition, January 1989. The date is inferred from the SBOS161A header and the (c)1989 notice. The letter (unlettered or A) has not been seen, and no copy was found. The 1989 BB IC Data Book and the 1990 Supplement 33b on bitsavers/archive.org are the best candidates for its content.\n(2) PDS-863B, printed October 1993. Copies: alldatasheet 177039 (already listed, low) and its HTML view at html.alldatasheet.com (new). A search summary also tied PDS-863B / October 1993 to the ung.si copy (www2.ung.si/~sstanic/belle/monitor/schemes/bb2107.pdf). That copy is listed as 'unknown', so upgrade it to probably B at low-medium confidence.\n(3) PDS-863C and (4) PDS-863D: still MISSING. Their dates and copies were not found.\n(5) PDS-863E, printed April 1998. Copy: pdf.dzsc.com (already listed). Its front page shows 'LOW VOS: 1mV max'.\nThe rtellason.com copy has 'LOW VOS: 500µV max', so it is an edition earlier than E; its letter is not shown.\n\nTEXAS INSTRUMENTS SBOS161:\n(a) Unlettered SBOS161, about 2000-2001 after the TI takeover: still MISSING. No copy or date was found, and a search that excluded 'SBOS161A' returned nothing for it.\n(b) SBOS161A, 'January 1989 - Revised July 2003': ti.com symlink and gpn (already listed). New mirror: datasheet4u ID 475543, which a search summary says holds SBOS161A. The already-listed datasheetspdf.com/pdf/475543 copy and the new datasheet-pdf.com 475543 copy are probably the same TI file, not a Burr-Brown PDS edition.\nThe Farnell 9308 copy's title uses the mixed-case TI layout ('FEATURES Very Low Noise ... Low VOS: 1mV max'), the same as ti.com/lit/gpn. It therefore probably holds an SBOS161-family edition, not PDS-863 (inference, low confidence).\nSBOS161A appears to be the last revision; no B was seen.\n\nOTHER VENDORS: No second source was found.\n\nNEW COPIES, EDITION NOT SHOWN: alldatasheet 177040 (AP) and 177041 (AU), both 685 KB and 11 pages; datasheetcatalog OPA2107, OPA2107AP and OPA2107AU; digchip; datasheetarchive; RadioLocman di=305535; Octopart and Mouser product pages.\n\nARCHIVE SEED: http://focus.ti.com/lit/ds/symlink/opa2107.pdf. This URL was not seen in any search result. It was built from TI's standard legacy symlink pattern and the current ti.com symlink, for a Wayback lookup only.\n\nSTILL MISSING: the original or PDS-863A text; PDS-863C and PDS-863D; the unlettered SBOS161 and its date; the change content of every revision; the burr-brown.com-era URL (not found)."
   },
   {
    "id": "OPA827",
@@ -39872,6 +42149,105 @@
      "url_kind": "third_party_mirror",
      "notes": "Unconfirmed contents. Also https://datasheetarchive.com/OPA2827-datasheet.html",
      "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown (TI)",
+     "title": "OPA2827 Datasheet PDF - Burr-Brown (datasheetspdf.com)",
+     "doc_number": "SBOS376 (possibly SBOS376A)",
+     "revision": "possibly A (not tied to this URL; revision not shown)",
+     "date": "NOVEMBER 2006 original (revised date not shown)",
+     "url": "https://datasheetspdf.com/datasheet-pdf/562972/OPA2827.html",
+     "url_kind": "third_party_mirror",
+     "notes": "This URL came up for the query \"SBOS376A\". The summary described SBOS376A as the Nov 2006 OPA827/OPA2827 document with preview-era specs (250 uV max offset, 1 uV/C drift, 18 MHz, 22 V/us, 4.5 mA/ch, +4 V to +18 V). The summary did not say which result carried that text. It is the Burr-Brown-labelled sister of the already-listed OPA827 page 562973.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown (TI)",
+     "title": "OPA2827 datasheet | Specifications & PDF Download (datasheetspdf.com)",
+     "doc_number": "SBOS376",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetspdf.com/datasheet/OPA2827.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Index page for the OPA2827 (the dual only appears in preview-era SBOS376 editions). Came up for the query \"SBOS376A\"; the revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown (TI)",
+     "title": "OPA827 Datasheet(PDF) - Burr-Brown (TI) (alldatasheet 195278)",
+     "doc_number": "SBOS376",
+     "revision": "revision not shown (probably preview era: BB label, ID next to OPA2827 page 195279)",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/195278/BURR-BROWN/OPA827.html",
+     "url_kind": "third_party_mirror",
+     "notes": "New alldatasheet entry, different from the listed 163366 and 250011. Its ID is next to the listed OPA2827 page 195279, so it is probably from the same upload, but the revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA827 Datasheet(PDF) - Texas Instruments (alldatasheet 849336, TI1)",
+     "doc_number": "SBOS376",
+     "revision": "revision not shown (high ID suggests a late edition, H or I)",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/849336/TI1/OPA827.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A third alldatasheet OPA827 upload under the 'TI1' label, separate from 163366, 195278 and 250011. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown (TI)",
+     "title": "OPA827A (BB) PDF datasheet, page 4 of 8 (ic37.com)",
+     "doc_number": "SBOS376",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://pdf.ic37.com/BB/OPA827_datasheet_5676975/OPA827_4.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Came up for the query \"SBOS376D\" OR \"SBOS376C\", but the summary tied no revision to it. It is Burr-Brown labelled and only 8 pages long. Short BB-labelled copies are typical of the preview-era editions (orig/A/B/C), but this is not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA827 Voltage Noise Density ... (Mouser datasheet cache)",
+     "doc_number": "SBOS376",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.mouser.com/datasheet/2/405/opa827-406900.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Mouser's own copy of the datasheet, separate from ti.com. The title text matches the ti.com Rev I PDF and Octopart 10745194, so it is probably a post-2012 edition (G, H or I). The revision is not shown in the summary.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA827AID Texas Instruments | Mouser",
+     "url": "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA827AID?qs=iSMark9AYDVjkY2y4BYwEw%3D%3D",
+     "doc_number": "SBOS376",
+     "revision": "n/a",
+     "date": "n/a",
+     "url_kind": "product_page",
+     "notes": "Mouser product page that links the datasheet.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA827 Texas Instruments | DigiKey Electronics",
+     "doc_number": "SBOS376",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.digikey.com/en/products/base-product/texas-instruments/296/OPA827/66008",
+     "url_kind": "product_page",
+     "notes": "DigiKey base-product page. It links the current datasheet.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA827AID Texas Instruments Operationsverstaerker 22 MHz SOIC (RS Components AT)",
+     "doc_number": "SBOS376",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://at.rs-online.com/web/p/operationsverstarker/7093267",
+     "url_kind": "product_page",
+     "notes": "RS product page (stock no. 709-3267) for OPA827AID, 22 MHz. RS usually hosts its own datasheet copy, but the revision is not shown.",
+     "confidence": "medium"
     }
    ],
    "revision_history": [
@@ -39951,6 +42327,27 @@
      "revision": "Final 1.3",
      "date": "21FEB2022",
      "changes": "Model changes only (convergence fix, Aol matched to GBW). Says nothing about silicon."
+    },
+    {
+     "vendor": "Texas Instruments (Burr-Brown product line)",
+     "doc_number": "SBOS376A",
+     "revision": "A",
+     "date": "NOVEMBER 2006 (original date given; revised date not shown)",
+     "changes": "Search summary for SBOS376A: document for OPA827 and OPA2827, preview-era specs. Offset 250 uV max (text elsewhere says 100 uV), drift 1 uV/C, 4.5 nV/rtHz at 1 kHz, 18 MHz bandwidth, 22 V/us slew, 3 pA bias, 4.5 mA/ch, +4 V to +18 V supply, 400 nVpp 0.1-10 Hz noise, SO-8 and MSOP-8, -40 C to +125 C. Production Rev I lists 150 uV max offset, 0.5 uV/C typ drift, 250 nVpp noise and 22 MHz, so the specs changed from preview to production."
+    },
+    {
+     "vendor": "Texas Instruments (Burr-Brown product line)",
+     "doc_number": "SBOS376C",
+     "revision": "C",
+     "date": "NOVEMBER 2006 - REVISED AUGUST 2007",
+     "changes": "Search summary shows the header 'SBOS376C-NOVEMBER 2006-REVISED AUGUST 2007' and says it appears to come from a PRODUCT PREVIEW datasheet for OPA827 and OPA2827. So Rev C was probably still a preview edition covering the dual (compare the listed Octopart copy datasheet-153423 titled 'OPA827 OPA2827 PRODUCT PREVIEW')."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SBOS376G",
+     "revision": "G",
+     "date": "FEBRUARY 2012",
+     "changes": "More of the 'Changes from Revision F (March 2009) to Revision G' list, beyond what was already recorded: the Input bias current and Input offset drift Features bullets were modified, and the unit of the -40 C to +85 C Input Bias Current parameter was changed. This list appears in the already-listed Octopart copy datasheet-10745194, so that copy is Rev G or later."
     }
    ],
    "silicon_changes": [
@@ -40044,6 +42441,7 @@
    "archive_seed_urls": [
     "http://focus.ti.com/docs/prod/folders/print/opa2827.html",
     "http://focus.ti.com/docs/prod/folders/print/opa827.html",
+    "http://focus.ti.com/lit/ds/symlink/opa827.pdf",
     "http://www.ti.com/lit/ds/symlink/opa827.pdf",
     "https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-10745194.pdf",
     "https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-153423.pdf",
@@ -40155,7 +42553,8 @@
      "https://zigsow.jp/item/261371/review/225220",
      "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-14"
     ]
-   }
+   },
+   "revision_chain_summary": "TI SBOS376 (OPA827; OPA2827 in the preview editions). Chain, oldest to newest: original, Nov 2006 (Product Preview, OPA827/OPA2827) -> A, Nov 2006 original date, revised date not shown (preview specs: 250 uV max offset, 18 MHz, 22 V/us) -> B, date unknown, still no evidence it exists -> C, Aug 2007 (a summary shows the header 'SBOS376C-NOVEMBER 2006-REVISED AUGUST 2007' and ties it to a PRODUCT PREVIEW OPA827/OPA2827 edition, probably the listed Octopart datasheet-153423) -> D, date unknown (an exact search for \"SBOS376D\" returned nothing) -> E, Sep 2008 (Octopart 5394927) -> F, Mar 2009 -> G, Feb 2012 (Octopart 10745194 contains the F-to-G change list, so it is G or later) -> H, May 2012 -> I, Jul 2016 (current). Still missing: a copy of B and its date, a copy of D and its date, the revised date of A, the H-to-I change list, and a copy firmly tied to F (a search for 'REVISED MARCH 2009' found nothing). New unverified copies worth reading: datasheetspdf 562972 (OPA2827, maybe Rev A), alldatasheet 195278 (BB, probably preview), ic37 5676975 (BB), alldatasheet 849336 (TI1) and Mouser opa827-406900.pdf. The archive seeds are built from the standard focus.ti.com / ti.com symlink and product-folder URL patterns and have not been checked. No other vendor or second source has ever made the OPA827. Searches used: 6 of 6."
   },
   {
    "id": "OPA828",
@@ -40641,6 +43040,61 @@
      "url_kind": "third_party_mirror",
      "notes": "Added 2025-08-07. The PDF was built 2025-07-26 (17-Jun-2025 addendum). A byte-identical copy is at https://github.com/philipturner/capacitive-displacement-metrology/blob/main/Models/Datasheets/OpAmps/OPA828.pdf.",
      "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments (TI Japan, Japanese translation)",
+     "title": "OPAx828 低オフセット、低ドリフト、低ノイズ、45MHz、36V JFET 入力、オペアンプ",
+     "doc_number": "JAJSG32D (per search summary)",
+     "revision": "D (per search summary; the 'OPAx828' title matches Rev C or later)",
+     "date": "unknown (current Japanese edition as of 2026-09)",
+     "url": "https://www.ti.com/jp/lit/ds/symlink/opa828.pdf",
+     "url_kind": "vendor_current",
+     "notes": "TI's Japanese-language edition of SBOS671. The search summary gave the literature number as JAJSG32D. The title covers both parts ('OPAx828', so OPA828 and OPA2828) and calls them the next generation of the OPA627/OPA827. This fits the English Rev C/D content. The dates of the JAJSG32 letters were not shown.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (Kyohritsu Electronic Industry mirror, Japanese translation)",
+     "title": "OPA828 低オフセット、低ドリフト、低ノイズ、 45MHz ...",
+     "doc_number": "JAJSG32 (letter not shown)",
+     "revision": "revision not shown; the singular 'OPA828' title points to a pre-Rev-C (Rev B era) translation (inferred)",
+     "date": "unknown",
+     "url": "https://www.kyohritsu.com/eclib/PDF/O/opa828.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "This Japanese copy came up in a search for SBOS671 'SEPTEMBER 2018' REVISED. The title names only the single OPA828, not OPAx828. Pre-Rev-C English mirrors share that singular title, so this is probably an older translation of the single-only SOIC-8 datasheet. The letter is unconfirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (Digi-Key HTML datasheet rendering)",
+     "title": "OPA828 by Texas Instruments Datasheet | DigiKey",
+     "doc_number": "SBOS671 (letter not shown in search summary)",
+     "revision": "revision not shown; possibly B (it was the top result for the exact query SBOS671B OPA828, unconfirmed)",
+     "date": "unknown",
+     "url": "https://www.digikey.com/en/htmldatasheets/production/3588935/0/0/1/opa828",
+     "url_kind": "distributor_mirror",
+     "notes": "Digi-Key HTML rendering of a single-part OPA828 datasheet, titled for the OPA828 only and not OPAx828. It ranked first for the exact string SBOS671B. The search summary described Rev B (Dec 2018) content: 50 uV, 0.45 uV/C, 1 pA, and Seismic Test Equipment among the applications. That text was not tied to this URL explicitly.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (alldatasheet mirror)",
+     "title": "OPA828 Datasheet(PDF) - Texas Instruments",
+     "doc_number": "SBOS671 (letter not shown)",
+     "revision": "revision not shown; possibly C or D (inferred)",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1569998/TI/OPA828.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 1569998 (TI). Its ID sits next to entry 1569997 (OPAX828, already listed as C or later), so it is probably the same later upload filed under OPA828. The same entry is mirrored at https://www.alldatasheet.net/datasheet-pdf/download/1569998/TI/OPA828.html and https://www.alldatasheet.jp/datasheet-pdf/pdf/1569998/TI/OPA828.html. It is separate from the older entry 1082236 (TI1), which is already listed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (datasheet4u mirror)",
+     "title": "OPA828 JFET-Input Operational Amplifiers Datasheet | Texas Instruments",
+     "doc_number": "SBOS671 (letter not shown)",
+     "revision": "revision not shown; possibly C or later (inferred)",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/etcTI/OPA828/1566624",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheet4u entry 1566624. Its ID is next to the OPA2828 entry 1566625, which is already listed as C or later. A copy uploaded together with the OPA2828 file would hold the combined OPAx828 datasheet (Rev C or D), but this is not confirmed.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -40692,6 +43146,13 @@
      "revision": "Final 1.0 -> 1.1 -> 1.2 -> 1.3",
      "date": "model file dated 02SEP2022",
      "changes": "A macro-model referencing SBOS671B. 1.1: C14 fix; Aol, GBW and phase margin, CLAW, Isc, Vos and drift updated. 1.2: IQ_SRC direction fix. 1.3: R_NOISELESS .model moved into the subckt and the symbol updated. Simulation-model changes only."
+    },
+    {
+     "vendor": "Texas Instruments (TI Japan)",
+     "doc_number": "JAJSG32D",
+     "revision": "D (Japanese translation)",
+     "date": "unknown (letter reported by search summary; date not shown)",
+     "changes": "Japanese translation of SBOS671, whose current title covers OPAx828 (OPA828 + OPA2828). The letter D is taken to track English SBOS671D (inferred). The Kyohritsu mirror has a singular-title (OPA828-only) edition, which suggests an earlier JAJSG32 letter matching the English Rev B era."
     }
    ],
    "silicon_changes": [
@@ -40795,10 +43256,12 @@
    "archive_seed_urls": [
     "http://product.ic114.com/PDF/O/OPA828.PDF",
     "http://www.ti.com/lit/ds/symlink/opa828.pdf",
+    "http://www.ti.com/product/OPA828",
     "https://datasheet.octopart.com/OPA828IDR-Texas-Instruments-datasheet-164894880.pdf",
     "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5336/PCN20221117006.0.pdf",
     "https://web.pa.msu.edu/people/edmunds/SET_Curve_Tracer/Electrical_Components/opa828_bb_opamp.pdf",
     "https://www.mouser.com/PCN/Texas_Instruments_PCN20221117006_2022111813034746.pdf",
+    "https://www.ti.com/jp/lit/ds/symlink/opa828.pdf",
     "https://www.ti.com/lit/ds/sbos671/sbos671.pdf",
     "https://www.ti.com/lit/ds/sbos671a/sbos671a.pdf",
     "https://www.ti.com/lit/ds/sbos671b/sbos671b.pdf",
@@ -40919,7 +43382,8 @@
      "https://www.diyaudio.com/community/threads/opa828-opa2828-vs-opa627.400109/page-2",
      "https://maimai-audio.blog.jp/archives/25643364.html"
     ]
-   }
+   },
+   "revision_chain_summary": "TI SBOS671 (the only vendor; no second source). Known chain, oldest to newest:\n- SBOS671 original, Sep 2018, preview/advance (inferred)\n- SBOS671A, Nov 2018\n- SBOS671B, Dec 2018, first production data, OPA828 single in SOIC-8 only\n- SBOS671C, Oct 2022, adds the DGN package (preview) and the OPA2828 dual\n- PCN20221117006, 17 Nov 2022, spec-limit change for OPA828ID/IDR\n- SBOS671D, Dec 2022, DGN goes to production; current, with regenerated PDF builds in 2025 and 2026\n\nStill missing: no copy was confirmed to hold the original SBOS671 (Sep 2018), SBOS671A (Nov 2018) or SBOS671C (Oct 2022). No copy's header was shown with a letter in the search summaries. Rev B is still only inferred for the Octopart and MSU mirrors, and the Digi-Key HTML datasheet (production/3588935) ranked first for an exact SBOS671B query. No TI revision-specific URL (for example a lettered sbos671 path) turned up, so none is recorded.\n\nNew this pass: TI's Japanese edition, JAJSG32 (ti.com/jp symlink, D per the search summary), and an older singular-title Japanese copy at kyohritsu.com (probably B era). Also found were alldatasheet entry 1569998 (with .net and .jp mirrors) and datasheet4u entry 1566624, both probably C or D.\n\nLeads to follow up:\n- One search summary called the part a '50-MHz' op amp, not attributed to any URL. It may reflect early preview-datasheet wording, but this is unverified.\n- TI E2E thread 801601 (about 2019), 'OPA828: Output swing specification disagrees with datasheet figures', is a possible precursor of the 2022 spec-limit PCN. It was not read.\n- The best way to recover the A, B and C letters is a Wayback lookup of http(s)://www.ti.com/lit/ds/symlink/opa828.pdf captures from 2018 to 2022.\n\nSources: https://www.digikey.com/en/htmldatasheets/production/3588935/0/0/1/opa828 ; https://www.ti.com/jp/lit/ds/symlink/opa828.pdf ; https://www.kyohritsu.com/eclib/PDF/O/opa828.pdf ; https://www.alldatasheet.com/datasheet-pdf/pdf/1569998/TI/OPA828.html ; https://datasheet4u.com/datasheets/etcTI/OPA828/1566624 ; https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/801601/opa828-output-swing-specification-disagrees-with-datasheet-figures"
   },
   {
    "id": "OPAx211",

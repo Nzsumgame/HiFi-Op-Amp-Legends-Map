@@ -74,6 +74,16 @@ None documented. (Absence of evidence is not evidence of absence. Compare datash
 | New Japan Radio (New JRC) | n/a | n/a | pre-2022 (NJR era) | [njr.co.jp/products/MUSES/series/MUSES8820.html](https://www.njr.co.jp/products/MUSES/series/MUSES8820.html) | vendor_legacy | medium | Confirmed in an earlier sweep; not re-checked in this pass. Good Wayback seed for NJR-era datasheet versions. |
 | DigiKey (distributor) | n/a | n/a | unknown | [digikey.com/en/products/detail/nisshin…c/MUSES8820D/2442897](https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES8820D/2442897) | product_page | high | Confirmed in an earlier sweep. |
 | DigiKey (distributor) | n/a | n/a | unknown | [digikey.com/en/products/detail/nisshin…c/MUSES8820E/2442898](https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES8820E/2442898) | product_page | high | Confirmed in search results; also reachable under the /njr-corporation-njrc/MUSES8820E/2442898 path. |
+| New Japan Radio (New JRC) | MUSES8820_E | revision not shown | unknown (NJR era, pre-2022) | [semicon.njr.co.jp/eng/PDF/MUSES8820_E.pdf](http://semicon.njr.co.jp/eng/PDF/MUSES8820_E.pdf) | vendor_legacy | low | This is the original NJR English datasheet URL. Search summaries cite it as the source link for the alldatasheet/NJR copy. Its snapshots in the Wayback Machine could hold the 2010-2011 editions and the 2012-05-14 and 2013-12-06 editions. It was not fetched, so the revision it holds is not shown. |
+| New Japan Radio (alldatasheet HTML page view) | MUSES8820_E | probably Ver.2013-12-06 (search summary only; header not quoted) | 2013-12-06 (unverified) | [alldatasheet.com/html-pdf/1353965/NJRC…233/2/MUSES8820.html](https://www.alldatasheet.com/html-pdf/1353965/NJRC/MUSES8820/233/2/MUSES8820.html) | third_party_mirror | low | HTML page view of alldatasheet document 1353965, which is 12 pages and 424 KB. It is the same document as the already-listed alldatasheet PDF page, but a different URL. One search summary said this copy is Ver.2013-12-06, but the result title did not show the version header. |
+| New Japan Radio (dtsheet mirror) | MUSES8820_E | revision not shown | unknown | [dtsheet.com/doc/1304433/muses8820-data-sheet](https://dtsheet.com/doc/1304433/muses8820-data-sheet) | third_party_mirror | low | Third-party datasheet mirror. The search summary does not show the version header. |
+| Nisshinbo Micro Devices (LCSC distributor listing) | n/a | revision not shown | unknown | [lcsc.com/product-detail/Audio-Amplifie…S8820D_C4548965.html](https://www.lcsc.com/product-detail/Audio-Amplifiers_Nisshinbo-Micro-Devices-Inc-MUSES8820D_C4548965.html) | product_page | low | LCSC product page for MUSES8820D, listed under Nisshinbo, so the page is from the Nisshinbo era. It links to a datasheet copy that probably sits on datasheet.lcsc.com, but that PDF URL did not appear in the results, so its revision is unknown. |
+| New Japan Radio (ChipsFind listing) | n/a | revision not shown | unknown | [chipsfind.com/part-item/02487978-MUSES8820D](https://www.chipsfind.com/part-item/02487978-MUSES8820D) | third_party_mirror | low | Parts and datasheet aggregator listing for MUSES8820D under the NJR vendor name. It may link to a datasheet copy. The revision is not shown. |
+| New Japan Radio (Pro Audio Design Forum link list) | n/a | revision not shown | unknown | [proaudiodesignforum.com/forum/php/viewtopic.php?f=12&t=605](https://www.proaudiodesignforum.com/forum/php/viewtopic.php?f=12&t=605) | third_party_mirror | low | Forum thread that collects JRC MUSES datasheet links, which probably point to the legacy semicon.njr.co.jp PDFs. Those links are useful as seeds for dated Wayback captures of early editions. It is not itself a datasheet copy. |
+
+### Revision chain status
+
+Vendor document MUSES8820_E, New JRC then Nisshinbo, the only vendor; there are no second sources. The known chain, oldest to newest: [missing: launch edition(s) from about Mar 2010 to 2011, which the PHILE WEB launch news and the 2010-2011 Head-Fi thread 536589 'Anyone tried JRC MUSES 8820' imply] -> Ver.2012-05-14 (DigiKey media.digikey.com and mm.digikey.com mirrors) -> Ver.2013-12-06 (Mouser MUSES8820_E-259018.pdf; probably also the alldatasheet 1353965 copy and Scribd) -> [missing: any post-2013 NJR edition, or a re-issue in the Nisshinbo format from 2022 on; the current nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES8820_E.pdf has no version in any search summary]. Six searches found no Ver.2010 or Ver.2011 edition and no Nisshinbo-era version string. The best route to the early editions is the legacy vendor URL http://semicon.njr.co.jp/eng/PDF/MUSES8820_E.pdf, now in archive seeds, through Wayback captures from 2010 to 2012. New copies with the revision not shown: dtsheet.com doc 1304433, the alldatasheet html-pdf page view, the LCSC C4548965 listing and the ChipsFind listing. The Japanese edition (MUSES8820_J) was not found. No silicon or part-number change is known.
 
 ### Datasheet revision history
 
@@ -84,6 +94,7 @@ None documented. (Absence of evidence is not evidence of absence. Compare datash
 
 ### Legacy URLs searched in the Internet Archive
 
+- `http://semicon.njr.co.jp/eng/PDF/MUSES8820_E.pdf`
 - `http://www.njr.co.jp/products/semicon/PDF/MUSES8820_E.pdf`
 - `http://www.njr.co.jp/products/semicon/PDF/MUSES8820_J.pdf`
 - `http://www.njr.com/semicon/PDF/MUSES8820_E.pdf`
@@ -99,6 +110,7 @@ None documented. (Absence of evidence is not evidence of absence. Compare datash
 - `https://www.njr.co.jp/products/MUSES/series/MUSES8820.html`
 - `https://www.njr.com/MUSES/series/MUSES8820.html`
 - `https://www.phileweb.com/news/audio/201003/01/9756.html`
+- `https://www.proaudiodesignforum.com/forum/php/viewtopic.php?f=12&t=605`
 
 Fetch every revision: `python tools/fetch_datasheets.py --family MUSES8820`
 
