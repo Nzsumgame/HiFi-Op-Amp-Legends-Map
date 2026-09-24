@@ -6,7 +6,7 @@
 
 **Technology:** FET-input (JFET) audio op-amp, Burr-Brown SoundPlus line; single/dual/quad. TI moved the die to a new wafer fab (PCN 20231219018.1, die revision A to B). Datasheet SBOS058B (revised Nov 2024; PCN 20240902002.1, 3 Sep 2024) describes the new die: OPA134 offset-trim pins 1/8 now NC (internal laser trim only), updated ESD structures and some revised specs. Old and new die ship under unchanged part numbers.
 
-> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (1 recorded: Unclassified).
+> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (1 recorded: Die redesign).
 
 ## Why enthusiasts rate it
 
@@ -71,7 +71,7 @@ Widely described as the archetypal 'laid-back Burr-Brown sound' and a common fir
 
 ## Silicon changes under the same part number
 
-### 1. Unclassified: Texas Instruments, PCN 20231219018.1 (fab move, Dec 2023);
+### 1. Die redesign: Texas Instruments, PCN 20231219018.1 (fab move, Dec 2023);
 
 TI moved the OPAx134 die to a new wafer fab under the same part numbers as part of its exit from 150 mm fabs. The new die has no external offset-trim function (internal laser trim), updated ESD structures, and revised datasheet specs. TI says moving fabs always shifts performance somewhat and that the datasheet now reflects the actual device. TI E2E attributes in-circuit-test and functional failures on 2025 date-code parts most likely to the new ESD structures. Hackaday (Jun 2026), diyAudio and Gearspace criticise the change and TI's 'no impact' wording.
 
@@ -81,6 +81,7 @@ TI moved the OPAx134 die to a new wafer fab under the same part numbers as part 
 - **Audio impact:** Small on paper: about 2.3 dB less headroom before 0.01% THD+N, channel separation still very high (128 dB). No published old-vs-new THD, noise or listening comparison found. OPA134 trim circuits lose their adjustment. Japanese and Chinese hobby sources report no sonic change.
 - **Drop-in risk:** medium: pin- and function-compatible for normal audio use per TI, but offset-trim circuits stop working, headroom is lower, and new ESD structures caused ICT/functional failures for at least one customer; old and new stock mixed with no marking difference.
 - **Confidence:** high
+- **Verification:** WebSearch confirmed (via TI E2E 1429728) that PCN 20231219018.1 announced the OPAx134 fab transition with qualification reports, that PCN 20240902002.1 details the performance changes, and that the new die has no offset trim. Old-sheet 23.6 dBu headroom (11.7 Vrms) was confirmed; the new-die numbers (21.3 dBu, 128 dB) rest on the EEVblog transcript only.
 
 | Parameter | Before | After |
 |---|---|---|

@@ -1,14 +1,18 @@
 # Revision hazards: same part number, different silicon
 
-## Silicon and specification changes (71)
+## Silicon and specification changes (61)
 
 | Family | Kind | Vendor | When | What changed | Risk | Conf. |
 |---|---|---|---|---|---|---|
 | [NE5532](families/NE5532.md) | Die redesign | Texas Instruments | Process-migration PCN 20231114002.1 dated 15 Nov 2023. | TI replaced the NE5532/NE5532A/SA5532/SA5532A silicon with a different design on a newer RFAB process without changing the part numbers. | high - same part number but lower voltage rating, slower slew, halved ESD, no input… | high |
 | [LF353](families/LF353.md) | Die redesign | Texas Instruments (TI's own LF353,… | PCN 20220615003.1, dated 16 Jun 2022 (samples until 16 Jul… | TI moved its own LF353 from Sherman to RFAB on a new die. | medium: pin-compatible with unchanged guaranteed limits, but TI confirms an entirely new… | high |
+| [LM6171](families/LM6171.md) | Die redesign | Texas Instruments | PCN 20241217001.1 issued 2024-12-18; proposed first ship… | TI qualified FFAB (Freising) with the BICOMHD process (FR-BIP-1, 200 mm) for the LM6172, alongside the original National DL-LIN VIP3 process (150 mm). | medium: the die was redesigned on a different bipolar process, and the SNOS792E… | high |
 | [LM833](families/LM833.md) | Die redesign | Texas Instruments | Process-migration PCN 20231114002.1 dated 15 Nov 2023;… | TI confirmed on its E2E forum (thread 'NE5532, LM833, RC4580 and MC33078 all now the same die') that these four parts now share one die, with part numbers… | medium - same part number, new silicon on a new process. | high |
 | [MC33078](families/MC33078.md) | Die redesign | Texas Instruments | Process-migration PCN 20231114002.1 dated 15 Nov 2023;… | TI E2E thread 1652528 ('NE5532, LM833, RC4580 and MC33078 all now the same die') reports that TI unified the four dies while keeping the part numbers. | medium - pin-compatible and SLLS633C limits unchanged, but a process migration is… | medium |
 | [4558](families/4558.md) | Die redesign | Texas Instruments (RC4558) | Fab/process PCN 20240723003 (SFAB JI1 150 mm to RFAB TIB… | TI moved the RC4558 to RFAB under PCN 20240723003 and then rewrote its datasheet (Rev H, Oct 2024; datasheet PCN 20241230001.1, Jan 2025) to reflect changed… | medium - same pinout and part number. | medium |
+| [OPAx132](families/OPAx132.md) | Die redesign | Texas Instruments | Datasheet SBOS054C, August 2024; confirmed in TI E2E… | TI moved the OPA132 to a new fab and design. | medium - pin-compatible drop-in (TI says pre-Rev C layouts need no redesign), but offset… | high |
+| [OPAx134](families/OPAx134.md) | Die redesign | Texas Instruments | PCN 20231219018.1 (fab move, Dec 2023); | TI moved the OPAx134 die to a new wafer fab under the same part numbers as part of its exit from 150 mm fabs. | medium: pin- and function-compatible for normal audio use per TI, but offset-trim… | high |
+| [OPA627](families/OPA627.md) | Die redesign | Texas Instruments | SBOS165B (April 2024) / SBOS165C (January 2025, OPA627BU… | TI's 2024-2025 rewrite deleted all 'Difet' references, added a B-grade SOIC (OPA627BU), and turned the molded packages' offset-trim pins into NC. | medium - offset-trim circuits do not work on new molded parts, and the electrical spec… | medium |
 | [TL07x](families/TL07x.md) | Die redesign | Texas Instruments | PCN 20220615003.1, dated 16 Jun 2022 (samples until 16 Jul… | Through PCNs 20220615003.1 (Jun 2022) and 20221219006.1 (Dec 2022), TI moved ordinary TL071/TL072/TL074 C/AC/BC/I grades from Sherman to the RFAB fab on a… | medium: pin-compatible drop-in, but noise doubles and saturation and protection… | high |
 | [TLE2071](families/TLE2071.md) | Die redesign | Texas Instruments | PCN 20231219013.1 (19 Dec 2023; the Mouser copy is dated… | TI PCN 20231219013.1 ('Qualification of RFAB using ...') moves TLE207x orderables to the RFAB wafer fab with a die revision and an assembly-site change. | medium: the die revision is PCN-documented, but no electrical deltas were retrieved;… | medium |
 | [TLE2081](families/TLE2081.md) | Die redesign | Texas Instruments | PCN 20231219013.1 (19 Dec 2023; the Mouser copy is dated… | TI PCN 20231219013.1 moves TLE208x orderables to RFAB with a die revision and an assembly-site change; the die was changed as a result of the process change. | medium: the die revision is PCN-documented and the datasheet was rewritten, but no… | medium |
@@ -29,9 +33,11 @@
 | [ADA4075-2](families/ADA4075-2.md) | Fab / process transfer | Analog Devices | PCN 22_0142 (Rev. - form dated 4 Apr 2023 per search… | ADI added its Wilmington, MA fab (ADWL) as an alternate wafer fab to Limerick, Ireland (ADLK) for 'High Voltage Bipolar Products'. | low - alternate-fab qualification with no data-sheet change; not a new die design | low |
 | [ADA4898](families/ADA4898.md) | Fab / process transfer | Analog Devices | PCN 22_0142: Rev. - dated 4 Apr 2023 (per search… | ADI PCN 22_0142 adds its Wilmington, MA fab (ADWL) as an alternate wafer fab to Limerick, Ireland (ADLK) for 'High Voltage Bipolar Products', for… | low - same design and data sheet; the only variation is between fabs | medium |
 | [LF356](families/LF356.md) | Fab / process transfer | Texas Instruments | PCN 20180920003.1; FFAB BI-FET qualification approved 19… | TI issued a PCN with a qualification report for 'FFAB BIFET Technology Qualification' that lists LF356 wafer, metal-can, SOIC and PDIP devices. | low: same datasheet, pinout and limits; a fab transfer with no published parametric… | medium |
+| [LME49720](families/LME49720.md) | Fab / process transfer | Texas Instruments | PCN 20180308002 dated 2018-03-09 (proposed first ship… | PCN 20180308002 is titled 'Transfer of select VIP3 devices from GFAB to DFAB (DL-LIN) Wafer Fab site'. | low: same part number, pinout, process family and datasheet limits. | high |
 | [LM833](families/LM833.md) | Fab / process transfer | onsemi (ON Semiconductor, ex-Motorola) | Initial PCN 11528 issued 19 July 2001 | ON Semiconductor PCN 11528 lists the LM833 for transfer from the Motorola BMC wafer fab in Mesa, AZ to ON's Tesla wafer fab in Roznov, Czech Republic. | low - same design and part numbers; any difference would be process spread within… | high |
 | [MC33078](families/MC33078.md) | Fab / process transfer | onsemi (ON Semiconductor, ex-Motorola) | Initial PCN 11528 issued 19 July 2001. | ON Semiconductor PCN 11528 announced the transfer and qualification of devices made in the Motorola BMC wafer fab in Mesa, AZ to ON's Tesla wafer fab in… | low - same design and part numbers; any difference would be process spread within… | high |
 | [OP249](families/OP249.md) | Fab / process transfer | Analog Devices | before 2010 (date of transfer not captured; described in… | PCN 10_0062 states that the OP249 was transferred to ADI's ADWIL (Wilmington) wafer fab, and that after the transfer the product showed more Vos variation. | low - same design and pinout; the offset spread was larger on post-transfer lots made… | medium |
+| [OPAx132](families/OPAx132.md) | Fab / process transfer | Texas Instruments | Presumably the same 2024 fab change (SBOS054C); unconfirmed | SBOS054C covers all three parts, and TI calls the OPA132 change a 'new FAB change and design'. | low - no pin-function change documented for the dual or quad; the change itself is… | low |
 | [OPAx227](families/OPAx227.md) | Fab / process transfer | Texas Instruments | TI E2E thread 1360546 (c. 2024) cites PCN 20230306000.1… | This is an unresolved lead. | low: only a marking difference is confirmed; a fab or die change rests on one indirect… | low |
 | [NJM4556](families/NJM4556.md) | Second-source difference | NEC (vs JRC) | 1980s (uPC4556 on late-1980s Taito boards per MAME notes) | Same '4556' number, different silicon. | high - a decompensated part is not a drop-in for unity-gain buffer or driver roles. | medium |
 | [LM318](families/LM318.md) | Second-source difference | Texas Instruments (TI-legacy) vs… | Concurrent since 1976 (TI SLOS063 original date) and… | TI sells two separately documented LM318 product lines under the same generic number: its own second source (datasheet since June 1976) and National's… | medium: same pinout and headline specs (15 MHz, 50 V/us min), but separate designs and… | medium |
@@ -49,34 +55,18 @@
 | [OP27](families/OP27.md) | Second-source difference | Texas Instruments (second source) vs… | from Feb 1989 (SLOS100) to at least 2010 (Rev. | TI makes its own OP27A/OP27C (SLOS100, Rev. | low - same pinout, sockets and headline specs; any differences would be in unspecified… | medium |
 | [OP27](families/OP27.md) | Second-source difference | Linear Technology (now ADI 'OP27-LTC')… | late 1980s onward; ADI lists both lines since the 2017 LTC… | Two OP27 product lines now sit under ADI: the PMI-heritage OP27 and the Linear Technology OP27 (op27-ltc.html). | low - pin-compatible and specified to the same OP-27/OP-37 grade names; unspecified… | medium |
 | [TL07x](families/TL07x.md) | Second-source difference | STMicroelectronics | Ongoing (ST TL072 DocID2298 Rev 8, June 2014; | The ST second-source die has its own spec set, which differs on paper from the TI legacy die: lower noise and higher bandwidth. | low: same pinout and supply class. | medium |
+| [OPA604](families/OPA604.md) | Datasheet respec | Texas Instruments | c. 2015-2016 (TI 'Non-conforming' form quoted in the… | Unannounced supply derating under the same part number. | medium - designs that rely on the OPA2604's ±24 V rating may drift or run hot; drop-in… | medium |
 | [LF353](families/LF353.md) | Datasheet respec | National Semiconductor | between the 1980 databook and the August 2000 DS005649… | National dropped the tighter-offset A and B grades and the TO-99 can for the LF353 (a lifecycle step) and added SO-8. | low: same die family and pinout; the TO-99 can has a different footprint | high |
 | [LF356](families/LF356.md) | Datasheet respec | National Semiconductor | between the 1980 databook and the May 2000 DS005646 edition | This may be a change to the compensation capacitor in the decompensated LF157/LF357, or only a documentation correction. | low: guaranteed specs are the same and the change may be purely editorial. | low |
 | [4558](families/4558.md) | Datasheet respec | New JRC / Nisshinbo (NJM4558) | Old JRC databook, then datasheet Ver.2013-11-05… | JRC re-characterised the NJM4558 datasheet. | low - same part, wider rated temperature range. | medium |
 | [NJM4580](families/NJM4580.md) | Datasheet respec | Texas Instruments | Datasheet SLOS412D (Nov 2014) to SLOS412E (Nov 2024). | TI revised the RC4580 datasheet to Rev E in November 2024, in the same window as the SFAB-to-RFAB migration and the NE5532/LM833/MC33078 consolidation onto… | low - headline specs appear unchanged. | low |
 | [OPA1692](families/OPA1692.md) | Datasheet respec | Texas Instruments | Datasheet SBOS566C October 2018; notification 5 Nov 2018 | No silicon change is known. | low - datasheet-only change; the notice says there is no device change | high |
+| [OPA827](families/OPA827.md) | Datasheet respec | Texas Instruments | SBOS376G, 2012 (the prior pass gives February 2012; the… | At Rev G the datasheet moved from Mixed Status to Production Data. | low - same pinout and packages, and no known die change | medium |
+| [OPA828](families/OPA828.md) | Datasheet respec | Texas Instruments | November 2022 (PCN20221117006), coinciding with SBOS671C… | 'Same part number, different datasheet' hazard, not a die change. | low - it is a spec-only PCN with the same device and markings. | high |
 | [THS4032](families/THS4032.md) | Datasheet respec | Texas Instruments | Between SLOS224C (Apr 2000) and the current new-format… | There is no evidence of a die change; only the datasheet headline specs moved. | low: pinout and package unchanged; no PCN found; the differences appear to be… | medium |
 | [uPC4570](families/uPC4570.md) | Datasheet respec | Renesas Electronics (ex-NEC) | New Renesas datasheet R03DS0135EJ0100 Rev.1.00 dated 17… | Renesas replaced the NEC-era uPC4570 datasheet with a new Renesas document, R03DS0135EJ. | low - same die as far as documented. | low |
-| [LM6171](families/LM6171.md) | Unclassified | Texas Instruments | PCN 20241217001.1 issued 2024-12-18; proposed first ship… | TI qualified FFAB (Freising) with the BICOMHD process (FR-BIP-1, 200 mm) for the LM6172, in addition to the original National DL-LIN VIP3 process (150 mm). | medium: the die was redesigned on a different bipolar process and the SNOS792E… | high |
-| [OPAx132](families/OPAx132.md) | Unclassified | Texas Instruments | Datasheet SBOS054C, August 2024. | TI moved the OPA132 to a new fab and design. | medium - pin-compatible drop-in (TI says pre-Rev C layouts need no redesign), but offset… | high |
-| [OPAx134](families/OPAx134.md) | Unclassified | Texas Instruments | PCN 20231219018.1 (fab move, Dec 2023); | TI moved the OPAx134 die to a new wafer fab under the same part numbers as part of its exit from 150 mm fabs. | medium: pin- and function-compatible for normal audio use per TI, but offset-trim… | high |
-| [OPA604](families/OPA604.md) | Unclassified | Texas Instruments | c. 2015-2016 (reported in diyAudio 'OPA2604 is dead', 24… | Unannounced supply derating of the same part number: a document quoted on diyAudio (2016) says the OPA2604 no longer supports ±24 V and must be constrained to… | medium - designs that rely on the OPA2604's unique ±24 V rating may drift or run hot… | medium |
-| [OPA604](families/OPA604.md) | Unclassified | Texas Instruments | About 2016 (supply derating); | OPA2604 is no longer supported at ±24 V and must be limited to ±20 V. | medium - drop-in only for designs at ±20 V or below. | medium |
-| [OPA627](families/OPA627.md) | Unclassified | Texas Instruments | SBOS165B (April 2024) / SBOS165C (January 2025); after… | TI's 2024-2025 rewrite deleted the 'Difet' wording, added a new B-grade SOIC (OPA627BU), and dropped offset-trim pins on the molded packages. | medium - Offset-trim circuits may not work on new SOIC parts, and the electrical spec… | medium |
-| [LME49720](families/LME49720.md) | Unclassified | Texas Instruments | PCN 20180308002 issued March 2018 (Mouser copy 20180309,… | TI moved LM4562/LME49720 wafer fabrication from a 150 mm (6-inch) line to RFAB in Richardson, TX, on a newer process with a die-shrink redesign. | low: same pinout, part number and datasheet limits. | medium |
-| [LME49720](families/LME49720.md) | Unclassified | Texas Instruments | PCN 20180308002 dated 2018-03-09 (proposed first ship… | PCN 20180308002 is titled 'Transfer of select VIP3 devices from GFAB to DFAB (DL-LIN) Wafer Fab site'. | low - same process family (VIP3), same part number and pinout, and no datasheet change… | medium |
-| [LME49720](families/LME49720.md) | Unclassified | Texas Instruments | PDN 20170721000C (2017), linked to the GFAB closure | TI discontinued select GFAB-sourced devices. | low - discontinuance only. | medium |
-| [OPA111](families/OPA111.md) | Unclassified | Texas Instruments | About 2019 (E2E thread 808890 'OPA2111: amplifier end of… | OPA2111 was discontinued after about 26 years of production. | low - discontinuance only. | medium |
-| [OPAx132](families/OPAx132.md) | Unclassified | Texas Instruments | Presumably the same 2024 fab change (SBOS054C); unconfirmed | SBOS054C covers all three parts, and TI calls the OPA132 change a 'new FAB change and design'. | low - no pin-function change documented for the dual or quad | low |
-| [OPA1611](families/OPA1611.md) | Unclassified | Texas Instruments | PCN# 20260223007.1, dated about 24 Feb 2026 per the search… | A TI change notification with a Group 1 qualification report lists OPA1612AID among roughly 40 unrelated devices: op-amps such as the OPA2187, OPA2210 and… | low — the nature of the change is unconfirmed, and no datasheet, pinout or spec change… | low |
-| [OPA1611](families/OPA1611.md) | Unclassified | Texas Instruments | PCN 20260223007.1 dated 24 Feb 2026; estimated sample… | This refines the existing OPA1611 known-hazard entry. | low: assembly-material change only, with no die or datasheet change. | high |
-| [OPA1611](families/OPA1611.md) | Unclassified | Texas Instruments | PCN 20260223007.1 (2026) | PCN 20260223007.1 adds Cu as an additional bond-wire option for the listed devices 'to align with world technology trends and use wiring with enhanced… | low - packaging material option only; same die and datasheet. | medium |
-| [OPA627](families/OPA627.md) | Unclassified | Burr-Brown -> Texas Instruments | after 2000 (TI acquisition); exact transfer date unknown | Soomal (2016) ranks Taiwan-made parts second only to US-made, and ahead of SE-Asian-made. | low - Same pinout and specs. | low |
-| [OPA827](families/OPA827.md) | Unclassified | Texas Instruments | 2024 (PCN#20240628012.1, dated 28 Jun 2024) | TI PCN#20240628012.1 lists OPA827AID among the affected devices. | low: no datasheet revision followed (still Rev I from 2016), and there is no evidence of… | low |
-| [OPA827](families/OPA827.md) | Unclassified | Texas Instruments | February 2012 (SBOS376 Rev G) | The datasheet specs changed at the move from Mixed Status to Production Data: Vos, drift and Ib limits were revised, and SR and ISC minimums were added. | low: same pinout and packages, and no known die change | low |
-| [OPA828](families/OPA828.md) | Unclassified | Texas Instruments | November 2022 (PCN20221117006), coinciding with SBOS671C… | 'Same part number, different datasheet' hazard, not a die change. | low - it is a spec-only PCN with the same device and markings. | high |
-| [OPA828](families/OPA828.md) | Unclassified | Texas Instruments | October 2022 (preview, SBOS671C) / December 2022… | A package extension, not a documented die change. | low - different footprints, suffixes and markings mean the parts cannot be confused. | medium |
 
-## Other change notes (39)
+## Other change notes (48)
 
 | Family | Kind | Vendor | When | What changed | Risk | Conf. |
 |---|---|---|---|---|---|---|
@@ -101,14 +91,22 @@
 | [OP27](families/OP27.md) | Package / assembly | Analog Devices | between Rev. E (12/05) and Rev. | Rev. F of the data sheet added Pb-free lead-finish versions. | low - same specs and pinout; only the lead finish differs. | high |
 | [OP275](families/OP275.md) | Package / assembly | Analog Devices | 2007 onward (PCN 07_0024; the Rev. | An assembly-material change. | low - die design, pinout and data sheet are unchanged; only materials changed. | low |
 | [OP275](families/OP275.md) | Package / assembly | Analog Devices | RoHS transition (date not confirmed) | Lead-free ordering codes replaced the leaded GP and GS codes. | low - the ordering code differs, but the pinout and data sheet are the same. | medium |
+| [OPA1611](families/OPA1611.md) | Package / assembly | Texas Instruments | PCN# 20260223007.1 dated 24 Feb 2026; estimated sample… | TI PCN# 20260223007.1, 'Add Cu as Alternative Wire Base Metal for Selected Device(s)', qualifies Cu as an additional bond-wire option 'to align with world… | low - assembly-material option only; same die, pinout and datasheet | high |
+| [OPA827](families/OPA827.md) | Package / assembly | Texas Instruments | PCN#20240628012.1 dated 28 Jun 2024; sample requests until… | TI PCN#20240628012.1, 'Qualification alternate Mount & Mold Compound material for select devices', lists OPA827AID among several op-amp and reference devices. | low - assembly-material change only; no datasheet, die or pinout change | medium |
+| [OPA828](families/OPA828.md) | Package / assembly | Texas Instruments | October 2022 (preview, SBOS671C) / December 2022… | A package extension, not a documented die change. | low - different footprints, suffixes and markings mean the parts cannot be confused. | medium |
 | [uPC4570](families/uPC4570.md) | Package / assembly | Renesas Electronics (ex-NEC) | PCN RL-BB-23-0058 (2023; | Renesas added, then transferred, the back-end factory for its general-purpose linear IC SOP products, including the uPC4570 SOP8. | low - same die and footprint. | medium |
 | [MUSES03](families/MUSES03.md) | Lifecycle | Nisshinbo Micro Devices (ex-New JRC) | Launched March 2017 (vendor news 2017-03-24). | Nisshinbo discontinued the MUSES03 JFET-input single. | medium - the vendor names no drop-in replacement, remaining stock is finite, and auction… | medium |
+| [OPA604](families/OPA604.md) | Lifecycle | Texas Instruments | EOL stated by TI engineers on E2E by about 2019-2020… | The OPA2604 dual was discontinued (TI E2E: 'OPA2604 has EOL status'). | medium - the dual is no longer made; the OPA604 needs a two-package adapter, and… | high |
+| [OPA627](families/OPA627.md) | Lifecycle | Texas Instruments | 2024 (TI E2E thread 1386960, 'Is the OPA627AU end of life?') | Temporary supply suspension of the OPA627AU while the family moved to the 2024-2025 documentation (and likely silicon) described above. | medium - the AU supply was interrupted, and TI's suggested replacement is a different die | medium |
 | [AD797](families/AD797.md) | Lifecycle | Analog Devices | May 2010 (PDN 10_0081, the 'May 2010 ADI Corporate… | PDN 10_0081 is ADI's formal notice for the May 2010 corporate obsolescence round, and most models on it are Pb-plated. | low - lifecycle notice only. | low |
+| [LME49720](families/LME49720.md) | Lifecycle | Texas Instruments | c.2015-2016: EOL/lifebuy notices (LM4562/LME49720 TO-99… | TI discontinued select devices sourced from GFAB because the Greenock site was closing (PDN 20170721000C). | low: discontinuance only. | high |
+| [LM6171](families/LM6171.md) | Lifecycle | Texas Instruments | PDN 20230906005 (rev .3), 2023. | TI PDN 20230906005.3, 'Discontinuance of Select Devices', includes LM6171BIM, with LM6171AIMX/NOPB recommended as the pin-to-pin replacement. | low: grade discontinuance only. | medium |
 | [LM833](families/LM833.md) | Lifecycle | onsemi | Date not captured; listed as obsolete in current (2026)… | A search summary of the onsemi/Octopart listings reports that onsemi's through-hole LM833N (PDIP-8) is obsolete while SOIC variants such as LM833DR2G stay… | low - availability issue only. | low |
 | [MUSES05](families/MUSES05.md) | Lifecycle | Nisshinbo Micro Devices | General sale began February 2022. | The vendor documents a halt and a restart under the same part number. | low - same part number, package and datasheet Ver.1.0, and the vendor describes it as a… | medium |
 | [NJM2114](families/NJM2114.md) | Lifecycle | Nisshinbo Micro Devices (ex-New JRC) | Reported 7 April 2023 (foxtango101 blog) | A Japanese audio blog ('悲報？日清紡マイクロデバイス（旧JRC）の幾つかのオペアンプが保守品（生産中止予定品）に指定されてしまう') reports that Nisshinbo designated several ex-JRC op-amps as maintenance… | low - no silicon change, only a future availability risk. | low |
 | [NJM4556](families/NJM4556.md) | Lifecycle | Nisshinbo Micro Devices (ex-New JRC) | Reported as a maintenance product (保守品) on 7 April 2023… | This merges the blog's maintenance-list report with the vendor datasheet notice. | low - no silicon change, only an availability risk for the DIP8/SIP8 packages. | high |
 | [4558](families/4558.md) | Lifecycle | Nisshinbo Micro Devices (ex-New JRC) | 2020s (exact discontinuance date not captured) | Distributors list the classic DIP-8 NJM4558D ('JRC4558D') as discontinued/end-of-life, with remaining stock only. | low - availability issue only. | medium |
+| [OPA111](families/OPA111.md) | Lifecycle | Texas Instruments | OPA2111: about 2019 (TI E2E thread 808890, 'OPA2111:… | OPA2111 was discontinued after about 26 years of production, and the OPA111 single is also obsolete. | low - discontinuance only; no same-part-number silicon change | high |
 | [AD823](families/AD823.md) | Renumbering / successor | Analog Devices | 2012 (AD823A data sheet Rev. | ADI created a materially different die under a near-identical name, and it sits alongside the original rather than replacing it. | medium - same dual SOIC pinout and 3-36 V supply, but there is no DIP version, so DIP… | high |
 | [TL07x](families/TL07x.md) | Renumbering / successor | Texas Instruments | Oct 2020 (SLOS080O, preview); production TL072H Jun 2021… | TI's 'next-generation' TL07x: a new die on a 'modern process', sold under H-suffixed orderables within the TL07x datasheet. | medium: signal pinout is identical for the dual and quad, but the noise doubles and the… | high |
 | [LM833](families/LM833.md) | Renumbering / successor | Texas Instruments (ex-National… | After TI acquired National in 2011. | TI renamed National's LM833 to LM833-N to separate it from TI's own LM833 (SLOS481), which is a different die. | low - naming change only. | high |
@@ -119,6 +117,7 @@
 | [NE5532](families/NE5532.md) | Folklore (unconfirmed) | Signetics / Philips | About 2000 (change from pad-printed to laser marking; the… | Japanese blogs (radiokits.jp, takinx) report that later laser-marked Philips parts behave differently at the input-protection diodes, and that many did not… | low - no documented spec change; folklore. | low |
 | [NE5534](families/NE5534.md) | Folklore (unconfirmed) | Signetics / Philips | About 2000 (claimed) | Japanese blogs (radiokits.jp, takinx.dcnblog.jp) claim the Signetics masters were lost in the 2000 Philips Albuquerque fab fire and that Philips redrew the… | low - no documented datasheet change; unverified folklore. | low |
 | [4558](families/4558.md) | Folklore (unconfirmed) | JRC / NJR (glossy Japan-made vs matte… | Glossy parts from earlier (1980s-era) Japanese production;… | Jazzcaster, a Japanese hobbyist site, says glossy JRC4558D/DD parts were made at JRC's Saga plant in Kyushu and matte parts are overseas production; the… | low - same part number, pinout and ratings. | low |
+| [OPA627](families/OPA627.md) | Folklore (unconfirmed) | Burr-Brown -> Texas Instruments | after 2000 (TI acquisition); exact transfer date unknown | Soomal (2016) ranks Taiwan-made parts second only to US-made, and ahead of SE-Asian-made. | low - same pinout and specs; the practical risk is that 'vintage BB' listings attract… | low |
 
 ## Details
 
@@ -201,6 +200,28 @@ TI moved its own LF353 from Sherman to RFAB on a new die. On E2E (1512001), TI s
 - [ti.com/lit/ds/slos012c/slos012c.pdf](https://www.ti.com/lit/ds/slos012c/slos012c.pdf)
 - [ti.com/product/LF353](https://www.ti.com/product/LF353)
 
+### LM6171 / LM6172 (National high-speed low-distortion voltage-feedback op-amp, single/dual): Die redesign, Texas Instruments, PCN 20241217001.1 issued 2024-12-18; proposed first ship…
+
+*When:* PCN 20241217001.1 issued 2024-12-18; proposed first ship 2025-03-18
+
+TI qualified FFAB (Freising) with the BICOMHD process (FR-BIP-1, 200 mm) for the LM6172, alongside the original National DL-LIN VIP3 process (150 mm). The die changed as a result. This is part of TI's exit from 150 mm fabs. The same part number now covers two different silicon builds on different bipolar processes.
+
+**How to tell old from new:** New material goes with datasheet SNOS792E (the previous revision was D). Per the PCN, TI Melaka and TI Mexico assembly differ in lead finish (matte Sn vs NiPdAu), mount and mold compound, and pin-1 designator (notch vs dimple). The site-to-feature mapping should be read from the PCN. These features show only the assembly site, not the fab. Because FFAB is added rather than replacing DL-LIN, old (VIP3) and new (BICOMHD) die can ship under the same orderable. Parts with date codes from 2025 onward are the ones at risk. Whether the LM6171 single is covered by this PCN was not confirmed.
+
+| Parameter | Before | After |
+|---|---|---|
+| Fab / process | DL-LIN VIP3, 150 mm wafers | FR-BIP-1 (FFAB) BICOMHD, 200 mm wafers (added) |
+| Die | Original National VIP3 die | Changed die (per the PCN summary) |
+| Assembly site | TI Melaka | TI Melaka or TI Mexico (added), with different lead finish, mold/mount compound and pin-1 mark |
+| Datasheet | SNOS792D (Mar 2013) | SNOS792E (Dec 2024); electrical-table changes not captured |
+
+**Audio impact:** Unknown. A new bipolar process and die can change noise, distortion, slew and phase margin. All LM6172 listening impressions predate 2025 and refer to VIP3 silicon. Rollers should not assume new stock sounds or behaves the same, especially in the layout-sensitive, socketed builds this part is known for.
+
+**Verification:** This entry was not from the sweep and was kept as adversarially checked by an earlier pass. Two extra WebSearches did not surface the PCN 20241217001 text or show whether LM6171 is included. Search snippets of the current LM6172 datasheet still describe the part as VIP III, so check the SNOS792E revision history for the BICOMHD note.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20241217001.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6025/PCN20241217001.1.pdf)
+- [ti.com/lit/ds/symlink/lm6172.pdf](https://www.ti.com/lit/ds/symlink/lm6172.pdf)
+
 ### LM833 / LM833-N (LM837 quad): Die redesign, Texas Instruments, Process-migration PCN 20231114002.1 dated 15 Nov 2023;…
 
 *When:* Process-migration PCN 20231114002.1 dated 15 Nov 2023; search summaries say it lists LM833DR. SFAB closure was planned for 2024-2025. TI confirmed the die merge on E2E (thread 1652528), and it was publicised in June-July 2026 (Hackaday 3 Jun 2026, Headphonesty Jul 2026).
@@ -276,6 +297,89 @@ TI moved the RC4558 to RFAB under PCN 20240723003 and then rewrote its datasheet
 - [uk.rs-online.com/web/p/op-amps/6609969](https://uk.rs-online.com/web/p/op-amps/6609969)
 - [jameco.com/Jameco/Products/ProdDS/251125.pdf](https://www.jameco.com/Jameco/Products/ProdDS/251125.pdf)
 - [components101.com/sites/default/files/…Purpose%20Op-Amp.pdf](https://components101.com/sites/default/files/component_datasheet/Datasheet%20of%20RC4558%20Dual%20General%20Purpose%20Op-Amp.pdf)
+
+### OPA132 / OPA2132 / OPA4132 (Burr-Brown/TI high-speed FET-input, SoundPlus): Die redesign, Texas Instruments, Datasheet SBOS054C, August 2024; confirmed in TI E2E…
+
+*When:* Datasheet SBOS054C, August 2024; confirmed in TI E2E thread 1517005 (about 2025). The first ship date and date code of new-fab lots are not established.
+
+TI moved the OPA132 to a new fab and design. A TI E2E engineer says the trim function 'has been eliminated in the new FAB change and design', with trim removed for all package types 'due to improved process'. Per a diyAudio thread on the 2024 datasheets, OPA130, OPA131, OPA134 and the molded-package OPA627 got the same Offset Trim -> NC change, while the TO-99 OPA627, OPA604 and TL071 keep trim.
+
+**How to tell old from new:** SBOS054C or later shows OPA132 pins 1/8 as NC, and an offset-null pot on them has no effect. Burr-Brown-logo parts, and TI lots documented by SBOS054B or earlier, are the old die. Part numbers and orderables are unchanged, and no marking identifies the die revision; the date code is only a rough indicator. No public PCN number or date-code cutover was found: per the E2E/diyAudio discussion, PCNs went mainly to direct TI customers.
+
+| Parameter | Before | After |
+|---|---|---|
+| OPA132 pin 1 / pin 8 function | Offset Trim | NC (no internal connection) |
+| Other electrical specs (Vos, noise, SR, THD, Iq, ESD) | SBOS054B values | not retrieved; compare the SBOS054B and SBOS054C tables |
+
+**Audio impact:** Undocumented. It is a different die from the Burr-Brown-era silicon that earned the reputation, so impressions of vintage parts may not carry over. DC-coupled designs that nulled offset with a pot on pins 1/8 lose that adjustment.
+
+**Verification:** WebSearch confirmed the E2E quote that trim 'has been eliminated in the new FAB change and design' and the diyAudio list of sibling parts that went to NC. No OPAx132 PCN number was found.
+
+- [e2e.ti.com/support/audio-group/audio/f…om-offset-trim-to-nc](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1517005/opa132-changed-opa132-pin-1-and-pin-8-from-offset-trim-to-nc)
+- [diyaudio.com/community/threads/opa132-…rim-terminal.418419/](https://www.diyaudio.com/community/threads/opa132-opa627-and-other-ti-bb-op-amps-no-longer-have-an-offset-trim-terminal.418419/)
+- [ti.com/lit/ds/symlink/opa132.pdf](https://www.ti.com/lit/ds/symlink/opa132.pdf)
+
+### OPA134 / OPA2134 / OPA4134 (Burr-Brown SoundPlus FET-input audio op-amp): Die redesign, Texas Instruments, PCN 20231219018.1 (fab move, Dec 2023);
+
+*When:* PCN 20231219018.1 (fab move, Dec 2023); SBOS058B (about Aug 2024, current PDF Nov 2024); PCN 20240902002.1 (3 Sep 2024). New-die parts confirmed with 2025 date codes (TI E2E 1626121, March 2026).
+
+TI moved the OPAx134 die to a new wafer fab under the same part numbers as part of its exit from 150 mm fabs. The new die has no external offset-trim function (internal laser trim), updated ESD structures, and revised datasheet specs. TI says moving fabs always shifts performance somewhat and that the datasheet now reflects the actual device. TI E2E attributes in-circuit-test and functional failures on 2025 date-code parts most likely to the new ESD structures. Hackaday (Jun 2026), diyAudio and Gearspace criticise the change and TI's 'no impact' wording.
+
+**How to tell old from new:** Part number unchanged, no suffix. TI's internal die revision goes from A to B (per the PCN), but no marking difference is documented. Datasheet SBOS058B or later = new die (OPA134 pins 1/8 NC); SBOS058A or earlier = old die with trim. TI E2E: the practical way to tell is measurement (offset; pin impedance / ESD-diode behaviour differs between 2025 and 2018 date codes); mixed stock may ship until old inventory clears. BB-logo parts are very likely old die; TI-logo parts can be either.
+
+| Parameter | Before | After |
+|---|---|---|
+| OPA134 pins 1 and 8 | Offset trim (external nulling pot possible) | NC (do not connect); internally laser-trimmed. TI E2E says leaving an old trim network in place is harmless, while the datasheet warns not to connect. |
+| Headroom (THD+N < 0.01%) | 23.6 dBu (confirmed in datasheet search summary) | 21.3 dBu (EEVblog 1752 transcript only) |
+| Channel separation | 135 dB (EEVblog 1752) | 128 dB; 126 dB at 20 kHz (EEVblog 1752) |
+| Overload recovery time | SBOS058A value (not retrieved) | 'slightly worse' (EEVblog 1752) |
+| Input bias current spec | single-sign typical (about 5 pA, third-party) | given as +/- (EEVblog 1752; numbers not retrieved) |
+| 600 ohm load specifications | present in older sheets (implied) | apparently removed (EEVblog 1752; low confidence) |
+| Input offset voltage | +/-0.5 mV typ, +/-2 mV max (third-party library) | 1.0 mV per a third-party reading of SBOS058B (typ vs max unclear); TI product-page parametric still shows 2 mV max. Low confidence. |
+| Die revision / wafer fab | Die rev A, legacy 150 mm fab | Die rev B, new fab (PCN 20231219018.1) |
+| ESD / input protection structures | Old structure (2018 date code) | Updated ESD structures; different measured pin impedances (2025 date code) |
+
+**Audio impact:** Small on paper: about 2.3 dB less headroom before 0.01% THD+N, channel separation still very high (128 dB). No published old-vs-new THD, noise or listening comparison found. OPA134 trim circuits lose their adjustment. Japanese and Chinese hobby sources report no sonic change.
+
+**Verification:** WebSearch confirmed (via TI E2E 1429728) that PCN 20231219018.1 announced the OPAx134 fab transition with qualification reports, that PCN 20240902002.1 details the performance changes, and that the new die has no offset trim. Old-sheet 23.6 dBu headroom (11.7 Vrms) was confirmed; the new-die numbers (21.3 dBu, 128 dB) rest on the EEVblog transcript only.
+
+- [mouser.com/PCN/Texas_Instruments_PCN20…0231222025145143.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20231219018_20231222025145143.pdf)
+- [mouser.com/PCN/Texas_Instruments_Datas…ay_20240902002.1.pdf](https://www.mouser.com/PCN/Texas_Instruments_Datasheet_90_Day_20240902002.1.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20240902002.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6370/PCN20240902002.1.pdf)
+- [ti.com/lit/ds/sbos058b/sbos058b.pdf](https://www.ti.com/lit/ds/sbos058b/sbos058b.pdf)
+- [e2e.ti.com/support/audio-group/audio/f…pa134-specifications](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1450469/opa134-about-opa134-specifications)
+- [e2e.ti.com/support/audio-group/audio/f…728/opa134-about-pcn](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1429728/opa134-about-pcn)
+- [e2e.ti.com/support/audio-group/audio/f…nce---date-code-2025](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1626121/opa134-internal-die-difference---date-code-2025)
+- [hackaday.com/2026/06/03/texas-instrume…compatible-versions/](https://hackaday.com/2026/06/03/texas-instruments-changes-the-ne5532-and-others-into-incompatible-versions/)
+- [diyaudio.com/community/threads/ti-chan…ys-no-impact.441303/](https://www.diyaudio.com/community/threads/ti-changed-ne5532-and-opa134-for-the-worse-and-says-no-impact.441303/)
+- [gearspace.com/board/geekzone/1464976-h…opax134-lhm6518.html](https://gearspace.com/board/geekzone/1464976-headsup-ti-has-changed-ne5532-k-version-2024-gt-opax134-lhm6518.html)
+- [youtube.com/watch?v=22ZmmZ67SMY](https://www.youtube.com/watch?v=22ZmmZ67SMY)
+- [github.com/frankie-eight-days/eevblog-…ripts/22ZmmZ67SMY.md](https://github.com/frankie-eight-days/eevblog-wiki/blob/8f04e3ddd3972c58bd354a5c9adffa92e4b63b45/transcripts/22ZmmZ67SMY.md)
+- [github.com/dshills/KiCadAI/blob/101a96…enance/registry.json](https://github.com/dshills/KiCadAI/blob/101a96fd1bf095a4b82727508f0a1e72177bc3f7/data/model-provenance/registry.json)
+- [github.com/aklofas/kicad-happy-testhar…ants_verification.md](https://github.com/aklofas/kicad-happy-testharness/blob/8bae5a0c5a74d2d41366f0a9ee4f9cfa12b2a043/reference/spice_constants_verification.md)
+
+### OPA627 / OPA637 (Burr-Brown Difet precision JFET single; OPA637 decompensated, G>=5): Die redesign, Texas Instruments, SBOS165B (April 2024) / SBOS165C (January 2025, OPA627BU…
+
+*When:* SBOS165B (April 2024) / SBOS165C (January 2025, OPA627BU moved from preview to production); after June 2022, when TI models still cited Rev A
+
+TI's 2024-2025 rewrite deleted all 'Difet' references, added a B-grade SOIC (OPA627BU), and turned the molded packages' offset-trim pins into NC. For the sister OPA132, TI E2E 1517005 attributes the same change to a 'new FAB change and design'; the diyAudio thread says trim is no longer functional from Rev C because the parts are made with higher precision (one poster speculates the pads are simply no longer bonded). This points to a new die or process under the same part numbers, but TI has not confirmed a silicon change for the OPA627 specifically and no PCN was found.
+
+**How to tell old from new:** New documentation is SBOS165B/C, titled 'OPA6x7 Precision, High-Speed JFET Operational Amplifiers'. In the current pin table, molded-package pins 1/5 are NC, and external offset trim is documented for TO-99 only. The OPA627BU orderable exists only from 2024-2025. No PCN or date-code cut-over was found; BB-logo and pre-2024 TI parts keep functional trim pins.
+
+| Parameter | Before | After |
+|---|---|---|
+| Pins 1/5 (SOIC/DIP) | Offset Trim (SBOS165A) | NC; trim documented for TO-99 only (SBOS165B/C) |
+| Process description | Precision High-Speed Difet | Precision, High-Speed JFET (Difet references deleted) |
+| SOIC grades | AU only | AU and BU (BU production data in Rev C, Jan 2025) |
+
+**Audio impact:** Unknown. No before/after measurements were found. Circuits that null offset through pins 1/5 lose that adjustment on new molded parts. Impressions formed on Burr-Brown-era parts may not carry over.
+
+**Verification:** WebSearch confirmed the Rev B (Apr 2024) to Rev C (Jan 2025) history, the deleted Difet references, BU going to production, and (via diyAudio) molded pins 1/5 now NC with trim only on TO-99. The die change itself remains inferred from the OPA132 sister part.
+
+- [ti.com/lit/ds/symlink/opa627.pdf](https://www.ti.com/lit/ds/symlink/opa627.pdf)
+- [diyaudio.com/community/threads/opa132-…rim-terminal.418419/](https://www.diyaudio.com/community/threads/opa132-opa627-and-other-ti-bb-op-amps-no-longer-have-an-offset-trim-terminal.418419/)
+- [e2e.ti.com/support/audio-group/audio/f…om-offset-trim-to-nc](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1517005/opa132-changed-opa132-pin-1-and-pin-8-from-offset-trim-to-nc)
+- [cimarrontechnology.com/wp-content/uploads/2021/06/opa627.pdf](https://www.cimarrontechnology.com/wp-content/uploads/2021/06/opa627.pdf)
 
 ### TL071 / TL072 / TL074 (incl. TL07xH next-gen die): Die redesign, Texas Instruments, PCN 20220615003.1, dated 16 Jun 2022 (samples until 16 Jul…
 
@@ -726,6 +830,33 @@ TI issued a PCN with a qualification report for 'FFAB BIFET Technology Qualifica
 
 - [farnell.com/datasheets/2674716.pdf](https://www.farnell.com/datasheets/2674716.pdf)
 
+### LM4562 / LME49720 / LME49710 / LME49740 (National ultra-low-distortion bipolar audio op-amps): Fab / process transfer, Texas Instruments, PCN 20180308002 dated 2018-03-09 (proposed first ship…
+
+*When:* PCN 20180308002 dated 2018-03-09 (proposed first ship 2018-06-09). Reissued as PCN 20180308002-001 dated 2018-03-26 (proposed first ship 2018-09-26). Stock from the new fab reached distribution around early 2019.
+
+PCN 20180308002 is titled 'Transfer of select VIP3 devices from GFAB to DFAB (DL-LIN) Wafer Fab site'. It moved LM4562/LME49720 wafer fabrication from TI Greenock, Scotland (closing) to TI Dallas DL-LIN, keeping the same VIP3 bipolar process family. The move brought the parts back to Active after c.2015-2017 EOL and lifebuy scares. The diyAudio thread on it is titled 'LM4562 (aka LME49720) Fab moved from GB to US'. Forum posters also report a sharp price drop in early 2019. The PCN text found describes a fab-site transfer only. No die redesign and no datasheet change is documented. An earlier-pass claim of an SFAB-to-RFAB die-shrink redesign was a conflation with the NE5532-family PCN and has been removed (see dropped).
+
+**How to tell old from new:** The part number and marking are unchanged, so only the lot or date code identifies the fab. diyAudio posters say that date codes from 2019 onward come from the new Dallas fab. They also say lots starting 'JR' were fabbed in Greenock and assembled in Malaysia, which would mark pre-transfer stock (forum claim only). No die-revision letter or marking change was found. The PCN lists the affected orderables and first-ship dates, but the full list was not seen.
+
+| Parameter | Before | After |
+|---|---|---|
+| Wafer fab site | GFAB (TI Greenock, Scotland; ex-National) | DFAB / DL-LIN (TI Dallas, TX) |
+| Process | VIP3 (National complementary bipolar) | VIP3 (same process family, per the PCN title) |
+| Wafer diameter (unresolved) | 150 mm / 6-inch (per diyAudio posters) | 200 mm / 8-inch per diyAudio posters and one search summary of the PCN. However, TI's LM6172 PCN 20241217001.1 describes DL-LIN VIP3 as a 150 mm line, so this is not confirmed. |
+| Datasheet electrical limits | SNAS326K (Dec 2013) / SNAS393D (Nov 2016) | No datasheet revision tied to the PCN was found, so there is no published spec delta. |
+
+**Audio impact:** No published spec change. No old-vs-new measurement comparison was found. One diyAudio report says 2019+ date-code parts from the new fab have not shown the popcorn (burst) noise seen in some earlier LM4562 lots. This is anecdotal, not systematically tested, and is plausibly a fab-cleanliness effect. Claims that LM4562 and LME49720 sound different are folklore: they are the same die under two part numbers (Hackaday 2026), and many such claims predate the transfer.
+
+**Verification:** Two WebSearches confirmed the PCN 20180308002 title ('Transfer of select VIP3 devices from GFAB to DFAB (DL-LIN)') and the -001 first ship date of 2018-09-26. The wafer-size change is unconfirmed because the sources conflict. Four searches for an LM4562-specific SFAB-to-RFAB or 2024-2025 PCN found nothing, so the pass-1 and completeness-sweep entries were merged into this one.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…4/PCN20180308002.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/754/PCN20180308002.pdf)
+- [mouser.com/PCN/Texas_Instruments_PCN20…2018032619395130.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20180308002_2018032619395130.pdf)
+- [diyaudio.com/community/threads/lm4562-…rom-gb-to-us.326045/](https://www.diyaudio.com/community/threads/lm4562-aka-lme49720-fab-moved-from-gb-to-us.326045/)
+- [diyaudio.com/forums/parts/326045-lm456…20-fab-moved-gb.html](https://www.diyaudio.com/forums/parts/326045-lm4562-aka-lme49720-fab-moved-gb.html)
+- [e2e.ti.com/support/audio-group/audio/f…720---eol-really-why](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why)
+- [diyaudio.com/community/threads/lme4972…lm4562.107344/page-7](https://www.diyaudio.com/community/threads/lme49720-vs-lm4562.107344/page-7)
+- [hackaday.com/2026/06/03/texas-instrume…compatible-versions/](https://hackaday.com/2026/06/03/texas-instruments-changes-the-ne5532-and-others-into-incompatible-versions/)
+
 ### LM833 / LM833-N (LM837 quad): Fab / process transfer, onsemi (ON Semiconductor, ex-Motorola), Initial PCN 11528 issued 19 July 2001
 
 *When:* Initial PCN 11528 issued 19 July 2001
@@ -775,6 +906,25 @@ PCN 10_0062 states that the OP249 was transferred to ADI's ADWIL (Wilmington) wa
 **Verification:** A search on PCN 10_0062 confirmed the background: 'The transfer of the OP249 to the ADWIL wafer fab identified the product to have more Vos variation'. Split out as its own fab-transfer event.
 
 - [analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_Form.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_Form.pdf)
+
+### OPA132 / OPA2132 / OPA4132 (Burr-Brown/TI high-speed FET-input, SoundPlus): Fab / process transfer, Texas Instruments, Presumably the same 2024 fab change (SBOS054C); unconfirmed
+
+*When:* Presumably the same 2024 fab change (SBOS054C); unconfirmed
+
+SBOS054C covers all three parts, and TI calls the OPA132 change a 'new FAB change and design'. No retrieved source says whether the dual and quad dies also moved.
+
+**How to tell old from new:** No functional tell: the dual and quad never had trim pins. A post-2024 TI date code is the only likely indicator (unconfirmed).
+
+| Parameter | Before | After |
+|---|---|---|
+| Die / fab | Burr-Brown-era process | possibly the new TI fab (unconfirmed) |
+
+**Audio impact:** Unknown. If it applies, current OPA2132PA stock (the CMoy favourite) is not the silicon behind its reputation.
+
+**Verification:** Three WebSearches (OPA2132 PCN/fab/new die, E2E OPA2132 fab change, candidate TI PCN numbers) found no PCN or TI statement covering OPA2132/OPA4132. Unconfirmed, so kept at low confidence.
+
+- [ti.com/lit/ds/symlink/opa2132.pdf](https://www.ti.com/lit/ds/symlink/opa2132.pdf)
+- [e2e.ti.com/support/audio-group/audio/f…om-offset-trim-to-nc](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1517005/opa132-changed-opa132-pin-1-and-pin-8-from-offset-trim-to-nc)
 
 ### OPA227 / OPA228 (OPA2227 / OPA2228 / OPA4227 / OPA4228): Fab / process transfer, Texas Instruments, TI E2E thread 1360546 (c. 2024) cites PCN 20230306000.1…
 
@@ -1157,6 +1307,27 @@ The ST second-source die has its own spec set, which differs on paper from the T
 - [uk.rs-online.com/web/p/op-amps/1656766](https://uk.rs-online.com/web/p/op-amps/1656766)
 - [github.com/bandrews/whichpart/blob/HEA…/components/C6961.md](https://github.com/bandrews/whichpart/blob/HEAD/basicpart/content/components/C6961.md)
 
+### OPA604 / OPA2604 (Burr-Brown FET-input, low-distortion audio op-amp): Datasheet respec, Texas Instruments, c. 2015-2016 (TI 'Non-conforming' form quoted in the…
+
+*When:* c. 2015-2016 (TI 'Non-conforming' form quoted in the diyAudio thread 'OPA2604 is dead', 24 Aug 2016). Datasheet SBOS006A (Dec 2015) still specifies ±4.5 to ±24 V.
+
+Unannounced supply derating under the same part number. TI told customers that the OPA2604 no longer supports ±24 V and must be constrained to ±20 V: at ±24 V, parts showed large long-term offset drift and increased supply current, thought to be thermal (the dual runs hot). A TI E2E answer gives the same reason for the later discontinuation: performance could not be guaranteed near the published ±24 V limit because of heat and package dissipation. Whether a die or process change caused it is not known.
+
+**How to tell old from new:** No marking, datasheet or PCN change. The derating was communicated through a TI non-conformance form, not a datasheet revision. Affected date codes are unknown; late TI-logo lots are the suspect population. Per diyAudio, the OPA604 single does not have the thermal problem.
+
+| Parameter | Before | After |
+|---|---|---|
+| Maximum operating supply (OPA2604) | ±24 V (PDS-1069E, SBOS006, SBOS006A) | ±20 V (non-conformance constraint; never printed in a datasheet) |
+| Behaviour at ±24 V | Fully specified (PSRR spec covers ±5 to ±24 V) | Reported long-term large offset drift and increased Iq |
+
+**Audio impact:** Only high-rail designs (±20 to ±24 V pro-audio line stages, some DIY amps) are at risk: offset drift and extra heat. Typical ±15 V op-amp rolling is unaffected; distortion and noise at compliant supplies are unaffected.
+
+**Verification:** Merged two reports. WebSearch confirmed that diyAudio quotes a TI 'Non-conforming' form (OPA2604 must be constrained to ±20 V, offset drift and extra current at ±24 V) and that a TI E2E answer cites heat near ±24 V as the EOL reason; no PCN, datasheet revision or die/process evidence was found.
+
+- [diyaudio.com/community/threads/opa2604-is-dead.295854/](https://www.diyaudio.com/community/threads/opa2604-is-dead.295854/)
+- [e2e.ti.com/support/amplifiers-group/am…m/766644/opa2604-eol](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/766644/opa2604-eol)
+- [e2e.ti.com/support/amplifiers-group/am…au-2k5-pcn-available](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/953479/status-of-the-opa2604au-2k5-pcn-available)
+
 ### LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): Datasheet respec, National Semiconductor, between the 1980 databook and the August 2000 DS005649…
 
 *When:* between the 1980 databook and the August 2000 DS005649 (new-format DS005649 first dated April 1998 per TI SNOSBH3F)
@@ -1262,6 +1433,50 @@ No silicon change is known. The only TI notice found is a datasheet-only specifi
 
 - [farnell.com/datasheets/2721178.pdf](https://www.farnell.com/datasheets/2721178.pdf)
 - [scribd.com/document/394624916/sbos566c](https://www.scribd.com/document/394624916/sbos566c)
+
+### OPA827 (single low-noise precision JFET-input): Datasheet respec, Texas Instruments, SBOS376G, 2012 (the prior pass gives February 2012; the…
+
+*When:* SBOS376G, 2012 (the prior pass gives February 2012; the Rev G document is copyright 2006-2012). Rev F was March 2009.
+
+At Rev G the datasheet moved from Mixed Status to Production Data. TI changed the input bias current and input offset drift Features bullets and the drift/bias text in the Description, and deleted the planned high-grade option (and its footnote) from the ordering table. Offset, drift and bias limits were set, and SR and short-circuit current minimums were added. This was a datasheet change, most likely final characterisation. No PCN or die change was found, so it is a spec hazard, not a confirmed silicon change.
+
+**How to tell old from new:** None known on the part. Parts sold before 2012 were sold against the Rev F (Mixed Status) and earlier specs.
+
+| Parameter | Before | After |
+|---|---|---|
+| Product status | Mixed Status (preview grade included) | Production Data |
+| High-grade ordering option | listed in Package/Ordering table (Rev F) | deleted (Rev G) |
+| Input offset voltage / drift / Ib limits | Rev F values (not retrieved); Features bullets differed | Rev G+: 150 uV max, 2.0 uV/°C max, ±10 pA max at 25 °C |
+| Slew rate minimum | not specified | 20 V/us |
+| Short-circuit current minimum | not specified | ±55 mA |
+
+**Audio impact:** Negligible for audio. It matters only for DC-precision designs that relied on preview limits or the dropped high grade.
+
+**Verification:** WebSearch found the Rev G revision history (Mixed Status to Production Data, Ib/drift bullets changed, high-grade option deleted; Rev F = March 2009), which confirms a datasheet-only respec. Confidence raised from low to medium; the exact Rev F limits were not retrieved.
+
+- [datasheet.octopart.com/OPA827AID-Texas…tasheet-10745194.pdf](https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-10745194.pdf)
+- [github.com/ep092/server_lader/blob/mas…plifier%20OPA827.pdf](https://github.com/ep092/server_lader/blob/master/Datenbl%C3%A4tter/Operational%20Amplifier%20OPA827.pdf)
+- [ti.com/product/OPA827](https://www.ti.com/product/OPA827)
+
+### OPA828 / OPA2828 (45 MHz, 150 V/us SiGe JFET-input, "next-generation OPA627/OPA827"): Datasheet respec, Texas Instruments, November 2022 (PCN20221117006), coinciding with SBOS671C…
+
+*When:* November 2022 (PCN20221117006), coinciding with SBOS671C (Oct 2022) / SBOS671D (Dec 2022)
+
+'Same part number, different datasheet' hazard, not a die change. TI's PCN20221117006 announced a specification change for the SOIC OPA828ID/IDR 'to accurately reflect device characteristics', with no expected impact on fit, form, function, quality or reliability and no device change. SOIC limits in Rev C/D therefore differ from Rev B in at least one parameter, which was not identified in this pass. A 2019 TI E2E thread titled 'OPA828: Output swing specification disagrees with datasheet figures' may be related (unconfirmed).
+
+**How to tell old from new:** No marking or orderable change: TI states there are no changes to product identification. Parts cannot be told apart physically. Only the datasheet revision differs: SBOS671B (Dec 2018) or earlier gives the old limits; SBOS671C/D gives the revised limits.
+
+| Parameter | Before | After |
+|---|---|---|
+| OPA828ID/IDR datasheet limits (specific parameters not identified) | SBOS671B (Dec 2018) values | SBOS671C/D values per PCN20221117006 |
+
+**Audio impact:** None expected: the silicon is unchanged, and noise, GBW, slew rate and THD+N typicals appear the same in the Rev-B-era text and Rev D. The only practical risk is a design-margin check against old Rev B limits.
+
+**Verification:** WebSearch confirmed that DigiKey hosts PCN20221117006 covering OPA828ID/OPA828IDR. The specific revised parameter was still not identified.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20221117006.0.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5336/PCN20221117006.0.pdf)
+- [mouser.com/PCN/Texas_Instruments_PCN20…2022111813034746.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20221117006_2022111813034746.pdf)
+- [e2e.ti.com/support/amplifiers-group/am…th-datasheet-figures](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/801601/opa828-output-swing-specification-disagrees-with-datasheet-figures)
 
 ### THS4032 (TI dual high-speed low-noise voltage-feedback op-amp): Datasheet respec, Texas Instruments, Between SLOS224C (Apr 2000) and the current new-format…
 
@@ -1687,6 +1902,72 @@ Lead-free ordering codes replaced the leaded GP and GS codes. Distributors list 
 - [octopart.com/part/analog-devices/OP275GPZ](https://octopart.com/part/analog-devices/OP275GPZ)
 - [digikey.com/en/products/detail/analog-…-inc/OP275GSZ/625165](https://www.digikey.com/en/products/detail/analog-devices-inc/OP275GSZ/625165)
 
+### OPA1611 / OPA1612 (TI SoundPlus bipolar-input, 1.1 nV/√Hz single/dual): Package / assembly, Texas Instruments, PCN# 20260223007.1 dated 24 Feb 2026; estimated sample…
+
+*When:* PCN# 20260223007.1 dated 24 Feb 2026; estimated sample availability 25 Apr 2026; proposed first ship 25 May 2026
+
+TI PCN# 20260223007.1, 'Add Cu as Alternative Wire Base Metal for Selected Device(s)', qualifies Cu as an additional bond-wire option 'to align with world technology trends and use wiring with enhanced mechanical properties'. It has 60-day acknowledgment and sample-request windows. It is not a fab, process or die revision, so it is not a silicon change for OPA1612. No other OPA1611/OPA1612 PCN (fab, die or datasheet) was found.
+
+**How to tell old from new:** Same part number, same die and datasheet (SBOS450C unchanged). This is an assembly-material change that adds Cu as an alternative bond-wire metal, staying at the current assembly facility with piece-part changes. No external marking cue is documented, so lots shipped after about 25 May 2026 may carry either wire metal. OPA1612AID was seen in the product-affected list, which is mixed (roughly 40 devices: OPA2187, OPA2210, OPA4140, INA18x/INA8xx, DACx0004, TLV417x, TPS65910; SOIC, TSSOP and QFN). OPA1611 orderables and other OPA1612 orderables were not confirmed on the list.
+
+| Parameter | Before | After |
+|---|---|---|
+| Bond wire metal | existing wire metal (Au presumed, not verified) | Cu added as an alternative bond wire |
+| Die / fab / datasheet | unchanged | unchanged |
+
+**Audio impact:** Negligible. A bond-wire metal option does not change the op-amp's electrical design, and no datasheet revision followed as of Sep 2026. Claims of an audible difference would be anecdotal.
+
+**Verification:** Merged three reports of the same PCN. WebSearch confirmed the title and 24 Feb 2026 date via Mouser and Farnell copies; OPA1611 inclusion was not independently confirmed, and a search for OPA161x fab or die-revision PCNs only turned up generic RFAB/FFAB PCNs with no OPA161x listing seen.
+
+- [mouser.com/PCN/Texas_Instruments_PCN20…7.1_Notification.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20260223007.1_Notification.pdf)
+- [farnell.com/datasheets/4748188.pdf](https://www.farnell.com/datasheets/4748188.pdf)
+
+### OPA827 (single low-noise precision JFET-input): Package / assembly, Texas Instruments, PCN#20240628012.1 dated 28 Jun 2024; sample requests until…
+
+*When:* PCN#20240628012.1 dated 28 Jun 2024; sample requests until 28 Jul 2024; proposed first ship 26 Sep 2024
+
+TI PCN#20240628012.1, 'Qualification alternate Mount & Mold Compound material for select devices', lists OPA827AID among several op-amp and reference devices. It qualifies an alternate die-attach (mount) and mold-compound material set. No die, fab or datasheet change is involved; the datasheet was not revised afterwards.
+
+**How to tell old from new:** Same part number and die. Change type is Assembly Site / Assembly Materials (alternate mount and mold compound). No marking change is documented, so post-Sep-2024 lots may use either material set. A separate claim that OPA827 is on a TI Cu-wire PCN was not confirmed.
+
+| Parameter | Before | After |
+|---|---|---|
+| Die-attach (mount) and mold compound | existing material set | alternate qualified material set added |
+
+**Audio impact:** Negligible. Mount and mold-compound changes have no datasheet-level electrical effect. Mold stress can shift precision offset slightly, but no such effect is documented.
+
+**Verification:** WebSearch identified the PCN title (alternate Mount & Mold Compound), dates and change type (Assembly Site/Materials), so it is reclassified from unknown to package-or-assembly. A search for OPA827 on TI Cu-wire PCNs found none listing it.
+
+- [farnell.com/datasheets/4381537.pdf](https://www.farnell.com/datasheets/4381537.pdf)
+- [mouser.com/PCN/Texas_Instruments_PCN_2…2.1_Notification.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN_20240628012.1_Notification.pdf)
+- [mouser.com/ProductDetail/Texas-Instrum…YDVjkY2y4BYwEw%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/OPA827AID?qs=iSMark9AYDVjkY2y4BYwEw%3D%3D)
+
+### OPA828 / OPA2828 (45 MHz, 150 V/us SiGe JFET-input, "next-generation OPA627/OPA827"): Package / assembly, Texas Instruments, October 2022 (preview, SBOS671C) / December 2022…
+
+*When:* October 2022 (preview, SBOS671C) / December 2022 (production, SBOS671D)
+
+A package extension, not a documented die change. TI added a thermally enhanced DGN package for the single and introduced the dual OPA2828 in DGN only (web-confirmed). DGN parts carry a separate, tighter DC spec set than the SOIC OPA828. TI does not say that a new die, process or fab is involved, and no DGN-specific PCN was found. The SOIC part is the same device, but its datasheet limits were revised at the same time (see PCN20221117006). Whether the DGN part uses revised silicon or only a different trim, test or package flow is unknown. AC specs (noise, GBW, slew rate, THD+N) are common to both packages.
+
+**How to tell old from new:** Orderable suffix DGN (HVSSOP-8 PowerPAD) vs D (SOIC-8). Top marking '2RAJ' (OPA828 DGN) or '2QGJ' (OPA2828 DGN) vs 'OPA828' (SOIC). The spec rows first appear in datasheet Rev C/D.
+
+| Parameter | Before | After |
+|---|---|---|
+| Vos typ / max @25C | D: +/-50 uV / +/-300 uV | DGN: +/-25 uV / +/-125 uV |
+| Vos max 0-85C / -40-125C | D: +/-350 / +/-400 uV | DGN: +/-175 / +/-200 uV |
+| Vos drift typ / max (-40 to 125C) | D: 0.45 / 1.5 uV/C | DGN: 0.2 / 0.8 uV/C |
+| Input bias and offset current typ / max @25C | D: +/-1 pA / +/-8 pA | DGN: +/-0.2 pA / +/-5 pA (front page says 0.1 pA) |
+| CMRR min / typ | D: 108 / 115 dB | DGN: 103 / 108 dB |
+| RthJA | SOIC: 121.5 C/W | DGN: 56.7 C/W (single), 49.9 C/W (dual) |
+
+**Audio impact:** Negligible for audio. The deltas are DC precision and a few dB of CMRR; noise, GBW, slew rate and THD+N are specified identically. The DGN runs cooler because of the PowerPAD. The dual needs a PowerPAD-capable adapter.
+
+**Verification:** Not re-searched (medium-confidence packaging entry, outside the priority set); deltas taken from the current TI datasheet via the prior pass. It is unknown whether DGN parts use different silicon or only a different trim, test or package flow.
+
+- [ti.com/lit/ds/symlink/opa828.pdf](https://www.ti.com/lit/ds/symlink/opa828.pdf)
+- [ti.com/product/OPA2828](https://www.ti.com/product/OPA2828)
+- [github.com/BloomTechBackend/bd-maps-pa…partstech2019-10.txt](https://github.com/BloomTechBackend/bd-maps-parts-discovery/blob/main/src/main/resources/partcatalogs/partstech2019-10.txt)
+- [github.com/stefaweb/Q17-Amplifier/blob…-LTspice/OPAx828.lib](https://github.com/stefaweb/Q17-Amplifier/blob/main/Q17-LTspice/OPAx828.lib)
+
 ### µPC4570 (NEC / Renesas ultra-low-noise dual bipolar): Package / assembly, Renesas Electronics (ex-NEC), PCN RL-BB-23-0058 (2023;
 
 *When:* PCN RL-BB-23-0058 (2023; SOP-8 samples available 25 Aug 2023) added a back-end (assembly/test) factory. PCN RL-BB-24-0007 (published 19 Jan 2024, effective 13 May 2024) then transferred SOP back-end production.
@@ -1727,6 +2008,47 @@ Nisshinbo discontinued the MUSES03 JFET-input single. A June 2024 factory-visit 
 - [nisshinbo-microdevices.co.jp/ja/about/…7/semi_20170324.html](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2017/semi_20170324.html)
 - [eleshop.jp/shop/g/gHBM121/](https://eleshop.jp/shop/g/gHBM121/)
 
+### OPA604 / OPA2604 (Burr-Brown FET-input, low-distortion audio op-amp): Lifecycle, Texas Instruments, EOL stated by TI engineers on E2E by about 2019-2020…
+
+*When:* EOL stated by TI engineers on E2E by about 2019-2020 (threads 766644 and 953479). In Aug 2016 diyAudio reported it as officially Active but effectively unobtainable (lead time over 6 months, commercial quantities only).
+
+The OPA2604 dual was discontinued (TI E2E: 'OPA2604 has EOL status'). TI suggested two OPA604 singles, or OPA2134 or OPA1656, as alternatives; diyAudio users cite OPA1688 as an official replacement. It was the only dual high-voltage JFET-input audio op-amp on the market, so no dual drop-in exists for ±20 V+ rails. No die or fab PCN beyond the supply derating was found.
+
+**How to tell old from new:** Lifecycle status only. DigiKey lists OPA2604AU/2K5 as obsolete, and OPA2604AP is widely listed as obsolete. The E2E asker noted that TI published no PCN or PDN. OPA604 (single) remains Active on ti.com.
+
+| Parameter | Before | After |
+|---|---|---|
+| OPA2604 lifecycle | Active | EOL / Obsolete (TI E2E; distributor listings) |
+
+**Audio impact:** None to the silicon. Parts sold now are old stock or possibly remarked fakes. Suggested replacements are different dies and sound or measure differently.
+
+**Verification:** Split out of the sweep entry. WebSearch confirmed a TI E2E engineer stating OPA2604 EOL, with OPA604 still Active and OPA2134/OPA1656 as alternatives. No PDN number was found, so the exact EOL date is uncertain.
+
+- [e2e.ti.com/support/amplifiers-group/am…au-2k5-pcn-available](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/953479/status-of-the-opa2604au-2k5-pcn-available)
+- [e2e.ti.com/support/amplifiers-group/am…m/766644/opa2604-eol](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/766644/opa2604-eol)
+- [digikey.com/en/products/detail/texas-i…OPA2604AU-2K5/301215](https://www.digikey.com/en/products/detail/texas-instruments/OPA2604AU-2K5/301215)
+- [ti.com/product/OPA604](https://www.ti.com/product/OPA604)
+- [audiokarma.org/forums/threads/op-amp-u…4ap-obsolete.935775/](https://audiokarma.org/forums/threads/op-amp-upgrades-opa2604ap-obsolete.935775/)
+- [diyaudio.com/community/threads/opa2604-is-dead.295854/](https://www.diyaudio.com/community/threads/opa2604-is-dead.295854/)
+
+### OPA627 / OPA637 (Burr-Brown Difet precision JFET single; OPA637 decompensated, G>=5): Lifecycle, Texas Instruments, 2024 (TI E2E thread 1386960, 'Is the OPA627AU end of life?')
+
+*When:* 2024 (TI E2E thread 1386960, 'Is the OPA627AU end of life?')
+
+Temporary supply suspension of the OPA627AU while the family moved to the 2024-2025 documentation (and likely silicon) described above. TI named OPA828ID as the recommended pin-to-pin replacement for the AU. The OPA828 is a different SiGe JFET-input die, not the same silicon.
+
+**How to tell old from new:** Status stayed Active, but TI said the SOIC-8 AU was temporarily not being packaged, and BU / TO-can stock was expected in about 2 months.
+
+| Parameter | Before | After |
+|---|---|---|
+| OPA627AU availability | Active and packaged | Active, SOIC-8 temporarily not packaged (2024); OPA828ID suggested as replacement |
+
+**Audio impact:** None to the silicon. Buyers steered to the OPA828ID get a different die with different noise, bandwidth and bias characteristics.
+
+**Verification:** Split out of the Rev B/C entry. WebSearch confirmed that the E2E thread says the AU is active but temporarily not packaged, with OPA828ID as the pin-to-pin replacement and BU/TO-can stock expected in about 2 months.
+
+- [e2e.ti.com/support/amplifiers-group/am…opa627au-end-of-life](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1386960/opa627-is-the-opa627au-end-of-life)
+
 ### AD797 (ultralow-noise, ultralow-distortion bipolar single): Lifecycle, Analog Devices, May 2010 (PDN 10_0081, the 'May 2010 ADI Corporate…
 
 *When:* May 2010 (PDN 10_0081, the 'May 2010 ADI Corporate Obsolescence Process'; the form is at Rev. B)
@@ -1741,6 +2063,42 @@ PDN 10_0081 is ADI's formal notice for the May 2010 corporate obsolescence round
 
 - [analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf](https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf)
 - [digikey.com/en/products/detail/analog-…-inc/AD797ANZ/751113](https://www.digikey.com/en/products/detail/analog-devices-inc/AD797ANZ/751113)
+
+### LM4562 / LME49720 / LME49710 / LME49740 (National ultra-low-distortion bipolar audio op-amps): Lifecycle, Texas Instruments, c.2015-2016: EOL/lifebuy notices (LM4562/LME49720 TO-99…
+
+*When:* c.2015-2016: EOL/lifebuy notices (LM4562/LME49720 TO-99 lifebuy per TI E2E). PDN 20170721000C (2017): last order 2018-08-07, last ship 2019-02-07. Around January 2025: supply tightness and price rises, with no notice found.
+
+TI discontinued select devices sourced from GFAB because the Greenock site was closing (PDN 20170721000C). The list includes LME49710HA/NOPB, LME49710MAX/NOPB and LME49710NA/NOPB, with OPA1611AID/OPA1611AIDR as recommended replacements. This superseded an earlier TI E2E statement that LME49710 'remains without changes' and was Active in all three packages. The LM4562 and LME49720 TO-99 packages were in lifebuy. Around January 2025, diyAudio posters reported LM4562/LME49720 out of stock at TI with steep price rises (one post: LME49720 at 1k quantity from GBP 1.48 to GBP 3.78). No new PDN or PCN was found for that episode. No LME49740 lifecycle notice was found.
+
+**How to tell old from new:** Discontinuance, not a silicon change. After the PDN, all LME49710 packages (SOIC, PDIP, TO-99) went EOL. The LM4562/LME49720 TO-99 went lifebuy/EOL. LM4562/LME49720 SOIC and PDIP were briefly reported as EOL and then returned to Active through the GFAB-to-DFAB transfer (PCN 20180308002). Any LME49710 or TO-99 LM4562/LME49720 sold today is old stock or a possible counterfeit.
+
+**Audio impact:** None to the silicon. Buyers of LME49710 or TO-99 parts after EOL are buying remaining stock, or possibly remarked or counterfeit parts.
+
+**Verification:** WebSearch confirmed PDN 20170721000C: GFAB closure, LME49710HA/MAX/NA with OPA1611 replacement, last order 2018-08-07, last ship 2019-02-07. A search confirmed the TI E2E reply (LME49710 then Active; LM4562/'LME49270' TO-99 lifebuy). No 2025 PDN was found.
+
+- [media.digikey.com/pdf/PCNs/Texas%20Ins…/PCN20170721000C.pdf](https://media.digikey.com/pdf/PCNs/Texas%20Instruments/PCN20170721000C.pdf)
+- [farnell.com/datasheets/2608286.pdf](https://www.farnell.com/datasheets/2608286.pdf)
+- [e2e.ti.com/support/audio-group/audio/f…720---eol-really-why](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why)
+- [diyaudio.com/community/threads/ti-to-d…ny-ics.280990/page-5](https://www.diyaudio.com/community/threads/ti-to-discontinue-many-ics.280990/page-5)
+- [gearspace.com/board/geekzone/1035492-l…e49720-end-life.html](https://gearspace.com/board/geekzone/1035492-lme49710-lme49720-end-life.html)
+- [diyaudio.com/community/threads/lm4562-…20-eol-again.422319/](https://www.diyaudio.com/community/threads/lm4562-lme49720-eol-again.422319/)
+
+### LM6171 / LM6172 (National high-speed low-distortion voltage-feedback op-amp, single/dual): Lifecycle, Texas Instruments, PDN 20230906005 (rev .3), 2023.
+
+*When:* PDN 20230906005 (rev .3), 2023. The LM6171 datasheet was revised to SNOS745D in November 2023.
+
+TI PDN 20230906005.3, 'Discontinuance of Select Devices', includes LM6171BIM, with LM6171AIMX/NOPB recommended as the pin-to-pin replacement. DigiKey lists LM6171BIM/NOPB as obsolete and no longer manufactured. The LM6171 family itself remains Active in the A grade. The Nov 2023 datasheet revision (SNOS745D) coincides with the PDN. Its change notes were not seen, so no spec delta is claimed.
+
+**How to tell old from new:** Discontinuance of the B-grade LM6171 orderables, not a silicon change. The A grade (LM6171AIM/NOPB, LM6171AIMX/NOPB) remains Active, and the PDN names LM6171AIMX/NOPB as the pin-to-pin replacement. Any B-grade part sold now is old stock.
+
+**Audio impact:** None to the silicon. The B and A grades are selections of the same die. Only B-grade availability is affected.
+
+**Verification:** New in this curation pass. Two WebSearches found PDN 20230906005.3 listing LM6171BIM with LM6171AIMX/NOPB as the replacement, and DigiKey showing LM6171BIM/NOPB obsolete. This comes from search summaries only; the PDN PDF was not read, and LM6171BIN's presence in it is unconfirmed.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…PDN20230906005.3.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5544/PDN20230906005.3.pdf)
+- [farnell.com/datasheets/4001169.pdf](https://www.farnell.com/datasheets/4001169.pdf)
+- [digikey.com/en/products/detail/texas-i…M6171BIM-NOPB/144458](https://www.digikey.com/en/products/detail/texas-instruments/LM6171BIM-NOPB/144458)
+- [ti.com/lit/ds/symlink/lm6171.pdf](https://www.ti.com/lit/ds/symlink/lm6171.pdf)
 
 ### LM833 / LM833-N (LM837 quad): Lifecycle, onsemi, Date not captured; listed as obsolete in current (2026)…
 
@@ -1824,6 +2182,27 @@ Distributors list the classic DIP-8 NJM4558D ('JRC4558D') as discontinued/end-of
 - [onlinecomponents.com/en/productdetail/…m4558d-11973641.html](https://www.onlinecomponents.com/en/productdetail/nisshinbo-micro-devices-inc/njm4558d-11973641.html)
 - [digikey.com/en/products/detail/nisshin…-inc/NJM4558D/673768](https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM4558D/673768)
 - [nisshinbo-microdevices.co.jp/en/design…discon/obsolete.html](https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/obsolete.html)
+
+### OPA111 / OPA2111 (Burr-Brown Difet low-noise precision, single/dual): Lifecycle, Texas Instruments, OPA2111: about 2019 (TI E2E thread 808890, 'OPA2111:…
+
+*When:* OPA2111: about 2019 (TI E2E thread 808890, 'OPA2111: amplifier end of life'). OPA111AM/BM: obsolete, date not established.
+
+OPA2111 was discontinued after about 26 years of production, and the OPA111 single is also obsolete. No die-revision or fab-transfer PCN for OPA111/OPA2111 was found. Generic RFAB/die-revision PCNs that appeared in searches (for example, 20220328001.1 and 20210811000.1A) were not shown to include OPA111-family parts.
+
+**How to tell old from new:** Lifecycle status only. DigiKey lists OPA2111KP and OPA2111AM as obsolete, and Octopart lists OPA111AM/OPA111BM as obsolete.
+
+| Parameter | Before | After |
+|---|---|---|
+| Lifecycle (OPA2111, OPA111) | Active | Obsolete / discontinued |
+
+**Audio impact:** None to the silicon. Parts on sale now are old stock from surplus brokers or possibly counterfeit.
+
+**Verification:** WebSearch confirmed the E2E EOL thread, OPA2111AM obsolete (DigiKey) and OPA111AM/BM obsolete (Octopart). No PDN number or exact date was found.
+
+- [e2e.ti.com/support/amplifiers-group/am…mplifier-end-of-life](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/808890/opa2111-amplifier-end-of-life)
+- [digikey.com/en/products/detail/texas-i…nts/OPA2111KP/251137](https://www.digikey.com/en/products/detail/texas-instruments/OPA2111KP/251137)
+- [digikey.com/en/products/detail/texas-i…nts/OPA2111AM/301143](https://www.digikey.com/en/products/detail/texas-instruments/OPA2111AM/301143)
+- [octopart.com/part/texas-instruments/OPA111BM](https://octopart.com/part/texas-instruments/OPA111BM)
 
 ### AD823 (dual 16 MHz JFET-input, rail-to-rail output) + AD823A (2012 XFCB redesign): Renumbering / successor, Analog Devices, 2012 (AD823A data sheet Rev.
 
@@ -2072,360 +2451,17 @@ Jazzcaster, a Japanese hobbyist site, says glossy JRC4558D/DD parts were made at
 - [detail.chiebukuro.yahoo.co.jp/qa/quest…_detail/q11180606541](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11180606541)
 - [ameblo.jp/redtreeblues24/entry-12526564439.html](https://ameblo.jp/redtreeblues24/entry-12526564439.html)
 
-### LM6171 / LM6172 (National high-speed low-distortion voltage-feedback op-amp, single/dual): Unclassified, Texas Instruments, PCN 20241217001.1 issued 2024-12-18; proposed first ship…
-
-*When:* PCN 20241217001.1 issued 2024-12-18; proposed first ship 2025-03-18
-
-TI qualified FFAB (Freising) with the BICOMHD process (FR-BIP-1, 200 mm) for the LM6172, in addition to the original National DL-LIN VIP3 process (150 mm). The die changed as a result. This is part of TI's move out of 150 mm fabs. The same part number now covers two different silicon builds.
-
-**How to tell old from new:** New material is documented by datasheet SNOS792E (rev D before). Per the PCN, TI Melaka and TI Mexico assembly differ in lead finish (Matte Sn vs NiPdAu), mount and mold compound, and pin-1 designator (notch vs dimple). The site-to-feature mapping should be read off the PCN. These features only show the assembly site, not the fab. Because FFAB is added, old (VIP3) and new (BICOMHD) die can ship under the same orderable. Parts with 2025+ date codes are the ones at risk.
-
-| Parameter | Before | After |
-|---|---|---|
-| Fab / process | DL-LIN VIP3, 150 mm wafers | FR-BIP-1 (FFAB) BICOMHD, 200 mm wafers (added) |
-| Die | Original National VIP3 die | Changed die (per PCN summary) |
-| Assembly site | TI Melaka | TI Melaka or TI Mexico (added), with different lead finish, mold/mount compound and pin-1 mark |
-| Datasheet | SNOS792D (Mar 2013) | SNOS792E (Dec 2024); electrical-table changes not captured |
-
-**Audio impact:** Unknown. A new bipolar process and die can change noise, distortion, slew and phase margin. Listening impressions of the LM6172 all predate 2025 and refer to VIP3 silicon. Rollers should not assume new stock sounds or behaves the same, especially in the layout-sensitive socketed builds this part is known for.
-
-- [mm.digikey.com/Volume0/opasdata/d22000…PCN20241217001.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6025/PCN20241217001.1.pdf)
-- [ti.com/lit/ds/symlink/lm6172.pdf](https://www.ti.com/lit/ds/symlink/lm6172.pdf)
-
-### OPA132 / OPA2132 / OPA4132 (Burr-Brown/TI high-speed FET-input, SoundPlus): Unclassified, Texas Instruments, Datasheet SBOS054C, August 2024.
-
-*When:* Datasheet SBOS054C, August 2024. TI E2E thread 1517005 confirms it; the thread date is not shown, and the discovery notes say 2025. The first ship date and date code of new-fab lots are not established.
-
-TI moved the OPA132 to a new fab and design. A TI E2E engineer says the trim function 'has been eliminated in the new FAB change and design', with trim removed for all package types 'due to improved process'. Per a diyAudio thread on the 2024 datasheets, sibling parts OPA130, OPA131, OPA134 and the molded-package OPA627 got the same Offset Trim -> NC change; the TO-99 OPA627 keeps trim.
-
-**How to tell old from new:** SBOS054C or later shows OPA132 pins 1/8 as NC, and an offset-null pot on them has no effect. Burr-Brown-logo parts, and TI lots documented by SBOS054B or earlier, are the old die. Part numbers and orderables are unchanged. No public PCN number or date-code cutover was found: per the E2E/diyAudio discussion, PCNs went mainly to direct TI customers.
-
-| Parameter | Before | After |
-|---|---|---|
-| OPA132 pin 1 / pin 8 function | Offset Trim | NC (no internal connection) |
-| Other electrical specs (Vos, noise, SR, THD, Iq, ESD) | SBOS054B values | not retrieved; compare the SBOS054B and SBOS054C tables |
-
-**Audio impact:** Undocumented. It is a different die from the Burr-Brown-era silicon that earned the reputation, so impressions of vintage parts may not carry over. DC-coupled designs that nulled offset with a pot on pins 1/8 lose that adjustment.
-
-- [e2e.ti.com/support/audio-group/audio/f…om-offset-trim-to-nc](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1517005/opa132-changed-opa132-pin-1-and-pin-8-from-offset-trim-to-nc)
-- [diyaudio.com/community/threads/opa132-…rim-terminal.418419/](https://www.diyaudio.com/community/threads/opa132-opa627-and-other-ti-bb-op-amps-no-longer-have-an-offset-trim-terminal.418419/)
-- [ti.com/lit/ds/symlink/opa132.pdf](https://www.ti.com/lit/ds/symlink/opa132.pdf)
-
-### OPA134 / OPA2134 / OPA4134 (Burr-Brown SoundPlus FET-input audio op-amp): Unclassified, Texas Instruments, PCN 20231219018.1 (fab move, Dec 2023);
-
-*When:* PCN 20231219018.1 (fab move, Dec 2023); SBOS058B (about Aug 2024, current PDF Nov 2024); PCN 20240902002.1 (3 Sep 2024). New-die parts confirmed with 2025 date codes (TI E2E 1626121, March 2026).
-
-TI moved the OPAx134 die to a new wafer fab under the same part numbers as part of its exit from 150 mm fabs. The new die has no external offset-trim function (internal laser trim), updated ESD structures, and revised datasheet specs. TI says moving fabs always shifts performance somewhat and that the datasheet now reflects the actual device. TI E2E attributes in-circuit-test and functional failures on 2025 date-code parts most likely to the new ESD structures. Hackaday (Jun 2026), diyAudio and Gearspace criticise the change and TI's 'no impact' wording.
-
-**How to tell old from new:** Part number unchanged, no suffix. TI's internal die revision goes from A to B (per the PCN), but no marking difference is documented. Datasheet SBOS058B or later = new die (OPA134 pins 1/8 NC); SBOS058A or earlier = old die with trim. TI E2E: the practical way to tell is measurement (offset; pin impedance / ESD-diode behaviour differs between 2025 and 2018 date codes); mixed stock may ship until old inventory clears. BB-logo parts are very likely old die; TI-logo parts can be either.
-
-| Parameter | Before | After |
-|---|---|---|
-| OPA134 pins 1 and 8 | Offset trim (external nulling pot possible) | NC (do not connect); internally laser-trimmed. TI E2E says leaving an old trim network in place is harmless, while the datasheet warns not to connect. |
-| Headroom (THD+N < 0.01%) | 23.6 dBu (confirmed in datasheet search summary) | 21.3 dBu (EEVblog 1752 transcript only) |
-| Channel separation | 135 dB (EEVblog 1752) | 128 dB; 126 dB at 20 kHz (EEVblog 1752) |
-| Overload recovery time | SBOS058A value (not retrieved) | 'slightly worse' (EEVblog 1752) |
-| Input bias current spec | single-sign typical (about 5 pA, third-party) | given as +/- (EEVblog 1752; numbers not retrieved) |
-| 600 ohm load specifications | present in older sheets (implied) | apparently removed (EEVblog 1752; low confidence) |
-| Input offset voltage | +/-0.5 mV typ, +/-2 mV max (third-party library) | 1.0 mV per a third-party reading of SBOS058B (typ vs max unclear); TI product-page parametric still shows 2 mV max. Low confidence. |
-| Die revision / wafer fab | Die rev A, legacy 150 mm fab | Die rev B, new fab (PCN 20231219018.1) |
-| ESD / input protection structures | Old structure (2018 date code) | Updated ESD structures; different measured pin impedances (2025 date code) |
-
-**Audio impact:** Small on paper: about 2.3 dB less headroom before 0.01% THD+N, channel separation still very high (128 dB). No published old-vs-new THD, noise or listening comparison found. OPA134 trim circuits lose their adjustment. Japanese and Chinese hobby sources report no sonic change.
-
-- [mouser.com/PCN/Texas_Instruments_PCN20…0231222025145143.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20231219018_20231222025145143.pdf)
-- [mouser.com/PCN/Texas_Instruments_Datas…ay_20240902002.1.pdf](https://www.mouser.com/PCN/Texas_Instruments_Datasheet_90_Day_20240902002.1.pdf)
-- [mm.digikey.com/Volume0/opasdata/d22000…PCN20240902002.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6370/PCN20240902002.1.pdf)
-- [ti.com/lit/ds/sbos058b/sbos058b.pdf](https://www.ti.com/lit/ds/sbos058b/sbos058b.pdf)
-- [e2e.ti.com/support/audio-group/audio/f…pa134-specifications](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1450469/opa134-about-opa134-specifications)
-- [e2e.ti.com/support/audio-group/audio/f…728/opa134-about-pcn](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1429728/opa134-about-pcn)
-- [e2e.ti.com/support/audio-group/audio/f…nce---date-code-2025](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1626121/opa134-internal-die-difference---date-code-2025)
-- [hackaday.com/2026/06/03/texas-instrume…compatible-versions/](https://hackaday.com/2026/06/03/texas-instruments-changes-the-ne5532-and-others-into-incompatible-versions/)
-- [diyaudio.com/community/threads/ti-chan…ys-no-impact.441303/](https://www.diyaudio.com/community/threads/ti-changed-ne5532-and-opa134-for-the-worse-and-says-no-impact.441303/)
-- [gearspace.com/board/geekzone/1464976-h…opax134-lhm6518.html](https://gearspace.com/board/geekzone/1464976-headsup-ti-has-changed-ne5532-k-version-2024-gt-opax134-lhm6518.html)
-- [youtube.com/watch?v=22ZmmZ67SMY](https://www.youtube.com/watch?v=22ZmmZ67SMY)
-- [github.com/frankie-eight-days/eevblog-…ripts/22ZmmZ67SMY.md](https://github.com/frankie-eight-days/eevblog-wiki/blob/8f04e3ddd3972c58bd354a5c9adffa92e4b63b45/transcripts/22ZmmZ67SMY.md)
-- [github.com/dshills/KiCadAI/blob/101a96…enance/registry.json](https://github.com/dshills/KiCadAI/blob/101a96fd1bf095a4b82727508f0a1e72177bc3f7/data/model-provenance/registry.json)
-- [github.com/aklofas/kicad-happy-testhar…ants_verification.md](https://github.com/aklofas/kicad-happy-testharness/blob/8bae5a0c5a74d2d41366f0a9ee4f9cfa12b2a043/reference/spice_constants_verification.md)
-
-### OPA604 / OPA2604 (Burr-Brown FET-input, low-distortion audio op-amp): Unclassified, Texas Instruments, c. 2015-2016 (reported in diyAudio 'OPA2604 is dead', 24…
-
-*When:* c. 2015-2016 (reported in diyAudio 'OPA2604 is dead', 24 Aug 2016, alongside TI's lifetime-buy / EOL)
-
-Unannounced supply derating of the same part number: a document quoted on diyAudio (2016) says the OPA2604 no longer supports ±24 V and must be constrained to ±20 V, with long-term large offset drift and increased Iq at ±24 V (thought to be thermal). A TI E2E answer gives the same reason for the discontinuation (performance could not be guaranteed near the ±24 V limit because of heat/package dissipation). Whether a die or process change caused it is not known.
-
-**How to tell old from new:** No marking, datasheet or PCN change is documented; SBOS006A (Dec 2015) still specifies ±4.5 to ±24 V. Affected date codes unknown. Late TI-logo lots are the suspect population; whether OPA604 singles are affected is unknown.
-
-| Parameter | Before | After |
-|---|---|---|
-| Maximum operating supply | ±24 V (PDS-1069E, SBOS006, SBOS006A) | ±20 V (reported constraint; never printed in a datasheet) |
-| Behaviour at ±24 V | Fully specified (PSRR spec covers ±5 to ±24 V) | Reported long-term large offset drift and increased Iq |
-
-**Audio impact:** Only high-rail designs (±20 to ±24 V pro-audio line stages, some DIY amps) are at risk: offset drift and extra heat. Typical ±15 V op-amp rolling is unaffected.
-
-- [diyaudio.com/community/threads/opa2604-is-dead.295854/](https://www.diyaudio.com/community/threads/opa2604-is-dead.295854/)
-- [e2e.ti.com/support/amplifiers-group/am…m/766644/opa2604-eol](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/766644/opa2604-eol)
-
-### OPA604 / OPA2604 (Burr-Brown FET-input, low-distortion audio op-amp): Unclassified, Texas Instruments, About 2016 (supply derating);
-
-*When:* About 2016 (supply derating); E2E thread 953479, about 2020 (OPA2604AU/2K5 status)
-
-OPA2604 is no longer supported at ±24 V and must be limited to ±20 V. At ±24 V, symptoms included large long-term offset drift and increased Iq, which points to a thermal cause. In E2E thread 953479 ('Status of the OPA2604AU/2K5, PCN available?') a TI engineer said OPA2604 has EOL status and suggested using two OPA604 singles, which remain Active. The asker noted that TI had published no PCN or report. Distributors list OPA2604AU/2K5 as obsolete, while older TI datasheet order tables still show ACTIVE, so status for other OPA2604 part numbers (for example, OPA2604AP) is unclear. No die or fab PCN beyond the derating was found.
-
-**How to tell old from new:** Per the diyAudio thread 'OPA2604 is dead', the supply derating was communicated through non-conformance documentation, not a datasheet revision. OPA2604AU/2K5 is listed as Obsolete by distributors. No PCN or PDN was issued, according to the E2E asker.
-
-| Parameter | Before | After |
-|---|---|---|
-| Max supply voltage (OPA2604) | ±24 V | ±20 V |
-| OPA2604AU/2K5 lifecycle | Active | Obsolete (distributor listing; TI E2E says EOL) |
-
-**Audio impact:** Rail-voltage headroom is reduced by 4 V per rail. Designs running ±22-24 V rails risk offset drift and higher quiescent current. Distortion and noise are unaffected at compliant supplies.
-
-- [e2e.ti.com/support/amplifiers-group/am…au-2k5-pcn-available](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/953479/status-of-the-opa2604au-2k5-pcn-available)
-- [diyaudio.com/community/threads/opa2604-is-dead.295854/](https://www.diyaudio.com/community/threads/opa2604-is-dead.295854/)
-- [digikey.com/en/products/detail/texas-i…OPA2604AU-2K5/301215](https://www.digikey.com/en/products/detail/texas-instruments/OPA2604AU-2K5/301215)
-- [ti.com/product/OPA604](https://www.ti.com/product/OPA604)
-
-### OPA627 / OPA637 (Burr-Brown Difet precision JFET single; OPA637 decompensated, G>=5): Unclassified, Texas Instruments, SBOS165B (April 2024) / SBOS165C (January 2025); after…
-
-*When:* SBOS165B (April 2024) / SBOS165C (January 2025); after June 2022, when TI models still cited Rev A
-
-TI's 2024-2025 rewrite deleted the 'Difet' wording, added a new B-grade SOIC (OPA627BU), and dropped offset-trim pins on the molded packages. For the sister OPA132, which also has trim pins changed to NC, TI E2E 1517005 attributes the change to higher-precision manufacturing that makes trim unnecessary. diyAudio users cite 'newer, more efficient manufacturing processes'. In 2024, TI E2E 1386960 said the AU was temporarily not being packaged while BU and TO-can stock was coming. That points to a new die or trim process under the same part numbers, but TI has not confirmed a silicon change for the OPA627 and no PCN was found.
-
-**How to tell old from new:** New documentation is SBOS165B/C, titled 'OPA6x7 ... JFET'. The OPA627BU orderable exists only from 2024-2025. In the current pin table, molded-package pins 1/5 are NC, and the datasheet says the external offset pot applies to TO-99 only. No date-code cut-over or PCN was found.
-
-| Parameter | Before | After |
-|---|---|---|
-| Pins 1/5 (SOIC/DIP) | Offset Trim (SBOS165A) | NC; trim documented for TO-99 only (current SBOS165) |
-| Process description | Precision High-Speed Difet | Precision, High-Speed JFET (Difet references deleted) |
-| SOIC grades | AU only | AU and BU (BU production in Rev C, Jan 2025) |
-
-**Audio impact:** Unknown. No before/after measurements were found. Circuits that null offset through pins 1/5 lose that adjustment on new molded parts.
-
-- [ti.com/lit/ds/symlink/opa627.pdf](https://www.ti.com/lit/ds/symlink/opa627.pdf)
-- [diyaudio.com/community/threads/opa132-…rim-terminal.418419/](https://www.diyaudio.com/community/threads/opa132-opa627-and-other-ti-bb-op-amps-no-longer-have-an-offset-trim-terminal.418419/)
-- [e2e.ti.com/support/audio-group/audio/f…om-offset-trim-to-nc](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1517005/opa132-changed-opa132-pin-1-and-pin-8-from-offset-trim-to-nc)
-- [e2e.ti.com/support/amplifiers-group/am…opa627au-end-of-life](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1386960/opa627-is-the-opa627au-end-of-life)
-- [cimarrontechnology.com/wp-content/uploads/2021/06/opa627.pdf](https://www.cimarrontechnology.com/wp-content/uploads/2021/06/opa627.pdf)
-
-### LM4562 / LME49720 / LME49710 / LME49740 (National ultra-low-distortion bipolar audio op-amps): Unclassified, Texas Instruments, PCN 20180308002 issued March 2018 (Mouser copy 20180309,…
-
-*When:* PCN 20180308002 issued March 2018 (Mouser copy 20180309, revision -001 dated 20180326); new-die supply from c.2018-2019
-
-TI moved LM4562/LME49720 wafer fabrication from a 150 mm (6-inch) line to RFAB in Richardson, TX, on a newer process with a die-shrink redesign. The move revived the parts after the c.2015 'process-node end of life' notice. The TI E2E answer names the source fab as SFAB (Sherman, TX); a diyAudio thread is titled 'Fab moved from GB to US'. The PCN also covered other op-amps. Per TI E2E, LME49710 'remains without changes'.
-
-**How to tell old from new:** The part number and marking are unchanged. Use the lot or date code. Per diyAudio, lots starting 'JR' were fabbed in Greenock (UK) and assembled in Malaysia, which marks pre-move stock. Date codes from about mid-2018 onward are likely the RFAB die. The PCN lists the affected orderables and the first ship date, but they were not seen. Forum posts note a sharp LM4562 price drop in early 2019 when new-die stock arrived.
-
-| Parameter | Before | After |
-|---|---|---|
-| Die / process | original National-design die on 150 mm wafers | die-shrink redesign on a newer TI process at RFAB |
-| Wafer size | 150 mm | 200 mm (per search summaries of the PCN and forum; not 300 mm as a discovery hint said) |
-| Datasheet electrical limits | SNAS326K (Dec 2013) / SNAS393D (Nov 2016) | no datasheet revision found after the PCN, so no published spec delta |
-
-**Audio impact:** Unknown. No published spec change and no old-vs-new measurement comparison was found. Claims of batch-to-batch sound differences are unverified forum folklore, and some predate the move.
-
-- [mm.digikey.com/Volume0/opasdata/d22000…4/PCN20180308002.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/754/PCN20180308002.pdf)
-- [mouser.com/PCN/Texas_Instruments_PCN20…2018032619395130.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20180308002_2018032619395130.pdf)
-- [mouser.com/PCN/Texas_Instruments_PCN20…0309162016256[1].pdf](https://mouser.com/PCN/Texas_Instruments_PCN20180308002_20180309162016256[1].pdf)
-- [e2e.ti.com/support/audio-group/audio/f…720---eol-really-why](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why)
-- [diyaudio.com/forums/parts/326045-lm456…20-fab-moved-gb.html](https://www.diyaudio.com/forums/parts/326045-lm4562-aka-lme49720-fab-moved-gb.html)
-- [diyaudio.com/community/threads/lme4972…lm4562.107344/page-7](https://www.diyaudio.com/community/threads/lme49720-vs-lm4562.107344/page-7)
-
-### LM4562 / LME49720 / LME49710 / LME49740 (National ultra-low-distortion bipolar audio op-amps): Unclassified, Texas Instruments, PCN 20180308002 dated 2018-03-09 (proposed first ship…
-
-*When:* PCN 20180308002 dated 2018-03-09 (proposed first ship 2018-06-09); reissued as PCN 20180308002-001 dated 2018-03-26 (proposed first ship 2018-09-26)
-
-PCN 20180308002 is titled 'Transfer of select VIP3 devices from GFAB to DFAB (DL-LIN) Wafer Fab site'. This was the fab move that brought LM4562/LME49720 back from EOL to Active in 2018 (diyAudio thread 'LM4562 (aka LME49720) Fab moved from GB to US'). diyAudio posters say the part was cancelled because its 6-inch (150 mm) wafer line closed, then restarted on an 8-inch (200 mm) line. The price dropped sharply in early 2019. The PCN text visible in search results describes a fab-site transfer only. The snippets did not show whether the die is a new design or whether the datasheet changed, so no die change is confirmed. A later PCN, 20231114002.1 (SFAB 150 mm to RFAB 200 mm, die-shrink redesign), turned up in the same searches. It is the NE5532 PCN, and nothing found ties it to LM4562/LME49720.
-
-**How to tell old from new:** Wafer fab moved from GFAB (Greenock, Scotland) to DFAB (DL-LIN, Dallas). A diyAudio thread says parts with 2019-or-later date codes come from the new fab. No marking or die-revision letter change was found in the search snippets.
-
-| Parameter | Before | After |
-|---|---|---|
-| Wafer fab site | GFAB (Greenock, UK) | DFAB / DL-LIN (Dallas, TX) |
-| Wafer diameter (per diyAudio posters, not PCN text) | 150 mm (6-inch) | 200 mm (8-inch) |
-
-**Audio impact:** No measured spec change was found. One diyAudio report says parts with 2019+ date codes, from the new fab, have not shown the popcorn noise seen in some earlier-date-code LM4562s. This is anecdotal and was not tested extensively. The TI E2E threads found (for example, LM4562 oscillation, thread 1255412) are about applications, not new silicon.
-
-- [mm.digikey.com/Volume0/opasdata/d22000…4/PCN20180308002.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/754/PCN20180308002.pdf)
-- [mouser.com/PCN/Texas_Instruments_PCN20…2018032619395130.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20180308002_2018032619395130.pdf)
-- [diyaudio.com/community/threads/lm4562-…rom-gb-to-us.326045/](https://www.diyaudio.com/community/threads/lm4562-aka-lme49720-fab-moved-from-gb-to-us.326045/)
-- [diyaudio.com/community/threads/lm4562-…20-eol-again.422319/](https://www.diyaudio.com/community/threads/lm4562-lme49720-eol-again.422319/)
-- [e2e.ti.com/support/audio-group/audio/f…720---eol-really-why](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why)
-- [e2e.ti.com/support/audio-group/audio/f…2-lm4562-oscillation](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1255412/lm4562-lm4562-oscillation)
-
-### LM4562 / LME49720 / LME49710 / LME49740 (National ultra-low-distortion bipolar audio op-amps): Unclassified, Texas Instruments, PDN 20170721000C (2017), linked to the GFAB closure
-
-*When:* PDN 20170721000C (2017), linked to the GFAB closure
-
-TI discontinued select GFAB-sourced devices. The list includes LME49710HA/NOPB, LME49710MAX/NOPB and LME49710NA/NOPB, with OPA1611AID/OPA1611AIDR as the recommended replacements. LM4562 SOIC/PDIP stayed Active (later moved to DFAB under PCN 20180308002), while TO-99 went EOL. Gearspace has a thread titled 'LME49710 and LME49720 end of life'. In January 2025 diyAudio posters reported LM4562/LME49720 out of stock at TI with a price rise of about 80%. That is an availability report, not a silicon change. No LME49740 status or PCN was found.
-
-**How to tell old from new:** Product discontinuance notice, not a silicon change. Per the search summaries, all LME49710 packages (SOIC, PDIP, TO-99) went EOL. LM4562 kept SOIC and PDIP and lost TO-99.
-
-**Audio impact:** None to the silicon. Buyers of LME49710 or TO-99 parts after EOL are buying remaining stock or possibly counterfeits.
-
-- [media.digikey.com/pdf/PCNs/Texas%20Ins…/PCN20170721000C.pdf](https://media.digikey.com/pdf/PCNs/Texas%20Instruments/PCN20170721000C.pdf)
-- [diyaudio.com/community/threads/ti-to-d…ny-ics.280990/page-5](https://www.diyaudio.com/community/threads/ti-to-discontinue-many-ics.280990/page-5)
-- [gearspace.com/board/geekzone/1035492-l…e49720-end-life.html](https://gearspace.com/board/geekzone/1035492-lme49710-lme49720-end-life.html)
-- [diyaudio.com/community/threads/lm4562-…20-eol-again.422319/](https://www.diyaudio.com/community/threads/lm4562-lme49720-eol-again.422319/)
-
-### OPA111 / OPA2111 (Burr-Brown Difet low-noise precision, single/dual): Unclassified, Texas Instruments, About 2019 (E2E thread 808890 'OPA2111: amplifier end of…
-
-*When:* About 2019 (E2E thread 808890 'OPA2111: amplifier end of life')
-
-OPA2111 was discontinued after about 26 years of production. No die-revision or fab-transfer PCN for OPA111/OPA2111 was found. The generic RFAB/die-revision PCNs that appeared in searches (for example, 20220328001.1 and 20210811000.1A) were not shown to include OPA111-family parts.
-
-**How to tell old from new:** Lifecycle status only. DigiKey lists OPA2111KP as obsolete.
-
-**Audio impact:** None to the silicon. Parts on sale now are old stock or possibly counterfeit.
-
-- [e2e.ti.com/support/amplifiers-group/am…mplifier-end-of-life](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/808890/opa2111-amplifier-end-of-life)
-- [digikey.com/en/products/detail/texas-i…nts/OPA2111KP/251137](https://www.digikey.com/en/products/detail/texas-instruments/OPA2111KP/251137)
-
-### OPA132 / OPA2132 / OPA4132 (Burr-Brown/TI high-speed FET-input, SoundPlus): Unclassified, Texas Instruments, Presumably the same 2024 fab change (SBOS054C); unconfirmed
-
-*When:* Presumably the same 2024 fab change (SBOS054C); unconfirmed
-
-SBOS054C covers all three parts, and TI calls the OPA132 change a 'new FAB change and design'. Whether the dual and quad dies also moved is not stated in any retrieved source.
-
-**How to tell old from new:** No functional tell: the dual and quad never had trim pins. A post-2024 TI date code is the only likely indicator (unconfirmed).
-
-| Parameter | Before | After |
-|---|---|---|
-| Die / fab | Burr-Brown-era process | possibly the new TI fab (unconfirmed) |
-
-**Audio impact:** Unknown. If it applies, current OPA2132PA stock (the CMoy favourite) is not the silicon behind its reputation.
-
-- [ti.com/lit/ds/symlink/opa2132.pdf](https://www.ti.com/lit/ds/symlink/opa2132.pdf)
-- [e2e.ti.com/support/audio-group/audio/f…om-offset-trim-to-nc](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1517005/opa132-changed-opa132-pin-1-and-pin-8-from-offset-trim-to-nc)
-
-### OPA1611 / OPA1612 (TI SoundPlus bipolar-input, 1.1 nV/√Hz single/dual): Unclassified, Texas Instruments, PCN# 20260223007.1, dated about 24 Feb 2026 per the search…
-
-*When:* PCN# 20260223007.1, dated about 24 Feb 2026 per the search summary
-
-A TI change notification with a Group 1 qualification report lists OPA1612AID among roughly 40 unrelated devices: op-amps such as the OPA2187, OPA2210 and OPA4140, INA18x/INA8xx, DACx0004, TLV417x and TPS65910 PMICs, in SOIC, TSSOP and QFN packages. The change type (fab, assembly, material or die) was not visible. The broad, mixed device list suggests a site- or process-level change rather than an OPA1612-specific redesign, but that is inference.
-
-**How to tell old from new:** Not determinable from search snippets. The change type, effective date and any new fab or assembly-site code or date-code cutover must be read from the PCN PDF or TI's PCN dashboard. The datasheet is unchanged (SBOS450C).
-
-**Audio impact:** Unknown. No datasheet revision followed as of Sep 2026.
-
-- [mouser.com/PCN/Texas_Instruments_PCN20…7.1_Notification.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20260223007.1_Notification.pdf)
-
-### OPA1611 / OPA1612 (TI SoundPlus bipolar-input, 1.1 nV/√Hz single/dual): Unclassified, Texas Instruments, PCN 20260223007.1 dated 24 Feb 2026; estimated sample…
-
-*When:* PCN 20260223007.1 dated 24 Feb 2026; estimated sample availability 25 Apr 2026; proposed first ship 25 May 2026
-
-This refines the existing OPA1611 known-hazard entry. A Mouser-hosted copy of PCN# 20260223007.1 is titled 'Add Cu as Alternative Wire Base Metal for Selected Device(s)'. It qualifies a new assembly material set that adds Cu as an additional bond-wire option. It is not a fab, process or die revision, so this PCN is not a silicon change for OPA1612.
-
-**How to tell old from new:** The part number and die are unchanged. This is an assembly change that adds a copper bond-wire option. There is no external marking cue.
-
-| Parameter | Before | After |
-|---|---|---|
-| Bond wire | existing wire metal (presumably Au) | Cu added as an alternative bond wire |
-| Die / fab | unchanged | unchanged |
-
-**Audio impact:** Negligible. A bond-wire metal change does not affect the op-amp's electrical design. Claims of an audible difference would be anecdotal.
-
-- [mouser.com/PCN/Texas_Instruments_PCN20…7.1_Notification.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20260223007.1_Notification.pdf)
-
-### OPA1611 / OPA1612 (TI SoundPlus bipolar-input, 1.1 nV/√Hz single/dual): Unclassified, Texas Instruments, PCN 20260223007.1 (2026)
-
-*When:* PCN 20260223007.1 (2026)
-
-PCN 20260223007.1 adds Cu as an additional bond-wire option for the listed devices 'to align with world technology trends and use wiring with enhanced mechanical properties'. It has 60-day acknowledgment and sample-request windows. Searches found no other OPA1611/OPA1612 PCN (fab, die or datasheet) and no E2E new-die reports. OPA1611AID/AIDR was TI's named replacement for the discontinued LME49710 (PDN 20170721000C).
-
-**How to tell old from new:** Assembly/BOM change: Cu bond wire added as an alternative option. The devices stay in the current assembly facility, with piece-part changes.
-
-| Parameter | Before | After |
-|---|---|---|
-| Bond wire material | existing (Au presumed, not verified) | Cu added as an option |
-
-**Audio impact:** None expected. Bond-wire material has no meaningful effect on op-amp audio performance.
-
-- [mouser.com/PCN/Texas_Instruments_PCN20…7.1_Notification.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20260223007.1_Notification.pdf)
-
-### OPA627 / OPA637 (Burr-Brown Difet precision JFET single; OPA637 decompensated, G>=5): Unclassified, Burr-Brown -> Texas Instruments, after 2000 (TI acquisition); exact transfer date unknown
+### OPA627 / OPA637 (Burr-Brown Difet precision JFET single; OPA637 decompensated, G>=5): Folklore (unconfirmed), Burr-Brown -> Texas Instruments, after 2000 (TI acquisition); exact transfer date unknown
 
 *When:* after 2000 (TI acquisition); exact transfer date unknown
 
-Soomal (2016) ranks Taiwan-made parts second only to US-made, and ahead of SE-Asian-made. Japanese sellers claim Burr-Brown-era parts use a different process rule and thicker bond wires. No vendor document, PCN or measurement supports this. It is folklore.
+Soomal (2016) ranks Taiwan-made parts second only to US-made, and ahead of SE-Asian-made. Japanese sellers claim Burr-Brown-era parts use a different process rule and thicker bond wires. No vendor document, PCN or measurement supports this.
 
 **How to tell old from new:** Collector folklore: a Burr-Brown logo, a pre-2000 date code, and US or Taiwan origin.
 
 **Audio impact:** Claimed only. Unverified.
 
+**Verification:** Not searched (folklore kind, outside the verification priority); kept as folklore-unconfirmed with no documentary support.
+
 - [github.com/h2dcc/soomal.github.io/blob…posts/10100006526.md](https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100006526.md)
 - [maimai-audio.blog.jp/archives/26518228.html](https://maimai-audio.blog.jp/archives/26518228.html)
-
-### OPA827 (single low-noise precision JFET-input): Unclassified, Texas Instruments, 2024 (PCN#20240628012.1, dated 28 Jun 2024)
-
-*When:* 2024 (PCN#20240628012.1, dated 28 Jun 2024)
-
-TI PCN#20240628012.1 lists OPA827AID among the affected devices. The change type was not retrieved. A search summary also associated OPA827 with a TI notice 'Add Cu as Alternative Wire Base Metal for Selected Device(s)', but no PCN number was tied to it. Mouser reportedly lists about three PCNs for OPA827AID. Treat this as a packaging or assembly change until the PCN is read. No die change is evidenced.
-
-**How to tell old from new:** Not determined. It would depend on the PCN's change type (for example date code, assembly site or wire marking).
-
-**Audio impact:** Unknown. Wire or assembly changes normally have no audible or datasheet-level effect.
-
-- [farnell.com/datasheets/4381537.pdf](https://www.farnell.com/datasheets/4381537.pdf)
-- [mouser.com/ProductDetail/Texas-Instrum…YDVjkY2y4BYwEw%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/OPA827AID?qs=iSMark9AYDVjkY2y4BYwEw%3D%3D)
-
-### OPA827 (single low-noise precision JFET-input): Unclassified, Texas Instruments, February 2012 (SBOS376 Rev G)
-
-*When:* February 2012 (SBOS376 Rev G)
-
-The datasheet specs changed at the move from Mixed Status to Production Data: Vos, drift and Ib limits were revised, and SR and ISC minimums were added. This was a datasheet change, most likely final characterisation. No PCN or die change was found. Listed as a spec hazard, not a confirmed silicon change.
-
-**How to tell old from new:** None known on the part. Parts from before 2012 were sold against Rev F and earlier specs.
-
-| Parameter | Before | After |
-|---|---|---|
-| Input offset voltage / drift / Ib limits | Rev F values (not retrieved) | Rev G+: 150 uV max, 2.0 uV/°C max, ±10 pA max at 25 °C |
-| Slew rate minimum | not specified | 20 V/us |
-| Short-circuit current minimum | not specified | ±55 mA |
-
-**Audio impact:** Negligible for audio. It matters only for DC-precision designs that relied on early preview limits.
-
-- [github.com/ep092/server_lader/blob/mas…plifier%20OPA827.pdf](https://github.com/ep092/server_lader/blob/master/Datenbl%C3%A4tter/Operational%20Amplifier%20OPA827.pdf)
-- [ti.com/product/OPA827](https://www.ti.com/product/OPA827)
-
-### OPA828 / OPA2828 (45 MHz, 150 V/us SiGe JFET-input, "next-generation OPA627/OPA827"): Unclassified, Texas Instruments, November 2022 (PCN20221117006), coinciding with SBOS671C…
-
-*When:* November 2022 (PCN20221117006), coinciding with SBOS671C (Oct 2022) / SBOS671D (Dec 2022)
-
-'Same part number, different datasheet' hazard, not a die change. TI's PCN20221117006 announced a specification change for the SOIC OPA828ID/IDR 'to accurately reflect device characteristics', with no expected impact on fit, form, function, quality or reliability and no device change. SOIC limits in Rev C/D therefore differ from Rev B in at least one parameter, which was not identified in this pass. A 2019 TI E2E thread titled 'OPA828: Output swing specification disagrees with datasheet figures' may be related (unconfirmed).
-
-**How to tell old from new:** No marking or orderable change: TI states there are no changes to product identification. Parts cannot be told apart physically. Only the datasheet revision differs: SBOS671B (Dec 2018) or earlier gives the old limits; SBOS671C/D gives the revised limits.
-
-| Parameter | Before | After |
-|---|---|---|
-| OPA828ID/IDR datasheet limits (specific parameters not identified) | SBOS671B (Dec 2018) values | SBOS671C/D values per PCN20221117006 |
-
-**Audio impact:** None expected: the silicon is unchanged, and noise, GBW, slew rate and THD+N typicals appear the same in the Rev-B-era text and Rev D. The only practical risk is a design-margin check against old Rev B limits.
-
-- [mm.digikey.com/Volume0/opasdata/d22000…PCN20221117006.0.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5336/PCN20221117006.0.pdf)
-- [mouser.com/PCN/Texas_Instruments_PCN20…2022111813034746.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20221117006_2022111813034746.pdf)
-- [e2e.ti.com/support/amplifiers-group/am…th-datasheet-figures](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/801601/opa828-output-swing-specification-disagrees-with-datasheet-figures)
-
-### OPA828 / OPA2828 (45 MHz, 150 V/us SiGe JFET-input, "next-generation OPA627/OPA827"): Unclassified, Texas Instruments, October 2022 (preview, SBOS671C) / December 2022…
-
-*When:* October 2022 (preview, SBOS671C) / December 2022 (production, SBOS671D)
-
-A package extension, not a documented die change. TI added a thermally enhanced DGN package for the single and introduced the dual OPA2828 in DGN only (web-confirmed). DGN parts carry a separate, tighter DC spec set than the SOIC OPA828. TI does not say that a new die, process or fab is involved, and no DGN-specific PCN was found. The SOIC part is the same device, but its datasheet limits were revised at the same time (see PCN20221117006). Whether the DGN part uses revised silicon or only a different trim, test or package flow is unknown. AC specs (noise, GBW, slew rate, THD+N) are common to both packages.
-
-**How to tell old from new:** Orderable suffix DGN (HVSSOP-8 PowerPAD) vs D (SOIC-8). Top marking '2RAJ' (OPA828 DGN) or '2QGJ' (OPA2828 DGN) vs 'OPA828' (SOIC). The spec rows first appear in datasheet Rev C/D.
-
-| Parameter | Before | After |
-|---|---|---|
-| Vos typ / max @25C | D: +/-50 uV / +/-300 uV | DGN: +/-25 uV / +/-125 uV |
-| Vos max 0-85C / -40-125C | D: +/-350 / +/-400 uV | DGN: +/-175 / +/-200 uV |
-| Vos drift typ / max (-40 to 125C) | D: 0.45 / 1.5 uV/C | DGN: 0.2 / 0.8 uV/C |
-| Input bias and offset current typ / max @25C | D: +/-1 pA / +/-8 pA | DGN: +/-0.2 pA / +/-5 pA (front page says 0.1 pA) |
-| CMRR min / typ | D: 108 / 115 dB | DGN: 103 / 108 dB |
-| RthJA | SOIC: 121.5 C/W | DGN: 56.7 C/W (single), 49.9 C/W (dual) |
-
-**Audio impact:** Negligible for audio. The deltas are DC precision and a few dB of CMRR; noise, GBW, slew rate and THD+N are specified identically. The DGN runs cooler because of the PowerPAD. The dual needs a PowerPAD-capable adapter.
-
-- [ti.com/lit/ds/symlink/opa828.pdf](https://www.ti.com/lit/ds/symlink/opa828.pdf)
-- [ti.com/product/OPA2828](https://www.ti.com/product/OPA2828)
-- [github.com/BloomTechBackend/bd-maps-pa…partstech2019-10.txt](https://github.com/BloomTechBackend/bd-maps-parts-discovery/blob/main/src/main/resources/partcatalogs/partstech2019-10.txt)
-- [github.com/stefaweb/Q17-Amplifier/blob…-LTspice/OPAx828.lib](https://github.com/stefaweb/Q17-Amplifier/blob/main/Q17-LTspice/OPAx828.lib)

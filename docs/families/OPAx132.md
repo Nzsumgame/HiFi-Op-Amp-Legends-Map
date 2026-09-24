@@ -6,7 +6,7 @@
 
 **Technology:** JFET (FET) input voltage-feedback op-amp. Burr-Brown design, datasheet origin January 1995 (Burr-Brown macromodel dated Feb 1996). TI markets it as SoundPlus ('8-MHz, 5-pA, High Performance Audio'). Single, dual and quad versions. Only the single OPA132 had offset-trim pins 1/8. TI datasheet SBOS054C (Aug 2024) changed them to NC, and a TI E2E engineer says the trim was 'eliminated in the new FAB change and design' due to an improved process.
 
-> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (2 recorded: Unclassified).
+> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (2 recorded: Die redesign, Fab / process transfer).
 
 ## Why enthusiasts rate it
 
@@ -65,16 +65,17 @@ The op-amp of Chu Moy's original CMoy pocket headphone amp, and so the default i
 
 ## Silicon changes under the same part number
 
-### 1. Unclassified: Texas Instruments, Datasheet SBOS054C, August 2024.
+### 1. Die redesign: Texas Instruments, Datasheet SBOS054C, August 2024; confirmed in TI E2E…
 
-TI moved the OPA132 to a new fab and design. A TI E2E engineer says the trim function 'has been eliminated in the new FAB change and design', with trim removed for all package types 'due to improved process'. Per a diyAudio thread on the 2024 datasheets, sibling parts OPA130, OPA131, OPA134 and the molded-package OPA627 got the same Offset Trim -> NC change; the TO-99 OPA627 keeps trim.
+TI moved the OPA132 to a new fab and design. A TI E2E engineer says the trim function 'has been eliminated in the new FAB change and design', with trim removed for all package types 'due to improved process'. Per a diyAudio thread on the 2024 datasheets, OPA130, OPA131, OPA134 and the molded-package OPA627 got the same Offset Trim -> NC change, while the TO-99 OPA627, OPA604 and TL071 keep trim.
 
-- **When:** Datasheet SBOS054C, August 2024. TI E2E thread 1517005 confirms it; the thread date is not shown, and the discovery notes say 2025. The first ship date and date code of new-fab lots are not established.
+- **When:** Datasheet SBOS054C, August 2024; confirmed in TI E2E thread 1517005 (about 2025). The first ship date and date code of new-fab lots are not established.
 - **Affected:** OPA132U, OPA132UA, OPA132UA/2K5, OPA132P / OPA132PA (only if new-fab PDIP lots shipped before obsolescence; unconfirmed)
-- **How to tell old from new:** SBOS054C or later shows OPA132 pins 1/8 as NC, and an offset-null pot on them has no effect. Burr-Brown-logo parts, and TI lots documented by SBOS054B or earlier, are the old die. Part numbers and orderables are unchanged. No public PCN number or date-code cutover was found: per the E2E/diyAudio discussion, PCNs went mainly to direct TI customers.
+- **How to tell old from new:** SBOS054C or later shows OPA132 pins 1/8 as NC, and an offset-null pot on them has no effect. Burr-Brown-logo parts, and TI lots documented by SBOS054B or earlier, are the old die. Part numbers and orderables are unchanged, and no marking identifies the die revision; the date code is only a rough indicator. No public PCN number or date-code cutover was found: per the E2E/diyAudio discussion, PCNs went mainly to direct TI customers.
 - **Audio impact:** Undocumented. It is a different die from the Burr-Brown-era silicon that earned the reputation, so impressions of vintage parts may not carry over. DC-coupled designs that nulled offset with a pot on pins 1/8 lose that adjustment.
 - **Drop-in risk:** medium - pin-compatible drop-in (TI says pre-Rev C layouts need no redesign), but offset nulling is lost and other B-to-C spec deltas are unretrieved
 - **Confidence:** high
+- **Verification:** WebSearch confirmed the E2E quote that trim 'has been eliminated in the new FAB change and design' and the diyAudio list of sibling parts that went to NC. No OPAx132 PCN number was found.
 
 | Parameter | Before | After |
 |---|---|---|
@@ -87,16 +88,17 @@ Sources:
 - [diyaudio.com/community/threads/opa132-…rim-terminal.418419/](https://www.diyaudio.com/community/threads/opa132-opa627-and-other-ti-bb-op-amps-no-longer-have-an-offset-trim-terminal.418419/)
 - [ti.com/lit/ds/symlink/opa132.pdf](https://www.ti.com/lit/ds/symlink/opa132.pdf)
 
-### 2. Unclassified: Texas Instruments, Presumably the same 2024 fab change (SBOS054C); unconfirmed
+### 2. Fab / process transfer: Texas Instruments, Presumably the same 2024 fab change (SBOS054C); unconfirmed
 
-SBOS054C covers all three parts, and TI calls the OPA132 change a 'new FAB change and design'. Whether the dual and quad dies also moved is not stated in any retrieved source.
+SBOS054C covers all three parts, and TI calls the OPA132 change a 'new FAB change and design'. No retrieved source says whether the dual and quad dies also moved.
 
 - **When:** Presumably the same 2024 fab change (SBOS054C); unconfirmed
 - **Affected:** OPA2132PA, OPA2132UA, OPA2132P / OPA2132U, OPA4132UA
 - **How to tell old from new:** No functional tell: the dual and quad never had trim pins. A post-2024 TI date code is the only likely indicator (unconfirmed).
 - **Audio impact:** Unknown. If it applies, current OPA2132PA stock (the CMoy favourite) is not the silicon behind its reputation.
-- **Drop-in risk:** low - no pin-function change documented for the dual or quad
+- **Drop-in risk:** low - no pin-function change documented for the dual or quad; the change itself is unconfirmed
 - **Confidence:** low
+- **Verification:** Three WebSearches (OPA2132 PCN/fab/new die, E2E OPA2132 fab change, candidate TI PCN numbers) found no PCN or TI statement covering OPA2132/OPA4132. Unconfirmed, so kept at low confidence.
 
 | Parameter | Before | After |
 |---|---|---|
