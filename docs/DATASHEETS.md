@@ -3505,6 +3505,17 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments | SLOS451 | * (original) | December 2004 |  | archive | high |
 | University of Toronto, Department of Physics | SLOS451 (letter unknown) | unknown (old typeset, pre-Rev C) | unknown (archived in a folder dated 2017-11) | [physics.utoronto.ca/~astummer/Archives…%20eval%20module.pdf](https://www.physics.utoronto.ca/~astummer/Archives/Misc%20Minor/2017-11%20APD%20amplifier,%20THS4631%20eval%20module.pdf) | third_party_mirror | medium |
 | RadioLocman (third party) | SLOS451 (letter unknown) | unknown (a search summary says Rev A; unverified) | unknown | [radiolocman.com/datasheet/data.html?di=327729](https://www.radiolocman.com/datasheet/data.html?di=327729) | third_party_mirror | low |
+| Texas Instruments | SLOS451B | B (per search summary) | SLOS451B–DECEMBER 2004–REVISED AUGUST 2011 (per search summary) | [datasheetspdf.com/datasheet/THS4631.html](https://datasheetspdf.com/datasheet/THS4631.html) | third_party_mirror | low |
+| Texas Instruments | SLOS451 | revision not shown | unknown | [datasheetspdf.com/pdf/1488418/etcTI/THS4631/1](https://datasheetspdf.com/pdf/1488418/etcTI/THS4631/1) | third_party_mirror | low |
+| Texas Instruments | SLOS451 | revision not shown | unknown | [radiolocman.com/datasheet/data.html?/THS4631DDA=&di=82332](https://www.radiolocman.com/datasheet/data.html?/THS4631DDA=&di=82332) | third_party_mirror | low |
+| Texas Instruments | SLOS451 | revision not shown | unknown | [radiolocman.com/datasheet/data.html?%2FTHS4631D=&di=82549](https://radiolocman.com/datasheet/data.html?%2FTHS4631D=&di=82549) | third_party_mirror | low |
+| Texas Instruments | SLOS451 | revision not shown (old pre-2025 TI typeset: 'DGN−8 DDA−8 D−8 www.ti.com FEATURES DESCRIPTION APPLICATIONS') | unknown | [datasheet.octopart.com/THS4631DGNR-Tex…tasheet-10255746.pdf](https://datasheet.octopart.com/THS4631DGNR-Texas-Instruments-datasheet-10255746.pdf) | distributor_mirror | low |
+| Texas Instruments | SLOS451 | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/1610849/TI/THS4631.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1610849/TI/THS4631.html) | third_party_mirror | low |
+| Texas Instruments | SLOS451 | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/578401/NSC/THS4631.html](https://www.alldatasheet.com/datasheet-pdf/pdf/578401/NSC/THS4631.html) | third_party_mirror | low |
+| Texas Instruments | SLOS451 | current (C) | current | [ti.com/product/THS4631](https://www.ti.com/product/THS4631) | product_page | medium |
+| Texas Instruments | SLOS451 | revision not shown | unknown | [ie.rs-online.com/web/p/op-amps/8144010](https://ie.rs-online.com/web/p/op-amps/8144010) | product_page | low |
+| Texas Instruments | SLOS451 | revision not shown (the HVSSOP package name suggests Rev C-era listing) | unknown | [uk.rs-online.com/web/p/op-amps/2525583](https://uk.rs-online.com/web/p/op-amps/2525583) | product_page | low |
+| Texas Instruments | SLOS451 | revision not shown | unknown | [uk.rs-online.com/web/p/op-amps/1977544](https://uk.rs-online.com/web/p/op-amps/1977544) | product_page | low |
 
 ## [TLE2071 / TLE2072 / TLE2074 (TI Excalibur low-noise high-speed JFET-input)](families/TLE2071.md)
 
@@ -3597,6 +3608,22 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/254693/TI/TLE2142-EP.html](https://www.alldatasheet.com/datasheet-pdf/pdf/254693/TI/TLE2142-EP.html) | third_party_mirror | low |
 | Texas Instruments | unknown | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/254694/TI/TLE2144-EP.html](https://www.alldatasheet.com/datasheet-pdf/pdf/254694/TI/TLE2144-EP.html) | third_party_mirror | low |
 | Texas Instruments | n/a | n/a | n/a | [ti.com/product/TLE2142](https://www.ti.com/product/TLE2142) | product_page | high |
+| Texas Instruments | unknown | revision not shown | unknown | [datasheetspdf.com/pdf/1442138/etcTI/TLE2142/1](https://datasheetspdf.com/pdf/1442138/etcTI/TLE2142/1) | third_party_mirror | low |
+| Texas Instruments | unknown | revision not shown | unknown | [datasheetspdf.com/datasheet/TLE2142.html](https://datasheetspdf.com/datasheet/TLE2142.html) | third_party_mirror | low |
+| Texas Instruments | unknown | revision not shown | unknown | [semiconductors.es/datasheet/TLE2142.html](https://semiconductors.es/datasheet/TLE2142.html) | third_party_mirror | low |
+| Texas Instruments | SLOS183 (presumed) | revision not shown | unknown | [alldatasheet.net/datasheet-pdf/pdf/228137/TI/TLE2142.html](https://www.alldatasheet.net/datasheet-pdf/pdf/228137/TI/TLE2142.html) | third_party_mirror | low |
+| Texas Instruments | unknown | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/201893/TI/TLE2141.html](https://www.alldatasheet.com/datasheet-pdf/pdf/201893/TI/TLE2141.html) | third_party_mirror | low |
+| Texas Instruments | unknown | revision not shown | unknown | [datasheet4u.com/datasheet/etcTI/TLE2141-1442136](https://datasheet4u.com/datasheet/etcTI/TLE2141-1442136) | third_party_mirror | low |
+| Texas Instruments | unknown | revision not shown | unknown | [datasheetdir.com/TLE2141+Precision-Amplifiers](http://www.datasheetdir.com/TLE2141+Precision-Amplifiers) | third_party_mirror | low |
+| Texas Instruments | unknown | revision not shown | unknown | [datasheetarchive.com/TLE2141-datasheet.html](https://datasheetarchive.com/TLE2141-datasheet.html) | third_party_mirror | low |
+| Texas Instruments | unknown | revision not shown | unknown | [datasheetarchive.com/?q=tle2142idr](https://www.datasheetarchive.com/?q=tle2142idr) | third_party_mirror | low |
+| Texas Instruments | unknown | revision not shown | unknown | [digchip.com/datasheets/parts/datasheet/477/TLE2142.php](https://www.digchip.com/datasheets/parts/datasheet/477/TLE2142.php) | third_party_mirror | low |
+| Texas Instruments | unknown | revision not shown | unknown | [aiema.com/part/tle2142-datasheet-pdf](https://www.aiema.com/part/tle2142-datasheet-pdf) | third_party_mirror | low |
+| Texas Instruments | SLOS183 (family sheet) | n/a | n/a | [ti.com/product/TLE2141](https://www.ti.com/product/TLE2141) | product_page | high |
+| Texas Instruments | SLOS183 (family sheet) | n/a | n/a | [ti.com/product/TLE2141A](https://www.ti.com/product/TLE2141A) | product_page | high |
+| Texas Instruments | SLOS183 (family sheet) | n/a | n/a | [ti.com/product/TLE2144](https://www.ti.com/product/TLE2144) | product_page | high |
+| Texas Instruments | unknown (separate EP datasheet) | n/a | n/a | [ti.com/product/TLE2141-EP](https://www.ti.com/product/TLE2141-EP) | product_page | high |
+| Texas Instruments | unknown (separate automotive datasheet) | n/a | n/a | [ti.com/product/TLE2142-Q1](https://www.ti.com/product/TLE2142-Q1) | product_page | high |
 
 ## [TPA6120A2 (TI dual current-feedback headphone amplifier)](families/TPA6120A2.md)
 

@@ -76942,6 +76942,127 @@
      "url_kind": "third_party_mirror",
      "notes": "Other part-specific pages exist: THS4631D at https://www.radiolocman.com/datasheet/data.html?di=82549&%2FTHS4631D= and THS4631DDA at https://www.radiolocman.com/datasheet/data.html?/THS4631DDA=&di=82332.",
      "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "THS4631 Datasheet | FET-INPUT OPERATIONAL AMPLIFIER (datasheetspdf.com)",
+     "doc_number": "SLOS451B",
+     "revision": "B (per search summary)",
+     "date": "SLOS451B–DECEMBER 2004–REVISED AUGUST 2011 (per search summary)",
+     "url": "https://datasheetspdf.com/datasheet/THS4631.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A search summary said a datasheetspdf.com copy shows 'SLOS451B–DECEMBER 2004–REVISED AUGUST 2011'. The summary did not say which datasheetspdf.com page, so it could be this page or /pdf/1488418/. Not verified by opening the file.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "THS4631 AMPLIFIER Datasheet pdf - OPERATIONAL AMPLIFIER (datasheetspdf.com, etcTI)",
+     "doc_number": "SLOS451",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetspdf.com/pdf/1488418/etcTI/THS4631/1",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision not shown in the search summary. It could be the same SLOS451B copy the summary attributed to datasheetspdf.com.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "THS4631DDA Datasheet Texas Instruments (RadioLocman)",
+     "doc_number": "SLOS451",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?/THS4631DDA=&di=82332",
+     "url_kind": "third_party_mirror",
+     "notes": "This is a different RadioLocman entry from the known di=327729. The low di number suggests an early upload, possibly Rev * or A, but the summary does not show the revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "THS4631D Datasheet Texas Instruments (RadioLocman)",
+     "doc_number": "SLOS451",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://radiolocman.com/datasheet/data.html?%2FTHS4631D=&di=82549",
+     "url_kind": "third_party_mirror",
+     "notes": "This is a different RadioLocman entry from the known di=327729. It has a low (early) di number. The revision is not shown in the summary.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "THS4631DGNR datasheet (Octopart datasheet cache)",
+     "doc_number": "SLOS451",
+     "revision": "revision not shown (old pre-2025 TI typeset: 'DGN−8 DDA−8 D−8 www.ti.com FEATURES DESCRIPTION APPLICATIONS')",
+     "date": "unknown",
+     "url": "https://datasheet.octopart.com/THS4631DGNR-Texas-Instruments-datasheet-10255746.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The snippet title matches the old-format front page of the Octopart 150388 copy, which is Rev A. The revision letter is not shown for this cache ID.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "THS4631 Datasheet(PDF) - Texas Instruments (alldatasheet, ID 1610849)",
+     "doc_number": "SLOS451",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1610849/TI/THS4631.html",
+     "url_kind": "third_party_mirror",
+     "notes": "This is a second alldatasheet TI entry, separate from the known ID 128592. The high ID suggests a recent upload, possibly Rev B or C. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "THS4631 Datasheet(PDF) - National Semiconductor (TI) (alldatasheet, ID 578401)",
+     "doc_number": "SLOS451",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/578401/NSC/THS4631.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet files this under NSC (National), which is almost certainly a mislabel. THS4631 was only ever a TI part, and no National edition exists. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "THS4631 data sheet, product information and support | TI.com",
+     "doc_number": "SLOS451",
+     "revision": "current (C)",
+     "date": "current",
+     "url": "https://www.ti.com/product/THS4631",
+     "url_kind": "product_page",
+     "notes": "TI product page. It links the current datasheet, SLOS451C.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "THS4631DDA Texas Instruments, JFET, Op Amp, 210MHz, 8-Pin SOIC (RS Online IE, stock no. 814-4010)",
+     "doc_number": "SLOS451",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://ie.rs-online.com/web/p/op-amps/8144010",
+     "url_kind": "product_page",
+     "notes": "RS distributor product page with a datasheet attachment. The revision of the attached datasheet is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "THS4631DGN Texas Instruments, High Speed, Op Amp, 210MHz, 8-Pin HVSSOP (DGN) (RS Online UK, 252-5583)",
+     "doc_number": "SLOS451",
+     "revision": "revision not shown (the HVSSOP package name suggests Rev C-era listing)",
+     "date": "unknown",
+     "url": "https://uk.rs-online.com/web/p/op-amps/2525583",
+     "url_kind": "product_page",
+     "notes": "RS distributor product page. The 'HVSSOP' package naming first appears in SLOS451C, so the attached datasheet is probably Rev C. The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "THS4631D Texas Instruments, Op Amps, 210MHz 325 MHz, 15 V, 8-Pin SOIC (RS Online UK, 197-7544)",
+     "doc_number": "SLOS451",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://uk.rs-online.com/web/p/op-amps/1977544",
+     "url_kind": "product_page",
+     "notes": "RS distributor product page. The revision is not shown.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -77065,7 +77186,6 @@
    ],
    "archive_seed_urls": [
     "http://focus.ti.com/docs/prod/folders/print/ths4631.html",
-    "http://focus.ti.com/lit/ds/slos451a/slos451a.pdf",
     "http://focus.ti.com/lit/ds/symlink/ths4631.pdf",
     "http://www.ti.com/lit/ds/symlink/ths4631.pdf",
     "https://datasheet.octopart.com/THS4631D-Texas-Instruments-datasheet-150388.pdf",
@@ -77182,7 +77302,7 @@
      "https://zigsow.jp/item/307237/review/319044"
     ]
    },
-   "revision_chain_summary": "Nothing new was found. My only WebSearch call (\"SLOS451\" THS4631 \"DECEMBER 2004\" datasheet) did not run because the session-wide limit of 200 web searches was already used up, so I stopped as instructed. The chain below comes only from the input JSON.\n\nTexas Instruments SLOS451 (sole source, no second sources), oldest to newest:\n- SLOS451 (original), December 2004. MISSING: no copy URL holding the original edition is known.\n- SLOS451A, revised March 2005. Held at datasheet.octopart.com/THS4631D-...-150388.pdf, medium confidence. The RadioLocman di=327729 copy may also be Rev A, but this is unverified.\n- SLOS451B, revised August 2011. Held at github studyHooligen/DataSheet and at kyohritsu.com (per search summary, low confidence).\n- SLOS451C, revised March 2025, which re-specifies limits with \"new silicon data\". Held at the ti.com symlink, ti.com slos451c/slos451c.pdf and github wirthda.\n\nCopies whose revision is still unidentified: octopart THS4631DGN-166161802, media.digikey.com THS4631.pdf, alldatasheet 128592 and the University of Toronto physics archive. Each is pre-Rev C, and any of them could hold the missing original or Rev A.\n\nMissing links still open:\n1. A copy of the original SLOS451 (Dec 2004), which is the key record of the original silicon's specs.\n2. TI revision-specific URLs for Rev A and Rev B.\n3. Confirming the revision letters of the unidentified distributor and third-party copies listed above.\n\nThe archive_seed_urls I added are not confirmed by any search. I built them from TI's standard URL patterns: the legacy focus.ti.com symlink and the per-revision /lit/ds/slos451x/ paths. They are only starting points for Wayback Machine lookups and do not prove the copies exist."
+   "revision_chain_summary": "TI SLOS451 (sole vendor; no second sources found; the alldatasheet 'NSC' entry 578401 is a mislabel), oldest to newest: (1) SLOS451 original, December 2004. The date is known but no copy was found; this is the main missing link. The early RadioLocman entries di=82332 and di=82549 and the Octopart 10255746 cache are candidates, but none shows its revision. (2) SLOS451A, 'DECEMBER 2004 – REVISED MARCH 2005'. A copy is at datasheet.octopart.com …-150388.pdf; a search summary again confirmed this header. No TI revision-specific URL was found. (3) SLOS451B, 'DECEMBER 2004 – REVISED AUGUST 2011'. Copies are at kyohritsu.com and GitHub studyHooligen. A search summary also attributes a SLOS451B copy to datasheetspdf.com (low confidence). No TI revision-specific URL was found. (4) SLOS451C, 'DECEMBER 2004 – REVISED MARCH 2025', 'new silicon data'. Copies are ti.com symlink and ti.com/lit/ds/slos451c/slos451c.pdf. Still missing: any copy of the unlettered December 2004 original, and confirmed revision-specific copies of Rev A and B on TI or on archive.org (focus.ti.com legacy symlink added as an archive seed). No new revision dates or change summaries appeared in the search summaries, so revision_history has no additions."
   },
   {
    "id": "TLE2071",
@@ -79154,6 +79274,182 @@
      "url_kind": "product_page",
      "notes": "TI product folder. TLE2141 and TLE2144 have sibling pages at ti.com/product/TLE2141 and ti.com/product/TLE2144.",
      "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142, TLE2141 EXCALIBUR LOW-NOISE HIGH-SPEED PRECISION OPERATIONAL AMPLIFIER (datasheetspdf.com viewer, file TLE2141-etcTI.pdf)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetspdf.com/pdf/1442138/etcTI/TLE2142/1",
+     "url_kind": "third_party_mirror",
+     "notes": "This is the same file ID (1442138) as the datasheet4u copy already listed. The singular title ('...OPERATIONAL AMPLIFIER') and the 'etcTI' category point to an older per-device edition, but the search summary shows no header or footer.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142 Datasheet | etcTI - Datasheetspdf.com",
+     "url": "https://datasheetspdf.com/datasheet/TLE2142.html",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url_kind": "third_party_mirror",
+     "notes": "Index page on datasheetspdf.com for the etcTI TLE2142 file.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142 Datasheet - EXCALIBUR LOW-NOISE HIGH-SPEED PRECISION OPERATIONAL AMPLIFIER (semiconductors.es)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://semiconductors.es/datasheet/TLE2142.html",
+     "url_kind": "third_party_mirror",
+     "notes": "The singular title matches the old per-device edition's wording, not the SLOS183 family title. The revision was not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142 Datasheet(PDF) - Texas Instruments (alldatasheet.net mirror)",
+     "doc_number": "SLOS183 (presumed)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.net/datasheet-pdf/pdf/228137/TI/TLE2142.html",
+     "url_kind": "third_party_mirror",
+     "notes": "This is the alldatasheet.net copy of the alldatasheet.com entry 228137 already listed. It is the same file, so it is a duplicate kept only as a fallback host.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2141 Datasheet(PDF) - Texas Instruments (alldatasheet)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/201893/TI/TLE2141.html",
+     "url_kind": "third_party_mirror",
+     "notes": "This is a TLE2141 entry. It could be the SLOS183 family sheet or an older standalone TLE2141 edition; the summary does not say which.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2141 Datasheet - Texas Instruments (datasheet4u, etcTI)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet/etcTI/TLE2141-1442136",
+     "url_kind": "third_party_mirror",
+     "notes": "It sits next to file 1442138 (TLE2142) in datasheet4u's etcTI category. It may be an older per-device TLE2141 edition, but this is not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2141 datasheet, Excalbur Low-Noise High-Speed Precision Op Amps (datasheetdir)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "http://www.datasheetdir.com/TLE2141+Precision-Amplifiers",
+     "url_kind": "third_party_mirror",
+     "notes": "Aggregator page. The revision was not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "Datasheet Archive: TLE2141 datasheets",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetarchive.com/TLE2141-datasheet.html",
+     "url_kind": "third_party_mirror",
+     "notes": "The Datasheet Archive often holds several scans of different ages under one part number. It is worth checking for SLOS183A/B/C or pre-1997 editions. Nothing specific was shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "Datasheet Archive: TLE2142IDR datasheets",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetarchive.com/?q=tle2142idr",
+     "url_kind": "third_party_mirror",
+     "notes": "Search listing that may hold several editions. Nothing specific was shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142 datasheet (digchip)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/477/TLE2142.php",
+     "url_kind": "third_party_mirror",
+     "notes": "Digchip mirrors are usually early-2000s scrapes, so this copy may be an early SLOS183 lettered revision. That is not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142 Datasheet PDF - AiEMA",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.aiema.com/part/tle2142-datasheet-pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Aggregator page, probably a current SLOS183 copy. The revision was not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2141 data sheet, product information and support | TI.com",
+     "doc_number": "SLOS183 (family sheet)",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.ti.com/product/TLE2141",
+     "url_kind": "product_page",
+     "notes": "TI product page for the single version (TLE2141). The SLOS183 datasheet covers TLE2141/TLE2141A/TLE2142/TLE2142A/TLE2144/TLE2144A.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2141A data sheet, product information and support | TI.com",
+     "doc_number": "SLOS183 (family sheet)",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.ti.com/product/TLE2141A",
+     "url_kind": "product_page",
+     "notes": "TI product page for the A-grade single version.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2144 data sheet, product information and support | TI.com",
+     "doc_number": "SLOS183 (family sheet)",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.ti.com/product/TLE2144",
+     "url_kind": "product_page",
+     "notes": "TI product page for the quad version.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2141-EP data sheet, product information and support | TI.com",
+     "doc_number": "unknown (separate EP datasheet)",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.ti.com/product/TLE2141-EP",
+     "url_kind": "product_page",
+     "notes": "Enhanced-product derivative. It has a separate datasheet whose literature number was not found.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "TLE2142-Q1 data sheet, product information and support | TI.com",
+     "doc_number": "unknown (separate automotive datasheet)",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.ti.com/product/TLE2142-Q1",
+     "url_kind": "product_page",
+     "notes": "Product page for the automotive derivative. The PDF symlink tle2142-q1.pdf is already listed, and its literature number was not shown.",
+     "confidence": "high"
     }
    ],
    "revision_history": [
@@ -79177,6 +79473,20 @@
      "revision": "E",
      "date": "July 2025",
      "changes": "Moved to TI's new datasheet format. Issued under PCN20250730004 (RFAB fab option, die revision B to C, BOM options). The specific spec-table changes were not seen."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SLOS183",
+     "revision": "D",
+     "date": "February 1997 - revised October 2012",
+     "changes": "A search summary confirms the header 'SLOS183D - FEBRUARY 1997 - REVISED OCTOBER 2012' (radiolocman copy). Its front-page specs: 15 nV/rtHz at 10 Hz and 10.5 nV/rtHz at 1 kHz, 10,000-pF load capability, 20 mA minimum short-circuit output current, 27 V/us minimum slew rate, 5.9 MHz GBW, and 500 uV maximum Vio at 25 C. The change list against revision C was not shown."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "unknown (standalone 'TLE2142, TLE2142A, TLE2142Y' per-device datasheet, pre-SLOS183)",
+     "revision": "unknown",
+     "date": "unknown (before February 1997)",
+     "changes": "The old per-device edition (title 'TLE2142, TLE2142A, TLE2142Y EXCALIBUR LOW-NOISE HIGH-SPEED...', icbase copy) includes the TLE2142Y chip-form device. Its description, as seen in a search snippet, mentions a 'patent-pending' input stage giving 10.5 nV/rtHz with a 6-Hz 1/f corner and a symmetrical 40 V/us slew rate into loads up to 800 pF. Another snippet, probably from the current TI text, says a 10-Hz 1/f corner. Which snippet came from which copy is not certain, so this possible spec or wording change needs checking against the PDFs."
     }
    ],
    "silicon_changes": [
@@ -79228,7 +79538,10 @@
     "SLOS183"
    ],
    "archive_seed_urls": [
+    "http://focus.ti.com/docs/prod/folders/print/tle2142.html",
+    "http://focus.ti.com/lit/ds/symlink/tle2141.pdf",
     "http://focus.ti.com/lit/ds/symlink/tle2142.pdf",
+    "http://focus.ti.com/lit/ds/symlink/tle2144.pdf",
     "http://www.ti.com/lit/ds/symlink/tle2142.pdf",
     "https://www.ti.com/lit/ds/slos183d/slos183d.pdf",
     "https://www.ti.com/lit/ds/slos183e/slos183e.pdf",
@@ -79303,7 +79616,7 @@
      "https://www.head-fi.org/threads/best-sounding-cheep-op-amp-for-cmoys-opa2227-opa2228-ad8066-other.243642/page-4"
     ]
    },
-   "revision_chain_summary": "No new research was possible. My first and only WebSearch call (\"SLOS183\" TLE2142 \"REVISED\" datasheet) was refused because the session-wide limit was already used up (200 of 200). I stopped as instructed and made no further calls. No new datasheets, revisions, dates or document numbers were found, and nothing has been invented. The two archive seed URLs are not from a search. They are the known current TI symlink path (ti.com/lit/ds/symlink/tle2142.pdf) moved onto the legacy focus.ti.com host and plain http, for a Wayback lookup, and are unverified. Chain as known from the input file: TI SLOS183, the combined TLE214x/TLE214xA datasheet. Original issue February 1997. Revision D October 2012 (a radiolocman copy shows it). Revision E July 2025 (new format, tied to PCN20250730004: RFAB fab added, die revision B to C). Still missing: 1) dates and change summaries for SLOS183A, B and C (roughly 1997 to 2012), and copies that hold each one; 2) the TI literature numbers, revision letters and dates of the standalone pre-1997 datasheets ('TLE2141/TLE2141A/TLE2141Y', 'TLE2142/TLE2142A/TLE2142Y', 'TLE2144/TLE2144A/TLE2144Y', about 1990 to 1996), which the icbase TTI20590106.pdf copy may hold (not confirmed); 3) the literature numbers and revision chains for the TLE2142-Q1, TLE2142-EP and TLE2144-EP datasheets; 4) revisions held by the alldatasheet (228137, 955854, 28934) and datasheet4u copies, which are still not confirmed. No second-source vendors are known. The part appears to be TI-only."
+   "revision_chain_summary": "TI is the only vendor found. No second sources or acquirer re-issues turned up for TLE2141/2142/2144.\n\nRevision chain, oldest to newest:\n(1) Pre-1997 per-device datasheets. The dual sheet is 'TLE2142, TLE2142A, TLE2142Y EXCALIBUR LOW-NOISE HIGH-SPEED PRECISION OPERATIONAL AMPLIFIER' (icbase TTI20590106.pdf, already listed). Singular-title copies that probably belong to this generation are datasheet4u/datasheetspdf 1442138 (TLE2142) and 1442136 (TLE2141), and semiconductors.es. Their literature number(s) and dates are still MISSING, as are any separate TLE2141 and TLE2144 standalone lit numbers.\n(2) SLOS183 original, February 1997: the combined TLE214x/TLE214xA sheet. No copy has been identified as holding it.\n(3) SLOS183A, B and C: dates and copies still MISSING. None of the 4 searches surfaced these letters. Likely holders are older aggregator scrapes (digchip, datasheetarchive, alldatasheet 28934 TLE214X / 228137 / 201893), but none showed a header.\n(4) SLOS183D, 'FEBRUARY 1997 - REVISED OCTOBER 2012': confirmed again from the header in the search summary (radiolocman di=330795).\n(5) SLOS183E, July 2025: new-format sheet on ti.com, tied to PCN20250730004 (RFAB fab, die B to C).\n\nA possible text change between the old per-device edition and later SLOS183 text was seen: 'patent-pending' input stage with a 6-Hz 1/f corner versus 10-Hz. It needs checking. The derivative datasheets (TLE2141-EP, TLE2142-EP, TLE2144-EP, TLE2142-Q1) have unknown lit numbers and revision chains.\n\nThe archive seed URLs follow TI's standard legacy URL patterns (focus.ti.com symlink, and a slos183d revision-specific path modelled on the confirmed slos183e path). They were NOT seen in search results and should be treated as candidate Wayback lookups only.\n\nSources: https://www.radiolocman.com/datasheet/data.html?%2FTLE2142=&di=330795 ; https://www.icbase.com/File/PDF/TTI/TTI20590106.pdf ; https://datasheetspdf.com/pdf/1442138/etcTI/TLE2142/1 ; https://semiconductors.es/datasheet/TLE2142.html ; https://www.alldatasheet.com/datasheet-pdf/pdf/201893/TI/TLE2141.html ; https://datasheet4u.com/datasheet/etcTI/TLE2141-1442136 ; https://www.ti.com/product/TLE2141 ; https://www.ti.com/product/TLE2144"
   },
   {
    "id": "TPA6120A2",
