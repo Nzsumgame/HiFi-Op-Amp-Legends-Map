@@ -3343,6 +3343,12 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments (Digi-Key HTML datasheet) | SBOS566 | unknown | unknown | [digikey.co.il/he/htmldatasheets/produc…/1/opa1692idgkr.html](https://www.digikey.co.il/he/htmldatasheets/production/2845979/0/0/1/opa1692idgkr.html) | distributor_mirror | low |
 | Texas Instruments (datasheet4u mirror) | SBOS566 | unknown | unknown | [datasheet4u.com/datasheet/etcTI/OPA1692-1561162](https://datasheet4u.com/datasheet/etcTI/OPA1692-1561162) | third_party_mirror | low |
 | Texas Instruments (Farnell mirror) | TI notification (number not captured) | n/a | 2018-11-05 | [farnell.com/datasheets/2721178.pdf](https://www.farnell.com/datasheets/2721178.pdf) | distributor_mirror | high |
+| Texas Instruments (radiolocman mirror) | SBOS566A | A | June 2017, revised December 2017 | [radiolocman.com/datasheet/data.html?di=486003](https://www.radiolocman.com/datasheet/data.html?di=486003) | third_party_mirror | medium |
+| Texas Instruments (alldatasheet.net mirror) | SBOS566 | revision not shown | unknown | [alldatasheet.net/html-marking/1096309/…29/16/OPA1692ID.html](https://www.alldatasheet.net/html-marking/1096309/TI1/OPA1692ID/1129/16/OPA1692ID.html) | third_party_mirror | low |
+| Texas Instruments (alldatasheet.net mirror) | SBOS566 | revision not shown | unknown | [alldatasheet.net/html-marking/1096312/…9/28/OPA1692IDR.html](https://www.alldatasheet.net/html-marking/1096312/TI1/OPA1692IDR/2009/28/OPA1692IDR.html) | third_party_mirror | low |
+| Texas Instruments (alldatasheet mirror) | SBOS566 | revision not shown | unknown (likely June 2017 original) | [alldatasheet.com/html-pdf/954302/TI1/O…2/294/5/OPA1692.html](https://www.alldatasheet.com/html-pdf/954302/TI1/OPA1692/294/5/OPA1692.html) | third_party_mirror | low |
+| Texas Instruments (digchip mirror) | SBOS566 | revision not shown | unknown | [digchip.com/datasheets/parts/datasheet/2/477/OPA1692.php](https://www.digchip.com/datasheets/parts/datasheet/2/477/OPA1692.php) | third_party_mirror | low |
+| Texas Instruments (datasheet4u mirror) | SBOS566 | revision not shown | unknown | [datasheet4u.com/datasheets/etcTI/OPA1692/1561162](https://datasheet4u.com/datasheets/etcTI/OPA1692/1561162) | third_party_mirror | low |
 
 ## [OPA2156 / OPA156 (TI 36 V ultra-low-noise CMOS rail-to-rail I/O precision; single OPA156 unconfirmed)](families/OPA2156.md)
 

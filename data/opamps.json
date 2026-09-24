@@ -73238,6 +73238,72 @@
      "url_kind": "distributor_mirror",
      "notes": "Change notice, not a datasheet. Datasheet-only spec change 'to accurately reflect device characteristics'; the device itself did not change. Affects OPA1692ID, OPA1692IDGKR, OPA1692IDGKT and OPA1692IDR.",
      "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments (radiolocman mirror)",
+     "title": "OPA1692IDGKT Datasheet Texas Instruments - OPA1692 Low-Power, Low-Noise and Low-Distortion SoundPlus Audio Operational Amplifier",
+     "doc_number": "SBOS566A",
+     "revision": "A",
+     "date": "June 2017, revised December 2017",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=486003",
+     "url_kind": "third_party_mirror",
+     "notes": "The search summary for this result says the datasheet is SBOS566A, dated June 2017 and revised December 2017. This is the only copy found so far that holds revision A, the first Production Data edition, which dropped the OPA1694.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (alldatasheet.net mirror)",
+     "title": "OPA1692ID datasheet (42 pages) TI1 - Low-Power, Low-Noise and Low-Distortion SoundPlus Audio Operational Amplifiers",
+     "doc_number": "SBOS566",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.net/html-marking/1096309/TI1/OPA1692ID/1129/16/OPA1692ID.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet doc id 1096309, 42 pages, in the same batch as the already-listed 1096308. The later 'SoundPlus' title and the page count (the 954302 copy has 23 pages) suggest a later revision (B or C) with packaging addenda, but the revision letter is not shown. The same document is also reached at /1910/27/OPA1692ID.html.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (alldatasheet.net mirror)",
+     "title": "OPA1692IDR datasheet (42 pages) TI1 - Low-Power, Low-Noise and Low-Distortion SoundPlus Audio Operational Amplifiers",
+     "doc_number": "SBOS566",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.net/html-marking/1096312/TI1/OPA1692IDR/2009/28/OPA1692IDR.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet doc id 1096312 (the OPA1692IDR part-number entry), 42 pages. Probably the same later-revision PDF as 1096308/1096309. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (alldatasheet mirror)",
+     "title": "OPA1692 datasheet (5/23 Pages) TI1 - Low-Power, Low-Noise and Low-Distortion Audio Operational Amplifiers",
+     "doc_number": "SBOS566",
+     "revision": "revision not shown",
+     "date": "unknown (likely June 2017 original)",
+     "url": "https://www.alldatasheet.com/html-pdf/954302/TI1/OPA1692/294/5/OPA1692.html",
+     "url_kind": "third_party_mirror",
+     "notes": "HTML page view of alldatasheet doc 954302 (23 pages). It is the same document as the already-listed PDF page, at a different URL. The plural 'Amplifiers' title with no 'SoundPlus' matches the OPA1692/OPA1694 original, but the revision is not shown in the summary. It came up for a 'SBOS566B' query, but that match may come from other results.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (digchip mirror)",
+     "title": "OPA1692 datasheet - SoundPlus Low-Power, Low-Noise ...",
+     "doc_number": "SBOS566",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/2/477/OPA1692.php",
+     "url_kind": "third_party_mirror",
+     "notes": "Digchip datasheet page for OPA1692. The 'SoundPlus' title suggests revision A or later. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (datasheet4u mirror)",
+     "title": "OPA1692 datasheet PDF - Operational Amplifier | Texas Instruments",
+     "doc_number": "SBOS566",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/etcTI/OPA1692/1561162",
+     "url_kind": "third_party_mirror",
+     "notes": "Alternate datasheet4u URL (the /datasheets/ path) for the same entry 1561162 as the already-listed /datasheet/etcTI/OPA1692-1561162. Revision not shown.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -73268,6 +73334,20 @@
      "revision": "C",
      "date": "October 2018",
      "changes": "Specification changes 'to accurately reflect device characteristics'. The device did not change, and TI expected no impact on fit, form, function, quality or reliability. Announced in a TI notification dated 5 Nov 2018. Exact parameter changes not retrieved. Latest revision found."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SBOS566A",
+     "revision": "A",
+     "date": "December 2017",
+     "changes": "Date confirmed by a copy of the datasheet itself, not only by E2E. The radiolocman mirror (di=486003) is summarised as 'SBOS566A, June 2017, revised December 2017'. Changes as already recorded: Advance Information to Production Data, and OPA1694 references removed. No new change details were retrieved."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SBOS566",
+     "revision": "original",
+     "date": "June 2017",
+     "changes": "Supporting evidence: the ic114 copy (already listed) is titled 'OPA1692, OPA1694', and the search summary shows 'SBOS566 – JUNE 2017' covering both the OPA1692 and the OPA1694. Since rev A removed the OPA1694, the ic114 PDF is very likely the original June 2017 Advance Information edition. The device was publicly discussed at launch in August 2017 (Cycfi Research blog, https://www.cycfi.com/2017/08/opa1692-the-perfect-opamp-for-low-power-audio/)."
     }
    ],
    "silicon_changes": [
@@ -73305,6 +73385,9 @@
     "SBOS566"
    ],
    "archive_seed_urls": [
+    "http://product.ic114.com/PDF/O/OPA1692.PDF",
+    "http://www.ti.com/lit/ds/symlink/opa1692.pdf",
+    "http://www.ti.com/product/OPA1692",
     "https://www.ti.com/jp/lit/ds/symlink/opa1692.pdf",
     "https://www.ti.com/lit/ds/sbos566c/sbos566c.pdf",
     "https://www.ti.com/lit/ds/symlink/opa1692.pdf",
@@ -73383,7 +73466,7 @@
      "https://zenode.ai/series/11xsta38loh-texas-instruments-OPA1692"
     ]
    },
-   "revision_chain_summary": "No research was done. The first WebSearch call came back with \"web search budget exhausted (200 of 200)\", so I stopped as instructed. I made no other searches, used no other tools and added no new data. The chain below comes entirely from the existing OPA1692.json. Texas Instruments SBOS566 is the only vendor document; there are no second sources and no acquirer re-issues. (1) SBOS566 original, June 2017: Advance Information, covering the OPA1692 dual and the OPA1694 quad. No copy is confirmed as holding it. The alldatasheet copy 954302 is only a guess (low confidence). (2) SBOS566A, about December 2017 (medium confidence, from TI E2E): moved to Production Data and dropped the OPA1694. No copy confirmed. (3) SBOS566B, date unknown, sometime between December 2017 and October 2018: it is known only as the 'before' version in TI's 5 Nov 2018 change notice. Contents and copies were not found. (4) SBOS566C, October 2018: specification changes to reflect device characteristics, with no silicon change. This is the latest known revision, held by ti.com/lit/gpn/OPA1692 and the Scribd copy sbos566c. Still missing: the exact date and a copy for rev A; the date, change summary and a copy for rev B; a copy confirmed to hold the June 2017 original; the parameter-level changes in rev C; the revision held by the JA translation; whether any revision after C exists; and legacy TI archive links for these revisions (for example focus.ti.com or revision-specific ti.com/lit/ds/sbos566a URLs). These need another search pass once the search budget is raised."
+   "revision_chain_summary": "Texas Instruments SBOS566 (sole vendor; no second sources, acquirer re-issues or other vendors' editions exist). The chain from oldest to newest:\n(1) SBOS566 original, June 2017. Advance Information; covered the OPA1692 and the OPA1694. Held by the already-listed ic114 copy (http://product.ic114.com/PDF/O/OPA1692.PDF), whose title 'OPA1692, OPA1694' and summary 'SBOS566 – JUNE 2017' support upgrading that entry to 'original, June 2017' at medium confidence. The already-listed alldatasheet 954302 (23 pages, 'Audio Operational Amplifiers' title) is probably the same edition, but the revision is not shown.\n(2) SBOS566A, revised December 2017. Production Data; OPA1694 removed. The date is now confirmed by a datasheet copy, the NEW radiolocman mirror di=486003 (medium).\n(3) SBOS566B. Revision date still MISSING (between Dec 2017 and Oct 2018). No copy positively identified as rev B; the 42-page alldatasheet(.net) copies 1096308/1096309/1096312 could be B or C (revision not shown).\n(4) SBOS566C, revised October 2018. Specification changes 'to accurately reflect device characteristics' (TI notification of 5 Nov 2018, Farnell 2721178). Held by ti.com/lit/gpn/OPA1692 and Scribd sbos566c.\nStill missing: the SBOS566B date and change list, the exact parameter changes from B to C, and any later revision (D or beyond) after 2018; the searches found none. Seeds for the Wayback Machine: ti.com/lit/ds/symlink/opa1692.pdf, with captures from 2017 to 2018 expected to hold the original, A and B."
   },
   {
    "id": "OPA2156",

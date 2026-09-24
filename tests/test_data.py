@@ -63,6 +63,16 @@ class DataTest(unittest.TestCase):
             for lit in f.get("ti_literature_numbers", []):
                 self.assertRegex(lit, r"^S[A-Z]{3}\d{3}$", f["id"])
 
+    def test_relative_links_resolve(self):
+        link = re.compile(r"\]\(([^)#\s]+)(?:#[^)]*)?\)")
+        pages = [ROOT / "README.md"] + sorted((ROOT / "docs").rglob("*.md"))
+        for page in pages:
+            for target in link.findall(page.read_text()):
+                if re.match(r"^[a-z]+:", target):
+                    continue
+                with self.subTest(page=str(page.relative_to(ROOT)), target=target):
+                    self.assertTrue((page.parent / target).exists())
+
     def test_docs_up_to_date(self):
         r = subprocess.run([sys.executable, str(ROOT / "tools" / "build_docs.py"), "--check"],
                            capture_output=True, text=True)
