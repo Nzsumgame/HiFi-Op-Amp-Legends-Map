@@ -56,6 +56,14 @@ def link(url: str, label: str | None = None) -> str:
     return f"[{esc(label)}]({url.replace(' ', '%20').replace(')', '%29')})"
 
 
+def short(text, n: int = 80) -> str:
+    """First sentence / clause of `text` (ignoring abbreviations like 'c.'), cut to about n characters."""
+    text = esc(text)
+    m = re.search(r"[.;](?=\s+[A-Z(])", text[20:])
+    first = text[: 20 + m.start() + 1] if m else text
+    return first if len(first) <= n else first[: n - 1].rsplit(" ", 1)[0] + "…"
+
+
 def pns(fam: dict) -> list[str]:
     return [p["pn"] if isinstance(p, dict) else p for p in fam.get("part_numbers", [])]
 
@@ -64,7 +72,8 @@ def table(headers: list[str], rows: list[list]) -> list[str]:
     if not rows:
         return []
     out = ["| " + " | ".join(headers) + " |", "|" + "---|" * len(headers)]
-    out += ["| " + " | ".join(esc(c) if not str(c).startswith("[") else str(c) for c in r) + " |" for r in rows]
+    out += ["| " + " | ".join(c if isinstance(c, str) and re.match(r"^\[.*\]\(.*\)$", c) else esc(c) for c in r) + " |"
+            for r in rows]
     return out + [""]
 
 
@@ -76,7 +85,10 @@ def family_page(fam: dict) -> str:
     L: list[str] = []
     L += [f"# {fam['name']}", ""]
     L += [f"**Tier** {TIER_TITLES.get(fam.get('tier'), fam.get('tier'))} · **Category** "
-          f"{CATEGORY_TITLES.get(fam.get('category'), fam.get('category'))} · **Technology** {esc(fam.get('technology'))}", ""]
+          f"{CATEGORY_TITLES.get(fam.get('category'), fam.get('category'))}", ""]
+    if fam.get("tagline"):
+        L += [f"*{esc(fam['tagline'])}*", ""]
+    L += [f"**Technology:** {esc(fam.get('technology'))}", ""]
     if fam.get("silicon_changes"):
         L += [f"> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) "
               f"({len(fam['silicon_changes'])} recorded).", ""]
@@ -106,9 +118,10 @@ def family_page(fam: dict) -> str:
     if not fam.get("silicon_changes"):
         L += ["None documented. (Absence of evidence is not evidence of absence. Compare datasheet revisions.)", ""]
     for i, ch in enumerate(fam.get("silicon_changes", []), 1):
-        L += [f"### {i}. {esc(ch.get('vendor'))}: {esc(ch.get('when'))}", ""]
+        L += [f"### {i}. {short(ch.get('vendor'), 40)}: {short(ch.get('when'), 60)}", ""]
         L += [esc(ch.get("summary")), ""]
-        meta = [("Affected", ch.get("part_numbers_affected")), ("How to tell old from new", ch.get("identification")),
+        meta = [("When", ch.get("when")), ("Affected", ch.get("part_numbers_affected")),
+                ("How to tell old from new", ch.get("identification")),
                 ("Audio impact", ch.get("audio_impact")), ("Drop-in risk", ch.get("compatibility_risk")),
                 ("Confidence", ch.get("confidence")), ("Verification", ch.get("verification"))]
         L += [f"- **{k}:** {esc(v)}" for k, v in meta if v] + [""]
@@ -155,17 +168,20 @@ def family_page(fam: dict) -> str:
 
 
 def hazards_page(fams: list[dict], intro: str) -> str:
-    L = ["# Revision hazards: same part number, different silicon", "", intro, ""]
+    L = ["# Revision hazards: same part number, different silicon", "", intro, ""] if intro else \
+        ["# Revision hazards: same part number, different silicon", ""]
     rows = []
     for f in fams:
         for ch in f.get("silicon_changes", []):
             rows.append((SEVERITY.get(str(ch.get("compatibility_risk", "")).split(" ")[0].lower(), 3), f, ch))
     rows.sort(key=lambda r: (r[0], r[1]["name"]))
     L += table(["Family", "Vendor", "When", "What changed", "Risk", "Confidence"],
-               [[f"[{esc(f['name'])}](families/{f['id']}.md)", ch.get("vendor"), ch.get("when"),
-                 ch.get("summary"), ch.get("compatibility_risk"), ch.get("confidence")] for _, f, ch in rows])
+               [[f"[{esc(f['id'])}](families/{f['id']}.md)", short(ch.get("vendor"), 40), short(ch.get("when"), 60),
+                 short(ch.get("summary"), 160), short(ch.get("compatibility_risk"), 90), ch.get("confidence")]
+                for _, f, ch in rows])
     for _, f, ch in rows:
-        L += [f"## {esc(f['name'])}: {esc(ch.get('vendor'))}, {esc(ch.get('when'))}", "", esc(ch.get("summary")), ""]
+        L += [f"## {esc(f['name'])}: {short(ch.get('vendor'), 40)}, {short(ch.get('when'), 60)}", "",
+              f"*When:* {esc(ch.get('when'))}", "", esc(ch.get("summary")), ""]
         if ch.get("identification"):
             L += [f"**How to tell old from new:** {esc(ch['identification'])}", ""]
         L += table(["Parameter", "Before", "After"],

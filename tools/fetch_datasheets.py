@@ -126,17 +126,25 @@ VENDOR_KEYWORDS = [
     (r"fairchild|samsung", ("fairchild",)),
 ]
 
-# Part-number prefixes -> vendor keys, used when the manufacturer list is not conclusive.
+# Part-number prefixes -> (vendors that always use this naming, second sources that may).
+# A second source is only queried when it also appears in the family's manufacturer list.
 PN_HINTS = [
-    (r"^OPA", ("ti", "burr-brown")),
-    (r"^(LME|LM|LF)", ("ti", "national")),
-    (r"^(TL0|RC4|NE5|SA5|SE5)", ("ti",)),
-    (r"^(ADA|AD|OP|SSM)", ("adi",)),
-    (r"^LT", ("linear",)),
-    (r"^(NJM|MUSES)", ("jrc",)),
-    (r"^MC3", ("onsemi",)),
-    (r"^KA", ("fairchild",)),
+    (r"^OPA", ("ti", "burr-brown"), ()),
+    (r"^(LME|LM|LF)", ("ti", "national"), ("onsemi", "st", "fairchild")),
+    (r"^(NE|SA|SE)5", ("ti",), ("onsemi", "philips", "st", "fairchild")),
+    (r"^(TL0|TLE|THS|TPA|RC\d)", ("ti",), ("onsemi", "st", "fairchild")),
+    (r"^(ADA|AD|OP|SSM)", ("adi",), ()),
+    (r"^LT", ("linear",), ()),
+    (r"^(NJM|MUSES|NL\d)", ("jrc",), ()),
+    (r"^(MC3|NCV)", ("onsemi",), ("ti", "st")),
+    (r"^KA", ("fairchild",), ()),
 ]
+# Tokens that look like part numbers inside free-text part-number fields, and their base
+# (vendor prefix + digits, plus ADI-style "-1"/"-2" channel suffix): OPA2134PA -> OPA2134,
+# LT1028CN8 -> LT1028, ADA4898-1YRDZ -> ADA4898-1, RC4558IDGKR -> RC4558, uPC4570C -> uPC4570.
+PN_TOKEN = re.compile(r"(?<![A-Za-z0-9])((?:[A-Z]{1,5}|[uµ]PC)-?\d{2,6}(?:-\d)?[A-Z0-9]*)")
+PN_BASE = re.compile(r"^((?:[A-Z]{1,5}|uPC)\d{2,6}(?:-[1-4](?![0-9]))?)")
+NOT_PARTS = re.compile(r"^(TO|PDIP|SOIC|SOP|SO|DIP|MSOP|TSSOP|SSOP|VSSOP|QFN|DFN|SIP|CERDIP|JM|PCN|SBOS|SLOS|SNOS|SNAS|DS|REV|PDS)\d", re.I)
 
 PDF_MAGIC = b"%PDF"
 
@@ -151,10 +159,6 @@ def log(msg: str) -> None:
 def slug(text: str) -> str:
     return re.sub(r"[^A-Za-z0-9._-]+", "-", text).strip("-") or "x"
 
-
-def base_pn(pn: str) -> str:
-    """'OPA2134PA' stays as given; we only strip whitespace and obvious annotations."""
-    return re.split(r"[\s(/]", pn.strip())[0]
 
 
 def accept_original(original: str, pn: str) -> bool:
@@ -306,16 +310,46 @@ class Plan:
     exact: list[str] = field(default_factory=list)                    # CDX exact-url queries
 
 
-def vendor_keys(family: dict, pn: str) -> set[str]:
+def family_vendor_keys(family: dict) -> set[str]:
     keys: set[str] = set()
     names = " | ".join(family.get("manufacturers", [])).lower()
     for rx, vk in VENDOR_KEYWORDS:
         if re.search(rx, names):
             keys.update(vk)
-    for rx, vk in PN_HINTS:
-        if re.match(rx, pn.upper()):
-            keys.update(vk)
     return keys
+
+
+def vendor_keys(family: dict, pn: str) -> set[str]:
+    fam = family_vendor_keys(family)
+    for rx, primary, second in PN_HINTS:
+        if re.match(rx, pn.upper()):
+            return set(primary) | (set(second) & fam)
+    # Unknown naming scheme: only query the family's vendors if that is a short, specific list.
+    return fam if len(fam) <= 2 else set()
+
+
+def pn_stems(family: dict) -> list[str]:
+    """Distinct base part numbers for archive prefix queries.
+
+    Free-text entries such as 'NE5532 (TI: NE5532P, NE5532DR)' or 'LM833M/NOPB' are tokenised and
+    reduced to their base (NE5532, LM833); bases already covered by a shorter kept prefix are dropped.
+    """
+    bases = set()
+    for p in family.get("part_numbers", []):
+        text = p["pn"] if isinstance(p, dict) else p
+        for tok in PN_TOKEN.findall(text):
+            tok = tok.replace("µ", "u")
+            tok = re.sub(r"^(uPC|OP)-", r"\1", tok)
+            if NOT_PARTS.match(tok):
+                continue
+            m = PN_BASE.match(tok)
+            if m:
+                bases.add(m.group(1))
+    stems: list[str] = []
+    for t in sorted(bases, key=lambda x: (len(x), x)):
+        if not any(t.upper().startswith(s.upper()) for s in stems):
+            stems.append(t)
+    return stems
 
 
 def expand_prefix(tpl: str, pn: str) -> str | None:
@@ -328,7 +362,7 @@ def expand_prefix(tpl: str, pn: str) -> str | None:
 def build_plan(family: dict) -> Plan:
     plan = Plan(family["id"])
     for ds in family.get("datasheets", []):
-        if ds.get("url"):
+        if ds.get("url") and ds.get("url_kind") != "product_page":
             note = " ".join(x for x in (ds.get("vendor", ""), ds.get("doc_number", ""), ds.get("revision", "")) if x)
             plan.direct.append((ds["url"], note))
             if ds.get("url_kind", "").startswith("vendor"):
@@ -341,11 +375,8 @@ def build_plan(family: dict) -> Plan:
     plan.ti_lits = sorted(set(plan.ti_lits))
     for url in family.get("archive_seed_urls", []):
         plan.exact.append(url)
-    pns = [base_pn(p["pn"] if isinstance(p, dict) else p) for p in family.get("part_numbers", [])]
     seen = set()
-    for pn in pns:
-        if not pn:
-            continue
+    for pn in pn_stems(family):
         for vk in sorted(vendor_keys(family, pn)):
             for tpl in VENDOR_PREFIXES[vk]:
                 prefix = expand_prefix(tpl, pn)
