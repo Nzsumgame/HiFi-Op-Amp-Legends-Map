@@ -25,10 +25,10 @@
 | [ADA4627](families/ADA4627.md) | Analog Devices | PCN 14_0038 Rev. -, 2014-02-13 (date per search summary) | Assembly-site transfer for 3x3 mm LFCSP products to Amkor Philippines. | low - assembly-only change, and only on the LFCSP, which is rarely used for rolling. | low |
 | [ADA4898](families/ADA4898.md) | Analog Devices | PCN 22_0142 released 04-Apr-2023, effective 07-Jul-2023 | ADI added its Wilmington, MA fab (ADWL) as an alternate wafer fab to Limerick, Ireland (ADLK) for 'High Voltage Bipolar Products', including ADA4898-2. | low - same design and datasheet; fab-to-fab variation only | medium |
 | [ADA4898](families/ADA4898.md) | Analog Devices | Datasheet Rev. F (ADI-listed 01/19/2026); an earlier… | This is a package outline re-designation, not a die change. | low - documentation/outline change; check the EP land-pattern against the current drawing | low |
-| [LF353](families/LF353.md) | Texas Instruments / National… | TI has published its own LF353 since March 1987. | One generic number with two separately documented specs. | low - same pinout, function and DC specs; only minor AC-spec differences | medium |
-| [LF353](families/LF353.md) | National Semiconductor | between the 1980 databook and the August 2000 DS005649 | National dropped the tighter-offset A and B grades and the TO-99 metal can for the LF353, and added SO-8. | low - same die family and pinout; the TO-99 can has a different footprint | high |
-| [LF353](families/LF353.md) | STMicroelectronics vs Texas… | ongoing (ST datasheet era not verified) | ST specifies its LF353 differently from TI: 4 MHz, 15 nV/rtHz, 0.01% THD headline. | low - drop-in, but ST's LF353 is rated only to 32 V against TI's 36 V | medium |
-| [LF353](families/LF353.md) | Texas Instruments (LF347) | after 2011 (exact date unknown) | By 2021 a user listed TI's ex-National SNOSBH1D alongside the lf347.pdf symlink for LF347N. | low - same function and pinout (LM348-compatible per TI SLOS013B) | low |
+| [LF353](families/LF353.md) | Texas Instruments / National… | TI has published its own LF353 (SLOS012) since March 1987. | TI sells two products under near-identical numbers. | low - same pinout, function and DC specs; only minor AC-spec differences | medium |
+| [LF353](families/LF353.md) | National Semiconductor | between the 1980 databook and the August 2000 DS005649… | National dropped the tighter-offset A and B grades and the TO-99 can for the LF353, and added SO-8. | low - same die family and pinout; the TO-99 can has a different footprint | high |
+| [LF353](families/LF353.md) | Texas Instruments (LF347 / LF347-N) | 2011 onward (TI SLOS013C Mar 2016; | As with the LF353, TI keeps two parallel quad lineages: its own LF347/LF347B and the ex-National LF147/LF347-N. | low - same function and pinout (LM348-compatible per TI SLOS013B) | medium |
+| [LF353](families/LF353.md) | STMicroelectronics vs Texas… | ongoing (ST Doc ID 2153 Rev 3, March 2010) | ST specifies its LF353 differently from TI: 4 MHz, 16 V/us, 15 nV/rtHz, 0.01% THD headline. | low - drop-in, but ST's LF353 is rated only to 32 V against TI's 36 V | medium |
 | [LF356](families/LF356.md) | Texas Instruments | PCN 20180920003.1; FFAB BI-FET qualification approved… | TI issued a PCN with a qualification report for 'FFAB BIFET Technology Qualification' that lists LF356 wafer, metal-can, SOIC and PDIP devices. | low – same datasheet, pinout and limits; a fab transfer with no published parametric… | medium |
 | [LF356](families/LF356.md) | National Semiconductor | 1975 to before 1980 (earliest production) | The earliest documented LF156 pinout differs (pin 8 bias reference) and typical AC figures differed (15 V/µs, 1.4 µs vs 12 V/µs, 1.5 µs from 1980). | low – affects only rare 1975-era LF156 metal cans; tie pin 8 to V+ when not trimming… | medium |
 | [LF356](families/LF356.md) | National Semiconductor | between the 1980 databook and the May 2000 DS005646 edition | A possible compensation-capacitor change in the decompensated LF157/LF357, or just a documentation correction. | low – guaranteed specs are the same and it may be purely editorial. | low |
@@ -60,6 +60,7 @@
 | [LF353](families/LF353.md) | Texas Instruments (TI's own LF353, not… | PCN 20220615003.1 (June 2022, Sherman SFAB to Richardson… | TI moved its own LF353 from SFAB (Sherman) to RFAB (Richardson) on a new die. | medium: the part is pin-compatible with unchanged guaranteed limits, but TI confirms an… | high |
 | [LF353](families/LF353.md) | Texas Instruments (LF347 quad) | PCN 20221219006.1, December 2022. | A search summary of the Mouser-hosted PCN 20221219006.1 ('Qualification of new Fab site (RFAB)...') puts LF347N in the Group 2 device list for 'RFAB/Process… | medium: the RFAB process migration is PCN-listed, but the actual electrical deltas for… | medium |
 | [LME49720](families/LME49720.md) | Texas Instruments | PCN 20180308002 issued March 2018 (Mouser copy 20180309,… | TI moved LM4562/LME49720 wafer fabrication from a 150 mm (6-inch) line to RFAB in Richardson, TX, on a newer process with a die-shrink redesign. | low: same pinout, part number and datasheet limits. | medium |
+| [LM6171](families/LM6171.md) | Texas Instruments | PCN 20241217001.1 issued 2024-12-18; proposed first ship… | TI qualified FFAB (Freising) with the BICOMHD process (FR-BIP-1, 200 mm) for the LM6172, in addition to the original National DL-LIN VIP3 process (150 mm). | medium: the die was redesigned on a different bipolar process and the SNOS792E… | high |
 | [MC33078](families/MC33078.md) | Texas Instruments | Confirmed on TI E2E in 2026 (thread 1652528, around June… | TI E2E thread 1652528, 'NE5532, LM833, RC4580 and MC33078 all now the same die', reports that TI has unified the four dies while keeping the part numbers. | low: no MC33078 datasheet change or PCN was found, and the evidence points to NE5532… | medium |
 | [MC33078](families/MC33078.md) | Texas Instruments / STMicroelectronics… | TI since October 2004; | Same part number, different silicon across vendors. | low: the pinout and headline specs match. | low |
 | [NJM4556](families/NJM4556.md) | NEC (vs JRC) | 1980s (uPC4556 on late-1980s Taito boards per MAME notes) | Same '4556' number, different silicon. | high: a decompensated part is not a drop-in for unity-gain buffer or driver roles, and… | medium |
@@ -489,35 +490,39 @@ This is a package outline re-designation, not a die change. The ADA4898-1 SOIC_N
 
 - [analog.com/media/en/technical-document…ADA4898-1_4898-2.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4898-1_4898-2.pdf)
 
-## LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): Texas Instruments / National…, TI has published its own LF353 since March 1987.
+## LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): Texas Instruments / National…, TI has published its own LF353 (SLOS012) since March 1987.
 
-*When:* TI has published its own LF353 since March 1987. Since the 2011 acquisition TI has also sold the National LF353 as LF353-N.
+*When:* TI has published its own LF353 (SLOS012) since March 1987. Since the 2011 acquisition TI has also sold the National design as a separate product, LF353-N (SNOSBH3F, revised March 2013).
 
-One generic number with two separately documented specs. National rates its LF353 at 4 MHz and 16 nV/rtHz (RS = 100 ohm) with THD <0.02%. TI rates its LF353 at 3 MHz and 18 nV/rtHz, with no THD figure, the same numbers as its TL07x. DC specs (VOS, IB, ICC, SR) are identical. No vendor states whether TI's 1987 part is its own design or a copy of National's. Two dies is likely but inferred.
+TI sells two products under near-identical numbers. National's LF353 / TI LF353-N is rated 4 MHz and 16 nV/rtHz (RS = 100 ohm), with THD <0.02%. TI's own LF353 is rated 3 MHz and 18 nV/rtHz with no THD figure, the same numbers as its TL07x. DC specs (VOS, IB, ICC, SR 13 V/us) match. No vendor says whether TI's 1987 part is its own die; two dies is likely but inferred.
 
-**How to tell old from new:** TI lineage: orderables LF353P, LF353DR and LF353PE4 (marked LF353P or LF353), datasheet SLOS012 (lf353.pdf). National lineage: orderables LF353N, LF353M and LF353MX (/NOPB under TI), National DS005649 or TI LF353-N (lf353-n.pdf). Pre-2011 National parts carry the NS logo. Top-mark details unverified.
+**How to tell old from new:** TI lineage: orderables LF353P, LF353DR, LF353D and LF353PE4, datasheet SLOS012 (lf353.pdf, ti.com/product/LF353), 3 MHz. National lineage: orderables LF353N, LF353M and LF353MX (/NOPB under TI), datasheet National DS005649 or TI SNOSBH3 (lf353-n.pdf, ti.com/product/LF353-N), 4 MHz. RS Online lists LF353P at 3 MHz and LF353M/NOPB and LF353MX/NOPB at 4 MHz. Pre-2011 National parts carry the NS logo. Top-mark details unverified.
 
 | Parameter | Before | After |
 |---|---|---|
-| GBW typ (min) | 4 MHz (2.7 MHz min), National DS005649 | 3 MHz typ, no min, TI SLOS012C |
+| GBW typ (min) | 4 MHz (2.7 MHz min), National DS005649 / TI SNOSBH3F | 3 MHz typ, no min, TI SLOS012C |
 | e_n @1 kHz | 16 nV/rtHz, RS = 100 ohm (National) | 18 nV/rtHz, RS = 20 ohm (TI Rev C; RS = 100 ohm in 1988) |
 | THD | <0.02% (AV = 10, 20 Vp-p, 10 k; National) | not specified (TI) |
 | Minimum supply | normal operation on +/-6 V (National application hints) | +/-3.5 V recommended minimum (TI) |
 | ESD HBM | 1700 V (National 2000) | +/-2000 V (TI Rev C) |
 
-**Audio impact:** Probably small. National's version is specified slightly quieter and wider-band, with a THD guarantee. Both are TL072-class.
+**Audio impact:** Probably small. The National version is specified slightly quieter and wider-band, with a THD guarantee. Both are TL072-class.
 
-- [github.com/FHYQ-Dong/THU-Basic-Experim…/LF353-datasheet.pdf](https://github.com/FHYQ-Dong/THU-Basic-Experiment-of-Optoelectronics/blob/main/QKD-BB84/FPGA-control/docs/LF353-datasheet.pdf)
+- [ti.com/lit/ds/symlink/lf353.pdf](https://www.ti.com/lit/ds/symlink/lf353.pdf)
+- [ti.com/lit/ds/symlink/lf353-n.pdf](https://www.ti.com/lit/ds/symlink/lf353-n.pdf)
+- [ti.com/product/LF353](https://www.ti.com/product/LF353)
+- [ti.com/product/LF353-N](https://www.ti.com/product/LF353-N)
+- [uk.rs-online.com/web/p/op-amps/1624672](https://uk.rs-online.com/web/p/op-amps/1624672)
+- [uk.rs-online.com/web/p/op-amps/2088516](https://uk.rs-online.com/web/p/op-amps/2088516)
+- [de.rs-online.com/web/p/operationsverstarker/0527300](https://de.rs-online.com/web/p/operationsverstarker/0527300)
 - [github.com/chenshuo/nuedc/blob/main/do…opamp/lf353-2000.pdf](https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-2000.pdf)
 - [github.com/chenshuo/nuedc/blob/main/do…amp/lf353-ti1989.pdf](https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-ti1989.pdf)
-- [github.com/zerath97/TTT4265-ESTA2/blob…2_exam/Arbeider2.tex](https://github.com/zerath97/TTT4265-ESTA2/blob/main/Arbeider2_exam/Arbeider2.tex)
-- [github.com/auxren/Compressor/blob/mast…V1/EuroPresserV1.Dat](https://github.com/auxren/Compressor/blob/master/EuroPresserV1/EuroPresserV1.Dat)
 
-## LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): National Semiconductor, between the 1980 databook and the August 2000 DS005649
+## LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): National Semiconductor, between the 1980 databook and the August 2000 DS005649…
 
-*When:* between the 1980 databook and the August 2000 DS005649
+*When:* between the 1980 databook and the August 2000 DS005649 (new-format DS005649 first dated April 1998 per TI SNOSBH3F)
 
-National dropped the tighter-offset A and B grades and the TO-99 metal can for the LF353, and added SO-8. The 2000 datasheet adds a GBW minimum (2.7 MHz) and an ESD rating, raises Tj(max) from 115 to 150 °C, and lowers the N-package thetaJA from 160 to 115 °C/W. This is a product-line and datasheet change; no die change is documented.
+National dropped the tighter-offset A and B grades and the TO-99 can for the LF353, and added SO-8. The 2000 datasheet adds a GBW minimum (2.7 MHz) and an ESD rating, raises Tj(max) from 115 to 150 °C, and lowers the N-package thetaJA from 160 to 115 °C/W. This is a product-line and datasheet change; no die change is documented.
 
 **How to tell old from new:** Old stock marked LF353AN/BN, LF353AH/BH (TO-99 metal can) or LF351A/B is pre-2000 National. The 2000 datasheet lists only LF353M/MX/N.
 
@@ -528,51 +533,57 @@ National dropped the tighter-offset A and B grades and the TO-99 metal can for t
 | thetaJA, N package | 160 °C/W | 115 °C/W |
 | e_n feature bullet | 16 nV/rtHz | 25 nV/rtHz (table still 16 typ) |
 
-**Audio impact:** None documented. A/B grades only have lower offset.
+**Audio impact:** None documented. The A/B grades differ only in offset.
 
 - [github.com/chenshuo/nuedc/blob/main/do…opamp/lf353-1980.pdf](https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-1980.pdf)
 - [github.com/chenshuo/nuedc/blob/main/do…opamp/lf353-2000.pdf](https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-2000.pdf)
 - [github.com/chenshuo/nuedc/blob/main/do…opamp/lf351-1980.pdf](https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf351-1980.pdf)
+- [ti.com/lit/ds/symlink/lf353-n.pdf](https://www.ti.com/lit/ds/symlink/lf353-n.pdf)
 
-## LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): STMicroelectronics vs Texas…, ongoing (ST datasheet era not verified)
+## LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): Texas Instruments (LF347 / LF347-N), 2011 onward (TI SLOS013C Mar 2016;
 
-*When:* ongoing (ST datasheet era not verified)
+*When:* 2011 onward (TI SLOS013C Mar 2016; SNOSBH1D Mar 2013)
 
-ST specifies its LF353 differently from TI: 4 MHz, 15 nV/rtHz, 0.01% THD headline. ST's selector lists the same 1400 uA/ch for its LF35x and TL072, a hint (unverified) of a shared ST JFET process. Mouser data for LF353DT (3.2 mA typ per package) differs from the selector's 1.4 mA/ch.
+As with the LF353, TI keeps two parallel quad lineages: its own LF347/LF347B and the ex-National LF147/LF347-N. The earlier claim that TI's LF347 documentation had moved to the National design is refuted: the lf347.pdf symlink and gpn/LF347 serve SLOS013.
 
-**How to tell old from new:** ST logo and ST orderables (LF353DT, LF253 industrial grade). One ST datasheet covers LF253 and LF353.
+**How to tell old from new:** TI lineage: 'LF347, LF347B JFET-Input Quad Operational Amplifiers', SLOS013 (lf347.pdf, gpn/LF347, ti.com/product/LF347), 3 MHz. National lineage: 'LF147, LF347-N', SNOSBH1D (ti.com/lit/pdf/snosbh1, ti.com/product/LF347-N), 4 MHz typ / 2.2 MHz min.
+
+| Parameter | Before | After |
+|---|---|---|
+| Supply current (typ/max) | 7.2 / 11 mA (National DS005647 / LF347-N) | 8 / 11 mA (TI SLOS013B) |
+| GBW typ | 4 MHz, 2.2 MHz min (National / LF347-N) | 3 MHz (TI LF347) |
+
+**Audio impact:** Unknown; both are TL074-class BiFET quads.
+
+- [ti.com/lit/gpn/LF347](https://www.ti.com/lit/gpn/LF347)
+- [ti.com/lit/ds/symlink/lf347.pdf](https://www.ti.com/lit/ds/symlink/lf347.pdf)
+- [ti.com/lit/pdf/snosbh1](https://www.ti.com/lit/pdf/snosbh1)
+- [ti.com/product/LF347-N](https://www.ti.com/product/LF347-N)
+- [github.com/cristianoag/wozblaster/blob…Datasheets/lf347.pdf](https://github.com/cristianoag/wozblaster/blob/main/docs/Datasheets/lf347.pdf)
+- [github.com/chenshuo/nuedc/blob/main/do…opamp/lf347-2000.pdf](https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf347-2000.pdf)
+
+## LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): STMicroelectronics vs Texas…, ongoing (ST Doc ID 2153 Rev 3, March 2010)
+
+*When:* ongoing (ST Doc ID 2153 Rev 3, March 2010)
+
+ST specifies its LF353 differently from TI: 4 MHz, 16 V/us, 15 nV/rtHz, 0.01% THD headline. ST's selector lists the same 1400 uA/ch for its LF35x and TL072, a hint (unverified) of a shared ST JFET process. Mouser data for LF353DT (3.2 mA typ per package) differs from the selector's 1.4 mA/ch.
+
+**How to tell old from new:** ST logo and ST orderables (LF353DT, LF253 industrial grade). One ST datasheet (Doc ID 2153) covers LF253 and LF353.
 
 | Parameter | Before | After |
 |---|---|---|
 | GBW typ | 3 MHz (TI SLOS012C) | 4 MHz (ST, via Mouser parametric extraction) |
+| Slew rate | 13 V/us typ (TI) | 16 V/us (ST headline) |
 | e_n | 18 nV/rtHz @1 kHz (TI) | 15 nV/rtHz (ST headline) |
 | Supply current | 3.6 mA typ per dual (TI) | 1.4 mA/ch (ST selector) or 3.2 mA typ per LF353DT (Mouser) |
 | Max operating supply | +/-18 V (36 V) recommended max, TI | 32 V (ST selector, LF353/LF351); LF253 36 V |
 
-**Audio impact:** Marginal. ST's version is slightly quieter on paper.
+**Audio impact:** Marginal. ST's version is slightly quieter and faster on paper.
 
+- [st.com/resource/en/datasheet/lf353.pdf](https://www.st.com/resource/en/datasheet/lf353.pdf)
+- [st.com/resource/en/datasheet/lf253.pdf](https://www.st.com/resource/en/datasheet/lf253.pdf)
 - [github.com/lukehsiao/tecs-hardware-kbc…dard_mouser_gold.csv](https://github.com/lukehsiao/tecs-hardware-kbc/blob/master/hack/opamps/data/standard_mouser_gold.csv)
 - [github.com/Himanshu21391/chatbot/blob/…nal%20Amplifiers.txt](https://github.com/Himanshu21391/chatbot/blob/main/docs/Operational%20Amplifiers.txt)
-- [github.com/joaquin-paz/portfolio/blob/main/CORNELL/lf353.pdf](https://github.com/joaquin-paz/portfolio/blob/main/CORNELL/lf353.pdf)
-
-## LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): Texas Instruments (LF347), after 2011 (exact date unknown)
-
-*When:* after 2011 (exact date unknown)
-
-By 2021 a user listed TI's ex-National SNOSBH1D alongside the lf347.pdf symlink for LF347N. That suggests TI's LF347 documentation moved to the National design, but which document the symlink served, and whether TI-lineage LF347 was discontinued, are unverified.
-
-**How to tell old from new:** Datasheet literature number: SLOS013 (TI's 1987/1994 LF347) vs SNOSBH1 (ex-National LF147/LF347, DS005647 lineage).
-
-| Parameter | Before | After |
-|---|---|---|
-| Supply current (typ/max) | 8 / 11 mA (TI SLOS013B) | 7.2 / 11 mA (National DS005647) |
-| GBW typ | 3 MHz (TI) | 4 MHz, 2.2 MHz min (National) |
-
-**Audio impact:** Unknown; both are TL074-class BiFET quads.
-
-- [github.com/cristianoag/wozblaster/blob…Datasheets/lf347.pdf](https://github.com/cristianoag/wozblaster/blob/main/docs/Datasheets/lf347.pdf)
-- [github.com/chenshuo/nuedc/blob/main/do…opamp/lf347-2000.pdf](https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf347-2000.pdf)
-- [github.com/KVentayen/Resources/blob/ma…/Datsheet%20List.tex](https://github.com/KVentayen/Resources/blob/master/Electrical,%20Computer%20Engineering/Component%20Datasheets/Datsheet%20List.tex)
 
 ## LF355 / LF356 / LF357 (LF155 series): Texas Instruments, PCN 20180920003.1; FFAB BI-FET qualification approved…
 
@@ -1153,6 +1164,26 @@ TI moved LM4562/LME49720 wafer fabrication from a 150 mm (6-inch) line to RFAB i
 - [e2e.ti.com/support/audio-group/audio/f…720---eol-really-why](https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why)
 - [diyaudio.com/forums/parts/326045-lm456…20-fab-moved-gb.html](https://www.diyaudio.com/forums/parts/326045-lm4562-aka-lme49720-fab-moved-gb.html)
 - [diyaudio.com/community/threads/lme4972…lm4562.107344/page-7](https://www.diyaudio.com/community/threads/lme49720-vs-lm4562.107344/page-7)
+
+## LM6171 / LM6172 (National high-speed low-distortion voltage-feedback op-amp, single/dual): Texas Instruments, PCN 20241217001.1 issued 2024-12-18; proposed first ship…
+
+*When:* PCN 20241217001.1 issued 2024-12-18; proposed first ship 2025-03-18
+
+TI qualified FFAB (Freising) with the BICOMHD process (FR-BIP-1, 200 mm) for the LM6172, in addition to the original National DL-LIN VIP3 process (150 mm). The die changed as a result. This is part of TI's move out of 150 mm fabs. The same part number now covers two different silicon builds.
+
+**How to tell old from new:** New material is documented by datasheet SNOS792E (rev D before). Per the PCN, TI Melaka and TI Mexico assembly differ in lead finish (Matte Sn vs NiPdAu), mount and mold compound, and pin-1 designator (notch vs dimple). The site-to-feature mapping should be read off the PCN. These features only show the assembly site, not the fab. Because FFAB is added, old (VIP3) and new (BICOMHD) die can ship under the same orderable. Parts with 2025+ date codes are the ones at risk.
+
+| Parameter | Before | After |
+|---|---|---|
+| Fab / process | DL-LIN VIP3, 150 mm wafers | FR-BIP-1 (FFAB) BICOMHD, 200 mm wafers (added) |
+| Die | Original National VIP3 die | Changed die (per PCN summary) |
+| Assembly site | TI Melaka | TI Melaka or TI Mexico (added), with different lead finish, mold/mount compound and pin-1 mark |
+| Datasheet | SNOS792D (Mar 2013) | SNOS792E (Dec 2024); electrical-table changes not captured |
+
+**Audio impact:** Unknown. A new bipolar process and die can change noise, distortion, slew and phase margin. Listening impressions of the LM6172 all predate 2025 and refer to VIP3 silicon. Rollers should not assume new stock sounds or behaves the same, especially in the layout-sensitive socketed builds this part is known for.
+
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20241217001.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6025/PCN20241217001.1.pdf)
+- [ti.com/lit/ds/symlink/lm6172.pdf](https://www.ti.com/lit/ds/symlink/lm6172.pdf)
 
 ## MC33078 / MC33079 (low-noise bipolar dual/quad): Texas Instruments, Confirmed on TI E2E in 2026 (thread 1652528, around June…
 

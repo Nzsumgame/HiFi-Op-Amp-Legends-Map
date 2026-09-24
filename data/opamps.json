@@ -6873,6 +6873,347 @@
      "url_kind": "product_page",
      "notes": "Unconfirmed (from discovery notes).",
      "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "NE5532, NE5532A, SA5532, SA5532A (Rev. H)",
+     "doc_number": "SLOS075",
+     "revision": "H (from the PDF title metadata shown in search)",
+     "date": "not shown in this copy's summary (Rev. H is REVISED MAY 2004 per the known chain)",
+     "url": "https://ccrma.stanford.edu/courses/250a-fall-2005/docs/opamps/ne5532.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Stanford CCRMA course copy (Fall 2005 course folder). The PDF title reads '(Rev. H)'. It is a second Rev. H copy, hosted by a university.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "NE5532x, SA5532x Dual Low-Noise Operational Amplifiers (2015 'Product Folder / Sample & Buy' layout)",
+     "doc_number": "SLOS075",
+     "revision": "revision not shown (the 2015 Product Folder layout matches Rev. J)",
+     "date": "not shown",
+     "url": "https://www.mouser.com/datasheet/2/405/ne5532-556029.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Mouser copy. The snippet shows the 2015-style 'Product Folder Sample & Buy Technical Documents Tools &' header, which suggests Rev. J (Jan 2015). The revision letter is not visible.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "SA5532DR datasheet (TI)",
+     "doc_number": "SLOS075",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheet.octopart.com/SA5532DR-Texas-Instruments-datasheet-114123.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Octopart datasheet cache. The search result gave no title or revision text.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "NE5532 ('1FEATURES' layout)",
+     "doc_number": "SLOS075",
+     "revision": "revision not shown (the 2009-era '1FEATURES' layout matches Rev. I)",
+     "date": "not shown",
+     "url": "https://televideo.ws/images/docs/datasheets/NE5532.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Hobby or repair site copy. The snippet shows the '1FEATURES ... 2IN+ 2IN– 2OUT' layout that TI used in Rev. I (Apr 2009).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "NE5532P datasheet (TI) – DUAL LOW-NOISE OPERATIONAL AMPLIFIERS, 10 pages",
+     "doc_number": "SLOS075",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://html.alldatasheet.com/html-pdf/27248/TI/NE5532P/21/1/NE5532P.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 27248, separate from entry 27244 (Rev. H). The upper-case title 'DUAL LOW-NOISE OPERATIONAL AMPLIFIERS' matches the 1990 to 2004 TI style. It could be Rev. A to H, including one of the missing B, D, E or F.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "NE5532A datasheet (TI)",
+     "doc_number": "SLOS075",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/27245/TI/NE5532A.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 27245. Its number is next to 27244 (Rev. H), so it is probably the same 2004-era upload. Not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "NE5532 datasheet (TI1) – Dual Low-Noise Operational Amplifiers, 23 pages",
+     "doc_number": "SLOS075",
+     "revision": "revision not shown (23-page modern TI layout, so Rev. J or K)",
+     "date": "not shown",
+     "url": "https://htmlapp.alldatasheet.com/html-pdf/785133/TI1/NE5532/1056/18/NE5532.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 785133 ('TI1'). The mixed-case title and 23 pages point to the 2015 or later layout.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "NE5532P Datasheet – Dual Low-Noise High-Speed Audio Operational Amplifier",
+     "doc_number": "SLOS075",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/N/E/5/5/NE5532P.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetcatalog index page for the TI NE5532P.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "onsemi",
+     "title": "ne5532-d.pdf",
+     "doc_number": "NE5532/D",
+     "revision": "revision not shown (the search summary assumed Rev. 2, Sep 2013, but no snippet showed it)",
+     "date": "not shown",
+     "url": "https://www.onsemi.com/download/data-sheet/pdf/ne5532-d.pdf",
+     "url_kind": "vendor_current",
+     "notes": "Current onsemi download URL, a different path from /pdf/datasheet/ne5532-d.pdf. Fetch it to confirm whether it is still Rev. 2 or a later revision.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "ON Semiconductor",
+     "title": "NE5532 Datasheet(PDF) - ON Semiconductor (170 KB, 10 pages)",
+     "doc_number": "NE5532/D",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/175241/ONSEMI/NE5532.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 175241. It could be Rev. 1 (Mar 2006) or Rev. 2. Not confirmed.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "NE/SA/SE5532/5532A Internally-compensated dual low noise operational amplifier – Product specification",
+     "doc_number": "NE/SA/SE5532/5532A Product specification",
+     "revision": "1997 Sep 29 edition (per search summary)",
+     "date": "1997 Sep 29",
+     "url": "https://radiolux.com.ua/files/pdf/NE5532.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Ukrainian hobby or retail site copy. The search summary named this URL as a source for the 1997 Sept 29 Product specification. The 2001 Product data edition confirms that a 1997 Sep 29 edition existed.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "NE/SA/SE5532/5532A Internally-compensated dual low noise operational amplifier – Product data (Supersedes data of 1997 Sep 29)",
+     "doc_number": "NE/SA/SE5532/5532A Product data",
+     "revision": "2001 Aug 03 edition (supersedes 1997 Sep 29)",
+     "date": "2001 Aug 03",
+     "url": "http://www.ben.cz/_d/datasheet/ne5532.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "BEN (Czech technical bookshop and distributor) copy. The snippet title shows 'Product data Supersedes data of 1997 Sep 29 NE/SA/SE5532/5532A'. The search summary gives the edition date as 2001 Aug 03. This is the last Philips-era edition found.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Philips Semiconductors (NXP)",
+     "title": "NE5532 datasheet (1/12 Pages) PHILIPS – Internally-compensated dual low noise operational amplifier",
+     "doc_number": "NE/SA/SE5532/5532A Product specification",
+     "revision": "probably 1997 Sep 29 (the search summary linked the 12-page alldatasheet 17968 pages to the 1997 Product specification; not seen on the page)",
+     "date": "1997 Sep 29 (probable)",
+     "url": "https://www.alldatasheet.com/html-pdf/17968/PHILIPS/NE5532/245/1/NE5532.html",
+     "url_kind": "third_party_mirror",
+     "notes": "HTML page view of alldatasheet entry 17968 (125 KB, 12 pages). It is the same file as the listed datasheet-pdf/pdf/17968 link, and the edition may be 1997 Sep 29.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors (NXP)",
+     "title": "NE5532A Datasheet(PDF) - NXP Semiconductors",
+     "doc_number": "NE/SA/SE5532/5532A",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/17972/PHILIPS/NE5532A.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 17972 (Philips).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors (NXP)",
+     "title": "NE5532N Datasheet(PDF) - NXP Semiconductors",
+     "doc_number": "NE/SA/SE5532/5532A",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/17974/PHILIPS/NE5532N.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 17974 (Philips).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors (NXP)",
+     "title": "NE5532AN Datasheet(PDF) - NXP Semiconductors",
+     "doc_number": "NE/SA/SE5532/5532A",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/17978/PHILIPS/NE5532AN.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 17978 (Philips).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "NE5532 Datasheet (NE5532_PhilipsSemiconductors.pdf)",
+     "doc_number": "NE/SA/SE5532/5532A",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheet4u.com/datasheet/Philips/NE5532-474777",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheet4u entry 474777. The PDF viewer is at https://datasheet4u.com/datasheet-pdf/Philips/NE5532/pdf.php?id=474777",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "NE5532 Philips Internally-compensated dual low noise operational amplifier (ChipFind)",
+     "doc_number": "NE/SA/SE5532/5532A",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.chipfind.net/datasheet/philips/ne5532an.htm",
+     "url_kind": "third_party_mirror",
+     "notes": "ChipFind archive page.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "NE5532 Datasheet PDF, Philips Electronics",
+     "doc_number": "NE/SA/SE5532/5532A",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.datasheetbank.com/en/preview/NE5532-Philips",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetbank preview.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Fairchild Semiconductor",
+     "title": "KA5532 Dual Operational Amplifier",
+     "doc_number": "KA5532",
+     "revision": "Rev. 1.0.1",
+     "date": "©2002",
+     "url": "https://www.farnell.com/datasheets/4317.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Farnell copy. The snippet header reads '©2002 Fairchild Semiconductor Corporation www.fairchildsemi.com Rev. 1.0.1'. Specs include 8 V/us slew rate, 8 nV/rtHz at 30 Hz, 140 kHz full-power bandwidth and ±22 V supply, in 8-DIP. This is the Samsung-origin KA5532 under Fairchild branding.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Fairchild Semiconductor",
+     "title": "KA5532 Datasheet(PDF) - Fairchild Semiconductor (73 KB, 6 pages)",
+     "doc_number": "KA5532",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/53211/FAIRCHILD/KA5532.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 53211.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Fairchild Semiconductor",
+     "title": "KA5532 Datasheet Fairchild",
+     "doc_number": "KA5532",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=80801",
+     "url_kind": "third_party_mirror",
+     "notes": "RadioLocman entry 80801.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Fairchild Semiconductor",
+     "title": "KA5532 Amplifier Datasheet pdf",
+     "doc_number": "KA5532",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheetspdf.com/pdf/389759/Fairchild/KA5532/1",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetspdf entry 389759. Same ID as the datasheet4u copy at https://datasheet4u.com/datasheet-pdf/Fairchild/KA5532/pdf.php?id=389759",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Fairchild Semiconductor",
+     "title": "KA5532 datasheet - Dual Operational Amplifier",
+     "doc_number": "KA5532",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/161/KA5532.php",
+     "url_kind": "third_party_mirror",
+     "notes": "digchip page.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New JRC / Nisshinbo Micro Devices",
+     "title": "NJM5532 LOW-NOISE DUAL OPERATIONAL AMPLIFIER",
+     "doc_number": "NJM5532_E",
+     "revision": "Ver.2020-03-31",
+     "date": "2020-03-31",
+     "url": "https://www.mouser.com/datasheet/2/294/NJM5532_E-1917664.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Mouser copy. The snippet header reads 'NJM5532 - 1 - Ver.2020-03-31 LOW-NOISE DUAL OPERATIONAL AMPLIFIER'. It is 6 pages.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "NJM5532 Datasheet(PDF) - New Japan Radio",
+     "doc_number": "NJM5532",
+     "revision": "revision not shown (older JRC edition, before the 2020 re-format)",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7453/NJRC/NJM5532.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 7453. The low entry number means an early upload, around the 2000s, so this is probably an old-format JRC sheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "JRC5532 Datasheet(PDF) - New Japan Radio",
+     "doc_number": "JRC5532",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7458/NJRC/JRC5532.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 7458. Uses the older 'JRC5532' part-number branding.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "NJM5532DD, NJM5532 Datasheet (JRC) - Low Noise Dual Operational Amplifier",
+     "doc_number": "NJM5532",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheet4u.com/datasheet/JRC/NJM5532DD-1462480",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheet4u entry 1462480.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "JRC5532DD, JRC5532 Datasheet (JRC5532-JRC.pdf)",
+     "doc_number": "JRC5532",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheet4u.com/datasheet/JRC/JRC5532DD-1462476",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheet4u entry 1462476, JRC5532 branding.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "New Japan Radio (JRC)",
+     "title": "NJM5532 Datasheet PDF - Japan Radio Corporation",
+     "doc_number": "NJM5532",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.datasheetq.com/NJM5532-doc-JRC",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetq page.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Signetics",
+     "title": "Datasheet Archive: NE5532N SIGNETICS datasheets",
+     "doc_number": "not captured",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.datasheetarchive.com/ne5532n%20signetics-datasheet.html",
+     "url_kind": "third_party_mirror",
+     "notes": "A Datasheet Archive search or listing page, not one document. It may lead to scans of Signetics data books.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -6959,6 +7300,41 @@
      "revision": "Rev. 1.0.2",
      "date": "©2009",
      "changes": "Fairchild NE5532 datasheet, frozen on Mouser."
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "doc_number": "NE/SA/SE5532/5532A Product specification",
+     "revision": "1997 Sep 29",
+     "date": "1997 Sep 29",
+     "changes": "Philips Semiconductors 'Product specification' edition of 'NE/SA/SE5532/5532A Internally-compensated dual low noise operational amplifier'. Copy at radiolux.com.ua, and probably also alldatasheet 17968 (12 pages). The 2001 Product data edition names it as superseded. Change list not captured."
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "doc_number": "NE/SA/SE5532/5532A Product data",
+     "revision": "2001 Aug 03",
+     "date": "2001 Aug 03",
+     "changes": "'Product data' edition that states 'Supersedes data of 1997 Sep 29'. Copy at ben.cz. It is the latest Philips-era edition found. No NXP-branded re-issue was found. Change list not captured."
+    },
+    {
+     "vendor": "Fairchild Semiconductor",
+     "doc_number": "KA5532",
+     "revision": "Rev. 1.0.1",
+     "date": "©2002",
+     "changes": "Fairchild KA5532 (Samsung origin) Dual Operational Amplifier, copy on Farnell. Specs: 8 V/us slew rate, 8 nV/rtHz at 30 Hz, 140 kHz full-power bandwidth, ±22 V supply absolute max, 8-DIP. No other KA5532 revision was seen."
+    },
+    {
+     "vendor": "New JRC / Nisshinbo Micro Devices",
+     "doc_number": "NJM5532_E",
+     "revision": "Ver.2020-03-31",
+     "date": "2020-03-31",
+     "changes": "Re-formatted NJM5532 'LOW-NOISE DUAL OPERATIONAL AMPLIFIER' datasheet, 6 pages, copy on Mouser. Earlier JRC editions exist on alldatasheet (7453 NJM5532, 7458 JRC5532), but their dates were not shown."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SLOS075",
+     "revision": "H",
+     "date": "REVISED MAY 2004",
+     "changes": "The Stanford CCRMA copy (2005 course) has the PDF title 'NE5532, NE5532A, SA5532, SA5532A (Rev. H)', so the SA5532 and SA5532A grades appear in TI's document title by Rev. H. Rev. G (2002) is headed 'NE5532, NE5532A'. The metadata title may be TI's web title, not the printed heading."
     }
    ],
    "silicon_changes": [
@@ -7120,7 +7496,11 @@
     "SLOS075"
    ],
    "archive_seed_urls": [
+    "http://focus.ti.com/lit/ds/symlink/ne5532.pdf",
+    "http://focus.ti.com/lit/ds/symlink/ne5532a.pdf",
+    "http://www.ben.cz/_d/datasheet/ne5532.pdf",
     "http://www.njr.com/semicon/PDF/NJM5532_E.pdf",
+    "http://www.onsemi.com/pub_link/Collateral/NE5532-D.PDF",
     "http://www.ti.com/lit/ds/symlink/ne5532.pdf",
     "https://datasheet.lcsc.com/lcsc/NE5532DR_C7426.pdf",
     "https://datasheet.octopart.com/NE5532D-Texas-Instruments-datasheet-5316424.pdf",
@@ -7136,6 +7516,7 @@
     "https://www.mouser.com/datasheet/2/308/NE5532-D-65704.pdf",
     "https://www.nxp.com/docs/en/data-sheet/NE5532.pdf",
     "https://www.onsemi.com/download/data-sheet/pdf/NE5532-D.PDF",
+    "https://www.onsemi.com/download/data-sheet/pdf/ne5532-d.pdf",
     "https://www.onsemi.com/pdf/datasheet/ne5532-d.pdf",
     "https://www.onsemi.com/pub/Collateral/NE5532-D.PDF",
     "https://www.st.com/resource/en/datasheet/ne5532.pdf",
@@ -7318,7 +7699,8 @@
      "https://sound-au.com/articles/opamp-history.htm",
      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100000573.md"
     ]
-   }
+   },
+   "revision_chain_summary": "I used all 14 WebSearch calls. A few results were near misses, and some gaps remain.\n\nTI SLOS075 (oldest to newest): original Nov 1979, A (Sep 1990), B (missing), C (Jun 2000), D, E and F (all missing), G (Jun 2002), H (May 2004), I (Apr 2009), J (Jan 2015), K (Dec 2025). No search result showed a B, D, E or F header. One search summary claimed 'SLOS075B is the TI revision reference', but no source supported it, so I did not record it. New copies of known revisions: a Rev. H copy at ccrma.stanford.edu (PDF title '(Rev. H)'); a probable Rev. J copy on Mouser (2015 'Product Folder' layout); a probable Rev. I copy at televideo.ws ('1FEATURES' layout). The Octopart SA5532DR copy, alldatasheet 27245, 27248 and 785133, and datasheetcatalog show no revision. alldatasheet 27248 (NE5532P, 10 pages, upper-case 1990 to 2004 style title) is the most likely place to find one of the missing B, D, E or F. Fetch it to check.\n\nPhilips/Signetics: 1997 Sep 29 Product specification (radiolux.com.ua, probably also alldatasheet 17968), then 2001 Aug 03 Product data, which 'Supersedes data of 1997 Sep 29' (ben.cz). Missing: any pre-1997 Signetics or Philips edition (the 1979 original and any 1980s or 1994 data-book editions), any NXP re-issue after 2006, and the Philips semiconductors.philips.com/acrobat file names. Datasheet Archive has only listing pages.\n\nonsemi NE5532/D: Rev. 1 (Mar 2006), then Rev. 2 (Sep 2013). No Rev. 0, Rev. 3 or later was found. The current download URL (onsemi.com/download/data-sheet/pdf/ne5532-d.pdf) was not confirmed, so fetch it to see whether it is still Rev. 2. alldatasheet 175241 shows no revision.\n\nFairchild: KA5532 Rev. 1.0.1 (©2002, Farnell) is new. NE5532 Rev. 1.0.2 (©2009) was already known. Missing: KA5532 editions from before 2002 or under the Samsung brand, and any other Fairchild NE5532 revisions.\n\nJRC/Nisshinbo NJM5532: Ver.2020-03-31 (Mouser NJM5532_E) is new. Older JRC and JRC5532 editions exist on alldatasheet (7453, 7458) but their dates were not shown. Any later Nisshinbo Ver. date is missing.\n\nST: no ST NE5532 datasheet or DocID turned up, including in a search restricted to st.com. ST may never have published one, so its status is unconfirmed.\n\nArchive seeds: the focus.ti.com symlink URLs and the onsemi pub_link/Collateral/NE5532-D.PDF URL follow each vendor's known legacy URL pattern and did not appear in any search result. Use them only for Wayback lookups. The ben.cz and onsemi download URLs did appear in results."
   },
   {
    "id": "NE5534",
@@ -7962,6 +8344,336 @@
      "url_kind": "vendor_legacy",
      "notes": "Legacy ON URL cited in an old article (echalkpad/articles). Whether it is still live is unknown. Good Wayback seed for older ON revisions.",
      "confidence": "medium"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "NE/SA/SE5534/5534A Single low noise operational amplifier (Product specification)",
+     "doc_number": "-",
+     "revision": "probably the 2001 Aug 03 edition, which supersedes 1994 Aug 31 (the single-device title matches the 2001 format; the summary did not tie the date to this exact copy)",
+     "date": "2001 Aug 03 (per search summary)",
+     "url": "https://www.esr.co.uk/manuals/NE5534.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Philips-branded NE/SA/SE5534 single-device product specification hosted by ESR Electronic Components (UK). A search summary for this result set said 'product data 2001 Aug 03 supersedes data of 1994 Aug 31'. It covers the SE (military) grade.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "NE5533/5533A/5534/5534A Dual and single low noise op amp (Product specification)",
+     "doc_number": "-",
+     "revision": "1994 Aug 31 edition (per search summary)",
+     "date": "1994 Aug 31",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/17973/PHILIPS/NE5534.html",
+     "url_kind": "third_party_mirror",
+     "notes": "8 pages, 109 KB. The search summary said the product specification is dated August 31, 1994. It is the older combined NE5533 (dual) + NE5534 (single) Philips datasheet. The HTML view is at https://www.alldatasheet.com/html-pdf/17973/PHILIPS/NE5534/245/1/NE5534.html.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "SA5534A Dual and single low noise op amp",
+     "doc_number": "-",
+     "revision": "revision not shown (the combined 'Dual and single' title suggests the 1994 edition)",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/html-pdf/17975/PHILIPS/SA5534A/1250/5/SA5534A.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 17975, 8 pages. It has the same title as entry 17973.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "Philips Semiconductors Linear Products Product specification NE5533/5533A/...",
+     "doc_number": "-",
+     "revision": "revision not shown (the 'Linear Products' header suggests the pre-2001 combined NE5533/5534 edition)",
+     "date": "unknown",
+     "url": "https://www.pcbfacile.com/media/NE5534N.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Hobby/PCB site copy of the Philips combined NE5533/NE5534 product specification.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "SE5534 Single low noise operational amplifier - Philips",
+     "doc_number": "-",
+     "revision": "revision not shown (the single-device title suggests the 2001 edition)",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/S/E/5/5/SE5534.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetcatalog Philips SE5534 entry.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors / NXP",
+     "title": "SA5534 - Philips Semiconductors / NXP Semiconductors",
+     "doc_number": "-",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://pdf.datasheet.live/9e004d3c/semiconductors.philips.com/SA5534.html",
+     "url_kind": "third_party_mirror",
+     "notes": "The path shows the copy was taken from semiconductors.philips.com (the original Philips datasheet host). The exact legacy Philips URL was not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "Philips NE5534",
+     "doc_number": "-",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.yumpu.com/en/document/view/26550120/philips-ne5534",
+     "url_kind": "third_party_mirror",
+     "notes": "Yumpu copy of a Philips NE5534 datasheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "PHILIPS 5534A DATASHEET",
+     "doc_number": "-",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.manualslib.com/manual/128299/Philips-5534a.html",
+     "url_kind": "third_party_mirror",
+     "notes": "ManualsLib copy that turned up in a search for NE/SA/SE5534 'Single low noise operational amplifier' Product specification.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "NE5534 - Dual and single low noise op amp (Philipss)",
+     "doc_number": "-",
+     "revision": "revision not shown (the combined title suggests the 1994 edition)",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet/Philipss/NE5534-454296",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheet4u id 454296. Also mirrored at https://datasheetspdf.com/pdf/454296/Philipss/NE5534/1.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "NE5534 Philips Dual and single low noise op amp",
+     "doc_number": "-",
+     "revision": "revision not shown (the combined title suggests the 1994 edition)",
+     "date": "unknown",
+     "url": "https://www.chipfind.net/datasheet/philips/ne5534.htm",
+     "url_kind": "third_party_mirror",
+     "notes": "ChipFind datasheet archive entry.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "title": "NE5534 Philips Semiconductors, NE5534 Datasheet",
+     "doc_number": "-",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://elcodis.com/parts/5780842/NE5534.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Elcodis part page with a Philips datasheet. It came up alongside the '2001 Aug 03 / 1994 Aug 31' summary, but the edition is not tied to it.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "onsemi (ON Semiconductor)",
+     "title": "NE5534 - DATA SHEET www.onsemi.com (c) Semiconductor Components Industries, LLC, 2012",
+     "doc_number": "NE5534/D",
+     "revision": "revision not shown (new onsemi 'DATA SHEET' template, so probably after Rev. 3; possibly Rev. 4)",
+     "date": "unknown",
+     "url": "https://www.mouser.com/datasheet/2/308/NE5534_D-1813172.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Mouser copy in the newer onsemi template. It differs from NE5534-D-99992.pdf (July 2012 Rev. 3).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "onsemi (ON Semiconductor)",
+     "title": "NE5534 - Single Low Noise Operational Amplifier",
+     "doc_number": "NE5534/D",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://pdf.icgoo.net/productinfo/allpdf/c7e305e8-6ebc-3c2f-b44b-ead092bc68fa.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "icgoo (Chinese distributor) PDF cache.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "onsemi (ON Semiconductor)",
+     "title": "NE5534 Low Noise Op-Amp Datasheet (NE5534-D)",
+     "doc_number": "NE5534/D",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.scribd.com/document/752633072/NE5534-D",
+     "url_kind": "third_party_mirror",
+     "notes": "Scribd upload of NE5534-D.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "ON Semiconductor",
+     "title": "NE5534D Datasheet PDF, ON Semiconductor: Single Low Noise Operational Amplifier",
+     "doc_number": "NE5534/D",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetbank.com/datasheet/ON-Semiconductor/NE5534D.html",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetbank mirror.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "ON Semiconductor",
+     "title": "NE5534 Datasheet - SOP Amplifier | onsemi",
+     "doc_number": "NE5534/D",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/ON-Semiconductor/NE5534/579334",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheet4u id 579334.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "ON Semiconductor",
+     "title": "NE5534 Datasheet pdf - Operational Amplifier, Low Noise, Single - ON Semiconductor",
+     "doc_number": "NE5534/D",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/N/E/5/5/NE5534.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetcatalog ON Semiconductor entry, likely an older ON Semiconductor-era edition.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "ON Semiconductor",
+     "title": "NE5534 datasheet - Single Low Noise Operational Amplifier",
+     "doc_number": "NE5534/D (inferred from the onsemi title wording)",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/364/NE5534.php",
+     "url_kind": "third_party_mirror",
+     "notes": "digchip entry. The vendor is inferred from the title, which matches the onsemi title.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "ON Semiconductor",
+     "title": "NE5534 (legacy ON Semiconductor product page)",
+     "doc_number": "-",
+     "revision": "-",
+     "date": "-",
+     "url": "https://www.onsemi.com/PowerSolutions/product.do?id=NE5534",
+     "url_kind": "product_page",
+     "notes": "Legacy onsemi PowerSolutions product-page URL. It is useful as a Wayback seed for older NE5534/D revisions.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "NE5534A datasheet (2/7 Pages) TI | LOW-NOISE OPERATIONAL AMPLIFIERS",
+     "doc_number": "SLOS070",
+     "revision": "revision not shown (7 pages and the all-caps title suggest the 1990-era edition)",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.co.uk/html-pdf/27247/TI/NE5534A/47/2/NE5534A.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet entry 27247 (NE5534A), a sibling of entries 27246 (NE5534) and 27248 (SE5534).",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "NE5534P datasheet - ti NE5534, Low-noise High-speed ...",
+     "doc_number": "SLOS070",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/477/NE5534P.php",
+     "url_kind": "third_party_mirror",
+     "notes": "digchip TI entry.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "JRC / New Japan Radio",
+     "title": "NJM5534DD Datasheet (PDF) - New Japan Radio",
+     "doc_number": "NJM5534",
+     "revision": "Ver. not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/515327/NJRC/NJM5534DD.html",
+     "url_kind": "third_party_mirror",
+     "notes": "6 pages, 174 KB. It covers the NJM5534DD, so it is probably a newer edition than entries 7454/7455.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "JRC / New Japan Radio",
+     "title": "NJM5534 Datasheet (PDF) - New Japan Radio",
+     "doc_number": "NJM5534",
+     "revision": "Ver. not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7454/NJRC/NJM5534.html",
+     "url_kind": "third_party_mirror",
+     "notes": "The low alldatasheet id (7454) suggests an early-2000s-or-older copy of the JRC datasheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "JRC / New Japan Radio",
+     "title": "NJM5534D Datasheet (PDF) - New Japan Radio",
+     "doc_number": "NJM5534",
+     "revision": "Ver. not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7455/NJRC/NJM5534D.html",
+     "url_kind": "third_party_mirror",
+     "notes": "NJM5534D (DIP, now obsolete) entry.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "JRC / New Japan Radio",
+     "title": "NJM5534 Datasheet | New Japan Radio",
+     "doc_number": "NJM5534",
+     "revision": "Ver. not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/New-Japan-Radio/NJM5534/455113",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheet4u id 455113. Also mirrored at https://datasheetspdf.com/pdf/455113/NewJapanRadio/NJM5534/1.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "JRC (Japan Radio Corporation)",
+     "title": "NJM5534 Datasheet PDF - Japan Radio Corporation",
+     "doc_number": "NJM5534",
+     "revision": "Ver. not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/NJM5534-doc-JRC",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetq JRC entry. A JRC5534 entry is also at https://www.datasheetq.com/en/JRC5534-JRC.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "JRC / New Japan Radio",
+     "title": "NJM5534D New Japan Radio - Datasheet PDF & Technical Specs",
+     "doc_number": "NJM5534",
+     "revision": "Ver. not shown",
+     "date": "unknown",
+     "url": "https://www.allaboutcircuits.com/electronic-components/datasheet/NJM5534D--New-Japan%20Radio/",
+     "url_kind": "third_party_mirror",
+     "notes": "AllAboutCircuits datasheet page.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "JRC / New Japan Radio",
+     "title": "Discontinued NJM5534 Notice (NJM5534-2-22-11)",
+     "doc_number": "-",
+     "revision": "not shown",
+     "date": "unknown (the filename suffix '2-22-11' may encode a date; unverified)",
+     "url": "https://www.scribd.com/document/619321914/NJM5534-2-22-11",
+     "url_kind": "third_party_mirror",
+     "notes": "Scribd upload titled as a discontinuation notice for NJM5534 variants (NJM5534D/M obsolete, NJM5534DD current). This is not the datasheet itself.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Signetics",
+     "title": "NE5534N low noise op-amp - Signetics (silicon-ark)",
+     "doc_number": "-",
+     "revision": "-",
+     "date": "-",
+     "url": "https://www.silicon-ark.co.uk/ne5534n-low-noise-op-amp-by-signetics",
+     "url_kind": "product_page",
+     "notes": "Vintage-parts seller page for original Signetics NE5534N stock (NE5534AN page: https://www.silicon-ark.co.uk/ne5534an-low-noise-op-amp-by-signetics). Evidence of Signetics-marked parts. No Signetics datasheet revision is shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Signetics",
+     "title": "Datasheet Archive: NE5534 SIGNETICS datasheets",
+     "doc_number": "-",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheetarchive.com/NE5534%20signetics-datasheet.html",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetarchive index of Signetics NE5534 scans (likely data-book extracts). This is the most promising lead for a Signetics-branded NE5534 sheet; the contents were not seen.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -8006,6 +8718,41 @@
      "revision": "unknown",
      "date": "(c) 2012 (current file)",
      "changes": "The current onsemi file carries a 2012 copyright. Earlier revisions (ON Semiconductor pub/Collateral era) exist but their letters and dates were not retrieved."
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "doc_number": "NE5533/5533A/5534/5534A 'Dual and single low noise op amp' Product specification",
+     "revision": "1994 Aug 31",
+     "date": "1994 Aug 31",
+     "changes": "Combined dual (NE5533) and single (NE5534) Philips Linear Products datasheet. The date comes from a search summary for alldatasheet entry 17973 and is confirmed as the 'Supersedes data of' date of the 2001 edition. The change list was not shown."
+    },
+    {
+     "vendor": "Philips Semiconductors",
+     "doc_number": "NE/SA/SE5534/5534A 'Single low noise operational amplifier' Product data",
+     "revision": "2001 Aug 03",
+     "date": "2001 Aug 03 (supersedes data of 1994 Aug 31)",
+     "changes": "Per the search summary: 'product data 2001 Aug 03 supersedes data of 1994 Aug 31'. The title changed from the combined NE5533/5534 'Dual and single low noise op amp' to a single-device NE/SA/SE5534/5534A datasheet that still lists the SE (military) grade. No electrical change summary was shown."
+    },
+    {
+     "vendor": "onsemi (ON Semiconductor)",
+     "doc_number": "NE5534/D",
+     "revision": "Rev. 3",
+     "date": "July, 2012",
+     "changes": "Footer '(c) Semiconductor Components Industries, LLC, 2012 July, 2012 - Rev. 3' is shown in the search-result title of https://www.mouser.com/datasheet/2/308/NE5534-D-99992.pdf (URL already listed; this is its revision). The change list was not shown."
+    },
+    {
+     "vendor": "onsemi",
+     "doc_number": "NE5534/D",
+     "revision": "Rev. 4",
+     "date": "December, 2024",
+     "changes": "Two independent search summaries say the current onsemi NE5534/D (https://www.onsemi.com/pdf/datasheet/ne5534-d.pdf, already listed) is Rev. 4, December 2024. The file keeps the '(c) 2012' first-publication copyright. It is probably a move to the new onsemi 'DATA SHEET' template (compare mouser NE5534_D-1813172.pdf). The change list was not shown."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SLOS070",
+     "revision": "original (no letter)",
+     "date": "JULY 1979 - REVISED SEPTEMBER 1990",
+     "changes": "Re-confirmed by a search summary ('one version shows SLOS070 revised in September 1990'). Title 'NE5534, NE5534A, SE5534, SE5534A LOW-NOISE OPERATIONAL AMPLIFIERS' (mirrors: ben.cz, silicon-ark, xcc SE5534FKB). SE grades are -55 to 125 C."
     }
    ],
    "silicon_changes": [
@@ -8088,17 +8835,20 @@
    ],
    "archive_seed_urls": [
     "http://focus.ti.com/lit/ds/symlink/ne5534.pdf",
+    "http://focus.ti.com/lit/ds/symlink/sa5534.pdf",
     "http://www.nxp.com/documents/data_sheet/NE5534.pdf",
     "http://www.onsemi.com/pub/Collateral/NE5534-D.PDF",
     "http://www.ti.com/lit/ds/symlink/ne5534.pdf",
     "http://www.ti.com/lit/gpn/ne5534",
     "http://www.ti.com/product/NE5534/datasheet",
     "https://archive.org/details/bitsavers_signeticsdcsAnalogApplications_33415016",
+    "https://pdf.datasheet.live/9e004d3c/semiconductors.philips.com/SA5534.html",
     "https://www.mouser.com/catalog/specsheets/texas%20instruments_ne5534.pdf",
     "https://www.mouser.com/catalog/specsheets/texas%20instruments_sa5534.pdf",
     "https://www.mouser.com/ds/2/308/ne5534-d-303735.pdf",
     "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/obsolete.html",
     "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm5534",
+    "https://www.onsemi.com/PowerSolutions/product.do?id=NE5534",
     "https://www.onsemi.com/pdf/datasheet/ne5534-d.pdf",
     "https://www.onsemi.com/products/standard-products/amplifiers-comparators/operational-amplifiers-op-amps/ne5534",
     "https://www.ti.com/document-viewer/NE5534/datasheet",
@@ -8283,7 +9033,8 @@
      "https://ameblo.jp/junker-life/entry-12801835867.html",
      "https://www.ti.com/product/NE5534"
     ]
-   }
+   },
+   "revision_chain_summary": "TI SLOS070 (NE5534/NE5534A/SE5534/SE5534A, later SA5534/SA5534A). Known chain: the original edition (JULY 1979 - REVISED SEPTEMBER 1990; the date is now re-confirmed by a search summary; SE-grade title), then B (FEB 2004), C (SEP 2004), and D (NOV 2014, still current). Missing: SLOS070A was not found. One search summary claimed 'SLOS070A' is the NE5534/SA5534 document number, but no copy showed an SLOS070A header, so it is not recorded. Also missing: the change log for B and whether A (c.1990s-2003) exists. Pre-1990 TI editions, if any, were not found.\n\nPhilips Semiconductors (Signetics successor) product specifications. Two found, oldest to newest. (1) NE5533/5533A/5534/5534A 'Dual and single low noise op amp', 1994 Aug 31 (alldatasheet 17973, 8 pp; also 17975, datasheet4u 454296, chipfind, pcbfacile 'Linear Products'). (2) NE/SA/SE5534/5534A 'Single low noise operational amplifier', 2001 Aug 03, which supersedes 1994 Aug 31 (esr.co.uk copy likely; datasheetcatalog SE5534). Missing: any pre-1994 Philips edition, the Signetics-branded originals (1979-1990s data-book sheets; datasheetarchive has a 'NE5534 Signetics' index, contents not seen), and the exact legacy semiconductors.philips.com/acrobat URL (only the datasheet.live mirror path shows the host). No NXP-era edition after 2001 was found.\n\nonsemi/ON Semiconductor NE5534/D. Found: Rev. 3 (July 2012, mouser NE5534-D-99992.pdf) and Rev. 4 (December 2024, current onsemi.com). Missing: Rev. 0-2 (ON Semiconductor pub/Collateral era, probably 2000s); seeds are http://www.onsemi.com/pub/Collateral/NE5534-D.PDF and the PowerSolutions product page.\n\nJRC/NJR/Nisshinbo NJM5534. No 'Ver.' date was shown in any summary. Copies were found (alldatasheet 7454/7455 older NJM5534/NJM5534D; 515327 NJM5534DD 6 pp; datasheet4u 455113; datasheetq), plus a Scribd 'Discontinued NJM5534 Notice' (NJM5534-2-22-11). All Ver. dates are still missing.\n\nSTMicroelectronics. A dedicated search found no ST NE5534 datasheet; it remains unconfirmed whether ST ever second-sourced the single NE5534.\n\nThe archive seeds focus.ti.com/lit/ds/symlink/ne5534.pdf and sa5534.pdf follow TI's historic URL pattern and were not seen in results. http://www.ti.com/lit/ds/symlink/ne5534.pdf appeared in a summary."
   },
   {
    "id": "NJM4580",
@@ -19248,12 +19999,12 @@
    "id": "LF353",
    "name": "LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input)",
    "tagline": "National's 1977 BI-FET II JFET dual: a cheap TL072-class op-amp found in vintage audio and synth gear, valued mostly for period-correct restorations.",
-   "technology": "BiFET: matched high-voltage JFET input pair plus bipolar output stage on one monolithic chip, with an internally trimmed input offset. National called it 'BI-FET II' and advertised it as laser-trimmed. Internally compensated, 0-70 °C commercial grade. National's application hints say each amplifier is biased by its own zener reference (DS005649).",
+   "technology": "BiFET: matched high-voltage JFET input pair plus bipolar output stage on one monolithic chip, with an internally trimmed input offset. National called it 'BI-FET II' (the TI LF353-N datasheet SNOSBH3F keeps that wording). Internally compensated, 0-70 °C commercial grade. National's application hints say each amplifier is biased by its own zener reference (DS005649).",
    "manufacturers": [
     "National Semiconductor (originator; BI-FET II LF351/LF353/LF347 advertised in Electronic Design, 27 Sep 1977; acquired by TI 2011)",
-    "Texas Instruments (own LF351/LF353/LF347 datasheets dated March 1987; also sells the ex-National LF353-N and LF147/LF347)",
-    "STMicroelectronics (LF351, LF253/LF353, LF247/LF347)",
-    "Motorola / ON Semiconductor ('Family of BIFET Operational Amplifiers' LF347/LF351/LF353)",
+    "Texas Instruments (two lineages: its own LF353 SLOS012 / LF347 SLOS013 from March 1987, and the ex-National LF353-N SNOSBH3, LF147/LF347-N SNOSBH1 and LF351-N)",
+    "STMicroelectronics (LF351, LF253/LF353 Doc ID 2153, LF247/LF347)",
+    "Motorola / ON Semiconductor ('Family of BIFET Operational Amplifiers' LF347/LF351/LF353; ON discontinuance notice 10109 around 1999-2000 covers LF353 variants)",
     "Fairchild Semiconductor (LF351, Rev 1.0.1, PDF created June 2001)"
    ],
    "part_numbers": [
@@ -19264,7 +20015,7 @@
       "Texas Instruments"
      ],
      "status": "active (TI orderable addendum dated 10-Nov-2025 in a TI PDF generated 15-Dec-2025)",
-     "notes": "TI's LF353 lineage (SLOS012), PDIP-8, marked LF353P. The addendum also lists LF353P.A."
+     "notes": "TI's own LF353 lineage (SLOS012), PDIP-8, marked LF353P. The addendum also lists LF353P.A. RS Online lists LF353P at 3 MHz GBW."
     },
     {
      "pn": "LF353DR",
@@ -19273,7 +20024,16 @@
       "Texas Instruments"
      ],
      "status": "active (addendum 10-Nov-2025)",
-     "notes": "SOIC-8 tape and reel, marked LF353. The addendum also lists LF353DR.A. LF353D appears in the SLOS012C device table but in neither the 2-Nov-2023 nor the 10-Nov-2025 addendum."
+     "notes": "SOIC-8 tape and reel, marked LF353. The addendum also lists LF353DR.A."
+    },
+    {
+     "pn": "LF353D",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown; a TI part-details page exists (ti.com/product/LF353/part-details/LF353D), but the part is in neither the 2-Nov-2023 nor the 10-Nov-2025 addendum (possibly obsolete)",
+     "notes": "SOIC-8 tube, listed in the SLOS012C device table. An unread TI E2E 'PCN Details' attachment is named after LF353D."
     },
     {
      "pn": "LF353PE4",
@@ -19294,14 +20054,14 @@
      "notes": "TI's 1988 LF353 sheet (D2997, revised May 1988) offers D, JG and P packages. SLOS012C lists only D and P."
     },
     {
-     "pn": "LF353N/NOPB, LF353M/NOPB, LF353MX/NOPB (LF353-N)",
+     "pn": "LF353N/NOPB, LF353M/NOPB, LF353MX/NOPB (TI LF353-N)",
      "channels": 2,
      "vendors": [
       "National Semiconductor",
       "Texas Instruments"
      ],
-     "status": "unknown (current TI status not verified)",
-     "notes": "The National die. National's Aug 2000 DS005649 gives the order numbers LF353M, LF353MX and LF353N. TI documents it as 'LF353-N Wide Bandwidth Dual JFET Input Operational Amplifier' (symlink lf353-n.pdf; a student bibliography dates it 2013). A 2017 BOM (auxren/Compressor) lists LF353MX/NOPB as Texas Instruments."
+     "status": "sold under TI product LF353-N (ti.com/product/LF353-N); RS Online stocks LF353M/NOPB and LF353MX/NOPB; formal lifecycle status not confirmed",
+     "notes": "National die. The datasheet is TI SNOSBH3F (APRIL 1998 - REVISED MARCH 2013): 4 MHz GBW, 13 V/us, 10 mV trimmed offset, 50 pA IB, pin-compatible with LM1558. National's Aug 2000 DS005649 gives the order numbers LF353M, LF353MX and LF353N. RS lists the /NOPB parts at 4 MHz."
     },
     {
      "pn": "LF353AN / LF353BN / LF353AH / LF353BH / LF353H (National)",
@@ -19310,7 +20070,7 @@
       "National Semiconductor"
      ],
      "status": "obsolete (absent from National's Aug 2000 DS005649)",
-     "notes": "National 1980 databook grades: LF353A (VOS 1/2 mV), LF353B (3/5 mV), LF353 (5/10 mV). TO-99 metal can (H) and DIP (N). The 1977 ad lists A/B/standard grades of singles, duals and quads."
+     "notes": "National 1980 databook grades: LF353A (VOS 1/2 mV), LF353B (3/5 mV), LF353 (5/10 mV). TO-99 metal can (H) and DIP (N)."
     },
     {
      "pn": "LF353N / LF353D / LF353DT (ST)",
@@ -19318,8 +20078,8 @@
      "vendors": [
       "STMicroelectronics"
      ],
-     "status": "active per a copy of ST's op-amp selector (third-party repo)",
-     "notes": "One ST datasheet covers LF253 and LF353. The ST selector gives LF353 as 6-32 V, 0-70 °C, 1400 uA/ch, VIO max 10 mV, '15nV/sqrtHz & 0.01%'. Mouser's parametric data for LF353DT gives 4 MHz GBP and 3.2 mA typ supply current."
+     "status": "active per a copy of ST's op-amp selector (third-party repo); the ST datasheet URL is live (Doc ID 2153 Rev 3)",
+     "notes": "One ST datasheet (Doc ID 2153, Rev 3, March 2010) covers LF253 and LF353, with a 16 V/us slew rate headline. The ST selector copy gives 6-32 V, 0-70 °C, 1400 uA/ch, VIO max 10 mV and '15nV/sqrtHz & 0.01%'. Mouser's parametric data for LF353DT gives 4 MHz GBP and 3.2 mA typ."
     },
     {
      "pn": "LF253 / LF253N / LF253D / LF253DT",
@@ -19328,10 +20088,10 @@
       "STMicroelectronics"
      ],
      "status": "active per ST selector copy",
-     "notes": "ST extended-temperature dual (-40 to 105 °C, 6-36 V), in the same datasheet as the ST LF353."
+     "notes": "ST extended-temperature dual (-40 to 105 °C, 6-36 V), in the same Doc ID 2153 datasheet as the ST LF353. An older ST/SGS-Thomson edition also covered LF153."
     },
     {
-     "pn": "LF351N / LF351D / LF351DT (ST); LF351N (National, Fairchild); LF351D/P/JG (TI)",
+     "pn": "LF351N / LF351D / LF351DT (ST); LF351N (National, Fairchild); LF351D/P/JG (TI); TI LF351-N",
      "channels": 1,
      "vendors": [
       "STMicroelectronics",
@@ -19340,27 +20100,27 @@
       "Motorola/ON Semiconductor",
       "Texas Instruments"
      ],
-     "status": "ST: active per selector copy (6-32 V). Others unknown.",
-     "notes": "National 1980 offered LF351, LF351A and LF351B plus '-1' variants in H and N packages. TI's own LF351 sheet (March 1987) gives 3 MHz, 18 nV/rtHz and ICC 1.8/3.4 mA in D, JG and P packages. Fairchild Rev 1.0.1 gives GBW 4 MHz and ICC 2.3/3.4 mA. A TI LF351 product page URL is referenced (voltdocs), but its status was not verified."
+     "status": "ST: active per selector copy (6-32 V). A TI LF351-N (ex-National) product page exists; its lifecycle is not confirmed. Forum sources call the LF351 obsolete (low confidence). Others unknown.",
+     "notes": "National 1980 offered LF351, LF351A and LF351B plus '-1' variants in H and N packages. TI's own LF351 sheet (March 1987) gives 3 MHz, 18 nV/rtHz and ICC 1.8/3.4 mA in D, JG and P packages. Fairchild Rev 1.0.1 gives GBW 4 MHz and ICC 2.3/3.4 mA."
     },
     {
-     "pn": "LF347N / LF347D / LF347BN / LF347BD (TI; LF347J / LF347BJ in 1987)",
+     "pn": "LF347N / LF347D / LF347BN / LF347BD (TI LF347; LF347J / LF347BJ in 1987)",
      "channels": 4,
      "vendors": [
       "Texas Instruments"
      ],
-     "status": "unknown (TI lineage SLOS013B, 1994)",
-     "notes": "TI LF347B grade: VIO 3 typ / 5 max mV (LF347: 5/10 mV). ICC 8 typ / 11 max mA per package. The CDIP 'J' versions appear in the 1987 sheet but not in SLOS013B."
+     "status": "TI product page LF347 live; datasheet SLOS013C (revised March 2016, per search summary); a search summary describes LF347N and LF347BN as active (not confirmed on an orderable list)",
+     "notes": "TI lineage: 'LF347, LF347B JFET-Input Quad Operational Amplifiers', 3 MHz, 13 V/us, 36 V. TI LF347B grade: VIO 3 typ / 5 max mV (LF347: 5/10 mV). ICC 8 typ / 11 max mA per package."
     },
     {
-     "pn": "LF147 / LF347 / LF347B (National; TI SNOSBH1)",
+     "pn": "LF147 / LF347 / LF347B (National DS005647); TI LF347-N (SNOSBH1D)",
      "channels": 4,
      "vendors": [
       "National Semiconductor",
       "Texas Instruments"
      ],
-     "status": "unknown",
-     "notes": "National DS005647 (Aug 2000) orders: LF147J, LF147J-SMD, LF147J/883, LF347M, LF347MX, LF347BN, LF347N. National 1980 also had LF347A and J packages. TI's SNOSBH1 rev D is the ex-National document."
+     "status": "TI product page LF347-N live; lifecycle not confirmed",
+     "notes": "National DS005647 (Aug 2000) orders: LF147J, LF147J-SMD, LF147J/883, LF347M, LF347MX, LF347BN, LF347N. National 1980 also had LF347A and J packages. TI SNOSBH1D is titled 'LF147, LF347-N' (MAY 1999 - REVISED MARCH 2013)."
     },
     {
      "pn": "LF347 / LF247 (ST)",
@@ -19378,8 +20138,8 @@
       "Motorola",
       "ON Semiconductor"
      ],
-     "status": "unknown / likely obsolete",
-     "notes": "Listed in a Motorola IC catalogue (rhooper/ic-ocr-cataloger) as 'Family of BIFET Operational Amplifiers'. An ON LF347N datasheet copy on datasheetspdf.com is referenced but was not read."
+     "status": "obsolete (probable): ON Semiconductor product discontinuance notice 10109 and update 10127 (around 1999-2000) mention LF353 variants; the exact parts were not seen",
+     "notes": "Listed in a Motorola IC catalogue (rhooper/ic-ocr-cataloger) as 'Family of BIFET Operational Amplifiers'."
     }
    ],
    "lineage": [
@@ -19387,37 +20147,37 @@
      "vendor": "National Semiconductor",
      "role": "originator (laser-trimmed BI-FET II LF351/LF353/LF347 family)",
      "period": "by Sep 1977 to 2011",
-     "notes": "An Electronic Design ad (issue 20, 27 Sep 1977) lists singles, duals and quads in A/B/standard grades (2/5/10 mV) with prices. The scan's text layer reads 'LFT351N' etc. The family is in the 1980 Linear Databook (LF347 p.3-14, LF351 p.3-22, LF353 p.3-29). Aug 2000 datasheet DS005649 (LF353) and DS005647 (LF147/LF347). Legacy URL http://www.national.com/ds/LF/LF353.pdf."
+     "notes": "An Electronic Design ad (27 Sep 1977) lists singles, duals and quads in A/B/standard grades (2/5/10 mV). The family is in the 1980 Linear Databook (LF347 p.3-14, LF351 p.3-22, LF353 p.3-29). The new-format datasheets are DS005649 (LF353; TI's SNOSBH3F header dates it April 1998, and an Aug 2000 edition exists) and DS005647 (LF147/LF347; SNOSBH1D header May 1999, Aug 2000 edition). Legacy URL http://www.national.com/ds/LF/LF353.pdf."
     },
     {
      "vendor": "Texas Instruments",
      "role": "second source with its own LF351/LF353/LF347 datasheets and specs",
      "period": "March 1987 to present",
-     "notes": "TI's 1989 data-book pages show LF351 (March 1987), LF353 (D2997, March 1987, revised May 1988) and LF347/LF347B (D2997, March 1987). Later documents: SLOS012 (LF353) Rev B Aug 1994 and Rev C Mar 2016, still Rev C in a PDF generated 2025-12-15. SLOS013B (LF347), Aug 1994. TI's specs are TL07x-like: 3 MHz, 18 nV/rtHz. TI does not say whether the die is its own design."
+     "notes": "TI's 1989 data book shows LF351 (March 1987), LF353 (D2997, March 1987, revised May 1988) and LF347/LF347B (March 1987). Later documents: SLOS012 (LF353) Rev B Aug 1994 and Rev C Mar 2016, still Rev C in a PDF generated 2025-12-15. SLOS013 (LF347) Rev B Aug 1994 and Rev C Mar 2016. TI's specs are TL07x-like: 3 MHz, 18 nV/rtHz. TI does not say whether the die is its own design."
     },
     {
      "vendor": "Texas Instruments (ex-National)",
-     "role": "acquirer of National; sells the National die as LF353-N",
+     "role": "acquirer of National; sells the National designs as separate '-N' products",
      "period": "2011 onward",
-     "notes": "Symlink lf353-n.pdf (referenced 2017 in CEI-lab ece3400; a bibliography dates it 2013) and /NOPB orderables. The ex-National quad document is SNOSBH1 (rev D referenced June 2021)."
+     "notes": "LF353-N: SNOSBH3F, APRIL 1998 - REVISED MARCH 2013 (lf353-n.pdf, ti.com/product/LF353-N). LF147/LF347-N: SNOSBH1D, MAY 1999 - REVISED MARCH 2013 (ti.com/lit/pdf/snosbh1, ti.com/product/LF347-N). LF351-N product page also exists. TI therefore sells two parallel lineages under near-identical part numbers."
     },
     {
      "vendor": "Motorola to ON Semiconductor",
      "role": "second source",
-     "period": "not verified",
-     "notes": "Motorola catalogue lists LF347, LF351 and LF353 as 'Family of BIFET Operational Amplifiers'."
+     "period": "to around 1999-2000",
+     "notes": "A Motorola catalogue lists LF347, LF351 and LF353 as 'Family of BIFET Operational Amplifiers'. ON product discontinuance notice 10109 and update 10127 mention LF353 variants (from search summaries; exact contents not seen)."
     },
     {
      "vendor": "SGS-Thomson / STMicroelectronics",
      "role": "second source",
-     "period": "not verified to present",
-     "notes": "LF351, LF253/LF353 and LF247/LF347 under ST's own specs. ST selector: 15 nV/rtHz, 0.01%, 1400 uA/ch. Mouser parametric data: GBP 4 MHz."
+     "period": "unknown start to present",
+     "notes": "LF351, LF253/LF353 (Doc ID 2153 Rev 3, March 2010; an older edition titled 'LF153 LF253 - LF353') and LF247/LF347 under ST's own specs. ST headline figures: 16 V/us, 15 nV/rtHz, 0.01%."
     },
     {
      "vendor": "Fairchild Semiconductor",
      "role": "second source (LF351)",
      "period": "circa 2001",
-     "notes": "LF351 Rev 1.0.1, (c)2001 (PDF created 2001-06-01), 8-DIP/8-SOP. A Samsung-linear origin is plausible from the datasheet style but unverified."
+     "notes": "LF351 Rev 1.0.1, (c)2001 (PDF created 2001-06-01), 8-DIP/8-SOP."
     }
    ],
    "key_specs": [
@@ -19428,7 +20188,7 @@
      "source": "TI SLOS012C; TI SLOS013B; TI D2997 (1988)"
     },
     {
-     "parameter": "Input noise voltage e_n (National)",
+     "parameter": "Input noise voltage e_n (National / TI LF353-N)",
      "value": "16 nV/rtHz typ (the Aug 2000 feature bullet says 25 nV/rtHz; its table still says 16)",
      "condition": "f = 1 kHz, RS = 100 ohm, 25 °C",
      "source": "National 1980 LF353 datasheet; National DS005649 (Aug 2000)"
@@ -19447,31 +20207,31 @@
     },
     {
      "parameter": "Unity-gain bandwidth / GBW",
-     "value": "TI: 3 MHz typ. National: 4 MHz typ, 2.7 MHz min (DS005649). ST: 4 MHz (Mouser parametric). Fairchild LF351: 4 MHz.",
+     "value": "TI LF353 (SLOS012): 3 MHz typ. National / TI LF353-N (SNOSBH3F): 4 MHz typ, 2.7 MHz min (DS005649). ST: 4 MHz (Mouser parametric). Fairchild LF351: 4 MHz. RS Online lists LF353P at 3 MHz and LF353M/NOPB and LF353MX/NOPB at 4 MHz.",
      "condition": "+/-15 V, 25 °C",
-     "source": "TI SLOS012C; National DS005649; tecs-hardware-kbc standard_mouser_gold.csv; Fairchild LF351 Rev 1.0.1"
+     "source": "TI SLOS012C; https://www.ti.com/lit/ds/symlink/lf353-n.pdf; National DS005649; RS Online listings 0527300, 1624672, 2088516"
     },
     {
      "parameter": "Slew rate",
-     "value": "13 V/us typ, 8 V/us min",
+     "value": "13 V/us typ, 8 V/us min (TI LF353, National / LF353-N). ST LF253/LF353 and LF347: 16 V/us headline.",
      "condition": "+/-15 V, 25 °C",
-     "source": "TI SLOS012C; National DS005649 (ST quotes 16 V/us for its LF347)"
+     "source": "TI SLOS012C; TI SNOSBH3F; National DS005649; ST Doc ID 2153"
     },
     {
      "parameter": "THD",
-     "value": "TI: not specified. National: <0.02%. ST: 0.01% headline.",
+     "value": "TI LF353: not specified. National: <0.02%. ST: 0.01% headline.",
      "condition": "National: AV = +10, RL = 10 k, VO = 20 Vp-p, BW 20 Hz-20 kHz. ST conditions not seen.",
      "source": "National DS005649 and 1980 datasheet; ST selector copy"
     },
     {
      "parameter": "Supply voltage",
-     "value": "TI: +/-3.5 to +/-18 V recommended, abs max +/-18 V. National: abs max +/-18 V, zener bias gives normal operation on +/-6 V. ST: LF353 6-32 V, LF253 6-36 V.",
+     "value": "TI: +/-3.5 to +/-18 V recommended, abs max +/-18 V. National: abs max +/-18 V; zener bias gives normal operation on +/-6 V. ST: LF353 6-32 V, LF253 6-36 V.",
      "condition": "",
      "source": "TI SLOS012C; National DS005649 application hints; ST selector copy"
     },
     {
      "parameter": "Supply current",
-     "value": "LF353: 3.6 mA typ / 6.5 mA max per package (TI and National std grade; National 1980 A/B grades 5.6 mA max). ST: 1.4 mA/ch (selector) or 3.2 mA typ LF353DT (Mouser). LF347: TI 8/11 mA, National 7.2/11 mA. LF351: TI and National 1.8/3.4 mA, Fairchild 2.3/3.4 mA.",
+     "value": "LF353: 3.6 mA typ / 6.5 mA max per package (TI and National standard grade; National 1980 A/B grades 5.6 mA max). ST: 1.4 mA/ch (selector) or 3.2 mA typ for LF353DT (Mouser). LF347: TI 8/11 mA, National 7.2/11 mA. LF351: TI and National 1.8/3.4 mA, Fairchild 2.3/3.4 mA.",
      "condition": "+/-15 V",
      "source": "TI SLOS012C, SLOS013B, 1987 LF351; National DS005649, DS005647, 1980 datasheets; ST selector; Mouser CSV; Fairchild LF351"
     },
@@ -19479,13 +20239,13 @@
      "parameter": "Input offset voltage",
      "value": "5 typ / 10 max mV (13 mV full range). TI LF347B 3/5 mV. National 1980 LF353A 1/2 mV, LF353B 3/5 mV.",
      "condition": "25 °C, RS = 10 k",
-     "source": "TI SLOS012C, SLOS013B; National 1980 LF353"
+     "source": "TI SLOS012C, SLOS013B; National 1980 LF353; TI SNOSBH3F (10 mV trimmed)"
     },
     {
      "parameter": "Input bias current",
      "value": "50 pA typ / 200 pA max (8 nA max at 70 °C)",
      "condition": "VIC = 0",
-     "source": "TI SLOS012C; National DS005649"
+     "source": "TI SLOS012C; National DS005649; TI SNOSBH3F"
     },
     {
      "parameter": "Output drive",
@@ -19509,7 +20269,7 @@
      "parameter": "Input stage type",
      "value": "JFET (BiFET, BI-FET II), internally trimmed offset",
      "condition": "",
-     "source": "TI SLOS012C; National DS005649"
+     "source": "TI SLOS012C; National DS005649; TI SNOSBH3F"
     },
     {
      "parameter": "ESD",
@@ -19519,7 +20279,7 @@
     }
    ],
    "reputation": {
-    "summary": "NOT VERIFIED: no web search was available, and forum and measurement sites were not reached. The discovery notes describe the LF353 as a vintage BiFET dual in 1980s-90s consumer and synth gear, called smooth or warm by some listeners and ordinary by measurement-minded reviewers. The datasheets make it a TL072-class part: 16-18 nV/rtHz and 3-4 MHz. TI lists 'Pro Audio Mixers' among its applications, and National specified THD <0.02%. Its appeal is originality in restorations, not performance.",
+    "summary": "NOT WEB-VERIFIED: this pass spent no searches on listening or measurement reports. The discovery notes describe the LF353 as a vintage BiFET dual in 1980s-90s consumer and synth gear, called smooth or warm by some listeners and ordinary by measurement-minded reviewers. On paper it is a TL072-class part: 16-18 nV/rtHz and 3-4 MHz. TI lists 'Pro Audio Mixers' among its applications, and National specified THD <0.02%. Its appeal is originality in restorations, not performance.",
     "sonic_descriptors": [
      "smooth (discovery notes, unverified folklore)",
      "warm (discovery notes, unverified folklore)"
@@ -19532,12 +20292,12 @@
      "budget Chinese DACs (a Xiang Sheng DAC-01A review lists OPA2604 x1 and LF353N x2; low confidence)"
     ],
     "caveats": [
-     "Noisier than bipolar audio duals: 16-18 nV/rtHz vs about 5 nV/rtHz for an NE5532. It matters with low-impedance sources.",
+     "Noisier than bipolar audio duals: 16-18 nV/rtHz against about 5 nV/rtHz for an NE5532. It matters with low-impedance sources.",
      "Offset up to 10 mV (13 mV over temperature), so DC-coupled stages need trimming, a servo or a coupling capacitor.",
      "National documents phase reversal: taking either input below the negative common-mode limit forces the output high (no latch). Keep inputs at least 3-4 V above V-. TI SLOS012C does not mention it.",
      "TI recommends +/-3.5 V minimum, while National says zener biasing gives normal operation from +/-6 V. Commercial 0-70 °C only.",
      "Output specified only into 2 k/10 k loads, so not for 600-ohm or headphone loads.",
-     "Specs differ by vendor (TI 3 MHz/18 nV; National 4 MHz/16 nV; ST 4 MHz/15 nV). An 'LF353' from another maker is not the same part.",
+     "Specs differ by vendor and by TI lineage (TI LF353 3 MHz/18 nV; LF353-N and National 4 MHz/16 nV; ST 4 MHz/15 nV, 16 V/us). An 'LF353' from another maker, or LF353P against LF353M/NOPB, is not the same datasheet.",
      "Never let an input go below the negative supply: National warns this can destroy the unit."
     ],
     "sources": [
@@ -19556,7 +20316,7 @@
      "date": "MARCH 1987 - REVISED MARCH 2016",
      "url": "https://www.ti.com/lit/ds/symlink/lf353.pdf",
      "url_kind": "vendor_current",
-     "notes": "TI's LF353 (LF353DR, LF353P, LF353PE4). Copies generated 2024-10-15 and 2025-12-15 are both Rev C.",
+     "notes": "TI's own LF353 (LF353D, LF353DR, LF353P, LF353PE4). Web search confirms Rev C (Mar 2016) as current. Copies generated 2024-10-15 and 2025-12-15 are both Rev C.",
      "confidence": "high"
     },
     {
@@ -19567,8 +20327,8 @@
      "date": "",
      "url": "https://www.ti.com/lit/gpn/lf353",
      "url_kind": "vendor_current",
-     "notes": "Seen in the spielhuus/elektrophon lib/partlist.yaml, paired with Mouser 595-LF353P.",
-     "confidence": "medium"
+     "notes": "Search result title: 'LF353 Wide-Bandwidth JFET-Input Dual Operational ...'.",
+     "confidence": "high"
     },
     {
      "vendor": "Texas Instruments",
@@ -19578,8 +20338,41 @@
      "date": "",
      "url": "https://www.ti.com/product/LF353",
      "url_kind": "product_page",
-     "notes": "Linked from inside the SLOS012C PDF (Product Folder Links), along with part-details pages for LF353DR and LF353P.",
+     "notes": "Linked from inside the SLOS012C PDF. A part-details page for LF353D also exists: https://www.ti.com/product/LF353/part-details/LF353D",
      "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments (third-party copy)",
+     "title": "LF353P datasheet (Cornell ECE4760 project copy)",
+     "doc_number": "SLOS012",
+     "revision": "B (probable)",
+     "date": "MARCH 1987 - REVISED AUGUST 1994 (per search summary)",
+     "url": "https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/s2012/xg46_jy363/xg46_jy363/DataSheet/LF353P.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Uploaded with a 2012 project, which is before Rev C (2016). The search summary quoted SLOS012B from these results, but the copy holding it was not pinpointed.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (third-party copy)",
+     "title": "LF353P datasheet (second Cornell ECE4760 project copy)",
+     "doc_number": "SLOS012",
+     "revision": "B (probable)",
+     "date": "REVISED AUGUST 1994 (probable)",
+     "url": "https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/s2012/tcj26_ecs227/tcj26_ecs227/LF353P.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Also from a 2012 project, so probably Rev B. The revision was not shown for this copy.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (third-party copy)",
+     "title": "LF353 Datasheet (Texas Instruments) - rlocman mirror",
+     "doc_number": "SLOS012",
+     "revision": "unknown (B or C)",
+     "date": "",
+     "url": "https://www.rlocman.de/datasheet/data.html?di=296569",
+     "url_kind": "third_party_mirror",
+     "notes": "Returned by the SLOS012 revision search; revision not shown.",
+     "confidence": "medium"
     },
     {
      "vendor": "Texas Instruments",
@@ -19589,8 +20382,8 @@
      "date": "AUGUST 1994 (Rev B date per the SLOS012C revision history)",
      "url": "http://www-s.ti.com/sc/ds/lf353.pdf",
      "url_kind": "vendor_legacy",
-     "notes": "Altium ECO log in Mimito164/Amplificador-TDA2030-2.1: ComponentLink2URL with DatasheetVersion 'Aug-1994'. File not read.",
-     "confidence": "medium"
+     "notes": "Unconfirmed URL: seen only in an Altium ECO log (DatasheetVersion 'Aug-1994'); not found by web search.",
+     "confidence": "low"
     },
     {
      "vendor": "Texas Instruments (third-party copy)",
@@ -19622,8 +20415,96 @@
      "date": "MARCH 1987 (LF353 revised MAY 1988); file named ti1989",
      "url": "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-ti1989.pdf",
      "url_kind": "third_party_mirror",
-     "notes": "Read. Oldest TI LF353 revision found. D/JG/P packages, e_n 18 nV/rtHz at RS = 100 ohm, B1 3 MHz, ICC 3.6/6.5 mA. Also covers TI's own LF351 (ICC 1.8/3.4 mA) and LF347/LF347B (D/J/N). Probably the pre-SLOS equivalent of SLOS012A (inferred).",
+     "notes": "Read. Oldest TI LF353 revision found. D/JG/P packages, e_n 18 nV/rtHz at RS = 100 ohm, B1 3 MHz, ICC 3.6/6.5 mA. Probably the pre-SLOS equivalent of SLOS012A (inferred).",
      "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments (ex-National)",
+     "title": "LF353-N Wide Bandwidth Dual JFET Input Operational Amplifier",
+     "doc_number": "SNOSBH3",
+     "revision": "F",
+     "date": "APRIL 1998 - REVISED MARCH 2013",
+     "url": "https://www.ti.com/lit/ds/symlink/lf353-n.pdf",
+     "url_kind": "vendor_current",
+     "notes": "Header confirmed by web search. National die (BI-FET II): 4 MHz, 13 V/us, 10 mV trimmed VOS, 50 pA IB, pin-compatible with LM1558. Revisions A-E not located.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments (ex-National)",
+     "title": "LF353-N product page",
+     "doc_number": "",
+     "revision": "",
+     "date": "",
+     "url": "https://www.ti.com/product/LF353-N",
+     "url_kind": "product_page",
+     "notes": "Live. Part-details page: https://www.ti.com/product/LF353-N/part-details/LF353M/NOPB",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments (third-party copy)",
+     "title": "LF353-N datasheet - radiolocman mirror",
+     "doc_number": "SNOSBH3",
+     "revision": "unknown",
+     "date": "",
+     "url": "https://radiolocman.com/datasheet/data.html?%2FLF353-N=&di=296571",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision not shown in the search summary.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (third-party copy)",
+     "title": "LF353N/NOPB datasheet - radiolocman mirror",
+     "doc_number": "SNOSBH3 (probable)",
+     "revision": "unknown",
+     "date": "",
+     "url": "https://radiolocman.com/datasheet/data.html?%2FLF353N=&di=229359",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision not shown in the search summary.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "National Semiconductor (third-party copy)",
+     "title": "LF353 LF353 Wide Bandwidth Dual JFET Input Operational Amplifier (Octopart, LF353N/NOPB)",
+     "doc_number": "DS005649 (probable)",
+     "revision": "unknown",
+     "date": "",
+     "url": "https://datasheet.octopart.com/LF353N/NOPB-National-Semiconductor-datasheet-14138421.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "National-branded /NOPB-era copy. Edition not shown.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "National Semiconductor (third-party copy)",
+     "title": "LF353N Datasheet (NSC) - alldatasheet",
+     "doc_number": "DS005649 (probable)",
+     "revision": "unknown",
+     "date": "",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/95568/NSC/LF353N.html",
+     "url_kind": "third_party_mirror",
+     "notes": "There is also an NSC 'LF353' entry: https://www.alldatasheet.com/datasheet-pdf/pdf/95565/NSC/LF353.html. Edition not shown.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments (third-party copy)",
+     "title": "LF353N Datasheet (TI) - alldatasheet",
+     "doc_number": "unknown (SNOSBH3 probable)",
+     "revision": "unknown",
+     "date": "",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/462267/TI1/LF353N.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Edition not shown.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "National/TI (third-party copy)",
+     "title": "LF353 Wide Bandwidth Dual JFET Input Operational Amplifier (components101)",
+     "doc_number": "unknown (National-style title)",
+     "revision": "unknown",
+     "date": "",
+     "url": "https://components101.com/sites/default/files/component_datasheet/LF353-Datasheet.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Title matches the National / LF353-N wording. Edition not shown.",
+     "confidence": "medium"
     },
     {
      "vendor": "National Semiconductor (third-party copy)",
@@ -19641,10 +20522,10 @@
      "title": "LF353 Wide Bandwidth Dual JFET Input Operational Amplifier (BI-FET II), 1980 Linear Databook pages 3-29 on",
      "doc_number": "none printed (databook page 3-29)",
      "revision": "1980 databook edition",
-     "date": "1980 (per file name and 1980 selection-guide page index)",
+     "date": "1980",
      "url": "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-1980.pdf",
      "url_kind": "third_party_mirror",
-     "notes": "Read. LF353A/LF353B/LF353 grades, H (TO-99) and N packages, e_n 16 nV/rtHz, GBW 4 MHz (LF353A 3 MHz min).",
+     "notes": "Read. LF353A/LF353B/LF353 grades, H (TO-99) and N packages, e_n 16 nV/rtHz, GBW 4 MHz.",
      "confidence": "high"
     },
     {
@@ -19655,19 +20536,8 @@
      "date": "unknown",
      "url": "http://www.national.com/ds/LF/LF353.pdf",
      "url_kind": "vendor_legacy",
-     "notes": "Seen in 74hc595/chipdb LF353.yaml and werner2101/spicelib national_opamps.index. The host is dead; use the Wayback Machine.",
-     "confidence": "medium"
-    },
-    {
-     "vendor": "Texas Instruments (ex-National)",
-     "title": "LF353-N Wide Bandwidth Dual JFET Input Operational Amplifier",
-     "doc_number": "unknown (SNOS-series expected, not verified)",
-     "revision": "unknown",
-     "date": "2013 per a student bibliography (zerath97/TTT4265-ESTA2)",
-     "url": "https://www.ti.com/lit/ds/symlink/lf353-n.pdf",
-     "url_kind": "vendor_current",
-     "notes": "URL seen in CEI-lab/ece3400-2017 (2017) and zerath97. The bibliography cites its output-impedance plot, a National-style figure. Content not read.",
-     "confidence": "medium"
+     "notes": "Unconfirmed URL: seen in 74hc595/chipdb and werner2101/spicelib. The host is dead; use the Wayback Machine.",
+     "confidence": "low"
     },
     {
      "vendor": "National Semiconductor (third-party copy)",
@@ -19699,8 +20569,19 @@
      "date": "August 2000 (PDF created 2000-08-18)",
      "url": "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf347-2000.pdf",
      "url_kind": "third_party_mirror",
-     "notes": "Read. GBW 2.2 min / 4 typ MHz, IS 7.2/11 mA, ESD 900 V. Probably the predecessor of TI SNOSBH1 (inferred).",
+     "notes": "Read. GBW 2.2 min / 4 typ MHz, IS 7.2/11 mA, ESD 900 V. Predecessor of TI SNOSBH1 (LF147, LF347-N).",
      "confidence": "high"
+    },
+    {
+     "vendor": "National Semiconductor (third-party copy)",
+     "title": "LF347BN Datasheet (NSC) - alldatasheet",
+     "doc_number": "DS005647 (probable)",
+     "revision": "unknown",
+     "date": "",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/8575/NSC/LF347BN.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Edition not shown. There are also TI-labelled LF347BN entries: https://www.alldatasheet.com/datasheet-pdf/pdf/530075/TI/LF347BN.html and https://www.alldatasheet.com/datasheet-pdf/pdf/27195/TI/LF347BN.html (the low index 27195 suggests an older TI SLOS013 copy; inferred).",
+     "confidence": "medium"
     },
     {
      "vendor": "National Semiconductor (third-party copy)",
@@ -19710,8 +20591,30 @@
      "date": "September 27, 1977",
      "url": "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-1977sep.pdf",
      "url_kind": "third_party_mirror",
-     "notes": "Text layer only: singles, duals and quads (written 'LFT351N/LFT353N/LFT347N', A/B grades), 10/5/2 mV max offset with prices. The earliest dated evidence for the family.",
+     "notes": "Text layer only: singles, duals and quads (written 'LFT351N/LFT353N/LFT347N', A/B grades). The earliest dated evidence for the family.",
      "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LF347, LF347B JFET-Input Quad Operational Amplifiers",
+     "doc_number": "SLOS013",
+     "revision": "C",
+     "date": "REVISED MARCH 2016 (per search summary)",
+     "url": "https://www.ti.com/lit/ds/symlink/lf347.pdf",
+     "url_kind": "vendor_current",
+     "notes": "The symlink serves TI's own lineage (the gpn/LF347 title is 'LF347, LF347B JFET-Input Quad Operational Amplifiers'), not SNOSBH1. The page header is in the 2015-2016 new format. The Rev C date comes from a search summary only.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LF347 datasheet (generic part-number redirect) and product pages",
+     "doc_number": "SLOS013",
+     "revision": "current",
+     "date": "",
+     "url": "https://www.ti.com/lit/gpn/LF347",
+     "url_kind": "vendor_current",
+     "notes": "Product pages https://www.ti.com/product/LF347 and https://www.ti.com/product/LF347-N are both live.",
+     "confidence": "high"
     },
     {
      "vendor": "Texas Instruments (third-party copy)",
@@ -19721,29 +20624,62 @@
      "date": "MARCH 1987 - REVISED AUGUST 1994",
      "url": "https://github.com/cristianoag/wozblaster/blob/main/docs/Datasheets/lf347.pdf",
      "url_kind": "third_party_mirror",
-     "notes": "Read. TI's own quad (LF347N/D, LF347BN/BD). Footer shows it was downloaded from datasheetcatalog.com.",
+     "notes": "Read. TI's own quad (LF347N/D, LF347BN/BD). Footer shows it came from datasheetcatalog.com.",
      "confidence": "high"
     },
     {
      "vendor": "Texas Instruments (ex-National)",
-     "title": "LF147/LF347 (LF347/LF347B) Wide Bandwidth Quad JFET Input Operational Amplifiers",
+     "title": "LF147, LF347-N Wide Bandwidth Quad JFET Input Operational Amplifiers",
      "doc_number": "SNOSBH1",
      "revision": "D",
-     "date": "unknown (URL accessed about 3 June 2021 per its ts= parameter)",
+     "date": "MAY 1999 - REVISED MARCH 2013",
+     "url": "https://www.ti.com/lit/pdf/snosbh1",
+     "url_kind": "vendor_current",
+     "notes": "Header confirmed by web search.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments (ex-National)",
+     "title": "LF147, LF347-N (revision-specific URL)",
+     "doc_number": "SNOSBH1",
+     "revision": "D",
+     "date": "MAY 1999 - REVISED MARCH 2013",
      "url": "https://www.ti.com/lit/ds/snosbh1d/snosbh1d.pdf",
      "url_kind": "vendor_revision_specific",
-     "notes": "Listed under 'LF347N' in KVentayen/Resources next to symlink lf347.pdf. Content not read.",
+     "notes": "Listed under 'LF347N' in KVentayen/Resources (2021). The URL itself was not returned by web search.",
      "confidence": "medium"
     },
     {
-     "vendor": "Texas Instruments",
-     "title": "LF347 datasheet (current symlink)",
-     "doc_number": "unknown (SNOSBH1 or SLOS013)",
-     "revision": "current",
-     "date": "",
-     "url": "https://www.ti.com/lit/ds/symlink/lf347.pdf",
+     "vendor": "STMicroelectronics",
+     "title": "LF253, LF353 Wide bandwidth dual JFET operational amplifiers",
+     "doc_number": "Doc ID 2153",
+     "revision": "Rev 3",
+     "date": "March 2010",
+     "url": "https://www.st.com/resource/en/datasheet/lf353.pdf",
      "url_kind": "vendor_current",
-     "notes": "KVentayen lists it beside snosbh1d, but which document it serves was not shown.",
+     "notes": "The search result title shows 'March 2010 Doc ID 2153 Rev 3 1/15'. The same document is served at https://www.st.com/resource/en/datasheet/lf253.pdf. Rev 1-2 not located; a later revision may exist.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "STMicroelectronics (third-party copy)",
+     "title": "LF353 Datasheet (STMicroelectronics) - alldatasheet",
+     "doc_number": "Doc ID 2153 (probable)",
+     "revision": "unknown (older edition probable)",
+     "date": "",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/22736/STMICROELECTRONICS/LF353.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Low alldatasheet index suggests an early-2000s edition (inferred). LF253 entry: https://www.alldatasheet.com/datasheet-pdf/pdf/22737/STMICROELECTRONICS/LF253.html",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "SGS-Thomson / STMicroelectronics (third-party copy)",
+     "title": "LF153 LF253 - LF353: Wide Bandwidth Dual J-FET Operational Amplifiers",
+     "doc_number": "unknown",
+     "revision": "older edition (includes LF153)",
+     "date": "unknown",
+     "url": "https://www.scribd.com/document/513489694/LF-353",
+     "url_kind": "third_party_mirror",
+     "notes": "Older ST family edition that still covers the LF153 military grade, which is absent from Doc ID 2153 Rev 3.",
      "confidence": "medium"
     },
     {
@@ -19754,8 +20690,8 @@
      "date": "a 2023 bibliography cites 2008",
      "url": "https://www.st.com/resource/en/datasheet/lf351.pdf",
      "url_kind": "vendor_current",
-     "notes": "Datasheet link for LF351D/LF351N in the official KiCad symbol docs; also in voltdocs-public. Content not read.",
-     "confidence": "medium"
+     "notes": "Unconfirmed: the datasheet link comes from the KiCad symbol docs and was not confirmed by web search.",
+     "confidence": "low"
     },
     {
      "vendor": "Fairchild Semiconductor",
@@ -19780,6 +20716,28 @@
      "confidence": "high"
     },
     {
+     "vendor": "Texas Instruments (ex-National)",
+     "title": "LF351-N product page",
+     "doc_number": "",
+     "revision": "",
+     "date": "",
+     "url": "https://www.ti.com/product/LF351-N",
+     "url_kind": "product_page",
+     "notes": "Returned by web search. Lifecycle status not shown.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LF351 product page",
+     "doc_number": "",
+     "revision": "",
+     "date": "",
+     "url": "https://www.ti.com/product/LF351",
+     "url_kind": "product_page",
+     "notes": "Unconfirmed: referenced in voltdocs-public and not returned by web search (only LF351-N was).",
+     "confidence": "low"
+    },
+    {
      "vendor": "Texas Instruments",
      "title": "PCN Details (LF353D) - TI E2E attachment",
      "doc_number": "unknown",
@@ -19787,8 +20745,30 @@
      "date": "unknown",
      "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN_2D002D00_LF353D_2D00_1.pdf",
      "url_kind": "vendor_legacy",
-     "notes": "Unconfirmed URL content: seen only as a search-result title ('PCN Details - TI E2E') in an earlier session and not opened. It may explain why LF353D left the addendum.",
+     "notes": "Unconfirmed: seen only as a search-result title in an earlier session and not found in this pass. It may explain why LF353D left the addendum.",
      "confidence": "low"
+    },
+    {
+     "vendor": "ON Semiconductor",
+     "title": "PRODUCT DISCONTINUANCE 10109",
+     "doc_number": "PCN 10109",
+     "revision": "",
+     "date": "circa 1999-2000 (per search summary)",
+     "url": "https://www.onsemi.com/pub/docs/pcn/10109.pdf",
+     "url_kind": "vendor_legacy",
+     "notes": "The search summary says it mentions LF353 variants. The exact part list and date were not seen.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "ON Semiconductor",
+     "title": "UPDATE NOTIFICATION 10127",
+     "doc_number": "PCN 10127",
+     "revision": "",
+     "date": "circa 1999-2000 (per search summary)",
+     "url": "https://www.onsemi.com/pub/docs/pcn/10127.pdf",
+     "url_kind": "vendor_legacy",
+     "notes": "An update to the discontinuance that mentions LF353 variants (search summary). Contents not seen.",
+     "confidence": "medium"
     },
     {
      "vendor": "ON Semiconductor (Motorola lineage)",
@@ -19798,7 +20778,7 @@
      "date": "unknown",
      "url": "https://datasheetspdf.com/pdf/64803/ONSemiconductor/LF347N/1",
      "url_kind": "third_party_mirror",
-     "notes": "Unconfirmed URL: referenced in KVentayen/Resources (labelled 'Motorola'), not opened.",
+     "notes": "Unconfirmed URL: referenced in KVentayen/Resources and not opened or found by search.",
      "confidence": "low"
     },
     {
@@ -19809,7 +20789,7 @@
      "date": "unknown",
      "url": "https://www.bitsbox.co.uk/data/analog/LF347.pdf",
      "url_kind": "distributor_mirror",
-     "notes": "Unconfirmed URL: referenced in icnagy/pe_microsynth .dcm (keys 'LF147 LF247 LF347'), not opened.",
+     "notes": "Unconfirmed URL: referenced in icnagy/pe_microsynth .dcm, not opened.",
      "confidence": "low"
     },
     {
@@ -19821,17 +20801,6 @@
      "url": "https://www.bitsbox.co.uk/data/opamps/lf351.pdf",
      "url_kind": "distributor_mirror",
      "notes": "Unconfirmed URL: referenced in icnagy/pe_microsynth .dcm, not opened.",
-     "confidence": "low"
-    },
-    {
-     "vendor": "Texas Instruments",
-     "title": "LF351 product page",
-     "doc_number": "",
-     "revision": "",
-     "date": "",
-     "url": "https://www.ti.com/product/LF351",
-     "url_kind": "product_page",
-     "notes": "Unconfirmed URL: referenced in stavros-tsioulis/voltdocs-public entries/modules/analog/lf351, live status not checked.",
      "confidence": "low"
     }
    ],
@@ -19853,9 +20822,44 @@
     {
      "vendor": "National Semiconductor",
      "doc_number": "DS005649",
+     "revision": "first new-format edition (inferred)",
+     "date": "April 1998 (from the TI SNOSBH3F header 'APRIL 1998')",
+     "changes": "Not seen. Inferred from TI's LF353-N header date."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "DS005649",
      "revision": "August 2000",
      "date": "August 2000 ((c)2001)",
-     "changes": "Standard grade only: LF353M, LF353MX (SO-8), LF353N. Adds a GBW minimum of 2.7 MHz and ESD 1700 V. Tj(max) goes to 150 °C and thetaJA N to 115 °C/W. The feature bullet now says e_n 25 nV/rtHz while the table keeps 16 typ."
+     "changes": "Standard grade only: LF353M, LF353MX (SO-8), LF353N. Adds a GBW minimum of 2.7 MHz and ESD 1700 V. Tj(max) goes to 150 °C and thetaJA N to 115 °C/W. The feature bullet says e_n 25 nV/rtHz while the table keeps 16 typ."
+    },
+    {
+     "vendor": "Texas Instruments (ex-National)",
+     "doc_number": "SNOSBH3",
+     "revision": "F",
+     "date": "APRIL 1998 - REVISED MARCH 2013",
+     "changes": "TI's LF353-N (converted DS005649). Change log not seen; revisions A-E not located."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "DS005647",
+     "revision": "first new-format edition (inferred)",
+     "date": "May 1999 (from the TI SNOSBH1D header)",
+     "changes": "Not seen."
+    },
+    {
+     "vendor": "National Semiconductor",
+     "doc_number": "DS005647",
+     "revision": "August 2000",
+     "date": "August 2000",
+     "changes": "LF147/LF347 (LF147J, LF147J/883, LF347M, LF347MX, LF347BN, LF347N). GBW 2.2 MHz min / 4 typ, ESD 900 V. The A grade from 1980 is gone."
+    },
+    {
+     "vendor": "Texas Instruments (ex-National)",
+     "doc_number": "SNOSBH1",
+     "revision": "D",
+     "date": "MAY 1999 - REVISED MARCH 2013",
+     "changes": "Titled 'LF147, LF347-N'. Change log not seen."
     },
     {
      "vendor": "Texas Instruments",
@@ -19875,15 +20879,15 @@
      "vendor": "Texas Instruments",
      "doc_number": "SLOS012",
      "revision": "B",
-     "date": "AUGUST 1994",
-     "changes": "Content not seen (date from the SLOS012C revision history). Matches the Altium 'DatasheetVersion Aug-1994' for www-s.ti.com/sc/ds/lf353.pdf."
+     "date": "MARCH 1987 - REVISED AUGUST 1994",
+     "changes": "Existence confirmed by web search, probably held in the 2012 Cornell copies. Content not seen."
     },
     {
      "vendor": "Texas Instruments",
      "doc_number": "SLOS012",
      "revision": "C",
      "date": "MARCH 2016",
-     "changes": "Adds the ESD Ratings table (HBM +/-2000 V, CDM +/-1000 V) and the Feature Description, Device Functional Modes, Application, Power Supply, Layout, Documentation Support and Mechanical/Orderable sections. Only D and P packages. Noise condition RS = 20 ohm (18 nV typ unchanged). No electrical changes are listed. Still current in a TI PDF generated 2025-12-15."
+     "changes": "Adds the ESD Ratings table (HBM +/-2000 V, CDM +/-1000 V) and the new-format Feature Description, Application, Layout and Mechanical/Orderable sections. Only D and P packages. Noise condition RS = 20 ohm (18 nV typ unchanged). No electrical changes listed. Still current in late 2025."
     },
     {
      "vendor": "Texas Instruments",
@@ -19897,7 +20901,14 @@
      "doc_number": "SLOS013",
      "revision": "B",
      "date": "MARCH 1987 - REVISED AUGUST 1994",
-     "changes": "TI LF347/LF347B in D and N only (J dropped). e_n 18 nV/rtHz at RS = 20 ohm. No change log in this old-format document."
+     "changes": "TI LF347/LF347B in D and N only (J dropped). e_n 18 nV/rtHz at RS = 20 ohm."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SLOS013",
+     "revision": "C",
+     "date": "MARCH 2016 (per search summary)",
+     "changes": "Not seen. Probably the same new-format rework as SLOS012C (inferred)."
     },
     {
      "vendor": "Texas Instruments",
@@ -19907,18 +20918,25 @@
      "changes": "TI's own LF351 in D, JG and P packages: 3 MHz, 18 nV/rtHz (RS = 100 ohm), ICC 1.8/3.4 mA."
     },
     {
-     "vendor": "National Semiconductor",
-     "doc_number": "DS005647",
-     "revision": "August 2000",
-     "date": "August 2000",
-     "changes": "LF147/LF347 (LF147J, LF147J/883, LF347M, LF347MX, LF347BN, LF347N). GBW 2.2 MHz min / 4 typ, ESD 900 V. The A grade from 1980 is gone."
+     "vendor": "STMicroelectronics",
+     "doc_number": "(untitled older edition)",
+     "revision": "LF153 LF253 - LF353 edition",
+     "date": "unknown (pre-2010)",
+     "changes": "Covers LF153, LF253 and LF353. LF153 is absent from Doc ID 2153 Rev 3."
     },
     {
-     "vendor": "Texas Instruments (ex-National)",
-     "doc_number": "SNOSBH1",
-     "revision": "D",
-     "date": "unknown (referenced June 2021)",
-     "changes": "Revision letter from the URL only; change log not seen."
+     "vendor": "STMicroelectronics",
+     "doc_number": "Doc ID 2153",
+     "revision": "Rev 3",
+     "date": "March 2010",
+     "changes": "LF253, LF353. Change log not seen."
+    },
+    {
+     "vendor": "ON Semiconductor",
+     "doc_number": "PCN 10109 / 10127",
+     "revision": "discontinuance + update",
+     "date": "circa 1999-2000",
+     "changes": "Product discontinuance that mentions LF353 variants (search summary; exact parts not seen)."
     },
     {
      "vendor": "Fairchild Semiconductor",
@@ -19931,22 +20949,23 @@
    "silicon_changes": [
     {
      "vendor": "Texas Instruments / National Semiconductor",
-     "when": "TI has published its own LF353 since March 1987. Since the 2011 acquisition TI has also sold the National LF353 as LF353-N.",
+     "when": "TI has published its own LF353 (SLOS012) since March 1987. Since the 2011 acquisition TI has also sold the National design as a separate product, LF353-N (SNOSBH3F, revised March 2013).",
      "part_numbers_affected": [
       "LF353",
       "LF353P",
       "LF353DR",
+      "LF353D",
       "LF353PE4",
       "LF353N/NOPB",
       "LF353M/NOPB",
       "LF353MX/NOPB"
      ],
-     "identification": "TI lineage: orderables LF353P, LF353DR and LF353PE4 (marked LF353P or LF353), datasheet SLOS012 (lf353.pdf). National lineage: orderables LF353N, LF353M and LF353MX (/NOPB under TI), National DS005649 or TI LF353-N (lf353-n.pdf). Pre-2011 National parts carry the NS logo. Top-mark details unverified.",
-     "summary": "One generic number with two separately documented specs. National rates its LF353 at 4 MHz and 16 nV/rtHz (RS = 100 ohm) with THD <0.02%. TI rates its LF353 at 3 MHz and 18 nV/rtHz, with no THD figure, the same numbers as its TL07x. DC specs (VOS, IB, ICC, SR) are identical. No vendor states whether TI's 1987 part is its own design or a copy of National's. Two dies is likely but inferred.",
+     "identification": "TI lineage: orderables LF353P, LF353DR, LF353D and LF353PE4, datasheet SLOS012 (lf353.pdf, ti.com/product/LF353), 3 MHz. National lineage: orderables LF353N, LF353M and LF353MX (/NOPB under TI), datasheet National DS005649 or TI SNOSBH3 (lf353-n.pdf, ti.com/product/LF353-N), 4 MHz. RS Online lists LF353P at 3 MHz and LF353M/NOPB and LF353MX/NOPB at 4 MHz. Pre-2011 National parts carry the NS logo. Top-mark details unverified.",
+     "summary": "TI sells two products under near-identical numbers. National's LF353 / TI LF353-N is rated 4 MHz and 16 nV/rtHz (RS = 100 ohm), with THD <0.02%. TI's own LF353 is rated 3 MHz and 18 nV/rtHz with no THD figure, the same numbers as its TL07x. DC specs (VOS, IB, ICC, SR 13 V/us) match. No vendor says whether TI's 1987 part is its own die; two dies is likely but inferred.",
      "spec_deltas": [
       {
        "parameter": "GBW typ (min)",
-       "before": "4 MHz (2.7 MHz min), National DS005649",
+       "before": "4 MHz (2.7 MHz min), National DS005649 / TI SNOSBH3F",
        "after": "3 MHz typ, no min, TI SLOS012C"
       },
       {
@@ -19970,20 +20989,24 @@
        "after": "+/-2000 V (TI Rev C)"
       }
      ],
-     "audio_impact": "Probably small. National's version is specified slightly quieter and wider-band, with a THD guarantee. Both are TL072-class.",
+     "audio_impact": "Probably small. The National version is specified slightly quieter and wider-band, with a THD guarantee. Both are TL072-class.",
      "compatibility_risk": "low - same pinout, function and DC specs; only minor AC-spec differences",
      "sources": [
-      "https://github.com/FHYQ-Dong/THU-Basic-Experiment-of-Optoelectronics/blob/main/QKD-BB84/FPGA-control/docs/LF353-datasheet.pdf",
+      "https://www.ti.com/lit/ds/symlink/lf353.pdf",
+      "https://www.ti.com/lit/ds/symlink/lf353-n.pdf",
+      "https://www.ti.com/product/LF353",
+      "https://www.ti.com/product/LF353-N",
+      "https://uk.rs-online.com/web/p/op-amps/1624672",
+      "https://uk.rs-online.com/web/p/op-amps/2088516",
+      "https://de.rs-online.com/web/p/operationsverstarker/0527300",
       "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-2000.pdf",
-      "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-ti1989.pdf",
-      "https://github.com/zerath97/TTT4265-ESTA2/blob/main/Arbeider2_exam/Arbeider2.tex",
-      "https://github.com/auxren/Compressor/blob/master/EuroPresserV1/EuroPresserV1.Dat"
+      "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-ti1989.pdf"
      ],
      "confidence": "medium"
     },
     {
      "vendor": "National Semiconductor",
-     "when": "between the 1980 databook and the August 2000 DS005649",
+     "when": "between the 1980 databook and the August 2000 DS005649 (new-format DS005649 first dated April 1998 per TI SNOSBH3F)",
      "part_numbers_affected": [
       "LF353A",
       "LF353B",
@@ -19997,7 +21020,7 @@
       "LF347A"
      ],
      "identification": "Old stock marked LF353AN/BN, LF353AH/BH (TO-99 metal can) or LF351A/B is pre-2000 National. The 2000 datasheet lists only LF353M/MX/N.",
-     "summary": "National dropped the tighter-offset A and B grades and the TO-99 metal can for the LF353, and added SO-8. The 2000 datasheet adds a GBW minimum (2.7 MHz) and an ESD rating, raises Tj(max) from 115 to 150 °C, and lowers the N-package thetaJA from 160 to 115 °C/W. This is a product-line and datasheet change; no die change is documented.",
+     "summary": "National dropped the tighter-offset A and B grades and the TO-99 can for the LF353, and added SO-8. The 2000 datasheet adds a GBW minimum (2.7 MHz) and an ESD rating, raises Tj(max) from 115 to 150 °C, and lowers the N-package thetaJA from 160 to 115 °C/W. This is a product-line and datasheet change; no die change is documented.",
      "spec_deltas": [
       {
        "parameter": "Offset grades",
@@ -20020,18 +21043,57 @@
        "after": "25 nV/rtHz (table still 16 typ)"
       }
      ],
-     "audio_impact": "None documented. A/B grades only have lower offset.",
+     "audio_impact": "None documented. The A/B grades differ only in offset.",
      "compatibility_risk": "low - same die family and pinout; the TO-99 can has a different footprint",
      "sources": [
       "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-1980.pdf",
       "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-2000.pdf",
-      "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf351-1980.pdf"
+      "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf351-1980.pdf",
+      "https://www.ti.com/lit/ds/symlink/lf353-n.pdf"
      ],
      "confidence": "high"
     },
     {
+     "vendor": "Texas Instruments (LF347 / LF347-N)",
+     "when": "2011 onward (TI SLOS013C Mar 2016; SNOSBH1D Mar 2013)",
+     "part_numbers_affected": [
+      "LF347",
+      "LF347N",
+      "LF347D",
+      "LF347B",
+      "LF347BN",
+      "LF347-N",
+      "LF147"
+     ],
+     "identification": "TI lineage: 'LF347, LF347B JFET-Input Quad Operational Amplifiers', SLOS013 (lf347.pdf, gpn/LF347, ti.com/product/LF347), 3 MHz. National lineage: 'LF147, LF347-N', SNOSBH1D (ti.com/lit/pdf/snosbh1, ti.com/product/LF347-N), 4 MHz typ / 2.2 MHz min.",
+     "summary": "As with the LF353, TI keeps two parallel quad lineages: its own LF347/LF347B and the ex-National LF147/LF347-N. The earlier claim that TI's LF347 documentation had moved to the National design is refuted: the lf347.pdf symlink and gpn/LF347 serve SLOS013.",
+     "spec_deltas": [
+      {
+       "parameter": "Supply current (typ/max)",
+       "before": "7.2 / 11 mA (National DS005647 / LF347-N)",
+       "after": "8 / 11 mA (TI SLOS013B)"
+      },
+      {
+       "parameter": "GBW typ",
+       "before": "4 MHz, 2.2 MHz min (National / LF347-N)",
+       "after": "3 MHz (TI LF347)"
+      }
+     ],
+     "audio_impact": "Unknown; both are TL074-class BiFET quads.",
+     "compatibility_risk": "low - same function and pinout (LM348-compatible per TI SLOS013B)",
+     "sources": [
+      "https://www.ti.com/lit/gpn/LF347",
+      "https://www.ti.com/lit/ds/symlink/lf347.pdf",
+      "https://www.ti.com/lit/pdf/snosbh1",
+      "https://www.ti.com/product/LF347-N",
+      "https://github.com/cristianoag/wozblaster/blob/main/docs/Datasheets/lf347.pdf",
+      "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf347-2000.pdf"
+     ],
+     "confidence": "medium"
+    },
+    {
      "vendor": "STMicroelectronics vs Texas Instruments (second-source spread)",
-     "when": "ongoing (ST datasheet era not verified)",
+     "when": "ongoing (ST Doc ID 2153 Rev 3, March 2010)",
      "part_numbers_affected": [
       "LF353N",
       "LF353D",
@@ -20040,13 +21102,18 @@
       "LF351",
       "LF347"
      ],
-     "identification": "ST logo and ST orderables (LF353DT, LF253 industrial grade). One ST datasheet covers LF253 and LF353.",
-     "summary": "ST specifies its LF353 differently from TI: 4 MHz, 15 nV/rtHz, 0.01% THD headline. ST's selector lists the same 1400 uA/ch for its LF35x and TL072, a hint (unverified) of a shared ST JFET process. Mouser data for LF353DT (3.2 mA typ per package) differs from the selector's 1.4 mA/ch.",
+     "identification": "ST logo and ST orderables (LF353DT, LF253 industrial grade). One ST datasheet (Doc ID 2153) covers LF253 and LF353.",
+     "summary": "ST specifies its LF353 differently from TI: 4 MHz, 16 V/us, 15 nV/rtHz, 0.01% THD headline. ST's selector lists the same 1400 uA/ch for its LF35x and TL072, a hint (unverified) of a shared ST JFET process. Mouser data for LF353DT (3.2 mA typ per package) differs from the selector's 1.4 mA/ch.",
      "spec_deltas": [
       {
        "parameter": "GBW typ",
        "before": "3 MHz (TI SLOS012C)",
        "after": "4 MHz (ST, via Mouser parametric extraction)"
+      },
+      {
+       "parameter": "Slew rate",
+       "before": "13 V/us typ (TI)",
+       "after": "16 V/us (ST headline)"
       },
       {
        "parameter": "e_n",
@@ -20064,46 +21131,15 @@
        "after": "32 V (ST selector, LF353/LF351); LF253 36 V"
       }
      ],
-     "audio_impact": "Marginal. ST's version is slightly quieter on paper.",
+     "audio_impact": "Marginal. ST's version is slightly quieter and faster on paper.",
      "compatibility_risk": "low - drop-in, but ST's LF353 is rated only to 32 V against TI's 36 V",
      "sources": [
+      "https://www.st.com/resource/en/datasheet/lf353.pdf",
+      "https://www.st.com/resource/en/datasheet/lf253.pdf",
       "https://github.com/lukehsiao/tecs-hardware-kbc/blob/master/hack/opamps/data/standard_mouser_gold.csv",
-      "https://github.com/Himanshu21391/chatbot/blob/main/docs/Operational%20Amplifiers.txt",
-      "https://github.com/joaquin-paz/portfolio/blob/main/CORNELL/lf353.pdf"
+      "https://github.com/Himanshu21391/chatbot/blob/main/docs/Operational%20Amplifiers.txt"
      ],
      "confidence": "medium"
-    },
-    {
-     "vendor": "Texas Instruments (LF347)",
-     "when": "after 2011 (exact date unknown)",
-     "part_numbers_affected": [
-      "LF347",
-      "LF347N",
-      "LF347D",
-      "LF347B"
-     ],
-     "identification": "Datasheet literature number: SLOS013 (TI's 1987/1994 LF347) vs SNOSBH1 (ex-National LF147/LF347, DS005647 lineage).",
-     "summary": "By 2021 a user listed TI's ex-National SNOSBH1D alongside the lf347.pdf symlink for LF347N. That suggests TI's LF347 documentation moved to the National design, but which document the symlink served, and whether TI-lineage LF347 was discontinued, are unverified.",
-     "spec_deltas": [
-      {
-       "parameter": "Supply current (typ/max)",
-       "before": "8 / 11 mA (TI SLOS013B)",
-       "after": "7.2 / 11 mA (National DS005647)"
-      },
-      {
-       "parameter": "GBW typ",
-       "before": "3 MHz (TI)",
-       "after": "4 MHz, 2.2 MHz min (National)"
-      }
-     ],
-     "audio_impact": "Unknown; both are TL074-class BiFET quads.",
-     "compatibility_risk": "low - same function and pinout (LM348-compatible per TI SLOS013B)",
-     "sources": [
-      "https://github.com/cristianoag/wozblaster/blob/main/docs/Datasheets/lf347.pdf",
-      "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf347-2000.pdf",
-      "https://github.com/KVentayen/Resources/blob/master/Electrical,%20Computer%20Engineering/Component%20Datasheets/Datsheet%20List.tex"
-     ],
-     "confidence": "low"
     },
     {
      "vendor": "Texas Instruments (TI's own LF353, not the ex-National LF353-N)",
@@ -20186,7 +21222,7 @@
      "found_by": "completeness sweep"
     }
    ],
-   "counterfeit_notes": "No LF353-specific counterfeit reports were verified (no web search available). It is a very cheap commodity part, so remarking pays little, but recycled or remarked DIP pulls from marketplace sellers are common for all classic op-amps. Buy TI, ST or onsemi stock from authorised distributors. Current TI parts are marked LF353P (PDIP) or LF353 (SOIC) per TI's addendum. 'LF353AN/BN' or TO-99 'LF353H' parts are genuine National grades from before 2000; offers of them as new production are suspect. When TI stopped using the NS logo on ex-National parts was not verified, so date-code rules for National-marked parts are unconfirmed.",
+   "counterfeit_notes": "No LF353-specific counterfeit reports were checked in this pass. It is a very cheap commodity part, so remarking pays little, but recycled or remarked DIP pulls from marketplace sellers are common for all classic op-amps. Buy TI or ST stock from authorised distributors. Motorola/ON LF35x parts were discontinued around 1999-2000 (ON notice 10109), so 'new' ON-marked stock is old or suspect. Current TI parts are marked LF353P (PDIP) or LF353 (SOIC) per TI's addendum. 'LF353AN/BN' or TO-99 'LF353H' parts are genuine National grades from before 2000; offers of them as new production are suspect. When TI stopped using the NS logo on ex-National (-N, /NOPB) parts was not verified.",
    "alternatives": [
     "TL072 / TL072H (TI; TL072H is TI's redesigned TL07x)",
     "OPA1642 (TI JFET-input audio dual, low noise)",
@@ -20206,33 +21242,66 @@
     "http://www.national.com/ds/LF/LF351.pdf",
     "http://www.national.com/ds/LF/LF353.pdf",
     "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN_2D002D00_LF353D_2D00_1.pdf",
+    "https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/s2012/xg46_jy363/xg46_jy363/DataSheet/LF353P.pdf",
+    "https://www.onsemi.com/pub/docs/pcn/10109.pdf",
+    "https://www.onsemi.com/pub/docs/pcn/10127.pdf",
+    "https://www.st.com/resource/en/datasheet/lf253.pdf",
     "https://www.st.com/resource/en/datasheet/lf347.pdf",
     "https://www.st.com/resource/en/datasheet/lf351.pdf",
     "https://www.st.com/resource/en/datasheet/lf353.pdf",
     "https://www.ti.com/lit/ds/slos012b/slos012b.pdf",
     "https://www.ti.com/lit/ds/slos012c/slos012c.pdf",
     "https://www.ti.com/lit/ds/snosbh1d/snosbh1d.pdf",
+    "https://www.ti.com/lit/ds/snosbh3f/snosbh3f.pdf",
     "https://www.ti.com/lit/ds/symlink/lf347.pdf",
     "https://www.ti.com/lit/ds/symlink/lf351.pdf",
     "https://www.ti.com/lit/ds/symlink/lf353-n.pdf",
     "https://www.ti.com/lit/ds/symlink/lf353.pdf",
+    "https://www.ti.com/lit/gpn/LF347",
     "https://www.ti.com/lit/gpn/lf353",
-    "https://www.ti.com/product/LF353"
+    "https://www.ti.com/lit/pdf/snosbh1",
+    "https://www.ti.com/product/LF347",
+    "https://www.ti.com/product/LF347-N",
+    "https://www.ti.com/product/LF351-N",
+    "https://www.ti.com/product/LF353",
+    "https://www.ti.com/product/LF353-N",
+    "https://www.ti.com/product/LF353/part-details/LF353D"
    ],
    "open_questions": [
-    "WebSearch was unavailable (budget 200/200 used) and GitHub code search was rate-limited. Verification relied on primary PDFs from GitHub repos (TI SLOS012C, SLOS013B, TI 1989 data-book pages, National 1980 and 2000 datasheets, Fairchild LF351) and on repo references. Reputation, measurements (ASR, Groner) and counterfeit folklore remain unverified.",
-    "What does the TI E2E attachment 'PCN_2D002D00_LF353D_2D00_1.pdf' ('PCN Details') say? Is it the removal of LF353D (tube), a fab or assembly-site change, or something else?",
-    "What is TI's literature number and revision chain for LF353-N (lf353-n.pdf)? Presumably it is the SNOS conversion of National DS005649; not verified.",
-    "Are the TI LF353-N orderables (LF353N/NOPB, LF353M/NOPB, LF353MX/NOPB) active, NRND or obsolete?",
-    "Is TI's 1987 LF353 (D2997/SLOS012) its own die, for example TL07x-derived, or a second source of National's mask? Only the separate specs are documented.",
+    "What does the TI E2E attachment 'PCN_2D002D00_LF353D_2D00_1.pdf' say? Is LF353D (tube) obsolete? A TI part-details page still exists, but the part is absent from the 2023 and 2025 addenda.",
+    "What are the lifecycle statuses of TI LF353-N orderables (LF353N/NOPB, LF353M/NOPB, LF353MX/NOPB), LF347-N and LF351-N? The product pages are live, but status was not seen.",
+    "Revisions A-E of SNOSBH3 (LF353-N) and A-C of SNOSBH1 were not located, and neither was the April 1998 / May 1999 National first editions of DS005649 / DS005647.",
+    "Is TI's 1987 LF353 (D2997/SLOS012) its own die, for example TL07x-derived, or a second source of National's mask? Only separate spec sets are documented.",
     "Does TI's May 1988 D2997 revision correspond to SLOS012A? What changed in Rev B (Aug 1994)? The noise test resistance moved from 100 to 20 ohm between them.",
-    "Did TI discontinue its own LF347 (SLOS013) in favour of SNOSBH1? Which document does lf347.pdf serve now?",
-    "What are ST's LF253/LF353 document number and revision history? Is the ST LF35x the same die as ST's TL07x?",
-    "What are the ON Semiconductor / Motorola LF351, LF353 and LF347 datasheet numbers, and are they still available?",
-    "The Electronic Design 1977 ad's text layer reads 'LFT351N/LFT353N/LFT347N'. Is that the real marketing prefix or an OCR artefact of 'LF351N'?",
-    "INFERRED archive seeds (URL pattern, never seen): ti.com/lit/ds/slos012c/slos012c.pdf, slos012b/slos012b.pdf, symlink/lf351.pdf, national.com/ds/LF/LF351.pdf and LF347.pdf, www-s.ti.com/sc/ds/lf347.pdf, st.com/resource/en/datasheet/lf353.pdf and lf347.pdf."
+    "Is ST Doc ID 2153 Rev 3 (March 2010) still the latest, and what were Rev 1-2? Is the ST LF35x the same die as ST's TL07x?",
+    "Which exact LF35x part numbers and dates are in ON Semiconductor notices 10109 and 10127?",
+    "Is the TI-lineage LF351 (1987 sheet) obsolete? Forum sources say so; not confirmed on ti.com.",
+    "The Electronic Design 1977 ad's text layer reads 'LFT351N/LFT353N/LFT347N'. Is that a real prefix or an OCR artefact?",
+    "Reputation (sonic descriptors, CD-player use from the discovery notes) was not web-verified in this pass.",
+    "INFERRED archive seeds (URL pattern, never seen): slos012c/slos012c.pdf, slos012b/slos012b.pdf, snosbh3f/snosbh3f.pdf, symlink/lf351.pdf, national.com LF351.pdf and LF347.pdf, www-s.ti.com lf347.pdf, st.com lf347.pdf."
    ],
    "sources": [
+    "https://www.ti.com/lit/ds/symlink/lf353.pdf",
+    "https://www.ti.com/lit/gpn/LF353",
+    "https://www.ti.com/product/LF353",
+    "https://www.ti.com/product/LF353/part-details/LF353D",
+    "https://www.ti.com/lit/ds/symlink/lf353-n.pdf",
+    "https://www.ti.com/product/LF353-N",
+    "https://www.ti.com/product/LF353-N/part-details/LF353M/NOPB",
+    "https://www.ti.com/lit/gpn/LF347",
+    "https://www.ti.com/lit/ds/symlink/lf347.pdf",
+    "https://www.ti.com/lit/pdf/snosbh1",
+    "https://www.ti.com/product/LF347",
+    "https://www.ti.com/product/LF347-N",
+    "https://www.ti.com/product/LF351-N",
+    "https://www.st.com/resource/en/datasheet/lf353.pdf",
+    "https://www.st.com/resource/en/datasheet/lf253.pdf",
+    "https://www.onsemi.com/pub/docs/pcn/10109.pdf",
+    "https://www.onsemi.com/pub/docs/pcn/10127.pdf",
+    "https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/s2012/xg46_jy363/xg46_jy363/DataSheet/LF353P.pdf",
+    "https://uk.rs-online.com/web/p/op-amps/1624672",
+    "https://uk.rs-online.com/web/p/op-amps/2088516",
+    "https://de.rs-online.com/web/p/operationsverstarker/0527300",
     "https://github.com/joaquin-paz/portfolio/blob/main/CORNELL/lf353.pdf",
     "https://github.com/FHYQ-Dong/THU-Basic-Experiment-of-Optoelectronics/blob/main/QKD-BB84/FPGA-control/docs/LF353-datasheet.pdf",
     "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf353-ti1989.pdf",
@@ -20242,32 +21311,69 @@
     "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf351-1980.pdf",
     "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf347-1980.pdf",
     "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf347-2000.pdf",
-    "https://github.com/chenshuo/nuedc/blob/main/docs/opamp/national-selection-guide-1980.pdf",
     "https://github.com/cristianoag/wozblaster/blob/main/docs/Datasheets/lf347.pdf",
     "https://github.com/BertyBasset/Datasheet-Viewer/blob/master/Amplifiers/LF351N%20single%20channel%20FJET%20Op%20Amp.pdf",
     "https://github.com/KVentayen/Resources/blob/master/Electrical,%20Computer%20Engineering/Component%20Datasheets/Datsheet%20List.tex",
-    "https://github.com/74hc595/chipdb/blob/master/LF353.yaml",
-    "https://github.com/werner2101/spicelib/blob/master/indexfiles/national_opamps.index",
-    "https://github.com/Mimito164/Amplificador-TDA2030-2.1",
-    "https://github.com/CEI-lab/ece3400-2017/blob/master/docs/TA_Labs/lab2.md",
-    "https://github.com/zerath97/TTT4265-ESTA2/blob/main/Arbeider2_exam/Arbeider2.tex",
-    "https://github.com/auxren/Compressor/blob/master/EuroPresserV1/EuroPresserV1.Dat",
     "https://github.com/rhooper/ic-ocr-cataloger/blob/main/ic_ocr_cataloger/data/motorola-ic.tsv",
-    "https://github.com/KiCad/kicad.github.io/blob/master/_symbols/Amplifier_Operational.html",
     "https://github.com/lukehsiao/tecs-hardware-kbc/blob/master/hack/opamps/data/standard_mouser_gold.csv",
-    "https://github.com/Himanshu21391/chatbot/blob/main/docs/Operational%20Amplifiers.txt",
-    "https://github.com/icnagy/pe_microsynth/blob/master/microsynth/pe_microsynth.dcm",
-    "https://github.com/spielhuus/elektrophon/blob/master/lib/partlist.yaml",
-    "https://github.com/stavros-tsioulis/voltdocs-public",
-    "https://www.ti.com/product/LF353"
+    "https://github.com/Himanshu21391/chatbot/blob/main/docs/Operational%20Amplifiers.txt"
    ],
    "verification": {
-    "status": "not-web-verified",
-    "refuted_claims": [],
-    "corrections": [],
-    "unverified_urls": [],
-    "claims_confirmed": [],
-    "web_searches_used": 0
+    "status": "verified-with-corrections",
+    "refuted_claims": [
+     "Draft silicon change 'TI's LF347 documentation moved to the National design (SNOSBH1)': refuted. The lf347.pdf symlink and gpn/LF347 serve 'LF347, LF347B JFET-Input Quad Operational Amplifiers' (TI SLOS013), while SNOSBH1D is a separate product, 'LF147, LF347-N' (https://www.ti.com/lit/gpn/LF347, https://www.ti.com/lit/pdf/snosbh1).",
+     "Discovery hint that ON makes a separate current LF353 die: ON issued product discontinuance notice 10109 (plus update 10127, around 1999-2000) mentioning LF353 variants, so ON is not a current source (https://www.onsemi.com/pub/docs/pcn/10109.pdf).",
+     "Discovery praise 'used in 1980s-90s CD players' was not confirmed and stays out of the tagline and uses."
+    ],
+    "corrections": [
+     "LF353-N literature number resolved: SNOSBH3, Rev F, 'APRIL 1998 - REVISED MARCH 2013' (was 'unknown, SNOS expected; 2013 per bibliography'). Added to ti_literature_numbers.",
+     "SNOSBH1 Rev D date resolved: 'MAY 1999 - REVISED MARCH 2013', titled 'LF147, LF347-N' (was 'unknown').",
+     "Added SLOS013 Rev C (March 2016, per search summary) and identified lf347.pdf as SLOS013, not SNOSBH1.",
+     "Added ST Doc ID 2153 Rev 3 (March 2010) for LF253/LF353, the older 'LF153 LF253 - LF353' ST edition, and the ST 16 V/us slew-rate headline.",
+     "Added TI product pages LF353-N, LF347, LF347-N, LF351-N and the LF353D part-details page; added LF353D as its own part-number entry.",
+     "Added distributor evidence of the two TI lineages: RS lists LF353P at 3 MHz and LF353M/NOPB and LF353MX/NOPB at 4 MHz.",
+     "Added mirrors: two Cornell LF353P copies (probably SLOS012B), rlocman/radiolocman, alldatasheet (NSC LF353/LF353N, TI LF353N, ST LF353/LF253, LF347BN), Octopart LF353N/NOPB (National), components101, scribd ST edition.",
+     "Motorola/ON status changed from 'unknown' to 'probably obsolete, around 1999-2000 (ON notices 10109/10127)'.",
+     "Inferred National DS005649 first new-format edition April 1998 and DS005647 May 1999 from the TI headers.",
+     "Downgraded the legacy www-s.ti.com and national.com URLs and the ST lf351.pdf URL to low / unconfirmed, because web search did not return them.",
+     "Removed a local /tmp path from reputation sources (not a web URL)."
+    ],
+    "unverified_urls": [
+     "http://www-s.ti.com/sc/ds/lf353.pdf",
+     "http://www.national.com/ds/LF/LF353.pdf",
+     "https://www.st.com/resource/en/datasheet/lf351.pdf",
+     "https://www.ti.com/lit/ds/snosbh1d/snosbh1d.pdf",
+     "https://www.ti.com/product/LF351",
+     "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/PCN_2D002D00_LF353D_2D00_1.pdf",
+     "https://datasheetspdf.com/pdf/64803/ONSemiconductor/LF347N/1",
+     "https://www.bitsbox.co.uk/data/analog/LF347.pdf",
+     "https://www.bitsbox.co.uk/data/opamps/lf351.pdf",
+     "https://www.ti.com/lit/ds/slos012c/slos012c.pdf",
+     "https://www.ti.com/lit/ds/slos012b/slos012b.pdf",
+     "https://www.ti.com/lit/ds/snosbh3f/snosbh3f.pdf",
+     "https://www.ti.com/lit/ds/symlink/lf351.pdf",
+     "http://www.national.com/ds/LF/LF351.pdf",
+     "http://www.national.com/ds/LF/LF347.pdf",
+     "http://www-s.ti.com/sc/ds/lf347.pdf",
+     "https://www.st.com/resource/en/datasheet/lf347.pdf"
+    ],
+    "claims_confirmed": [
+     "TI LF353 current datasheet is SLOS012C, March 1987 - revised March 2016 (https://www.ti.com/lit/ds/symlink/lf353.pdf).",
+     "SLOS012B, March 1987 - revised August 1994, exists; probably held by the 2012 Cornell copy (https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/s2012/xg46_jy363/xg46_jy363/DataSheet/LF353P.pdf).",
+     "TI LF353-N datasheet header is 'SNOSBH3F - APRIL 1998 - REVISED MARCH 2013' (https://www.ti.com/lit/ds/symlink/lf353-n.pdf).",
+     "LF353-N specs: 4 MHz GBW, 13 V/us, 10 mV trimmed VOS, 50 pA IB, BI-FET II, LM1558 pin-compatible (https://www.ti.com/lit/ds/symlink/lf353-n.pdf).",
+     "TI has separate product pages LF353 and LF353-N (https://www.ti.com/product/LF353, https://www.ti.com/product/LF353-N).",
+     "RS Online lists LF353P at 3 MHz and LF353M/NOPB and LF353MX/NOPB (TI) at 4 MHz (https://de.rs-online.com/web/p/operationsverstarker/0527300, https://uk.rs-online.com/web/p/op-amps/1624672, https://uk.rs-online.com/web/p/op-amps/2088516).",
+     "TI SNOSBH1D is 'LF147, LF347-N', MAY 1999 - REVISED MARCH 2013 (https://www.ti.com/lit/pdf/snosbh1).",
+     "TI gpn/LF347 is 'LF347, LF347B JFET-Input Quad Operational Amplifiers', with separate LF347 and LF347-N product pages (https://www.ti.com/lit/gpn/LF347, https://www.ti.com/product/LF347-N).",
+     "SLOS013C revised March 2016 (search summary; https://www.ti.com/lit/ds/symlink/lf347.pdf).",
+     "ST LF253/LF353 datasheet is Doc ID 2153 Rev 3, March 2010 (https://www.st.com/resource/en/datasheet/lf353.pdf).",
+     "ON Semiconductor discontinuance 10109 and update 10127 mention LF353 variants (https://www.onsemi.com/pub/docs/pcn/10109.pdf).",
+     "TI LF351-N product page exists (https://www.ti.com/product/LF351-N).",
+     "TI part-details page for LF353D exists (https://www.ti.com/product/LF353/part-details/LF353D).",
+     "TI gpn/LF353 resolves to 'LF353 Wide-Bandwidth JFET-Input Dual Operational...' (https://www.ti.com/lit/gpn/LF353)."
+    ],
+    "web_searches_used": 6
    },
    "tier": "B",
    "category": "legacy-general-purpose",
@@ -20284,8 +21390,8 @@
   {
    "id": "LM6171",
    "name": "LM6171 / LM6172 (National high-speed low-distortion voltage-feedback op-amp, single/dual)",
-   "tagline": "National's 100 MHz bipolar VFB video op-amp (LM6172 3000 V/us, LM6171 3600 V/us). Rollers call it neutral and detailed, but opinion is split and it is layout-sensitive.",
-   "technology": "Bipolar high-speed voltage-feedback (VFB) amplifier, unity-gain stable, built for video and high-speed use. The LM6171 is the single, with A and B offset grades in the National models; the LM6172 is the dual. Vendor figures: 100 MHz unity-gain bandwidth; slew rate 3600 V/us for the LM6171 and 3000 V/us for the LM6172; supply current 2.5 mA for the LM6171 and 2.3 mA per channel for the LM6172.",
+   "tagline": "National's 100 MHz bipolar VFB video op-amp (LM6171 3600 V/us, LM6172 3000 V/us). Rollers call it neutral and detailed, but opinion is split and it is layout-sensitive.",
+   "technology": "Bipolar high-speed voltage-feedback (VFB) amplifier, unity-gain stable, built for video and high-speed use. It was made on National's VIP3 complementary bipolar process: TI PCN 20241217001.1 names 'DL-LIN VIP3, 150 mm' as the LM6172's current process. The LM6171 is the single, with A and B offset grades; the LM6172 is the dual. Vendor figures: 100 MHz unity-gain bandwidth; slew rate 3600 V/us (LM6171) and 3000 V/us (LM6172); supply current 2.5 mA (LM6171) and 2.3 mA per channel (LM6172). Since the Dec 2024 PCN, the LM6172 is also built on TI's BICOMHD process at FFAB on 200 mm wafers, with a changed die.",
    "manufacturers": [
     "National Semiconductor",
     "Texas Instruments"
@@ -20298,8 +21404,8 @@
       "National Semiconductor",
       "Texas Instruments"
      ],
-     "status": "unknown",
-     "notes": "Generic single. The official KiCad library splits it into LM6171D (SOIC-8) and LM6171xxN (DIP-8), and both point to ti.com/lit/ds/symlink/lm6171.pdf. More than 80 GitHub files reference that URL."
+     "status": "TI product page live (ti.com/product/LM6171); lifecycle of individual orderables not captured",
+     "notes": "Generic single. TI datasheet SNOS745. KiCad symbols LM6171D (SOIC-8) and LM6171xxN (DIP-8) both point to ti.com/lit/ds/symlink/lm6171.pdf."
     },
     {
      "pn": "LM6171AIN",
@@ -20308,7 +21414,7 @@
       "National Semiconductor"
      ],
      "status": "unknown (probably obsolete; not verified)",
-     "notes": "A-grade DIP-8. MicroSim 8.0 NAT_SEMI.SLB has the entry '*symbol LM6171AIN,LM6171AIM d VOLTAGE FEEDBACK LOW DISTORTION LOW POWER OP-AMP', MODEL=LM6171A/NS. The A-grade macromodel gives 3 mV max Vos."
+     "notes": "A-grade DIP-8. Listed in MicroSim 8.0 NAT_SEMI.SLB (LM6171AIN, LM6171AIM; MODEL=LM6171A/NS). The A-grade macromodel gives 3 mV max Vos."
     },
     {
      "pn": "LM6171AIM",
@@ -20317,7 +21423,16 @@
       "National Semiconductor"
      ],
      "status": "unknown",
-     "notes": "A-grade SOIC-8, from the same MicroSim 8.0 NAT_SEMI.SLB symbol entry as the LM6171AIN."
+     "notes": "A-grade SOIC-8, from the same MicroSim symbol entry."
+    },
+    {
+     "pn": "LM6171AIM/NOPB",
+     "channels": 1,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": "Lead-free A-grade SOIC. A distributor datasheet copy is filed under 'LM6171AIM NOPB-Texas Instruments' (img.eecart.com), so the A grade survived into the /NOPB era."
     },
     {
      "pn": "LM6171AIMX/NOPB",
@@ -20326,7 +21441,16 @@
       "Texas Instruments"
      ],
      "status": "unknown",
-     "notes": "Lead-free tape-and-reel A-grade SOIC. Seen only as an EAGLE library file name (GestoRR/EAGLE-Custom-Library LM6171AIMX_NOPB.lbr). It suggests the A grade survived into the /NOPB era. Low confidence."
+     "notes": "Tape-and-reel A-grade SOIC. Seen only as an EAGLE library file name (GestoRR/EAGLE-Custom-Library). Low confidence."
+    },
+    {
+     "pn": "LM6171BIM/NOPB",
+     "channels": 1,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": "Lead-free B-grade SOIC. Octopart's copy of TI datasheet SNOS745C is filed under this part number."
     },
     {
      "pn": "LM6171BIN",
@@ -20336,7 +21460,7 @@
       "Texas Instruments"
      ],
      "status": "unknown",
-     "notes": "B-grade DIP-8. The DiyEden/Soomal translation (2005) says Digi-Key then sold only the LM6171BIN single and LM6172IN dual in DIP. The B-grade macromodel (LM6171B/NS) gives 6 mV max Vos."
+     "notes": "B-grade DIP-8. Per the DiyEden/Soomal translation (2005), Digi-Key then sold only the LM6171BIN and LM6172IN in DIP. The B-grade macromodel gives 6 mV max Vos."
     },
     {
      "pn": "LM6172IN",
@@ -20346,7 +21470,7 @@
       "Texas Instruments"
      ],
      "status": "unknown",
-     "notes": "Dual DIP-8, the part JP and CN rollers use. Listed by eleshop.jp ('2回路 高速・低消費電力・低歪・電圧帰還型アンプ / LM6172IN'). It also appears in marketplace listings (Amazon.co.jp, 'Phoncoo' brand)."
+     "notes": "Dual DIP-8, the part JP and CN rollers use. Octopart files TI datasheet SNOS792C (Sep 2004) under LM6172IN. Also sold by eleshop.jp and in marketplace listings (Amazon.co.jp 'Phoncoo')."
     },
     {
      "pn": "LM6172IN/NOPB",
@@ -20354,8 +21478,8 @@
      "vendors": [
       "Texas Instruments"
      ],
-     "status": "unknown (TI-era DIP orderable; retail stock seen, lifecycle unverified)",
-     "notes": "Lead-free DIP-8. Sold by Bispa (bispa.co.jp/361, 'LM6172IN/NOPB ... 8PIN-DIP') and reviewed on Zigsow as 'TI LM6172IN/NOPB'. A KiCad schematic (nuclearfutureslab/ibxII-hardware) uses DigiKey PN LM6172IN/NOPB-ND."
+     "status": "unknown (retail stock seen; lifecycle unverified)",
+     "notes": "Lead-free DIP-8. Sold by Bispa (bispa.co.jp/361) and reviewed on Zigsow. DigiKey PN LM6172IN/NOPB-ND appears in a KiCad schematic."
     },
     {
      "pn": "LM6172IM",
@@ -20365,7 +21489,16 @@
       "Texas Instruments"
      ],
      "status": "unknown",
-     "notes": "Dual SOIC-8, named in the JP community notes."
+     "notes": "Dual SOIC-8. Octopart holds a National-era datasheet filed under LM6172IM."
+    },
+    {
+     "pn": "LM6172IM/NOPB",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "TI orderable page exists (ti.com/product/LM6172/part-details/LM6172IM/NOPB); lifecycle not captured",
+     "notes": "Lead-free SOIC-8. It may carry die from either process under PCN 20241217001.1 (VIP3 150 mm or BICOMHD 200 mm). Which orderables the PCN covers was not captured."
     },
     {
      "pn": "LM6172IMX/NOPB",
@@ -20374,53 +21507,80 @@
       "Texas Instruments"
      ],
      "status": "unknown",
-     "notes": "Lead-free tape-and-reel SOIC-8. It appears in an EasyEDA/LCSC library conversion dated 2019 (Jiangshan00001/easyeda_to_pads) and in a DigiKey BOM (AidFTech/AIBus...: LM6172IMX/NOPBCT-ND)."
+     "notes": "Tape-and-reel SOIC-8. Appears in an EasyEDA/LCSC library conversion (2019) and a DigiKey BOM (LM6172IMX/NOPBCT-ND)."
+    },
+    {
+     "pn": "LM6172QML",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "TI product page exists (ti.com/product/LM6172QML); lifecycle not captured",
+     "notes": "Military (QML) version with its own product page and datasheet. The lit number was not captured."
+    },
+    {
+     "pn": "LM6172QML-SP",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "TI product page exists (ti.com/product/LM6172QML-SP); lifecycle not captured",
+     "notes": "Space-grade QML version. A reseller lists LM6172NAB/EM (probably an engineering-model orderable); unconfirmed."
+    },
+    {
+     "pn": "LM6172-MDE",
+     "channels": 2,
+     "vendors": [
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": "Bare-die version with its own TI datasheet (alldatasheet copy). Not a hobbyist part."
     }
    ],
    "lineage": [
     {
      "vendor": "National Semiconductor",
      "role": "originator",
-     "period": "by 1996 (probably earlier for the LM6171) to 2011",
-     "notes": "National's SPICE Op-Amp Macromodels v4.30 (18 April 1996) already contains LM6171A/NS and LM6171B/NS. Its revision history says 'Models added: LM6172' on 16-APR-96. The LM6171 models are not among the additions logged from v3.20 (Sep 1994) onward, so they predate that log or were added without a log entry. MicroSim 8.0 NAT_SEMI.SLB lists LM6171AIN/AIM. Legacy datasheet URLs national.com/ds/LM/LM6171.pdf and LM6172.pdf are recorded in the gEDA spicelib index. National DS document numbers were not found."
+     "period": "by 1996 to 2011",
+     "notes": "National's SPICE Op-Amp Macromodels v4.30 (18 April 1996) already has LM6171A/NS and LM6171B/NS and logs 'Models added: LM6172' on 16-APR-96. TI-imported headers give original dates of MAY 1998 (LM6171, SNOS745) and MAY 1999 (LM6172, SNOS792). Both are later than the 1996 models, so they are not first-release dates. The LM6172 was fabbed on National's VIP3 bipolar process (the PCN calls it 'DL-LIN VIP3', 150 mm wafers). Legacy URLs national.com/ds/LM/LM6171.pdf and LM6172.pdf come from the gEDA spicelib index."
     },
     {
      "vendor": "Texas Instruments",
      "role": "acquirer (National acquisition)",
      "period": "2011 to present",
-     "notes": "The LM6172 datasheet is TI literature SNOS792. An RS mirror title reads 'SNOS792D – MAY 1999 – REVISED MARCH 2013'. The TI-imported header date of May 1999 is later than the April 1996 macromodel, so it probably reflects the National datasheet version TI inherited; this is an inference. The LM6171 TI literature number was not found. A 'pspicetilib' model library copy (chevalierid/alan-setup) still carries the unchanged National LM6171A/NS and LM6172/NS macromodels. No second source, die change or PCN was found."
+     "notes": "Datasheets: LM6171 SNOS745 (C Mar 2013, D Nov 2023) and LM6172 SNOS792 (C Sep 2004, D Mar 2013, E Dec 2024). PCN 20241217001.1 (18 Dec 2024; proposed first ship 18 Mar 2025) adds FFAB with the BICOMHD process (FR-BIP-1, 200 mm) for the LM6172, with a changed die. It also adds a TI Mexico assembly site alongside TI Melaka. QML, QML-SP and bare-die (-MDE) LM6172 variants exist."
     }
    ],
    "key_specs": [
     {
-     "parameter": "Slew rate (LM6172)",
-     "value": "3000 V/us (typ)",
-     "condition": "±15 V operation (macromodel header)",
-     "source": "TI LM6172 datasheet and product-page summary (search result for ti.com/lit/ds/symlink/lm6172.pdf) and the National LM6172/NS macromodel header (v4.30, 1996)"
-    },
-    {
      "parameter": "Slew rate (LM6171)",
      "value": "3600 V/us (typ)",
-     "condition": "±15 V operation, per the macromodel header. The LM6171 datasheet table was not seen directly.",
-     "source": "National LM6171A/NS and LM6171B/NS macromodel headers ('Slew rate = 3600V/uS'), in the National SPICE library v4.30 and later copies"
+     "condition": "±15 V",
+     "source": "TI LM6171 datasheet SNOS745 (search summaries of the ti.com, octopart and radiolocman copies); National LM6171A/B macromodel headers"
+    },
+    {
+     "parameter": "Slew rate (LM6172)",
+     "value": "3000 V/us (typ)",
+     "condition": "±15 V (macromodel header). Values in SNOS792E (new die) not checked.",
+     "source": "TI LM6172 datasheet summary (earlier sweep); National LM6172/NS macromodel header (v4.30, 1996)"
     },
     {
      "parameter": "Unity-gain bandwidth / GBW",
      "value": "100 MHz (typ)",
      "condition": "LM6171 and LM6172, ±15 V",
-     "source": "TI LM6172 datasheet summary and the National macromodel headers ('Gain-bandwidth product = 100 MHz')"
+     "source": "TI LM6171 datasheet summary (this pass); TI LM6172 datasheet summary; National macromodel headers"
     },
     {
      "parameter": "Supply current",
-     "value": "2.3 mA per channel (LM6172); 2.5 mA (LM6171)",
+     "value": "2.5 mA (LM6171); 2.3 mA per channel (LM6172)",
      "condition": "±15 V, typical",
-     "source": "TI LM6172 datasheet summary (2.3 mA/channel) and the National LM6171A/B macromodel headers (2.5 mA)"
+     "source": "TI LM6171 datasheet summary (this pass, 2.5 mA); TI LM6172 datasheet summary (2.3 mA/ch); National macromodel headers"
     },
     {
      "parameter": "Output current (LM6172)",
      "value": "50 mA per channel",
-     "condition": "Typical, as summarised from the TI datasheet",
-     "source": "TI LM6172 datasheet and product-page summary (search result)"
+     "condition": "Typical, from a TI datasheet summary. Not re-checked this pass.",
+     "source": "TI LM6172 datasheet and product-page summary (earlier sweep)"
     },
     {
      "parameter": "Input offset voltage (max)",
@@ -20437,53 +21597,54 @@
     {
      "parameter": "Input voltage noise (LM6172)",
      "value": "12 nV/rtHz",
-     "condition": "Test frequency not captured. Taken from a search summary, not read off the datasheet.",
-     "source": "WebSearch summary 'LM6172 LM6171 opamp sound audio detailed neutral' (earlier in this session)"
+     "condition": "Test frequency not captured. From a search summary, not read off the datasheet; unconfirmed this pass.",
+     "source": "Earlier WebSearch summary 'LM6172 LM6171 opamp sound audio detailed neutral'"
     },
     {
      "parameter": "Input stage / architecture",
-     "value": "Bipolar, voltage feedback, unity-gain stable",
+     "value": "Bipolar (National VIP3 complementary bipolar; BICOMHD for the post-2024 LM6172 die), voltage feedback, unity-gain stable",
      "condition": "n/a",
-     "source": "KiCad official symbol description 'High Speed Low Power Low Distortion Voltage Feedback Amplifier' and the National macromodel header ('Unity Gain Stable')"
+     "source": "TI PCN 20241217001.1 (process names); KiCad symbol description; National macromodel header ('Unity Gain Stable')"
     },
     {
      "parameter": "Capacitive load",
      "value": "Stable with 1 nF load (third-party summary)",
-     "condition": "LM6172, as summarised by a third-party design README. Not checked against the datasheet.",
+     "condition": "LM6172, from a third-party design README. Not checked against the datasheet.",
      "source": "https://github.com/thomabir/themis-motor (encoder-electronics/v1/README.md)"
     },
     {
      "parameter": "Channel crosstalk",
      "value": "-65 dB at 3 MHz (third-party summary)",
-     "condition": "LM6172, as summarised by a third-party design README. Not checked against the datasheet.",
+     "condition": "LM6172, from a third-party design README. Not checked against the datasheet.",
      "source": "https://github.com/thomabir/themis-motor (encoder-electronics/v1/README.md)"
     }
    ],
    "reputation": {
-    "summary": "A cult op-amp-rolling pick rather than a mainstream audio part, and opinion is split. JP: nabe's Chu-Moy comparison ranked the LM6172 'straightest' (least coloured), ahead of the OP275, and found the OPA627AP muddied detail. A Zigsow reviewer calls the LM6172IN/NOPB 'simply a high-speed stone'. Other JP listeners are negative: a goo blog post is titled 'LM6172 無駄買いですよ' (a wasted purchase), and other reports call it light in the bass and treble-leaning, or less resolving than the LM4562/LME49720 as a buffer. diyAudio posters call the LM6171/6172 'very detailed and neutral'. Head-Fi has dedicated threads (Mind the LM6171/2; OPA637 vs LM6171 mini shoot-out; LM6172's sound signature; LM6171 vs OPA604 vs OPA627) with mixed impressions, from neutral and clean to 'too thick/sombre' or 'technical, slightly cold'. The Chinese DiyEden/Soomal notes (2005) are a translation of an English first-person CMoy op-amp test that cites headwize threads; they are not independent CN opinion. Those notes say it has more powerful bass than the OPA132/134, a subtle but real difference from the OPA134PA at 15 V, and is better than the OPA132/134 at low supply. They also say it turns soft and round rather than harsh when starved of supply, and is not for beginners. Commercial use: per a Soomal teardown, the Shanling H1.1 DAC (2013) uses LM6171s in its headphone module. A search summary reports a CMoy test that ranked the LM6172 lowest in noise floor against the LM4562, NE5532, OPA2277, OPA2134 and OPA2132; it apparently comes from a UIUC Physics 406 student report, but that attribution is unconfirmed. No ASR or Groner measurement was found.",
+    "summary": "A cult op-amp-rolling pick, not a mainstream audio part, and opinion is split. JP: nabe's Chu-Moy comparison ranked the LM6172 'straightest' (least coloured), ahead of the OP275. A Zigsow reviewer calls the LM6172IN/NOPB 'simply a high-speed stone'. Other JP listeners are negative: a goo blog post is titled 'LM6172 無駄買いですよ' (a wasted purchase), and others report light bass or say it resolves less than the LM4562 as a buffer. diyAudio posters call the LM6171/6172 'very detailed and neutral'. Head-Fi threads give mixed impressions, from neutral and clean to 'too thick/sombre' or 'technical, slightly cold'. The Chinese DiyEden/Soomal notes (2005) translate an English CMoy test; they are not independent CN opinion. They report stronger bass than the OPA132/134 and say it goes soft rather than harsh when supply-starved. Commercial use: per a Soomal teardown, the Shanling H1.1 DAC (2013) uses LM6171s in its headphone module. A CMoy noise-floor ranking that puts the LM6172 lowest is attributed, unconfirmed, to a UIUC Physics 406 student report. No ASR or Groner measurement was found. All these impressions predate the Dec 2024 LM6172 die change (PCN 20241217001.1).",
     "sonic_descriptors": [
      "very detailed and neutral (diyAudio)",
      "straightest / least coloured (nabe)",
      "'simply a high-speed stone' (Zigsow)",
      "more powerful bass than OPA132/134 (DiyEden translation)",
-     "soft and very round when supply-starved, not harsh (DiyEden translation)",
-     "light / weak bass, treble-leaning (some JP listeners)",
+     "soft and round when supply-starved, not harsh (DiyEden translation)",
+     "light bass, treble-leaning (some JP listeners)",
      "too thick / 'sombre' (some Head-Fi posters)",
      "technical, slightly cold (Head-Fi)"
     ],
     "typical_uses": [
      "Op-amp rolling in Chu-Moy/CMoy headphone amps",
-     "Headphone output stage (Shanling H1.1 DAC uses the LM6171)",
+     "Headphone output stage (the Shanling H1.1 DAC uses the LM6171)",
      "DAC I/V or output stages in DIY builds",
      "Video and high-speed signal paths, ADC drivers (original target market)"
     ],
     "caveats": [
-     "Layout- and stability-sensitive ('cranky' per AMB forum and Head-Fi). Needs tight decoupling and a suitable circuit; risky in sockets and adapters.",
+     "Layout- and stability-sensitive ('cranky' per AMB forum and Head-Fi). Needs tight decoupling; risky in sockets and adapters.",
      "Not beginner-friendly; the result depends heavily on the surrounding circuit (DiyEden translation).",
-     "Opinion is split: praise (nabe, diyAudio) sits beside clearly negative JP reviews (goo blog 'wasted purchase', light bass) and mixed Head-Fi impressions.",
-     "Bass descriptions conflict: JP reports light bass, the translated CMoy notes report powerful bass.",
-     "The DiyEden/Soomal translation wrongly calls it a 'high-speed FET-input' op-amp. The LM6171/6172 is bipolar.",
-     "All praise is subjective listening; there are no vendor audio-THD claims aimed at audio users."
+     "Opinion is split: praise (nabe, diyAudio) sits beside negative JP reviews and mixed Head-Fi impressions.",
+     "Bass descriptions conflict between the JP reports and the translated CMoy notes.",
+     "The DiyEden/Soomal translation wrongly calls it FET-input. The LM6171/6172 is bipolar.",
+     "From 2025, LM6172 stock may carry the new BICOMHD die (PCN 20241217001.1). Listening reports refer to the older VIP3 silicon.",
+     "All praise is subjective listening; there are no vendor audio-THD claims."
     ],
     "sources": [
      "https://nabe.adiary.jp/opamp-compare",
@@ -20509,34 +21670,12 @@
      "vendor": "Texas Instruments",
      "title": "LM6172 Dual, High-Speed, Low-Power, Low-Distortion, Voltage-Feedback Amplifier",
      "doc_number": "SNOS792",
-     "revision": "unknown (current symlink; at least D, possibly later)",
-     "date": "unknown",
+     "revision": "E",
+     "date": "December 2024 (header 'MAY 1999 – REVISED DECEMBER 2024')",
      "url": "https://www.ti.com/lit/ds/symlink/lm6172.pdf",
      "url_kind": "vendor_current",
-     "notes": "Current TI symlink; the title is as shown in a search result. The hyphenated, singular title differs from the older 'Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers' style, which suggests a reformatted revision after D. Not confirmed.",
+     "notes": "Current TI symlink. Rev E is the datasheet change tied to PCN 20241217001.1: new BICOMHD die from FFAB, 200 mm, plus the TI Mexico assembly site. The per-revision change list was not captured.",
      "confidence": "high"
-    },
-    {
-     "vendor": "Texas Instruments",
-     "title": "LM6172 Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers",
-     "doc_number": "SNOS792",
-     "revision": "D",
-     "date": "March 2013 (header: 'MAY 1999 – REVISED MARCH 2013')",
-     "url": "https://docs.rs-online.com/b4cb/A700000006723633.pdf",
-     "url_kind": "distributor_mirror",
-     "notes": "RS Components mirror. Search-result title: 'LM6172 www.ti.com SNOS792D –MAY 1999–REVISED MARCH 2013'. It keeps revision D, which may already be superseded at ti.com.",
-     "confidence": "medium"
-    },
-    {
-     "vendor": "National Semiconductor / Texas Instruments",
-     "title": "LM6172 Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers",
-     "doc_number": "unknown",
-     "revision": "unknown (older title style; possibly National-era or early TI)",
-     "date": "unknown",
-     "url": "https://instrumentation.obs.carnegiescience.edu/ccd/parts/LM6172.pdf",
-     "url_kind": "third_party_mirror",
-     "notes": "Carnegie Observatories instrumentation parts mirror, seen in search results. The old-style title suggests an older revision than the current TI symlink. Revision not captured.",
-     "confidence": "medium"
     },
     {
      "vendor": "Texas Instruments",
@@ -20546,18 +21685,172 @@
      "date": "unknown",
      "url": "https://www.ti.com/jp/lit/ds/symlink/lm6172.pdf",
      "url_kind": "vendor_current",
-     "notes": "TI Japanese-language datasheet, seen in a search result. TI JP translations can lag the English revision.",
+     "notes": "TI Japanese datasheet, seen in search results. JP translations can lag the English revision.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM6172 Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers",
+     "doc_number": "SNOS792",
+     "revision": "D",
+     "date": "March 2013 (header 'MAY 1999 – REVISED MARCH 2013')",
+     "url": "https://www.maxwell.vrac.puc-rio.br/21708/21708_4.PDF",
+     "url_kind": "third_party_mirror",
+     "notes": "PUC-Rio (Maxwell repository) copy; the search-result title shows SNOS792D. It freezes the last pre-PCN (VIP3-era) revision.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM6172 Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers",
+     "doc_number": "SNOS792",
+     "revision": "D",
+     "date": "March 2013",
+     "url": "https://docs.rs-online.com/b4cb/A700000006723633.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "RS Components mirror; title 'SNOS792D –MAY 1999–REVISED MARCH 2013' from an earlier sweep's search result. Not re-seen in this pass.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM6172 Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers",
+     "doc_number": "SNOS792",
+     "revision": "C",
+     "date": "September 2004 (header as indexed: 'MAY 2004 – REVISED SEPTEMBER 2004')",
+     "url": "https://datasheet.octopart.com/LM6172IN-Texas-Instruments-datasheet-12525018.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Octopart copy filed under LM6172IN. The 'MAY 2004' original date conflicts with 'MAY 1999' on rev D and E; it is recorded as printed in the search-result title.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM6172 Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers",
+     "doc_number": "unknown (National DS number not captured)",
+     "revision": "unknown (National era)",
+     "date": "unknown (pre-2011)",
+     "url": "https://datasheet.octopart.com/LM6172IM-National-Semiconductor-datasheet-88951.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Octopart copy attributed to National Semiconductor (LM6172IM). The revision was not captured.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "National Semiconductor / Texas Instruments",
+     "title": "LM6172 Dual High Speed, Low Power, Low Distortion, Voltage Feedback Amplifiers",
+     "doc_number": "unknown",
+     "revision": "unknown (old title style)",
+     "date": "unknown",
+     "url": "https://instrumentation.obs.carnegiescience.edu/ccd/parts/LM6172.pdf",
+     "url_kind": "third_party_mirror",
+     "notes": "Carnegie Observatories parts mirror, seen again in this pass's search results. The old-style title means a pre-rev-E edition; the letter was not captured.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "National Semiconductor",
+     "title": "LM6172 Dual High Speed, Low Power, Low Distortion Voltage Feedback Amplifiers",
+     "doc_number": "unknown",
+     "revision": "unknown (National era)",
+     "date": "unknown",
+     "url": "https://www.datasheetcatalog.com/datasheets_pdf/L/M/6/1/LM6172.shtml",
+     "url_kind": "third_party_mirror",
+     "notes": "datasheetcatalog page for the National Semiconductor LM6172 datasheet.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM6172 datasheet (TI copy)",
+     "doc_number": "SNOS792 (presumed)",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/558263/TI/LM6172.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet copy of the TI datasheet; revision not captured.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM6172 by Texas Instruments (DigiKey HTML datasheet)",
+     "doc_number": "SNOS792 (presumed)",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.digikey.com/en/htmldatasheets/production/94186/0/0/1/lm6172",
+     "url_kind": "distributor_mirror",
+     "notes": "DigiKey HTML rendering; revision not captured.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM6172-MDE bare-die datasheet",
+     "doc_number": "unknown",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/840767/TI1/LM6172-MDE.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Datasheet for the die-sale variant, not the packaged part.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM6171 High-Speed, Low-Power, Low-Distortion Voltage Feedback Amplifier",
+     "doc_number": "SNOS745",
+     "revision": "D",
+     "date": "November 2023 (header 'MAY 1998 – REVISED NOVEMBER 2023')",
+     "url": "https://www.ti.com/lit/ds/symlink/lm6171.pdf",
+     "url_kind": "vendor_current",
+     "notes": "Current TI symlink, reformatted with a hyphenated title. The reason for rev D (and any process change) was not captured; no LM6171 PCN was found.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM6171 High Speed Low Power Low Distortion Voltage Feedback Amplifier",
+     "doc_number": "SNOS745",
+     "revision": "C",
+     "date": "March 2013 (header 'MAY 1998 – REVISED MARCH 2013')",
+     "url": "https://www.mouser.com/datasheet/2/282/lm6171-45603.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Mouser copy; the search-result title shows SNOS745C. It freezes the pre-2023 revision.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM6171 High Speed Low Power Low Distortion Voltage Feedback Amplifier",
+     "doc_number": "SNOS745",
+     "revision": "C",
+     "date": "March 2013",
+     "url": "https://datasheet.octopart.com/LM6171BIM-NOPB-Texas-Instruments-datasheet-102490848.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Octopart copy filed under LM6171BIM/NOPB; title 'LM6171 www.ti.com SNOS745C –MAY 1998–REVISED MARCH 2013'.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "National Semiconductor / Texas Instruments",
+     "title": "LM6171 High Speed Low Power Low Distortion Voltage Feedback Amplifier",
+     "doc_number": "unknown",
+     "revision": "unknown (old title style)",
+     "date": "unknown",
+     "url": "https://agelectronica.lat/pdfs/textos/L/LM6171.PDF",
+     "url_kind": "distributor_mirror",
+     "notes": "AG Electronica (Mexico) copy with the old-style title. Probably National-era or SNOS745C; revision not captured.",
      "confidence": "medium"
     },
     {
      "vendor": "Texas Instruments",
      "title": "LM6171 High Speed Low Power Low Distortion Voltage Feedback Amplifier",
-     "doc_number": "unknown (TI SNOS-series lit number not found)",
-     "revision": "unknown (current symlink)",
+     "doc_number": "unknown (probably SNOS745)",
+     "revision": "unknown (old title style)",
      "date": "unknown",
-     "url": "http://www.ti.com/lit/ds/symlink/lm6171.pdf",
-     "url_kind": "vendor_current",
-     "notes": "Used by the official KiCad symbols LM6171D and LM6171xxN and by more than 80 GitHub files. The title comes from the KiCad description. The PDF header, lit number and revision were not seen in any search result.",
+     "url": "https://img.eecart.com/erp/file/part/spec/LM6171AIM%20NOPB-Texas%20Instruments.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "eecart copy filed under LM6171AIM/NOPB; revision not captured.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM6171 datasheet (TI copy)",
+     "doc_number": "SNOS745 (presumed)",
+     "revision": "unknown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/558261/TI/LM6171.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet copy of the TI datasheet; revision not captured.",
      "confidence": "medium"
     },
     {
@@ -20568,8 +21861,8 @@
      "date": "unknown (pre-2011)",
      "url": "http://www.national.com/ds/LM/LM6171.pdf",
      "url_kind": "vendor_legacy",
-     "notes": "Legacy National URL recorded in the gEDA spicelib index (werner2101/spicelib indexfiles/national_opamps.index, entries LM6171A_LM00032 and LM6171B_LM00033). The host has been dead since the TI migration. Use Wayback to recover National-era revisions.",
-     "confidence": "medium"
+     "notes": "Unconfirmed by web search. Legacy URL from the gEDA spicelib index. The host is dead; use Wayback.",
+     "confidence": "low"
     },
     {
      "vendor": "National Semiconductor",
@@ -20579,8 +21872,8 @@
      "date": "unknown (pre-2011)",
      "url": "http://www.national.com/ds/LM/LM6172.pdf",
      "url_kind": "vendor_legacy",
-     "notes": "Legacy National URL recorded in the gEDA spicelib index (entry LM6172_LM00034). Use Wayback to recover National-era revisions.",
-     "confidence": "medium"
+     "notes": "Unconfirmed by web search. Legacy URL from the gEDA spicelib index. The host is dead; use Wayback.",
+     "confidence": "low"
     },
     {
      "vendor": "Texas Instruments",
@@ -20590,7 +21883,29 @@
      "date": "n/a",
      "url": "https://www.ti.com/product/LM6172",
      "url_kind": "product_page",
-     "notes": "Seen in several search results. It should show the current revision, orderables and lifecycle status.",
+     "notes": "TI product page; shows current revision, orderables and lifecycle.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM6171 data sheet, product information and support",
+     "doc_number": "n/a",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.ti.com/product/LM6171",
+     "url_kind": "product_page",
+     "notes": "TI product page, seen in this pass's search results.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "LM6172QML / LM6172QML-SP product pages",
+     "doc_number": "unknown",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.ti.com/product/LM6172QML-SP",
+     "url_kind": "product_page",
+     "notes": "The space-grade variant has its own datasheet. Also https://www.ti.com/product/LM6172QML.",
      "confidence": "high"
     }
    ],
@@ -20598,27 +21913,95 @@
     {
      "vendor": "Texas Instruments",
      "doc_number": "SNOS792",
+     "revision": "C",
+     "date": "2004-09",
+     "changes": "Only the header as indexed was seen: 'SNOS792C – MAY 2004 – REVISED SEPTEMBER 2004' (Octopart LM6172IN copy). Change list not captured."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SNOS792",
      "revision": "D",
      "date": "2013-03",
-     "changes": "Not captured. Only the header line 'SNOS792D – MAY 1999 – REVISED MARCH 2013' was seen (RS mirror title). 'MAY 1999' is the original-document date TI carried over from National."
+     "changes": "Only the header 'SNOS792D – MAY 1999 – REVISED MARCH 2013' was seen (RS and PUC-Rio mirrors). Probably TI's 2013 reformat of National datasheets; not captured."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SNOS792",
+     "revision": "E",
+     "date": "2024-12",
+     "changes": "Per PCN 20241217001.1, the datasheet changes from SNOS792D to SNOS792E with the addition of FFAB BICOMHD silicon (changed die) and the TI Mexico assembly site. The title is restyled ('Dual, High-Speed, Low-Power, Low-Distortion, Voltage-Feedback Amplifier'). The electrical-table changes were not captured."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SNOS745",
+     "revision": "C",
+     "date": "2013-03",
+     "changes": "Only the header 'SNOS745C – MAY 1998 – REVISED MARCH 2013' was seen (Mouser and Octopart copies). Change list not captured."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SNOS745",
+     "revision": "D",
+     "date": "2023-11",
+     "changes": "Only 'SNOS745D – MAY 1998 – REVISED NOVEMBER 2023' was seen; the title is restyled to 'LM6171 High-Speed, Low-Power, Low-Distortion Voltage Feedback Amplifier'. Change list and any related PCN not captured."
     },
     {
      "vendor": "National Semiconductor",
      "doc_number": "National SPICE Op-Amp Macromodels library (VERSION.TXT)",
      "revision": "4.30",
      "date": "1996-04-16 (library dated 18 April 1996)",
-     "changes": "'Models added: LM6172' (LM6172/NS: ±15 V, unity-gain stable, Vos max 3 mV, GBW 100 MHz, 2.3 mA, 3000 V/us). The LM6171A/NS and LM6171B/NS models (3600 V/us, 2.5 mA, 90 dB) are already in the v4.30 device table. This is a model-library revision, not a datasheet revision."
+     "changes": "'Models added: LM6172' (±15 V, unity-gain stable, Vos max 3 mV, 100 MHz, 2.3 mA, 3000 V/us). LM6171A/B models (3600 V/us, 2.5 mA, 90 dB) are already present. Model library, not a datasheet."
     }
    ],
-   "silicon_changes": [],
-   "counterfeit_notes": "No specific counterfeit or remarking reports for the LM6171 or LM6172 were found in the available evidence. This pass had no fresh web search, so this is not a confirmed negative. The DIP-8 LM6172IN and LM6171BIN are the parts rollers want. Marketplace DIP listings exist (for example the Amazon.co.jp 'Phoncoo' LM6172IN DIP8). Genuine TI-era LM6172IN/NOPB DIP stock has been sold by JP retailers (Bispa, eleshop.jp). Before trusting cheap 'National' DIP stock, check the logo (National vs TI), date code, laser marking and /NOPB-era labelling.",
+   "silicon_changes": [
+    {
+     "vendor": "Texas Instruments",
+     "when": "PCN 20241217001.1 issued 2024-12-18; proposed first ship 2025-03-18",
+     "part_numbers_affected": [
+      "LM6172 family (specific orderables not captured; the PCN says 'select devices')"
+     ],
+     "identification": "New material is documented by datasheet SNOS792E (rev D before). Per the PCN, TI Melaka and TI Mexico assembly differ in lead finish (Matte Sn vs NiPdAu), mount and mold compound, and pin-1 designator (notch vs dimple). The site-to-feature mapping should be read off the PCN. These features only show the assembly site, not the fab. Because FFAB is added, old (VIP3) and new (BICOMHD) die can ship under the same orderable. Parts with 2025+ date codes are the ones at risk.",
+     "summary": "TI qualified FFAB (Freising) with the BICOMHD process (FR-BIP-1, 200 mm) for the LM6172, in addition to the original National DL-LIN VIP3 process (150 mm). The die changed as a result. This is part of TI's move out of 150 mm fabs. The same part number now covers two different silicon builds.",
+     "spec_deltas": [
+      {
+       "parameter": "Fab / process",
+       "before": "DL-LIN VIP3, 150 mm wafers",
+       "after": "FR-BIP-1 (FFAB) BICOMHD, 200 mm wafers (added)"
+      },
+      {
+       "parameter": "Die",
+       "before": "Original National VIP3 die",
+       "after": "Changed die (per PCN summary)"
+      },
+      {
+       "parameter": "Assembly site",
+       "before": "TI Melaka",
+       "after": "TI Melaka or TI Mexico (added), with different lead finish, mold/mount compound and pin-1 mark"
+      },
+      {
+       "parameter": "Datasheet",
+       "before": "SNOS792D (Mar 2013)",
+       "after": "SNOS792E (Dec 2024); electrical-table changes not captured"
+      }
+     ],
+     "audio_impact": "Unknown. A new bipolar process and die can change noise, distortion, slew and phase margin. Listening impressions of the LM6172 all predate 2025 and refer to VIP3 silicon. Rollers should not assume new stock sounds or behaves the same, especially in the layout-sensitive socketed builds this part is known for.",
+     "compatibility_risk": "medium: the die was redesigned on a different bipolar process and the SNOS792E electrical changes are not captured. Stability margins in high-speed, socketed circuits could differ.",
+     "sources": [
+      "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6025/PCN20241217001.1.pdf",
+      "https://www.ti.com/lit/ds/symlink/lm6172.pdf"
+     ],
+     "confidence": "high"
+    }
+   ],
+   "counterfeit_notes": "No specific counterfeit or remarking reports for the LM6171 or LM6172 were found. The DIP-8 LM6172IN and LM6171BIN are the parts rollers want. Marketplace DIP listings exist (e.g. Amazon.co.jp 'Phoncoo' LM6172IN DIP8). Genuine TI-era LM6172IN/NOPB DIP has been retailed by Bispa and eleshop.jp. Check the logo (National vs TI), date code, laser marking and /NOPB labelling. Separately, since PCN 20241217001.1 (first ship Mar 2025), genuine LM6172 can carry a new BICOMHD die. A 2025+ date code, NiPdAu leads or a different pin-1 mark do not mean a fake; they may be new-process parts.",
    "alternatives": [
-    "LM7171 (National/TI single high-speed VFB sibling with higher output current). This is a suggestion, not a vendor successor statement.",
+    "LM7171 (National/TI high-speed VFB sibling with higher output current). A suggestion, not a vendor successor statement.",
     "AD8065/AD8066 (ADI high-speed FET-input, same catalogue category)",
     "LT1364/LT1363 (Linear/ADI high-slew VFB, same catalogue category)",
-    "LME49710/LM4562 (TI/National audio-specific bipolar, for audio use where video bandwidth is not needed)"
+    "LME49710/LM4562 (TI/National audio-specific bipolar, where video bandwidth is not needed)"
    ],
    "ti_literature_numbers": [
+    "SNOS745",
     "SNOS792"
    ],
    "archive_seed_urls": [
@@ -20629,73 +22012,122 @@
     "http://www.national.com/ds/LM/LM6172.pdf",
     "http://www.national.com/pf/LM/LM6171.html",
     "http://www.national.com/pf/LM/LM6172.html",
-    "http://www.ti.com/lit/ds/symlink/lm6171.pdf",
+    "https://agelectronica.lat/pdfs/textos/L/LM6171.PDF",
+    "https://datasheet.octopart.com/LM6171BIM-NOPB-Texas-Instruments-datasheet-102490848.pdf",
+    "https://datasheet.octopart.com/LM6172IM-National-Semiconductor-datasheet-88951.pdf",
+    "https://datasheet.octopart.com/LM6172IN-Texas-Instruments-datasheet-12525018.pdf",
     "https://docs.rs-online.com/b4cb/A700000006723633.pdf",
     "https://instrumentation.obs.carnegiescience.edu/ccd/parts/LM6172.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6025/PCN20241217001.1.pdf",
     "https://tangentsoft.net/audio/opamps.html",
+    "https://www.maxwell.vrac.puc-rio.br/21708/21708_4.PDF",
+    "https://www.mouser.com/datasheet/2/282/lm6171-45603.pdf",
     "https://www.ti.com/jp/lit/ds/symlink/lm6172.pdf",
+    "https://www.ti.com/lit/ds/symlink/lm6171.pdf",
     "https://www.ti.com/lit/ds/symlink/lm6172.pdf",
     "https://www.ti.com/product/LM6171",
-    "https://www.ti.com/product/LM6172"
+    "https://www.ti.com/product/LM6172",
+    "https://www.ti.com/product/LM6172QML",
+    "https://www.ti.com/product/LM6172QML-SP"
    ],
    "open_questions": [
-    "TOOLING: the session WebSearch budget (200/200) was already exhausted, so this pass ran zero fresh WebSearch queries. Evidence came from WebSearch results saved from earlier in this session, rate-limited GitHub code search and locally cloned GitHub repos (electricant/electronics-libraries, werner2101/spicelib, chevalierid/alan-setup).",
-    "The LM6171 TI literature number, current revision letter and REVISED date are still unknown. A guess of 'SNOS745' by an earlier agent was never confirmed; do not use it.",
-    "Is there an LM6172 revision after SNOS792D (March 2013)? The current ti.com title is hyphenated and singular, suggesting a later reformatted revision. Letter and date are unconfirmed.",
-    "National DS document numbers and the National revision chain for the LM6171 and LM6172 are unknown. Recover them from Wayback snapshots of the national.com/ds/LM/ URLs. TI's 'MAY 1999' original date comes after the April 1996 LM6172 macromodel, so earlier National datasheet editions probably exist.",
-    "INFERRED, not seen: https://www.ti.com/product/LM6171, national.com/pf/LM/LM6171.html and LM6172.html, and cache.national.com/ds/LM/LM6171.pdf and LM6172.pdf. They appear only in archive_seed_urls.",
-    "INFERRED: the English original of the DiyEden/Soomal 'Audio op-amp research notes' (first-person CMoy test with a B+K Precision 1710 supply, 33 Ω/330 Ω dummy loads and 'Vmin, 0.5V into 33 Ω' figures) looks like Tangent's 'Notes on Op-Amps' (tangentsoft.net/audio/opamps.html). The URL and attribution are not confirmed. The headwize thread URL is taken from the Soomal text.",
-    "Attribution of the 'lowest noise floor in CMoy testing' ranking (LM6172 < LM4562 < NE5532 < OPA2277 < OPA2134 < OPA2132) to the UIUC Physics 406 James Han report is inferred from its co-listing in one search summary.",
-    "The source of the '2nd harmonic -110 dB at 10 kHz, 2 Vpp, 100 Ω' figure in a search summary is unknown (possibly a forum post). It is not recorded as a key spec.",
-    "The DIP scarcity hint is partly contradicted: TI-era LM6172IN/NOPB DIP has been retailed in Japan (Bispa, eleshop.jp) and reviewed on Zigsow. The current lifecycle status (active/NRND/obsolete) of all orderables, and of the LM6171 DIP, is unverified.",
-    "Does the TI-era LM6171 still ship in both A and B grades? LM6171AIMX/NOPB appears in an EAGLE library, while around 2005 Digi-Key offered only the LM6171BIN in DIP. Check TI's orderable addendum.",
-    "Datasheet specs not captured: LM6171 output current, i_n, THD/differential gain-phase figures, supply range (believed ±5 V/±15 V specified, not confirmed), and any per-revision spec changes.",
-    "No PCN, die change, fab transfer or ESD-structure change was found for the LM6171 or LM6172. Absence is unverified because web search was unavailable in this pass."
+    "What changed in the SNOS792E electrical tables (slew, noise, Vos, THD, stability) with the BICOMHD die? The revision-history section was not captured.",
+    "Which LM6172 orderables does PCN 20241217001.1 cover (SOIC only, or also the PDIP LM6172IN/NOPB and QML variants)? Does TI keep shipping VIP3 die in parallel?",
+    "Why was LM6171 SNOS745D (Nov 2023) issued? Is there a matching LM6171 fab/process PCN? None was found.",
+    "SNOS792C's indexed header reads 'MAY 2004 – REVISED SEPTEMBER 2004', while rev D/E say 'MAY 1999'. Check against the PDF.",
+    "National DS document numbers and revision chain for the LM6171 and LM6172 are unknown; recover them from Wayback captures of the national.com URLs. The TI header original dates (May 1998 for LM6171, May 1999 for LM6172) are later than the April 1996 macromodels.",
+    "The DIP-scarcity hint (discovery) was neither confirmed nor refuted by web search. TI-era LM6172IN/NOPB DIP has been retailed in Japan. Lifecycle (active/NRND/obsolete) of all orderables, including the LM6171 DIP, is still unverified.",
+    "Does the LM6171 still ship in both A and B grades (LM6171AIM/NOPB and LM6171BIM/NOPB copies exist)?",
+    "LM6172 e_n 12 nV/rtHz, output current and supply range are not re-checked against the datasheet.",
+    "Lit numbers for the LM6172QML / QML-SP / -MDE datasheets were not captured.",
+    "The attributions to Tangent's 'Notes on Op-Amps' (source of the DiyEden translation) and to the UIUC P406 report (noise-floor ranking) are inferred."
    ],
    "sources": [
     "https://www.ti.com/lit/ds/symlink/lm6172.pdf",
+    "https://www.ti.com/lit/ds/symlink/lm6171.pdf",
+    "https://www.ti.com/jp/lit/ds/symlink/lm6172.pdf",
+    "https://www.ti.com/product/LM6172",
+    "https://www.ti.com/product/LM6171",
+    "https://www.ti.com/product/LM6172/part-details/LM6172IM/NOPB",
+    "https://www.ti.com/product/LM6172QML",
+    "https://www.ti.com/product/LM6172QML-SP",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6025/PCN20241217001.1.pdf",
+    "https://www.mouser.com/datasheet/2/282/lm6171-45603.pdf",
+    "https://datasheet.octopart.com/LM6171BIM-NOPB-Texas-Instruments-datasheet-102490848.pdf",
+    "https://datasheet.octopart.com/LM6172IN-Texas-Instruments-datasheet-12525018.pdf",
+    "https://datasheet.octopart.com/LM6172IM-National-Semiconductor-datasheet-88951.pdf",
+    "https://www.maxwell.vrac.puc-rio.br/21708/21708_4.PDF",
     "https://docs.rs-online.com/b4cb/A700000006723633.pdf",
     "https://instrumentation.obs.carnegiescience.edu/ccd/parts/LM6172.pdf",
-    "https://www.ti.com/jp/lit/ds/symlink/lm6172.pdf",
-    "http://www.ti.com/lit/ds/symlink/lm6171.pdf",
-    "https://www.ti.com/product/LM6172",
+    "https://www.datasheetcatalog.com/datasheets_pdf/L/M/6/1/LM6172.shtml",
+    "https://agelectronica.lat/pdfs/textos/L/LM6171.PDF",
+    "https://img.eecart.com/erp/file/part/spec/LM6171AIM%20NOPB-Texas%20Instruments.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/558261/TI/LM6171.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/558263/TI/LM6172.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/840767/TI1/LM6172-MDE.html",
+    "https://www.digikey.com/en/htmldatasheets/production/94186/0/0/1/lm6172",
     "https://github.com/KiCad/kicad.github.io/blob/master/_symbols/Amplifier_Operational.html",
     "https://github.com/werner2101/spicelib/blob/master/indexfiles/national_opamps.index",
-    "https://github.com/electricant/electronics-libraries%20(spice-models/opamps/opamp-natsemi.txt%20and%20spice-models/pspice/nat_semi.lib:%20National%20SPICE%20macromodels%20v4.30,%2018%20April%201996,%20LM6172%20added%2016-APR-96,%20LM6171A/B%20and%20LM6172%20feature%20headers)",
-    "https://github.com/chevalierid/alan-setup%20(fab/kicad/libraries/pspicetilib/LM6171A.lib,%20LM6172.lib:%20National%20macromodels)",
-    "https://github.com/Reyeselda95/EC%20(MicroSim%208.0%20LIB/NAT_SEMI.SLB:%20LM6171AIN,%20LM6171AIM,%20LM6172IN)",
-    "https://github.com/GLuisF/LTspice%20(lib/sym/EXTRA/AudioOpamp/NS/LM6171A_NS.lib,%20LM6171B_NS.lib,%20LM6172_NS.lib)",
-    "https://github.com/nuclearfutureslab/ibxII-hardware%20(adcboard/Amplifier.sch:%20LM6172IN/NOPB-ND)",
-    "https://github.com/Jiangshan00001/easyeda_to_pads%20(converted/High_speed_&_WideBandOpAmps.p:%20LM6172IMX/NOPB)",
-    "https://github.com/AidFTech/AIBus-Universal-Auto-Infotainment-System%20(Radio%20Tuner/Old%20PCB/BOM_DigiKey_AidF-Car-Radio.csv:%20LM6172IMX/NOPBCT-ND)",
-    "https://github.com/GestoRR/EAGLE-Custom-Library%20(LM6171AIMX_NOPB.lbr)",
-    "https://github.com/thomabir/themis-motor%20(encoder-electronics/v1/README.md)",
+    "https://github.com/electricant/electronics-libraries",
+    "https://github.com/chevalierid/alan-setup",
+    "https://github.com/Reyeselda95/EC",
+    "https://github.com/nuclearfutureslab/ibxII-hardware",
+    "https://github.com/Jiangshan00001/easyeda_to_pads",
+    "https://github.com/AidFTech/AIBus-Universal-Auto-Infotainment-System",
+    "https://github.com/GestoRR/EAGLE-Custom-Library",
+    "https://github.com/thomabir/themis-motor",
     "https://bispa.co.jp/361",
     "https://eleshop.jp/shop/g/gK73411/",
-    "https://www.amazon.co.jp/Phoncoo-1%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88-LM6172IN-DIP8-LM6172%E9%AB%98%E9%80%9F%E3%82%AA%E3%83%9A%E3%82%A2%E3%83%B3%E3%83%97%E3%83%87%E3%83%A5%E3%82%A2%E3%83%AB%E9%AB%98%E9%80%9F%E4%BD%8E%E6%B6%88%E8%B2%BB%E9%9B%BB%E5%8A%9B%E3%82%A2%E3%83%B3%E3%83%97/dp/B082QVH4R8",
     "https://nabe.adiary.jp/opamp-compare",
-    "https://nabe.adiary.jp/0317",
     "https://zigsow.jp/item/330783/review/331687",
     "https://blog.goo.ne.jp/fripp_fripp/e/00d9c1da3c94cb34f8189b12f7698d72",
     "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/",
     "https://www.head-fi.org/threads/mind-the-lm6171-2.198675/page-2",
-    "https://www.head-fi.org/threads/burr-brown-opa637-vs-national-lm6171-mini-shoot-out.12727/",
-    "https://www.head-fi.org/threads/lm6172s-sound-signature.350685/",
-    "https://www.head-fi.org/threads/high-end-ops-lm6171-vs-opa604-vs-opa627-vs.106474/",
-    "https://www.head-fi.org/threads/which-opamp-for-grados.234221/page-2",
-    "https://www.amb.org/forum/lm617x-circuits-t1717.html",
-    "https://courses.physics.illinois.edu/phys406/sp2017/Student_Projects/Spring12/James_Hans_P406_Project_Report_Sp12.pdf",
-    "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100000343.md",
-    "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100004272.md",
-    "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100004314.md"
+    "https://www.amb.org/forum/lm617x-circuits-t1717.html"
    ],
    "verification": {
-    "status": "not-web-verified",
-    "refuted_claims": [],
-    "corrections": [],
-    "unverified_urls": [],
-    "claims_confirmed": [],
-    "web_searches_used": 0
+    "status": "verified-with-corrections",
+    "refuted_claims": [
+     "'No second source, die change or PCN was found' (draft lineage and open questions) is refuted. TI PCN 20241217001.1 (18 Dec 2024) adds FFAB BICOMHD 200 mm silicon with a changed die for the LM6172, and the datasheet moves SNOS792D to SNOS792E.",
+     "The draft's empty silicon_changes list is refuted; the PCN above is a same-part-number, different-silicon hazard.",
+     "'LM6171 TI literature number not found; do not use SNOS745' is refuted: the LM6171 datasheet is SNOS745 (SNOS745C Mar 2013, SNOS745D Nov 2023).",
+     "The old-style title 'LM6171 High Speed Low Power Low Distortion Voltage Feedback Amplifier' for the current LM6171 symlink is refuted. The current title is 'LM6171 High-Speed, Low-Power, Low-Distortion Voltage Feedback Amplifier'; the old title belongs to SNOS745C and earlier.",
+     "The current LM6172 revision is not an unknown letter after D: it is SNOS792E, revised December 2024."
+    ],
+    "corrections": [
+     "Added LM6171 lit number SNOS745 with revisions C (May 1998 / revised Mar 2013) and D (revised Nov 2023); set the ti.com LM6171 symlink to rev D.",
+     "Set the LM6172 current revision to SNOS792E (Dec 2024) and added SNOS792C (Sep 2004, Octopart copy under LM6172IN) to revision history.",
+     "Added silicon_changes entry for PCN 20241217001.1: DL-LIN VIP3 150 mm to FR-BIP-1 BICOMHD 200 mm, die changed, TI Mexico assembly added (Matte Sn vs NiPdAu, notch vs dimple), first ship 18 Mar 2025.",
+     "Added mirrors holding old revisions: Mouser and Octopart (SNOS745C), PUC-Rio (SNOS792D), Octopart (SNOS792C), Octopart National-era LM6172IM, datasheetcatalog National LM6172, AG Electronica and eecart old-style LM6171, alldatasheet (LM6171, LM6172, LM6172-MDE), DigiKey HTML.",
+     "Added part numbers LM6171AIM/NOPB, LM6171BIM/NOPB, LM6172IM/NOPB (TI part-details page), LM6172QML, LM6172QML-SP and LM6172-MDE.",
+     "Lineage and technology now name the National VIP3 process and the 2024 BICOMHD transfer, and note that the TI header original dates (May 1998 for LM6171, May 1999 for LM6172) postdate the 1996 macromodels.",
+     "Downgraded the national.com legacy datasheet entries to low confidence (unconfirmed by web search).",
+     "The LM6171 key specs (3600 V/us, 100 MHz, 2.5 mA) are now also sourced to the TI datasheet summary.",
+     "Counterfeit notes: a 2025+ date code, NiPdAu leads or a different pin-1 mark may indicate new-process genuine parts, not fakes."
+    ],
+    "unverified_urls": [
+     "http://www.national.com/ds/LM/LM6171.pdf",
+     "http://www.national.com/ds/LM/LM6172.pdf",
+     "http://cache.national.com/ds/LM/LM6171.pdf",
+     "http://cache.national.com/ds/LM/LM6172.pdf",
+     "http://www.national.com/pf/LM/LM6171.html",
+     "http://www.national.com/pf/LM/LM6172.html",
+     "https://tangentsoft.net/audio/opamps.html",
+     "http://headwize.com/ubb/showpage5.php?fnum=3&tid=2222",
+     "https://docs.rs-online.com/b4cb/A700000006723633.pdf"
+    ],
+    "claims_confirmed": [
+     "The LM6171 datasheet is SNOS745C, 'MAY 1998 – REVISED MARCH 2013' (https://datasheet.octopart.com/LM6171BIM-NOPB-Texas-Instruments-datasheet-102490848.pdf; https://www.mouser.com/datasheet/2/282/lm6171-45603.pdf)",
+     "The current LM6171 datasheet is SNOS745D, revised November 2023, titled 'LM6171 High-Speed, Low-Power, Low-Distortion Voltage Feedback Amplifier' (https://www.ti.com/lit/ds/symlink/lm6171.pdf)",
+     "The current LM6172 datasheet is SNOS792E, 'MAY 1999 – REVISED DECEMBER 2024' (https://www.ti.com/lit/ds/symlink/lm6172.pdf)",
+     "SNOS792D 'MAY 1999 – REVISED MARCH 2013' survives on the PUC-Rio mirror (https://www.maxwell.vrac.puc-rio.br/21708/21708_4.PDF)",
+     "SNOS792C 'MAY 2004 – REVISED SEPTEMBER 2004' survives on Octopart under LM6172IN (https://datasheet.octopart.com/LM6172IN-Texas-Instruments-datasheet-12525018.pdf)",
+     "PCN 20241217001.1 was issued 18 Dec 2024, with proposed first ship 18 Mar 2025. It adds FFAB with the BICOMHD process (FR-BIP-1, 200 mm) in addition to DL-LIN VIP3 (150 mm), with a changed die, and adds TI Mexico assembly (lead finish, compounds and pin-1 mark differ). The LM6172 datasheet moves from SNOS792D to SNOS792E (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6025/PCN20241217001.1.pdf)",
+     "LM6171: 3600 V/us slew, 100 MHz unity-gain bandwidth, 2.5 mA supply current (https://www.ti.com/lit/ds/symlink/lm6171.pdf, via search summary)",
+     "The TI product pages LM6171, LM6172, LM6172QML, LM6172QML-SP and the LM6172IM/NOPB part-details page exist (https://www.ti.com/product/LM6172QML-SP; https://www.ti.com/product/LM6172/part-details/LM6172IM/NOPB)",
+     "The Carnegie Observatories mirror holds an old-style-title LM6172 datasheet (https://instrumentation.obs.carnegiescience.edu/ccd/parts/LM6172.pdf)"
+    ],
+    "web_searches_used": 6
    },
    "tier": "B",
    "category": "high-speed-video-crossover",
