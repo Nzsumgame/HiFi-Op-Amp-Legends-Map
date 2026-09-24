@@ -295,6 +295,20 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Nisshinbo Micro Devices | - | - | - | [nisshinbo-microdevices.co.jp/en/produc…pec/?product=muses02](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses02) | product_page | low |
 | New Japan Radio (NJR) | - | - | - | [njr.com/electronic_device/products/MUSES02.html](https://www.njr.com/electronic_device/products/MUSES02.html) | product_page | medium |
 | New Japan Radio (NJR) | - | - | - | [njr.co.jp/MUSES/series/MUSES02.html](https://www.njr.co.jp/MUSES/series/MUSES02.html) | product_page | low |
+| New Japan Radio (NJR) | MUSES02_E | revision not shown | unknown | [njr.com/electronic_device/PDF/MUSES02_E.pdf](https://www.njr.com/electronic_device/PDF/MUSES02_E.pdf) | vendor_legacy | low |
+| New Japan Radio (NJR) | MUSES02_E | revision not shown | unknown | [semicon.njr.co.jp/eng/PDF/MUSES02_E.pdf](http://semicon.njr.co.jp/eng/PDF/MUSES02_E.pdf) | vendor_legacy | low |
+| New Japan Radio (NJR) | - | - | - | [njr.com/semicon/products/MUSES02.html](https://www.njr.com/semicon/products/MUSES02.html) | product_page | medium |
+| New Japan Radio (NJR) | MUSES02_E | revision not shown | unknown | [digikey.at/htmldatasheets/production/6…4/0/0/1/muses02.html](https://www.digikey.at/htmldatasheets/production/663074/0/0/1/muses02.html) | distributor_mirror | low |
+| New Japan Radio (NJR) | MUSES02_E | revision not shown | unknown | [alldatasheet.jp/datasheet-pdf/pdf/808061/NJRC/MUSES02.html](https://www.alldatasheet.jp/datasheet-pdf/pdf/808061/NJRC/MUSES02.html) | third_party_mirror | low |
+| New Japan Radio (NJR) | MUSES02_E (listed as MUSE02) | revision not shown | unknown | [alldatasheet.jp/datasheet-pdf/pdf/1244749/NJRC/MUSE02.html](https://www.alldatasheet.jp/datasheet-pdf/pdf/1244749/NJRC/MUSE02.html) | third_party_mirror | low |
+| New Japan Radio (NJR) | MUSES02_E | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/view/808061/NJRC/MUSES02.html](https://www.alldatasheet.com/datasheet-pdf/view/808061/NJRC/MUSES02.html) | third_party_mirror | low |
+| New Japan Radio (NJR) | MUSES02_E | revision not shown | unknown | [datasheet.jp/pdf/1007642/MUSES02.html](http://www.datasheet.jp/pdf/1007642/MUSES02.html) | third_party_mirror | low |
+| New Japan Radio (NJR) | MUSES02_E | revision not shown | unknown | [datasheetspdf.com/datasheet/MUSES02.html](https://datasheetspdf.com/datasheet/MUSES02.html) | third_party_mirror | low |
+| New Japan Radio (NJR) | MUSES02_E | revision not shown | unknown | [digchip.com/datasheets/parts/datasheet/330/MUSES02.php](https://www.digchip.com/datasheets/parts/datasheet/330/MUSES02.php) | third_party_mirror | low |
+| Nisshinbo Micro Devices | - | - | - | [digikey.com/en/products/detail/nisshin…-inc/MUSES02/2202386](https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES02/2202386) | product_page | low |
+| Nisshinbo Micro Devices | - | - | - | [mouser.com/ProductDetail/Nisshinbo/MUS…yhhPORZIYvXQtw%3D%3D](https://www.mouser.com/ProductDetail/Nisshinbo/MUSES02?qs=lTIKtKbByhhPORZIYvXQtw%3D%3D) | product_page | low |
+| New Japan Radio (NJR) | - | - | - | [win-source.net/products/detail/njr-cor…on-njrc/muses02.html](https://www.win-source.net/products/detail/njr-corporation-njrc/muses02.html) | product_page | low |
+| New Japan Radio (NJR) | - | - | - | [integrated-circuit.com/products-detail…S02/EIS-1388003.html](https://www.integrated-circuit.com/products-detail/MUSES02/EIS-1388003.html) | product_page | low |
 
 ## [MUSES05 (J-FET single, two-chip MUSES flagship, DFN12-CA8)](families/MUSES05.md)
 
@@ -342,6 +356,17 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Nisshinbo Micro Devices | MUSES8920A_E (assumed) | unknown | unknown | [electronicsdatasheets.com/parts/nisshi…-holdings/MUSES8920A](https://www.electronicsdatasheets.com/parts/nisshinbo-holdings/MUSES8920A) | third_party_mirror | medium |
 | Nisshinbo Micro Devices | n/a | n/a | n/a | [nisshinbo-microdevices.co.jp/en/produc…/?product=muses8920a](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8920a) | product_page | high |
 | Nisshinbo Micro Devices | n/a | n/a | n/a | [mouser.com/en/new/nisshinbo/nisshinbo-muses8920a-op-amps/](https://www.mouser.com/en/new/nisshinbo/nisshinbo-muses8920a-op-amps/) | product_page | high |
+| New Japan Radio (NJR/JRC) | MUSES8920_E | Ver.2013-11-25 | 2013-11-25 | [alldatasheet.com/datasheet-pdf/view/80…/NJRC/MUSES8920.html](https://www.alldatasheet.com/datasheet-pdf/view/808066/NJRC/MUSES8920.html) | third_party_mirror | medium |
+| New Japan Radio (NJR/JRC) | MUSES8920_E (same file ID 808066 as alldatasheet.com) | revision not shown (file ID 808066 matches the alldatasheet.com copy that the search summary gives as Ver.2013-11-25) | unknown | [alldatasheet.jp/datasheet-pdf/pdf/808066/NJRC/MUSES8920.html](https://www.alldatasheet.jp/datasheet-pdf/pdf/808066/NJRC/MUSES8920.html) | third_party_mirror | low |
+| New Japan Radio (NJR/JRC) | MUSES8920_E (assumed) | revision not shown | unknown | [datasheetspdf.com/pdf/1007645/NewJapanRadio/MUSES8920/1](https://datasheetspdf.com/pdf/1007645/NewJapanRadio/MUSES8920/1) | third_party_mirror | low |
+| New Japan Radio (NJR/JRC) | MUSES8920_E (assumed) | revision not shown | unknown | [datasheet.jp/pdf/1007645/MUSES8920.html](http://www.datasheet.jp/pdf/1007645/MUSES8920.html) | third_party_mirror | low |
+| New Japan Radio (NJR/JRC) | MUSES8920_E (assumed) | revision not shown | unknown | [datasheetarchive.com/MUSES8920-datasheet.html](https://www.datasheetarchive.com/MUSES8920-datasheet.html) | third_party_mirror | low |
+| New Japan Radio (NJR/JRC) | MUSES8920_J | revision not shown | unknown | [slideshare.net/spicepark/muses8920-j](https://www.slideshare.net/spicepark/muses8920-j) | third_party_mirror | low |
+| New Japan Radio (NJR/JRC) | MUSES8920_J | revision not shown | unknown | [njr.co.jp/electronic_device/PDF/MUSES8920_J.pdf](https://www.njr.co.jp/electronic_device/PDF/MUSES8920_J.pdf) | vendor_legacy | medium |
+| New Japan Radio (NJR/JRC) | MUSES8920_E | revision not shown | unknown | [semicon.njr.co.jp/eng/PDF/MUSES8920_E.pdf](http://semicon.njr.co.jp/eng/PDF/MUSES8920_E.pdf) | vendor_legacy | medium |
+| Nisshinbo Micro Devices | MUSES8920A_J | revision not shown | unknown | [nisshinbo-microdevices.co.jp/ja/pdf/da…eet/MUSES8920A_J.pdf](https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES8920A_J.pdf) | vendor_current | high |
+| Nisshinbo Micro Devices | n/a | n/a | n/a | [nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES8920A.html](https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES8920A.html) | product_page | high |
+| Nisshinbo Micro Devices | MUSES8920A_E (assumed) | revision not shown | unknown | [electronicsdatasheets.com/manufacturer…ngs/parts/muses8920a](https://electronicsdatasheets.com/manufacturers/nisshinbo-holdings/parts/muses8920a) | third_party_mirror | low |
 
 ## [NE5532 / NE5532A / SA5532 / SE5532 (dual low-noise bipolar; incl. NJM5532, KA5532, BA15532, RC5532)](families/NE5532.md)
 
@@ -599,6 +624,17 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments (Octopart mirror, Chinese translation) | unknown (TI Chinese translation) | unknown | unknown | [datasheet.octopart.com/OPA1612AQDRQ1-T…asheet-152588635.pdf](https://datasheet.octopart.com/OPA1612AQDRQ1-Texas-Instruments-datasheet-152588635.pdf) | distributor_mirror | low |
 | Texas Instruments (alldatasheet mirror) | SLOS931 | unknown (likely A) | 2015 | [alldatasheet.com/datasheet-pdf/pdf/785…/TI1/OPA1612-Q1.html](https://www.alldatasheet.com/datasheet-pdf/pdf/785943/TI1/OPA1612-Q1.html) | third_party_mirror | low |
 | Texas Instruments (RadioLocman / datasheet4u mirrors) | SLOS931 | unknown (likely A) | unknown | [radiolocman.com/datasheet/data.html?di=305461](https://www.radiolocman.com/datasheet/data.html?di=305461) | third_party_mirror | low |
+| Texas Instruments | SBOS450 | C | JULY 2009 – REVISED AUGUST 2014 | [ti.com/lit/pdf/sbos450](https://www.ti.com/lit/pdf/sbos450) | vendor_current | medium |
+| Texas Instruments (TI China site, English datasheet) | SBOS450 | revision not shown (likely C, current) | unknown | [ti.com.cn/cn/lit/ds/symlink/opa1612.pdf](https://www.ti.com.cn/cn/lit/ds/symlink/opa1612.pdf) | vendor_current | low |
+| Texas Instruments (datasheet4u mirror) | SBOS450 | C | JULY 2009 – REVISED AUGUST 2014 | [datasheet4u.com/datasheets/etcTI/OPA1611/1413230](https://datasheet4u.com/datasheets/etcTI/OPA1611/1413230) | third_party_mirror | medium |
+| Texas Instruments (datasheetspdf mirror) | SBOS450 | revision not shown | unknown | [datasheetspdf.com/pdf/1413231/etcTI/OPA1612/1](https://datasheetspdf.com/pdf/1413231/etcTI/OPA1612/1) | third_party_mirror | low |
+| Texas Instruments (RadioLocman mirror) | SBOS450 | revision not shown | unknown | [radiolocman.com/datasheet/data.html?di=305457](https://www.radiolocman.com/datasheet/data.html?di=305457) | third_party_mirror | low |
+| Texas Instruments (protricom.hu mirror) | SBOS450 | revision not shown (front-page layout matches Rev A copies) | unknown | [protricom.hu/images/Amplifiers/OPA1612.pdf](https://www.protricom.hu/images/Amplifiers/OPA1612.pdf) | third_party_mirror | low |
+| Texas Instruments (alldatasheet HTML page view) | SBOS450A | A | JULY 2009 – REVISED AUGUST 2009 | [alldatasheet.com/html-pdf/311775/TI/OP…12/84/3/OPA1612.html](https://www.alldatasheet.com/html-pdf/311775/TI/OPA1612/84/3/OPA1612.html) | third_party_mirror | medium |
+| Texas Instruments (pdfcoffee mirror) | SBOS450 | revision not shown | unknown | [pdfcoffee.com/opa-1612-pdf-free.html](https://pdfcoffee.com/opa-1612-pdf-free.html) | third_party_mirror | low |
+| Texas Instruments (Mouser Lithuania mirror) | SLOS931 | revision not shown (likely A) | unknown | [mouser.lt/datasheet/2/405/1/opa1612_q1-3378818.pdf](https://www.mouser.lt/datasheet/2/405/1/opa1612_q1-3378818.pdf) | distributor_mirror | low |
+| Texas Instruments (datasheetspdf mirror) | SLOS931 | revision not shown | unknown | [datasheetspdf.com/datasheet/OPA1612-Q1.html](https://datasheetspdf.com/datasheet/OPA1612-Q1.html) | third_party_mirror | low |
+| Texas Instruments (datasheet4u mirror) | SLOS931 | revision not shown (likely A) | unknown | [datasheet4u.com/datasheets/etcTI/OPA1612-Q1/1413232](https://datasheet4u.com/datasheets/etcTI/OPA1612-Q1/1413232) | third_party_mirror | low |
 
 ## [OPA604 / OPA2604 (Burr-Brown FET-input, low-distortion audio op-amp)](families/OPA604.md)
 

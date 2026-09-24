@@ -6,7 +6,7 @@
 
 **Technology:** BiFET: JFET input stage with a bipolar output stage (legacy TI die, per SLOS080N). The TL07xH die (2020 onward) is described by TI only as 'FET-input' on a 'modern process'; a community claim that it is CMOS is unconfirmed. TL07xH inputs are diode-clamped to both rails and the common-mode range includes V+. TI PCN 20221219006.1 (21 Dec 2022) qualified the RFAB fab with a die revision and datasheet update for TL072/TL074 devices. From Rev U (Dec 2022) the plain C/AC/BC/I grades in non-PS/NS packages are specified with new-die values, and per Rev W (Jul 2025) they can come from either flow: legacy (CSO: SFAB) or latest (CSO: RFB).
 
-> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (3 recorded: Unclassified).
+> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (2 recorded: Die redesign, Second-source difference).
 
 ## Why enthusiasts rate it
 
@@ -79,16 +79,84 @@ It is the ubiquitous low-cost BiFET. TI's datasheet (and the Diodes and JRC equi
 
 ## Silicon changes under the same part number
 
-### 1. Unclassified: Texas Instruments, Oct 2020 (SLOS080O, preview); production TL072H Jun 2021…
+### 1. Die redesign: Texas Instruments, PCN 20220615003.1, dated 16 Jun 2022 (samples until 16 Jul…
 
-A new die on a 'modern process', sold as the 'next-generation' TL07x. It has rail-inclusive (V+) common-mode input, diode-clamped inputs, lower Iq, higher GBW and slew, much lower Vos and Ib, and about 2x the voltage noise of the legacy die. TI now calls the family 'FET-input' rather than 'JFET-input'. The TI part page for TL072HIDR reads 40 V, 5 MHz, 4 mV, 20 V/us, in to V+.
+Through PCNs 20220615003.1 (Jun 2022) and 20221219006.1 (Dec 2022), TI moved ordinary TL071/TL072/TL074 C/AC/BC/I grades from Sherman to the RFAB fab on a revised die, with no part-number change. This is the same new-flow die as the TL07xH. The new process has updated ESD structures and input protection; TI's E2E reply on the same PCN for the TL082 says the new die adds clamp diodes to VCC+. Since Rev U the datasheet specifies these parts with new-die values. Rev W says either fab flow may ship and removes TL071 offset null on D/P packages. This confirms the community reports that 'TL072 now specs 37 nV' (PedalPCB, the Gremblog).
+
+- **When:** PCN 20220615003.1, dated 16 Jun 2022 (samples until 16 Jul 2022; proposed first ship 16 Sep 2022), covers some orderables (TL071CDR and TL072CDRG4 per search summary). PCN 20221219006.1, issued 21 Dec 2022 (samples until 20 Jan 2023; proposed first ship 20 Mar 2023), covers the main TL072/TL074 list. Datasheet Rev U Dec 2022; nomenclature note and TL071 trim removal in Rev W, Jul 2025.
+- **Affected:** TL071CP, TL071CDR, TL071ACP, TL071ACDR, TL071BCP, TL071BCDR, TL071IP, TL071IDR, TL072CP, TL072CDR, TL072CDRG4, TL072CPWR, TL072ACP, TL072ACDR, TL072BCP, TL072BCDR, TL072IP, TL072IDR, TL074CN, TL074CDR, TL074CDBR, TL074CPWR, TL074ACN, TL074ACDR, TL074BCN, TL074BCDR, TL074IN, TL074IDR
+- **How to tell old from new:** The part number and top marking do not change (e.g. still 'TL072CP', 'TL072C'). Two PCNs are involved. PCN 20220615003.1 ('Qualification of new Fab site (RFAB) using qualified Process Technology, Die Revision, Datasheet update and additional Assembly site/BOM options for select devices') moves parts from SH-BIP-1 (Sherman) to RFAB (Richardson) with die rev C to A and adds MLA (Kuala Lumpur) assembly; search summaries list TL071CDR and TL072CDRG4 in it. PCN 20221219006.1 (same title pattern) lists the TL072 and TL074 devices. Inference: parts with date codes before about 2238 (Sep 2022, for 20220615003.1 orderables) or about 2312 (Mar 2023, for 20221219006.1 orderables) should be legacy die. Post-PCN date codes seen with new-die behaviour include TL074CDR 2436, 2443 and 2522 (E2E). Rev W says: 'If y != H and y != M, the die is manufactured on the legacy flow (CSO: SFAB) or the latest flow (CSO: RFB)', so either die may ship; that RFB denotes RFAB is an inference. PS/NS-package orderables and TL07xM keep legacy-die specs. Bench check: about 0.94 vs 1.4 mA/ch Iq; 37 vs 18 nV/rtHz; the negative output swing reaches the rail.
+- **Audio impact:** Old boards re-populated with current-production TI TL071/TL072/TL074 may measure about 6 dB more hiss at 1 kHz but lower distortion. Output clipping levels differ, since the new die swings closer to the negative rail. Inputs driven near or above V+ now meet clamp diodes. Units may differ from each other because both dies ship under one part number. Offset-trimmed TL071 designs lose the trim.
+- **Drop-in risk:** medium: pin-compatible drop-in, but noise doubles and saturation and protection behaviour changed. Customers saw functional-test failures on post-PCN date codes (E2E threads for TL074CDR and TL072CDR). High risk for TL071 sockets that use the pins 1/5 offset trimmer.
+- **Confidence:** high
+- **Verification:** Searched PCN 20220615003.1 with TL071CDR/TL072CDRG4: search summaries list both, with SH-BIP-1 to RFAB, die rev C to A and MLA assembly. E2E 1453480 links TL072CDR functional failures to that PCN, and E2E 1428797 confirms the same PCN's new die has clamp diodes to VCC+. The PCN 20221219006.1 facts were not re-searched (high confidence already). A general query for 20220615003 with TL07x found no independent device list.
+
+| Parameter | Before | After |
+|---|---|---|
+| Wafer fab | SH-BIP-1 / SFAB (Sherman, TX) | RFAB (Richardson, TX) |
+| Die revision (PCN 20220615003.1, per search summary) | C | A |
+| Assembly site | existing sites | MLA (Kuala Lumpur) added |
+| e_n @1 kHz (spec for non-PS/NS, non-M) | 18 nV/rtHz (<= Rev T) | 37 nV/rtHz (Rev U+) |
+| GBW | 3 MHz | 5.25 MHz |
+| THD+N | 0.003% (+/-15 V, RL>=2k) | 0.00012% (VS=40 V) |
+| Recommended supply | +/-5 to +/-15 V | 4.5-40 V |
+| Negative output saturation (E2E TL074CDR report, VCC- = -13 V) | about -11.5 V | about -13 V (to the rail) |
+| ESD / input protection | legacy structures | updated ESD structures and protection scheme; clamp diodes to VCC+ (TI E2E replies) |
+| TL071 D/P pins 1/5 | OFFSET N1/N2 (<= Rev V) | NC, 'Do not connect' (Rev W) |
+| Features-page Vn | 18 nV/rtHz (<= Rev V) | 37 nV/rtHz (Rev W) |
+
+Sources:
+
+- [mouser.com/PCN/Texas_Instruments_PCN20…0221221091103261.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20221219006_20221221091103261.pdf)
+- [e2e.ti.com/cfs-file/__key/communityser…0_12252022_5F00_.pdf](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/ti_5F00_202212190061_5F00_12252022_5F00_.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20220615003.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4885/PCN20220615003.1.pdf)
+- [e2e.ti.com/cfs-file/__key/communityser…14/pcnAttachment.pdf](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/pcnAttachment.pdf)
+- [e2e.ti.com/support/amplifiers-group/am…-code-2436-2443-2522](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1583912/tl074-tl074-tl074cdr-functional-failure-after-pcn-20221219006-1-fct-fail-on-new-date-code-2436-2443-2522)
+- [e2e.ti.com/support/amplifiers-group/am…53480/tl072-tl072cdr](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1453480/tl072-tl072cdr)
+- [e2e.ti.com/support/amplifiers-group/am…/1428797/tl082-tl082](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1428797/tl082-tl082)
+- [ti.com/lit/ds/symlink/tl072.pdf](https://www.ti.com/lit/ds/symlink/tl072.pdf)
+- [forum.pedalpcb.com/threads/tl072-alternatives.29806/](https://forum.pedalpcb.com/threads/tl072-alternatives.29806/)
+- [raw.githubusercontent.com/jcfurey/camb…asheets/TL072_TI.pdf](https://raw.githubusercontent.com/jcfurey/cambridge_reverb/HEAD/datasheets/TL072_TI.pdf)
+- [raw.githubusercontent.com/james-l-key/…DataSheets/tl072.pdf](https://raw.githubusercontent.com/james-l-key/Esp32_patch_bay_circuit/HEAD/DataSheets/tl072.pdf)
+
+### 2. Second-source difference: STMicroelectronics, Ongoing (ST TL072 DocID2298 Rev 8, June 2014;
+
+The ST second-source die has its own spec set, which differs on paper from the TI legacy die: lower noise and higher bandwidth. This is a different-vendor die under the same generic part number, not a documented ST die change; no ST PCN was found.
+
+- **When:** Ongoing (ST TL072 DocID2298 Rev 8, June 2014; TL074 DocID2297 Rev 5, Nov 2013)
+- **Affected:** TL071 (ST), TL072 (ST, e.g. TL072CDT, TL072IDT, TL072BIDT), TL074 (ST, e.g. TL074CD)
+- **How to tell old from new:** ST logo and ST orderables.
+- **Audio impact:** On paper, ST parts are now the lowest-noise TL072 option, since TI's current plain TL072 specs 37 nV/rtHz.
+- **Drop-in risk:** low: same pinout and supply class.
+- **Confidence:** medium
+- **Verification:** Not re-searched: a second-source comparison, not a sweep item. The ST datasheet (tl074.pdf, Nov 2013) appeared in search results, consistent with the cited revision.
+
+| Parameter | Before | After |
+|---|---|---|
+| e_n @1 kHz | TI legacy 18 nV/rtHz (RS=20 ohm) | ST 15 nV/rtHz (RS=100 ohm) |
+| GBW | TI legacy 3 MHz | ST 4 MHz typ (2.5 min) |
+| THD | TI 0.003% (6 Vrms, G=1) | ST 0.01% (2 Vpp, 2k, 20 dB gain) |
+
+Sources:
+
+- [st.com/resource/en/datasheet/tl072.pdf](https://www.st.com/resource/en/datasheet/tl072.pdf)
+- [st.com/resource/en/datasheet/tl074.pdf](https://www.st.com/resource/en/datasheet/tl074.pdf)
+- [uk.rs-online.com/web/p/op-amps/1656766](https://uk.rs-online.com/web/p/op-amps/1656766)
+- [github.com/bandrews/whichpart/blob/HEA…/components/C6961.md](https://github.com/bandrews/whichpart/blob/HEAD/basicpart/content/components/C6961.md)
+
+## Other change notes (lifecycle, packaging, successors, lore)
+
+### 1. Renumbering / successor: Texas Instruments, Oct 2020 (SLOS080O, preview); production TL072H Jun 2021…
+
+TI's 'next-generation' TL07x: a new die on a 'modern process', sold under H-suffixed orderables within the TL07x datasheet. It has rail-inclusive (V+) common-mode input, diode-clamped inputs, lower Iq, higher GBW and slew, much lower Vos and Ib, and about 2x the voltage noise of the legacy die. TI now calls the family 'FET-input' rather than 'JFET-input'. The TI part page for TL072HIDR reads 40 V, 5 MHz, 4 mV, 20 V/us, in to V+.
 
 - **When:** Oct 2020 (SLOS080O, preview); production TL072H Jun 2021 (Rev R), TL071H Jul 2021 (Rev S)
 - **Affected:** TL071H, TL072H, TL074H
-- **How to tell old from new:** The H is in the orderable (e.g. TL072HIDR, TL072HIPWR, TL072HIDDFR, TL074HIDR, TL071HIDBVR); I-grade (-40 to 125 C) only. Top marks per Rev W addendum: TL072HIDR 'TL072D', TL071HIDR 'TL071D', TL074HIDR 'TL074HID', TL072HIPWR '072HPW', TL072HIDDFR 'O72F', TL071HIDBVR 'T71V'. Rev W: 'If y = H, the die is manufactured on the latest flow (CSO: RFB)'.
+- **How to tell old from new:** The H is in the orderable (e.g. TL072HIDR, TL072HIPWR, TL072HIDDFR, TL074HIDR, TL071HIDBVR); I-grade (-40 to 125 C) only. Top marks per the Rev W addendum: TL072HIDR 'TL072D', TL071HIDR 'TL071D', TL074HIDR 'TL074HID', TL072HIPWR '072HPW', TL072HIDDFR 'O72F', TL071HIDBVR 'T71V'. So a pulled SOIC marked 'TL072D' may be an H-die part. Rev W says: 'If y = H, the die is manufactured on the latest flow (CSO: RFB)'. The same new-flow die now also ships under unsuffixed TL07x numbers (see the die-redesign entry).
 - **Audio impact:** About 6 dB higher voltage noise at 1 kHz hurts low-impedance, high-gain stages (mic/phono, low-Z filters). Distortion, slew, single-supply headroom and supply current improve. The flatter noise corner (37 at 1 kHz vs 21 at 10 kHz) means more low-frequency noise than the legacy spec.
-- **Drop-in risk:** medium: signal pinout is identical for the dual and quad, but the noise doubles and TL071H SOIC has no offset-null pins. The input clamps and different CM limits can change behaviour in comparator or clipping circuits.
+- **Drop-in risk:** medium: signal pinout is identical for the dual and quad, but the noise doubles and the TL071H SOIC has no offset-null pins. The input clamps and different CM limits can change behaviour in comparator or clipping circuits.
 - **Confidence:** high
+- **Verification:** Not re-searched: high confidence and not from the sweep. It rests on TI SLOS080 Revs O-W and the TL072HIDR part page cited by the research pass. A search listing of the TI datasheet confirms TL071H/TL072H/TL074H inside the TL07xx 'FET-Input' datasheet.
 
 | Parameter | Before | After |
 |---|---|---|
@@ -111,62 +179,6 @@ Sources:
 - [raw.githubusercontent.com/jcfurey/camb…asheets/TL072_TI.pdf](https://raw.githubusercontent.com/jcfurey/cambridge_reverb/HEAD/datasheets/TL072_TI.pdf)
 - [raw.githubusercontent.com/james-l-key/…DataSheets/tl072.pdf](https://raw.githubusercontent.com/james-l-key/Esp32_patch_bay_circuit/HEAD/DataSheets/tl072.pdf)
 - [raw.githubusercontent.com/BertyBasset/…0JFET%20Op%20Amp.pdf](https://raw.githubusercontent.com/BertyBasset/Datasheet-Viewer/HEAD/Amplifiers/TL07xx%20low%20noise%20JFET%20Op%20Amp.pdf)
-
-### 2. Unclassified: Texas Instruments, PCN 20221219006.1 issued 21 Dec 2022 (samples until 20 Jan…
-
-Through PCN 20221219006.1 (Dec 2022), TI moved ordinary TL072/TL074 (and per the datasheet, TL071) C/AC/BC/I grades onto a revised die in the RFAB fab, with no part-number change. The new process has updated ESD structures and protection scheme. Since Rev U the datasheet specifies these parts with new-die values, and Rev W states either fab flow may ship and removes TL071 offset null on D/P packages. This confirms the community reports that 'TL072 now specs 37 nV' (PedalPCB, the Gremblog).
-
-- **When:** PCN 20221219006.1 issued 21 Dec 2022 (samples until 20 Jan 2023; proposed first ship 20 Mar 2023); datasheet Rev U Dec 2022; nomenclature note and TL071 trim removal Rev W Jul 2025
-- **Affected:** TL071CP, TL071CDR, TL071ACP, TL071ACDR, TL071BCP, TL071BCDR, TL071IP, TL071IDR, TL072CP, TL072CDR, TL072CPWR, TL072ACP, TL072ACDR, TL072BCP, TL072BCDR, TL072IP, TL072IDR, TL074CN, TL074CDR, TL074CDBR, TL074CPWR, TL074ACN, TL074ACDR, TL074BCN, TL074BCDR, TL074IN, TL074IDR
-- **How to tell old from new:** The part number and top marking do not change (e.g. still 'TL072CP', 'TL072C'). PCN 20221219006.1 ('Qualification of new Fab site (RFAB) using qualified Process Technology, Die Revision, Datasheet update and additional Assembly site/BOM options') lists TL072 and TL074 devices; whether TL071 is listed was not confirmed. Inference: parts with date codes before about 2312 (Mar 2023) should be legacy die. A TI E2E thread shows TL074CDR date codes 2436, 2443 and 2522 behaving as the new process. Rev W: 'If y != H and y != M, the die is manufactured on the legacy flow (CSO: SFAB) or the latest flow (CSO: RFB)'. That RFB denotes RFAB is an inference. PS/NS-package orderables and TL07xM keep legacy-die specs. Bench check: about 0.94 vs 1.4 mA/ch Iq; 37 vs 18 nV/rtHz; the negative output swing reaches the rail.
-- **Audio impact:** Old boards re-populated with current-production TI TL072/TL074 may measure about 6 dB more hiss at 1 kHz but lower distortion. Output clipping levels differ, since the new die swings closer to the negative rail. Units may differ from each other because the die is mixed under one part number. Offset-trimmed TL071 designs lose the trim.
-- **Drop-in risk:** medium: pin-compatible drop-in, but noise doubles and saturation and protection behaviour changed. At least one customer saw functional-test failures on new date codes (E2E). High risk for TL071 sockets that use the pins 1/5 offset trimmer.
-- **Confidence:** high
-
-| Parameter | Before | After |
-|---|---|---|
-| e_n @1 kHz (spec for non-PS/NS, non-M) | 18 nV/rtHz (<= Rev T) | 37 nV/rtHz (Rev U+) |
-| GBW | 3 MHz | 5.25 MHz |
-| THD+N | 0.003% (+/-15 V, RL>=2k) | 0.00012% (VS=40 V) |
-| Recommended supply | +/-5 to +/-15 V | 4.5-40 V |
-| Negative output saturation (E2E TL074CDR report, VCC- = -13 V) | about -11.5 V | about -13 V (to the rail) |
-| ESD / input protection | legacy structures | updated ESD structures and protection scheme (TI reply on E2E) |
-| TL071 D/P pins 1/5 | OFFSET N1/N2 (<= Rev V) | NC, 'Do not connect' (Rev W) |
-| Features-page Vn | 18 nV/rtHz (<= Rev V) | 37 nV/rtHz (Rev W) |
-
-Sources:
-
-- [mouser.com/PCN/Texas_Instruments_PCN20…0221221091103261.pdf](https://www.mouser.com/PCN/Texas_Instruments_PCN20221219006_20221221091103261.pdf)
-- [e2e.ti.com/cfs-file/__key/communityser…0_12252022_5F00_.pdf](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/ti_5F00_202212190061_5F00_12252022_5F00_.pdf)
-- [e2e.ti.com/support/amplifiers-group/am…-code-2436-2443-2522](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1583912/tl074-tl074-tl074cdr-functional-failure-after-pcn-20221219006-1-fct-fail-on-new-date-code-2436-2443-2522)
-- [ti.com/lit/ds/symlink/tl072.pdf](https://www.ti.com/lit/ds/symlink/tl072.pdf)
-- [forum.pedalpcb.com/threads/tl072-alternatives.29806/](https://forum.pedalpcb.com/threads/tl072-alternatives.29806/)
-- [raw.githubusercontent.com/jcfurey/camb…asheets/TL072_TI.pdf](https://raw.githubusercontent.com/jcfurey/cambridge_reverb/HEAD/datasheets/TL072_TI.pdf)
-- [raw.githubusercontent.com/james-l-key/…DataSheets/tl072.pdf](https://raw.githubusercontent.com/james-l-key/Esp32_patch_bay_circuit/HEAD/DataSheets/tl072.pdf)
-
-### 3. Unclassified: STMicroelectronics, Ongoing (ST TL072 DocID2298 Rev 8, June 2014;
-
-The second-source die has its own spec set, which differs from the TI legacy die on paper: lower noise and higher bandwidth. This is a different-vendor die under the same generic part number, not a documented ST die change; no ST PCN was found.
-
-- **When:** Ongoing (ST TL072 DocID2298 Rev 8, June 2014; TL074 DocID2297 Rev 5, Nov 2013)
-- **Affected:** TL071 (ST), TL072 (ST, e.g. TL072CDT, TL072IDT, TL072BIDT), TL074 (ST, e.g. TL074CD)
-- **How to tell old from new:** ST logo and ST orderables.
-- **Audio impact:** On paper, ST parts are now the lowest-noise TL072 option, since TI's current plain TL072 specs 37 nV/rtHz.
-- **Drop-in risk:** low: same pinout and supply class.
-- **Confidence:** medium
-
-| Parameter | Before | After |
-|---|---|---|
-| e_n @1 kHz | TI legacy 18 nV/rtHz (RS=20 ohm) | ST 15 nV/rtHz (RS=100 ohm) |
-| GBW | TI legacy 3 MHz | ST 4 MHz typ (2.5 min) |
-| THD | TI 0.003% (6 Vrms, G=1) | ST 0.01% (2 Vpp, 2k, 20 dB gain) |
-
-Sources:
-
-- [st.com/resource/en/datasheet/tl072.pdf](https://www.st.com/resource/en/datasheet/tl072.pdf)
-- [st.com/resource/en/datasheet/tl074.pdf](https://www.st.com/resource/en/datasheet/tl074.pdf)
-- [uk.rs-online.com/web/p/op-amps/1656766](https://uk.rs-online.com/web/p/op-amps/1656766)
-- [github.com/bandrews/whichpart/blob/HEA…/components/C6961.md](https://github.com/bandrews/whichpart/blob/HEAD/basicpart/content/components/C6961.md)
 
 ## Datasheets
 
@@ -339,6 +351,7 @@ Status: **verified-with-corrections**
 
 - Draft: 'No TI PCN was found / located' for moving plain TL07x onto the new die. Refuted: PCN 20221219006.1 (21 Dec 2022, RFAB fab, process technology, die revision, datasheet update) lists TL072 and TL074 devices, with proposed first ship 20 Mar 2023 (https://www.mouser.com/PCN/Texas_Instruments_PCN20221219006_20221221091103261.pdf).
 - Draft: SLOS080M dated February 2014. Two web summaries say SLOS080M is printed 'SEPTEMBER 1978 - REVISED JUNE 2015'.
+- [change register] merged, not refuted: LF353 sweep entry (PCN 20220615003.1 listing TL071/TL072/TL081/TL082). Its TL07x content (TL071CDR, TL072CDRG4, Jun 2022 dates, die rev C to A, VCC+ clamp) was folded into the TL07x RFAB die-redesign entry. TL081/TL082 belong to the TL08x family and are not carried here.
 
 **Corrections applied:**
 

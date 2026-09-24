@@ -6,7 +6,7 @@
 
 **Technology:** Bipolar, precision low-noise, laser-trimmed, with input bias-current cancellation and back-to-back differential input clamp diodes. OPA227 is unity-gain stable (8 MHz, 2.3 V/us). OPA228 is decompensated for G>=5 (33 MHz, 10 V/us on TI's product page; 11 V/us typ in the Rev A table). The singles have offset trim on pins 1/8 (OP-27 compatible) in Rev A, and datasheet text surfaced in 2026 searches still describes pins 1/8 trim. No trim-to-NC change was found for this family, unlike OPA132/OPA627.
 
-> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (2 recorded: Unclassified).
+> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (1 recorded: Fab / process transfer).
 
 ## Why enthusiasts rate it
 
@@ -71,50 +71,34 @@ Tangent (tangentsoft) made the OPA2227 the default op-amp for his PIMETA amp. He
 
 ## Silicon changes under the same part number
 
-### 1. Unclassified: Texas Instruments, PCN 20230306000.1 (March 2023), referenced in TI E2E…
+### 1. Fab / process transfer: Texas Instruments, TI E2E thread 1360546 (c. 2024) cites PCN 20230306000.1…
 
-In E2E thread 1360546 ('OPA2227: TI Logo Format Change'), a customer asks about OPA2227 parts with a different logo format. The search summary of TI's reply cites PCN# 20230306000.1 (and PCN# 20220615003.1) as introducing new fab sites for the OPA2227, with parts from those sites being new chips. The retrieved sources did not give the PCN 20230306000.1 title, a device list or any spec changes. A separate 2026 PCN (20251017000.1A, RFAB plus die revision) appeared in an OPA227-keyword search but is not confirmed to list OPA227-family parts. The OPAx227/x228 datasheet seen is SBOS110B (June 2015), which shows no die-change note.
+This is an unresolved lead. A TI E2E reply links a marking difference on the OPA2227 to new-fab PCNs, which would mean newer parts come from a different fab on new silicon. But PCN 20230306000.1 could not be found on any PCN mirror, and the 20220615003.1 device list seen in searches covers TL07x/TL08x/LF353 with no OPA227/OPA2227/OPA228 part numbers. The reply may be generic boilerplate. A reported SBOS110C datasheet revision (Mar 2023) coincides in date with PCN 20230306000.1, but its change list was not retrieved. A fab or die change for the OPAx227/x228 is NOT confirmed. The only other OPA227 E2E thread found (754890) is about decoding the date code, not behaviour.
 
-- **When:** PCN 20230306000.1 (March 2023), referenced in TI E2E thread 1360546, about 2024. A later PCN 20251017000.1A (8 Jan 2026), 'Qualification of RFAB as an additional Fab site, Die Revision and BOM option', surfaced in an OPA227 search, but its device list was not confirmed.
-- **Affected:** OPA2227 (orderables not itemised in retrieved sources)
-- **How to tell old from new:** A marking-style change (TI logo format) was raised on E2E. TI's reply, as summarised, says PCN# 20230306000.1 introduced new fab sites and that chips from those sites are 'entirely new', so their marking style is not treated as a change. No die-revision letters were retrieved.
-- **Audio impact:** Unknown. The OPA2227/OPA2228 is valued for its low noise and low distortion. A new-fab chip could differ in HF behaviour or noise even with the same limits. No listener or measurement reports were found.
-- **Drop-in risk:** low: the evidence is an indirect E2E summary with no confirmed device list or spec changes. Treat it as a watch item.
+- **When:** TI E2E thread 1360546 (c. 2024) cites PCN 20230306000.1 (Mar 2023) and PCN 20220615003.1 (Jun 2022) as new-fab PCNs, and marking-standardization PCN 20211123004.0. A search summary reports datasheet SBOS110C revised March 2023 (not read; changes unknown). PCN 20251017000.1A (8 Jan 2026, 'Qualification of RFAB as an additional Fab site, Die Revision and BOM option') surfaced in an OPA227 search, but it is not confirmed to list any OPA227-family part.
+- **Affected:** OPA2227 (reported; orderables not itemised in retrieved sources)
+- **How to tell old from new:** Newer OPA2227 from DigiKey lack the TI logo or use a new logo format. TI's E2E reply says PCNs 20230306000.1 and 20220615003.1 introduced new fab sites, and parts from those sites are 'entirely new' chips, so their marking style is not treated as a change. It also points to PCN 20211123004.0 (Marking Standardization for Select Devices) for the logo format. No die-revision letters were retrieved.
+- **Audio impact:** Unknown. The OPA2227/OPA2228 is valued for low noise and low distortion. A new-fab chip could differ in HF behaviour or noise even with the same limits. No listener or measurement reports were found.
+- **Drop-in risk:** low: only a marking difference is confirmed; a fab or die change rests on one indirect E2E reply with no device list or spec deltas. Treat it as a watch item.
 - **Confidence:** low
+- **Verification:** Six searches. '20230306000' returns only the E2E thread, and a PCN-mirror query did not find the PCN. '20251017000' with OPA227-family numbers gave no link. A generic OPA2227 RFAB/die-revision query returned only unrelated RFAB PCNs. The SBOS110C (Mar 2023) date came from one search summary, with no change list found. The claim is unconfirmed, so it is kept at low.
 
 | Parameter | Before | After |
 |---|---|---|
-| Wafer fab | original Burr-Brown/TI fab | new fab site(s) per PCN 20230306000.1 (site not named in the retrieved summary) |
-| Top marking | previous TI logo format | new logo/marking format (E2E 1360546) |
+| Wafer fab | original Burr-Brown/TI fab | new fab site(s) per PCN 20230306000.1 (site not named; unconfirmed) |
+| Top-side marking | TI logo present (previous format) | TI logo absent / new format (E2E customer report) |
+| Datasheet | SBOS110B (June 2015) | SBOS110C (March 2023, per search summary; content not retrieved) |
 | Electrical specs | SBOS110B | no change retrieved |
-
-Sources:
-
-- [e2e.ti.com/support/amplifiers-group/am…i-logo-format-change](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1360546/opa2227-ti-logo-format-change)
-- [mm.digikey.com/Volume0/opasdata/d22000…CN20251017000.1A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8882/PCN20251017000.1A.pdf)
-- [ti.com/lit/gpn/OPA4227](https://www.ti.com/lit/gpn/OPA4227)
-
-### 2. Unclassified: Texas Instruments, The E2E thread (id 1360546) cites PCN 20230306000.1 (2023)…
-
-This is an unresolved lead. The TI E2E reply links a marking difference on OPA2227 to new-fab PCNs 20230306000.1 and 20220615003.1. The 20220615003.1 device list seen in search results covers TL07x/TL08x/LF353, and no OPA227/OPA2227/OPA228 part numbers appeared in it. The contents of 20230306000.1 (title and device list) could not be found through search. So the E2E reply may be generic boilerplate, and a new die for OPA2227 is NOT confirmed. The only other OPA227 E2E thread found (754890) is about decoding the date code, not behaviour changes.
-
-- **When:** The E2E thread (id 1360546) cites PCN 20230306000.1 (2023) and PCN 20220615003.1 (2022); marking standardization PCN 20211123004.0
-- **Affected:** OPA2227 (reported, device list not verified)
-- **How to tell old from new:** Newer OPA2227 packages bought from DigiKey do not carry the TI logo. TI's E2E answer says PCNs 20230306000.1 and 20220615003.1 introduced new fab sites, and parts from those sites are 'entirely new', so their marking style is not treated as a change. The logo format change is covered by PCN 20211123004.0 (Marking Standardization for Select Devices).
-- **Audio impact:** Unknown. No reports of noise, offset or distortion changes in OPA227/OPA2227/OPA228 were found.
-- **Drop-in risk:** low - only a marking difference is confirmed. A fab or die change is possible but unverified until the 20230306000.1 device list is checked.
-- **Confidence:** low
-
-| Parameter | Before | After |
-|---|---|---|
-| Top-side marking | TI logo present | TI logo absent (per E2E customer report) |
 
 Sources:
 
 - [e2e.ti.com/support/amplifiers-group/am…i-logo-format-change](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1360546/opa2227-ti-logo-format-change)
 - [e2e.ti.com/cfs-file/__key/communityser…ange-declaration.pdf](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/1067.TI-logo-format-change-declaration.pdf)
 - [mm.digikey.com/Volume0/opasdata/d22000…PCN20220615003.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4885/PCN20220615003.1.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…CN20251017000.1A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8882/PCN20251017000.1A.pdf)
 - [e2e.ti.com/support/amplifiers-group/am…atecode-from-marking](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/754890/opa227-datecode-from-marking)
+- [ti.com/lit/gpn/OPA4227](https://www.ti.com/lit/gpn/OPA4227)
+- [ti.com/lit/gpn/OPA227](https://www.ti.com/lit/gpn/OPA227)
 
 ## Datasheets
 
@@ -216,6 +200,7 @@ Status: **verified-with-corrections**
 
 - Draft: the current datasheet is SBOS110B (June 2015). Refuted: SBOS110C (Nov 2022) exists and TI product pages list the datasheet as Rev. C.
 - Draft: the revision of the UT Austin valvano copy is unknown, possibly the 1998 original. A search summary identifies it as SBOS110A, so it is not the original.
+- [change register] merged, not refuted: two sweep entries on the same E2E 1360546 lead (PCN 20230306000.1 / 20220615003.1 / marking PCN 20211123004.0) were combined into one low-confidence entry.
 
 **Corrections applied:**
 
