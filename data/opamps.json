@@ -22021,6 +22021,193 @@
    "revision_chain_summary": "Analog Devices is the only vendor. It has one document, 02916 (pubcode prefix C02916-0 through Rev. G and D02916-0 by Rev. L). Chain from oldest to newest, with the copies that hold each revision:\n- Rev. 0: before 8/2002. No copy found.\n- Rev. A: 8/2002. No copy found.\n- Rev. B: 2/2003. No copy found.\n- Rev. C: 4/2003. No copy found.\n- Rev. D: 11/2003, pubcode C02916-0-11/03(D). GitHub mirror, already known.\n- Rev. E: 2/2004. No copy found.\n- Rev. F: 12/2005. No copy found.\n- Rev. G: 1/2006, pubcode C02916-0-1/06(G). New copy found at physics.utoronto.ca (~astummer archive).\n- Rev. H: 9/2008. Newly confirmed: the search index titles the already-listed Octopart cache 9575005 as Rev. H, with copyright 2002–2008.\n- Rev. I: 3/2009. DigiKey media.\n- Rev. J: 8/2010. Mouser.\n- Rev. K: 8/2016. Farnell 2147155.\n- Rev. L: 1/2019. analog.com current, plus Radiolocman and usermanual.wiki.\n\nStill missing: copies of Rev. 0, A, B, C, E and F. There is one candidate for the early (2002-2003) group. The Carnegie Observatories copy (instrumentation.obs.carnegiescience.edu/ccd/parts/AD8065.pdf) uses the pre-2004 ADI title layout ('AD8065/AD8066*' with a separate 'FastFET ™'), so it may be Rev. A, B or C (or D). Its revision is not shown and needs checking. The searchdatasheet.com AD8066AR copy (a non-Z part number) may also predate Rev. F/G, but that is unconfirmed.\n\nOther copies found, all with revision not shown:\n- alldatasheet 83609 (AD8065) and 225500 (AD8066)\n- datasheet4u / semiconductors.es id 1088485\n- datasheetbank\n- ADI Chinese translation ad8065_8066_cn.pdf\n- a Scribd partial\n- DataSheetAll\n\nA search on guessed pubcodes for Rev. A/B/C/E/F/H returned nothing relevant. No second source, acquirer re-issue or TI literature number exists for this family. For Rev. I/J, the Wayback captures of the legacy analog.com static/imported-files URL are the best remaining lead. For the earliest revisions, the next step is to check the Carnegie and searchdatasheet copies."
   },
   {
+   "id": "AD811",
+   "name": "AD811 (Analog Devices single high-speed current-feedback op-amp, used as a DAC I/V stage)",
+   "tagline": "",
+   "technology": "Single bipolar current-feedback video op-amp: about 2500 V/us slew, about 25 ns settling, high output current",
+   "manufacturers": [
+    "Analog Devices"
+   ],
+   "part_numbers": [
+    {
+     "pn": "AD811",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD811AN",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD811JR",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "diyAudio has a dedicated thread, 'AD811 as I/V stage for current DACs (and test some other opamps including Burson Audio opamps as I/V)', and a build thread, 'AD811 IV completed and tested'. The long 'Best opamp for I/V conversion?' thread discusses it too. In these threads posters say it sounds much better than other op-amps in a classic I/V stage, and better than an OPA861 alternative. They credit its 2500 V/us slew rate and 25 ns settling, against 550 ns for the OPA627. It is often paired with PCM61, PCM1702 and similar current-output DACs. Posters warn that it needs a small heatsink at +/-14 V.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://www.diyaudio.com/community/threads/ad811-as-i-v-stage-for-current-dacs-and-test-some-other-opamps-including-burson-audio-opamps-as-i-v.394295/",
+     "https://www.diyaudio.com/community/threads/ad811-iv-completed-and-tested.405493/",
+     "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-24"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://www.diyaudio.com/community/threads/ad811-as-i-v-stage-for-current-dacs-and-test-some-other-opamps-including-burson-audio-opamps-as-i-v.394295/",
+    "https://www.diyaudio.com/community/threads/ad811-iv-completed-and-tested.405493/",
+    "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-24"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "B",
+   "category": "high-speed-video-crossover",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:vintage-oem"
+    ],
+    "evidence_urls": [
+     "https://www.diyaudio.com/community/threads/ad811-as-i-v-stage-for-current-dacs-and-test-some-other-opamps-including-burson-audio-opamps-as-i-v.394295/",
+     "https://www.diyaudio.com/community/threads/ad811-iv-completed-and-tested.405493/",
+     "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-24"
+    ]
+   }
+  },
+  {
+   "id": "AD815",
+   "name": "AD815 (Analog Devices dual high-output-current current-feedback driver op-amp)",
+   "tagline": "",
+   "technology": "Dual bipolar current-feedback, high-output-current (about 500 mA) differential or dual line driver; EOL",
+   "manufacturers": [
+    "Analog Devices"
+   ],
+   "part_numbers": [
+    {
+     "pn": "AD815",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD815ARB-24",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD815AVR",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD815AY",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "DIY headphone amps and preamps have been built around it: a Head-Fi 'AD815' thread, the s3t.it 'The Buffa' headphone amp, a long pinkfishmedia 'AD815 preamp build thread', and Linear Audio's 'AD815 Power Amp' article. Users say it 'sounds great' as a headphone amp. Preamp builders describe deep, punchy, well-controlled bass, really nice mids and detailed but smooth treble. Caveats: high DC offset (up to about 50 mV), EOL status and poor availability. TI's THS6012 is cited as a near-equivalent, which some find a bit cleaner in the treble.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://www.head-fi.org/threads/ad815.181226/",
+     "https://pinkfishmedia.net/forum/threads/ad815-preamp-build-thread.46481/page-5",
+     "https://linearaudio.net/ad815-power-amp",
+     "https://s3t.it/headphone-amplifiers/ad815-the-buffa/",
+     "https://www.head-fi.org/threads/new-portable-headphone-amplifier-opa132-ad815-development.492155/"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://www.head-fi.org/threads/ad815.181226/",
+    "https://pinkfishmedia.net/forum/threads/ad815-preamp-build-thread.46481/page-5",
+    "https://linearaudio.net/ad815-power-amp",
+    "https://s3t.it/headphone-amplifiers/ad815-the-buffa/",
+    "https://www.head-fi.org/threads/new-portable-headphone-amplifier-opa132-ad815-development.492155/"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "B",
+   "category": "headphone-driver",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:vintage-oem"
+    ],
+    "evidence_urls": [
+     "https://www.head-fi.org/threads/ad815.181226/",
+     "https://pinkfishmedia.net/forum/threads/ad815-preamp-build-thread.46481/page-5",
+     "https://linearaudio.net/ad815-power-amp",
+     "https://s3t.it/headphone-amplifiers/ad815-the-buffa/",
+     "https://www.head-fi.org/threads/new-portable-headphone-amplifier-opa132-ad815-development.492155/"
+    ]
+   }
+  },
+  {
    "id": "AD823",
    "name": "AD823 (dual 16 MHz JFET-input, rail-to-rail output) + AD823A (2012 XFCB redesign)",
    "tagline": "ADI's 1995 JFET-input, rail-to-rail-output dual that runs from 3 V. A CMoy/portable-amp favourite; Tangent rated it punchier in the bass and more detailed than OPA132/134.",
@@ -23507,6 +23694,95 @@
     ]
    },
    "revision_chain_summary": "Analog Devices AD844 (sole source; no second source found). Known chain, oldest to newest: the original edition is c. 1989 (only the (c)1989 copyright start dates it; no copy found). Rev. A is missing. Rev. B is missing. Rev. C has no date; it is the old format, 12 pages, held by farnell.com/datasheets/13931.pdf and alldatasheet 48466. Rev. D is missing. Rev. E has no date; it is the old format with a 'REV. E' footer. It is newly confirmed in the already-listed farnell.com/datasheets/77786.pdf, which was previously marked 'possibly F or G'. Rev. F is missing: its date is unknown and it was probably the first new-format 'Data Sheet' edition. Rev. G is dated 2017 by its (c)1989-2017 copyright line. It is held by analog.com/media/.../ad844.pdf, the legacy analog.com/static/imported-files/data_sheets/ad844.pdf (titled 'AD844 (Rev. G)'), radiolocman di=351709 and, per a search summary, the Digi-Key HTML datasheet. The octopart 9797614 copy is titled '... Data Sheet', so it is new format (F or G), but its revision is not shown. Copies with an unknown revision were newly found at alldatasheet 48469 (AD844AN), datasheet4u id=1088520, futurlec, scribd 373710257 and allaboutcircuits. Still missing: the original edition, Revs. A, B, D and F, all revision dates before 2017, and the Rev. F to G change list. Two leads for the missing revisions: seed the two legacy analog.com/static/imported-files paths into the Wayback Machine for older snapshots (likely E/F), and check 1990s ADI Linear Products / Amplifier Reference Manual databooks for Rev. A/B. One unverified item: a search summary mentioned 'revision A adding device classes Q and V, revision B..., revision D adding device type 02'. That wording matches a DLA SMD (5962-series, for AD844S), not the ADI datasheet, so it was not recorded as ADI revisions."
+  },
+  {
+   "id": "AD846",
+   "name": "AD846 (Analog Devices 450 V/us precision current-feedback op-amp)",
+   "tagline": "",
+   "technology": "Single precision bipolar current-feedback op-amp, 450 V/us, stable in open loop; obsolete",
+   "manufacturers": [
+    "Analog Devices"
+   ],
+   "part_numbers": [
+    {
+     "pn": "AD846",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD846AN",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD846BQ",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "diyAudio posters call it a 'great sounding' and 'very good sounding' op-amp for DAC I/V conversion, saying 'you could do a lot worse by random substitution'. One thread is titled 'AD 846 AN is there a better sounding opamp out there', and after it went obsolete users started an 'AD 846 replacement' thread. It is also discussed in 'Best opamp for I/V conversion?'. The AD1862 DAC datasheet recommended it for I/V.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://www.diyaudio.com/community/threads/ad-846-an-is-ther-a-better-sounding-opamp-out-there.5807/",
+     "https://www.diyaudio.com/community/threads/ad-846-replacement.118303/",
+     "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-3",
+     "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://www.diyaudio.com/community/threads/ad-846-an-is-ther-a-better-sounding-opamp-out-there.5807/",
+    "https://www.diyaudio.com/community/threads/ad-846-replacement.118303/",
+    "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-3",
+    "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "B",
+   "category": "high-speed-video-crossover",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:vintage-oem"
+    ],
+    "evidence_urls": [
+     "https://www.diyaudio.com/community/threads/ad-846-an-is-ther-a-better-sounding-opamp-out-there.5807/",
+     "https://www.diyaudio.com/community/threads/ad-846-replacement.118303/",
+     "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-3",
+     "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf"
+    ]
+   }
   },
   {
    "id": "AD8599",
@@ -28222,6 +28498,96 @@
     ]
    },
    "revision_chain_summary": "LM6171 (single). National DS012336 is newly identified from the datasheetcatalog filename. Known chain: National DS012336 edition(s), undated in the search results; the TI header gives an original date of May 1998; the 1996 SPICE models suggest an earlier first release. Then TI SNOS745B, implied and unconfirmed. Then SNOS745C (March 2013, header seen; new copy at danomsk.ru). Then SNOS745D (November 2023). Missing: National DS012336 edition dates and revisions, and SNOS745 A/B dates. Several National-era copies were found with revision not shown: pdf.datasheetcatalog DS012336.PDF, DigiKey media, Octopart LM6171BIN, alldatasheet 9003/NSC, ChipFind, datasheet4u, manualmachine, PE2BZ, waynestegall, yumpu. LM6172 (dual). The National DS number is still not found in these searches. Known chain: National edition(s) (TI gives an original date of May 1999; the LM6172 SPICE model was added on 16 April 1996). Alldatasheet has two distinct National uploads: a 16-page, 551 KB early edition (IDs 9004/9005/9008) and a 25-page, 1 MB NOPB-era edition (ID 578684), dates not shown. Then SNOS792C, which is odd: its indexed header reads 'MAY 2004 – REVISED SEPTEMBER 2004'. Then SNOS792D (March 2013) and SNOS792E (December 2024, BICOMHD die change per PCN 20241217001.1). Missing: the National DS number, National edition dates, SNOS792A/B, and change lists for all TI revisions. No second sources were found."
+  },
+  {
+   "id": "LME49713",
+   "name": "LME49713 (National / TI high-fidelity current-feedback audio op-amp)",
+   "tagline": "",
+   "technology": "Single bipolar current-feedback audio op-amp on National's LME high-voltage process",
+   "manufacturers": [
+    "National Semiconductor",
+    "Texas Instruments"
+   ],
+   "part_numbers": [
+    {
+     "pn": "LME49713",
+     "channels": 0,
+     "vendors": [
+      "National Semiconductor",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "LME49713HA",
+     "channels": 0,
+     "vendors": [
+      "National Semiconductor",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "LME49713MA",
+     "channels": 0,
+     "vendors": [
+      "National Semiconductor",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "Head-Fi has a thread titled 'LME49713, could be a killer opamp'. Someone who worked on the chip called it the best-sounding op-amp made on the LME high-voltage process. Extended listening sessions preferred this current-feedback part over voltage-feedback op-amps in most applications. A user said a simple headphone amp built with it was 'quite amazing - dead silent and with real drive', and that it easily drives 150-ohm loads. Caveat: it is not a drop-in replacement for standard duals, and it is very fast and tricky to stabilise.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://www.head-fi.org/threads/lme49713-could-be-a-killer-opamp.267524/",
+     "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-117",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-31"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://www.head-fi.org/threads/lme49713-could-be-a-killer-opamp.267524/",
+    "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-117",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-31"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "B",
+   "category": "headphone-driver",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:vintage-oem"
+    ],
+    "evidence_urls": [
+     "https://www.head-fi.org/threads/lme49713-could-be-a-killer-opamp.267524/",
+     "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-117",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-31"
+    ]
+   }
   },
   {
    "id": "LME49860",
@@ -37933,6 +38299,107 @@
    "revision_chain_summary": "I used all 6 of 6 WebSearch calls.\n\nAnalog Devices OP275 is the only vendor document; there are no second sources.\n\n**Revision chain known now (oldest to newest):**\n1. **Rev. 0 / original PMI-era edition (about 1992–93):** still missing. No copy or date was found. The SPICE model Rev. B dated 10/92 suggests the part existed by late 1992.\n2. **REV. A:** undated and pre-RoHS (lists OP275GP). Held by the Futurlec OP275GP.pdf and pken.net copies.\n3. **REV. B:** NEW. Held by the Reichelt copy at https://cdn-reichelt.de/documents/datenblatt/A200/DATASHEET_OP275-AD-EN.pdf. Its page-1 footer 'REV. B Information furnished by Analog Devices...' shows in the search result title. Date not seen.\n4. **Rev. C:** current. Held by analog.com/media/.../OP275.pdf and RadioLocman di=121467. Date not seen.\n\n**Still missing:**\n- The dates of Rev. A, B and C. The old-layout ADI sheets carry no revision-history table, and no footer date showed in any snippet.\n- Any Rev. 0 or PMI-branded original.\n- Whether Rev. C (or an unlabelled later reprint) added the lead-free Z part numbers. This matters for the RoHS-era change.\n\n**Where to look next:** Several third-party copies may hold Rev. A or B, but their revision was not shown: datasheetcatalog OP275 and OP275GS, alldatasheet IDs 49047/49049/49052 (12 pages, 189 KB), DatasheetBank 71480, DatasheetQ, datasheet4u/datasheetspdf 475420, and Octopart 9742324. Opening them would identify the editions.\n\nNo silicon change under the same part number was documented. A diyAudio thread ('OP275 dual OPA, might be many fake source originated in China', https://www.diyaudio.com/community/threads/op275-dual-opa-might-be-many-fake-source-originated-in-china.309442/) covers counterfeits, not a real die revision."
   },
   {
+   "id": "OP285",
+   "name": "OP285 (ADI/PMI dual 9 MHz precision 'Butler' bipolar/JFET audio op-amp)",
+   "tagline": "",
+   "technology": "Dual voltage-feedback precision op-amp with ADI's 'Butler Amplifier' front end, combining bipolar and JFET transistors. It is the faster sibling of the OP275 (about 9 MHz GBW) and is a separate die from it, not a grade of the OP275.",
+   "manufacturers": [
+    "Analog Devices (PMI design lineage)"
+   ],
+   "part_numbers": [
+    {
+     "pn": "OP285",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices (PMI design lineage)"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OP285GP",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices (PMI design lineage)"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OP285GS",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices (PMI design lineage)"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "A long-standing Chinese upgrade classic that is always named next to the OP275. The widely reprinted CN op-amp guides (CSDN '常用运放的介绍', ZOL '主流音频运放芯片分析', PCPOP '摩机常识 运放芯片篇', 21ic '常用运放概述') say OP275/OP285 have a 'tube-like soft, moist midrange (中频具有胆机柔美润泽的特点) with intimate vocals', clear outlines and high resolution. These guides are cited in searches for 胆味运放. One comparison says the OP285G sounds like the OP275G but slightly better, with more colour saturation and a wider soundstage, though slightly less bass. Car-audio upgrade shops (sounting.com) list it among 'fever-grade' audio op-amps. / Head-Fi has a dedicated thread, 'I like the OP285'. It describes very good resolution with a refined but resolving treble, and a balance similar to the AD746 but more colourful and perhaps clearer at 12 V DC. Posters say it sounds 'right' overall but needs care in the circuit to sound its best. diyAudio's 'Best Sounding DUAL opamps' thread names it as a budget alternative worth trying alongside the OPA627 and OPA637.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://blog.csdn.net/muyuyuzhong/article/details/1856599",
+     "https://www.21ic.com/article/871245.html",
+     "https://sound.zol.com.cn/84/847265.html",
+     "https://www.pcpop.com/article/335971_all.shtml",
+     "https://www.sounting.com/article/details/792",
+     "https://www.head-fi.org/threads/i-like-the-op285.206631/",
+     "https://www.diyaudio.com/community/threads/the-best-sounding-dual-opamps.82610/page-7",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-368"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://blog.csdn.net/muyuyuzhong/article/details/1856599",
+    "https://www.21ic.com/article/871245.html",
+    "https://sound.zol.com.cn/84/847265.html",
+    "https://www.pcpop.com/article/335971_all.shtml",
+    "https://www.sounting.com/article/details/792",
+    "https://www.head-fi.org/threads/i-like-the-op285.206631/",
+    "https://www.diyaudio.com/community/threads/the-best-sounding-dual-opamps.82610/page-7",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-368"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "B",
+   "category": "bipolar-classic",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:cn-kr"
+    ],
+    "evidence_urls": [
+     "https://blog.csdn.net/muyuyuzhong/article/details/1856599",
+     "https://www.21ic.com/article/871245.html",
+     "https://sound.zol.com.cn/84/847265.html",
+     "https://www.pcpop.com/article/335971_all.shtml",
+     "https://www.sounting.com/article/details/792",
+     "https://www.head-fi.org/threads/i-like-the-op285.206631/",
+     "https://www.diyaudio.com/community/threads/the-best-sounding-dual-opamps.82610/page-7",
+     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-368"
+    ]
+   }
+  },
+  {
    "id": "OPA111",
    "name": "OPA111 / OPA2111 (Burr-Brown Difet low-noise precision, single/dual)",
    "tagline": "Burr-Brown's low-noise Difet (8 nV/√Hz max at 10 kHz, pA bias). TI's OPA627 datasheet calls it 'the popular OPA111', and Japanese rollers prize the metal-can OPA2111AM.",
@@ -43846,6 +44313,171 @@
      "url_kind": "product_page",
      "notes": "Returned by Sept-2026 searches; part-details page for OPA2211MDRGTEP also exists.",
      "confidence": "high"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA211/OPA2211 1.1nV/rtHz Noise, Low Power, Precision Operational Amplifier (Scribd upload 'Opa 2211')",
+     "doc_number": "SBOS377A",
+     "revision": "A",
+     "date": "OCTOBER 2006 – REVISED FEBRUARY 2007",
+     "url": "https://www.scribd.com/document/939959332/Opa-2211",
+     "url_kind": "third_party_mirror",
+     "notes": "A search summary names this Scribd document as SBOS377A (Oct 2006, revised Feb 2007). It is the first copy found of rev A, which had no URL before. It also came up first in the searches that surfaced the SBOS377D header, so check the header when you open it.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA211I / OPA211 datasheet (TI), 17-page viewer on pdf.ic37.com",
+     "doc_number": "SBOS377",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://pdf.ic37.com/TI/OPA211_datasheet_5677509/OPA211_3.html",
+     "url_kind": "third_party_mirror",
+     "notes": "17 pages, the length of the old pre-2015 layout, so probably rev A–G. It turned up in the searches for SBOS377A/D/G headers, but the summaries did not tie a letter to this copy. Page 5 is at .../OPA211_5.html.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA2211 datasheet (TI), 9-page viewer on pdf.ic37.com",
+     "doc_number": "SBOS377",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://pdf.ic37.com/TI/OPA211_datasheet_6037225/",
+     "url_kind": "third_party_mirror",
+     "notes": "Only 9 pages. It could be an early short edition (for example the Oct 2006 original or a product preview) or just a truncated upload. Unverified, but worth checking for the missing original.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA2211 / OPA2211AI datasheet (TI), 37-page viewer on pdf.ic37.com",
+     "doc_number": "SBOS377",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://pdf.ic37.com/TI/OPA2211AI_datasheet_13206397/",
+     "url_kind": "third_party_mirror",
+     "notes": "37 pages, which fits TI's post-2015 layout (rev H or later). The revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA211 OPA2211 (old-format datasheet, '1FEATURES DESCRIPTION APPLICATIONS') on 100y.com.tw",
+     "doc_number": "SBOS377",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.100y.com.tw/pdf_file/33-TI-OPA211,2211.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The page title matches the old (pre-rev H) layout also seen on the kyohritsu rev F and Mouser rev G copies, so this is rev A–G. The exact letter is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA211AIDG4 Datasheet (radiolocman)",
+     "doc_number": "SBOS377",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=82176",
+     "url_kind": "third_party_mirror",
+     "notes": "A separate radiolocman entry from di=305537 (rev I). It is filed under the G4 (Pb-free, older-era) orderable, so it may be an older revision. Unverified.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA211AIDR datasheet (Octopart cache)",
+     "doc_number": "SBOS377",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet.octopart.com/OPA211AIDR-Texas-Instruments-datasheet-159115562.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The title text ('Voltage Noise Density ...') matches the new-format layout, so rev H or later. The letter is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "Opa 211 (Scribd upload)",
+     "doc_number": "SBOS377",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.scribd.com/document/770726126/opa211",
+     "url_kind": "third_party_mirror",
+     "notes": "A second Scribd upload. The revision was not shown in the summary.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA2211 Datasheet - SOIC Amplifier (filed under 'Burr-Brown' on datasheet4u)",
+     "doc_number": "SBOS377",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheet-pdf/Burr-Brown/OPA2211/pdf.php?id=574554",
+     "url_kind": "third_party_mirror",
+     "notes": "This is the datasheet4u entry the lineage note mentions, which had no URL before. The same file is also at https://datasheet4u.com/datasheets/Burr-Brown/OPA2211/574554. The 'Burr-Brown' filing is the site's own label. The revision is not shown, but the Burr-Brown filing suggests an early edition.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA2211 Datasheet (datasheet.b-cdn.net post)",
+     "doc_number": "SBOS377",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet.b-cdn.net/posts/opa2211-datasheet/",
+     "url_kind": "third_party_mirror",
+     "notes": "This third-party post came up in the search for revisions B, C and E, but no revision was shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA211-EP Datasheet (radiolocman)",
+     "doc_number": "SBOS638",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=305539",
+     "url_kind": "third_party_mirror",
+     "notes": "OPA211-EP enhanced-product datasheet. The revision is not shown. The di number is close to the rev I OPA211 entry (di=305537), so this may be a copy from the same period (about 2016). Unverified.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA211-EP Datasheet (alldatasheet, TI1 folder)",
+     "doc_number": "SBOS638",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/463398/TI1/OPA211-EP.html",
+     "url_kind": "third_party_mirror",
+     "notes": "alldatasheet's OPA211-EP entry, separate from the OPA2211-EP entry 772560. The revision is not shown. The lower ID suggests it was archived around the 2012 original.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA2211-EP Datasheet - Operational Amplifier (datasheet4u)",
+     "doc_number": "unknown",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://datasheet4u.com/datasheets/etcTI/OPA2211-EP/1572858",
+     "url_kind": "third_party_mirror",
+     "notes": "OPA2211-EP datasheet. The summary gives the description text (1.1 nV/rtHz, 3.6 mA) but not the TI literature number or revision. The OPA2211-EP doc number is still unidentified.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA2211-HT data sheet, product information and support",
+     "doc_number": "unknown",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.ti.com/product/OPA2211-HT",
+     "url_kind": "product_page",
+     "notes": "New finding: a TI high-temperature (HT) variant of the OPA2211 has its own product page. It is not in the lineage yet, and its datasheet literature number has not been identified.",
+     "confidence": "medium"
+    },
+    {
+     "vendor": "Texas Instruments",
+     "title": "OPA211 Texas Instruments (DigiKey base-product page)",
+     "doc_number": "SBOS377",
+     "revision": "n/a",
+     "date": "n/a",
+     "url": "https://www.digikey.com/en/products/base-product/texas-instruments/296/OPA211/58988",
+     "url_kind": "product_page",
+     "notes": "DigiKey's product page for OPA211, which links the current datasheet. No revision is shown.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -43925,6 +44557,20 @@
      "revision": "(original)",
      "date": "June 2012",
      "changes": "OPA211-EP enhanced-product datasheet, first issue. Later revisions not checked."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SBOS377D",
+     "revision": "D",
+     "date": "February 2008",
+     "changes": "Exists: two search summaries show the header 'SBOS377D – OCTOBER 2006 – REVISED FEBRUARY 2008'. No surviving copy was tied to it; it is probably among the Scribd 939959332, pdf.ic37.com 5677509 or kyohritsu results. Changes unknown. This leaves B and C between Feb 2007 and Feb 2008, and E between Feb 2008 and Nov 2008."
+    },
+    {
+     "vendor": "Texas Instruments",
+     "doc_number": "SBOS377A",
+     "revision": "A",
+     "date": "February 2007",
+     "changes": "First copy found: Scribd document 939959332 ('Opa 2211'), per a search summary. Changes are still unknown."
     }
    ],
    "silicon_changes": [],
@@ -43942,7 +44588,12 @@
     "SBOS638"
    ],
    "archive_seed_urls": [
+    "http://focus.ti.com/lit/ds/sbos377a/sbos377a.pdf",
+    "http://focus.ti.com/lit/ds/sbos377d/sbos377d.pdf",
+    "http://focus.ti.com/lit/ds/symlink/opa211-ep.pdf",
     "http://focus.ti.com/lit/ds/symlink/opa211.pdf",
+    "http://focus.ti.com/lit/ds/symlink/opa2211.pdf",
+    "http://www.ti.com/lit/ds/sbos377g/sbos377g.pdf",
     "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/opa211.pdf",
     "https://www.mouser.com/datasheet/2/405/sbos377g-125789.pdf",
     "https://www.ti.com/lit/ds/sbos377g/sbos377g.pdf",
@@ -44073,7 +44724,8 @@
      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-19",
      "https://zigsow.jp/item/321816/review/319536"
     ]
-   }
+   },
+   "revision_chain_summary": "TI SBOS377 (OPA211/OPA2211), oldest to newest: original Oct 2006 (no copy found; the 9-page pdf.ic37.com 6037225 file and the datasheet4u 'Burr-Brown' 574554 file are the best leads, revision not shown) -> A, revised Feb 2007 (NEW copy: scribd.com/document/939959332) -> B, C (MISSING: no header, date or copy found; must fall between Feb 2007 and Feb 2008) -> D, revised Feb 2008 (NEW: header 'SBOS377D – OCTOBER 2006 – REVISED FEBRUARY 2008' seen in search summaries, but the hosting copy is not identified) -> E (MISSING; must fall between Feb 2008 and Nov 2008) -> F, Nov 2008 (kyohritsu) -> G, May 2009 (Mouser) -> [6-year gap] -> H, Nov 2015 (no copy URL) -> I, Jun 2016 (radiolocman di=305537) -> J, Feb 2018 (no copy URL) -> K, Sep 2018 (no copy URL) -> L, Jan 2020 (ti.com symlink, re-rendered Nov 2025, still rev L). Old-format copies of unknown letter (rev A–G): 100y.com.tw 33-TI-OPA211,2211.pdf and pdf.ic37.com 5677509 (17 pages); possibly radiolocman di=82176 (OPA211AIDG4). New-format copies of unknown letter (rev H or later): pdf.ic37.com 13206397 (37 pages) and Octopart OPA211AIDR 159115562. TI SBOS638 (OPA211-EP): only the original, June 2012 (ti.com, Octopart) is confirmed. New copies with revision not shown: radiolocman di=305539 and alldatasheet 463398. Whether SBOS638 has later lettered revisions is still unknown. OPA2211-EP: literature number still unidentified; new copy at datasheet4u 1572858. NEW variant: an OPA2211-HT (high-temperature) product page exists at ti.com/product/OPA2211-HT; its datasheet number and revisions are unknown and it is not yet in the lineage. No second source or other vendor was found. Archive seeds: the focus.ti.com symlink URLs follow the task's legacy pattern. The per-revision seeds (sbos377a, sbos377d and sbos377g paths) are built from TI's standard lit-path pattern for confirmed letters and are unverified. Missing links still: copies of the original, B, C, D (host), E, H, J and K; SBOS638 revisions after the 2012 original; the OPA2211-EP and OPA2211-HT literature numbers."
   },
   {
    "id": "OPAx227",
@@ -44629,6 +45281,204 @@
      "url_kind": "product_page",
      "notes": "The other pages are https://www.ti.com/product/OPA228, /OPA4227 and /OPA4228. All were live in a Sep 2026 search.",
      "confidence": "high"
+    },
+    {
+     "vendor": "Burr-Brown (via Alldatasheet)",
+     "title": "OPA227 Datasheet(PDF) - Burr-Brown (TI) [OPA227/OPA2227/OPA4227/OPA228/OPA2228/OPA4228 High Precision, Low Noise Operational Amplifiers]",
+     "doc_number": "SBOS110 (revision letter not shown)",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/56737/BURR-BROWN/OPA227.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Alldatasheet files this under the BURR-BROWN manufacturer, which suggests an old Burr-Brown-layout copy (original May 1998 edition or Rev A of January 2005). One search summary gave '738KB, 25 pages', but it is not clear which alldatasheet entry that referred to. Revision letter not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown (via Alldatasheet)",
+     "title": "OPA2227 Datasheet(PDF) - Burr-Brown (TI)",
+     "doc_number": "SBOS110 (revision letter not shown)",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/56738/BURR-BROWN/OPA2227.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Filed under BURR-BROWN, next to entry 56737. Probably the same old Burr-Brown-layout document. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown (via Datasheet4U)",
+     "title": "OPA227 Datasheet - OPERATIONAL AMPLIFIERS | Burr-Brown",
+     "doc_number": "SBOS110 (revision letter not shown)",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheet4u.com/datasheets/Burr-Brown/OPA227/475562",
+     "url_kind": "third_party_mirror",
+     "notes": "Burr-Brown-attributed copy. The PDF viewer for the same id is https://www.datasheet4u.com/datasheet-pdf/Burr-Brown/OPA227/pdf.php?id=475562. Revision not shown. This is a candidate for the original 1998 edition or Rev A.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown (via ManualMachine)",
+     "title": "Datasheet OPA2227PA, OPA2227U, OPA2227UA-2K5, OPA2228U, OPA2228PA Datasheet (Burr Brown)",
+     "doc_number": "SBOS110 (revision letter not shown)",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://manualmachine.com/datasheet/opa2227pa/4144717-datasheet-burr-brown/",
+     "url_kind": "third_party_mirror",
+     "notes": "Burr-Brown-attributed copy. It lists P/PA/U/UA orderables, which appear in the original edition and in Rev A. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown (via ChipFind)",
+     "title": "OPA227 Burr-Brown High Precision, Low Noise OPERATIONAL AMPLIFIERS ChipFind Datasheet Archive",
+     "doc_number": "SBOS110 (revision letter not shown)",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.chipfind.net/datasheet/burr-brown/opa227.htm",
+     "url_kind": "third_party_mirror",
+     "notes": "The all-caps title 'High Precision, Low Noise OPERATIONAL AMPLIFIERS' matches the Burr-Brown layout, used in the 1998 original and in Rev A. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Burr-Brown (via ChipDocs)",
+     "title": "Burr-Brown Corp. OPA2227 Series Datasheets (OPA227, OPA4228, ... OPA228U/2K5)",
+     "doc_number": "SBOS110 (revision letter not shown)",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "http://www.chipdocs.com/datasheets/datasheet-pdf/BurrBrown-Corp/OPA2227.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Attributed to 'Burr-Brown Corp.'. Orderables include the /2K5 tape-and-reel suffixes. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (China)",
+     "title": "OPAx227、OPAx228 高精度、低噪声运算放大器 (Simplified-Chinese translation)",
+     "doc_number": "ZHCS translation number not seen (translation of SBOS110)",
+     "revision": "Chinese translation. Two search summaries say 'revised March 2023'. The English source revision is not shown, probably C given the date.",
+     "date": "March 2023 (per search summary; unverified)",
+     "url": "https://www.ti.com/cn/lit/ds/symlink/opa227.pdf",
+     "url_kind": "vendor_current",
+     "notes": "TI China symlink to the Simplified-Chinese datasheet in the new 'OPAx227、OPAx228' template. Two search summaries describe it as revised March 2023. The ZHCS literature number was not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (China)",
+     "title": "OPAx227、OPAx228 高精度、低噪声运算放大器 (Simplified-Chinese translation)",
+     "doc_number": "ZHCS translation number not seen (translation of SBOS110)",
+     "revision": "Chinese translation (same document as the cn opa227 symlink); revision not shown",
+     "date": "not shown (March 2023 per search summary of the family document)",
+     "url": "https://www.ti.com/cn/lit/ds/symlink/opa2227.pdf",
+     "url_kind": "vendor_current",
+     "notes": "TI China symlink for OPA2227, pointing to the same Chinese family datasheet.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (via Radiolocman)",
+     "title": "OPA227PA Datasheet Texas Instruments, Download PDF",
+     "doc_number": "SBOS110",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=82522&%2FOPA227PA=",
+     "url_kind": "third_party_mirror",
+     "notes": "Its low Radiolocman document id (82522, compared with 305611 for the Rev B copy) suggests an early upload, possibly Rev A. Not verified. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (via Radiolocman)",
+     "title": "OPA227U Datasheet Texas Instruments, Download PDF",
+     "doc_number": "SBOS110",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?di=48784&%2FOPA227U=",
+     "url_kind": "third_party_mirror",
+     "notes": "Its low document id (48784) suggests an early upload, possibly Rev A. Not verified. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (via Radiolocman)",
+     "title": "OPA2227U Datasheet Texas Instruments, Download PDF",
+     "doc_number": "SBOS110",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://www.radiolocman.com/datasheet/data.html?/OPA2227U=&di=175749",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision not shown. Its document id (175749) is below that of the Rev B copy (305611), so it may be an earlier revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (via ManualMachine)",
+     "title": "Datasheet OPA2227, OPA4227, OPA2228, OPA4228 Datasheet (TEXAS INSTRUMENTS)",
+     "doc_number": "SBOS110",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://manualmachine.com/datasheet/opa2227/8412383-datasheet-texas-instruments/",
+     "url_kind": "third_party_mirror",
+     "notes": "TI-attributed copy. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (via Datasheet4U)",
+     "title": "OPA227 SOIC Noise Operational Amplifier Datasheet | Texas Instruments",
+     "doc_number": "SBOS110",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheet4u.com/datasheets/etcTI/OPA227/1437412",
+     "url_kind": "third_party_mirror",
+     "notes": "TI-attributed copy (etcTI category). Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (via Octopart)",
+     "title": "The content and copyrights of the attached ... (OPA4227UA)",
+     "doc_number": "SBOS110",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheet.octopart.com/OPA4227UA-Texas-Instruments-datasheet-8441394.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Its title comes from a distributor cover sheet ('The content and copyrights of the attached material...'). The same Octopart id range (~8.44M) includes the already-listed OPA227U copy 8441645. Likely a pre-2015 copy (Rev A era), but the revision is not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (via Octopart)",
+     "title": "TEXAS INSTRUMENTS (OPA2227P) OP AMP HIGH ...",
+     "doc_number": "SBOS110",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheet.octopart.com/OPA2227P-Texas-Instruments-datasheet-7579733.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "Distributor cover-sheet copy with a low Octopart id (7579733), so probably pre-2015 (Rev A era). Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (via DatasheetsPDF)",
+     "title": "OPA2227 Datasheet | Low Noise Operational Amplifier",
+     "doc_number": "SBOS110",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheetspdf.com/datasheet/OPA2227.html",
+     "url_kind": "third_party_mirror",
+     "notes": "Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (via icspec)",
+     "title": "OPA227 PDF数据手册_芯片中文资料_芯片规格参数 (Texas Instruments)",
+     "doc_number": "SBOS110",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheet.icspec.com/datasheet/datasheetDetail/11987?className=%E7%B2%BE%E5%AF%86%E8%BF%90%E7%AE%97%E6%94%BE%E5%A4%A7%E5%99%A8+(Vos%3C1mV)",
+     "url_kind": "third_party_mirror",
+     "notes": "Datasheet page on a Chinese aggregator. Revision not shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Texas Instruments (via icspec)",
+     "title": "OPA228 PDF数据手册_芯片中文资料_芯片规格参数 (Texas Instruments)",
+     "doc_number": "SBOS110",
+     "revision": "revision not shown",
+     "date": "not shown",
+     "url": "https://datasheet.icspec.com/datasheet/datasheetDetail/11972?className=%E7%B2%BE%E5%AF%86%E8%BF%90%E7%AE%97%E6%94%BE%E5%A4%A7%E5%99%A8+(Vos%3C1mV)",
+     "url_kind": "third_party_mirror",
+     "notes": "Datasheet page on a Chinese aggregator for OPA228. Revision not shown.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -44659,6 +45509,13 @@
      "revision": "C",
      "date": "November 2022",
      "changes": "Change log 'Changes from Revision B to Revision C (November 2022)': updated document formatting and Absolute Maximum Ratings. A snippet reads 'Added dual supply voltage in Absolute Maximum Ratings'. No die or process change is indicated. Current per TI product pages (Sep 2026)."
+    },
+    {
+     "vendor": "Texas Instruments (China)",
+     "doc_number": "SBOS110 Chinese translation (ZHCS number not seen)",
+     "revision": "Chinese translation (source revision not shown; probably C)",
+     "date": "March 2023 (per two search summaries; unverified)",
+     "changes": "This is the Simplified-Chinese edition in the new 'OPAx227、OPAx228' template at ti.com/cn/lit/ds/symlink/opa227.pdf and opa2227.pdf. Search summaries describe it as revised March 2023. It came after the English Rev C of November 2022. No silicon change is implied."
     }
    ],
    "silicon_changes": [
@@ -44722,7 +45579,12 @@
     "SBOS110"
    ],
    "archive_seed_urls": [
+    "http://focus.ti.com/lit/ds/symlink/opa2227.pdf",
+    "http://focus.ti.com/lit/ds/symlink/opa2228.pdf",
     "http://focus.ti.com/lit/ds/symlink/opa227.pdf",
+    "http://focus.ti.com/lit/ds/symlink/opa228.pdf",
+    "http://focus.ti.com/lit/ds/symlink/opa4227.pdf",
+    "http://focus.ti.com/lit/ds/symlink/opa4228.pdf",
     "http://www.burr-brown.com/",
     "http://www.ti.com/lit/ds/symlink/opa227.pdf",
     "https://datasheet.octopart.com/OPA4227UA-Burr-Brown-datasheet-114273.pdf",
@@ -44860,7 +45722,8 @@
      "https://tangentsoft.com/audio/opamps.html",
      "https://w.atwiki.jp/higemouse/pages/36.html"
     ]
-   }
+   },
+   "revision_chain_summary": "TI SBOS110 (Burr-Brown origin), from oldest to newest:\n(1) Original Burr-Brown edition, May 1998 (date printed on later revisions). There is still no copy with a confirmed revision. Candidate Burr-Brown-attributed copies are already listed: Octopart 114273, CERN and kontest.ru. New candidates found this round: alldatasheet 56737 and 56738 (filed under BURR-BROWN), datasheet4u 475562, manualmachine 4144717, chipfind and chipdocs. None show a revision header. The Burr-Brown all-caps layout ('High Precision, Low Noise OPERATIONAL AMPLIFIERS') was still used in Rev A (the valvano copy has it), so layout alone does not tell the 1998 original from Rev A.\n(2) SBOS110A, January 2005 ('MAY 1998 - REVISED JANUARY 2005'). Held by UT Austin valvano and the GitHub mirror.\n(3) SBOS110B, June 2015. Held by RS and Radiolocman di=305611. Its change log (A to B) is still not retrieved.\n(4) SBOS110C, November 2022. Current on ti.com.\n(4a) Simplified-Chinese TI translation at ti.com/cn symlinks, which search summaries say was revised March 2023. Its ZHCS number was not seen.\nNewly listed TI-attributed mirrors with low document ids may hold Rev A, but their revisions are not shown: Radiolocman di=48784, 82522 and 175749, and Octopart 8441394 and 7579733 (distributor cover-sheet copies).\nStill missing: a revision-confirmed copy of the 1998 original; confirmation of whether any unlettered Burr-Brown reprint or intermediate edition exists between 1998 and 2005; the Rev A to B change-log text; and the ZHCS number of the Chinese edition.\nThe archive_seed_urls follow URL patterns and were not seen in search results. The focus.ti.com legacy symlink pattern and the TI revision-specific sbos110a/sbos110b paths (modelled on the confirmed sbos110c path) are meant for Wayback lookups. They are not confirmed documents.\nNo second-source vendors were found."
   },
   {
    "id": "AD711",
@@ -47136,6 +47999,94 @@
      "url_kind": "third_party_mirror",
      "notes": "Mislabelled path (IR folder and filename) that the search index titles as AD8022. Revision and content unconfirmed.",
      "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (icbase.com mirror)",
+     "title": "Dual High Speed, Low Noise Op Amp Data Sheet AD8022 Rev. C",
+     "doc_number": "AD8022",
+     "revision": "C",
+     "date": "2011-08 (Rev C per ADI revision history; date not shown in search result)",
+     "url": "https://www.icbase.com/File/PDF/ADI/ADI13561611.pdf",
+     "url_kind": "distributor_mirror",
+     "notes": "The search-result title shows 'Rev. C'. This is a distributor (icbase) PDF copy of the current ADI edition.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Analog Devices (Manual Library mirror)",
+     "title": "ANALOG DEVICES Dual High Speed Low Noise Op Amp Data Sheet AD8022 English products handbook Rev C",
+     "doc_number": "AD8022",
+     "revision": "C",
+     "date": "2011-08 (Rev C per ADI revision history)",
+     "url": "https://secure.manuallib.com/file/2588286",
+     "url_kind": "third_party_mirror",
+     "notes": "The title shows Rev C. This is the Manual Library source of the already-listed Internet Archive item manuallib-id-2588286.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Analog Devices (RadioLocman mirror, .com domain)",
+     "title": "Datasheet AD8022 Analog Devices, Revision: C (page 9)",
+     "doc_number": "AD8022",
+     "revision": "C",
+     "date": "2011-08",
+     "url": "https://www.radiolocman.com/datasheet/pdf.html?di=121365&p=9",
+     "url_kind": "third_party_mirror",
+     "notes": "The title shows 'Revision: C'. This is the same RadioLocman document id (di=121365) as the listed rlocman.de copy, but on the radiolocman.com domain.",
+     "confidence": "high"
+    },
+    {
+     "vendor": "Analog Devices (datasheetbank mirror)",
+     "title": "AD8022 Datasheet PDF, Analog Devices : Dual High Speed, Low Noise Op Amp",
+     "doc_number": "AD8022",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetbank.com/AD8022-doc-ADI",
+     "url_kind": "third_party_mirror",
+     "notes": "The singular title 'Dual High Speed, Low Noise Op Amp' suggests the Rev B or C era, but no revision marking appears in the search summary.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (DataSheetAll mirror)",
+     "title": "AD8022 Datasheet PDF Download | All Parts Marking & In Stock",
+     "doc_number": "AD8022",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetall.com/adi/ad8022/",
+     "url_kind": "third_party_mirror",
+     "notes": "The search summary shows no revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (digchip mirror)",
+     "title": "AD8022 datasheet - Dual Low Noise, Low Distortion, High ...",
+     "doc_number": "AD8022",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.digchip.com/datasheets/parts/datasheet/041/AD8022.php",
+     "url_kind": "third_party_mirror",
+     "notes": "The title wording differs from all known ADI editions and may be an auto-generated description. digchip copies are often early scrapes, so this could be an early revision (0 or A), but no revision marking is shown.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (datasheetq mirror)",
+     "title": "AD8022 Datasheet PDF - Analog Devices",
+     "doc_number": "AD8022",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetq.com/AD8022-Datasheet-PDF-ADI",
+     "url_kind": "third_party_mirror",
+     "notes": "The search summary shows no revision.",
+     "confidence": "low"
+    },
+    {
+     "vendor": "Analog Devices (datasheetcafe mirror)",
+     "title": "AD8022 Datasheet - High Speed Amplifier, SOP 8 ( PDF )",
+     "doc_number": "AD8022",
+     "revision": "revision not shown",
+     "date": "unknown",
+     "url": "https://www.datasheetcafe.com/ad8022-datasheet-pdf/",
+     "url_kind": "third_party_mirror",
+     "notes": "The search summary shows no revision.",
+     "confidence": "low"
     }
    ],
    "revision_history": [
@@ -47256,6 +48207,7 @@
     "https://www.analog.com/UploadedFiles/Data_Sheets/AD8022.pdf",
     "https://www.analog.com/en/products/ad8022.html",
     "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8022.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8022.pdf",
     "https://www.analog.com/static/imported-files/data_sheets/AD8022.pdf"
    ],
    "open_questions": [
@@ -47324,6 +48276,111 @@
      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-113",
      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-178",
      "https://www.analog.com/en/products/ad8022.html"
+    ]
+   },
+   "revision_chain_summary": "Analog Devices AD8022 is the only document. The part is single-source, and no acquirer re-issue or second source was found. Known chain, oldest to newest: Rev 0 (initial release, date still unknown, before 9/02) -> Rev A (9/02) -> Rev B (5/05) -> Rev C (8/11, current; ADI product page content last updated 02/23/2017).\n\nCopies holding each revision:\n- Rev 0: none found. This is the missing link, and its date is unconfirmed. The alldatasheet id 48381 copy and the digchip copy (digchip.com/.../041/AD8022.php, with an unusual title 'Dual Low Noise, Low Distortion, High ...') are candidates, but no revision marking is shown.\n- Rev A: the University of Chicago EDG copy. The search snippet for edg.uchicago.edu/~bogdan/ADC_QUIET/DOC/parts/AD8022.pdf literally shows 'REV. A Information furnished by Analog Devices...', so its confidence can be raised to high. Its title uses the plural 'Dual High Speed Low Noise Op Amps'.\n- Rev B: no copy confirmed. The search engine's AI summary called the datasheet.su copy (pdf2.datasheet.su/international%20rectifier/auir2085s.pdf, already listed, singular title without 'Data Sheet') Rev B, but no page text showed a Rev B marking, so this is unverified and stays low confidence.\n- Rev C: analog.com (upper- and lowercase PDF URLs), icbase.com ADI13561611.pdf, manuallib / archive.org 2588286, and RadioLocman di=121365 (.de and .com).\n\nStill missing:\n1. A copy of Rev 0 and its release date. The AD8022 appeared around 1999-2000, but this is not confirmed.\n2. A confirmed Rev B (5/05) copy.\n3. Per-revision change descriptions from the Rev C revision-history table. The search summaries did not show them.\n4. A legacy http://www.analog.com/static/imported-files/data_sheets/ URL. None was found, so none is recorded, but a Wayback lookup of that path could yield Rev B.\n\nAll 4 searches were used."
+  },
+  {
+   "id": "AD822",
+   "name": "AD820 / AD822 / AD824 (ADI single-supply rail-to-rail-output JFET-input)",
+   "tagline": "",
+   "technology": "JFET input, single supply (5-30 V) or dual supply, rail-to-rail output, 1.8 MHz, 3 V/us, 800 uA per amplifier",
+   "manufacturers": [
+    "Analog Devices"
+   ],
+   "part_numbers": [
+    {
+     "pn": "AD820",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD822",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD824",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD822ANZ",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD822ARZ",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "A zigsow review is titled 'オーディオにも十分通用する単電源用' ('A single-supply part that holds up well enough for audio'). In nabe's spec-vs-sound notes it is described as having a sound tendency similar to the OPA2134 and a cool FET-input character. Its very low current draw makes it a battery CMoy choice, though with some transient issues into 15-ohm loads, and nabe finds the OPA2350 fuller-bodied. Akizuki stocks the DIP version for DIY builders.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://zigsow.jp/item/322320/review/321035",
+     "https://nabe.adiary.jp/opamp-speclist",
+     "https://akizukidenshi.com/catalog/g/g113753/"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://zigsow.jp/item/322320/review/321035",
+    "https://nabe.adiary.jp/opamp-speclist",
+    "https://akizukidenshi.com/catalog/g/g113753/"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "jfet-input",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:jp"
+    ],
+    "evidence_urls": [
+     "https://zigsow.jp/item/322320/review/321035",
+     "https://nabe.adiary.jp/opamp-speclist",
+     "https://akizukidenshi.com/catalog/g/g113753/"
     ]
    }
   },
@@ -48342,6 +49399,95 @@
     "evidence_urls": [
      "https://www.audioasylum.com/cgi/t.mpl?f=tweaks&m=83181",
      "https://www.diyaudio.com/community/threads/killer-i-v-opamp.83291/"
+    ]
+   }
+  },
+  {
+   "id": "AD828",
+   "name": "AD828 (ADI low-power dual video op-amp)",
+   "tagline": "",
+   "technology": "Bipolar voltage-feedback, low-cost dual video op-amp. ADI optimises it for gains of +2 or more with high output drive (cable driving). It is a separate die from the covered AD826 and AD827/AD847.",
+   "manufacturers": [
+    "Analog Devices"
+   ],
+   "part_numbers": [
+    {
+     "pn": "AD828",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD828AN",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "AD828AR",
+     "channels": 0,
+     "vendors": [
+      "Analog Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "The CSDN classic-audio-op-amp ranking (listening order of 22 parts) rates the AD828AN as having 'jump, grandeur, extension' but a somewhat rough midrange, and places it above the AD827. Elecfans' 'ad828运放音质好吗' page says the AD828AR beats the famous AD827JN, with a neutral full-range tone, good mid-range resolution, excellent bass dynamics and clear, extended highs, and recommends it for sound-card and DVD output stages. Car-audio modders on Autohome install it in head units. One Bilibili creator found a cheap AD828 board disappointing.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://blog.csdn.net/helongfu/article/details/46286715",
+     "https://m.elecfans.com/zt/145531/",
+     "https://club.autohome.com.cn/bbs/threadowner-c-837-29858375-1.html",
+     "https://www.bilibili.com/video/BV1a5411Y7HQ/"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://blog.csdn.net/helongfu/article/details/46286715",
+    "https://m.elecfans.com/zt/145531/",
+    "https://club.autohome.com.cn/bbs/threadowner-c-837-29858375-1.html",
+    "https://www.bilibili.com/video/BV1a5411Y7HQ/"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "high-speed-video-crossover",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:cn-kr"
+    ],
+    "evidence_urls": [
+     "https://blog.csdn.net/helongfu/article/details/46286715",
+     "https://m.elecfans.com/zt/145531/",
+     "https://club.autohome.com.cn/bbs/threadowner-c-837-29858375-1.html",
+     "https://www.bilibili.com/video/BV1a5411Y7HQ/"
     ]
    }
   },
@@ -52300,6 +53446,198 @@
    }
   },
   {
+   "id": "BA15218",
+   "name": "BA15218 (ROHM dual low-noise, high-slew-rate bipolar)",
+   "tagline": "",
+   "technology": "Bipolar dual op-amp, low noise and high slew rate, for dual supplies (ROHM audio/consumer part, now end-of-life)",
+   "manufacturers": [
+    "ROHM"
+   ],
+   "part_numbers": [
+    {
+     "pn": "BA15218",
+     "channels": 0,
+     "vendors": [
+      "ROHM"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "BA15218N",
+     "channels": 0,
+     "vendors": [
+      "ROHM"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "BA15218F",
+     "channels": 0,
+     "vendors": [
+      "ROHM"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "The C-Area wiki has a dedicated BA15218 listening page. It describes good high-frequency extension and a clear, natural sound without harshness. In a separate comparison against the M5218 and NJM4580, a user found the BA15218 clean with clear highs, while the M5218 sounded slightly cloudy and the NJM4580 had sluggish bass. A note.com headphone-amp write-up (ヘッドホンアンプba15218オペアンプを試しました) reports a firm, low-noise sound with solid lows.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://w.atwiki.jp/higemouse/pages/104.html",
+     "https://note.com/jamjamjamw_w/n/n905ff5d7b92c",
+     "https://www.rohm.com/products/amplifiers-and-linear/operational-amplifiers/low-noise/dual-supply-voltage/ba15218f-product"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://w.atwiki.jp/higemouse/pages/104.html",
+    "https://note.com/jamjamjamw_w/n/n905ff5d7b92c",
+    "https://www.rohm.com/products/amplifiers-and-linear/operational-amplifiers/low-noise/dual-supply-voltage/ba15218f-product"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "japanese-audio-series",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:jp"
+    ],
+    "evidence_urls": [
+     "https://w.atwiki.jp/higemouse/pages/104.html",
+     "https://note.com/jamjamjamw_w/n/n905ff5d7b92c",
+     "https://www.rohm.com/products/amplifiers-and-linear/operational-amplifiers/low-noise/dual-supply-voltage/ba15218f-product"
+    ]
+   }
+  },
+  {
+   "id": "EL2244",
+   "name": "EL2244 / EL2444 (Elantec/Intersil dual/quad high-speed video op-amp)",
+   "tagline": "",
+   "technology": "Bipolar voltage-feedback, unity-gain-stable low-power high-speed video op-amp in dual (EL2244) and quad (EL2444) versions. Exact GBW and slew rate need datasheet confirmation; recalled as a roughly 60 MHz class part.",
+   "manufacturers": [
+    "Elantec",
+    "Intersil (now Renesas)"
+   ],
+   "part_numbers": [
+    {
+     "pn": "EL2244",
+     "channels": 0,
+     "vendors": [
+      "Elantec",
+      "Intersil (now Renesas)"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "EL2244CN",
+     "channels": 0,
+     "vendors": [
+      "Elantec",
+      "Intersil (now Renesas)"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "EL2244CS",
+     "channels": 0,
+     "vendors": [
+      "Elantec",
+      "Intersil (now Renesas)"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "EL2444",
+     "channels": 0,
+     "vendors": [
+      "Elantec",
+      "Intersil (now Renesas)"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "A fixture of Chinese sound-card and car-head-unit 'polishing' (打磨/摩机) guides. It is described with the AD827 as among the top voltage-feedback dual op-amps then on the market, with a neutral tone, a wide soundstage (slightly wider than the OP275) and strong high frequencies and resolution. The same guides criticise a thin midrange, light bass and a bland musicality, and call it hard to use well. It appears in the Baidu Tieba '40款音频运算放大器主观分析评价' list, the PCPOP modding guide, a 360doc 各款运放音质比较 comparison and a sound-card op-amp tutorial. It also appears in the Korean digipine 'OP Amp의 음색 정리 자료' tone summary, so the evidence spans CN and KR.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://www.pcpop.com/article/335971_all.shtml",
+     "https://tieba.baidu.com/p/7230761275",
+     "http://www.360doc.com/content/18/0502/03/55110459_750368110.shtml",
+     "https://max.book118.com/html/2017/0529/110024617.shtm",
+     "https://www.digipine.com/index.php?mid=audio&document_srl=918"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://www.pcpop.com/article/335971_all.shtml",
+    "https://tieba.baidu.com/p/7230761275",
+    "http://www.360doc.com/content/18/0502/03/55110459_750368110.shtml",
+    "https://max.book118.com/html/2017/0529/110024617.shtm",
+    "https://www.digipine.com/index.php?mid=audio&document_srl=918"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "high-speed-video-crossover",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:cn-kr"
+    ],
+    "evidence_urls": [
+     "https://www.pcpop.com/article/335971_all.shtml",
+     "https://tieba.baidu.com/p/7230761275",
+     "http://www.360doc.com/content/18/0502/03/55110459_750368110.shtml",
+     "https://max.book118.com/html/2017/0529/110024617.shtm",
+     "https://www.digipine.com/index.php?mid=audio&document_srl=918"
+    ]
+   }
+  },
+  {
    "id": "HA2605",
    "name": "HA-2600 / HA-2602 / HA-2605 and HA-2620 / HA-2622 / HA-2625 (Harris high-input-impedance bipolar singles)",
    "tagline": "Harris 500 Mohm bipolar singles: HA-2600/2605 (12 MHz, 7 V/us) and uncompensated HA-2620/2625 (100 MHz GBW, 35 V/us, gain >5). Jung-era audio praise unverified.",
@@ -54731,6 +56069,99 @@
    }
   },
   {
+   "id": "LME49721",
+   "name": "LME49721 (National / TI low-voltage rail-to-rail I/O audio dual)",
+   "tagline": "",
+   "technology": "CMOS input (bias current in the fA range), rail-to-rail input and output, 2.2-5.5 V single supply, 20 MHz, +/-8.5 V/us",
+   "manufacturers": [
+    "National Semiconductor",
+    "Texas Instruments"
+   ],
+   "part_numbers": [
+    {
+     "pn": "LME49721",
+     "channels": 0,
+     "vendors": [
+      "National Semiconductor",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "LME49721MA",
+     "channels": 0,
+     "vendors": [
+      "National Semiconductor",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "LME49721MAX",
+     "channels": 0,
+     "vendors": [
+      "National Semiconductor",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "Japanese low-voltage and portable headphone-amp builders treat it as the standard choice. On nabe's blog (高品質な低電圧ヘッドホンアンプ), it is one of two parts recommended after low-voltage testing, alongside the AD8656. A zigsow user review is titled '高性能な低電圧駆動可能なオペアンプ…らしい。実際優秀。' ('Supposedly a high-performance low-voltage op-amp... and it really is excellent'). Akizuki stocks it as '2回路フルスイングHiFiオペアンプ' ('2-circuit full-swing HiFi op-amp').",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://nabe.adiary.jp/op-dbuf",
+     "https://zigsow.jp/item/174207/review/97161",
+     "https://akizukidenshi.com/catalog/g/g113344/",
+     "https://www.ti.com/product/LME49721"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://nabe.adiary.jp/op-dbuf",
+    "https://zigsow.jp/item/174207/review/97161",
+    "https://akizukidenshi.com/catalog/g/g113344/",
+    "https://www.ti.com/product/LME49721"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "cmos-input",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:jp"
+    ],
+    "evidence_urls": [
+     "https://nabe.adiary.jp/op-dbuf",
+     "https://zigsow.jp/item/174207/review/97161",
+     "https://akizukidenshi.com/catalog/g/g113344/",
+     "https://www.ti.com/product/LME49721"
+    ]
+   }
+  },
+  {
    "id": "LME49723",
    "name": "LME49723 (National / TI dual bipolar audio op-amp)",
    "tagline": "Little-known National/TI LME-series dual audio op-amp. One experienced diyAudio listener ranks it among the best-sounding VFB parts, with fuller bass than the LM4562.",
@@ -55549,6 +56980,116 @@
      "https://bispa.co.jp/547",
      "https://zigsow.jp/item/261566/review/261246",
      "http://blog.digit-parts.com/archives/51936265.html"
+    ]
+   }
+  },
+  {
+   "id": "LT1057",
+   "name": "LT1057 / LT1058 (Linear Technology dual/quad JFET-input precision high-speed op-amp)",
+   "tagline": "",
+   "technology": "Dual (LT1057) or quad (LT1058) matched JFET-input precision high-speed op-amp. It is quoted in CN sources at about 5 MHz GBW, 14 V/us slew and 60 pA bias, and is a drop-in upgrade for the LF412A and OP-215.",
+   "manufacturers": [
+    "Linear Technology (now Analog Devices)"
+   ],
+   "part_numbers": [
+    {
+     "pn": "LT1057",
+     "channels": 0,
+     "vendors": [
+      "Linear Technology (now Analog Devices)"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "LT1057ACN",
+     "channels": 0,
+     "vendors": [
+      "Linear Technology (now Analog Devices)"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "LT1057CN8",
+     "channels": 0,
+     "vendors": [
+      "Linear Technology (now Analog Devices)"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "LT1057 (TO-5 metal can)",
+     "channels": 0,
+     "vendors": [
+      "Linear Technology (now Analog Devices)"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "LT1058",
+     "channels": 0,
+     "vendors": [
+      "Linear Technology (now Analog Devices)"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "New evidence from CN and KR since the earlier exclusion. The Baidu Tieba '40款音频运算放大器主观分析评价' lists the LT1057ACN with good high and low extension, speed and dynamics, but a cool tone and a slightly recessed midrange. The HIFIDIY '各种运放的个人意见和评价' thread describes the gold-can LT1057 as having both-end extension, speed, dynamics and resolution but a 'cold, otherworldly' colour, and users roll it next to the OPA2111HK gold can. The EET-China '话说烧级运放' blog classes it as the 'cold and elegant' (冷艳) type with high dynamics, resolution and layering. The Korean digipine tone summary repeats the same characterisation, and car-audio shop sounting.com lists it as a fever-grade op-amp.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://tieba.baidu.com/p/7230761275",
+     "https://bbs.hifidiy.net/forum.php?action=printable&mod=viewthread&tid=536334",
+     "https://mbb.eet-china.com/blog/1568300-286964.html",
+     "https://www.digipine.com/index.php?mid=audio&document_srl=918",
+     "https://www.sounting.com/article/details/792"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://tieba.baidu.com/p/7230761275",
+    "https://bbs.hifidiy.net/forum.php?action=printable&mod=viewthread&tid=536334",
+    "https://mbb.eet-china.com/blog/1568300-286964.html",
+    "https://www.digipine.com/index.php?mid=audio&document_srl=918",
+    "https://www.sounting.com/article/details/792"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "jfet-input",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:cn-kr"
+    ],
+    "evidence_urls": [
+     "https://tieba.baidu.com/p/7230761275",
+     "https://bbs.hifidiy.net/forum.php?action=printable&mod=viewthread&tid=536334",
+     "https://mbb.eet-china.com/blog/1568300-286964.html",
+     "https://www.digipine.com/index.php?mid=audio&document_srl=918",
+     "https://www.sounting.com/article/details/792"
     ]
    }
   },
@@ -58845,6 +60386,109 @@
    }
   },
   {
+   "id": "NJM2082",
+   "name": "NJM2082 / NJM2082DD (New JRC / Nisshinbo JFET-input dual, improved NJM082)",
+   "tagline": "",
+   "technology": "JFET-input dual, an improved NJM082 (TL082-class) with attention to noise and distortion. NJM2082DD is a noise-screened grade.",
+   "manufacturers": [
+    "New JRC",
+    "Nisshinbo Micro Devices"
+   ],
+   "part_numbers": [
+    {
+     "pn": "NJM2082",
+     "channels": 0,
+     "vendors": [
+      "New JRC",
+      "Nisshinbo Micro Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "NJM2082D",
+     "channels": 0,
+     "vendors": [
+      "New JRC",
+      "Nisshinbo Micro Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "NJM2082DD",
+     "channels": 0,
+     "vendors": [
+      "New JRC",
+      "Nisshinbo Micro Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "NJM2082M",
+     "channels": 0,
+     "vendors": [
+      "New JRC",
+      "Nisshinbo Micro Devices"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "The C-Area wiki page (NJM2082D) finds it heavier and more composed than the TL072CP, with better low- and high-frequency extension. A zigsow review ('072改' / 'improved 072') describes the NJM2082DD as slightly warm like the NJM072 but more neutral, and well suited to classical and clean-tone music. The dad8893 blog includes it in a JFET op-amp listening comparison (TL072 / NJM072 / NJM2082 / OPA2134 / MUSES8920). Kyohritsu (eleshop) sells a noise-screened 'ノイズ選定品' DD grade.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://w.atwiki.jp/higemouse/pages/52.html",
+     "https://zigsow.jp/item/326102/review/325406",
+     "https://dad8893.blogspot.com/2017/10/jfetopamp-tl072-njm072-njm2082-opa2134.html",
+     "https://eleshop.jp/shop/g/gF16124/"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://w.atwiki.jp/higemouse/pages/52.html",
+    "https://zigsow.jp/item/326102/review/325406",
+    "https://dad8893.blogspot.com/2017/10/jfetopamp-tl072-njm072-njm2082-opa2134.html",
+    "https://eleshop.jp/shop/g/gF16124/"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "jfet-input",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:jp"
+    ],
+    "evidence_urls": [
+     "https://w.atwiki.jp/higemouse/pages/52.html",
+     "https://zigsow.jp/item/326102/review/325406",
+     "https://dad8893.blogspot.com/2017/10/jfetopamp-tl072-njm072-njm2082-opa2134.html",
+     "https://eleshop.jp/shop/g/gF16124/"
+    ]
+   }
+  },
+  {
    "id": "NJM8801",
    "name": "NJM8801 (New JRC / Nisshinbo high-quality audio bipolar dual, 'mass-production MUSES')",
    "tagline": "New JRC's bipolar audio dual that applies MUSES know-how to a mass-production process. A Japanese reviewer ranked it above the NJM4580 and below the MUSES8820.",
@@ -61010,6 +62654,116 @@
     ],
     "evidence_urls": [
      "https://github.com/hardisj/erinsaudiocorner/blob/250f096128f8c8f97c0e2231a7a7b5fc3dd12702/content/english/Electronics/Fosi_za3.md"
+    ]
+   }
+  },
+  {
+   "id": "OPA128",
+   "name": "OPA128 (Burr-Brown Difet electrometer-grade op-amp, TO-99 metal can)",
+   "tagline": "",
+   "technology": "Single Difet (dielectrically isolated JFET-input) electrometer-grade op-amp with ultra-low bias current (tens of fA) in a TO-99 metal can. It is slow, at about 1 MHz GBW and 3 V/us.",
+   "manufacturers": [
+    "Burr-Brown",
+    "Texas Instruments"
+   ],
+   "part_numbers": [
+    {
+     "pn": "OPA128",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA128SM",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA128LM",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA128KM",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA128JM",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "On the CSDN classic-audio-op-amp listening ranking it sits just below the OPA1612, where the 'OPA128SM x2' is described as having good overtone rendering and high resolution. Chinese DIYers trade and collect military-pulled OPA128SM/883 gold cans as '发烧运放' for preamps, as the kechuang.org posts and an erji.net sale post bundled with the OPA627 show. The same CN sources caution that its low GBW and slew rate make it ill-suited as a general audio op-amp, but its ultra-low bias current is valued for DAC I/V conversion.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://blog.csdn.net/helongfu/article/details/46286715",
+     "https://www.kechuang.org/t/53064",
+     "http://bbs.erji.net/forum.php?mod=viewthread&tid=2224333"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://blog.csdn.net/helongfu/article/details/46286715",
+    "https://www.kechuang.org/t/53064",
+    "http://bbs.erji.net/forum.php?mod=viewthread&tid=2224333"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "jfet-input",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:cn-kr"
+    ],
+    "evidence_urls": [
+     "https://blog.csdn.net/helongfu/article/details/46286715",
+     "https://www.kechuang.org/t/53064",
+     "http://bbs.erji.net/forum.php?mod=viewthread&tid=2224333"
     ]
    }
   },
@@ -63418,6 +65172,236 @@
     ],
     "evidence_urls": [
      "https://www.ti.com/product/OPA2156"
+    ]
+   }
+  },
+  {
+   "id": "OPA2350",
+   "name": "OPA350 / OPA2350 / OPA4350 (Burr-Brown CMOS rail-to-rail single-supply)",
+   "tagline": "",
+   "technology": "CMOS, rail-to-rail input and output, 2.7-5.5 V single supply, 38 MHz, 22 V/us, 5 nV/rtHz",
+   "manufacturers": [
+    "Burr-Brown",
+    "Texas Instruments"
+   ],
+   "part_numbers": [
+    {
+     "pn": "OPA350",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA2350",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA4350",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA2350PA",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA2350UA",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA2350EA",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "In nabe's Japanese Chu-Moy and low-voltage headphone-amp writing (オペアンプの仕様と音質の謎, 高品質な低電圧ヘッドホンアンプ), the OPA2350 is described as having a thick sound (音に厚みがあり) with solid bass (低音もしっかりしてる) and a 'BB-like' character. It is said to have more body than the AD822, to be usable even without an output buffer, and to be a recommended DIP option for 5 V CMoy builds. It also comes up in the kakaku.com mini headphone-amp thread (ミニミニHPAと3Vのミニアンプ). Its sibling OPA2353 was praised for soundstage and imaging in a Japanese CMoy-like build.",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://nabe.adiary.jp/opamp-speclist",
+     "https://nabe.adiary.jp/op-dbuf",
+     "https://bbs.kakaku.com/bbs/-/SortID=6558196/",
+     "http://designideas.cocolog-nifty.com/blog/2008/10/opa2353-cmoy-li.html"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://nabe.adiary.jp/opamp-speclist",
+    "https://nabe.adiary.jp/op-dbuf",
+    "https://bbs.kakaku.com/bbs/-/SortID=6558196/",
+    "http://designideas.cocolog-nifty.com/blog/2008/10/opa2353-cmoy-li.html"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "cmos-input",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:jp"
+    ],
+    "evidence_urls": [
+     "https://nabe.adiary.jp/opamp-speclist",
+     "https://nabe.adiary.jp/op-dbuf",
+     "https://bbs.kakaku.com/bbs/-/SortID=6558196/",
+     "http://designideas.cocolog-nifty.com/blog/2008/10/opa2353-cmoy-li.html"
+    ]
+   }
+  },
+  {
+   "id": "OPAx277",
+   "name": "OPA277 / OPA2277 / OPA4277 (Burr-Brown high-precision low-power bipolar)",
+   "tagline": "",
+   "technology": "Precision bipolar (10 uV offset, 0.1 uV/C drift), low power; single / dual / quad",
+   "manufacturers": [
+    "Burr-Brown",
+    "Texas Instruments"
+   ],
+   "part_numbers": [
+    {
+     "pn": "OPA277",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA2277",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA4277",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA2277P",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    },
+    {
+     "pn": "OPA2277PA",
+     "channels": 0,
+     "vendors": [
+      "Burr-Brown",
+      "Texas Instruments"
+     ],
+     "status": "unknown",
+     "notes": ""
+    }
+   ],
+   "lineage": [],
+   "key_specs": [],
+   "reputation": {
+    "summary": "A zigsow review titled '低電力でクリアな音質' ('Low power, clear sound') praises the OPA2277P for audio. Silicon House (Digit), a Japanese DIY parts shop, ran a blog post titled '意外! それはOPA2277！' ('Surprise! It's the OPA2277!') about its surprisingly good audio use. Other Japanese users compare it with the OPA2134, calling it slightly veiled but clear, and some prefer its balanced, vocal-forward sound to the OPA2604. Other impressions are mixed (strong bass, forward, can be harsh).",
+    "sonic_descriptors": [],
+    "typical_uses": [],
+    "caveats": [],
+    "sources": [
+     "https://zigsow.jp/item/298614/review/321038",
+     "http://blog.siliconhouse.jp/archives/51995262.html"
+    ]
+   },
+   "datasheets": [],
+   "revision_history": [],
+   "silicon_changes": [],
+   "counterfeit_notes": "",
+   "alternatives": [],
+   "ti_literature_numbers": [],
+   "archive_seed_urls": [],
+   "open_questions": [
+    "Added by completeness round 2; needs research beyond the praise evidence."
+   ],
+   "sources": [
+    "https://zigsow.jp/item/298614/review/321038",
+    "http://blog.siliconhouse.jp/archives/51995262.html"
+   ],
+   "verification": {
+    "status": "not-web-verified",
+    "refuted_claims": [],
+    "corrections": [],
+    "unverified_urls": [],
+    "claims_confirmed": [],
+    "web_searches_used": 0
+   },
+   "tier": "C",
+   "category": "bipolar-classic",
+   "discovery": {
+    "seen_by_lenses": [
+     "completeness-critic-2:jp"
+    ],
+    "evidence_urls": [
+     "https://zigsow.jp/item/298614/review/321038",
+     "http://blog.siliconhouse.jp/archives/51995262.html"
     ]
    }
   },

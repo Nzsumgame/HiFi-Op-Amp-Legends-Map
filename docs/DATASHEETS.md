@@ -2025,6 +2025,21 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments | SBOS377 | n/a | n/a | [ti.com/product/ja-jp/OPA211](https://www.ti.com/product/ja-jp/OPA211) | product_page | high |
 | Texas Instruments | SBOS638 | n/a | n/a | [ti.com/product/OPA211-EP](https://www.ti.com/product/OPA211-EP) | product_page | high |
 | Texas Instruments | unknown | n/a | n/a | [ti.com/product/OPA2211-EP](https://www.ti.com/product/OPA2211-EP) | product_page | high |
+| Texas Instruments | SBOS377A | A | OCTOBER 2006 – REVISED FEBRUARY 2007 | [scribd.com/document/939959332/Opa-2211](https://www.scribd.com/document/939959332/Opa-2211) | third_party_mirror | medium |
+| Texas Instruments | SBOS377 | revision not shown | unknown | [pdf.ic37.com/TI/OPA211_datasheet_5677509/OPA211_3.html](https://pdf.ic37.com/TI/OPA211_datasheet_5677509/OPA211_3.html) | third_party_mirror | low |
+| Texas Instruments | SBOS377 | revision not shown | unknown | [pdf.ic37.com/TI/OPA211_datasheet_6037225/](https://pdf.ic37.com/TI/OPA211_datasheet_6037225/) | third_party_mirror | low |
+| Texas Instruments | SBOS377 | revision not shown | unknown | [pdf.ic37.com/TI/OPA2211AI_datasheet_13206397/](https://pdf.ic37.com/TI/OPA2211AI_datasheet_13206397/) | third_party_mirror | low |
+| Texas Instruments | SBOS377 | revision not shown | unknown | [100y.com.tw/pdf_file/33-TI-OPA211,2211.pdf](https://www.100y.com.tw/pdf_file/33-TI-OPA211,2211.pdf) | distributor_mirror | low |
+| Texas Instruments | SBOS377 | revision not shown | unknown | [radiolocman.com/datasheet/data.html?di=82176](https://www.radiolocman.com/datasheet/data.html?di=82176) | third_party_mirror | low |
+| Texas Instruments | SBOS377 | revision not shown | unknown | [datasheet.octopart.com/OPA211AIDR-Texa…asheet-159115562.pdf](https://datasheet.octopart.com/OPA211AIDR-Texas-Instruments-datasheet-159115562.pdf) | distributor_mirror | low |
+| Texas Instruments | SBOS377 | revision not shown | unknown | [scribd.com/document/770726126/opa211](https://www.scribd.com/document/770726126/opa211) | third_party_mirror | low |
+| Texas Instruments | SBOS377 | revision not shown | unknown | [datasheet4u.com/datasheet-pdf/Burr-Bro…11/pdf.php?id=574554](https://datasheet4u.com/datasheet-pdf/Burr-Brown/OPA2211/pdf.php?id=574554) | third_party_mirror | low |
+| Texas Instruments | SBOS377 | revision not shown | unknown | [datasheet.b-cdn.net/posts/opa2211-datasheet/](https://datasheet.b-cdn.net/posts/opa2211-datasheet/) | third_party_mirror | low |
+| Texas Instruments | SBOS638 | revision not shown | unknown | [radiolocman.com/datasheet/data.html?di=305539](https://www.radiolocman.com/datasheet/data.html?di=305539) | third_party_mirror | low |
+| Texas Instruments | SBOS638 | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/463398/TI1/OPA211-EP.html](https://www.alldatasheet.com/datasheet-pdf/pdf/463398/TI1/OPA211-EP.html) | third_party_mirror | low |
+| Texas Instruments | unknown | revision not shown | unknown | [datasheet4u.com/datasheets/etcTI/OPA2211-EP/1572858](https://datasheet4u.com/datasheets/etcTI/OPA2211-EP/1572858) | third_party_mirror | low |
+| Texas Instruments | unknown | n/a | n/a | [ti.com/product/OPA2211-HT](https://www.ti.com/product/OPA2211-HT) | product_page | medium |
+| Texas Instruments | SBOS377 | n/a | n/a | [digikey.com/en/products/base-product/t…nts/296/OPA211/58988](https://www.digikey.com/en/products/base-product/texas-instruments/296/OPA211/58988) | product_page | low |
 
 ## [OPA227 / OPA228 (OPA2227 / OPA2228 / OPA4227 / OPA4228)](families/OPAx227.md)
 
@@ -2056,6 +2071,24 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Texas Instruments | n/a | n/a | n/a | [ti.com/product/OPA227](https://www.ti.com/product/OPA227) | product_page | high |
 | Texas Instruments | n/a | n/a | n/a | [ti.com/product/OPA2227](https://www.ti.com/product/OPA2227) | product_page | high |
 | Texas Instruments | n/a | n/a | n/a | [ti.com/product/OPA2228](https://www.ti.com/product/OPA2228) | product_page | high |
+| Burr-Brown (via Alldatasheet) | SBOS110 (revision letter not shown) | revision not shown | not shown | [alldatasheet.com/datasheet-pdf/pdf/567…RR-BROWN/OPA227.html](https://www.alldatasheet.com/datasheet-pdf/pdf/56737/BURR-BROWN/OPA227.html) | third_party_mirror | low |
+| Burr-Brown (via Alldatasheet) | SBOS110 (revision letter not shown) | revision not shown | not shown | [alldatasheet.com/datasheet-pdf/pdf/567…R-BROWN/OPA2227.html](https://www.alldatasheet.com/datasheet-pdf/pdf/56738/BURR-BROWN/OPA2227.html) | third_party_mirror | low |
+| Burr-Brown (via Datasheet4U) | SBOS110 (revision letter not shown) | revision not shown | not shown | [datasheet4u.com/datasheets/Burr-Brown/OPA227/475562](https://datasheet4u.com/datasheets/Burr-Brown/OPA227/475562) | third_party_mirror | low |
+| Burr-Brown (via ManualMachine) | SBOS110 (revision letter not shown) | revision not shown | not shown | [manualmachine.com/datasheet/opa2227pa/…atasheet-burr-brown/](https://manualmachine.com/datasheet/opa2227pa/4144717-datasheet-burr-brown/) | third_party_mirror | low |
+| Burr-Brown (via ChipFind) | SBOS110 (revision letter not shown) | revision not shown | not shown | [chipfind.net/datasheet/burr-brown/opa227.htm](https://www.chipfind.net/datasheet/burr-brown/opa227.htm) | third_party_mirror | low |
+| Burr-Brown (via ChipDocs) | SBOS110 (revision letter not shown) | revision not shown | not shown | [chipdocs.com/datasheets/datasheet-pdf/…wn-Corp/OPA2227.html](http://www.chipdocs.com/datasheets/datasheet-pdf/BurrBrown-Corp/OPA2227.html) | third_party_mirror | low |
+| Texas Instruments (China) | ZHCS translation number not seen (translation of SBOS110) | Chinese translation. Two search summaries say 'revised March 2023'. The English source revision is not shown, probably C given the date. | March 2023 (per search summary; unverified) | [ti.com/cn/lit/ds/symlink/opa227.pdf](https://www.ti.com/cn/lit/ds/symlink/opa227.pdf) | vendor_current | low |
+| Texas Instruments (China) | ZHCS translation number not seen (translation of SBOS110) | Chinese translation (same document as the cn opa227 symlink); revision not shown | not shown (March 2023 per search summary of the family document) | [ti.com/cn/lit/ds/symlink/opa2227.pdf](https://www.ti.com/cn/lit/ds/symlink/opa2227.pdf) | vendor_current | low |
+| Texas Instruments (via Radiolocman) | SBOS110 | revision not shown | not shown | [radiolocman.com/datasheet/data.html?di=82522&%2FOPA227PA=](https://www.radiolocman.com/datasheet/data.html?di=82522&%2FOPA227PA=) | third_party_mirror | low |
+| Texas Instruments (via Radiolocman) | SBOS110 | revision not shown | not shown | [radiolocman.com/datasheet/data.html?di=48784&%2FOPA227U=](https://www.radiolocman.com/datasheet/data.html?di=48784&%2FOPA227U=) | third_party_mirror | low |
+| Texas Instruments (via Radiolocman) | SBOS110 | revision not shown | not shown | [radiolocman.com/datasheet/data.html?/OPA2227U=&di=175749](https://www.radiolocman.com/datasheet/data.html?/OPA2227U=&di=175749) | third_party_mirror | low |
+| Texas Instruments (via ManualMachine) | SBOS110 | revision not shown | not shown | [manualmachine.com/datasheet/opa2227/84…t-texas-instruments/](https://manualmachine.com/datasheet/opa2227/8412383-datasheet-texas-instruments/) | third_party_mirror | low |
+| Texas Instruments (via Datasheet4U) | SBOS110 | revision not shown | not shown | [datasheet4u.com/datasheets/etcTI/OPA227/1437412](https://datasheet4u.com/datasheets/etcTI/OPA227/1437412) | third_party_mirror | low |
+| Texas Instruments (via Octopart) | SBOS110 | revision not shown | not shown | [datasheet.octopart.com/OPA4227UA-Texas…atasheet-8441394.pdf](https://datasheet.octopart.com/OPA4227UA-Texas-Instruments-datasheet-8441394.pdf) | distributor_mirror | low |
+| Texas Instruments (via Octopart) | SBOS110 | revision not shown | not shown | [datasheet.octopart.com/OPA2227P-Texas-…atasheet-7579733.pdf](https://datasheet.octopart.com/OPA2227P-Texas-Instruments-datasheet-7579733.pdf) | distributor_mirror | low |
+| Texas Instruments (via DatasheetsPDF) | SBOS110 | revision not shown | not shown | [datasheetspdf.com/datasheet/OPA2227.html](https://datasheetspdf.com/datasheet/OPA2227.html) | third_party_mirror | low |
+| Texas Instruments (via icspec) | SBOS110 | revision not shown | not shown | [datasheet.icspec.com/datasheet/datashe…E5%99%A8+(Vos%3C1mV)](https://datasheet.icspec.com/datasheet/datasheetDetail/11987?className=%E7%B2%BE%E5%AF%86%E8%BF%90%E7%AE%97%E6%94%BE%E5%A4%A7%E5%99%A8+(Vos%3C1mV%29) | third_party_mirror | low |
+| Texas Instruments (via icspec) | SBOS110 | revision not shown | not shown | [datasheet.icspec.com/datasheet/datashe…E5%99%A8+(Vos%3C1mV)](https://datasheet.icspec.com/datasheet/datasheetDetail/11972?className=%E7%B2%BE%E5%AF%86%E8%BF%90%E7%AE%97%E6%94%BE%E5%A4%A7%E5%99%A8+(Vos%3C1mV%29) | third_party_mirror | low |
 
 ## [AD711 / AD712 / AD713 (ADI precision BiFET single / dual / quad)](families/AD711.md)
 
@@ -2148,6 +2181,14 @@ Every datasheet document, revision and URL recorded in `data/opamps.json` (also 
 | Analog Devices (alldatasheet mirror) | AD8022 | unknown (probably C) | unknown | [alldatasheet.com/datasheet-pdf/pdf/1978754/AD/AD8022.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1978754/AD/AD8022.html) | third_party_mirror | low |
 | Analog Devices (studylib mirror) | AD8022 | unknown (the 'Data Sheet' title style suggests C) | unknown | [studylib.net/doc/11672779/dual-high-sp…mp-ad8022-data-sheet](https://studylib.net/doc/11672779/dual-high-speed--low-noise-op-amp-ad8022-data-sheet) | third_party_mirror | low |
 | Analog Devices (datasheet.su mirror) | AD8022 | unknown | unknown | [pdf2.datasheet.su/international%20rectifier/auir2085s.pdf](https://pdf2.datasheet.su/international%20rectifier/auir2085s.pdf) | third_party_mirror | low |
+| Analog Devices (icbase.com mirror) | AD8022 | C | 2011-08 (Rev C per ADI revision history; date not shown in search result) | [icbase.com/File/PDF/ADI/ADI13561611.pdf](https://www.icbase.com/File/PDF/ADI/ADI13561611.pdf) | distributor_mirror | high |
+| Analog Devices (Manual Library mirror) | AD8022 | C | 2011-08 (Rev C per ADI revision history) | [secure.manuallib.com/file/2588286](https://secure.manuallib.com/file/2588286) | third_party_mirror | high |
+| Analog Devices (RadioLocman mirror, .com domain) | AD8022 | C | 2011-08 | [radiolocman.com/datasheet/pdf.html?di=121365&p=9](https://www.radiolocman.com/datasheet/pdf.html?di=121365&p=9) | third_party_mirror | high |
+| Analog Devices (datasheetbank mirror) | AD8022 | revision not shown | unknown | [datasheetbank.com/AD8022-doc-ADI](https://www.datasheetbank.com/AD8022-doc-ADI) | third_party_mirror | low |
+| Analog Devices (DataSheetAll mirror) | AD8022 | revision not shown | unknown | [datasheetall.com/adi/ad8022/](https://www.datasheetall.com/adi/ad8022/) | third_party_mirror | low |
+| Analog Devices (digchip mirror) | AD8022 | revision not shown | unknown | [digchip.com/datasheets/parts/datasheet/041/AD8022.php](https://www.digchip.com/datasheets/parts/datasheet/041/AD8022.php) | third_party_mirror | low |
+| Analog Devices (datasheetq mirror) | AD8022 | revision not shown | unknown | [datasheetq.com/AD8022-Datasheet-PDF-ADI](https://www.datasheetq.com/AD8022-Datasheet-PDF-ADI) | third_party_mirror | low |
+| Analog Devices (datasheetcafe mirror) | AD8022 | revision not shown | unknown | [datasheetcafe.com/ad8022-datasheet-pdf/](https://www.datasheetcafe.com/ad8022-datasheet-pdf/) | third_party_mirror | low |
 
 ## [AD825 (single high-speed JFET-input op amp)](families/AD825.md)
 
