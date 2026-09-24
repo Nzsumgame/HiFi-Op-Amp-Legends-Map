@@ -18,6 +18,8 @@ CATEGORIES = {"bipolar-classic", "bipolar-modern-low-noise", "jfet-input", "cmos
 URL_KINDS = {"vendor_current", "vendor_revision_specific", "vendor_legacy", "distributor_mirror",
              "third_party_mirror", "archive", "product_page"}
 CONF = {"high", "medium", "low"}
+KINDS = {"die-redesign", "fab-or-process-transfer", "second-source-difference", "datasheet-respec",
+         "package-or-assembly", "lifecycle", "renumbering-or-successor", "folklore-unconfirmed"}
 REQUIRED = ["id", "name", "tier", "category", "technology", "manufacturers", "part_numbers", "reputation",
             "datasheets", "silicon_changes"]
 
@@ -51,6 +53,8 @@ class DataTest(unittest.TestCase):
                     self.assertIn(ch["confidence"], CONF)
                     self.assertTrue(ch["sources"], "silicon change without sources")
                     self.assertRegex(ch["compatibility_risk"].lower(), r"^(high|medium|low)")
+                    if "kind" in ch:
+                        self.assertIn(ch["kind"], KINDS)
 
     def test_seed_urls(self):
         for f in DATA["families"]:

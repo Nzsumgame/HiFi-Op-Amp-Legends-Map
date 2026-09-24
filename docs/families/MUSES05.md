@@ -6,7 +6,7 @@
 
 **Technology:** J-FET input, single channel. Two-chip construction puts the input stage and the output stage on separate dies to reduce interference between them (NJR 2021-06-23 release; EE Times Japan 2021-06-24). A Japanese press summary says a 'full-balance differential amplifier circuit' (フルバランス型差動増幅回路) improves response, dynamic range and distortion; the exact source page was not pinned. Package is DFN12-CA8 (ESON12-CA8) with an exposed pad and an oxygen-free copper (OFC) frame, which the vendor says gives both sound quality and heat dissipation. The datasheet cites 'advanced circuit design and special material and assembly technology'. Headline specs almost match the MUSES03 datasheet Ver.4.2: 7.5 nV/rtHz, 5 pA, 12 MHz, 5.8 mA and +/-3.5 to +/-18 V are the same. The visible headline difference is slew rate, 40 V/us against 35 V/us.
 
-> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (1 recorded).
+> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (1 recorded: Unclassified).
 
 ## Why enthusiasts rate it
 
@@ -62,7 +62,7 @@ NJR/Nisshinbo position it as the MUSES op-amp with the highest sound quality. EE
 
 ## Silicon changes under the same part number
 
-### 1. Nisshinbo Micro Devices: Suspended by June 2024 at the latest (new_western_elec…
+### 1. Unclassified: Nisshinbo Micro Devices, Suspended by June 2024 at the latest (new_western_elec…
 
 Vendor-documented halt and restart under the same part number. The EN spec page says the suspended MUSES05 will resume production as MUSES05 after adjustments to production materials. An earlier sweep reported new_western_elec's 2024 factory-visit account that the scarce material is a process material rather than a constituent of the finished op-amp; that detail was not re-confirmed in this pass. The vendor does not say whether the die, die attach, mould or OFC frame/assembly is affected.
 

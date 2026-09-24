@@ -6,7 +6,7 @@
 
 **Technology:** JFET (FET) input voltage-feedback op-amp. Burr-Brown design, datasheet origin January 1995 (Burr-Brown macromodel dated Feb 1996). TI markets it as SoundPlus ('8-MHz, 5-pA, High Performance Audio'). Single, dual and quad versions. Only the single OPA132 had offset-trim pins 1/8. TI datasheet SBOS054C (Aug 2024) changed them to NC, and a TI E2E engineer says the trim was 'eliminated in the new FAB change and design' due to an improved process.
 
-> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (2 recorded).
+> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (2 recorded: Unclassified).
 
 ## Why enthusiasts rate it
 
@@ -65,7 +65,7 @@ The op-amp of Chu Moy's original CMoy pocket headphone amp, and so the default i
 
 ## Silicon changes under the same part number
 
-### 1. Texas Instruments: Datasheet SBOS054C, August 2024.
+### 1. Unclassified: Texas Instruments, Datasheet SBOS054C, August 2024.
 
 TI moved the OPA132 to a new fab and design. A TI E2E engineer says the trim function 'has been eliminated in the new FAB change and design', with trim removed for all package types 'due to improved process'. Per a diyAudio thread on the 2024 datasheets, sibling parts OPA130, OPA131, OPA134 and the molded-package OPA627 got the same Offset Trim -> NC change; the TO-99 OPA627 keeps trim.
 
@@ -87,7 +87,7 @@ Sources:
 - [diyaudio.com/community/threads/opa132-…rim-terminal.418419/](https://www.diyaudio.com/community/threads/opa132-opa627-and-other-ti-bb-op-amps-no-longer-have-an-offset-trim-terminal.418419/)
 - [ti.com/lit/ds/symlink/opa132.pdf](https://www.ti.com/lit/ds/symlink/opa132.pdf)
 
-### 2. Texas Instruments: Presumably the same 2024 fab change (SBOS054C); unconfirmed
+### 2. Unclassified: Texas Instruments, Presumably the same 2024 fab change (SBOS054C); unconfirmed
 
 SBOS054C covers all three parts, and TI calls the OPA132 change a 'new FAB change and design'. Whether the dual and quad dies also moved is not stated in any retrieved source.
 
@@ -141,6 +141,31 @@ Sources:
 | Burr-Brown | unknown | unknown | unknown | [datasheetcatalog.com/datasheets_pdf/O/P/A/1/OPA132.shtml](https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/1/OPA132.shtml) | third_party_mirror | low | Unconfirmed URL. |
 | Burr-Brown | unknown | unknown | unknown | [archive.org/details/manuallib-id-2650524](https://archive.org/details/manuallib-id-2650524) | archive | low | Unconfirmed URL (Internet Archive manuallib item). |
 | Burr-Brown | unknown | unknown | unknown | [chipfind.net/datasheet/burr-brown/opa132.htm](https://www.chipfind.net/datasheet/burr-brown/opa132.htm) | third_party_mirror | low | Unconfirmed URL. |
+| Burr-Brown (Japan edition) | PDSJ-1309 | B | December 1995 | [lebra.nihon-u.ac.jp/archives/BB_catalo…32_2132_4132revB.pdf](http://www.lebra.nihon-u.ac.jp/archives/BB_catalog/pdf/OPA132_2132_4132revB.pdf) | third_party_mirror | medium | Nihon University LEBRA lab archive of Burr-Brown catalog PDFs. The search summary shows the header designation 'PDSJ-1309B', dated December 1995, and the filename also says 'revB'. PDSJ is the Burr-Brown Japan edition prefix. This makes the US PDS number PDS-1309. It is the oldest identified copy, from the original silicon with Offset Trim on OPA132 pins 1/8. |
+| Burr-Brown | PDS-1309 (probable) | B (probable) | December 1995 (probable) | [html.alldatasheet.com/html-pdf/82130/B…32/500/1/OPA132.html](https://html.alldatasheet.com/html-pdf/82130/BURR-BROWN/OPA132/500/1/OPA132.html) | third_party_mirror | low | This was the top result for the search "PDS-1309" Burr-Brown OPA132. The search summary said 'PDS-1309B is the document designation for Burr-Brown's OPA132 datasheet, published in December 1995', but it did not tie that line to one specific result. This is the HTML view of the already-listed PDF page alldatasheet 82130. |
+| Burr-Brown | unknown (likely PDS-1309 or SBOS054) | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/170…-BROWN/OPA132UA.html](https://www.alldatasheet.com/datasheet-pdf/pdf/170628/BURR-BROWN/OPA132UA.html) | third_party_mirror | low | Labelled Burr-Brown. The revision is not shown in the search summary. |
+| Burr-Brown | unknown | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/821…R-BROWN/OPA132P.html](https://www.alldatasheet.com/datasheet-pdf/pdf/82132/BURR-BROWN/OPA132P.html) | third_party_mirror | low | Labelled Burr-Brown and in the same ID block as 82130 (OPA132) and 82131 (OPA4132). Revision not shown. |
+| Burr-Brown | unknown | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/170…R-BROWN/OPA2132.html](https://www.alldatasheet.com/datasheet-pdf/pdf/170618/BURR-BROWN/OPA2132.html) | third_party_mirror | low | Labelled Burr-Brown. Revision not shown. |
+| Burr-Brown | unknown | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/821…R-BROWN/OPA4132.html](https://www.alldatasheet.com/datasheet-pdf/pdf/82131/BURR-BROWN/OPA4132.html) | third_party_mirror | low | Returned by the search "OPA4132" "1995 Burr-Brown Corporation", which suggests a Burr-Brown-era copyright line, but the revision is not shown. |
+| Burr-Brown | unknown | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/567…BROWN/OPA4132UA.html](https://www.alldatasheet.com/datasheet-pdf/pdf/56741/BURR-BROWN/OPA4132UA.html) | third_party_mirror | low | This is in the same low ID block (56731/56736) as other early Burr-Brown uploads. Revision not shown. |
+| Burr-Brown | unknown | revision not shown | unknown | [alldatasheet.com/datasheet-pdf/pdf/170…BROWN/OPA4132PA.html](https://www.alldatasheet.com/datasheet-pdf/pdf/170647/BURR-BROWN/OPA4132PA.html) | third_party_mirror | low | Labelled Burr-Brown. Revision not shown. |
+| Burr-Brown | unknown | revision not shown | unknown | [datasheetspdf.com/pdf/475711/Burr-Brown/OPA4132/1](https://datasheetspdf.com/pdf/475711/Burr-Brown/OPA4132/1) | third_party_mirror | low | Burr-Brown-labelled OPA4132 copy with a document ID next to the already-listed 475538/475548 Burr-Brown uploads. Revision not shown. |
+| Burr-Brown | unknown | revision not shown | unknown | [datasheet4u.com/datasheet/Burr-Brown/OPA132-475538](https://datasheet4u.com/datasheet/Burr-Brown/OPA132-475538) | third_party_mirror | low | This is the datasheet4u front end for the same upload ID (475538) as the already-listed datasheetspdf.com OPA132 page. Revision not shown. |
+| Burr-Brown | unknown | revision not shown | unknown | [datasheet.ciiva.com/1800/opa132-1800346.pdf](https://datasheet.ciiva.com/1800/opa132-1800346.pdf) | distributor_mirror | low | The extracted text begins 'FEATURES G FET INPUT', where G is a bullet glyph from the Burr-Brown-era PDF layout (before the TI reformat). Revision not shown. |
+| Burr-Brown | unknown | revision not shown | unknown | [audiodesignguide.com/HiResolution/opa2132.pdf](https://www.audiodesignguide.com/HiResolution/opa2132.pdf) | third_party_mirror | low | Hobby audio site. It has the same Burr-Brown-era text layout ('FEATURES G FET INPUT') as the ciiva copy. Revision not shown. |
+| Burr-Brown / Texas Instruments | unknown | revision not shown | unknown | [bg-electronics.de/datenblaetter/Schaltkreise/OPA2132.pdf](http://www.bg-electronics.de/datenblaetter/Schaltkreise/OPA2132.pdf) | distributor_mirror | low | German component seller's datasheet copy. Revision not shown. |
+| Texas Instruments | SBOS054 (letter not seen) | revision not shown | unknown | [pdf.dzsc.com/OPA/OPA2132.pdf](https://pdf.dzsc.com/OPA/OPA2132.pdf) | third_party_mirror | low | Chinese datasheet mirror. It has the same title style as the already-listed westfloridacomponents copy (old layout, probably SBOS054 original or A). Revision not shown. |
+| Burr-Brown | unknown | revision not shown | unknown (text matched '1995 Burr-Brown Corporation') | [archive.org/stream/manuallib-id-2650656/2650656_djvu.txt](https://archive.org/stream/manuallib-id-2650656/2650656_djvu.txt) | archive | low | Internet Archive manuallib upload, OCR text. It was the top hit for "OPA4132" "1995 Burr-Brown Corporation", so it probably carries the ©1995 Burr-Brown copyright line. The PDS number and letter are not shown. |
+| Burr-Brown | unknown | revision not shown | unknown | [archive.org/details/manuallib-id-2650649](https://archive.org/details/manuallib-id-2650649) | archive | low | A second Internet Archive manuallib upload of the OPAx132 datasheet, separate from the already-listed manuallib-id-2650524. Revision not shown. |
+| Burr-Brown | unknown | revision not shown | unknown | [aipcba.com/datasheet/pdf/opa132-cm716429275.html](https://www.aipcba.com/datasheet/pdf/opa132-cm716429275.html) | third_party_mirror | low | 13-page Burr-Brown-labelled copy. The page count matches the alldatasheet 82130 copy. Revision not shown. |
+| Texas Instruments | SBOS054 (letter not seen) | revision not shown | unknown | [digchip.com/datasheets/parts/datasheet/477/OPA132P.php](https://www.digchip.com/datasheets/parts/datasheet/477/OPA132P.php) | third_party_mirror | low | Revision not shown. |
+| Texas Instruments | SBOS054 (letter not seen) | revision not shown | unknown | [digchip.com/datasheets/parts/datasheet/477/OPA132.php](https://www.digchip.com/datasheets/parts/datasheet/477/OPA132.php) | third_party_mirror | low | Revision not shown. |
+| Texas Instruments | unknown | revision not shown | unknown | [scribd.com/document/111658932/Opa-2132](https://www.scribd.com/document/111658932/Opa-2132) | third_party_mirror | low | User upload from about 2012, going by the Scribd document ID range. Revision not shown. |
+| Texas Instruments | SBOS054 | current (C as of Aug 2024; letter not shown in summary) | January 1995 - Revised August 2024 (presumed) | [ti.com/lit/pdf/sbos054](https://www.ti.com/lit/pdf/sbos054) | vendor_current | medium | TI's literature-number redirect to the current SBOS054. In the same search, a summary line quoted 'SBOS054B – January 1995 – Revised September 2015' from an unidentified copy. |
+
+### Revision chain status
+
+Burr-Brown PDS-1309 (US) / PDSJ-1309 (Japan) chain, oldest to newest: the original PDS-1309 (probably January 1995, the origin date TI keeps on SBOS054) is MISSING. PDS-1309A is MISSING. PDS-1309B, December 1995, FOUND (medium): the summary gives PDS-1309B; the Japanese edition PDSJ-1309B is at lebra.nihon-u.ac.jp/archives/BB_catalog/pdf/OPA132_2132_4132revB.pdf, and alldatasheet 82130 is a probable US copy. Any later Burr-Brown letters (C, D ... in 1996-2000, for example when the SO-14 or UA parts were added) are UNKNOWN, and none were surfaced. TI SBOS054 chain: SBOS054 original (Burr-Brown-to-TI renumber, about 2000, dated 'January 1995') is MISSING; no copy with a confirmed unlettered SBOS054 footer was found, though the old-layout copies (westfloridacomponents, pdf.dzsc.com, octopart 111710, utexas valvano) are candidates. SBOS054A is 'January 1995 - Revised June 2004' (date reconfirmed in the search summary); no copy was pinned to it. SBOS054B, 'January 1995 - Revised September 2015', was reconfirmed from a summary quote. SBOS054C, 'Revised August 2024' (Offset Trim pins changed to NC, new die), is at ti.com/lit/ds/symlink/opa132.pdf and ti.com/lit/pdf/sbos054. Still missing: the unlettered PDS-1309, PDS-1309A, any PDS-1309 letters after B, a confirmed copy of SBOS054 (unlettered) and of SBOS054A, change lists for A and B, and legacy focus.ti.com/burr-brown.com URLs (none surfaced, and none were invented). Budget note: 9 WebSearch calls were used, one over the 8-call budget, because of a counting error.
 
 ### Datasheet revision history
 
@@ -150,14 +175,19 @@ Sources:
 | Texas Instruments | SBOS054 | A | Revised June 2004 | Date confirmed via search summary (medium confidence). Change list not retrieved. Old Burr-Brown-style layout. |
 | Texas Instruments | SBOS054 | B | Revised September 2015 | Change list not retrieved. Converted to the TI 'OPAx132' numbered-section format and referenced by the TI PSpice OPA132.LIB (05FEB2019). Last revision with Offset Trim on OPA132 pins 1/8. |
 | Texas Instruments | SBOS054 | C | Revised August 2024 | 'Changed OPA132 pin 1 and pin 8 from Offset Trim to NC', with the pin note 'Existing layouts for the OPA132 before revision C of this data sheet do not need to be redesigned'. Reflects a new-fab/design die. Other spec changes not retrieved; no PCN number found. |
+| Burr-Brown | PDS-1309 | B | December 1995 | The search summary gives 'PDS-1309B ... published in December 1995' as the Burr-Brown OPA132 datasheet designation. The change list is not shown. This is the US Burr-Brown Product Data Sheet number that TI later renumbered as SBOS054. The original PDS-1309 and PDS-1309A (between January and December 1995) were not found. |
+| Burr-Brown (Japan) | PDSJ-1309 | B | December 1995 | Japanese-edition counterpart of PDS-1309B, seen in the Nihon University LEBRA archive copy (file OPA132_2132_4132revB.pdf). Change list not shown. |
 
 ### Legacy URLs searched in the Internet Archive
 
 - `http://focus.ti.com/lit/ds/symlink/opa132.pdf`
 - `http://focus.ti.com/lit/ds/symlink/opa2132.pdf`
 - `http://product.ic114.com/PDF/O/OPA132.PDF`
+- `http://www.lebra.nihon-u.ac.jp/archives/BB_catalog/pdf/OPA132_2132_4132revB.pdf`
 - `http://www.ti.com/lit/ds/symlink/opa132.pdf`
 - `http://www.ti.com/lit/ds/symlink/opa2132.pdf`
+- `https://archive.org/details/manuallib-id-2650649`
+- `https://archive.org/stream/manuallib-id-2650656/2650656_djvu.txt`
 - `https://datasheet.octopart.com/OPA2132PA-Texas-Instruments-datasheet-111710.pdf`
 - `https://fevaris.com/storage/datasheets/5011/OPA2132UA.pdf`
 - `https://tangentsoft.net/audio/opamps.html`
@@ -172,6 +202,7 @@ Sources:
 - `https://www.ti.com/lit/ds/symlink/opa4132.pdf`
 - `https://www.ti.com/lit/gpn/opa132`
 - `https://www.ti.com/lit/gpn/opa2132`
+- `https://www.ti.com/lit/pdf/sbos054`
 - `https://www.ti.com/product/OPA132`
 - `https://www.ti.com/product/OPA2132`
 - `https://www.ti.com/product/OPA4132`

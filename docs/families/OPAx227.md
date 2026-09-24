@@ -6,7 +6,7 @@
 
 **Technology:** Bipolar, precision low-noise, laser-trimmed, with input bias-current cancellation and back-to-back differential input clamp diodes. OPA227 is unity-gain stable (8 MHz, 2.3 V/us). OPA228 is decompensated for G>=5 (33 MHz, 10 V/us on TI's product page; 11 V/us typ in the Rev A table). The singles have offset trim on pins 1/8 (OP-27 compatible) in Rev A, and datasheet text surfaced in 2026 searches still describes pins 1/8 trim. No trim-to-NC change was found for this family, unlike OPA132/OPA627.
 
-> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (1 recorded).
+> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (2 recorded: Unclassified).
 
 ## Why enthusiasts rate it
 
@@ -71,7 +71,7 @@ Tangent (tangentsoft) made the OPA2227 the default op-amp for his PIMETA amp. He
 
 ## Silicon changes under the same part number
 
-### 1. Texas Instruments: PCN 20230306000.1 (March 2023), referenced in TI E2E…
+### 1. Unclassified: Texas Instruments, PCN 20230306000.1 (March 2023), referenced in TI E2E…
 
 In E2E thread 1360546 ('OPA2227: TI Logo Format Change'), a customer asks about OPA2227 parts with a different logo format. The search summary of TI's reply cites PCN# 20230306000.1 (and PCN# 20220615003.1) as introducing new fab sites for the OPA2227, with parts from those sites being new chips. The retrieved sources did not give the PCN 20230306000.1 title, a device list or any spec changes. A separate 2026 PCN (20251017000.1A, RFAB plus die revision) appeared in an OPA227-keyword search but is not confirmed to list OPA227-family parts. The OPAx227/x228 datasheet seen is SBOS110B (June 2015), which shows no die-change note.
 
@@ -93,6 +93,28 @@ Sources:
 - [e2e.ti.com/support/amplifiers-group/am…i-logo-format-change](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1360546/opa2227-ti-logo-format-change)
 - [mm.digikey.com/Volume0/opasdata/d22000…CN20251017000.1A.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8882/PCN20251017000.1A.pdf)
 - [ti.com/lit/gpn/OPA4227](https://www.ti.com/lit/gpn/OPA4227)
+
+### 2. Unclassified: Texas Instruments, The E2E thread (id 1360546) cites PCN 20230306000.1 (2023)…
+
+This is an unresolved lead. The TI E2E reply links a marking difference on OPA2227 to new-fab PCNs 20230306000.1 and 20220615003.1. The 20220615003.1 device list seen in search results covers TL07x/TL08x/LF353, and no OPA227/OPA2227/OPA228 part numbers appeared in it. The contents of 20230306000.1 (title and device list) could not be found through search. So the E2E reply may be generic boilerplate, and a new die for OPA2227 is NOT confirmed. The only other OPA227 E2E thread found (754890) is about decoding the date code, not behaviour changes.
+
+- **When:** The E2E thread (id 1360546) cites PCN 20230306000.1 (2023) and PCN 20220615003.1 (2022); marking standardization PCN 20211123004.0
+- **Affected:** OPA2227 (reported, device list not verified)
+- **How to tell old from new:** Newer OPA2227 packages bought from DigiKey do not carry the TI logo. TI's E2E answer says PCNs 20230306000.1 and 20220615003.1 introduced new fab sites, and parts from those sites are 'entirely new', so their marking style is not treated as a change. The logo format change is covered by PCN 20211123004.0 (Marking Standardization for Select Devices).
+- **Audio impact:** Unknown. No reports of noise, offset or distortion changes in OPA227/OPA2227/OPA228 were found.
+- **Drop-in risk:** low - only a marking difference is confirmed. A fab or die change is possible but unverified until the 20230306000.1 device list is checked.
+- **Confidence:** low
+
+| Parameter | Before | After |
+|---|---|---|
+| Top-side marking | TI logo present | TI logo absent (per E2E customer report) |
+
+Sources:
+
+- [e2e.ti.com/support/amplifiers-group/am…i-logo-format-change](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1360546/opa2227-ti-logo-format-change)
+- [e2e.ti.com/cfs-file/__key/communityser…ange-declaration.pdf](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/1067.TI-logo-format-change-declaration.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…PCN20220615003.1.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4885/PCN20220615003.1.pdf)
+- [e2e.ti.com/support/amplifiers-group/am…atecode-from-marking](https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/754890/opa227-datecode-from-marking)
 
 ## Datasheets
 

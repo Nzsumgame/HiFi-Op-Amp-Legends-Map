@@ -6,7 +6,7 @@
 
 **Technology:** BiFET: JFET input stage with a bipolar output stage (legacy TI die, per SLOS080N). The TL07xH die (2020 onward) is described by TI only as 'FET-input' on a 'modern process'; a community claim that it is CMOS is unconfirmed. TL07xH inputs are diode-clamped to both rails and the common-mode range includes V+. TI PCN 20221219006.1 (21 Dec 2022) qualified the RFAB fab with a die revision and datasheet update for TL072/TL074 devices. From Rev U (Dec 2022) the plain C/AC/BC/I grades in non-PS/NS packages are specified with new-die values, and per Rev W (Jul 2025) they can come from either flow: legacy (CSO: SFAB) or latest (CSO: RFB).
 
-> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (3 recorded).
+> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (3 recorded: Unclassified).
 
 ## Why enthusiasts rate it
 
@@ -79,7 +79,7 @@ It is the ubiquitous low-cost BiFET. TI's datasheet (and the Diodes and JRC equi
 
 ## Silicon changes under the same part number
 
-### 1. Texas Instruments: Oct 2020 (SLOS080O, preview); production TL072H Jun 2021…
+### 1. Unclassified: Texas Instruments, Oct 2020 (SLOS080O, preview); production TL072H Jun 2021…
 
 A new die on a 'modern process', sold as the 'next-generation' TL07x. It has rail-inclusive (V+) common-mode input, diode-clamped inputs, lower Iq, higher GBW and slew, much lower Vos and Ib, and about 2x the voltage noise of the legacy die. TI now calls the family 'FET-input' rather than 'JFET-input'. The TI part page for TL072HIDR reads 40 V, 5 MHz, 4 mV, 20 V/us, in to V+.
 
@@ -112,7 +112,7 @@ Sources:
 - [raw.githubusercontent.com/james-l-key/…DataSheets/tl072.pdf](https://raw.githubusercontent.com/james-l-key/Esp32_patch_bay_circuit/HEAD/DataSheets/tl072.pdf)
 - [raw.githubusercontent.com/BertyBasset/…0JFET%20Op%20Amp.pdf](https://raw.githubusercontent.com/BertyBasset/Datasheet-Viewer/HEAD/Amplifiers/TL07xx%20low%20noise%20JFET%20Op%20Amp.pdf)
 
-### 2. Texas Instruments: PCN 20221219006.1 issued 21 Dec 2022 (samples until 20 Jan…
+### 2. Unclassified: Texas Instruments, PCN 20221219006.1 issued 21 Dec 2022 (samples until 20 Jan…
 
 Through PCN 20221219006.1 (Dec 2022), TI moved ordinary TL072/TL074 (and per the datasheet, TL071) C/AC/BC/I grades onto a revised die in the RFAB fab, with no part-number change. The new process has updated ESD structures and protection scheme. Since Rev U the datasheet specifies these parts with new-die values, and Rev W states either fab flow may ship and removes TL071 offset null on D/P packages. This confirms the community reports that 'TL072 now specs 37 nV' (PedalPCB, the Gremblog).
 
@@ -144,7 +144,7 @@ Sources:
 - [raw.githubusercontent.com/jcfurey/camb…asheets/TL072_TI.pdf](https://raw.githubusercontent.com/jcfurey/cambridge_reverb/HEAD/datasheets/TL072_TI.pdf)
 - [raw.githubusercontent.com/james-l-key/…DataSheets/tl072.pdf](https://raw.githubusercontent.com/james-l-key/Esp32_patch_bay_circuit/HEAD/DataSheets/tl072.pdf)
 
-### 3. STMicroelectronics: Ongoing (ST TL072 DocID2298 Rev 8, June 2014;
+### 3. Unclassified: STMicroelectronics, Ongoing (ST TL072 DocID2298 Rev 8, June 2014;
 
 The second-source die has its own spec set, which differs from the TI legacy die on paper: lower noise and higher bandwidth. This is a different-vendor die under the same generic part number, not a documented ST die change; no ST PCN was found.
 

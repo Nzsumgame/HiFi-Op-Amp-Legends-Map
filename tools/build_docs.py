@@ -35,6 +35,26 @@ CATEGORY_TITLES = {
 }
 TIER_TITLES = {"A": "A: legend / hazard", "B": "B: widely praised", "C": "C: niche / baseline"}
 SEVERITY = {"high": 0, "medium": 1, "low": 2}
+KIND_TITLES = {
+    "die-redesign": "Die redesign",
+    "fab-or-process-transfer": "Fab / process transfer",
+    "second-source-difference": "Second-source difference",
+    "datasheet-respec": "Datasheet respec",
+    "package-or-assembly": "Package / assembly",
+    "lifecycle": "Lifecycle",
+    "renumbering-or-successor": "Renumbering / successor",
+    "folklore-unconfirmed": "Folklore (unconfirmed)",
+}
+SILICON_KINDS = ["die-redesign", "fab-or-process-transfer", "second-source-difference", "datasheet-respec"]
+
+
+def is_silicon(ch: dict) -> bool:
+    """Changes that can make two parts with the same number behave differently."""
+    return ch.get("kind", "die-redesign") in SILICON_KINDS
+
+
+def kind_title(ch: dict) -> str:
+    return KIND_TITLES.get(ch.get("kind", ""), "Unclassified")
 
 
 def esc(text) -> str:
@@ -89,9 +109,10 @@ def family_page(fam: dict) -> str:
     if fam.get("tagline"):
         L += [f"*{esc(fam['tagline'])}*", ""]
     L += [f"**Technology:** {esc(fam.get('technology'))}", ""]
-    if fam.get("silicon_changes"):
+    silicon = [c for c in fam.get("silicon_changes", []) if is_silicon(c)]
+    if silicon:
         L += [f"> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) "
-              f"({len(fam['silicon_changes'])} recorded).", ""]
+              f"({len(silicon)} recorded: {', '.join(sorted({kind_title(c) for c in silicon}))}).", ""]
     rep = fam.get("reputation", {})
     L += ["## Why enthusiasts rate it", "", esc(rep.get("summary")), ""]
     if rep.get("sonic_descriptors"):
@@ -115,20 +136,14 @@ def family_page(fam: dict) -> str:
                    [[s.get("parameter"), s.get("value"), s.get("condition"), s.get("source")] for s in fam["key_specs"]])
 
     L += ["## Silicon changes under the same part number", ""]
-    if not fam.get("silicon_changes"):
+    silicon = [c for c in fam.get("silicon_changes", []) if is_silicon(c)]
+    other = [c for c in fam.get("silicon_changes", []) if not is_silicon(c)]
+    if not silicon:
         L += ["None documented. (Absence of evidence is not evidence of absence. Compare datasheet revisions.)", ""]
-    for i, ch in enumerate(fam.get("silicon_changes", []), 1):
-        L += [f"### {i}. {short(ch.get('vendor'), 40)}: {short(ch.get('when'), 60)}", ""]
-        L += [esc(ch.get("summary")), ""]
-        meta = [("When", ch.get("when")), ("Affected", ch.get("part_numbers_affected")),
-                ("How to tell old from new", ch.get("identification")),
-                ("Audio impact", ch.get("audio_impact")), ("Drop-in risk", ch.get("compatibility_risk")),
-                ("Confidence", ch.get("confidence")), ("Verification", ch.get("verification"))]
-        L += [f"- **{k}:** {esc(v)}" for k, v in meta if v] + [""]
-        L += table(["Parameter", "Before", "After"],
-                   [[d.get("parameter"), d.get("before"), d.get("after")] for d in ch.get("spec_deltas", [])])
-        if ch.get("sources"):
-            L += ["Sources:", ""] + sources_list(ch["sources"]) + [""]
+    L += change_blocks(silicon)
+    if other:
+        L += ["## Other change notes (lifecycle, packaging, successors, lore)", ""]
+        L += change_blocks(other)
 
     L += ["## Datasheets", ""]
     L += table(["Vendor", "Document", "Rev", "Date", "Link", "Kind", "Conf.", "Notes"],
@@ -169,20 +184,45 @@ def family_page(fam: dict) -> str:
     return "\n".join(L)
 
 
+def change_blocks(changes: list[dict]) -> list[str]:
+    L: list[str] = []
+    for i, ch in enumerate(changes, 1):
+        L += [f"### {i}. {kind_title(ch)}: {short(ch.get('vendor'), 40)}, {short(ch.get('when'), 60)}", ""]
+        L += [esc(ch.get("summary")), ""]
+        meta = [("When", ch.get("when")), ("Affected", ch.get("part_numbers_affected")),
+                ("How to tell old from new", ch.get("identification")),
+                ("Audio impact", ch.get("audio_impact")), ("Drop-in risk", ch.get("compatibility_risk")),
+                ("Confidence", ch.get("confidence")), ("Verification", ch.get("verification"))]
+        L += [f"- **{k}:** {esc(v)}" for k, v in meta if v] + [""]
+        L += table(["Parameter", "Before", "After"],
+                   [[d.get("parameter"), d.get("before"), d.get("after")] for d in ch.get("spec_deltas", [])])
+        if ch.get("sources"):
+            L += ["Sources:", ""] + sources_list(ch["sources"]) + [""]
+    return L
+
+
 def hazards_page(fams: list[dict], intro: str) -> str:
     L = ["# Revision hazards: same part number, different silicon", "", intro, ""] if intro else \
         ["# Revision hazards: same part number, different silicon", ""]
+    kind_order = {k: i for i, k in enumerate(KIND_TITLES)}
     rows = []
     for f in fams:
         for ch in f.get("silicon_changes", []):
-            rows.append((SEVERITY.get(str(ch.get("compatibility_risk", "")).split(" ")[0].lower(), 3), f, ch))
-    rows.sort(key=lambda r: (r[0], r[1]["name"]))
-    L += table(["Family", "Vendor", "When", "What changed", "Risk", "Confidence"],
-               [[f"[{esc(f['id'])}](families/{f['id']}.md)", short(ch.get("vendor"), 40), short(ch.get("when"), 60),
-                 short(ch.get("summary"), 160), short(ch.get("compatibility_risk"), 90), ch.get("confidence")]
-                for _, f, ch in rows])
-    for _, f, ch in rows:
-        L += [f"## {esc(f['name'])}: {short(ch.get('vendor'), 40)}, {short(ch.get('when'), 60)}", "",
+            rows.append((kind_order.get(ch.get("kind"), 99),
+                         SEVERITY.get(str(ch.get("compatibility_risk", "")).split(" ")[0].strip(":-–").lower(), 3), f, ch))
+    rows.sort(key=lambda r: (r[0], r[1], r[2]["name"]))
+    for title, pick in (("Silicon and specification changes", True), ("Other change notes", False)):
+        part = [r for r in rows if is_silicon(r[3]) == pick]
+        if not part:
+            continue
+        L += [f"## {title} ({len(part)})", ""]
+        L += table(["Family", "Kind", "Vendor", "When", "What changed", "Risk", "Conf."],
+                   [[f"[{esc(f['id'])}](families/{f['id']}.md)", kind_title(ch), short(ch.get("vendor"), 40),
+                     short(ch.get("when"), 60), short(ch.get("summary"), 160), short(ch.get("compatibility_risk"), 90),
+                     ch.get("confidence")] for _, _, f, ch in part])
+    L += ["## Details", ""]
+    for _, _, f, ch in rows:
+        L += [f"### {esc(f['name'])}: {kind_title(ch)}, {short(ch.get('vendor'), 40)}, {short(ch.get('when'), 60)}", "",
               f"*When:* {esc(ch.get('when'))}", "", esc(ch.get("summary")), ""]
         if ch.get("identification"):
             L += [f"**How to tell old from new:** {esc(ch['identification'])}", ""]
@@ -190,6 +230,8 @@ def hazards_page(fams: list[dict], intro: str) -> str:
                    [[d.get("parameter"), d.get("before"), d.get("after")] for d in ch.get("spec_deltas", [])])
         if ch.get("audio_impact"):
             L += [f"**Audio impact:** {esc(ch['audio_impact'])}", ""]
+        if ch.get("verification"):
+            L += [f"**Verification:** {esc(ch['verification'])}", ""]
         if ch.get("sources"):
             L += sources_list(ch["sources"]) + [""]
     return "\n".join(L)
@@ -226,9 +268,10 @@ def datasheets_page(fams: list[dict]) -> str:
 def map_block(fams: list[dict]) -> str:
     L = ["<!-- BEGIN MAP (generated by tools/build_docs.py, do not edit) -->", ""]
     n_ds = sum(len(f.get("datasheets", [])) for f in fams)
+    n_si = sum(1 for f in fams for c in f.get("silicon_changes", []) if is_silicon(c))
     n_hz = sum(len(f.get("silicon_changes", [])) for f in fams)
     L += [f"**{len(fams)} families · {sum(len(pns(f)) for f in fams)} part numbers · {n_ds} datasheet records · "
-          f"{n_hz} documented silicon/second-source changes**", ""]
+          f"{n_si} documented silicon / second-source / respec changes ({n_hz} change notes in total)**", ""]
     for cat, title in CATEGORY_TITLES.items():
         group = [f for f in fams if f.get("category") == cat]
         if not group:
@@ -236,7 +279,7 @@ def map_block(fams: list[dict]) -> str:
         group.sort(key=lambda f: (f.get("tier", "Z"), f["name"]))
         L += [f"### {title}", ""]
         L += table(["", "Family", "Part numbers", "Makers", "Why it's rated", "Datasheets"],
-                   [["⚠" if f.get("silicon_changes") else "", f"**[{esc(f['name'])}](docs/families/{f['id']}.md)** "
+                   [["⚠" if any(is_silicon(c) for c in f.get("silicon_changes", [])) else "", f"**[{esc(f['name'])}](docs/families/{f['id']}.md)** "
                      f"<sub>{f.get('tier', '')}</sub>", esc(pns(f)), esc(f.get("manufacturers", [])),
                      esc(f.get("tagline") or f.get("reputation", {}).get("summary", ""))[:220],
                      str(len(f.get("datasheets", [])))] for f in group])

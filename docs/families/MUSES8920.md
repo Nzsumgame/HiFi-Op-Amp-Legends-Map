@@ -6,7 +6,7 @@
 
 **Technology:** Dual op-amp with a J-FET input stage on a bipolar process ('J-FET input, bipolar technology' per the Nisshinbo MUSES8920A datasheet). Launched by New JRC in 2011, according to Nisshinbo's MUSES8921 launch materials (Oct 2025). JRC counts it among the MUSES 'mass-production' models (MUSES8820/8920/8832), below the flagships MUSES01/02/03 (stereo BLOG JRC visit). The mass-production models apply flagship sound-quality techniques but revise chip layout and materials, including the lead-frame, for yield and cost (JP search summaries; not re-verified).
 
-> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (1 recorded).
+> ⚠ **Same part number, different silicon.** See [silicon changes](#silicon-changes-under-the-same-part-number) (1 recorded: Unclassified).
 
 ## Why enthusiasts rate it
 
@@ -62,7 +62,7 @@ In Japanese, Chinese and English rolling communities MUSES8920 is called the 'bu
 
 ## Silicon changes under the same part number
 
-### 1. Nisshinbo Micro Devices: After New JRC merged into Nisshinbo Micro Devices (2022).
+### 1. Unclassified: Nisshinbo Micro Devices, After New JRC merged into Nisshinbo Micro Devices (2022).
 
 Nisshinbo ended MUSES8920 production and replaced it with MUSES8920A, stating electrical characteristics, circuit and sound quality are unchanged. No source gives the reason for the suffix change (fab, process, material or assembly), and no PCN number was found. Documented differences: DIP8 dropped, and the datasheet maximum operating supply rose from +/-16 V to +/-17 V. The headline THD figure may also differ; that is unresolved.
 
