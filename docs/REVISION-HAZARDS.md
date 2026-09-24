@@ -1,6 +1,6 @@
 # Revision hazards: same part number, different silicon
 
-## Silicon and specification changes (63)
+## Silicon and specification changes (62)
 
 | Family | Kind | Vendor | When | What changed | Risk | Conf. |
 |---|---|---|---|---|---|---|
@@ -19,6 +19,7 @@
 | [LF356](families/LF356.md) | Die redesign | National Semiconductor | 1975 to before 1980 (earliest production) | The earliest documented LF156 pinout differs (pin 8 is a bias reference), and so do the typical AC figures (15 V/us and 1.4 us, against 12 V/us and 1.5 us… | low: affects only rare 1975-era LF156 metal cans; tie pin 8 to V+ when not trimming… | low |
 | [NJM4580](families/NJM4580.md) | Die redesign | Texas Instruments | Process-migration PCN 20231114002.1 (15 Nov 2023) for… | TI E2E thread 'NE5532, LM833, RC4580 and MC33078 all now the same die' confirms the consolidation. | low for RC4580 - it is the donor die and its headline specs are unchanged, though its… | high |
 | [OP249](families/OP249.md) | Die redesign | Analog Devices | About 2010 (inferred from the PCN number 10_0062; exact… | PCN 10_0062, 'OP249 Data sheet and Die Changes'. | low - same pinout and function; only the offset/TCVos specs were revised, which matters… | medium |
+| [AD822](families/AD822.md) | Fab / process transfer | Analog Devices | 2026 (by PCN number; exact date not confirmed) | ADI PCN 26_0029 lists AD820, AD822 and AD824 variants together with the AD823 and AD8224 JFET-input amplifiers. | medium - a 2026 PCN covers the whole JFET-RRO family, but the nature of the change is… | low |
 | [LF353](families/LF353.md) | Fab / process transfer | Texas Instruments (LF347 quad, SLOS013… | PCN 20221219006.1, issued 21 Dec 2022 (samples until 20… | Summaries of the Mouser-hosted PCN 20221219006.1 ('Qualification of new Fab site (RFAB)...') put LF347N and LF347 in the Group 2 device list, for… | medium: the RFAB process migration is PCN-listed, but the LF347's actual electrical… | medium |
 | [THS4631](families/THS4631.md) | Fab / process transfer | Texas Instruments | Published in SLOS451C (March 2025). | Rev C re-characterises the THS4631 on 'new silicon data', and on E2E TI says the performance changes come from a new manufacturing process. | medium: pinout, package and headline AC specs are unchanged. | medium |
 | [TLE2142](families/TLE2142.md) | Fab / process transfer | Texas Instruments | PCN20250730004.1 issued 31 Jul 2025; proposed first ship… | TI qualified RFAB (Richardson) using TIB process technology as an extra fab alongside DL-LIN (Dallas), with a die revision from B to C, a datasheet update… | medium: new die and process under an unchanged part number. | medium |
@@ -65,10 +66,8 @@
 | [OPA828](families/OPA828.md) | Datasheet respec | Texas Instruments | November 2022 (PCN20221117006), coinciding with SBOS671C… | 'Same part number, different datasheet' hazard, not a die change. | low - it is a spec-only PCN with the same device and markings. | high |
 | [THS4032](families/THS4032.md) | Datasheet respec | Texas Instruments | Between SLOS224C (Apr 2000) and the current new-format… | There is no evidence of a die change; only the datasheet headline specs moved. | low: pinout and package unchanged; no PCN found; the differences appear to be… | medium |
 | [uPC4570](families/uPC4570.md) | Datasheet respec | Renesas Electronics (ex-NEC) | New Renesas datasheet R03DS0135EJ0100 Rev.1.00 dated 17… | Renesas replaced the NEC-era uPC4570 datasheet with a new Renesas document, R03DS0135EJ. | low - same die as far as documented. | low |
-| [AD822](families/AD822.md) | Unclassified | Analog Devices | 2026 (by PCN number; exact date not confirmed) | ADI PCN 26_0029 lists AD820, AD822 and AD824 variants together with the AD823 and AD8224 JFET-input amplifiers. | medium - a 2026 PCN covers the whole JFET-RRO family, but the nature of the change is… | low |
-| [OP285](families/OP285.md) | Unclassified | Analog Devices | 2017 (PDN 17_0038 issued as Rev. -, later revised to Rev. | Product discontinuance of the non-RoHS OP285GS variants, with OP285GSZ named as the pin-compatible replacement. | low - pin-compatible Z-suffix replacement named in the PDN | medium |
 
-## Other change notes (48)
+## Other change notes (50)
 
 | Family | Kind | Vendor | When | What changed | Risk | Conf. |
 |---|---|---|---|---|---|---|
@@ -81,6 +80,7 @@
 | [AD8610](families/AD8610.md) | Package / assembly | Analog Devices | 2017 (PCN 17_0079 Rev. -) | ADI qualified TeamQuest Technology Inc. as an additional test site for TC-Vos (offset-drift) testing to secure continuity of supply. | low - test-site addition only; same die, same data sheet | medium |
 | [AD8610](families/AD8610.md) | Package / assembly | Analog Devices | March 2021 (PCN 21_0001 Rev. -; 22 Mar 2021 per an earlier… | ADI added Amkor Philippines as an alternate assembly site for 8/10-lead MSOP and MSOP_EP to secure supply. | low - alternate assembly site only; affects only the MSOP version | medium |
 | [AD8656](families/AD8656.md) | Package / assembly | Analog Devices | PCN 07_0024 (originally 2007; the form is at Rev. | ADI PCN 07_0024 Rev. E, the Sumitomo mold-compound discontinuation PCN (mold compound and in some cases die-attach changes across SOIC, MSOP/MiniSO and other… | low - package-material change; no data-sheet change is associated with it. | low |
+| [ADA4625](families/ADA4625.md) | Package / assembly | Analog Devices | 2025 (datasheet Rev B 03/2025; | PCN 25_0070 covers a package outline drawing change and a datasheet revision for the 8-lead SOIC with exposed pad. | low - package outline change only. | medium |
 | [ADA4627](families/ADA4627.md) | Package / assembly | Analog Devices | PCN 14_0038 Rev. -, 13 Feb 2014 (date per search summary) | Amkor Philippines was qualified as the assembly site for 3x3 mm LFCSP products, with Amkor's standard bill of materials in a sawn-singulated leadframe and no… | low - assembly-only change, and only on the LFCSP, which is rarely used for rolling. | low |
 | [ADA4898](families/ADA4898.md) | Package / assembly | Analog Devices | Data sheet Rev. F (listed by ADI as 01/19/2026); an… | The ADA4898-1 SOIC_N_EP package outline was re-designated from RD-8-1 to RD-8-4, with updated outline dimensions. | low - documentation and outline change; check the EP land pattern against the current… | medium |
 | [LT1361](families/LT1361.md) | Package / assembly | Analog Devices (Linear Technology) | PCN 21_0060, 11 Nov 2021 (Rev -, Rev A and Rev B exist) | Marking only, not a die change. | low - marking change only; same die and package. | medium |
@@ -108,6 +108,7 @@
 | [NJM2114](families/NJM2114.md) | Lifecycle | Nisshinbo Micro Devices (ex-New JRC) | Reported 7 April 2023 (foxtango101 blog) | A Japanese audio blog ('悲報？日清紡マイクロデバイス（旧JRC）の幾つかのオペアンプが保守品（生産中止予定品）に指定されてしまう') reports that Nisshinbo designated several ex-JRC op-amps as maintenance… | low - no silicon change, only a future availability risk. | low |
 | [NJM4556](families/NJM4556.md) | Lifecycle | Nisshinbo Micro Devices (ex-New JRC) | Reported as a maintenance product (保守品) on 7 April 2023… | This merges the blog's maintenance-list report with the vendor datasheet notice. | low - no silicon change, only an availability risk for the DIP8/SIP8 packages. | high |
 | [4558](families/4558.md) | Lifecycle | Nisshinbo Micro Devices (ex-New JRC) | 2020s (exact discontinuance date not captured) | Distributors list the classic DIP-8 NJM4558D ('JRC4558D') as discontinued/end-of-life, with remaining stock only. | low - availability issue only. | medium |
+| [OP285](families/OP285.md) | Lifecycle | Analog Devices | 2017 (PDN 17_0038 issued as Rev. -, later revised to Rev. | Product discontinuance of the non-RoHS OP285GS variants, with OP285GSZ named as the pin-compatible replacement. | low - pin-compatible Z-suffix replacement named in the PDN | medium |
 | [OPA111](families/OPA111.md) | Lifecycle | Texas Instruments | OPA2111: about 2019 (TI E2E thread 808890, 'OPA2111:… | OPA2111 was discontinued after about 26 years of production, and the OPA111 single is also obsolete. | low - discontinuance only; no same-part-number silicon change | high |
 | [AD823](families/AD823.md) | Renumbering / successor | Analog Devices | 2012 (AD823A data sheet Rev. | ADI created a materially different die under a near-identical name, and it sits alongside the original rather than replacing it. | medium - same dual SOIC pinout and 3-36 V supply, but there is no DIP version, so DIP… | high |
 | [TL07x](families/TL07x.md) | Renumbering / successor | Texas Instruments | Oct 2020 (SLOS080O, preview); production TL072H Jun 2021… | TI's 'next-generation' TL07x: a new die on a 'modern process', sold under H-suffixed orderables within the TL07x datasheet. | medium: signal pinout is identical for the dual and quad, but the noise doubles and the… | high |
@@ -546,6 +547,19 @@ PCN 10_0062, 'OP249 Data sheet and Die Changes'. ADI made a minor mask change to
 - [analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_Form.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_Form.pdf)
 - [analog.com/media/en/pcn/ADI_PCN_10_006…P249_E143870%209.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_GROUP_C_OP249_E143870%209.pdf)
 - [analog.com/media/en/technical-document…ata-sheets/OP249.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf)
+
+### AD820 / AD822 / AD824 (ADI single-supply rail-to-rail-output JFET-input): Fab / process transfer, Analog Devices, 2026 (by PCN number; exact date not confirmed)
+
+*When:* 2026 (by PCN number; exact date not confirmed)
+
+ADI PCN 26_0029 lists AD820, AD822 and AD824 variants together with the AD823 and AD8224 JFET-input amplifiers. Search results did not show what the change is (fab/process, assembly, test or package). A multi-product JFET-family PCN could mean a process or fab change, but that is unconfirmed.
+
+**How to tell old from new:** Covered by ADI PCN 26_0029 Rev. -. Check the PCN for how to tell pre- and post-change parts apart (date code or other marking).
+
+**Audio impact:** Unknown until the PCN text is read.
+
+- [farnell.com/datasheets/4778405.pdf](https://www.farnell.com/datasheets/4778405.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…_0029_Rev_-_Form.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf)
 
 ### LF351 / LF353 / LF347 (single/dual/quad BiFET, JFET-input): Fab / process transfer, Texas Instruments (LF347 quad, SLOS013…, PCN 20221219006.1, issued 21 Dec 2022 (samples until 20…
 
@@ -1681,6 +1695,24 @@ ADI PCN 07_0024 Rev. E, the Sumitomo mold-compound discontinuation PCN (mold com
 - [analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf)
 - [analog.com/media/en/pcn/ADI_PCN_07_002…v_E_Parts%20List.pdf](https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Parts%20List.pdf)
 
+### ADA4625-1 / ADA4625-2 (ADI 36 V low-noise JFET-input, rail-to-rail output): Package / assembly, Analog Devices, 2025 (datasheet Rev B 03/2025;
+
+*When:* 2025 (datasheet Rev B 03/2025; Mouser lists a PCN dated 2025-06-26)
+
+PCN 25_0070 covers a package outline drawing change and a datasheet revision for the 8-lead SOIC with exposed pad. Nothing found suggests a die or electrical change, but the PCN body (assembly site, leadframe, EPAD size) was not read.
+
+**How to tell old from new:** ADI PCN 25_0070 compares the old and new package outline drawings. Check the date code against the PCN effective date, and check the package drawing in datasheet Rev B against Rev A.
+
+| Parameter | Before | After |
+|---|---|---|
+| Package outline drawing (SOIC_N_EP) | Outline in datasheet Rev A | Revised outline in datasheet Rev B / PCN 25_0070 (exact dimensional changes unconfirmed) |
+
+**Audio impact:** None expected, because this is a package or documentation change with no die change indicated.
+
+- [analog.com/media/en/PCN/ADI_PCN_25_007…ng%20Comparision.pdf](https://www.analog.com/media/en/PCN/ADI_PCN_25_0070_Rev_-_ADA4625-1%20_%20ADA4625-2%20Package%20Outline%20Drawing%20Comparision.pdf)
+- [mouser.com/ProductDetail/Analog-Device…1o7LZpOHm1xoQA%3D%3D](https://www.mouser.com/ProductDetail/Analog-Devices/ADA4625-2ARDZ?qs=P1JMDcb91o7LZpOHm1xoQA%3D%3D)
+- [analog.com/en/products/ada4625-2.html](https://www.analog.com/en/products/ada4625-2.html)
+
 ### ADA4627-1 / ADA4637-1 (ADI single JFET-input; ADA4637-1 decompensated): Package / assembly, Analog Devices, PCN 14_0038 Rev. -, 13 Feb 2014 (date per search summary)
 
 *When:* PCN 14_0038 Rev. -, 13 Feb 2014 (date per search summary)
@@ -2185,6 +2217,20 @@ Distributors list the classic DIP-8 NJM4558D ('JRC4558D') as discontinued/end-of
 - [digikey.com/en/products/detail/nisshin…-inc/NJM4558D/673768](https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM4558D/673768)
 - [nisshinbo-microdevices.co.jp/en/design…discon/obsolete.html](https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/obsolete.html)
 
+### OP285 (ADI dual 9 MHz precision 'Butler' bipolar/JFET audio op-amp): Lifecycle, Analog Devices, 2017 (PDN 17_0038 issued as Rev. -, later revised to Rev.
+
+*When:* 2017 (PDN 17_0038 issued as Rev. -, later revised to Rev. B and Rev. C)
+
+Product discontinuance of the non-RoHS OP285GS variants, with OP285GSZ named as the pin-compatible replacement. The sources found document no die change. This is a part-number/lead-finish transition, not a case of the same part number with different silicon.
+
+**How to tell old from new:** Non-Z SOIC part numbers are discontinued. The replacement carries the Z suffix: OP285GSZ (and its -REEL/-REEL7 versions).
+
+**Audio impact:** None expected. No electrical or die change is documented.
+
+- [analog.com/media/en/PCN/ADI_PDN_17_0038_Rev_C_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PDN_17_0038_Rev_C_Form.pdf)
+- [mouser.com/PCN/ADI_ADI_PDN_17_0038_Rev_B_Form.pdf](https://www.mouser.com/PCN/ADI_ADI_PDN_17_0038_Rev_B_Form.pdf)
+- [mm.digikey.com/Volume0/opasdata/d22000…PDN_17_0038_Rev-.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2206/PDN_17_0038_Rev-.pdf)
+
 ### OPA111 / OPA2111 (Burr-Brown Difet low-noise precision, single/dual): Lifecycle, Texas Instruments, OPA2111: about 2019 (TI E2E thread 808890, 'OPA2111:…
 
 *When:* OPA2111: about 2019 (TI E2E thread 808890, 'OPA2111: amplifier end of life'). OPA111AM/BM: obsolete, date not established.
@@ -2467,30 +2513,3 @@ Soomal (2016) ranks Taiwan-made parts second only to US-made, and ahead of SE-As
 
 - [github.com/h2dcc/soomal.github.io/blob…posts/10100006526.md](https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100006526.md)
 - [maimai-audio.blog.jp/archives/26518228.html](https://maimai-audio.blog.jp/archives/26518228.html)
-
-### AD820 / AD822 / AD824 (ADI single-supply rail-to-rail-output JFET-input): Unclassified, Analog Devices, 2026 (by PCN number; exact date not confirmed)
-
-*When:* 2026 (by PCN number; exact date not confirmed)
-
-ADI PCN 26_0029 lists AD820, AD822 and AD824 variants together with the AD823 and AD8224 JFET-input amplifiers. Search results did not show what the change is (fab/process, assembly, test or package). A multi-product JFET-family PCN could mean a process or fab change, but that is unconfirmed.
-
-**How to tell old from new:** Covered by ADI PCN 26_0029 Rev. -. Check the PCN for how to tell pre- and post-change parts apart (date code or other marking).
-
-**Audio impact:** Unknown until the PCN text is read.
-
-- [farnell.com/datasheets/4778405.pdf](https://www.farnell.com/datasheets/4778405.pdf)
-- [mm.digikey.com/Volume0/opasdata/d22000…_0029_Rev_-_Form.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf)
-
-### OP285 (ADI dual 9 MHz precision 'Butler' bipolar/JFET audio op-amp): Unclassified, Analog Devices, 2017 (PDN 17_0038 issued as Rev. -, later revised to Rev.
-
-*When:* 2017 (PDN 17_0038 issued as Rev. -, later revised to Rev. B and Rev. C)
-
-Product discontinuance of the non-RoHS OP285GS variants, with OP285GSZ named as the pin-compatible replacement. The sources found document no die change. This is a part-number/lead-finish transition, not a case of the same part number with different silicon.
-
-**How to tell old from new:** Non-Z SOIC part numbers are discontinued. The replacement carries the Z suffix: OP285GSZ (and its -REEL/-REEL7 versions).
-
-**Audio impact:** None expected. No electrical or die change is documented.
-
-- [analog.com/media/en/PCN/ADI_PDN_17_0038_Rev_C_Form.pdf](https://www.analog.com/media/en/PCN/ADI_PDN_17_0038_Rev_C_Form.pdf)
-- [mouser.com/PCN/ADI_ADI_PDN_17_0038_Rev_B_Form.pdf](https://www.mouser.com/PCN/ADI_ADI_PDN_17_0038_Rev_B_Form.pdf)
-- [mm.digikey.com/Volume0/opasdata/d22000…PDN_17_0038_Rev-.pdf](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2206/PDN_17_0038_Rev-.pdf)

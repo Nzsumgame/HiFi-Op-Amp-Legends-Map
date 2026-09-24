@@ -310,6 +310,13 @@ def render(data: dict) -> dict[Path, str]:
         out[ROOT / "docs" / "families" / f"{f['id']}.md"] = family_page(f)
     out[ROOT / "docs" / "REVISION-HAZARDS.md"] = hazards_page(fams, data.get("hazards_intro", ""))
     out[ROOT / "docs" / "DATASHEETS.md"] = datasheets_page(fams)
+    ex = data.get("excluded_candidates", [])
+    out[ROOT / "docs" / "EXCLUDED.md"] = "\n".join(
+        ["# Considered but not included", "",
+         "Candidates that the discovery and completeness passes looked at and left out. Most were discrete modules, buffers, "
+         "non-op-amp ICs, or parts with no concrete enthusiast praise found. The reasons are the researchers' notes. "
+         "Open a PR with sources if you have evidence that one belongs in the map.", ""]
+        + table(["Candidate", "Stage", "Reason"], [[x["name"], x["stage"], x["reason"]] for x in ex]))
     buf = io.StringIO()
     rows = datasheet_rows(fams)
     w = csv.DictWriter(buf, fieldnames=list(rows[0].keys()) if rows else ["family"], lineterminator="\n")
