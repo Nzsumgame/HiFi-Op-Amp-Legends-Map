@@ -1,0 +1,75 @@
+name: Fetch datasheets
+
+# Manually triggered: downloads every current and archived datasheet revision listed in
+# data/opamps.json (vendor URLs, TI lettered revisions, Internet Archive captures).
+on:
+  workflow_dispatch:
+    inputs:
+      families:
+        description: "Space-separated family ids to fetch (empty = all)"
+        required: false
+        default: ""
+      sources:
+        description: "Comma list of sources: direct,ti,wayback"
+        required: false
+        default: "direct,ti,wayback"
+      commit:
+        description: "Also commit the PDFs to this branch (otherwise they are only uploaded as a workflow artifact)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-datasheets-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pypdf
+
+      # Keeps CDX responses and already-downloaded PDFs between runs so re-runs resume.
+      - uses: actions/cache@v4
+        with:
+          path: datasheets
+          key: datasheets-${{ github.run_id }}
+          restore-keys: datasheets-
+
+      - name: Fetch
+        env:
+          FAMILIES: ${{ inputs.families }}
+          SOURCES: ${{ inputs.sources }}
+        run: |
+          args=(--sources "$SOURCES")
+          if [ -n "$FAMILIES" ]; then
+            read -ra fams <<< "$FAMILIES"
+            args+=(--family "${fams[@]}")
+          fi
+          python tools/fetch_datasheets.py "${args[@]}"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: datasheets
+          path: |
+            datasheets/
+            !datasheets/.cache/
+          retention-days: 30
+
+      - name: Commit PDFs
+        if: ${{ inputs.commit }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datasheets
+          git commit -m "Fetch datasheets (run ${{ github.run_id }})" || { echo "nothing new"; exit 0; }
+          git push

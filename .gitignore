@@ -1,0 +1,5 @@
+datasheets/.cache/
+datasheets/manifest.tmp
+__pycache__/
+*.pyc
+.venv/
