@@ -1,20 +1,22 @@
 # MUSES03 (JFET-input single, two-chip MUSES flagship)
 
-**Tier** B: widely praised · **Category** Japanese audio series (New JRC / Nisshinbo)
+New Japan Radio Co., Ltd. (New JRC) (2016-10 (sample announcement) to 2021) → Nisshinbo Micro Devices Inc. (2022 to about 2023-10 (discontinued)) · Tier B (widely praised)
 
 *New JRC's 2017 MUSES flagship single: JFET input, separate input- and output-stage dies, OFC lead frame, 0.00003% THD. Praised for vocal presence; discontinued by Oct 2023.*
 
-**Technology:** JFET-input single op-amp. Launch coverage (EE Times Japan 'Only one channel, yet two chips!' and Stereo Sound, both 2017-03-24) describes a two-chip build with separate input-stage and output-stage dies. Datasheet Ver.4.2 (JP and EN editions) does not mention the die split; the EN title is 'High-Quality Sound, J-FET Input, Single Operational Amplifier for Premium Audio'. The only package is DIP8(MUSES), with an oxygen-free-copper lead frame. Output peak current is 250 mA abs max. The datasheet graphs show asymmetric drive at ±15 V: about +12.6 V but only about -10 V into 50 Ω. On the Vo-vs-Io graph the negative swing collapses above about 150 mA (about -6 V at 250 mA), while the positive swing holds about +12.8 V.
+| Slew rate |
+|---|
+| 35 V/µs typ. The graph shows SR+ about 37 V/µs and SR- about 102 V/µs at 25 °C. |
 
-## Why enthusiasts rate it
+## Why it's rated
 
 Launched in March 2017 as New JRC's MUSES flagship single. Launch press (Stereo Sound: 'Will it reach the summit of op-amps?'; EE Times Japan) focused on the two-die design and the 0.00003% THD. Head-Fi Opamp-thread posters (seen as search summaries, not full threads) credit its midrange and a deliberately 'slow' presentation that gives vocals and instruments physical presence and holography. They call it neutral with a slightly darker tone than the OPA828 or AD797BRZ, and one poster found the OPA828 emotionally flat on vocals by comparison. Posters describe the later MUSES05 as a refinement with more speed, resolution and air, and the MUSES03 as having more body. They also rate the MUSES03 less resolving than the Burson V7 Vivid. The PHILE WEB MUSES05 launch report credits the MUSES05 with deeper staging. Views are not unanimous: a Japanese blogger could not tell the MUSES03D from the MUSES05 in a Quad405 copy amp. No independent bench measurements (ASR, Samuel Groner) were found.
 
-**How people describe the sound:** midrange strength; a deliberately 'slow' sound that gives vocals and instruments physical presence and holography (Head-Fi Opamp thread, via search summary), power and presence projected by vocalists (diyAudio/Head-Fi, via search summary), neutral, with a slightly darker tone than the OPA828 or AD797BRZ (Head-Fi, via search summary), warmer and livelier (diyAudio thread title), more body, but less air, speed and resolution, than the MUSES05 (Head-Fi Opamp thread), less resolving than the Burson V7 Vivid (Head-Fi Opamp thread), less three-dimensional depth than the MUSES05 (PHILE WEB MUSES05 launch listening report)
+**Described as:** midrange strength; a deliberately 'slow' sound that gives vocals and instruments physical presence and holography (Head-Fi Opamp thread, via search summary), power and presence projected by vocalists (diyAudio/Head-Fi, via search summary), neutral, with a slightly darker tone than the OPA828 or AD797BRZ (Head-Fi, via search summary), warmer and livelier (diyAudio thread title), more body, but less air, speed and resolution, than the MUSES05 (Head-Fi Opamp thread), less resolving than the Burson V7 Vivid (Head-Fi Opamp thread), less three-dimensional depth than the MUSES05 (PHILE WEB MUSES05 launch listening report)
 
-**Typical uses:** I/V conversion after DACs (datasheet application list), preamps, line amps and active filters (datasheet), headphone amps (datasheet list; 250 mA peak abs-max output, which community posts say is well above the 30–100 mA typical of rivals), op-amp rolling with two singles on a dual-DIP8 adapter in DACs and headphone amps (hobbyist use)
+**Used in:** I/V conversion after DACs (datasheet application list), preamps, line amps and active filters (datasheet), headphone amps (datasheet list; 250 mA peak abs-max output, which community posts say is well above the 30–100 mA typical of rivals), op-amp rolling with two singles on a dual-DIP8 adapter in DACs and headphone amps (hobbyist use)
 
-**Caveats:**
+## Watch out
 
 - Single channel, DIP8 only: a dual socket needs two parts on an adapter, which adds height and lead length.
 - Iq is 5.8 mA typ and 10 mA max per amplifier, so a two-part adapter can draw 20 mA per socket. Check regulators and heat.
@@ -25,24 +27,72 @@ Launched in March 2017 as New JRC's MUSES flagship single. Launch press (Stereo 
 - Vos is 1.0 mV typ with no max. Ib is several hundred pA at 85 °C and reaches the nA range above about 90 °C.
 - Listening impressions are subjective and mixed: one blogger heard no clear difference from the MUSES05.
 - Discontinued by Oct 2023. Stock is scarce, much of the remaining supply trades on auction and marketplace sites, and counterfeits of MUSES parts are reported.
+- **Counterfeits:** Vendor, datasheet Ver.4.2 p.10: counterfeit MUSES parts circulate worldwide and are often visually indistinguishable from genuine ones. NJR says to buy only through its sales offices or authorized distributors. Genuine reference points from the datasheet: marking '03' (ordering table; alldatasheet marking page); package DIP8(MUSES), body 8.8 × 6.4 mm, OFC lead frame; Sn-2Bi plating; 470 mg; shipped in carbon sticks of 10. Since the 2023 EOL, much of the remaining supply is on auction and marketplace sites (Yahoo! Auctions and aucfan listings seen), where fakes are the main risk. Hobbyist warning (maimai-audio blog 'オペアンプの偽物に注意しよう！', medium-low confidence): it names MUSES01/02/03 among models needing caution, especially units priced far below list or appearing in quantity after production ended. The nw-electric blog (2019) recommends slew-rate measurement as the most effective generic fake test; for MUSES03 the reference values are SR+ about 37 and SR- about 102 V/µs, Iq about 5.8 mA. The 'MUSES03D' name on Akizuki stock is a retailer catalog name, not a sign of a fake. No decap or teardown evidence was found.
+
+## Silicon changes
+
+None documented. Compare datasheet revisions before assuming old and new parts are identical.
+
+<details>
+<summary>Other change notes: lifecycle, packaging, renumbering, lore (1)</summary>
+
+- **Lifecycle** · Nisshinbo Micro Devices (ex-New JRC), Launched March 2017 (vendor news 2017-03-24). It was on Nisshinbo's discontinued-products list by 18 October 2023 (blog entry, updated 25 Oct). Stock briefly reappeared in October 2023, and the end of sales was confirmed by January 2024.: Nisshinbo discontinued the MUSES03 JFET-input single. A June 2024 factory-visit post by new_western_elec reports that MUSES03 and then MUSES05 went out of production. It suggests MUSES03 may have ended for manufacturing-process reasons, which was not confirmed at the visit. The same sources say MUSES01 and MUSES02 remained in production. Unlike MUSES05, no restart under the same part number and no named successor was found. [[1]](https://iiikun15a.blog.jp/archives/22108332.html) [[2]](https://nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html) [[3]](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2017/semi_20170324.html) [[4]](https://eleshop.jp/shop/g/gHBM121/)
+
+</details>
+
+## Datasheet timeline
+
+**New Japan Radio Co., Ltd. (New JRC) MUSES03 (EN)**
+
+| Rev | Date | Best copy | More | Status |
+|---|---|---|---|---|
+| Ver. 4.2 | 2022-01 | [pawpaw.cn](https://www.pawpaw.cn/media/documents/2022-01/MUSES03.pdf) |  | confirmed |
+
+**New Japan Radio Co., Ltd. (New JRC) MUSES03 (JP)**
+
+| Rev | Date | Best copy | More | Status |
+|---|---|---|---|---|
+| Ver. 4.2 | 2017-04-27 | [raw.githubusercontent.com](https://raw.githubusercontent.com/indare/pcb_work/main/Audio/datasheets/opamps/NJR_MUSES03.pdf) |  | confirmed |
+
+<details>
+<summary>Other copies, revision not identified (14)</summary>
+
+- [njr.com](https://www.njr.com/electronic_device/PDF/MUSES03_E.pdf) · New Japan Radio Co., Ltd. (New JRC) MUSES03 (EN) — This URL appears in the search index under the title 'Njr'. It is the canonical NJR-era English datasheet path, and it may now redirect to Nisshinbo or be dead. It could not be fetched because of the egress policy.
+- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/1244750/NJRC/MUSES03.html) · AllDatasheet (mirror of NJRC) alldatasheet 1244750 — English edition, 11 pages, 844 KB. A page-3 marking view (https://www.alldatasheet.net/html-marking/1244750/NJRC/MUSES03/347/3/MUSES03.html) shows the '03' marking. Also at https://www.alldatasheet.net/datasheet-pdf/view/1244750/NJRC/MUSES03.html.
+- [datasheet4u.com](https://datasheet4u.com/datasheet-pdf/NewJapanRadio/MUSES03/pdf.php?id=1330550) · datasheet4u (mirror of New Japan Radio) datasheet4u id 1330550 — Seen in search results; revision not shown. The same id is also at http://datasheet-pdf.com/PDF/MUSES03-Datasheet-NewJapanRadio-1330550.
+- [datasheetspdf.com](https://datasheetspdf.com/datasheet/MUSES03.html) · datasheetspdf.com (mirror) n/a — Seen in search results; revision not shown.
+- [mouser.com](https://www.mouser.com/datasheet/2/294/MUSES03_E-1123594.pdf) · New Japan Radio Co., Ltd. (New JRC), copy held by Mouser MUSES03 (EN), Mouser datasheet cache 2/294/MUSES03_E-1123594 — Found through a search for the Mouser product page, which lists MUSES03 as End of Life and links this datasheet PDF. The search summary did not show the header or footer, so the Ver. is not confirmed.
+- [digchip.com](https://www.digchip.com/datasheets/parts/datasheet/2/330/MUSES03.php) · digchip.com (mirror of New Japan Radio) digchip datasheet 2/330 — Third-party mirror; the search summary shows no Ver. string.
+- [alldatasheet.net](https://www.alldatasheet.net/datasheet-pdf/view/1244750/NJRC/MUSES03.html) · AllDatasheet (mirror of NJRC), .net domain alldatasheet 1244750 — Same file as alldatasheet.com ID 1244750, shown through the .net viewer. It is not a separate revision.
+- [htmlapp.alldatasheet.com](https://htmlapp.alldatasheet.com/html-pdf/1244750/NJRC/MUSES03/819/7/MUSES03.html) · AllDatasheet (mirror of NJRC), HTML page viewer alldatasheet 1244750 (html page 7 of 11) — Page-by-page HTML render of alldatasheet ID 1244750 (11 pages). Same document as the known alldatasheet entry.
+- [alldatasheet.jp](https://www.alldatasheet.jp/datasheet-pdf/pdf/1244750/NJRC/MUSES03.html) · AllDatasheet Japan (mirror of New Japan Radio) alldatasheet 1244750 — Japanese-domain copy of alldatasheet ID 1244750 (844 KB, 11 pages). Same file, not a different revision.
+- [datasheet4u.com](https://www.datasheet4u.com/datasheet-pdf/New%20Japan%20Radio/MUSES03/pdf.php?id=1330550) · datasheet4u (mirror of New Japan Radio) datasheet4u id 1330550 — Alternate URL for the known datasheet4u id 1330550. It is the same document, not a new revision.
+- [njr.co.jp](https://www.njr.co.jp/electronic_device/products/MUSES03.html) · New Japan Radio Co., Ltd. (New JRC) n/a (JP product page) — Legacy Japanese NJR product page. The JP datasheet (Ver.4.2, njr.co.jp footer) was probably linked here. Good Wayback seed for recovering earlier JP datasheet versions.
+- [njr.com](https://www.njr.com/electronic_device/products/MUSES03.html) · New Japan Radio Co., Ltd. (New JRC) n/a (EN product page) — Legacy English NJR product page under /electronic_device/products/, a different path from the known /semicon/products/ page. Good Wayback seed for the EN datasheet MUSES03_E.pdf.
+- [njr.com](https://www.njr.com/news/2016/semi_20161011.html) · New Japan Radio Co., Ltd. (New JRC) semi_20161011 — Original njr.com URL of the sample-release announcement. It settles the earlier date conflict: the sample announcement file is semi_20161011, not semi_20160902. A search summary says samples were provided from December 2016.
+- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2016/semi_20161011.html) · Nisshinbo Micro Devices (archive of New JRC news) semi_20161011 — Nisshinbo's archived copy of the 2016-10-11 MUSES03 sample-release news. It replaces the uncertain semi_20160902.html guess in the known list.
+
+</details>
+
+Product pages: [njr.com/MUSES03.html](https://www.njr.com/semicon/products/MUSES03.html) · [nisshinbo-microdevices.co.jp/?product=muses03](https://www.nisshinbo-microdevices.co.jp/ja/products/operational-amplifier/spec/?product=muses03) · [nisshinbo-microdevices.co.jp/semi_20170324.html](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2017/semi_20170324.html) · [nisshinbo-microdevices.co.jp/semi_20170328.html](https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2017/semi_20170328.html) · [nisshinbo-microdevices.co.jp/semi_20160902.html](https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2016/semi_20160902.html) · [digikey.com/10671518](https://www.digikey.com/en/products/detail/njr-corporation-njrc/MUSES03/10671518) · [mouser.com/MUSES03?qs=G%2F5vCLrg9vzIpmwYxc4nng%3D%3D](https://www.mouser.com/ProductDetail/Nisshinbo/MUSES03?qs=G%2F5vCLrg9vzIpmwYxc4nng%3D%3D) · [akizukidenshi.com/g111843](https://akizukidenshi.com/catalog/g/g111843/) · [marutsu.co.jp/42024743](https://www.marutsu.co.jp/pc/i/42024743/) · [octopart.com/muses03-nisshinbo+micro+devices+inc.-126653949](https://octopart.com/muses03-nisshinbo+micro+devices+inc.-126653949) · [mouser.com/?qs=G%2F5vCLrg9vzIpmwYxc4nng%3D%3D](https://www.mouser.com/ProductDetail/NJR/MUSES03/?qs=G%2F5vCLrg9vzIpmwYxc4nng%3D%3D)
+
+Download every revision: `python tools/fetch_datasheets.py --family MUSES03`
 
 ## Part numbers
 
-| Part number | Ch | Vendor(s) | Status | Notes |
-|---|---|---|---|---|
-| MUSES03 | 1 | New JRC, Nisshinbo Micro Devices | discontinued. The iiikun15a post '【OP-Amp】20231018 MUSES03 生産終了品になってました' (2023-10-18, web-confirmed) reports it listed as 生産終了品; nw-electric posts (2023-11, 2024-06 factory visit) agree. The vendor's discontinued-list page was not read directly. | The datasheet Ver.4.2 ordering table lists only 'MUSES03': DIP8, RoHS, halogen-free, Sn-2Bi plating, marking '03' (also shown on the alldatasheet marking page), 470 mg, minimum order 200 pcs, carbon sticks of 10. Listed as 'MUSES03' at DigiKey (10671518), Mouser (under Nisshinbo), Marutsu, eleshop and Profusion. Pinout: 1 NC, 2 -IN, 3 +IN, 4 V-, 5 NC, 6 OUT, 7 V+, 8 NC (no offset-null pins). |
-| MUSES03D | 1 | New JRC, Nisshinbo Micro Devices | not a vendor ordering code; Akizuki Denshi catalog name | Akizuki Denshi sells the part as 'JFET入力高音質HiFiオペアンプ MUSES03D' (catalog g111843 / I-11843), which explains hobbyist use of the name (e.g. iiikun15a 'MUSES03D VS MUSES05'). The Ver.4.2 ordering table and the DigiKey and Mouser listings name only 'MUSES03'. Same silicon as MUSES03. |
-
-## Lineage
-
-| Vendor | Role | Period | Notes |
+| Part number | Ch | Status | Note |
 |---|---|---|---|
-| New Japan Radio Co., Ltd. (New JRC) | originator / designer / manufacturer | 2016-10 (sample announcement) to 2021 | The NJR English news list (GitHub mirror) has the 'Sample Release Time of New MUSES Flagship Amplifier MUSES03' announcement at 2016-10-11 and 'MUSES Flagship Operational Amplifier MUSES03 has begun selling' at 2017-03-28 (EN). The Japanese release (semi_20170324, web-confirmed), Stereo Sound and EE Times Japan are all dated 2017-03-24. The JP datasheet Ver.4.2 has the njr.co.jp footer and the EN edition has the njr.com footer. NJR hosted the EN PDF at njr.com/electronic_device/PDF/MUSES03_E.pdf and a product page at njr.com/semicon/products/MUSES03.html. |
-| Nisshinbo Micro Devices Inc. | successor company (New JRC became Nisshinbo Micro Devices in 2022) | 2022 to about 2023-10 (discontinued) | No Nisshinbo-branded MUSES03 datasheet was found. Akizuki restocks were reported twice: a tweet whose ID dates it to about 2021-07-18 ('MUSES03は秋月の在庫復活') and nw-electric's Nov 2022 post '秋月電子にMUSES03が復活している'. The part was listed as discontinued by 2023-10-18. The nw-electric 2024-06 factory-visit post lists MUSES03 as discontinued and gives no reason. No second source: MUSES is a proprietary NJR line. |
+| MUSES03 | 1 | discontinued. The iiikun15a post '【OP-Amp】20231018 MUSES03 生産終了品になってました' (2023-10-18, web-confirmed) reports it listed as 生産終了品; nw-electric posts (2023-11, 2024-06 factory visit) agree. The vendor's discontinued-list page was not read directly. |  |
+| MUSES03D | 1 | not a vendor ordering code; Akizuki Denshi catalog name |  |
 
-## Key specifications
+**Related / alternatives:** MUSES05 (Nisshinbo): the successor flagship JFET single, two-chip and fully balanced; general sale from Feb 2022. Its production was reported halted over a process-material shortage (nw-electric 2024-06), and a search summary also calls it discontinued, so check its current status., OPA828 (TI): a low-noise JFET single that community reports compare with MUSES03, OPA1641 / OPA1656 (TI): current SoundPlus FET-input parts, MUSES01 (NJR/Nisshinbo): JFET-input dual in the MUSES line, OPA627 (TI/Burr-Brown): the legacy JFET-single benchmark, heavily counterfeited, MUSES8920A (Nisshinbo): the budget JFET dual
 
-| Parameter | Value | Conditions | From |
+## Evidence
+
+<details>
+<summary>All key specifications</summary>
+
+| Parameter | Value | Conditions | Source |
 |---|---|---|---|
 | Supply voltage (recommended) | ±3.5 V to ±18 V (abs max ±19 V) |  | NJR MUSES03 datasheet Ver.4.2 (JP), p.2 |
 | Supply current (single channel) | 5.8 mA typ, 10 mA max | ±15 V, RL=∞, no signal | Ver.4.2 p.4; 5.8 mA also in web buying-guide summary |
@@ -62,57 +112,22 @@ Launched in March 2017 as New JRC's MUSES flagship single. Launch press (Stereo 
 | Power dissipation / temperature | PD 870 mW (EIA/JEDEC 76.2×114.3×1.6 mm 2-layer board); Topr -40 to +85 °C; Tstg -50 to +150 °C | Ta=25 °C | Ver.4.2 p.2 |
 | Input stage / package | JFET input, single; DIP8(MUSES) with OFC lead frame, body 8.8±0.3 × 6.4±0.2 mm, 7.62 mm row pitch |  | Ver.4.2 p.1, p.8 outline drawing |
 
-## Silicon changes under the same part number
 
-None documented. (Absence of evidence is not evidence of absence. Compare datasheet revisions.)
+</details>
 
-## Other change notes (lifecycle, packaging, successors, lore)
+<details>
+<summary>Lineage</summary>
 
-### 1. Lifecycle: Nisshinbo Micro Devices (ex-New JRC), Launched March 2017 (vendor news 2017-03-24).
+| Vendor | Role | Period | Note |
+|---|---|---|---|
+| New Japan Radio Co., Ltd. (New JRC) | originator / designer / manufacturer | 2016-10 (sample announcement) to 2021 |  |
+| Nisshinbo Micro Devices Inc. | successor company (New JRC became Nisshinbo Micro Devices in 2022) | 2022 to about 2023-10 (discontinued) |  |
 
-Nisshinbo discontinued the MUSES03 JFET-input single. A June 2024 factory-visit post by new_western_elec reports that MUSES03 and then MUSES05 went out of production. It suggests MUSES03 may have ended for manufacturing-process reasons, which was not confirmed at the visit. The same sources say MUSES01 and MUSES02 remained in production. Unlike MUSES05, no restart under the same part number and no named successor was found.
 
-- **When:** Launched March 2017 (vendor news 2017-03-24). It was on Nisshinbo's discontinued-products list by 18 October 2023 (blog entry, updated 25 Oct). Stock briefly reappeared in October 2023, and the end of sales was confirmed by January 2024.
-- **Affected:** MUSES03, MUSES03D
-- **How to tell old from new:** Any new-stock MUSES03 offered after early 2024 is remaining inventory or counterfeit.
-- **Audio impact:** No silicon change. Supply has ended, and no successor with the same sound has been named.
-- **Drop-in risk:** medium - the vendor names no drop-in replacement, remaining stock is finite, and auction and marketplace listings carry counterfeit exposure.
-- **Confidence:** medium
-- **Verification:** A WebSearch for 'MUSES03 生産終了 日清紡' returned the iiikun blog entry ('20231018 MUSES03 生産終了品になってました'), the new_western_elec factory-visit post and marketplace listings marked 生産終了. This confirms the discontinuation. The vendor's own discontinued-list page was not seen directly.
+</details>
 
-Sources:
-
-- [iiikun15a.blog.jp/archives/22108332.html](https://iiikun15a.blog.jp/archives/22108332.html)
-- [nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html](https://nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html)
-- [nisshinbo-microdevices.co.jp/ja/about/…7/semi_20170324.html](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2017/semi_20170324.html)
-- [eleshop.jp/shop/g/gHBM121/](https://eleshop.jp/shop/g/gHBM121/)
-
-## Datasheets
-
-| Vendor | Document | Rev | Date | Link | Kind | Conf. | Notes |
-|---|---|---|---|---|---|---|---|
-| New Japan Radio Co., Ltd. (New JRC) | MUSES03 (JP) | Ver. 4.2 | 2017-04-27 | [raw.githubusercontent.com/indare/pcb_w…amps/NJR_MUSES03.pdf](https://raw.githubusercontent.com/indare/pcb_work/main/Audio/datasheets/opamps/NJR_MUSES03.pdf) | third_party_mirror | high | SHA-256 b1ff3908a1e006a4c34dd5b9bc3399bde633a5430c0277ecef9bdbab939d6594, 11 pages. Every page footer reads 'Ver.4.2' and 'http://www.njr.co.jp/'. Page 10 carries NJR's counterfeit-MUSES warning. The repo README says this copy is Akizuki's public file 'MUSES03_J-1.pdf'. Also at https://github.com/indare/pcb_work/blob/main/Audio/datasheets/opamps/NJR_MUSES03.pdf. |
-| New Japan Radio Co., Ltd. (New JRC) | MUSES03 (EN) | Ver. 4.2 | 2022-01 | [pawpaw.cn/media/documents/2022-01/MUSES03.pdf](https://www.pawpaw.cn/media/documents/2022-01/MUSES03.pdf) | third_party_mirror | high | The search-result title shows 'MUSES03 - 1 - Ver.4.2 http://www.njr.com/ High-Quality Sound, J-FET Input,', so this is the NJR-era English edition with the njr.com footer. Uploaded around Jan 2022, before the Nisshinbo rebrand. The PDF was not opened. |
-| New Japan Radio Co., Ltd. (New JRC) | MUSES03 (EN) |  |  | [njr.com/electronic_device/PDF/MUSES03_E.pdf](https://www.njr.com/electronic_device/PDF/MUSES03_E.pdf) | vendor_legacy | medium | This URL appears in the search index under the title 'Njr'. It is the canonical NJR-era English datasheet path, and it may now redirect to Nisshinbo or be dead. It could not be fetched because of the egress policy. |
-| AllDatasheet (mirror of NJRC) | alldatasheet 1244750 |  |  | [alldatasheet.com/datasheet-pdf/pdf/1244750/NJRC/MUSES03.html](https://www.alldatasheet.com/datasheet-pdf/pdf/1244750/NJRC/MUSES03.html) | third_party_mirror | medium | English edition, 11 pages, 844 KB. A page-3 marking view (https://www.alldatasheet.net/html-marking/1244750/NJRC/MUSES03/347/3/MUSES03.html) shows the '03' marking. Also at https://www.alldatasheet.net/datasheet-pdf/view/1244750/NJRC/MUSES03.html. |
-| datasheet4u (mirror of New Japan Radio) | datasheet4u id 1330550 |  |  | [datasheet4u.com/datasheet-pdf/NewJapan…3/pdf.php?id=1330550](https://datasheet4u.com/datasheet-pdf/NewJapanRadio/MUSES03/pdf.php?id=1330550) | third_party_mirror | medium | Seen in search results; revision not shown. The same id is also at http://datasheet-pdf.com/PDF/MUSES03-Datasheet-NewJapanRadio-1330550. |
-| datasheetspdf.com (mirror) | n/a |  |  | [datasheetspdf.com/datasheet/MUSES03.html](https://datasheetspdf.com/datasheet/MUSES03.html) | third_party_mirror | medium | Seen in search results; revision not shown. |
-| New Japan Radio Co., Ltd. (New JRC), copy held by Mouser | MUSES03 (EN), Mouser datasheet cache 2/294/MUSES03_E-1123594 |  |  | [mouser.com/datasheet/2/294/MUSES03_E-1123594.pdf](https://www.mouser.com/datasheet/2/294/MUSES03_E-1123594.pdf) | distributor_mirror | low | Found through a search for the Mouser product page, which lists MUSES03 as End of Life and links this datasheet PDF. The search summary did not show the header or footer, so the Ver. is not confirmed. |
-| digchip.com (mirror of New Japan Radio) | digchip datasheet 2/330 |  |  | [digchip.com/datasheets/parts/datasheet/2/330/MUSES03.php](https://www.digchip.com/datasheets/parts/datasheet/2/330/MUSES03.php) | third_party_mirror | low | Third-party mirror; the search summary shows no Ver. string. |
-| AllDatasheet (mirror of NJRC), .net domain | alldatasheet 1244750 |  |  | [alldatasheet.net/datasheet-pdf/view/12…50/NJRC/MUSES03.html](https://www.alldatasheet.net/datasheet-pdf/view/1244750/NJRC/MUSES03.html) | third_party_mirror | low | Same file as alldatasheet.com ID 1244750, shown through the .net viewer. It is not a separate revision. |
-| AllDatasheet (mirror of NJRC), HTML page viewer | alldatasheet 1244750 (html page 7 of 11) |  |  | [htmlapp.alldatasheet.com/html-pdf/1244…3/819/7/MUSES03.html](https://htmlapp.alldatasheet.com/html-pdf/1244750/NJRC/MUSES03/819/7/MUSES03.html) | third_party_mirror | low | Page-by-page HTML render of alldatasheet ID 1244750 (11 pages). Same document as the known alldatasheet entry. |
-| AllDatasheet Japan (mirror of New Japan Radio) | alldatasheet 1244750 |  |  | [alldatasheet.jp/datasheet-pdf/pdf/1244750/NJRC/MUSES03.html](https://www.alldatasheet.jp/datasheet-pdf/pdf/1244750/NJRC/MUSES03.html) | third_party_mirror | low | Japanese-domain copy of alldatasheet ID 1244750 (844 KB, 11 pages). Same file, not a different revision. |
-| datasheet4u (mirror of New Japan Radio) | datasheet4u id 1330550 |  |  | [datasheet4u.com/datasheet-pdf/New%20Ja…3/pdf.php?id=1330550](https://www.datasheet4u.com/datasheet-pdf/New%20Japan%20Radio/MUSES03/pdf.php?id=1330550) | third_party_mirror | low | Alternate URL for the known datasheet4u id 1330550. It is the same document, not a new revision. |
-| New Japan Radio Co., Ltd. (New JRC) | n/a (JP product page) |  |  | [njr.co.jp/electronic_device/products/MUSES03.html](https://www.njr.co.jp/electronic_device/products/MUSES03.html) | vendor_legacy | medium | Legacy Japanese NJR product page. The JP datasheet (Ver.4.2, njr.co.jp footer) was probably linked here. Good Wayback seed for recovering earlier JP datasheet versions. |
-| New Japan Radio Co., Ltd. (New JRC) | n/a (EN product page) |  |  | [njr.com/electronic_device/products/MUSES03.html](https://www.njr.com/electronic_device/products/MUSES03.html) | vendor_legacy | medium | Legacy English NJR product page under /electronic_device/products/, a different path from the known /semicon/products/ page. Good Wayback seed for the EN datasheet MUSES03_E.pdf. |
-| New Japan Radio Co., Ltd. (New JRC) | semi_20161011 |  | 2016-10-11 | [njr.com/news/2016/semi_20161011.html](https://www.njr.com/news/2016/semi_20161011.html) | vendor_legacy | high | Original njr.com URL of the sample-release announcement. It settles the earlier date conflict: the sample announcement file is semi_20161011, not semi_20160902. A search summary says samples were provided from December 2016. |
-| Nisshinbo Micro Devices (archive of New JRC news) | semi_20161011 |  | 2016-10-11 | [nisshinbo-microdevices.co.jp/en/about/…6/semi_20161011.html](https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2016/semi_20161011.html) | vendor_current | high | Nisshinbo's archived copy of the 2016-10-11 MUSES03 sample-release news. It replaces the uncertain semi_20160902.html guess in the known list. |
-
-### Revision chain status
-
-New JRC / Nisshinbo MUSES03 datasheet, JP edition (njr.co.jp footer) and EN edition MUSES03_E (njr.com footer). The only revision found anywhere is Ver.4.2, dated 2017 by PDF metadata (created 2017-04-27, modified 2017-05-01). All mirrors found in this pass hold the same 11-page, 844 KB file as alldatasheet ID 1244750: alldatasheet .com/.net/.jp/htmlapp, datasheet4u id 1330550, digchip, datasheetspdf and pawpaw.cn (Ver.4.2). That points to one widely distributed edition. Mouser's cached copy (datasheet/2/294/MUSES03_E-1123594.pdf) is new, but its Ver. is not shown. The timeline is: sample announcement 2016-10-11 (semi_20161011, samples from Dec 2016), sales start 2017-03-24 JP / 2017-03-28 EN, datasheet Ver.4.2 in 2017, Nisshinbo-era listing from 2022, then EOL / discontinued by about 2023-10. Missing links: (1) Ver.1.x–4.1, including any preliminary or sampling datasheet from Oct 2016 to Mar 2017; NJR's internal version numbering suggests earlier drafts existed but none turned up in any mirror. (2) Any Nisshinbo-branded re-issue (nisshinbo-microdevices.co.jp/en/pdf/datasheet/ path pattern seen for MUSES72323_E.pdf, but no MUSES03 file was found there). (3) Wayback captures of njr.co.jp/electronic_device/products/MUSES03.html and njr.com/electronic_device/products/MUSES03.html, which could show whether the linked PDF changed between 2016 and 2022. There is no second source, since MUSES is NJR-proprietary.
-
-### Datasheet revision history
+<details>
+<summary>Datasheet revision history</summary>
 
 | Vendor | Document | Rev | Date | Changes |
 |---|---|---|---|---|
@@ -124,66 +139,38 @@ New JRC / Nisshinbo MUSES03 datasheet, JP edition (njr.co.jp footer) and EN edit
 | New JRC | NJR news semi_20161011 (njr.com/news/2016 and Nisshinbo EN archive) | sample release announcement | 2016-10-11 | Confirmed file name semi_20161011.html on both njr.com and the Nisshinbo archive, which settles the earlier semi_20160902 date conflict. A search summary says MUSES03 samples were provided from December 2016. No preliminary or sampling-period datasheet (a Ver. below 4.2) was located. |
 | New JRC / Nisshinbo (distributor status) | Mouser / Octopart listing | EOL | unknown (observed 2026) | Mouser lists MUSES03 as End of Life and hosts MUSES03_E-1123594.pdf. Octopart (Nisshinbo Micro Devices Inc. listing) says it is at end of life and scheduled for obsolescence. No PCN number was shown. |
 
-### Legacy URLs searched in the Internet Archive
 
-- `http://www.njr.co.jp/products/semicon/PDF/MUSES03_E.pdf`
-- `http://www.njr.co.jp/products/semicon/PDF/MUSES03_J.pdf`
-- `https://akizukidenshi.com/catalog/g/g111843/`
-- `https://akizukidenshi.com/goodsaffix/MUSES03_J-1.pdf`
-- `https://www.digikey.com/en/products/detail/njr-corporation-njrc/MUSES03/10671518`
-- `https://www.mouser.com/ProductDetail/Nisshinbo/MUSES03?qs=G%2F5vCLrg9vzIpmwYxc4nng%3D%3D`
-- `https://www.mouser.com/datasheet/2/294/MUSES03_E-1123594.pdf`
-- `https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES03.html`
-- `https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2016/semi_20160902.html`
-- `https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2017/semi_20170328.html`
-- `https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/obsolete.html`
-- `https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES03_E.pdf`
-- `https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses03`
-- `https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES03.html`
-- `https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2017/semi_20170324.html`
-- `https://www.nisshinbo-microdevices.co.jp/ja/design-support/discon/obsolete.html`
-- `https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES03_J.pdf`
-- `https://www.nisshinbo-microdevices.co.jp/ja/products/operational-amplifier/spec/?product=muses03`
-- `https://www.njr.co.jp/electronic_device/products/MUSES03.html`
-- `https://www.njr.com/electronic_device/PDF/MUSES03_E.pdf`
-- `https://www.njr.com/electronic_device/products/MUSES03.html`
-- `https://www.njr.com/news/2016/semi_20161011.html`
-- `https://www.njr.com/semicon/PDF/MUSES03_E.pdf`
-- `https://www.njr.com/semicon/products/MUSES03.html`
-- `https://www.pawpaw.cn/media/documents/2022-01/MUSES03.pdf`
+</details>
 
-Fetch every revision: `python tools/fetch_datasheets.py --family MUSES03`
+<details>
+<summary>Verification and open questions</summary>
 
-## Counterfeits
+Status: **verified-with-corrections**, 6 web searches.
 
-Vendor, datasheet Ver.4.2 p.10: counterfeit MUSES parts circulate worldwide and are often visually indistinguishable from genuine ones. NJR says to buy only through its sales offices or authorized distributors. Genuine reference points from the datasheet: marking '03' (ordering table; alldatasheet marking page); package DIP8(MUSES), body 8.8 × 6.4 mm, OFC lead frame; Sn-2Bi plating; 470 mg; shipped in carbon sticks of 10. Since the 2023 EOL, much of the remaining supply is on auction and marketplace sites (Yahoo! Auctions and aucfan listings seen), where fakes are the main risk. Hobbyist warning (maimai-audio blog 'オペアンプの偽物に注意しよう！', medium-low confidence): it names MUSES01/02/03 among models needing caution, especially units priced far below list or appearing in quantity after production ended. The nw-electric blog (2019) recommends slew-rate measurement as the most effective generic fake test; for MUSES03 the reference values are SR+ about 37 and SR- about 102 V/µs, Iq about 5.8 mA. The 'MUSES03D' name on Akizuki stock is a retailer catalog name, not a sign of a fake. No decap or teardown evidence was found.
+**Confirmed:**
 
-## Related parts and alternatives
+- MUSES03 was listed as discontinued (生産終了品) by 2023-10-18: https://iiikun15a.blog.jp/archives/22108332.html
+- The nw-electric 2024-06 Nisshinbo visit post covers the MUSES03 discontinuation: https://nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html
+- JA sales-start news release 'MUSESフラッグシップオペアンプ「MUSES03」販売開始' (2017-03-24): https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2017/semi_20170324.html
+- EN news 'MUSES Flagship Operational Amplifier "MUSES03"' (2017-03-28): https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2017/semi_20170328.html
+- The English datasheet is Ver.4.2 with the njr.com footer: https://www.pawpaw.cn/media/documents/2022-01/MUSES03.pdf
+- Legacy NJR English datasheet URL exists in the index: https://www.njr.com/electronic_device/PDF/MUSES03_E.pdf
+- Legacy NJR product page: https://www.njr.com/semicon/products/MUSES03.html
+- The alldatasheet copy is 11 pages / 844 KB with an '03' marking page: https://www.alldatasheet.com/datasheet-pdf/pdf/1244750/NJRC/MUSES03.html
+- SR 35 V/µs, 7.5 nV/√Hz at 1 kHz and THD 0.00003% typ: https://us.profusion.uk/int/muses03 and https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2017/semi_20170328.html
+- 5.8 mA per channel (about 0.2 W for two parts at ±15 V): https://electronics.alibaba.com/buyingguides/muses03-op-amp-guide-when-to-use-it-when-to-skip
+- Akizuki sells it as 'MUSES03D': https://akizukidenshi.com/catalog/g/g111843/
+- Akizuki restock reported Nov 2022: https://nw-electric.way-nifty.com/blog/2022/11/post-b22af2.html
+- Mouser lists MUSES03 under Nisshinbo: https://www.mouser.com/ProductDetail/Nisshinbo/MUSES03?qs=G%2F5vCLrg9vzIpmwYxc4nng%3D%3D
+- Head-Fi posters say its midrange and 'slow' presentation give vocals presence, that it is slightly darker than the OPA828, and that the MUSES05 is a faster, airier refinement: https://www.head-fi.org/threads/the-opamp-thread.432749/page-494
+- The diyAudio thread 'Muses03, warmer and livelier opamp tips and advice' exists: https://www.diyaudio.com/community/threads/muses03-warmer-and-livelier-opamp-tips-and-advice.415987/
 
-MUSES05 (Nisshinbo): the successor flagship JFET single, two-chip and fully balanced; general sale from Feb 2022. Its production was reported halted over a process-material shortage (nw-electric 2024-06), and a search summary also calls it discontinued, so check its current status., OPA828 (TI): a low-noise JFET single that community reports compare with MUSES03, OPA1641 / OPA1656 (TI): current SoundPlus FET-input parts, MUSES01 (NJR/Nisshinbo): JFET-input dual in the MUSES line, OPA627 (TI/Burr-Brown): the legacy JFET-single benchmark, heavily counterfeited, MUSES8920A (Nisshinbo): the budget JFET dual
-
-## Open questions
-
-- This pass used 6 WebSearch calls. The EOL, the news releases, the EN Ver.4.2 datasheet, the legacy njr.com URLs, the Akizuki 'MUSES03D' listing, the headline specs and the Head-Fi impressions were confirmed from search titles and summaries. No page bodies were read.
-- Earlier datasheet versions (before Ver.4.2) were not found in any mirror. The njr.com/electronic_device/PDF/MUSES03_E.pdf revision could not be read. Wayback captures of it and of the /ja/ JP equivalent should be checked.
-- Inferred and never seen: the nisshinbo /en/ and /ja/ pdf/datasheet/MUSES03_E.pdf and MUSES03_J.pdf paths; the njr.co.jp/products/semicon/PDF and njr.com/semicon/PDF paths (the confirmed legacy path is njr.com/electronic_device/PDF/); the /en/ and /ja/ ?product=muses03 pages; the MUSES series pages for MUSES03; the /ja/ obsolete-list page; and the Akizuki goodsaffix URL.
-- Unknown: the exact discontinuation date, the PCN or last-time-buy notice, and the reason. One search summary said the part was confirmed discontinued by 2024-01-29, but it named no source.
-- Does Nisshinbo's EN archive semi_20160902.html really carry the MUSES03 sample announcement, despite the 2016-10-11 list date?
-- The datasheet gives no current-noise density or output short-circuit limit.
-- No independent measurements (ASR, Samuel Groner) were found.
-- No silicon, die or process change is documented for MUSES03, and no PCN surfaced. The Akizuki restocks (about 2021-07 and 2022-11) are not known to involve a different lot or die.
-- Is MUSES05 discontinued or only paused? This affects the alternatives list.
-
-## Verification notes
-
-Status: **verified-with-corrections**
-
-**Refuted or corrected during verification:**
+**Refuted or corrected:**
 
 - Open question 'the English datasheet (MUSES03_E.pdf) was not located' is refuted. An EN Ver.4.2 edition with the njr.com footer exists (pawpaw.cn copy), and the legacy vendor path is njr.com/electronic_device/PDF/MUSES03_E.pdf.
 - 'MUSES03D is probably an informal alias after NJR's D = DIP habit' is refuted as to origin. 'MUSES03D' is Akizuki Denshi's catalog name (g111843), not an NJR convention.
 
-**Corrections applied:**
+**Corrections:**
 
 - Added the EN datasheet Ver.4.2 (pawpaw.cn mirror, high), the legacy vendor EN PDF URL njr.com/electronic_device/PDF/MUSES03_E.pdf (vendor_legacy, medium) and the legacy product page njr.com/semicon/products/MUSES03.html, plus mirrors at alldatasheet 1244750 (11 pp, 844 KB, marking page), datasheet4u / datasheet-pdf.com 1330550 and datasheetspdf.com.
 - Added distributor listings: Mouser, Akizuki (g111843, 'MUSES03D'), Marutsu 42024743, eleshop HBM121 and Profusion.
@@ -196,7 +183,7 @@ Status: **verified-with-corrections**
 - The MUSES05 alternative was softened: its production status is uncertain (halted, possibly discontinued).
 - silicon_changes remains empty. No die, process or PCN change was found for MUSES03, and the only hazard in the revision-hazard hint is the EOL / scarcity / counterfeit risk.
 
-**URLs not confirmed by search:**
+**Links not confirmed:**
 
 - https://www.nisshinbo-microdevices.co.jp/ja/products/operational-amplifier/spec/?product=muses03
 - https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses03
@@ -211,7 +198,23 @@ Status: **verified-with-corrections**
 - https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES03.html
 - https://www.nisshinbo-microdevices.co.jp/ja/design-support/discon/obsolete.html
 
-## Sources
+**Open questions:**
+
+- This pass used 6 WebSearch calls. The EOL, the news releases, the EN Ver.4.2 datasheet, the legacy njr.com URLs, the Akizuki 'MUSES03D' listing, the headline specs and the Head-Fi impressions were confirmed from search titles and summaries. No page bodies were read.
+- Earlier datasheet versions (before Ver.4.2) were not found in any mirror. The njr.com/electronic_device/PDF/MUSES03_E.pdf revision could not be read. Wayback captures of it and of the /ja/ JP equivalent should be checked.
+- Inferred and never seen: the nisshinbo /en/ and /ja/ pdf/datasheet/MUSES03_E.pdf and MUSES03_J.pdf paths; the njr.co.jp/products/semicon/PDF and njr.com/semicon/PDF paths (the confirmed legacy path is njr.com/electronic_device/PDF/); the /en/ and /ja/ ?product=muses03 pages; the MUSES series pages for MUSES03; the /ja/ obsolete-list page; and the Akizuki goodsaffix URL.
+- Unknown: the exact discontinuation date, the PCN or last-time-buy notice, and the reason. One search summary said the part was confirmed discontinued by 2024-01-29, but it named no source.
+- Does Nisshinbo's EN archive semi_20160902.html really carry the MUSES03 sample announcement, despite the 2016-10-11 list date?
+- The datasheet gives no current-noise density or output short-circuit limit.
+- No independent measurements (ASR, Samuel Groner) were found.
+- No silicon, die or process change is documented for MUSES03, and no PCN surfaced. The Akizuki restocks (about 2021-07 and 2022-11) are not known to involve a different lot or die.
+- Is MUSES05 discontinued or only paused? This affects the alternatives list.
+
+
+</details>
+
+<details>
+<summary>Sources (42)</summary>
 
 - [raw.githubusercontent.com/indare/pcb_w…amps/NJR_MUSES03.pdf](https://raw.githubusercontent.com/indare/pcb_work/main/Audio/datasheets/opamps/NJR_MUSES03.pdf)
 - [pawpaw.cn/media/documents/2022-01/MUSES03.pdf](https://www.pawpaw.cn/media/documents/2022-01/MUSES03.pdf)
@@ -256,5 +259,38 @@ Status: **verified-with-corrections**
 - [maimai-audio.blog.jp/archives/40432879.html](https://maimai-audio.blog.jp/archives/40432879.html)
 - [maimai-audio.blog.jp/archives/40081909.html](https://maimai-audio.blog.jp/archives/40081909.html)
 
+</details>
+
+<details>
+<summary>Legacy URLs searched in the Internet Archive</summary>
+
+- `http://www.njr.co.jp/products/semicon/PDF/MUSES03_E.pdf`
+- `http://www.njr.co.jp/products/semicon/PDF/MUSES03_J.pdf`
+- `https://akizukidenshi.com/catalog/g/g111843/`
+- `https://akizukidenshi.com/goodsaffix/MUSES03_J-1.pdf`
+- `https://www.digikey.com/en/products/detail/njr-corporation-njrc/MUSES03/10671518`
+- `https://www.mouser.com/ProductDetail/Nisshinbo/MUSES03?qs=G%2F5vCLrg9vzIpmwYxc4nng%3D%3D`
+- `https://www.mouser.com/datasheet/2/294/MUSES03_E-1123594.pdf`
+- `https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES03.html`
+- `https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2016/semi_20160902.html`
+- `https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2017/semi_20170328.html`
+- `https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/obsolete.html`
+- `https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES03_E.pdf`
+- `https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses03`
+- `https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES03.html`
+- `https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2017/semi_20170324.html`
+- `https://www.nisshinbo-microdevices.co.jp/ja/design-support/discon/obsolete.html`
+- `https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES03_J.pdf`
+- `https://www.nisshinbo-microdevices.co.jp/ja/products/operational-amplifier/spec/?product=muses03`
+- `https://www.njr.co.jp/electronic_device/products/MUSES03.html`
+- `https://www.njr.com/electronic_device/PDF/MUSES03_E.pdf`
+- `https://www.njr.com/electronic_device/products/MUSES03.html`
+- `https://www.njr.com/news/2016/semi_20161011.html`
+- `https://www.njr.com/semicon/PDF/MUSES03_E.pdf`
+- `https://www.njr.com/semicon/products/MUSES03.html`
+- `https://www.pawpaw.cn/media/documents/2022-01/MUSES03.pdf`
+
+</details>
+
 ---
-[← Back to the map](../../README.md) · [All revision hazards](../REVISION-HAZARDS.md) · [All datasheets](../DATASHEETS.md)
+[← Map](../../README.md) · [Revision hazards](../REVISION-HAZARDS.md) · [Datasheet catalogue](../DATASHEETS.md)

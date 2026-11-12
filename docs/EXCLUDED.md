@@ -1,6 +1,6 @@
 # Considered but not included
 
-Candidates that the discovery and completeness passes looked at and left out. Most were discrete modules, buffers, non-op-amp ICs, or parts with no concrete enthusiast praise found. The reasons are the researchers' notes. Open a PR with sources if you have evidence that one belongs in the map.
+Candidates the discovery and completeness passes looked at and left out: mostly discrete modules, buffers, non-op-amp ICs, or parts with no concrete enthusiast praise. Open a PR with sources if one belongs in the map.
 
 | Candidate | Stage | Reason |
 |---|---|---|

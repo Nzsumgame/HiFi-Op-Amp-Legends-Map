@@ -1,20 +1,22 @@
 # OPA211 / OPA2211 (1.1 nV/√Hz bipolar precision, single / dual)
 
-**Tier** B: widely praised · **Category** Modern low-noise / ultra-low-distortion bipolar
+Texas Instruments (2006 to present) · Tier B (widely praised)
 
 *TI's 1.1 nV/√Hz, 45 MHz (G = 1) bipolar precision op-amp. Head-Fi rollers found the OPA2211A more open than the LM4562, and Shanling product copy lists it in DAC low-pass stages.*
 
-**Technology:** Bipolar-input precision voltage-feedback op-amp. It is unity-gain stable, has a rail-to-rail output and back-to-back differential input protection diodes, and its EMI rejection (EMIRR) is characterized. It runs on 4.5–36 V. On the single OPA211, pin 8 is Shutdown (active high) in the VSSOP (DGK) and SON (DRG) packages and NC in SOIC-8 (D). The commercial dual comes only in SMD packages: SO-8 PowerPAD (DDA) and 3×3 mm SON (DRG). TI does not name the fab process.
+| THD+N | Supply range |
+|---|---|
+| 0.000015% (−136 dB); below 0.0001% across 20 Hz–20 kHz | ±2.25 V to ±18 V (4.5–36 V); abs max 40 V |
 
-## Why enthusiasts rate it
+## Why it's rated
 
 A well-regarded modern bipolar part for rolling and for DAC output stages. The evidence is forum and blog impressions (read through search summaries), not published measurements. Head-Fi rollers preferred the OPA211 to most other parts, including the LM/LME chips. One Head-Fi post found the OPA2211A 'more open, yet not harsh' in the highs than the LM4562, with a 'natural roundness and warmth'. One listener found female vocals a bit 'creamy'. Japanese reviewers call the OPA2211 versatile, with resolution and power in balance and a wider sense of space. They find it clearer than the OPA2134 and drier than the OPA627. A zigsow review says it suits some genres better than others. On the SQ5J DAC blog, an OPA1656 I/V stage followed by an OPA2211 differential stage gave a 'very modern' sound. Third-party retail copy of Shanling products (mirrored on GitHub) lists the OPA2211 in the M6 Pro 21 LPF, the EM7 LPF and an OPA2211+BD139/BD140 amplifier stage. No Audio Science Review or Samuel Groner measurement was checked (not searched in this pass).
 
-**How people describe the sound:** open, not harsh highs (vs LM4562), natural roundness and warmth, clear yet warm, transparent, female vocals slightly creamy (one listener), clearer than OPA2134, drier than OPA627, resolution and power in balance, wide spatial presentation, modern (SQ5J, with OPA1656 I/V)
+**Described as:** open, not harsh highs (vs LM4562), natural roundness and warmth, clear yet warm, transparent, female vocals slightly creamy (one listener), clearer than OPA2134, drier than OPA627, resolution and power in balance, wide spatial presentation, modern (SQ5J, with OPA1656 I/V)
 
-**Typical uses:** DAC differential / summing and low-pass filter stages, DAC post-filter in Shanling products (M6 Pro 21 LPF; EM7 LPF and amp stage, per third-party retail copy), headphone-amp and DAC op-amp rolling via SOIC/PowerPAD-to-DIP adapters, low-impedance, low-noise gain stages: sources below ~2 kΩ per TI, ADC drivers, and SR560-style LNAs as a unity-gain-stable stand-in for the OP37/LT1028
+**Used in:** DAC differential / summing and low-pass filter stages, DAC post-filter in Shanling products (M6 Pro 21 LPF; EM7 LPF and amp stage, per third-party retail copy), headphone-amp and DAC op-amp rolling via SOIC/PowerPAD-to-DIP adapters, low-impedance, low-noise gain stages: sources below ~2 kΩ per TI, ADC drivers, and SR560-style LNAs as a unity-gain-stable stand-in for the OP37/LT1028
 
-**Caveats:**
+## Watch out
 
 - SMD only. The dual comes in SO-8 PowerPAD (DDA) or SON-8, so a DIP socket needs an adapter. The datasheet says the exposed pad 'must be connected to V–' (not ground), and soldering it improves heat dissipation and gives specified performance. On the single SON it is 'required'. Check how the adapter connects the pad.
 - On the VSSOP and SON singles, pin 8 is Shutdown (active high). The datasheet says it 'must be connected to a valid high or low voltage or driven, and not left open-circuit'. Rev L shows pin 8 as NC on the SOIC-8 single, so a SOIC single on a standard adapter is safe.
@@ -23,27 +25,75 @@ A well-regarded modern bipolar part for rolling and for DAC output stages. The e
 - Current noise is 1.7 pA/√Hz. TI (SBOS377L §8.1.3) positions the OPAx211 for source impedances below 2 kΩ. It suggests the OPA227 for 10–100 kΩ and a FET part such as the OPA132 above 100 kΩ. The OPA828 datasheet (Fig. 7-7) makes the same comparison against the OPA828.
 - It is a wideband part (45 MHz at G = 1), and the datasheet gives an overshoot-vs-capacitive-load curve, so layout and decoupling on adapters matter. Community reports of oscillation were not checked.
 - Listening impressions depend on genre and circuit (zigsow; Head-Fi notes that op-amp 'sound' is circuit-specific).
+- **Counterfeits:** No counterfeit reports were checked (not searched), so this is not a clean bill. Vendor facts that help spot odd parts (rev L and the 9-Nov-2025 addendum): no DIP package is listed. The OPA2211A comes only as SO-8 PowerPAD (DDA, top marking 'OPA 2211 A', NiPdAu, MSL1) or 3×3 mm SON (marking 'OBHQ'). The SOIC single is marked 'OPA 211' (high grade) or 'OPA 211 A'. In VSSOP ('OBCQ') and SON ('OBDQ') both grades share one marking, so the grade cannot be read from the part. Any 'OPA2211' in a DIP-8 body is an adapter module or a remarked part. A DDA body with no exposed pad on its underside would also be suspect (inference from the package definition). Buy from authorized distributors, and on adapter modules check that the pad is soldered to V− (the datasheet says it 'must be connected to V–').
+
+## Silicon changes
+
+None documented. Compare datasheet revisions before assuming old and new parts are identical.
+
+## Datasheet timeline
+
+**Texas Instruments SBOS377**
+
+| Rev | Date | Best copy | More | Status |
+|---|---|---|---|---|
+| A | 2007-02 | [scribd.com](https://www.scribd.com/document/939959332/Opa-2211) |  | confirmed |
+| F | 2008-11 | [kyohritsu.com](https://www.kyohritsu.com/eclib/OTHER/DATASHEET/opa211.pdf) |  | confirmed |
+| G | 2009-05 | [mouser.com](https://www.mouser.com/datasheet/2/405/sbos377g-125789.pdf) |  | confirmed |
+| H | 2015-11 | no copy found |  | confirmed |
+| I | 2016-06 | [radiolocman.com](https://www.radiolocman.com/datasheet/data.html?di=305537) |  | confirmed |
+| J | 2018-02 | no copy found |  | confirmed |
+| K | 2018-09 | no copy found |  | confirmed |
+| L | 2020-01 | [ti.com](https://www.ti.com/lit/ds/symlink/opa211.pdf) | +1 | confirmed |
+
+<details>
+<summary>Other copies, revision not identified (20)</summary>
+
+- [datasheet.octopart.com](https://datasheet.octopart.com/OPA211AID-Texas-Instruments-datasheet-100176885.pdf) · Texas Instruments SBOS377 — Returned by search with the same page title as the TI symlink; revision letter not shown in summary.
+- [convexoptimization.com](https://convexoptimization.com/TOOLS/opa211.pdf) · Texas Instruments SBOS377 — Returned by search with the same page title as the TI symlink; revision letter not shown in summary.
+- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/221188/TI/OPA211.html) · Texas Instruments SBOS377 — Low alldatasheet ID suggests an early (pre-2010) upload (inference). Sibling entries: 221128 (OPA2211), 221132 (OPA2211A), 221133 (OPA211AID), 526810 (OPA211, later upload), 541809 (OPA2211AIDDAR).
+- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/221128/TI/OPA2211.html) · Texas Instruments SBOS377 — Revision not shown in search summary.
+- [ti.com](https://www.ti.com/lit/ds/symlink/opa211-ep.pdf) · Texas Instruments SBOS638 — Search result for https://www.ti.com/lit/gpn/OPA211-EP shows header 'OPA211-EP SBOS638 – JUNE 2012'. MSOP-8, −55 to +125 °C. Whether later revisions exist was not checked.
+- [datasheet.octopart.com](https://datasheet.octopart.com/OPA211MDGKTEP-Texas-Instruments-datasheet-41216692.pdf) · Texas Instruments SBOS638 — Revision not shown in search summary.
+- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/772560/TI/OPA2211-EP.html) · Texas Instruments unknown — OPA2211-EP datasheet document number not found; DFN-8 3×3 mm.
+- [pdf.ic37.com](https://pdf.ic37.com/TI/OPA211_datasheet_5677509/OPA211_3.html) · Texas Instruments SBOS377 — 17 pages, the length of the old pre-2015 layout, so probably rev A–G. It turned up in the searches for SBOS377A/D/G headers, but the summaries did not tie a letter to this copy. Page 5 is at .../OPA211_5.html.
+- [pdf.ic37.com](https://pdf.ic37.com/TI/OPA211_datasheet_6037225/) · Texas Instruments SBOS377 — Only 9 pages. It could be an early short edition (for example the Oct 2006 original or a product preview) or just a truncated upload. Unverified, but worth checking for the missing original.
+- [pdf.ic37.com](https://pdf.ic37.com/TI/OPA2211AI_datasheet_13206397/) · Texas Instruments SBOS377 — 37 pages, which fits TI's post-2015 layout (rev H or later). The revision is not shown.
+- [100y.com.tw](https://www.100y.com.tw/pdf_file/33-TI-OPA211,2211.pdf) · Texas Instruments SBOS377 — The page title matches the old (pre-rev H) layout also seen on the kyohritsu rev F and Mouser rev G copies, so this is rev A–G. The exact letter is not shown.
+- [radiolocman.com](https://www.radiolocman.com/datasheet/data.html?di=82176) · Texas Instruments SBOS377 — A separate radiolocman entry from di=305537 (rev I). It is filed under the G4 (Pb-free, older-era) orderable, so it may be an older revision. Unverified.
+- [datasheet.octopart.com](https://datasheet.octopart.com/OPA211AIDR-Texas-Instruments-datasheet-159115562.pdf) · Texas Instruments SBOS377 — The title text ('Voltage Noise Density ...') matches the new-format layout, so rev H or later. The letter is not shown.
+- [scribd.com](https://www.scribd.com/document/770726126/opa211) · Texas Instruments SBOS377 — A second Scribd upload. The revision was not shown in the summary.
+- [datasheet4u.com](https://datasheet4u.com/datasheet-pdf/Burr-Brown/OPA2211/pdf.php?id=574554) · Texas Instruments SBOS377 — This is the datasheet4u entry the lineage note mentions, which had no URL before. The same file is also at https://datasheet4u.com/datasheets/Burr-Brown/OPA2211/574554. The 'Burr-Brown' filing is the site's own label. The revision is not shown, but the Burr-Brown filing suggests an early edition.
+- [datasheet.b-cdn.net](https://datasheet.b-cdn.net/posts/opa2211-datasheet/) · Texas Instruments SBOS377 — This third-party post came up in the search for revisions B, C and E, but no revision was shown.
+- [radiolocman.com](https://www.radiolocman.com/datasheet/data.html?di=305539) · Texas Instruments SBOS638 — OPA211-EP enhanced-product datasheet. The revision is not shown. The di number is close to the rev I OPA211 entry (di=305537), so this may be a copy from the same period (about 2016). Unverified.
+- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/463398/TI1/OPA211-EP.html) · Texas Instruments SBOS638 — alldatasheet's OPA211-EP entry, separate from the OPA2211-EP entry 772560. The revision is not shown. The lower ID suggests it was archived around the 2012 original.
+- [datasheet4u.com](https://datasheet4u.com/datasheets/etcTI/OPA2211-EP/1572858) · Texas Instruments unknown — OPA2211-EP datasheet. The summary gives the description text (1.1 nV/rtHz, 3.6 mA) but not the TI literature number or revision. The OPA2211-EP doc number is still unidentified.
+
+</details>
+
+Product pages: [ti.com/OPA211](https://www.ti.com/product/OPA211) · [ti.com/OPA2211A](https://www.ti.com/product/OPA2211A) · [ti.com/OPA211](https://www.ti.com/product/ja-jp/OPA211) · [ti.com/OPA211-EP](https://www.ti.com/product/OPA211-EP) · [ti.com/OPA2211-EP](https://www.ti.com/product/OPA2211-EP) · [ti.com/OPA2211-HT](https://www.ti.com/product/OPA2211-HT) · [digikey.com/58988](https://www.digikey.com/en/products/base-product/texas-instruments/296/OPA211/58988)
+
+Download every revision: `python tools/fetch_datasheets.py --family OPAx211`
 
 ## Part numbers
 
-| Part number | Ch | Vendor(s) | Status | Notes |
-|---|---|---|---|---|
-| OPA211 (high grade; OPA211ID/IDR SOIC, IDGKR/IDGKT VSSOP, IDRGR/IDRGT SON) | 1 | Texas Instruments | active | Listed as Active Production in the 9-Nov-2025 package addendum; Mouser still lists OPA211ID, OPA211IDR and OPA211IDGKT (Sept 2026 search). Vos ±50 µV max, drift 0.85 µV/°C max. Markings: SOIC 'OPA 211', VSSOP 'OBCQ', SON 'OBDQ'. The A grade uses the same VSSOP and SON markings. Rev L pin diagrams: SOIC pin 8 = NC; VSSOP and SON pin 8 = Shutdown. |
-| OPA211A (standard grade; OPA211AID/AIDR/AIDG4 SOIC, AIDGKR/AIDGKT/AIDGKTG4 VSSOP, AIDRGR/AIDRGT SON) | 1 | Texas Instruments | active | Active in the Nov-2025 addendum; Mouser/DigiKey/Arrow list OPA211AID, OPA211AIDR and OPA211AIDRGT. Vos ±125 µV max, drift 1.5 µV/°C max. SOIC marking is 'OPA 211 A'. The addendum lists every single-channel orderable with lead finish 'Call TI' and MSL2. |
-| OPA2211A (OPA2211AIDDA / AIDDAR / AIDDARG4 SO-8 PowerPAD; OPA2211AIDRGR / AIDRGT SON-8) | 2 | Texas Instruments | active | This is the dual the audio community uses. Vos ±150 µV max. DDA marking 'OPA 2211 A' (NiPdAu, MSL1). SON marking 'OBHQ' (NiPdAu, MSL2). Neither rev L nor the 2025 addendum lists a DIP package. OPA2211AIDDAR stocked at DigiKey (2232387) and LCSC (C35707). |
-| OPA2211 (high-grade commercial dual) | 2 | Texas Instruments | unknown (no commercial orderable found) | Rev L's thermal table is headed 'OPA2211 and OPA2211A', but the High-Grade EC table (§6.7) gives only OPA211 values, and the Nov-2025 addendum lists no non-A commercial dual. Probably never released as a commercial orderable (unconfirmed). The only non-A dual orderable found is the enhanced-product OPA2211MDRGTEP (see OPA2211-EP). |
-| OPA211-EP (OPA211MDGKTEP) | 1 | Texas Instruments | product page live; lifecycle status not confirmed | Enhanced Product (defense/aerospace/medical). Own datasheet SBOS638, dated June 2012. MSOP-8 (DGK) only, specified −55 to +125 °C. Orderable OPA211MDGKTEP (Octopart datasheet link). Product page https://www.ti.com/product/OPA211-EP. |
-| OPA2211-EP (OPA2211MDRGTEP) | 2 | Texas Instruments | product page live; lifecycle status not confirmed | Enhanced-product dual in 3×3 mm DFN/SON-8, found by Sept-2026 search (TI part-details page for OPA2211MDRGTEP). Same headline specs (1.1 nV/√Hz, 80 MHz at G = 100, 27 V/µs, ±2.25 to ±18 V). Datasheet document number not found. Not an audio-community part. |
-
-## Lineage
-
-| Vendor | Role | Period | Notes |
+| Part number | Ch | Status | Note |
 |---|---|---|---|
-| Texas Instruments | originator and sole source | 2006 to present | Datasheet SBOS377 is first dated October 2006; rev A (Feb 2007) and rev F (Nov 2008) copies survive on mirrors. The TI SPICE model OPA211.ckt is headed 'Copyright 2007 by Texas Instruments Corporation'. The part carries the Burr-Brown-style 'OPA' prefix; one diyAudio thread is titled 'Burr Brown OPA211', and datasheet4u files an OPA2211 datasheet under 'Burr-Brown' (early branding, unconfirmed). No second source or licensed copy was found. TI added enhanced-product variants: OPA211-EP (SBOS638, June 2012) and OPA2211-EP. |
+| OPA211 (high grade; OPA211ID/IDR SOIC, IDGKR/IDGKT VSSOP, IDRGR/IDRGT SON) | 1 | active |  |
+| OPA211A (standard grade; OPA211AID/AIDR/AIDG4 SOIC, AIDGKR/AIDGKT/AIDGKTG4 VSSOP, AIDRGR/AIDRGT SON) | 1 | active |  |
+| OPA2211A (OPA2211AIDDA / AIDDAR / AIDDARG4 SO-8 PowerPAD; OPA2211AIDRGR / AIDRGT SON-8) | 2 | active |  |
+| OPA2211 (high-grade commercial dual) | 2 | unknown (no commercial orderable found) |  |
+| OPA211-EP (OPA211MDGKTEP) | 1 | product page live; lifecycle status not confirmed |  |
+| OPA2211-EP (OPA2211MDRGTEP) | 2 | product page live; lifecycle status not confirmed |  |
 
-## Key specifications
+**Related / alternatives:** OPA1611 / OPA1612 (TI SoundPlus bipolar audio parts per SBOS450C: 1.1 nV/√Hz, 0.000015% THD+N, 27 V/µs, 3.6 mA/ch, 40 MHz at G = +1 vs 45 MHz for the OPA211; SOIC-8, and the OPA1612 also in SON-8), OPA227 / OPA2227 (TI's own suggestion in SBOS377L §8.1.3 for 10–100 kΩ source impedance: higher voltage noise but lower current noise), OPA828 (FET input; its datasheet, Fig. 7-7, compares it with the OPA211 for high source impedance), OPA1622 (TI bipolar headphone/line driver for higher output current), LME49720 / LM4562 (the part Head-Fi users compared it against), LT1028 / OP37 (decompensated low-noise bipolar parts used in the SR560; the LNDA project names the OPAx211 as a unity-gain-stable alternative)
 
-| Parameter | Value | Conditions | From |
+## Evidence
+
+<details>
+<summary>All key specifications</summary>
+
+| Parameter | Value | Conditions | Source |
 |---|---|---|---|
 | Input voltage noise density | 1.1 nV/√Hz @1 kHz; 1.4 nV/√Hz @100 Hz; 2 nV/√Hz @10 Hz (typ) | TA = 25 °C, both grades | TI SBOS377L (Jan 2020) §6.6/6.7 |
 | 0.1–10 Hz noise | 80 nVpp | typ | TI SBOS377L §6.6 |
@@ -63,50 +113,21 @@ A well-regarded modern bipolar part for rolling and for DAC output stages. The e
 | Specified temperature | −40 °C to +125 °C (commercial); −55 °C to +125 °C (OPA211-EP) | Rev L changed the ROC entry from −55/+150 °C to −40/+125 °C. The abs-max operating range stays −55 to +150 °C. | TI SBOS377L §4, §6.1, §6.3; OPA211-EP SBOS638 |
 | Per-revision spec differences | None identified. Rev L's change log (back to rev G, May 2009) lists no electrical-limit changes; revs A (Feb 2007), F (Nov 2008), G and I exist on mirrors but were not compared. | — | TI SBOS377L revision history |
 
-## Silicon changes under the same part number
 
-None documented. (Absence of evidence is not evidence of absence. Compare datasheet revisions.)
+</details>
 
-## Datasheets
+<details>
+<summary>Lineage</summary>
 
-| Vendor | Document | Rev | Date | Link | Kind | Conf. | Notes |
-|---|---|---|---|---|---|---|---|
-| Texas Instruments | SBOS377 | L | 2020-01 | [ti.com/lit/ds/symlink/opa211.pdf](https://www.ti.com/lit/ds/symlink/opa211.pdf) | vendor_current | high | Symlink returned by Sept-2026 web search and used by four GitHub EDA libraries. Latest harvested copy is SBOS377L (PDF CreationDate 2025-11-10, package addendum 9-Nov-2025). Covers OPA211, OPA211A, OPA2211 and OPA2211A. A Sept-2026 search found no rev M. |
-| Texas Instruments | SBOS377 | L | 2020-01 | [github.com/dfnr2/terra-eda-library/blo…sheets/ti/opa211.pdf](https://github.com/dfnr2/terra-eda-library/blob/HEAD/datasheets/ti/opa211.pdf) | third_party_mirror | high | Git LFS object, 2,772,060 bytes, SHA-256 matches the LFS pointer at repo HEAD (commit 25 Jun 2026). PDF CreationDate 2025-11-10; header, revision history (G to L) and 9-Nov-2025 addendum checked. |
-| Texas Instruments | SBOS377F | F | 2008-11 | [kyohritsu.com/eclib/OTHER/DATASHEET/opa211.pdf](https://www.kyohritsu.com/eclib/OTHER/DATASHEET/opa211.pdf) | third_party_mirror | medium | Search summary identifies this copy as SBOS377F (old '1FEATURES / DESCRIPTION / APPLICATIONS' layout). |
-| Texas Instruments | SBOS377G | G | 2009-05 | [mouser.com/datasheet/2/405/sbos377g-125789.pdf](https://www.mouser.com/datasheet/2/405/sbos377g-125789.pdf) | distributor_mirror | high | Filename and search summary both identify rev G (May 2009). Rev L's revision history names it as the base for rev H. Old-format layout. |
-| Texas Instruments | SBOS377I | I | 2016-06 | [radiolocman.com/datasheet/data.html?di=305537](https://www.radiolocman.com/datasheet/data.html?di=305537) | third_party_mirror | medium | Search summary identifies the radiolocman OPA211 copy as SBOS377I (June 2016). Also attested by the rev L revision history. |
-| Texas Instruments | SBOS377 |  |  | [datasheet.octopart.com/OPA211AID-Texas…asheet-100176885.pdf](https://datasheet.octopart.com/OPA211AID-Texas-Instruments-datasheet-100176885.pdf) | distributor_mirror | low | Returned by search with the same page title as the TI symlink; revision letter not shown in summary. |
-| Texas Instruments | SBOS377 |  |  | [convexoptimization.com/TOOLS/opa211.pdf](https://convexoptimization.com/TOOLS/opa211.pdf) | third_party_mirror | low | Returned by search with the same page title as the TI symlink; revision letter not shown in summary. |
-| Texas Instruments | SBOS377 |  |  | [alldatasheet.com/datasheet-pdf/pdf/221188/TI/OPA211.html](https://www.alldatasheet.com/datasheet-pdf/pdf/221188/TI/OPA211.html) | third_party_mirror | low | Low alldatasheet ID suggests an early (pre-2010) upload (inference). Sibling entries: 221128 (OPA2211), 221132 (OPA2211A), 221133 (OPA211AID), 526810 (OPA211, later upload), 541809 (OPA2211AIDDAR). |
-| Texas Instruments | SBOS377 |  |  | [alldatasheet.com/datasheet-pdf/pdf/221128/TI/OPA2211.html](https://www.alldatasheet.com/datasheet-pdf/pdf/221128/TI/OPA2211.html) | third_party_mirror | low | Revision not shown in search summary. |
-| Texas Instruments | SBOS638 |  | 2012-06 | [ti.com/lit/ds/symlink/opa211-ep.pdf](https://www.ti.com/lit/ds/symlink/opa211-ep.pdf) | vendor_current | medium | Search result for https://www.ti.com/lit/gpn/OPA211-EP shows header 'OPA211-EP SBOS638 – JUNE 2012'. MSOP-8, −55 to +125 °C. Whether later revisions exist was not checked. |
-| Texas Instruments | SBOS638 |  |  | [datasheet.octopart.com/OPA211MDGKTEP-T…tasheet-41216692.pdf](https://datasheet.octopart.com/OPA211MDGKTEP-Texas-Instruments-datasheet-41216692.pdf) | distributor_mirror | low | Revision not shown in search summary. |
-| Texas Instruments | unknown |  |  | [alldatasheet.com/datasheet-pdf/pdf/772560/TI/OPA2211-EP.html](https://www.alldatasheet.com/datasheet-pdf/pdf/772560/TI/OPA2211-EP.html) | third_party_mirror | low | OPA2211-EP datasheet document number not found; DFN-8 3×3 mm. |
-| Texas Instruments | SBOS377A | A | 2007-02 | [scribd.com/document/939959332/Opa-2211](https://www.scribd.com/document/939959332/Opa-2211) | third_party_mirror | medium | A search summary names this Scribd document as SBOS377A (Oct 2006, revised Feb 2007). It is the first copy found of rev A, which had no URL before. It also came up first in the searches that surfaced the SBOS377D header, so check the header when you open it. |
-| Texas Instruments | SBOS377 |  |  | [pdf.ic37.com/TI/OPA211_datasheet_5677509/OPA211_3.html](https://pdf.ic37.com/TI/OPA211_datasheet_5677509/OPA211_3.html) | third_party_mirror | low | 17 pages, the length of the old pre-2015 layout, so probably rev A–G. It turned up in the searches for SBOS377A/D/G headers, but the summaries did not tie a letter to this copy. Page 5 is at .../OPA211_5.html. |
-| Texas Instruments | SBOS377 |  |  | [pdf.ic37.com/TI/OPA211_datasheet_6037225/](https://pdf.ic37.com/TI/OPA211_datasheet_6037225/) | third_party_mirror | low | Only 9 pages. It could be an early short edition (for example the Oct 2006 original or a product preview) or just a truncated upload. Unverified, but worth checking for the missing original. |
-| Texas Instruments | SBOS377 |  |  | [pdf.ic37.com/TI/OPA2211AI_datasheet_13206397/](https://pdf.ic37.com/TI/OPA2211AI_datasheet_13206397/) | third_party_mirror | low | 37 pages, which fits TI's post-2015 layout (rev H or later). The revision is not shown. |
-| Texas Instruments | SBOS377 |  |  | [100y.com.tw/pdf_file/33-TI-OPA211,2211.pdf](https://www.100y.com.tw/pdf_file/33-TI-OPA211,2211.pdf) | distributor_mirror | low | The page title matches the old (pre-rev H) layout also seen on the kyohritsu rev F and Mouser rev G copies, so this is rev A–G. The exact letter is not shown. |
-| Texas Instruments | SBOS377 |  |  | [radiolocman.com/datasheet/data.html?di=82176](https://www.radiolocman.com/datasheet/data.html?di=82176) | third_party_mirror | low | A separate radiolocman entry from di=305537 (rev I). It is filed under the G4 (Pb-free, older-era) orderable, so it may be an older revision. Unverified. |
-| Texas Instruments | SBOS377 |  |  | [datasheet.octopart.com/OPA211AIDR-Texa…asheet-159115562.pdf](https://datasheet.octopart.com/OPA211AIDR-Texas-Instruments-datasheet-159115562.pdf) | distributor_mirror | low | The title text ('Voltage Noise Density ...') matches the new-format layout, so rev H or later. The letter is not shown. |
-| Texas Instruments | SBOS377 |  |  | [scribd.com/document/770726126/opa211](https://www.scribd.com/document/770726126/opa211) | third_party_mirror | low | A second Scribd upload. The revision was not shown in the summary. |
-| Texas Instruments | SBOS377 |  |  | [datasheet4u.com/datasheet-pdf/Burr-Bro…11/pdf.php?id=574554](https://datasheet4u.com/datasheet-pdf/Burr-Brown/OPA2211/pdf.php?id=574554) | third_party_mirror | low | This is the datasheet4u entry the lineage note mentions, which had no URL before. The same file is also at https://datasheet4u.com/datasheets/Burr-Brown/OPA2211/574554. The 'Burr-Brown' filing is the site's own label. The revision is not shown, but the Burr-Brown filing suggests an early edition. |
-| Texas Instruments | SBOS377 |  |  | [datasheet.b-cdn.net/posts/opa2211-datasheet/](https://datasheet.b-cdn.net/posts/opa2211-datasheet/) | third_party_mirror | low | This third-party post came up in the search for revisions B, C and E, but no revision was shown. |
-| Texas Instruments | SBOS638 |  |  | [radiolocman.com/datasheet/data.html?di=305539](https://www.radiolocman.com/datasheet/data.html?di=305539) | third_party_mirror | low | OPA211-EP enhanced-product datasheet. The revision is not shown. The di number is close to the rev I OPA211 entry (di=305537), so this may be a copy from the same period (about 2016). Unverified. |
-| Texas Instruments | SBOS638 |  |  | [alldatasheet.com/datasheet-pdf/pdf/463398/TI1/OPA211-EP.html](https://www.alldatasheet.com/datasheet-pdf/pdf/463398/TI1/OPA211-EP.html) | third_party_mirror | low | alldatasheet's OPA211-EP entry, separate from the OPA2211-EP entry 772560. The revision is not shown. The lower ID suggests it was archived around the 2012 original. |
-| Texas Instruments | unknown |  |  | [datasheet4u.com/datasheets/etcTI/OPA2211-EP/1572858](https://datasheet4u.com/datasheets/etcTI/OPA2211-EP/1572858) | third_party_mirror | low | OPA2211-EP datasheet. The summary gives the description text (1.1 nV/rtHz, 3.6 mA) but not the TI literature number or revision. The OPA2211-EP doc number is still unidentified. |
-| Texas Instruments | SBOS377 |  | 2006-10 |  | vendor_revision_specific | medium | No copy found. Date from the rev L header 'SBOS377L – OCTOBER 2006'. Contents and any Product Preview status unknown. |
-| Texas Instruments | SBOS377A | A | 2007-02 |  | vendor_revision_specific | medium | Header reported in a Sept-2026 search summary over mirror copies (alldatasheet / radiolocman / scribd results); the exact hosting URL was not identified. |
-| Texas Instruments | SBOS377H | H | 2015-11 |  | vendor_revision_specific | high | No copy found. In this revision the OPA211 pin table had the SON V+ and V− pin numbers swapped (4 and 7); rev I corrected them. |
-| Texas Instruments | SBOS377J | J | 2018-02 |  | vendor_revision_specific | high | No copy found. Attested by the rev L revision history. |
-| Texas Instruments | SBOS377K | K | 2018-09 |  | vendor_revision_specific | high | No copy found. Attested by the rev L revision history and by the TI PSpice model OPA211.LIB header (06FEB2019): 'Datasheet: SBOS377K -OCTOBER 2006-REVISED SEPTEMBER 2018'. |
+| Vendor | Role | Period | Note |
+|---|---|---|---|
+| Texas Instruments | originator and sole source | 2006 to present |  |
 
-### Revision chain status
 
-TI SBOS377 (OPA211/OPA2211), oldest to newest: original Oct 2006 (no copy found; the 9-page pdf.ic37.com 6037225 file and the datasheet4u 'Burr-Brown' 574554 file are the best leads, revision not shown) -> A, revised Feb 2007 (NEW copy: scribd.com/document/939959332) -> B, C (MISSING: no header, date or copy found; must fall between Feb 2007 and Feb 2008) -> D, revised Feb 2008 (NEW: header 'SBOS377D – OCTOBER 2006 – REVISED FEBRUARY 2008' seen in search summaries, but the hosting copy is not identified) -> E (MISSING; must fall between Feb 2008 and Nov 2008) -> F, Nov 2008 (kyohritsu) -> G, May 2009 (Mouser) -> [6-year gap] -> H, Nov 2015 (no copy URL) -> I, Jun 2016 (radiolocman di=305537) -> J, Feb 2018 (no copy URL) -> K, Sep 2018 (no copy URL) -> L, Jan 2020 (ti.com symlink, re-rendered Nov 2025, still rev L). Old-format copies of unknown letter (rev A–G): 100y.com.tw 33-TI-OPA211,2211.pdf and pdf.ic37.com 5677509 (17 pages); possibly radiolocman di=82176 (OPA211AIDG4). New-format copies of unknown letter (rev H or later): pdf.ic37.com 13206397 (37 pages) and Octopart OPA211AIDR 159115562. TI SBOS638 (OPA211-EP): only the original, June 2012 (ti.com, Octopart) is confirmed. New copies with revision not shown: radiolocman di=305539 and alldatasheet 463398. Whether SBOS638 has later lettered revisions is still unknown. OPA2211-EP: literature number still unidentified; new copy at datasheet4u 1572858. NEW variant: an OPA2211-HT (high-temperature) product page exists at ti.com/product/OPA2211-HT; its datasheet number and revisions are unknown and it is not yet in the lineage. No second source or other vendor was found. Archive seeds: the focus.ti.com symlink URLs follow the task's legacy pattern. The per-revision seeds (sbos377a, sbos377d and sbos377g paths) are built from TI's standard lit-path pattern for confirmed letters and are unverified. Missing links still: copies of the original, B, C, D (host), E, H, J and K; SBOS638 revisions after the 2012 original; the OPA2211-EP and OPA2211-HT literature numbers.
+</details>
 
-### Datasheet revision history
+<details>
+<summary>Datasheet revision history</summary>
 
 | Vendor | Document | Rev | Date | Changes |
 |---|---|---|---|---|
@@ -124,45 +145,59 @@ TI SBOS377 (OPA211/OPA2211), oldest to newest: original Oct 2006 (no copy found;
 | Texas Instruments | SBOS377D | D | February 2008 | Exists: two search summaries show the header 'SBOS377D – OCTOBER 2006 – REVISED FEBRUARY 2008'. No surviving copy was tied to it; it is probably among the Scribd 939959332, pdf.ic37.com 5677509 or kyohritsu results. Changes unknown. This leaves B and C between Feb 2007 and Feb 2008, and E between Feb 2008 and Nov 2008. |
 | Texas Instruments | SBOS377A | A | February 2007 | First copy found: Scribd document 939959332 ('Opa 2211'), per a search summary. Changes are still unknown. |
 
-### Legacy URLs searched in the Internet Archive
 
-- `http://focus.ti.com/lit/ds/sbos377a/sbos377a.pdf`
-- `http://focus.ti.com/lit/ds/sbos377d/sbos377d.pdf`
-- `http://focus.ti.com/lit/ds/symlink/opa211-ep.pdf`
-- `http://focus.ti.com/lit/ds/symlink/opa211.pdf`
-- `http://focus.ti.com/lit/ds/symlink/opa2211.pdf`
-- `http://www.ti.com/lit/ds/sbos377g/sbos377g.pdf`
-- `https://www.kyohritsu.com/eclib/OTHER/DATASHEET/opa211.pdf`
-- `https://www.mouser.com/datasheet/2/405/sbos377g-125789.pdf`
-- `https://www.ti.com/lit/ds/sbos377g/sbos377g.pdf`
-- `https://www.ti.com/lit/ds/sbos377h/sbos377h.pdf`
-- `https://www.ti.com/lit/ds/sbos377i/sbos377i.pdf`
-- `https://www.ti.com/lit/ds/sbos377j/sbos377j.pdf`
-- `https://www.ti.com/lit/ds/sbos377k/sbos377k.pdf`
-- `https://www.ti.com/lit/ds/sbos377l/sbos377l.pdf`
-- `https://www.ti.com/lit/ds/symlink/opa211-ep.pdf`
-- `https://www.ti.com/lit/ds/symlink/opa211.pdf`
-- `https://www.ti.com/lit/ds/symlink/opa2211.pdf`
-- `https://www.ti.com/lit/ds/symlink/opa2211a.pdf`
-- `https://www.ti.com/lit/gpn/OPA211-EP`
-- `https://www.ti.com/lit/gpn/opa211`
-- `https://www.ti.com/lit/gpn/opa2211a`
-- `https://www.ti.com/product/OPA211`
-- `https://www.ti.com/product/OPA211-EP`
-- `https://www.ti.com/product/OPA2211-EP`
-- `https://www.ti.com/product/OPA2211A`
+</details>
 
-Fetch every revision: `python tools/fetch_datasheets.py --family OPAx211`
+<details>
+<summary>Verification and open questions</summary>
 
-## Counterfeits
+Status: **partially-verified**, 6 web searches.
 
-No counterfeit reports were checked (not searched), so this is not a clean bill. Vendor facts that help spot odd parts (rev L and the 9-Nov-2025 addendum): no DIP package is listed. The OPA2211A comes only as SO-8 PowerPAD (DDA, top marking 'OPA 2211 A', NiPdAu, MSL1) or 3×3 mm SON (marking 'OBHQ'). The SOIC single is marked 'OPA 211' (high grade) or 'OPA 211 A'. In VSSOP ('OBCQ') and SON ('OBDQ') both grades share one marking, so the grade cannot be read from the part. Any 'OPA2211' in a DIP-8 body is an adapter module or a remarked part. A DDA body with no exposed pad on its underside would also be suspect (inference from the package definition). Buy from authorized distributors, and on adapter modules check that the pad is soldered to V− (the datasheet says it 'must be connected to V–').
+**Confirmed:**
 
-## Related parts and alternatives
+- Current vendor datasheet symlink is live in search results: https://www.ti.com/lit/ds/symlink/opa211.pdf
+- Product folders exist: https://www.ti.com/product/OPA211 and https://www.ti.com/product/OPA2211A
+- Rev G (May 2009) copy on Mouser: https://www.mouser.com/datasheet/2/405/sbos377g-125789.pdf
+- Rev F (Revised Nov 2008) copy: https://www.kyohritsu.com/eclib/OTHER/DATASHEET/opa211.pdf
+- Rev I (Revised June 2016) copy: https://www.radiolocman.com/datasheet/data.html?di=305537
+- Rev A header 'OCTOBER 2006 – REVISED FEBRUARY 2007' exists (search summary over mirror results incl. https://www.alldatasheet.com/datasheet-pdf/pdf/221188/TI/OPA211.html)
+- No SBOS377 rev M found in Sept-2026 search (rev L latest): https://www.ti.com/lit/ds/symlink/opa211.pdf
+- OPA211-EP datasheet is SBOS638, June 2012, MSOP-8, −55 to +125 °C: https://www.ti.com/lit/gpn/OPA211-EP
+- OPA2211-EP exists in DFN-8 3×3 mm, orderable OPA2211MDRGTEP: https://www.ti.com/product/OPA2211-EP/part-details/OPA2211MDRGTEP
+- Headline specs 1.1 nV/√Hz, 3.6 mA, 80 MHz (G = 100), 27 V/µs, ±2.25 to ±18 V, 700 ns 16-bit settling, 125 µV offset, 0.35 µV/°C drift: https://www.ti.com/product/OPA2211-EP and https://www.ti.com/product/OPA211-EP
+- OPA211 orderables still listed by distributors (OPA211AID, OPA211ID, OPA211IDR, OPA211IDGKT, OPA211AIDRGT; OPA2211AIDDAR): https://www.mouser.com/ProductDetail/Texas-Instruments/OPA211AID?qs=iSMark9AYDU9HlEFVq0C5A%3D%3D and https://www.digikey.com/en/products/detail/texas-instruments/OPA2211AIDDAR/2232387
 
-OPA1611 / OPA1612 (TI SoundPlus bipolar audio parts per SBOS450C: 1.1 nV/√Hz, 0.000015% THD+N, 27 V/µs, 3.6 mA/ch, 40 MHz at G = +1 vs 45 MHz for the OPA211; SOIC-8, and the OPA1612 also in SON-8), OPA227 / OPA2227 (TI's own suggestion in SBOS377L §8.1.3 for 10–100 kΩ source impedance: higher voltage noise but lower current noise), OPA828 (FET input; its datasheet, Fig. 7-7, compares it with the OPA211 for high source impedance), OPA1622 (TI bipolar headphone/line driver for higher output current), LME49720 / LM4562 (the part Head-Fi users compared it against), LT1028 / OP37 (decompensated low-noise bipolar parts used in the SR560; the LNDA project names the OPAx211 as a unity-gain-stable alternative)
+**Refuted or corrected:**
 
-## Open questions
+- 'Revisions A–F are undocumented' / 'no copy of rev G found': rev A (Feb 2007), rev F (Nov 2008), rev G (May 2009, Mouser) and rev I (June 2016) copies were found on mirrors.
+- 'OPA211-EP datasheet number not found': it is SBOS638, dated June 2012.
+- 'OPA2211 non-A probably never released as an orderable' is too strong: the enhanced-product dual OPA2211MDRGTEP (OPA2211-EP) exists; only a commercial non-A dual remains unfound.
+
+**Corrections:**
+
+- Added datasheet entries for SBOS377A (Feb 2007), SBOS377F (Nov 2008, kyohritsu), SBOS377G (May 2009, Mouser) and SBOS377I (June 2016, radiolocman), plus unknown-revision mirrors (Octopart, convexoptimization.com, alldatasheet).
+- Added OPA211-EP details (SBOS638, June 2012, MSOP-8, −55 to +125 °C, OPA211MDGKTEP) and a new OPA2211-EP part-number entry (DFN-8, OPA2211MDRGTEP); added SBOS638 to ti_literature_numbers.
+- Revision history: split 'A–F' into A (Feb 2007), B–E (unknown) and F (Nov 2008); added SBOS638.
+- Rev L notes: Sept-2026 search found no rev M.
+- Added the rev H SON supply-pin swap as an explicit caveat.
+- silicon_changes stays empty: no OPA211-specific PCN or die change was found; distributor pages list PCN PDFs whose content was not identified (moved to open_questions).
+- Replaced 'web search unavailable' wording with 'not searched in this pass' where applicable.
+
+**Links not confirmed:**
+
+- https://www.ti.com/lit/ds/symlink/opa2211.pdf
+- https://www.ti.com/lit/ds/symlink/opa2211a.pdf
+- https://www.ti.com/lit/gpn/opa211
+- https://www.ti.com/lit/gpn/opa2211a
+- http://focus.ti.com/lit/ds/symlink/opa211.pdf
+- https://www.ti.com/lit/ds/sbos377l/sbos377l.pdf
+- https://www.ti.com/lit/ds/sbos377k/sbos377k.pdf
+- https://www.ti.com/lit/ds/sbos377j/sbos377j.pdf
+- https://www.ti.com/lit/ds/sbos377i/sbos377i.pdf
+- https://www.ti.com/lit/ds/sbos377h/sbos377h.pdf
+- https://www.ti.com/lit/ds/sbos377g/sbos377g.pdf
+
+**Open questions:**
 
 - This pass used 6 web searches (Sept 2026). Reputation, counterfeit reports and ASR/Groner measurements were not re-searched.
 - PCNs: Mouser product pages for OPA211/OPA211A orderables list TI Process Change Notification PDFs, and TI has issued generic Cu-bond-wire and RFAB fab-qualification PCNs, but no PCN number was tied specifically to OPA211/OPA2211A by search. A die or fab change cannot be ruled out; check TI's PCN list for these orderables.
@@ -177,41 +212,11 @@ OPA1611 / OPA1612 (TI SoundPlus bipolar audio parts per SBOS450C: 1.1 nV/√Hz, 
 - The Shanling EM7 retail copy is inconsistent (slug 'ak4493', text 'ES9038Pro'). Confirm OPA2211 use from Shanling's own spec pages.
 - The Head-Fi 'creamy vocals' remark comes from a search summary; confirm it refers to the OPA211.
 
-## Verification notes
 
-Status: **partially-verified**
+</details>
 
-**Refuted or corrected during verification:**
-
-- 'Revisions A–F are undocumented' / 'no copy of rev G found': rev A (Feb 2007), rev F (Nov 2008), rev G (May 2009, Mouser) and rev I (June 2016) copies were found on mirrors.
-- 'OPA211-EP datasheet number not found': it is SBOS638, dated June 2012.
-- 'OPA2211 non-A probably never released as an orderable' is too strong: the enhanced-product dual OPA2211MDRGTEP (OPA2211-EP) exists; only a commercial non-A dual remains unfound.
-
-**Corrections applied:**
-
-- Added datasheet entries for SBOS377A (Feb 2007), SBOS377F (Nov 2008, kyohritsu), SBOS377G (May 2009, Mouser) and SBOS377I (June 2016, radiolocman), plus unknown-revision mirrors (Octopart, convexoptimization.com, alldatasheet).
-- Added OPA211-EP details (SBOS638, June 2012, MSOP-8, −55 to +125 °C, OPA211MDGKTEP) and a new OPA2211-EP part-number entry (DFN-8, OPA2211MDRGTEP); added SBOS638 to ti_literature_numbers.
-- Revision history: split 'A–F' into A (Feb 2007), B–E (unknown) and F (Nov 2008); added SBOS638.
-- Rev L notes: Sept-2026 search found no rev M.
-- Added the rev H SON supply-pin swap as an explicit caveat.
-- silicon_changes stays empty: no OPA211-specific PCN or die change was found; distributor pages list PCN PDFs whose content was not identified (moved to open_questions).
-- Replaced 'web search unavailable' wording with 'not searched in this pass' where applicable.
-
-**URLs not confirmed by search:**
-
-- https://www.ti.com/lit/ds/symlink/opa2211.pdf
-- https://www.ti.com/lit/ds/symlink/opa2211a.pdf
-- https://www.ti.com/lit/gpn/opa211
-- https://www.ti.com/lit/gpn/opa2211a
-- http://focus.ti.com/lit/ds/symlink/opa211.pdf
-- https://www.ti.com/lit/ds/sbos377l/sbos377l.pdf
-- https://www.ti.com/lit/ds/sbos377k/sbos377k.pdf
-- https://www.ti.com/lit/ds/sbos377j/sbos377j.pdf
-- https://www.ti.com/lit/ds/sbos377i/sbos377i.pdf
-- https://www.ti.com/lit/ds/sbos377h/sbos377h.pdf
-- https://www.ti.com/lit/ds/sbos377g/sbos377g.pdf
-
-## Sources
+<details>
+<summary>Sources (37)</summary>
 
 - [head-fi.org/threads/the-opamp-thread.432749/page-19](https://www.head-fi.org/threads/the-opamp-thread.432749/page-19)
 - [head-fi.org/threads/the-opamp-thread.432749/page-2](https://www.head-fi.org/threads/the-opamp-thread.432749/page-2)
@@ -251,5 +256,38 @@ Status: **partially-verified**
 - [github.com/dougmurray/horizon-pool/blo…PA211IDGKT-copy.json](https://github.com/dougmurray/horizon-pool/blob/HEAD/dtm-pool/parts/ic/opamp/OPA211IDGKT-copy.json)
 - [ti.com/product/ja-jp/OPA211](https://www.ti.com/product/ja-jp/OPA211)
 
+</details>
+
+<details>
+<summary>Legacy URLs searched in the Internet Archive</summary>
+
+- `http://focus.ti.com/lit/ds/sbos377a/sbos377a.pdf`
+- `http://focus.ti.com/lit/ds/sbos377d/sbos377d.pdf`
+- `http://focus.ti.com/lit/ds/symlink/opa211-ep.pdf`
+- `http://focus.ti.com/lit/ds/symlink/opa211.pdf`
+- `http://focus.ti.com/lit/ds/symlink/opa2211.pdf`
+- `http://www.ti.com/lit/ds/sbos377g/sbos377g.pdf`
+- `https://www.kyohritsu.com/eclib/OTHER/DATASHEET/opa211.pdf`
+- `https://www.mouser.com/datasheet/2/405/sbos377g-125789.pdf`
+- `https://www.ti.com/lit/ds/sbos377g/sbos377g.pdf`
+- `https://www.ti.com/lit/ds/sbos377h/sbos377h.pdf`
+- `https://www.ti.com/lit/ds/sbos377i/sbos377i.pdf`
+- `https://www.ti.com/lit/ds/sbos377j/sbos377j.pdf`
+- `https://www.ti.com/lit/ds/sbos377k/sbos377k.pdf`
+- `https://www.ti.com/lit/ds/sbos377l/sbos377l.pdf`
+- `https://www.ti.com/lit/ds/symlink/opa211-ep.pdf`
+- `https://www.ti.com/lit/ds/symlink/opa211.pdf`
+- `https://www.ti.com/lit/ds/symlink/opa2211.pdf`
+- `https://www.ti.com/lit/ds/symlink/opa2211a.pdf`
+- `https://www.ti.com/lit/gpn/OPA211-EP`
+- `https://www.ti.com/lit/gpn/opa211`
+- `https://www.ti.com/lit/gpn/opa2211a`
+- `https://www.ti.com/product/OPA211`
+- `https://www.ti.com/product/OPA211-EP`
+- `https://www.ti.com/product/OPA2211-EP`
+- `https://www.ti.com/product/OPA2211A`
+
+</details>
+
 ---
-[← Back to the map](../../README.md) · [All revision hazards](../REVISION-HAZARDS.md) · [All datasheets](../DATASHEETS.md)
+[← Map](../../README.md) · [Revision hazards](../REVISION-HAZARDS.md) · [Datasheet catalogue](../DATASHEETS.md)
