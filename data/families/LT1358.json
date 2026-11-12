@@ -1,0 +1,624 @@
+{
+  "id": "LT1358",
+  "name": "LT1357 / LT1358 / LT1359 (single/dual/quad 25 MHz, 600 V/µs C-Load bipolar)",
+  "tagline": "Lower-power (2 mA/amp) sibling of the LT1364, rated 25 MHz and 600 V/µs. A niche sound-card buffer pick that forum listeners call warm, bright and tonally rich.",
+  "technology": "Bipolar, built on Linear Technology's complementary bipolar process. It is a single-stage voltage-feedback amplifier with matched high-impedance inputs and the slewing performance of a current-feedback amplifier, and it is stable with any capacitive load (C-Load). Per the ADI/Linear datasheets, the single-stage design settles well. The family comes in 25, 50 and 70 MHz versions at about 2, 4 and 6 mA per amplifier, each as a single, dual and quad. The LT1357 datasheet's front-page typical application is a DAC I-to-V converter.",
+  "manufacturers": [
+    "Linear Technology (originator)",
+    "Analog Devices (acquired Linear Technology in 2017; current vendor)"
+  ],
+  "part_numbers": [
+    {
+      "pn": "LT1357",
+      "channels": 1,
+      "vendors": [
+        "Linear Technology",
+        "Analog Devices"
+      ],
+      "status": "unconfirmed (ADI still has a product page and datasheet 1357fa; lifecycle not stated in the search results)",
+      "notes": "Single, 25 MHz / 600 V/µs, 2.5 mA max supply current. It has its own datasheet (1357fa). Orderables seen in a third-party chip index: LT1357CN8, LT1357CN8#PBF, LT1357CS8, LT1357CS8#PBF, LT1357CS8#TRPBF. N8 = DIP-8, S8 = SO-8, C = commercial, #PBF = lead-free."
+    },
+    {
+      "pn": "LT1358",
+      "channels": 2,
+      "vendors": [
+        "Linear Technology",
+        "Analog Devices"
+      ],
+      "status": "unconfirmed (on the ADI product page; LT1358CS8#PBF listed at Newark and DigiKey in 2026; ADI lifecycle not confirmed)",
+      "notes": "Dual; this is the audio-community favourite. Orderables seen: LT1358CN8#PBF, LT1358CS8, LT1358CS8#PBF, LT1358CS8#TR, LT1358CS8#TRPBF, LT1358IN8#PBF, LT1358IS8#PBF, LT1358IS8#TRPBF. C = commercial, I = industrial. The DIP-8 version fits sound-card sockets."
+    },
+    {
+      "pn": "LT1359",
+      "channels": 4,
+      "vendors": [
+        "Linear Technology",
+        "Analog Devices"
+      ],
+      "status": "unconfirmed (on the ADI product page; lifecycle not confirmed)",
+      "notes": "Quad. Orderables seen: LT1359CN#PBF, LT1359CS#PBF, LT1359CS#TRPBF, LT1359CS14#PBF, LT1359CS14#TRPBF, LT1359IN#PBF, LT1359IS#PBF, LT1359IS#TRPBF, LT1359IS14#PBF, LT1359IS14#TRPBF. The difference between the 'S' and 'S14' SO packages was not verified."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Linear Technology",
+      "role": "originator",
+      "period": "1990s (exact release date not verified) to 2017",
+      "notes": "Part of the LT1354–LT1365 C-Load family of fast bipolar op amps. The LT1364/LT1365 datasheet (13645fa Rev A) lists the LT1358/LT1359 as the 'Lower Power Version of LT1364/LT1365', with VOS = 0.6 mV and 2 mA per amplifier. Third-party mirrors (alldatasheet, radiolocman) hold Linear-branded copies."
+    },
+    {
+      "vendor": "Analog Devices",
+      "role": "acquirer / current vendor",
+      "period": "2017 to present",
+      "notes": "ADI hosts datasheet 135859fb (LT1358/LT1359) and 1357fa (LT1357) at analog.com, and has product pages for the LT1357, LT1358 and LT1359. radiolocman lists separate Linear-branded and ADI-branded LT1358 datasheet entries. No second sources are known."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "25 MHz",
+      "condition": "typical",
+      "source": "ADI datasheet 135859fb (analog.com/media/en/technical-documentation/data-sheets/135859fb.pdf) and 1357fa for the LT1357"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "600 V/µs",
+      "condition": "typical",
+      "source": "ADI datasheet 135859fb; LT1357 datasheet 1357fa"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "2.5 mA max per amplifier (about 2 mA typ)",
+      "condition": "max at ±5 V per the search summary; the 2 mA typ is from the LT1364 Related Parts table",
+      "source": "ADI datasheet 135859fb front page; LT1364 datasheet 13645fa Rev A"
+    },
+    {
+      "parameter": "Input voltage noise",
+      "value": "8 nV/√Hz",
+      "condition": "typical; the frequency condition was not shown in the search summary",
+      "source": "ADI datasheet 135859fb front page (via search summary)"
+    },
+    {
+      "parameter": "Input offset voltage",
+      "value": "600 µV max",
+      "condition": "datasheet front-page feature",
+      "source": "ADI datasheet 135859fb"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "500 nA max",
+      "condition": "datasheet front-page feature",
+      "source": "ADI datasheet 135859fb"
+    },
+    {
+      "parameter": "Output swing",
+      "value": "±12.5 V min into 500 Ω",
+      "condition": "±15 V supplies (assumed from the datasheet front page)",
+      "source": "ADI datasheet 135859fb (via search summary)"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "±2.5 V to ±15 V",
+      "condition": "specified operating range",
+      "source": "ADI datasheet 135859fb / ADI LT1358 product page (via search summary)"
+    },
+    {
+      "parameter": "Open-loop DC gain",
+      "value": "86 dB",
+      "condition": "third-party table; load and supply conditions not stated; not verified",
+      "source": "github.com/MartimAgostinho/CS-Lab2 Report/Sections/Simulation.tex"
+    },
+    {
+      "parameter": "Capacitive-load stability",
+      "value": "C-Load: stable with any capacitive load",
+      "condition": "family feature",
+      "source": "ADI datasheet 135859fb; LT1364 datasheet 13645fa Rev A"
+    },
+    {
+      "parameter": "Input stage / topology",
+      "value": "Bipolar, single-stage VFB with matched high-impedance inputs and CFB-like slewing",
+      "condition": "",
+      "source": "ADI datasheets 135859fb and 1357fa"
+    },
+    {
+      "parameter": "i_n, THD+N, output current",
+      "value": "not verified",
+      "condition": "",
+      "source": "Not in the search summaries; read the datasheet"
+    }
+  ],
+  "reputation": {
+    "summary": "A niche pick from the op-amp-rolling era of sound cards (Asus Xonar, Audiotrak Prodigy HD2). Forum posts describe the LT1358 as 'warm, bright, tonal rich and sounds forward'. Some posters prefer it to the faster, higher-current LT1364 in buffer duty, and it is named alongside the LT1364 and LT1361 for buffer positions. The evidence is subjective forum impressions only. No Audio Science Review, Samuel Groner or other measurement data was found for the LT1357/8/9.",
+    "sonic_descriptors": [
+      "warm",
+      "bright",
+      "tonally rich",
+      "forward"
+    ],
+    "typical_uses": [
+      "Sound-card op-amp swaps (Asus Xonar, Audiotrak Prodigy HD2 buffer/output stage)",
+      "Buffer and I/V stages in DIY DACs (the LT1357 datasheet's front-page application is a DAC I-to-V converter)",
+      "Wideband amplifiers, buffers, active filters, data acquisition and video/cable drivers (datasheet application list)"
+    ],
+    "caveats": [
+      "The praise rests on a few subjective forum posts from one discovery lens, and those posts were not re-checked in this pass, so confidence is low.",
+      "This is a 25 MHz / 600 V/µs part: keep the layout tight and decouple locally. C-Load stability helps with capacitive loads but not with poor bypassing or long socket leads.",
+      "This is a low-power (2.5 mA max per amplifier) part. The datasheet guarantees ±12.5 V into 500 Ω, but output current was not verified, so check it before driving headphones or low impedances directly.",
+      "Bipolar inputs: input bias current is up to 500 nA max. Watch for offset with high source impedances.",
+      "The supply range is ±2.5 V to ±15 V, so ±15 V is the top of the range and a ±18 V rail is out of spec."
+    ],
+    "sources": [
+      "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-41",
+      "https://www.head-fi.org/threads/audiotrak-prodigy-hd2-opamp-configurations-list.322497/page-24",
+      "https://www.head-fi.org/threads/the-xonar-essence-stx-q-a-tweaking-impressions-thread.421890/page-114",
+      "https://www.hifivision.com/threads/changing-opamps-in-asus-xonar-essense-st-stx.21045/"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Analog Devices (Linear Technology legacy)",
+      "title": "LT1358/LT1359 - Dual and Quad 25MHz, 600V/µs Op Amps",
+      "doc_number": "135859f",
+      "revision": "B",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/135859fb.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Confirmed by web search as the live ADI PDF, with 135859fb printed in the page header. The Rev B date and change log were not visible in the search results."
+    },
+    {
+      "vendor": "Analog Devices (Linear Technology legacy)",
+      "title": "LT1357 - 25MHz, 600V/µs Op Amp",
+      "doc_number": "1357f",
+      "revision": "A",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/1357fa.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Confirmed live on analog.com. This is the LT1357's own datasheet; its front-page typical application is a DAC I-to-V converter. A search for '1357fb' returned only 1357fa."
+    },
+    {
+      "vendor": "Linear Technology / Analog Devices (Mouser distributor copy)",
+      "title": "LT1358/LT1359 Dual and Quad 25MHz, 600V/µs Op Amps",
+      "doc_number": "135859f",
+      "revision": "B",
+      "date": "",
+      "url": "https://www.mouser.de/datasheet/2/609/135859fb-2953807.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "Unconfirmed: the URL was seen only in openUC2 KiCad files and did not appear in web search. It likely duplicates the current ADI Rev B."
+    },
+    {
+      "vendor": "Analog Devices Inc. (DigiKey HTML copy)",
+      "title": "LT1358, LT1359 Datasheet by Analog Devices Inc.",
+      "doc_number": "135859f",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.com/en/htmldatasheets/production/80202/0/0/1/lt1358-lt1359-datasheet",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search. The same document is also at https://www.digikey.com/htmldatasheets/production/80202/0/0/1/lt1358-lt1359-datasheet.html."
+    },
+    {
+      "vendor": "Linear Technology (alldatasheet copy)",
+      "title": "LT1358 Datasheet (LINER)",
+      "doc_number": "135859f",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/70420/LINER/LT1358.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search. A LINER-branded LT1359 copy is also at https://www.alldatasheet.com/html-pdf/700156/LINER/LT1359/769/5/LT1359.html. The revision held was not visible in the search results."
+    },
+    {
+      "vendor": "Linear Technology (radiolocman copy)",
+      "title": "LT1358 Datasheet Linear Technology",
+      "doc_number": "135859f",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=339481",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search. radiolocman lists this separately from the ADI-branded entry di=524267, so it may freeze a pre-ADI revision."
+    },
+    {
+      "vendor": "Analog Devices (radiolocman copy)",
+      "title": "LT1358 Datasheet Analog Devices",
+      "doc_number": "135859f",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=524267",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search."
+    },
+    {
+      "vendor": "Linear Technology (datasheet4u copy)",
+      "title": "LT1358 Dual and Quad 25MHz/ 600V/us Op Amps",
+      "doc_number": "135859f",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/Linear-Technology/LT1358/51465",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search. Other old copies: datasheet.es (LT1358CN8, id 51466), datasheetspdf.com/datasheet/LT1359.html, digchip and scribd."
+    },
+    {
+      "vendor": "Linear Technology (Farnell copy)",
+      "title": "LT1357 25MHz, 600V/µs Op Amp",
+      "doc_number": "1357f",
+      "revision": "",
+      "date": "",
+      "url": "https://www.farnell.com/datasheets/60377.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search. Farnell's low numeric IDs often freeze older revisions, but the revision held here was not visible."
+    },
+    {
+      "vendor": "Linear Technology (datasheet.hk copy)",
+      "title": "LT1357 25MHz, 600V/µs Op Amp",
+      "doc_number": "1357f",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheet.hk/download.php?id=1083661&pdfid=2B76D4287F747D2DF4D7062C0BFF77F3&file=0049%5Clt1357_357960.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search. Its front-page application reads 'Wideband Amplifiers', unlike the DAC I-to-V application on 1357fa, so it may be a different revision (unconfirmed). There is another old copy at datasheetcatalog.com/datasheets_pdf/L/T/1/3/LT1357.shtml."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "LT1358 Dual 25 MHz, 600 V/µs Operational Amplifier (title as cited by a third party)",
+      "doc_number": "lt1355-56-57-58 (from the URL file name; unverified)",
+      "revision": "E",
+      "date": "2023",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/lt1355-56-57-58.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "Unconfirmed and probably a citation error. It is known only from a student bibliography. Web search found no such file: ADI serves separate datasheets, 135859fb for the LT1358/LT1359 and 1357fa for the LT1357, and a separate LT1355/LT1356 document."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "LT1357 25MHz, 600V/µs Op Amp (vendor short link)",
+      "doc_number": "1357fa",
+      "revision": "A",
+      "date": "",
+      "url": "https://www.analog.com/LT1357/datasheet",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "An ADI redirect-style datasheet link. The search index showed it with the same first-page title as 1357fa.pdf."
+    },
+    {
+      "vendor": "Richardson RFPD (distributor)",
+      "title": "LT1358/LT1359 135859fb",
+      "doc_number": "135859fb",
+      "revision": "B",
+      "date": "",
+      "url": "https://shop.richardsonrfpd.com/docs/rfpd/135859fb.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "A frozen distributor copy of the Rev B file. The file name and search title both show 135859fb."
+    },
+    {
+      "vendor": "DigiKey (distributor)",
+      "title": "LT1358, LT1359 Datasheet by Analog Devices Inc.",
+      "doc_number": "135859f",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.com/htmldatasheets/production/80202/0/0/1/lt1358-lt1359-datasheet.html",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "An HTML rendering of the data sheet. The search summary did not show which revision it holds."
+    },
+    {
+      "vendor": "DigiKey (distributor)",
+      "title": "LT1357 Datasheet by Analog Devices Inc.",
+      "doc_number": "1357f",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.com/htmldatasheets/production/80203/0/0/1/lt1357-datasheet.html",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "An HTML rendering. The revision was not shown."
+    },
+    {
+      "vendor": "Alldatasheet (third party)",
+      "title": "LT1357 Datasheet(PDF) - Linear Technology",
+      "doc_number": "1357f",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/70419/LINER/LT1357.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "The listing says 288 KB, 12 pages. The revision was not shown."
+    },
+    {
+      "vendor": "Linear Technology (radiolocman copy, LT1358CN8 entry)",
+      "title": "LT1358CN8 Datasheet Linear Technology",
+      "doc_number": "135859f (assumed from family; not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://radiolocman.com/datasheet/data.html?%2FLT1358CN8=&di=80309",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A separate radiolocman entry (di=80309) from the already-listed di=339481 (Linear) and di=524267 (ADI). It is Linear-branded, so it could be an older revision (original or Rev A). The search summary did not show a revision footer."
+    },
+    {
+      "vendor": "Linear Technology (Scribd upload)",
+      "title": "LT1358/LT1359 Op Amp Overview (Data-Sheet-Lt-1358)",
+      "doc_number": "135859f (assumed; not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/760623506/Data-Sheet-Lt-1358",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is a user upload of an LT1358/LT1359 datasheet. The branding and revision were not shown in the search summary."
+    },
+    {
+      "vendor": "Linear Technology (datasheet4u PDF viewer)",
+      "title": "LT1358 datasheet, amps equivalent, Linear Technology",
+      "doc_number": "135859f (assumed; not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet-pdf/LinearTechnology/LT1358/pdf.php?id=51465",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the PDF-viewer URL for the same datasheet4u document id (51465) as the already-listed /datasheets/Linear-Technology/LT1358/51465 page. It is probably the same file, not a different revision."
+    },
+    {
+      "vendor": "Analog Devices (rlocman.es copy)",
+      "title": "Datasheet LT1358, LT1359 Analog Devices - Vista previa y descarga",
+      "doc_number": "135859f",
+      "revision": "",
+      "date": "",
+      "url": "https://www.rlocman.es/datasheet/pdf.html?di=151039",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The Spanish radiolocman mirror has an ADI-branded LT1358/LT1359 entry. The search for '135859fb' returned it, but the summary did not confirm the file code inside it."
+    },
+    {
+      "vendor": "Linear Technology (alldatasheet copy, second LT1357 entry)",
+      "title": "LT1357 datasheet (8/12 Pages) LINER | 25MHz, 600V/us Op Amp",
+      "doc_number": "1357f (assumed; not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/html-pdf/694834/LINER/LT1357/1234/8/LT1357.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is a second alldatasheet LT1357 document (id 694834, 12 pages), separate from the already-listed id 70419. The later id suggests a later upload, possibly a different revision (Rev A / 1357fa versus the original 1357f). This is not confirmed."
+    },
+    {
+      "vendor": "Linear Technology (digchip copy)",
+      "title": "LT1357 datasheet - LT1357, 25MHz, 600V/µs op Amp",
+      "doc_number": "1357f (assumed; not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/262/LT1357.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The digchip mirrors are mostly old (about 2000s) scrapes, so this could hold the original 1357f or Rev A. The revision was not shown."
+    },
+    {
+      "vendor": "Linear Technology (datasheet4u copy)",
+      "title": "LT1357 - 25MHz/ 600V/us Op Amp | Linear Technology Datasheet",
+      "doc_number": "1357f (assumed; not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/Linear-Technology/LT1357/51462",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This document (id 51462) is also served at https://datasheet4u.com/datasheet/Linear-Technology/LT1357-51462, which is the same document. The revision was not shown."
+    },
+    {
+      "vendor": "Linear Technology (datasheetcatalog copy)",
+      "title": "LT1357 Datasheet pdf - 25MHz, 600V/µs Op Amp - Linear Technology",
+      "doc_number": "1357f (assumed; not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/L/T/1/3/LT1357.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheetcatalog mostly holds early-2000s scrapes, so this could be the original 1357f or the 1998 Rev A. The revision was not shown."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Linear Technology / Analog Devices",
+      "doc_number": "135859f",
+      "revision": "B",
+      "date": "unknown",
+      "changes": "This is the current revision on analog.com (135859fb). No change log or date appeared in the search results. The original and Rev A presumably existed but were not seen."
+    },
+    {
+      "vendor": "Linear Technology / Analog Devices",
+      "doc_number": "1357f",
+      "revision": "A",
+      "date": "unknown",
+      "changes": "This is the current LT1357 revision on analog.com (1357fa). The original (1357f) was not seen; the datasheet.hk and Farnell copies may hold it."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "lt1355-56-57-58 (unverified)",
+      "revision": "E (as cited by a third party)",
+      "date": "2023 (as cited)",
+      "changes": "Unverified third-party citation; no such document was found in web search. It is probably a citation error."
+    },
+    {
+      "vendor": "Linear Technology / Analog Devices",
+      "doc_number": "135859f",
+      "revision": "B",
+      "date": "unknown",
+      "changes": "Only the revision letter was seen, from file code 135859fb. The revision-history content was not shown in any search summary."
+    },
+    {
+      "vendor": "Linear Technology / Analog Devices",
+      "doc_number": "1357f",
+      "revision": "A",
+      "date": "unknown",
+      "changes": "Only the revision letter was seen, from file code 1357fa. The changes were not shown."
+    },
+    {
+      "vendor": "Linear Technology",
+      "doc_number": "1357f",
+      "revision": "original (no letter)",
+      "date": "1994 (copyright year in the Rev A footer)",
+      "changes": "This is the first release of the LT1357 datasheet. The date is inferred from the '© LINEAR TECHNOLOGY CORPORATION 1994' footer carried on Rev A. No copy that verifiably holds the original has been identified."
+    },
+    {
+      "vendor": "Linear Technology",
+      "doc_number": "1357f",
+      "revision": "A (1357fa)",
+      "date": "May 1998 (footer 'LT/TP 0598 REV A 2K • PRINTED IN USA', © 1994)",
+      "changes": "Search summary of analog.com 1357fa.pdf showed the footer '1357fa LT/TP 0598 REV A 2K • PRINTED IN USA • © LINEAR TECHNOLOGY CORPORATION 1994' (2K print run, May 1998). This is still the current version at ADI. The change content was not shown."
+    },
+    {
+      "vendor": "Linear Technology",
+      "doc_number": "135859f",
+      "revision": "original / A (not seen)",
+      "date": "unknown; probably 1994 (family copyright year), but not verified for this document",
+      "changes": "Related-parts tables in LTC C-Load family datasheets list the LT1358/LT1359 as 'Dual/Quad 2mA, 25MHz, 600V/µs Op Amps'. No LT/TP footer, date code or copy of 135859f original or 135859fa was found in search summaries."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No counterfeit or remark reports specific to the LT1357/LT1358/LT1359 were found. Web search this pass was limited to five queries, so this is not a clean bill of health. Buy from authorized ADI distributors, and treat marketplace 'LT1358' DIP-8s with suspicion, especially leaded (non-#PBF) parts sold as new. A bench check helps: a slow part remarked as an LT1358 cannot reach about 600 V/µs slew or 25 MHz GBW, and supply current should be at most 2.5 mA per amplifier. Also compare the laser marking and date code against known-genuine Linear/ADI parts.",
+  "alternatives": [
+    "LT1361 / LT1362 (dual/quad 50 MHz, 800 V/µs, about 4 mA/amp; same family)",
+    "LT1364 / LT1365 (dual/quad 70 MHz, 1000 V/µs, about 6 mA/amp typical; same family at higher bias)",
+    "LT1813 (dual 100 MHz, 700 V/µs, 3 mA/amp; listed in the LT1364 Related Parts)",
+    "LT1354 / LT1355 / LT1356 (lower-power 12 MHz family siblings)"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://cds.linear.com/docs/Datasheet/1357fa.pdf",
+    "http://cds.linear.com/docs/Datasheet/135859fb.pdf",
+    "http://cds.linear.com/docs/en/datasheet/1357fa.pdf",
+    "http://cds.linear.com/docs/en/datasheet/135859fb.pdf",
+    "http://www.linear.com/docs/Datasheet/1357fa.pdf",
+    "http://www.linear.com/docs/Datasheet/135859fb.pdf",
+    "http://www.linear.com/product/LT1357",
+    "http://www.linear.com/product/LT1358",
+    "http://www.linear.com/product/LT1359",
+    "https://shop.richardsonrfpd.com/docs/rfpd/135859fb.pdf",
+    "https://www.analog.com/LT1357/datasheet",
+    "https://www.analog.com/en/products/lt1357.html",
+    "https://www.analog.com/en/products/lt1358.html",
+    "https://www.analog.com/en/products/lt1359.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/1357f.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/1357fa.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/135859f.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/135859fa.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/135859fb.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/lt1355-56-57-58.pdf",
+    "https://www.farnell.com/datasheets/60377.pdf",
+    "https://www.mouser.de/datasheet/2/609/135859fb-2953807.pdf"
+  ],
+  "open_questions": [
+    "INFERRED URLs: the 135859fa, 135859f and 1357f analog.com locations, all cds.linear.com locations, the linear.com product pages and lt1355-56-57-58.pdf were not seen in search. The confirmed URLs are 135859fb.pdf, 1357fa.pdf, the three ADI product pages, the Farnell copy, the DigiKey HTML copy and the third-party mirrors.",
+    "The printed dates of 135859fb (Rev B) and 1357fa (Rev A), their revision-history tables, and the dates of the original and Rev A documents are unknown.",
+    "Which revisions do the Linear-branded mirrors hold (alldatasheet 70420, radiolocman di=339481, Farnell 60377, datasheet.hk)? Some probably freeze pre-Rev-B / pre-Rev-A editions.",
+    "Is 'lt1355-56-57-58.pdf' Rev E (2023) real? No web trace was found, so it is probably a citation error.",
+    "The frequency condition for the 8 nV/√Hz noise figure, plus i_n, output current, CMRR/PSRR, open-loop gain and the LT1359 'S' vs 'S14' packages, still need to be read from the datasheet.",
+    "ADI lifecycle status (Production / NRND / Obsolete) for each orderable is unconfirmed. Parts are still listed at DigiKey and Newark.",
+    "No PCNs, die changes, fab transfers or second sources were found, but no search in this pass targeted PCNs specifically.",
+    "No objective measurements (ASR, Samuel Groner, etc.) were found for the LT1357/8/9."
+  ],
+  "sources": [
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/135859fb.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/1357fa.pdf",
+    "https://www.analog.com/en/products/lt1357.html",
+    "https://www.analog.com/en/products/lt1358.html",
+    "https://www.analog.com/en/products/lt1359.html",
+    "https://www.digikey.com/en/htmldatasheets/production/80202/0/0/1/lt1358-lt1359-datasheet",
+    "https://www.newark.com/analog-devices/lt1358cs8-pbf/op-amp-25mhz-40-to-85deg-c-soic/dp/51AK7981",
+    "https://www.farnell.com/datasheets/60377.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/70420/LINER/LT1358.html",
+    "https://www.radiolocman.com/datasheet/data.html?di=339481",
+    "https://www.radiolocman.com/datasheet/data.html?di=524267",
+    "https://www.mouser.de/datasheet/2/609/135859fb-2953807.pdf",
+    "https://github.com/openUC2/TechnicalDocs-openUC2-QBox/blob/fe20cb500970ab69b6b07d02d59156ff46766962/Production_Files/Kicad/ADF%20Board/netlist.net",
+    "https://github.com/indare/pcb_work/blob/c6d3acc4e15273756a5de0ede66dc656917d916f/Audio/datasheets/opamps/AD_LT1364.pdf",
+    "https://github.com/MartimAgostinho/CS-Lab2/blob/2d1df2afb5ba9e9806925bae2b88fe3b81cb7a3d/Report/references.bib",
+    "https://github.com/MartimAgostinho/CS-Lab2/blob/2d1df2afb5ba9e9806925bae2b88fe3b81cb7a3d/Report/Sections/Simulation.tex",
+    "https://github.com/lukehsiao/tecs-hardware-kbc/blob/d5b82140f3826b6d90156b20d9c6731b7fe07e8c/hack/opamps/data/standard_mouser_gold.csv",
+    "https://github.com/123xiao/geek-dev-personal-site/blob/62bb387208122938198d00bcff50e3103ea2ede4/ic/ic_sitemap_328.xml",
+    "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-41",
+    "https://www.head-fi.org/threads/audiotrak-prodigy-hd2-opamp-configurations-list.322497/page-24",
+    "https://www.head-fi.org/threads/the-xonar-essence-stx-q-a-tweaking-impressions-thread.421890/page-114",
+    "https://www.hifivision.com/threads/changing-opamps-in-asus-xonar-essense-st-stx.21045/"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [],
+    "corrections": [
+      "The current LT1358/LT1359 vendor datasheet is 135859fb (Rev B) at analog.com. It is now a vendor_current entry at high confidence instead of being known only from the Mouser copy.",
+      "The LT1357 has its own ADI datasheet, 1357fa (Rev A). This entry was added; the doc number was previously unknown.",
+      "The inferred 1357fb archive seeds were dropped because search returned only 1357fa. The 1357fa cds.linear.com seeds and the Farnell copy were added as seeds.",
+      "The Mouser.de 135859fb copy was downgraded from medium to low confidence because the URL did not surface in web search.",
+      "The lt1355-56-57-58.pdf 'Rev E 2023' entry stays at low confidence, now marked as a probable citation error: search found only separate ADI datasheets (135859fb, 1357fa, LT1355/LT1356).",
+      "Specs were added from the vendor datasheet front page: e_n 8 nV/√Hz, VOS 600 µV max, IB 500 nA max, supply current 2.5 mA max per amplifier, and ±12.5 V min output swing into 500 Ω. The ±2.5 V to ±15 V supply range is now confirmed.",
+      "The family supply currents were corrected to about 2, 4 and 6 mA per amplifier for the 25, 50 and 70 MHz parts, so the LT1364 alternative now reads about 6 mA typical instead of 7.5 mA.",
+      "Mirrors were added (DigiKey HTML, alldatasheet LINER, radiolocman Linear- and ADI-branded, datasheet4u, Farnell, datasheet.hk), each with its revision marked unknown.",
+      "The part-number statuses changed from 'unknown' to 'unconfirmed (still listed)'; ADI lifecycle status remains unconfirmed."
+    ],
+    "unverified_urls": [
+      "https://www.mouser.de/datasheet/2/609/135859fb-2953807.pdf",
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/lt1355-56-57-58.pdf",
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/135859fa.pdf",
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/135859f.pdf",
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/1357f.pdf",
+      "http://cds.linear.com/docs/en/datasheet/135859fb.pdf",
+      "http://cds.linear.com/docs/Datasheet/135859fb.pdf",
+      "http://cds.linear.com/docs/en/datasheet/1357fa.pdf",
+      "http://cds.linear.com/docs/Datasheet/1357fa.pdf",
+      "http://www.linear.com/product/LT1357",
+      "http://www.linear.com/product/LT1358",
+      "http://www.linear.com/product/LT1359",
+      "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-41",
+      "https://www.head-fi.org/threads/audiotrak-prodigy-hd2-opamp-configurations-list.322497/page-24",
+      "https://www.head-fi.org/threads/the-xonar-essence-stx-q-a-tweaking-impressions-thread.421890/page-114",
+      "https://www.hifivision.com/threads/changing-opamps-in-asus-xonar-essense-st-stx.21045/"
+    ],
+    "claims_confirmed": [
+      "The ADI datasheet 'LT1358/LT1359 - Dual and Quad 25MHz, 600V/µs Op Amps' is live with file code 135859fb (Rev B): https://www.analog.com/media/en/technical-documentation/data-sheets/135859fb.pdf",
+      "The LT1357 '25MHz, 600V/µs Op Amp' datasheet is 1357fa (Rev A) on analog.com, with a DAC I-to-V converter as its typical application: https://www.analog.com/media/en/technical-documentation/data-sheets/1357fa.pdf",
+      "The LT1358/LT1359 datasheet gives 25 MHz GBW, 600 V/µs, 2.5 mA max supply current per amplifier, 8 nV/√Hz, 600 µV max VOS and 500 nA max IB: https://www.analog.com/media/en/technical-documentation/data-sheets/135859fb.pdf",
+      "The supply range is ±2.5 V to ±15 V, with ±12.5 V min output swing into 500 Ω: https://www.analog.com/en/products/lt1358.html",
+      "The topology is a single-stage VFB with matched high-impedance inputs and CFB-like slewing, and the family runs 25/50/70 MHz at 2/4/6 mA per amplifier: https://www.analog.com/en/products/lt1357.html",
+      "ADI product pages exist for the LT1357, LT1358 and LT1359: https://www.analog.com/en/products/lt1359.html",
+      "DigiKey hosts an HTML copy of the ADI LT1358/LT1359 datasheet: https://www.digikey.com/en/htmldatasheets/production/80202/0/0/1/lt1358-lt1359-datasheet",
+      "Farnell hosts an LT1357 datasheet copy: https://www.farnell.com/datasheets/60377.pdf",
+      "Linear-branded (LINER) mirrors exist at alldatasheet and radiolocman: https://www.alldatasheet.com/datasheet-pdf/pdf/70420/LINER/LT1358.html",
+      "Newark still lists LT1358CS8#PBF: https://www.newark.com/analog-devices/lt1358cs8-pbf/op-amp-25mhz-40-to-85deg-c-soic/dp/51AK7981"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "high-speed-video-crossover",
+  "product_pages": [
+    "https://www.analog.com/en/products/lt1358.html"
+  ],
+  "revision_chain_notes": "I used all 4 WebSearch calls and no other research tools. For the LT1357 (1357f), the chain is: original 1357f (© 1994, no copy identified) -> Rev A 1357fa, footer 'LT/TP 0598 REV A 2K', May 1998, which is current at analog.com and was confirmed in the search summary. A later revision is not known and probably never existed. Missing: a copy verifiably holding the original 1357f. The alldatasheet id 70419 and 694834, datasheetcatalog, digchip, datasheet4u 51462, Farnell 60377 and datasheet.hk copies are candidates, but none showed its revision footer. For the LT1358/LT1359 (135859f), the chain is: original 135859f (date unknown, probably about 1994) -> Rev A 135859fa (not seen anywhere; searches for '135859fa' returned nothing specific) -> Rev B 135859fb (current at ADI, Mouser and Richardson; date and LT/TP footer not shown). Missing: the dates and footers of all three 135859f revisions, and any copy of the original or Rev A. The Linear-branded mirrors (radiolocman di=339481 and di=80309 (LT1358CN8), alldatasheet 70420, datasheet4u 51465, Scribd 760623506) are the best candidates for pre-Rev-B editions but are unconfirmed. The ADI-branded mirrors (radiolocman di=524267, rlocman.es di=151039) are probably Rev B. No second sources and no acquirer re-issue under a new document number were found. ADI kept the LTC file codes. Unverified lead: docs.rs-online.com/f061/0900766b81222afc.pdf came up twice for LT1358/LT1359 revision queries, but its title and content were not shown, so it was not recorded. The archive_seed_urls follow the standard legacy Linear Technology URL patterns (cds.linear.com/docs/en/datasheet/<code>.pdf, www.linear.com/docs/Datasheet/<code>.pdf, www.linear.com/product/<part>) applied to the verified file codes. They are pattern-derived for Wayback lookup and were not seen in search results."
+}

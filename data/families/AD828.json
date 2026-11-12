@@ -1,0 +1,331 @@
+{
+  "id": "AD828",
+  "name": "AD828 (ADI low-power dual video op-amp)",
+  "tagline": "ADI's 130 MHz, 450 V/µs dual video op-amp; Chinese sound-card and car-audio modders rate it above the AD827 for dynamics and treble extension.",
+  "technology": "Bipolar voltage-feedback dual video op-amp (process details not confirmed this pass). ADI says it is a low-cost dual optimised for video applications that need gains of +2 or more and high output drive, such as cable driving. Its relation to the AD826 / AD827 / AD847 dies is unconfirmed.",
+  "manufacturers": [
+    "Analog Devices"
+  ],
+  "part_numbers": [
+    {
+      "pn": "AD828",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "production (family; per ADI product page / AD828ARZ listing)",
+      "notes": "Family/base part number. The ADI product page is live."
+    },
+    {
+      "pn": "AD828AN",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "obsolete (likely)",
+      "notes": "8-lead PDIP. Search summary says it appears in ADI Product Discontinuance Notice PDN 10_0081 Rev. B. Treat as discontinued; its exact last-time-buy date is unconfirmed."
+    },
+    {
+      "pn": "AD828AR",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (likely superseded by RoHS AD828ARZ)",
+      "notes": "8-lead SOIC, leaded (non-RoHS) ordering code. Alldatasheet hosts a datasheet under this PN. Lifecycle not confirmed."
+    },
+    {
+      "pn": "AD828ARZ",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "production",
+      "notes": "8-lead SOIC, RoHS (Z) code. Listed as in production on Octopart and Utmel. Tape-and-reel suffixes (-REEL/-REEL7) are likely but unconfirmed."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Analog Devices",
+      "role": "originator / sole source",
+      "period": "1990s (introduction year unconfirmed) to present",
+      "notes": "Current datasheet is Rev. C in ADI's older 'REV. C' header style. AD828ARZ is still listed as in production. No second sources known."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "-3 dB bandwidth",
+      "value": "130 MHz",
+      "condition": "G = +2",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "450 V/µs",
+      "condition": "typ",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf"
+    },
+    {
+      "parameter": "0.1 dB flatness",
+      "value": "40 MHz",
+      "condition": "video, G = +2",
+      "source": "https://www.analog.com/en/products/ad828.html"
+    },
+    {
+      "parameter": "Differential gain / phase",
+      "value": "0.01% / 0.05°",
+      "condition": "video load",
+      "source": "https://www.analog.com/en/products/ad828.html"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "15 mA",
+      "condition": "total, both amplifiers (datasheet front page; max vs typ not confirmed this pass)",
+      "source": "https://www.analog.com/en/products/ad828.html"
+    },
+    {
+      "parameter": "Output current",
+      "value": "50 mA min per amplifier",
+      "condition": "cable-driving",
+      "source": "https://www.analog.com/en/products/ad828.html"
+    },
+    {
+      "parameter": "Stability / intended gain",
+      "value": "optimised for G >= +2",
+      "condition": "per ADI description",
+      "source": "https://www.analog.com/en/products/ad828.html"
+    }
+  ],
+  "reputation": {
+    "summary": "The praise comes from Chinese DIY sources. A CSDN listening ranking of 22 classic op-amps credits the AD828AN with 'jump, grandeur, extension' but a somewhat rough midrange, and ranks it above the AD827. An Elecfans topic page says the AD828AR beats the AD827JN and calls it neutral, with good mid resolution, strong bass dynamics and clear, extended highs; it recommends the part for sound-card and DVD output stages. Car-audio modders on Autohome fit it to head units. One Bilibili creator found a cheap AD828 board disappointing. There is no Western audiophile or measurement-based consensus.",
+    "sonic_descriptors": [
+      "dynamic / 'jump' (CSDN)",
+      "grand, large-scale (CSDN)",
+      "extended (CSDN, Elecfans)",
+      "somewhat rough midrange (CSDN)",
+      "neutral full-range tone (Elecfans)",
+      "strong bass dynamics (Elecfans)",
+      "clear highs (Elecfans)"
+    ],
+    "typical_uses": [
+      "Op-amp swaps in sound-card outputs",
+      "DVD player output stages",
+      "Op-amp swaps in car head units",
+      "Vendor-intended use: video line and cable drivers at G >= +2"
+    ],
+    "caveats": [
+      "This is a video op-amp that ADI optimises for gains of +2 or more. In unity-gain buffer or socket-swap positions it may ring or oscillate, so check stability and decoupling.",
+      "The praise is subjective and comes mostly from Chinese forums and marketing-style pages. One Bilibili review was negative.",
+      "The PDIP AD828AN appears to be discontinued, so DIP parts sold on marketplaces may be new-old stock or remarked."
+    ],
+    "sources": [
+      "https://blog.csdn.net/helongfu/article/details/46286715",
+      "https://m.elecfans.com/zt/145531/",
+      "https://club.autohome.com.cn/bbs/threadowner-c-837-29858375-1.html",
+      "https://www.bilibili.com/video/BV1a5411Y7HQ/",
+      "https://www.utmel.com/components/ad828-130-mhz-dual-video-op-amp-high-speed-specs-pinout-and-audio-performance-analysis?id=7864"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Analog Devices",
+      "title": "AD828 Dual, Low Power Video Op Amp",
+      "doc_number": "AD828",
+      "revision": "C",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current ADI datasheet. The page header reads 'REV. C'. The lowercase path .../data-sheets/ad828.pdf also resolves."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Datasheet AD828 Analog Devices, Revision: C",
+      "doc_number": "AD828",
+      "revision": "C",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=121449",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "The RadioLocman mirror title says it holds Revision C."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Datasheet AD828 Analog Devices, Revisión: C",
+      "doc_number": "AD828",
+      "revision": "C",
+      "date": "",
+      "url": "https://www.rlocman.es/datasheet/pdf.html?di=170553&p=11",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Spanish RadioLocman mirror whose title says Revision C (page 11 shows outline dimensions)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD828AR Datasheet (PDF)",
+      "doc_number": "AD828",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48433/AD/AD828AR.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision held is unconfirmed. Low alldatasheet IDs usually mean an older scan; it may be Rev. B or earlier."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD828 Datasheet view",
+      "doc_number": "AD828",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/view/48431/AD/AD828.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision held is unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD828 Low Power Video Op Amp",
+      "doc_number": "AD828",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet/Analog-Devices/AD828-142631",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision held is unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD828 Dual Low Power Video Op Amp Datasheet",
+      "doc_number": "AD828",
+      "revision": "",
+      "date": "",
+      "url": "https://studylib.net/doc/18150871/dual--low-power-video-op-amp-ad828",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision held is unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD828 datasheet - Dual, Low Power Video op Amp",
+      "doc_number": "AD828",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/041/AD828.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision held is unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD828AN Datasheet",
+      "doc_number": "AD828",
+      "revision": "",
+      "date": "",
+      "url": "https://www.futurlec.com/AnalogDevices/AD828AN.shtml",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Futurlec distributor page for the PDIP AD828AN. Revision held is unconfirmed."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD828",
+      "revision": "C",
+      "date": "unknown",
+      "changes": "Current revision. The change list was not obtained. It appears to be an older-format ADI sheet with no modern revision-history table seen."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD828",
+      "revision": "B",
+      "date": "unknown",
+      "changes": "Unconfirmed. A search summary suggested a Rev. B copy (with noise graphs) circulates on mirrors, but no specific URL was tied to it."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No AD828-specific counterfeit reports were found. The PDIP AD828AN appears in ADI PDN 10_0081 Rev. B (discontinued), so DIP-8 'AD828AN' parts and cheap pre-built AD828 boards on marketplaces may be new-old stock, pulls or remarked parts. Buy the SOIC AD828ARZ from authorised distributors.",
+  "alternatives": [
+    "AD826 (ADI dual high-speed video op-amp)",
+    "AD827 (ADI dual high-speed op-amp, audio-modder favourite)",
+    "AD8056 (ADI low-cost dual video op-amp)",
+    "LM6172 (TI dual high-speed VFB op-amp)"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "https://www.analog.com/en/products/ad828.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad828.pdf",
+    "https://www.analog.com/static/imported-files/data_sheets/AD828.pdf"
+  ],
+  "open_questions": [
+    "Rev. C print date and change list, and whether Rev. A/B copies survive (which mirror holds Rev. B?).",
+    "Exact lifecycle of AD828AR (leaded SOIC) and the reel variants, plus the scope and date of PDN 10_0081 for AD828AN.",
+    "Specs not confirmed this pass: input voltage noise, settling time, offset voltage, supply range (±5 V / ±15 V operation is expected), output swing into 150 Ω, and whether 15 mA is max or typ.",
+    "Whether the part is unity-gain stable (ADI only says it is optimised for G >= +2).",
+    "Whether any die or fab change occurred. No PCN about a silicon change was found."
+  ],
+  "sources": [
+    "https://www.analog.com/en/products/ad828.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf",
+    "https://www.radiolocman.com/datasheet/pdf.html?di=121449",
+    "https://www.rlocman.es/datasheet/pdf.html?di=170553&p=11",
+    "https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf",
+    "https://octopart.com/ad828arz-analog+devices-411908",
+    "https://www.utmel.com/productdetail/analogdevicesinc-ad828arz-6162199",
+    "https://www.utmel.com/components/ad828-130-mhz-dual-video-op-amp-high-speed-specs-pinout-and-audio-performance-analysis?id=7864",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/48433/AD/AD828AR.html",
+    "https://blog.csdn.net/helongfu/article/details/46286715",
+    "https://m.elecfans.com/zt/145531/",
+    "https://club.autohome.com.cn/bbs/threadowner-c-837-29858375-1.html",
+    "https://www.bilibili.com/video/BV1a5411Y7HQ/"
+  ],
+  "verification": {
+    "status": "partially-verified",
+    "refuted_claims": [],
+    "corrections": [
+      "Changed channels from 0 to 2 for every part number (dual op-amp).",
+      "Set statuses: AD828ARZ production; AD828AN likely obsolete (it appears in ADI PDN 10_0081 Rev. B); AD828AR unknown.",
+      "Added AD828ARZ, the RoHS SOIC ordering code.",
+      "Softened the technology claim that the AD828 is a 'separate die from AD826 and AD827/AD847' to unconfirmed.",
+      "Added a tagline, key specs, the Rev. C datasheet, the product page and mirror entries.",
+      "Rewrote the reputation summary to keep it attributed, and added caveats (optimised for G >= +2, praise is subjective)."
+    ],
+    "unverified_urls": [
+      "https://www.alldatasheet.com/datasheet-pdf/pdf/48433/AD/AD828AR.html",
+      "https://www.alldatasheet.com/datasheet-pdf/view/48431/AD/AD828.html",
+      "https://datasheet4u.com/datasheet/Analog-Devices/AD828-142631",
+      "https://studylib.net/doc/18150871/dual--low-power-video-op-amp-ad828",
+      "https://www.digchip.com/datasheets/parts/datasheet/041/AD828.php",
+      "https://www.futurlec.com/AnalogDevices/AD828AN.shtml",
+      "https://www.analog.com/static/imported-files/data_sheets/AD828.pdf",
+      "https://blog.csdn.net/helongfu/article/details/46286715",
+      "https://m.elecfans.com/zt/145531/",
+      "https://club.autohome.com.cn/bbs/threadowner-c-837-29858375-1.html",
+      "https://www.bilibili.com/video/BV1a5411Y7HQ/"
+    ],
+    "claims_confirmed": [
+      "The AD828 is ADI's 'Dual, Low Power Video Op Amp', a low-cost dual optimised for gains of +2 or more and cable driving (https://www.analog.com/en/products/ad828.html).",
+      "Specs: 130 MHz -3 dB bandwidth at G = +2, 450 V/µs slew, 0.1 dB flatness to 40 MHz, differential gain/phase 0.01%/0.05°, 15 mA supply current, 50 mA minimum output per amplifier (https://www.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf).",
+      "The current ADI datasheet is Rev. C (https://www.analog.com/media/en/technical-documentation/data-sheets/ad828.pdf).",
+      "RadioLocman mirrors hold Rev. C (https://www.radiolocman.com/datasheet/pdf.html?di=121449, https://www.rlocman.es/datasheet/pdf.html?di=170553&p=11).",
+      "AD828ARZ is listed as in production (https://octopart.com/ad828arz-analog+devices-411908).",
+      "AD828AN appears in ADI PDN 10_0081 Rev. B, according to the search summary (https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf)."
+    ],
+    "web_searches_used": 4
+  },
+  "tier": "C",
+  "category": "high-speed-video-crossover",
+  "product_pages": [
+    "https://www.analog.com/en/products/ad828.html"
+  ]
+}

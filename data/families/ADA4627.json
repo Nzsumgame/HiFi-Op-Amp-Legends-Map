@@ -1,0 +1,519 @@
+{
+  "id": "ADA4627",
+  "name": "ADA4627-1 / ADA4637-1 (ADI single JFET-input; ADA4637-1 decompensated)",
+  "tagline": "ADI's 2009 JFET-input single (6.1 nV/rtHz, 19 MHz), often suggested as an OPA627 alternative. ADI's own AN-1429 names it among op amps 'reputable with music fans'.",
+  "technology": "JFET-input single op amp. ADI calls the ADA4637-1 'a decompensated version of the ADA4627-1', stable at a noise gain of 5 or greater. The ADA4627-1 is therefore the unity-gain-stable member (inferred from that wording). Title history: the ADA4627-1 product page is titled '36 V, 19 MHz, Low Noise, Low Bias Current, JFET Op Amp'. An early ADA4637 datasheet copy is titled '36 V, 80 MHz, Low Noise, Low Bias Current, JFET Op Amp'. The current combined datasheet (Rev. F) is titled '30 V, High Speed, Low Noise, Low Bias Current, JFET Operational Amplifier'. The process technology was not verified.",
+  "manufacturers": [
+    "Analog Devices"
+  ],
+  "part_numbers": [
+    {
+      "pn": "ADA4627-1",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "presumed active: the ADI product page is live, but lifecycle is not confirmed",
+      "notes": "Unity-gain-stable version. ADI's Eagle library has it as ADA4627-1R (SOIC) and ADA4627-1CP (LFCSP8), added 2009-12-22."
+    },
+    {
+      "pn": "ADA4627-1ARZ",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "SOIC-8, A grade, with -R7/-RL reel variants. Seen in a third-party catalogue sitemap; not web-confirmed in this pass."
+    },
+    {
+      "pn": "ADA4627-1BRZ",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "SOIC-8, B grade (tighter specs expected), with -R7/-RL. Seen in a third-party catalogue sitemap; not web-confirmed. The grade deltas were not verified."
+    },
+    {
+      "pn": "ADA4627-1ACPZ-R2",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "LFCSP-8, A grade, with -R7/-RL. This is the MPN in ADI's Eagle LFCSP8 device. It may fall under PCN 14_0038 (a 3x3 mm LFCSP assembly transfer); unconfirmed."
+    },
+    {
+      "pn": "ADA4637-1ARZ",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "listed at Mouser; lifecycle not confirmed",
+      "notes": "SOIC-8, A grade. Mouser product page confirmed. Digi-Key ADA4637-1ARZ-ND appears in open-hardware STM BOMs."
+    },
+    {
+      "pn": "ADA4637-1BRZ",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown; a datasheet is indexed under this code on Octopart",
+      "notes": "SOIC-8, B grade. Its existence is confirmed by the Octopart datasheet URL keyed to ADA4637-1BRZ."
+    },
+    {
+      "pn": "ADA4637-1ACPZ-R2",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "LFCSP-8, A grade, with -R7/-RL. Seen only in a third-party catalogue sitemap; confirm against ADI's ordering guide."
+    },
+    {
+      "pn": "ADA4637-1",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "presumed active: the ADI product page is live, but lifecycle is not confirmed",
+      "notes": "Decompensated version, stable at a noise gain of 5 or greater. Its SPICE model v1.0 is dated 08/2010. Enthusiasts favour it for DAC I/V stages; that claim is unverified."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Analog Devices",
+      "role": "originator (sole source) - ADA4627-1",
+      "period": "about 2009 to present",
+      "notes": "The ADI SPICE macro-model header reads '1.0 (07/2009)'. The Eagle analog-devices.lbr added ADA4627-1R/-1CP on 2009-12-22, citing a standalone ADA4627-1.pdf. No second sources are known."
+    },
+    {
+      "vendor": "Analog Devices",
+      "role": "originator (sole source) - ADA4637-1 decompensated derivative",
+      "period": "about 2010 to present",
+      "notes": "The SPICE model v1.0 is dated 08/2010. An early standalone ADA4637 datasheet ('36 V, 80 MHz ...', copy on Octopart) appears to predate the merged ADA4627-1/ADA4637-1 datasheet; that sequence is inferred from the titles."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Stability / compensation",
+      "value": "ADA4627-1: unity-gain stable (inferred). ADA4637-1: decompensated, stable at a noise gain of 5 or greater. The ADI SPICE model says 'noise gain >5'.",
+      "condition": "closed-loop noise gain",
+      "source": "ADI product/datasheet description, via web search (https://www.analog.com/en/products/ada4637-1.html, https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf); ADI LTspice model header"
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "ADA4627-1: 19 MHz. ADA4637-1: about 80 MHz (from the datasheet title; the draft's memory value of 79.9 MHz was not confirmed).",
+      "condition": "typical",
+      "source": "ADI product-page title '36 V, 19 MHz ...' (https://www-cce.cldnet.analog.com/en/products/ada4627-1.html); ADA4637 datasheet copy titled '36 V, 80 MHz ...' (https://datasheet.octopart.com/ADA4637-1BRZ-Analog-Devices-datasheet-10549678.pdf)"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "ADA4627-1: 60 V/us. ADA4637-1: 170 V/us.",
+      "condition": "typical",
+      "source": "ADI product/datasheet feature list, via web-search summary (https://www.analog.com/en/products/ada4627-1.html). Confirm against Table 1 of Rev. F."
+    },
+    {
+      "parameter": "Input voltage noise density",
+      "value": "6.1 nV/rtHz",
+      "condition": "f = 1 kHz, typical",
+      "source": "ADI product/datasheet feature list, via web search (https://www.analog.com/en/products/ada4627-1.html)"
+    },
+    {
+      "parameter": "Supply voltage range",
+      "value": "±5 V to ±15 V dual supply (operating). Titles: '36 V' on the product page and early datasheets, '30 V' on the Rev. F datasheet. The SPICE 'Generic Desc' gives '8/30V'.",
+      "condition": "total or dual supply",
+      "source": "ADI product description via web search (https://www.analog.com/en/products/ada4627-1.html); datasheet titles; ADI SPICE header. The 36 V figure is probably the absolute-maximum rating (inference)."
+    },
+    {
+      "parameter": "Input stage type",
+      "value": "JFET input",
+      "condition": "n/a",
+      "source": "ADI datasheet title (https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf)"
+    },
+    {
+      "parameter": "Packages",
+      "value": "SOIC-8 (R) and LFCSP-8 (CP). No DIP.",
+      "condition": "n/a",
+      "source": "ADI Eagle library devices; ordering codes ARZ/BRZ/ACPZ; Mouser listing for ADA4637-1ARZ"
+    },
+    {
+      "parameter": "Speed relative to OPA627 (qualitative)",
+      "value": "The blog claim of higher slew rate and bandwidth than the OPA627 is marginally consistent for the ADA4627-1 (60 V/us vs. the OPA627's commonly cited 55 V/us, not verified this run). It is clearly true for the ADA4637-1 (170 V/us).",
+      "condition": "comparison against OPA627",
+      "source": "http://shirokuma-industry.com/wordpress/?p=1690 (not re-verified); ADI slew-rate figures above"
+    }
+  ],
+  "reputation": {
+    "summary": "ADI's application note AN-1429 lists the ADA4627-1, alongside the AD797, OP275 and AD8620, as ADI op amps 'reputable with music fans'. That is vendor marketing, not a measurement. Enthusiast material carried over from the discovery notes was not re-verified: a diyAudio thread titled 'ADA4627 outperforms Burr-Brown's OPA627' calls the sound refined and dynamic, and a Japanese Dr.DAC3 comparison (Shirokuma) reported less treble harshness than the OPA627. The ADA4637-1 is praised for DAC I/V stages. No independent distortion measurements (Groner, ASR) were found.",
+    "sonic_descriptors": [
+      "more refined (forum)",
+      "dynamic (forum)",
+      "'everything sounds BIGGER' (mic preamp, forum)",
+      "less treble harshness than the OPA627 (Japanese blog)",
+      "clean (forum)"
+    ],
+    "typical_uses": [
+      "OPA627 alternative in single-op-amp positions (needs an SOIC-to-DIP adapter)",
+      "DAC I/V conversion (ADA4637-1 only at a noise gain of 5 or greater)",
+      "microphone preamplifiers",
+      "op-amp rolling in DAC and headphone gear (e.g. Dr.DAC3)",
+      "low-bias-current transimpedance stages (e.g. open-hardware STM tunnelling amps using the ADA4637-1ARZ)"
+    ],
+    "caveats": [
+      "The ADA4637-1 is decompensated (stable only at a noise gain of 5 or greater). It is not a drop-in for unity-gain buffers or low-gain positions.",
+      "Single channel only; dual sockets need an adapter.",
+      "SOIC-8 and LFCSP-8 only, with no DIP. The LFCSP is impractical for hand-rolling.",
+      "The sonic claims are subjective forum and blog listening and were not re-verified in this pass.",
+      "The AN-1429 praise is vendor marketing.",
+      "No independent measurement data was found."
+    ],
+    "sources": [
+      "https://www.analog.com/media/en/technical-documentation/application-notes/AN-1429.pdf",
+      "https://github.com/Averyy/pcbparts-mcp/blob/fce2143dadd7656b570220978e122a8f75018b18/data/design-rules/rules_sources/misc/audio/adi-an-1429-design-considerations-for-headphone-drivers-in-mobile-phones.md",
+      "https://www.diyaudio.com/community/threads/ada-4627-ada4627-1-outperform-burr-browns-opa-627-opa627.150222/",
+      "https://www.head-fi.org/threads/ada4627-1.458079/",
+      "https://diyaudio.com/forums/chip-amps/190031-ada4637-1-experience.html",
+      "http://shirokuma-industry.com/wordpress/?p=1690",
+      "https://www.analog.com/en/products/ada4627-1.html"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4627-1/ADA4637-1: 30 V, High Speed, Low Noise, Low Bias Current, JFET Operational Amplifier",
+      "doc_number": "ADA4627-1_4637-1 (ADI file name; footer D-code not seen)",
+      "revision": "F",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The current combined datasheet; search results title it 'ADA4627-1/ADA4637-1 (Rev. F)'. The short link https://www.analog.com/ADA4637-1/datasheet resolves to the same title."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4627-1: 36 V, 19 MHz, Low Noise, Low Bias Current, JFET Operational Amplifier (early standalone datasheet)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "2009-12-22",
+      "url": "http://www.analog.com/static/imported-files/data_sheets/ADA4627-1.pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed. Cited as the source in Eagle's analog-devices.lbr (2009-12-22). It is a legacy path, probably dead now, and a prime Wayback candidate."
+    },
+    {
+      "vendor": "Analog Devices (via Octopart)",
+      "title": "ADA4637: 36 V, 80 MHz, Low Noise, Low Bias Current, JFET Op Amp (early standalone ADA4637 datasheet)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/ADA4637-1BRZ-Analog-Devices-datasheet-10549678.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "It freezes an older ADA4637-only datasheet with a pre-merger title. Indexed under ADA4637-1BRZ."
+    },
+    {
+      "vendor": "Analog Devices (via datasheetq)",
+      "title": "ADA4627-1 datasheet, Rev. A copy",
+      "doc_number": "unknown",
+      "revision": "A",
+      "date": "",
+      "url": "https://www.datasheetq.com/ADA4627-1-doc-ADI-RevA",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "This looks like a frozen early revision. The revision comes from the URL slug only, and it is unclear whether this is the standalone ADA4627-1 or the combined sheet."
+    },
+    {
+      "vendor": "Analog Devices (via Alldatasheet)",
+      "title": "ADA4627-1 datasheet (early upload, ID 300883)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/300883/AD/ADA4627-1.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "URL seen in search results; the revision was not shown."
+    },
+    {
+      "vendor": "Analog Devices (via Alldatasheet)",
+      "title": "ADA4637-1 datasheet (ID 393617)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/393617/AD/ADA4637-1.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "URL seen in search results; the revision was not shown."
+    },
+    {
+      "vendor": "Analog Devices (via Alldatasheet)",
+      "title": "ADA4637-1 datasheet (ID 1963386, newer upload)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1963386/AD/ADA4637-1.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "URL seen in search results; the revision was not shown."
+    },
+    {
+      "vendor": "Analog Devices (via Digi-Key)",
+      "title": "ADA4627-1, ADA4637-1 Datasheet (HTML rendering)",
+      "doc_number": "ADA4627-1_4637-1",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.com/htmldatasheets/production/752954/0/0/1/ada4627-1-ada4637-1.html",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Also at digikey.at with the same path. It is an HTML conversion of the combined datasheet."
+    },
+    {
+      "vendor": "Analog Devices (via RadioLocman)",
+      "title": "ADA4637-1 Datasheet",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=349203&%2FADA4637-1=",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "URL seen in search results; the revision was not shown."
+    },
+    {
+      "vendor": "Analog Devices (via DataSheetAll)",
+      "title": "ADA4627-1 Datasheet PDF",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetall.com/adi/ada4627-1/",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "URL seen in search results; the revision was not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "30 V, High Speed, Low Noise, Low Bias Current, JFET Operational Amplifier (ADA4627-1/ADA4637-1 combined data sheet)",
+      "doc_number": "ADA4627-1_4637-1 (ADI short-link; footer D-code not seen)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.analog.com/ADA4637-1/datasheet",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "This is ADI's short link that redirects to the current datasheet. The search title is the retitled '30 V, High Speed ...' combined sheet, so it probably resolves to the same Rev. F PDF already listed. It holds no older revision."
+    },
+    {
+      "vendor": "Analog Devices (via Digi-Key Austria)",
+      "title": "ADA4627-1, ADA4637-1 Datasheet by Analog Devices Inc.",
+      "doc_number": "ADA4627-1_4637-1",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.at/htmldatasheets/production/752954/0/0/1/ada4627-1-ada4637-1.html",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the Digi-Key HTML datasheet on the .at domain. It has the same production ID (752954) as the digikey.com copy already listed, so it is probably the same revision."
+    },
+    {
+      "vendor": "Analog Devices (via DigChip)",
+      "title": "ADA4627-1 datasheet - 36 V High Performance, JFET- ...",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/1142281-ada4627-1.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is a third-party copy of the ADA4627-1 sheet. Its title ('36 V High Performance, JFET-...') differs from both the standalone '36 V, 19 MHz, Low Noise, Low Bias Current' title and the combined '30 V, High Speed' title. That suggests an early, possibly preliminary, ADA4627-1-only edition, but this is inferred from the title only."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "unknown",
+      "revision": "unknown (earliest known; possibly Rev. 0)",
+      "date": "on or before 2009-12-22",
+      "changes": "Standalone ADA4627-1 datasheet (ADA4627-1.pdf) titled '36 V, 19 MHz, Low Noise, Low Bias Current, JFET Operational Amplifier'. It covers SOIC and LFCSP."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "unknown",
+      "revision": "A (per the datasheetq copy slug)",
+      "date": "unknown",
+      "changes": "Rev. A of the ADA4627-1 datasheet exists as a third-party copy. The changes and scope are unknown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "unknown",
+      "revision": "unknown (possibly preliminary Rev. PrA)",
+      "date": "about 2010 (unconfirmed)",
+      "changes": "Standalone ADA4637 datasheet titled '36 V, 80 MHz, Low Noise, Low Bias Current, JFET Op Amp' (Octopart copy), before the merger into the combined sheet (inferred)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4627-1_4637-1",
+      "revision": "F (current)",
+      "date": "unknown as printed (a search summary said 08/02/2010; doubtful)",
+      "changes": "Combined ADA4627-1/ADA4637-1 datasheet retitled '30 V, High Speed, Low Noise, Low Bias Current, JFET Operational Amplifier'. The revision-history table exists on page 2, but its contents were not visible. Revisions B to E are unknown."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices",
+      "when": "PCN 14_0038 Rev. -, 13 Feb 2014 (date per search summary)",
+      "part_numbers_affected": [
+        "ADA4627-1ACPZ-R2/-R7/-RL (if listed; unconfirmed)",
+        "ADA4637-1ACPZ-R2/-R7/-RL (if listed; unconfirmed)"
+      ],
+      "identification": "After the change, parts carry a laser-marked pin-1 indicator. Country of origin and date code would separate the assembly sites. Not verified for each part.",
+      "summary": "Amkor Philippines was qualified as the assembly site for 3x3 mm LFCSP products, with Amkor's standard bill of materials in a sawn-singulated leadframe and no BOM change. Pin 1 is laser marked. This is an assembly change, not a die change. Inclusion of the ADA4627-1/ADA4637-1 is not confirmed, and the change would apply only to the LFCSP, not to the SOIC ARZ/BRZ.",
+      "spec_deltas": [
+        {
+          "parameter": "Assembly site / singulation",
+          "before": "previous site (not stated)",
+          "after": "Amkor Philippines, sawn LFCSP"
+        },
+        {
+          "parameter": "Pin-1 indicator",
+          "before": "not stated",
+          "after": "laser-marked"
+        }
+      ],
+      "audio_impact": "None expected: same die, package assembly only.",
+      "compatibility_risk": "low - assembly-only change, and only on the LFCSP, which is rarely used for rolling.",
+      "sources": [
+        "https://www.analog.com/media/en/pcn/ADI_PCN_14_0038_Rev_-_Form.pdf",
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/500/ADI_PCN_14_0038_Rev_-_Form.pdf"
+      ],
+      "confidence": "low",
+      "verification": "A search confirmed the PCN content (Amkor Philippines, 3x3 mm LFCSP, sawn, laser-marked pin 1, data-sheet function unaffected). The result did not confirm that ADA4627-1 or ADA4637-1 are on its parts list."
+    }
+  ],
+  "counterfeit_notes": "No counterfeit reports were found; counterfeits were not searched this pass because of the search budget. The claim that the community prefers the part because, unlike the OPA627, it is not faked is low-confidence folklore. Buy from ADI or authorised distributors. Be wary of pre-mounted 'ADA4627 on DIP adapter' marketplace modules whose die provenance cannot be checked.",
+  "alternatives": [
+    "OPA627 / OPA637 (TI/Burr-Brown): the benchmark this part is positioned against",
+    "OPA827 (TI): later low-noise JFET-input single",
+    "OPA828 (TI): later low-noise JFET-input single",
+    "LT1122 (ADI/Linear): fast JFET-input single",
+    "ADA4625-1/-2 (ADI): '36 V, 18 MHz, Low Noise, Fast Settling Single Supply, RRO, JFET Op Amp'; the successor relationship is not verified",
+    "ADA4610-1/-2/-4 (ADI): low-noise precision RRO JFET family with dual and quad versions for dual sockets"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://www.analog.com/en/products/amplifiers/operational-amplifiers/high-voltage-op-amps-greaterthanequalto-12v/ada4627-1.html",
+    "http://www.analog.com/en/products/amplifiers/operational-amplifiers/jfet-input-amplifiers/ada4637-1.html",
+    "http://www.analog.com/static/imported-files/data_sheets/ADA4627-1.pdf",
+    "https://www.analog.com/ADA4637-1/datasheet",
+    "https://www.analog.com/en/products/ada4627-1.html",
+    "https://www.analog.com/en/products/ada4637-1.html",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_17_0068_Rev_B_Form.pdf",
+    "https://www.analog.com/media/en/pcn/ADI_PCN_14_0038_Rev_-_Form.pdf",
+    "https://www.analog.com/media/en/technical-documentation/application-notes/AN-1429.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf",
+    "https://www.analog.com/static/imported-files/data_sheets/ADA4627-1_4637-1.pdf",
+    "https://www.diyaudio.com/forums/solid-state/150222-ada-4627-ada4627-1-outperform-burr-browns-opa-627-opa627.html"
+  ],
+  "open_questions": [
+    "Revision chain: Rev. F is current, and Rev. A exists as a copy. The letters and dates for Rev. 0 and B to E, the date printed on Rev. F, and the revision that merged the ADA4637-1 are unknown. Use Wayback on the legacy static ADA4627-1.pdf and the combined PDF.",
+    "Is the Octopart '36 V, 80 MHz' ADA4637 sheet a preliminary (Rev. PrA) or a released standalone datasheet?",
+    "36 V vs. 30 V: ADI's product page itself uses '36 V' (so it is not an Eagle transcription error), while the Rev. F title uses '30 V' and the operating range is ±5 V to ±15 V. Confirm that 36 V is the absolute-maximum rating.",
+    "Confirm the exact ADA4637-1 GBW (about 80 MHz from the title) and the ADA4627-1 slew rate (60 V/us per a search summary) against Table 1. Also check i_n, Iq, output current, THD+N, and Vos/Ib by A/B grade.",
+    "PCN applicability: PCN 14_0038 (3x3 mm LFCSP assembly move to Amkor Philippines) and PCN 17_0068 Rev. B (added ASE Korea assembly, later cancelled) surfaced in searches for these parts, but the affected-part lists were not seen. Newer PCNs 23_0149, 24_0009, 24_0206, 25_0091 and 26_0029 also surfaced, with unknown relevance. No die change or wafer-fab transfer is known.",
+    "Ordering codes ADA4627-1ARZ/BRZ/ACPZ and ADA4637-1ACPZ were not web-confirmed. The lifecycle status of all codes (active or NRND) is unconfirmed.",
+    "The LTspice ADA4637 macro-model fixes of 04/17/21 and 05/12/21 are simulation-model changes only, not silicon changes.",
+    "Forum and blog praise (diyAudio, head-fi, Shirokuma) was not re-verified this pass. No independent measurements (Groner, ASR) have been located.",
+    "The SPICE author tag 'HH / ADSJ' (possibly ADI Japan) is unverified."
+  ],
+  "sources": [
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf",
+    "https://www.analog.com/ADA4637-1/datasheet",
+    "https://www.analog.com/en/products/ada4627-1.html",
+    "https://www.analog.com/en/products/ada4637-1.html",
+    "https://www-cce.cldnet.analog.com/en/products/ada4627-1.html",
+    "https://datasheet.octopart.com/ADA4637-1BRZ-Analog-Devices-datasheet-10549678.pdf",
+    "https://www.datasheetq.com/ADA4627-1-doc-ADI-RevA",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/300883/AD/ADA4627-1.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/393617/AD/ADA4637-1.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/1963386/AD/ADA4637-1.html",
+    "https://www.digikey.com/htmldatasheets/production/752954/0/0/1/ada4627-1-ada4637-1.html",
+    "https://www.mouser.com/en/ProductDetail/Analog-Devices/ADA4637-1ARZ?qs=BpaRKvA4VqFx4Bw8xndm%2Fw%3D%3D",
+    "https://www.analog.com/media/en/pcn/ADI_PCN_14_0038_Rev_-_Form.pdf",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_17_0068_Rev_B_Form.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1.pdf",
+    "https://www.analog.com/media/en/technical-documentation/application-notes/AN-1429.pdf",
+    "https://github.com/Kodai-Uozumi/LTspiceXVII/blob/ea6f81ca2fc2b2d3b2580886aa12ec40aa49da3b/lib/sub/ADI1.lib",
+    "https://github.com/VicKoz/LTspice_Library/blob/538b4a6116090f35780df5fae53a6a235c260417/LTspice_Components/ada4627.cir",
+    "https://github.com/neingeist/arduinisten/blob/dc60a0ee010ffe20be8054ec2934227314017842/eagle-5.7.0/lbr/ChangeLog",
+    "https://github.com/neingeist/arduinisten/blob/dc60a0ee010ffe20be8054ec2934227314017842/eagle-5.7.0/lbr/analog-devices.lbr",
+    "https://github.com/PatrickBaus/KiCad-libraries/blob/41791358010d2de5d2401e25bd30de257630acf6/ADI.kicad_sym",
+    "https://github.com/123xiao/geek-dev-personal-site/blob/62bb387208122938198d00bcff50e3103ea2ede4/ic/ic_sitemap_138.xml",
+    "https://github.com/UtkarshTewari24/STM/blob/175363f1eb0c5c47de34a0c40c3317fd983062c4/BOM.csv",
+    "https://github.com/GLuisF/LTspice/blob/920b29038b5b4184eaeeeee8c540781e0e52dab6/ChangeLog.txt",
+    "https://www.diyaudio.com/community/threads/ada-4627-ada4627-1-outperform-burr-browns-opa-627-opa627.150222/",
+    "https://www.head-fi.org/threads/ada4627-1.458079/",
+    "https://diyaudio.com/forums/chip-amps/190031-ada4637-1-experience.html",
+    "http://shirokuma-industry.com/wordpress/?p=1690"
+  ],
+  "verification": {
+    "status": "partially-verified",
+    "refuted_claims": [
+      "The memory value 'ADA4627-1 slew rate about 40 V/us' is refuted: ADI's feature list, via search, gives 60 V/us.",
+      "The hypothesis that '36 V' in the early title was an Eagle transcription error is refuted: ADI's own ADA4627-1 product page is titled '36 V, 19 MHz, Low Noise, Low Bias Current, JFET Op Amp'.",
+      "The adversarial flag that the claim 'higher slew rate than OPA627' is wrong for the ADA4627-1 is largely refuted: 60 V/us is at or above the OPA627's commonly cited 55 V/us (not verified this run)."
+    ],
+    "corrections": [
+      "The current datasheet is confirmed: the combined ADA4627-1/ADA4637-1 Rev. F at analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf. This URL was previously only an inferred archive seed.",
+      "The ADA4637-1 stability wording is corrected to 'stable at a noise gain of 5 or greater' (ADI description); the SPICE model says '>5'.",
+      "Added ADA4627-1 SR 60 V/us and ADA4637-1 SR 170 V/us, and confirmed e_n of 6.1 nV/rtHz at 1 kHz. Added ADA4637-1 GBW of about 80 MHz from the early datasheet title.",
+      "Supply: added the operating range of ±5 V to ±15 V. The 36 V vs. 30 V discrepancy is now attributed to ADI's own titles.",
+      "Added frozen copies: Octopart early ADA4637 '36 V, 80 MHz' sheet, datasheetq Rev. A, Alldatasheet IDs 300883/393617/1963386, Digi-Key HTML, RadioLocman, DataSheetAll.",
+      "Replaced the Mouser URL with the confirmed one (with the qs parameter). Upgraded the ADI product pages to high confidence.",
+      "Confirmed that ADA4637-1BRZ exists (Octopart datasheet keyed to the part).",
+      "Added PCN 14_0038 (LFCSP assembly move to Amkor Philippines; pin-1 laser mark) as a low-confidence, assembly-only change. PCN 17_0068 (ASE Korea, cancelled) is noted in open questions.",
+      "The legacy static ADA4627-1.pdf datasheet entry is downgraded to low confidence (unconfirmed via web).",
+      "Added ADA4610-1/-2/-4 as an alternative and corrected the ADA4625-1 title."
+    ],
+    "unverified_urls": [
+      "http://www.analog.com/static/imported-files/data_sheets/ADA4627-1.pdf",
+      "https://www.analog.com/static/imported-files/data_sheets/ADA4627-1_4637-1.pdf",
+      "https://www.diyaudio.com/community/threads/ada-4627-ada4627-1-outperform-burr-browns-opa-627-opa627.150222/",
+      "https://www.diyaudio.com/forums/solid-state/150222-ada-4627-ada4627-1-outperform-burr-browns-opa-627-opa627.html",
+      "https://www.head-fi.org/threads/ada4627-1.458079/",
+      "https://diyaudio.com/forums/chip-amps/190031-ada4637-1-experience.html",
+      "http://shirokuma-industry.com/wordpress/?p=1690",
+      "https://www.analog.com/media/en/technical-documentation/application-notes/AN-1429.pdf"
+    ],
+    "claims_confirmed": [
+      "The current datasheet is 'ADA4627-1/ADA4637-1 (Rev. F)', titled '30 V, High Speed, Low Noise, Low Bias Current, JFET Operational Amplifier': https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf",
+      "The ADI short link resolves to the same datasheet title: https://www.analog.com/ADA4637-1/datasheet",
+      "The ADA4627-1 product page title is '36 V, 19 MHz, Low Noise, Low Bias Current, JFET Op Amp': https://www-cce.cldnet.analog.com/en/products/ada4627-1.html",
+      "The ADA4637-1 is a decompensated version of the ADA4627-1, stable at a noise gain of 5 or greater, with SR 170 V/us: https://www.analog.com/en/products/ada4637-1.html",
+      "ADA4627-1: 6.1 nV/rtHz at 1 kHz, SR 60 V/us, ±5 V to ±15 V supply (search summary): https://www.analog.com/en/products/ada4627-1.html",
+      "An early ADA4637 datasheet is titled '36 V, 80 MHz, Low Noise, Low Bias Current, JFET Op Amp' (indexed as ADA4637-1BRZ): https://datasheet.octopart.com/ADA4637-1BRZ-Analog-Devices-datasheet-10549678.pdf",
+      "A Rev. A copy of the ADA4627-1 datasheet is hosted: https://www.datasheetq.com/ADA4627-1-doc-ADI-RevA",
+      "Mouser lists the ADA4637-1ARZ: https://www.mouser.com/en/ProductDetail/Analog-Devices/ADA4637-1ARZ?qs=BpaRKvA4VqFx4Bw8xndm%2Fw%3D%3D",
+      "PCN 14_0038 moved assembly of 3x3 mm LFCSP products to Amkor Philippines with a laser-marked pin-1 indicator (part applicability unconfirmed): https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/500/ADI_PCN_14_0038_Rev_-_Form.pdf",
+      "PCN 17_0068 Rev. B: the extra ASE Korea assembly site was cancelled (part applicability unconfirmed): https://www.analog.com/media/en/PCN/ADI_PCN_17_0068_Rev_B_Form.pdf"
+    ],
+    "web_searches_used": 6
+  },
+  "tier": "B",
+  "category": "jfet-input",
+  "product_pages": [
+    "https://www.analog.com/en/products/ada4627-1.html",
+    "https://www.analog.com/en/products/ada4637-1.html",
+    "https://www.mouser.com/en/ProductDetail/Analog-Devices/ADA4637-1ARZ?qs=BpaRKvA4VqFx4Bw8xndm%2Fw%3D%3D",
+    "https://www-cce.cldnet.analog.com/en/products/ada4627-1.html"
+  ],
+  "revision_chain_notes": "Only one vendor document exists: the Analog Devices data sheet for ADA4627-1 / ADA4637-1, from a sole source with no second sources. Known chain, oldest to newest:\n(1) Standalone ADA4627-1 sheet, 'ADA4627-1.pdf', titled '36 V, 19 MHz, Low Noise, Low Bias Current, JFET Op Amp'. It was published on or before 2009-12-22 and was probably Rev. 0 or preliminary; legacy URL http://www.analog.com/static/imported-files/data_sheets/ADA4627-1.pdf.\n(2) Rev. A of the ADA4627-1 sheet, known only from the datasheetq copy slug; date unknown.\n(3) Standalone ADA4637-1 sheet titled '36 V, 80 MHz ...' (Octopart copy), about 2010, possibly Rev. PrA.\n(4) The merged ADA4627-1/ADA4637-1 sheet 'ADA4627-1_4637-1.pdf', later retitled '30 V, High Speed, Low Noise, Low Bias Current, JFET Operational Amplifier'. The current edition is Rev. F. Search summaries again gave '08/02/2010' for Rev. F, which is still doubtful for a sixth revision and probably a site metadata date.\nThis pass found no new revision letters or dates. A DigChip copy titled '36 V High Performance, JFET-...' may be an early or preliminary ADA4627-1 edition (inferred from the title; revision not shown).\nMissing links: the printed date and D-code of every revision. Rev. 0 and Rev. A dates are unknown, and Revs. B, C, D and E are unknown, including which of them merged in the ADA4637-1 and changed 36 V to 30 V. The Rev. F date as printed and the page-2 revision-history table contents are also missing. The best way to fill these gaps is a Wayback lookup of the archive seed URLs: the legacy static/imported-files PDF and the old analog.com product-page paths."
+}

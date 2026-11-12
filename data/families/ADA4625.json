@@ -1,0 +1,405 @@
+{
+  "id": "ADA4625",
+  "name": "ADA4625-1 / ADA4625-2 (ADI 36 V low-noise JFET-input, rail-to-rail output)",
+  "tagline": "ADI's 36 V JFET-input op-amp: 3.3 nV/rtHz, 18 MHz GBW and rail-to-rail output. diyAudio and Head-Fi users like it for I/V, headphone and phono stages.",
+  "technology": "Precision JFET-input op-amp. Runs from a single +5 V to +36 V supply (±2.5 V to ±18 V). Input common-mode range includes the negative supply, and the output swings rail to rail. 3.3 nV/rtHz at 1 kHz, 18 MHz GBW, 48 V/us, 4 mA per amplifier. 8-lead SOIC with exposed pad (EPAD).",
+  "manufacturers": [
+    "Analog Devices"
+  ],
+  "part_numbers": [
+    {
+      "pn": "ADA4625-1",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "Active (ADI: Recommended for New Designs)",
+      "notes": "Single. 8-lead SOIC_N_EP. First released with the Rev 0 datasheet (10/2017). Orderable code ADA4625-1ARDZ (the eval board is EVAL-ADA4625-1ARDZ). The reel suffixes and any B grade were not checked."
+    },
+    {
+      "pn": "ADA4625-2",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "Active (ADI product page live, stocked at Mouser; lifecycle label not re-checked)",
+      "notes": "Dual. 8-lead SOIC_N_EP. Added in the combined ADA4625-1/ADA4625-2 datasheet (Rev A). Orderable code ADA4625-2ARDZ (Mouser listing). Eval board EVAL-ADA4625-2ARDZ."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Analog Devices",
+      "role": "Designer and sole manufacturer",
+      "period": "2017-present",
+      "notes": "ADA4625-1 datasheet Rev 0 (initial version) is dated 10/2017. The dual ADA4625-2 came with the combined Rev A datasheet (by mid-2019). Rev B is dated 03/2025 and was accompanied by PCN 25_0070 (package outline drawing). There are no second sources."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Voltage noise density",
+      "value": "3.3 nV/rtHz typ",
+      "condition": "f = 1 kHz",
+      "source": "https://www.analog.com/en/products/ada4625-1.html"
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "18 MHz typ",
+      "condition": "",
+      "source": "https://www.analog.com/en/products/ada4625-1.html"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "48 V/us typ",
+      "condition": "",
+      "source": "https://www.analog.com/en/products/ada4625-1.html"
+    },
+    {
+      "parameter": "Offset voltage",
+      "value": "±80 uV max",
+      "condition": "25°C",
+      "source": "https://www.analog.com/en/products/ada4625-1.html"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "±15 pA typ",
+      "condition": "25°C",
+      "source": "https://www.analog.com/en/products/ada4625-1.html"
+    },
+    {
+      "parameter": "Supply voltage",
+      "value": "+5 V to +36 V (±2.5 V to ±18 V)",
+      "condition": "",
+      "source": "https://www.analog.com/en/products/ada4625-1.html"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "4 mA per amplifier",
+      "condition": "typ",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1-4625-2.pdf"
+    },
+    {
+      "parameter": "Input/output range",
+      "value": "Input CM range includes V-; rail-to-rail output",
+      "condition": "",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1-4625-2.pdf"
+    },
+    {
+      "parameter": "Operating temperature",
+      "value": "-40°C to +125°C",
+      "condition": "specified range",
+      "source": "https://www.analog.com/en/products/ada4625-1.html"
+    },
+    {
+      "parameter": "Package",
+      "value": "8-lead SOIC with exposed pad (SOIC_N_EP)",
+      "condition": "both -1 and -2",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1-4625-2.pdf"
+    }
+  ],
+  "reputation": {
+    "summary": "A niche modern pick with a small base of forum reports. On diyAudio, one member used it as a DAC I/V converter and was 'amazed by the sound quality, almost like a CFA op amp' (OPA828 vs OPA627 thread). On Head-Fi, a poster in The Opamp Thread 'really liked it' in a headphone amp, citing a 'great clean sound' that 'seems to help low end a lot'. diyAudio also has dedicated threads on its 3.3 nV/rtHz spec and on phono-preamp use. One rolling comment calls it a good JFET option but 'somewhat cold'. All of these are individual listener impressions, not measurements.",
+    "sonic_descriptors": [
+      "clean (Head-Fi user)",
+      "helps low end (Head-Fi user)",
+      "'almost like a CFA op amp' (diyAudio I/V user)",
+      "'somewhat cold' (one rolling comment)"
+    ],
+    "typical_uses": [
+      "DAC I/V converter",
+      "headphone amplifier",
+      "phono (RIAA) preamp",
+      "low-noise high-impedance front ends"
+    ],
+    "caveats": [
+      "Only sold in an exposed-pad SOIC-8. Rolling it into DIP-8 sockets needs an adapter, and the adapter should handle the EPAD thermally and electrically as the datasheet directs.",
+      "The 18 MHz GBW, fast part can oscillate on long adapter leads or with poor decoupling.",
+      "It draws about 4 mA per amplifier, so it runs warmer than low-power JFET parts.",
+      "The praise comes from a few individual forum posts, and the tonal descriptors contradict each other."
+    ],
+    "sources": [
+      "https://www.diyaudio.com/community/threads/opa828-opa2828-vs-opa627.400109/page-2",
+      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-456",
+      "https://www.diyaudio.com/community/threads/ada4625-2-for-phono-preamp-use.358271/",
+      "https://www.diyaudio.com/community/threads/ada4625-3-3nv-rt-hz-jfet-opamp.316924/"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Analog Devices",
+      "title": "Data Sheet ADA4625-1/ADA4625-2: 36 V, 18 MHz, Low Noise, Fast Settling Single Supply, RRO, JFET Op Amps",
+      "doc_number": "ADA4625-1/ADA4625-2",
+      "revision": "B",
+      "date": "2025-03",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1-4625-2.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current combined datasheet, also reachable via https://www.analog.com/ADA4625-2/datasheet. Rev B coincides with PCN 25_0070 (package outline drawing)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4625-1: 36 V, 18 MHz, Low Noise, Fast Settling Single Supply, RRO, JFET Op Amp",
+      "doc_number": "ADA4625-1",
+      "revision": "",
+      "date": "2017-10",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1.pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "0 (likely)",
+      "note": "This is the legacy single-channel-only datasheet URL. The revision history shows '10/2017 - Revision 0: Initial Version'. Which revision this URL serves today is unconfirmed; it may redirect to the combined document. An uppercase variant (ADA4625-1.pdf) also exists."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4625-1/ADA4625-2 (Rev. A)",
+      "doc_number": "ADA4625-1/ADA4625-2",
+      "revision": "A",
+      "date": "",
+      "url": "https://www.verical.com/datasheet/analog-devices-amplifier-ic-development-tools-EVAL-ADA4625-1ARDZ-5229613.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "A Verical (Arrow) copy that keeps Rev A, the first combined single/dual datasheet."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Datasheet ADA4625-1, ADA4625-2 Analog Devices, Revision: A",
+      "doc_number": "ADA4625-1/ADA4625-2",
+      "revision": "A",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=166129",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "RadioLocman copy that keeps Rev A."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4625-1 Datasheet (RadioLocman)",
+      "doc_number": "ADA4625-1",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=403809",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "The revision held is not stated in the search summary. It may be Rev 0 or Rev B."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4625-1 Datasheet - Analog Devices Inc. (DigiKey)",
+      "doc_number": "ADA4625-1/ADA4625-2",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.com/en/datasheets/analogdevicesinc/analog-devices-inc-ada4625-1",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "DigiKey's hosted datasheet viewer, probably tracking the current revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4625-1 Datasheet (datasheet4u)",
+      "doc_number": "ADA4625-1",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/Analog-Devices/ADA4625-1/1380639",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision held is unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4625-2 JFET Op Amp Datasheet (datasheet4u)",
+      "doc_number": "ADA4625-1/ADA4625-2",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/Analog-Devices/ADA4625-2/1426800",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision held is unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Ada4625 1 4625 2 (Scribd)",
+      "doc_number": "ADA4625-1/ADA4625-2",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/442424095/ADA4625-1-4625-2",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The revision held is unconfirmed. The older Scribd ID suggests a Rev A-era upload."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4625-1 Low Noise Op Amp Data Sheet (Scribd)",
+      "doc_number": "ADA4625-1/ADA4625-2",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/911598287/ada4625-1-4625-2",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The revision held is unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "EVAL-ADA4625-1ARDZ User Guide UG-1201",
+      "doc_number": "UG-1201",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.datasheetarchive.com/originals/dk/DKDS-11/219635.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Evaluation board user guide, not the device datasheet."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "EVAL-ADA4625-2ARDZ document (Verical)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.verical.com/datasheet/analog-devices-amplifier-ic-development-tools-eval-ada4625-2ardz-6732010.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed. The contents and revision were not visible in the search summary."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4625-1",
+      "revision": "0",
+      "date": "2017-10",
+      "changes": "Initial version (single ADA4625-1 only)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4625-1/ADA4625-2",
+      "revision": "A",
+      "date": "unknown (before 2019-07)",
+      "changes": "Combined datasheet that adds the dual ADA4625-2. This is inferred from the title change; the detailed change list is unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4625-1/ADA4625-2",
+      "revision": "B",
+      "date": "2025-03 (03/03/2025 per ADI product page)",
+      "changes": "Current revision. It appears to carry the revised SOIC_N_EP package outline drawing announced in PCN 25_0070. The full change list is unconfirmed."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "vendor": "Analog Devices",
+      "when": "2025 (datasheet Rev B 03/2025; Mouser lists a PCN dated 2025-06-26)",
+      "part_numbers_affected": [
+        "ADA4625-1",
+        "ADA4625-2"
+      ],
+      "identification": "ADI PCN 25_0070 compares the old and new package outline drawings. Check the date code against the PCN effective date, and check the package drawing in datasheet Rev B against Rev A.",
+      "summary": "PCN 25_0070 covers a package outline drawing change and a datasheet revision for the 8-lead SOIC with exposed pad. Nothing found suggests a die or electrical change, but the PCN body (assembly site, leadframe, EPAD size) was not read.",
+      "spec_deltas": [
+        {
+          "parameter": "Package outline drawing (SOIC_N_EP)",
+          "before": "Outline in datasheet Rev A",
+          "after": "Revised outline in datasheet Rev B / PCN 25_0070 (exact dimensional changes unconfirmed)"
+        }
+      ],
+      "audio_impact": "None expected, because this is a package or documentation change with no die change indicated.",
+      "compatibility_risk": "low - package outline change only. If the design depends on the exposed-pad land pattern or the fit of a DIP adapter, check the footprint.",
+      "sources": [
+        "https://www.analog.com/media/en/PCN/ADI_PCN_25_0070_Rev_-_ADA4625-1%20_%20ADA4625-2%20Package%20Outline%20Drawing%20Comparision.pdf",
+        "https://www.mouser.com/ProductDetail/Analog-Devices/ADA4625-2ARDZ?qs=P1JMDcb91o7LZpOHm1xoQA%3D%3D",
+        "https://www.analog.com/en/products/ada4625-2.html"
+      ],
+      "confidence": "medium",
+      "kind": "package-or-assembly"
+    }
+  ],
+  "counterfeit_notes": "No counterfeit or remarking reports were found. It is a single-source, niche ADI part in an exposed-pad SOIC, so buy from authorized distributors (ADI, DigiKey, Mouser, Arrow/Verical). Treat cheap DIP-adapter 'upgrade' modules from marketplaces with caution.",
+  "alternatives": [
+    "OPA828 / OPA2828 (TI JFET, 36 V)",
+    "OPA627 / OPA637 (TI/Burr-Brown JFET)",
+    "OPA140 / OPA2140 (TI JFET RRO, 36 V)",
+    "ADA4627-1 (ADI JFET, 36 V)",
+    "AD8610 / AD8620 (ADI JFET)",
+    "OPA1656 (TI CMOS audio, 36 V)"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "https://www.analog.com/ADA4625-2/datasheet",
+    "https://www.analog.com/en/products/ada4625-1.html",
+    "https://www.analog.com/en/products/ada4625-2.html",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_25_0070_Rev_-_ADA4625-1%20_%20ADA4625-2%20Package%20Outline%20Drawing%20Comparision.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1-4625-2.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1.pdf"
+  ],
+  "open_questions": [
+    "What is the exact date of Rev A, and what was its full change list?",
+    "What is the full change list for Rev B (03/2025)? Is it limited to the package outline, or were specs retouched?",
+    "What does PCN 25_0070 change: EPAD size, assembly site or leadframe? What is its effective date code? Is it the same PCN Mouser dates 2025-06-26?",
+    "Is the ADA4625-2 lifecycle label 'Recommended for New Designs'? Only ADA4625-1 was confirmed.",
+    "Grade options (A/B), reel suffixes, current noise density and 0.1-10 Hz noise were not verified.",
+    "What connection does the datasheet recommend for the EPAD?"
+  ],
+  "sources": [
+    "https://www.analog.com/en/products/ada4625-1.html",
+    "https://www.analog.com/en/products/ada4625-2.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1-4625-2.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1.pdf",
+    "https://www.radiolocman.com/datasheet/pdf.html?di=166129",
+    "https://www.verical.com/datasheet/analog-devices-amplifier-ic-development-tools-EVAL-ADA4625-1ARDZ-5229613.pdf",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_25_0070_Rev_-_ADA4625-1%20_%20ADA4625-2%20Package%20Outline%20Drawing%20Comparision.pdf",
+    "https://www.mouser.com/ProductDetail/Analog-Devices/ADA4625-2ARDZ?qs=P1JMDcb91o7LZpOHm1xoQA%3D%3D",
+    "https://www.digikey.com/en/product-highlight/a/analog-devices/ada4625-1-series-operational-amplifier",
+    "https://www.diyaudio.com/community/threads/opa828-opa2828-vs-opa627.400109/page-2",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-456",
+    "https://www.diyaudio.com/community/threads/ada4625-2-for-phono-preamp-use.358271/",
+    "https://www.diyaudio.com/community/threads/ada4625-3-3nv-rt-hz-jfet-opamp.316924/"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [],
+    "corrections": [
+      "Set part_numbers channels from 0 to 1 (ADA4625-1) and 2 (ADA4625-2), and status from 'unknown' to active.",
+      "Filled in the empty datasheets, revision_history, key_specs, lineage and silicon_changes from web-confirmed facts. Datasheet revisions: Rev 0 10/2017, Rev A, Rev B 03/2025.",
+      "Added PCN 25_0070 (package outline drawing change, 2025) as a package-level change, not a die change.",
+      "Replaced the placeholder open_question 'Added by completeness round 3.' with real open items.",
+      "Gave the reputation descriptors individual attribution and added caveats."
+    ],
+    "unverified_urls": [
+      "https://datasheet4u.com/datasheets/Analog-Devices/ADA4625-1/1380639",
+      "https://datasheet4u.com/datasheets/Analog-Devices/ADA4625-2/1426800",
+      "https://www.scribd.com/document/442424095/ADA4625-1-4625-2",
+      "https://www.scribd.com/document/911598287/ada4625-1-4625-2",
+      "https://www.verical.com/datasheet/analog-devices-amplifier-ic-development-tools-eval-ada4625-2ardz-6732010.pdf",
+      "https://www.diyaudio.com/community/threads/opa828-opa2828-vs-opa627.400109/page-2",
+      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-456",
+      "https://www.diyaudio.com/community/threads/ada4625-2-for-phono-preamp-use.358271/",
+      "https://www.diyaudio.com/community/threads/ada4625-3-3nv-rt-hz-jfet-opamp.316924/"
+    ],
+    "claims_confirmed": [
+      "The current ADA4625-1/ADA4625-2 datasheet is Rev B, dated 03/03/2025 on the ADI product page: https://www.analog.com/en/products/ada4625-2.html",
+      "The Rev A combined datasheet survives on Verical (https://www.verical.com/datasheet/analog-devices-amplifier-ic-development-tools-EVAL-ADA4625-1ARDZ-5229613.pdf) and on RadioLocman (https://www.radiolocman.com/datasheet/pdf.html?di=166129, uploaded 2019-07-02).",
+      "The ADA4625-1 datasheet revision history shows '10/2017 - Revision 0: Initial Version': https://www.radiolocman.com/datasheet/pdf.html?di=166129",
+      "Typical specs are 18 MHz GBW, 48 V/us, 3.3 nV/rtHz at 1 kHz, ±80 uV max Vos and ±15 pA Ib at 25°C, 5 V to 36 V supply, and -40°C to +125°C: https://www.analog.com/en/products/ada4625-1.html",
+      "ADA4625-1 is listed as Recommended for New Designs: https://www.analog.com/en/products/ada4625-1.html",
+      "The part draws 4 mA per amplifier, its input CM range includes the negative supply, it has a rail-to-rail output, and it comes in an 8-lead SOIC with EPAD: https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1-4625-2.pdf",
+      "ADI PCN 25_0070 is a package outline drawing comparison for ADA4625-1/ADA4625-2: https://www.analog.com/media/en/PCN/ADI_PCN_25_0070_Rev_-_ADA4625-1%20_%20ADA4625-2%20Package%20Outline%20Drawing%20Comparision.pdf",
+      "Mouser lists a PCN dated 2025-06-26 for ADA4625-2ARDZ: https://www.mouser.com/ProductDetail/Analog-Devices/ADA4625-2ARDZ?qs=P1JMDcb91o7LZpOHm1xoQA%3D%3D"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "jfet-input",
+  "product_pages": [
+    "https://www.analog.com/en/products/ada4625-1.html",
+    "https://www.analog.com/en/products/ada4625-2.html"
+  ]
+}

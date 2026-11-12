@@ -89,23 +89,14 @@ Sources:
 
 | Vendor | Document | Rev | Date | Link | Kind | Conf. | Notes |
 |---|---|---|---|---|---|---|---|
-| Nisshinbo Micro Devices | MUSES05_J | Ver.1.0 | not shown in search extract | [nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES05_J.pdf](https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES05_J.pdf) | vendor_current | high | Current vendor Japanese datasheet. The search-result title reads '... - 1 - Ver.1.0 特長', re-seen Sept 2026, after the reported restart. It covers DFN12-CA8 (ESON12-CA8), +/-3.5 to +/-18 V and 5.8 mA. |
-| Nisshinbo Micro Devices (Mouser copy) | MUSES05_E | Ver.1.0 (per search summary) | not shown in search extract | [mouser.com/datasheet/2/294/MUSES05_E-3082691.pdf](https://www.mouser.com/datasheet/2/294/MUSES05_E-3082691.pdf) | distributor_mirror | medium | URL seen in several Sept 2026 search results. A search summary attributes Ver.1.0 to it, but the raw title does not show the version. |
-| Nisshinbo Micro Devices (Farnell copy) | MUSES05_E | Ver.1.0 (per earlier search summary) | not shown in search extract | [farnell.com/datasheets/4722473.pdf](https://www.farnell.com/datasheets/4722473.pdf) | distributor_mirror | low | Unconfirmed in this pass. The URL was reported in an earlier sweep's search results but did not appear in this pass. |
-| Nisshinbo Micro Devices (components101 copy) | MUSES05_E | unknown (likely Ver.1.0) | uploaded 2022-12 (per URL path) | [components101.com/sites/default/files/2022-12/MUSES05_E.pdf](https://components101.com/sites/default/files/2022-12/MUSES05_E.pdf) | third_party_mirror | low | Unconfirmed in this pass (components101 news page seen, PDF URL not). If real, it is a December 2022 pre-suspension snapshot. |
-| Nisshinbo Micro Devices (alldatasheet copy) | MUSES05_E | unknown | unknown | [alldatasheet.com/datasheet-pdf/pdf/227…SSHINBO/MUSES05.html](https://www.alldatasheet.com/datasheet-pdf/pdf/2271955/NISSHINBO/MUSES05.html) | third_party_mirror | medium | URL seen in several Sept 2026 search results. A summary gives the file as 16 pages and 795 KB, apparently from this listing. Revision not visible. |
-| Nisshinbo Micro Devices (datasheet4u copy) | MUSES05_E | unknown | unknown | [datasheet4u.com/datasheets/Nisshinbo/MUSES05/1557876](https://datasheet4u.com/datasheets/Nisshinbo/MUSES05/1557876) | third_party_mirror | medium | URL seen in Sept 2026 search results. Revision not visible. |
-| Nisshinbo Micro Devices | - | - | live page (re-checked Sept 2026) | [nisshinbo-microdevices.co.jp/en/produc…pec/?product=muses05](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses05) | product_page | high | Still says production was suspended and will resume as MUSES05 after adjustments to production materials, with timing to be announced on the website. |
-| Nisshinbo Micro Devices | - | - | live page (re-checked Sept 2026) | [nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES05.html](https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES05.html) | product_page | high | Search summaries say production has restarted. |
-| Nisshinbo Micro Devices | - | - | live page | [nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES05.html](https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES05.html) | product_page | high | English MUSES microsite page. |
-| Nisshinbo Micro Devices | - | - | 2022-12-19 (URL path) | [nisshinbo-microdevices.co.jp/ja/about/info/20221219.html](https://www.nisshinbo-microdevices.co.jp/ja/about/info/20221219.html) | product_page | high | Vendor notice on the general release of MUSES05. A search summary says general sale began in December 2022. |
-| New Japan Radio (news archived by Nisshinbo) | - | - | 2021-12-01 | [nisshinbo-microdevices.co.jp/ja/about/…201-MUSES05-DUO.html](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2021/semi_20211201-MUSES05-DUO.html) | vendor_legacy | high | NJR general-sale and DUO campaign release, seen in search results. The legacy njr.co.jp copy (njr.co.jp/news/2021/semi_20211201-MUSES05-DUO.html) was not re-seen in this pass. |
-| New Japan Radio (news archived by Nisshinbo) | - | - | 2021-06-23 | [nisshinbo-microdevices.co.jp/ja/about/…0210623-MUSES05.html](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2021/semi_20210623-MUSES05.html) | vendor_legacy | high | Mass-production release. The English release (2021-07-02) is at /en/about/info/njr/2021/semi_20210702-MUSES05-E.html. Both seen in search results. |
-| DigiKey (Nisshinbo) | - | - | unknown | [digikey.com/en/product-highlight/n/nis…perational-amplifier](https://www.digikey.com/en/product-highlight/n/nisshinbo-micro-devices/muses05-single-operational-amplifier) | product_page | medium | Summarises GBW 12 MHz, SR 40 V/us, +/-19 V, Vio 1 mV, Ib 5 pA, 7.5 nV/rtHz and 0.00003%. |
-| Akizuki Denshi | - | - | live page | [akizukidenshi.com/catalog/g/g117512/](https://akizukidenshi.com/catalog/g/g117512/) | product_page | medium | Distributor listing for the bare chip. Seen in Sept 2026 search results. |
-| Akizuki Denshi | - | - | live page | [akizukidenshi.com/catalog/g/g117650/](https://akizukidenshi.com/catalog/g/g117650/) | product_page | medium | DIP8 conversion kit listing. |
-| Akizuki Denshi | - | - | live page | [akizukidenshi.com/catalog/g/g117651/](https://akizukidenshi.com/catalog/g/g117651/) | product_page | medium | Finished DIP8 conversion module carrying MUSES05. Not a Nisshinbo part number. |
-| Seiwa (distributor) | - | - | unknown | [seiwa-tr.co.jp/topics/muses05/](https://www.seiwa-tr.co.jp/topics/muses05/) | product_page | medium | Japanese distributor topic page, seen in search results. Content not extracted. |
+| Nisshinbo Micro Devices | MUSES05_J | Ver. 1.0 |  | [nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES05_J.pdf](https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES05_J.pdf) | vendor_current | high | Current vendor Japanese datasheet. The search-result title reads '... - 1 - Ver.1.0 特長', re-seen Sept 2026, after the reported restart. It covers DFN12-CA8 (ESON12-CA8), +/-3.5 to +/-18 V and 5.8 mA. |
+| Nisshinbo Micro Devices (Mouser copy) | MUSES05_E | Ver. 1.0 |  | [mouser.com/datasheet/2/294/MUSES05_E-3082691.pdf](https://www.mouser.com/datasheet/2/294/MUSES05_E-3082691.pdf) | distributor_mirror | medium | URL seen in several Sept 2026 search results. A search summary attributes Ver.1.0 to it, but the raw title does not show the version. |
+| Nisshinbo Micro Devices (Farnell copy) | MUSES05_E | Ver. 1.0 |  | [farnell.com/datasheets/4722473.pdf](https://www.farnell.com/datasheets/4722473.pdf) | distributor_mirror | low | Unconfirmed in this pass. The URL was reported in an earlier sweep's search results but did not appear in this pass. |
+| Nisshinbo Micro Devices (components101 copy) | MUSES05_E |  | 2022-12 | [components101.com/sites/default/files/2022-12/MUSES05_E.pdf](https://components101.com/sites/default/files/2022-12/MUSES05_E.pdf) | third_party_mirror | low | Unconfirmed in this pass (components101 news page seen, PDF URL not). If real, it is a December 2022 pre-suspension snapshot. |
+| Nisshinbo Micro Devices (alldatasheet copy) | MUSES05_E |  |  | [alldatasheet.com/datasheet-pdf/pdf/227…SSHINBO/MUSES05.html](https://www.alldatasheet.com/datasheet-pdf/pdf/2271955/NISSHINBO/MUSES05.html) | third_party_mirror | medium | URL seen in several Sept 2026 search results. A summary gives the file as 16 pages and 795 KB, apparently from this listing. Revision not visible. |
+| Nisshinbo Micro Devices (datasheet4u copy) | MUSES05_E |  |  | [datasheet4u.com/datasheets/Nisshinbo/MUSES05/1557876](https://datasheet4u.com/datasheets/Nisshinbo/MUSES05/1557876) | third_party_mirror | medium | URL seen in Sept 2026 search results. Revision not visible. |
+| New Japan Radio (news archived by Nisshinbo) | - |  | 2021-12-01 | [nisshinbo-microdevices.co.jp/ja/about/…201-MUSES05-DUO.html](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2021/semi_20211201-MUSES05-DUO.html) | vendor_legacy | high | NJR general-sale and DUO campaign release, seen in search results. The legacy njr.co.jp copy (njr.co.jp/news/2021/semi_20211201-MUSES05-DUO.html) was not re-seen in this pass. |
+| New Japan Radio (news archived by Nisshinbo) | - |  | 2021-06-23 | [nisshinbo-microdevices.co.jp/ja/about/…0210623-MUSES05.html](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2021/semi_20210623-MUSES05.html) | vendor_legacy | high | Mass-production release. The English release (2021-07-02) is at /en/about/info/njr/2021/semi_20210702-MUSES05-E.html. Both seen in search results. |
 
 ### Datasheet revision history
 
@@ -205,6 +196,9 @@ Status: **verified-with-corrections**
 - [ameblo.jp/130hinata/entry-12718042202.html](https://ameblo.jp/130hinata/entry-12718042202.html)
 - [sara-mac.com/audio/muses05-duo.html](https://www.sara-mac.com/audio/muses05-duo.html)
 - [audio.yushintokai.com/muses05duo/](https://audio.yushintokai.com/muses05duo/)
+- [nisshinbo-microdevices.co.jp/en/produc…pec/?product=muses05](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses05)
+- [nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES05.html](https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES05.html)
+- [nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html](https://nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html)
 - [nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES05_J.pdf](https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES05_J.pdf)
 - [mouser.com/datasheet/2/294/MUSES05_E-3082691.pdf](https://www.mouser.com/datasheet/2/294/MUSES05_E-3082691.pdf)
 - [farnell.com/datasheets/4722473.pdf](https://www.farnell.com/datasheets/4722473.pdf)
@@ -212,8 +206,6 @@ Status: **verified-with-corrections**
 - [components101.com/news/muses05-new-aud…ound-and-j-fet-input](https://components101.com/news/muses05-new-audio-amplifier-with-high-quality-sound-and-j-fet-input)
 - [alldatasheet.com/datasheet-pdf/pdf/227…SSHINBO/MUSES05.html](https://www.alldatasheet.com/datasheet-pdf/pdf/2271955/NISSHINBO/MUSES05.html)
 - [datasheet4u.com/datasheets/Nisshinbo/MUSES05/1557876](https://datasheet4u.com/datasheets/Nisshinbo/MUSES05/1557876)
-- [nisshinbo-microdevices.co.jp/en/produc…pec/?product=muses05](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses05)
-- [nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES05.html](https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES05.html)
 - [nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES05.html](https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES05.html)
 - [nisshinbo-microdevices.co.jp/ja/about/…0210623-MUSES05.html](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2021/semi_20210623-MUSES05.html)
 - [nisshinbo-microdevices.co.jp/en/about/…10702-MUSES05-E.html](https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2021/semi_20210702-MUSES05-E.html)
@@ -241,7 +233,6 @@ Status: **verified-with-corrections**
 - [akizukidenshi.com/catalog/g/g117512/](https://akizukidenshi.com/catalog/g/g117512/)
 - [akizukidenshi.com/catalog/g/g117650/](https://akizukidenshi.com/catalog/g/g117650/)
 - [akizukidenshi.com/catalog/g/g117651/](https://akizukidenshi.com/catalog/g/g117651/)
-- [nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html](https://nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html)
 - [nw-electric.way-nifty.com/blog/2023/11/post-31270f.html](https://nw-electric.way-nifty.com/blog/2023/11/post-31270f.html)
 - [iiikun15a.blog.jp/archives/22108332.html](https://iiikun15a.blog.jp/archives/22108332.html)
 - [maimai-audio.blog.jp/archives/31099156.html](https://maimai-audio.blog.jp/archives/31099156.html)

@@ -20,8 +20,10 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / "data" / "opamps.json"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import dataset  # noqa: E402
+
+ROOT = dataset.ROOT
 
 CATEGORY_TITLES = {
     "bipolar-classic": "Bipolar classics",
@@ -148,9 +150,9 @@ def family_page(fam: dict) -> str:
     L += ["## Datasheets", ""]
     L += table(["Vendor", "Document", "Rev", "Date", "Link", "Kind", "Conf.", "Notes"],
                [[d.get("vendor"), d.get("doc_number"), d.get("revision"), d.get("date"), link(d.get("url", "")),
-                 d.get("url_kind"), d.get("confidence"), d.get("notes")] for d in fam.get("datasheets", [])])
-    if fam.get("revision_chain_summary"):
-        L += ["### Revision chain status", "", esc(fam["revision_chain_summary"]), ""]
+                 d.get("url_kind"), d.get("confidence"), d.get("note")] for d in fam.get("datasheets", [])])
+    if fam.get("revision_chain_notes"):
+        L += ["### Revision chain status", "", esc(fam["revision_chain_notes"]), ""]
     if fam.get("revision_history"):
         L += ["### Datasheet revision history", ""]
         L += table(["Vendor", "Document", "Rev", "Date", "Changes"],
@@ -244,7 +246,7 @@ def datasheet_rows(fams: list[dict]) -> list[dict]:
             rows.append({"family": f["id"], "vendor": d.get("vendor", ""), "doc_number": d.get("doc_number", ""),
                          "revision": d.get("revision", ""), "date": d.get("date", ""), "title": d.get("title", ""),
                          "url": d.get("url", ""), "url_kind": d.get("url_kind", ""),
-                         "confidence": d.get("confidence", ""), "notes": d.get("notes", "")})
+                         "confidence": d.get("confidence", ""), "notes": d.get("note", "")})
     return rows
 
 
@@ -336,7 +338,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
     args = ap.parse_args()
-    data = json.loads(DATA.read_text())
+    data = dict(dataset.load_meta(), families=dataset.load_families())
     ids = [f["id"] for f in data["families"]]
     dup = {i for i in ids if ids.count(i) > 1}
     if dup:

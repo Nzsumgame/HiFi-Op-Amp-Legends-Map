@@ -1,0 +1,557 @@
+{
+  "id": "TPA6120A2",
+  "name": "TPA6120A2 (TI dual current-feedback headphone amplifier)",
+  "tagline": "TI's 2004 stereo current-feedback headphone driver, rated at 128 dB dynamic range and 1300 V/µs. Its current drive powered the Xonar Essence STX and many DAC/amps.",
+  "technology": "Dual (stereo) current-feedback amplifier (CFA) headphone driver. Split supply of ±5 V to ±15 V; TI's product page gives the total supply range as 9 V to 33 V. PowerPAD packages: 20-pin SOIC (DWP, listed by TI as HSOIC) and 14-pin VQFN (RGY). Surface-mount only, with no DIP version.",
+  "manufacturers": [
+    "Texas Instruments"
+  ],
+  "part_numbers": [
+    {
+      "pn": "TPA6120A2DWP",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "Active (TI part-details listing, checked Sept 2026)",
+      "notes": "20-pin PowerPAD SOIC (DWP) in tubes of 25."
+    },
+    {
+      "pn": "TPA6120A2DWPR",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "Active (TI part-details listing, checked Sept 2026)",
+      "notes": "DWP package on 2000-piece tape and reel. Mouser 595-TPA6120A2DWPR; LCSC C70439."
+    },
+    {
+      "pn": "TPA6120A2RGYT",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "Active (TI part-details listing, checked Sept 2026)",
+      "notes": "14-pin VQFN (RGY) with PowerPAD on 250-piece tape and reel. Mouser 595-TPA6120A2RGYT."
+    },
+    {
+      "pn": "TPA6120A2RGYR",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "Active (TI part-details listing, checked Sept 2026)",
+      "notes": "14-pin VQFN (RGY) on 3000-piece tape and reel. Missing from the draft; added."
+    },
+    {
+      "pn": "TPA6120A2DWPG4",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "unknown (legacy 'G4' green-marking variant; not in TI's current orderable list; probably discontinued, unconfirmed)",
+      "notes": "Known only from an Octopart datasheet-mirror URL. That mirror holds an old-format datasheet."
+    },
+    {
+      "pn": "TPA6120 / TPA6120A (colloquial)",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "n/a",
+      "notes": "Shorthand used by forums, Soomal and product listings. No orderable device without the A2 suffix was found."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Texas Instruments",
+      "role": "originator / sole source",
+      "period": "2004 - present",
+      "notes": "Datasheet SLOS431 was first issued March 2004. Revisions: A (July 2014) and B (February 2015). No second sources, licensees or acquirer chain found."
+    },
+    {
+      "vendor": "Texas Instruments (THS6012)",
+      "role": "related CFA line driver; possible die relative (unverified)",
+      "period": "n/a",
+      "notes": "DIYers use THS6012 SPICE models to simulate TPA6120 stages, and PWieland/SCAM treats 'TPA6120/THS6012' as interchangeable. There is no vendor statement that they share a die."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Architecture",
+      "value": "Current-feedback, class AB, 2 channels",
+      "condition": "n/a",
+      "source": "TI product page / datasheet summary (https://www.ti.com/product/TPA6120A2)"
+    },
+    {
+      "parameter": "Dynamic range",
+      "value": "up to 128 dB",
+      "condition": "datasheet headline figure",
+      "source": "https://www.ti.com/product/TPA6120A2; https://www.ti.com/lit/ds/symlink/tpa6120a2.pdf"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "1300 V/µs",
+      "condition": "datasheet feature list",
+      "source": "https://www.ti.com/lit/ds/symlink/tpa6120a2.pdf (via search summary)"
+    },
+    {
+      "parameter": "Output voltage noise",
+      "value": "0.9 µVrms",
+      "condition": "gain = 1 V/V, 16 Ω load",
+      "source": "Datasheet feature list via search summary (ti.com symlink / Mouser new-product page)"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "±5 V to ±15 V (split); TI parametric gives 9 V to 33 V total",
+      "condition": "The split-supply figure is from the datasheet features; the 9-33 V figure is from the TI product page summary",
+      "source": "https://www.ti.com/product/TPA6120A2"
+    },
+    {
+      "parameter": "THD / THD+N",
+      "value": "THD about -112.5 dB (search summary); 0.00014% THD+N (Soomal, quoting TI)",
+      "condition": "The exact datasheet conditions for each figure were not seen. Soomal quotes 1 kHz, ±12 V supply, 600 Ω.",
+      "source": "https://www.mouser.com/en/new/texas-instruments/ti-tpa6120a2-amplifiers/ (search summary); Soomal post 10100003050"
+    },
+    {
+      "parameter": "SNR",
+      "value": "Unresolved: 120 dB (third-party page) vs 128 dB (Frieve). The datasheet first-page figure is titled 'DYR > 120 dB'.",
+      "condition": "datasheet SNR value not seen directly",
+      "source": "https://www.ti.com/lit/ds/symlink/tpa6120a2.pdf (page title); yukihamada/koe-device; Frieve SAP-9 review"
+    },
+    {
+      "parameter": "Output power",
+      "value": "80 mW (600 Ω, ±12 V per Soomal); 'up to 1.5 W' headline (conditions not stated)",
+      "condition": "not confirmed against the datasheet",
+      "source": "Soomal posts 10100003050, 10100001228, 10100006272"
+    },
+    {
+      "parameter": "Bandwidth",
+      "value": "'100s of MHz' (community description); datasheet value not confirmed",
+      "condition": "CFA; depends on the feedback resistor",
+      "source": "PWieland/SCAM README"
+    },
+    {
+      "parameter": "Packages / temperature",
+      "value": "20-pin PowerPAD SOIC (DWP); 14-pin VQFN (RGY); -40 °C to 85 °C; NiPdAu finish",
+      "condition": "n/a",
+      "source": "TI part-details pages (https://www.ti.com/product/TPA6120A2/part-details/TPA6120A2RGYT)"
+    }
+  ],
+  "reputation": {
+    "summary": "TI's ready-made current-feedback headphone driver was widely used in the 2009-2016 PC-audio and Chinese DAC/amp boom. Examples: the Asus Xonar Essence STX, Musiland Monitor sound cards, FiiO E9, and Sony PHA-1/PHA-2. It remains in current DAC/amps (SMSL, Sabaj, Aiyima, WiiM, FiiO, Shanling). Enthusiasts value its strong current drive, very low datasheet noise and distortion, and low cost. DIYers often use it as the output stage of an op-amp + CFA composite loop, e.g. OPA1602/OPA1612 + TPA6120A2 on diyAudio. Soomal tested 10-16 products using it and stresses that results depend heavily on the implementation. Measured results are mixed: designs with series output resistors show about 10 Ω output impedance (ASR on Sony PHA-1; Roland UA-M10), while well-executed composite designs measure very well.",
+    "sonic_descriptors": [
+      "powerful drive, including 600 Ω headphones (Soomal)",
+      "very low noise (spec-driven reputation)",
+      "thick, weighty presentation (Soomal, Sabaj A20d)",
+      "coarse or lacking finesse in a high-output-impedance implementation (Soomal, Sabaj A20d 2022)",
+      "strongly implementation- and supply-dependent (Soomal)"
+    ],
+    "typical_uses": [
+      "Sound-card headphone outputs: Asus Xonar Essence STX/ST, Creative Sound Blaster ZxR / E5 / X7 / BlasterX G5, Musiland Monitor series",
+      "Portable amps and DAPs: Sony PHA-1 / PHA-2, OPPO HA-2, FiiO E9 and X7 AM5 module, Topping NX3, Shanling M5 Ultra",
+      "Desktop DAC/amps: SMSL SAP-9 / M20 / DO400, Sabaj A20d, Aiyima DAC-A10, WiiM Ultra, Roland UA-M10, Rupert Neve RNHP",
+      "Current buffer inside a VFA-CFA composite loop (OPA1602/OPA1612, OPA2134, NE5532)",
+      "DIY headphone amp boards (pavouk.org, Cocoacrumbs, Head-Fi and AMB threads)"
+    ],
+    "caveats": [
+      "TI's typical application uses series output resistors, so many products have high output impedance, e.g. about 10 Ω on Sony PHA-1 (ASR) and Roland UA-M10.",
+      "Very high drive can damage low-impedance headphones or IEMs if gain is not limited (Soomal warning on the Musiland Monitor 01 PS).",
+      "Very wide-bandwidth CFA: sensitive to layout, feedback-resistor value and capacitive loads. Composite loops need careful compensation. Gain-setting questions are common on TI E2E.",
+      "The PowerPAD must be soldered to a thermal via array.",
+      "Surface-mount only (PowerPAD SOIC-20 / VQFN-14), so it cannot be swapped in a DIP socket.",
+      "Needs rails of ±5 V to ±15 V. Portable designs need boost converters, and Soomal reports it performs better at higher supply voltage."
+    ],
+    "sources": [
+      "https://www.head-fi.org/threads/ha-info-tpa6120-headphone-amp.633249/",
+      "https://www.head-fi.org/showcase/asus-xonar-essence-stx.11657/reviews",
+      "http://www.pavouk.org/hw/tpa6120headamp/en_index.html",
+      "https://www.diyaudio.com/community/threads/high-performance-opa1602-tpa6120a2-composite-headphone-amplifier.347613/page-3",
+      "https://www.amb.org/forum/ti-tpa6120-single-chip-headphone-amp-t2033.html",
+      "https://www.cocoacrumbs.com/blog/2019-12-08-tpa6120a2-based-headphone-amplifier/",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100001228.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100003050.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100006272.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100009796.md",
+      "https://www.audiosciencereview.com/forum/index.php?threads/review-and-measurements-of-sony-pha-1-and-teac-ha-p50-portable-dac-and-headphone-amps.3626/",
+      "https://www.audiosciencereview.com/forum/index.php?threads/topping-l30-ii-review-headphone-amp.36027/",
+      "https://reference-audio-analyzer.pro/en/report/amp/smsl-sap-9.php",
+      "https://github.com/Frieve-A/audioreview/blob/e1178951e595d2c2d8a093a407569005a149a39c/_products/en/smsl/smsl-sap-9.md",
+      "https://github.com/PWieland/SCAM",
+      "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/877645/tpa6120a2-tpa6120-gain-issue",
+      "https://www.ti.com/lit/ds/symlink/tpa6120a2.pdf"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 High Fidelity Headphone Amplifier",
+      "doc_number": "SLOS431B",
+      "revision": "B",
+      "date": "2015-02",
+      "url": "https://www.ti.com/lit/ds/symlink/tpa6120a2.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The symlink serves TI's current revision. Web search confirmed SLOS431B (revised February 2015), and no SLOS431C was found as of Sept 2026. The PDF title is the first-page figure caption 'Filter and I/V Gain Stage Stereo Hi-Fi Headphone Driver TPA6120A2 DYR > 120 dB'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 datasheet (TI 'gpn' redirect)",
+      "doc_number": "SLOS431",
+      "revision": "B",
+      "date": "",
+      "url": "https://www.ti.com/lit/gpn/tpa6120a2",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Confirmed in search results. It serves the same current datasheet as the symlink."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 High Fidelity Headphone Amplifier (original issue)",
+      "doc_number": "SLOS431",
+      "revision": "original",
+      "date": "2004-03",
+      "url": "https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/TPA6120A2.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "This DigiKey mirror carries the pre-2014 TI template ('www.ti.com FEATURES DESCRIPTION APPLICATIONS'; title 'High Fidelity Headphone Amplifer' with that typo). It is likely the original 2004 issue. Revision letter unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 datasheet (old template), filed under TPA6120A2DWPG4",
+      "doc_number": "SLOS431",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/TPA6120A2DWPG4-Texas-Instruments-datasheet-27709005.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "likely original (old template; unconfirmed)",
+      "note": "The title shows the old 'www.ti.com FEATURES DESCRIPTION APPLICATIONS' layout. Revision unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 datasheet (new template), filed under TPA6120A2RGYT",
+      "doc_number": "SLOS431",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/TPA6120A2RGYT-Texas-Instruments-datasheet-34156799.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "A or B (new template; unconfirmed)",
+      "note": "Its title matches the current TI PDF ('... DYR > 120 dB'). Revision letter unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 High Fidelity Headphone Amplifier (LCSC copy)",
+      "doc_number": "SLOS431",
+      "revision": "B",
+      "date": "2018-09-28",
+      "url": "https://datasheet.lcsc.com/lcsc/1809280203_Texas-Instruments-TPA6120A2DWPR_C70439.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Uploaded after the February 2015 Rev B, so probably Rev B. Revision unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 Datasheet (alldatasheet)",
+      "doc_number": "SLOS431",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/98801/TI/TPA6120A2.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown in the search summary. Unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 Datasheet (datasheet4u)",
+      "doc_number": "SLOS431",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/etcTI/TPA6120A2/1413221",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown. Unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 High Fidelity Headphone Amplifer (datasheetdir)",
+      "doc_number": "SLOS431",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheetdir.com/TPA6120A2+Headphone",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "likely original (old 'Amplifer' title; unconfirmed)",
+      "note": "Revision unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 datasheet (legacy 'litv' link)",
+      "doc_number": "SLOS431",
+      "revision": "",
+      "date": "",
+      "url": "http://www.ti.com/litv/slos431",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Legacy TI redirect quoted in a 2011 linuxfr.org comment. Unconfirmed by web search; useful as a Wayback seed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 EVM user's guide",
+      "doc_number": "SLOU169",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com/lit/pdf/slou169",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "EVM documentation found by web search. Related EVM tools: TPA6120A2EVM and TPA6120A2RGYEVM."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 High Fidelity Headphone Amplifier (first-page text 'Filter and I/V Gain Stage Stereo Hi-Fi Headphone Driver TPA6120A2 DYR > 120 dB')",
+      "doc_number": "SLOS431B",
+      "revision": "B",
+      "date": "2015-02",
+      "url": "https://www.ti.com/lit/ds/slos431b/slos431b.pdf",
+      "url_kind": "vendor_revision_specific",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "TI's revision-pinned URL for Rev B."
+    },
+    {
+      "vendor": "LCSC (distributor mirror)",
+      "title": "TPA6120A2 High Fidelity Headphone Amplifier",
+      "doc_number": "SLOS431 (letter unknown)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/e23dd7fc490d476195e7f14d1685328c.pdf?productCode=C70439",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "LCSC part C70439. The revision was not shown."
+    },
+    {
+      "vendor": "DataSheet4U (third party)",
+      "title": "TPA6120A2 Datasheet, Amplifier, Texas Instruments",
+      "doc_number": "SLOS431 (letter unknown)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet/etcTI/TPA6120A2-1413221",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The revision was not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 High Fidelity Headphone Amplifier (alldatasheet.net viewer, site ID 98801)",
+      "doc_number": "SLOS431 (letter not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.net/datasheet-pdf/view/98801/TI/TPA6120A2.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the .net mirror/viewer of the same alldatasheet ID 98801 that is already listed on alldatasheet.com. The URL is different but the file is probably identical. A low site ID suggests an early copy, but the search result does not show a revision."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "www.ti.com FEATURES DESCRIPTION APPLICATIONS Filter and I/V Gain Stage (TPA6120A2DWP datasheet cache)",
+      "doc_number": "SLOS431 (letter not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheets.b-cdn.net/files/TPA6120A2DWP-Texas-Instruments-datasheet-113466.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A datasheet cache on a CDN, with the same ID style as octopart. The extracted title has the old TI template's all-caps 'www.ti.com FEATURES / DESCRIPTION / APPLICATIONS' blocks. That points to the original March 2004 edition, before revision A (July 2014) moved to the new numbered-section template. The revision header is not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 (TI) PDF datasheet viewer, 24 pages (ic37.com, doc 82026)",
+      "doc_number": "SLOS431 (letter not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.ic37.com/TI/TPA6120_datasheet_82026/TPA6120_17.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A Chinese page-by-page viewer (pages 17/24 and 19/24 were indexed; the page-19 URL is https://pdf.ic37.com/TI/TPA6120_datasheet_82026/TPA6120_19.html). The 24-page count may help identify the edition when compared against other copies. The revision is not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TPA6120A2 High Fidelity Headphone Amplifier",
+      "doc_number": "SLOS431A",
+      "revision": "A",
+      "date": "2014-07",
+      "url": "",
+      "url_kind": "archive",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "The July 2014 date comes from a web search summary. No direct copy was identified. The Octopart RGYT mirror might hold Rev A or Rev B (unconfirmed)."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS431",
+      "revision": "original",
+      "date": "March 2004",
+      "changes": "Initial release, in the old TI template."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS431A",
+      "revision": "A",
+      "date": "July 2014",
+      "changes": "Date confirmed via web search; change list not retrieved. It probably moved the datasheet to TI's new template (unconfirmed)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS431B",
+      "revision": "B",
+      "date": "February 2015",
+      "changes": "Change list not retrieved. A third-party snippet shows numbered-section format ('7 Specifications / 7.1 Absolute Maximum Ratings'). Nothing found suggests an electrical or silicon change. It is the latest revision found as of Sept 2026."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS431A",
+      "revision": "A",
+      "date": "MARCH 2004 - REVISED JULY 2014",
+      "changes": "The revision date appears in a search summary. This replaces the 'unknown (between March 2004 and February 2015)' entry. The change content was not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS431B",
+      "revision": "B",
+      "date": "MARCH 2004 - REVISED FEBRUARY 2015",
+      "changes": "The latest revision. The change content was not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOU169",
+      "revision": "original (no letter shown)",
+      "date": "May 2004",
+      "changes": "The search result title shows 'May 2004 HPA Audio Power User's Guide SLOU169' (the TPA6120A2EVM user's guide). It was issued about two months after the SLOS431 datasheet (March 2004). No later SLOU169 revision was seen."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No documented counterfeit or remarked TPA6120A2 reports were found. Loose chips are sold mostly through AliExpress/Taobao modules and kits, so their supply chain cannot be verified. Buy from TI or authorized distributors (Mouser 595-TPA6120A2DWPR / 595-TPA6120A2RGYT, DigiKey, LCSC C70439). The practical checks are a genuine TI top mark with date code and an intact exposed PowerPAD.",
+  "alternatives": [
+    "TI OPA1622: modern high-output-current audio op-amp for headphone drive",
+    "TI BUF634A: high-current buffer used inside an OPA1612 composite loop",
+    "TI THS6012: related wide-band CFA line driver that DIYers use interchangeably in VFA-CFA composites (no vendor statement of equivalence)",
+    "ADI AD8397: high-output-current rail-to-rail op-amp (used in the FiiO X7 AM1)",
+    "LME49600: high-current audio buffer (current lifecycle status not checked)"
+  ],
+  "ti_literature_numbers": [
+    "SLOS431",
+    "SLOU169"
+  ],
+  "archive_seed_urls": [
+    "http://focus.ti.com/lit/ds/slos431/slos431.pdf",
+    "http://focus.ti.com/lit/ds/symlink/tpa6120a2.pdf",
+    "http://focus.ti.com/lit/ug/slou169/slou169.pdf",
+    "http://www.ti.com/litv/slos431",
+    "https://datasheet.octopart.com/TPA6120A2DWPG4-Texas-Instruments-datasheet-27709005.pdf",
+    "https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/TPA6120A2.pdf",
+    "https://www.ti.com/lit/ds/slos431/slos431.pdf",
+    "https://www.ti.com/lit/ds/slos431a/slos431a.pdf",
+    "https://www.ti.com/lit/ds/slos431b/slos431b.pdf",
+    "https://www.ti.com/lit/ds/symlink/tpa6120a2.pdf",
+    "https://www.ti.com/lit/gpn/tpa6120a2",
+    "https://www.ti.com/lit/pdf/slou169",
+    "https://www.ti.com/product/TPA6120A2"
+  ],
+  "open_questions": [
+    "Change lists of SLOS431A (July 2014) and SLOS431B (February 2015) were not retrieved. Confirm neither records an electrical change.",
+    "Which revision each mirror holds is inferred from the page template only: DigiKey media and Octopart DWPG4 look like the original, Octopart RGYT is A or B, and LCSC is probably B. Open each PDF to confirm.",
+    "No TPA6120A2-specific PCN (fab/assembly/die change) was found. TI issued broad RFAB/FFAB fab-transfer PCNs in 2020-2024; whether any lists TPA6120A2 is unknown.",
+    "Datasheet values not confirmed: SNR (120 dB vs 128 dB), -3 dB bandwidth, output current, quiescent current, THD+N conditions (0.00014% vs about -112.5 dB), and output-power figures.",
+    "Whether TPA6120A2 shares a die with THS6012 (community claim only).",
+    "Status of the legacy TPA6120A2DWPG4 orderable part.",
+    "Frieve's claim that the Topping L30 II uses the TPA6120A2 is secondary and not confirmed by Topping."
+  ],
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/tpa6120a2.pdf",
+    "https://www.ti.com/lit/gpn/tpa6120a2",
+    "https://www.ti.com/product/TPA6120A2",
+    "https://www.ti.com/product/TPA6120A2/part-details/TPA6120A2DWP",
+    "https://www.ti.com/product/TPA6120A2/part-details/TPA6120A2RGYT",
+    "https://www.ti.com/product/TPA6120A2/part-details/TPA6120A2RGYR",
+    "https://www.ti.com/lit/pdf/slou169",
+    "https://www.ti.com/tool/TPA6120A2EVM",
+    "https://www.ti.com/tool/TPA6120A2RGYEVM",
+    "https://www.mouser.com/en/new/texas-instruments/ti-tpa6120a2-amplifiers/",
+    "https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/TPA6120A2.pdf",
+    "https://datasheet.octopart.com/TPA6120A2RGYT-Texas-Instruments-datasheet-34156799.pdf",
+    "https://datasheet.octopart.com/TPA6120A2DWPG4-Texas-Instruments-datasheet-27709005.pdf",
+    "https://datasheet.lcsc.com/lcsc/1809280203_Texas-Instruments-TPA6120A2DWPR_C70439.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/98801/TI/TPA6120A2.html",
+    "https://datasheet4u.com/datasheets/etcTI/TPA6120A2/1413221",
+    "http://www.ti.com/litv/slos431%20(cited%20in%20http://linuxfr.org/news/nwavguy-o2-l-amplificateur-casque-sous-licence-creative-common)",
+    "https://www.head-fi.org/threads/ha-info-tpa6120-headphone-amp.633249/",
+    "https://www.diyaudio.com/community/threads/high-performance-opa1602-tpa6120a2-composite-headphone-amplifier.347613/page-3",
+    "https://www.amb.org/forum/ti-tpa6120-single-chip-headphone-amp-t2033.html",
+    "https://www.cocoacrumbs.com/blog/2019-12-08-tpa6120a2-based-headphone-amplifier/",
+    "https://www.audiosciencereview.com/forum/index.php?threads/review-and-measurements-of-sony-pha-1-and-teac-ha-p50-portable-dac-and-headphone-amps.3626/",
+    "https://reference-audio-analyzer.pro/en/report/amp/smsl-sap-9.php",
+    "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100003050.md",
+    "https://github.com/Frieve-A/audioreview/blob/e1178951e595d2c2d8a093a407569005a149a39c/_products/en/smsl/smsl-sap-9.md",
+    "https://github.com/PWieland/SCAM",
+    "https://github.com/xiphonics/picoTracker-pcb"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [],
+    "corrections": [
+      "SLOS431A date is July 2014 (the draft said unknown).",
+      "TPA6120A2DWP status changed from 'unknown' to Active. DWPR and RGYT are confirmed Active on TI part-details pages.",
+      "Added the missing orderable part TPA6120A2RGYR (VQFN-14, 3000-piece reel, Active).",
+      "Added the legacy TPA6120A2DWPG4 (status unknown), seen on an Octopart datasheet mirror.",
+      "Added the EVM user guide SLOU169 to the literature numbers.",
+      "Moved https://www.ti.com/lit/gpn/tpa6120a2 from an inferred seed to a confirmed vendor URL.",
+      "Added key specs: 1300 V/µs slew rate; 0.9 µVrms output noise (G=1, 16 Ω); TI parametric total supply of 9-33 V; -40 °C to 85 °C.",
+      "Added distributor and third-party mirrors (DigiKey, Octopart x2, LCSC, alldatasheet, datasheet4u, datasheetdir), each with the revision it probably holds.",
+      "silicon_changes stays empty: no TPA6120A2-specific PCN or die change was found."
+    ],
+    "unverified_urls": [
+      "http://www.ti.com/litv/slos431",
+      "https://www.ti.com/lit/ds/slos431b/slos431b.pdf",
+      "https://www.ti.com/lit/ds/slos431a/slos431a.pdf",
+      "https://www.ti.com/lit/ds/slos431/slos431.pdf",
+      "http://focus.ti.com/lit/ds/symlink/tpa6120a2.pdf"
+    ],
+    "claims_confirmed": [
+      "SLOS431B is dated 'MARCH 2004 - REVISED FEBRUARY 2015', and no SLOS431C was found (https://www.ti.com/lit/ds/symlink/tpa6120a2.pdf)",
+      "SLOS431A was revised July 2014, and the original SLOS431 dates from March 2004 (search summary of https://www.ti.com/lit/ds/symlink/tpa6120a2.pdf and mirrors)",
+      "Up to 128 dB dynamic range, current-feedback class AB (https://www.ti.com/product/TPA6120A2)",
+      "1300 V/µs slew rate; ±5 V to ±15 V supply; 0.9 µVrms output noise at G=1 into 16 Ω (https://www.ti.com/lit/ds/symlink/tpa6120a2.pdf, https://www.mouser.com/en/new/texas-instruments/ti-tpa6120a2-amplifiers/)",
+      "TPA6120A2DWP, DWPR, RGYT and RGYR are Active, -40 °C to 85 °C, NiPdAu (https://www.ti.com/product/TPA6120A2/part-details/TPA6120A2RGYT)",
+      "EVM user guide is SLOU169 (https://www.ti.com/lit/pdf/slou169)",
+      "DigiKey and Octopart DWPG4 mirrors carry the old-template datasheet (https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/TPA6120A2.pdf)",
+      "OPA1602 + TPA6120A2 composite designs are discussed on diyAudio (https://www.diyaudio.com/community/threads/high-performance-opa1602-tpa6120a2-composite-headphone-amplifier.347613/page-3)"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "headphone-driver",
+  "product_pages": [
+    "https://www.ti.com/product/TPA6120A2",
+    "https://kr.rs-online.com/web/p/audio-amplifier-ics/6606285",
+    "https://my.rs-online.com/web/p/audio-amplifier-ics/9233634"
+  ],
+  "revision_chain_notes": "Texas Instruments SLOS431 (TPA6120A2 datasheet; TI is the sole source, with no acquirer or second-source editions). The known chain, oldest to newest, is complete:\n\n- SLOS431, original, March 2004. Copies: the Digi-Key media copy, plus probably the octopart DWPG4 cache and the new datasheets.b-cdn.net TPA6120A2DWP cache, which have old-template all-caps FEATURES/DESCRIPTION/APPLICATIONS headings.\n- SLOS431A, 'MARCH 2004 - REVISED JULY 2014'.\n- SLOS431B, 'MARCH 2004 - REVISED FEBRUARY 2015', the current edition at ti.com symlink and /lit/ds/slos431b/.\n\nNo revision C or later appeared in any search.\n\nMissing links:\n1. No URL was found for a copy confirmed to hold SLOS431A. A search for \"SLOS431A\" returned only the product page and already-listed mirrors, with no revision header shown. The octopart RGYT and LCSC copies have new-template titles ('Filter and I/V Gain Stage Stereo Hi-Fi Headphone Driver ... DYR > 120 dB'), so each could hold A or B, but the summaries do not show which.\n2. The change lists for A and B were not retrieved. A 'Changes from Original / Changes from Revision A' search found nothing.\n3. No copy was confirmed to show the literal 'SLOS431 - MARCH 2004' footer. The original is only inferred from the old template.\n\nRelated document: SLOU169 (HPA Audio Power / TPA6120A2EVM User's Guide). It is dated May 2004 according to the search result title, and no later revision was seen.\n\nThe archive_seed_urls were derived from TI's standard legacy and revision-specific URL patterns (focus.ti.com/lit/ds/symlink, /lit/ds/<litnum>/<litnum>.pdf). They did not appear in the search results. They are only candidates for Wayback lookups (SLOS431 original and SLOS431A), not verified links."
+}

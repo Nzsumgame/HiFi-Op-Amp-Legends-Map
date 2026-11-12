@@ -1,0 +1,279 @@
+{
+  "id": "NJM8801",
+  "name": "NJM8801 (New JRC / Nisshinbo high-quality audio bipolar dual, 'mass-production MUSES')",
+  "tagline": "New JRC's bipolar audio dual that applies MUSES know-how to a mass-production process. A Japanese reviewer ranked it above the NJM4580 and below the MUSES8820.",
+  "technology": "Bipolar-input dual audio op-amp. New JRC says it 'strikes a balance between MUSES technology and mass-production technique', using its own process tuning and assembly technique to raise sound quality without much added cost. Packages are SOP8 (JEDEC 150 mil, 'E') and a small SSOP8 with a copper lead frame ('VA3'). No DIP version is listed.",
+  "manufacturers": [
+    "New Japan Radio Co., Ltd. (New JRC / NJR)",
+    "Nisshinbo Micro Devices Inc."
+  ],
+  "part_numbers": [
+    {
+      "pn": "NJM8801",
+      "channels": 2,
+      "vendors": [
+        "New JRC",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "active (series listed on the current Nisshinbo product page; no lifecycle flag seen)",
+      "notes": "Series or base name. The legacy New JRC product page lists two orderable versions: NJM8801E and NJM8801VA3."
+    },
+    {
+      "pn": "NJM8801E",
+      "channels": 2,
+      "vendors": [
+        "New JRC",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "active (listed by DigiKey and Mouser; DigiKey marks it 'not normally stocked')",
+      "notes": "SOP8, JEDEC 150 mil. Sold at retail in Japan (Kyohritsu eleshop) and on Yahoo Auctions as 'MUSESの量産型' (mass-production MUSES). soundservice.gr sells it as a Pioneer service replacement part ('NJM8801-E')."
+    },
+    {
+      "pn": "NJM8801E-TE2",
+      "channels": 2,
+      "vendors": [
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "listed by distributor (Profusion)",
+      "notes": "Tape-and-reel ordering code of NJM8801E. The die is the same."
+    },
+    {
+      "pn": "NJM8801VA3",
+      "channels": 2,
+      "vendors": [
+        "New JRC",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "unknown (listed on the legacy New JRC product page; current distributor status not checked)",
+      "notes": "Small SSOP8 package with a copper lead frame, per the vendor description."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "New Japan Radio Co., Ltd. (New JRC)",
+      "role": "originator",
+      "period": "by Nov 2014 (Japanese datasheet Ver.2014-11-10) – 2021",
+      "notes": "New JRC placed it among its models that apply MUSES sound-quality techniques to higher-volume processes (stereo.jp 'JRC訪問記'; njr.co.jp product page). The exact release date was not found."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices Inc.",
+      "role": "successor (merger)",
+      "period": "2022 – present",
+      "notes": "New JRC and Ricoh Electronic Devices merged into Nisshinbo Micro Devices on 1 Jan 2022 (merger date not re-checked in this run). NJM8801 Series is listed on the current Nisshinbo op-amp product pages. The revision and date of the Nisshinbo-branded datasheet were not seen."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input voltage noise (e_n)",
+      "value": "4.5 nV/√Hz typ",
+      "condition": "typ; frequency condition not seen in the summaries (likely 1 kHz)",
+      "source": "https://www.njr.com/semicon/products/NJM8801.html"
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "15 MHz typ",
+      "condition": "typ",
+      "source": "https://www.njr.com/semicon/products/NJM8801.html"
+    },
+    {
+      "parameter": "THD",
+      "value": "0.0005 % typ",
+      "condition": "typ; test conditions not seen",
+      "source": "https://www.njr.com/semicon/products/NJM8801.html"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "5 V/µs typ",
+      "condition": "typ",
+      "source": "https://gb.profusion.uk/uk/njm8801e"
+    },
+    {
+      "parameter": "Operating supply voltage",
+      "value": "±2 V to ±18 V",
+      "condition": "dual supply",
+      "source": "https://gb.profusion.uk/uk/njm8801e"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "6 mA typ",
+      "condition": "typ; whether this is per package (both channels) or per channel was not confirmed",
+      "source": "https://gb.profusion.uk/uk/njm8801e"
+    },
+    {
+      "parameter": "Input offset voltage",
+      "value": "0.3 mV typ",
+      "condition": "typ",
+      "source": "https://gb.profusion.uk/uk/njm8801e"
+    }
+  ],
+  "reputation": {
+    "summary": "Niche, Japan-centric reputation. New JRC markets it as MUSES know-how moved to a mass-production process, and Japanese sellers call it 'MUSESの量産型' (mass-production MUSES). A Zigsow user review is titled 'NJM4580以上MUSES8820未満' (above NJM4580, below MUSES8820): voicing close to the MUSES8820 but slightly less clear. It also appears in stereo.jp coverage of New JRC. No Western bench measurements were found.",
+    "sonic_descriptors": [
+      "voicing similar to MUSES8820 (one Zigsow reviewer)",
+      "slightly clouded / less clear than MUSES8820 (same reviewer)",
+      "better than NJM4580 (same reviewer)"
+    ],
+    "typical_uses": [
+      "Vendor-listed applications: audio preamplifiers, reference amplifiers, active filters, line amplifiers",
+      "OEM consumer audio: used in Pioneer equipment, sold as a service replacement part (soundservice.gr)",
+      "Hobby op-amp swaps as a step up from NJM4580-class parts. Needs an SOP8-to-DIP8 adapter because no DIP version exists."
+    ],
+    "caveats": [
+      "The sound claims come from a single Japanese user review plus vendor marketing, so confidence is low.",
+      "Surface-mount only (SOP8 'E', SSOP8 'VA3'). Socket rolling needs an adapter, and an adapter can affect stability.",
+      "Stability and output-drive limits were not checked against the datasheet."
+    ],
+    "sources": [
+      "https://zigsow.jp/item/329409/review/329949",
+      "https://stereo.jp/?p=3614",
+      "https://www.njr.co.jp/electronic_device/products/NJM8801.html",
+      "https://page.auctions.yahoo.co.jp/jp/auction/h431197667",
+      "https://www.soundservice.gr/e-shop/en/product.php?products_id=8416",
+      "https://www.youtube.com/watch?v=zS7Z64YsgOg",
+      "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm8801.pdf"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "New JRC (via Kyohritsu Electronic Industry eclib mirror)",
+      "title": "NJM8801 2回路入りオーディオ用オペアンプ (Japanese-language datasheet)",
+      "doc_number": "NJM8801 (JRC datasheets carry no separate document number)",
+      "revision": "Ver. 2014-11-10",
+      "date": "2014-11-10",
+      "url": "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm8801.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The search snippet shows the header 'NJM8801 - 1 - Ver.2014-11-10 2回路入りオーディオ用オペアンプ ■概要 ■外形'. This is a frozen New JRC-branded Japanese version from before the merger and the earliest version identified."
+    },
+    {
+      "vendor": "New Japan Radio (via datasheet4u)",
+      "title": "NJM8801 Datasheet - SOP Amplifier",
+      "doc_number": "NJM8801",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/New-Japan-Radio/NJM8801/1100563",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "New JRC-branded copy, likely English. The Ver. date could not be read from the search summary."
+    },
+    {
+      "vendor": "New Japan Radio (NJR), via Mouser",
+      "title": "NJM8801 (High Quality Audio Dual Operational Amplifier), English datasheet",
+      "doc_number": "NJM8801 (JRC datasheets carry no separate document number)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.com/ds/2/294/NJM8801_DataSheetE6-262233.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is a Mouser copy under the old 'ds/2/294' path, which Mouser uses for New JRC files. The search summary shows only the title 'NJM8801' and the product description ('a balance between MUSES technology and mass-production technique', 4.5nV/rtHz, 15MHz, 0.0005%). It does not show a Ver. string. The filename suffix 'DataSheetE6' may point to an English edition, but that is not confirmed and it is not recorded as a revision. For comparison, sibling Mouser copies show 'Ver.6.0 http://www.njr.com/' for NJM8080 and 'Ver.3.1' for NJM8068, so New JRC's English datasheets use Ver.x.y numbering. This copy should carry a similar Ver. footer, but it was not seen."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "New JRC",
+      "doc_number": "NJM8801 (Japanese datasheet)",
+      "revision": "Ver.2014-11-10",
+      "date": "2014-11-10",
+      "changes": "Only version identified (Kyohritsu mirror). No change list is visible. Earlier versions, the English datasheet versions and any later Nisshinbo reissue remain unknown."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No counterfeit reports were found, but no dedicated counterfeit search was run. It is a low-volume, SMD-only, Japan-market part with little grey-market pull, so fakes seem unlikely but are not ruled out. Buy through Nisshinbo-authorized distributors (DigiKey, Mouser) or established Japanese retailers such as Kyohritsu eleshop.",
+  "alternatives": [
+    "MUSES8820 (New JRC/Nisshinbo step up that the Zigsow reviewer compared it with)",
+    "MUSES8920 (JFET-input MUSES sibling)",
+    "NJM4580 (general-purpose JRC dual that the reviewer ranked below it)",
+    "NJM2068 (low-noise JRC audio dual)",
+    "NJM8901 (possible related New JRC audio part; relationship not verified)"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "https://datasheet4u.com/datasheets/New-Japan-Radio/NJM8801/1100563",
+    "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm8801.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM8801_E.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm8801",
+    "https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/NJM8801_J.pdf",
+    "https://www.njr.co.jp/electronic_device/products/NJM8801.html",
+    "https://www.njr.co.jp/products/semicon/PDF/NJM8801_E.pdf",
+    "https://www.njr.co.jp/products/semicon/PDF/NJM8801_J.pdf",
+    "https://www.njr.com/semicon/PDF/NJM8801_E.pdf",
+    "https://www.njr.com/semicon/products/NJM8801.html"
+  ],
+  "open_questions": [
+    "Current Nisshinbo datasheet: its revision and date, and whether it was reissued with Nisshinbo branding after 2022, were not seen.",
+    "English datasheet 'Ver.' history is unknown. Were there Japanese versions before Ver.2014-11-10?",
+    "The five PDF seed URLs (njr.com/njr.co.jp/nisshinbo …/NJM8801_E.pdf and _J.pdf) follow vendor path patterns but were never seen in results. Use them for Wayback lookup only.",
+    "Exact release date was not found. The earliest evidence is the Japanese datasheet Ver.2014-11-10.",
+    "Supply current 6 mA typ: per package or per channel? Also still needed: the e_n frequency condition, i_n, output current and THD test conditions.",
+    "Lifecycle status of NJM8801VA3 is unknown. NJM8801E appears active but not normally stocked at DigiKey.",
+    "Relationship to NJM8901 is not verified.",
+    "No die, process or fab change under the same part number was found. None was reported, but no PCN search was possible within budget."
+  ],
+  "sources": [
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm8801",
+    "https://www.njr.com/semicon/products/NJM8801.html",
+    "https://www.njr.co.jp/electronic_device/products/NJM8801.html",
+    "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm8801.pdf",
+    "https://datasheet4u.com/datasheets/New-Japan-Radio/NJM8801/1100563",
+    "https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM8801E/2442899",
+    "https://www.mouser.com/ProductDetail/Nisshinbo/NJM8801E?qs=yQ3iditm8N40dtsGaEGlFg%3D%3D",
+    "https://gb.profusion.uk/uk/njm8801e",
+    "https://us.profusion.uk/int/njm8801e-te2",
+    "https://eleshop.jp/shop/g/gIBD411/",
+    "https://www.soundservice.gr/e-shop/en/product.php?products_id=8416",
+    "https://page.auctions.yahoo.co.jp/jp/auction/h431197667",
+    "https://zigsow.jp/item/329409/review/329949",
+    "https://stereo.jp/?p=3614",
+    "https://www.youtube.com/watch?v=zS7Z64YsgOg"
+  ],
+  "verification": {
+    "status": "partially-verified",
+    "refuted_claims": [],
+    "corrections": [
+      "The Kyohritsu mirror is identified as the Japanese-language New JRC datasheet Ver.2014-11-10. The draft had revision and date as unknown.",
+      "Added part number NJM8801VA3 (small SSOP8 with copper frame) and ordering code NJM8801E-TE2.",
+      "NJM8801E package confirmed as SOP8 JEDEC 150 mil. No DIP version exists, so the package caveat now says the part is SMD-only.",
+      "key_specs populated: 4.5 nV/√Hz, 15 MHz GBW, 0.0005 % THD, 5 V/µs, ±2 to ±18 V, 6 mA, 0.3 mV Vio (all typ).",
+      "NJM8801E status changed from unknown to active (distributor-listed, not normally stocked at DigiKey).",
+      "Introduction dated 'by Nov 2014' from the datasheet version.",
+      "The 'MUSES technology' claim is now sourced to the vendor's own product pages, not only the discovery notes.",
+      "Added typical use: Pioneer OEM, sold as a service part."
+    ],
+    "unverified_urls": [
+      "https://www.youtube.com/watch?v=zS7Z64YsgOg",
+      "https://www.njr.com/semicon/PDF/NJM8801_E.pdf",
+      "https://www.njr.co.jp/products/semicon/PDF/NJM8801_E.pdf",
+      "https://www.njr.co.jp/products/semicon/PDF/NJM8801_J.pdf",
+      "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM8801_E.pdf",
+      "https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/NJM8801_J.pdf"
+    ],
+    "claims_confirmed": [
+      "NJM8801 is a high-quality audio dual bipolar op-amp that 'strikes a balance between MUSES technology and mass-production technique' (https://www.njr.com/semicon/products/NJM8801.html)",
+      "Versions NJM8801E (SOP8 JEDEC 150 mil) and NJM8801VA3 (small SSOP8, copper frame) (https://www.njr.com/semicon/products/NJM8801.html)",
+      "4.5 nV/√Hz, 15 MHz GBW, 0.0005 % THD typ (https://www.njr.com/semicon/products/NJM8801.html)",
+      "5 V/µs SR, ±2 to ±18 V, 6 mA supply current, 0.3 mV Vio typ (https://gb.profusion.uk/uk/njm8801e)",
+      "Kyohritsu mirror holds the Japanese datasheet Ver.2014-11-10 (https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm8801.pdf)",
+      "Vendor JP page: MUSES know-how moved to a mass-production process, with process tuning and assembly technique (https://www.njr.co.jp/electronic_device/products/NJM8801.html)",
+      "NJM8801 Series listed on the current Nisshinbo product pages (https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm8801)",
+      "NJM8801E sold by DigiKey, not normally stocked (https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM8801E/2442899)",
+      "Zigsow review titled 'NJM4580以上MUSES8820未満' (https://zigsow.jp/item/329409/review/329949)",
+      "stereo.jp 'JRC訪問記' names NJM8801 as MUSES tech applied to mass production (https://stereo.jp/?p=3614)",
+      "NJM8801-E sold as a Pioneer service part (https://www.soundservice.gr/e-shop/en/product.php?products_id=8416)"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "japanese-audio-series",
+  "product_pages": [
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm8801",
+    "https://www.njr.com/semicon/products/NJM8801.html",
+    "https://www.njr.co.jp/electronic_device/products/NJM8801.html",
+    "https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM8801E/2442899",
+    "https://www.mouser.com/ProductDetail/Nisshinbo/NJM8801E?qs=yQ3iditm8N40dtsGaEGlFg%3D%3D",
+    "https://amaxchip.com/product/NJM8801E"
+  ],
+  "revision_chain_notes": "NJM8801, New JRC then Nisshinbo Micro Devices, oldest to newest.\n(1) Japanese datasheet Ver.2014-11-10 (2014-11-10). This was already known from the Kyohritsu eclib mirror and is still the only dated revision identified.\n(2) English datasheet: a new copy was found at Mouser (https://www.mouser.com/ds/2/294/NJM8801_DataSheetE6-262233.pdf), but the search summary did not show its Ver. string or date. Sibling New JRC English datasheets at Mouser use 'Ver.x.y' footers (NJM8080 Ver.6.0, NJM8068 Ver.3.1), so this copy probably has one too, but it was not seen.\n(3) The Nisshinbo-branded reissue (2022 or later) is still unseen, with no revision or date.\nStill missing:\n- any Japanese Ver. dated before 2014-11-10, including the first-release edition and its date;\n- the Ver. and date of every English edition, including the one Mouser holds;\n- the Nisshinbo reissue's Ver. and date;\n- any change list between versions.\nNo second-source vendors exist; the part is sole-source New JRC/Nisshinbo. No new URLs were added to archive_seed_urls or revision_history. The four searches found no Ver. strings or dates, and no legacy New JRC PDF URL (e.g. under njr.co.jp or njr.com) appeared in results."
+}

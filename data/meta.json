@@ -1,0 +1,280 @@
+{
+  "schema_version": 2,
+  "excluded_candidates": [
+    {
+      "name": "3PEAK TP2262 / TPA1882 high-voltage op-amps",
+      "reason": "No enthusiast evidence of any kind was found.",
+      "stage": "completeness round 3"
+    },
+    {
+      "name": "AD8021 (ADI low-noise high-speed externally compensated)",
+      "reason": "No enthusiast evidence was found.",
+      "stage": "completeness round 3"
+    },
+    {
+      "name": "AD8056 (ADI dual 300 MHz voltage-feedback op-amp)",
+      "reason": "There is no CN or KR community evidence, and the only evidence is a single Western forum remark. That is not enough under this lens.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "AD812 (ADI dual low-power current-feedback video op-amp)",
+      "reason": "There are mentions only and no concrete enthusiast praise.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "AD817 (ADI 50 MHz single-supply high-speed single)",
+      "reason": "There is a single source with mild praise, which is not enough.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "AD829 (ADI high-speed low-noise video op-amp)",
+      "reason": "The evidence is one passing positive remark plus DIY usage, with no substantive listening impressions. That is below the bar.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "AD8397",
+      "reason": "No lens found enthusiast praise. It is a high-output-current line driver with no audio-community evidence.",
+      "stage": "discovery consolidation"
+    },
+    {
+      "name": "AD841 (ADI wideband fast-settling op-amp, OEM I/V in Theta / Parasound DACs)",
+      "reason": "The evidence shows OEM usage in cult R-2R DACs but no praise of the part itself. Modders replace it.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "AD8615 / AD8616 / AD8618 (ADI precision CMOS rail-to-rail, 5 V)",
+      "reason": "Most of the evidence is mentions or suitability notes rather than praise. The one listening impression is neutral, so this is not enough to include.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "AD8676 / OPA2141",
+      "reason": "No evidence.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "ADA4610",
+      "reason": "No lens found enthusiast praise or evidence.",
+      "stage": "discovery consolidation"
+    },
+    {
+      "name": "ADA4896-2 / ADA4897-1 / ADA4897-2 (ADI 1 nV/rtHz rail-to-rail-output high-speed op-amp)",
+      "reason": "The evidence is OEM usage and marketing only. There are no listening impressions or rolling praise, which is the same bar that excluded the AD841 and OP176.",
+      "stage": "completeness round 3"
+    },
+    {
+      "name": "Audio-gd OPA-Sun/Moon/Earth",
+      "reason": "A discrete op-amp module, not an IC.",
+      "stage": "discovery consolidation"
+    },
+    {
+      "name": "BUF634 / BUF634A",
+      "reason": "A pure open-loop buffer, not an op-amp; buffers are excluded. Note that TI replaced the BUF634 with the new-silicon BUF634A and the DIP/TO-220 versions appear to be discontinued.",
+      "stage": "discovery consolidation"
+    },
+    {
+      "name": "Burson V5/V5i/V6/V7",
+      "reason": "A discrete op-amp module, not an IC.",
+      "stage": "discovery consolidation"
+    },
+    {
+      "name": "Chinese domestic op-amps (SGMICRO, 3PEAK etc.)",
+      "reason": "No domestic part with enthusiast praise was found.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "DY649FH / DY639 (unidentified ceramic dual op-amps, a CN 2000s rolling legend)",
+      "reason": "The praise evidence is concrete and repeated across CN sources, but the part's maker, die and datasheet cannot be established. A Baidu Zhidao asker says its parameters cannot be found, and only a broker listing attributes it to ADI. It may be a custom or house-marked part. The catalogue cannot build a verified family record for it, so I flag it for the parent instead of proposing it. Revisit only if its identity (for example a house number for a known ADI die) can be confirmed.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "ESS SABRE9601K / ES9601 headphone driver",
+      "reason": "The evidence is OEM and marketing only. It is also arguably a dedicated headphone-driver IC rather than a general-purpose op-amp.",
+      "stage": "completeness round 3"
+    },
+    {
+      "name": "HA-5102 / HA-5104 (Harris low-noise dual/quad)",
+      "reason": "Borderline. The only praise is one usenet remark, and a phono-specific search found no further impressions. That is below the bar already applied to the OPA2822, which was dropped for a single passing remark.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "HA5112",
+      "reason": "No lens found enthusiast praise or evidence. The HA-2605/2625 family is kept separately.",
+      "stage": "discovery consolidation"
+    },
+    {
+      "name": "HA5221 / EL2044 (Harris / Elantec)",
+      "reason": "No evidence.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "iFi OV2627 / OV4627 / OV2028 (iFi custom-branded op-amps)",
+      "reason": "The parts are proprietary and relabelled, with no independent enthusiast praise of the chip. The evidence is manufacturer marketing only.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "INA1620 (TI audio dual op-amp with integrated matched thin-film resistors)",
+      "reason": "The evidence is one neutral build log, and the device is an op-amp with integrated resistors rather than a standard op-amp.",
+      "stage": "completeness round 3"
+    },
+    {
+      "name": "LF411 / LF412 (National low-offset BiFET)",
+      "reason": "Mild and mixed impressions only, not the concrete praise the bar requires.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "LM7171 / LM6181 (National high-speed VFB / CFB)",
+      "reason": "No praise evidence.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "LME49600",
+      "reason": "A pure buffer, not an op-amp.",
+      "stage": "discovery consolidation"
+    },
+    {
+      "name": "LT1007 / LT1037, LT1113, LT1678 / LT1679, LT6233 (Linear/ADI)",
+      "reason": "No enthusiast-praise evidence.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "LT1124 / LT1125 (Linear Technology dual/quad low-noise precision)",
+      "reason": "No enthusiast praise evidence was found. The part appears in Groner-style distortion comparisons, but the searches returned only pinout warnings.",
+      "stage": "completeness round 3"
+    },
+    {
+      "name": "LT6018 (ADI/LTC 36 V ultralow-noise, ultralow-distortion precision)",
+      "reason": "No enthusiast praise evidence was found.",
+      "stage": "completeness round 3"
+    },
+    {
+      "name": "LT6233 / LT6234 / LT6235 (LTC low-noise rail-to-rail-output op-amp)",
+      "reason": "The evidence is mentions only. The same bar excluded the ADA4841, which appears in the same combination.",
+      "stage": "completeness round 3"
+    },
+    {
+      "name": "NJM2122 / NJM2059 / NJU77806 (other JRC / Nisshinbo parts)",
+      "reason": "No enthusiast-praise evidence.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "NJM4559 / RC4559 (4558-lineage dual)",
+      "reason": "Enthusiasts replace it rather than praise it.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "NJM4560 (New JRC high-output-current dual, NJM4558-based)",
+      "reason": "The listening impressions are mixed or lukewarm, not clear praise.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "NJM4565 (JRC dual general-purpose)",
+      "reason": "The only source is a repair shop's summary table, not community praise.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "NJM5532",
+      "reason": "Merged into the NE5532 family as JRC/Nisshinbo's second source, which is the same generic number. Its die differences are recorded in that family's hints.",
+      "stage": "discovery consolidation"
+    },
+    {
+      "name": "NJM8080 (New JRC audio-standard dual)",
+      "reason": "The evidence runs against praise: enthusiasts replace it.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "NJU77806 (Nisshinbo / New JRC low-noise CMOS RRO single)",
+      "reason": "No enthusiast evidence was found.",
+      "stage": "completeness round 3"
+    },
+    {
+      "name": "OP176 (ADI single Butler-front-end audio op-amp)",
+      "reason": "No concrete listening praise was found, only OEM usage and replacement advice.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "OP42 / OP97 / OP177 / SSM2135 / OP270 / OP470 (PMI/ADI)",
+      "reason": "No enthusiast-praise evidence. The OP270 is already noted as related to the OP27 family.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "OPA140/OPA2140",
+      "reason": "No lens found enthusiast praise; it is a precision JFET part with no audio-community evidence.",
+      "stage": "discovery consolidation"
+    },
+    {
+      "name": "OPA1632 (TI fully differential audio amplifier)",
+      "reason": "Borderline. DIY use is common, but the searches found no explicit sound praise. It is also a fully differential amplifier rather than a standard pin-compatible op-amp that people roll. Revisit if the catalogue accepts 'widely used by DIY builders' as enough.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "OPA1678 / OPA1679 and OPA1662 / OPA1664 (TI SoundPlus budget parts)",
+      "reason": "This confirms the existing drop of the OPA1678/1679. The OPA1662/1664 likewise show no praise.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "OPA189 / OPA2189 / OPA4189 (TI 36 V zero-drift CMOS)",
+      "reason": "It is ranked on specifications only, with no listening praise.",
+      "stage": "completeness round 3"
+    },
+    {
+      "name": "OPA192 / OPA2192 / OPA4192 (TI 36 V e-trim CMOS, rail-to-rail I/O)",
+      "reason": "Borderline. The praise appears to come from one or two posters in a single niche rolling context (XD-05), and one of them ranks it below the peer parts. That is roughly the level already rejected for the OPA2822 (a single user remark). It is better recorded as a note next to the OPA2209 unless more evidence turns up.",
+      "stage": "completeness round 3"
+    },
+    {
+      "name": "OPA2690 / OPA2365 (TI wideband VFB / 2.2 V CMOS)",
+      "reason": "No praise evidence.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "OPA2822 (TI dual wideband low-noise SpeedPlus)",
+      "reason": "The evidence is a single passing user remark, which is not enough. A Chinese-language search found nothing.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "OPA602 (Burr-Brown high-speed precision Difet single)",
+      "reason": "The evidence is a spec mention only, with no enthusiast praise.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "ROHM MUS-IC audio op-amps (none found)",
+      "reason": "No such op-amp product was evidenced.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "SGM8262",
+      "reason": "Completeness round 3: OEM marketing use in Chinese dongles/DAPs, but no credible enthusiast praise (measurement lens found only machine-generated pages).",
+      "stage": "discovery consolidation"
+    },
+    {
+      "name": "Sonic Imagery Labs 994Enh/990Enh-Ticha",
+      "reason": "A discrete op-amp module, not an IC.",
+      "stage": "discovery consolidation"
+    },
+    {
+      "name": "Sparkos Labs SS3601/SS3602",
+      "reason": "A discrete op-amp module, not an IC.",
+      "stage": "discovery consolidation"
+    },
+    {
+      "name": "SSM2139 (PMI / ADI dual low-noise audio op-amp, gain >= 3)",
+      "reason": "The evidence is mixed: one user's praise against one negative account of an OEM output stage that used it. That is not enough for inclusion. SSM2131, SSM2134 and SSM2135 showed no praise, only datasheets and a remark that the SSM2131 was PMI's 'improved NE5534'.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "TL051 / TL052 (TI enhanced-JFET)",
+      "reason": "No enthusiast listening praise was found.",
+      "stage": "completeness round 2"
+    },
+    {
+      "name": "µPC4556 / µPC4572 (NEC / Renesas)",
+      "reason": "No praise evidence. The NJM4556 family already notes that the µPC4556 is a different part with the same number.",
+      "stage": "completeness round 1"
+    },
+    {
+      "name": "К574УД1 / КР574УД1 (Soviet op-amp)",
+      "reason": "There is design usage only and no enthusiast praise. Soviet parts such as the К157УД2 and К544УД2 turn up in Russian forums as parts to be replaced (by NE5532 or OPA2134), not praised.",
+      "stage": "completeness round 3 (Europe)"
+    }
+  ]
+}

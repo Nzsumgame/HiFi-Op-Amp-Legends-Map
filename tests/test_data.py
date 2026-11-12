@@ -1,8 +1,7 @@
-"""Consistency checks for data/opamps.json and the generated docs.
+"""Consistency checks for data/families/*.json and the generated docs.
 
 Run:  python -m unittest discover -s tests -v
 """
-import json
 import re
 import subprocess
 import sys
@@ -10,7 +9,10 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA = json.loads((ROOT / "data" / "opamps.json").read_text())
+sys.path.insert(0, str(ROOT / "tools"))
+import dataset  # noqa: E402
+
+DATA = {"families": dataset.load_families()}
 
 TIERS = {"A", "B", "C"}
 CATEGORIES = {"bipolar-classic", "bipolar-modern-low-noise", "jfet-input", "cmos-input", "japanese-audio-series",

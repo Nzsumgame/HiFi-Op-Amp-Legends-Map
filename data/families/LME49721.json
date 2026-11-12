@@ -1,0 +1,415 @@
+{
+  "id": "LME49721",
+  "name": "LME49721 (National / TI low-voltage rail-to-rail I/O audio dual)",
+  "tagline": "A rare audio-grade rail-to-rail I/O dual for 2.2-5.5 V supplies (4 nV/rtHz, 0.00008% THD+N). Japanese low-voltage headphone-amp builders often choose it.",
+  "technology": "Dual op-amp with CMOS-type input (input bias current 40 fA typ), rail-to-rail input and output, 2.2-5.5 V single supply, 20 MHz GBW, +/-8.5 V/us slew, +/-9.7 mA output current. Only SOIC-8 (MA) ordering codes are listed.",
+  "manufacturers": [
+    "National Semiconductor",
+    "Texas Instruments"
+  ],
+  "part_numbers": [
+    {
+      "pn": "LME49721",
+      "channels": 2,
+      "vendors": [
+        "National Semiconductor",
+        "Texas Instruments"
+      ],
+      "status": "active (TI product folder live; see ordering codes)",
+      "notes": "Generic device name. Dual op-amp. Datasheet SNAS371C."
+    },
+    {
+      "pn": "LME49721MA/NOPB",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments",
+        "National Semiconductor"
+      ],
+      "status": "active (probable; TI part-details page and DigiKey listing exist, but no explicit lifecycle flag was seen)",
+      "notes": "SOIC-8, tube, lead-free (NOPB)."
+    },
+    {
+      "pn": "LME49721MAX/NOPB",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments",
+        "National Semiconductor"
+      ],
+      "status": "active (per Octopart lifecycle field)",
+      "notes": "SOIC-8, tape and reel, lead-free (NOPB)."
+    },
+    {
+      "pn": "LME49721MA",
+      "channels": 2,
+      "vendors": [
+        "National Semiconductor"
+      ],
+      "status": "unknown (probably legacy National leaded code; unconfirmed)",
+      "notes": "SOIC-8, tube. Non-NOPB National-era ordering code. An alldatasheet page lists a TI-branded LME49721MA datasheet."
+    },
+    {
+      "pn": "LME49721MAX",
+      "channels": 2,
+      "vendors": [
+        "National Semiconductor"
+      ],
+      "status": "unknown (probably legacy National leaded code; unconfirmed)",
+      "notes": "SOIC-8, tape and reel. Non-NOPB National-era ordering code."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "National Semiconductor",
+      "role": "originator",
+      "period": "2007-2011",
+      "notes": "Released in the LME audio op-amp line (siblings: LME49720, LME49710). The TI datasheet header gives the origination date as September 2007, and a National copy is dated October 2007."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "owner / current manufacturer",
+      "period": "2011-present",
+      "notes": "Acquired with National in 2011. In April 2013 the datasheet was reissued in TI format as SNAS371C. The /NOPB SOIC-8 codes are still sold."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Supply voltage",
+      "value": "2.2 V to 5.5 V",
+      "condition": "single supply",
+      "source": "TI SNAS371C (https://www.ti.com/lit/ds/symlink/lme49721.pdf)"
+    },
+    {
+      "parameter": "Input voltage noise density",
+      "value": "4 nV/rtHz typ",
+      "condition": "f = 1 kHz",
+      "source": "TI SNAS371C"
+    },
+    {
+      "parameter": "Gain bandwidth product",
+      "value": "20 MHz typ",
+      "condition": "",
+      "source": "TI SNAS371C"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "+/-8.5 V/us typ",
+      "condition": "",
+      "source": "TI SNAS371C"
+    },
+    {
+      "parameter": "THD+N",
+      "value": "0.00008% typ",
+      "condition": "RL = 2 kOhm",
+      "source": "TI SNAS371C"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "40 fA typ",
+      "condition": "",
+      "source": "TI SNAS371C"
+    },
+    {
+      "parameter": "Quiescent current",
+      "value": "2.15 mA typ",
+      "condition": "",
+      "source": "TI SNAS371C"
+    },
+    {
+      "parameter": "Output current",
+      "value": "+/-9.7 mA",
+      "condition": "",
+      "source": "TI SNAS371C"
+    },
+    {
+      "parameter": "Open-loop gain",
+      "value": "118 dB typ",
+      "condition": "RL = 600 Ohm",
+      "source": "TI SNAS371C"
+    },
+    {
+      "parameter": "Input offset voltage",
+      "value": "0.3 mV typ",
+      "condition": "",
+      "source": "TI SNAS371C"
+    },
+    {
+      "parameter": "PSRR",
+      "value": "103 dB typ",
+      "condition": "",
+      "source": "TI SNAS371C"
+    }
+  ],
+  "reputation": {
+    "summary": "Among Japanese builders of low-voltage and portable headphone amps it is treated as a standard choice. nabe's blog (高品質な低電圧ヘッドホンアンプ) recommends it after low-voltage testing, as one of two parts alongside the AD8656. A zigsow user review is titled '高性能な低電圧駆動可能なオペアンプ…らしい。実際優秀。' ('Supposedly a high-performance low-voltage op-amp... and it really is excellent'). Akizuki sells it as a '2回路フルスイングHiFiオペアンプ' ('2-circuit full-swing HiFi op-amp'). The praise comes mostly from these Japanese hobbyist sources and is not widespread in Western audiophile forums.",
+    "sonic_descriptors": [],
+    "typical_uses": [
+      "Portable / battery-powered headphone amplifiers",
+      "USB-bus-powered (5 V) audio buffers and preamps",
+      "Low-voltage single-supply audio signal paths needing rail-to-rail swing"
+    ],
+    "caveats": [
+      "The supply is limited to 5.5 V total, so it cannot go into +/-15 V or +/-12 V sockets meant for NE5532 or OPA2134 class parts, which would destroy it.",
+      "Output current is only about +/-9.7 mA, which limits direct drive of low-impedance headphones.",
+      "Only SOIC-8 ordering codes are listed, so DIP-8 use needs an adapter.",
+      "Praise is attributed to a small number of Japanese hobbyist sources."
+    ],
+    "sources": [
+      "https://nabe.adiary.jp/op-dbuf",
+      "https://zigsow.jp/item/174207/review/97161",
+      "https://akizukidenshi.com/catalog/g/g113344/",
+      "https://www.ti.com/product/LME49721"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49721 High Performance, High Fidelity Rail-to-Rail Input/Output Audio Operational Amplifier",
+      "doc_number": "SNAS371C",
+      "revision": "C",
+      "date": "2013-04",
+      "url": "https://www.ti.com/lit/ds/symlink/lme49721.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current TI datasheet (symlink). Revision history: rev C (04/04/13) changed the layout of the National data sheet to TI format."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49721 High Performance, High Fidelity Rail-to-Rail Input/Output Audio Operational Amplifier",
+      "doc_number": "SNAS371C",
+      "revision": "C",
+      "date": "2013-04",
+      "url": "https://www.ti.com/lit/ds/snas371c/snas371c.pdf",
+      "url_kind": "vendor_revision_specific",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Revision-pinned TI URL for rev C."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49721 High Performance, High Fidelity Rail-to-Rail Input/Output Audio Operational Amplifier",
+      "doc_number": "unknown (National-era copy; SNAS number not shown)",
+      "revision": "",
+      "date": "2007-10",
+      "url": "https://www.pken.net/ish_mm/datasheet/ns/lme49721.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "National original edition (letter not shown)",
+      "note": "The search result title shows the 'October 2007' National header. This is probably the initial National release."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49721 High Performance, High Fidelity Rail-to-Rail Input/Output",
+      "doc_number": "unknown (National-branded)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/LME49721MA/NOPB-National-Semiconductor-datasheet-9809305.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "National-branded copy on Octopart. Probably a pre-2013 National revision. Exact revision is unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49721",
+      "doc_number": "SNAS371 (revision unknown)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/LME49721MAX/NOPB-Texas-Instruments-datasheet-10847027.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "TI-branded copy on Octopart. Revision unconfirmed."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49721 Datasheet (NSC)",
+      "doc_number": "unknown (National-branded)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/201229/NSC/LME49721.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "National-branded copy on alldatasheet. Probably a 2007-2011 National edition. Revision unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49721 Datasheet (TI)",
+      "doc_number": "SNAS371 (revision unknown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/538445/TI/LME49721.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "TI-branded copy. May hold an earlier TI revision (A/B) than rev C. Unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49721MA Datasheet (TI)",
+      "doc_number": "SNAS371 (revision unknown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/538446/TI/LME49721MA.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "TI-branded copy. Revision unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49721MA/NOPB Datasheet (TI)",
+      "doc_number": "SNAS371 (revision unknown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2194639/TI2/LME49721MASLASHNOPB.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Newer alldatasheet upload. Probably rev C. Unconfirmed."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49721 Datasheet, Amplifier, National Semiconductor",
+      "doc_number": "unknown (National-branded)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet-pdf/NationalSemiconductor/LME49721/pdf.php?id=624469",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "National-branded copy. Revision unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49721 Datasheet Texas Instruments",
+      "doc_number": "SNAS371 (revision unknown)",
+      "revision": "",
+      "date": "",
+      "url": "https://radiolocman.com/datasheet/data.html?%2FLME49721=&di=300411",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "TI-branded copy on RadioLocman. Revision unconfirmed."
+    },
+    {
+      "vendor": "various",
+      "title": "Datasheet Archive: LME49721 datasheets",
+      "doc_number": "n/a",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetarchive.com/LME49721%20-datasheet.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "multiple / unknown",
+      "note": "Listing page that may hold several National and TI editions. Contents unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "AN-1767 LME49721 Evaluation Board",
+      "doc_number": "SNAA051",
+      "revision": "A",
+      "date": "",
+      "url": "https://www.ti.com/lit/pdf/snaa051",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Evaluation-board application note (a companion document, not the datasheet)."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "National Semiconductor",
+      "doc_number": "National datasheet (number not confirmed)",
+      "revision": "original",
+      "date": "September/October 2007",
+      "changes": "Initial release. The TI header gives the origination date as SEPTEMBER 2007, and the National copy is dated October 2007."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SNAS371C",
+      "revision": "C",
+      "date": "April 2013 (04/04/13)",
+      "changes": "Changed the layout of the National data sheet to TI format."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No LME49721-specific counterfeit or remark reports were found. TI lists only SOIC-8 (MA) ordering codes, so any 'LME49721' sold as a native DIP-8 is either an adapter board or suspect. Buy from authorized distributors (TI, DigiKey, Mouser).",
+  "alternatives": [
+    "AD8656 (recommended alongside it on nabe's low-voltage headphone-amp tests)",
+    "OPA2365 (TI 2.2-5.5 V rail-to-rail I/O dual; editorial suggestion)",
+    "LME49720 (higher-voltage sibling from the same line; not rail-to-rail, needs larger supplies)"
+  ],
+  "ti_literature_numbers": [
+    "SNAA051",
+    "SNAS371"
+  ],
+  "archive_seed_urls": [
+    "http://www.national.com/an/AN/AN-1767.pdf",
+    "http://www.national.com/ds/LM/LME49721.pdf",
+    "http://www.national.com/pf/LM/LME49721.html",
+    "https://www.ti.com/lit/ds/snas371c/snas371c.pdf",
+    "https://www.ti.com/lit/ds/symlink/lme49721.pdf",
+    "https://www.ti.com/product/LME49721"
+  ],
+  "open_questions": [
+    "Dates and change lists for SNAS371A and SNAS371B (between the 2007 National release and rev C in April 2013) were not found.",
+    "Which revision each mirror (Octopart National/TI copies, alldatasheet 538445/538446/2194639, datasheet4u, radiolocman) actually holds.",
+    "No PCN or fab/die transfer was found after the TI acquisition. Worth checking TI PCN listings for LME49721.",
+    "The lifecycle status of the legacy non-NOPB codes LME49721MA and LME49721MAX, and an explicit TI status flag for LME49721MA/NOPB.",
+    "Exact test conditions for THD+N (gain, supply, frequency) and whether quiescent current is per amplifier or total."
+  ],
+  "sources": [
+    "https://www.ti.com/product/LME49721",
+    "https://www.ti.com/lit/ds/symlink/lme49721.pdf",
+    "https://www.ti.com/lit/ds/snas371c/snas371c.pdf",
+    "https://www.ti.com/lit/pdf/snaa051",
+    "https://www.pken.net/ish_mm/datasheet/ns/lme49721.pdf",
+    "https://datasheet.octopart.com/LME49721MA/NOPB-National-Semiconductor-datasheet-9809305.pdf",
+    "https://datasheet.octopart.com/LME49721MAX/NOPB-Texas-Instruments-datasheet-10847027.pdf",
+    "https://octopart.com/lme49721max/nopb-texas+instruments-24839917",
+    "https://www.digikey.com/en/products/detail/texas-instruments/LME49721MA-NOPB/1836037",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/201229/NSC/LME49721.html",
+    "https://nabe.adiary.jp/op-dbuf",
+    "https://zigsow.jp/item/174207/review/97161",
+    "https://akizukidenshi.com/catalog/g/g113344/"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [],
+    "corrections": [
+      "Channel count corrected from 0 to 2 for all part numbers (dual op-amp).",
+      "Added the /NOPB ordering codes LME49721MA/NOPB and LME49721MAX/NOPB. MAX/NOPB is marked active per Octopart, and MA/NOPB as probably active.",
+      "Reclassified LME49721MA and LME49721MAX as legacy National non-NOPB codes with unknown status.",
+      "Technology line: the vague 'fA range' bias current is replaced by the confirmed 40 fA typ, and the +/-9.7 mA output current is added.",
+      "Filled in the empty datasheets, key_specs, revision_history, lineage, ti_literature_numbers (SNAS371, SNAA051) and archive_seed_urls.",
+      "No silicon changes or revision hazards were found. silicon_changes stays empty (discovery hints were empty as well)."
+    ],
+    "unverified_urls": [
+      "http://www.national.com/ds/LM/LME49721.pdf",
+      "http://www.national.com/pf/LM/LME49721.html",
+      "http://www.national.com/an/AN/AN-1767.pdf",
+      "https://nabe.adiary.jp/op-dbuf",
+      "https://zigsow.jp/item/174207/review/97161",
+      "https://akizukidenshi.com/catalog/g/g113344/"
+    ],
+    "claims_confirmed": [
+      "The current TI datasheet is SNAS371C, 'SEPTEMBER 2007-REVISED APRIL 2013' (https://www.ti.com/lit/ds/symlink/lme49721.pdf).",
+      "Rev C (04/04/13) changed the layout of the National data sheet to TI format (https://www.ti.com/lit/ds/snas371c/snas371c.pdf, via search summary).",
+      "A National-era datasheet copy dated October 2007 exists (https://www.pken.net/ish_mm/datasheet/ns/lme49721.pdf).",
+      "Specs: 2.2-5.5 V supply, 4 nV/rtHz at 1 kHz, 20 MHz GBW, +/-8.5 V/us, THD+N 0.00008% at RL = 2 kOhm, 40 fA input bias current, 2.15 mA quiescent current, +/-9.7 mA output, 118 dB AOL at 600 Ohm, 0.3 mV Vos, 103 dB PSRR (https://www.ti.com/lit/ds/symlink/lme49721.pdf; https://datasheet.octopart.com/LME49721MA/NOPB-National-Semiconductor-datasheet-9809305.pdf).",
+      "LME49721MAX/NOPB lifecycle is ACTIVE (https://octopart.com/lme49721max/nopb-texas+instruments-24839917).",
+      "TI part-details pages exist for LME49721MA/NOPB and LME49721MAX/NOPB (https://www.ti.com/product/LME49721/part-details/LME49721MA/NOPB).",
+      "AN-1767 LME49721 Evaluation Board is TI document SNAA051 Rev A (https://www.ti.com/lit/pdf/snaa051)."
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "cmos-input",
+  "product_pages": [
+    "https://www.ti.com/product/LME49721"
+  ]
+}

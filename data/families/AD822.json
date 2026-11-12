@@ -1,0 +1,576 @@
+{
+  "id": "AD822",
+  "name": "AD820 / AD822 / AD824 (ADI single-supply rail-to-rail-output JFET-input)",
+  "tagline": "Low-power ADI JFET-input op amps with rail-to-rail outputs for single-supply use. Japanese DIY builders use the AD822 in battery CMoy amps and compare its sound to the OPA2134.",
+  "technology": "JFET-input precision op amps (1/2/4 channels) with rail-to-rail output and an input range that extends below the negative rail. AD820: 5 V to 36 V single or ±2.5 V to ±18 V dual supply, 1.8 MHz, 3 V/µs, 800 µA max. AD822: 5 V to 30 V single or ±2.5 V to ±15 V dual, output within 10 mV of each rail. AD824: 3 V single up to ±15 V, 2 MHz, 2 V/µs, 500 µA per amplifier.",
+  "manufacturers": [
+    "Analog Devices"
+  ],
+  "part_numbers": [
+    {
+      "pn": "AD820",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "listed on analog.com; lifecycle status not confirmed",
+      "notes": "Single. Datasheet Rev. H is current."
+    },
+    {
+      "pn": "AD822",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "listed on analog.com; lifecycle status not confirmed",
+      "notes": "Dual; the family member hobbyists talk about. Datasheet Rev. J is current."
+    },
+    {
+      "pn": "AD824",
+      "channels": 4,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "listed on analog.com; lifecycle status not confirmed",
+      "notes": "Quad; lower power (500 µA/amp), 2 MHz, 2 V/µs, operates down to a 3 V single supply."
+    },
+    {
+      "pn": "AD822ANZ",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (Akizuki stocks the DIP version according to the discovery sweep)",
+      "notes": "PDIP-8, Pb-free."
+    },
+    {
+      "pn": "AD822ARZ",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "SOIC-8, Pb-free; Octopart has a datasheet mirror under this code."
+    },
+    {
+      "pn": "AD822AN",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "legacy non-Z code; status not confirmed",
+      "notes": "Radiolocman lists a datasheet for it. Probably the pre-Pb-free predecessor of AD822ANZ (unconfirmed)."
+    },
+    {
+      "pn": "AD820ARZ",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "SOIC-8, A grade; datasheet mirror on Octopart."
+    },
+    {
+      "pn": "AD820BRZ",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "SOIC-8, B grade; the Octopart mirror holds datasheet Rev. G."
+    },
+    {
+      "pn": "AD824ARZ-14",
+      "channels": 4,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "SOIC-14; datasheet listing on Radiolocman."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Analog Devices",
+      "role": "original designer and sole manufacturer",
+      "period": "1990s to present (introduction date not confirmed)",
+      "notes": "Single (AD820), dual (AD822) and quad (AD824) versions of one JFET-input RRO architecture."
+    },
+    {
+      "vendor": "Analog Devices",
+      "role": "successor family",
+      "period": "current",
+      "notes": "ADI product pages call the ADA4622-1/-2/-4 the next generation of the AD820/AD822/AD824."
+    },
+    {
+      "vendor": "Academic (arXiv 2409.13509)",
+      "role": "third-party circuit redesign",
+      "period": "2024",
+      "notes": "'Redesign of the AD820 Single-Channel Circuit for the Development of the aRD820 Low-Noise Rail-to-Rail Operational Amplifier'. A research redesign, not a commercial second source."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Supply range (AD820)",
+      "value": "5 V to 36 V single; ±2.5 V to ±18 V dual",
+      "condition": "datasheet operating range",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf"
+    },
+    {
+      "parameter": "Unity-gain bandwidth (AD820)",
+      "value": "1.8 MHz",
+      "condition": "typ",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf"
+    },
+    {
+      "parameter": "Slew rate (AD820)",
+      "value": "3 V/µs",
+      "condition": "typ",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf"
+    },
+    {
+      "parameter": "Voltage noise (AD820)",
+      "value": "13 nV/√Hz",
+      "condition": "@ 10 kHz",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf"
+    },
+    {
+      "parameter": "Quiescent current (AD820)",
+      "value": "800 µA max",
+      "condition": "per amplifier",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf"
+    },
+    {
+      "parameter": "Supply range (AD822)",
+      "value": "5 V to 30 V single; ±2.5 V to ±15 V dual",
+      "condition": "datasheet operating range",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf"
+    },
+    {
+      "parameter": "Output swing (AD822)",
+      "value": "within 10 mV of each rail",
+      "condition": "light load",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf"
+    },
+    {
+      "parameter": "GBW / slew / supply current (AD822)",
+      "value": "1.8 MHz / 3 V/µs / 800 µA per amplifier",
+      "condition": "typ; from the draft and matching the AD820 values, not separately web-confirmed for the AD822",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf"
+    },
+    {
+      "parameter": "Supply current (AD824)",
+      "value": "500 µA",
+      "condition": "per amplifier",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf"
+    },
+    {
+      "parameter": "Bandwidth / slew (AD824)",
+      "value": "2 MHz / 2 V/µs",
+      "condition": "typ",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf"
+    },
+    {
+      "parameter": "Input bias current (AD824)",
+      "value": "2 pA",
+      "condition": "typ",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf"
+    },
+    {
+      "parameter": "Supply range (AD824)",
+      "value": "3 V single to ±15 V dual",
+      "condition": "guaranteed operation",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf"
+    }
+  ],
+  "reputation": {
+    "summary": "The praise is modest and comes mostly from Japanese DIY sources. A zigsow review calls the AD822 'a single-supply part that holds up well enough for audio'. nabe's spec-vs-sound notes say its sound tendency is similar to the OPA2134, with a cool FET-input character, and find the OPA2350 fuller-bodied. The very low current draw makes it a battery CMoy headphone-amp choice, but nabe notes some transient problems into 15-ohm loads. Akizuki stocks the DIP version for hobbyists.",
+    "sonic_descriptors": [
+      "cool / FET-input character (nabe)",
+      "tendency similar to OPA2134 (nabe)",
+      "less full-bodied than OPA2350 (nabe)"
+    ],
+    "typical_uses": [
+      "battery-powered CMoy headphone amplifiers",
+      "single-supply portable audio stages",
+      "DIY op-amp swapping (DIP-8 AD822ANZ)"
+    ],
+    "caveats": [
+      "Designed as a low-power precision/instrumentation part, not an audio part",
+      "Limited drive: transient problems reported into 15-ohm headphone loads (nabe)",
+      "Praise is lukewarm ('good enough for audio'), not legendary status"
+    ],
+    "sources": [
+      "https://zigsow.jp/item/322320/review/321035",
+      "https://nabe.adiary.jp/opamp-speclist",
+      "https://akizukidenshi.com/catalog/g/g113753/"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Analog Devices",
+      "title": "Single-Supply, Rail-to-Rail Low Power FET-Input Op Amp Data Sheet AD822",
+      "doc_number": "AD822",
+      "revision": "J",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current revision; search-result title shows Rev. J."
+    },
+    {
+      "vendor": "dtsheet.com",
+      "title": "AD822 (Rev. J) - Analog Devices",
+      "doc_number": "AD822",
+      "revision": "J",
+      "date": "",
+      "url": "https://dtsheet.com/doc/1387960/ad822--rev.-j----analog-devices",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Mirror of Rev. J."
+    },
+    {
+      "vendor": "Octopart",
+      "title": "Single-Supply, Rail-to-Rail Low Power FET-Input Op Amp AD822 (AD822ARZ)",
+      "doc_number": "AD822",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/AD822ARZ-Analog-Devices-datasheet-9563410.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision not shown in search; may be older than Rev. J."
+    },
+    {
+      "vendor": "Farnell",
+      "title": "AD822 Single-Supply, Rail-to-Rail Low Power FET-Input Op Amp",
+      "doc_number": "AD822",
+      "revision": "",
+      "date": "",
+      "url": "https://www.farnell.com/datasheets/92971.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Low Farnell doc ID suggests an older revision (unconfirmed)."
+    },
+    {
+      "vendor": "Radiolocman",
+      "title": "AD822 Datasheet Analog Devices",
+      "doc_number": "AD822",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=351381",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": ""
+    },
+    {
+      "vendor": "Radiolocman",
+      "title": "AD822AN Datasheet Analog Devices",
+      "doc_number": "AD822",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=32855",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Legacy AD822AN listing; low document ID, probably an old revision (unconfirmed)."
+    },
+    {
+      "vendor": "alldatasheet",
+      "title": "AD822 Datasheet(PDF) - Analog Devices",
+      "doc_number": "AD822",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48425/AD/AD822.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Probably an older revision (unconfirmed)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Single-Supply, Rail-to-Rail, Low Power, FET Input Op Amp AD820",
+      "doc_number": "AD820",
+      "revision": "H",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current revision; search-result title shows Rev. H."
+    },
+    {
+      "vendor": "Octopart",
+      "title": "Single-Supply, Rail-to-Rail, Low Power, FET Input Op Amp AD820 Rev. G (AD820BRZ)",
+      "doc_number": "AD820",
+      "revision": "G",
+      "date": "",
+      "url": "https://datasheet.octopart.com/AD820BRZ-Analog-Devices-datasheet-8455708.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Keeps the older Rev. G."
+    },
+    {
+      "vendor": "Octopart",
+      "title": "Single-Supply, Rail-to-Rail, Low Power, FET Input Op Amp AD820 (AD820ARZ)",
+      "doc_number": "AD820",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/AD820ARZ-Analog-Devices-datasheet-9572509.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": ""
+    },
+    {
+      "vendor": "Radiolocman",
+      "title": "Datasheet AD820 Analog Devices, Revision: H",
+      "doc_number": "AD820",
+      "revision": "H",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=121457",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": ""
+    },
+    {
+      "vendor": "alldatasheet",
+      "title": "AD820 Datasheet(PDF) - Analog Devices",
+      "doc_number": "AD820",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/225472/AD/AD820.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": ""
+    },
+    {
+      "vendor": "alldatasheet",
+      "title": "AD820 datasheet (html view)",
+      "doc_number": "AD820",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/html-pdf/48423/AD/AD820/19/1/AD820.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Lower document ID than 225472; probably an older revision (unconfirmed)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Single Supply, Rail-to-Rail Low Power, FET-Input Op Amp Data Sheet AD824",
+      "doc_number": "AD824",
+      "revision": "E",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Revision letter on the vendor copy is unconfirmed."
+    },
+    {
+      "vendor": "Radiolocman",
+      "title": "Datasheet AD824 Analog Devices, Revision: E",
+      "doc_number": "AD824",
+      "revision": "E",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=168527",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": ""
+    },
+    {
+      "vendor": "Radiolocman",
+      "title": "AD824ARZ-14 Datasheet Analog Devices",
+      "doc_number": "AD824",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=80108",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": ""
+    },
+    {
+      "vendor": "Farnell",
+      "title": "AD824 - Single Supply, Rail-to-Rail Low Power, FET-Input Op Amp",
+      "doc_number": "AD824",
+      "revision": "",
+      "date": "",
+      "url": "https://www.farnell.com/datasheets/515250.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": ""
+    },
+    {
+      "vendor": "NRAO (cv.nrao.edu)",
+      "title": "AD824 (old-style ADI datasheet)",
+      "doc_number": "AD824",
+      "revision": "",
+      "date": "",
+      "url": "https://www.cv.nrao.edu/~thunter/datasheets/AD824.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "University/observatory copy in the older ADI layout; likely an early revision (unconfirmed)."
+    },
+    {
+      "vendor": "alldatasheet",
+      "title": "AD824 Datasheet(PDF) - Analog Devices",
+      "doc_number": "AD824",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48427/AD/AD824.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": ""
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD822",
+      "revision": "J",
+      "date": "not confirmed",
+      "changes": "Current revision; contents of the revision-history table were not retrieved."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD820",
+      "revision": "H",
+      "date": "not confirmed",
+      "changes": "Current revision; changes not retrieved."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD820",
+      "revision": "G",
+      "date": "not confirmed",
+      "changes": "Previous revision (Octopart AD820BRZ mirror keeps a copy)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD824",
+      "revision": "E",
+      "date": "not confirmed",
+      "changes": "Latest revision seen (Radiolocman mirror); changes not retrieved."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "vendor": "Analog Devices",
+      "when": "2026 (by PCN number; exact date not confirmed)",
+      "part_numbers_affected": [
+        "AD820",
+        "AD822",
+        "AD823",
+        "AD824",
+        "AD8224"
+      ],
+      "identification": "Covered by ADI PCN 26_0029 Rev. -. Check the PCN for how to tell pre- and post-change parts apart (date code or other marking).",
+      "summary": "ADI PCN 26_0029 lists AD820, AD822 and AD824 variants together with the AD823 and AD8224 JFET-input amplifiers. Search results did not show what the change is (fab/process, assembly, test or package). A multi-product JFET-family PCN could mean a process or fab change, but that is unconfirmed.",
+      "spec_deltas": [],
+      "audio_impact": "Unknown until the PCN text is read.",
+      "compatibility_risk": "medium - a 2026 PCN covers the whole JFET-RRO family, but the nature of the change is unconfirmed",
+      "sources": [
+        "https://www.farnell.com/datasheets/4778405.pdf",
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf"
+      ],
+      "confidence": "low",
+      "kind": "fab-or-process-transfer"
+    }
+  ],
+  "counterfeit_notes": "No specific AD820/AD822/AD824 counterfeit reports were found in this check. The DIP-8 AD822ANZ circulates widely in the hobby market, so buy from authorized distributors or reputable retailers such as Akizuki.",
+  "alternatives": [
+    "ADA4622-1 / ADA4622-2 / ADA4622-4 (ADI's stated next generation)",
+    "OPA2134 (nabe compares its sound tendency to this part)",
+    "OPA2350 (single-supply CMOS RRIO; nabe finds it fuller-bodied)",
+    "AD823 (faster ADI JFET-input RRO dual)"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://www.analog.com/static/imported-files/data_sheets/AD820.pdf",
+    "http://www.analog.com/static/imported-files/data_sheets/AD822.pdf",
+    "http://www.analog.com/static/imported-files/data_sheets/AD824.pdf",
+    "https://www.analog.com/en/products/ad820.html",
+    "https://www.analog.com/en/products/ad822.html",
+    "https://www.analog.com/en/products/ad824.html",
+    "https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf"
+  ],
+  "open_questions": [
+    "What does ADI PCN 26_0029 change (fab/process vs assembly/test), and is the AD822 die affected? What is the date-code cutover?",
+    "What does ADI PCN 07_0024 Rev. E (which lists AD822 variants) cover? Possibly the Pb-free (Z-suffix) transition, but that is unconfirmed.",
+    "What dates are printed on AD822 Rev. J, AD820 Rev. H and AD824 Rev. E, and what does each revision-history table say?",
+    "Which revisions do the Farnell, Octopart AD822ARZ, alldatasheet and NRAO mirrors hold?",
+    "What lifecycle status does ADI show for each ordering code (production vs NRND/obsolete, e.g. AD822AN and AD824 PDIP)?",
+    "AD822 noise density, GBW and slew rate were not separately web-confirmed (the AD820 values were)."
+  ],
+  "sources": [
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf",
+    "https://www.analog.com/en/products/ad822.html",
+    "https://www.analog.com/en/products/ada4622-2.html",
+    "https://datasheet.octopart.com/AD820BRZ-Analog-Devices-datasheet-8455708.pdf",
+    "https://www.radiolocman.com/datasheet/pdf.html?di=168527",
+    "https://www.farnell.com/datasheets/4778405.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf",
+    "https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf",
+    "https://arxiv.org/html/2409.13509v1",
+    "https://zigsow.jp/item/322320/review/321035",
+    "https://nabe.adiary.jp/opamp-speclist",
+    "https://akizukidenshi.com/catalog/g/g113753/"
+  ],
+  "verification": {
+    "status": "partially-verified",
+    "refuted_claims": [
+      "Draft 'technology' gave the whole family a 5-30 V single supply. The AD820 is specified for 5 V to 36 V (±2.5 V to ±18 V), and the AD824 for 3 V single up to ±15 V with 2 MHz, 2 V/µs and 500 µA per amplifier."
+    ],
+    "corrections": [
+      "Channel counts corrected from 0 to 1 (AD820), 2 (AD822) and 4 (AD824) and to the matching ordering codes.",
+      "Technology rewritten with per-part supply, GBW, slew and supply-current figures.",
+      "Added the current vendor datasheets (AD822 Rev. J, AD820 Rev. H, AD824 Rev. E probable), the AD820 Rev. G mirror and other distributor and third-party mirrors.",
+      "Added ADI PCN 26_0029 (covers AD820/AD822/AD823/AD824/AD8224) as a low-confidence possible change; its nature is unconfirmed.",
+      "Added the ADA4622-1/-2/-4 as ADI's stated next-generation successor.",
+      "Added a tagline, key_specs, lineage, alternatives and archive seeds; reputation kept attributed to zigsow and nabe."
+    ],
+    "unverified_urls": [
+      "http://www.analog.com/static/imported-files/data_sheets/AD822.pdf",
+      "http://www.analog.com/static/imported-files/data_sheets/AD820.pdf",
+      "http://www.analog.com/static/imported-files/data_sheets/AD824.pdf"
+    ],
+    "claims_confirmed": [
+      "AD822 current datasheet is Rev. J (https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf)",
+      "AD822 runs from a 5 V to 30 V single supply or ±2.5 V to ±15 V, and its output swings to within 10 mV of each rail (https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf)",
+      "AD820 current datasheet is Rev. H (https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf; https://www.radiolocman.com/datasheet/pdf.html?di=121457)",
+      "Octopart AD820BRZ mirror holds AD820 Rev. G (https://datasheet.octopart.com/AD820BRZ-Analog-Devices-datasheet-8455708.pdf)",
+      "AD820 specs: 5 V to 36 V single or ±2.5 V to ±18 V dual, 1.8 MHz, 3 V/µs, 13 nV/√Hz @ 10 kHz, 800 µA max (https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf)",
+      "AD824 Revision E on Radiolocman (https://www.radiolocman.com/datasheet/pdf.html?di=168527)",
+      "AD824 specs: 500 µA/amp, 2 MHz, 2 V/µs, 2 pA bias, 3 V to ±15 V (https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf)",
+      "ADA4622-1/-2/-4 are the next generation of the AD820/AD822/AD824 (https://www.analog.com/en/products/ada4622-2.html)",
+      "ADI PCN 26_0029 lists AD820, AD822, AD823, AD824 and AD8224 variants (https://www.farnell.com/datasheets/4778405.pdf)",
+      "ADI PCN 07_0024 Rev. E lists AD822 variants (https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf)"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "jfet-input",
+  "product_pages": [
+    "https://www.analog.com/en/products/ad822.html",
+    "https://www.analog.com/en/products/ad820.html",
+    "https://www.analog.com/en/products/ad824.html"
+  ]
+}

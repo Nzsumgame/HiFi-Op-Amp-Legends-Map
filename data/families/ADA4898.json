@@ -1,0 +1,602 @@
+{
+  "id": "ADA4898",
+  "name": "ADA4898-1 / ADA4898-2 (single/dual 0.9 nV/√Hz high-voltage bipolar)",
+  "tagline": "A 0.9 nV/√Hz, 55 V/µs bipolar op amp that runs on ±5 V to ±16 V; some diyAudio DAC builders favour it for I/V stages.",
+  "technology": "Bipolar-input, voltage-feedback, unity-gain-stable high-speed op amp for ±5 V to ±16 V supplies. The ADI datasheet title is 'High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp'. The only package is an 8-lead SOIC with an exposed pad (EPAD), which may be tied to −VS or left floating. The Rev. F datasheet changed the single's (ADA4898-1) outline code from RD-8-1 to RD-8-4. Search summaries give RD-8-2 for the dual (ADA4898-2).",
+  "manufacturers": [
+    "Analog Devices"
+  ],
+  "part_numbers": [
+    {
+      "pn": "ADA4898-1YRDZ",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "active (inferred; ADI lifecycle for the -1 not confirmed in search)",
+      "notes": "Single in 8-lead SOIC_N_EP. Outline was RD-8-1 in older revisions and RD-8-4 in Rev. F."
+    },
+    {
+      "pn": "ADA4898-1YRDZ-R7",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (seen in the EasyEDA/LCSC library cache)",
+      "notes": "7-inch reel of ADA4898-1YRDZ."
+    },
+    {
+      "pn": "ADA4898-2YRDZ",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "Production (ADI product page lifecycle, via search)",
+      "notes": "Dual in 8-lead SOIC_N_EP (RD-8-2). Listed at DigiKey (2264650) and Mouser. Named in PCN 22_0142 (alternate wafer fab)."
+    },
+    {
+      "pn": "ADA4898-2YRDZ-R7",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "listed (Octopart); lifecycle not checked",
+      "notes": "7-inch reel of ADA4898-2YRDZ."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Analog Devices",
+      "role": "originator / sole source",
+      "period": "May 2008 (Rev. 0 datasheet) to present",
+      "notes": "The single launched first; ADA4898-2 was added in datasheet Rev. C (Feb 2010). There is no second source. Wafer fab was ADI Limerick (ADLK). PCN 22_0142 (effective 07-Jul-2023) added ADI Wilmington (ADWL) as an alternate fab for high-voltage bipolar products, including ADA4898-2."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input voltage noise e_n",
+      "value": "0.9 nV/√Hz typ",
+      "condition": "Headline typical; test frequency not confirmed",
+      "source": "ADI ADA4898-2 product page / datasheet features (via web search)"
+    },
+    {
+      "parameter": "Low-frequency e_n (1/f region)",
+      "value": "about 3.9 nV/√Hz at 1 Hz, about 2.8 nV/√Hz at 2 Hz",
+      "condition": "Hand-digitised from the datasheet noise plot",
+      "source": "aewallin/ADA4898_LNA noise_calc/ada4898_vnoise.txt (third party, low confidence)"
+    },
+    {
+      "parameter": "Input current noise i_n",
+      "value": "2.4 pA/√Hz typ",
+      "condition": "Headline value; not re-confirmed by web search",
+      "source": "Datasheet features as quoted in Timzhao0205 COMPONENT_REVIEW.md"
+    },
+    {
+      "parameter": "-3 dB bandwidth",
+      "value": "65 MHz",
+      "condition": "G = +1; not re-confirmed by web search",
+      "source": "Datasheet features as quoted in Timzhao0205 COMPONENT_REVIEW.md; terra-eda-library"
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "50 MHz",
+      "condition": "ADI parametric / distributor listing",
+      "source": "ADI ADA4898-2 product page and Mouser listing (via web search)"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "55 V/µs",
+      "condition": "typ",
+      "source": "ADI ADA4898-2 product page (via web search)"
+    },
+    {
+      "parameter": "Distortion",
+      "value": "better than −90 dBc out to 600 kHz",
+      "condition": "2 V p-p, unity gain",
+      "source": "ADI ADA4898-2 product page / datasheet general description (via web search)"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "±5 V to ±16 V",
+      "condition": "dual supply",
+      "source": "ADI ADA4898-2 product page (via web search)"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "15.8 mA total for the dual (about 7.9 mA per amplifier); about 8 mA per amplifier in the datasheet features",
+      "condition": "typ; about 0.47 W for the dual at ±15 V",
+      "source": "ADI ADA4898-2 product page parametrics (via web search); Timzhao0205 COMPONENT_REVIEW.md"
+    },
+    {
+      "parameter": "Output current",
+      "value": "40 mA",
+      "condition": "Parts-DB value; datasheet condition not confirmed",
+      "source": "terra-eda-library run_330_adi_opamps.py; 00xED/altium-common CSV (third party)"
+    },
+    {
+      "parameter": "Output swing",
+      "value": "+12.7 V / −12.8 V",
+      "condition": "Probably a ±15 V supply; condition not confirmed",
+      "source": "terra-eda-library run_330_adi_opamps.py (third party)"
+    },
+    {
+      "parameter": "Input offset voltage / drift",
+      "value": "20 µV typ; 1 µV/°C",
+      "condition": "typ",
+      "source": "terra-eda-library; PatrickBaus PhD thesis table (third party)"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "about 0.1 µA",
+      "condition": "typ",
+      "source": "terra-eda-library; OpenAnalog datasheet_db (third party)"
+    },
+    {
+      "parameter": "CMRR / PSRR",
+      "value": "126 dB / 107 dB (another DB: 112 / 115 dB)",
+      "condition": "Conditions not confirmed; the two sources conflict",
+      "source": "terra-eda-library vs OpenAnalog datasheet_db (low confidence)"
+    },
+    {
+      "parameter": "Operating temperature",
+      "value": "−40 °C to +105 °C",
+      "condition": "YRDZ grade",
+      "source": "00xED/altium-common IC_operational_amplifiers.csv (third party)"
+    },
+    {
+      "parameter": "Package",
+      "value": "8-lead SOIC_N_EP; ADA4898-1 RD-8-4 (formerly RD-8-1), ADA4898-2 RD-8-2",
+      "condition": "EPAD may be tied to −VS or left floating",
+      "source": "ADI datasheet Rev. F revision history (via web search); EngineerZone 'About Exposed Pad of ADA4898-2'"
+    }
+  ],
+  "reputation": {
+    "summary": "A niche part in DIY DAC circles. On diyAudio it comes up as a current-to-voltage (I/V) choice after current-output DACs, including in 'best dual I/V op amp these days' threads. Builders cite its very low voltage noise, bandwidth and ±16 V headroom. ADI pitches it for 16-bit and 18-bit systems. It is also used in instrumentation LNAs and photodetectors, such as Gerhard Hoffmann's 'lono' parallel-op-amp LNA. One audio review site calls the ADA4898-1 a cheap 0.9 nV/√Hz equivalent of the LT1115. The praise quotes come from the discovery notes and were not re-checked by web search.",
+    "sonic_descriptors": [
+      "deep, tight and impactful bass (diyAudio, I/V use; per discovery notes, not re-checked)",
+      "excellent in DAC I/V stages (diyAudio; per discovery notes)"
+    ],
+    "typical_uses": [
+      "I/V converter after current-output audio DACs",
+      "DAC output buffer / reconstruction filter",
+      "Low-noise preamp / LNA front ends (parallel arrays, as in Hoffmann 'lono' and aewallin ADA4898_LNA)",
+      "Photodiode transimpedance and servo loops",
+      "16-bit/18-bit ADC drivers (ADI's stated target)"
+    ],
+    "caveats": [
+      "Comes only in SOIC-8 with an exposed pad. There is no DIP version, so op-amp rolling needs an adapter. The pad may be tied to −VS or left floating, but never to ground or +VS.",
+      "Draws about 7.9 mA per amplifier, so a dual dissipates about 0.47 W at ±15 V. It runs warm on DIP adapters that have no copper under the pad.",
+      "Needs at least ±5 V, so it does not suit low-voltage portable designs.",
+      "Current noise is fairly high (2.4 pA/√Hz). The noise-optimal source impedance is about 375 Ω, so it works best with low-impedance sources.",
+      "General high-speed caution (engineering inference): with 50 to 65 MHz of bandwidth, layout, decoupling and capacitive loading matter. Socket or adapter wiring can cause peaking or oscillation."
+    ],
+    "sources": [
+      "https://www.diyaudio.com/community/threads/whats-the-best-dual-i-v-opamp-these-days.336309/",
+      "https://www.diyaudio.com/community/threads/ada4898-1-in-i-v-optimum-power-supply.335967/",
+      "https://www.analog.com/en/products/ada4898-2.html",
+      "https://github.com/Frieve-A/audioreview/blob/e1178951e595d2c2d8a093a407569005a149a39c/_companies/en/linear-technology.md",
+      "https://github.com/aewallin/ADA4898_LNA",
+      "http://www.hoffmann-hochfrequenz.de/downloads/lono.pdf",
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-1/ADA4898-2 High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet (combined single/dual; ADI uses no separate literature number)",
+      "revision": "F",
+      "date": "2026",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4898-1_4898-2.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current revision. The lower-case URL .../ada4898-1_4898-2.pdf is also indexed, titled 'ADA4898-1/ADA4898-2 (Rev.F)'. Its revision history includes 'Changed RD-8-1 to RD-8-4 (Throughout)', 'Updated Outline Dimensions' and 'Changes to Ordering Guide'."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-1/ADA4898-2 data sheet (short redirect links)",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "D",
+      "date": "",
+      "url": "https://www.analog.com/ADA4898-2/datasheet",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Also https://www.analog.com/ADA4898-1/datasheet. These links redirect to the current PDF."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Data Sheet ADA4898-1/ADA4898-2 (legacy static URL)",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "http://www.analog.com/static/imported-files/data_sheets/ADA4898-1_4898-2.pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "This URL appears in the search index, so it existed. It is a good Wayback seed for Rev. C/D copies."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-1/ADA4898-2 (Rev. D)",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "D",
+      "date": "2012-05",
+      "url": "https://studylib.net/doc/18403727/ada4898-1-ada4898-2--rev.-d-",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Studylib text copy titled Rev. D. It freezes the May 2012 revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-2 datasheet (RadioLocman mirror)",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "E",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=349231",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "URL confirmed in the search index. The Rev. E claim is unconfirmed. It may freeze Rev. E, the version before the current Rev. F."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-1 datasheet (RadioLocman mirror)",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=349495",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in the search index. Revision unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-1 Datasheet (alldatasheet, early upload)",
+      "doc_number": "ADA4898-1 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/240426/AD/ADA4898-1.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in the search index. Revision unconfirmed. Worth checking for a pre-Feb-2010 single-only revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-2 Datasheet (alldatasheet)",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/549493/AD/ADA4898-2.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in the search index. Revision unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-1 Datasheet (alldatasheet, recent upload)",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1969661/AD/ADA4898-1.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in the search index. Revision unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-1 datasheet (digchip)",
+      "doc_number": "ADA4898-1 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/1120937-ada4898-1.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in the search index. Revision unconfirmed. Digchip often holds early revisions."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-1/4898-2 (Scribd upload)",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/638032069/ADA4898-1-4898-2",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in the search index. Revision unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-2 Datasheet (datasheet4u)",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/Analog-Devices/ADA4898-2/717257",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in the search index. Revision unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-2YRDZ datasheet (Chip and Dip distributor copy)",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://static.chipdip.ru/lib/677/DOC011677565.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed: linked from the 00xED/altium-common parts DB but not seen in web search. It may be frozen at an older revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ADA4898-1/ADA4898-2 Data Sheet (ADA4898-1 short-link redirect)",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet (combined single/dual; ADI uses no separate literature number)",
+      "revision": "F",
+      "date": "",
+      "url": "https://www.analog.com/ADA4898-1/datasheet",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "The ADA4898-1 twin of the known ADA4898-2/datasheet redirect. Because the index kept a 'Rev. D' title, Wayback snapshots of this short link could hold the Rev. D or Rev. E PDF. The revision this copy holds is not confirmed."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "Rev. 0",
+      "date": "5/08",
+      "changes": "Initial release (ADA4898-1)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "Rev. A",
+      "date": "unknown",
+      "changes": "Unknown; not seen in search."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "Rev. B",
+      "date": "unknown",
+      "changes": "Unknown; not seen in search."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "Rev. C",
+      "date": "2/10",
+      "changes": "Rev. B to Rev. C: added ADA4898-2 (dual)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "Rev. D",
+      "date": "5/12",
+      "changes": "Rev. C to Rev. D: changes to Figure 2 caption; updated Outline Dimensions."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "Rev. E",
+      "date": "unknown",
+      "changes": "Unknown; the existence of Rev. E is implied by Rev. F and cited by a third party."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "Rev. F",
+      "date": "01/19/2026 (ADI-listed date, per search summary)",
+      "changes": "Changed RD-8-1 to RD-8-4 (Throughout); Updated Outline Dimensions; Changes to Ordering Guide. That these belong to the E-to-F entry comes from a search summary (medium confidence)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4898 SPICE macro-model (not the data sheet)",
+      "revision": "header update",
+      "date": "08/10/2012",
+      "changes": "'Updated to new header style'; copyright 2012."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4898 macro-model (not the data sheet)",
+      "revision": "Rev.2.1",
+      "date": "Apr 2017",
+      "changes": "Newer macro-model; some copies add a sixth node that third-party libraries label PD."
+    },
+    {
+      "vendor": "Analog Devices (LTspice library)",
+      "doc_number": "LTspice ChangeLog (not the data sheet)",
+      "revision": "library update",
+      "date": "03/08/23",
+      "changes": "'ADA4898 new model' added to the LTspice library."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "ADA4898-1/ADA4898-2 data sheet",
+      "revision": "Rev. E",
+      "date": "02/03/2010 per one search summary. This is UNRELIABLE: it conflicts with Rev. C = 2/10 and Rev. D = 5/12, so it is probably an ADI web-listing or first-post date carried over rather than Rev. E's print date. The true Rev. E date is still unknown, and it must fall between 5/12 and 01/2026.",
+      "changes": "Not shown in any search summary. Changes from Rev. D to Rev. E are still unknown."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "kind": "fab-or-process-transfer",
+      "vendor": "Analog Devices",
+      "when": "PCN 22_0142: Rev. - dated 4 Apr 2023 (per search summaries), effective 7 Jul 2023 per one pass. Revs. A and C were issued later.",
+      "part_numbers_affected": [
+        "ADA4898-2YRDZ",
+        "ADA4898-2YRDZ-R7",
+        "ADA4898-1 (not confirmed)"
+      ],
+      "identification": "No marking difference is stated. Parts with date codes after mid-2023 may come from Limerick (ADLK) or Wilmington (ADWL); trace by ADI lot or date code.",
+      "summary": "ADI PCN 22_0142 adds its Wilmington, MA fab (ADWL) as an alternate wafer fab to Limerick, Ireland (ADLK) for 'High Voltage Bipolar Products', for 'manufacturing agility and continuity of supply'. Search summaries list ADA4898-2YRDZ among the affected parts. The PCN states no impact to fit, form, function or reliability. The full parts list was not retrieved, so coverage of the ADA4898-1 is unconfirmed.",
+      "spec_deltas": [
+        {
+          "parameter": "Wafer fab site",
+          "before": "ADI Limerick, Ireland (ADLK)",
+          "after": "ADLK or ADI Wilmington, MA (ADWL)"
+        }
+      ],
+      "audio_impact": "None documented. The same process runs at a second fab and no data-sheet spec changed.",
+      "compatibility_risk": "low - same design and data sheet; the only variation is between fabs",
+      "sources": [
+        "https://www.analog.com/media/en/PCN/ADI_PCN_22_0142_Rev_-_Form.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_22_0142_Rev_A_Form.pdf",
+        "https://www.mouser.com/PCN/ADI_PCN_22_0142.pdf",
+        "https://www.mouser.com/PCN/ADI___PCN_22_0142_Rev._A.pdf",
+        "https://www.mouser.com/PCN/ADI_PCN_22_0142_Rev._C.pdf"
+      ],
+      "confidence": "medium",
+      "verification": "Merged a medium-confidence entry with a completeness-sweep duplicate (low confidence). Searches confirmed the PCN scope (ADWL as an alternate to ADLK for High Voltage Bipolar, no fit/form/function or reliability impact) and the existence of Revs. -, A and C. The ADA4898-2 listing is from search summaries."
+    },
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices",
+      "when": "Data sheet Rev. F (listed by ADI as 01/19/2026); an earlier outline update was in Rev. D (5/12)",
+      "part_numbers_affected": [
+        "ADA4898-1YRDZ",
+        "ADA4898-1YRDZ-R7"
+      ],
+      "identification": "The data-sheet package code for the single changed from RD-8-1 to RD-8-4. Compare the exposed-pad dimensions in the outline drawing of the revision you hold.",
+      "summary": "The ADA4898-1 SOIC_N_EP package outline was re-designated from RD-8-1 to RD-8-4, with updated outline dimensions. This is not a die change. The Rev. F history reads 'Changed RD-8-1 to RD-8-4 (Throughout)' and 'Updated Outline Dimensions'. No PCN was found, and whether the physical exposed pad changed is unconfirmed.",
+      "spec_deltas": [
+        {
+          "parameter": "Package outline code (ADA4898-1)",
+          "before": "RD-8-1",
+          "after": "RD-8-4"
+        }
+      ],
+      "audio_impact": "None expected electrically. The only possible effect is on footprint and thermal-pad matching.",
+      "compatibility_risk": "low - documentation and outline change; check the EP land pattern against the current drawing",
+      "sources": [
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4898-1_4898-2.pdf"
+      ],
+      "confidence": "medium",
+      "verification": "A search confirmed the Rev. F revision-history text 'Changed RD-8-1 to RD-8-4 (Throughout)' / 'Updated Outline Dimensions' and the 01/19/2026 date. Confidence raised from low to medium. The physical pad change is still unconfirmed."
+    }
+  ],
+  "counterfeit_notes": "No counterfeit or remarking reports were found, but forums were not searched specifically. The part is cheap and comes only in SOIC-8 with an exposed pad, so fakes have little appeal. Pre-built DIP-8 adapter modules sold for op-amp rolling have not been checked. Buy from ADI-authorised distributors (DigiKey, Mouser) and check for a real exposed pad and ADI top marking.",
+  "alternatives": [
+    "AD797 (ADI, 0.9 nV/√Hz, DIP/SOIC, classic audio LNA)",
+    "LT1115 / LT1028 (ADI/Linear, 0.9 / 0.85 nV/√Hz)",
+    "ADA4899-1 (ADI, ~1 nV/√Hz unity-gain-stable high-speed single, lower supply voltage)",
+    "LMH6629 (TI, 0.69 nV/√Hz, low-voltage high-speed)",
+    "OPA847 (TI, 0.85 nV/√Hz, decompensated)",
+    "AD8099 (ADI, 0.95 nV/√Hz)",
+    "OPA1612 (TI, 1.1 nV/√Hz audio dual, SOIC)",
+    "LME49720 / LM4562 (TI, 2.7 nV/√Hz, distortion-oriented audio dual)"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://www.analog.com/static/imported-files/data_sheets/ADA4898-1.pdf",
+    "http://www.analog.com/static/imported-files/data_sheets/ADA4898-1_4898-2.pdf",
+    "https://static.chipdip.ru/lib/677/DOC011677565.pdf",
+    "https://studylib.net/doc/18403727/ada4898-1-ada4898-2--rev.-d-",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/240426/AD/ADA4898-1.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/549493/AD/ADA4898-2.html",
+    "https://www.analog.com/ADA4898-1/datasheet",
+    "https://www.analog.com/ADA4898-2/datasheet",
+    "https://www.analog.com/en/products/ada4898-1.html",
+    "https://www.analog.com/en/products/ada4898-2.html",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_22_0142_Rev_-_Form.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4898-1_4898-2.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf",
+    "https://www.digchip.com/datasheets/1120937-ada4898-1.html",
+    "https://www.radiolocman.com/datasheet/data.html?di=349231",
+    "https://www.radiolocman.com/datasheet/data.html?di=349495"
+  ],
+  "open_questions": [
+    "Dates and change text for Rev. A, Rev. B and Rev. E are unknown. So is the exact printed date of Rev. F: ADI lists 01/19/2026, but the footer month/year was not seen.",
+    "Does the RD-8-1 to RD-8-4 change for ADA4898-1 alter the physical exposed-pad size (a footprint hazard), or only the drawing code? It is also unconfirmed whether this change sits in the E-to-F or the D-to-E entry.",
+    "Does PCN 22_0142 also cover ADA4898-1, or only ADA4898-2? PCNs 09_0032 and 08_0170 surfaced in the same search; their relevance to ADA4898 is unconfirmed.",
+    "Which revision each third-party mirror freezes (alldatasheet 240426/549493/1969661, digchip, radiolocman, scribd, datasheet4u, chipdip) is unconfirmed. Alldatasheet 240426 may hold a pre-2010 single-only revision.",
+    "The legacy URL .../static/imported-files/data_sheets/ADA4898-1.pdf (a single-only, pre-Rev. C name) is inferred and was not seen.",
+    "ADA4898-1 lifecycle status was not directly confirmed (ADA4898-2 is Production). Whether -RL 13-inch reel suffixes exist is unverified.",
+    "The test frequency for 0.9 nV/√Hz, i_n = 2.4 pA/√Hz and the 65 MHz −3 dB bandwidth were not re-confirmed by web search. CMRR/PSRR values from parts DBs conflict.",
+    "The diyAudio praise quotes ('deep, tight and impactful bass') come from discovery notes and were not re-checked."
+  ],
+  "sources": [
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4898-1_4898-2.pdf",
+    "https://www.analog.com/en/products/ada4898-1.html",
+    "https://www.analog.com/en/products/ada4898-2.html",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_22_0142_Rev_-_Form.pdf",
+    "https://ez.analog.com/amplifiers/f/q-a/105519/about-exposed-pad-of-ada4898-2",
+    "https://studylib.net/doc/18403727/ada4898-1-ada4898-2--rev.-d-",
+    "http://www.analog.com/static/imported-files/data_sheets/ADA4898-1_4898-2.pdf",
+    "https://www.mouser.com/ProductDetail/Analog-Devices/ADA4898-2YRDZ?qs=BpaRKvA4VqGTtFNzXN87wQ%3D%3D",
+    "https://www.digikey.com/en/products/detail/analog-devices-inc/ADA4898-2YRDZ/2264650",
+    "https://octopart.com/ada4898-2yrdz-r7-analog+devices-13130298",
+    "https://www.diyaudio.com/community/threads/whats-the-best-dual-i-v-opamp-these-days.336309/",
+    "https://www.diyaudio.com/community/threads/ada4898-1-in-i-v-optimum-power-supply.335967/",
+    "https://www.radiolocman.com/datasheet/data.html?di=349231",
+    "https://github.com/Timzhao0205/PhD_Career_Portfolio/blob/bc5c7033cf86af425299c6e2ff75e15c4e27424f/01_PhD_Research/05_HSX_ChatGPT_Windows_App/previous_results/10_COMPONENTS/COMPONENT_REVIEW.md",
+    "https://github.com/dfnr2/terra-eda-library/blob/6c3706c8677e7bf77d7dfe434ffff28471bb029a/db/tables/ic_opamp/run_330_adi_opamps.py",
+    "https://github.com/KiCad/kicad.github.io/blob/ee0e2d33310554ecba94f2c3528d1a654c182df2/_symbols/Amplifier_Operational.html",
+    "https://github.com/00xED/altium-common/blob/255544ecbc8dac7e307a77ec939515385888e882/lib/parts_db/IC_operational_amplifiers.csv",
+    "https://github.com/aewallin/ADA4898_LNA",
+    "http://www.hoffmann-hochfrequenz.de/downloads/lono.pdf",
+    "https://github.com/Frieve-A/audioreview/blob/e1178951e595d2c2d8a093a407569005a149a39c/_companies/en/linear-technology.md",
+    "https://github.com/PatrickBaus/phd_thesis/blob/9c11a1f178aecf6a3a4891fd58386ace20d2fc8f/preparation.tex",
+    "https://github.com/szyfrowac/OpenAnalog/blob/19338588dae79ca68a7331d88f8290930d3da3ed/validation/datasheet_db.py"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [
+      "The current datasheet revision is Rev. E. It is Rev. F (ADI-listed 01/19/2026); Rev. E is an older revision.",
+      "Both the single and the dual use RD-8-2. The single was RD-8-1 and is now RD-8-4 in Rev. F; RD-8-2 is the dual's outline.",
+      "No silicon or process change is recorded. PCN 22_0142 (2023) added an alternate wafer fab for ADA4898-2.",
+      "[change register] Merged: the completeness-sweep PCN 22_0142 entry (low confidence) duplicated the medium-confidence PCN 22_0142 entry and was folded into it, keeping all Rev. -/A/C sources. The sweep's citation of the unrelated PCN 10_0004 (a halogen-free SOIC mold compound) was removed as irrelevant."
+    ],
+    "corrections": [
+      "Current datasheet: Rev. F, listed date 01/19/2026. Rev. F changes: RD-8-1 changed to RD-8-4 throughout, outline dimensions updated, ordering guide changed.",
+      "Launch date confirmed: Rev. 0 initial release 5/08 (the draft had inferred 'c. 2008').",
+      "ADA4898-2 was added in Rev. C (2/10). Rev. D (5/12) changed the Figure 2 caption and updated the outline dimensions.",
+      "Added silicon_changes entry for PCN 22_0142: ADWL added as an alternate fab to ADLK for high-voltage bipolar products including ADA4898-2; released 04-Apr-2023, effective 07-Jul-2023; no fit/form/function impact.",
+      "Added a low-confidence package outline re-designation entry (ADA4898-1 RD-8-1 to RD-8-4).",
+      "Distortion filled in: better than −90 dBc to 600 kHz, 2 V p-p, G=+1. Added GBW 50 MHz as a separate spec from the 65 MHz −3 dB bandwidth, so it is not a conflict.",
+      "Supply current: 15.8 mA total for the dual (about 7.9 mA per amplifier), per ADI parametrics.",
+      "Exposed pad: may be tied to −VS or left floating.",
+      "ADA4898-2 lifecycle: Production.",
+      "Added mirrors: studylib (Rev. D), radiolocman di=349495, alldatasheet 240426/549493/1969661, digchip, scribd, datasheet4u. Confirmed the legacy static ADI URL exists."
+    ],
+    "unverified_urls": [
+      "https://static.chipdip.ru/lib/677/DOC011677565.pdf",
+      "http://www.analog.com/static/imported-files/data_sheets/ADA4898-1.pdf",
+      "http://www.hoffmann-hochfrequenz.de/downloads/lono.pdf",
+      "https://www.diyaudio.com/community/threads/whats-the-best-dual-i-v-opamp-these-days.336309/",
+      "https://www.diyaudio.com/community/threads/ada4898-1-in-i-v-optimum-power-supply.335967/"
+    ],
+    "claims_confirmed": [
+      "Current ADI datasheet is Rev. F, listed 01/19/2026 - https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf",
+      "Rev. 0 initial release 5/08; Rev. C (2/10) added ADA4898-2; Rev. D (5/12) changed the Fig. 2 caption and outline dimensions - https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4898-1_4898-2.pdf",
+      "Rev. F history lists 'Changed RD-8-1 to RD-8-4 (Throughout)', updated outline dimensions and ordering guide changes - https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4898-1_4898-2.pdf",
+      "Studylib hosts a Rev. D copy - https://studylib.net/doc/18403727/ada4898-1-ada4898-2--rev.-d-",
+      "PCN 22_0142 adds ADWL as an alternate fab to ADLK for high-voltage bipolar products including ADA4898-2 (released 04-Apr-2023, effective 07-Jul-2023) - https://www.analog.com/media/en/PCN/ADI_PCN_22_0142_Rev_-_Form.pdf",
+      "ADA4898-2 lifecycle is Production - https://www.analog.com/en/products/ada4898-2.html",
+      "0.9 nV/√Hz, 55 V/µs, 50 MHz GBW, better than −90 dBc to 600 kHz, 15.8 mA dual supply current, ±5 V to ±16 V - https://www.analog.com/en/products/ada4898-2.html",
+      "Exposed pad may be connected to −VS or left floating - https://ez.analog.com/amplifiers/f/q-a/105519/about-exposed-pad-of-ada4898-2",
+      "Legacy URL analog.com/static/imported-files/data_sheets/ADA4898-1_4898-2.pdf existed - http://www.analog.com/static/imported-files/data_sheets/ADA4898-1_4898-2.pdf",
+      "ADA4898-2YRDZ is listed at DigiKey and Mouser, and ADA4898-2YRDZ-R7 at Octopart - https://www.digikey.com/en/products/detail/analog-devices-inc/ADA4898-2YRDZ/2264650"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "bipolar-modern-low-noise",
+  "product_pages": [
+    "https://www.analog.com/en/products/ada4898-1.html",
+    "https://www.analog.com/en/products/ada4898-2.html",
+    "https://www-cce.cldnet.analog.com/en/products/ada4898-1.html"
+  ],
+  "revision_chain_notes": "Analog Devices ADA4898-1/ADA4898-2 data sheet. ADI is the sole vendor: there are no second sources and no acquirer re-issues. The chain runs oldest to newest:\n- Rev. 0 (5/08): initial release, ADA4898-1 only. No copy found.\n- Rev. A: date and changes unknown. MISSING.\n- Rev. B: date and changes unknown. MISSING.\n- Rev. C (2/10): added ADA4898-2. No copy that confirms it.\n- Rev. D (5/12): Figure 2 caption, outline dimensions. Copy on studylib. Search indexes also still title the analog.com/ADA4898-1/datasheet and /ADA4898-2/datasheet redirects 'Rev. D'.\n- Rev. E: date unknown. One search summary claimed '02/03/2010', which conflicts with Rev. C/D and is not trusted. Changes unknown. The only copy is the radiolocman di=349231 entry, which a third party attributes to Rev. E.\n- Rev. F (ADI lists 01/19/2026): RD-8-1 changed to RD-8-4, outline dimensions, ordering guide. Current ADI PDF.\n\nStill missing:\n- Rev. A and Rev. B entirely (dates, changes, copies).\n- A confirmed copy of Rev. 0 and Rev. C. The alldatasheet ID 240426 single-only copy is the best candidate for Rev. 0/A/B but is unconfirmed.\n- The Rev. E print date and change summary.\n- The ADI footer D-number, which is not seen in any summary.\n\nThe alldatasheet 1969661 copy is described as 20 pages, 430 KB, and the search summary pairs it with Rev. F, but the revision is not shown on the copy itself. Next step: Wayback snapshots of the legacy static/imported-files URL and of the /datasheet short links, which may recover Rev. C through E. No new distributor copies (Mouser, Farnell, DigiKey, datasheetarchive) that show a revision turned up in 4 searches."
+}

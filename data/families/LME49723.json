@@ -1,0 +1,512 @@
+{
+  "id": "LME49723",
+  "name": "LME49723 (National / TI dual bipolar audio op-amp)",
+  "tagline": "Little-known National/TI LME-series dual audio op-amp. One experienced diyAudio listener ranks it among the best-sounding VFB parts, with fuller bass than the LM4562.",
+  "technology": "Dual voltage-feedback audio op-amp with a bipolar input (per community sources), from National Semiconductor's LME49xxx 'high-fidelity audio' line (datasheet title: 'Dual High Fidelity Audio Operational Amplifier'). Split supply ±2.5 V to ±17 V. The sources found do not describe the process or topology.",
+  "manufacturers": [
+    "National Semiconductor",
+    "Texas Instruments"
+  ],
+  "part_numbers": [
+    {
+      "pn": "LME49723",
+      "channels": 2,
+      "vendors": [
+        "National Semiconductor",
+        "Texas Instruments"
+      ],
+      "status": "NRND (TI product page, per 2026 search summary)",
+      "notes": "Base dual part. No single or quad version found. TI says it stays in production for existing customers but is not recommended for new designs."
+    },
+    {
+      "pn": "LME49723MA",
+      "channels": 2,
+      "vendors": [
+        "National Semiconductor"
+      ],
+      "status": "legacy National ordering code",
+      "notes": "SOIC-8, National-era code (Octopart hosts a National datasheet under this code)."
+    },
+    {
+      "pn": "LME49723MA/NOPB",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "NRND family; still listed at DigiKey (1872061) and on TI part-details page",
+      "notes": "SOIC-8, lead-free, tube. Mouser 926-LME49723MA/NOPB appears in 2018 GitHub BOMs (Rezzonics NuTubeAmp, NuTube_Overdrive_v1_1)."
+    },
+    {
+      "pn": "LME49723MAX/NOPB",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "unknown (NRND family)",
+      "notes": "SOIC-8 tape-and-reel. Seen in Octopart and Xecor listings; per-orderable status not confirmed."
+    },
+    {
+      "pn": "LME49723NA/NOPB (National LME49723NA)",
+      "channels": 2,
+      "vendors": [
+        "National Semiconductor",
+        "Texas Instruments"
+      ],
+      "status": "unknown (not found at distributors in 2026 search; possibly discontinued, unconfirmed)",
+      "notes": "8-pin plastic DIP. Referenced in the datasheet per search summary. The DIP the diyAudio praise refers to. No EOL/PCN notice found."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "National Semiconductor",
+      "role": "originator",
+      "period": "January/February 2008 to 2011",
+      "notes": "TI datasheet header gives original date January 2008; a National-format copy is dated February 11, 2008. Part of the LME49xxx line with LME49710, LME49720, LME49860, LME49880, LME49990."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "acquirer (bought National in 2011)",
+      "period": "2011 to present",
+      "notes": "Same part number. Datasheet reissued in TI format as SNAS429B (revised April 2013). Product now NRND. No die, fab or package change document found."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input stage",
+      "value": "Bipolar, dual, voltage feedback",
+      "condition": "-",
+      "source": "Discovery notes (community). Not confirmed against datasheet in this pass."
+    },
+    {
+      "parameter": "Packages",
+      "value": "SOIC-8 (MA, MAX) and DIP-8 (NA)",
+      "condition": "-",
+      "source": "Octopart / DigiKey / Xecor listings; datasheet per search summary"
+    },
+    {
+      "parameter": "e_n @ 1 kHz",
+      "value": "3.6 nV/rtHz typ",
+      "condition": "typ (datasheet key spec)",
+      "source": "SNAS429B front page per search summaries (https://www.ti.com/lit/ds/symlink/lme49723.pdf). Corrects draft value 3.2."
+    },
+    {
+      "parameter": "THD+N",
+      "value": "0.0002% typ",
+      "condition": "1 kHz (full conditions not confirmed)",
+      "source": "SNAS429B front page per search summaries"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "±20 V/us typ",
+      "condition": "typ",
+      "source": "SNAS429B per search summaries (medium confidence)"
+    },
+    {
+      "parameter": "Output current",
+      "value": "±26 mA",
+      "condition": "typ",
+      "source": "SNAS429B per search summaries (medium confidence)"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "±2.5 V to ±17 V",
+      "condition": "-",
+      "source": "Datasheet per search summary (medium confidence)"
+    },
+    {
+      "parameter": "GBW",
+      "value": "20 MHz (unconfirmed)",
+      "condition": "typ",
+      "source": "TI product page title '2-channel, 20-MHz ... audio op amp' per search summary; not checked against datasheet table"
+    }
+  ],
+  "reputation": {
+    "summary": "A niche cult part. In the diyAudio thread 'The best sounding audio integrated opamps', one experienced listener names the LME49723 among the 'absolute best sounding' VFB op-amps (with LT1028, OPA132UA, LME49720HA) and his favourite plastic-DIP op-amp, reporting fuller bass and more detail than the LM4562/LME49720 but sometimes too much clarity and thin body on high violin notes. A Head-Fi comment (attribution unconfirmed) says it differs from the LM4562/LME49720/LME49860 more than they differ from each other. AudioKarma members included it in CD-player op-amp rolls where the OPA2604 and a Sparkos discrete were preferred. No objective measurement review was found.",
+    "sonic_descriptors": [
+      "fuller, more convincing bass dynamics and body (one listener)",
+      "more detail than the LM4562/LME49720 (one listener)",
+      "on some recordings too much clarity, thin body on high violin notes (one listener)",
+      "sounds more different from the LM4562/LME49720/LME49860 than they do from each other (unconfirmed attribution)"
+    ],
+    "typical_uses": [
+      "DIP-8 op-amp rolling in CD players, DACs and preamps",
+      "Op-amp upgrades in headphone amps and line stages",
+      "SOIC-8 audio stages in DIY designs, e.g. Rezzonics NuTube overdrive and NuTubeAmp (LME49723MA/NOPB in BOMs)"
+    ],
+    "caveats": [
+      "TI lists the device as NRND.",
+      "The DIP version is reportedly scarce and was not found at distributors in 2026 searches; most supply is SOIC-8, needing an adapter for socket rolling.",
+      "Praise comes from a handful of listeners; no published measurements found.",
+      "AudioKarma advises careful decoupling against oscillation for the sister LME49720; no LME49723-specific report found.",
+      "Split-supply part (±2.5 V minimum), not a low-voltage single-supply op-amp; one hobby project replaced it with an MCP6001 for that reason."
+    ],
+    "sources": [
+      "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-37",
+      "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/",
+      "https://www.head-fi.org/threads/lm4562-lme49720-lme49860-do-they-sound-different-to-you.521972/",
+      "https://audiokarma.org/forums/threads/op-amp-upgrades-opa2604ap-obsolete.935775/",
+      "https://audiokarma.org/forums/threads/opamp-question-lme49720-direct-sub-for-opa2134.434538/",
+      "https://github.com/Rezzonics/NuTube_Overdrive_v1_1",
+      "https://github.com/Rezzonics/NuTubeAmp"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49723 Dual High Fidelity Audio Operational Amplifier",
+      "doc_number": "SNAS429",
+      "revision": "B",
+      "date": "2013-04",
+      "url": "https://www.ti.com/lit/ds/symlink/lme49723.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Header 'SNAS429B -JANUARY 2008-REVISED APRIL 2013' seen in search result title."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49723 datasheet (Octopart mirror, LME49723MA/NOPB)",
+      "doc_number": "SNAS429",
+      "revision": "B",
+      "date": "2013-04",
+      "url": "https://datasheet.octopart.com/LME49723MA-NOPB-Texas-Instruments-datasheet-47564704.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Title shows SNAS429B."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49723 Dual High Fidelity Audio Operational Amplifier (National format)",
+      "doc_number": "National DS number unknown (TI SNAS429A equivalent?)",
+      "revision": "",
+      "date": "2008-02",
+      "url": "https://datasheet.octopart.com/LME49723MA-National-Semiconductor-datasheet-10848611.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "National original (2008)",
+      "note": "National-era copy; freezes the pre-TI revision. Date from search summary, not seen on page."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49723 Dual High Fidelity Audio Operational Amplifier (same Octopart doc 10848611 under MAX/NOPB)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "2008",
+      "url": "https://datasheet.octopart.com/LME49723MAX/NOPB-Texas-Instruments-datasheet-10848611.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "National original (likely)",
+      "note": "Same Octopart document ID as the National copy; revision inferred, unconfirmed."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49723 datasheet (alldatasheet, NSC)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "2008",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/216563/NSC/LME49723.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "National original (likely)",
+      "note": "Filed under National Semiconductor; revision not shown in summary."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49723 datasheet (datasheet4u, National)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "2008",
+      "url": "https://datasheet4u.com/datasheets/National-Semiconductor/LME49723/624470",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "National original (likely)",
+      "note": "National copy; revision not shown."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49723 datasheet (chipdocs, NSC)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "http://www.chipdocs.com/pndecoder/datasheets/NSC/LME49723.html?okwd=0913220003&partid=690754",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "National original (likely)",
+      "note": "National copy; revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49723 datasheet (alldatasheet, TI1)",
+      "doc_number": "SNAS429",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/841145/TI1/LME49723.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "TI-branded copy; revision not shown in summary."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49723 datasheet (alldatasheet.net, TI2)",
+      "doc_number": "SNAS429",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.net/datasheet-pdf/pdf/2194639/TI2/LME49723.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49723 datasheet (RadioLocman)",
+      "doc_number": "SNAS429",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=300413",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49723 datasheet (datasheet4u, etcTI)",
+      "doc_number": "SNAS429",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/etcTI/LME49723/1572819",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49723MAX/NOPB datasheet (eecart)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://img.eecart.com/erp/file/part/spec/LME49723MAX%20NOPB-Texas%20Instruments.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Title 'LME49723 LME49723 Dual High Fidelity Audio Operational Amplifier' matches the National-era copy; unconfirmed."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49723 Dual High Fidelity Audio Operational Amplifier (datasheetspdf.com viewer, National copy id 624470)",
+      "doc_number": "unknown (National-era; TI later lists it as SNAS429A)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/624470/NationalSemiconductor/LME49723/12",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Same file id (624470) as the datasheet4u National copy already listed, so it is probably the same National 2008 edition. The search summary only gives the 2008 National copyright context, with no revision footer."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49723 Datasheet PDF - National Semiconductor (datasheetspdf.com)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet-pdf/624470/LME49723.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Landing page for the same id 624470 National file. No revision is shown in the search summary."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49723 datasheet, amplifier equivalent, National Semiconductor (datasheet4u pdf.php viewer)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheet4u.com/datasheet-pdf/National%20Semiconductor/LME49723/pdf.php?id=624470",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A second viewer URL for datasheet4u id 624470. The already-listed /datasheets/National-Semiconductor/LME49723/624470 page points to the same file. No revision is shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49723 Datasheet | ETCTI - Datasheetspdf.com",
+      "doc_number": "SNAS429 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet/LME49723.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Filed under ETCTI, so it is likely a TI-era file (it may match datasheet4u etcTI id 1572819). The summary does not show the revision letter."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49723 - Dual High Fidelity Audio Operational Amplifier (digchip)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/321/LME49723.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The digchip title matches the National-format title. The summary shows neither the edition nor the date."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49723 datasheet, Pinout, application circuits Dual High Fidelity Audio Operational Amplifier (datasheetdir)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheetdir.com/LME49723+Audio-Amplifiers",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Title matches the National-format document. No revision is shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49723 Datasheet PDF - AiPCBA",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.aipcba.com/datasheet/lme49723-datasheet-pdf.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Distributor or hobby-site copy. Neither the vendor edition nor the revision is shown in the summary."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "National Semiconductor",
+      "doc_number": "National DS number unknown",
+      "revision": "initial",
+      "date": "2008-02-11 (TI header says January 2008)",
+      "changes": "Initial release (per search summary)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SNAS429",
+      "revision": "A",
+      "date": "February 11, 2008 (per search summary)",
+      "changes": "TI literature number for the National-era document; content changes not confirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SNAS429",
+      "revision": "B",
+      "date": "April 2013",
+      "changes": "Current revision. Likely conversion of the National datasheet to TI format (typical for 2013 LME reissues); exact change list not confirmed."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No counterfeit report specific to the LME49723 was found. Sister LME parts are widely faked (remarked 'LME49710' documented by tinytransistors.net 2022; fake 'LME49720NA' on diyAudio). With the DIP NA version scarce and the part NRND, treat cheap marketplace 'LME49723NA' DIPs with suspicion and prefer LME49723MA/NOPB from authorised distributors (TI, Mouser, DigiKey). General caution, not a documented LME49723 case (confidence low).",
+  "alternatives": [
+    "LME49720 / LM4562 (same National LME audio family, standard dual pinout)",
+    "LME49860 (high-voltage member of the same family)",
+    "OPA1612 / OPA1602 (modern TI bipolar audio duals)",
+    "NE5532 / NJM5532 (classic bipolar dual)",
+    "OPA1656 / OPA1678 (current TI audio duals)"
+  ],
+  "ti_literature_numbers": [
+    "SNAS429"
+  ],
+  "archive_seed_urls": [
+    "http://focus.ti.com/lit/ds/symlink/lme49723.pdf",
+    "http://www.national.com/ds/LM/LME49723.pdf",
+    "http://www.national.com/mpf/LM/LME49723.html",
+    "http://www.national.com/pf/LM/LME49723.html",
+    "http://www.ti.com/lit/ds/snas429a/snas429a.pdf",
+    "http://www.ti.com/lit/ds/snas429b/snas429b.pdf",
+    "http://www.ti.com/lit/ds/symlink/lme49723.pdf",
+    "https://www.ti.com/lit/ds/snas429a/snas429a.pdf",
+    "https://www.ti.com/lit/ds/snas429b/snas429b.pdf",
+    "https://www.ti.com/lit/ds/symlink/lme49723.pdf",
+    "https://www.ti.com/lit/gpn/lme49723",
+    "https://www.ti.com/product/LME49723"
+  ],
+  "open_questions": [
+    "National's original DS document number and the exact SNAS429A date/content are not confirmed (search summary gives February 11, 2008).",
+    "SNAS429B revision-history table contents (what changed in April 2013) not seen.",
+    "TI product page summary reportedly calls it '20-MHz, RRIO'; GBW 20 MHz and any rail-to-rail claim need checking against the datasheet table (the part is believed not to be RRIO).",
+    "Input bias current, offset, Iq per channel, open-loop gain and i_n still to be taken from the datasheet.",
+    "Per-orderable status: is LME49723NA/NOPB obsolete? Is LME49723MAX/NOPB active or NRND? No PCN/EOL found.",
+    "DIP scarcity after the National-to-TI transfer (discovery hint) is neither confirmed nor refuted; no silicon or package change document found.",
+    "Head-Fi attribution of the 'more different than the others' comment is unconfirmed; reputation sources were not re-checked in this pass."
+  ],
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/lme49723.pdf",
+    "https://www.ti.com/product/LME49723",
+    "https://datasheet.octopart.com/LME49723MA-NOPB-Texas-Instruments-datasheet-47564704.pdf",
+    "https://datasheet.octopart.com/LME49723MA-National-Semiconductor-datasheet-10848611.pdf",
+    "https://www.digikey.com/en/products/detail/texas-instruments/LME49723MA-NOPB/1872061",
+    "https://www.xecor.com/product/lme49723max-nopb",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/216563/NSC/LME49723.html",
+    "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-37",
+    "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/",
+    "https://www.head-fi.org/threads/lm4562-lme49720-lme49860-do-they-sound-different-to-you.521972/",
+    "https://audiokarma.org/forums/threads/op-amp-upgrades-opa2604ap-obsolete.935775/",
+    "https://audiokarma.org/forums/threads/opamp-question-lme49720-direct-sub-for-opa2134.434538/",
+    "https://github.com/Rezzonics/NuTube_Overdrive_v1_1",
+    "https://github.com/Rezzonics/NuTubeAmp",
+    "https://github.com/mohammadVatandoost/Etrix-update-price",
+    "https://github.com/ADE-GlobalHealth/oae_hardware/commit/38c478956237fc78e3448a35ad8feca2e7e1694c",
+    "https://www.tinytransistors.net/2022/09/24/fake-lme49710/",
+    "https://www.diyaudio.com/community/threads/curious-what-is-this-fake-opamp-not-lme49720na.386852/"
+  ],
+  "verification": {
+    "status": "partially-verified",
+    "refuted_claims": [
+      "e_n @ 1 kHz = 3.2 nV/rtHz (search summaries of SNAS429B give 3.6 nV/rtHz)",
+      "Part status 'unknown' / TI literature number unknown (TI product page shows NRND; literature number SNAS429)",
+      "No tape-and-reel LME49723MAX/NOPB exists (it is listed at Octopart and Xecor)"
+    ],
+    "corrections": [
+      "e_n corrected from 3.2 to 3.6 nV/rtHz typ",
+      "Added datasheet SNAS429B (Jan 2008, revised Apr 2013) and SNAS429A / National Feb 11, 2008 revision",
+      "Status set to NRND for the family",
+      "Added LME49723MAX/NOPB; split LME49723MA (National) from LME49723MA/NOPB (TI)",
+      "Added slew rate ±20 V/us, output current ±26 mA, supply ±2.5 V to ±17 V, GBW 20 MHz (unconfirmed)",
+      "Tagline changed from 'a few diyAudio veterans' to 'one experienced diyAudio listener' to match the evidence",
+      "Introduction date set to early 2008 from the datasheet header"
+    ],
+    "unverified_urls": [
+      "https://www.ti.com/lit/gpn/lme49723",
+      "https://www.ti.com/lit/ds/snas429b/snas429b.pdf",
+      "https://www.ti.com/lit/ds/snas429a/snas429a.pdf",
+      "http://www.national.com/ds/LM/LME49723.pdf",
+      "http://www.national.com/pf/LM/LME49723.html",
+      "http://www.national.com/mpf/LM/LME49723.html",
+      "https://www.head-fi.org/threads/lm4562-lme49720-lme49860-do-they-sound-different-to-you.521972/",
+      "https://audiokarma.org/forums/threads/opamp-question-lme49720-direct-sub-for-opa2134.434538/"
+    ],
+    "claims_confirmed": [
+      "Datasheet SNAS429B, 'JANUARY 2008-REVISED APRIL 2013' at https://www.ti.com/lit/ds/symlink/lme49723.pdf",
+      "Earlier SNAS429A / National-era copy dated February 11, 2008 (search summary; https://datasheet.octopart.com/LME49723MA-National-Semiconductor-datasheet-10848611.pdf)",
+      "SNAS429B mirror at https://datasheet.octopart.com/LME49723MA-NOPB-Texas-Instruments-datasheet-47564704.pdf",
+      "TI lists LME49723 as NRND (https://www.ti.com/product/LME49723)",
+      "Key specs 3.6 nV/rtHz, THD+N 0.0002%, slew ±20 V/us, ±26 mA output (https://www.ti.com/lit/ds/symlink/lme49723.pdf via search summary)",
+      "Supply range ±2.5 V to ±17 V (https://www.alldatasheet.com/datasheet-pdf/pdf/216563/NSC/LME49723.html via search summary)",
+      "LME49723MA/NOPB listed at DigiKey (https://www.digikey.com/en/products/detail/texas-instruments/LME49723MA-NOPB/1872061)",
+      "LME49723MAX/NOPB orderable exists (https://www.xecor.com/product/lme49723max-nopb)"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "bipolar-modern-low-noise",
+  "product_pages": [
+    "https://www.ti.com/product/LME49723",
+    "https://www.ti.com/product/LME49723/part-details/LME49723MA/NOPB",
+    "https://www.electronicsdatasheets.com/manufacturers/national-semiconductor/parts/lme49723ma-nopb"
+  ],
+  "revision_chain_notes": "TI SNAS429 (the National Semiconductor datasheet taken over by TI), oldest to newest: (1) the National-format original, now counted as SNAS429A. Search summaries give it as \"SNAS429A, February 11, 2008\", and the TI header gives the original date as January 2008. Copies are at octopart 10848611, alldatasheet 216563 and datasheet4u/datasheetspdf id 624470. (2) SNAS429B, \"JANUARY 2008 - REVISED APRIL 2013\", the TI-format reissue at ti.com/lit/ds/symlink/lme49723.pdf and octopart 47564704. No revision C or later was found, and the product is NRND. Still missing: (a) the National DS/DSxxxxxx document number, which no summary showed. (b) Whether a National edition existed before SNAS429A. Under TI's lettering, the first release would normally have no letter, so a pre-Feb-2008 or January 2008 initial edition may have existed. It was not confirmed. (c) The SNAS429B \"Changes from Revision A\" list, which no summary gave. (d) Any National edition from 2009-2011, none found. No second-source vendors exist for LME49723. The new mirror copies added here (datasheetspdf, digchip, datasheetdir, aipcba, electronicsdatasheets) do not show a revision footer in their summaries and are marked low confidence. The archive seed URLs follow the standard National and TI URL patterns (national.com/ds/LM/, focus.ti.com symlink, ti.com/lit/ds/snas429x/). They are for Wayback lookup and were not seen in any search result."
+}

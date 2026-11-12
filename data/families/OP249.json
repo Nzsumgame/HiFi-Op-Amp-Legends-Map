@@ -1,0 +1,690 @@
+{
+  "id": "OP249",
+  "name": "OP249 (PMI / Analog Devices dual precision high-speed JFET)",
+  "tagline": "PMI/ADI's fast (22 V/µs) precision JFET dual. The 1993 rec.audio FAQ rated it 'highly recommended', and Fosi still lists it as a DIP-8 rolling option.",
+  "technology": "Dual precision high-speed op amp with a JFET input pair. ADI calls it a 'high speed, precision dual JFET op amp'. The PMI SPICE macromodel (JX = PJF) shows the pair is P-channel. Designed by Precision Monolithics (PMI) and continued by Analog Devices. Around 2010 the wafers moved to ADI's Wilmington fab (ADWIL), as described in PCN 10_0062.",
+  "manufacturers": [
+    "PMI (Precision Monolithics Inc.)",
+    "Analog Devices"
+  ],
+  "part_numbers": [
+    {
+      "pn": "OP249",
+      "channels": 2,
+      "vendors": [
+        "PMI",
+        "Analog Devices"
+      ],
+      "status": "active (ADI product page and Rev. I data sheet are live; per-orderable status below)",
+      "notes": "Base part. The official KiCad 'OP249' symbol is DIP-8 and uses the ADI datasheet URL."
+    },
+    {
+      "pn": "OP249GPZ",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "active (broker lifecycle code; not confirmed on analog.com)",
+      "notes": "G grade, lead-free 8-lead plastic DIP, -40 to +85 °C. Worldway Electronics lists it with an 'Active' lifecycle code. A Rev. F datasheet copy is filed under this part at Octopart."
+    },
+    {
+      "pn": "OP249GSZ",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "active (broker lifecycle code; not confirmed on analog.com)",
+      "notes": "G grade, lead-free SOIC-8, -40 to +85 °C. Worldway lists it as 'Active'. Reel suffixes not verified."
+    },
+    {
+      "pn": "OP249GP",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (probably superseded by OP249GPZ; not verified)",
+      "notes": "Leaded G-grade plastic DIP-8. The Rev. E datasheet copy on Octopart is filed under this part number."
+    },
+    {
+      "pn": "OP249GS",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (probably superseded by OP249GSZ; not verified)",
+      "notes": "Leaded SOIC-8 version (KiCad OP249GS symbol, SOIC-8 3.9x4.9 mm footprint). An alldatasheet copy exists under OP249GS."
+    },
+    {
+      "pn": "OP249AZ",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "A grade, -55 to +125 °C (from a search summary of distributor and datasheet pages). Package probably ceramic DIP; not verified. The ceramic-DIP passivation change in PCN 10_0062 applies to ceramic parts."
+    },
+    {
+      "pn": "OP249FZ",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (RS Components still lists it; lifecycle not verified)",
+      "notes": "F grade, 8-pin CERDIP (RS listing: 4.7 MHz, 8-pin CERDIP), -40 to +85 °C. The data-sheet revision history includes 'Delete OP249F Columns, Table 3', so F-grade specs were cut back in a later revision."
+    },
+    {
+      "pn": "OP249A",
+      "channels": 2,
+      "vendors": [
+        "PMI",
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "A-grade family (orderable OP249AZ). The PMI 'OP249AA' worst-case macromodel 'simulates the worst case parameters of the A grade ... data book'."
+    },
+    {
+      "pn": "OP249E",
+      "channels": 2,
+      "vendors": [
+        "PMI",
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "E grade, known only from PMI macromodels (typical and OP249EA worst-case). No E-grade orderable was seen in web results, so it is probably a discontinued legacy grade. Unconfirmed."
+    },
+    {
+      "pn": "OP249F",
+      "channels": 2,
+      "vendors": [
+        "PMI",
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "F-grade family (orderable OP249FZ, CERDIP). Typical and worst-case (OP249FA) PMI macromodels exist."
+    },
+    {
+      "pn": "OP249G",
+      "channels": 2,
+      "vendors": [
+        "PMI",
+        "Analog Devices"
+      ],
+      "status": "active (via GPZ/GSZ)",
+      "notes": "G grade (-40 to +85 °C; GP/GS packages). Table 2 of the Rev. I data sheet covers OP249G. Typical and worst-case (OP249GA) PMI macromodels exist."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Precision Monolithics Inc. (PMI)",
+      "role": "originator / designer",
+      "period": "late 1980s to about 1990 (introduction date not verified)",
+      "notes": "The macromodel header credits 'JCB / PMI', and the 1993 rec.audio FAQ says PMI uses the 'OP' prefix. The A/E/F/G grades follow PMI's grading scheme."
+    },
+    {
+      "vendor": "Analog Devices",
+      "role": "acquirer / current vendor",
+      "period": "about 1990 to present",
+      "notes": "The PMI macromodel (10/91, Rev. C) carries 'Copyright 1990 by Analog Devices, Inc.'. The product page and Rev. I data sheet are live on analog.com. PCN 10_0062 (about 2010) records the wafer-fab transfer to ADI's ADWIL (Wilmington) fab, plus a mask change and a data-sheet change. No second sources were found."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input stage type",
+      "value": "JFET (P-channel per the macromodel)",
+      "condition": "'Precision JFET' per ADI. The P-channel polarity comes from the PMI/ADI SPICE macromodel (.MODEL JX PJF)",
+      "source": "https://www.analog.com/en/products/op249.html ; https://github.com/ska-sa/roach1_hardware/blob/a77258d1dc035114b77bc0d53969307e3d14d22f/SimLib/Analog%20Devices/op249.cir"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "22 V/µs",
+      "condition": "Typical (ADI product info; matches the ADI SPICE library index line 'JFET Input, Fast 22V/us')",
+      "source": "https://www.analog.com/en/products/op249.html"
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "4.7 MHz",
+      "condition": "Typical, OP249G, Table 2 of the Rev. I data sheet (from a search summary). The RS listing for OP249FZ also shows 4.7 MHz",
+      "source": "https://www.radiolocman.com/datasheet/pdf.html?di=171873&p=3"
+    },
+    {
+      "parameter": "Voltage noise density",
+      "value": "75 nV/√Hz @ 10 Hz; 26 nV/√Hz @ 100 Hz; 17 nV/√Hz @ 1 kHz",
+      "condition": "Typical, OP249G, Table 2 of the Rev. I data sheet (from a search summary; test supply not captured)",
+      "source": "https://www.radiolocman.com/datasheet/pdf.html?di=171873&p=3"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "5.6 mA typ / 7.0 mA max",
+      "condition": "OP249G, no load, VO = 0 V, Table 2 of the Rev. I data sheet (from a search summary). Not verified whether this is per package or per amplifier",
+      "source": "https://www.radiolocman.com/datasheet/pdf.html?di=171873&p=3"
+    },
+    {
+      "parameter": "Operating temperature",
+      "value": "-55 to +125 °C (OP249AZ); -40 to +85 °C (OP249FZ, GPZ, GSZ)",
+      "condition": "From a search summary of distributor and datasheet pages",
+      "source": "https://www.radiolocman.com/datasheet/data.html?/OP249AZ=&di=351643"
+    },
+    {
+      "parameter": "Channels / pinout",
+      "value": "Dual, standard 8-pin dual op-amp pinout (1OUT, -1IN, +1IN, V-, +2IN, -2IN, 2OUT, V+)",
+      "condition": "DIP-8 / SOIC-8 / CERDIP-8",
+      "source": "https://github.com/dnewcome/ic-blaster/blob/a5cafcc957a194bccdb0de958db0e9b7e6b4209d/giicm/html/opamp.html"
+    },
+    {
+      "parameter": "Packages",
+      "value": "8-lead plastic DIP (GP/GPZ), SOIC-8 (GS/GSZ), 8-lead CERDIP (FZ; AZ probably also ceramic)",
+      "condition": "KiCad symbol library, plus the RS listing for OP249FZ",
+      "source": "https://uk.rs-online.com/web/p/op-amps/1832598"
+    },
+    {
+      "parameter": "Input offset voltage (model)",
+      "value": "200 µV",
+      "condition": "EOS parameter of the typical macromodel (10/91 Rev. C). A model value, not a datasheet limit",
+      "source": "https://github.com/ska-sa/roach1_hardware/blob/a77258d1dc035114b77bc0d53969307e3d14d22f/SimLib/Analog%20Devices/op249.cir"
+    },
+    {
+      "parameter": "Input offset current (model)",
+      "value": "3 pA in the typical model; 12.5 pA in the A-grade worst-case model",
+      "condition": "Macromodel IOS parameters after the Rev. B change. Not datasheet limits",
+      "source": "https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/AD2.LIB"
+    }
+  ],
+  "reputation": {
+    "summary": "Evidence is thin and mostly historical. Bob Neidorff's rec.audio Audio FAQ (part 2, v1.5, last modified 1993-06-04) lists OP249 among its 'highly recommended' audio duals, alongside OPA2604, AD797, LT1115 and HA5112. The same FAQ says FET op amps suit line-level, high-source-impedance signals. Fosi Audio's ZA3 marketing lists OP249 among compatible DIP-8 duals for op-amp rolling. A synth-DIY CV/audio mixer (SOWA) chose it for 'low offset and good dynamic parameters', and Bordodynov's LTspice collection files it under 'AudioOpamp/AD'. No measurement-based audio reviews and no community sound descriptors were found.",
+    "sonic_descriptors": [],
+    "typical_uses": [
+      "Line-level audio stages and buffers (the FET-input use case in the 1993 rec.audio FAQ)",
+      "Op-amp rolling in DIP-8 sockets (for example the Fosi Audio ZA3)",
+      "DC-coupled CV/audio mixers in synth DIY (SOWA mixer)"
+    ],
+    "caveats": [
+      "The rec.audio FAQ warns that a faster op amp swapped into existing gear may oscillate, depending on design and layout. This is a general warning, not specific to OP249.",
+      "Supply current is about 5.6 mA typ (OP249G) and voltage noise is 17 nV/√Hz at 1 kHz, noisier than bipolar audio duals. Output-drive capability was not verified, so check the ADI data sheet before using it for headphone drive or low-noise duty.",
+      "Reputation rests on a 1990s FAQ and vendor marketing lists. There is no modern measured evidence of audio superiority.",
+      "Parts made before and after the fab transfer and mask change in PCN 10_0062 (about 2010) may differ slightly in offset behaviour."
+    ],
+    "sources": [
+      "https://github.com/tin-nl/st-diskmags/blob/b2fc161489e5ba11aefb74a6f540011a719040f5/dba/10/AUDIO003.TXT",
+      "https://github.com/hardisj/erinsaudiocorner/blob/250f096128f8c8f97c0e2231a7a7b5fc3dd12702/content/english/Electronics/Fosi_za3.md",
+      "https://github.com/Pl0p/Modular_Synth/blob/67fec0f1de295abe5c5c3fe823b716317ca7546b/List_of_modules_by_functions.md",
+      "https://sowa.synth.net/modular/m_mixer.html",
+      "https://github.com/GLuisF/LTspice/blob/920b29038b5b4184eaeeeee8c540781e0e52dab6/lib/sym/EXTRA/AudioOpamp/AD/op249.cir"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Analog Devices",
+      "title": "Precision JFET, High Speed, Dual Operational Amplifier Data Sheet OP249",
+      "doc_number": "OP249 (ADI data sheet; no separate literature number)",
+      "revision": "I",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current revision per the indexed PDF title 'Data Sheet OP249 Rev. I'. The revision history includes 'Delete OP249F Columns, Table 3' and 'Changes to Offset Voltage Parameter and Offset Voltage Temperature Coefficient Parameter, Table 4'. The KiCad libraries use this URL."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Precision JFET, High Speed, Dual Operational Amplifier Data Sheet OP249 Rev. I (legacy URL)",
+      "doc_number": "OP249",
+      "revision": "I",
+      "date": "",
+      "url": "https://www.analog.com/static/imported-files/data_sheets/op249.pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Legacy ADI 'static/imported-files' path (lowercase op249.pdf), indexed with the Rev. I title. Worth checking in the Wayback Machine for older revisions."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Dual, Precision JFET High Speed Operational Amplifier OP249 Rev. F",
+      "doc_number": "OP249",
+      "revision": "F",
+      "date": "",
+      "url": "https://datasheet.octopart.com/OP249GPZ-Analog-Devices-datasheet-8484613.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Octopart copy filed under OP249GPZ that freezes Rev. F. It uses the older title word order."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP249 data sheet, REV. E",
+      "doc_number": "OP249",
+      "revision": "E",
+      "date": "",
+      "url": "https://datasheet.octopart.com/OP249GP-Analog-Devices-datasheet-21299.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Octopart copy filed under OP249GP. The indexed text begins 'REV. E Information furnished by Analog Devices...'."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP249 data sheet, REV. C",
+      "doc_number": "OP249",
+      "revision": "C",
+      "date": "",
+      "url": "https://resana.ir/assets/1400-07/op249.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Third-party copy holding REV. C (text 'REV. C Information furnished by Analog Devices...'). This is the oldest revision found."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Dual, Precision JFET High Speed Operational Amplifier OP249",
+      "doc_number": "OP249",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/OP249GSZ-Analog-Devices-datasheet-9716335.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Octopart copy filed under OP249GSZ. The revision was not shown in search results. Unconfirmed revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Datasheet OP249 Analog Devices, Revision: I",
+      "doc_number": "OP249",
+      "revision": "I",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=171873&p=3",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "RadioLocman page view of Rev. I (Table 2, OP249G). This is the source used for the GBW, noise and supply-current values."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP249 Datasheet by Analog Devices Inc. (HTML rendering)",
+      "doc_number": "OP249",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.com/htmldatasheets/production/50783/0/0/1/op249.html",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "DigiKey HTML rendering of an ADI OP249 data sheet. The revision was not identified."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP249 Datasheet(PDF) - Analog Devices (alldatasheet copies)",
+      "doc_number": "OP249",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/49045/AD/OP249.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Alldatasheet holds several separate uploads: 49045 (OP249), 49051 (OP249GS), 225097 (OP249) and 547882 (OP249GPZ). Their different IDs suggest different revisions, but no revision letter was identified."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP249 Datasheet pdf - Dual, Precision JFET High Speed Operational Amplifier",
+      "doc_number": "OP249",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheetcatalog.com/datasheets_pdf/O/P/2/4/OP249.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Datasheetcatalog copy with the older title. Revision not identified."
+    },
+    {
+      "vendor": "DatasheetQ (third party)",
+      "title": "OP249 Datasheet PDF - Analog Devices",
+      "doc_number": "OP249",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheetq.com/view.jsp?pn=OP249&fac=ADI&v=1998",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The 'v=1998' URL parameter may mean a 1998-vintage copy. That is unverified."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Datasheet OP249 (Analog Devices), RadioLocman viewer page 1",
+      "doc_number": "OP249",
+      "revision": "I",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=171873&p=1",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Page 1 of the same RadioLocman document (di=171873) as the listed p=3 page. The p=3 result title says 'Revision: I', and the search summary says it was uploaded 2021-03-02 and has 18 pages and a revision-history section."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP249AZ Datasheet Analog Devices, Download PDF (RadioLocman)",
+      "doc_number": "OP249",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?/OP249AZ=&di=351643",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A separate RadioLocman document ID (351643) filed under the A-grade part OP249AZ. Its revision is not visible, and it may be a different revision from di=171873 (Rev. I)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP249GS Datasheet(PDF) - Analog Devices (alldatasheet)",
+      "doc_number": "OP249",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/49051/AD/OP249GS.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A separate alldatasheet entry (ID 49051) under OP249GS, apart from the listed ID 49045. Its revision is not visible."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP249GP Datasheet PDF, ADI: Dual, Precision JFET High Speed Operational Amplifier (datasheetbank, '1998' edition)",
+      "doc_number": "OP249",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheetbank.com/OP249GP-Datasheet-PDF-ADI-1998",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheetbank labels this copy '1998'. The title uses the pre-Rev. I wording, so this is probably a Rev. E/F-era edition, but the revision letter was not seen."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP249GP Datasheet PDF, ADI: Precision JFET, High Speed, Dual Operational Amplifier (datasheetbank, current edition)",
+      "doc_number": "OP249",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetbank.com/OP249GP-Datasheet-PDF-ADI",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The title matches the re-ordered wording of the current Rev. I data sheet, so this is probably Rev. G/H/I, but the letter was not seen."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP249 Datasheet PDF - Analog Devices (DatasheetQ, default edition)",
+      "doc_number": "OP249",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheetq.com/view.jsp?pn=OP249&fac=ADI",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The DatasheetQ view without the v=1998 parameter. It may hold a different (newer) edition than the listed v=1998 copy."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP249 datasheet - Dual, Precision JFET High Speed Operational Amplifier (digchip)",
+      "doc_number": "OP249",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/041/OP249.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Hobby/aggregator mirror. The title uses the pre-Rev. I wording."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "OP249 data sheet",
+      "revision": "C",
+      "date": "unknown",
+      "changes": "Oldest ADI revision found (third-party copy on resana.ir). Changes not captured."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "OP249 data sheet",
+      "revision": "E",
+      "date": "unknown",
+      "changes": "Octopart copy (OP249GP). Changes not captured."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "OP249 data sheet",
+      "revision": "F",
+      "date": "unknown",
+      "changes": "Octopart copy (OP249GPZ). Title still reads 'Dual, Precision JFET High Speed Operational Amplifier'. Changes not captured."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "OP249 data sheet",
+      "revision": "I (current; the transition that introduced each change was not identified)",
+      "date": "unknown",
+      "changes": "The revision-history table includes 'Delete OP249F Columns, Table 3' and 'Changes to Offset Voltage Parameter and Offset Voltage Temperature Coefficient Parameter, Table 4'. The title was re-ordered to 'Precision JFET, High Speed, Dual Operational Amplifier'. The offset changes probably correspond to the data-sheet change in PCN 10_0062 (inference). Revisions G and H were not seen."
+    },
+    {
+      "vendor": "PMI / Analog Devices",
+      "doc_number": "OP249 SPICE Macro-model (not the datasheet)",
+      "revision": "B",
+      "date": "before 10/91 (not printed)",
+      "changes": "Re-ordered the subcircuit call-out nodes to put the output node last. Typical model: Ios changed from 6E-12 to 3E-12. A-grade worst-case model: Ios changed from 25E-12 to 12.5E-12."
+    },
+    {
+      "vendor": "PMI / Analog Devices",
+      "doc_number": "OP249 SPICE Macro-model (not the datasheet)",
+      "revision": "C",
+      "date": "10/91",
+      "changes": "Corrected the supply current in G1 and G2 (header 'OP249 SPICE Macro-model 10/91, Rev. C, JCB / PMI; Copyright 1990 by Analog Devices'). Model-only change."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "OP249",
+      "revision": "F",
+      "date": "unknown",
+      "changes": "A search summary says Rev F deleted the OP249 SPICE Macro-Model section and updated the outline dimensions."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "OP249",
+      "revision": "unknown (a revision after F, G to I)",
+      "date": "unknown",
+      "changes": "A search summary of the revision history lists these changes: OP249F columns deleted from Table 3; offset-voltage parameters changed in Table 4; OP249F columns inserted in Table 4; the 'Driving ADCs' section changed; Figure 52 and Figure 53 deleted. It did not say which revision letter these belong to."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "OP249",
+      "revision": "E",
+      "date": "unknown",
+      "changes": "The revision exists (Octopart OP249GP copy). No change content was seen."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "OP249 data sheet",
+      "revision": "E",
+      "date": "unknown",
+      "changes": "Confirmed by the search summary of the Octopart OP249GP copy, whose footer reads 'REV. E Information furnished by Analog Devices is believed to be accurate...'. This is the older-style footer, before the Rev. I table-of-contents format. No change content was seen."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "OP249 data sheet",
+      "revision": "I",
+      "date": "unknown (a mirror copy was uploaded to RadioLocman on 2021-03-02, so Rev. I existed by then)",
+      "changes": "The current edition: 18 pages, with the title 'Precision JFET, High Speed, Dual Operational Amplifier' and a Table 2 'OP249G' specification table. The dates of the G, H and I transitions were not shown."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "kind": "fab-or-process-transfer",
+      "vendor": "Analog Devices",
+      "when": "before 2010 (date of transfer not captured; described in PCN 10_0062)",
+      "part_numbers_affected": [
+        "OP249 (all grades)"
+      ],
+      "identification": "Not documented. Only lot or date code could separate pre-transfer from post-transfer wafers.",
+      "summary": "PCN 10_0062 states that the OP249 was transferred to ADI's ADWIL (Wilmington) wafer fab, and that after the transfer the product showed more Vos variation. That finding led to the mask and passivation fixes recorded in the separate die-redesign entry. The same part number was built at a different fab, with a documented shift in offset behaviour.",
+      "spec_deltas": [
+        {
+          "parameter": "Wafer fab",
+          "before": "earlier fab (not named in the sources seen)",
+          "after": "ADI Wilmington (ADWIL)"
+        },
+        {
+          "parameter": "Vos variation (observed)",
+          "before": "baseline",
+          "after": "increased (per PCN 10_0062 background)"
+        }
+      ],
+      "audio_impact": "Probably negligible for audio. The documented effect is on DC offset variation, and no AC change is reported.",
+      "compatibility_risk": "low - same design and pinout; the offset spread was larger on post-transfer lots made before the fix",
+      "sources": [
+        "https://www.analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_Form.pdf"
+      ],
+      "confidence": "medium",
+      "verification": "A search on PCN 10_0062 confirmed the background: 'The transfer of the OP249 to the ADWIL wafer fab identified the product to have more Vos variation'. Split out as its own fab-transfer event."
+    },
+    {
+      "kind": "die-redesign",
+      "vendor": "Analog Devices",
+      "when": "About 2010 (inferred from the PCN number 10_0062; exact issue and effective dates not captured)",
+      "part_numbers_affected": [
+        "OP249 (all grades)",
+        "OP249AZ",
+        "OP249FZ",
+        "OP249GPZ",
+        "OP249GSZ"
+      ],
+      "identification": "No marking change is documented. A date code relative to the PCN effective date is the only likely discriminator. The passivation change applies to ceramic-DIP (CERDIP) parts such as OP249FZ and probably OP249AZ.",
+      "summary": "PCN 10_0062, 'OP249 Data sheet and Die Changes'. ADI made a minor mask change to improve a diode's performance and stability, and moved ceramic-DIP products to a lower-stress passivation to improve Vos in the ceramic package. Both changes had already been qualified on the military version. The PCN includes Group C qualification data and a comparison of old and new data-sheet specifications.",
+      "spec_deltas": [
+        {
+          "parameter": "Die mask",
+          "before": "original diode layout",
+          "after": "minor mask change to improve diode performance and stability"
+        },
+        {
+          "parameter": "CERDIP passivation",
+          "before": "previous passivation",
+          "after": "lower-stress passivation"
+        },
+        {
+          "parameter": "Offset voltage and Vos temperature coefficient limits (data sheet Table 4)",
+          "before": "earlier limits (values not captured)",
+          "after": "changed (the Rev. I history lists 'Changes to Offset Voltage Parameter and Offset Voltage Temperature Coefficient Parameter, Table 4'); linking this to the PCN is an inference"
+        },
+        {
+          "parameter": "OP249F columns (data sheet Table 3)",
+          "before": "present",
+          "after": "deleted (per the revision history; timing relative to the PCN not verified)"
+        }
+      ],
+      "audio_impact": "Probably negligible for audio. The change targets offset stability and variation, and AC performance (slew, GBW, noise) is not reported as changed.",
+      "compatibility_risk": "low - same pinout and function; only the offset/TCVos specs were revised, which matters only in DC-precision circuits",
+      "sources": [
+        "https://www.analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_Form.pdf",
+        "https://www.analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_GROUP_C_OP249_E143870%209.pdf",
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf"
+      ],
+      "confidence": "medium",
+      "verification": "A search confirmed the PCN 10_0062 title ('OP249 Data sheet and Die Changes') and its content: a minor mask change for the diode, lower-stress CERDIP passivation, and prior qualification on the military version. It also surfaced the Group C qualification attachment. The effective date was not captured."
+    }
+  ],
+  "counterfeit_notes": "No OP249-specific counterfeit or remarking reports were found; this was not searched in depth. OP249 is a legacy PMI/ADI precision part that appears on broker and marketplace sites (for example Worldway Electronics and IC-listing sites). Leaded (non-Z) GP/GS parts and old ceramic parts are mostly broker stock. Compare the logo, top marking and date-code format with genuine ADI parts, and measure supply current (about 5.6 mA typ), offset and slew rate (22 V/µs typ) against the ADI data sheet. Be suspicious of any 'OP249' in unusual packages or at very low prices. Genuine parts made before and after about 2010 can differ in die and passivation (PCN 10_0062).",
+  "alternatives": [
+    "AD8620 (ADI dual precision JFET, same dual pinout; a KiCad alias of the OP249 symbol)",
+    "ADA4610-2 (ADI dual precision JFET)",
+    "OP275 (ADI dual bipolar/JFET audio op amp)",
+    "OPA2604 (Burr-Brown/TI dual FET audio op amp; listed next to OP249 in the 1993 FAQ and the Fosi ZA3 list)",
+    "OPA1642 (TI dual JFET audio op amp)",
+    "OPA2134 (TI dual FET audio op amp)"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://www.analog.com/UploadedFiles/Data_Sheets/OP249.pdf",
+    "http://www.analog.com/en/products/op249.html",
+    "http://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf",
+    "http://www.analog.com/static/imported-files/data_sheets/OP249.pdf",
+    "http://www.analog.com/static/imported-files/data_sheets/op249.pdf",
+    "http://www.datasheetbank.com/OP249GP-Datasheet-PDF-ADI-1998",
+    "https://datasheet.octopart.com/OP249GP-Analog-Devices-datasheet-21299.pdf",
+    "https://datasheet.octopart.com/OP249GPZ-Analog-Devices-datasheet-8484613.pdf",
+    "https://www.analog.com/en/products/op249.html",
+    "https://www.analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_Form.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/op249.pdf",
+    "https://www.analog.com/static/imported-files/data_sheets/op249.pdf"
+  ],
+  "open_questions": [
+    "Rev. I date, and the full revision-history table (A to I) with dates. Revisions A, B, D, G and H have not been seen in any copy.",
+    "The exact issue and effective dates of PCN 10_0062, whether it has later revisions, the fab before the ADWIL transfer (the former PMI Santa Clara fab?), and which data-sheet revision implemented its spec changes.",
+    "The before and after Vos / TCVos limits in Table 4, and which revision deleted the OP249F columns from Table 3.",
+    "The revisions held by the Octopart OP249GSZ copy, the DigiKey HTML copy and the four alldatasheet uploads.",
+    "ADI-confirmed lifecycle status for OP249AZ, OP249FZ, OP249GPZ and OP249GSZ (Active status comes only from a broker), plus any reels or /883 parts. Whether the E grade ever existed as an orderable part.",
+    "Supply range, output current, THD+N and settling time from the data sheet. Whether supply current (5.6 mA typ) is per package or per amplifier.",
+    "Original PMI data sheet and data-book editions, and the year OP249 was introduced.",
+    "No Audio Science Review, Samuel Groner, diyAudio, Head-Fi or Japanese/Chinese community listening or measurement reports have been gathered."
+  ],
+  "sources": [
+    "https://www.analog.com/en/products/op249.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf",
+    "https://www.analog.com/static/imported-files/data_sheets/op249.pdf",
+    "https://www.analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_Form.pdf",
+    "https://datasheet.octopart.com/OP249GPZ-Analog-Devices-datasheet-8484613.pdf",
+    "https://datasheet.octopart.com/OP249GP-Analog-Devices-datasheet-21299.pdf",
+    "https://resana.ir/assets/1400-07/op249.pdf",
+    "https://www.radiolocman.com/datasheet/pdf.html?di=171873&p=3",
+    "https://www.radiolocman.com/datasheet/data.html?/OP249AZ=&di=351643",
+    "https://uk.rs-online.com/web/p/op-amps/1832598",
+    "https://www.worldwayelec.com/pro/analog-devices/op249gpz/143545",
+    "https://www.worldwayelec.com/pro/analog-devices/op249gsz/143894",
+    "https://www.digikey.com/htmldatasheets/production/50783/0/0/1/op249.html",
+    "https://github.com/hardisj/erinsaudiocorner/blob/250f096128f8c8f97c0e2231a7a7b5fc3dd12702/content/english/Electronics/Fosi_za3.md",
+    "https://github.com/tin-nl/st-diskmags/blob/b2fc161489e5ba11aefb74a6f540011a719040f5/dba/10/AUDIO003.TXT",
+    "https://github.com/ska-sa/roach1_hardware/blob/a77258d1dc035114b77bc0d53969307e3d14d22f/SimLib/Analog%20Devices/op249.cir",
+    "https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/AD2.LIB",
+    "https://github.com/KiCad/kicad.github.io/blob/ee0e2d33310554ecba94f2c3528d1a654c182df2/_symbols/Amplifier_Operational.html",
+    "https://github.com/dnewcome/ic-blaster/blob/a5cafcc957a194bccdb0de958db0e9b7e6b4209d/giicm/html/opamp.html",
+    "https://github.com/Pl0p/Modular_Synth/blob/67fec0f1de295abe5c5c3fe823b716317ca7546b/List_of_modules_by_functions.md",
+    "https://github.com/GLuisF/LTspice/blob/920b29038b5b4184eaeeeee8c540781e0e52dab6/lib/sym/EXTRA/AudioOpamp/AD/op249.cir",
+    "https://github.com/123xiao/geek-dev-personal-site/blob/62bb387208122938198d00bcff50e3103ea2ede4/ic/ic_sitemap_760.xml"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [
+      "The draft's open question said no PCN, fab transfer or die change was found under OP249. This is refuted: ADI PCN 10_0062 'OP249 Data sheet and Die Changes' documents a transfer to the ADWIL fab, a minor mask change and a lower-stress passivation for ceramic DIP (https://www.analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_Form.pdf)."
+    ],
+    "corrections": [
+      "Datasheet revision changed from 'unknown' to Rev. I (current), with the title 'Precision JFET, High Speed, Dual Operational Amplifier Data Sheet OP249 Rev. I'.",
+      "Added frozen older-revision copies: Rev. F (Octopart, OP249GPZ), Rev. E (Octopart, OP249GP) and Rev. C (resana.ir). Added the RadioLocman Rev. I copy and DigiKey, alldatasheet and datasheetcatalog copies whose revisions are unknown.",
+      "Legacy URL observed as https://www.analog.com/static/imported-files/data_sheets/op249.pdf (lowercase). The product page https://www.analog.com/en/products/op249.html is confirmed to exist; the draft had only inferred it.",
+      "Added silicon_changes entry PCN 10_0062 (about 2010, medium confidence), linked to the Rev. I revision-history changes to the Table 4 Vos/TCVos parameters and the deleted OP249F columns in Table 3.",
+      "Added part numbers OP249AZ (-55 to +125 °C) and OP249FZ (8-pin CERDIP, -40 to +85 °C). OP249GPZ and OP249GSZ status set to Active, based on a broker lifecycle code.",
+      "Added key specs from Rev. I Table 2 (OP249G): GBW 4.7 MHz; en 75/26/17 nV/√Hz at 10 Hz/100 Hz/1 kHz; ISY 5.6 mA typ / 7.0 mA max. Slew rate 22 V/µs confirmed from ADI.",
+      "Rewrote the reputation caveat that said no noise or supply figures had been verified, now that datasheet figures are available.",
+      "Added revision_history entries for the datasheet (C, E, F, I). The SPICE macro-model entries were kept."
+    ],
+    "unverified_urls": [
+      "http://www.analog.com/static/imported-files/data_sheets/OP249.pdf",
+      "http://www.analog.com/UploadedFiles/Data_Sheets/OP249.pdf",
+      "https://sowa.synth.net/modular/m_mixer.html",
+      "https://datasheet.octopart.com/OP249GSZ-Analog-Devices-datasheet-9716335.pdf (URL seen; revision unconfirmed)",
+      "https://www.alldatasheet.com/datasheet-pdf/pdf/49045/AD/OP249.html (URL seen; revision unconfirmed)",
+      "http://www.datasheetcatalog.com/datasheets_pdf/O/P/2/4/OP249.shtml (URL seen; revision unconfirmed)"
+    ],
+    "claims_confirmed": [
+      "The current ADI data sheet is Rev. I, titled 'Precision JFET, High Speed, Dual Operational Amplifier Data Sheet OP249 Rev. I' - https://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf",
+      "The legacy ADI path serves the same Rev. I title - https://www.analog.com/static/imported-files/data_sheets/op249.pdf",
+      "Slew rate is 22 V/µs typical, and the part is a high-speed precision dual JFET op amp - https://www.analog.com/en/products/op249.html",
+      "Octopart copy holds Rev. F ('Dual, Precision JFET High Speed Operational Amplifier OP249 Rev. F') - https://datasheet.octopart.com/OP249GPZ-Analog-Devices-datasheet-8484613.pdf",
+      "Octopart copy holds REV. E - https://datasheet.octopart.com/OP249GP-Analog-Devices-datasheet-21299.pdf",
+      "A third-party copy holds REV. C - https://resana.ir/assets/1400-07/op249.pdf",
+      "The revision history includes 'Delete OP249F Columns, Table 3' and 'Changes to Offset Voltage Parameter and Offset Voltage Temperature Coefficient Parameter, Table 4' - https://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf",
+      "OP249G figures: GBW 4.7 MHz; ISY 5.6 typ / 7.0 max mA; en 17 nV/√Hz at 1 kHz - https://www.radiolocman.com/datasheet/pdf.html?di=171873&p=3",
+      "PCN 10_0062 covers OP249 data-sheet and die changes: ADWIL fab transfer, a mask change for diode stability, and lower-stress passivation for ceramic DIP - https://www.analog.com/media/en/pcn/ADI_PCN_10_0062_Rev_-_Form.pdf",
+      "OP249FZ is an 8-pin CERDIP part with 4.7 MHz GBW - https://uk.rs-online.com/web/p/op-amps/1832598",
+      "OP249GPZ and OP249GSZ carry an 'Active' lifecycle code at a broker - https://www.worldwayelec.com/pro/analog-devices/op249gpz/143545"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "jfet-input",
+  "product_pages": [
+    "https://www.analog.com/en/products/op249.html"
+  ],
+  "revision_chain_notes": "OP249 data sheet (PMI, then Analog Devices; no separate literature number). No second sources were found. The known revision chain, oldest to newest:\n- PMI original editions (late 1980s): no copy found. No PMI-branded (Rev. 0/A/B) data sheet turned up in this pass.\n- Rev. C: resana.ir copy, date unknown.\n- Rev. D: missing, with no copy found.\n- Rev. E: Octopart OP249GP copy. The footer 'REV. E' is confirmed; the date is unknown.\n- Rev. F: Octopart OP249GPZ copy. Rev. F deleted the SPICE macro-model section and updated the outline dimensions. Date unknown.\n- Rev. G and Rev. H: missing, with no copies found. The search for 'Rev. G to Rev. H' / 'Rev. H to Rev. I' history lines found nothing for OP249.\n- Rev. I (current): analog.com media URL and RadioLocman di=171873. It was uploaded to RadioLocman on 2021-03-02, so it is dated before March 2021. Its history covers deleting the OP249F columns from Table 3 and the offset-voltage changes in Table 4, probably tied to the PCN 10_0062 fab transfer around 2010 (inference).\n\nNew copies whose revision could not be read:\n- RadioLocman OP249AZ (di=351643).\n- alldatasheet OP249GS (ID 49051).\n- datasheetbank OP249GP '1998' edition, with the older title, probably Rev. E/F era.\n- datasheetbank OP249GP current edition, with the newer title, probably G/H/I.\n- DatasheetQ default edition.\n- digchip, with the older title.\n\nStill missing:\n- All PMI-era editions and their dates.\n- Rev. A, B and D copies.\n- Rev. G and H copies.\n- The date of every letter revision (none shown in summaries).\n- A Wayback copy of http://www.analog.com/static/imported-files/data_sheets/op249.pdf, which would help date the transitions."
+}

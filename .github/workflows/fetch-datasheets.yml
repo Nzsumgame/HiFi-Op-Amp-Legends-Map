@@ -1,7 +1,8 @@
 name: Fetch datasheets
 
 # Manually triggered: downloads every current and archived datasheet revision listed in
-# data/opamps.json (vendor URLs, TI lettered revisions, Internet Archive captures).
+# data/families/ (vendor URLs, TI lettered revisions, Internet Archive captures), reads the
+# revision printed on each PDF and, optionally, writes the confirmed revisions back into the data.
 on:
   workflow_dispatch:
     inputs:
@@ -13,8 +14,12 @@ on:
         description: "Comma list of sources: direct,ti,wayback"
         required: false
         default: "direct,ti,wayback"
-      commit:
-        description: "Also commit the PDFs to this branch (otherwise they are only uploaded as a workflow artifact)"
+      reconcile:
+        description: "Write PDF-confirmed revisions into data/families and regenerate the docs (committed to this branch)"
+        type: boolean
+        default: true
+      commit_pdfs:
+        description: "Also commit the PDFs themselves (large; otherwise they are only uploaded as a workflow artifact)"
         type: boolean
         default: false
 
@@ -50,7 +55,7 @@ jobs:
           FAMILIES: ${{ inputs.families }}
           SOURCES: ${{ inputs.sources }}
         run: |
-          args=(--sources "$SOURCES")
+          args=(--sources "$SOURCES" --delay 1.5)
           if [ -n "$FAMILIES" ]; then
             read -ra fams <<< "$FAMILIES"
             args+=(--family "${fams[@]}")
@@ -65,11 +70,21 @@ jobs:
             !datasheets/.cache/
           retention-days: 30
 
-      - name: Commit PDFs
-        if: ${{ inputs.commit }}
+      - name: Reconcile revisions into the data
+        if: ${{ inputs.reconcile }}
+        run: |
+          python tools/reconcile_datasheets.py --manifest datasheets/manifest.json
+          python tools/build_docs.py
+          python -m unittest discover -s tests
+
+      - name: Commit
+        if: ${{ inputs.reconcile || inputs.commit_pdfs }}
+        env:
+          COMMIT_PDFS: ${{ inputs.commit_pdfs }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add datasheets
-          git commit -m "Fetch datasheets (run ${{ github.run_id }})" || { echo "nothing new"; exit 0; }
+          git add data docs README.md datasheets/manifest.json datasheets/INDEX.md
+          if [ "$COMMIT_PDFS" = "true" ]; then git add -f datasheets; fi
+          git commit -m "Fetch datasheets and confirm revisions from PDFs (run ${{ github.run_id }})" || { echo "nothing new"; exit 0; }
           git push

@@ -1,0 +1,749 @@
+{
+  "id": "TLE2081",
+  "name": "TLE2081 / TLE2082 / TLE2084 (TI Excalibur high-speed JFET-input)",
+  "tagline": "A fast (40 V/us, 10 MHz, up to 38 V supply) TI JFET-input op-amp that Head-Fi CMoy builders called a lively, clean, detailed budget pick.",
+  "technology": "BiFET. The input is a P-channel JFET differential pair: both TI PSpice macromodels (level 1 and level 2) use PJF devices J1/J2, and TI's product folders call it a 'JFET-input operational amplifier'. Part of TI's 'Excalibur' TLE20xx generation. Rev B of the datasheet said the family has more than twice the bandwidth and three times the slew rate of the TL07x/TL08x, with supply rails up to ±19 V. Rev C (Mar 2026) dropped 'JFET-Input' from the document title and removed 'BiFET' from the Features list; see silicon_changes. Made as a single (TLE2081), dual (TLE2082) and quad (TLE2084), each also in a tighter-offset A grade. Older datasheets also list Y chip (die) forms.",
+  "manufacturers": [
+    "Texas Instruments"
+  ],
+  "part_numbers": [
+    {
+      "pn": "TLE2081",
+      "channels": 1,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "probably active (TI product folder is live and the datasheet was revised in Mar 2026; lifecycle label not seen)",
+      "notes": "Single. TI product page: ti.com/product/TLE2081. TI describes it as a 'Single, 38-V, 10-MHz, 40-V/us slew rate, JFET-input operational amplifier'. The PSpice model is SLOJ115, and macromodels /301 and /302 are dated 04/05/94 and 04/06/94."
+    },
+    {
+      "pn": "TLE2081A",
+      "channels": 1,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "unknown",
+      "notes": "Tighter-offset A grade of the single, covered by SLOS182. It shares the SLOJ115 model with the TLE2081."
+    },
+    {
+      "pn": "TLE2082",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "probably active (TI product folder and the TLE2082CP part-details page are live; lifecycle label not seen)",
+      "notes": "Dual; the part the audio community refers to. TI describes it as a 'Dual, 38-V, 10-MHz, 40-V/us' JFET-input op-amp. It first had its own datasheet, SLOS105 (Aug 1991; rev A Aug 1994). Temperature grades C, I and M appear in the EWB model list, and the orderable TLE2082CP (PDIP-8) is confirmed on TI.com. The earliest dated TI artifact is the TLE2082/301 macromodel of 02/11/91."
+    },
+    {
+      "pn": "TLE2082A",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "unknown",
+      "notes": "A grade of the dual. Orderables seen in third-party copies: TLE2082AID and TLE2082ACPE4 (alldatasheet), and TLE2082ACD (KiCad library). The TI symlink tle2082a.pdf is unconfirmed."
+    },
+    {
+      "pn": "TLE2082Y",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "probably discontinued (dropped from the rev C title; not confirmed)",
+      "notes": "Chip (die) form. It is named in the SLOS105A title 'TLE2082, TLE2082A, TLE2082Y', and the SLOS182B title says 'TLE208x, TLE208xA, TLE208xY', so TLE2081Y and TLE2084Y may also have existed. The rev C title lists only TLE208x and TLE208xA."
+    },
+    {
+      "pn": "TLE2084",
+      "channels": 4,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "probably active (TI product folder is live; lifecycle label not seen)",
+      "notes": "Quad. TI product page: ti.com/product/TLE2084, described as a 'Quad, 38-V, 10-MHz, 40-V/us' JFET-input op-amp. The TLE2084CDW (SOIC-16 wide) appears in an LCSC-derived KiCad library. Macromodels /301 and /302 are dated 04/05/94 and 04/06/94."
+    },
+    {
+      "pn": "TLE2084A",
+      "channels": 4,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "unknown",
+      "notes": "A grade of the quad, covered by SLOS182. PSpice model SLOJ117."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Texas Instruments",
+      "role": "originator and sole source (no second source found)",
+      "period": "c.1991 to present (datasheet revised Mar 2026)",
+      "notes": "The earliest dated artifacts are the TLE2082 PSpice macromodel ('PARTS RELEASE 4.03 ON 02/11/91') and the dual-only datasheet SLOS105 (August 1991). The combined TLE2081/2082/2084 datasheet SLOS182 followed in February 1997, was revised to B in June 2001 and to C in March 2026. The PSpice models are SLOJ115, SLOJ116 and SLOJ117. No acquisition, second source or licensed copy was found."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Supply voltage (max)",
+      "value": "38 V total (±19 V)",
+      "condition": "absolute/recommended split not seen",
+      "source": "TI product descriptions ('38-V') and the datasheet text 'increasing the dynamic-signal range for BiFET circuits to ±19 V' (https://www.ti.com/product/TLE2082, https://www.ti.com/lit/gpn/TLE2082)"
+    },
+    {
+      "parameter": "Gain-bandwidth / unity-gain frequency",
+      "value": "10 MHz (typ)",
+      "condition": "±15 V",
+      "source": "TI product descriptions (https://www.ti.com/product/TLE2081); LISO opamp.lib (gbw=10e6); EWB TEXAS.M15 (fu=1e7)"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "40 V/us (typ)",
+      "condition": "±15 V",
+      "source": "TI product descriptions (https://www.ti.com/product/TLE2084); LISO opamp.lib (sr=40e6); TI level-1 macromodel ISS/C2 = 40 V/us"
+    },
+    {
+      "parameter": "Input voltage noise e_n",
+      "value": "11.6 nV/rtHz (typ)",
+      "condition": "frequency and supply not seen in the datasheet (not web-verified)",
+      "source": "LISO opamp.lib entry 'tle2084 # also tle2081, tle2082' (un=11.6e-9), https://github.com/egl-LISA/LTPDA/blob/74855a7238e809807298470feb8181a4909e5fb8/classes/+utils/@bin/liso/win32/opamp.lib. Consistent with the TI level-2 macromodel noise resistor RN1 = 8 kΩ."
+    },
+    {
+      "parameter": "Input current noise i_n",
+      "value": "2.8 fA/rtHz (typ)",
+      "condition": "not stated (not web-verified)",
+      "source": "LISO opamp.lib (in=2.8e-15)"
+    },
+    {
+      "parameter": "Open-loop gain",
+      "value": "3e5 (~110 dB) per LISO; 63,000 V/V (~96 dB) per EWB",
+      "condition": "load not stated; the two sources conflict (not web-verified)",
+      "source": "LISO opamp.lib a0=3e5; EWB TEXAS.M15 'TLE2082C 15 63000 ...'"
+    },
+    {
+      "parameter": "Output current (max)",
+      "value": "25 mA",
+      "condition": "not stated (not web-verified)",
+      "source": "LISO opamp.lib imax=25e-3"
+    },
+    {
+      "parameter": "Output swing",
+      "value": "+14.1 / -14.2 V (EWB); LISO umax 13 V",
+      "condition": "±15 V supply (not web-verified)",
+      "source": "EWB TEXAS.M15; LISO opamp.lib"
+    },
+    {
+      "parameter": "Input offset voltage",
+      "value": "0.7 mV (A grades) vs 1.1 mV (standard grades)",
+      "condition": "±15 V, 25 °C; model parameter, probably typical (not web-verified)",
+      "source": "EWB TEXAS.M15 rows TLE2082AC/AI/AM vs TLE2082C/I/M"
+    },
+    {
+      "parameter": "Input bias / offset current",
+      "value": "Ib 20 pA, Ios 6 pA",
+      "condition": "25 °C (not web-verified)",
+      "source": "EWB TEXAS.M15; TI level-2 macromodel IIO = 6 pA"
+    },
+    {
+      "parameter": "Common-mode input range (model)",
+      "value": "+14.4 V / -11.3 V",
+      "condition": "±15 V",
+      "source": "TI level-2 macromodels TLE2081/302, TLE2082/302, TLE2084/302"
+    },
+    {
+      "parameter": "Input stage type",
+      "value": "P-channel JFET differential pair (BiFET)",
+      "condition": "as of datasheet rev B and the macromodels; rev C removed 'BiFET' from Features",
+      "source": "TI PSpice macromodels (.MODEL JX PJF); TI product folders ('JFET-input')"
+    },
+    {
+      "parameter": "Iq per channel, THD+N",
+      "value": "not verified",
+      "condition": "-",
+      "source": "The datasheet tables were not read in this session."
+    }
+  ],
+  "reputation": {
+    "summary": "This is a niche, budget-tier favourite rather than a legend. Head-Fi CMoy/portable-amp threads (c. 2007–2009) group it with its sister TLE2072 among good cheap op-amps for 9 V CMoys. Users there say the TLE2072 has the better DC specs and the TLE2082 the better AC specs, and describe the TLE2082 as 'lively, clean, detailed' and good for budget builds. No published distortion or noise measurement (ASR, Samuel Groner, diyAudio) was found, and none was searched for in this session.",
+    "sonic_descriptors": [
+      "lively",
+      "clean",
+      "detailed",
+      "great highs and lows",
+      "good midrange",
+      "fast"
+    ],
+    "typical_uses": [
+      "9 V battery CMoy headphone amplifiers (op-amp rolling)",
+      "Input/gain stage and driver for discrete-transistor headphone output stages, e.g. the ohdsp AmpTwo (2017): TLE2082 input stage, TLE2081 driving BCP53/BCP56",
+      "General fast JFET-input buffering and filtering, e.g. the SampleScope oscilloscope front end",
+      "Proposed as a replacement for the MC33182D in the Gameboy DSO project"
+    ],
+    "caveats": [
+      "The evidence base is small: a handful of Head-Fi CMoy threads, with no documented measurements.",
+      "JFET-input noise (about 11.6 nV/rtHz typ, per a model library) is well above bipolar audio op-amps such as the NE5532 (about 5 nV/rtHz). This matters in low-impedance or high-gain stages.",
+      "Output current is about 25 mA (LISO library), so low-impedance headphones need a buffer or discrete output stage.",
+      "It is fast (10 MHz, 40 V/us). As general engineering caution, not a documented report: use short decoupling and watch capacitive loads when rolling it into circuits designed for TL07x-class parts.",
+      "The praise dates from c.2007–09. If TI changed the die around the 2026 datasheet revision (unconfirmed), new-production parts may not match those reports."
+    ],
+    "sources": [
+      "https://www.head-fi.org/threads/fast-sounding-opamps.362567/page-2",
+      "https://www.head-fi.org/threads/best-sounding-cheep-op-amp-for-cmoys-opa2227-opa2228-ad8066-other.243642/page-3",
+      "https://www.head-fi.org/threads/best-sounding-cheep-op-amp-for-cmoys-opa2227-opa2228-ad8066-other.243642/page-5",
+      "https://www.head-fi.org/threads/cmoy-help-choice-of-opamp.420443/",
+      "https://github.com/ohdsp/AmpTwo",
+      "https://github.com/mru00/SampleScope",
+      "https://github.com/pyroesp/GBDSO"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "TLE208x and TLE208xA Excalibur High-Speed Operational Amplifiers (TI.com: 'Excalibur High-Speed JFET-Input Op Amps datasheet')",
+      "doc_number": "SLOS182",
+      "revision": "C",
+      "date": "2026-03",
+      "url": "https://www.ti.com/lit/ds/symlink/tle2082.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Current TI symlink, which serves the latest revision. A search index still showed the rev B title 'TLE208x, TLE208xA, TLE208xY EXCALIBUR HIGH-SPEED JFET-INPUT' for this URL. The rev C letter and March 2026 date come from the revision history seen via the tle2084 symlink."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TLE208x and TLE208xA Excalibur High-Speed Operational Amplifiers",
+      "doc_number": "SLOS182",
+      "revision": "C",
+      "date": "2026-03",
+      "url": "https://www.ti.com/lit/ds/symlink/tle2084.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Seen with tracking parameters (HQS=...), which were removed here. This copy is in the new TI format (numbered '1 Features'). Its revision history reads 'Changes from Revision B (June 2001) to Revision C (March 2026)'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "Excalibur High-Speed JFET-Input Op Amps datasheet (TI GPN redirect)",
+      "doc_number": "SLOS182",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com/lit/gpn/TLE2082",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "unknown",
+      "date_text": "current",
+      "revision_text": "current",
+      "note": "TI GPN redirect to the current PDF."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TLE208x/TLE208xA datasheet (A-grade symlink)",
+      "doc_number": "SLOS182",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com/lit/ds/symlink/tle2082a.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "current",
+      "note": "Unconfirmed. The URL was seen only as a KiCad schematic Datasheet property; web search did not confirm it."
+    },
+    {
+      "vendor": "Texas Instruments (via Mouser)",
+      "title": "Excalibur High-Speed JFET-Input Op Amps datasheet",
+      "doc_number": "SLOS182",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.com/datasheet/2/405/1/tle2081-3417641.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "The Mouser copy exists; the revision it holds was not visible."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet)",
+      "title": "TLE2082, TLE2082A, TLE2082Y EXCALIBUR HIGH-SPEED JFET-INPUT DUAL OPERATIONAL AMPLIFIERS (37 pages)",
+      "doc_number": "SLOS105",
+      "revision": "A",
+      "date": "1994-08",
+      "url": "https://www.alldatasheet.com/html-pdf/184217/TI/TLE2082/174/6/TLE2082.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Freezes the pre-1997 dual-only datasheet. The same 37-page document is at alldatasheet IDs 184218 (TLE2082A) and 184222 (TLE2082AID)."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet)",
+      "title": "TLE2081 / TLE2082 / TLE2084 datasheets",
+      "doc_number": "SLOS182",
+      "revision": "B",
+      "date": "2001-06",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/28973/TI/TLE2081.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Unconfirmed which revision each copy holds; a search summary tied SLOS182B (Feb 1997, revised Jun 2001) to these listings. Siblings: .../28972/TI/TLE2082.html and .../28971/TI/TLE2084.html."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet)",
+      "title": "EXCALIBUR HIGH-SPEED JFET-INPUT OPERATIONAL AMPLIFIERS (69 pages)",
+      "doc_number": "SLOS182 (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://html.alldatasheet.com/html-pdf/28958/ti/tle2082ip/499/18/tle2082ip.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed. Its page count (69) differs from the 79-page copy, so it may hold a different revision."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet)",
+      "title": "EXCALIBUR HIGH-SPEED JFET-INPUT OPERATIONAL AMPLIFIERS (79 pages)",
+      "doc_number": "SLOS182 (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://html.alldatasheet.com/html-pdf/843881/TI1/TLE2082ACPE4/1489/23/TLE2082ACPE4.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed. The 'E4' orderable suffix suggests a mid-2000s copy with a package addendum."
+    },
+    {
+      "vendor": "Texas Instruments (via radiolocman)",
+      "title": "TLE2081 datasheet",
+      "doc_number": "SLOS182",
+      "revision": "B",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?/TLE2081=&di=330771",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Unconfirmed revision."
+    },
+    {
+      "vendor": "DatasheetCatalog (third party)",
+      "title": "TLE2081 Datasheet pdf - High-Speed JFET-Input Operational Amplifier",
+      "doc_number": "SLOS182 (letter unknown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/T/L/E/2/TLE2081.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "An old aggregator. It likely holds a pre-2001 revision, but that is unverified."
+    },
+    {
+      "vendor": "ManualMachine (third party)",
+      "title": "Texas Instruments TLE2084CN, TLE2084IDW, TLE2084CDWR, TLE2084CDW, TLE2084ACN Datasheet",
+      "doc_number": "SLOS182 (letter unknown)",
+      "revision": "",
+      "date": "",
+      "url": "https://manualmachine.com/texasinstruments/tle2084cn/4449201-datasheet/",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The revision was not shown."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet)",
+      "title": "TLE2082AID datasheet (37 pages) - EXCALIBUR HIGH-SPEED JFET-INPUT DUAL OPERATIONAL AMPLIFIERS",
+      "doc_number": "SLOS105",
+      "revision": "A",
+      "date": "1994-08",
+      "url": "https://html.alldatasheet.com/html-pdf/184222/TI/TLE2082AID/291/9/TLE2082AID.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Same 37-page dual-only title as the known alldatasheet copy 184217 (SLOS105A). The search summary for this document described specs from the original dual-only part: 28 V/us minimum slew rate, 10 MHz typical and 8 MHz minimum GBW, Vos graded to a 7 mV maximum (TLE2082) and 4 mV (TLE2082A), and a supply range of +/-2.25 V to +/-19 V."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet)",
+      "title": "TLE2082A datasheet (37 pages) - EXCALIBUR HIGH-SPEED JFET-INPUT DUAL OPERATIONAL AMPLIFIERS",
+      "doc_number": "SLOS105",
+      "revision": "A",
+      "date": "1994-08",
+      "url": "https://html.alldatasheet.com/html-pdf/184218/TI/TLE2082A/211/7/TLE2082A.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Another page view of the same 37-page dual-only SLOS105 document (alldatasheet IDs 184217, 184218 and 184222). The header of this page itself was not shown in the summary."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet)",
+      "title": "TLE2082 Datasheet(PDF) - Texas Instruments",
+      "doc_number": "SLOS182 (probable, same 289xx upload set as TLE2081 28973)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/28972/TI/TLE2082.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown in the search summary."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet)",
+      "title": "TLE2084 Datasheet(PDF) - Texas Instruments",
+      "doc_number": "SLOS182 (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/28971/TI/TLE2084.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown. It turned up in a 'FEBRUARY 1997' search next to SLOS182B hits, but the header was not quoted."
+    },
+    {
+      "vendor": "Texas Instruments (via datasheetspdf.com)",
+      "title": "TLE2082 Datasheet - EXCALIBUR HIGH-SPEED JFET-INPUT OPERATIONAL AMPLIFIER",
+      "doc_number": "unknown (SLOS105 or SLOS182)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet/TLE2082.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "It turned up in the SLOS105 search, but its revision was not shown."
+    },
+    {
+      "vendor": "Texas Instruments (via datasheetspdf.com)",
+      "title": "TLE2081 Datasheet, OPERATIONAL AMPLIFIER",
+      "doc_number": "SLOS182 (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/1442206/etcTI/TLE2081/1",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown. The ID 1442206 is in the same etcTI upload set as the datasheet4u IDs 1442209 and 1442212."
+    },
+    {
+      "vendor": "Texas Instruments (via datasheet4u)",
+      "title": "TLE2082 AMPLIFIER Datasheet - Texas Instruments",
+      "doc_number": "SLOS182 (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet/etcTI/TLE2082-1442209",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments (via datasheet4u)",
+      "title": "TLE2084 SOIC JFET-INPUT OPERATIONAL AMPLIFIER Datasheet",
+      "doc_number": "SLOS182 (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheet4u.com/datasheet-pdf/Texas%20Instruments/TLE2084/pdf.php?id=1442212",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments (via ManualMachine)",
+      "title": "Datasheet TLE 2082 Y, TLE 2082 A, TLE 2082 (Texas Instruments)",
+      "doc_number": "unknown (SLOS105 or SLOS182; the Y chip form appears in both)",
+      "revision": "",
+      "date": "",
+      "url": "https://manualmachine.com/datasheet/tle2082y/5854290-datasheet-texas-instruments/",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The title lists only the dual parts (TLE2082, TLE2082A, TLE2082Y), which may point to the dual-only SLOS105, but this is not confirmed. Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments (via radiolocman)",
+      "title": "TLE2082ACD Datasheet Texas Instruments",
+      "doc_number": "SLOS182 (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://radiolocman.com/datasheet/data.html?%2FTLE2082ACD=&di=82971",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A different radiolocman document ID (82971) from the known TLE2081 entry (330771), so it may hold another edition. Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments (via DatasheetCatalog)",
+      "title": "TLE2082 Datasheet pdf - Dual High-Speed JFET-Input Operational Amplifier",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/T/L/E/2/TLE2082.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "DatasheetCatalog often mirrors late-1990s to early-2000s TI PDFs, so it is a candidate for an older SLOS182 or SLOS105 edition. Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments (via Datasheet Archive)",
+      "title": "Datasheet Archive: TLE2081. datasheets",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetarchive.com/TLE2081.-datasheet.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "An index page that may list several scanned TI editions. Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments (via Datasheet Archive)",
+      "title": "Datasheet Archive: 4--TLE2081 datasheets",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetarchive.com/4--TLE2081-datasheet.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "An index page. Revision not shown."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS105",
+      "revision": "original",
+      "date": "August 1991",
+      "changes": "Original TLE2082/TLE2082A/TLE2082Y dual-only datasheet. The date comes from the rev A header 'AUGUST 1991 – REVISED AUGUST 1994'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS105",
+      "revision": "A",
+      "date": "August 1994",
+      "changes": "Revision of the dual datasheet (37 pages); changes not seen."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS182",
+      "revision": "original",
+      "date": "February 1997",
+      "changes": "Combined TLE208x/TLE208xA/TLE208xY datasheet covering single, dual and quad. That it superseded SLOS105 is inferred."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS182",
+      "revision": "A",
+      "date": "unknown (between Feb 1997 and Jun 2001)",
+      "changes": "Existence implied by the B letter; not seen."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS182",
+      "revision": "B",
+      "date": "June 2001",
+      "changes": "Header 'FEBRUARY 1997 – REVISED JUNE 2001'. Title: 'TLE208x, TLE208xA, TLE208xY EXCALIBUR HIGH-SPEED JFET-INPUT OPERATIONAL AMPLIFIERS'. Changes not seen."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS182",
+      "revision": "C",
+      "date": "March 2026",
+      "changes": "Moved to the modern TI format with new numbering of tables, figures and cross-references. Removed 'BiFET' and the slew-rate details from Features, and deleted 'On-chip offset voltage trimming'. Added an Applications section, changed the Description, and added a single-pole low-pass filter figure. The title became 'TLE208x and TLE208xA Excalibur High-Speed Operational Amplifiers', dropping JFET-Input and the Y chip forms."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS182B",
+      "revision": "B",
+      "date": "FEBRUARY 1997 - REVISED JUNE 2001",
+      "changes": "Legacy typeset titled 'TLE208x, TLE208xA, TLE208xY Excalibur High-Speed JFET-Input Operational Amplifiers'. The change content was not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS182C",
+      "revision": "C",
+      "date": "FEBRUARY 1997 - REVISED MARCH 2026",
+      "changes": "Rewritten in the modern TI format ('1 Features' section) and retitled 'TLE208x and TLE208xA Excalibur High-Speed Operational Amplifiers'. The TLE208xY variants are no longer in the title. The detailed changes were not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS105",
+      "revision": "A",
+      "date": "August 1994 (original August 1991)",
+      "changes": "Dual-only datasheet 'EXCALIBUR HIGH-SPEED JFET-INPUT DUAL OPERATIONAL AMPLIFIERS' (TLE2082, TLE2082A, TLE2082Y), 37 pages. The summary quoted these specs: 28 V/us minimum slew rate, 10 MHz typical and 8 MHz minimum GBW, 1.5 mA typical supply current per channel, Vos maximum 7 mV (TLE2082) and 4 mV (TLE2082A), and +/-2.25 V to +/-19 V supply. The list of changes from the August 1991 original was not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS182",
+      "revision": "B",
+      "date": "June 2001 (original February 1997)",
+      "changes": "The search summaries confirm the header 'SLOS182B - FEBRUARY 1997 - REVISED JUNE 2001'. The description claims more than twice the bandwidth (10 MHz) and three times the slew rate (45 V/us) of the TL07x/TL08x BiFET families, rails to +/-19 V, and on-chip zener trimming of offset voltage for the precision (A) grades. The change list from revision A was not shown."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "kind": "die-redesign",
+      "vendor": "Texas Instruments",
+      "when": "PCN 20231219013.1 (19 Dec 2023; the Mouser copy is dated 22 Dec 2023); datasheet SLOS182 Rev C, March 2026",
+      "part_numbers_affected": [
+        "TLE2081IDR",
+        "TLE2082IDR",
+        "TLE2082CP",
+        "TLE2082ACP",
+        "TLE2082ACDR",
+        "TLE2081 / TLE2081A / TLE2082 / TLE2082A / TLE2084 / TLE2084A (datasheet Rev C scope; PCN coverage of other orderables not confirmed)"
+      ],
+      "identification": "The part number is unchanged. Per summaries of the same PCN as the TLE207x, the die-revision field changes to A and RFAB becomes the chip site, with an assembly-site change. Identification is by date code relative to the (unretrieved) first-ship date. Datasheet Rev C (March 2026) is retitled 'TLE208x and TLE208xA Excalibur High-Speed Operational Amplifiers'; Rev B (June 2001) was titled '...EXCALIBUR HIGH-SPEED JFET-INPUT...'.",
+      "summary": "TI PCN 20231219013.1 moves TLE208x orderables to RFAB with a die revision and an assembly-site change; the die was changed as a result of the process change. Datasheet Rev C (March 2026) later removed 'BiFET', the slew-rate bullet and 'On-chip offset voltage trimming' from Features, rewrote the Description and dropped 'JFET-Input' from the title. TI made the same kind of edits in the refreshes that followed new dies on the TL07x. Linking the Rev C edits to the PCN die is an inference, and no electrical deltas were retrieved.",
+      "spec_deltas": [
+        {
+          "parameter": "Wafer fab",
+          "before": "legacy fab (not named in the retrieved summary)",
+          "after": "RFAB, Richardson USA"
+        },
+        {
+          "parameter": "Die revision (PCN field)",
+          "before": "A, B, C, H (as summarised for the PCN)",
+          "after": "A"
+        },
+        {
+          "parameter": "Features list",
+          "before": "BiFET technology, slew-rate figure and on-chip offset voltage trimming listed (Rev B)",
+          "after": "these items deleted (Rev C)"
+        },
+        {
+          "parameter": "Document title",
+          "before": "TLE208x, TLE208xA, TLE208xY EXCALIBUR HIGH-SPEED JFET-INPUT OPERATIONAL AMPLIFIERS",
+          "after": "TLE208x and TLE208xA Excalibur High-Speed Operational Amplifiers"
+        },
+        {
+          "parameter": "Datasheet electrical limits",
+          "before": "Rev B (June 2001)",
+          "after": "Rev C deltas not retrieved"
+        }
+      ],
+      "audio_impact": "Unknown. If the input stage, trim or process changed, noise, offset, slew, stability margin and sound may differ from the parts Head-Fi reviewed c. 2007-09.",
+      "compatibility_risk": "medium: the die revision is PCN-documented and the datasheet was rewritten, but no electrical deltas were retrieved.",
+      "sources": [
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5784/PCN20231219013.1.pdf",
+        "https://www.mouser.com/PCN/Texas_Instruments_PCN20231219013_20231222114541159.pdf",
+        "https://www.ti.com/lit/ds/symlink/tle2084.pdf",
+        "https://www.ti.com/lit/ds/symlink/tle2082.pdf",
+        "https://www.ti.com/product/TLE2082"
+      ],
+      "confidence": "medium",
+      "verification": "Search summaries of PCN 20231219013.1 name TLE2082ACP/TLE2082CP and TLE2082ACDR, with fab, die-revision and assembly changes. Searches confirmed the new Rev C title and a March 2026 Rev C date. One search summary still quoted the zener-trim sentence, possibly from the older Rev B file, so the Features edits could be partly editorial; the Rev C electrical deltas were not retrieved."
+    }
+  ],
+  "counterfeit_notes": "No TLE208x-specific counterfeit or remarking reports were found, and no dedicated search was run. It is a low-volume, inexpensive TI part and an unlikely main counterfeit target. Treat 'TLE2082' DIPs from marketplace sellers as unverified and prefer authorized distributors. Quick bench check: slew rate should be about 40 V/us typ and input bias current tens of pA at room temperature. A remarked TL072/TL082 would slew only about 13 V/us.",
+  "alternatives": [
+    "TLE2072 / TLE2071 / TLE2074 (sister TI Excalibur JFET-input family; Head-Fi rates the TLE2072 highly for 9 V CMoys)",
+    "OPA1642 (modern TI JFET-input audio op-amp)",
+    "OPA1656 (modern TI low-noise CMOS audio op-amp)",
+    "OPA2134 / OPA2132 (JFET-input audio parts it was compared against in CMoy threads)",
+    "TL072 / TL082 (pin-compatible but slower legacy BiFETs)"
+  ],
+  "ti_literature_numbers": [
+    "SLOS105",
+    "SLOS182"
+  ],
+  "archive_seed_urls": [
+    "http://focus.ti.com/lit/ds/symlink/tle2081.pdf",
+    "http://focus.ti.com/lit/ds/symlink/tle2082.pdf",
+    "http://focus.ti.com/lit/ds/symlink/tle2084.pdf",
+    "http://www-s.ti.com/sc/ds/tle2081.pdf",
+    "http://www-s.ti.com/sc/ds/tle2082.pdf",
+    "http://www-s.ti.com/sc/ds/tle2084.pdf",
+    "https://www.datasheetcatalog.com/datasheets_pdf/T/L/E/2/TLE2081.shtml",
+    "https://www.datasheetcatalog.com/datasheets_pdf/T/L/E/2/TLE2082.shtml",
+    "https://www.mouser.com/datasheet/2/405/1/tle2081-3417641.pdf",
+    "https://www.ti.com/lit/ds/symlink/tle2081.pdf",
+    "https://www.ti.com/lit/ds/symlink/tle2081a.pdf",
+    "https://www.ti.com/lit/ds/symlink/tle2082.pdf",
+    "https://www.ti.com/lit/ds/symlink/tle2082a.pdf",
+    "https://www.ti.com/lit/ds/symlink/tle2084.pdf",
+    "https://www.ti.com/lit/ds/symlink/tle2084a.pdf",
+    "https://www.ti.com/lit/gpn/TLE2082",
+    "https://www.ti.com/product/TLE2081",
+    "https://www.ti.com/product/TLE2081A",
+    "https://www.ti.com/product/TLE2082",
+    "https://www.ti.com/product/TLE2084"
+  ],
+  "open_questions": [
+    "Does SLOS182 rev C (Mar 2026) reflect a new die or process? Its Features dropped BiFET and on-chip offset trimming. Compare rev C and rev B electrical tables (noise, Vos, slew, Iq) and look for a TI PCN.",
+    "The date and content of SLOS182A, and of the original SLOS105 (Aug 1991), were not seen.",
+    "Did the TLE2081 and TLE2084 have their own datasheets before 1997?",
+    "The official lifecycle status of each orderable is not confirmed, including the M grades, the Y chip forms and any 5962 SMD numbers.",
+    "The symlinks tle2082a/tle2081/tle2081a/tle2084a and the legacy focus.ti.com / www-s.ti.com URLs are inferred and were not seen.",
+    "Supply minimum, Iq per channel and THD+N are not verified. The open-loop gain conflict (LISO 110 dB vs EWB 96 dB) and the noise figure of 11.6 nV/rtHz need a check against the datasheet.",
+    "Does any independent distortion or noise measurement exist (ASR, Samuel Groner, diyAudio)?"
+  ],
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/tle2082.pdf",
+    "https://www.ti.com/lit/ds/symlink/tle2084.pdf",
+    "https://www.ti.com/lit/gpn/TLE2082",
+    "https://www.ti.com/product/TLE2081",
+    "https://www.ti.com/product/TLE2082",
+    "https://www.ti.com/product/TLE2084",
+    "https://www.ti.com/product/TLE2082/part-details/TLE2082CP",
+    "https://www.mouser.com/datasheet/2/405/1/tle2081-3417641.pdf",
+    "https://www.alldatasheet.com/html-pdf/184217/TI/TLE2082/174/6/TLE2082.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/28973/TI/TLE2081.html",
+    "https://html.alldatasheet.com/html-pdf/843881/TI1/TLE2082ACPE4/1489/23/TLE2082ACPE4.html",
+    "https://www.radiolocman.com/datasheet/data.html?/TLE2081=&di=330771",
+    "https://www.head-fi.org/threads/fast-sounding-opamps.362567/page-2",
+    "https://www.head-fi.org/threads/best-sounding-cheep-op-amp-for-cmoys-opa2227-opa2228-ad8066-other.243642/page-3",
+    "https://www.head-fi.org/threads/best-sounding-cheep-op-amp-for-cmoys-opa2227-opa2228-ad8066-other.243642/page-5",
+    "https://www.head-fi.org/threads/cmoy-help-choice-of-opamp.420443/",
+    "https://github.com/prydin/classd-amp/blob/d5b1096841694f194351ab7aa3e2edf0e97d0051/input.kicad_sch",
+    "https://github.com/egl-LISA/LTPDA/blob/74855a7238e809807298470feb8181a4909e5fb8/classes/+utils/@bin/liso/win32/opamp.lib",
+    "https://github.com/electricant/electronics-libraries/blob/8350a98985f7e5c8c82fc2dece0517cb011b2e82/spice-models/pspice/tex_inst.lib",
+    "https://github.com/chevalierid/alan-setup/blob/cf122ced7b84a18475356bcdca4c6fbbecd24047/fab/kicad/libraries/pspicetilib/TLE2081.LIB",
+    "https://github.com/werner2101/spicelib/blob/5100096586b5599d5c5b3fc30f4de7ccd68165c5/model_golden_checksums/ti_all.md5sum",
+    "https://github.com/SnipGhost/electronics/blob/744afe113f43be92d70c68e8add0c3bf70df0348/ewb5pro/MODELS/TEXAS.M15",
+    "https://github.com/ohdsp/AmpTwo",
+    "https://github.com/louiscklaw/lcsc_interface_ics/blob/HEAD/TLE2084CDW.kicad_mod",
+    "https://github.com/mru00/SampleScope",
+    "https://github.com/pyroesp/GBDSO"
+  ],
+  "verification": {
+    "status": "partially-verified",
+    "refuted_claims": [
+      "[change register] merged, not refuted: the low-confidence datasheet Rev C entry ('die change NOT confirmed') and the sweep PCN 20231219013.1 entry are two views of the same TLE208x change and were combined into one die-redesign entry."
+    ],
+    "corrections": [
+      "The datasheet document number was 'unknown'. The current number is SLOS182, rev C, March 2026. The earlier chain is SLOS182B (Feb 1997, revised Jun 2001) and the dual-only predecessor SLOS105A (Aug 1991, revised Aug 1994).",
+      "ti_literature_numbers was empty; it now holds SLOS182 and SLOS105.",
+      "Added the supply maximum: 38 V total (±19 V).",
+      "Added TLE2082Y (chip form) from the SLOS105A and SLOS182B titles.",
+      "Lowered the tle2082a.pdf symlink to low confidence because it is unconfirmed. Added the confirmed tle2082.pdf and tle2084.pdf symlinks, lit/gpn/TLE2082 and the product pages.",
+      "Added the revision_history chain, and added a low-confidence possible silicon-change hazard based on the Rev C feature and title edits.",
+      "Part statuses changed from 'unknown' to 'probably active' for TLE2081/2082/2084, because TI product folders are live and the datasheet was revised in 2026. The lifecycle label itself was not seen.",
+      "Removed the stale open question saying no searches were performed."
+    ],
+    "unverified_urls": [
+      "https://www.ti.com/lit/ds/symlink/tle2082a.pdf",
+      "https://www.ti.com/lit/ds/symlink/tle2081.pdf",
+      "https://www.ti.com/lit/ds/symlink/tle2081a.pdf",
+      "https://www.ti.com/lit/ds/symlink/tle2084a.pdf",
+      "http://focus.ti.com/lit/ds/symlink/tle2082.pdf",
+      "http://www-s.ti.com/sc/ds/tle2082.pdf",
+      "http://www-s.ti.com/sc/ds/tle2081.pdf",
+      "http://www-s.ti.com/sc/ds/tle2084.pdf",
+      "https://html.alldatasheet.com/html-pdf/28958/ti/tle2082ip/499/18/tle2082ip.html",
+      "https://www.head-fi.org/threads/best-sounding-cheep-op-amp-for-cmoys-opa2227-opa2228-ad8066-other.243642/page-3",
+      "https://www.head-fi.org/threads/best-sounding-cheep-op-amp-for-cmoys-opa2227-opa2228-ad8066-other.243642/page-5",
+      "https://www.head-fi.org/threads/cmoy-help-choice-of-opamp.420443/"
+    ],
+    "claims_confirmed": [
+      "SLOS105A is the TLE2082/TLE2082A/TLE2082Y Excalibur dual datasheet, August 1991, revised August 1994 (https://www.alldatasheet.com/html-pdf/184217/TI/TLE2082/174/6/TLE2082.html)",
+      "SLOS182B covers TLE208x/TLE208xA/TLE208xY, February 1997, revised June 2001 (https://www.ti.com/lit/ds/symlink/tle2082.pdf; https://www.radiolocman.com/datasheet/data.html?/TLE2081=&di=330771)",
+      "SLOS182 Revision C is dated March 2026. It removed BiFET, slew-rate details and on-chip offset trimming from Features, added an Applications section and changed the Description (https://www.ti.com/lit/ds/symlink/tle2084.pdf)",
+      "The current TI title is 'TLE208x and TLE208xA Excalibur High-Speed Operational Amplifiers' (https://www.ti.com/lit/ds/symlink/tle2084.pdf)",
+      "TI describes the TLE2081/2082/2084 as single/dual/quad 38-V, 10-MHz, 40-V/us JFET-input op-amps (https://www.ti.com/product/TLE2082; https://www.ti.com/product/TLE2081; https://www.ti.com/product/TLE2084)",
+      "The datasheet says the TLE208x more than doubles the bandwidth and triples the slew rate of the TL07x/TL08x, with a dynamic range up to ±19 V (https://www.ti.com/lit/gpn/TLE2082)",
+      "The TLE2082CP orderable page exists on TI.com (https://www.ti.com/product/TLE2082/part-details/TLE2082CP)",
+      "Mouser hosts a copy of the datasheet (https://www.mouser.com/datasheet/2/405/1/tle2081-3417641.pdf)"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "jfet-input",
+  "product_pages": [
+    "https://www.ti.com/product/TLE2082",
+    "https://www.ti.com/product/TLE2081",
+    "https://www.ti.com/product/TLE2084",
+    "https://www.ti.com/product/TLE2082/part-details/TLE2082CP",
+    "https://uk.rs-online.com/web/p/op-amps/2462523"
+  ],
+  "revision_chain_notes": "Texas Instruments is the only vendor; no second source, acquirer re-issue or licensed copy turned up. The revision chain from oldest to newest:\n\n(1) SLOS105, the dual-only TLE2082/TLE2082A/TLE2082Y datasheet. The original edition is dated August 1991, but no copy was found; it is known only from the rev A header. Rev A, dated August 1994, is held on alldatasheet (known 184217, plus new page views 184218 and 184222 of the same 37-page document). Missing: the August 1991 original, and any rev B if one exists.\n\n(2) SLOS182, the combined TLE2081/TLE2082/TLE2084 datasheet. The original edition is dated February 1997, and no copy was identified. Rev A is not seen; its date is unknown (between Feb 1997 and Jun 2001), and searches for 'SLOS182A' found nothing. Rev B, dated June 2001, is confirmed by the header 'FEBRUARY 1997 - REVISED JUNE 2001' in the search summaries. The search index still gives ti.com/lit/ds/symlink/tle2082.pdf the legacy B title, so a Wayback capture of that URL or its focus.ti.com equivalent before 2026 should hold rev B. Rev C, dated March 2026, is the current ti.com symlink. Missing: copies of the SLOS182 original and rev A.\n\nNew third-party copies of SLOS182 do not show their revision: alldatasheet 28971 and 28972, datasheetspdf 1442206, datasheet4u 1442209 and 1442212, radiolocman di=82971, datasheetcatalog TLE2082, the datasheetarchive index pages, and manualmachine 5854290. The most likely places to find the missing 1991 original, the 1997 original and SLOS182A are the older third-party mirrors (datasheetcatalog, datasheetarchive, radiolocman 82971, manualmachine tle2082y).\n\nThe archive_seed_urls on focus.ti.com and www-s.ti.com/sc/ds were built from TI's known legacy URL patterns for the Wayback lookup. None of them appeared in a search result, so none is verified.\n\nFour WebSearch calls were used."
+}

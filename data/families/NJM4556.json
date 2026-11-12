@@ -1,0 +1,897 @@
+{
+  "id": "NJM4556",
+  "name": "NJM4556 / NJM4556A (dual high-output-current bipolar, 70 mA)",
+  "tagline": "JRC's 70 mA dual that drives 150 ohm loads directly. It is the paralleled output stage of NwAvGuy's O2 and a staple of Japanese DIY headphone amps.",
+  "technology": "Bipolar dual op-amp with a high-current output stage (+/-70 mA into 150 ohm at +/-10.5 V). The input differential pair is PNP in the datasheet equivalent circuit, in NJR's own PSpice macromodels (Version 1 and 2) and in the 2007 Bee Technologies model. Supply is +/-2 V to +/-18 V. The datasheet says it combines many NJM4558 features with 150 ohm drive capability. The Japanese search summary describes it as a 4558 with a reinforced output stage. On the typical curve at +/-15 V, the output sources about 100 mA and sinks about 200 mA before swing collapses.",
+  "manufacturers": [
+    "JRC / New Japan Radio Co., Ltd. (New JRC, NJR)",
+    "Nisshinbo Micro Devices Inc. (successor to New JRC)",
+    "NEC (uPC4556 uses the same number but is a different, decompensated dual op-amp. It is NOT an NJM4556 second source; listed only so the two are not confused)"
+  ],
+  "part_numbers": [
+    {
+      "pn": "NJM4556AD",
+      "channels": 2,
+      "vendors": [
+        "New JRC",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "NRND",
+      "notes": "DIP8. This is the package used in O2 builds; FreeDSP-G also uses it, labelled 'For Headphones Amp Low Impedance Drive Capability'. The EN 20250306 datasheet prints 'NJM4556AD and NJM4556AL are the NRND products' (confirmed from the search-result title of the vendor PDF). A Japanese blog (foxtango101, April 2023) reported NJM4556A among the ex-JRC op-amps designated maintenance products (保守品). Pd 700 mW."
+    },
+    {
+      "pn": "NJM4556AL",
+      "channels": 2,
+      "vendors": [
+        "New JRC",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "NRND",
+      "notes": "SIP8. NRND in the 20250306 datasheet. Sold by Akizuki Denshi (catalog g111235) and by LCSC (C78948, which hosts a datasheet copy). Pd 800 mW."
+    },
+    {
+      "pn": "NJM4556AM",
+      "channels": 2,
+      "vendors": [
+        "New JRC",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "active (not marked NRND in 20250306 datasheet)",
+      "notes": "DMP8. This is JRC's wider-body SOP and does not fit a JEDEC 3.9 mm SOIC-8 footprint; body about 5.0 mm, lead span about 6.8 mm, per community footprints only. Pd 300 mW. NJM4556AM-TE1 is listed at RS (2413462 / 2413463, '8MHz, 8-Pin DMP'). It is used in the smartstand USB DAC/amp rev A (2016) and in the Roland AC-90 phones amp (IC18). Swing and ICMR are specified at V+=9 V/V-=0 V with 40 mA source/sink."
+    },
+    {
+      "pn": "NJM4556AV",
+      "channels": 2,
+      "vendors": [
+        "New JRC",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "active (not marked NRND in 20250306 datasheet)",
+      "notes": "SSOP8. Pd 250 mW. NJM4556AV-TE1 is listed at RS (SE 2444516: '8MHz, 4 -> 36 V, 8-Pin SSOP8'; JP 2444515: '18V, 8 MHz, 3 V/us, SSOP-8') and at diyaudiocart. Used in Eurorack headphone modules (ramphands Exits, fablabnk HeadPho)."
+    },
+    {
+      "pn": "NJM4556 (original, non-A; e.g. NJM4556D)",
+      "channels": 2,
+      "vendors": [
+        "JRC"
+      ],
+      "status": "obsolete (presumed; no current vendor page found)",
+      "notes": "Earlier part number. Mirrors titled 'DUAL HIGH CURRENT OPERATIONAL AMPLIFIER' exist at alldatasheet (id 7450) and datasheetbank; their contents were not read. MAME notes list a SOIC8 marked '4556' on the Namco System 12 CD-XA board, suffix not recorded. Forum text says Yamaha RX7/RX15/RX21 use a DIP-8 'NJM4556D, YM4556D or similar' (low confidence)."
+    },
+    {
+      "pn": "NJM4556S",
+      "channels": 2,
+      "vendors": [
+        "JRC"
+      ],
+      "status": "obsolete (presumed)",
+      "notes": "SIP8 version of the original NJM4556 under the older JRC suffix scheme (S = SIP, later L). Known from an Eagle library in the RBSC SFG_Clone project and from an image-only one-page scan fetched (and later deleted) by the arm6309 project."
+    },
+    {
+      "pn": "uPC4556 / uPC4556C (NEC) - different part, same number",
+      "channels": 2,
+      "vendors": [
+        "NEC"
+      ],
+      "status": "obsolete (presumed)",
+      "notes": "NOT an NJM4556 equivalent. Datasheet mirrors title it 'High Performance Dual Decompensated Operational Amplifier': an AC-enhanced uPC4558 derivative, with 20 MHz GBW guaranteed only at gain >= 20 dB, 5 V/us slew and 18 V max supply, in DIP8 ('C' suffix). No 70 mA / 150 ohm rating was seen in the search summaries. Per MAME notes it appears on late-1980s Taito boards (Rainbow Islands, B- and L-system). OrCAD's 1998 JA library models it alongside uPC4557-4570."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "JRC (New Japan Radio Co., Ltd.)",
+      "role": "originator (original NJM4556)",
+      "period": "by the 1980s to ? (exact introduction and discontinuation dates not found)",
+      "notes": "Original NJM4556 in DIP (D), SOP (M) and SIP (S) packages, found in vintage equipment. Yamaha house-marked 'YM4556D' parts are reported in forum text only (low confidence)."
+    },
+    {
+      "vendor": "NEC",
+      "role": "unrelated same-number part (not a second source)",
+      "period": "1980s (late-1980s Taito boards per MAME notes) to ?",
+      "notes": "The uPC4556 is a decompensated dual (20 MHz GBW at gain >= 20 dB, 5 V/us), derived from NEC's uPC4558, per datasheet mirrors (chipfind, alldatasheet). It is not a second source of JRC's 70 mA unity-gain-stable NJM4556."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "role": "originator (NJM4556A)",
+      "period": "by 2003 (Japanese datasheet Ver.2003-03-13) to 2021",
+      "notes": "NJM4556A in D/M/V/L packages. Datasheet editions seen: Ver.2003-03-13 (JA), Ver.2011-06-08 (EN and JA) and Ver.2020-03-26 (EN, Mouser mirror). The legacy URL www.njr.com/semicon/PDF/NJM4556A_E.pdf is used by the KiCad symbol library. NJR published its own PSpice macromodels."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices Inc.",
+      "role": "successor (New JRC merged with Ricoh Electronic Devices)",
+      "period": "2022 to present",
+      "notes": "The foxtango101 blog (April 2023) reported that several ex-JRC op-amps, including NJM4556A, were designated maintenance products (保守品). The EN and JA datasheets were reissued as 20250306; the EN edition marks NJM4556AD and NJM4556AL as NRND. In the same wave, NJM4580_J 20250303 marks NJM4580D/L as 保守品. DMP8 (AM) and SSOP8 (AV) continue. Nisshinbo keeps a 保守品/NRND listing page. The 2022 merger date was not re-verified."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Supply voltage range",
+      "value": "+/-2 V to +/-18 V (4 to 36 V single; abs max +/-18 V)",
+      "condition": "features / absolute maximum ratings",
+      "source": "NJM4556A_E Ver.2011-06-08 and 20250306 (identical); RS listing 2444516 '4 -> 36 V'"
+    },
+    {
+      "parameter": "Output current",
+      "value": "70 mA (drives +/-70 mA into 150 ohm at +/-10.5 V)",
+      "condition": "V+/V-=+/-15 V",
+      "source": "NJM4556A datasheet general description (confirmed via search summary of the Nisshinbo PDF)"
+    },
+    {
+      "parameter": "Output current capability (typical graph)",
+      "value": "Positive swing holds about +13 V up to about 70 mA and collapses near 100 mA; negative swing holds about -12.5 V up to about 100 mA and collapses near 200 mA",
+      "condition": "+/-15 V, 25 C, 'Maximum Output Voltage Swing vs. Output Current' graph (approximate reading)",
+      "source": "NJM4556A datasheet typical characteristics"
+    },
+    {
+      "parameter": "Output swing into 150 ohm (VOM2)",
+      "value": "+/-10.5 V min, +/-11 V typ",
+      "condition": "+/-15 V, RL>=150 ohm, D/L grades",
+      "source": "NJM4556A datasheet electrical characteristics"
+    },
+    {
+      "parameter": "Output swing into 2 kohm (VOM1)",
+      "value": "+/-12 V min, +/-13.5 V typ",
+      "condition": "+/-15 V, RL>=2 kohm, D/L grades",
+      "source": "NJM4556A datasheet"
+    },
+    {
+      "parameter": "Output swing, M/V grades",
+      "value": ">=7.5 V sourcing 40 mA; <=2.1 V sinking 40 mA",
+      "condition": "V+=9 V, V-=0 V",
+      "source": "NJM4556A datasheet (NJM4556AM/AV table)"
+    },
+    {
+      "parameter": "Gain bandwidth product",
+      "value": "8 MHz typ",
+      "condition": "+/-15 V, 25 C",
+      "source": "NJM4556A datasheet; RS listings 2444515/2444516/2413462"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "3 V/us typ",
+      "condition": "+/-15 V, 25 C",
+      "source": "NJM4556A datasheet; RS JP listing 2444515"
+    },
+    {
+      "parameter": "Input voltage noise e_n",
+      "value": "10 nV/rtHz typ (features list; no frequency given). The typical curve reads about 8 nV/rtHz from 20 Hz to 1 kHz, rising to about 18 nV/rtHz at 3 Hz",
+      "condition": "curve: +/-15 V, Rs=100 ohm, Av=40 dB",
+      "source": "NJM4556A datasheet features and Equivalent Input Noise Voltage vs Frequency graph"
+    },
+    {
+      "parameter": "Input current noise i_n",
+      "value": "not specified",
+      "condition": "-",
+      "source": "NJM4556A datasheet (absent)"
+    },
+    {
+      "parameter": "THD",
+      "value": "Not in the tables. The typical graph reads about 0.0002-0.0003% at 1 kHz near 3-4 Vrms, and about 0.002% at 20 kHz near 0.7 Vrms, rising to about 0.1% near 8-9 Vrms and about 0.2% at 10 Vrms",
+      "condition": "+/-15 V, RL=200 ohm, gain 30 dB (graph, approximate reading)",
+      "source": "NJM4556A datasheet 'Total Harmonic Distortion vs Output Voltage' graph"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "9 mA typ / 12 mA max per package (about 4.5 mA per amplifier typ)",
+      "condition": "+/-15 V (D/L). The M/V grades specify 8 mA typ / 12 mA max at V+=9 V",
+      "source": "NJM4556A datasheet"
+    },
+    {
+      "parameter": "Input offset voltage",
+      "value": "0.5 mV typ / 6.0 mV max",
+      "condition": "Rs<=10 kohm, +/-15 V",
+      "source": "NJM4556A datasheet"
+    },
+    {
+      "parameter": "Input bias current / offset current",
+      "value": "50 nA typ / 500 nA max; 5 nA typ / 60 nA max",
+      "condition": "+/-15 V",
+      "source": "NJM4556A datasheet"
+    },
+    {
+      "parameter": "Input resistance",
+      "value": "0.3 Mohm min / 5 Mohm typ",
+      "condition": "+/-15 V, D/L grades",
+      "source": "NJM4556A datasheet"
+    },
+    {
+      "parameter": "Input common-mode range",
+      "value": "+/-13.5 V min / +/-14 V typ",
+      "condition": "+/-15 V, D/L grades (M/V: 1.5 V to 8 V at V+=9 V)",
+      "source": "NJM4556A datasheet"
+    },
+    {
+      "parameter": "Open-loop gain / CMR / SVR",
+      "value": "100 dB typ (86 min) / 90 dB typ (70 min) / 90 dB typ (76.5 min)",
+      "condition": "RL>=2 kohm, VO=+/-10 V; Rs<=10 kohm",
+      "source": "NJM4556A datasheet"
+    },
+    {
+      "parameter": "Power dissipation",
+      "value": "DIP8 700 mW, DMP8 300 mW, SSOP8 250 mW, SIP8 800 mW",
+      "condition": "Ta=25 C",
+      "source": "NJM4556A datasheet absolute maximum ratings"
+    },
+    {
+      "parameter": "Operating temperature",
+      "value": "-40 to +85 C",
+      "condition": "-",
+      "source": "NJM4556A datasheet absolute maximum ratings"
+    },
+    {
+      "parameter": "Input stage type",
+      "value": "bipolar PNP differential pair",
+      "condition": "-",
+      "source": "Datasheet equivalent circuit; NJR PSpice models V1/V2; Bee Technologies 2007 model"
+    },
+    {
+      "parameter": "Per-revision differences",
+      "value": "None in electrical data between EN Ver.2011-06-08 and EN 20250306: the tables, absolute maximum ratings, equivalent circuit and typical graphs are identical. Only the terminology changed ('Operating Voltage/Current' became 'Supply Voltage/Current') and the NRND notice was added. JA Ver.2003-03-13 and EN Ver.2020-03-26 were not compared",
+      "condition": "-",
+      "source": "side-by-side comparison of both EN PDFs (earlier pass)"
+    }
+  ],
+  "reputation": {
+    "summary": "It is valued for current drive rather than for a distinctive sound. NwAvGuy used NJM4556A in the current-gain (output) stage of the Objective2 (O2), with both halves paralleled per channel. An earlier search summary of his 'O2 Details' page paraphrased him as saying no other dual DIP8 op-amp delivered as much current at as low distortion ('killed everything else'); this pass did not re-confirm that wording. The O2 made it a default DIY headphone driver, reused in O2/ODA derivatives, Eurorack headphone modules and other projects. Japanese DIY sources call it a standard (定番) headphone-amp chip, and say it sounds surprisingly good for about 30 yen. One Japanese listening comparison (audio-simulation.net, 2019) found it more energetic but rougher in texture than the NJM4580. It also appears in commercial gear: one 2018 owner's Behringer UCA202 had a 4556A, and the Roland AC-90 uses NJM4556AM in its phones amp.",
+    "sonic_descriptors": [
+      "energetic / lively (vs NJM4580; single Japanese listening test)",
+      "rougher texture than NJM4580 (same source)",
+      "surprisingly good for the price (Japanese DIY summary)",
+      "clean, low-distortion current drive (NwAvGuy O2 testing)"
+    ],
+    "typical_uses": [
+      "O2 / ODA headphone amp output stage (paralleled sections)",
+      "DIY and kit headphone amps in Japan (e.g. aitendo kits)",
+      "Eurorack headphone and line-out modules (NJM4556AV)",
+      "USB audio interface headphone outputs (one 2018 teardown of a Behringer UCA202)",
+      "instrument-amp phones outputs (Roland AC-90, NJM4556AM)",
+      "line drivers into 150-600 ohm loads"
+    ],
+    "caveats": [
+      "The DIP8 (NJM4556AD) and SIP8 (AL) versions are NRND per the March 2025 Nisshinbo datasheet. A maintenance-product (保守品) designation was reported in April 2023. The SMD AM and AV versions continue.",
+      "The SMD packages are JRC DMP8 (wider body than a 3.9 mm JEDEC SOIC-8) and SSOP8, so footprints differ.",
+      "Package dissipation limits are low (DMP8 300 mW, SSOP8 250 mW), and quiescent current is 9 mA typ per package. Derate for high rails and low-impedance headphones.",
+      "Speed is modest (3 V/us, 8 MHz). The typical THD at 20 kHz rises steeply with output level (about 0.2% at 10 Vrms into 200 ohm).",
+      "High offset (6 mV max) and bias current (500 nA max) matter in DC-coupled designs like the O2.",
+      "Its reputation rests on drive capability rather than a distinctive sound. The sonic descriptors come from single listening reports.",
+      "A '4556' on vintage boards may be NEC's uPC4556. That part is decompensated (stable only at gain >= 20 dB), so it is not a substitute for an NJM4556 in a unity-gain buffer. It may also be a Yamaha house-marked part."
+    ],
+    "sources": [
+      "http://nwavguy.blogspot.com/2011/08/o2-details.html",
+      "http://nwavguy.blogspot.com/2011/07/o2-headphone-amp.html",
+      "http://nwavguy.blogspot.com/2011/08/op-amp-measurements.html",
+      "https://forum.lowyat.net/topic/2089195/all",
+      "https://www.diyaudio.com/community/threads/the-objective2-o2-headphone-amp-diy-project.193977/page-260",
+      "https://www.diyaudio.com/community/threads/a-version-of-an-o2-desktop-amp-oda.229934/",
+      "https://www.diyaudio.com/community/threads/dual-o2-inspired-smd-headphone-amp.236680/",
+      "https://www.headphonesty.com/2018/03/1667/",
+      "https://www.diyaudio.com/community/threads/njm4556a-opamp.182517/",
+      "https://www.head-fi.org/threads/opamp-round-up-measurements-opa2604-opa637-ad823-lme49860-jr4556-muses8820-and-8920-burson-v6-classic.870832/",
+      "https://www.audio-simulation.net/entry/2019/04/08/115956",
+      "https://anoda.cocolog-nifty.com/mad/2012/04/post-ca45.html",
+      "https://www.aitendo.com/product/14069",
+      "https://foxtango101.blog.jp/archives/19678237.html",
+      "https://github.com/mnaganov/mnaganov.github.io/blob/master/2018/05/measuring-behringer-uca202.md",
+      "https://github.com/forestcaver/Analog-Voice/tree/master/AJH_Headphone_Amp",
+      "https://github.com/ramphands/Exits",
+      "https://github.com/fablabnk/HeadPho",
+      "https://github.com/nuclearfurnace/smartstand",
+      "https://github.com/BurningTreeC/gainstagefx/blob/main/docs/models/acoustic_chorus.md",
+      "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM4556A_E.pdf",
+      "https://www.alldatasheet.com/datasheet-pdf/pdf/7450/NJRC/NJM4556.html",
+      "https://akizukidenshi.com/goodsaffix/njm4556a.pdf",
+      "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "title": "NJM4556A Datasheet(E) - Dual High Current Operational Amplifier",
+      "doc_number": "NJM4556A_E",
+      "revision": "Ver. 2025-03-06",
+      "date": "2025-03-06",
+      "url": "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM4556A_E.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current vendor English datasheet. This pass re-confirmed the search-result title 'NJM4556A - 1 - 20250306 NJM4556AD and NJM4556AL are the NRND products.' The content was verified earlier from a byte copy with the same filename."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "title": "NJM4556A datasheet (Japanese) - 2回路入り高出力電流オペアンプ",
+      "doc_number": "NJM4556A_J",
+      "revision": "Ver. 2025-03-06",
+      "date": "2025-03-06",
+      "url": "https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/NJM4556A_J.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Search-result title 'NJM4556A - 1 - 20250306 2 回路入り高出力電流オペアンプ ■ 概 要' (re-confirmed). Unlike NJM4580_J 20250303, the page-1 title shows no 保守品 line. Content not read."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "title": "NJM4556A Datasheet(E) (third-party GitHub copy of the 20250306 edition)",
+      "doc_number": "NJM4556A_E",
+      "revision": "Ver. 2025-03-06",
+      "date": "2025-03-06",
+      "url": "https://github.com/1vers1on/m68k-computer/blob/main/docs/static/datasheets/NJM4556A_E.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Committed 2026-09-08. 4 pages; its text was compared with Ver.2011-06-08 in an earlier pass."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A (English) - Mouser distributor copy",
+      "doc_number": "NJM4556A_E",
+      "revision": "Ver. 2020-03-26",
+      "date": "2020-03-26",
+      "url": "https://www.mouser.com/datasheet/2/294/NJM4556A_E-1917507.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Search-result title 'NJM4556A - 1 - Ver.2020-03-26 NJM4556AD NJM4556AM NJM4556AV NJM4556AL' (re-confirmed). The title has no NRND text. This is the last New JRC edition before Nisshinbo reissued the sheet. Content not read."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556AL datasheet (LCSC distributor copy)",
+      "doc_number": "NJM4556A_E",
+      "revision": "",
+      "date": "",
+      "url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2412090938_JRC-NJM4556AL_C78948.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "New in this pass. Seen in search results as 'NJM4556AL | Datasheet | JRC | LCSC Electronics' (part C78948). The edition was not visible; the upload stamp predates the Nisshinbo 20250306 reissue, so it may freeze a pre-NRND edition (unconfirmed)."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A Dual High Current Operational Amplifier (English)",
+      "doc_number": "NJM4556A_E",
+      "revision": "Ver. 2011-06-08",
+      "date": "2011-06-08",
+      "url": "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Legacy New JRC URL, used as the datasheet link in the KiCad symbol library and many projects. A 2016 GitHub copy from a project linking this URL is Ver.2011-06-08. Not re-confirmed by web search in this pass (unconfirmed)."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A Dual High Current Operational Amplifier (third-party GitHub copy of Ver.2011-06-08)",
+      "doc_number": "NJM4556A_E",
+      "revision": "Ver. 2011-06-08",
+      "date": "2011-06-08",
+      "url": "https://github.com/nuclearfurnace/smartstand/blob/master/datasheets/NJM4556A_E.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Committed 2016-12-15. 4 pages; lists NJM4556AD/AM/AV/AL with no NRND notice. Its electrical tables and graphs are identical to the 20250306 edition."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A datasheet, Japanese (Akizuki Denshi distributor copy)",
+      "doc_number": "NJM4556A (JA)",
+      "revision": "Ver. 2003-03-13",
+      "date": "2003-03-13",
+      "url": "https://akizukidenshi.com/goodsaffix/njm4556a.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "An earlier web sweep saw the search-result title 'NJM4556A - 1 - Ver.2003-03-13 2 回路入り高出力電流オペアンプ'. This is the oldest NJM4556A edition found, and it is in Japanese despite the filename. Not re-seen in this pass; content not read."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A datasheet, Japanese (Akizuki Denshi distributor copy)",
+      "doc_number": "NJM4556A_J",
+      "revision": "Ver. 2011-06-08",
+      "date": "2011-06-08",
+      "url": "https://akizukidenshi.com/goodsaffix/njm4556a_j.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "An earlier web sweep saw the search-result title 'NJM4556A - 1 - Ver.2011-06-08 2 回路入り高出力電流オペアンプ'. Not re-seen in this pass; content not read."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A datasheet, Japanese (Zaikostore distributor copy)",
+      "doc_number": "NJM4556A (JA)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.zaikostore.com/jsp/pdf/PDFFILE/JRC/FIL20466.PDF",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed: known only from an earlier sweep's search title 'NJM4556A - 1 - ２回路入り高出力電流オペアンプ'. Edition not visible."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A Dual Op Amp Datasheet (Scribd upload 'NJM4556A-E')",
+      "doc_number": "NJM4556A_E",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/310047217/NJM4556A-E",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Re-seen in search results in this pass; its snippet shows the standard general-description text. The revision is not visible; the upload id suggests about 2016, so it is probably Ver.2011-06-08 (unconfirmed)."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556AL datasheet (alldatasheet copy)",
+      "doc_number": "NJM4556A_E",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7448/NJRC/NJM4556AL.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "New in this pass. Seen in search results ('NJM4556AL Datasheet(PDF) - New Japan Radio'). alldatasheet's low id suggests an early (pre-2011) NJM4556A edition, possibly Ver.2003 (unconfirmed)."
+    },
+    {
+      "vendor": "JRC (New Japan Radio)",
+      "title": "NJM4556 (original, non-A) datasheet (alldatasheet copy)",
+      "doc_number": "NJM4556",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7450/NJRC/NJM4556.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Re-seen in search results ('NJM4556 Datasheet(PDF) - New Japan Radio'; view page /datasheet-pdf/view/7450/NJRC/NJM4556.html). Probably the pre-A NJM4556 sheet. Content not read."
+    },
+    {
+      "vendor": "JRC (New Japan Radio)",
+      "title": "NJM4556 datasheet (datasheetbank copy) - DUAL HIGH CURRENT OPERATIONAL AMPLIFIER",
+      "doc_number": "NJM4556",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetbank.com/datasheet/JRC/NJM4556.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Re-seen in search results ('NJM4556 Datasheet PDF, Japan Radio Corporation : DUAL HIGH CURRENT OPERATIONAL AMPLIFIER'). A second mirror of the non-A sheet. Content not read."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556AV-TE1 datasheet (componentsearchengine copy)",
+      "doc_number": "NJM4556A_E",
+      "revision": "",
+      "date": "",
+      "url": "https://componentsearchengine.com/Datasheets/1/NJM4556AV-TE1.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed URL: it appears only as the datasheet field in the fablabnk HeadPho BOM. Edition and availability not verified."
+    },
+    {
+      "vendor": "NEC",
+      "title": "uPC4556 High Performance Dual Decompensated Operational Amplifier (DIFFERENT part; for disambiguation only)",
+      "doc_number": "uPC4556 (NEC document number unknown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.chipfind.net/datasheet/nec/upc4556.htm",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Seen in search results. It describes the uPC4556 as an AC-enhanced uPC4558 whose decompensation guarantees 20 MHz GBW at gains above 20 dB; about 10 pages. Other mirrors: alldatasheet ids 6766 (UPC4556) and 6767 (UPC4556C), datasheetcatalog, datasheetq. This is not an NJM4556 datasheet."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A - Dual High Current Operational Amplifier (NJM4556AD / NJM4556AM / NJM4556AV / NJM4556AL), English",
+      "doc_number": "NJM4556A (EN)",
+      "revision": "Ver. 2003-03-18",
+      "date": "2003-03-18",
+      "url": "https://media.digikey.com/pdf/Data%20Sheets/NJR%20PDFs/NJM4556A.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The search-result title reads 'NJM4556A - 1 - Ver.2003-03-18 NJM4556AD NJM4556AM NJM4556AV NJM4556AL'. This is the earliest English NJM4556A edition found. It is five days newer than the Japanese Ver.2003-03-13 (Akizuki copy). It already lists all four packages, including the SSOP8 (AV)."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A Datasheet - NJR Corporation/NJRC (DigiKey datasheet viewer)",
+      "doc_number": "NJM4556A_E",
+      "revision": "Ver. 2011-06-08",
+      "date": "2011-06-08",
+      "url": "https://digikey.com/en/datasheets/njr-corporationnjrc/njr-corporationnjrc-njm4556a_e",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "The search summary says 'NJM4556A - Ver.2011-06-08 is available as a PDF datasheet from DigiKey'. The same viewer page also appears at digikey.de/en/datasheets/... and digikey.co.uk/en/datasheets/.... The revision is taken from the summary, not the page title, so confidence is medium."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A Datasheet(PDF) - New Japan Radio (alldatasheet doc 7445)",
+      "doc_number": "NJM4556A",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7445/NJRC/NJM4556A.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A different alldatasheet document ID (7445) from the listed 7448 (NJM4556AL) and 7450 (NJM4556) copies. The summary gives 239 Kbytes, 5 pages. The early low ID suggests an early-2000s upload, possibly the 2003 edition, but this is not confirmed."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556AD datasheet (PDF) - New Japan Radio (alldatasheet.jp doc 7446)",
+      "doc_number": "NJM4556A",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.jp/datasheet-pdf/pdf/7446/NJRC/NJM4556AD.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Japanese alldatasheet mirror under a separate document ID (7446, NJM4556AD)."
+    },
+    {
+      "vendor": "JRC (New Japan Radio)",
+      "title": "njm4556d.pdf (Matsumoto Musen webshop)",
+      "doc_number": "NJM4556 (NJM4556D)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.matsumoto-musen.co.jp/0_webshop/files/ic/njm4556d.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A Japanese parts shop's copy, filed under the original non-A part NJM4556D. This may be an edition of the original NJM4556 (pre-A) datasheet, which would make it useful evidence of the original part. The search summary does not show its content or revision."
+    },
+    {
+      "vendor": "JRC (New Japan Radio)",
+      "title": "NJM4556 DUAL HIGH CURRENT OPERATIONAL AMPLIFIER (New Japan Radio) - datasheet4u id 1101698",
+      "doc_number": "NJM4556",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet-pdf/NewJapanRadio/NJM4556/pdf.php?id=1101698",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the non-A NJM4556 datasheet. The same document is at https://datasheet4u.com/datasheets/New-Japan-Radio/NJM4556/1101698 (titled 'NJM4556 Datasheet - SOP AMPLIFIER') and at www.datasheet4u.com/datasheet-pdf/New%20Japan%20Radio/NJM4556/pdf.php?id=1101698."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A, NJM Datasheet PDF (New Japan Radio) - datasheet4u id 455100",
+      "doc_number": "NJM4556A",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet/New-Japan-Radio/NJM4556A-455100",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The same document ID 455100 is mirrored on the Japanese sister site at http://www.datasheet.jp/pdf/455100/NJM4556A.html."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A Datasheet PDF - Japan Radio Corporation (datasheetq)",
+      "doc_number": "NJM4556A",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/NJM4556A-doc-NJRC",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The summary gives 4 pages and 199.7 kB. The alldatasheet copies are 5 pages and 239 KB, so this may be a different (possibly older) edition. Not confirmed."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "title": "NJM4556A datasheet - Dual High Current Operational Amplifier (digchip)",
+      "doc_number": "NJM4556A",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/330/NJM4556A.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "There is also a second digchip page at https://www.digchip.com/datasheets/parts/datasheet/2/330/NJM4556A.php, titled 'Dual High Current Operational Amplifier. The NJM4556A'."
+    },
+    {
+      "vendor": "JRC (New Japan Radio)",
+      "title": "NJM4556D DataSheet - New Japan Radio Co., Ltd. - Datasheets360.com",
+      "doc_number": "NJM4556 (NJM4556D)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheets360.com/part/detail/njm4556d/-3137595544822529180/",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Part-detail page for the non-A NJM4556D, with a datasheet link. The document's content and edition are not shown."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "New JRC (NJR)",
+      "doc_number": "NJM4556A (JA)",
+      "revision": "Ver.2003-03-13",
+      "date": "2003-03-13",
+      "changes": "Earliest NJM4556A edition found (Japanese; Akizuki copy). Known only from its search-result title; its differences from later editions are unknown."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "doc_number": "NJM4556A_E / NJM4556A_J",
+      "revision": "Ver.2011-06-08",
+      "date": "2011-06-08",
+      "changes": "EN verified in full; a JA edition exists (Akizuki copy). Covers NJM4556AD/AM/AV/AL (DIP8, DMP8, SSOP8, SIP8). Supply +/-2 to +/-18 V, IO 70 mA, SR 3 V/us, GB 8 MHz, en 10 nV/rtHz. Pd 700/300/250/800 mW. D/L grades are specified at +/-15 V; M/V grades at V+=9 V/V-=0 V. The PDF has no change log."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "doc_number": "NJM4556A_E",
+      "revision": "Ver.2020-03-26",
+      "date": "2020-03-26",
+      "changes": "Known from the Mouser mirror's title only (re-confirmed). Still lists NJM4556AD/AM/AV/AL, with no NRND text in the title. Changes from Ver.2011-06-08 are unknown."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "doc_number": "NJM4556A_E / NJM4556A_J",
+      "revision": "20250306",
+      "date": "2025-03-06",
+      "changes": "Reissued under Nisshinbo. The EN edition adds 'NJM4556AD and NJM4556AL are the NRND products' (re-confirmed from the vendor PDF title) and NRND tags on the DIP8/SIP8 outlines. Terminology changed from 'Operating Voltage/Current' to 'Supply Voltage/Current'. No change to any limit, typical value, rating, pinout, equivalent circuit or graph compared with Ver.2011-06-08. No die change is indicated and no PCN number was found."
+    },
+    {
+      "vendor": "New JRC (NJR)",
+      "doc_number": "NJM4556A (EN)",
+      "revision": "Ver.2003-03-18",
+      "date": "2003-03-18",
+      "changes": "Earliest English NJM4556A edition found (DigiKey media copy). It follows the Japanese Ver.2003-03-13 by five days. The title already lists NJM4556AD/AM/AV/AL, so the SSOP8 (AV) was offered by March 2003. Differences from Ver.2011-06-08 are unknown; the search summary shows only the title."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "kind": "second-source-difference",
+      "vendor": "NEC (vs JRC)",
+      "when": "1980s (uPC4556 on late-1980s Taito boards per MAME notes)",
+      "part_numbers_affected": [
+        "uPC4556",
+        "uPC4556C",
+        "'4556' markings on vintage boards"
+      ],
+      "identification": "Check the prefix and logo, not the digits. NEC 'uPC4556' (DIP8, C suffix) is a different device from JRC 'NJM4556'/'NJM4556A'.",
+      "summary": "Same '4556' number, different silicon. NEC's uPC4556 is a decompensated high-speed dual derived from its uPC4558 (20 MHz GBW guaranteed at gain > 20 dB, 5 V/us). JRC's NJM4556/NJM4556A is an internally compensated 70 mA / 150 ohm line and headphone driver, used at unity gain in the O2 output stage.",
+      "spec_deltas": [
+        {
+          "parameter": "Compensation",
+          "before": "NJM4556A: internally compensated; used as a unity-gain buffer in the O2",
+          "after": "uPC4556: decompensated; GBW guaranteed only at gain >= 20 dB"
+        },
+        {
+          "parameter": "GBW",
+          "before": "8 MHz typ",
+          "after": "20 MHz (at gain >= 20 dB)"
+        },
+        {
+          "parameter": "Slew rate",
+          "before": "3 V/us typ",
+          "after": "5 V/us"
+        },
+        {
+          "parameter": "Output drive",
+          "before": "+/-70 mA into 150 ohm (+/-10.5 V min)",
+          "after": "not seen in datasheet summaries (no 150 ohm drive claim)"
+        }
+      ],
+      "audio_impact": "A uPC4556 placed in an NJM4556 socket at unity or low gain (e.g. the O2 output buffer) risks oscillation, and its heavy-load drive is unknown. An NJM4556A replacing a uPC4556 in a high-gain vintage stage would lose bandwidth and slew rate.",
+      "compatibility_risk": "high - a decompensated part is not a drop-in for unity-gain buffer or driver roles. The pinout is the standard dual, but the stability requirements differ.",
+      "sources": [
+        "https://www.chipfind.net/datasheet/nec/upc4556.htm",
+        "https://www.alldatasheet.com/datasheet-pdf/pdf/6766/NEC/UPC4556.html",
+        "https://www.alldatasheet.com/datasheet-pdf/pdf/6767/NEC/UPC4556C.html",
+        "https://www.datasheetcatalog.com/datasheets_pdf/U/P/C/4/UPC4556.shtml"
+      ],
+      "confidence": "medium",
+      "verification": "Not re-searched in this pass (medium confidence, second-source kind, not from the sweep). Kept as assembled from the earlier datasheet-mirror research."
+    },
+    {
+      "kind": "lifecycle",
+      "vendor": "Nisshinbo Micro Devices (ex-New JRC)",
+      "when": "Reported as a maintenance product (保守品) on 7 April 2023 (foxtango101 blog). The Nisshinbo datasheet revision dated 2025-03-06 states the NRND status.",
+      "part_numbers_affected": [
+        "NJM4556AD",
+        "NJM4556AL"
+      ],
+      "identification": "The first page of the Nisshinbo NJM4556A_E datasheet (20250306) reads 'NJM4556AD and NJM4556AL are the NRND products.' NJM4556AM (SOP8) and NJM4556AV (SSOP8) are not named as NRND in that header. NJM4556AD is still stocked by distributors.",
+      "summary": "This merges the blog's maintenance-list report with the vendor datasheet notice. Nisshinbo marks the DIP8 (NJM4556AD) and SIP8 (NJM4556AL) versions as NRND. The surface-mount NJM4556AM/AV are not flagged in that header. This matches a March 2025 pattern of Nisshinbo datasheets flagging DIP packages as NRND (e.g. NJM2717D, NJM2392D, NJU7022D/7024D). No die or process change is reported.",
+      "spec_deltas": [],
+      "audio_impact": "None. This is a lifecycle warning only. Through-hole users (e.g. DIP-socketed O2 builds) face future supply loss and may need SOP8-on-adapter parts.",
+      "compatibility_risk": "low - no silicon change, only an availability risk for the DIP8/SIP8 packages. SMD versions continue.",
+      "sources": [
+        "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM4556A_E.pdf",
+        "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm4556a",
+        "https://foxtango101.blog.jp/archives/19678237.html",
+        "https://www.xecor.com/product/njm4556ad"
+      ],
+      "confidence": "high",
+      "verification": "A WebSearch surfaced the Nisshinbo NJM4556A_E.pdf header ('20250306 NJM4556AD and NJM4556AL are the NRND products'), which confirms the sweep's blog-based report with vendor documentation and narrows it to specific packages."
+    },
+    {
+      "kind": "renumbering-or-successor",
+      "vendor": "JRC / New JRC",
+      "when": "Before March 2003 (NJM4556A datasheet Ver.2003-03-18 on the DigiKey mirror; an Akizuki copy was previously reported as Ver.2003-03-13). The non-A NJM4556 appears in 1980s-1990s equipment.",
+      "part_numbers_affected": [
+        "NJM4556",
+        "NJM4556D",
+        "NJM4556M",
+        "NJM4556S",
+        "NJM4556L",
+        "NJM4556A",
+        "NJM4556AD",
+        "NJM4556AM",
+        "NJM4556AV",
+        "NJM4556AL"
+      ],
+      "identification": "Part marking: NJM4556 / 4556 with no 'A' (old) versus NJM4556A (new). The A datasheet adds an SSOP8 (AV) version. Non-A SIP parts appear in datasheet mirrors as both NJM4556S and NJM4556L, so the earlier 'S changed to L' rule is not reliable.",
+      "summary": "The part number moved from NJM4556 to NJM4556A. No vendor or web document found says whether this was a new die, a process change or a re-specification. The non-A datasheet (alldatasheet 7450, datasheetbank, octopart NJM4556S) carries the same 'DUAL HIGH CURRENT OPERATIONAL AMPLIFIER' title and 70 mA / 150 ohm role, but no side-by-side spec comparison was retrieved. A forum post calls the A 'the same as the original, but with an A'. The discovery hint that the A is a 'respecified' NJM4556 remains unconfirmed.",
+      "spec_deltas": [],
+      "audio_impact": "Unknown.",
+      "compatibility_risk": "low (presumed) - same function, same dual 8-pin op-amp role and same 70 mA / 150 ohm headline, but the non-A detailed limits (output current, minimum supply, noise) are unverified.",
+      "sources": [
+        "https://www.alldatasheet.com/datasheet-pdf/pdf/7450/NJRC/NJM4556.html",
+        "https://www.datasheetbank.com/datasheet/JRC/NJM4556.html",
+        "https://datasheet.octopart.com/NJM4556S-NJR-datasheet-104302.pdf",
+        "https://www.datasheetq.com/NJM4556L-doc-JRC",
+        "https://media.digikey.com/pdf/Data%20Sheets/NJR%20PDFs/NJM4556A.pdf",
+        "https://akizukidenshi.com/goodsaffix/njm4556a.pdf",
+        "https://audiokarma.org/forums/threads/jrc-njm4556-replacement.553219/",
+        "https://github.com/RBSC/SFG_Clone/blob/master/Board/NJM4556S.lbr",
+        "https://github.com/mamedev/mame/blob/master/src/mame/namco/namcos12_cdxa.cpp"
+      ],
+      "confidence": "low",
+      "verification": "Two WebSearches found no document explaining how the A differs from the non-A. They confirmed that both share the dual-high-current title and 70 mA / 150 ohm headline, found an NJM4556L listing that contradicts the S-to-L rule, and dated the A datasheet to 2003-03-18 (DigiKey mirror). Kept as renumbering, low confidence."
+    }
+  ],
+  "counterfeit_notes": "No counterfeit or remarking reports for NJM4556/NJM4556A were found; search coverage was limited. eBay listings of NJM4556AD advertised as '\"Original\" JRC' show that DIP stock now circulates on the grey market after the NRND notice; the 2023 保守品 report and the March 2025 datasheet both mark AD/AL as NRND. Remarked 4558/4559-class duals would not deliver 70 mA (unverified risk). Salvaged vintage '4556' parts may be NEC uPC4556, a decompensated part that is unstable at unity gain and not an equivalent, or Yamaha house-marked YM4556 parts. A practical check: at +/-15 V a genuine NJM4556A should hold about +/-11 V into 150 ohm (datasheet min +/-10.5 V), draw about 9 mA per package, and be stable as a unity-gain follower. Buy from authorized Nisshinbo distributors.",
+  "alternatives": [
+    "NJM4556AM / NJM4556AV: the same NJM4556A in DMP8/SSOP8, still active; the direct continuation for new designs",
+    "TI OPA1622: high-output-current audio op-amp designed for headphone drive",
+    "TI TPA6120A2: current-feedback headphone amplifier with higher output-current capability",
+    "TI LME49600 buffer inside the loop of a precision op-amp: for more current than a paralleled NJM4556A",
+    "ADI AD8397: high-output-current bipolar dual",
+    "NE5532 (SOIC-8): lower-current substitute; the Exits-1U Eurorack module uses it 'in lieu of NJM4556' for the headphone portion"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://semicon.njr.co.jp/eng/PDF/NJM4556A_E.pdf",
+    "http://semicon.njr.co.jp/eng/PDF/NJM4556_E.pdf",
+    "http://semicon.njr.co.jp/jpn/PDF/NJM4556A_J.pdf",
+    "http://www.datasheet.jp/pdf/455100/NJM4556A.html",
+    "http://www.njr.co.jp/products/semicon/PDF/NJM4556A_E.pdf",
+    "http://www.njr.co.jp/products/semicon/PDF/NJM4556A_J.pdf",
+    "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf",
+    "https://akizukidenshi.com/goodsaffix/njm4556a.pdf",
+    "https://akizukidenshi.com/goodsaffix/njm4556a_j.pdf",
+    "https://componentsearchengine.com/Datasheets/1/NJM4556AV-TE1.pdf",
+    "https://media.digikey.com/pdf/Data%20Sheets/NJR%20PDFs/NJM4556A.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/7448/NJRC/NJM4556AL.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/7450/NJRC/NJM4556.html",
+    "https://www.datasheetbank.com/datasheet/JRC/NJM4556.html",
+    "https://www.lcsc.com/datasheet/lcsc_datasheet_2412090938_JRC-NJM4556AL_C78948.pdf",
+    "https://www.matsumoto-musen.co.jp/0_webshop/files/ic/njm4556d.pdf",
+    "https://www.mouser.com/datasheet/2/294/NJM4556A_E-1917507.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/",
+    "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM4556A_E.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm4556a",
+    "https://www.nisshinbo-microdevices.co.jp/ja/design-support/discon/njx_discon.html",
+    "https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/NJM4556A_J.pdf",
+    "https://www.njr.com/semicon/PDF/NJM4556A_E.pdf",
+    "https://www.scribd.com/document/310047217/NJM4556A-E",
+    "https://www.zaikostore.com/jsp/pdf/PDFFILE/JRC/FIL20466.PDF"
+  ],
+  "open_questions": [
+    "The Ver.2003-03-13 (JA) and Ver.2020-03-26 (EN) editions are known only from search-result titles. Their contents and any spec differences from Ver.2011-06-08 are unknown. The LCSC (C78948) and alldatasheet (7448) copies may hold one of these; their editions were not visible.",
+    "The original NJM4556 (non-A) datasheet was not read (alldatasheet 7450, datasheetbank). Unknown: its specs, and whether NJM4556A is a new die or a re-specification.",
+    "uPC4556: the decompensated design and 20 MHz / 5 V/us figures are known from mirror summaries. Its output-current rating and minimum stable gain wording should be read from the NEC sheet (alldatasheet 6766).",
+    "Yamaha 'YM4556D' house-marked parts are known only from forum text; unconfirmed.",
+    "No PCN/EOL notice number or last-order date was found for the NRND/保守品 status of NJM4556AD/AL. Check Nisshinbo's 保守品 listing page for dates.",
+    "The JA 20250306 page-1 title shows no 保守品 line, unlike NJM4580_J 20250303 ('NJM4580D / NJM4580L は保守品です'). Check whether the JA NJM4556A edition carries the notice elsewhere.",
+    "Several archive_seed_urls are inferred from other NJR URL patterns and were never seen for this part (njr.co.jp/products/semicon, semicon.njr.co.jp, non-A NJM4556_E.pdf).",
+    "The NwAvGuy 'killed everything else' wording was not re-confirmed in this pass; read the O2 Details page text.",
+    "The Head-Fi op-amp round-up measured the 'JR4556', but its results were not extracted. The NwAvGuy 'Op Amp Measurements' page may also include NJM4556A data; not checked.",
+    "The DMP8 body dimensions come from community footprints only; check them against the Nisshinbo DMP8 package drawing."
+  ],
+  "sources": [
+    "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM4556A_E.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/NJM4556A_J.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm4556a",
+    "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/",
+    "https://www.nisshinbo-microdevices.co.jp/ja/design-support/discon/njx_discon.html",
+    "https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/NJM4580_J.pdf",
+    "https://www.mouser.com/datasheet/2/294/NJM4556A_E-1917507.pdf",
+    "https://www.lcsc.com/datasheet/lcsc_datasheet_2412090938_JRC-NJM4556AL_C78948.pdf",
+    "https://se.rs-online.com/web/p/op-amps/2444516",
+    "https://jp.rs-online.com/web/p/op-amps/2444515",
+    "https://se.rs-online.com/web/p/op-amps/2413462",
+    "https://diyaudiocart.com/product/njr-njm4556av-te1-op-amps-dual-high-current/",
+    "https://www.ebay.de/itm/294183845153",
+    "https://akizukidenshi.com/goodsaffix/njm4556a.pdf",
+    "https://akizukidenshi.com/goodsaffix/njm4556a_j.pdf",
+    "https://akizukidenshi.com/catalog/g/g111235/",
+    "https://www.zaikostore.com/jsp/pdf/PDFFILE/JRC/FIL20466.PDF",
+    "https://www.scribd.com/document/310047217/NJM4556A-E",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/7448/NJRC/NJM4556AL.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/7450/NJRC/NJM4556.html",
+    "https://www.datasheetbank.com/datasheet/JRC/NJM4556.html",
+    "https://www.chipfind.net/datasheet/nec/upc4556.htm",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/6766/NEC/UPC4556.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/6767/NEC/UPC4556C.html",
+    "https://www.datasheetcatalog.com/datasheets_pdf/U/P/C/4/UPC4556.shtml",
+    "https://github.com/1vers1on/m68k-computer/blob/main/docs/static/datasheets/NJM4556A_E.pdf",
+    "https://github.com/nuclearfurnace/smartstand/blob/master/datasheets/NJM4556A_E.pdf",
+    "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf",
+    "https://github.com/KiCad/kicad.github.io/blob/master/_symbols/Amplifier_Operational.html",
+    "https://github.com/RBSC/SFG_Clone/blob/master/Board/NJM4556S.lbr",
+    "https://github.com/mamedev/mame/blob/master/src/mame/namco/namcos12_cdxa.cpp",
+    "https://github.com/mamedev/mame/blob/master/src/mame/taito/rbisland.cpp",
+    "https://github.com/mamedev/mame/blob/master/src/mame/taito/taito_b.cpp",
+    "https://github.com/mamedev/mame/blob/master/src/mame/taito/taito_l.cpp",
+    "https://github.com/benregnier/Exits-1U",
+    "https://github.com/freeDSP/FreeDSP-G",
+    "http://nwavguy.blogspot.com/2011/08/o2-details.html",
+    "http://nwavguy.blogspot.com/2011/07/o2-headphone-amp.html",
+    "http://nwavguy.blogspot.com/2011/08/op-amp-measurements.html",
+    "https://forum.lowyat.net/topic/2089195/all",
+    "https://www.diyaudio.com/community/threads/njm4556a-opamp.182517/",
+    "https://www.head-fi.org/threads/opamp-round-up-measurements-opa2604-opa637-ad823-lme49860-jr4556-muses8820-and-8920-burson-v6-classic.870832/",
+    "https://www.audio-simulation.net/entry/2019/04/08/115956",
+    "https://foxtango101.blog.jp/archives/19678237.html",
+    "https://anoda.cocolog-nifty.com/mad/2012/04/post-ca45.html",
+    "https://www.aitendo.com/product/14069"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [
+      "NEC uPC4556 as a 'same-number second source or equivalent (unverified)' of NJM4556: refuted. Datasheet mirrors describe the uPC4556 as a 'High Performance Dual Decompensated Operational Amplifier' (an AC-enhanced uPC4558 with 20 MHz GBW at gain >= 20 dB and 5 V/us), a different design from JRC's unity-gain-stable 70 mA driver (https://www.chipfind.net/datasheet/nec/upc4556.htm, https://www.alldatasheet.com/datasheet-pdf/pdf/6766/NEC/UPC4556.html).",
+      "[change register] NJM4556 identification rule 'SIP suffix changed from S to L': contradicted, because NJM4556L (non-A) also appears in JRC datasheet mirrors. Rule removed from the renumbering entry.",
+      "[change register] Separate sweep entry 'NJM4556A maintenance (blog only)': merged into the vendor-confirmed NRND lifecycle entry, not dropped as refuted."
+    ],
+    "corrections": [
+      "Changed NEC's role from possible second source to 'unrelated same-number part'. Added a high-risk silicon_changes entry for the uPC4556 decompensated design, with spec deltas and the unity-gain oscillation hazard, and updated the caveats, counterfeit notes and open questions to match.",
+      "Added the LCSC NJM4556AL datasheet mirror (C78948). Its upload stamp of 2024-12-09 predates the 20250306 reissue; the edition is unknown.",
+      "Added the alldatasheet NJM4556AL mirror (id 7448); edition unknown.",
+      "Added the NEC uPC4556 datasheet mirror as a disambiguation entry.",
+      "Added Nisshinbo's NRND/保守品 listing pages (EN and JA) to sources and archive seeds, and noted that NJM4580_J 20250303 carries the 保守品 notice on page 1 while the NJM4556A_J title does not.",
+      "Added RS listings confirming GBW 8 MHz, SR 3 V/us and 4-36 V supply for NJM4556AV-TE1/AM-TE1.",
+      "Downgraded the Akizuki Ver.2003-03-13 and JA Ver.2011-06-08 copies from high to medium: they were seen only in an earlier sweep and not re-confirmed in this pass. Zaikostore moved from medium to low (unconfirmed).",
+      "Marked the NwAvGuy 'killed everything else' paraphrase as not re-confirmed. Web search confirmed only that the O2 uses NJM4556A in its current-gain (output) stage.",
+      "silicon_changes NJM4556 -> NJM4556A remains low confidence. No web source confirms the 'respecified' hint or a die change."
+    ],
+    "unverified_urls": [
+      "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf",
+      "https://www.njr.com/semicon/PDF/NJM4556A_E.pdf",
+      "https://akizukidenshi.com/goodsaffix/njm4556a.pdf",
+      "https://akizukidenshi.com/goodsaffix/njm4556a_j.pdf",
+      "https://www.zaikostore.com/jsp/pdf/PDFFILE/JRC/FIL20466.PDF",
+      "https://componentsearchengine.com/Datasheets/1/NJM4556AV-TE1.pdf",
+      "http://www.njr.co.jp/products/semicon/PDF/NJM4556A_E.pdf",
+      "http://www.njr.co.jp/products/semicon/PDF/NJM4556A_J.pdf",
+      "http://semicon.njr.co.jp/eng/PDF/NJM4556A_E.pdf",
+      "http://semicon.njr.co.jp/jpn/PDF/NJM4556A_J.pdf",
+      "http://semicon.njr.co.jp/eng/PDF/NJM4556_E.pdf",
+      "https://www.audio-simulation.net/entry/2019/04/08/115956",
+      "https://anoda.cocolog-nifty.com/mad/2012/04/post-ca45.html",
+      "https://www.aitendo.com/product/14069",
+      "https://www.headphonesty.com/2018/03/1667/"
+    ],
+    "claims_confirmed": [
+      "The current EN datasheet is revision 20250306 and states 'NJM4556AD and NJM4556AL are the NRND products' (https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM4556A_E.pdf)",
+      "A JA datasheet revision 20250306 exists; its page-1 title shows no 保守品 line (https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/NJM4556A_J.pdf)",
+      "The Nisshinbo NJM4556A Series product page exists (https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm4556a)",
+      "The Mouser mirror holds EN Ver.2020-03-26 listing NJM4556AD/AM/AV/AL (https://www.mouser.com/datasheet/2/294/NJM4556A_E-1917507.pdf)",
+      "The datasheet describes +/-70 mA into 150 ohm (+/-10.5 V), a +/-2 to +/-18 V supply, and many NJM4558 features combined with 150 ohm drive (https://www.scribd.com/document/310047217/NJM4556A-E)",
+      "NJM4556AV-TE1 is 8 MHz, 3 V/us, 18 V, SSOP-8 and active at RS (https://jp.rs-online.com/web/p/op-amps/2444515, https://se.rs-online.com/web/p/op-amps/2444516)",
+      "NJM4556AM-TE1 (DMP8, 8 MHz) is listed at RS (https://se.rs-online.com/web/p/op-amps/2413462)",
+      "Nisshinbo publishes NRND/保守品 listing pages (https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/, https://www.nisshinbo-microdevices.co.jp/ja/design-support/discon/njx_discon.html)",
+      "The foxtango101 blog reports several ex-JRC op-amps, including NJM4556A, designated 保守品 (https://foxtango101.blog.jp/archives/19678237.html)",
+      "NJM4580_J 20250303 marks NJM4580D/L as 保守品, the same NRND wave (https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/NJM4580_J.pdf)",
+      "Mirrors of the non-A NJM4556 'Dual High Current Operational Amplifier' sheet exist (https://www.alldatasheet.com/datasheet-pdf/pdf/7450/NJRC/NJM4556.html, https://www.datasheetbank.com/datasheet/JRC/NJM4556.html)",
+      "An alldatasheet NJM4556AL mirror exists (https://www.alldatasheet.com/datasheet-pdf/pdf/7448/NJRC/NJM4556AL.html)",
+      "An LCSC NJM4556AL datasheet copy exists (https://www.lcsc.com/datasheet/lcsc_datasheet_2412090938_JRC-NJM4556AL_C78948.pdf)",
+      "The NEC uPC4556 is a decompensated dual (20 MHz GBW at > 20 dB gain, 5 V/us) and not an NJM4556 equivalent (https://www.chipfind.net/datasheet/nec/upc4556.htm)",
+      "The O2 uses NJM4556A in its current-gain/output stage (http://nwavguy.blogspot.com/2011/08/o2-details.html, https://forum.lowyat.net/topic/2089195/all)"
+    ],
+    "web_searches_used": 6
+  },
+  "tier": "B",
+  "category": "headphone-driver",
+  "product_pages": [
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm4556a"
+  ],
+  "revision_chain_notes": "JRC original NJM4556 (non-A, D/M/S/L packages): no dated edition was found. Copies exist, but none shows a revision: alldatasheet 7450 (already listed), datasheetbank (already listed), datasheet4u id 1101698, datasheets360 NJM4556D, and Matsumoto Musen njm4556d.pdf. The njm4556d.pdf copy is the best candidate for an original pre-A edition. Its date, and any 1980s/1990s JRC databook edition, are still MISSING.\n\nNew JRC NJM4556A English: Ver.2003-03-18 (NEW; media.digikey.com NJM4556A.pdf) -> Ver.2011-06-08 (smartstand GitHub copy, njr.com legacy URL; DigiKey viewer per the summary) -> Ver.2020-03-26 (Mouser) -> Nisshinbo 20250306 (NRND for AD/AL). No edition between 2011 and 2020 surfaced in searches for Ver.2013/2014/2016/2018.\n\nNew JRC NJM4556A Japanese: Ver.2003-03-13 (Akizuki) -> Ver.2011-06-08 (Akizuki) -> Nisshinbo 20250306. A Japanese counterpart of the Ver.2020-03-26 English edition is still MISSING.\n\nOpen question: the datasheetq copy is 4 pages and 199.7 kB, while the alldatasheet copies are 5 pages and 239 KB. It may be a different or older edition; unverified. No PCN or die-change note was found.\n\nNEC uPC4556 is a different part and not a second source. Its NEC document number is still unknown, and none of the 6 searches addressed it. No other second sources were found."
+}

@@ -1,0 +1,641 @@
+{
+  "id": "AD847",
+  "name": "AD847 / AD827 (single / dual high-speed bipolar video op amp)",
+  "tagline": "ADI's 50 MHz, 300 V/us video op amp. In the 1990s it became a favourite CD-player and DAC upgrade, praised for fast, dynamic sound with strong bass.",
+  "technology": "A bipolar, voltage-feedback, high-speed op amp (50 MHz unity-gain bandwidth, 300 V/us). It is internally compensated to be stable at unity gain and is rated to drive unlimited capacitive load. ADI's SPICE macro-model uses an NPN differential input pair. According to ADI's electronics textbook, the AD848 (stable at G>=5) and AD849 (stable at G>=25) are basically the same design with different internal compensation. ADI's AD827 data sheet calls it the dual version of the 'industry-standard AD847'. The fab process name (complementary bipolar or otherwise) was not verified this run.",
+  "manufacturers": [
+    "Analog Devices"
+  ],
+  "part_numbers": [
+    {
+      "pn": "AD847JN",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (ADI lifecycle not verified; a non-Z pre-RoHS part, so probably obsolete, but unconfirmed)",
+      "notes": "Single, J grade (0 to +70 C), 8-lead plastic DIP (N-8), per the ordering guide as summarised from the datasheet. Datasheet mirrors: radiolocman di=351743, futurlec."
+    },
+    {
+      "pn": "AD847JNZ",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (Octopart hosts a datasheet under this PN; ADI status not verified)",
+      "notes": "The 'Z' version of the JN. By ADI convention 'Z' marks a RoHS/Pb-free package, not a die change (not confirmed in a datasheet this run)."
+    },
+    {
+      "pn": "AD847JR / AD847JRZ / AD847JRZ-REEL7",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (listed at Mouser per a GitHub URL list; not web-confirmed)",
+      "notes": "J grade, SOIC-8 (the datasheet lists a Small Outline 'R' package)."
+    },
+    {
+      "pn": "AD847AR / AD847ARZ / AD847ARZ-REEL7",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (Octopart hosts a datasheet under AD847ARZ)",
+      "notes": "A grade (extended temperature), SOIC-8. ADI publishes separate worst-case SPICE models for the AD847A, J and S grades."
+    },
+    {
+      "pn": "AD847S (S grade, cerdip Q)",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "An S grade (military temperature range) is backed by ADI's AD847S SPICE model and by a separate ADI military detail specification (ad847s.pdf). The AD847 datasheet lists a Cerdip (Q) package. Exact orderables (e.g. SQ, /883B, SMD numbers) were not verified."
+    },
+    {
+      "pn": "AD827JN / AD827JNZ",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "AD827JNZ was stocked at Digi-Key, Arrow and Mouser (2026 search), and ADI still has a sample-and-buy page. ADI's own lifecycle flag was not confirmed. AD827JN (non-Z) status unknown.",
+      "notes": "Dual, J grade (0 to +70 C), 8-lead plastic DIP (N-8). This is the part op-amp rollers use; Chinese marketplaces still sell it as a 'Fever Dual Op Amp'."
+    },
+    {
+      "pn": "AD827JR-16 (datasheet ordering guide: AD827JR)",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "obsolete (Digi-Key)",
+      "notes": "J grade, 16-lead plastic SO (R-16) per the datasheet ordering guide. It is NOT a drop-in for an SO-8 dual footprint. rf-microwave.com lists it as 'ceramic SOIC-16', which contradicts the datasheet's 'plastic SO'."
+    },
+    {
+      "pn": "AD827JRZ-16 / AD827JRZ-16-REEL7",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (listed at Findchips/Mouser; ADI status not verified)",
+      "notes": "The RoHS version of the 16-lead SO (R-16). Not an SO-8 part."
+    },
+    {
+      "pn": "AD827AQ",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "A grade, 8-lead cerdip (Q-8), confirmed in the datasheet ordering guide as summarised by search."
+    },
+    {
+      "pn": "AD827SQ",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "S grade (military temperature) cerdip. The part number appears on a Utmel component page, and the datasheet has an AD827A/S spec column. /883B variants were not verified."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Analog Devices",
+      "role": "originator and sole manufacturer (no second sources found)",
+      "period": "c. 1990 or earlier (SPICE model dated 12/90) to present",
+      "notes": "ADI's AD827 page and data sheet call the AD827 the dual version of the 'industry-standard AD847'. Sibling decompensated parts are the AD848 and AD849. ADI's related 50 MHz unlimited-capacitive-load parts are the AD817 and AD826."
+    },
+    {
+      "vendor": "PMI (Precision Monolithics Inc.)",
+      "role": "author of the original AD847 SPICE macro-model only (header 'JCB / PMI', 12/90)",
+      "period": "1990",
+      "notes": "This is model authorship only, seen in GitHub-hosted model copies and not web-confirmed. There is no evidence that PMI ever fabricated the AD847 die."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Unity-gain bandwidth / GBW",
+      "value": "50 MHz (AD847 and AD827)",
+      "condition": "unity-gain stable (AD848 is stable at G>=5, AD849 at G>=25)",
+      "source": "ADI AD827 data sheet / product page (search summary); ADI wiki electronics textbook ch.3"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "300 V/us",
+      "condition": "not stated",
+      "source": "ADI AD827 data sheet (https://www.analog.com/media/en/technical-documentation/data-sheets/AD827.pdf, search summary)"
+    },
+    {
+      "parameter": "Input voltage noise e_n",
+      "value": "15 nV/rtHz",
+      "condition": "frequency not stated in the summary",
+      "source": "ADI AD827 data sheet (search summary). This also confirms the e_n column of the ATE-25 table."
+    },
+    {
+      "parameter": "Input current noise i_n",
+      "value": "1.5 pA/rtHz (table value 1500 fA/rtHz)",
+      "condition": "frequency not stated",
+      "source": "ADI ATE-25 table (column mapping inferred; not re-verified)"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "Specified at +/-5 V to +/-15 V. The ATE-25 table gives 9 V to 36 V total.",
+      "condition": "",
+      "source": "ADI AD827 data sheet (search summary); ADI ATE-25 table"
+    },
+    {
+      "parameter": "Power / supply current",
+      "value": "AD827: 100 mW total at +/-5 V (about 5 mA per amplifier). ATE-25 table: AD847 4.8 mA, AD827 5.25 mA per amplifier.",
+      "condition": "+/-5 V supplies for the 100 mW figure",
+      "source": "ADI AD827 data sheet (search summary). The earlier 'only 100 milliamps' snippet was a garbling of 100 mW."
+    },
+    {
+      "parameter": "Input offset voltage",
+      "value": "AD827: 2 mV max (data sheet headline); ATE-25 table: 0.5 mV (probably typical)",
+      "condition": "grade not stated",
+      "source": "ADI AD827 data sheet (search summary); ADI ATE-25 table"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "3 uA (table value 3000 nA)",
+      "condition": "grade and typ/max not stated",
+      "source": "ADI ATE-25 table (column mapping inferred); consistent with the SPICE macro-model's NPN input"
+    },
+    {
+      "parameter": "Capacitive load drive",
+      "value": "unlimited (slew rate degrades with large loads)",
+      "condition": "",
+      "source": "ADI Ask the Applications Engineer-25"
+    },
+    {
+      "parameter": "Input stage type",
+      "value": "bipolar NPN differential pair, voltage feedback",
+      "condition": "",
+      "source": "ADI AD847/AD827 SPICE macro-models (.MODEL QX NPN), GitHub copies"
+    },
+    {
+      "parameter": "THD+N, output current",
+      "value": "not verified this run",
+      "condition": "",
+      "source": "The datasheet body was not read (search summaries only)"
+    }
+  ],
+  "reputation": {
+    "summary": "A niche-cult op amp for 1990s-era swaps. The AD847/AD827 were ADI video amplifiers that audiophiles fitted into CD-player output stages, DAC I/V and filter stages and headphone amps. The rec.audio FAQ listed the AD847/AD827 among 'the better op amps for audio'. Chinese reviewers (Soomal) group the AD847 with the AD797 as famous for big dynamics, a 'grand' sound and powerful bass. Western and Japanese listeners describe the AD827 as warm and slightly sweet, with a sharp attack, forward vocals and clean highs; some find it a little coarse or thin in the bass. It is still named as a rolling option: Fosi Audio lists the AD827 as compatible with the ZA3. All of these are subjective, anecdotal listening reports. No Audio Science Review or Samuel Groner measurements were found.",
+    "sonic_descriptors": [
+      "warm",
+      "a bit too sweet (AD827, Audio Asylum)",
+      "sharp attack",
+      "huge dynamics / grand sound (Soomal: 动态大，声音大气)",
+      "powerful bass (低频气势十足)",
+      "ADI 'both ends lifted' tonal tilt (两头翘, Soomal)",
+      "vocals forward, clean highs, slightly coarse (Japanese reviews)",
+      "fast, clean square-wave response without overshoot"
+    ],
+    "typical_uses": [
+      "CD-player analog output stage upgrades",
+      "DAC I/V conversion and output filter stages",
+      "headphone amplifiers and preamps",
+      "op-amp rolling in consumer gear (e.g. Fosi ZA3)",
+      "original design use: video and line drivers, flash-ADC input buffers, cable driving (unlimited capacitive load)"
+    ],
+    "caveats": [
+      "Bipolar input with microamp-level bias current (about 3 uA per the ATE-25 table): DC offset rises with high-impedance or unmatched source resistances. Check DC-coupled stages. The AD827's offset is specified at 2 mV max.",
+      "A 50 MHz part in sockets or adapters needs tight supply decoupling and short leads. This is general high-speed practice, not a documented AD827-specific failure.",
+      "It is specified from +/-5 V to +/-15 V and draws about 5 mA per amp, more than audio parts such as the NE5532-class alternatives.",
+      "The AD827 surface-mount version is a 16-lead SO (R-16: AD827JR-16 / AD827JRZ-16), so only the DIP-8 version is a drop-in for standard dual sockets. The non-Z AD827JR-16 is obsolete at Digi-Key.",
+      "Some listeners find it too sweet, or light and loose in the bass. One Japanese headphone-amp test reported reduced gain below about 200 Hz and a 'sparse' impression (anecdotal)."
+    ],
+    "sources": [
+      "https://www.audioasylum.com/cgi/t.mpl?f=tweaks&m=83181",
+      "https://www.diyaudio.com/community/threads/newbie-needs-help-upgrading-cd-player.67529/",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100005976.md",
+      "https://github.com/hardisj/erinsaudiocorner/blob/250f096128f8c8f97c0e2231a7a7b5fc3dd12702/content/english/Electronics/Fosi_za3.md",
+      "https://github.com/tin-nl/st-diskmags/blob/b2fc161489e5ba11aefb74a6f540011a719040f5/dba/10/AUDIO003.TXT",
+      "https://srad.jp/~tlab/journal/639987/",
+      "https://www5d.brichan.jp/PC/Column/PCSound/Review/ESI/DrDAC/DrDAC_opamp_AD.htm",
+      "https://bluegourd.jugem.jp/?eid=84",
+      "https://ameblo.jp/soundsuspension/entry-11185574156.html",
+      "https://www.amazon.com/2pieces-AD827-AD827JN-AD827JNZ-DIP-8/dp/B0DGY5FXB9",
+      "https://www.ebay.com/p/28020905026",
+      "https://www.analog.com/en/products/ad827.html",
+      "https://www.analog.com/en/products/ad847.html"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Analog Devices",
+      "title": "AD847: High Speed, Low Power Monolithic Op Amp (data sheet)",
+      "doc_number": "AD847",
+      "revision": "F",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD847.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "This is the canonical URL returned by search. The revision is Rev. F according to the radiolocman mirror label and the search summary; the printed date was not seen. It covers the Plastic DIP (N), Small Outline (R) and Cerdip (Q) packages, 12 pages. A lowercase ad847.pdf path is cited in a 2023 LaTeX bibliography and is probably the same file."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD827: High Speed, Low Power Dual Op Amp (data sheet)",
+      "doc_number": "AD827",
+      "revision": "C",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD827.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "date_text": "8/02 (Rev. B to Rev. C, per revision history)",
+      "note": "The URL was returned by search (a lowercase ad827.pdf also appeared). The radiolocman mirrors label it Revision C. The search summary quotes the revision history as '8/02 — changed from Rev. B to Rev. C, Outline Dimensions updated'. It was not confirmed that no later revision exists. The ordering guide lists AD827JN (N-8), AD827JR (R-16) and AD827AQ (Q-8)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD847S military detail specification",
+      "doc_number": "AD847S",
+      "revision": "",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad847s.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Returned by search with the snippet 'This specification documents the detail requirements for ...'. It is ADI's separate S-grade (military) spec. The revision was not seen."
+    },
+    {
+      "vendor": "Radiolocman (third-party mirror)",
+      "title": "Datasheet AD847 Analog Devices, Revision: F",
+      "doc_number": "AD847",
+      "revision": "F",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=121493",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Explicitly labelled Revision F. Other radiolocman AD847 entries whose revision was not shown: https://www.radiolocman.com/datasheet/data.html?di=351761 and AD847JN at https://radiolocman.com/datasheet/data.html?%2FAD847JN=&di=351743."
+    },
+    {
+      "vendor": "Radiolocman (third-party mirror)",
+      "title": "Datasheet AD827 Analog Devices, Revision: C",
+      "doc_number": "AD827",
+      "revision": "C",
+      "date": "2002-08",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=121479",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Explicitly labelled Revision C. A second Rev. C copy is at https://www.radiolocman.com/datasheet/pdf.html?di=171833, and an AD827JNZ entry with the revision not shown is at https://www.radiolocman.com/datasheet/data.html?di=79865."
+    },
+    {
+      "vendor": "Alldatasheet (third-party mirror)",
+      "title": "AD847 Datasheet (PDF) - High Speed, Low Power Monolithic Op Amp",
+      "doc_number": "AD847",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48469/AD/AD847.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "The revision held was not shown clearly in the search summary."
+    },
+    {
+      "vendor": "Alldatasheet (third-party mirror)",
+      "title": "AD827 Datasheet (PDF)",
+      "doc_number": "AD827",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48430/AD/AD827.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "The revision held was not shown."
+    },
+    {
+      "vendor": "Octopart (distributor aggregator mirror)",
+      "title": "High Speed, Low Power Monolithic Op Amp AD847",
+      "doc_number": "AD847",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/AD847JNZ-Analog-Devices-datasheet-9606624.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "The same document (ID 9606624) is also served under AD847ARZ: https://datasheet.octopart.com/AD847ARZ-Analog-Devices-datasheet-9606624.pdf."
+    },
+    {
+      "vendor": "Farnell (distributor mirror)",
+      "title": "AD847 High Speed, Low Power Monolithic Op Amp",
+      "doc_number": "AD847",
+      "revision": "",
+      "date": "",
+      "url": "https://www.farnell.com/datasheets/2147045.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Returned by search. The revision held was not shown."
+    },
+    {
+      "vendor": "Distrelec (distributor mirror)",
+      "title": "AD847 data sheet (Plastic DIP (N), Small Outline (R) and Cerdip (Q) Packages)",
+      "doc_number": "AD847",
+      "revision": "",
+      "date": "",
+      "url": "https://media.distrelec.com/Web/Downloads/_t/ds/Analog_Devices_AD847_eng_tds.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Returned by search. The revision held was not shown."
+    },
+    {
+      "vendor": "Datasheetcatalog / Digchip / Futurlec / Datasheetarchive (third-party mirrors)",
+      "title": "AD847 and AD827 legacy datasheet mirrors",
+      "doc_number": "AD847 / AD827",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD847.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Related copies: https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/2/AD827.shtml, https://www.digchip.com/datasheets/parts/datasheet/041/AD847.php, https://www.digchip.com/datasheets/parts/datasheet/041/AD827.php, https://www.futurlec.com/AnalogDevices/AD847JN.shtml, https://www.futurlec.com/AnalogDevices/AD827JN.shtml, https://www.datasheetarchive.com/AD827-datasheet.html, https://www.chipfind.net/datasheet/ad/ad827.htm, https://www.yumpu.com/en/document/view/23161434/ad847-high-speed-low-power-monolithic-op-amp-analog-devices, https://en.sekorm.com/doc/1684136.html. Which revision each copy holds is not known; check them for Rev. A/B (AD827) and Rev. A–E (AD847)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD847 SPICE Macro-model (ad847.cir)",
+      "doc_number": "ad847.cir",
+      "revision": "A",
+      "date": "",
+      "url": "https://www.analog.com/media/en/simulation-models/spice-models/ad847.cir?modelType=spice-models",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "Unconfirmed by web search. This is not a datasheet; it is included because its header carries dated revisions. The URL was seen only in a third-party LaTeX bibliography (accessed 23 Feb 2023)."
+    },
+    {
+      "vendor": "Analog Devices (copy on Studylib, third-party mirror)",
+      "title": "AD847 High-Speed Op Amp Data Sheet | Analog Devices",
+      "doc_number": "AD847",
+      "revision": "",
+      "date": "",
+      "url": "https://studylib.net/doc/25774930/ad847-application-note",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Came up in searches for the AD847 revision history. The page is titled 'application-note', but the listing says it is the data sheet. The search summary does not show which revision it is."
+    },
+    {
+      "vendor": "Analog Devices (copy on Radiolocman, third-party mirror)",
+      "title": "AD847 Datasheet Analog Devices, Download PDF",
+      "doc_number": "AD847",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=351761",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is a second Radiolocman entry (di=351761), separate from the Rev. F entry already listed (di=121493). The summary does not show its revision, so it may be an older or newer edition. Worth checking."
+    },
+    {
+      "vendor": "Analog Devices (copy on Digchip, third-party mirror)",
+      "title": "AD847 datasheet - High Speed, Low Power Monolithic op amp",
+      "doc_number": "AD847",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/041/AD847.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Digchip mirrors are often old, pre-2002 copies. The revision is not shown in the search summary."
+    },
+    {
+      "vendor": "Analog Devices (copy on Datasheet4U, third-party mirror)",
+      "title": "AD847 High Speed/ Low Power Monolithic Op Amp Datasheet PDF",
+      "doc_number": "AD847",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/part-number/AD847.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The title spells it 'High Speed/ Low Power' with a slash, which is typical of OCR of older ADI data sheet layouts. This hints at a pre-Rev. F edition, but that is not confirmed. The revision is not shown."
+    },
+    {
+      "vendor": "Analog Devices (copy on Futurlec, third-party mirror)",
+      "title": "AD847 Datasheet (AD847JN)",
+      "doc_number": "AD847",
+      "revision": "",
+      "date": "",
+      "url": "https://www.futurlec.com/AnalogDevices/AD847JN.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the specific Futurlec URL for AD847JN. The existing grouped entry names Futurlec but gives only the datasheetcatalog URL. The part number AD847JN has no Z (RoHS) suffix, which suggests an older edition. The revision is not shown."
+    },
+    {
+      "vendor": "Analog Devices (copy on Alldatasheet, third-party mirror)",
+      "title": "AD827_17 Datasheet(PDF) - Analog Devices",
+      "doc_number": "AD827",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1011839/AD/AD827_17.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is a second Alldatasheet AD827 document (ID 1011839), separate from the one already listed (48430). The two probably hold different editions: 48430 is likely an older upload, and _17 is likely Rev. C or a later reprint. The revision is not shown in the summary."
+    },
+    {
+      "vendor": "Analog Devices (copy on DatasheetQ, third-party mirror)",
+      "title": "AD827 Datasheet PDF - Analog Devices",
+      "doc_number": "AD827",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/en/AD827-ADI",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The revision is not shown in the search summary."
+    },
+    {
+      "vendor": "Analog Devices (copy on Futurlec, third-party mirror)",
+      "title": "AD827 Datasheet (AD827JN)",
+      "doc_number": "AD827",
+      "revision": "",
+      "date": "",
+      "url": "https://www.futurlec.com/AnalogDevices/AD827JN.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The part number AD827JN has no Z (RoHS) suffix, which suggests a pre-2004 edition, possibly Rev. B or earlier. Not confirmed."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD827 data sheet",
+      "revision": "C",
+      "date": "8/02",
+      "changes": "Changed from Rev. B to Rev. C: Outline Dimensions updated (per the search summary of the revision history). Rev. A and Rev. B dates are unknown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD847 data sheet",
+      "revision": "F",
+      "date": "unknown",
+      "changes": "This is the current revision as labelled by the mirrors. The dates and changes of Rev. A to Rev. F were not found."
+    },
+    {
+      "vendor": "Analog Devices (model authored JCB / PMI)",
+      "doc_number": "AD847 SPICE macro-model (ad847.cir) - model, not datasheet",
+      "revision": "Rev. A",
+      "date": "12/90",
+      "changes": "Original macro-model: NPN input stage, dominant pole at 8.8 kHz, unlimited-C-load output model. Grade variants AD847J, A and S. Seen in GitHub copies only."
+    },
+    {
+      "vendor": "Analog Devices (TRW/ADI)",
+      "doc_number": "AD847 SPICE macro-model (ad847.cir) - model, not datasheet",
+      "revision": "Rev. B",
+      "date": "08/2006",
+      "changes": "Re-issued (header 'Rev. B'). The change is not described, and the netlist topology is unchanged. Seen in GitHub copies only."
+    },
+    {
+      "vendor": "Analog Devices (TRW/ADI)",
+      "doc_number": "AD827 SPICE macro-model (AD827.cir) - model, not datasheet",
+      "revision": "Rev. A / 1.0",
+      "date": "07/2006",
+      "changes": "First AD827-specific macro-model; its topology and values match the AD847 model. J, A and S grade variants. Seen in GitHub copies only."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD827 SPICE macro-model (AD827.cir) - model, not datasheet",
+      "revision": "header update",
+      "date": "08/10/2012",
+      "changes": "'Updated to new header style'. No electrical change stated."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No AD847- or AD827-specific counterfeit reports were found. Marketplace listings such as '2pieces AD827 AD827JN AD827JNZ DIP-8 Fever Dual Op Amp' on Amazon, eBay and AliExpress come from unknown sellers, and older non-Z 'JN' stock is a typical remarking target. Buy from ADI or authorised distributors (Digi-Key, Mouser, Arrow still listed AD827JNZ in 2026). The AD827 data sheet ordering guide confirms that the only surface-mount AD827 is a 16-lead plastic SO (R-16: AD827JR-16, now obsolete at Digi-Key, and AD827JRZ-16). Any 'AD827' in SOIC-8 is therefore not a genuine ADI package and should be treated as a remark. Discrete modules marketed as 'replace AD827' are not AD827s. Beyond the package fact, this advice is inferred (low confidence).",
+  "alternatives": [
+    "AD826 (ADI dual, 50 MHz / 350 V/us, unlimited capacitive load, 5-36 V; the closest sibling and preferred over the AD827 in an Audio Asylum shootout)",
+    "AD817 (ADI single equivalent of the AD826)",
+    "AD848 / AD849 (same design as the AD847 with lighter compensation; stable only at G>=5 or G>=25, so not drop-ins for unity-gain audio stages)",
+    "LM4562 / LME49720 (modern low-distortion bipolar audio dual)",
+    "OPA1612 / OPA1602 (modern low-noise bipolar audio dual)",
+    "AD8066 (ADI high-speed FET-input dual popular with rollers)"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://www.analog.com/UploadedFiles/Data_Sheets/AD827.pdf",
+    "http://www.analog.com/UploadedFiles/Data_Sheets/AD847.pdf",
+    "http://www.analog.com/static/imported-files/data_sheets/AD827.pdf",
+    "http://www.analog.com/static/imported-files/data_sheets/AD847.pdf",
+    "https://www.analog.com/en/products/ad827.html",
+    "https://www.analog.com/en/products/ad827/sample-buy.html",
+    "https://www.analog.com/en/products/ad847.html",
+    "https://www.analog.com/media/en/simulation-models/spice-models/ad847.cir",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD827.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD847.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad827.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad847.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad847s.pdf",
+    "https://www.analog.com/static/imported-files/data_sheets/AD827.pdf",
+    "https://www.analog.com/static/imported-files/data_sheets/AD847.pdf"
+  ],
+  "open_questions": [
+    "The AD847 Rev. F printed date and the full revision history (Rev. A to E) were not seen. The AD827 Rev. A and B dates are unknown, and it is unconfirmed that Rev. C (8/02) is still the latest AD827 revision.",
+    "ADI's own lifecycle status (Production/NRND/Obsolete) for the AD847 and AD827 was not seen. Distributors: AD827JNZ was stocked in 2026 (Digi-Key, Arrow, Mouser), and AD827JR-16 is obsolete at Digi-Key. The status of AD847JN, AD847JNZ and the AD847 SOIC parts is unknown.",
+    "No PCN was found for a fab transfer, die change or process change. None is known, but that has not been confirmed.",
+    "The legacy archive_seed_urls (/static/imported-files/ and /UploadedFiles/) are inferred from ADI URL patterns and were not seen for these parts.",
+    "Which revision each third-party mirror holds (alldatasheet, datasheetcatalog, digchip, futurlec, datasheetarchive, Farnell, Distrelec) is not known. The pre-2002 mirrors may hold AD827 Rev. A/B or AD847 Rev. D/E.",
+    "ATE-25 table values for i_n, Ib and Iq are still inferred. The THD, output current and noise test frequency still need to be read from the datasheet.",
+    "AD847 cerdip/military orderables (e.g. AD847AQ, AD847SQ, /883B, SMD) and AD827 /883B parts are not verified. The rec.audio FAQ's 'AD827LD' may be illustrative rather than a real orderable.",
+    "The process name (junction-isolated complementary bipolar?) is not verified."
+  ],
+  "sources": [
+    "https://www.analog.com/en/products/ad827.html",
+    "https://www.analog.com/en/products/ad847.html",
+    "https://www.analog.com/en/products/ad827/sample-buy.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD847.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD827.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad847s.pdf",
+    "https://www.radiolocman.com/datasheet/pdf.html?di=121493",
+    "https://www.radiolocman.com/datasheet/pdf.html?di=121479",
+    "https://www.radiolocman.com/datasheet/pdf.html?di=171833&p=2",
+    "https://www.digikey.com/en/products/detail/analog-devices-inc/AD827JR-16/611658",
+    "https://www.digikey.com/en/products/detail/AD827JNZ/AD827JNZ-ND/819983",
+    "https://www.arrow.com/en/products/ad827jnz/analog-devices",
+    "https://www.rf-microwave.com/en/analog-devices/ad827jr/high-speed-dual-operational-amplifier-ceramic-soic-16/ad827jr/",
+    "https://www.findchips.com/detail/AD827JRZ-16/Analog-Devices-Inc",
+    "https://www.utmel.com/components/ad827sq-operational-amplifier-feature-specification-datasheet?id=67",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/48469/AD/AD847.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/48430/AD/AD827.html",
+    "https://datasheet.octopart.com/AD847JNZ-Analog-Devices-datasheet-9606624.pdf",
+    "https://www.farnell.com/datasheets/2147045.pdf",
+    "https://media.distrelec.com/Web/Downloads/_t/ds/Analog_Devices_AD847_eng_tds.pdf",
+    "https://www.analog.com/en/resources/analog-dialogue/articles/ask-the-applications-engineer-25.html",
+    "https://wiki.analog.com/university/courses/electronics/text/chapter-3",
+    "https://github.com/jonberalpha/LaTeX-templates/blob/eae6dd338a25ea1f59003ceca9cca8459f2ce21f/Standard_Template_extended/Literatur.bib",
+    "https://github.com/ska-sa/roach1_hardware/blob/a77258d1dc035114b77bc0d53969307e3d14d22f/SimLib/Analog%20Devices/ad847.cir",
+    "https://github.com/ska-sa/roach1_hardware/blob/a77258d1dc035114b77bc0d53969307e3d14d22f/SimLib/Analog%20Devices/ad827.cir",
+    "https://github.com/thecowgoesmoo/SPICEyPedals/blob/60f67a6fdb14b9d7c83630b1cade358bfdd4e638/PartModels/modelos_subckt/Anal%C3%B3gicos/ad847.cir",
+    "https://github.com/rjhsun/ee91/blob/544e1f9195fd29769a816d29919823b1bc3c563d/Simulation/Transmitter/AD827.cir",
+    "https://github.com/Abinet508/Mouser-Page-Content-Scraper/blob/483c531b15e7616d3e0dc6edad689b495baceff6/Sample_URLs.tsv",
+    "https://github.com/Averyy/pcbparts-mcp/blob/fce2143dadd7656b570220978e122a8f75018b18/data/design-rules/rules/misc/op-amp-basics.md",
+    "https://github.com/tin-nl/st-diskmags/blob/b2fc161489e5ba11aefb74a6f540011a719040f5/dba/10/AUDIO003.TXT",
+    "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100005976.md",
+    "https://github.com/hardisj/erinsaudiocorner/blob/250f096128f8c8f97c0e2231a7a7b5fc3dd12702/content/english/Electronics/Fosi_za3.md",
+    "https://www.audioasylum.com/cgi/t.mpl?f=tweaks&m=83181",
+    "https://www.diyaudio.com/community/threads/newbie-needs-help-upgrading-cd-player.67529/",
+    "https://srad.jp/~tlab/journal/639987/",
+    "https://www5d.brichan.jp/PC/Column/PCSound/Review/ESI/DrDAC/DrDAC_opamp_AD.htm",
+    "https://bluegourd.jugem.jp/?eid=84",
+    "https://www.amazon.com/2pieces-AD827-AD827JN-AD827JNZ-DIP-8/dp/B0DGY5FXB9"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [
+      "The AD827 product-page snippet 'consuming only 100 milliamps' is wrong: the data sheet says 100 mW from +/-5 V supplies (https://www.analog.com/media/en/technical-documentation/data-sheets/AD827.pdf)."
+    ],
+    "corrections": [
+      "AD847 data sheet revision changed from 'unknown' to Rev. F. The canonical URL is AD847.pdf (uppercase); the printed date is still unknown.",
+      "AD827 data sheet revision changed from 'unknown' to Rev. C. Its revision history reads '8/02: Rev. B to Rev. C, Outline Dimensions updated'. The datasheet URL AD827.pdf is confirmed.",
+      "The AD827 SMD package is confirmed as a 16-lead plastic SO (R-16). AD827JR-16 is obsolete at Digi-Key. The draft 'AD827JR / AD827JRZ-16' row was split into obsolete AD827JR-16 and AD827JRZ-16.",
+      "AD827AQ is confirmed as an 8-lead cerdip (Q-8), and AD827SQ was added as a part number.",
+      "The AD847 data sheet lists the Cerdip (Q) package. The ADI AD847S military spec (ad847s.pdf) was added.",
+      "Added key specs: AD827 specified at +/-5 V to +/-15 V, 100 mW at +/-5 V, Vos 2 mV max. e_n of 15 nV/rtHz is confirmed.",
+      "The discovery hint 'AD827 obsolete?' is only partly true. AD827JR-16 is obsolete (Digi-Key), but AD827JNZ was still stocked at Digi-Key, Arrow and Mouser, and ADI has a sample-and-buy page.",
+      "Added datasheet mirrors: radiolocman (AD847 Rev. F, AD827 Rev. C x2), alldatasheet, Octopart, Farnell, Distrelec, datasheetcatalog, digchip, futurlec, datasheetarchive.",
+      "The SPICE-model URL and the Mouser AD847JNZ page were downgraded to low confidence because the web search did not confirm them.",
+      "No silicon/die change or PCN was found; silicon_changes stays empty."
+    ],
+    "unverified_urls": [
+      "https://www.analog.com/media/en/simulation-models/spice-models/ad847.cir?modelType=spice-models",
+      "https://www.mouser.com/ProductDetail/Analog-Devices/AD847JNZ?qs=%2FtpEQrCGXCwi%2Fm1CdjScgw%3D%3D",
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/ad847.pdf",
+      "https://www.analog.com/static/imported-files/data_sheets/AD847.pdf",
+      "https://www.analog.com/static/imported-files/data_sheets/AD827.pdf",
+      "http://www.analog.com/UploadedFiles/Data_Sheets/AD847.pdf",
+      "http://www.analog.com/UploadedFiles/Data_Sheets/AD827.pdf"
+    ],
+    "claims_confirmed": [
+      "AD847 data sheet, 'High Speed, Low Power Monolithic Op Amp', is at https://www.analog.com/media/en/technical-documentation/data-sheets/AD847.pdf",
+      "AD847 data sheet is Revision F (https://www.radiolocman.com/datasheet/pdf.html?di=121493)",
+      "AD827 data sheet, 'High Speed, Low Power Dual Op Amp', is at https://www.analog.com/media/en/technical-documentation/data-sheets/AD827.pdf",
+      "AD827 data sheet is Revision C, with 8/02 Rev. B to Rev. C changes to Outline Dimensions (https://www.radiolocman.com/datasheet/pdf.html?di=121479)",
+      "AD827 is the dual version of the industry-standard AD847, with 300 V/us, 50 MHz, 100 mW at +/-5 V, 15 nV/rtHz, 2 mV max Vos and +/-5 V to +/-15 V operation (https://www.analog.com/en/products/ad827.html)",
+      "AD827 ordering guide: AD827JN N-8, AD827JR 16-lead plastic SO R-16, AD827AQ cerdip Q-8 (https://www.radiolocman.com/datasheet/pdf.html?di=171833&p=2; https://www.rf-microwave.com/en/analog-devices/ad827jr/high-speed-dual-operational-amplifier-ceramic-soic-16/ad827jr/)",
+      "AD827JR-16 is Obsolete at Digi-Key (https://www.digikey.com/en/products/detail/analog-devices-inc/AD827JR-16/611658)",
+      "AD827JNZ is listed at Digi-Key, Arrow and Mouser (https://www.digikey.com/en/products/detail/AD827JNZ/AD827JNZ-ND/819983)",
+      "AD847 packages are Plastic DIP (N), Small Outline (R) and Cerdip (Q); AD847JN is 0 to +70 C, N-8 (https://media.distrelec.com/Web/Downloads/_t/ds/Analog_Devices_AD847_eng_tds.pdf; https://radiolocman.com/datasheet/data.html?%2FAD847JN=&di=351743)",
+      "ADI publishes a separate AD847S military detail spec (https://www.analog.com/media/en/technical-documentation/data-sheets/ad847s.pdf)",
+      "AD827SQ exists as a part number (https://www.utmel.com/components/ad827sq-operational-amplifier-feature-specification-datasheet?id=67)"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "high-speed-video-crossover",
+  "product_pages": [
+    "https://www.analog.com/en/products/ad827.html",
+    "https://www.analog.com/en/products/ad847.html",
+    "https://www.mouser.com/ProductDetail/Analog-Devices/AD827JNZ?qs=%2FtpEQrCGXCyN%252BCu3Ds21BQ%3D%3D",
+    "https://www.digikey.com/en/products/detail/analog-devices-inc/AD827JR-16/611658",
+    "https://www.mouser.com/ProductDetail/Analog-Devices/AD847JNZ?qs=%2FtpEQrCGXCwi%2Fm1CdjScgw%3D%3D"
+  ],
+  "revision_chain_notes": "Analog Devices is the only vendor; no second sources or acquirer re-issues were found. None of the 4 searches showed a new revision letter, date or change summary.\n\nAD847 data sheet (ADI):\n- Original edition (c. 1988-1990) and Rev. A to Rev. E: all missing, no dates known.\n- Rev. F: current. Copies are analog.com/media/.../ad847.pdf, Radiolocman di=121493, Octopart and Farnell. Its date is still unknown.\n- Candidates for older revisions, all \"revision not shown\": Radiolocman di=351761, Digchip, Datasheet4U, Futurlec AD847JN and Studylib. The Datasheet4U title spelling and the Futurlec part number (AD847JN, no Z suffix) hint at pre-RoHS editions.\n\nAD847S (military/883 data sheet): revision and date still unknown.\n\nAD827 data sheet (ADI):\n- Original edition, Rev. A and Rev. B: missing, no dates known.\n- Rev. C: dated 8/02 (Rev. B to Rev. C changed Outline Dimensions).\n- Candidates for older or later copies, all \"revision not shown\": Alldatasheet 48430 (possibly older) and 1011839 (AD827_17, later upload), DatasheetQ and Futurlec AD827JN.\n\nArchive seeds: the two analog.com/static/imported-files/data_sheets URLs (AD847.pdf and AD827.pdf) were not seen in these searches. They are built from ADI's c. 2008-2016 URL scheme and are meant only for Wayback lookups; they are not confirmed copies.\n\nSuggested next step: use the Wayback Machine on those seeds and on the older analog.com UploadedFiles/Data_Sheets paths to recover Rev. D, Rev. E and earlier."
+}

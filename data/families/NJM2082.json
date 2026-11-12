@@ -1,0 +1,339 @@
+{
+  "id": "NJM2082",
+  "name": "NJM2082 / NJM2082DD (New JRC / Nisshinbo JFET-input dual, improved NJM082)",
+  "tagline": "New JRC's faster (20 V/us) improved NJM082 JFET dual; Japanese DIY listeners rate it a fuller, more composed swap for the TL072/NJM072.",
+  "technology": "Dual J-FET-input op-amp. The datasheet calls it an improved version of the NJM082 (TL082-class), with low input offset and bias current, 10^12 ohm input resistance, 20 V/us slew and a +/-4 V to +/-18 V supply range. Intended uses: fast integrators, DACs, sample-and-hold and audio. NJM2082DD is sold by Japanese retailers as a noise-screened DIP grade.",
+  "manufacturers": [
+    "New Japan Radio (New JRC / NJR)",
+    "Nisshinbo Micro Devices"
+  ],
+  "part_numbers": [
+    {
+      "pn": "NJM2082",
+      "channels": 2,
+      "vendors": [
+        "New Japan Radio",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "unknown",
+      "notes": "Base part. English datasheet NJM2082_E, Ver.2003-03-17. The current lifecycle status at Nisshinbo was not confirmed."
+    },
+    {
+      "pn": "NJM2082D",
+      "channels": 2,
+      "vendors": [
+        "New Japan Radio",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "unknown (listed at DigiKey under Nisshinbo)",
+      "notes": "DIP8 (0.300 in). Also appears in listings as 'NJM#2082D'; the meaning of the '#' marking was not confirmed."
+    },
+    {
+      "pn": "NJM2082DD",
+      "channels": 2,
+      "vendors": [
+        "New Japan Radio",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "unknown",
+      "notes": "Noise-screened ('ノイズ選定品') DIP grade, sold by Kyohritsu/eleshop. It is not listed in the 2003 datasheet mirrors seen, and the vendor has not confirmed its screening criteria."
+    },
+    {
+      "pn": "NJM2082M",
+      "channels": 2,
+      "vendors": [
+        "New Japan Radio",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "unknown (listed at DigiKey under Nisshinbo)",
+      "notes": "DMP8 (SOP8) surface-mount package."
+    },
+    {
+      "pn": "NJM2082V",
+      "channels": 2,
+      "vendors": [
+        "New Japan Radio"
+      ],
+      "status": "unknown",
+      "notes": "SSOP8 variant, seen only as a datasheet-mirror listing (datasheetq)."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "New Japan Radio (New JRC / NJR)",
+      "role": "original designer and manufacturer",
+      "period": "at least 2003 (datasheet Ver.2003-03-17) to 2021",
+      "notes": "Positioned as an improved NJM082, NJR's second source of the TL082 type."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "role": "successor manufacturer",
+      "period": "2022 to present",
+      "notes": "Formed when NJR merged with Ricoh Electronic Devices. Distributors now list NJM2082D and NJM2082M under Nisshinbo Micro Devices."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Supply voltage",
+      "value": "+/-4 V to +/-18 V",
+      "condition": "operating range",
+      "source": "https://www.mouser.com/datasheet/2/294/njr_njm2082_e-547184.pdf"
+    },
+    {
+      "parameter": "Input resistance",
+      "value": "10^12 ohm typ",
+      "condition": "",
+      "source": "https://www.mouser.com/datasheet/2/294/njr_njm2082_e-547184.pdf"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "20 V/us typ",
+      "condition": "",
+      "source": "https://www.mouser.com/datasheet/2/294/njr_njm2082_e-547184.pdf"
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "5 MHz (unconfirmed)",
+      "condition": "typ; value came from a web-search summary, not read off the datasheet table",
+      "source": "https://www.mouser.com/datasheet/2/294/njr_njm2082_e-547184.pdf"
+    },
+    {
+      "parameter": "Equivalent input noise voltage",
+      "value": "13 nV/rtHz (unconfirmed)",
+      "condition": "typ; value came from a web-search summary, test frequency not stated",
+      "source": "https://www.mouser.com/datasheet/2/294/njr_njm2082_e-547184.pdf"
+    }
+  ],
+  "reputation": {
+    "summary": "The praise comes from a small number of Japanese hobbyist sources, which this pass did not re-check. The C-Area wiki (higemouse) found the NJM2082D heavier and more composed than the TL072CP, with better low- and high-frequency extension. A zigsow review ('072改', 'improved 072') describes the NJM2082DD as slightly warm like the NJM072 but more neutral, and suited to classical and clean-tone music. The dad8893 blog includes it in a JFET op-amp listening comparison (TL072 / NJM072 / NJM2082 / OPA2134 / MUSES8920).",
+    "sonic_descriptors": [
+      "heavier and more composed than TL072CP (C-Area wiki)",
+      "extended lows and highs versus TL072CP (C-Area wiki)",
+      "slightly warm like NJM072 but more neutral (zigsow review, DD grade)"
+    ],
+    "typical_uses": [
+      "op-amp rolling in DIY headphone amps and preamps, as a replacement in TL072/NJM072 sockets",
+      "JFET-input audio buffers and filters"
+    ],
+    "caveats": [
+      "The impressions are subjective, come from a few Japanese sources, and were not re-verified in this pass.",
+      "The DD grade's 'noise-screened' status comes from a retailer and has no vendor specification behind it.",
+      "A JFET-input dual has higher voltage noise than bipolar audio duals such as the NJM4580 or NE5532."
+    ],
+    "sources": [
+      "https://w.atwiki.jp/higemouse/pages/52.html",
+      "https://zigsow.jp/item/326102/review/325406",
+      "https://dad8893.blogspot.com/2017/10/jfetopamp-tl072-njm072-njm2082-opa2134.html",
+      "https://eleshop.jp/shop/g/gF16124/"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "New Japan Radio",
+      "title": "NJM2082 DUAL J-FET INPUT OPERATIONAL AMPLIFIER",
+      "doc_number": "NJM2082_E (NJR file name; no formal document number)",
+      "revision": "Ver. 2003-03-17",
+      "date": "2003-03-17",
+      "url": "https://www.mouser.com/datasheet/2/294/njr_njm2082_e-547184.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Mouser copy. The version stamp 'Ver.2003-03-17' shows in the document title."
+    },
+    {
+      "vendor": "New Japan Radio",
+      "title": "NJM2082 DUAL J-FET INPUT OPERATIONAL AMPLIFIER",
+      "doc_number": "NJM2082_E (NJR file name; no formal document number)",
+      "revision": "Ver. 2003-03-17",
+      "date": "2003-03-17",
+      "url": "https://www.mouser.com/ds/2/294/NJM2082_E-218423.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Older Mouser path holding the same Ver.2003-03-17 stamp."
+    },
+    {
+      "vendor": "New Japan Radio",
+      "title": "NJM2082D Datasheet PDF, JRC: DUAL J-FET INPUT OPERATIONAL AMPLIFIER",
+      "doc_number": "NJM2082_E",
+      "revision": "Ver. 2003-03-17",
+      "date": "2003",
+      "url": "https://www.datasheetbank.com/NJM2082D-Datasheet-PDF-JRC-2003",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "The URL labels the copy '2003'. The exact version stamp was not seen."
+    },
+    {
+      "vendor": "New Japan Radio",
+      "title": "NJM2082 Datasheet (PDF) - New Japan Radio",
+      "doc_number": "NJM2082_E",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7246/NJRC/NJM2082.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "5 pages, 226 KB. The revision is not shown in the search summary."
+    },
+    {
+      "vendor": "New Japan Radio",
+      "title": "NJM2082 Datasheet pdf - Dual J-FET Input Operational Amplifier",
+      "doc_number": "NJM2082_E",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/N/J/M/2/NJM2082.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "The copy looks old. Revision not shown."
+    },
+    {
+      "vendor": "New Japan Radio",
+      "title": "NJM2082 datasheet PDF - OPERATIONAL AMPLIFIER",
+      "doc_number": "NJM2082_E",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/New-Japan-Radio/NJM2082/454869",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Same file ID 454869 as the datasheetspdf and datasheet39 copies."
+    },
+    {
+      "vendor": "New Japan Radio",
+      "title": "NJM2082 Datasheet, OPERATIONAL AMPLIFIER",
+      "doc_number": "NJM2082_E",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/454869/NewJapanRadio/NJM2082/1",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": ""
+    },
+    {
+      "vendor": "New Japan Radio",
+      "title": "NJM2082 datasheet - Dual J-FET Input Operational Amplifier",
+      "doc_number": "NJM2082_E",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/330/NJM2082.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": ""
+    },
+    {
+      "vendor": "New Japan Radio",
+      "title": "NJM2082V Datasheet PDF - Japan Radio Corporation",
+      "doc_number": "NJM2082_E",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/NJM2082V-doc-JRC",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "The listing shows that an SSOP8 'V' variant exists."
+    },
+    {
+      "vendor": "Various",
+      "title": "Datasheet Archive: NJM2082 datasheets",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetarchive.com/NJM2082-datasheet.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "multiple / unknown",
+      "note": "Index page. It may hold older NJR catalogue scans."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "New Japan Radio",
+      "doc_number": "NJM2082_E",
+      "revision": "Ver.2003-03-17",
+      "date": "2003-03-17",
+      "changes": "This is the only revision found in the mirrors. NJR does not publish change logs, and no later Nisshinbo revision was found."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "This sweep found no NJM2082-specific counterfeit or remarking reports. The usual caution applies to marketplace-sourced 'DD' parts: the noise screening is a sales grade, and nothing on the package shows it beyond the suffix marking.",
+  "alternatives": [
+    "NJM082 (predecessor)",
+    "TL072 / TL082",
+    "NJM072",
+    "OPA2134",
+    "MUSES8920",
+    "LF353"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://www.njr.co.jp/products/semicon/PDF/NJM2082_E.pdf",
+    "https://www.mouser.com/datasheet/2/294/njr_njm2082_e-547184.pdf",
+    "https://www.mouser.com/ds/2/294/NJM2082_E-218423.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM2082_E.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm2082"
+  ],
+  "open_questions": [
+    "Has Nisshinbo published a datasheet revision after Ver.2003-03-17? The current version stamp is unknown.",
+    "Is the NJM2082 active, NRND or discontinued at Nisshinbo? DigiKey lists NJM2082D and NJM2082M, but their status was not seen.",
+    "The vendor has not documented NJM2082DD's screening criteria (noise-selected per the Kyohritsu listing).",
+    "Confirm the GBW (5 MHz?) and input noise (13 nV/rtHz?) against the datasheet table.",
+    "Does an NJM2082L (SIP8) exist? Only an alldatasheet search page was seen.",
+    "What does the '#' mean in 'NJM#2082D' listings: lead-free, or a fab/assembly change?",
+    "Were there any post-2022 PCNs (die or fab transfer after the NJR-Ricoh merger)? None found.",
+    "The legacy NJR and Nisshinbo PDF URLs in archive_seed_urls are guesses from the naming pattern, not confirmed."
+  ],
+  "sources": [
+    "https://www.mouser.com/datasheet/2/294/njr_njm2082_e-547184.pdf",
+    "https://www.mouser.com/ds/2/294/NJM2082_E-218423.pdf",
+    "https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM2082M/805549",
+    "https://www.digikey.com/en/products/detail/njr-corporation-njrc/NJM2082D/673709",
+    "https://www.datasheets.com/en/part-details/njm-2082d-nisshinbo-micro-devices-inc-19653752",
+    "https://www.datasheetq.com/NJM2082V-doc-JRC",
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm2068",
+    "https://w.atwiki.jp/higemouse/pages/52.html",
+    "https://zigsow.jp/item/326102/review/325406",
+    "https://dad8893.blogspot.com/2017/10/jfetopamp-tl072-njm072-njm2082-opa2134.html",
+    "https://eleshop.jp/shop/g/gF16124/"
+  ],
+  "verification": {
+    "status": "partially-verified",
+    "refuted_claims": [],
+    "corrections": [
+      "Set channels to 2 for all part numbers (the draft had 0).",
+      "Added the NJM2082V (SSOP8) part number, seen on a datasheet mirror.",
+      "Added a technology description, key specs, lineage, datasheet mirrors (Ver.2003-03-17) and a revision history. The draft had none.",
+      "The NJM2082DD 'noise-screened' grade is retailer-sourced only. The 2003 datasheet mirrors do not document it."
+    ],
+    "unverified_urls": [
+      "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm2082",
+      "http://www.njr.co.jp/products/semicon/PDF/NJM2082_E.pdf",
+      "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM2082_E.pdf",
+      "https://w.atwiki.jp/higemouse/pages/52.html",
+      "https://zigsow.jp/item/326102/review/325406",
+      "https://dad8893.blogspot.com/2017/10/jfetopamp-tl072-njm072-njm2082-opa2134.html",
+      "https://eleshop.jp/shop/g/gF16124/"
+    ],
+    "claims_confirmed": [
+      "The Mouser-hosted NJM2082 datasheet is titled 'DUAL J-FET INPUT OPERATIONAL AMPLIFIER' and stamped Ver.2003-03-17 (https://www.mouser.com/datasheet/2/294/njr_njm2082_e-547184.pdf).",
+      "A second Mouser path, NJM2082_E-218423.pdf, carries the same Ver.2003-03-17 (https://www.mouser.com/ds/2/294/NJM2082_E-218423.pdf).",
+      "The NJM2082 is described as an improved version of the NJM082, suited for fast integrators, DACs, sample-and-hold and audio (https://www.mouser.com/ds/2/294/NJM2082_E-218423.pdf).",
+      "Operating voltage is +/-4 V to +/-18 V, input resistance 10^12 ohm typ, slew rate 20 V/us typ (https://www.mouser.com/datasheet/2/294/njr_njm2082_e-547184.pdf).",
+      "DigiKey lists NJM2082M (8-DMP) and NJM2082D under Nisshinbo Micro Devices (https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM2082M/805549, https://www.digikey.com/en/products/detail/njr-corporation-njrc/NJM2082D/673709).",
+      "An NJM2082V datasheet listing exists (https://www.datasheetq.com/NJM2082V-doc-JRC).",
+      "The datasheetbank copy is labelled 2003 (https://www.datasheetbank.com/NJM2082D-Datasheet-PDF-JRC-2003).",
+      "The alldatasheet copy is 5 pages, 226 KB (https://www.alldatasheet.com/datasheet-pdf/pdf/7246/NJRC/NJM2082.html).",
+      "A web-search summary gave GBW 5 MHz and noise 13 nV/rtHz. Kept as unconfirmed because they were not read off the datasheet (https://www.mouser.com/datasheet/2/294/njr_njm2082_e-547184.pdf)."
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "jfet-input",
+  "product_pages": [
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm2082"
+  ]
+}

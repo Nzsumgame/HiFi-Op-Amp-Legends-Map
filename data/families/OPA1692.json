@@ -1,0 +1,483 @@
+{
+  "id": "OPA1692",
+  "name": "OPA1692 (TI SoundPlus low-power, low-noise dual bipolar-input audio op-amp)",
+  "tagline": "Draws only 650 µA per channel yet gives 4.2 nV/√Hz and -127 dB distortion. Low-power audio builders and Head-Fi op-amp rollers rate it highly.",
+  "technology": "Bipolar-input, low-power SoundPlus dual audio op-amp (TI, 2017). Rail-to-rail output swings to within 200 mV of the supplies into 2 kΩ. 4.2 nV/√Hz at 1 kHz, -127 dB distortion at 1 kHz, 650 µA per channel. Web search summaries give 5.1 MHz GBW and 23 V/µs slew. The earlier sweep gave a 3.5 V to 36 V supply and ±50 mA output; this pass did not confirm those two.",
+  "manufacturers": [
+    "Texas Instruments"
+  ],
+  "part_numbers": [
+    {
+      "pn": "OPA1692",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active (TI product page live; lifecycle label not explicitly confirmed)",
+      "notes": "Family/base part. Datasheet SBOS566. Comes in SOIC-8 (D) and VSSOP-8 (DGK)."
+    },
+    {
+      "pn": "OPA1692ID",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active (TI part-details page and Mouser listing exist; lifecycle not explicitly confirmed)",
+      "notes": "SOIC-8 (D). Listed as affected in TI's 5 Nov 2018 datasheet-change notice. Top marking is OP1692."
+    },
+    {
+      "pn": "OPA1692IDR",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active (TI part-details page exists; lifecycle not explicitly confirmed)",
+      "notes": "SOIC-8 (D), tape and reel. Listed in the Nov 2018 notice. Top marking is OP1692."
+    },
+    {
+      "pn": "OPA1692IDGKR",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active (TI part-details page exists; lifecycle not explicitly confirmed)",
+      "notes": "VSSOP-8 (DGK), tape and reel. Listed in the Nov 2018 notice."
+    },
+    {
+      "pn": "OPA1692IDGKT",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "unknown",
+      "notes": "VSSOP-8 (DGK), small reel. Listed in the Nov 2018 notice; current orderability not checked."
+    },
+    {
+      "pn": "OPA1694",
+      "channels": 4,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "uncertain (announced, then withdrawn from datasheet; release not confirmed)",
+      "notes": "Quad sibling in the original SBOS566 (June 2017), in SOIC-14 and TSSOP-14. Per an E2E thread, rev A (Dec 2017) removed all OPA1694 references. E2E users were still waiting for it later ('Eagerly awaiting OPA1694')."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Texas Instruments",
+      "role": "originator / sole source",
+      "period": "2017-present",
+      "notes": "SoundPlus audio line. First datasheet SBOS566, June 2017. Related TI low-power bipolar audio family: OPA166x (OPA1662/OPA1664)."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input voltage noise density",
+      "value": "4.2 nV/√Hz",
+      "condition": "f = 1 kHz",
+      "source": "TI SBOS566 (via ti.com/product/OPA1692 and alldatasheet summaries)"
+    },
+    {
+      "parameter": "Distortion (THD+N)",
+      "value": "-127 dB",
+      "condition": "1 kHz",
+      "source": "TI SBOS566 (via search summaries)"
+    },
+    {
+      "parameter": "Quiescent current",
+      "value": "650 µA per channel",
+      "condition": "typ",
+      "source": "TI SBOS566 / ti.com/product/OPA1692"
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "5.1 MHz",
+      "condition": "typ (search-summary value; check against the datasheet table)",
+      "source": "ti.com/product/OPA1692 (search summary)"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "23 V/µs",
+      "condition": "typ (search-summary value; check against the datasheet table)",
+      "source": "ti.com/product/OPA1692 (search summary)"
+    },
+    {
+      "parameter": "Output swing",
+      "value": "within 200 mV of supply rails",
+      "condition": "RL = 2 kΩ",
+      "source": "TI SBOS566 (search summary)"
+    },
+    {
+      "parameter": "Supply voltage",
+      "value": "3.5 V to 36 V (±1.75 V to ±18 V)",
+      "condition": "total supply",
+      "source": "draft / earlier sweep; not re-confirmed in this pass"
+    },
+    {
+      "parameter": "Output current",
+      "value": "±50 mA",
+      "condition": "typ",
+      "source": "draft / earlier sweep; not re-confirmed in this pass"
+    }
+  ],
+  "reputation": {
+    "summary": "Cycfi Research's 2017 blog post 'OPA1692: The perfect Op Amp for low power audio?' says it 'sounds fast, dynamic and had good timing on most CDs', though the LME49723 separated instruments better on one track. In Head-Fi's 'The Opamp thread', posters rank it among the three best on specs (with the OPA2209 and OPA2189) and prefer it to the OPA1678. The praise comes from a few listener reports, not from measurements.",
+    "sonic_descriptors": [
+      "fast (Cycfi)",
+      "dynamic (Cycfi)",
+      "good timing (Cycfi)"
+    ],
+    "typical_uses": [
+      "low-power / battery audio stages (Cycfi's framing)",
+      "op-amp rolling in DIP-8 sockets using SOIC-to-DIP adapters",
+      "portable preamp and filter stages"
+    ],
+    "caveats": [
+      "SMD only (SOIC-8, VSSOP-8), so DIP sockets need an adapter",
+      "Cycfi preferred the LME49723 for instrument separation on one track",
+      "Praise rests on a small number of subjective reports"
+    ],
+    "sources": [
+      "https://www.cycfi.com/2017/08/opa1692-the-perfect-opamp-for-low-power-audio/",
+      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-392",
+      "https://zenode.ai/series/11xsta38loh-texas-instruments-OPA1692"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA1692 Low-Power, Low-Noise and Low-Distortion SoundPlus™ Audio Operational Amplifiers",
+      "doc_number": "SBOS566",
+      "revision": "C",
+      "date": "2018-10",
+      "url": "https://www.ti.com/lit/gpn/OPA1692",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "TI's generic datasheet link. The TI product page shows Rev. C. No later revision turned up in the Sep 2026 searches."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA1692 低消費電力、低ノイズ… (Japanese translation)",
+      "doc_number": "SBOS566 (JA translation)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com/jp/lit/ds/symlink/opa1692.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "TI Japan translated datasheet. TI translations can lag the English revision, and this one's revision was not seen."
+    },
+    {
+      "vendor": "Texas Instruments (Scribd upload)",
+      "title": "OPA1692 Low-Power, Low-Noise and Low-Distortion SoundPlus™ Audio Operational Amplifiers (sbos566c)",
+      "doc_number": "SBOS566",
+      "revision": "C",
+      "date": "2018-10",
+      "url": "https://www.scribd.com/document/394624916/sbos566c",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Frozen copy of rev C (file name sbos566c)."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheet mirror)",
+      "title": "OPA1692 Low-Power, Low-Noise and Low-Distortion Audio Operational Amplifiers (23 pages)",
+      "doc_number": "SBOS566",
+      "revision": "",
+      "date": "2017-06",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/954302/TI1/OPA1692.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "likely original (June 2017)",
+      "note": "Unconfirmed. Earlier 23-page copy without 'SoundPlus' in the title; alldatasheet also lists OPA1694 (954304) and opa1692idgk (954305) from the same upload batch. It probably predates rev A's removal of the OPA1694, but the revision letter was not seen."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheet mirror)",
+      "title": "OPA1692 Low-Power, Low-Noise and Low-Distortion SoundPlus Audio Operational Amplifiers (42 pages)",
+      "doc_number": "SBOS566",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1096308/TI1/OPA1692.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed revision. A later, larger copy. Related pages: alldatasheet.net marking pages 1096309 (OPA1692ID) and 1096312 (OPA1692IDR), which show marking OP1692."
+    },
+    {
+      "vendor": "Texas Instruments (ic114 mirror)",
+      "title": "OPA1692, OPA1694",
+      "doc_number": "SBOS566",
+      "revision": "",
+      "date": "",
+      "url": "http://product.ic114.com/PDF/O/OPA1692.PDF",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed revision. Its header names the OPA1694 too, so it may be the original June 2017 issue."
+    },
+    {
+      "vendor": "Texas Instruments (Digi-Key HTML datasheet)",
+      "title": "OPA1692 Datasheet by Texas Instruments",
+      "doc_number": "SBOS566",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.co.il/he/htmldatasheets/production/2845979/0/0/1/opa1692idgkr.html",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed revision. Digi-Key HTML rendering (Hebrew site)."
+    },
+    {
+      "vendor": "Texas Instruments (datasheet4u mirror)",
+      "title": "OPA1692 - Audio Operational Amplifier",
+      "doc_number": "SBOS566",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet/etcTI/OPA1692-1561162",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed revision."
+    },
+    {
+      "vendor": "Texas Instruments (Farnell mirror)",
+      "title": "TI notification: datasheet specification change, OPA1692 (SBOS566B to SBOS566C)",
+      "doc_number": "TI notification (number not captured)",
+      "revision": "",
+      "date": "2018-11-05",
+      "url": "https://www.farnell.com/datasheets/2721178.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "unknown",
+      "note": "Change notice, not a datasheet. Datasheet-only spec change 'to accurately reflect device characteristics'; the device itself did not change. Affects OPA1692ID, OPA1692IDGKR, OPA1692IDGKT and OPA1692IDR."
+    },
+    {
+      "vendor": "Texas Instruments (radiolocman mirror)",
+      "title": "OPA1692IDGKT Datasheet Texas Instruments - OPA1692 Low-Power, Low-Noise and Low-Distortion SoundPlus Audio Operational Amplifier",
+      "doc_number": "SBOS566A",
+      "revision": "A",
+      "date": "2017-12",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=486003",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "The search summary for this result says the datasheet is SBOS566A, dated June 2017 and revised December 2017. This is the only copy found so far that holds revision A, the first Production Data edition, which dropped the OPA1694."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheet.net mirror)",
+      "title": "OPA1692ID datasheet (42 pages) TI1 - Low-Power, Low-Noise and Low-Distortion SoundPlus Audio Operational Amplifiers",
+      "doc_number": "SBOS566",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.net/html-marking/1096309/TI1/OPA1692ID/1129/16/OPA1692ID.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "alldatasheet doc id 1096309, 42 pages, in the same batch as the already-listed 1096308. The later 'SoundPlus' title and the page count (the 954302 copy has 23 pages) suggest a later revision (B or C) with packaging addenda, but the revision letter is not shown. The same document is also reached at /1910/27/OPA1692ID.html."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheet.net mirror)",
+      "title": "OPA1692IDR datasheet (42 pages) TI1 - Low-Power, Low-Noise and Low-Distortion SoundPlus Audio Operational Amplifiers",
+      "doc_number": "SBOS566",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.net/html-marking/1096312/TI1/OPA1692IDR/2009/28/OPA1692IDR.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "alldatasheet doc id 1096312 (the OPA1692IDR part-number entry), 42 pages. Probably the same later-revision PDF as 1096308/1096309. Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheet mirror)",
+      "title": "OPA1692 datasheet (5/23 Pages) TI1 - Low-Power, Low-Noise and Low-Distortion Audio Operational Amplifiers",
+      "doc_number": "SBOS566",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/html-pdf/954302/TI1/OPA1692/294/5/OPA1692.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "HTML page view of alldatasheet doc 954302 (23 pages). It is the same document as the already-listed PDF page, at a different URL. The plural 'Amplifiers' title with no 'SoundPlus' matches the OPA1692/OPA1694 original, but the revision is not shown in the summary. It came up for a 'SBOS566B' query, but that match may come from other results."
+    },
+    {
+      "vendor": "Texas Instruments (digchip mirror)",
+      "title": "OPA1692 datasheet - SoundPlus Low-Power, Low-Noise ...",
+      "doc_number": "SBOS566",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/2/477/OPA1692.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Digchip datasheet page for OPA1692. The 'SoundPlus' title suggests revision A or later. Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments (datasheet4u mirror)",
+      "title": "OPA1692 datasheet PDF - Operational Amplifier | Texas Instruments",
+      "doc_number": "SBOS566",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/etcTI/OPA1692/1561162",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Alternate datasheet4u URL (the /datasheets/ path) for the same entry 1561162 as the already-listed /datasheet/etcTI/OPA1692-1561162. Revision not shown."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS566",
+      "revision": "original",
+      "date": "June 2017",
+      "changes": "First release. Covered the OPA1692 dual and the OPA1694 quad (SOIC-14/TSSOP-14). Advance Information status, as implied by rev A's change note."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS566A",
+      "revision": "A",
+      "date": "December 2017 (per E2E; medium confidence)",
+      "changes": "Changed from Advance Information to Production Data. Per a TI E2E thread, removed all references to the OPA1694."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS566B",
+      "revision": "B",
+      "date": "unknown (between Dec 2017 and Oct 2018)",
+      "changes": "Exists: it is the 'before' version in the Nov 2018 change notice. Contents not retrieved."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS566C",
+      "revision": "C",
+      "date": "October 2018",
+      "changes": "Specification changes 'to accurately reflect device characteristics'. The device did not change, and TI expected no impact on fit, form, function, quality or reliability. Announced in a TI notification dated 5 Nov 2018. Exact parameter changes not retrieved. Latest revision found."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS566A",
+      "revision": "A",
+      "date": "December 2017",
+      "changes": "Date confirmed by a copy of the datasheet itself, not only by E2E. The radiolocman mirror (di=486003) is summarised as 'SBOS566A, June 2017, revised December 2017'. Changes as already recorded: Advance Information to Production Data, and OPA1694 references removed. No new change details were retrieved."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS566",
+      "revision": "original",
+      "date": "June 2017",
+      "changes": "Supporting evidence: the ic114 copy (already listed) is titled 'OPA1692, OPA1694', and the search summary shows 'SBOS566 – JUNE 2017' covering both the OPA1692 and the OPA1694. Since rev A removed the OPA1694, the ic114 PDF is very likely the original June 2017 Advance Information edition. The device was publicly discussed at launch in August 2017 (Cycfi Research blog, https://www.cycfi.com/2017/08/opa1692-the-perfect-opamp-for-low-power-audio/)."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "vendor": "Texas Instruments",
+      "when": "Datasheet SBOS566C October 2018; notification 5 Nov 2018",
+      "part_numbers_affected": [
+        "OPA1692ID",
+        "OPA1692IDR",
+        "OPA1692IDGKR",
+        "OPA1692IDGKT"
+      ],
+      "identification": "None needed. The silicon did not change, so parts built before and after Nov 2018 are the same device. Only the datasheet limits and typicals differ between SBOS566B and SBOS566C.",
+      "summary": "No silicon change is known. The only TI notice found is a datasheet-only specification change (SBOS566B to SBOS566C) to 'accurately reflect device characteristics', with no change to the device. Which parameters changed was not retrieved, so specs quoted from rev B or earlier copies may differ from rev C.",
+      "spec_deltas": [],
+      "audio_impact": "None expected, since the die is the same. When comparing specs, use rev C values.",
+      "compatibility_risk": "low - datasheet-only change; the notice says there is no device change",
+      "sources": [
+        "https://www.farnell.com/datasheets/2721178.pdf",
+        "https://www.scribd.com/document/394624916/sbos566c"
+      ],
+      "confidence": "high",
+      "kind": "datasheet-respec"
+    }
+  ],
+  "counterfeit_notes": "No specific counterfeit reports found. The top-side marking is 'OP1692' (TI package marking, mirrored on alldatasheet.net). The part is SMD only (SOIC-8, VSSOP-8). Marketplace sellers (e.g. eBay) sell 'OPA1692IDR' pre-soldered on DIP-8 adapters for op-amp rolling. Buy from TI or authorized distributors (Mouser, Digi-Key, Farnell) and check the OP1692 marking and TI logo/date code.",
+  "alternatives": [
+    "OPA1662 (TI OPA166x low-power bipolar SoundPlus, higher current)",
+    "LME49723 (compared by Cycfi)",
+    "OPA1678 (Head-Fi comparison; posters preferred OPA1692)",
+    "OPA2209",
+    "OPA2189"
+  ],
+  "ti_literature_numbers": [
+    "SBOS566"
+  ],
+  "archive_seed_urls": [
+    "http://product.ic114.com/PDF/O/OPA1692.PDF",
+    "http://www.ti.com/lit/ds/symlink/opa1692.pdf",
+    "http://www.ti.com/product/OPA1692",
+    "https://www.ti.com/jp/lit/ds/symlink/opa1692.pdf",
+    "https://www.ti.com/lit/ds/sbos566c/sbos566c.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa1692.pdf",
+    "https://www.ti.com/lit/gpn/OPA1692",
+    "https://www.ti.com/product/OPA1692"
+  ],
+  "open_questions": [
+    "What date and changes does SBOS566B carry?",
+    "Which specifications changed from SBOS566B to SBOS566C (Nov 2018 notice), and what is the notice's number?",
+    "Is there a revision after C (for example, one reinstating the OPA1694)? The 42-page alldatasheet copy is much larger than the 23-page early copy.",
+    "Was the OPA1694 quad ever released to production?",
+    "Confirm GBW (5.1 MHz) and slew rate (23 V/µs) against the rev C table; both values come only from search summaries.",
+    "Confirm the 3.5 V to 36 V supply range and ±50 mA output current.",
+    "Confirm the current TI lifecycle status of each orderable, especially OPA1692IDGKT.",
+    "Which revisions do the alldatasheet 954302 / 1096308, ic114, Digi-Key and datasheet4u copies hold?"
+  ],
+  "sources": [
+    "https://www.ti.com/product/OPA1692",
+    "https://www.ti.com/lit/gpn/OPA1692",
+    "https://www.scribd.com/document/394624916/sbos566c",
+    "https://www.farnell.com/datasheets/2721178.pdf",
+    "https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/630559/opa1692-quad-version-opa1694-unfindable",
+    "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/776455/opa1692-eagerly-awaiting-opa1694-for-use-in-my-current-product",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/954302/TI1/OPA1692.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/1096308/TI1/OPA1692.html",
+    "https://www.alldatasheet.net/datasheet-pdf/marking/1096309/TI1/OPA1692ID.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/954304/TI1/OPA1694.html",
+    "http://product.ic114.com/PDF/O/OPA1692.PDF",
+    "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA1692ID?qs=byeeYqUIh0OJsuillYOrzQ%3D%3D",
+    "https://www.cycfi.com/2017/08/opa1692-the-perfect-opamp-for-low-power-audio/",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-392",
+    "https://zenode.ai/series/11xsta38loh-texas-instruments-OPA1692"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [],
+    "corrections": [
+      "Channels corrected from 0 to 2 for OPA1692 and its orderables. Added OPA1692IDR, OPA1692IDGKR and OPA1692IDGKT, plus the OPA1694 quad sibling (status uncertain).",
+      "Part statuses changed from 'unknown' to 'active' (TI product and part-details pages exist; the lifecycle label itself is unconfirmed). OPA1692IDGKT stays 'unknown'.",
+      "Added datasheet SBOS566 (current rev C, Oct 2018) and its revision history: original June 2017, rev A Dec 2017, rev B date unknown, rev C Oct 2018.",
+      "Added the 5 Nov 2018 TI datasheet-change notice. It is a spec-only change with no device change, recorded as a low-risk non-silicon hazard.",
+      "Supply range (3.5 V to 36 V) and ±50 mA output from the draft are kept but marked not re-confirmed."
+    ],
+    "unverified_urls": [
+      "https://www.alldatasheet.com/datasheet-pdf/pdf/954302/TI1/OPA1692.html",
+      "https://www.alldatasheet.com/datasheet-pdf/pdf/1096308/TI1/OPA1692.html",
+      "http://product.ic114.com/PDF/O/OPA1692.PDF",
+      "https://www.digikey.co.il/he/htmldatasheets/production/2845979/0/0/1/opa1692idgkr.html",
+      "https://datasheet4u.com/datasheet/etcTI/OPA1692-1561162",
+      "https://www.ti.com/lit/ds/symlink/opa1692.pdf",
+      "https://www.ti.com/lit/ds/sbos566c/sbos566c.pdf",
+      "https://www.ti.com/jp/lit/ds/symlink/opa1692.pdf"
+    ],
+    "claims_confirmed": [
+      "Datasheet is SBOS566; rev C is dated October 2018 and the original June 2017 (https://www.scribd.com/document/394624916/sbos566c, https://www.farnell.com/datasheets/2721178.pdf)",
+      "The TI product page references datasheet Rev. C (https://www.ti.com/product/OPA1692)",
+      "Rev A changed the datasheet from Advance Information to Production Data (https://www.ti.com/lit/gpn/OPA1692)",
+      "Rev A (Dec 2017) removed all OPA1694 references, per an E2E thread (https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/630559/opa1692-quad-version-opa1694-unfindable)",
+      "TI notice dated 5 Nov 2018: SBOS566B to SBOS566C spec change 'to accurately reflect device characteristics', no device change, affecting OPA1692ID/IDGKR/IDGKT/IDR (https://www.farnell.com/datasheets/2721178.pdf)",
+      "Original SBOS566 covered both the OPA1692 and the OPA1694 (quad, SOIC-14/TSSOP-14) (http://product.ic114.com/PDF/O/OPA1692.PDF, https://www.alldatasheet.com/datasheet-pdf/pdf/954304/TI1/OPA1694.html)",
+      "4.2 nV/√Hz noise and -127 dB distortion at 1 kHz (https://www.alldatasheet.com/html-pdf/954302/TI1/OPA1692/294/5/OPA1692.html)",
+      "650 µA/ch quiescent current, output within 200 mV of the rails into 2 kΩ, GBW 5.1 MHz and slew 23 V/µs, per the search summary of the TI product page (https://www.ti.com/product/OPA1692)",
+      "Top marking is OP1692 (https://www.alldatasheet.net/datasheet-pdf/marking/1096309/TI1/OPA1692ID.html)"
+    ],
+    "web_searches_used": 6
+  },
+  "tier": "C",
+  "category": "bipolar-modern-low-noise",
+  "product_pages": [
+    "https://www.ti.com/product/OPA1692"
+  ],
+  "revision_chain_notes": "Texas Instruments SBOS566 (sole vendor; no second sources, acquirer re-issues or other vendors' editions exist). The chain from oldest to newest:\n(1) SBOS566 original, June 2017. Advance Information; covered the OPA1692 and the OPA1694. Held by the already-listed ic114 copy (http://product.ic114.com/PDF/O/OPA1692.PDF), whose title 'OPA1692, OPA1694' and summary 'SBOS566 – JUNE 2017' support upgrading that entry to 'original, June 2017' at medium confidence. The already-listed alldatasheet 954302 (23 pages, 'Audio Operational Amplifiers' title) is probably the same edition, but the revision is not shown.\n(2) SBOS566A, revised December 2017. Production Data; OPA1694 removed. The date is now confirmed by a datasheet copy, the NEW radiolocman mirror di=486003 (medium).\n(3) SBOS566B. Revision date still MISSING (between Dec 2017 and Oct 2018). No copy positively identified as rev B; the 42-page alldatasheet(.net) copies 1096308/1096309/1096312 could be B or C (revision not shown).\n(4) SBOS566C, revised October 2018. Specification changes 'to accurately reflect device characteristics' (TI notification of 5 Nov 2018, Farnell 2721178). Held by ti.com/lit/gpn/OPA1692 and Scribd sbos566c.\nStill missing: the SBOS566B date and change list, the exact parameter changes from B to C, and any later revision (D or beyond) after 2018; the searches found none. Seeds for the Wayback Machine: ti.com/lit/ds/symlink/opa1692.pdf, with captures from 2017 to 2018 expected to hold the original, A and B."
+}

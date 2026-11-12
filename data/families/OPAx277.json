@@ -1,0 +1,505 @@
+{
+  "id": "OPAx277",
+  "name": "OPA277 / OPA2277 / OPA4277 (Burr-Brown high-precision low-power bipolar)",
+  "tagline": "Burr-Brown's 36 V precision DC bipolar op-amp (10 uV offset, 0.1 uV/C drift) that Japanese op-amp rollers found surprisingly clear and balanced in audio.",
+  "technology": "Precision bipolar, 36 V (+/-2 V to +/-18 V), 10 uV offset, 0.1 uV/C drift, 1 MHz GBW, 0.8 V/us, ~800 uA per amplifier; single / dual / quad",
+  "manufacturers": [
+    "Burr-Brown",
+    "Texas Instruments"
+  ],
+  "part_numbers": [
+    {
+      "pn": "OPA277",
+      "channels": 1,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "active (TI product page live)",
+      "notes": "Single. Grades P/U (high grade) and PA/UA (standard grade); DIP-8 (P/PA) and SO-8 (U/UA)."
+    },
+    {
+      "pn": "OPA277PA",
+      "channels": 1,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "NRND (per distributor listing, search summary)",
+      "notes": "DIP-8 standard grade."
+    },
+    {
+      "pn": "OPA277U / OPA277UA",
+      "channels": 1,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "unknown (presumed active)",
+      "notes": "SO-8, high / standard grade."
+    },
+    {
+      "pn": "OPA2277",
+      "channels": 2,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "active (TI product page live)",
+      "notes": "Dual; the version usually rolled into audio gear."
+    },
+    {
+      "pn": "OPA2277P",
+      "channels": 2,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "unknown",
+      "notes": "DIP-8 high grade; Burr-Brown-branded datasheet copies exist; the part praised in the zigsow review."
+    },
+    {
+      "pn": "OPA2277PA",
+      "channels": 2,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "NRND (per distributor listing, search summary)",
+      "notes": "DIP-8 standard grade (DigiKey/Mouser/Arrow listings)."
+    },
+    {
+      "pn": "OPA2277U / OPA2277UA (incl. /2K5 reel)",
+      "channels": 2,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "unknown (presumed active)",
+      "notes": "SO-8 high / standard grade."
+    },
+    {
+      "pn": "OPA2277-EP",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active (TI product page live)",
+      "notes": "Enhanced-product version; separate datasheet (document number not confirmed)."
+    },
+    {
+      "pn": "OPA2277-DIE",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "unknown",
+      "notes": "Bare die; datasheet SBOS611B (Mar 2012, rev Dec 2012)."
+    },
+    {
+      "pn": "OPA4277",
+      "channels": 4,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "unknown (TI datasheet viewer live)",
+      "notes": "Quad; OPA4277PA (DIP-14) and OPA4277UA (SO-14) orderables."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Burr-Brown",
+      "role": "originator",
+      "period": "1999-2000",
+      "notes": "Original datasheet SBOS079 dated March 1999 (header 'March 1999 - Revised ...')."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "successor (acquired Burr-Brown in 2000)",
+      "period": "2000-present",
+      "notes": "Kept the SBOS079 document; revisions A (2005), B (2015), C (Feb 2023). Added OPA2277-DIE (2012) and OPA2277-EP."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input offset voltage",
+      "value": "10 uV (headline); +/-20 uV max initial offset",
+      "condition": "25 C; max figure for best grade per datasheet text",
+      "source": "https://www.ti.com/product/OPA2277 ; http://class.ece.iastate.edu/ee435/miscHandouts/datasheet%20opa%20277.pdf"
+    },
+    {
+      "parameter": "Offset drift",
+      "value": "0.1 uV/C",
+      "condition": "headline",
+      "source": "https://www.ti.com/product/OPA2277"
+    },
+    {
+      "parameter": "Gain-bandwidth",
+      "value": "1 MHz",
+      "condition": "unity gain",
+      "source": "https://www.ti.com/product/OPA277"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "0.8 V/us",
+      "condition": "typical",
+      "source": "https://www.ti.com/product/OPA277"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "+/-2 V to +/-18 V (36 V total)",
+      "condition": "",
+      "source": "https://www.ti.com/lit/gpn/OPA277"
+    },
+    {
+      "parameter": "Quiescent current",
+      "value": "800 uA per amplifier",
+      "condition": "typical",
+      "source": "https://www.ti.com/product/OPA277"
+    },
+    {
+      "parameter": "CMRR",
+      "value": "115 dB",
+      "condition": "as quoted from TI listing in search summary (likely a min/parametric figure; datasheet headline figure not confirmed)",
+      "source": "https://www.ti.com/product/OPA277"
+    }
+  ],
+  "reputation": {
+    "summary": "Designed as a precision DC op-amp, not an audio part, but it has a small following among Japanese op-amp rollers. A zigsow user review titled '低電力でクリアな音質' ('Low power, clear sound') praises the OPA2277P. The Japanese DIY parts shop Silicon House (Digit) blogged '意外! それはOPA2277！' ('Surprise! It's the OPA2277!'). Other users compare it with the OPA2134, calling it slightly veiled but clear, and some prefer its balanced, vocal-forward sound to the OPA2604. Other impressions are mixed (strong bass, forward, can be harsh). All of this is individual listening impressions.",
+    "sonic_descriptors": [
+      "clear",
+      "balanced",
+      "vocal-forward",
+      "slightly veiled (vs OPA2134)",
+      "strong bass",
+      "forward / can be harsh (some users)"
+    ],
+    "typical_uses": [
+      "DIP-8 op-amp rolling in DACs, headphone amps and portable amps (OPA2277P/PA)",
+      "precision DC / instrumentation stages (its design purpose)"
+    ],
+    "caveats": [
+      "Precision DC part: 1 MHz GBW and 0.8 V/us slew are modest for line/headphone audio stages",
+      "Praise is limited to a few Japanese hobbyist sources, not measurements",
+      "DIP-8 PA grades listed as NRND, so some rolling stock is old or marketplace-sourced",
+      "Noise density was not confirmed in this check"
+    ],
+    "sources": [
+      "https://zigsow.jp/item/298614/review/321038",
+      "http://blog.siliconhouse.jp/archives/51995262.html"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx277 High-Precision Operational Amplifiers",
+      "doc_number": "SBOS079",
+      "revision": "C",
+      "date": "2023-02",
+      "url": "https://www.ti.com/lit/ds/symlink/opa2277.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current revision; rev C revision-history heading reportedly reads 'Changes from Revision B (April 2015) to Revision C (February 2023)'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx277 High-Precision Operational Amplifiers",
+      "doc_number": "SBOS079",
+      "revision": "C",
+      "date": "2023-02",
+      "url": "https://www.ti.com/lit/ds/sbos079c/sbos079c.pdf",
+      "url_kind": "vendor_revision_specific",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Revision-specific TI link (seen with a ?ts= parameter in search results)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx277 High-Precision Operational Amplifiers",
+      "doc_number": "SBOS079",
+      "revision": "C",
+      "date": "2023-02",
+      "url": "https://www.ti.com/lit/gpn/OPA277",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "TI generic-part-number redirect to the current datasheet."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "High Precision OPERATIONAL AMPLIFIERS OPA277 OPA2277 OPA4277",
+      "doc_number": "SBOS079",
+      "revision": "A",
+      "date": "2005-04",
+      "url": "https://www.mouser.com/datasheet/2/405/sbos079a-190468.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Mouser copy that preserves rev A."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "High Precision OPERATIONAL AMPLIFIERS OPA277 OPA2277 OPA4277",
+      "doc_number": "SBOS079",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.com/ds/2/405/opa2277-200103.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not visible in search summary."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx277 High Precision Operational Amplifiers (Rev. B)",
+      "doc_number": "SBOS079",
+      "revision": "B",
+      "date": "2015-06",
+      "url": "https://neuron.eng.wayne.edu/ECE330/OPA277.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Wayne State University course copy; the title says Rev. B."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx277 High Precision Operational Amplifiers",
+      "doc_number": "SBOS079",
+      "revision": "B",
+      "date": "2015",
+      "url": "http://class.ece.iastate.edu/ee435/miscHandouts/datasheet%20opa%20277.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Iowa State course handout."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx277 High Precision Operational Amplifiers",
+      "doc_number": "SBOS079",
+      "revision": "B",
+      "date": "",
+      "url": "https://docs.rs-online.com/0cbd/A700000008688789.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "RS Online copy; the revision is inferred only."
+    },
+    {
+      "vendor": "Burr-Brown / Texas Instruments",
+      "title": "High Precision OPERATIONAL AMPLIFIERS OPA277 OPA2277 OPA4277",
+      "doc_number": "SBOS079",
+      "revision": "",
+      "date": "",
+      "url": "https://neuron.eng.wayne.edu/auth/ece4330/opa277p.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Old-format copy; a duplicate at https://neuron.eng.wayne.edu/auth/ece4340/OPA277.pdf."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2277P Datasheet (Burr-Brown)",
+      "doc_number": "SBOS079",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/196577/BURR-BROWN/OPA2277P.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Filed under Burr-Brown on alldatasheet; the revision is not confirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2277 Datasheet (TI)",
+      "doc_number": "SBOS079",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/546664/TI1/OPA2277.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not visible."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2277U datasheet",
+      "doc_number": "SBOS079",
+      "revision": "",
+      "date": "",
+      "url": "https://www.jameco.com/Jameco/Products/ProdDS/904691.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Jameco copy; revision not visible."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA4277PA datasheet",
+      "doc_number": "SBOS079",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/OPA4277PA-Texas-Instruments-datasheet-7840277.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Octopart copies also exist for OPA2277UA (8441613), OPA2277UA/2K5 (8443537), OPA2277U (8443531) and OPA277U (8442274)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA277 OPA2277 OPA4277",
+      "doc_number": "SBOS079",
+      "revision": "",
+      "date": "",
+      "url": "https://cdn-reichelt.de/documents/datenblatt/A200/OPA_4277_DB.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Reichelt copy; revision not visible."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA277 OPA2277 OPA4277 (OPA2277P)",
+      "doc_number": "SBOS079",
+      "revision": "",
+      "date": "",
+      "url": "https://suzushoweb.com/pdf_file/OPA2277P.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Japanese shop copy; revision not visible."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2277-DIE",
+      "doc_number": "SBOS611",
+      "revision": "B",
+      "date": "2012-12",
+      "url": "https://www.mouser.com/ds/2/405/opa2277-die-558195.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Bare-die datasheet (separate document)."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Burr-Brown",
+      "doc_number": "SBOS079",
+      "revision": "(original)",
+      "date": "March 1999",
+      "changes": "Initial release (the date comes from later revision headers)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS079",
+      "revision": "A",
+      "date": "April 2005",
+      "changes": "Not captured."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS079",
+      "revision": "B",
+      "date": "June 2015 (search summaries) / April 2015 (as cited in rev C history)",
+      "changes": "Not captured; the title changed to 'OPAx277 High Precision Operational Amplifiers', which suggests conversion to TI's newer datasheet format."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS079",
+      "revision": "C",
+      "date": "February 2023",
+      "changes": "Not captured; the title is now hyphenated 'OPAx277 High-Precision Operational Amplifiers'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS611",
+      "revision": "B",
+      "date": "December 2012",
+      "changes": "OPA2277-DIE datasheet (original March 2012); changes not captured."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No OPAx277-specific counterfeit reports found in this check. The DIP-8 OPA2277P/PA sold for op-amp rolling is widely offered by marketplace sellers, and the PA grade is listed as NRND. Buy from authorized distributors and check TI/BB marking and offset against the datasheet.",
+  "alternatives": [
+    "OPA2134 (users' audio comparison)",
+    "OPA2604 (users' audio comparison)",
+    "OPA2205 (TI newer precision bipolar e-trim, 4 uV)",
+    "OP07 / OP177 (classic precision bipolar predecessors)"
+  ],
+  "ti_literature_numbers": [
+    "SBOS079",
+    "SBOS611"
+  ],
+  "archive_seed_urls": [
+    "https://www.mouser.com/datasheet/2/405/sbos079a-190468.pdf",
+    "https://www.ti.com/lit/ds/sbos079c/sbos079c.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa2277.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa277.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa4277.pdf",
+    "https://www.ti.com/lit/gpn/OPA277",
+    "https://www.ti.com/product/OPA2277",
+    "https://www.ti.com/product/OPA2277-EP",
+    "https://www.ti.com/product/OPA277"
+  ],
+  "open_questions": [
+    "Voltage noise density (commonly quoted ~8 nV/rtHz at 1 kHz) not confirmed via web search.",
+    "Rev B date conflict: June 2015 (two summaries) vs April 2015 (rev C revision-history heading).",
+    "What changed in SBOS079C (Feb 2023)? It could be format only or could include spec/die changes; no PCN or new-die notice was found.",
+    "Which old-format mirrors hold the unlettered 1999 Burr-Brown original and which hold rev A?",
+    "Per-orderable status (P/U/UA, OPA4277PA/UA) not confirmed; the PA NRND status comes only from a search summary.",
+    "OPA2277-EP datasheet document number unknown."
+  ],
+  "sources": [
+    "https://www.ti.com/product/OPA2277",
+    "https://www.ti.com/product/OPA277",
+    "https://www.ti.com/lit/ds/symlink/opa2277.pdf",
+    "https://www.ti.com/lit/ds/sbos079c/sbos079c.pdf",
+    "https://www.mouser.com/datasheet/2/405/sbos079a-190468.pdf",
+    "https://neuron.eng.wayne.edu/ECE330/OPA277.pdf",
+    "http://class.ece.iastate.edu/ee435/miscHandouts/datasheet%20opa%20277.pdf",
+    "https://www.mouser.com/ds/2/405/opa2277-die-558195.pdf",
+    "https://www.digikey.com/en/products/detail/texas-instruments/OPA2277PA/266145",
+    "https://zigsow.jp/item/298614/review/321038",
+    "http://blog.siliconhouse.jp/archives/51995262.html"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [],
+    "corrections": [
+      "Channel counts corrected from 0 to 1 (OPA277), 2 (OPA2277) and 4 (OPA4277).",
+      "OPA2277PA / OPA277PA status set to NRND (per distributor listing via search summary); others remain unknown or active per live TI pages.",
+      "Added OPA2277-EP, OPA2277-DIE, U/UA and OPA4277PA orderables.",
+      "Added the datasheet document SBOS079 with revisions original (Mar 1999), A (Apr 2005), B (2015), C (Feb 2023), plus SBOS611B for OPA2277-DIE.",
+      "Filled key_specs, lineage, tagline and technology (36 V, 1 MHz, 0.8 V/us, 800 uA/amp)."
+    ],
+    "unverified_urls": [
+      "https://www.ti.com/lit/ds/symlink/opa277.pdf",
+      "https://www.ti.com/lit/ds/symlink/opa4277.pdf",
+      "https://zigsow.jp/item/298614/review/321038",
+      "http://blog.siliconhouse.jp/archives/51995262.html"
+    ],
+    "claims_confirmed": [
+      "Current datasheet is SBOS079 rev C, February 2023 (https://www.ti.com/lit/ds/symlink/opa2277.pdf)",
+      "Revision-specific TI URL for rev C exists (https://www.ti.com/lit/ds/sbos079c/sbos079c.pdf)",
+      "SBOS079A: March 1999, revised April 2005, preserved on Mouser (https://www.mouser.com/datasheet/2/405/sbos079a-190468.pdf)",
+      "Rev B copy exists with 'Rev. B' title (https://neuron.eng.wayne.edu/ECE330/OPA277.pdf); dated 2015 (June per summary, April per rev C history)",
+      "OPA2277 is a dual 36 V, 10 uV offset, 0.1 uV/C drift bipolar op amp (https://www.ti.com/product/OPA2277)",
+      "1 MHz unity-gain bandwidth, 0.8 V/us slew, 800 uA/amp quiescent (https://www.ti.com/product/OPA277)",
+      "Operates from +/-2 V to +/-18 V; initial offset +/-20 uV max (http://class.ece.iastate.edu/ee435/miscHandouts/datasheet%20opa%20277.pdf)",
+      "OPA2277-DIE datasheet SBOS611B, March 2012 revised December 2012 (https://www.mouser.com/ds/2/405/opa2277-die-558195.pdf)",
+      "OPA2277-EP exists (https://www.ti.com/product/OPA2277-EP)",
+      "OPA2277PA / OPA277PA listed as NRND (https://www.digikey.com/en/products/detail/texas-instruments/OPA2277PA/266145)",
+      "No PCN / new-die notice for OPAx277 found in search"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "bipolar-classic",
+  "product_pages": [
+    "https://www.ti.com/product/OPA2277",
+    "http://www.tij.co.jp/document-viewer/jp/OPA4277/datasheet/specifications"
+  ]
+}

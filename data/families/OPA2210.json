@@ -1,0 +1,394 @@
+{
+  "id": "OPA2210",
+  "name": "OPA210 / OPA2210 / OPA4210 (TI 36 V super-beta precision bipolar, 2.2 nV/rtHz)",
+  "tagline": "TI's 2018 super-beta bipolar successor to the OPAx209: 2.2 nV/rtHz, low 1/f noise and uV-level offset on 36 V. Sold as an upgrade for the Hagerman Bugle MC phono stage.",
+  "technology": "Super-beta complementary-bipolar precision op-amp on TI's precision process. It runs from up to 36 V (+/-18 V) and has 2.2 nV/rtHz noise, 18 MHz GBW, 6.4 V/us slew, 5 uV typ / 35 uV max offset, 300 pA input bias and 2.2 mA typ supply current per amplifier. The draft's rail-to-rail output claim is not confirmed by web search.",
+  "manufacturers": [
+    "Texas Instruments"
+  ],
+  "part_numbers": [
+    {
+      "pn": "OPA2210",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active",
+      "notes": "First member of the family, in datasheet rev * (Sep 2018). Packages: SOIC-8 (D; orderable OPA2210ID/IDR), VSSOP-8 (DGK; OPA2210IDGKR) and SON (DRG, moved from preview to production in rev E, Nov 2020). TI makes no DIP-8 version, so DIP8 'rolling' units are SOIC-on-adapter builds."
+    },
+    {
+      "pn": "OPA210",
+      "channels": 1,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active",
+      "notes": "Added to the datasheet as advanced information (preview) in D and DGK packages in a revision before E. Rev H (Aug 2021) moved the DBV (SOT-23-5) and DGK (VSSOP-8) packages to production."
+    },
+    {
+      "pn": "OPA4210",
+      "channels": 4,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "unconfirmed",
+      "notes": "Unconfirmed. Web search found no TI product page or datasheet mention. The current OPAx210 datasheet abstract names only the OPA210 and OPA2210."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Texas Instruments",
+      "role": "predecessor family (OPAx209)",
+      "period": "before 2018",
+      "notes": "TI's datasheet calls the OPA210 and OPA2210 'the next generation of OPAx209'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "designer and sole manufacturer",
+      "period": "2018 to present",
+      "notes": "OPA2210 released with datasheet rev * (Sep 2018). The OPA210 single was added later, and its production packages were complete by rev H (Aug 2021)."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input voltage noise density",
+      "value": "2.2 nV/rtHz",
+      "condition": "typ (datasheet headline, 1 kHz)",
+      "source": "https://www.ti.com/lit/ds/symlink/opa2210.pdf"
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "18 MHz",
+      "condition": "typ",
+      "source": "https://www.ti.com/lit/ds/symlink/opa2210.pdf"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "6.4 V/us",
+      "condition": "typ",
+      "source": "https://www.ti.com/lit/ds/symlink/opa2210.pdf"
+    },
+    {
+      "parameter": "Input offset voltage",
+      "value": "5 uV typ / 35 uV max",
+      "condition": "25 C",
+      "source": "https://www.ti.com/lit/ds/symlink/opa2210.pdf"
+    },
+    {
+      "parameter": "Offset voltage drift",
+      "value": "0.6 uV/C max",
+      "condition": "over temperature",
+      "source": "https://www.ti.com/lit/ds/symlink/opa2210.pdf"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "300 pA",
+      "condition": "headline figure (typ vs max not established)",
+      "source": "https://www.ti.com/lit/ds/symlink/opa2210.pdf"
+    },
+    {
+      "parameter": "Quiescent current",
+      "value": "2.2 mA typ / 2.5 mA max",
+      "condition": "per amplifier",
+      "source": "https://www.ti.com/lit/ds/symlink/opa2210.pdf"
+    },
+    {
+      "parameter": "Supply voltage",
+      "value": "up to 36 V (+/-18 V)",
+      "condition": "total supply",
+      "source": "https://www.ti.com/lit/ds/symlink/opa2210.pdf"
+    }
+  ],
+  "reputation": {
+    "summary": "Praise comes mainly from the phono and DIY scene. Jim Hagerman (Hagerman Audio Labs) sells an OPA2210 upgrade for his Bugle MC phono preamp, which promises about 6 dB less noise. A TNT-Audio reviewer who tested the upgraded Bugle MC wrote that he was surprised how different it sounded. Audiophonics sells the OPA2210 as a DIP8 rolling unit, and its user reviews report more clarity and better bass, with some caveats. The part also comes up in diyAudio's I/V op-amp discussions. Head-Fi reports are mixed: one user got hum after a swap, and another heard no difference from the LM833 or OPA2107.",
+    "sonic_descriptors": [
+      "more clarity (Audiophonics user reviews)",
+      "better bass (Audiophonics user reviews)",
+      "lower noise in MC phono use (Hagerman/TNT-Audio)"
+    ],
+    "typical_uses": [
+      "MC phono preamp gain stage (Hagerman Bugle MC upgrade)",
+      "I/V stage after a current-output DAC (diyAudio discussion)",
+      "op-amp rolling via DIP8 adapter units"
+    ],
+    "caveats": [
+      "The DIP8 versions are SOIC-on-adapter builds; TI makes no DIP package.",
+      "Head-Fi: one user reported hum after a swap, and another heard no difference from the LM833 or OPA2107.",
+      "The praise rests on a small number of sources."
+    ],
+    "sources": [
+      "https://www.tnt-audio.com/ampli/hagerman_bugle_opa2210_e.html",
+      "https://hagerman-audio-labs.myshopify.com/products/opamp-upgrade",
+      "https://www.audiophonics.fr/en/opa/opa2210-dual-opa-dip8-unit-p-18337.html",
+      "https://www.diyaudio.com/community/threads/whats-the-best-dual-i-v-opamp-these-days.336309/page-4",
+      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-465"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx210 2.2-nV/rtHz Precision, Low-Power, 36-V Operational Amplifiers",
+      "doc_number": "not confirmed (TI SBOS-series number not seen in search)",
+      "revision": "H",
+      "date": "2021-08",
+      "url": "https://www.ti.com/lit/ds/symlink/opa2210.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Canonical TI symlink. Rev H is the latest revision found by search, but a later revision cannot be ruled out."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA210, OPA2210 (OPAx210 datasheet)",
+      "doc_number": "not confirmed",
+      "revision": "H",
+      "date": "",
+      "url": "https://www.ti.com/lit/ds/symlink/opa210.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "The OPA210 symlink points to the same OPAx210 document. The search index shows the title 'OPA210, OPA2210'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA210, OPA2210",
+      "doc_number": "not confirmed",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com/lit/gpn/OPA210",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "current",
+      "note": "TI generic-part-number datasheet redirect."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet)",
+      "title": "OPA2210 2.2-nV/rtHz, Precision, Low-Power, 36-V Operational Amplifier (23 pages)",
+      "doc_number": "not confirmed",
+      "revision": "",
+      "date": "2018",
+      "url": "https://www.alldatasheet.com/html-pdf/1082240/TI1/OPA2210/1235/18/OPA2210.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "early (single-device OPA2210-only edition; likely * Sep 2018 or A Dec 2018, letter unconfirmed)",
+      "note": "The singular 'Amplifier' title and 23-page length point to a copy frozen before the OPA210 was added. Exact revision letter unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet)",
+      "title": "OPA210, OPA2210",
+      "doc_number": "not confirmed",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1283980/TI/OPA2210.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "intermediate (between B and G?), unconfirmed",
+      "note": "Unconfirmed revision. The 'OPA210, OPA2210' title means the copy postdates the OPA210 addition."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet)",
+      "title": "OPA210, OPA2210",
+      "doc_number": "not confirmed",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1283978/TI/OPA210.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "intermediate, unconfirmed",
+      "note": "Unconfirmed revision. Probably the same file as the 1283980 entry."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet)",
+      "title": "OPA210_V02",
+      "doc_number": "not confirmed",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1351983/TI/OPA210_V02.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed. alldatasheet's '_V02' suffix marks a second archived version of the OPA210 datasheet."
+    },
+    {
+      "vendor": "Texas Instruments (via alldatasheet.net)",
+      "title": "OPAx210 2.2-nV/rtHz Precision, Low-Power, 36-V Operational Amplifiers (44 pages)",
+      "doc_number": "not confirmed",
+      "revision": "H",
+      "date": "",
+      "url": "https://www.alldatasheet.net/datasheet-pdf/pdf/2222126/TI2/OPA2210.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "The 'OPAx210' plural title and 44 pages match the current edition. Sibling copies: OPA210 at https://www.alldatasheet.net/html-pdf/2222124/TI2/OPA210/61/1/OPA210.html and OPAX210 at https://www.alldatasheet.net/datasheet-pdf/download/2222125/TI2/OPAX210.html."
+    },
+    {
+      "vendor": "Texas Instruments (via DigiKey)",
+      "title": "OPA2210 by Texas Instruments Datasheet (HTML)",
+      "doc_number": "not confirmed",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.com/en/htmldatasheets/production/3832249/0/0/1/opa2210idgkr",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed revision. DigiKey HTML rendering tied to OPA2210IDGKR."
+    },
+    {
+      "vendor": "Texas Instruments (via datasheet4u)",
+      "title": "OPA210, OPA2210 Datasheet (OPA2210-etcTI.pdf)",
+      "doc_number": "not confirmed",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet/etcTI/OPA210-1514092",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "intermediate, unconfirmed",
+      "note": "Unconfirmed revision. Also listed at https://datasheet4u.com/datasheets/etcTI/OPA210/1514092."
+    },
+    {
+      "vendor": "Texas Instruments (via datasheet4u / datasheetspdf)",
+      "title": "OPA2210 Datasheet - VSSOP amplifier",
+      "doc_number": "not confirmed",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/etcTI/OPA2210/1399669",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed. Mirror at https://datasheetspdf.com/pdf/1399669/etcTI/OPA2210/1."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "not confirmed",
+      "revision": "*",
+      "date": "September 2018",
+      "changes": "Initial release (OPA2210)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "not confirmed",
+      "revision": "A",
+      "date": "December 2018",
+      "changes": "Details not captured by search."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "not confirmed",
+      "revision": "D",
+      "date": "January 2020",
+      "changes": "Details not captured. In a revision before E, the OPA210 was added in D and DGK packages as advanced information (preview). Exact letter unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "not confirmed",
+      "revision": "E",
+      "date": "November 2020",
+      "changes": "OPA2210 DRG package moved from advanced information (preview) to production data (active)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "not confirmed",
+      "revision": "F",
+      "date": "January 2021",
+      "changes": "Details not captured by search."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "not confirmed",
+      "revision": "G",
+      "date": "April 2021",
+      "changes": "Details not captured by search."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "not confirmed",
+      "revision": "H",
+      "date": "August 2021",
+      "changes": "OPA210 DBV (SOT-23-5) and DGK (VSSOP-8) packages moved from advanced information (preview) to production data (active). Latest revision found."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No counterfeit reports found. TI does not make a DIP-8 package (only SOIC-8, VSSOP-8, SON and, for the OPA210, SOT-23-5), so any 'OPA2210 DIP8' is an SOIC chip on an adapter board. Check the SOIC marking on those.",
+  "alternatives": [
+    "OPA2209 / OPA209 (predecessor)",
+    "OPA2211 / OPA211 (1.1 nV/rtHz bipolar)",
+    "OPA1612",
+    "LM4562 / LME49720",
+    "OPA2107 (JFET)",
+    "LM833"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "https://www.ti.com/lit/ds/symlink/opa210.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa2210.pdf",
+    "https://www.ti.com/lit/gpn/OPA210",
+    "https://www.ti.com/product/OPA210",
+    "https://www.ti.com/product/OPA2210"
+  ],
+  "open_questions": [
+    "TI literature number (SBOS-series) not confirmed by web search. The draft-era memory suggests SBOS897, but this is unverified and was not added to ti_literature_numbers.",
+    "Is there a revision after H (Aug 2021)? Dates and changes for revisions B and C are unknown.",
+    "Does the OPA4210 quad exist, and what is its status? Search found no TI page, and the datasheet abstract names only the OPA210 and OPA2210.",
+    "Rail-to-rail output claim in the draft not confirmed.",
+    "Is the 300 pA input bias figure typical or maximum?",
+    "Which revision letter does each alldatasheet or datasheet4u copy hold?",
+    "No PCN or die change found. TI PCN database not checked directly."
+  ],
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/opa2210.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa210.pdf",
+    "https://www.ti.com/product/OPA2210",
+    "https://www.ti.com/product/OPA210",
+    "https://www.alldatasheet.com/html-pdf/1082240/TI1/OPA2210/1235/18/OPA2210.html",
+    "https://www.alldatasheet.net/datasheet-pdf/pdf/2222126/TI2/OPA2210.html",
+    "https://www.digikey.com/en/htmldatasheets/production/3832249/0/0/1/opa2210idgkr",
+    "https://www.tnt-audio.com/ampli/hagerman_bugle_opa2210_e.html",
+    "https://hagerman-audio-labs.myshopify.com/products/opamp-upgrade",
+    "https://www.audiophonics.fr/en/opa/opa2210-dual-opa-dip8-unit-p-18337.html",
+    "https://www.diyaudio.com/community/threads/whats-the-best-dual-i-v-opamp-these-days.336309/page-4",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-465"
+  ],
+  "verification": {
+    "status": "partially-verified",
+    "refuted_claims": [],
+    "corrections": [
+      "Filled in channel counts: OPA210 = 1, OPA2210 = 2, OPA4210 = 4.",
+      "Set OPA2210 and OPA210 to active. OPA4210 set to unconfirmed because no web evidence of it was found.",
+      "Added datasheet revision history: * Sep 2018, A Dec 2018, D Jan 2020, E Nov 2020, F Jan 2021, G Apr 2021, H Aug 2021.",
+      "Added lineage: TI describes the OPAx210 as the next generation of the OPAx209.",
+      "Added key_specs from the TI datasheet: 18 MHz GBW, 2.5 mA max Iq, 35 uV max offset, 0.6 uV/C max drift.",
+      "Marked the draft's rail-to-rail output claim as unconfirmed.",
+      "Added TI vendor URLs and third-party mirrors. The alldatasheet 1082240 copy holds an early OPA2210-only edition.",
+      "Replaced the non-question open_questions entry ('Added by completeness round 3.')."
+    ],
+    "unverified_urls": [
+      "https://www.tnt-audio.com/ampli/hagerman_bugle_opa2210_e.html",
+      "https://hagerman-audio-labs.myshopify.com/products/opamp-upgrade",
+      "https://www.diyaudio.com/community/threads/whats-the-best-dual-i-v-opamp-these-days.336309/page-4",
+      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-465"
+    ],
+    "claims_confirmed": [
+      "Datasheet revision history includes * (Sep 2018) to A (Dec 2018) and D (Jan 2020) to E (Nov 2020); E moved the OPA2210 DRG package from preview to active. Source: https://www.ti.com/lit/ds/symlink/opa2210.pdf",
+      "Revision F is dated Jan 2021, G Apr 2021 and H Aug 2021; H moved the OPA210 DBV and DGK packages to active. Source: https://www.ti.com/lit/ds/symlink/opa2210.pdf",
+      "TI describes the OPAx210 as the next generation of the OPAx209, built on its super-beta complementary bipolar process. Source: https://www.ti.com/lit/gpn/OPA210",
+      "Specs: 2.2 nV/rtHz noise, 18 MHz GBW, 6.4 V/us slew, 5 uV typ offset, 300 pA bias current, 2.2 mA typ / 2.5 mA max Iq per amplifier, 35 uV max offset, 0.6 uV/C max drift. Source: https://www.ti.com/lit/ds/symlink/opa2210.pdf",
+      "An early OPA2210-only 23-page edition is mirrored at https://www.alldatasheet.com/html-pdf/1082240/TI1/OPA2210/1235/18/OPA2210.html",
+      "OPA2210 has an orderable part, OPA2210ID. Source: https://www.ti.com/product/OPA2210/part-details/OPA2210ID",
+      "Audiophonics sells an OPA2210 DIP8 unit. Source: https://www.audiophonics.fr/en/opa/opa2210-dual-opa-dip8-unit-p-18337.html"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "bipolar-modern-low-noise",
+  "product_pages": [
+    "https://www.ti.com/product/OPA2210",
+    "https://www.ti.com/product/OPA210"
+  ]
+}

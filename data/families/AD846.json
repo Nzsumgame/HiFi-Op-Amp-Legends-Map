@@ -1,0 +1,338 @@
+{
+  "id": "AD846",
+  "name": "AD846 (Analog Devices 450 V/us precision current-feedback op-amp)",
+  "tagline": "Obsolete ADI current-feedback amp with 12-bit (0.01%) settling. The AD1862 DAC datasheet suggested it for I/V, and diyAudio users still rate it for DAC I/V stages.",
+  "technology": "Single monolithic bipolar current-feedback (transimpedance) op amp: 450 V/us, 80 MHz (-3 dB, G=-1), 110 ns settling to 0.01%, 200 MOhm open-loop transresistance into 500 Ohm. Obsolete.",
+  "manufacturers": [
+    "Analog Devices"
+  ],
+  "part_numbers": [
+    {
+      "pn": "AD846",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "obsolete",
+      "notes": "Family base number. The ADI product page is under /en/products/obsolete/."
+    },
+    {
+      "pn": "AD846AN",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "obsolete",
+      "notes": "A grade, -40 to +85 C, N-8 plastic DIP."
+    },
+    {
+      "pn": "AD846BN",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "obsolete",
+      "notes": "B grade (75 uV max Vos), -40 to +85 C, N-8 plastic DIP."
+    },
+    {
+      "pn": "AD846AQ",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "obsolete",
+      "notes": "A grade, -40 to +85 C, Q-8 cerdip."
+    },
+    {
+      "pn": "AD846BQ",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "obsolete",
+      "notes": "B grade, -40 to +85 C, Q-8 cerdip."
+    },
+    {
+      "pn": "AD846SQ",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "obsolete",
+      "notes": "S grade, -55 to +125 C, Q-8 cerdip."
+    },
+    {
+      "pn": "AD846SQ/883B",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "obsolete",
+      "notes": "S grade processed to MIL-STD-883B, -55 to +125 C, Q-8 cerdip. Also listed under NSN part listings."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Analog Devices",
+      "role": "originator / sole source",
+      "period": "c. 1990 (a SPICE macro-model Rev. A dated 1/91 exists) until obsolescence; exact dates unconfirmed",
+      "notes": "Sibling of ADI's AD844/AD811 current-feedback amps. No second source found. ADI pointed users to the AD8001 or AD811 as replacements, according to a diyAudio post."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Slew rate",
+      "value": "450 V/us",
+      "condition": "typ",
+      "source": "ADI AD846 datasheet (obsolete-data-sheets/270284AD846.pdf)"
+    },
+    {
+      "parameter": "Small-signal bandwidth",
+      "value": "80 MHz",
+      "condition": "-3 dB, AV = -1",
+      "source": "ADI AD846 datasheet"
+    },
+    {
+      "parameter": "Settling time",
+      "value": "110 ns to 0.01%",
+      "condition": "10 V step, gains -1 to -10",
+      "source": "ADI AD846 datasheet"
+    },
+    {
+      "parameter": "Input voltage noise",
+      "value": "2 nV/rtHz",
+      "condition": "1 kHz, typ",
+      "source": "ADI AD846 datasheet"
+    },
+    {
+      "parameter": "Input current noise",
+      "value": "20 pA/rtHz inverting; 6 pA/rtHz non-inverting",
+      "condition": "1 kHz, typ",
+      "source": "ADI AD846 datasheet"
+    },
+    {
+      "parameter": "Input offset voltage",
+      "value": "75 uV max",
+      "condition": "B grade",
+      "source": "ADI AD846 datasheet"
+    },
+    {
+      "parameter": "Open-loop transresistance",
+      "value": "200 MOhm",
+      "condition": "into 500 Ohm load",
+      "source": "ADI AD846 datasheet"
+    },
+    {
+      "parameter": "Quiescent supply current",
+      "value": "6.5 mA max",
+      "condition": "",
+      "source": "ADI AD846 datasheet"
+    },
+    {
+      "parameter": "Supply voltage",
+      "value": "+/-18 V",
+      "condition": "absolute maximum rating",
+      "source": "ADI AD846 datasheet"
+    }
+  ],
+  "reputation": {
+    "summary": "On diyAudio, posters call it 'great sounding' and 'very good sounding' for DAC I/V conversion. One thread is titled 'AD 846 AN is there a better sounding opamp out there', and an 'AD 846 replacement' thread began after it went obsolete. ADI's AD1862 datasheet names the NE5534 or AD846 for the current-to-voltage stage. The praise comes from a small niche of forum users, not wide consensus.",
+    "sonic_descriptors": [
+      "'great sounding' (diyAudio posters)",
+      "'very good sounding' (diyAudio posters)"
+    ],
+    "typical_uses": [
+      "DAC current-to-voltage (I/V) converter, e.g. after the AD1862",
+      "Output/line stages in DIY DACs and CD-player mods"
+    ],
+    "caveats": [
+      "Obsolete. Stock sold today is old or of unknown origin.",
+      "It is a current-feedback amp, so the feedback resistor sets bandwidth and stability. Forum posters warn that a voltage-feedback op amp may not drop in as a replacement.",
+      "A diyAudio poster notes that it was 'only 12 bit accurate' (the datasheet's 0.01% precision claim) and had little commercial success."
+    ],
+    "sources": [
+      "https://www.diyaudio.com/community/threads/ad-846-an-is-ther-a-better-sounding-opamp-out-there.5807/",
+      "https://www.diyaudio.com/community/threads/ad-846-replacement.118303/",
+      "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-3",
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/ad1862.pdf",
+      "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Analog Devices",
+      "title": "450 V/us, Precision, Current-Feedback Op Amp AD846",
+      "doc_number": "AD846 (ADI file prefix 270284)",
+      "revision": "B",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The only vendor-hosted copy, kept in ADI's obsolete-data-sheets library. Search text shows 'REV. B'. A lowercase URL variant (270284ad846.pdf) also resolves in search."
+    },
+    {
+      "vendor": "Alldatasheet",
+      "title": "AD846 Datasheet(PDF) - Analog Devices",
+      "doc_number": "AD846",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48468/AD/AD846.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Older scan, probably a pre-web ADI copy. Revision not shown in the search summary."
+    },
+    {
+      "vendor": "Alldatasheet",
+      "title": "AD846_15 Datasheet(PDF) - Analog Devices",
+      "doc_number": "AD846",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/655325/AD/AD846_15.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A second, later copy on Alldatasheet, probably the '_15' re-download of the ADI PDF. Revision not shown. Unconfirmed whether it differs from the first copy."
+    },
+    {
+      "vendor": "Datasheetcatalog",
+      "title": "AD846 Datasheet pdf - 450 V/us, Precision, Current-Feedback Op Amp",
+      "doc_number": "AD846",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD846.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Old mirror that may freeze an earlier revision. Revision unconfirmed."
+    },
+    {
+      "vendor": "Digchip",
+      "title": "AD846 datasheet - 450 V/us, Precision, Current-Feedback Op Amp",
+      "doc_number": "AD846",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/041/AD846.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Also hosts an AD846SQ_883B page. Revision unconfirmed."
+    },
+    {
+      "vendor": "Studylib",
+      "title": "450 V/us, Precision, Current-Feedback Op Amp AD846",
+      "doc_number": "AD846",
+      "revision": "",
+      "date": "",
+      "url": "https://studylib.net/doc/18488908/450-v--s--precision--current-feedback-op-amp-ad846",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Text copy of the ADI datasheet. Revision unconfirmed."
+    },
+    {
+      "vendor": "IC-ON-LINE (datasheet.hk)",
+      "title": "AD846AN_125131.PDF",
+      "doc_number": "AD846",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheet.hk/view_download.php?id=1004051&file=0014\\ad846an_125131.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed: the revision and content were not visible in the search summary."
+    },
+    {
+      "vendor": "Datasheetq",
+      "title": "AD846 Datasheet PDF - Analog Devices",
+      "doc_number": "AD846",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/AD846-doc-ADI",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision unconfirmed."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD846",
+      "revision": "B",
+      "date": "unknown",
+      "changes": "The final revision, held in ADI's obsolete-data-sheets library. The change log and any earlier revisions (Rev. 0/A) were not found in search."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No documented AD846 counterfeit cases were found. The part has long been obsolete, though, so any 'new' AN/BN/AQ/BQ stock from marketplace sellers should be treated as suspect (possibly remarked AD844/AD811 or pulls). To check a part, compare its quiescent current (6.5 mA max) and verify it behaves as a current-feedback amp: bandwidth should depend on the feedback-resistor value.",
+  "alternatives": [
+    "AD811 (ADI current-feedback; ADI replacement suggestion according to a diyAudio post; runs warm at ~16 mA Iq)",
+    "AD8001 (ADI current-feedback; ADI replacement suggestion according to a diyAudio post)",
+    "AD844 (ADI current-feedback, popular for DAC I/V)",
+    "NE5534 (named with the AD846 in the AD1862 datasheet for I/V; voltage-feedback)"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://www.analog.com/en/products/obsolete/ad846.html",
+    "https://www.analog.com/en/products/ad846.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad1862.pdf",
+    "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf",
+    "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284ad846.pdf"
+  ],
+  "open_questions": [
+    "Rev. B print date and change log. Did Rev. 0/A datasheets exist, and do any mirrors freeze them?",
+    "Exact obsolescence date and discontinuance PCN number.",
+    "Were any other packages or grades made beyond N-8/Q-8 (e.g. LCC or chip)?",
+    "Offset drift, input bias current and specified operating supply range were not confirmed via search.",
+    "A SPICE macro-model Rev. A (1/91) reportedly covers 'AD846 and AD846A'. What 'AD846A' denotes is unconfirmed.",
+    "No silicon or die change was found. The AD846 appears to be a single-die, sole-source part."
+  ],
+  "sources": [
+    "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf",
+    "https://www.analog.com/en/products/ad846.html",
+    "http://www.analog.com/en/products/obsolete/ad846.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad1862.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/48468/AD/AD846.html",
+    "https://octopart.com/ad846an-analog+devices-5470680",
+    "https://www.parttarget.com/Analog-Devices-Inc_nsn-parts_AD844AN_AD847SQ-883.html",
+    "https://www.diyaudio.com/community/threads/ad-846-an-is-ther-a-better-sounding-opamp-out-there.5807/",
+    "https://www.diyaudio.com/community/threads/ad-846-replacement.118303/",
+    "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-3",
+    "https://www.diyaudio.com/community/threads/i-v-and-analog-output-stage-for-ad1862.299414/"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [],
+    "corrections": [
+      "The channel count was 0 for every part number. It is now 1, since the AD846 is a single op amp.",
+      "Part-number status was 'unknown'. It is now 'obsolete', based on the ADI product page under /en/products/obsolete/ and the obsolete-data-sheets library.",
+      "Added the missing ordering codes AD846BN, AD846AQ, AD846SQ and AD846SQ/883B, with grades and packages from the ADI datasheet ordering guide.",
+      "Removed 'stable in open loop' from the technology field. It comes only from a forum post and was not confirmed in the datasheet.",
+      "Filled in key_specs, datasheets (ADI Rev. B plus mirrors), revision_history, alternatives, the tagline and archive seeds.",
+      "silicon_changes left empty: search found no PCN, die change or revision hazard for the AD846."
+    ],
+    "unverified_urls": [
+      "https://www.alldatasheet.com/datasheet-pdf/pdf/655325/AD/AD846_15.html",
+      "http://www.datasheet.hk/view_download.php?id=1004051&file=0014\\ad846an_125131.pdf"
+    ],
+    "claims_confirmed": [
+      "The ADI datasheet 'AD846 450 V/us, Precision, Current-Feedback Op Amp' is hosted in the obsolete-data-sheets library, and its text shows 'REV. B': https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf",
+      "The AD846 product page sits under ADI's obsolete products path: http://www.analog.com/en/products/obsolete/ad846.html",
+      "Ordering codes AD846AN/BN (N-8 plastic DIP) and AD846AQ/BQ (Q-8 cerdip), all -40 to +85 C, plus AD846SQ and AD846SQ/883B, -55 to +125 C: https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf",
+      "Datasheet specs: 450 V/us slew, 80 MHz BW at AV=-1, 110 ns settling to 0.01% (10 V step): https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284ad846.pdf",
+      "Datasheet specs: 2 nV/rtHz voltage noise, 20/6 pA/rtHz current noise, 75 uV max Vos (B grade), 6.5 mA max supply current: https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf",
+      "200 MOhm transresistance into 500 Ohm, and 'true 12-bit' (0.01%) precision claim: https://studylib.net/doc/18488908/450-v--s--precision--current-feedback-op-amp-ad846",
+      "The AD1862 datasheet recommends the NE5534 or AD846 for I/V conversion: https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-3",
+      "The AD846 is discontinued. According to a diyAudio post, ADI suggests the AD8001 or AD811 as replacements: https://www.diyaudio.com/community/threads/ad-846-replacement.118303/",
+      "The diyAudio thread 'AD 846 AN is ther a better sounding opamp out there' exists: https://www.diyaudio.com/community/threads/ad-846-an-is-ther-a-better-sounding-opamp-out-there.5807/"
+    ],
+    "web_searches_used": 8
+  },
+  "tier": "B",
+  "category": "high-speed-video-crossover",
+  "product_pages": [
+    "https://www.analog.com/en/products/ad846.html"
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "id": "AD8656",
+  "name": "AD8655 / AD8656 (ADI low-noise precision CMOS, rail-to-rail, 5 V)",
+  "tagline": "Low-noise (2.7 nV/√Hz) rail-to-rail CMOS op-amp for 2.7–5.5 V. Builders of portable and USB-powered headphone amps use it where ±15 V parts can't run.",
+  "technology": "Single-supply CMOS (2.7–5.5 V), rail-to-rail input and output, unity-gain stable. Offset is trimmed with ADI DigiTrim. ADI PCN 23_0068 places the AD8656 among its '0.6 µm CMOS amplifier products' built at TSMC Fab 9/2A/2B, with ADI Limerick added as an alternate wafer fab from 2023. Datasheet figures: 2.7 nV/√Hz at 10 kHz, 28 MHz bandwidth, 220 mA output current. Distributor listings give about 1 pA bias current.",
+  "manufacturers": [
+    "Analog Devices"
+  ],
+  "part_numbers": [
+    {
+      "pn": "AD8655",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "active (ADI product page live; lifecycle label not explicitly confirmed)",
+      "notes": "Single. 8-lead MSOP and SOIC per the search summary of the datasheet. Order codes (e.g. AD8655ARZ/ARMZ) not confirmed in this pass."
+    },
+    {
+      "pn": "AD8656",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "active (ADI product page live; stocked at LCSC and Mouser; lifecycle label not explicitly confirmed)",
+      "notes": "Dual. AD8656ARMZ (MSOP-8) confirmed at LCSC (C209459). SOIC-8 is also offered. Listed on PCN 23_0068 (alternate wafer fab)."
+    },
+    {
+      "pn": "AD8656W (AD8656WARMZ)",
+      "channels": 2,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "listed at distributors (Octopart, AD8656WARMZ-REEL); status unconfirmed",
+      "notes": "Automotive-grade 'W' variant seen on Octopart. Not checked against the ADI ordering guide."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Analog Devices",
+      "role": "originator / sole source",
+      "period": "c. 2005–present",
+      "notes": "The Rev. E datasheet carries copyright 2005–2013, which implies first release around 2005. No second source is known."
+    },
+    {
+      "vendor": "TSMC (Fab 9, Fab 2A, Fab 2B)",
+      "role": "wafer foundry (0.6 µm CMOS)",
+      "period": "until at least 2023, continuing",
+      "notes": "Named as the existing fab in ADI PCN 23_0068."
+    },
+    {
+      "vendor": "Analog Devices Limerick (ADLK)",
+      "role": "alternate wafer fab",
+      "period": "effective 10 Aug 2023 (PCN 23_0068 Rev -); more models added effective 10 May 2024 (Rev A)",
+      "notes": "ADI states there is no impact to fit, form, function or reliability. Some parts also move from 6-inch to 8-inch wafers."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Voltage noise density",
+      "value": "2.7 nV/√Hz",
+      "condition": "f = 10 kHz",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf"
+    },
+    {
+      "parameter": "Offset voltage",
+      "value": "250 µV max",
+      "condition": "over full VCM range",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf"
+    },
+    {
+      "parameter": "Offset drift",
+      "value": "0.4 µV/°C typ, 2.3 µV/°C max",
+      "condition": "",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf"
+    },
+    {
+      "parameter": "Bandwidth (GBW)",
+      "value": "28 MHz",
+      "condition": "",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "11 V/µs (8.5 V/µs also quoted)",
+      "condition": "RL = 10 kΩ for 11 V/µs; test condition for the 8.5 V/µs figure not confirmed",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf"
+    },
+    {
+      "parameter": "THD+N",
+      "value": "0.0007%",
+      "condition": "G = 1, RL = 1 kΩ, f = 1 kHz, VIN = 2 V p-p",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "3.7 mA typ, 4.5 mA max per amplifier",
+      "condition": "VO = 0 V",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf"
+    },
+    {
+      "parameter": "Output current",
+      "value": "220 mA",
+      "condition": "short-circuit / output drive as quoted in search summary",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "1 pA typ",
+      "condition": "distributor listing; datasheet max not confirmed",
+      "source": "https://www.utmel.com/productdetail/analogdevicesinc-ad8656armz-7872575"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "2.7 V to 5.5 V (single supply)",
+      "condition": "−40 °C to +125 °C",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf"
+    }
+  ],
+  "reputation": {
+    "summary": "The part has a niche following among builders of portable and low-voltage (5 V / USB-powered) headphone amps. Head-Fi posters call it a 'nifty low-voltage rail-to-rail dual' that 'sounds quite nice driving headphones directly'. In AD8656-vs-AD8620 threads on Head-Fi and diyAudio, posters rate it below the AD8620 when other things are equal. It is not an 'op-amp rolling' legend in ±15 V gear.",
+    "sonic_descriptors": [
+      "'sounds quite nice driving headphones directly' (Head-Fi forum post)"
+    ],
+    "typical_uses": [
+      "Portable and battery headphone amplifiers",
+      "USB-bus-powered / single 5 V audio stages (DAC output buffers, headphone drivers)",
+      "Low-voltage preamp and buffer stages that need rail-to-rail swing"
+    ],
+    "caveats": [
+      "Absolute maximum supply is about 5.5 V (2.7–5.5 V operating), so it will be destroyed in a ±12 V/±15 V op-amp socket.",
+      "Sold only in surface-mount packages (MSOP-8 and SOIC-8 per the datasheet summary). Rolling it into DIP-8 sockets needs an adapter.",
+      "Forum comparisons rate it below the AD8620. Those are forum opinions, not measurements.",
+      "Supply current is fairly high for a 5 V part (3.7 mA per amp typ), which matters for battery life in portable builds."
+    ],
+    "sources": [
+      "https://www.head-fi.org/threads/any-idea-at-all-how-the-ad8656-opamp-compares-to-the-ad8620.612822/",
+      "https://www.head-fi.org/threads/any-idea-at-all-how-the-ad8656-opamp-compares-to-the-ad8620.612822/page-2",
+      "https://www.diyaudio.com/forums/solid-state/213889-idea-ad8656-opamp-compares-ad8620.html",
+      "https://www.head-fi.org/threads/best-opamp-for-audio-operating-at-5v-only.354751/"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8655/AD8656 Low Noise, Precision CMOS Amplifier Data Sheet",
+      "doc_number": "AD8655_8656",
+      "revision": "E",
+      "date": "2013",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current revision per search results. The same file is also indexed as .../data-sheets/AD8655_8656.pdf (uppercase)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8655/AD8656 Data Sheet Rev. B (TME mirror)",
+      "doc_number": "AD8655_8656",
+      "revision": "B",
+      "date": "",
+      "url": "https://www.tme.eu/Document/97e591a5710fdf5735cb53b51b664371/AD8655_8656.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "TME distributor copy that freezes an older revision (the search result title reads 'Rev. B'). Its date was not confirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Datasheet AD8655, AD8656 Analog Devices, Revision: E",
+      "doc_number": "AD8655_8656",
+      "revision": "E",
+      "date": "2013",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=35348",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "RadioLocman mirror labelled Revision E."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8656 Datasheet (alldatasheet)",
+      "doc_number": "AD8655_8656",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/166970/AD/AD8656.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision held is unconfirmed. It could be an older revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8655 Datasheet (alldatasheet)",
+      "doc_number": "AD8655_8656",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/166969/AD/AD8655.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision held is unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8655 - 8656 Datasheet (Scribd)",
+      "doc_number": "AD8655_8656",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/822544763/AD8655-8656-Datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision held is unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8656 Datasheet (datasheetspdf.com)",
+      "doc_number": "AD8655_8656",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet/AD8656.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision held is unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8656 / AD8655 Datasheet (DataSheetAll)",
+      "doc_number": "AD8655_8656",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetall.com/adi/ad8656/",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision held is unconfirmed. There is also an AD8655 page at https://www.datasheetall.com/adi/ad8655/."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8655 Datasheet (AD8655/AD8656 Low Noise, Precision CMOS Amplifier), RadioLocman data page (separate entry from the Rev. E di=35348 page)",
+      "doc_number": "AD8655_8656",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=350009&%2FAD8655=",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "RadioLocman lists this as a separate datasheet ID (350009) from the Rev. E entry (35348). A second ID could mean a different revision, but the search summary does not show which one."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Low Noise, Precision CMOS Amplifier AD8655/AD8656 (Scribd upload 'AD8655-6')",
+      "doc_number": "AD8655_8656",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/94453684/AD8655-6",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Separate from the Scribd copy already listed (822544763). The low Scribd ID suggests an upload around 2012. That is only an inference and is not verified. If true, the copy would predate Rev. E (copyright 2005–2013), so it may hold Rev. C or Rev. D. Check the revision footer before using it as evidence."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8655 Datasheet - (AD8655 / AD8656) Precision CMOS Amplifier",
+      "doc_number": "AD8655_8656",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet/AD8655.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the AD8655 page. The AD8656 page is already listed. The revision is not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8655 Datasheet PDF Download (DataSheetAll)",
+      "doc_number": "AD8655_8656",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetall.com/adi/ad8655/",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the AD8655 page. The AD8656 page is already listed. The revision is not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8656 - ICDICTIONARY device page",
+      "doc_number": "AD8655_8656",
+      "revision": "",
+      "date": "",
+      "url": "https://www.icdictionary.com/single_device.php?DeviceName=AD8656",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A device and datasheet index page. The revision is not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Farnell datasheet PDF 2250832 (returned for an AD8656 datasheet query)",
+      "doc_number": "AD8655_8656 (not confirmed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.farnell.com/datasheets/2250832.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The search result title is only 'Farnell'. The summary does not confirm that this PDF is the AD8655/AD8656 datasheet, and it does not show a revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Product/Process Change Notice - PCN 23_0068 Rev. - (DigiKey copy)",
+      "doc_number": "PCN 23_0068",
+      "revision": "",
+      "date": "",
+      "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5357/ADI_PCN_23_0068_Rev_-_Form.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "Rev. -",
+      "note": "This is a PCN, not a datasheet. It is direct evidence of a wafer-fab change (TSMC to ADI Limerick) under the same part number. The search returned it for an AD8656 query. The summary does not confirm that AD8656 is in the model list, but the chain lineage already ties PCN 23_0068 to this family."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Product/Process Change Notice - PCN 23_0068 Rev. A (Mouser copy)",
+      "doc_number": "PCN 23_0068",
+      "revision": "A",
+      "date": "",
+      "url": "https://www.mouser.com/PCN/ADI_PCN_23_0068_Rev._A.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "This is a PCN, not a datasheet. It is Rev. A of the fab-transfer PCN, which adds more models. The search returned it for an AD8655/AD8656 datasheet query."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD8655_8656",
+      "revision": "E",
+      "date": "c. 2013 (copyright 2005–2013)",
+      "changes": "Current revision. Change details not confirmed in this pass."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD8655_8656",
+      "revision": "B",
+      "date": "not confirmed",
+      "changes": "Older revision preserved on the TME mirror. Change details not confirmed."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "kind": "fab-or-process-transfer",
+      "vendor": "Analog Devices",
+      "when": "PCN 23_0068 Rev. - published 8 May 2023, effective 10 Aug 2023; Rev. A published 6 Feb 2024 (models added), effective 10 May 2024",
+      "part_numbers_affected": [
+        "AD8656 (package/grade variants per PCN list)",
+        "AD8655 (not confirmed)"
+      ],
+      "identification": "Not visible from the part marking. Wafer-fab origin can be traced only through ADI lot or date-code records. Parts made after Aug 2023 may come from TSMC or ADI Limerick wafers.",
+      "summary": "ADI added ADI Limerick (ADLK) as an alternate wafer fab to TSMC Fab 9, Fab 2A and Fab 2B for its 0.6 µm CMOS amplifier products. For a limited number of parts, wafer diameter also changed from 6 to 8 inches. ADI states no impact to fit, form, function or reliability, and has published qualification reports. Whether the AD8655 is listed was not confirmed.",
+      "spec_deltas": [
+        {
+          "parameter": "Wafer fab",
+          "before": "TSMC Fab 9 / Fab 2A / Fab 2B (0.6 µm CMOS)",
+          "after": "TSMC or ADI Limerick (ADLK)"
+        },
+        {
+          "parameter": "Wafer diameter (limited parts)",
+          "before": "6 inch",
+          "after": "8 inch"
+        }
+      ],
+      "audio_impact": "None expected. ADI says data-sheet limits are unchanged, and no measurements comparing fabs are known. Parameters without guaranteed limits, such as the 1/f noise corner, could in principle differ slightly.",
+      "compatibility_risk": "low - same part number and data-sheet limits; ADI states no change to fit, form or function.",
+      "sources": [
+        "https://www.analog.com/media/en/PCN/ADI_PCN_23_0068_Rev_-_Form.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_23_0068_Rev_A_Form.pdf",
+        "https://www.mouser.com/PCN/ADI_PCN_23_0068_Rev._A.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_23_0068_Rev_A_Qualification_Results_Wafer_Fab_Site_at_ADI_Limerick.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_23_0068_Rev_-_Qualification%20Results_Wafer%20Fab%20Site%20at%20ADI%20Limerick.pdf"
+      ],
+      "confidence": "medium",
+      "verification": "A search confirmed the PCN scope (ADLK as an alternate to TSMC Fab 9/2A/2B for 0.6 µm CMOS amplifiers, no fit/form/function impact) and found the Rev. - and Rev. A qualification reports. The summary did not itemize the AD8656 or AD8655, so the listing rests on the earlier pass."
+    },
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices",
+      "when": "PCN 07_0024 (originally 2007; the form is at Rev. E)",
+      "part_numbers_affected": [
+        "AD8655",
+        "AD8656"
+      ],
+      "identification": "Unknown. Use a date code after the PCN effective date.",
+      "summary": "ADI PCN 07_0024 Rev. E, the Sumitomo mold-compound discontinuation PCN (mold compound and in some cases die-attach changes across SOIC, MSOP/MiniSO and other packages), is reported to list the AD8655 and AD8656 with package variants. This is a package-material change, not a die change.",
+      "spec_deltas": [],
+      "audio_impact": "None expected (package materials only).",
+      "compatibility_risk": "low - package-material change; no data-sheet change is associated with it.",
+      "sources": [
+        "https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf",
+        "https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Parts%20List.pdf"
+      ],
+      "confidence": "low",
+      "verification": "Reclassified from 'nature unknown' to package-or-assembly, because the OP275 and AD8610 passes identify PCN 07_0024 as the Sumitomo mold-compound change. A combined search did not show the AD8655/AD8656 rows."
+    }
+  ],
+  "counterfeit_notes": "This pass found no specific counterfeit reports. ADI offers only surface-mount packages (MSOP-8 and SOIC-8), so any 'AD8656' sold as a DIP-8 is either an adapter board or suspect. Buy from authorized distributors.",
+  "alternatives": [
+    "AD8620 (ADI JFET dual; needs at least ±5 V; the reference in forum comparisons)",
+    "AD8616 (ADI 5 V rail-to-rail CMOS dual)",
+    "AD8652 (ADI 5 V rail-to-rail CMOS dual, 50 MHz)",
+    "OPA2350 (TI 5 V rail-to-rail CMOS dual)"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://www.analog.com/UploadedFiles/Data_Sheets/AD8655_8656.pdf",
+    "http://www.analog.com/static/imported-files/data_sheets/AD8655_8656.pdf",
+    "https://www.analog.com/en/products/ad8655.html",
+    "https://www.analog.com/en/products/ad8656.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8655_8656.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf",
+    "https://www.analog.com/static/imported-files/data_sheets/AD8655_8656.pdf",
+    "https://www.tme.eu/Document/97e591a5710fdf5735cb53b51b664371/AD8655_8656.pdf"
+  ],
+  "open_questions": [
+    "Exact printed date (month and year) of Rev. E, and the full revision-history table. Rev. 0, A, C and D are implied by the letter sequence but were not seen.",
+    "Date of the Rev. B copy held on the TME mirror.",
+    "Which revisions the alldatasheet, Scribd, datasheetspdf and DataSheetAll mirrors hold.",
+    "What PCN 07_0024 changed (assembly site, packaging or die?).",
+    "Whether the AD8655 is also covered by PCN 23_0068 (Rev A added models).",
+    "Other ADI PCNs (09_0153, 14_0246, 17_0068, 21_0001) came up in searches for AD8656, but their link to this part was not confirmed.",
+    "Test condition for the 8.5 V/µs slew-rate figure. Noise at 1 kHz and 0.1–10 Hz, and datasheet bias-current max, not confirmed.",
+    "Whether an LFCSP package option exists or existed. The search summary lists only MSOP and SOIC.",
+    "ADI lifecycle label (Production / Recommended for New Designs) for the AD8655, AD8656 and AD8656W."
+  ],
+  "sources": [
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf",
+    "https://www.analog.com/en/products/ad8656.html",
+    "https://www.analog.com/en/products/ad8655.html",
+    "https://www.tme.eu/Document/97e591a5710fdf5735cb53b51b664371/AD8655_8656.pdf",
+    "https://www.radiolocman.com/datasheet/pdf.html?di=35348",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_23_0068_Rev_-_Form.pdf",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_23_0068_Rev_A_Form.pdf",
+    "https://www.mouser.com/PCN/ADI_PCN_23_0068_Rev._A.pdf",
+    "https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf",
+    "https://www.mouser.com/new/analog-devices/adi-ad8655-ad8656-cmos-amplifiers/",
+    "https://www.lcsc.com/product-detail/General-Purpose-Amplifiers_Analog-Devices_AD8656ARMZ_Analog-Devices-ADI-AD8656ARMZ_C209459.html",
+    "https://octopart.com/ad8656warmz-reel-analog+devices-46653048",
+    "https://www.utmel.com/productdetail/analogdevicesinc-ad8656armz-7872575",
+    "https://www.head-fi.org/threads/any-idea-at-all-how-the-ad8656-opamp-compares-to-the-ad8620.612822/",
+    "https://www.head-fi.org/threads/any-idea-at-all-how-the-ad8656-opamp-compares-to-the-ad8620.612822/page-2",
+    "https://www.diyaudio.com/forums/solid-state/213889-idea-ad8656-opamp-compares-ad8620.html",
+    "https://www.head-fi.org/threads/best-opamp-for-audio-operating-at-5v-only.354751/"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [],
+    "corrections": [
+      "Channels corrected from 0: AD8655 = 1 (single), AD8656 = 2 (dual).",
+      "Part statuses changed from 'unknown' to 'active' (product pages live, distributor stock). The ADI lifecycle label was not explicitly confirmed.",
+      "Added the automotive variant AD8656W (AD8656WARMZ-REEL) seen on Octopart.",
+      "Filled key_specs, datasheets and revision_history, which were empty. Current datasheet is Rev. E (copyright 2005–2013). A Rev. B copy survives on TME.",
+      "Added silicon_changes. PCN 23_0068 adds ADI Limerick as an alternate fab to TSMC for 0.6 µm CMOS amps, including the AD8656. PCN 07_0024 lists the AD8655/AD8656, but what it changed is unknown.",
+      "The 220 mA output-current claim is kept (datasheet summary). The 1 pA bias claim is supported only by a distributor listing."
+    ],
+    "unverified_urls": [
+      "http://www.analog.com/static/imported-files/data_sheets/AD8655_8656.pdf",
+      "http://www.analog.com/UploadedFiles/Data_Sheets/AD8655_8656.pdf"
+    ],
+    "claims_confirmed": [
+      "Current ADI datasheet is Rev. E at analog.com (https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf); copyright 2005–2013.",
+      "TME hosts an older Rev. B copy of AD8655_8656.pdf (https://www.tme.eu/Document/97e591a5710fdf5735cb53b51b664371/AD8655_8656.pdf).",
+      "RadioLocman mirrors Revision E (https://www.radiolocman.com/datasheet/pdf.html?di=35348).",
+      "Specs: 2.7 nV/√Hz at 10 kHz, 250 µV max Vos over VCM, 0.4/2.3 µV/°C drift, 28 MHz bandwidth, 2.7–5.5 V, −40 to +125 °C, MSOP/SOIC (https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf).",
+      "Specs: slew rate 11 V/µs (RL = 10 kΩ); supply current 3.7 mA typ / 4.5 mA max per amp; THD+N 0.0007% (G = 1, RL = 1 kΩ, 1 kHz, 2 V p-p); 220 mA output current (https://www.analog.com/media/en/technical-documentation/data-sheets/ad8655_8656.pdf).",
+      "ADI describes the parts as the 'industry's lowest noise precision CMOS amplifiers' using DigiTrim (https://www.analog.com/en/products/ad8656.html).",
+      "PCN 23_0068: ADLK added as alternate wafer fab to TSMC Fab 9/2A/2B for 0.6 µm CMOS amps, 6-to-8-inch wafers for some parts, no fit/form/function impact. Rev - published 8 May 2023, effective 10 Aug 2023, includes the AD8656. Rev A published 6 Feb 2024, effective 10 May 2024 (https://www.analog.com/media/en/PCN/ADI_PCN_23_0068_Rev_A_Form.pdf, https://www.mouser.com/PCN/ADI_PCN_23_0068_Rev._A.pdf).",
+      "PCN 07_0024 Rev. E lists the AD8655 and AD8656 among affected products (https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf).",
+      "LCSC stocks AD8656ARMZ (https://www.lcsc.com/product-detail/General-Purpose-Amplifiers_Analog-Devices_AD8656ARMZ_Analog-Devices-ADI-AD8656ARMZ_C209459.html).",
+      "AD8656WARMZ-REEL is listed on Octopart (https://octopart.com/ad8656warmz-reel-analog+devices-46653048)."
+    ],
+    "web_searches_used": 6
+  },
+  "tier": "C",
+  "category": "cmos-input",
+  "product_pages": [
+    "https://www.analog.com/en/products/ad8656.html",
+    "https://www.analog.com/en/products/ad8655.html",
+    "https://www.mouser.com/new/analog-devices/adi-ad8655-ad8656-cmos-amplifiers/",
+    "https://www.digikey.com/en/products/base-product/analog-devices-inc/505/AD8656/39643"
+  ],
+  "revision_chain_notes": "Analog Devices is the only vendor. No second source, acquirer re-issue or TI/National/other edition exists for the AD8655/AD8656. The ADI datasheet file is AD8655_8656 ('Low Noise, Precision CMOS Amplifier Data Sheet AD8655/AD8656').\n\nWhat is known, oldest to newest:\n- Rev. 0 (original release, c. 2005, implied by the copyright 2005 on Rev. E): MISSING. No copy found.\n- Rev. A: MISSING. No copy or date found.\n- Rev. B: the TME copy is already listed. Its date is still not confirmed.\n- Rev. C: MISSING.\n- Rev. D: MISSING.\n- Rev. E (c. 2013, copyright 2005–2013): the analog.com copy and the RadioLocman di=35348 copy are already listed. It is the current revision.\n\nFour search queries using revision-history phrases ('Rev. D to Rev. E', 'Rev. C to Rev. D', 'Rev. 0 to Rev. A') and distributor/mirror terms found no snippet showing the Rev. 0, A, C or D headers, dates or change lists. The revision-history table in the current analog.com Rev. E PDF (not fetched, per tool rules) is the best place to recover the dates and changes for Rev. 0 through Rev. E.\n\nNew copies with the revision not shown, which may hold missing revisions:\n- RadioLocman data.html?di=350009, a separate ID from the Rev. E entry.\n- Scribd 94453684 'AD8655-6'. Its low ID suggests an upload around 2012, before Rev. E, so it may hold Rev. C or D. This is an inference and is not verified.\n- datasheetspdf.com, DataSheetAll and ICDICTIONARY pages.\n- Farnell 2250832.pdf. It is not confirmed to be this part.\n\nSilicon-change evidence: PCN 23_0068 Rev. - (DigiKey copy) and Rev. A (Mouser copy) record the TSMC to ADI Limerick fab move (2023–2024). No datasheet revision after Rev. E has been seen to go with it.\n\nThe archive seeds were not returned by any search. They are built from ADI's standard legacy URL patterns (static/imported-files/data_sheets, UploadedFiles/Data_Sheets) plus the confirmed file name AD8655_8656.pdf, for checking in the Wayback Machine. They may not all resolve."
+}

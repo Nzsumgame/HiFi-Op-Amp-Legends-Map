@@ -1,0 +1,537 @@
+{
+  "id": "NJM2043",
+  "name": "NJM2043 / NJM2043DD (New JRC low-noise dual, NJM4558 lineage)",
+  "tagline": "Low-noise NJM4558 derivative with twice the output current. The DD rank is noise-screened for RIAA use, and one Japanese listener praised its clear treble.",
+  "technology": "Bipolar dual op-amp built on New JRC's planar epitaxial process. It is an NJM4558 derivative with improved input and output stages, giving lower noise, about 2x the output current (25 mA), 6 V/us slew rate and 14 MHz unity-gain bandwidth. Marketed as a 'Low-noise dual pre-amplifier'.",
+  "manufacturers": [
+    "New Japan Radio (New JRC)",
+    "Nisshinbo Micro Devices (successor)"
+  ],
+  "part_numbers": [
+    {
+      "pn": "NJM2043",
+      "channels": 2,
+      "vendors": [
+        "New JRC / Nisshinbo Micro Devices"
+      ],
+      "status": "discontinued",
+      "notes": "Base type. The datasheet lists DIP8, DMP8 and SIP8 package outlines. Distributors list it as discontinued."
+    },
+    {
+      "pn": "NJM2043D",
+      "channels": 2,
+      "vendors": [
+        "New JRC / Nisshinbo Micro Devices"
+      ],
+      "status": "discontinued",
+      "notes": "DIP8, standard (unscreened) grade. Distributor listings show it as discontinued. Stock may remain at brokers."
+    },
+    {
+      "pn": "NJM2043DD",
+      "channels": 2,
+      "vendors": [
+        "New JRC / Nisshinbo Micro Devices"
+      ],
+      "status": "discontinued (retail stock still sold, e.g. Akizuki)",
+      "notes": "DIP8, D-rank low-noise selected version, guaranteed VNI <= 1.4 uV (Rs=2.2 kOhm, RIAA). Same design as the NJM2043D, screened for noise. This is the version enthusiasts praise."
+    },
+    {
+      "pn": "NJM2043M",
+      "channels": 2,
+      "vendors": [
+        "New JRC / Nisshinbo Micro Devices"
+      ],
+      "status": "discontinued (likely; not individually confirmed)",
+      "notes": "DMP8 (SOP-8 type) surface-mount package."
+    },
+    {
+      "pn": "NJM2043L",
+      "channels": 2,
+      "vendors": [
+        "New JRC / Nisshinbo Micro Devices"
+      ],
+      "status": "discontinued (likely; not individually confirmed)",
+      "notes": "SIP8 package."
+    },
+    {
+      "pn": "NJM2043S",
+      "channels": 2,
+      "vendors": [
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "unknown",
+      "notes": "Unconfirmed. Seen only on a Jotrin broker listing. The package is unknown and it is not in the Ver.2003-03-17 package table as summarised."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "role": "originator / manufacturer",
+      "period": "unknown introduction (datasheet Ver.2003-03-17 is the latest dated version found) to 2021",
+      "notes": "Designed as a low-noise version of the NJM4558, with improved input and output stages and about 2x the output current."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "role": "discontinuation",
+      "period": "notice dated 2018-12-20",
+      "notes": "New JRC's 20 Dec 2018 EOL notice covers products hit by the termination of its 4-inch wafer line. One search summary said NJM2043 is on that list, but I could not see the list itself (medium/low confidence). Distributors now show the NJM2043D and NJM2043DD as discontinued."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "role": "successor company (distributor listings)",
+      "period": "2022-",
+      "notes": "New JRC became part of Nisshinbo Micro Devices. Distributors (Octopart, Master Electronics, TrustedParts) list the NJM2043D and NJM2043DD under Nisshinbo as discontinued."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Channels",
+      "value": "2",
+      "condition": "",
+      "source": "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "6 V/us typ",
+      "condition": "datasheet typical",
+      "source": "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf"
+    },
+    {
+      "parameter": "Unity-gain bandwidth",
+      "value": "14 MHz typ",
+      "condition": "datasheet typical",
+      "source": "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf"
+    },
+    {
+      "parameter": "Operating supply voltage",
+      "value": "+/-4 V to +/-22 V",
+      "condition": "operating range",
+      "source": "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf"
+    },
+    {
+      "parameter": "Output current",
+      "value": "25 mA",
+      "condition": "'high output current' feature; about 2x the NJM4558 according to Akizuki",
+      "source": "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf"
+    },
+    {
+      "parameter": "Equivalent input noise voltage (DD rank)",
+      "value": "<= 1.4 uV max",
+      "condition": "Rs=2.2 kOhm, RIAA weighting; NJM2043DD selected parts only",
+      "source": "https://akizukidenshi.com/catalog/g/g102369/"
+    }
+  ],
+  "reputation": {
+    "summary": "The praise comes mainly from one Japanese enthusiast listening comparison (C-Area @WIKI). It rated the NJM2043DD the most pleasing of the NJM4558-lineage op-amps tested, noting unusually clear treble for a 4558-type and a fairly flat balance that suited classical music. Akizuki markets it as a low-noise-selected, improved 4558. Other opinions differ: a Zigsow user review is titled 'コレジャナイ音質' ('not the sound I wanted').",
+    "sonic_descriptors": [
+      "clear treble, unusual for a 4558-type (one reviewer)",
+      "relatively flat balance, suited to classical music (one reviewer)"
+    ],
+    "typical_uses": [
+      "Phono/RIAA and other pre-amplifier stages (the DD rank is noise-graded under RIAA conditions)",
+      "Tone-control and line stages in legacy Japanese audio gear",
+      "DIP8 op-amp rolling in DIY audio"
+    ],
+    "caveats": [
+      "The praise rests mostly on one hobbyist listening test; others disagree (Zigsow review)",
+      "Discontinued; buy from reputable stock (e.g. Akizuki) rather than anonymous marketplaces",
+      "The DD rank differs from the D only by noise screening, not by design"
+    ],
+    "sources": [
+      "https://w.atwiki.jp/higemouse/pages/50.html",
+      "https://akizukidenshi.com/catalog/g/g102369/",
+      "https://zigsow.jp/item/326108/review/325414"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043 LOW-NOISE DUAL PRE-AMPLIFIER",
+      "doc_number": "NJM2043_E",
+      "revision": "Ver. 2003-03-17",
+      "date": "2003-03-17",
+      "url": "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Mouser copy of the English datasheet, with the version printed in the header. It covers DIP8/DMP8/SIP8 (D/M/L) and the D-rank noise grade. Latest dated version found."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043 Datasheet (PDF) - New Japan Radio",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7233/NJRC/NJM2043.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision held is not shown in the search summary. It may be an older, pre-2003 copy."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043 Low-Noise Dual Pre-Amplifier",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/N/J/M/2/NJM2043.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision held is not shown in the search summary. Datasheetcatalog often freezes early-2000s or older copies."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043 LOW-NOISE DUAL PRE-AMPLIFIER",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/New-Japan-Radio/NJM2043/454856",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision held is not shown in the search summary. The same document id (454856) appears on datasheet39.com."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043 datasheet - Low-noise Dual Pre-amplifier",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/330/NJM2043.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision held is not shown in the search summary."
+    },
+    {
+      "vendor": "Japan Radio Corporation (New JRC)",
+      "title": "NJM2043DD Datasheet PDF",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/NJM2043DD-doc-JRC",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "DD-specific index page. Revision held is not shown in the search summary."
+    },
+    {
+      "vendor": "Japan Radio Corporation (New JRC)",
+      "title": "NJM-2043D LOW-NOISE DUAL PRE-AMPLIFIER",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetbank.com/en/preview/NJM-2043D-JRC",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision held is not shown in the search summary."
+    },
+    {
+      "vendor": "various",
+      "title": "Datasheet Archive: NJM2043 datasheets",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetarchive.com/?q=njm2043",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "multiple / unknown",
+      "note": "Search index that may hold older scanned revisions. Contents were not viewed."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043 LOW-NOISE DUAL PRE-AMPLIFIER (Marutsu distributor copy, filed as NJM2043D.pdf)",
+      "doc_number": "NJM2043",
+      "revision": "Ver. 2003-03-17",
+      "date": "2003-03-17",
+      "url": "https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/NJM2043D.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The search result title reads 'NJM2043 - 1 - Ver.2003-03-17 LOW-NOISE DUAL PRE-AMPLIFIER'. This is the same edition as the known Mouser copy, so it is a second independent copy of Ver.2003-03-17."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043 datasheet (older Mouser /ds/ path, njr_njm2043_e)",
+      "doc_number": "NJM2043_E",
+      "revision": "",
+      "date": "",
+      "url": "http://www.mouser.com/ds/2/294/njr_njm2043_e-547181.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This older Mouser datasheet path is separate from the known /datasheet/2/294/NJM2043_E-218482.pdf. The search result title shows only 'Mouser', so the Ver. date is not shown. It may be the same Ver.2003-03-17 file or a different upload."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043S datasheet (ICminer.com Electronic-Library copy hosted by Jotrin)",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://www.jotrin.com/userfiles/downloadfile/NJM2043S/NJM2043S.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The title is 'Powered by ICminer.com Electronic-Library Service'. ICminer scans are often of older databook or datasheet editions, so this copy may predate Ver.2003-03-17, but the revision is not shown in the summary. The file is named for the NJM2043S variant."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043D Datasheet(PDF) - New Japan Radio (alldatasheet entry 7234)",
+      "doc_number": "NJM2043D",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7234/NJRC/NJM2043D.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is a separate alldatasheet entry (ID 7234) from the known NJM2043 entry (ID 7233). The low ID suggests an early upload, possibly from before 2003, but that is unconfirmed. The revision is not shown."
+    },
+    {
+      "vendor": "Japan Radio Corporation (New JRC)",
+      "title": "NJM2043D Datasheet PDF - Japan Radio Corporation (datasheetq)",
+      "doc_number": "NJM2043D",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/NJM2043D-doc-JRC",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the datasheetq NJM2043D page. It is separate from the known NJM2043DD page. The revision is not shown."
+    },
+    {
+      "vendor": "Japan Radio Corporation (New JRC)",
+      "title": "NJM2043 Datasheet PDF - Japan Radio Corporation (datasheetq)",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/NJM2043-doc-JRC",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the datasheetq NJM2043 base-part page. The revision is not shown."
+    },
+    {
+      "vendor": "Japan Radio Corporation (New JRC)",
+      "title": "NJM2043 Datasheet PDF - Japan Radio Corporation (datasheetq HTML rendering, doc 533297)",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://html.datasheetq.com/pdf-html/533297/JRC/1page/NJM2043.html?lang=en",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is an HTML rendering of page 1, which may let the header or footer Ver. line be read. The revision is not shown in the summary."
+    },
+    {
+      "vendor": "Japan Radio Corporation (New JRC)",
+      "title": "NJM2043DD Datasheet PDF, Japan Radio Corporation: LOW-NOISE DUAL PRE-AMPLIFIER (datasheetbank)",
+      "doc_number": "NJM2043DD",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetbank.com/NJM2043DD-Datasheet-PDF-JRC",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the datasheetbank NJM2043DD page. It is separate from the known NJM-2043D preview page. The revision is not shown."
+    },
+    {
+      "vendor": "Japan Radio Corporation (New JRC)",
+      "title": "NJM2043D Datasheet PDF Japan Radio Corporation - QDatasheet.com",
+      "doc_number": "NJM2043D",
+      "revision": "",
+      "date": "",
+      "url": "https://www.qdatasheet.com/datasheet.jsp?pn=NJM2043D&fac=JRC",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The revision is not shown."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043D datasheet, Pinout, application circuits NJM2043 LOW-NOISE DUAL PRE-AMPLIFIER (datasheetdir)",
+      "doc_number": "NJM2043D",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheetdir.com/NJM2043D+Operational-Amplifiers",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The revision is not shown."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043 Datasheet - LOW-NOISE DUAL PRE-AMPLIFIER from New Japan Radio Co., Ltd. (chipdocs)",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "http://www.chipdocs.com/pndecoder/datasheets/NJRC/NJM2043.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The revision is not shown."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043 Datasheet - LOW-NOISE DUAL PRE-AMPLIFIER (datasheet4u direct PDF viewer, id 454856)",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet-pdf/NewJapanRadio/NJM2043/pdf.php?id=454856",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the direct PDF viewer for the same datasheet4u document ID 454856 as the known /datasheets/ page. A second URL form, https://datasheet4u.com/datasheet/New-Japan-Radio/NJM2043-454856, also exists. The revision is not shown."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043 PDF Datasheet, Equivalent Search (datasheet39, id 454856)",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheet39.com/PDF/454856/NJM2043-datasheet.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This mirror carries the same document ID 454856 as datasheet4u, so it is likely the same file. The revision is not shown."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "NJM2043 Datasheet - LOW-NOISE DUAL PRE-AMPLIFIER (datasheetspdf)",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet/NJM2043.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The revision is not shown."
+    },
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "title": "DigChip IC database - NJM2043 (Japanese mirror)",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://jp.digchip.com/datasheets/parts/datasheet/330/NJM2043.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the Japanese-subdomain copy of the known www.digchip.com page (same path 330). The revision is not shown."
+    },
+    {
+      "vendor": "various",
+      "title": "Datasheet Archive: NJM2043 datasheets",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetarchive.com/NJM2043-datasheet.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "multiple / revision not shown",
+      "note": "This is a static listing page, separate from the known ?q=njm2043 search URL. Datasheetarchive often holds scanned databook pages, which could include pre-2003 JRC editions. No revisions are shown."
+    },
+    {
+      "vendor": "various",
+      "title": "NJM 2043 component page (Radiomuseum.org ID64484)",
+      "doc_number": "NJM2043",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiomuseum.org/tubes/tube_njm2043.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is a Radiomuseum component entry, which may have user-uploaded datasheet attachments. The content and revision are not shown."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "New Japan Radio (New JRC)",
+      "doc_number": "NJM2043_E",
+      "revision": "Ver.2003-03-17",
+      "date": "2003-03-17",
+      "changes": "Change log not available. This is the latest dated version found; earlier versions may survive on third-party mirrors."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No part-specific counterfeit reports were found. The part is discontinued (DIP8 NJM2043D/DD still circulate on eBay, Reverb and brokers), so relabelled 4558-type parts are a plausible risk. The DD low-noise rank uses the same die as the D and can only be checked by measuring noise, so a remarked D sold as DD would be undetectable by inspection. Prefer known retail stock such as Akizuki.",
+  "alternatives": [
+    "NJM4558DD (same lineage, low-noise selected; still sold by Akizuki)",
+    "NJM4580 (New JRC low-noise, high-output-current dual)",
+    "NJM2068 (New JRC low-noise audio dual)",
+    "NE5532 (classic low-noise bipolar dual)"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://www.mouser.com/ds/2/294/njr_njm2043_e-547181.pdf",
+    "http://www.njr.com/semicon/PDF/NJM2043_E.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/739/181220_EOL.pdf",
+    "https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/NJM2043D.pdf",
+    "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/obsolete.html",
+    "https://www.njr.co.jp/products/semicon/PDF/NJM2043_E.pdf",
+    "https://www.njr.com/semicon/products/NJM2043.html"
+  ],
+  "open_questions": [
+    "Is NJM2043 explicitly listed in New JRC's 20 Dec 2018 4-inch-wafer-line EOL notice, and what were the last-time-buy and last-ship dates?",
+    "Were there datasheet versions before Ver.2003-03-17, and which ones do the alldatasheet, datasheetcatalog and datasheet4u copies hold?",
+    "Is there a Japanese datasheet (NJM2043_J) with a different version date?",
+    "What is 'NJM2043S' (Jotrin listing): a real package variant or a broker typo?",
+    "The equivalent input noise density (nV/rtHz) and THD figures were not captured.",
+    "The two njr.com / njr.co.jp archive seed URLs are guessed from New JRC's usual URL pattern (the filename NJM2043_E is confirmed by Mouser) and need checking in the Wayback Machine."
+  ],
+  "sources": [
+    "https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/7233/NJRC/NJM2043.html",
+    "https://akizukidenshi.com/catalog/g/g102369/",
+    "https://w.atwiki.jp/higemouse/pages/50.html",
+    "https://zigsow.jp/item/326108/review/325414",
+    "https://octopart.com/part/nisshinbo-micro-devices-inc/NJM2043DD",
+    "https://www.trustedparts.com/en/part/njr/NJM2043DD",
+    "https://www.onlinecomponents.com/en/productdetail/nisshinbo-micro-devices-inc/njm2043d-11971622.html",
+    "https://gb.profusion.uk/uk/njm2043m",
+    "https://www.profusionplc.com/parts/njm2043d",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/739/181220_EOL.pdf",
+    "https://www.mouser.com/PCN/NJR_181220_NJR_Discon_Letter_4inches_Termnation.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/obsolete.html"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [],
+    "corrections": [
+      "Channels changed from 0 to 2 for all part numbers (dual op-amp).",
+      "Statuses changed from 'unknown' to discontinued. Distributors list the NJM2043D and NJM2043DD as discontinued.",
+      "NJM2043DD is the D-rank low-noise selected DIP8 version (VNI <= 1.4 uV, Rs=2.2 kOhm, RIAA), not just a package code.",
+      "Added part numbers NJM2043D (DIP8), NJM2043M (DMP8) and NJM2043L (SIP8), plus NJM2043S (unconfirmed broker listing).",
+      "Filled in the technology, key specs, datasheet (NJM2043_E Ver.2003-03-17), lineage and alternatives, which were empty in the draft.",
+      "Named the manufacturers separately: New Japan Radio as originator, Nisshinbo Micro Devices as successor."
+    ],
+    "unverified_urls": [
+      "http://www.njr.com/semicon/PDF/NJM2043_E.pdf",
+      "https://www.njr.co.jp/products/semicon/PDF/NJM2043_E.pdf",
+      "https://www.datasheetarchive.com/?q=njm2043"
+    ],
+    "claims_confirmed": [
+      "The English datasheet is 'NJM2043 LOW-NOISE DUAL PRE-AMPLIFIER', Ver.2003-03-17 (https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf)",
+      "It is a bipolar low-noise version of the NJM4558, with 6 V/us slew rate and 14 MHz unity-gain bandwidth, on New JRC's planar epitaxial process (https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf)",
+      "Operating voltage is +/-4 V to +/-22 V and output current is 25 mA (https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf)",
+      "Packages are DIP8/DMP8/SIP8 as NJM2043D/M/L (https://www.mouser.com/datasheet/2/294/NJM2043_E-218482.pdf)",
+      "NJM2043DD is the low-noise selected version, with VNI <= 1.4 uV (Rs=2.2 kOhm, RIAA); the NJM4558 input/output stages were improved and output current is about 2x (https://akizukidenshi.com/catalog/g/g102369/)",
+      "The NJM2043D and NJM2043DD are listed as discontinued under Nisshinbo Micro Devices (https://octopart.com/part/nisshinbo-micro-devices-inc/NJM2043DD, https://www.onlinecomponents.com/en/productdetail/nisshinbo-micro-devices-inc/njm2043d-11971622.html)",
+      "New JRC issued an EOL notice dated 2018-12-20 on terminating its 4-inch wafer line (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/739/181220_EOL.pdf). Whether NJM2043 is on its list was not directly confirmed.",
+      "The C-Area @WIKI review praises the NJM2043DD for clear treble and a flat balance suited to classical music (https://w.atwiki.jp/higemouse/pages/50.html)",
+      "A dissenting Zigsow user review exists, titled 'コレジャナイ音質' (https://zigsow.jp/item/326108/review/325414)"
+    ],
+    "web_searches_used": 6
+  },
+  "tier": "C",
+  "category": "legacy-general-purpose",
+  "product_pages": [
+    "https://akizukidenshi.com/catalog/g/g102369/",
+    "https://www.njr.com/semicon/products/NJM2043.html"
+  ],
+  "revision_chain_notes": "New JRC / Nisshinbo NJM2043 English datasheet (NJM2043_E). The only confirmed dated link in the chain is still Ver.2003-03-17. Two copies now confirm it: the known Mouser /datasheet/2/294/NJM2043_E-218482.pdf and a new Marutsu copy (marutsu.co.jp/.../NJM2043D.pdf), whose title shows 'Ver.2003-03-17'. No newer Nisshinbo re-issue has been found. No second-source vendor has been found either. The part appears to be JRC-only.\n\nMissing links:\n(1) Any edition before 2003, such as JRC databook or early datasheet editions from the NJM4558-derivative introduction era. Candidate copies that might hold one are the ICminer-scanned NJM2043S.pdf on Jotrin, alldatasheet entries 7233/7234 (low IDs suggest early uploads), datasheetarchive scans, and the datasheetq HTML page render (doc 533297). None shows a revision in the search summaries.\n(2) The Japanese-language edition (NJM2043_J) and its Ver. date. It was not found.\n(3) Any later NJR/Nisshinbo revision after 2003-03-17, for example one adding a DMP8/SIP8 package change or the NJM2043DD part number. It was not found. The old Mouser path /ds/2/294/njr_njm2043_e-547181.pdf could be a later upload, but its revision is not shown.\n(4) The official NJR-hosted PDF URL and its Wayback captures. The product page https://www.njr.com/semicon/products/NJM2043.html is added as an archive seed.\n\nNo change log is available for any revision."
+}

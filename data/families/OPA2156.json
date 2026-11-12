@@ -1,0 +1,496 @@
+{
+  "id": "OPA2156",
+  "name": "OPA2156 / OPA156 (TI 36 V ultra-low-noise CMOS rail-to-rail I/O precision; single OPA156 unconfirmed)",
+  "tagline": "TI 36 V CMOS rail-to-rail I/O precision dual: 3 nV/rtHz, 25 MHz, 40 V/us, ±25 uV. A few diyAudio posts rate its distortion alongside the OPA1656.",
+  "technology": "CMOS-input precision op amp. The TI document title calls it 'CMOS' and DigiKey's product highlight says 'CMOS precision rail-to-rail'. It runs on 36 V total supply with rail-to-rail input and output and a 100 mA output drive. TI describes the OPA2156 as 'the first in a planned new generation of 36-V, rail-to-rail operational amplifiers'. As indexed, the datasheet title is 'OPA2156 36-V, Ultra-Low Noise, Wide-Bandwidth, Precision Rail-to-Rail Operational Amplifier'. It is not an audio-branded (Burr-Brown/SoundPlus) part.",
+  "manufacturers": [
+    "Texas Instruments"
+  ],
+  "part_numbers": [
+    {
+      "pn": "OPA2156",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active (TI product page, DigiKey and Mouser new-product pages exist; lifecycle flag not explicitly read)",
+      "notes": "Dual. Packages seen: SOIC-8 (D) and VSSOP-8 (DGK, per the KiCad symbol). No DIP-8 package."
+    },
+    {
+      "pn": "OPA2156ID",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active (assumed; seen on alldatasheet marking page)",
+      "notes": "SOIC-8 tube. alldatasheet lists top marking 'OP2156'."
+    },
+    {
+      "pn": "OPA2156IDR",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active (used in 2021-2025 GitHub BOMs; not re-verified)",
+      "notes": "SOIC-8 tape and reel. Seen in the lucask07/covg_clamp and open_covg_daq_pcb BOMs and in bengineer91/Preamp."
+    },
+    {
+      "pn": "OPA2156xDGK (VSSOP-8)",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "unknown",
+      "notes": "Package variant named after the KiCad symbol. Orderable suffixes (e.g. IDGKR/IDGKT) were not seen and are unconfirmed."
+    },
+    {
+      "pn": "OPA156",
+      "channels": 1,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "unconfirmed (no TI product page or orderable code found in search)",
+      "notes": "The single is not confirmed to exist. The indexed datasheet title names only OPA2156, not OPAx156. Name-collision hazard: third-party sites (digchip, datasheetarchive) list an unrelated 'OPA156 - JFET Input Operational Amplifiers' document, probably a legacy part (low confidence). Do not treat 'OPA156' search hits as this TI CMOS device."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Texas Instruments",
+      "role": "originator / sole source",
+      "period": "2018-present (SBOS900 first dated September 2018)",
+      "notes": "No second sources. TI calls it the first of a planned new generation of 36 V RRIO op amps. The OPA165x audio datasheet has the next literature number, SBOS901 (March 2019). Whether the two share a process or die is unverified speculation."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Supply voltage",
+      "value": "36 V class (36 V total)",
+      "condition": "minimum supply not retrieved",
+      "source": "TI datasheet title (ti.com/lit/ds/symlink/opa2156.pdf; alldatasheet copy)"
+    },
+    {
+      "parameter": "Input/output range",
+      "value": "Rail-to-rail input and output",
+      "condition": "-",
+      "source": "https://www.digikey.com/en/product-highlight/t/texas-instruments/opa2156-precision-rail-to-rail-in-out-op-amp"
+    },
+    {
+      "parameter": "Input stage type",
+      "value": "CMOS",
+      "condition": "-",
+      "source": "http://www.ti.com/lit/gpn/OPA2156 (title '...Wide-Bandwidth, CMOS, ...'); DigiKey product highlight"
+    },
+    {
+      "parameter": "Voltage noise density",
+      "value": "3 nV/rtHz",
+      "condition": "broadband, at 10 kHz",
+      "source": "https://www.ti.com/product/OPA2156; DigiKey product highlight"
+    },
+    {
+      "parameter": "Gain-bandwidth",
+      "value": "25 MHz",
+      "condition": "typ",
+      "source": "https://www.ti.com/product/OPA2156"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "40 V/us",
+      "condition": "typ",
+      "source": "https://www.ti.com/product/OPA2156"
+    },
+    {
+      "parameter": "Offset voltage",
+      "value": "±25 uV",
+      "condition": "typ",
+      "source": "https://www.ti.com/lit/ds/symlink/opa2156.pdf (SBOS900B description)"
+    },
+    {
+      "parameter": "Offset drift",
+      "value": "±0.5 uV/°C",
+      "condition": "typ",
+      "source": "https://www.ti.com/lit/ds/symlink/opa2156.pdf (SBOS900B description)"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "±5 pA",
+      "condition": "typ, 25 °C",
+      "source": "https://www.ti.com/lit/ds/symlink/opa2156.pdf (SBOS900B description)"
+    },
+    {
+      "parameter": "Output current",
+      "value": "100 mA",
+      "condition": "high output current, per datasheet description",
+      "source": "https://www.ti.com/lit/ds/symlink/opa2156.pdf; DigiKey product highlight"
+    },
+    {
+      "parameter": "Quiescent current",
+      "value": "4.4 mA (third-party power budget; per channel or per package not stated)",
+      "condition": "unspecified",
+      "source": "github.com/lucask07/covg_clamp README power table (low confidence; datasheet value not retrieved)"
+    },
+    {
+      "parameter": "THD+N, current noise, supply minimum",
+      "value": "NOT RETRIEVED",
+      "condition": "-",
+      "source": "datasheet body not accessible within the search budget"
+    }
+  ],
+  "reputation": {
+    "summary": "Praise is thin, and it is attributed forum comment rather than measurement. In the diyAudio thread 'OPA1656: High-Performance CMOS Audio Op Amp', posters said the OPA2156 has 'amazingly good distortion' and looks better than the OPA1656 in certain respects. No ASR or other published measurements were found. On GitHub it shows up mostly in instrumentation (a patch-clamp amplifier and a DAQ board, where the covg_clamp BOM lists OPA1656ID as the alternate) and in one DIY audio preamp output stage (bengineer91/Preamp). The discovery note calls it a 'higher-rail alternative to the OPA1656', which is wrong. Both are 36 V parts. What the OPA2156 adds is rail-to-rail input, precision offset (±25 uV) and 100 mA drive.",
+    "sonic_descriptors": [
+      "'amazingly good distortion' (diyAudio forum comment, unmeasured)"
+    ],
+    "typical_uses": [
+      "Precision / instrumentation front ends (patch-clamp amplifier, DAQ)",
+      "DIY audio preamp output/buffer stage (one GitHub project)",
+      "Candidate in place of OPA1656-class duals where rail-to-rail input, low offset or 100 mA drive is wanted"
+    ],
+    "caveats": [
+      "Not an audio-branded part. No audio THD+N measurements were found.",
+      "Only SMD packages (SOIC-8, VSSOP-8), so DIP socket rolling needs an adapter",
+      "Same 36 V supply limit as the OPA1656 (no supply-headroom advantage)",
+      "The praise is a handful of forum remarks. Tier C rests mostly on specs."
+    ],
+    "sources": [
+      "https://www.diyaudio.com/community/threads/opa1656-high-performance-cmos-audio-op-amp.335416/page-7",
+      "https://www.diyaudio.com/community/threads/opa1656-high-performance-cmos-audio-op-amp.335416/page-13",
+      "https://www.ti.com/product/OPA2156",
+      "https://github.com/lucask07/covg_clamp/blob/6bc81e1eda2f7d2d5d09d3b3580395e2e863fdc4/bom/bath_clamp.csv",
+      "https://github.com/bengineer91/Preamp/blob/983601422702c1cb4a5e2c28f77d0231e16594f4/kicad/Output.kicad_sch",
+      "https://www.ti.com/lit/ds/symlink/opa1656.pdf"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2156 36-V, Ultra-Low Noise, Wide-Bandwidth, Precision Rail-to-Rail Operational Amplifier (current, via symlink)",
+      "doc_number": "SBOS900B",
+      "revision": "B",
+      "date": "2019-06",
+      "url": "https://www.ti.com/lit/ds/symlink/opa2156.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Search-indexed symlink serves SBOS900B. The KiCad library and TI's PSpice model header (OPA2156.LIB, 'Datasheet: SBOS900B -SEPTEMBER 2018-REVISED JUNE 2019') match."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2156 36-V, Ultra-Low Noise, Wide-Bandwidth, CMOS, ... (TI gpn redirect)",
+      "doc_number": "SBOS900",
+      "revision": "",
+      "date": "",
+      "url": "http://www.ti.com/lit/gpn/OPA2156",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "date_text": "-",
+      "revision_text": "current (B as of search)",
+      "note": "Generic part-number link that resolves to the current datasheet. Its indexed title includes 'CMOS'."
+    },
+    {
+      "vendor": "Texas Instruments (China)",
+      "title": "OPA2156 36V 超低噪声、宽带宽、精密轨至轨运算放大器 (Chinese translation)",
+      "doc_number": "ZHCSIQ3B",
+      "revision": "B",
+      "date": "2019-06",
+      "url": "https://www.ti.com.cn/cn/lit/ds/symlink/opa2156.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Chinese translation of SBOS900. ZHCSIQ3A (revised December 2018) and ZHCSIQ3B (revised June 2019) both appear in search results."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2156 datasheet, revision A",
+      "doc_number": "SBOS900A",
+      "revision": "A",
+      "date": "2018-12",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1082239/TI1/OPA2156.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "Search surfaced an SBOS900A header (Sep 2018, revised Dec 2018) from the alldatasheet / TI results. Which alldatasheet copy (1082239 or 1154466) holds A and which holds B is not pinned down. Treat the revision held by this URL as unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2156ID datasheet with marking page (35 pages)",
+      "doc_number": "SBOS900",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.net/html-marking/1154466/TI1/OPA2156ID/277/4/OPA2156ID.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "date_text": "-",
+      "note": "Title '36-V, Ultra-Low Noise, Wide-Bandwidth, Precision Rail-to-Rail Operational Amplifier'. Shows marking 'OP2156'. Revision not shown in the search summary."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2156 HTML datasheet (DigiKey)",
+      "doc_number": "SBOS900",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.com/en/htmldatasheets/production/5061362/0/0/1/opa2156",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "date_text": "-",
+      "note": "Distributor HTML rendering. The revision it freezes was not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2156 Operational Amplifier datasheet (datasheet4u)",
+      "doc_number": "SBOS900",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet/etcTI/OPA2156-1568602",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "date_text": "-",
+      "note": "Revision not shown in the search summary."
+    },
+    {
+      "vendor": "Texas Instruments (China)",
+      "title": "OPA2156 36V 超低噪声、宽带宽、精密轨至轨运算放大器 (Chinese PDF mirror)",
+      "doc_number": "ZHCSIQ3",
+      "revision": "",
+      "date": "",
+      "url": "https://www.rfz1.com/Private/ProductFiles/6370146582023503231885859536.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "date_text": "-",
+      "note": "Third-party copy of the Chinese translation. Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2156 36-V, Ultra-Low Noise, Wide-Bandwidth, CMOS, Precision Rail-to-Rail Operational Amplifier",
+      "doc_number": "SBOS900",
+      "revision": "B",
+      "date": "2019-06",
+      "url": "https://www.ti.com/lit/gpn/OPA2156",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "TI's generic-part-number datasheet redirect. The search summaries found no Rev C or later. No separate OPA156 (single) datasheet appeared in the results, and whether SBOS900 covers the OPA156 was not confirmed."
+    },
+    {
+      "vendor": "Alldatasheet (third party)",
+      "title": "OPA2156 Datasheet(PDF) - Texas Instruments",
+      "doc_number": "SBOS900",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2222729/TI2/OPA2156.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A later alldatasheet upload (ID 2222729, 'TI2'). The revision was not shown. Related marking pages are 2222738 (OPA2156IDR) and 2222734 (OPA2156IDGKR)."
+    },
+    {
+      "vendor": "Alldatasheet (third party)",
+      "title": "OPA2156ID datasheet - 36-V, Ultra-Low Noise, Wide-Bandwidth, Precision Rail-to-Rail Operational Amplifier",
+      "doc_number": "SBOS900",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.net/datasheet-pdf/marking/1154466/TI1/OPA2156ID.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The listing says 35 pages. The revision was not shown."
+    },
+    {
+      "vendor": "Scribd (third party)",
+      "title": "OPA2156 Ultra-Low Noise Op Amp Data Sheet",
+      "doc_number": "SBOS900",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/836955714/Opa-2156",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A user-uploaded copy. The revision was not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2156 36-V, Ultra-Low Noise, Wide-Bandwidth, Precision Rail-to-Rail Operational Amplifier (Digi-Key France HTML/PDF rendering)",
+      "doc_number": "SBOS900",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.fr/htmldatasheets/production/5061362/0/0/1/opa2156.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "date_text": "-",
+      "note": "Digi-Key France copy. It came up in a search for the SBOS900 change-log text, but the summary did not say which revision it holds. It has the same Digi-Key document ID (5061362) as the digikey.com htmldatasheet already listed, so it is probably the same edition."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2156IDR datasheet (page 18 of 35), 36-V, Ultra-Low Noise, Wide-Bandwidth, Precision Rail-to-Rail Operational Amplifier",
+      "doc_number": "SBOS900",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.net/html-marking/1154469/TI1/OPA2156IDR/1289/18/OPA2156IDR.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "date_text": "-",
+      "note": "Alldatasheet.net marking page (OP2156) for the OPA2156IDR. It is a 35-page copy, the same page count as the listed alldatasheet.net OPA2156ID entry (ID 1154466). The revision is not shown in the summary."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS900",
+      "revision": "* (original)",
+      "date": "September 2018",
+      "changes": "Initial release, dated from the 'SEPTEMBER 2018' first-publication date in the A and B headers. Contents and status (preview vs production data) not seen."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS900A",
+      "revision": "A",
+      "date": "December 2018",
+      "changes": "Revision confirmed via search (Sep 2018 - revised Dec 2018). Change log not retrieved. Chinese counterpart: ZHCSIQ3A (Dec 2018)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS900B",
+      "revision": "B",
+      "date": "June 2019",
+      "changes": "Latest revision seen as of September 2026, served by the ti.com symlink. Change log not retrieved. Chinese counterpart: ZHCSIQ3B (June 2019)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS900A",
+      "revision": "A",
+      "date": "SEPTEMBER 2018 - REVISED DECEMBER 2018",
+      "changes": "The revision and its date appear in a search summary. The changes were not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS900",
+      "revision": "* (original)",
+      "date": "SEPTEMBER 2018",
+      "changes": "The original release is inferred from the 'September 2018' first-publication date printed on Revs A and B. No copy of it was located."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS900A",
+      "revision": "A",
+      "date": "December 2018",
+      "changes": "Change log entry 'Changes from Original (September 2018) to Revision A': first release of the production-data data sheet. This means the original September 2018 SBOS900 was a pre-production (Product Preview / Advance Information) edition. Source: change log in the SBOS900B datasheet at ti.com/lit/ds/symlink/opa2156.pdf."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS900B",
+      "revision": "B",
+      "date": "June 2019",
+      "changes": "Change log entry 'Changes from Revision A (December 2018) to Revision B': (1) added the DGK (VSSOP) package and its content; (2) extended Figure 8 (input voltage noise spectral density) to 10 MHz; (3) retitled the input bias and offset current curves (Figures 12 to 14) to state that they show SOIC package performance. So the Original and Rev A editions covered only the 8-pin SOIC (D). Source: ti.com/lit/ds/symlink/opa2156.pdf."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No counterfeit reports found. It is a modern SMD-only TI part (SOIC-8/VSSOP-8) without the cult following that drives relabeling of DIP audio op-amps, so risk is presumably low. Buy from authorized distribution. alldatasheet gives the OPA2156ID top marking as 'OP2156'. Watch for the part-number collision: 'OPA156' hits on digchip and datasheetarchive point to an unrelated JFET-input op-amp document, not a single version of this TI CMOS part.",
+  "alternatives": [
+    "OPA1656 / OPA1655 (TI Burr-Brown audio CMOS; 4.5-36 V; rail-to-rail output only; 2.9 nV/rtHz at 10 kHz, 53 MHz GBW, 24 V/us, 3.9 mA/ch per SBOS901C). Pin-compatible SOIC-8 dual, listed as the OPA2156IDR alternate in the covg_clamp BOM.",
+    "OPA1688 (listed as the second alternate to OPA2156IDR in the covg_clamp BOM)",
+    "OPA828 / OPA2828 (TI JFET-input low-noise 36 V precision)"
+  ],
+  "ti_literature_numbers": [
+    "SBOS900"
+  ],
+  "archive_seed_urls": [
+    "http://www.ti.com.cn/cn/lit/ds/symlink/opa2156.pdf",
+    "http://www.ti.com/lit/ds/symlink/opa2156.pdf",
+    "http://www.ti.com/lit/gpn/OPA2156",
+    "http://www.ti.com/lit/gpn/opa2156",
+    "https://www.ti.com.cn/cn/lit/ds/symlink/opa2156.pdf",
+    "https://www.ti.com/lit/ds/sbos900/sbos900.pdf",
+    "https://www.ti.com/lit/ds/sbos900a/sbos900a.pdf",
+    "https://www.ti.com/lit/ds/sbos900b/sbos900b.pdf",
+    "https://www.ti.com/lit/ds/sbos900c/sbos900c.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa2156.pdf",
+    "https://www.ti.com/lit/gpn/OPA2156",
+    "https://www.ti.com/product/OPA156",
+    "https://www.ti.com/product/OPA2156"
+  ],
+  "open_questions": [
+    "Does the single OPA156 exist? No TI product page or orderable code was found, and the indexed datasheet title names only OPA2156.",
+    "SBOS900 change logs for A (Dec 2018) and B (June 2019) were not retrieved. Was the original Sept 2018 issue a Product Preview?",
+    "Which alldatasheet copy (1082239 vs 1154466) holds rev A and which holds rev B? The DigiKey HTML and datasheet4u copies have unknown revisions.",
+    "Datasheet quiescent current per channel, supply minimum, current noise and THD+N were not retrieved. The 4.4 mA covg_clamp figure is ambiguous.",
+    "VSSOP-8 orderable codes (OPA2156IDGKR/IDGKT?) are unconfirmed.",
+    "No PCN or silicon-change information found. The TI PCN database was not searched directly.",
+    "Identity of the legacy 'OPA156 JFET Input Operational Amplifiers' document on digchip/datasheetarchive is unconfirmed.",
+    "Whether OPA2156 and OPA165x share a process platform: the consecutive literature numbers SBOS900/SBOS901 are the only hint."
+  ],
+  "sources": [
+    "https://www.ti.com/product/OPA2156",
+    "https://www.ti.com/lit/ds/symlink/opa2156.pdf",
+    "https://www.ti.com.cn/cn/lit/ds/symlink/opa2156.pdf",
+    "http://www.ti.com/lit/gpn/OPA2156",
+    "https://www.digikey.com/en/product-highlight/t/texas-instruments/opa2156-precision-rail-to-rail-in-out-op-amp",
+    "https://www.digikey.com/en/htmldatasheets/production/5061362/0/0/1/opa2156",
+    "https://au.mouser.com/en/new/texas-instruments/ti-opa2156-op-amp",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/1082239/TI1/OPA2156.html",
+    "https://www.alldatasheet.net/html-marking/1154466/TI1/OPA2156ID/277/4/OPA2156ID.html",
+    "https://datasheet4u.com/datasheet/etcTI/OPA2156-1568602",
+    "https://www.rfz1.com/Private/ProductFiles/6370146582023503231885859536.pdf",
+    "https://www.diyaudio.com/community/threads/opa1656-high-performance-cmos-audio-op-amp.335416/page-7",
+    "https://www.digchip.com/datasheets/parts/datasheet/321/OPA156.php",
+    "https://github.com/VicKoz/LTspice_Library/blob/538b4a6116090f35780df5fae53a6a235c260417/LTspice_Components/OPA2156.LIB",
+    "https://github.com/chevalierid/alan-setup/blob/cf122ced7b84a18475356bcdca4c6fbbecd24047/fab/kicad/libraries/pspicetilib/OPA2156.LIB",
+    "https://github.com/KiCad/kicad.github.io/blob/ee0e2d33310554ecba94f2c3528d1a654c182df2/_symbols/Amplifier_Operational.html",
+    "https://github.com/lucask07/covg_clamp/blob/6bc81e1eda2f7d2d5d09d3b3580395e2e863fdc4/README.md",
+    "https://github.com/lucask07/covg_clamp/blob/6bc81e1eda2f7d2d5d09d3b3580395e2e863fdc4/bom/bath_clamp.csv",
+    "https://github.com/lucask07/open_covg_daq_pcb/blob/0a50ae78568185af6dc7fae0ab4c7114ee85b64d/docs/covg_daq_v2_BOM.csv",
+    "https://github.com/bengineer91/Preamp/blob/983601422702c1cb4a5e2c28f77d0231e16594f4/kicad/Output.kicad_sch",
+    "https://www.ti.com/lit/ds/symlink/opa1656.pdf"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [
+      "Discovery: 'higher-rail alternative to the OPA1656'. Both are 36 V parts (OPA1656 is 4.5-36 V per SBOS901C). The OPA2156's advantages are RRI, precision offset and 100 mA drive.",
+      "Draft reputation: 'No Hi-Fi community praise was found'. diyAudio OPA1656-thread posts praise the OPA2156's distortion.",
+      "Draft datasheet title 'OPAx156'. The indexed TI title is 'OPA2156 36-V, Ultra-Low Noise, Wide-Bandwidth, Precision Rail-to-Rail Operational Amplifier'. No evidence the datasheet covers a single OPA156.",
+      "Draft open-question estimate of ~14 uV typical Vos from the PSpice model is superseded by the datasheet's ±25 uV typ."
+    ],
+    "corrections": [
+      "Added SBOS900A (Sept 2018, revised Dec 2018) to revision history. Rev B (June 2019) confirmed as latest seen; no rev C found.",
+      "Added Chinese translation ZHCSIQ3A (Dec 2018) / ZHCSIQ3B (June 2019) and the ti.com.cn symlink.",
+      "Filled key specs: 3 nV/rtHz at 10 kHz, 25 MHz GBW, 40 V/us, ±25 uV Vos, ±0.5 uV/°C drift, ±5 pA Ib, 100 mA output. CMOS input confirmed.",
+      "OPA156 single downgraded to unconfirmed, with a name-collision warning (unrelated 'OPA156 JFET' document on third-party sites).",
+      "Added OPA2156ID with marking 'OP2156'. Added distributor/third-party mirrors (alldatasheet x2, DigiKey HTML, datasheet4u, rfz1 Chinese PDF) and the Mouser product page.",
+      "Moved the rev B datasheet entry from product-page URL to the symlink that serves it. Added the gpn link. Dropped the unseen opa156 symlink and gpn lowercase seeds; kept inferred revision-specific seeds as unverified."
+    ],
+    "unverified_urls": [
+      "https://www.ti.com/lit/ds/sbos900b/sbos900b.pdf",
+      "https://www.ti.com/lit/ds/sbos900a/sbos900a.pdf",
+      "https://www.ti.com/lit/ds/sbos900/sbos900.pdf",
+      "https://www.ti.com/lit/ds/sbos900c/sbos900c.pdf",
+      "https://www.ti.com/product/OPA156",
+      "http://www.ti.com/lit/ds/symlink/opa2156.pdf"
+    ],
+    "claims_confirmed": [
+      "SBOS900A: September 2018, revised December 2018 (https://www.alldatasheet.com/datasheet-pdf/pdf/1082239/TI1/OPA2156.html search results)",
+      "SBOS900B: September 2018, revised June 2019, served by the TI symlink (https://www.ti.com/lit/ds/symlink/opa2156.pdf)",
+      "Chinese translations ZHCSIQ3A (Dec 2018) and ZHCSIQ3B (June 2019) exist (https://www.ti.com.cn/cn/lit/ds/symlink/opa2156.pdf)",
+      "3 nV/rtHz at 10 kHz, 25 MHz, 40 V/us CMOS precision RRIO dual (https://www.digikey.com/en/product-highlight/t/texas-instruments/opa2156-precision-rail-to-rail-in-out-op-amp)",
+      "±25 uV Vos, ±0.5 uV/°C drift, ±5 pA Ib, 100 mA output; 'first in a planned new generation of 36-V RRIO op amps' (https://www.ti.com/product/OPA2156)",
+      "TI gpn title includes 'CMOS' (http://www.ti.com/lit/gpn/OPA2156)",
+      "OPA2156ID top marking 'OP2156' (https://www.alldatasheet.net/html-marking/1154466/TI1/OPA2156ID/277/4/OPA2156ID.html)",
+      "diyAudio posters describe OPA2156 distortion as 'amazingly good' and better than OPA1656 in some regards (https://www.diyaudio.com/community/threads/opa1656-high-performance-cmos-audio-op-amp.335416/page-7)"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "cmos-input",
+  "product_pages": [
+    "https://www.ti.com/product/OPA2156",
+    "https://au.mouser.com/en/new/texas-instruments/ti-opa2156-op-amp",
+    "https://www.mouser.com/new/texas-instruments/ti-opa2156-op-amp/",
+    "https://www.digikey.com/en/products/base-product/texas-instruments/296/OPA2156/27241",
+    "https://octopart.com/opa2156id-texas+instruments-95825378"
+  ],
+  "revision_chain_notes": "Texas Instruments SBOS900 (sole vendor, no second sources). Chain from oldest to newest: (1) SBOS900, original edition, September 2018. It was a pre-production (Product Preview / Advance Information) edition, SOIC only. This is inferred from the Rev A change-log line 'First release of production-data data sheet'. No copy found; MISSING. (2) SBOS900A, September 2018, revised December 2018. First production-data edition, still SOIC-only. The only copy is the low-confidence alldatasheet.com ID 1082239 entry already listed; no vendor or distributor copy confirmed; MISSING a confirmed copy. (3) SBOS900B, September 2018, revised June 2019. Added the DGK VSSOP package, extended the noise plot to 10 MHz and marked the Ib/Ios curves as SOIC data. Served by the ti.com symlink. Still current: none of the 4 searches found an SBOS900C. The Chinese edition, ZHCSIQ3, follows the same letters (original, A December 2018, B June 2019); only B is confirmed at ti.com.cn, and copies of the ZHCSIQ3 original and A are MISSING. New copies added: a Digi-Key France htmldatasheet and an alldatasheet.net OPA2156IDR page, both with revision not shown. The Wayback seeds are the ti.com symlink/gpn URLs: captures from September to December 2018 should hold the original preview, and captures from December 2018 to June 2019 should hold Rev A. Digi-Key PCN20240701000 and PCN20240902002 turned up in the searches but cover OPAx241/OPAx251 and OPAx134 (SBOS058A to B), not the OPA2156. No evidence of a silicon change under the part number; the only product change on record is the added VSSOP package in Rev B. The single OPA156 was not found in any result. Sources: https://www.ti.com/lit/ds/symlink/opa2156.pdf, https://www.digikey.fr/htmldatasheets/production/5061362/0/0/1/opa2156.pdf, https://www.alldatasheet.net/html-marking/1154469/TI1/OPA2156IDR/1289/18/OPA2156IDR.html, https://www.mouser.com/new/texas-instruments/ti-opa2156-op-amp/, https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6347/PCN20240701000.0.pdf, https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6370/PCN20240902002.1.pdf"
+}

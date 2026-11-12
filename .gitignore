@@ -1,5 +1,7 @@
 datasheets/.cache/
 datasheets/manifest.tmp
+# Downloaded PDFs are not committed (copyright of their publishers); manifest.json and INDEX.md are.
+datasheets/**/*.pdf
 __pycache__/
 *.pyc
 .venv/

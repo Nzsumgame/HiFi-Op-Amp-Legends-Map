@@ -39,6 +39,7 @@ def make_pdf(text: str) -> bytes:
 
 
 OLD = make_pdf("SLOS075I - NOVEMBER 1979 - REVISED APRIL 2009")
+MID = make_pdf("SLOS075J - NOVEMBER 1979 - REVISED JANUARY 2015")
 NEW = make_pdf("SLOS075K - NOVEMBER 1979 - REVISED DECEMBER 2025")
 CDX_ROWS = {
     # prefix query for the TI symlink location: two distinct captures + one duplicate digest,
@@ -66,6 +67,8 @@ class Handler(BaseHTTPRequestHandler):
             q = urllib.parse.parse_qs(u.query)
             rows = CDX_ROWS.get(q["url"][0], [])
             return self._send(200, json.dumps(rows).encode(), "application/json")
+        if u.path.startswith("/web/2id_/") and u.path.endswith("/gone.pdf"):
+            return self._send(200, MID, "application/pdf")  # latest archived copy of a dead mirror
         if u.path.startswith("/web/"):
             ts = u.path.split("/")[2]
             body = {"20100101000000id_": OLD, "20260101000000id_": NEW, "20260301000000id_": NEW}.get(ts)
@@ -110,6 +113,10 @@ class FetchTest(unittest.TestCase):
             "datasheets": [
                 {"vendor": "TI", "doc_number": "SLOS075", "revision": "K",
                  "url": f"{self.base}/viewer.html", "url_kind": "third_party_mirror"},
+                {"vendor": "TI", "doc_number": "SLOS075", "revision": "",
+                 "url": f"{self.base}/gone.pdf", "url_kind": "distributor_mirror"},
+                {"vendor": "TI", "doc_number": "SLOS075", "revision": "",
+                 "url": "https://github.com/someone/datasheets/raw/main/ne5532.pdf", "url_kind": "third_party_mirror"},
             ],
         }]}
         p = tmp / "opamps.json"
@@ -145,20 +152,26 @@ class FetchTest(unittest.TestCase):
             self.assertEqual(rc, 0)
             m = json.loads((out / "manifest.json").read_text())
             files = list(m["files"].values())
-            # OLD (from both TI lit probe and wayback) and NEW; look-alike and HTML viewer rejected
-            self.assertEqual(len(files), 2, [f["file"] for f in files])
+            # OLD (TI lit probe + wayback), NEW (wayback) and MID (archived copy of a dead mirror);
+            # the look-alike part, the HTML viewer and the GitHub-hosted copy are not fetched
+            self.assertEqual(len(files), 3, [f["file"] for f in files])
             self.assertFalse(any("ne55321" in h for h in Handler.hits if "/web/" in h))
+            self.assertFalse(any("github.com" in h for h in Handler.hits))
             if self.mod._load_pypdf() is None:
                 self.skipTest("pypdf not installed: labelling assertions skipped")
             by_rev = {f["label"].get("revision"): f for f in files}
-            self.assertEqual(set(by_rev), {"I", "K"})
+            self.assertEqual(set(by_rev), {"I", "J", "K"})
             self.assertEqual(by_rev["K"]["label"]["date"], "December 2025")
+            self.assertIn("SLOS075K", by_rev["K"]["label"]["snippet"])
             kinds_old = {s["kind"] for s in by_rev["I"]["sources"]}
             self.assertEqual(kinds_old, {"ti-lit", "wayback"})
+            self.assertEqual({s["kind"] for s in by_rev["J"]["sources"]}, {"wayback-latest"})
             self.assertEqual(len(by_rev["K"]["sources"]), 2)  # duplicate digest recorded as extra source
             index = (out / "INDEX.md").read_text()
             self.assertIn("SLOS075 K", index)
             self.assertIn("2009-04-01", index)
+            self.assertIn("/web/2id_/", index)  # rows link to archive copies, not to local files
+            self.assertNotIn("](NE5532/", index)
             # resume: a second run downloads nothing new
             n_before = len(Handler.hits)
             self.mod.main(["--data", str(data), "--out", str(out), "--delay", "0", "--sources", "direct,wayback"])

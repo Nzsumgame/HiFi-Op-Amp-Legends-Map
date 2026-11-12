@@ -1,0 +1,725 @@
+{
+  "id": "uPC4570",
+  "name": "µPC4570 (NEC / Renesas ultra-low-noise dual bipolar)",
+  "tagline": "NEC's ultra-low-noise dual (4.5 nV/√Hz, 15 MHz, 7 V/µs), pitched as a 4558 upgrade. Japanese modders credit it with tighter bass than the NJM4580DD.",
+  "technology": "Internally compensated bipolar dual op-amp for dual supplies. It has ultra-low noise, wide bandwidth and a high slew rate. The datasheet benchmarks it against the 4558: 3x lower input noise, and 7x higher GBW and slew rate. The PNP input pair comes from the OrCAD JOPAMP macromodel, and the 'developed from the 4558' lineage comes from the C-Area wiki. No vendor schematic was seen.",
+  "manufacturers": [
+    "NEC (NEC Corporation / NEC Electronics Corporation)",
+    "Renesas Electronics"
+  ],
+  "part_numbers": [
+    {
+      "pn": "µPC4570C",
+      "channels": 2,
+      "vendors": [
+        "NEC",
+        "Renesas"
+      ],
+      "status": "maintenance product (保守品種) according to Japanese retailer sources (not re-confirmed). The Renesas UPC4570C product page is still live.",
+      "notes": "8-pin plastic DIP (7.62 mm), as in the datasheet ordering information. No Renesas EOL notice or PCN was found."
+    },
+    {
+      "pn": "µPC4570C-A",
+      "channels": 2,
+      "vendors": [
+        "Renesas"
+      ],
+      "status": "listed on a Renesas part-details page; lifecycle not confirmed",
+      "notes": "Renesas orderable name for the DIP-8. The -A suffix is probably lead-free (unconfirmed). DigiKey Marketplace lists it through Rochester Electronics, which suggests aftermarket supply."
+    },
+    {
+      "pn": "µPC4570C-1",
+      "channels": 2,
+      "vendors": [
+        "NEC"
+      ],
+      "status": "unknown",
+      "notes": "Listed as 'IC UPC4570C-1' (Sony part 8-759-111-44) in the Sony HCD-GRX80 service manual. The meaning of the -1 suffix is unknown."
+    },
+    {
+      "pn": "µPC4570G2",
+      "channels": 2,
+      "vendors": [
+        "NEC",
+        "Renesas"
+      ],
+      "status": "Renesas product page live (lifecycle not confirmed)",
+      "notes": "8-pin plastic SOP (5.72 mm). Used in the Yamaha AV-S70 (IC605)."
+    },
+    {
+      "pn": "µPC4570G2-E1-A",
+      "channels": 2,
+      "vendors": [
+        "Renesas"
+      ],
+      "status": "orderable name listed by distributors (Verical, Ovaga); lifecycle not confirmed",
+      "notes": "Tape-and-reel (-E1), lead-free (-A, unconfirmed) SOP-8. Also in the LCSC/EasyEDA library as UPC4570G2-E1."
+    },
+    {
+      "pn": "µPC4570HA",
+      "channels": 2,
+      "vendors": [
+        "NEC"
+      ],
+      "status": "unknown",
+      "notes": "9-pin SIP, which appears in the datasheet ordering information. Used in the Tascam 238S. Not socket-compatible with DIP-8."
+    },
+    {
+      "pn": "NEC4570G2",
+      "channels": 2,
+      "vendors": [
+        "unknown"
+      ],
+      "status": "unknown",
+      "notes": "Name used in the LCSC/EasyEDA 'Low_Noise_OpAmps' library. It is not verified whether this is genuine Renesas stock or a third-party part with the same function."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "NEC (NEC Corporation, then NEC Electronics Corporation)",
+      "role": "originator",
+      "period": "introduction date not confirmed, until 31 Mar 2010",
+      "notes": "Original design. NEC datasheet G10528, with the English editions G10528EJ7V0DS00 (7th) and G10528EJ8V0DS00 (8th) and the Japanese edition G10528JJ8V0DS00."
+    },
+    {
+      "vendor": "Renesas Electronics",
+      "role": "acquirer / current owner",
+      "period": "1 Apr 2010 to present",
+      "notes": "Renesas first re-served the NEC G10528EJ8V0DS00 datasheet behind its 'Old Company Name' cover notice. It then issued its own datasheet, R03DS0135 (Rev.1.00 on 2019-01-17, Rev.2.00 on Feb.27.25). Product pages for UPC4570, UPC4570C (with UPC4570C-A) and UPC4570G2 are live. No second source was found."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input voltage noise e_n",
+      "value": "4.5 nV/√Hz typ",
+      "condition": "f = 1 kHz (the frequency was not re-confirmed in this pass)",
+      "source": "NEC/Renesas datasheet features list, via search summary (datasheet4u.com/datasheet/NEC/UPC4570-368239)"
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "15 MHz typ",
+      "condition": "f = 100 kHz",
+      "source": "NEC datasheet features list, via search summary (datasheet4u / datasheetspdf.com)"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "7 V/µs typ",
+      "condition": "datasheet typical",
+      "source": "NEC datasheet features list, via search summary. The OrCAD JOPAMP.LIB macromodel also gives 7.0 V/µs."
+    },
+    {
+      "parameter": "Comparison with 4558 (vendor claim)",
+      "value": "noise 3x better; GBW and slew rate 7x better",
+      "condition": "datasheet general description",
+      "source": "https://cdn-reichelt.de/documents/datenblatt/A200/upc4570.pdf (via search summary)"
+    },
+    {
+      "parameter": "Supply voltage range",
+      "value": "±4 V to ±16 V",
+      "condition": "recommended operating range (not re-confirmed; the Ovaga listing title gives ±16 V)",
+      "source": "earlier search summary of the NEC datasheet; https://www.ovaga.com/files/uploads/datasheets/9084f03e-30d2-4009-aa39-0d81903ea817.pdf"
+    },
+    {
+      "parameter": "Input stage type",
+      "value": "PNP bipolar differential pair",
+      "condition": "",
+      "source": "OrCAD JOPAMP.LIB upc4570 subcircuit. No vendor schematic was seen."
+    }
+  ],
+  "reputation": {
+    "summary": "A cult part among Japanese modders rather than a Western audiophile legend. The C-Area wiki describes it as NEC's audio op-amp developed from the 4558, like the JRC NJM4580. Comparing it with the NJM4580DD, the wiki says it has tighter bass, similar treble and possibly slightly lower resolution, and calls this a matter of taste. It appears widely in Japanese CD players, AV receivers, mini-systems and Tascam multitracks. The Tascam 424 MKI channel sound is partly credited to its UPC4570 + NJM4565 op-amps (JHS 424 Gain Stage). No independent measurements were found.",
+    "sonic_descriptors": [
+      "tight / firm bass (compared with NJM4580DD, per C-Area wiki)",
+      "high-frequency extension comparable to NJM4580",
+      "possibly slightly less resolution than NJM4580 (subjective)"
+    ],
+    "typical_uses": [
+      "CD player output and filter stages (Japanese domestic players)",
+      "AV receiver audio paths (Yamaha AV-S70, µPC4570G2)",
+      "mini-system audio (Sony HCD-GRX80, UPC4570C-1)",
+      "cassette multitrack channel preamps (Tascam Portastudio 424 MKI; Tascam 238S uses µPC4570HA)",
+      "preamps and tone-control kits (e.g. AIYIMA boards sold with UPC4570C)",
+      "op-amp rolling in Japanese DIY as an NJM4580 alternative"
+    ],
+    "caveats": [
+      "The DIP-8 µPC4570C is reportedly a maintenance (保守) product, and aftermarket supply goes through channels such as Rochester Electronics.",
+      "Minimum supply of about ±4 V (not re-confirmed) makes it unsuitable for low-voltage single-rail designs.",
+      "The SIP-9 (HA) and SOP-8 (G2) versions are not drop-in replacements for DIP-8 sockets.",
+      "The sound claims are Japanese-community folklore, and no independent distortion or noise measurements were found."
+    ],
+    "sources": [
+      "https://w.atwiki.jp/higemouse/pages/66.html",
+      "https://nabe.adiary.jp/opamp-speclist",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12285333297",
+      "https://github.com/colfitt/arlo-genesis/blob/7dc9620cb942337596e53690ffc762b78663636f/gear/JHS%20424/research/424-DeepResearch.md",
+      "https://jhspedals.info/products/424-gain-stage",
+      "https://github.com/sandralawsonbt/docman/blob/a5f95954c07dfbcca1ba39d6e38e80d415426f6d/manual/917667/Yamaha-Av-S70.html",
+      "https://github.com/sandralawsonbt/sandra/blob/04c028937bc5e9e7908862c187278758f961f725/manual/1012055/Sony-Hcd-Grx80-page-55.html",
+      "https://github.com/quietcat/tascam238s/blob/dfa5cb75c576d5f33d59573e1a816f56765684f9/238.lib",
+      "https://www.renesas.com/en/products/upc4570",
+      "https://wakamatsu.co.jp/biz/aac/G10528JJ8V0DS00.pdf"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Renesas",
+      "title": "Datasheet UPC4570",
+      "doc_number": "R03DS0135EJ0200",
+      "revision": "Rev. 2.00",
+      "date": "",
+      "url": "https://www.renesas.com/en/document/dst/upc4570-datasheet",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "date_text": "Feb.27.25",
+      "note": "Current Renesas-format datasheet, 11 pages. The change list against Rev.1.00 was not seen."
+    },
+    {
+      "vendor": "NEC (served by Renesas)",
+      "title": "µPC4570 Data Sheet (with 'To our customers, Old Company Name in Catalogs and Other Documents' cover)",
+      "doc_number": "G10528EJ8V0DS00",
+      "revision": "",
+      "date": "2010-04-01",
+      "url": "https://www.renesas.com/en/document/dst/upc4570-data-sheet-g10528ej8v0ds00",
+      "url_kind": "vendor_legacy",
+      "confidence": "high",
+      "revision_status": "unknown",
+      "revision_text": "8V0 (8th edition, English)",
+      "note": "Last NEC-era English edition, re-served by Renesas."
+    },
+    {
+      "vendor": "NEC",
+      "title": "Bipolar Analog Integrated Circuit µPC4570 Data Sheet",
+      "doc_number": "G10528EJ7V0DS00",
+      "revision": "",
+      "date": "",
+      "url": "https://cdn-reichelt.de/documents/datenblatt/A200/upc4570.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "7V0 (7th edition, English)",
+      "note": "The search summary shows the 7th edition exists. That the Reichelt copy holds this edition (rather than 8V0) is unconfirmed."
+    },
+    {
+      "vendor": "NEC",
+      "title": "uPC4570 データ・シート (Japanese)",
+      "doc_number": "G10528JJ8V0DS00",
+      "revision": "",
+      "date": "",
+      "url": "https://wakamatsu.co.jp/biz/aac/G10528JJ8V0DS00.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "8V0 (8th edition, Japanese)",
+      "note": "Copy from the Wakamatsu retailer. The document number comes from the filename (seen in an earlier web sweep)."
+    },
+    {
+      "vendor": "NEC",
+      "title": "UPC4570 Datasheet(PDF) - NEC",
+      "doc_number": "not seen (G10528 series)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/6770/NEC/UPC4570.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "NEC-era copy. The low alldatasheet ID suggests an early upload, possibly an older edition (unconfirmed)."
+    },
+    {
+      "vendor": "Renesas",
+      "title": "UPC4570 Datasheet(PDF) - Renesas",
+      "doc_number": "not seen (probably R03DS0135)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1689631/RENESAS/UPC4570.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Renesas-era copy. May freeze Rev.1.00 or Rev.2.00 (unconfirmed)."
+    },
+    {
+      "vendor": "Renesas",
+      "title": "UPC4570 Datasheet (UPC4570G2-E1-A)",
+      "doc_number": "not seen",
+      "revision": "",
+      "date": "",
+      "url": "https://www.verical.com/datasheet/renesas-technology-amplifier-operational-upc4570g2-e1-a-435826.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Returned for the R03DS0135 query, so probably the Renesas-format edition (unconfirmed)."
+    },
+    {
+      "vendor": "NEC/Renesas",
+      "title": "UPC4570C-A datasheet",
+      "doc_number": "not seen",
+      "revision": "",
+      "date": "",
+      "url": "https://www.verical.com/datasheet/renesas-technology-amplifier---operational-UPC4570C-A-4478073.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Returned for the G10528 query, so probably an NEC-era edition (unconfirmed)."
+    },
+    {
+      "vendor": "Renesas",
+      "title": "UPC4570G2-E1-A Data Sheet OP Amp Dual Ultra Low Noise +/-16V",
+      "doc_number": "not seen",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ovaga.com/files/uploads/datasheets/9084f03e-30d2-4009-aa39-0d81903ea817.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Distributor copy. The edition was not identified."
+    },
+    {
+      "vendor": "Renesas",
+      "title": "UPC4570 Datasheet (Renesas)",
+      "doc_number": "not seen",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/pdf-down/u/P/C/uPC4570-Renesas.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Returned for the R03DS0135 query. The revision was not seen."
+    },
+    {
+      "vendor": "NEC",
+      "title": "UPC4570 Datasheet (NEC) - DUAL OPERATIONAL AMPLIFIER",
+      "doc_number": "not seen",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet/NEC/UPC4570-368239",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "NEC-era copy. The feature list (4.5 nV/√Hz, 7 V/µs, 15 MHz at 100 kHz) and package list were confirmed through it. Related pages: datasheet4u NEC UPC4570C-1480869 and UPC4570G2-1480870."
+    },
+    {
+      "vendor": "NEC",
+      "title": "UPC4570 Datasheet pdf - DUAL ULTRA LOW-NOISE, WIDEBAND, OPERATIONAL AMPLIFIER - NEC",
+      "doc_number": "not seen",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/U/P/C/4/UPC4570.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Old NEC-era copy. The edition was not identified."
+    },
+    {
+      "vendor": "NEC",
+      "title": "μPC4570 Dual Op Amp Datasheet (C4570C-NEC-2)",
+      "doc_number": "not seen",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/682301813/C4570C-NEC-2",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Scribd upload returned for the G10528 edition query. The edition was not identified."
+    },
+    {
+      "vendor": "unknown (ETC)",
+      "title": "UPC4570 Datasheet PDF - 11 pages",
+      "doc_number": "not seen",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/pdf-html/140872/ETC/11page/UPC4570.html?lang=en",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The 11-page count matches R03DS0135 but may also match an NEC edition. Unconfirmed."
+    },
+    {
+      "vendor": "NEC",
+      "title": "データ・シート バイポーラ・アナログ集積回路 µPC4570",
+      "doc_number": "not seen (probably G10528JJ…)",
+      "revision": "",
+      "date": "",
+      "url": "https://suzushoweb.com/pdf_file/4d7de03535611.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Copy from the Suzusho parts shop. Unconfirmed in this pass, and the edition was not identified."
+    },
+    {
+      "vendor": "NEC",
+      "title": "データ・シート (NEC Electronics disclaimer header)",
+      "doc_number": "not seen",
+      "revision": "",
+      "date": "",
+      "url": "https://www.zaikostore.com/jsp/pdf/PDFFILE/NEC/FIL6032625.PDF",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed that this is the µPC4570 datasheet or which edition it holds."
+    },
+    {
+      "vendor": "Renesas (NEC legacy document)",
+      "title": "お客様各位 カタログ等資料中の旧社名の扱いについて (Operational Amplifier/Comparator Information)",
+      "doc_number": "not seen",
+      "revision": "",
+      "date": "2010-04-01",
+      "url": "https://www.renesas.com/ja/document/oth/operational-amplifiercomparator-information",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Not the µPC4570 datasheet. NEC-era op-amp line-up information. Unconfirmed in this pass."
+    },
+    {
+      "vendor": "NEC (served by Renesas)",
+      "title": "uPC4570 DS (NEC data sheet re-served under the Renesas US-region path)",
+      "doc_number": "G10528EJ8V0DS00",
+      "revision": "",
+      "date": "",
+      "url": "https://www.renesas.com/us/en/document/dst/upc4570-data-sheet-g10528ej8v0ds00",
+      "url_kind": "vendor_revision_specific",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "8V0 (8th edition, English), taken from the URL slug",
+      "note": "The search shows it with the title 'uPC4570 DS'. This is the US-region path to the same G10528EJ8V0DS00 document already listed at /en/. It is probably identical, with the 'Old Company Name' cover."
+    },
+    {
+      "vendor": "NEC",
+      "title": "UPC4570C Datasheet(PDF) - NEC (DIP version)",
+      "doc_number": "not shown (G10528 series)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/6771/NEC/UPC4570C.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "alldatasheet entry 6771, next to the known entry 6770 (UPC4570). The low entry number suggests an early NEC scan. The revision was not visible in the search summary."
+    },
+    {
+      "vendor": "NEC",
+      "title": "UPC4570HA Datasheet(PDF) - NEC (9-pin SIP version)",
+      "doc_number": "not shown (G10528 series)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/6773/NEC/UPC4570HA.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "alldatasheet entry 6773 for the SIP variant, uPC4570HA. The revision was not visible in the search summary."
+    },
+    {
+      "vendor": "NEC",
+      "title": "UPC4570HA Datasheet - SIP AMPLIFIER | NEC",
+      "doc_number": "not shown",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/NEC/UPC4570HA/1480871",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheet4u entry 1480871 for the NEC uPC4570HA (SIP). This is a different entry from the known NEC entry 368239. The revision was not visible."
+    },
+    {
+      "vendor": "NEC",
+      "title": "UPC4570 Datasheet (NEC) - DUAL OPERATIONAL AMPLIFIER (PDF view)",
+      "doc_number": "not shown",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet-pdf/NEC/UPC4570/pdf.php?id=368239",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "PDF viewer URL for datasheet4u entry 368239. It is the same entry as the known https://datasheet4u.com/datasheet/NEC/UPC4570-368239, so it probably holds the same NEC edition. The revision was not visible."
+    },
+    {
+      "vendor": "NEC / Renesas (several)",
+      "title": "Datasheet Archive: UPC4570 datasheets",
+      "doc_number": "not shown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetarchive.com/uPC4570-datasheet.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A datasheetarchive listing page that may carry several NEC editions (G10528 series). No edition was visible in the search summary."
+    },
+    {
+      "vendor": "NEC / Renesas (unclear)",
+      "title": "UPC4570 Datasheet - DUAL OPERATIONAL AMPLIFIER",
+      "doc_number": "not shown",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet/UPC4570.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This page came up in a search for R03DS0135EJ0100/EJ0200, but its summary did not show which document it holds."
+    },
+    {
+      "vendor": "NEC (via alldatasheet)",
+      "title": "UPC4570 pdf, UPC4570 Description, UPC4570 Datasheet ... ALLDATASHEET (Scribd upload)",
+      "doc_number": "not shown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/828979319/UPC4570-pdf-UPC4570-Description-UPC4570-Datasheet-UPC4570-view-ALLDATASHEET",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A Scribd re-upload of an alldatasheet UPC4570 page. It is different from the known Scribd document 682301813 (C4570C_NEC_2). The revision was not visible."
+    },
+    {
+      "vendor": "NEC / Renesas (index)",
+      "title": "UPC4570 Dual Operational Amplifier Datasheet PDF (datasheet4u part-number index)",
+      "doc_number": "n/a (index page)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/part-number/UPC4570.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The datasheet4u index page. It lists the NEC entries (368239 and 1480871) and the Renesas R03DS0135 copy."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "NEC",
+      "doc_number": "G10528EJ7V0DS00",
+      "revision": "7V0 (7th ed., English)",
+      "date": "not seen",
+      "changes": "not seen"
+    },
+    {
+      "vendor": "NEC",
+      "doc_number": "G10528EJ8V0DS00",
+      "revision": "8V0 (8th ed., English)",
+      "date": "not seen",
+      "changes": "Changes not seen. Renesas later re-served it with the 'Old Company Name' cover (after 2010-04-01)."
+    },
+    {
+      "vendor": "NEC",
+      "doc_number": "G10528JJ8V0DS00",
+      "revision": "8V0 (8th ed., Japanese)",
+      "date": "not seen",
+      "changes": "not seen"
+    },
+    {
+      "vendor": "Renesas",
+      "doc_number": "R03DS0135EJ0100",
+      "revision": "Rev.1.00",
+      "date": "2019-01-17",
+      "changes": "First Renesas-format datasheet with a new document number, replacing the NEC G10528 series. The detailed changes were not seen."
+    },
+    {
+      "vendor": "Renesas",
+      "doc_number": "R03DS0135EJ0200",
+      "revision": "Rev.2.00",
+      "date": "Feb.27.25",
+      "changes": "Current edition, 11 pages. The change list was not seen."
+    },
+    {
+      "vendor": "Renesas",
+      "doc_number": "R03DS0135EJ0100",
+      "revision": "Rev.1.00",
+      "date": "2019.1.17",
+      "changes": "Confirmed from the page header of the known copy at https://datasheet4u.com/pdf-down/u/P/C/uPC4570-Renesas.pdf, which reads 'R03DS0135EJ0100 Rev.1.00 Page 1 of 9 2019.1.17 Datasheet μPC4570'. This first Renesas-format edition has 9 pages; Rev.2.00 has 11. The change list was not shown."
+    },
+    {
+      "vendor": "Renesas",
+      "doc_number": "R03DS0135EJ0200",
+      "revision": "Rev.2.00",
+      "date": "Feb.27.25",
+      "changes": "The header reads 'R03DS0135EJ0200 Rev.2.00 Page 1 of 11 Feb.27.25 Datasheet UPC4570'. It grew from 9 pages (Rev.1.00) to 11. The title changed from 'μPC4570' to 'UPC4570'. The detailed change list was not shown."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Renesas Electronics (ex-NEC)",
+      "when": "PCN RL-BB-23-0058 (2023; SOP-8 samples available 25 Aug 2023) added a back-end (assembly/test) factory. PCN RL-BB-24-0007 (published 19 Jan 2024, effective 13 May 2024) then transferred SOP back-end production.",
+      "part_numbers_affected": [
+        "UPC4570G2-A",
+        "UPC4570G2-E1-A",
+        "UPC4570G2-AP",
+        "UPC4570G2-E1-AP"
+      ],
+      "identification": "New orderable suffix '-AP' replaces '-A' on SOP8 (G2) parts, e.g. UPC4570G2-E1-A -> UPC4570G2-E1-AP. The '-AP' part-details page exists on renesas.com. No top-marking rule was captured.",
+      "summary": "Renesas added, then transferred, the back-end factory for its general-purpose linear IC SOP products, including the uPC4570 SOP8. The PCNs say the plating and bond-wire specifications differ at the new back end, so the part numbers change (-A to -AP). Some materials differ but are already in mass production, the outline drawing has minor dimensional differences with the same recommended footprint, and the tape packaging box size differs. This is an assembly change; the die is not reported to change. DIP8 (UPC4570C-A) and TSSOP8 (GR-9LG) orderables are not covered by these SOP PCNs.",
+      "spec_deltas": [
+        {
+          "parameter": "Orderable suffix (SOP8)",
+          "before": "UPC4570G2-A / UPC4570G2-E1-A",
+          "after": "UPC4570G2-AP / UPC4570G2-E1-AP"
+        },
+        {
+          "parameter": "Lead plating and bond wire",
+          "before": "original back-end specification",
+          "after": "different plating and wire specification (a search summary mentions Cu). Exact materials were not captured."
+        },
+        {
+          "parameter": "Package outline",
+          "before": "original SOP8 (5.72 mm, 225 mil) outline",
+          "after": "minor dimensional differences; same recommended land pattern"
+        }
+      ],
+      "audio_impact": "None expected. The die is unchanged, and a bond-wire or plating change has no documented electrical effect at the datasheet level.",
+      "compatibility_risk": "low - same die and footprint. Update BOMs and AVLs for the new -AP suffix and check the minor outline differences for tight mechanical fits.",
+      "sources": [
+        "https://www.renesas.com/en/document/pcn/addition-back-end-production-general-purpose-linear-ic-products-sop-package-products-rl-bb-23-0058",
+        "https://www.renesas.com/en/document/pcn/transfer-back-end-production-general-purpose-linear-ic-products-sop-package-products-rl-bb-24-0007",
+        "https://www.mouser.com/pdfDocs/RL-BB-24-0007-PCN-Standard-Linear-IC-SOP-240115d.pdf",
+        "https://www.renesas.com/en/products/upc4570/part-details/upc4570g2-e1-ap"
+      ],
+      "confidence": "medium",
+      "verification": "Four WebSearches returned summaries of RL-BB-23-0058 (back-end addition, plating and wire differ, part numbers change, SOP-8 samples 8/25/2023) and RL-BB-24-0007 (19 Jan 2024 publication, 13 May 2024 effective, UPC4570 listed), plus the -A to -AP mapping for UPC4570G2 and the live Renesas UPC4570G2-E1-AP page. The PCN PDFs were not read directly."
+    },
+    {
+      "kind": "datasheet-respec",
+      "vendor": "Renesas Electronics (ex-NEC)",
+      "when": "New Renesas datasheet R03DS0135EJ0100 Rev.1.00 dated 17 Jan 2019 (9 pages), and Rev.2.00 dated 27 Feb 2025 (11 pages). The NEC-era document was G10528EJ8V0DS00.",
+      "part_numbers_affected": [
+        "UPC4570C-A",
+        "UPC4570G2-E1-A",
+        "UPC4570G2-E2-A",
+        "UPC4570G2-E1-AP",
+        "UPC4570GR-9LG-E1-A"
+      ],
+      "identification": "Datasheet document number R03DS0135EJ (Rev.1.00 / Rev.2.00) versus the NEC-era G10528EJ8V0DS00.",
+      "summary": "Renesas replaced the NEC-era uPC4570 datasheet with a new Renesas document, R03DS0135EJ. The product page now titles the part 'High-Voltage, Bipolar Dual Operational Amplifier, Dual-Power Supply, Ultra Low-Noise, High-Speed, Wide Band for Consumer Products'. The UPC258/UPC4558 datasheet also went to Rev.2.00 on the same date (Feb.27.25), which suggests a family-wide document update. It may be linked to the -AP orderables, but that is unconfirmed. No revision history or changed limits were retrieved, so no spec delta is confirmed. The part remains active.",
+      "spec_deltas": [],
+      "audio_impact": "Unknown. No silicon change is documented, and the datasheet deltas, if any, were not captured.",
+      "compatibility_risk": "low - same die as far as documented. Check the Rev.2.00 limits before relying on NEC-era guaranteed values.",
+      "sources": [
+        "https://www.renesas.com/en/document/dst/upc4570-datasheet",
+        "https://datasheet4u.com/pdf-down/u/P/C/uPC4570-Renesas.pdf",
+        "https://www.renesas.com/en/document/dst/upc4570-data-sheet-g10528ej8v0ds00",
+        "https://www.renesas.com/en/document/dst/upc258-upc4558-datasheet",
+        "https://www.renesas.com/en/products/upc4570"
+      ],
+      "confidence": "low",
+      "verification": "A WebSearch for the R03DS0135EJ0200 revision history confirmed that Rev.1.00 (2019.1.17, 9 pp) and Rev.2.00 (Feb.27.25, 11 pp) exist, but no revision notes or changed limits were visible. Unconfirmed as a respec, so kept at low confidence."
+    }
+  ],
+  "counterfeit_notes": "No reports of counterfeit µPC4570 parts were found. The DIP µPC4570C is reportedly a maintenance product and is sold through surplus and hobby channels, such as Suzusho and AliExpress tone-control kits advertised with 'UPC4570C'. DigiKey Marketplace lists UPC4570C-A through Rochester Electronics, an authorized aftermarket source. Remarked vintage Japanese op-amps are a general risk from hobby channels. The LCSC/EasyEDA 'NEC4570G2' part has an unverified origin. The actual top-mark formats were not seen.",
+  "alternatives": [
+    "NJM4580 (JRC / Nisshinbo): the closest functional counterpart, also described as 4558-derived",
+    "NJM2114 (JRC / Nisshinbo): low-noise bipolar dual used in similar Japanese equipment",
+    "NE5532 / LM833: pin-compatible generic low-noise bipolar duals",
+    "OPA1602 (TI): modern low-noise bipolar dual",
+    "LM4562 / LME49720 (TI): modern low-distortion bipolar dual"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "https://cdn-reichelt.de/documents/datenblatt/A200/upc4570.pdf",
+    "https://suzushoweb.com/pdf_file/4d7de03535611.pdf",
+    "https://wakamatsu.co.jp/biz/aac/G10528JJ8V0DS00.pdf",
+    "https://www.renesas.com/en/document/dst/upc4570-data-sheet-g10528ej8v0ds00",
+    "https://www.renesas.com/en/document/dst/upc4570-datasheet",
+    "https://www.renesas.com/en/products/upc4570",
+    "https://www.renesas.com/en/products/upc4570c",
+    "https://www.renesas.com/en/products/upc4570c/part-details/upc4570c-a",
+    "https://www.renesas.com/ja/document/oth/operational-amplifiercomparator-information",
+    "https://www.renesas.com/ja/products/upc4570",
+    "https://www.renesas.com/sg/en/products/analog-products/amplifiers/operational-amplifiers/general-purpose-op-amps/upc4570g2-ultra-low-noise-high-speed-wide-band-dual-operational-amplifier",
+    "https://www.renesas.com/us/en/document/dst/upc4570-data-sheet-g10528ej8v0ds00",
+    "https://www.verical.com/datasheet/renesas-technology-amplifier---operational-UPC4570C-A-4478073.pdf",
+    "https://www.verical.com/datasheet/renesas-technology-amplifier-operational-upc4570g2-e1-a-435826.pdf",
+    "https://www.zaikostore.com/jsp/pdf/PDFFILE/NEC/FIL6032625.PDF"
+  ],
+  "open_questions": [
+    "What changed between R03DS0135 Rev.1.00 (2019-01-17) and Rev.2.00 (Feb.27.25)? Does the Renesas datasheet still list the C (DIP) and HA (SIP) packages, or only G2?",
+    "Was the 2019 renumbering from NEC G10528 to Renesas R03DS0135 purely editorial, or did it come with a fab or process change? No PCN was found, and no silicon change is recorded (unverified rather than proven).",
+    "The printed dates of the NEC editions G10528EJ7V0, EJ8V0 and JJ8V0, and the earlier editions 1 to 6, are unknown.",
+    "Which mirror holds which edition (Reichelt, alldatasheet 6770 and 1689631, Verical, datasheet4u, Scribd, datasheetq) was not seen.",
+    "The lifecycle status of each part number (C-A, G2-E1-A, HA) is unconfirmed, and no Renesas EOL notice for the UPC4570 was found. The maintenance-product status of the DIP comes only from Japanese retailers.",
+    "The ±4 to ±16 V recommended supply range was not re-confirmed in this pass.",
+    "GBW is specified at 100 kHz, so the OrCAD macromodel's unity-gain crossover of about 7 MHz is not necessarily inconsistent. Check whether the datasheet gives a separate unity-gain frequency.",
+    "Not captured: i_n, THD, quiescent current, output current, Vos and absolute maximum ratings.",
+    "The meaning of the -1 (Sony) suffix is unknown, and the lead-free meaning of -A is unconfirmed.",
+    "The introduction year is unknown.",
+    "The origin of the LCSC 'NEC4570G2' part is unknown.",
+    "The reputation sources (C-Area wiki and others) were not re-checked in this pass."
+  ],
+  "sources": [
+    "https://www.renesas.com/en/document/dst/upc4570-datasheet",
+    "https://www.renesas.com/en/document/dst/upc4570-data-sheet-g10528ej8v0ds00",
+    "https://www.renesas.com/en/products/upc4570",
+    "https://www.renesas.com/en/products/upc4570c",
+    "https://www.renesas.com/en/products/upc4570c/part-details/upc4570c-a",
+    "https://www.renesas.com/sg/en/products/analog-products/amplifiers/operational-amplifiers/general-purpose-op-amps/upc4570g2-ultra-low-noise-high-speed-wide-band-dual-operational-amplifier",
+    "https://www.digikey.com/en/products/detail/rochester-electronics-llc/UPC4570C-A/12130950",
+    "https://cdn-reichelt.de/documents/datenblatt/A200/upc4570.pdf",
+    "https://datasheet4u.com/datasheet/NEC/UPC4570-368239",
+    "https://datasheetspdf.com/pdf/368239/NEC/UPC4570/1",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/6770/NEC/UPC4570.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/1689631/RENESAS/UPC4570.html",
+    "https://www.ovaga.com/files/uploads/datasheets/9084f03e-30d2-4009-aa39-0d81903ea817.pdf",
+    "https://www.datasheetarchive.com/UPC4570-datasheet.html",
+    "https://w.atwiki.jp/higemouse/pages/66.html",
+    "https://www.renesas.com/ja/document/oth/operational-amplifiercomparator-information",
+    "https://wakamatsu.co.jp/biz/aac/G10528JJ8V0DS00.pdf",
+    "https://suzushoweb.com/pdf_file/4d7de03535611.pdf",
+    "https://suzushoweb.shop-pro.jp/?pid=100916022",
+    "https://www.zaikostore.com/jsp/pdf/PDFFILE/NEC/FIL6032625.PDF",
+    "https://nabe.adiary.jp/opamp-speclist",
+    "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12285333297",
+    "https://github.com/hanhha/SPICELIB/blob/30137cb80078ea40e7c4cbf66f05f9bd496fea24/jopamp.lib",
+    "https://github.com/quietcat/tascam238s/blob/dfa5cb75c576d5f33d59573e1a816f56765684f9/238.lib",
+    "https://github.com/sandralawsonbt/docman/blob/a5f95954c07dfbcca1ba39d6e38e80d415426f6d/manual/917667/Yamaha-Av-S70.html",
+    "https://github.com/sandralawsonbt/sandra/blob/04c028937bc5e9e7908862c187278758f961f725/manual/1012055/Sony-Hcd-Grx80-page-55.html",
+    "https://github.com/colfitt/arlo-genesis/blob/7dc9620cb942337596e53690ffc762b78663636f/gear/JHS%20424/research/424-DeepResearch.md",
+    "https://jhspedals.info/products/424-gain-stage",
+    "https://github.com/Jiangshan00001/easyeda_to_pads/blob/d963980383f0cec56b07889e3e317986bf5fbff1/converted/Low_Noise_OpAmps.p"
+  ],
+  "verification": {
+    "status": "partially-verified",
+    "refuted_claims": [
+      "The draft said it was unknown whether Renesas issued a new datasheet number or only re-covered NEC G10528. This is refuted: Renesas issued R03DS0135 (Rev.1.00 on 2019-01-17, Rev.2.00 on Feb.27.25).",
+      "The inferred URL https://www.renesas.com/en/document/dst/upc4570-data-sheet was not found. The real Renesas URLs are /en/document/dst/upc4570-datasheet and /en/document/dst/upc4570-data-sheet-g10528ej8v0ds00, so the inferred URL was removed from the archive seeds.",
+      "[change register] Claim that UPC4570GR-9LG-E1-A is a new Renesas-era orderable: refuted. GR-9LG is the 8-pin TSSOP option, and the UPC4570GR-9LG-E1-A datasheet mirror is the NEC-era 'Old Company Name' document.",
+      "[change register] Part number 'UPC4570AG2-E1-A' (from a PCN search summary): not found in any source. It is likely a garbled UPC4570G2-E1-A and was removed.",
+      "[change register] The single combined sweep entry was split into a package-or-assembly entry (PCNs RL-BB-23-0058 / RL-BB-24-0007) and a datasheet-respec entry (R03DS0135EJ). Nothing was refuted at the entry level."
+    ],
+    "corrections": [
+      "Added the current Renesas datasheet R03DS0135EJ0200 Rev.2.00 (Feb.27.25) as vendor_current, and the prior Rev.1.00 R03DS0135EJ0100 (2019-01-17).",
+      "Added the Renesas-hosted NEC English datasheet G10528EJ8V0DS00 as vendor_legacy, and recorded the 7th edition G10528EJ7V0DS00.",
+      "Filled revision_history with the three NEC editions and the two Renesas revisions (dates only where they were seen).",
+      "Changed the GBW condition to f = 100 kHz, and added the vendor claim versus the 4558 (3x lower noise, 7x higher GBW and slew rate).",
+      "Softened '4558-derived' in the tagline and technology fields. The datasheet benchmarks against the 4558, and the derivation claim stays attributed to the C-Area wiki.",
+      "Added the orderable part numbers UPC4570C-A and UPC4570G2-E1-A, and confirmed the package dimensions: C is an 8-pin DIP (7.62 mm), G2 an 8-pin SOP (5.72 mm) and HA a 9-pin SIP.",
+      "Added the separate Renesas UPC4570C and UPC4570G2 product pages and the DigiKey Marketplace listing through Rochester Electronics.",
+      "Added distributor and third-party mirrors (Reichelt, alldatasheet NEC and Renesas, Verical, Ovaga, datasheet4u, datasheetcatalog, Scribd, datasheetq).",
+      "Downgraded the Suzusho mirror and the Renesas ja op-amp information document to low confidence, marked unconfirmed."
+    ],
+    "unverified_urls": [
+      "https://suzushoweb.com/pdf_file/4d7de03535611.pdf",
+      "https://www.zaikostore.com/jsp/pdf/PDFFILE/NEC/FIL6032625.PDF",
+      "https://www.renesas.com/ja/document/oth/operational-amplifiercomparator-information",
+      "https://www.renesas.com/ja/products/upc4570",
+      "https://www.datasheetq.com/pdf-html/140872/ETC/11page/UPC4570.html?lang=en",
+      "https://cdn-reichelt.de/documents/datenblatt/A200/upc4570.pdf (edition held is unverified)"
+    ],
+    "claims_confirmed": [
+      "The current Renesas datasheet is R03DS0135EJ0200 Rev.2.00, dated Feb.27.25, 11 pages: https://www.renesas.com/en/document/dst/upc4570-datasheet",
+      "An earlier edition, R03DS0135EJ0100 Rev.1.00, is dated 2019.1.17 (search summary): https://www.renesas.com/en/document/dst/upc4570-datasheet",
+      "Renesas serves the NEC datasheet G10528EJ8V0DS00 behind its 'Old Company Name' cover: https://www.renesas.com/en/document/dst/upc4570-data-sheet-g10528ej8v0ds00",
+      "A 7th edition, G10528EJ7V0DS00, exists: https://www.renesas.com/en/document/dst/upc4570-data-sheet-g10528ej8v0ds00",
+      "The datasheet gives e_n = 4.5 nV/√Hz, SR = 7 V/µs, GBW = 15 MHz at 100 kHz, with internal compensation: https://datasheet4u.com/datasheet/NEC/UPC4570-368239",
+      "Packages are µPC4570C (8-pin DIP, 7.62 mm), µPC4570G2 (8-pin SOP, 5.72 mm) and µPC4570HA (9-pin): https://datasheet4u.com/datasheet/NEC/UPC4570-368239",
+      "The datasheet claims 3x lower noise and 7x higher GBW and slew rate than the 4558: https://cdn-reichelt.de/documents/datenblatt/A200/upc4570.pdf",
+      "The Renesas product page title is 'UPC4570 - High-Voltage, Bipolar Dual Operational Amplifier, Dual-Power Supply, Ultra Low-Noise, High-Speed, Wide Band for Consumer Products': https://www.renesas.com/en/products/upc4570",
+      "The Renesas UPC4570C product page and UPC4570C-A part-details page are live: https://www.renesas.com/en/products/upc4570c/part-details/upc4570c-a",
+      "The Renesas UPC4570G2 product page is live: https://www.renesas.com/sg/en/products/analog-products/amplifiers/operational-amplifiers/general-purpose-op-amps/upc4570g2-ultra-low-noise-high-speed-wide-band-dual-operational-amplifier",
+      "UPC4570G2-E1-A is an orderable name with distributor datasheets: https://www.ovaga.com/files/uploads/datasheets/9084f03e-30d2-4009-aa39-0d81903ea817.pdf",
+      "DigiKey Marketplace lists UPC4570C-A through Rochester Electronics: https://www.digikey.com/en/products/detail/rochester-electronics-llc/UPC4570C-A/12130950"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "japanese-audio-series",
+  "product_pages": [
+    "https://www.renesas.com/en/products/upc4570",
+    "https://www.renesas.com/en/products/upc4570c",
+    "https://www.renesas.com/sg/en/products/analog-products/amplifiers/operational-amplifiers/general-purpose-op-amps/upc4570g2-ultra-low-noise-high-speed-wide-band-dual-operational-amplifier",
+    "https://www.radiomuseum.org/tubes/tube_pc4570.html"
+  ],
+  "revision_chain_notes": "The uPC4570 has one vendor document chain: NEC, then Renesas. No second sources were found.\n\n(1) NEC data sheet G10528. English editions: EJ7V0DS00 (7th), then EJ8V0DS00 (8th). The 8th is re-served by Renesas at /en/ and /us/en/ with the 'Old Company Name' cover after 2010-04-01. Japanese edition: JJ8V0DS00. Missing links: the 1st through 6th editions (G10528EJ1V0 to EJ6V0, and the matching JJ editions), plus any pre-G-number NEC IC-/IEM- document for the original introduction. No search summary showed them, and the publication dates of the 7th and 8th editions were not shown either. The early alldatasheet entries 6770 (UPC4570), 6771 (UPC4570C) and 6773 (UPC4570HA), and datasheet4u entries 368239 and 1480871 (UPC4570HA SIP), are the likeliest copies of older NEC editions, but their revisions are unconfirmed.\n\n(2) Renesas R03DS0135. The chain is R03DS0135EJ0100 Rev.1.00 (2019.1.17, 9 pages), then R03DS0135EJ0200 Rev.2.00 (Feb.27.25, 11 pages). Rev.1.00 is confirmed in the known copy at datasheet4u.com/pdf-down/u/P/C/uPC4570-Renesas.pdf, whose header reads 'R03DS0135EJ0100 Rev.1.00 Page 1 of 9 2019.1.17'. The existing entry for that URL can be upgraded from 'revision not seen' to Rev.1.00 with high confidence. Rev.2.00 is at renesas.com/en/document/dst/upc4570-datasheet. Missing: any intermediate Rev.1.xx between 2019 and 2025. None was seen.\n\nNo legacy NEC Electronics URLs were found (e.g. necel.com/nesdis/image/G10528...), so none were added as archive seeds."
+}

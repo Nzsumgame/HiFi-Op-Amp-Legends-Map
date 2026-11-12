@@ -1,0 +1,1051 @@
+{
+  "id": "OPA1611",
+  "name": "OPA1611 / OPA1612 (TI SoundPlus bipolar-input, 1.1 nV/√Hz single/dual)",
+  "tagline": "TI's 1.1 nV/√Hz bipolar audio op-amp with −136 dB THD+N at 1 kHz. It is widely used for I/V conversion and buffering in modern DACs, DAPs and Hi-Fi phones.",
+  "technology": "Bipolar-input, voltage-feedback op-amp, unity-gain stable. The output is rail-to-rail (within 0.6 V at 2 kΩ, 0.2 V at 10 kΩ). The inputs have back-to-back differential clamp diodes. Copper leadframe (SBOS450C §7.3.1). Rev A (Aug 2009) and Rev B (Jul 2011) front pages carry 'Burr-Brown Audio' branding and the title 'High-Performance Bipolar-Input AUDIO OPERATIONAL AMPLIFIERS'; web search shows this in the mirror titles. Rev C (Aug 2014) is titled 'OPA161x SoundPlus™'. TI's current parametric listing still tags the part 'Burr-Brown™ Audio'. The OPA1611 comes in SOIC-8 (D) only. The OPA1612 comes in SOIC-8 (D) or SON-8 3×3 mm (DRG), which TI's parametric table calls WSON. No DIP package appears in the datasheet or the orderable addendum.",
+  "manufacturers": [
+    "Texas Instruments (Burr-Brown Audio / SoundPlus product line)"
+  ],
+  "part_numbers": [
+    {
+      "pn": "OPA1611AID",
+      "channels": 1,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active",
+      "notes": "SOIC-8 tube of 75. Top mark 'OPA' over '1611A'. Finish NIPDAU, MSL Level-2-260C-1 YEAR. Package addendum dated 10-Nov-2025. A '.B' orderable is also listed as Active."
+    },
+    {
+      "pn": "OPA1611AIDR",
+      "channels": 1,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active",
+      "notes": "SOIC-8, large T&R of 2500. Mark 'OPA 1611A'. OPA1611AIDRG4 and the '.B' variants are also Active in the 10-Nov-2025 addendum."
+    },
+    {
+      "pn": "OPA1612AID",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active",
+      "notes": "SOIC-8 tube of 75. Mark 'OPA' over '1612A'. A '.B' variant is also Active. TI's part-details page was live in Sep 2026 search results. It is listed in TI PCN# 20260223007.1 (Feb 2026), whose change type was not visible; see silicon_changes."
+    },
+    {
+      "pn": "OPA1612AIDR",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active",
+      "notes": "SOIC-8, large T&R of 2500. Mark 'OPA 1612A'. OPA1612AIDRG4 and the '.B' variants are also Active. A Mouser product page exists."
+    },
+    {
+      "pn": "OPA1612AIDRGR / OPA1612AIDRGT",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active",
+      "notes": "SON-8 3×3 mm (DRG): DRGR is a large T&R of 3000, DRGT a small T&R of 250. Mark 'OVII'. The package was added in datasheet Rev C (Aug 2014). IB max is ±300 nA for DRG against ±250 nA for SOIC. The exposed pad connects to V−. OPA1612AIDRGRG4 and the '.B' variants are also Active."
+    },
+    {
+      "pn": "OPA1612AQDRQ1 (OPA1612-Q1)",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active (probable; TI part-details page live in Sep 2026, lifecycle flag not seen)",
+      "notes": "Automotive dual in SOIC-8, AEC-Q100 Grade 1 (−40 to +125 °C), with its own datasheet SLOS931A (Nov 2015). Web search confirmed the grade and temperature range."
+    },
+    {
+      "pn": "OPA1611 / OPA1612 on DIP-8 adapter boards",
+      "channels": 0,
+      "vendors": [
+        "third-party (e.g. NFJ, AliExpress sellers)"
+      ],
+      "status": "n/a (not a TI part)",
+      "notes": "These are SOIC or SON parts soldered onto DIP-8 adapters. TI lists no DIP package, so a DIP-8 body marked OPA1611 or OPA1612 is not a genuine TI package."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Texas Instruments (Burr-Brown Audio line)",
+      "role": "originator / sole source",
+      "period": "2009–present",
+      "notes": "Datasheet SBOS450 dates from July 2009. Rev A (Aug 2009) and Rev B (Jul 2011) carry 'Burr-Brown Audio' branding, according to the headers and titles of web mirrors. Rev C (Aug 2014) is titled 'SoundPlus', and its change log lists no branding change. audioXpress says the part was 'introduced in 2011', which conflicts with the 2009 datasheet. No second source is known."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "automotive derivative (OPA1612-Q1)",
+      "period": "2015–present",
+      "notes": "Dual in SOIC-8, AEC-Q100 Grade 1. The datasheet is SLOS931A, NOVEMBER 2015 – REVISED NOVEMBER 2015; web search and TI's PSpice model header (24AUG2022) both confirm this. TI does not say whether the die is the same as the OPA1612's."
+    },
+    {
+      "vendor": "Third-party board makers (e.g. NFJ in Japan, AliExpress sellers)",
+      "role": "DIP-8 conversion boards (not a die vendor)",
+      "period": "2010s–present",
+      "notes": "These boards are how OPA1612s get into DIP sockets for op-amp rolling. Board quality and chip provenance vary. A discovery note says NFJ's 'new lot' (新ロット) refers to a board batch, not new silicon; this was not verified."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input voltage noise density e_n",
+      "value": "1.1 nV/√Hz typ, 1.5 nV/√Hz max @1 kHz; 1.5 nV/√Hz @100 Hz; 2 nV/√Hz @10 Hz",
+      "condition": "TA = 25 °C, VS = ±2.25 to ±18 V",
+      "source": "SBOS450C p.5. The 1.5 max was added in Rev B (Rev C change log). The 1.1 typ also appears in web search summaries of the TI, Qobuz and Q1 datasheets."
+    },
+    {
+      "parameter": "Voltage noise, 20 Hz–20 kHz",
+      "value": "1.2 µVpp",
+      "condition": "typ",
+      "source": "SBOS450C p.5"
+    },
+    {
+      "parameter": "Input current noise i_n",
+      "value": "1.7 pA/√Hz @1 kHz; 3 pA/√Hz @10 Hz",
+      "condition": "typ",
+      "source": "SBOS450C p.5"
+    },
+    {
+      "parameter": "THD+N",
+      "value": "0.000015% (−136 dB)",
+      "condition": "G = +1, f = 1 kHz, VO = 3 Vrms, RL = 2 kΩ",
+      "source": "SBOS450C p.5; web search summaries"
+    },
+    {
+      "parameter": "IMD",
+      "value": "SMPTE/DIN 0.000015% (−136 dB); DIM30 0.000012% (−138 dB); CCIF 19 + 20 kHz 0.000008% (−142 dB)",
+      "condition": "G = +1, VO = 3 Vrms",
+      "source": "SBOS450C p.5"
+    },
+    {
+      "parameter": "Gain-bandwidth",
+      "value": "40 MHz (G = 1); 80 MHz (G = 100)",
+      "condition": "typ",
+      "source": "SBOS450C p.5; 40 MHz is also in the web search summary of the Rev B front page"
+    },
+    {
+      "parameter": "Slew rate / full-power bandwidth / overload recovery",
+      "value": "27 V/µs; FPBW 4 MHz; overload recovery 500 ns",
+      "condition": "SR at G = −1; FPBW at VO = 1 Vpp; recovery at G = −10",
+      "source": "SBOS450C p.5; 27 V/µs is also in a web search summary"
+    },
+    {
+      "parameter": "Open-loop gain",
+      "value": "130 dB typ (114 min) at RL = 10 kΩ; 114 dB typ (110 min) at RL = 2 kΩ",
+      "condition": "VO within 0.2 V of the rails (10 kΩ) or 0.6 V (2 kΩ)",
+      "source": "SBOS450C p.6"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "±2.25 V to ±18 V (4.5–36 V); absolute max 40 V",
+      "condition": "",
+      "source": "SBOS450C p.4; the ±2.25 to ±18 V range is also in the web search summary of SLOS931A"
+    },
+    {
+      "parameter": "Quiescent current per channel",
+      "value": "3.6 mA typ, 4.5 mA max; 5.5 mA max over −40 to +85 °C",
+      "condition": "IOUT = 0",
+      "source": "SBOS450C p.6; 3.6 mA/ch is also in the web search summary of SLOS931A"
+    },
+    {
+      "parameter": "Output current / short circuit",
+      "value": "±30 mA drive (front page); ISC +55 / −62 mA",
+      "condition": "The Overview (§7.1) says ±40 mA, which contradicts the front page. TI's parametric table gives 'Iout (typ) 0.055 A'.",
+      "source": "SBOS450C pp.1, 6 and 12; SLOS931A front page (±30 mA, per web search)"
+    },
+    {
+      "parameter": "Output swing",
+      "value": "(V−)+0.2 to (V+)−0.2 V at 10 kΩ; (V−)+0.6 to (V+)−0.6 V at 2 kΩ",
+      "condition": "",
+      "source": "SBOS450C p.6; 'within 600 mV with 2 kΩ' confirmed by web search of SLOS931A"
+    },
+    {
+      "parameter": "Offset voltage / drift / PSRR",
+      "value": "±100 µV typ, ±500 µV max; 1 µV/°C typ, 4 µV/°C max; PSRR 0.1 µV/V typ, 1 µV/V max",
+      "condition": "Vos at VS = ±15 V; drift over −40 to +85 °C",
+      "source": "SBOS450C p.5"
+    },
+    {
+      "parameter": "Input bias / offset current",
+      "value": "IB ±60 nA typ, ±250 nA max (±300 nA max for the DRG package); 350 nA max over temperature; IOS ±25 nA typ, ±175 nA max",
+      "condition": "VCM = 0 V",
+      "source": "SBOS450C p.5. The DRG line appeared with the package in Rev C."
+    },
+    {
+      "parameter": "Input stage / common-mode range",
+      "value": "Bipolar input; VCM from (V−)+2 V to (V+)−2 V; CMRR 110 dB min, 120 dB typ; back-to-back differential input diodes; limit input current to 10 mA",
+      "condition": "",
+      "source": "SBOS450C pp.4, 5 and 14"
+    },
+    {
+      "parameter": "Input impedance",
+      "value": "Differential 20 kΩ || 8 pF; common-mode 10^9 Ω || 2 pF",
+      "condition": "typ",
+      "source": "SBOS450C p.5"
+    },
+    {
+      "parameter": "Channel separation (OPA1612)",
+      "value": "−130 dB",
+      "condition": "f = 1 kHz",
+      "source": "SBOS450C p.5"
+    },
+    {
+      "parameter": "Temperature / thermal",
+      "value": "Specified −40 to +85 °C; operating −55 to +125 °C; TJ max 200 °C; storage −65 to +150 °C; θJA 150 °C/W for SOIC-8",
+      "condition": "OPA1612-Q1: AEC-Q100 Grade 1, −40 to +125 °C ambient (SLOS931A, confirmed by web search)",
+      "source": "SBOS450C pp.4 and 6; SLOS931A"
+    },
+    {
+      "parameter": "ESD",
+      "value": "HBM ±3000 V, CDM ±1000 V, MM ±200 V",
+      "condition": "",
+      "source": "SBOS450C p.4"
+    },
+    {
+      "parameter": "Absolute-max input",
+      "value": "Input voltage (V−)−0.5 V to (V+)+0.5 V; input current ±10 mA (all pins except supplies); continuous output short circuit to VS/2, one amplifier per package",
+      "condition": "",
+      "source": "SBOS450C p.4"
+    }
+  ],
+  "reputation": {
+    "summary": "Its measured noise and distortion are exceptional (1.1 nV/√Hz, −136 dB THD+N), and measurement-oriented users treat it as essentially transparent (discovery note). In audioXpress 'Modern Op-Amp Distortion Tests, Part 1' (author not confirmed here), the OPA1612 showed less distortion than the NE5532 with shunt feedback and much less as a voltage follower, but about the same with series feedback. Soomal teardowns show it spreading through Chinese Hi-Fi phones and DAPs from 2014: FiiO X5, Meizu MX4 Pro, vivo X5 Max, Xiaomi Note and Smartisan T2. In 2022 Soomal said a very large share of recent products use the OPA1612 for I/V conversion. Japanese hobbyists call it a neutral 'reference sound' all-rounder (discovery note, not verified). The subjective camp is split. Soomal found it 'hard, not pleasing' (偏硬，不够讨喜) in a 2020 AE-9 op-amp swap, though with better dynamics and resolution than the NE5534. In 2016 Soomal argued that bipolar parts like the OPA1612 sound worse on average than DiFET types, and that passage mislabels the OPA1612 as 'Bipolar FET'.",
+    "sonic_descriptors": [
+      "neutral / 'reference sound' (JP, maimai-audio; discovery note, unverified)",
+      "flat, not genre-dependent (JP owners; discovery note, unverified)",
+      "transparent (measurement community; discovery note)",
+      "musical, delicate and warm (OPA1611; Audiogon thread per discovery note; low confidence)",
+      "hard / 偏硬, not pleasing (Soomal 2020, AE-9 op-amp swap, where it is written 'OP1611')",
+      "better dynamics and resolution than NE5534 (same Soomal 2020 passage)",
+      "average sound worse than DiFET types (Soomal 2016, 901 player / MINIBOX review)"
+    ],
+    "typical_uses": [
+      "DAC I/V conversion: Sabaj A20d (2022), with three OPA1612 for I/V and separate op-amps marked '2149U' doing the LPF, and Topping DX7 Pro (both per Soomal 2022)",
+      "Output LPF in DAPs (SoundAware MR1 with dual CS4398, per Soomal 2017)",
+      "Post-I/V amplifier or buffer in Hi-Fi phones and DAPs: Meizu MX4 Pro (2014), vivo X5 Max (2014), Xiaomi Note (2015, after ADA4896 I/V), Smartisan T2 (2016, two OPA1612 replacing one OPA2604), FiiO X5 (2014, with an LMH6643 buffer), all per Soomal",
+      "Input or error amplifier in VFA-CFA composite headphone amps with TPA6120 or THS6012 (e.g. the PWieland/SCAM project)",
+      "Professional audio, microphone preamps, mixing consoles, broadcast gear, audio test equipment and A/V receivers (TI's listed applications)",
+      "Op-amp rolling via DIP-8 adapter boards"
+    ],
+    "caveats": [
+      "Current noise is fairly high (1.7 pA/√Hz @1 kHz). With source or feedback networks of 10 kΩ or more it loses its noise advantage over FET-input parts, as a JP hobbyist's 2026 design notes (indare/pcb_work) also found.",
+      "The input common-mode range stops 2 V from each rail, so G = +1 buffers clip early on low supplies.",
+      "The back-to-back input diodes can conduct on fast edges in low-gain or G = +1 circuits. TI says to limit input current to 10 mA.",
+      "At low gain, capacitive loads reduce phase margin and can cause peaking or oscillation; TI suggests about 50 Ω series isolation (§8.4). Layout and decoupling on DIP adapters matter.",
+      "Iq is 3.6 mA per channel and θJA of SOIC-8 is 150 °C/W. TI says soldering rather than socketing reduces temperature rise.",
+      "It comes only in SOIC or SON, so every 'DIP' part is an adapter board. Relabelled TL082 fakes are documented (diyAudio 332536).",
+      "The audioXpress advantage over the NE5532 depends on topology: it is clear for shunt feedback and followers, and about equal with series feedback.",
+      "The subjective descriptors conflict with each other, and no controlled listening test was verified."
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/opa1612.pdf",
+      "https://audioxpress.com/article/modern-op-amp-distortion-tests-part-1-bjt-input-devices",
+      "https://audioxpress.com/news/Texas-Instruments-Introduces-Highest-Performance-Next-Generation-OPA1612-Audio-Operational-Amplifier",
+      "https://raw.githubusercontent.com/indare/pcb_work/main/Audio/datasheets/opamps/TI_OPA1612.pdf",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100004723.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100005448.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100005500.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100005644.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100006435.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100006526.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100007276.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100008984.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100009796.md",
+      "https://github.com/PWieland/SCAM",
+      "https://github.com/indare/pcb_work/blob/main/Audio/AmpModule_OPAMP_REFINE.md",
+      "https://maimai-audio.blog.jp/archives/25643364.html",
+      "https://forum.audiogon.com/discussions/opa-1611-opa1612-any-impressions",
+      "https://www.stereonet.com/forums/topic/535706-opa1612-vs-lme49720-opamp-comparison/",
+      "https://www.diyaudio.com/community/threads/which-opamp-in-dac-for-smoother-sound-tl072-or-opa1612.374206/",
+      "https://www.ti.com/lit/gpn/OPA1611",
+      "https://www.ti.com/product/OPA1612",
+      "https://www.diyaudio.com/community/threads/fake-opa1612-from-china.332536/",
+      "https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/532783/opa1612---fake-chips",
+      "https://www.diyaudio.com/community/threads/opa1612-from-aliexpress-no-counterfeit-but-why-so-cheap.399994/"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA161x SoundPlus High-Performance, Bipolar-Input Audio Operational Amplifiers (OPA1611, OPA1612)",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://www.ti.com/lit/ds/symlink/opa1612.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current. Web search in Sep 2026 returns this URL with the Rev C front-page text, and no SBOS450D was found. TI-served copies generated 2025-11-11 (1,540,184 bytes) and 2026-08-11 (1,573,947 bytes) are both Rev C, 34 pages, with the package addendum dated 10-Nov-2025."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA161x SoundPlus datasheet (OPA1611 symlink)",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://www.ti.com/lit/ds/symlink/opa1611.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Shared literature with the OPA1612 symlink. Confirmed by a GitHub KiCad library reference and a Rev C snippet seen by the previous run."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA161x SoundPlus datasheet, revision-specific URL",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://www.ti.com/lit/ds/sbos450c/sbos450c.pdf",
+      "url_kind": "vendor_revision_specific",
+      "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "Unconfirmed. It follows TI's URL pattern and was reported by an earlier run, but it did not appear in this pass's searches."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA1611, OPA1612 (GPN redirect)",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://www.ti.com/lit/gpn/OPA1612",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Web search in Sep 2026 shows this URL serving the 'OPA1611, OPA1612' SBOS450C datasheet."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA1611 (GPN redirect)",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://www.ti.com/lit/gpn/OPA1611",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "Unconfirmed. It follows TI's standard GPN pattern and comes from discovery evidence, but it did not appear in this pass's searches."
+    },
+    {
+      "vendor": "Texas Instruments (GitHub hobby-repo copy)",
+      "title": "TI_OPA1612.pdf",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://raw.githubusercontent.com/indare/pcb_work/main/Audio/datasheets/opamps/TI_OPA1612.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Parsed by the previous run: SHA-256 a7b107d9…, 1,573,947 bytes, PDF generated 2026-08-11. It contains the full change log for A→B and B→C."
+    },
+    {
+      "vendor": "Texas Instruments (GitHub LFS copy)",
+      "title": "opa1612.pdf (dfnr2/terra-eda-library)",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://media.githubusercontent.com/media/dfnr2/terra-eda-library/HEAD/datasheets/ti/opa1612.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Parsed by the previous run: 1,540,184 bytes, SHA-256 d1df82fa…, generated 2025-11-11. It is Rev C."
+    },
+    {
+      "vendor": "Texas Instruments (hifisentralen.com mirror)",
+      "title": "OPA161x SoundPlus™ High-Performance, Bipolar-Input … (opamp-1612.pdf)",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://www.hifisentralen.com/lagringsplass/2020/10/opamp-1612.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "New in this pass, seen in web search. Its 'OPA161x SoundPlus™' title matches only the Rev C format. The header was not seen."
+    },
+    {
+      "vendor": "Texas Instruments (university mirror)",
+      "title": "opa1612.pdf (UIUC ECE course materials)",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://jontallen.ece.illinois.edu/uploads/403/G7-software.S18/DOC/OpAmpDatasheets/opa1612.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Unconfirmed; not seen in this pass. An earlier snippet suggested Rev C."
+    },
+    {
+      "vendor": "Texas Instruments (Octopart mirror)",
+      "title": "OPA1611AID datasheet",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://datasheet.octopart.com/OPA1611AID-Texas-Instruments-datasheet-159115552.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Unconfirmed; not seen in this pass."
+    },
+    {
+      "vendor": "Texas Instruments (Octopart mirror)",
+      "title": "OPA1611AID datasheet",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://datasheet.octopart.com/OPA1611AID-Texas-Instruments-datasheet-140571573.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Unconfirmed; not seen in this pass."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheetcn mirror)",
+      "title": "OPA1612 SoundPlus High-Performance, Bipolar-Input Audio Operational Amplifiers",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://www.alldatasheetcn.com/html-pdf/764691/TI/OPA1612/354/12/OPA1612.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Unconfirmed; not seen in this pass. Its SoundPlus title suggests Rev C."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheet mirror)",
+      "title": "OPA1612AID Datasheet(PDF) - Texas Instruments",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/764694/TI/OPA1612AID.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "New in this pass. The URL was seen in web search; the revision was not."
+    },
+    {
+      "vendor": "Texas Instruments (Octopart mirror)",
+      "title": "OPA1612 OPA1611 Burr-Brown Audio Pre-Output Driver …",
+      "doc_number": "SBOS450B",
+      "revision": "B",
+      "date": "2011-07",
+      "url": "https://datasheet.octopart.com/OPA1611AID-Texas-Instruments-datasheet-21221010.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "A web search summary identifies this copy as SBOS450B with the header 'JULY 2009 – REVISED JULY 2011' and a 'Burr-Brown Audio' front page. This mirror freezes Rev B."
+    },
+    {
+      "vendor": "Texas Instruments (Qobuz mirror)",
+      "title": "opa1611.pdf (OPA1612 OPA1611 Burr-Brown Audio Pre-Output Driver …)",
+      "doc_number": "SBOS450B",
+      "revision": "B",
+      "date": "2011-07",
+      "url": "https://static.qobuz.com/info/IMG/pdf/opa1611.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Seen in web search. The search summary tied this result to SBOS450B, and its front-page layout matches the Rev B Octopart copy (21221010)."
+    },
+    {
+      "vendor": "Texas Instruments (Mouser mirror)",
+      "title": "OPA1612 OPA1611 Burr-Brown Audio …",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.com/ds/2/405/opa1612-200626.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "A or B (pre-2014, unconfirmed)",
+      "note": "Unconfirmed; not seen in this pass. An earlier snippet showed a pre-Rev C 'Burr-Brown Audio' front page."
+    },
+    {
+      "vendor": "Texas Instruments (Reichelt mirror)",
+      "title": "OPA_1612_DB.pdf (OPA1612 OPA1611 Burr-Brown Audio IN- Pre-Output Driver …)",
+      "doc_number": "SBOS450A",
+      "revision": "A",
+      "date": "2009-08",
+      "url": "https://cdn-reichelt.de/documents/datenblatt/A200/OPA_1612_DB.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "A web search summary identifies this copy as SBOS450A. It freezes Rev A. Its 'IN- Pre-Output Driver' front-page layout differs from Rev B, which fits Rev B's 'Updated front-page figure'."
+    },
+    {
+      "vendor": "Texas Instruments (BDTIC mirror)",
+      "title": "OPA1612 OPA1611 Burr-Brown Audio IN- Pre-Output Driver OUT IN+ V- V+",
+      "doc_number": "SBOS450A",
+      "revision": "A",
+      "date": "2009-08",
+      "url": "http://bdtic.com/datasheet/TI/OPA1612.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "New in this pass. A web search summary lists BDTIC as holding SBOS450A, and its front-page layout matches Reichelt's Rev A copy."
+    },
+    {
+      "vendor": "Texas Instruments (ic114 mirror)",
+      "title": "OPA1611.PDF (Burr-Brown Audio IN- Pre-Output Driver …)",
+      "doc_number": "SBOS450A",
+      "revision": "A",
+      "date": "2009-08",
+      "url": "http://product.ic114.com/PDF/O/OPA1611.PDF",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Unconfirmed; not seen in this pass. An earlier snippet showed the same 'IN- Pre-Output Driver' layout as the Reichelt and BDTIC Rev A copies."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheet mirror)",
+      "title": "OPA1612 High-Performance Bipolar-Input AUDIO OPERATIONAL AMPLIFIERS (21 pages)",
+      "doc_number": "SBOS450A",
+      "revision": "A",
+      "date": "2009-08",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/311775/TI/OPA1612.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Seen in web search, along with html-pdf pages such as https://www.alldatasheet.com/html-pdf/311775/TI/OPA1612/24/1/OPA1612.html. The search summary says AllDataSheet holds SBOS450A."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheet mirror)",
+      "title": "OPA1611 High-Performance Bipolar-Input AUDIO OPERATIONAL AMPLIFIERS",
+      "doc_number": "SBOS450",
+      "revision": "A",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/311774/TI/OPA1611.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Unconfirmed; not seen in this pass."
+    },
+    {
+      "vendor": "Texas Instruments (Manualzz mirror)",
+      "title": "OPA1611 OPA1612 Burr-Brown Audio",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://manualzz.com/doc/13788626/opa1611-opa1612-burr-brown-audio",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "A or B (pre-2014; 'Burr-Brown Audio' title)",
+      "note": "New in this pass. The URL was seen in web search; the revision letter was not."
+    },
+    {
+      "vendor": "Texas Instruments (Datasheet Archive)",
+      "title": "Datasheet Archive: OPA1611 datasheets",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetarchive.com/OPA1611-datasheet.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "New in this pass. An index page seen in web search that may list older copies. The revisions were not seen."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheet mirror)",
+      "title": "OPA1612 Datasheet (TI2)",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/2204181/TI2/OPA1612.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed; not seen in this pass."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheet.net mirror)",
+      "title": "OPA1612 Datasheet(PDF) - Texas Instruments (TI2)",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.net/datasheet-pdf/pdf/2222712/TI2/OPA1612.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "New in this pass. The URL was seen in web search; the revision was not."
+    },
+    {
+      "vendor": "Texas Instruments (RadioLocman mirror)",
+      "title": "OPA1612 Datasheet Texas Instruments",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=305459",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The URL was seen in web search. The OPA1611 entry is di=305457. The revision was not seen."
+    },
+    {
+      "vendor": "Texas Instruments (RadioLocman mirror)",
+      "title": "OPA1612AID Datasheet Texas Instruments",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=82609",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "New in this pass, seen in web search. The OPA1611AID entry is di=82171. The low IDs suggest an earlier scrape, but the revision was not seen."
+    },
+    {
+      "vendor": "Texas Instruments (datasheet4u mirror)",
+      "title": "OPA1612 Datasheet - SOIC Amplifiers",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/etcTI/OPA1612/1413231",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The URL was seen in web search; the revision was not."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA1612-Q1 SoundPlus High-Performance, Bipolar-Input Audio Operational Amplifier",
+      "doc_number": "SLOS931",
+      "revision": "A",
+      "date": "2015-11",
+      "url": "https://www.ti.com/lit/ds/symlink/opa1612-q1.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Web search in Sep 2026 returns this URL (?ts=1789397862172), and the summary gives SLOS931A (Nov 2015), AEC-Q100 Grade 1, −40 to +125 °C and SOIC-8. The TI PSpice model header (24AUG2022) agrees. No later revision was found."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA1612-Q1 (GPN redirect)",
+      "doc_number": "SLOS931",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com/lit/gpn/opa1612-q1",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "current",
+      "note": "Unconfirmed. It follows TI's standard GPN pattern but did not appear in this pass's searches."
+    },
+    {
+      "vendor": "Texas Instruments (Mouser mirror)",
+      "title": "OPA1612-Q1 SoundPlus High-Performance, Bipolar-Input …",
+      "doc_number": "SLOS931",
+      "revision": "A",
+      "date": "2015-11",
+      "url": "https://www.mouser.com/datasheet/2/405/1/opa1612_q1-3378818.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Seen in web search, and the search summary gave SLOS931A. The header itself was not seen."
+    },
+    {
+      "vendor": "Texas Instruments (Octopart mirror, Chinese translation)",
+      "title": "OPA1612-Q1 SoundPlus 高性能、双极输入音频运算放大器",
+      "doc_number": "unknown (TI Chinese translation)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/OPA1612AQDRQ1-Texas-Instruments-datasheet-152588635.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The URL and title were seen in web search; the document number was not."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheet mirror)",
+      "title": "OPA1612-Q1 Datasheet(PDF)",
+      "doc_number": "SLOS931",
+      "revision": "",
+      "date": "2015",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/785943/TI1/OPA1612-Q1.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The URL was seen in web search. A related copy, https://www.alldatasheet.net/datasheet-pdf/download/764692/TI/OPA1612-Q1_15.html, is unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments (RadioLocman / datasheet4u mirrors)",
+      "title": "OPA1612-Q1 Datasheet Texas Instruments",
+      "doc_number": "SLOS931",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=305461",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "New in this pass, seen in web search. There is also a datasheet4u copy at https://datasheet4u.com/datasheets/etcTI/OPA1612-Q1/1413232. The revision was not seen."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA1611/OPA1612 SoundPlus High-Performance, Bipolar-Input Audio Operational Amplifiers (literature-number link)",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://www.ti.com/lit/pdf/sbos450",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "TI's link by literature number. A search summary says it holds SBOS450C (July 2009, revised August 2014). The front-page text in the result title ('Pre-Output Driver OUT V- V+ IN- IN+ 0.01 0.001 ...') matches the current symlink copy."
+    },
+    {
+      "vendor": "Texas Instruments (TI China site, English datasheet)",
+      "title": "OPA1612 datasheet (ti.com.cn symlink)",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com.cn/cn/lit/ds/symlink/opa1612.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The search result title shows the same front-page text as the current ti.com symlink. The snippet does not show the revision header. The URL was seen with a ?ts= cache-buster query string."
+    },
+    {
+      "vendor": "Texas Instruments (datasheet4u mirror)",
+      "title": "OPA1611 Datasheet - SOIC Amplifiers | Texas Instruments",
+      "doc_number": "SBOS450",
+      "revision": "C",
+      "date": "2014-08",
+      "url": "https://datasheet4u.com/datasheets/etcTI/OPA1611/1413230",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "A search summary grouped this OPA1611 page with ti.com/lit/pdf/sbos450 as SBOS450C (revised August 2014). The listed 1413231 page is the matching OPA1612 page."
+    },
+    {
+      "vendor": "Texas Instruments (datasheetspdf mirror)",
+      "title": "OPA1612 Datasheet, Operational Amplifiers",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/1413231/etcTI/OPA1612/1",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Same file ID (1413231) as the listed datasheet4u OPA1612 page, so this is probably the same scrape, likely Rev C. The search snippet shows no header."
+    },
+    {
+      "vendor": "Texas Instruments (RadioLocman mirror)",
+      "title": "OPA1611 Datasheet Texas Instruments, Download PDF",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=305457",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This OPA1611 entry is a sibling of the listed di=305459 (OPA1612) and di=305461 (OPA1612-Q1) entries in the same ID batch, which suggests a Rev C-era scrape. It was also seen as radiolocman.com/datasheet/data.html?%2FOPA1611=&di=305457. The snippet shows no header."
+    },
+    {
+      "vendor": "Texas Instruments (protricom.hu mirror)",
+      "title": "OPA1612 OPA1611 Burr-Brown Audio IN- Pre-Output Driver OUT IN+ V- V+ OPA1611",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://www.protricom.hu/images/Amplifiers/OPA1612.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The copy has 'Burr-Brown Audio' branding and an 'IN- Pre-Output Driver OUT IN+ V- V+' text order. This is the same extracted title as the ic114 copy, which a search summary identifies as SBOS450A. Rev B copies (Octopart 21221010, Qobuz) read 'Pre-Output Driver OUT V- V+ IN- IN+'. The copy could therefore be Rev A or the unlettered July 2009 original. It is worth downloading to check the header."
+    },
+    {
+      "vendor": "Texas Instruments (alldatasheet HTML page view)",
+      "title": "OPA1612 datasheet (3/21 Pages) TI | High-Performance Bipolar-Input AUDIO OPERATIONAL AMPLIFIERS",
+      "doc_number": "SBOS450A",
+      "revision": "A",
+      "date": "2009-08",
+      "url": "https://www.alldatasheet.com/html-pdf/311775/TI/OPA1612/84/3/OPA1612.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "This is the HTML page view (page 3 of 21) of alldatasheet file 311775, which is already listed under its datasheet-pdf URL. A search summary names SBOS450A (July 2009, revised August 2009) for this page. It is the same file, reached by a different URL."
+    },
+    {
+      "vendor": "Texas Instruments (pdfcoffee mirror)",
+      "title": "Opa 1612 - PDFCOFFEE.COM",
+      "doc_number": "SBOS450",
+      "revision": "",
+      "date": "",
+      "url": "https://pdfcoffee.com/opa-1612-pdf-free.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This user-uploaded copy came up in a search for SBOS450A/B headers, but the snippet does not show which revision it holds."
+    },
+    {
+      "vendor": "Texas Instruments (Mouser Lithuania mirror)",
+      "title": "OPA1612-Q1 SoundPlus High-Performance, Bipolar-Input ...",
+      "doc_number": "SLOS931",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.lt/datasheet/2/405/1/opa1612_q1-3378818.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is a different domain for the same Mouser file ID (3378818) as the listed mouser.com copy. The search summary names SLOS931A overall but does not tie it to this copy."
+    },
+    {
+      "vendor": "Texas Instruments (datasheetspdf mirror)",
+      "title": "OPA1612-Q1 Datasheet - Bipolar-Input Audio Operational ...",
+      "doc_number": "SLOS931",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet/OPA1612-Q1.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is an index page for the OPA1612-Q1. The snippet shows no header."
+    },
+    {
+      "vendor": "Texas Instruments (datasheet4u mirror)",
+      "title": "OPA1612-Q1 Datasheet - Operational Amplifiers | Texas Instruments",
+      "doc_number": "SLOS931",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/etcTI/OPA1612-Q1/1413232",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is the next ID in sequence after the OPA1611 (1413230) and OPA1612 (1413231) pages. The direct PDF is also seen at https://datasheet4u.com/datasheet-pdf/etcTI/OPA1612-Q1/pdf.php?id=1413232. The snippet shows no header."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS450",
+      "revision": "(original)",
+      "date": "JULY 2009",
+      "changes": "Initial release. The date comes from the 'JULY 2009' origin line in later headers. No copy was found, and the original→A changes are not recorded in Rev C."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS450A",
+      "revision": "A",
+      "date": "JULY 2009 – REVISED AUGUST 2009",
+      "changes": "The header is confirmed by web mirrors (Reichelt, BDTIC and alldatasheet 311775, per search summaries). The front page carries 'Burr-Brown Audio' branding, the title 'High-Performance Bipolar-Input AUDIO OPERATIONAL AMPLIFIERS' and the 'IN- Pre-Output Driver' layout; the alldatasheet copy has 21 pages. The Rev C log does not record what changed from the original."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS450B",
+      "revision": "B",
+      "date": "JULY 2009 – REVISED JULY 2011",
+      "changes": "The header is confirmed by the Octopart 21221010 copy (web search summary). A→B, per the Rev C change log: revised Features list; updated front-page figure; added a max spec for input voltage noise density at 1 kHz (1.5 nV/√Hz); corrected a typo in EC footnote 1; revised Figures 4, 7, 9, 11, 15 and 29; revised the Electrical Overstress section; revised the table in Figure 34. No absolute-max, pinout or silicon change is indicated. 'Burr-Brown Audio' branding is retained."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS450C",
+      "revision": "C",
+      "date": "JULY 2009 – REVISED AUGUST 2014",
+      "changes": "B→C: new TI datasheet format; added the SON-8 (DRG) package (IB max ±300 nA for DRG); renamed SO to SOIC; added the front-page curve; added a block-diagram title; replaced the Package Information table with the addendum. The title became 'OPA161x SoundPlus™'. Still current in Sep 2026 per web search: gpn/OPA1612 serves SBOS450C and no SBOS450D was found. TI refreshed only the addendum and T&R pages, dated 10-Nov-2025."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS931A",
+      "revision": "A",
+      "date": "NOVEMBER 2015 – REVISED NOVEMBER 2015",
+      "changes": "OPA1612-Q1 automotive datasheet (AEC-Q100 Grade 1, SOIC-8). Confirmed by web search in Sep 2026 and by TI's PSpice model header (24AUG2022). The original SLOS931 and the original→A changes were not seen."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS450B",
+      "revision": "B",
+      "date": "JULY 2009 – REVISED JULY 2011",
+      "changes": "Corroboration only. A search summary says the Qobuz copy (static.qobuz.com/info/IMG/pdf/opa1611.pdf) contains the 'Changes from Revision A (August 2009) to Revision B' log. That makes the copy Rev B, not just a probable Rev B, and confirms that Rev A is dated August 2009. The changes themselves were not shown beyond what the Rev C log already records."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Texas Instruments",
+      "when": "PCN# 20260223007.1 dated 24 Feb 2026; estimated sample availability 25 Apr 2026; proposed first ship 25 May 2026",
+      "part_numbers_affected": [
+        "OPA1612AID"
+      ],
+      "identification": "Same part number, same die and datasheet (SBOS450C unchanged). This is an assembly-material change that adds Cu as an alternative bond-wire metal, staying at the current assembly facility with piece-part changes. No external marking cue is documented, so lots shipped after about 25 May 2026 may carry either wire metal. OPA1612AID was seen in the product-affected list, which is mixed (roughly 40 devices: OPA2187, OPA2210, OPA4140, INA18x/INA8xx, DACx0004, TLV417x, TPS65910; SOIC, TSSOP and QFN). OPA1611 orderables and other OPA1612 orderables were not confirmed on the list.",
+      "summary": "TI PCN# 20260223007.1, 'Add Cu as Alternative Wire Base Metal for Selected Device(s)', qualifies Cu as an additional bond-wire option 'to align with world technology trends and use wiring with enhanced mechanical properties'. It has 60-day acknowledgment and sample-request windows. It is not a fab, process or die revision, so it is not a silicon change for OPA1612. No other OPA1611/OPA1612 PCN (fab, die or datasheet) was found.",
+      "spec_deltas": [
+        {
+          "parameter": "Bond wire metal",
+          "before": "existing wire metal (Au presumed, not verified)",
+          "after": "Cu added as an alternative bond wire"
+        },
+        {
+          "parameter": "Die / fab / datasheet",
+          "before": "unchanged",
+          "after": "unchanged"
+        }
+      ],
+      "audio_impact": "Negligible. A bond-wire metal option does not change the op-amp's electrical design, and no datasheet revision followed as of Sep 2026. Claims of an audible difference would be anecdotal.",
+      "compatibility_risk": "low - assembly-material option only; same die, pinout and datasheet",
+      "sources": [
+        "https://www.mouser.com/PCN/Texas_Instruments_PCN20260223007.1_Notification.pdf",
+        "https://www.farnell.com/datasheets/4748188.pdf"
+      ],
+      "confidence": "high",
+      "verification": "Merged three reports of the same PCN. WebSearch confirmed the title and 24 Feb 2026 date via Mouser and Farnell copies; OPA1611 inclusion was not independently confirmed, and a search for OPA161x fab or die-revision PCNs only turned up generic RFAB/FFAB PCNs with no OPA161x listing seen."
+    }
+  ],
+  "counterfeit_notes": "Confirmed by web search in diyAudio thread 332536 ('Fake OPA1612 from China'): a buyer bought 10 'OPA1612' from a Chinese eBay seller for €6.80 in total. Under the microscope they turned out to be relabelled TL082 JFET dies, identified by the cross-shaped 'butterfly' FET input devices, not bipolar OPA1612 dies. A TI E2E thread, 'OPA1612 - Fake chips?' (532783), exists; its content was not seen. diyAudio thread 399994 ('OPA1612 from Aliexpress, no counterfeit but why so cheap?') reports cheap AliExpress parts that decapped as genuine OPA1612 dies, so cheap does not always mean fake. The roughly 150 nA input bias reported there (discovery note) is inside the ±250 nA max. Screening tips from the datasheet: (1) TI lists only SOIC-8 (D) and, for the OPA1612, SON-8 (DRG), so a DIP-8 body marked OPA161x is not a TI package. (2) The genuine SOIC top mark is 'OPA' over '1611A' or '1612A', and the DRG mark is 'OVII'. (3) Iq should be about 3.6 mA per channel, 4.5 mA max. (4) Input bias should be tens of nA; pA-level bias points to a JFET relabel. (5) Noise should be about 1.1 nV/√Hz, so a relabelled TL08x is roughly ten times noisier. Buy from TI or authorised distributors.",
+  "alternatives": [
+    "OPA1602 / OPA1604 (TI SoundPlus bipolar, lower Iq, dual/quad)",
+    "OPA1622 (TI bipolar with high output current, for headphone drive)",
+    "OPA1656 (TI CMOS-input audio op-amp; used instead when current noise matters)",
+    "LME49720 / LM4562 (National → TI bipolar audio dual)",
+    "AD8597 / AD8599 (ADI 1.1 nV/√Hz ultra-low-distortion bipolar)",
+    "OPA1612-Q1 (automotive-grade dual; TI does not say whether the die is identical)"
+  ],
+  "ti_literature_numbers": [
+    "SBOS450",
+    "SLOS931"
+  ],
+  "archive_seed_urls": [
+    "http://bdtic.com/datasheet/TI/OPA1612.pdf",
+    "http://focus.ti.com/lit/ds/symlink/opa1611.pdf",
+    "http://focus.ti.com/lit/ds/symlink/opa1612.pdf",
+    "http://product.ic114.com/PDF/O/OPA1611.PDF",
+    "http://www.ti.com/lit/ds/sbos450/sbos450.pdf",
+    "http://www.ti.com/lit/ds/sbos450a/sbos450a.pdf",
+    "http://www.ti.com/lit/ds/sbos450b/sbos450b.pdf",
+    "http://www.ti.com/lit/ds/slos931/slos931.pdf",
+    "http://www.ti.com/lit/ds/symlink/opa1611.pdf",
+    "http://www.ti.com/lit/ds/symlink/opa1612.pdf",
+    "http://www.ti.com/lit/pdf/sbos450",
+    "http://www.ti.com/product/OPA1612",
+    "https://cdn-reichelt.de/documents/datenblatt/A200/OPA_1612_DB.pdf",
+    "https://datasheet.octopart.com/OPA1611AID-Texas-Instruments-datasheet-21221010.pdf",
+    "https://static.qobuz.com/info/IMG/pdf/opa1611.pdf",
+    "https://www.hifisentralen.com/lagringsplass/2020/10/opamp-1612.pdf",
+    "https://www.mouser.com/PCN/Texas_Instruments_PCN20260223007.1_Notification.pdf",
+    "https://www.mouser.com/datasheet/2/405/1/opa1612_q1-3378818.pdf",
+    "https://www.mouser.com/ds/2/405/opa1612-200626.pdf",
+    "https://www.ti.com/lit/ds/sbos450/sbos450.pdf",
+    "https://www.ti.com/lit/ds/sbos450a/sbos450a.pdf",
+    "https://www.ti.com/lit/ds/sbos450b/sbos450b.pdf",
+    "https://www.ti.com/lit/ds/sbos450c/sbos450c.pdf",
+    "https://www.ti.com/lit/ds/slos931/slos931.pdf",
+    "https://www.ti.com/lit/ds/slos931a/slos931a.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa1611.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa1612-q1.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa1612.pdf",
+    "https://www.ti.com/lit/gpn/opa1611",
+    "https://www.ti.com/lit/gpn/opa1612",
+    "https://www.ti.com/product/OPA1611",
+    "https://www.ti.com/product/OPA1612",
+    "https://www.ti.com/product/OPA1612-Q1"
+  ],
+  "open_questions": [
+    "PCN# 20260223007.1 (Feb 2026) lists OPA1612AID, but its change type (fab, assembly, material or die), effective date and identification method were not visible in search summaries. Someone needs to read the PDF on Mouser or TI's PCN dashboard. It is also unknown whether the OPA1611 or the other OPA1612 orderables are affected.",
+    "No other fab, assembly or die-change PCN for OPA1611/OPA1612 was found. TI's 2022–2023 RFAB/FFAB PCNs surfaced in search, but none was shown to include OPA161x.",
+    "The original SBOS450 (no letter, Jul 2009) has not been found, and the original→A changes are unknown.",
+    "The Rev A/B assignment of the pre-2014 mirrors rests on search summaries and front-page layout: 'IN- Pre-Output Driver' layout is Rev A (Reichelt, BDTIC, ic114); 'Pre-Output Driver OUT V- V+' layout is Rev B (Octopart 21221010, Qobuz). The Mouser opa1612-200626 copy still needs its header checked.",
+    "TI's revision-specific URLs (sbos450a/b/c, slos931/slos931a) and the focus.ti.com symlinks are inferred archive seeds and were not seen.",
+    "audioXpress says the OPA1612 was 'introduced in 2011', while the datasheet dates from July 2009; this may refer to market launch. The article's author was not confirmed as Douglas Self.",
+    "The Rev C datasheet contradicts itself on output drive: ±30 mA on the front page against ±40 mA in §7.1. TI's parametric table gives 55 mA 'Iout typ', which matches ISC +55 mA.",
+    "DRG (SON-8) has an IB max of ±300 nA against ±250 nA for SOIC. It is presumably the same die with package-related guard-banding, which TI does not state.",
+    "The OPA1612AQDRQ1 lifecycle flag was not seen; only a live TI part-details page was.",
+    "The maimai-audio 'reference sound' description, the Audiogon descriptors and the content of the TI E2E fake-chip thread (532783) were not re-read."
+  ],
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/opa1612.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa1611.pdf",
+    "https://www.ti.com/lit/gpn/OPA1612",
+    "https://www.ti.com/product/OPA1612",
+    "https://www.ti.com/product/OPA1612/part-details/OPA1612AID",
+    "https://www.ti.com/lit/ds/symlink/opa1612-q1.pdf",
+    "https://www.ti.com/product/OPA1612-Q1",
+    "https://www.ti.com/product/OPA1612-Q1/part-details/OPA1612AQDRQ1",
+    "https://www.mouser.com/PCN/Texas_Instruments_PCN20260223007.1_Notification.pdf",
+    "https://datasheet.octopart.com/OPA1611AID-Texas-Instruments-datasheet-21221010.pdf",
+    "https://cdn-reichelt.de/documents/datenblatt/A200/OPA_1612_DB.pdf",
+    "http://bdtic.com/datasheet/TI/OPA1612.pdf",
+    "https://static.qobuz.com/info/IMG/pdf/opa1611.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/311775/TI/OPA1612.html",
+    "https://www.hifisentralen.com/lagringsplass/2020/10/opamp-1612.pdf",
+    "https://www.mouser.com/datasheet/2/405/1/opa1612_q1-3378818.pdf",
+    "https://raw.githubusercontent.com/indare/pcb_work/main/Audio/datasheets/opamps/TI_OPA1612.pdf",
+    "https://media.githubusercontent.com/media/dfnr2/terra-eda-library/HEAD/datasheets/ti/opa1612.pdf",
+    "https://github.com/jeffmhopkins/POGO/blob/main/components/parts/opa1612/component.yaml",
+    "https://github.com/SomethingFourier/SDR-Receiver/blob/main/qucs_project/lib/sbom396g/OPA161x.LIB",
+    "https://github.com/imr/ngspice/blob/master/examples/optran/models/OPA1611.LIB",
+    "https://github.com/chevalierid/alan-setup/blob/cf122ced7b84a18475356bcdca4c6fbbecd24047/fab/kicad/libraries/pspicetilib/OPA1612-Q1.LIB",
+    "https://github.com/732124645/-/blob/78b3fa6ac647b254ae317fed2c0f54668ae14ce9/data/ti_parts.csv",
+    "https://github.com/horizon-eda/horizon-pool/blob/0696685973dee6c9d7202704d23510768e212744/parts/ic/opamp/opa16xx/OPA1612AQDRQ1.json",
+    "https://github.com/indare/pcb_work/blob/main/Audio/AmpModule_OPAMP_REFINE.md",
+    "https://github.com/PWieland/SCAM",
+    "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100005448.md",
+    "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100009796.md",
+    "https://audioxpress.com/article/modern-op-amp-distortion-tests-part-1-bjt-input-devices",
+    "https://audioxpress.com/news/Texas-Instruments-Introduces-Highest-Performance-Next-Generation-OPA1612-Audio-Operational-Amplifier",
+    "https://www.diyaudio.com/community/threads/fake-opa1612-from-china.332536/",
+    "https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/532783/opa1612---fake-chips",
+    "https://www.diyaudio.com/community/threads/opa1612-from-aliexpress-no-counterfeit-but-why-so-cheap.399994/",
+    "https://maimai-audio.blog.jp/archives/25643364.html"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [
+      "Discovery hint 'other lots measure out of spec (150 nA bias)': 150 nA is inside the SBOS450C IB max of ±250 nA (SOIC), and the thread's own title (diyAudio 399994) says 'no counterfeit'; search shows it reports genuine dies. Removed as an out-of-spec claim.",
+      "Discovery hint 'No die change is known' can no longer be stated flatly: TI PCN# 20260223007.1 (Feb 2026) lists OPA1612AID. Its nature is unknown, so a low-confidence silicon_changes entry was added.",
+      "Draft counterfeit note placing the documented TL082 relabel on 'AliExpress and Taobao': the diyAudio 332536 case was a Chinese eBay seller. Corrected."
+    ],
+    "corrections": [
+      "Old revisions located. Octopart 21221010 = SBOS450B 'JULY 2009 – REVISED JULY 2011' (medium). Reichelt, BDTIC (new) and alldatasheet 311775 = SBOS450A 'JULY 2009 – REVISED AUGUST 2009' (medium). Qobuz = Rev B probable (medium). ic114 = Rev A probable by layout (low). Mouser 200626 remains unresolved.",
+      "Revision history dates for A and B are now backed by mirror headers as well as the Rev C log. The pre-2014 'Burr-Brown Audio' branding is confirmed by mirror titles.",
+      "Confirmed that SBOS450C (Aug 2014) is still the current datasheet in Sep 2026 via gpn/OPA1612; no SBOS450D exists in search results.",
+      "OPA1612-Q1: SLOS931A Nov 2015, AEC-Q100 Grade 1, −40 to +125 °C and SOIC-8 confirmed. Symlink confidence raised to high, product page to high and the Mouser copy to medium. The OPA1612AQDRQ1 status is now 'active (probable)'.",
+      "Added a silicon_changes entry for PCN# 20260223007.1 listing OPA1612AID (low confidence; change type not visible).",
+      "audioXpress Part 1 finding nuanced: lower distortion than the NE5532 with shunt feedback and as a follower, about equal with series feedback. Attribution to Douglas Self stays unconfirmed.",
+      "Added new mirrors: BDTIC (Rev A), hifisentralen 2020 (Rev C probable), manualzz, datasheetarchive, alldatasheet 764694, alldatasheet.net 2222712, RadioLocman di=82609/82171/305461, datasheet4u 1413232.",
+      "Replaced the previous 'WebSearch budget exhausted' open question with current open items. Added TI part-details pages and the PCN to sources and archive seeds."
+    ],
+    "unverified_urls": [
+      "https://www.ti.com/lit/ds/sbos450c/sbos450c.pdf",
+      "https://www.ti.com/lit/gpn/OPA1611",
+      "https://www.ti.com/product/OPA1611",
+      "https://www.ti.com/lit/gpn/opa1612-q1",
+      "https://jontallen.ece.illinois.edu/uploads/403/G7-software.S18/DOC/OpAmpDatasheets/opa1612.pdf",
+      "https://datasheet.octopart.com/OPA1611AID-Texas-Instruments-datasheet-159115552.pdf",
+      "https://datasheet.octopart.com/OPA1611AID-Texas-Instruments-datasheet-140571573.pdf",
+      "https://www.alldatasheetcn.com/html-pdf/764691/TI/OPA1612/354/12/OPA1612.html",
+      "https://www.mouser.com/ds/2/405/opa1612-200626.pdf",
+      "http://product.ic114.com/PDF/O/OPA1611.PDF",
+      "https://www.alldatasheet.com/datasheet-pdf/pdf/311774/TI/OPA1611.html",
+      "https://www.alldatasheet.com/datasheet-pdf/pdf/2204181/TI2/OPA1612.html",
+      "https://www.alldatasheet.net/datasheet-pdf/download/764692/TI/OPA1612-Q1_15.html",
+      "https://maimai-audio.blog.jp/archives/25643364.html",
+      "https://forum.audiogon.com/discussions/opa-1611-opa1612-any-impressions",
+      "https://www.stereonet.com/forums/topic/535706-opa1612-vs-lme49720-opamp-comparison/",
+      "https://www.diyaudio.com/community/threads/which-opamp-in-dac-for-smoother-sound-tl072-or-opa1612.374206/"
+    ],
+    "claims_confirmed": [
+      "SBOS450C 'JULY 2009 – REVISED AUGUST 2014' is the current OPA1611/OPA1612 datasheet, and no SBOS450D was found: https://www.ti.com/lit/gpn/OPA1612",
+      "The TI symlink serves the Rev C front page: https://www.ti.com/lit/ds/symlink/opa1612.pdf",
+      "SBOS450B 'JULY 2009 – REVISED JULY 2011' with a Burr-Brown Audio front page: https://datasheet.octopart.com/OPA1611AID-Texas-Instruments-datasheet-21221010.pdf",
+      "SBOS450A 'JULY 2009 – REVISED AUGUST 2009' is held by Reichelt, BDTIC and alldatasheet: https://cdn-reichelt.de/documents/datenblatt/A200/OPA_1612_DB.pdf, http://bdtic.com/datasheet/TI/OPA1612.pdf, https://www.alldatasheet.com/datasheet-pdf/pdf/311775/TI/OPA1612.html",
+      "The Qobuz copy is a pre-C 'Burr-Brown Audio' edition, with the search summary pointing to SBOS450B: https://static.qobuz.com/info/IMG/pdf/opa1611.pdf",
+      "The hifisentralen 2020 copy is titled 'OPA161x SoundPlus™' (Rev C format): https://www.hifisentralen.com/lagringsplass/2020/10/opamp-1612.pdf",
+      "OPA1612-Q1: SLOS931A (Nov 2015), AEC-Q100 Grade 1, −40 to +125 °C, SOIC-8, OPA1612AQDRQ1: https://www.ti.com/lit/ds/symlink/opa1612-q1.pdf, https://www.mouser.com/datasheet/2/405/1/opa1612_q1-3378818.pdf, https://www.ti.com/product/OPA1612-Q1/part-details/OPA1612AQDRQ1",
+      "TI PCN# 20260223007.1 (Feb 2026, Group 1 qualification report) lists OPA1612AID: https://www.mouser.com/PCN/Texas_Instruments_PCN20260223007.1_Notification.pdf",
+      "Key specs 1.1 nV/√Hz, 0.000015% THD+N at 1 kHz, 27 V/µs, 40 MHz (G = +1), ±2.25 to ±18 V, 3.6 mA/ch, ±30 mA drive and output within 600 mV at 2 kΩ: https://static.qobuz.com/info/IMG/pdf/opa1611.pdf, https://www.mouser.com/datasheet/2/405/1/opa1612_q1-3378818.pdf",
+      "Relabelled TL082 fakes were identified by decap (Chinese eBay seller, 10 pcs for €6.80): https://www.diyaudio.com/community/threads/fake-opa1612-from-china.332536/",
+      "Cheap AliExpress OPA1612s decapped as genuine: https://www.diyaudio.com/community/threads/opa1612-from-aliexpress-no-counterfeit-but-why-so-cheap.399994/",
+      "The TI E2E thread 'OPA1612 - Fake chips?' exists: https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/532783/opa1612---fake-chips",
+      "audioXpress Part 1: the OPA1612 has less distortion than the NE5532 with shunt feedback, about the same with series feedback, and much less as a voltage follower: https://audioxpress.com/article/modern-op-amp-distortion-tests-part-1-bjt-input-devices",
+      "The TI product and part-details pages for OPA1612, OPA1612AID and OPA1612-Q1 are live: https://www.ti.com/product/OPA1612, https://www.ti.com/product/OPA1612/part-details/OPA1612AID, https://www.ti.com/product/OPA1612-Q1"
+    ],
+    "web_searches_used": 9
+  },
+  "tier": "A",
+  "category": "bipolar-modern-low-noise",
+  "product_pages": [
+    "https://www.ti.com/product/OPA1612",
+    "https://www.ti.com/product/OPA1611",
+    "https://www.ti.com/product/OPA1612-Q1"
+  ],
+  "revision_chain_notes": "I used all 5 WebSearch calls. The main gaps did not close: no copy of the unlettered July 2009 SBOS450 original turned up, and there is no sign of an SBOS450D.\n\nTI SBOS450 (OPA1611 and OPA1612 share one datasheet; there is no separate OPA1612 document), oldest to newest:\n1. **Original, July 2009.** Still missing. The only lead is the protricom.hu copy. Its front page reads 'Burr-Brown Audio IN- Pre-Output Driver OUT IN+ V- V+', the same as the Rev A copies, so it could be the original or Rev A. Its header has not been seen.\n2. **SBOS450A, revised August 2009.** Found in the Reichelt, BDTIC and ic114 copies (ic114 is now named as Rev A in a search summary) and alldatasheet 311775 (PDF page and HTML page view).\n3. **SBOS450B, revised July 2011.** Found in Octopart 21221010 and the Qobuz copy. The Qobuz copy is now confirmed by its 'Changes from Revision A (August 2009) to Revision B' log.\n4. **SBOS450C, revised August 2014.** This is the current revision. It is served at ti.com/lit/pdf/sbos450 (confirmed by a search summary), the ti.com and ti.com.cn symlinks, and datasheet4u 1413230.\n\nA search that included \"SBOS450D\" found nothing, so C still appears to be current. The original→A changes are still undocumented.\n\nTI SLOS931 (OPA1612-Q1):\n- The original SLOS931 is missing.\n- **SLOS931A (November 2015, revised November 2015)** is current. New mirrors were found at mouser.lt, datasheetspdf and datasheet4u 1413232, but none of their snippets shows a revision.\n\nTwo unconfirmed points:\n- Two search summaries said the output drive is ±30 mA and one said ±40 mA. None tied either value to a specific revision, so nothing was recorded.\n- The archive_seed_urls follow TI's legacy URL patterns (the focus.ti.com and www.ti.com symlinks, and the lit/ds/sbos450{,a,b} revision-specific paths). They are meant for Wayback lookups and were not seen in search results. The one exception is ti.com/lit/pdf/sbos450, which was seen.\n\nSuggested next step: check Wayback captures from 2009 to 2011 of focus.ti.com/lit/ds/symlink/opa1611.pdf and opa1612.pdf, and of www.ti.com/lit/ds/sbos450/sbos450.pdf, for the unlettered original. Also check the header of the protricom.hu copy."
+}

@@ -1,0 +1,817 @@
+{
+  "id": "AD743",
+  "name": "AD743 / AD745 (ultralow-noise BiFET single op amps; AD745 = decompensated high-speed version)",
+  "tagline": "ADI BiFET single with 2.9 nV/rtHz (10 kHz) voltage noise and just 6.9 fA/rtHz current noise, prized for high-impedance sources such as MM phono and hydrophones.",
+  "technology": "BiFET: JFET input differential pair (p-channel JFETs in ADI's macro-models) with bipolar gain and output stages. Single op amp. AD743 is unity-gain stable (4.5 MHz, 2.8 V/us). AD745 shares the same noise and input design, but its internal compensation is optimized for higher gains (20 MHz, 12.5 V/us). In ADI's models its dominant pole is 4.8x higher at the same 132 dB open-loop gain.",
+  "manufacturers": [
+    "Analog Devices"
+  ],
+  "part_numbers": [
+    {
+      "pn": "AD743J",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "J grade, 0 to +70 C (data sheet). Also in the ADI 1992 macro-model set (ad743j.cir)."
+    },
+    {
+      "pn": "AD743K",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "K grade, 0 to +70 C, tighter specs (data sheet). Macro-model ad743k.cir."
+    },
+    {
+      "pn": "AD743A",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "A grade, -40 to +85 C (data sheet). Macro-model ad743a.cir."
+    },
+    {
+      "pn": "AD743B",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "B grade, -40 to +85 C (data sheet). Macro-model ad743b.cir."
+    },
+    {
+      "pn": "AD743S",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "Seen only in the 1992 macro-model set (ad743s.cir). The web summary of the AD743 Rev. E data sheet named only the J/K/A/B grades, so whether an S grade is still in the data sheet is unconfirmed."
+    },
+    {
+      "pn": "AD743AN",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "A grade in the N package (PDIP per ADI suffix convention). Seen as the title of an alldatasheet listing (549292)."
+    },
+    {
+      "pn": "AD743JR-16 / AD743JR-16-REEL7",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (leaded; likely superseded by Z/RoHS version)",
+      "notes": "16-lead SOIC (R-16), not SOIC-8. Seen only in a third-party chip-index sitemap."
+    },
+    {
+      "pn": "AD743JRZ-16",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "RoHS 16-lead SOIC. Seen only in a third-party chip-index sitemap."
+    },
+    {
+      "pn": "AD743JRZ-16-REEL7",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "discontinued (listed in an ADI PDN per search summaries; medium confidence)",
+      "notes": "Named in ADI Product Discontinuance Notice results (PDN 14_0014 and/or 17_0038). Which PDN it is in and its last-time-buy date were not read."
+    },
+    {
+      "pn": "AD745J",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "J grade, 0 to +70 C (AD745 data sheet). Macro-model ad745j.cir Rev. B 10/95."
+    },
+    {
+      "pn": "AD745K",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "K grade, 0 to +70 C (data sheet)."
+    },
+    {
+      "pn": "AD745A",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "A grade, -40 to +85 C (data sheet)."
+    },
+    {
+      "pn": "AD745B",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "B grade, -40 to +85 C (data sheet)."
+    },
+    {
+      "pn": "AD745S",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "S grade, -55 to +125 C (data sheet)."
+    },
+    {
+      "pn": "AD745KR-16",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "discontinued (per ADI PDN search summary; low-medium confidence)",
+      "notes": "Leaded 16-lead SOIC. Named alongside AD745KRZ-16 in ADI PDN search results."
+    },
+    {
+      "pn": "AD745KR-16-REEL",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "discontinued (ADI PDN 14_0014)",
+      "notes": "PDN 14_0014 names AD745KRZ-16-REEL7 as the replacement. This is a packing/RoHS change, not a die change."
+    },
+    {
+      "pn": "AD745KRZ-16-REEL",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "discontinued (ADI PDN 14_0014)",
+      "notes": "Replacement per the PDN: AD745KRZ-16-REEL7 (7-inch reel)."
+    },
+    {
+      "pn": "AD745KRZ-16-REEL7",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown (named as replacement in PDN 14_0014)",
+      "notes": "RoHS 16-lead SOIC on a 7-inch reel."
+    },
+    {
+      "pn": "AD745KRZ-16",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "unknown",
+      "notes": "RoHS 16-lead SOIC, tube. Listed on Octopart and mentioned in PDN search summaries; its discontinuance status is ambiguous."
+    },
+    {
+      "pn": "AD745JRZ-16",
+      "channels": 1,
+      "vendors": [
+        "Analog Devices"
+      ],
+      "status": "possibly discontinued (unconfirmed)",
+      "notes": "Named in an ADI PDN search summary (PDN 14_0014 or 17_0038). Not confirmed from the PDN text."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Analog Devices",
+      "role": "originator and sole source (no second sources found)",
+      "period": "by 1992 (earliest dated ADI documents: SPICE macro-models 3/92 and 4/92) to present (product pages still live; lifecycle status unverified)",
+      "notes": "Model credits: AD743 'AAG / PMI'; AD745 'ARG / PMI' (Rev. A, 1992), then 'ARG / ADSC' (Rev. B, 1995). These are ADI modelling groups; PMI (Precision Monolithics) was part of ADI by then. The introduction year is not verified. Discovery notes attribute the design to Scott Wurcer; this is not verified."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input voltage noise",
+      "value": "2.9 nV/rtHz",
+      "condition": "at 10 kHz, typ. (AD743 and AD745 data sheet front page)",
+      "source": "ADI AD743 Rev. E and AD745 Rev. D data sheets (web search summaries); also Rubiola arXiv:physics/0512082 Table 6"
+    },
+    {
+      "parameter": "Input current noise",
+      "value": "6.9 fA/rtHz",
+      "condition": "at 1 kHz, typ.",
+      "source": "ADI AD743 / AD745 data sheets (web search summaries); Rubiola arXiv:physics/0512082"
+    },
+    {
+      "parameter": "0.1 Hz to 10 Hz noise",
+      "value": "0.38 uV p-p",
+      "condition": "typ.; confirmed on the AD745 front page, and the AD743 value is assumed the same (not separately confirmed)",
+      "source": "ADI AD745 data sheet (web search summary)"
+    },
+    {
+      "parameter": "Voltage flicker noise coefficient",
+      "value": "18 nV/rtHz (h-1,v; level at 1 Hz)",
+      "condition": "1/f region",
+      "source": "Rubiola arXiv:physics/0512082 Table 6 (AD743)"
+    },
+    {
+      "parameter": "Unity-gain / gain bandwidth",
+      "value": "AD743 4.5 MHz; AD745 20 MHz",
+      "condition": "typ., data sheet. Macro-model A0 x pole gives ~4.8 / ~22.9 MHz.",
+      "source": "ADI AD743 / AD745 data sheets (web search summaries); ADI SPICE macro-models"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "AD743 2.8 V/us; AD745 12.5 V/us",
+      "condition": "typ., data sheet (matches the macro-models)",
+      "source": "ADI AD743 / AD745 data sheets (web search summaries)"
+    },
+    {
+      "parameter": "Input offset voltage",
+      "value": "0.5 mV max",
+      "condition": "data sheet front page (best grade); model typ. 100 uV",
+      "source": "ADI AD743 / AD745 data sheets (web search summaries)"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "250 pA max",
+      "condition": "data sheet front page; model Ios typ. 12.5 pA (AD743), 15 pA (AD745)",
+      "source": "ADI AD743 / AD745 data sheets (web search summaries)"
+    },
+    {
+      "parameter": "Open-loop gain (model)",
+      "value": "4.0e6 V/V (132 dB)",
+      "condition": "AD743 and AD745 macro-models, typical",
+      "source": "ADI SPICE macro-models"
+    },
+    {
+      "parameter": "Input capacitance (model)",
+      "value": "20 pF",
+      "condition": "CIN between inputs in both macro-models",
+      "source": "ADI SPICE macro-models"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "9.6 V to 30 V total (+/-4.8 V to +/-15 V)",
+      "condition": "ADI model header 'Generic Desc: 9.6/30V'. Data sheet absolute max not verified.",
+      "source": "ADI AD743 SPICE macro-model, header updated 08/10/2012"
+    },
+    {
+      "parameter": "Quiescent current (model)",
+      "value": "~8.1 mA (AD743), ~8.0 mA (AD745)",
+      "condition": "+/-15 V, macro-model",
+      "source": "ADI SPICE macro-models"
+    },
+    {
+      "parameter": "Temperature grades",
+      "value": "J/K 0 to +70 C; A/B -40 to +85 C; S -55 to +125 C (AD745)",
+      "condition": "AD745 has all five grades. For the AD743, J/K/A/B are confirmed and S is unconfirmed.",
+      "source": "ADI AD743 / AD745 data sheets (web search summaries)"
+    },
+    {
+      "parameter": "Packages",
+      "value": "Single op amp. The surface-mount version is a 16-lead SOIC (R-16), not SOIC-8. PDIP (N) is implied by AD743AN.",
+      "condition": "CERDIP availability per grade not verified",
+      "source": "ADI PDN 14_0014 part numbers (AD745KR-16-REEL etc.); Eagle 'SOIC16R' footprint citing ADI AD745.pdf"
+    }
+  ],
+  "reputation": {
+    "summary": "More of an instrumentation legend than a mainstream op-amp-rolling part. It pairs 2.9 nV/rtHz voltage noise with only 6.9 fA/rtHz current noise, so it stays quiet with both low and very high source impedances. That makes it a reference choice for hydrophone, piezo and charge-amplifier front ends and for low-noise measurement. For example, Rubiola chose the AD743 for AM-noise detector amplifiers. Discovery notes report a niche following in MM phono/RIAA stages and high-impedance mic or piezo preamps; this was not web-verified. Community sound descriptors and measurements were not retrieved.",
+    "sonic_descriptors": [],
+    "typical_uses": [
+      "MM phono / RIAA preamp input stage (niche following; per discovery notes, not web-verified)",
+      "Hydrophone and piezo-film charge amplifiers (e.g. AD745 charge amp for PVDF film in a Taiwanese thesis)",
+      "Low-noise measurement front ends (AM/phase-noise detector amplifiers, Rubiola arXiv:physics/0512082)",
+      "Cryogenic bolometer readout / precision bias circuits (AD743 in arXiv physics/9902042)",
+      "High-impedance sensor and accelerometer preamps"
+    ],
+    "caveats": [
+      "Single op amp only: not a drop-in for dual (5532/TL072-style) DIP-8 sockets. It needs two parts per stereo pair plus an adapter.",
+      "The surface-mount part is a 16-lead wide SOIC (R-16), not SOIC-8, so an adapter or custom footprint is needed.",
+      "AD745 compensation is optimized for higher gains (data sheet). It is not a unity-gain buffer. The exact minimum stable gain (believed 5) is unconfirmed.",
+      "Large JFET input capacitance (20 pF in the model) creates a feedback pole with high-value resistors, so a feedback capacitor may be needed.",
+      "About 8 mA quiescent current per amplifier (model), high for a JFET op amp.",
+      "Minimum supply is about +/-4.8 V; not a 5 V single-supply part.",
+      "Several SOIC reel and leaded variants were discontinued via ADI PDNs, so check which orderable part numbers remain active."
+    ],
+    "sources": [
+      "https://arxiv.org/abs/physics/0512082",
+      "https://github.com/nelsonco/phys_categorizer/blob/3f80e330546e4123b900d7ed19a7e2f39d14340d/physics/physics.ins-det/0512082v1.txt",
+      "https://github.com/chihsuan/search-engine/blob/9dcdd3e644469883f53565740f0ba8ff617c5120/Data/8E064673-85FC-49FA-B3B6-3E4BDA93E5F5.txt",
+      "https://www.analog.com/en/products/ad743.html",
+      "https://www.analog.com/en/products/ad745.html",
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/AD745.pdf"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743 Ultralow Noise BiFET Op Amp Data Sheet (REV. E)",
+      "doc_number": "AD743 data sheet",
+      "revision": "E",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD743.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current ADI PDF. Search result title reads 'REV. E'. The print date and revision-history table were not seen."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD745 Ultralow Noise, High Speed, BiFET Op Amp data sheet",
+      "doc_number": "AD745 data sheet",
+      "revision": "D",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD745.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current ADI PDF. Rev. D comes from the ADI short-link snippet ('REV. D') and the radiolocman copy (Revision: D). The print date was not seen."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD745 data sheet (ADI short link)",
+      "doc_number": "AD745 data sheet",
+      "revision": "D",
+      "date": "",
+      "url": "https://www.analog.com/AD745/datasheet",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "ADI redirect/short link. The search snippet shows 'REV. D Information furnished by Analog Devices...'."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD745 data sheet (legacy ADI static URL)",
+      "doc_number": "AD745 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "http://www.analog.com/static/imported-files/data_sheets/AD745.pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed. Seen only in GitHub Eagle libraries that cite it for the 16-lead SOIC (R) footprint. Useful as a Wayback seed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Datasheet AD743 Analog Devices, Revision: E (radiolocman)",
+      "doc_number": "AD743 data sheet",
+      "revision": "E",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=170573",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The mirror labels its copy Revision E."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Datasheet AD745 Analog Devices, Revision: D (radiolocman, page 5 view)",
+      "doc_number": "AD745 data sheet",
+      "revision": "D",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=170571&p=5",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The mirror labels its copy Revision D. The URL points at page 5 (noise histogram)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD745 Ultralow Noise, High Speed, BiFET Op Amp (University of Texas FRC copy)",
+      "doc_number": "AD745 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.frc.utexas.edu/page11/files/AD745.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "University-hosted copy. Its revision was not shown and it may be frozen at an older revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743 Ultralow Noise BiFET Op Amp Data Sheet (REV. E) - PDF4PRO",
+      "doc_number": "AD743 data sheet",
+      "revision": "E",
+      "date": "",
+      "url": "https://pdf4pro.com/view/ad743-ultralow-noise-bifet-op-amp-data-sheet-rev-e-3678ff.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "The mirror title states REV. E."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743 Ultralow Noise BiFET Op Amp Data Sheet - PDF4PRO (second copy)",
+      "doc_number": "AD743 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf4pro.com/view/ad743-ultralow-noise-bifet-op-amp-data-sheet-17c893.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "A separate copy with no revision in its title. It may be an older revision (unconfirmed)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743 Datasheet (alldatasheet 549295)",
+      "doc_number": "AD743 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/549295/AD/AD743.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision not shown in the summary."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743AN Datasheet (alldatasheet 549292)",
+      "doc_number": "AD743 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/549292/AD/AD743AN.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD745 Datasheet (alldatasheet 553785, 12 pages)",
+      "doc_number": "AD745 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/553785/AD/AD745.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "12-page copy. Revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD745 Datasheet (alldatasheet 549299)",
+      "doc_number": "AD745 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/549299/AD/AD745.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "A second alldatasheet entry that may hold a different revision (unconfirmed)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743 Datasheet pdf (datasheetcatalog)",
+      "doc_number": "AD743 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheetcatalog.com/datasheets_pdf/A/D/7/4/AD743.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Old mirror that often freezes pre-2005 revisions. Revision unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD745 Datasheet pdf (datasheetcatalog)",
+      "doc_number": "AD745 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/A/D/7/4/AD745.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743 data sheet (chipdip static copy)",
+      "doc_number": "AD743 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://static.chipdip.ru/lib/143/DOC000143683.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Distributor PDF copy. Revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD745 Datasheet by Analog Devices Inc. (Digi-Key HTML datasheet)",
+      "doc_number": "AD745 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.com/htmldatasheets/production/50832/0/0/1/ad745.html",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Digi-Key HTML rendering. Revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743 / AD745 (digchip)",
+      "doc_number": "AD743 / AD745 data sheets",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/041/AD743.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "The AD745 copy is at https://www.digchip.com/datasheets/parts/datasheet/041/AD745.php. Revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743 Datasheet (datasheet4u)",
+      "doc_number": "AD743 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet/AnalogDevices/AD743-1392142",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD745 Datasheet PDF (datasheetbank)",
+      "doc_number": "AD745 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetbank.com/en/preview/AD745-ADI",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Datasheet AD743 (manualmachine)",
+      "doc_number": "AD743 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://manualmachine.com/datasheet/ad743/7452089-datasheet-analog-devices/",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743 Ultralow Noise BiFET Op Amp data sheet (radiolocman copy, second entry)",
+      "doc_number": "AD743 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=334887&%2FAD743=",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A second radiolocman entry (di=334887), separate from the known Rev. E entry di=170573. The search summary does not show its revision, so it may be a different edition."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743 Datasheet - Ultralow Noise BiFET Op Amp (datasheetspdf.com)",
+      "doc_number": "AD743 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet/AD743.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Third-party mirror. The search summary does not show the revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD745 datasheet (datasheetspdf.com)",
+      "doc_number": "AD745 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet/AD745.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Third-party mirror. The search summary does not show the revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743 Datasheet(PDF) - Analog Devices (alldatasheet ID 48208)",
+      "doc_number": "AD743 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48208/AD/AD743.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This upload has a low alldatasheet ID (48208). The known uploads are 549292 and 549295, so this is an earlier upload and may hold an older ADI revision (for example Rev. C or D). This is unverified because the search summary does not show the revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD743 Datasheet(PDF) - Analog Devices (alldatasheet ID 549293)",
+      "doc_number": "AD743 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/549293/AD/AD743.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Another alldatasheet upload, near the known IDs 549292 and 549295 and probably from the same batch. The search summary does not show the revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD745 Datasheet(PDF) - Analog Devices (alldatasheet ID 48211)",
+      "doc_number": "AD745 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48211/AD/AD745.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This upload has a low alldatasheet ID (48211). The known uploads are 549299 and 553785, so this is an earlier upload and may hold an older ADI revision (possibly the Rev. C edition). This is unverified because the search summary does not show the revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "ANALOG DEVICES AD743 Ultralow Noise BiFET Op Amp handbook (Internet Archive, manuallib-id-2554330)",
+      "doc_number": "AD743 data sheet",
+      "revision": "",
+      "date": "",
+      "url": "https://archive.org/details/manuallib-id-2554330",
+      "url_kind": "archive",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "An Internet Archive item mirrored from manuallib. The search summary does not show the revision."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD743 data sheet",
+      "revision": "E",
+      "date": "unknown",
+      "changes": "Current ADI revision. Its changes versus Rev. D were not read. Earlier revision letters exist by implication but were not seen."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD745 data sheet",
+      "revision": "D",
+      "date": "unknown",
+      "changes": "Current ADI revision per the ADI short link and the radiolocman copy. Changes were not read."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD745 SPICE macro-model (ad745.cir) - not the data sheet",
+      "revision": "Rev. A",
+      "date": "3/92",
+      "changes": "Initial macro-model ('ARG / PMI'). Negative zero at -54 MHz modelled with a negative capacitor (C5 = -2.947 nF)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD743 SPICE macro-model (ad743.cir) - not the data sheet",
+      "revision": "Rev. A",
+      "date": "4/92",
+      "changes": "Initial macro-model ('AAG / PMI'), plus per-grade worst-case models AD743J/K/A/B/S."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD745 SPICE macro-model (ad745.cir) - not the data sheet",
+      "revision": "Rev. B",
+      "date": "10/95",
+      "changes": "The negative-capacitor zero was replaced by an equivalent E/F/C network. Electrical parameters are identical (a model-topology change, not silicon). Per-grade AD745J/K/A/B/S models were issued."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD743 SPICE macro-model (ad743.cir) - not the data sheet",
+      "revision": "1.0 (04/1992), header update",
+      "date": "08/10/2012",
+      "changes": "'Updated to new header style' and added 'Generic Desc: 9.6/30V, JFET, OP, Low Noise, Low Vos, 1'. Netlist unchanged."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD745 data sheet",
+      "revision": "C",
+      "date": "unknown",
+      "changes": "Previous edition, before the current Rev. D. The search summary shows 'REV. C' for the copy at https://www.frc.utexas.edu/page11/files/AD745.pdf, a URL already listed with revision unknown. Changes from Rev. B and to Rev. D were not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD745 data sheet",
+      "revision": "D",
+      "date": "unknown",
+      "changes": "Current edition. The search summary of the analog.com AD745.pdf gives only two grades, AD745J and AD745K, rated 0 C to 70 C in the 16-lead SOIC package. The 1992/1995 SPICE macro-models were issued per grade for AD745J/K/A/B/S. So Rev. D appears to have dropped the A/B/S grades and the older packages. This is an inference and unverified: the Rev. C to Rev. D change log was not seen."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No AD743/AD745-specific counterfeit reports were found (forums not searched). Generic risk: expensive single JFET op amps are remarking targets. Checks: (1) supply current should be about 8 mA per amp at +/-15 V, while a remarked TL071-class part draws far less and is much noisier. (2) The documented surface-mount package is the 16-lead SOIC (R-16), so treat an 'AD743/AD745' in SOIC-8 with suspicion. (3) Several R-16 reel and leaded variants were discontinued (ADI PDN 14_0014), so a 'new' leaded AD745KR-16 offered today is old stock at best. (4) Buy from ADI or authorised distributors.",
+  "alternatives": [
+    "ADA4625-1 / ADA4625-2 (ADI modern low-noise JFET-input, 36 V)",
+    "ADA4627-1 (ADI low-noise JFET-input)",
+    "OPA827 (TI low-noise precision JFET single)",
+    "OPA1641 / OPA1642 (TI JFET audio op amps; dual available)",
+    "LT1792 (ADI/Linear low-noise JFET single)",
+    "OPA140 / OPA2140 (TI low-noise JFET)",
+    "Discrete low-noise JFET front end (e.g. LSK170/LSK489) plus a bipolar op amp, for MM phono"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://www.analog.com/UploadedFiles/Data_Sheets/AD743.pdf",
+    "http://www.analog.com/UploadedFiles/Data_Sheets/AD745.pdf",
+    "http://www.analog.com/static/imported-files/data_sheets/AD743.pdf",
+    "http://www.analog.com/static/imported-files/data_sheets/AD745.pdf",
+    "https://www.analog.com/AD745/datasheet",
+    "https://www.analog.com/en/products/ad743.html",
+    "https://www.analog.com/en/products/ad745.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD743.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD745.pdf",
+    "https://www.frc.utexas.edu/page11/files/AD745.pdf"
+  ],
+  "open_questions": [
+    "Print dates and revision-history tables of AD743 Rev. E and AD745 Rev. D were not seen. The earlier revision letters, and which mirror (alldatasheet 549295/549292/553785/549299, datasheetcatalog, pdf4pro 17c893, frc.utexas.edu) holds which revision, are also unconfirmed.",
+    "The full contents of ADI PDN 14_0014 (Revs -, D, F, G, H) and PDN 17_0038 (Revs B, C) were not read. Still open: which AD743/AD745 orderable numbers each lists, the last-time-buy dates, and whether whole grades (e.g. S, CERDIP) were discontinued. PCN 10_0117 Rev. A also appeared in results, and its relevance is unknown.",
+    "Overall lifecycle status of the AD743 and AD745 families (Production vs NRND vs Obsolete) and the status of PDIP (N) / CERDIP (Q) parts are not verified.",
+    "It is unconfirmed whether the AD743 S grade survives in the Rev. E data sheet; web summaries listed only J/K/A/B.",
+    "The exact AD745 minimum stable gain (believed 5) and the absolute-maximum supply are unconfirmed.",
+    "No silicon, die or fab change was found. The AD745 macro-model Rev. B 'new design' note is model-only.",
+    "A search result https://docs.rs-online.com/7f03/0900766b810adb35.pdf appeared for an AD743 query, but its content was not identified.",
+    "The designer attribution to Scott Wurcer is unverified.",
+    "HiFi community reputation (diyAudio, Head-Fi, JP/CN forums), sonic descriptors and measurements were not retrieved.",
+    "Whether military SMD (5962-xxxx) drawings exist for AD743S/AD745S is unknown."
+  ],
+  "sources": [
+    "https://www.analog.com/en/products/ad743.html",
+    "https://www.analog.com/en/products/ad745.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD743.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD745.pdf",
+    "https://www.analog.com/AD745/datasheet",
+    "https://www.radiolocman.com/datasheet/pdf.html?di=170573",
+    "https://www.radiolocman.com/datasheet/pdf.html?di=170571&p=5",
+    "https://www.frc.utexas.edu/page11/files/AD745.pdf",
+    "https://www.analog.com/media/en/PCN/ADI_PDN_14_0014_Rev_-_Form.pdf",
+    "https://www.analog.com/media/en/PCN/ADI_PDN_14_0014_Rev_D_Form.pdf",
+    "https://www.analog.com/media/en/PCN/ADI_PDN_14_0014_Rev_F_Form.pdf",
+    "https://www.mouser.com/PCN/ADI_ADI_PDN_14_0014_Rev_G_Form.pdf",
+    "https://www.mouser.com/PCN/ADI_ADI_PDN_14_0014_Rev_H_Form.pdf",
+    "https://www.analog.com/media/en/PCN/ADI_PDN_17_0038_Rev_C_Form.pdf",
+    "https://www.mouser.com/PCN/ADI_ADI_PDN_17_0038_Rev_B_Form.pdf",
+    "https://www.analog.com/media/en/pcn/ADI_PCN_10_0117_Rev_A_Form.pdf",
+    "https://octopart.com/ad745krz-16-analog+devices-411015?r=pap",
+    "https://www.digikey.com/en/products/base-product/analog-devices-inc/505/AD743/24428",
+    "https://github.com/grahama1970/agent-stack-public/blob/ebaa05bd317661f015eeaa1962f7aa0f799e0b29/skills/dogpile/industry_pdfs.txt",
+    "https://github.com/digitaldex/piMeter_hardware/blob/80083a8ceb3778a9dfe501b59ae7c66b6c89170f/eagle/ADUM6404.lbr",
+    "https://github.com/ska-sa/roach1_hardware/blob/a77258d1dc035114b77bc0d53969307e3d14d22f/SimLib/Analog%20Devices/ad743.cir",
+    "https://github.com/ska-sa/roach1_hardware/blob/a77258d1dc035114b77bc0d53969307e3d14d22f/SimLib/Analog%20Devices/ad745.cir",
+    "https://github.com/electricant/electronics-libraries/blob/8350a98985f7e5c8c82fc2dece0517cb011b2e82/spice-models/espice.ugr.es/analog/ad745.cir",
+    "https://github.com/VicVEVO/Trajectography-FUEGO/blob/19e79425449bac0ba1b1e2050dd2eb620ead5089/GFO/%5BSIMULATIONS%5D%20/SPICE_models/ad743.cir",
+    "https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/AD4.LIB",
+    "https://arxiv.org/abs/physics/0512082",
+    "https://github.com/nelsonco/phys_categorizer/blob/3f80e330546e4123b900d7ed19a7e2f39d14340d/physics/physics.ins-det/0512082v1.txt",
+    "https://github.com/chihsuan/search-engine/blob/9dcdd3e644469883f53565740f0ba8ff617c5120/Data/8E064673-85FC-49FA-B3B6-3E4BDA93E5F5.txt",
+    "https://github.com/123xiao/geek-dev-personal-site/blob/62bb387208122938198d00bcff50e3103ea2ede4/ic/ic_sitemap_58.xml"
+  ],
+  "verification": {
+    "status": "partially-verified",
+    "refuted_claims": [],
+    "corrections": [
+      "AD743 current data sheet identified as Rev. E; the AD743 media URL was inferred in the draft and is now confirmed.",
+      "AD745 current data sheet identified as Rev. D (draft: unknown). Added the ADI short link https://www.analog.com/AD745/datasheet.",
+      "GBW and slew now use data sheet typicals: AD743 4.5 MHz / 2.8 V/us, AD745 20 MHz / 12.5 V/us. Model-derived values are kept as notes.",
+      "Noise conditions made explicit: 2.9 nV/rtHz at 10 kHz and 6.9 fA/rtHz at 1 kHz. Added 0.38 uV p-p (0.1-10 Hz), Vos 0.5 mV max and Ib 250 pA max.",
+      "Temperature ranges confirmed per grade: J/K 0 to 70 C, A/B -40 to 85 C, S -55 to 125 C (AD745).",
+      "Replaced the placeholder 'AD745 (R-16 package)' with concrete orderable numbers from ADI PDN results and Octopart (AD745KR-16, -REEL, AD745KRZ-16, -REEL, -REEL7, AD745JRZ-16) and added AD743JRZ-16-REEL7 and AD743AN.",
+      "Discovery hint 'some grades are obsolete or have changed packages' is only partly supported. ADI PDN 14_0014 (and possibly 17_0038) discontinued R-16 reel and leaded packing variants, with AD745KRZ-16-REEL7 named as replacement. No grade-level or silicon change was confirmed, so silicon_changes stays empty.",
+      "Legacy static AD745 URL downgraded to low confidence (seen only in GitHub libraries).",
+      "The reputation summary no longer claims Rubiola preferred the AD743 over the OPA627 for lower voltage noise, a comparison not confirmed here. The MM phono following is now attributed to discovery notes."
+    ],
+    "unverified_urls": [
+      "http://www.analog.com/static/imported-files/data_sheets/AD745.pdf",
+      "http://www.analog.com/static/imported-files/data_sheets/AD743.pdf",
+      "http://www.analog.com/UploadedFiles/Data_Sheets/AD743.pdf",
+      "http://www.analog.com/UploadedFiles/Data_Sheets/AD745.pdf",
+      "https://docs.rs-online.com/7f03/0900766b810adb35.pdf"
+    ],
+    "claims_confirmed": [
+      "The ADI AD743 PDF is titled 'AD743 Ultralow Noise BiFET Op Amp Data Sheet (REV. E)': https://www.analog.com/media/en/technical-documentation/data-sheets/AD743.pdf",
+      "A radiolocman mirror holds AD743 Revision E: https://www.radiolocman.com/datasheet/pdf.html?di=170573",
+      "AD745 data sheet is Rev. D: https://www.analog.com/AD745/datasheet and https://www.radiolocman.com/datasheet/pdf.html?di=170571&p=5",
+      "AD743 is 4.5 MHz unity-gain bandwidth and 2.8 V/us, with J/K rated 0-70 C and A/B -40 to +85 C: https://www.analog.com/en/products/ad743.html",
+      "AD745 is 20 MHz and 12.5 V/us, 2.9 nV/rtHz at 10 kHz, 0.38 uV p-p 0.1-10 Hz, 6.9 fA/rtHz at 1 kHz, 0.5 mV max Vos, 250 pA max Ib; compensation optimized for higher gains; grades J/K/A/B/S: https://www.analog.com/media/en/technical-documentation/data-sheets/AD745.pdf",
+      "A university-hosted AD745 data sheet copy exists: https://www.frc.utexas.edu/page11/files/AD745.pdf",
+      "ADI PDN 14_0014 lists AD745KR-16-REEL and AD745KRZ-16-REEL as discontinued, with replacement AD745KRZ-16-REEL7: https://www.analog.com/media/en/PCN/ADI_PDN_14_0014_Rev_-_Form.pdf",
+      "AD743JRZ-16-REEL7 appears in ADI PDN results (PDN 14_0014 / 17_0038): https://www.analog.com/media/en/PCN/ADI_PDN_17_0038_Rev_C_Form.pdf",
+      "The AD743 and AD745 product pages are live: https://www.analog.com/en/products/ad743.html, https://www.analog.com/en/products/ad745.html"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "jfet-input",
+  "product_pages": [
+    "https://www.analog.com/en/products/ad743.html",
+    "https://www.analog.com/en/products/ad745.html"
+  ],
+  "revision_chain_notes": "Analog Devices is the only vendor. No second sources, acquirer re-issues or TI/BB/NSC-style literature numbers exist.\n\nAD743 data sheet: the chain known so far is only Rev. E, the current edition at analog.com/media/.../AD743.pdf and several mirrors; its date is still unknown. Missing links: Rev. 0/A, B, C and D, with their dates. Candidate copies that may hold older editions (revision not shown):\n- alldatasheet ID 48208, an early upload\n- radiolocman di=334887\n- datasheetspdf.com\n- archive.org manuallib-id-2554330\n- the legacy URL http://www.analog.com/static/imported-files/data_sheets/AD743.pdf. It follows ADI's legacy URL pattern and was not seen in search, so treat it only as a Wayback seed.\n\nAD745 data sheet: the chain known so far is Rev. C then Rev. D, both undated. The search summary shows the frc.utexas.edu copy is REV. C. Rev. D is current at analog.com; it appears to be reduced to J/K grades in 16-lead SOIC only. Missing links: Rev. 0/A and B, plus the dates of Rev. C and D. Candidate older copies: alldatasheet ID 48211 (an early upload) and the legacy URL http://www.analog.com/static/imported-files/data_sheets/AD745.pdf.\n\nNo search summary showed a revision date or a Revision History table (for example 'Rev. D to Rev. E'). The original introduction data sheet (circa 1990–1992, before the 3/92 and 4/92 SPICE models) was not found. The dated anchors so far come only from the SPICE macro-models: AD745 Rev. A 3/92, AD743 Rev. A 4/92, AD745 Rev. B 10/95."
+}

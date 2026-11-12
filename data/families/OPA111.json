@@ -1,0 +1,992 @@
+{
+  "id": "OPA111",
+  "name": "OPA111 / OPA2111 (Burr-Brown Difet low-noise precision, single/dual)",
+  "tagline": "Burr-Brown's low-noise Difet (8 nV/√Hz max at 10 kHz, pA bias). TI's OPA627 datasheet calls it 'the popular OPA111', and Japanese rollers prize the metal-can OPA2111AM.",
+  "technology": "Burr-Brown Difet (dielectrically isolated JFET-input) precision op-amp. Datasheet titles: OPA111 'Low Noise Precision Difet Operational Amplifier' (SBOS138 / PDS-526K) and OPA2111 'Dual Low Noise Precision Difet Operational Amplifier' (SBOS140 / PDS-540E). Front-page headlines for OPA111: noise 8 nV/√Hz max at 10 kHz (100% tested), bias current 1 pA max, offset 250 µV max, drift 1 µV/°C max, open-loop gain 120 dB min and CMRR 100 dB min. For OPA2111: 8 nV/√Hz max at 10 kHz and bias current 4 pA max. Burr-Brown's 1990 PSpice macromodels give GBW ≈ 2.0 MHz, SR 2 V/µs and Avol ≈ 125 dB for both parts.",
+  "manufacturers": [
+    "Burr-Brown",
+    "Texas Instruments"
+  ],
+  "part_numbers": [
+    {
+      "pn": "OPA111",
+      "channels": 1,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "Discontinued at TI (a TI E2E answer says OPA111 is 'no longer available'; exact lifecycle code not seen)",
+      "notes": "Base single. TI product folder existed (ti.com/product/OPA111/technicaldocuments). The TI datasheet is SBOS138 (Burr-Brown PDS-526K, Aug 1995). A TI E2E engineer suggested the OPA196 as a comparable replacement."
+    },
+    {
+      "pn": "OPA111AM",
+      "channels": 1,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "NOS; Mouser has a TI product page (stock/status not seen)",
+      "notes": "TO-99 metal can. West Florida Components lists it as Burr-Brown NOS. EWB model table: Vos 100 µV, Ib 0.8 pA, GBW 2 MHz, SR 2 V/µs."
+    },
+    {
+      "pn": "OPA111BM",
+      "channels": 1,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "NOS (distributor listing)",
+      "notes": "Best grade, metal can. It probably matches the front-page maxima (1 pA Ib, 250 µV Vos, 1 µV/°C), but that grade mapping is not confirmed. EWB table: Vos 50 µV, Ib 0.5 pA."
+    },
+    {
+      "pn": "OPA111SM",
+      "channels": 1,
+      "vendors": [
+        "Burr-Brown"
+      ],
+      "status": "unknown",
+      "notes": "Probably the extended (military) temperature grade in a metal can. Datasheet mirror index pages list it."
+    },
+    {
+      "pn": "OPA111SMQ",
+      "channels": 1,
+      "vendors": [
+        "Burr-Brown"
+      ],
+      "status": "unknown (legacy)",
+      "notes": "Datasheet index pages (chipdocs, digchip) list it alongside AM/BM/SM. It is probably a Q-screened (hi-rel) SM, but the meaning of the suffix is not confirmed."
+    },
+    {
+      "pn": "OPA2111",
+      "channels": 2,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "NRND (TI product page, per search summary); the TI Japan page reportedly says 'in discontinuation process'",
+      "notes": "Base dual. TI datasheet is SBOS140 (Burr-Brown PDS-540E, Oct 1993). The datasheet model list is AM, BM, KM, SM (TO-99) and KP (8-pin plastic DIP). Which orderables remain NRND is not seen."
+    },
+    {
+      "pn": "OPA2111AM",
+      "channels": 2,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "NOS (Monotaro, Octopart, Xecor, eBay listings)",
+      "notes": "Metal-can (TO-99) dual, the version the Japanese community praises. EWB table: Vos 100 µV, Ib 2 pA, GBW 2 MHz, SR 2 V/µs."
+    },
+    {
+      "pn": "OPA2111BM",
+      "channels": 2,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "unknown",
+      "notes": "Better-grade metal-can dual. The EWB tables disagree on Vos (100 vs 50 µV) and give Ib 1.2 pA."
+    },
+    {
+      "pn": "OPA2111KM",
+      "channels": 2,
+      "vendors": [
+        "Burr-Brown"
+      ],
+      "status": "unknown",
+      "notes": "Commercial-grade metal can, in the datasheet model list. EWB tables: Vos 300 µV, Ib 3 pA."
+    },
+    {
+      "pn": "OPA2111KP",
+      "channels": 2,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "Obsolete (DigiKey Marketplace: 'no longer manufactured'); NOS/broker stock",
+      "notes": "8-pin plastic DIP. The EWB tables disagree (100 µV/2 pA vs 300 µV/3 pA). A 2023 broker record shows 50 pcs bought at €18 and resold at €35. eBay listings market it as 'Audio Grade'."
+    },
+    {
+      "pn": "OPA2111SM",
+      "channels": 2,
+      "vendors": [
+        "Burr-Brown"
+      ],
+      "status": "unknown (DigiPart price listing exists)",
+      "notes": "Probably the extended temperature grade in a metal can. It is in the datasheet model list."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Burr-Brown",
+      "role": "originator",
+      "period": "1980s (launch year unverified; probably in the 1986 BB IC Data Book) to 2000",
+      "notes": "Burr-Brown created the Difet OPA111 (single) and OPA2111 (dual). The last Burr-Brown datasheet revisions are OPA111 PDS-526K (Aug 1995) and OPA2111 PDS-540E (Oct 1993). Macromodels are dated 1990 (REV.A)."
+    },
+    {
+      "vendor": "Burr-Brown / Texas Instruments",
+      "role": "successor reference (OPA627/OPA637)",
+      "period": "OPA627 datasheet SBOS165, Aug 2000 to rev C Jan 2025",
+      "notes": "The TI OPA627/OPA637 datasheet says: 'When compared to the popular OPA111 op amp, the OPA6x7 have lower noise, lower offset voltage, and higher speed.'"
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "acquirer (bought Burr-Brown in 2000)",
+      "period": "2000 to present (OPA2111 NRND, OPA2111KP obsolete, OPA111 no longer available)",
+      "notes": "TI kept the BB part numbers and gave the legacy datasheets the literature numbers SBOS138 (OPA111) and SBOS140 (OPA2111). A TI E2E engineer points OPA111 users to the OPA196. No second source is known."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input voltage noise e_n",
+      "value": "8 nV/√Hz max",
+      "condition": "At 10 kHz, 100% tested (front-page headline of OPA111 SBOS138 and OPA2111 SBOS140)",
+      "source": "https://www.radiolocman.com/datasheet/data.html?di=305427"
+    },
+    {
+      "parameter": "Input bias current (max, headline)",
+      "value": "OPA111 1 pA max; OPA2111 4 pA max",
+      "condition": "Datasheet front-page headlines (best grade, 25 °C)",
+      "source": "https://www.alldatasheet.com/datasheet-pdf/pdf/56736/BURR-BROWN/OPA2111.html"
+    },
+    {
+      "parameter": "Input offset voltage / drift (OPA111, headline)",
+      "value": "250 µV max; 1 µV/°C max",
+      "condition": "OPA111 datasheet front-page headlines (best grade)",
+      "source": "https://datasheet.octopart.com/OPA111AM-Texas-Instruments-datasheet-10400812.pdf"
+    },
+    {
+      "parameter": "Open-loop gain / CMRR (OPA111, headline)",
+      "value": "120 dB min / 100 dB min",
+      "condition": "OPA111 datasheet front page. The BB macromodel gives about 125 dB typ.",
+      "source": "https://datasheet.octopart.com/OPA111AM-Texas-Instruments-datasheet-10400812.pdf"
+    },
+    {
+      "parameter": "Input current noise i_n",
+      "value": "0.8 fA/√Hz",
+      "condition": "Third-party noise-constant table. Unconfirmed against the datasheet.",
+      "source": "https://github.com/macPimanov/CEB_IV_Fit/blob/e15299b8528b58b3a9dec170cf13e447d3be60f9/python/ceb_bindings.py"
+    },
+    {
+      "parameter": "Input voltage noise at 10 Hz (OPA111BM)",
+      "value": "30 nV/√Hz",
+      "condition": "From a search summary of a distributor listing. Low confidence and unconfirmed against the datasheet.",
+      "source": "https://www.westfloridacomponents.com/T541PE04/OPA111BM+OPA111+BM+Op+Amp+IC+Burr+Brown.html"
+    },
+    {
+      "parameter": "Low-frequency noise (OPA2111)",
+      "value": "1.5 µVpp",
+      "condition": "0.1 to 10 Hz, as quoted in a 2015 third-party blog",
+      "source": "https://github.com/strfry/strfry.github.io/blob/bda9ddc846751b988380291f2b931bccb91997f0/_posts/2015-11-30-openbci-review.md"
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "2 MHz",
+      "condition": "Burr-Brown macromodel for OPA111 and OPA2111 (RD1 = 198.9 Ω, C2 = 400 pF); the EWB tables agree. Not seen in a datasheet summary this session.",
+      "source": "https://github.com/electricant/electronics-libraries/blob/8350a98985f7e5c8c82fc2dece0517cb011b2e82/spice-models/pspice/burr_brn.lib"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "2 V/µs",
+      "condition": "Burr-Brown macromodel ISS/C2 = 800 µA/400 pF; the EWB tables agree",
+      "source": "https://github.com/electricant/electronics-libraries/blob/8350a98985f7e5c8c82fc2dece0517cb011b2e82/spice-models/pspice/burr_brn.lib"
+    },
+    {
+      "parameter": "Input bias current (typ, per grade)",
+      "value": "OPA111AM 0.8 pA, BM 0.5 pA; OPA2111AM/SM 2 pA, BM 1.2 pA, KM 3 pA (KP 2 or 3 pA, tables disagree)",
+      "condition": "EWB model tables (probably datasheet typicals), 25 °C",
+      "source": "https://github.com/bestK1ngArthur/IU5/blob/fb5d060e5337a12ae2ce3f14e6e00d4cf9cdc7e2/Term%205/Computing%20means%20of%20ASOIS/Lab%201/EWBnew/MODELS/BUR_BRWN.M15"
+    },
+    {
+      "parameter": "Supply voltage (max)",
+      "value": "±18 V",
+      "condition": "Inferred from an EWB 5T table column. Unconfirmed against the datasheet.",
+      "source": "https://github.com/bestK1ngArthur/IU5/blob/fb5d060e5337a12ae2ce3f14e6e00d4cf9cdc7e2/Term%205/Computing%20means%20of%20ASOIS/Lab%201/EWBnew/MODELS/OPAMP_5T/BURR_BR1.LIB"
+    }
+  ],
+  "reputation": {
+    "summary": "A niche cult part among vintage-op-amp rollers, and a well-known pA-bias, low-noise instrumentation front end. Vendor context: TI's OPA627/637 datasheet benchmarks against 'the popular OPA111'. Japan: hobby blogs praise the metal-can OPA2111AM. One reported that a swap from OPA827 gave less bass emphasis, clearer vocals and a wider soundstage; others describe a warm, analog sound. A Zigsow reviewer found the plastic OPA2111KP harder-sounding and more fatiguing than the OPA2134. China: Soomal groups OPA111 with the BB Difet parts and says OPA627/637 resolve treble much better; its 'warm, full' description applies to Difet op-amps as a class. On Head-Fi, one poster lists OPA2111KP among favourite duals. No ASR or Samuel Groner measurements were found.",
+    "sonic_descriptors": [
+      "warm, analog (JP blogs)",
+      "wider soundstage / 'veil lifted' (OPA2111AM, JP blogs)",
+      "less bass emphasis, clearer vocals than OPA827 (one JP swap report)",
+      "warm, full, relaxed (Soomal, said of Difet op-amps as a class)",
+      "less treble resolution than OPA627/OPA637 (Soomal)",
+      "harder-sounding, slightly fatiguing vs OPA2134 (OPA2111KP, one Zigsow review)"
+    ],
+    "typical_uses": [
+      "Op-amp rolling in headphone amps (JP/CN hobbyists)",
+      "High-impedance, low-bias front ends: EEG/biopotential (the brain-duino shield uses OPA2111KP)",
+      "Current-to-voltage converters for sensors (CBA 2010 paper)",
+      "DC servo/integrator in low-noise physics preamps (arXiv physics/9902042)",
+      "Vintage preamp/phono stages (discovery note, not verified)"
+    ],
+    "caveats": [
+      "OPA2111 is NRND at TI, OPA2111KP is obsolete, and OPA111 is no longer available. Supply is NOS or broker stock, so remarked parts are a risk.",
+      "Slow by modern standards (about 2 MHz GBW, 2 V/µs).",
+      "TO-99 metal-can (M-suffix) parts need lead forming or an adapter to fit a DIP-8 socket.",
+      "Differences between the metal-can AM and plastic KP are grade/package differences plus forum folklore. No die change is documented.",
+      "Soomal's descriptors apply to Difet op-amps as a class.",
+      "Quiescent current, output drive and maximum supply were not verified against the datasheet."
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/opa627.pdf",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100006526.md",
+      "https://tiiduka.blogspot.com/2010/12/lovely-cube-headamp-11-opa2111am.html",
+      "https://tiiduka.blogspot.com/2010/02/fiquestopampopa2111.html",
+      "http://nandaka-naa.blogspot.com/2011/05/opa2111am.html",
+      "https://zigsow.jp/item/355116/review/364408",
+      "https://www.head-fi.org/threads/anyone-tried-the-opa-2111.52255/",
+      "https://synthcube.com/opa2111kp-burr-brown-dual-low-noise-difet-op-amp-opa-2111kp/",
+      "https://www.ebay.com/p/Opa2111-KP-Dual-Low-Noise-Difet-OPAMP-Pro-Audio-1-USA-Genuine/1225032775",
+      "https://github.com/strfry/strfry.github.io/blob/bda9ddc846751b988380291f2b931bccb91997f0/_posts/2015-11-30-openbci-review.md",
+      "https://github.com/nelsonco/phys_categorizer/blob/3f80e330546e4123b900d7ed19a7e2f39d14340d/physics/unknown/9902042v1.txt",
+      "https://github.com/fabianobie/luppar/blob/9abddd4af4e3720b8efc7716c8d1f22c6e76354e/data/artigos/CBA_2010_66082_1.txt",
+      "https://www.alldatasheet.com/datasheet-pdf/pdf/56724/BURR-BROWN/OPA111.html",
+      "https://www.tij.co.jp/product/jp/OPA2111"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Burr-Brown / Texas Instruments",
+      "title": "OPA111 Low Noise Precision Difet Operational Amplifier (TI legacy-cover reprint, Octopart datasheet mirror)",
+      "doc_number": "SBOS138 (Burr-Brown PDS-526K)",
+      "revision": "PDS-526K",
+      "date": "1995-08",
+      "url": "https://datasheet.octopart.com/OPA111AM-Texas-Instruments-datasheet-10400812.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "The search result title ('The content and copyrights of the attached...') is TI's cover page for legacy Burr-Brown documents. A search summary of this result set gives SBOS138 / PDS-526K / Aug 1995, but which copy it read is not pinned."
+    },
+    {
+      "vendor": "Burr-Brown / Texas Instruments",
+      "title": "OPA2111 Dual Low Noise Precision Difet Operational Amplifier (TI E2E-hosted PDF)",
+      "doc_number": "SBOS140 (Burr-Brown PDS-540E)",
+      "revision": "PDS-540E",
+      "date": "1993-10",
+      "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/OPA2111.PDF",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "A forum attachment on TI's E2E server. The search summary gives SBOS140 / PDS-540E / Oct 1993, 8 nV/√Hz max at 10 kHz and 4 pA max Ib."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2111 datasheet (TI symlink)",
+      "doc_number": "SBOS140 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com/lit/ds/symlink/opa2111.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed: cited by a 2015 blog and not seen in this session's search results."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA111 TI gpn document link",
+      "doc_number": "SBOS138",
+      "revision": "",
+      "date": "",
+      "url": "http://www.ti.com/lit/gpn/opa111",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed: taken from a 2013 TI model index."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2111 TI gpn document link",
+      "doc_number": "SBOS140 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "http://www.ti.com/lit/gpn/opa2111",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed: taken from a 2013 TI model index."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA111 Datasheet(PDF) - Burr-Brown (TI) (alldatasheet)",
+      "doc_number": "SBOS138 / PDS-526 (letter not pinned)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/56724/BURR-BROWN/OPA111.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "The URL and title were confirmed in search results. The revision was not seen directly."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2111 Datasheet(PDF) - Burr-Brown (TI) (alldatasheet, 13 pages)",
+      "doc_number": "SBOS140 / PDS-540 (letter not pinned)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/56736/BURR-BROWN/OPA2111.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search results. The HTML view is at /html-pdf/56736/BURR-BROWN/OPA2111/501/1/OPA2111.html."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2111 Datasheet(PDF) - Texas Instruments (alldatasheet TI1 copy)",
+      "doc_number": "SBOS140 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/847966/TI1/OPA2111.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "A later TI-distributed copy, confirmed in search results. It may differ from the BB copy only by the TI cover page."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA111 Datasheet(PDF) - Texas Instruments (alldatasheet.net TI1 copy)",
+      "doc_number": "SBOS138 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.net/datasheet-pdf/pdf/847950/TI1/OPA111.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "A TI-distributed copy, confirmed in search results."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA111 Datasheet Texas Instruments (RadioLocman)",
+      "doc_number": "SBOS138",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=305427",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search results. Its front page gives 8 nV/√Hz max at 10 kHz."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2111 Datasheet Texas Instruments (RadioLocman)",
+      "doc_number": "SBOS140",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=305543",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search results."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "Low Noise Precision Difet Operational Amplifier (eicom.ru TI PDF mirror)",
+      "doc_number": "SBOS138",
+      "revision": "",
+      "date": "",
+      "url": "https://eicom.ru/pdf/datasheet/Texas_Instruments_PDFs/OPA111/OPA111.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search results."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA111 Datasheet (datasheet4u, Burr-Brown)",
+      "doc_number": "PDS-526 (letter not pinned)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet-pdf/Burr-Brown/OPA111/pdf.php?id=475531",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search results. Also mirrored at datasheet-pdf.com/PDF/OPA111-Datasheet-Burr-Brown-475531."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2111 Datasheet PDF (datasheet4u, Burr-Brown)",
+      "doc_number": "PDS-540 (letter not pinned)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/Burr-Brown/OPA2111/475544",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search results. A direct PDF is at datasheet4u.com/pdf-down/O/P/A/OPA2111_Burr-BrownCorporation.pdf."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "Dual Low Noise Precision Difet Operational Amplifier (radio-hobby.org PDF)",
+      "doc_number": "PDS-540 (letter not pinned)",
+      "revision": "",
+      "date": "",
+      "url": "https://radio-hobby.org/uploads/datasheet/15/opa2/opa2111.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search results. A BB-titled copy."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2111 datasheet (datasheetcatalog)",
+      "doc_number": "PDS-540 (letter not pinned)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/2/OPA2111.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search results. Older mirrors of this kind often hold pre-TI BB scans."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2111 datasheet (studylib)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://studylib.net/doc/18470146/opa2111-datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search results."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "ti OPA111 / OPA2111 datasheets (digchip)",
+      "doc_number": "SBOS138 / SBOS140 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/477/OPA111AM.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search results. Sibling pages: OPA111SMQ.php, OPA2111AM.php, OPA2111KP.php."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "Burr-Brown Corp. OPA111 Series Datasheets (chipdocs)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "http://www.chipdocs.com/datasheets/datasheet-pdf/BurrBrown-Corp/OPA111.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search results. It lists OPA111BM, AM, SM and SMQ."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "1989 Burr-Brown Integrated Circuits Data Book (bitsavers full text, archive.org)",
+      "doc_number": "PDS-526 / PDS-540 (earlier letters, not seen)",
+      "revision": "",
+      "date": "1989",
+      "url": "https://archive.org/stream/bitsavers_burrBrowndwnIntegratedCircuitsDataBook_93705610/1989_Burr-Brown_Integrated_Circuits_Data_Book_djvu.txt",
+      "url_kind": "archive",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "pre-1993 (letter not seen)",
+      "note": "It matched a query containing OPA111. Probably an earlier OPA111 (and perhaps OPA2111) revision, but the page content and revision letter were not seen."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "1986 Burr-Brown Integrated Circuits Data Book (bitsavers full text, archive.org)",
+      "doc_number": "PDS-526 (earlier letter, not seen)",
+      "revision": "",
+      "date": "1986",
+      "url": "https://archive.org/stream/bitsavers_burrBrowndwnIntegratedCircuitsDataBook_95857617/1986_Burr-Brown_Integrated_Circuits_Data_Book_djvu.txt",
+      "url_kind": "archive",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "pre-1989 (letter not seen)",
+      "note": "It matched a query containing OPA111. Probably an early OPA111 revision, but the content was not seen."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "1984 Burr-Brown Product Data Book (usermanual.wiki)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "1984",
+      "url": "https://usermanual.wiki/Document/1984BurrBrownProductDataBook.717472892/help",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed that OPA111 is included. It could hold the launch-era datasheet."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2111AM (Octopart aggregator page)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://octopart.com/opa2111am-burr+brown-22628912",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Confirmed in search results (older alias: octopart.com/part/burr-brown/OPA2111AM). The linked datasheet revision was not seen."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA111AM Texas Instruments | Mouser",
+      "doc_number": "SBOS138 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.com/en/ProductDetail/Texas-Instruments/OPA111AM?qs=rLYyFdxB%2FmqEmg3YiKM1Vg%3D%3D",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Mouser product page, confirmed in search results. Stock status and linked datasheet revision were not seen."
+    },
+    {
+      "vendor": "Burr-Brown (Japan edition)",
+      "title": "OPA111 ローノイズ高精度Difet オペアンプ (Low Noise Precision Difet Op Amp), Japanese-language Burr-Brown catalog sheet",
+      "doc_number": "PDS-526 (Japanese edition)",
+      "revision": "K",
+      "date": "",
+      "url": "http://lam29.lebra.nihon-u.ac.jp/archives/BB_catalog/pdf/OPA111revK.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Nihon University LEBRA lab archive of Burr-Brown catalog PDFs. File name shows rev K. The title is Japanese, so this is a Burr-Brown Japan translation of PDS-526K. The date is not shown in the search summary."
+    },
+    {
+      "vendor": "Burr-Brown (Japan edition)",
+      "title": "OPA111 ローノイズ高精度Difet オペアンプ (mirror)",
+      "doc_number": "PDS-526 (Japanese edition)",
+      "revision": "K",
+      "date": "",
+      "url": "http://www.lebra.nihon-u.ac.jp/archives/BB_catalog/pdf/OPA111revK.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "The same file on the main LEBRA host (www.lebra.nihon-u.ac.jp)."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "BB OPA111 (Low Noise Precision Difet Operational Amplifier)",
+      "doc_number": "PDS-526 (letter not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://neurophysics.ucsd.edu/lab/FET%20OP%20AMPS/BB%20OPA111.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "UCSD neurophysics lab copy in its 'FET OP AMPS' folder. The search summary does not show the revision. Because a lab collected it, it may be an older pre-TI edition."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA111 Low Noise Precision Difet Operational Amplifier (alldatasheet viewer)",
+      "doc_number": "PDS-526 (letter not shown for this URL)",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf1.alldatasheet.com/datasheet-pdf/view/56724/BURR-BROWN/OPA111.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Viewer page for alldatasheet entry 56724, the same entry as the known /datasheet-pdf/pdf/56724/ URL. The summary for this search named PDS-526K with a 1984 date but did not tie either to a specific URL."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA111 Burr-Brown Low Noise Precision Difet OPERATIONAL AMPLIFIER (ChipFind Datasheet Archive)",
+      "doc_number": "PDS-526 (letter not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.chipfind.net/datasheet/burr-brown/opa111.htm",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "ChipFind archive page for the Burr-Brown OPA111."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA111 datasheet (digchip)",
+      "doc_number": "PDS-526 / SBOS138 (not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/477/OPA111.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Plain OPA111 page on digchip. It differs from the already-listed OPA111AM.php page."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "ti OPA111, Low Noise Precision DiFET Operational Amplifier (OPA111BM)",
+      "doc_number": "SBOS138 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/477/OPA111BM.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "digchip OPA111BM page with TI branding."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA111BM Datasheet(PDF) - Texas Instruments",
+      "doc_number": "SBOS138 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/847952/TI1/OPA111BM.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "alldatasheet TI1 entry 847952 (OPA111BM). It sits next to the already-listed 847950 (OPA111) entry, so it is probably the same TI legacy re-issue of PDS-526K."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA111AM Datasheet pdf - Low Noise Precision Difet OPERATIONAL AMPLIFIER - Burr Brown",
+      "doc_number": "PDS-526 (letter not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/1/OPA111AM.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheetcatalog Burr-Brown copy (OPA111AM entry)."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA111 Datasheet pdf - Low Noise Precision Difet OPERATIONAL AMPLIFIER - Burr Brown",
+      "doc_number": "PDS-526 (letter not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/1/OPA111.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheetcatalog Burr-Brown copy (OPA111 entry)."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2111 Dual Low Noise Precision Difet OPERATIONAL AMPLIFIER (alldatasheet HTML page 1/13)",
+      "doc_number": "PDS-540 (search summary for this result set showed PDS-540E)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/html-pdf/56736/BURR-BROWN/OPA2111/501/1/OPA2111.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "HTML page view of alldatasheet entry 56736 (13 pages). The summary named PDS-540E but did not tie it to a specific URL."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2111 Dual Low Noise Precision Difet OPERATIONAL AMPLIFIER (alldatasheet HTML page 9/13)",
+      "doc_number": "PDS-540 (letter not shown for this URL)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/html-pdf/56736/BURR-BROWN/OPA2111/4549/9/OPA2111.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Page 9 of the same 13-page alldatasheet entry 56736."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2111 Burr-Brown Dual Low Noise Precision Difet OPERATIONAL AMPLIFIER (ChipFind)",
+      "doc_number": "PDS-540 (letter not shown)",
+      "revision": "",
+      "date": "",
+      "url": "http://www.chipfind.net/datasheet/burr-brown/opa2111am.htm",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "ChipFind archive page for the Burr-Brown OPA2111AM."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2111 Datasheet, Amplifier, Burr-Brown (datasheet4u)",
+      "doc_number": "PDS-540 (letter not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet/Burr-Brown/OPA2111-475544",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Another URL form of datasheet4u id 475544. The already-listed URL is /datasheets/Burr-Brown/OPA2111/475544."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2111 Datasheet - Burr-Brown (datasheet4u pdf.php)",
+      "doc_number": "PDS-540 (letter not shown)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet-pdf/Burr-Brown/OPA2111/pdf.php?id=475544",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "PDF endpoint for datasheet4u id 475544."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "Full text of \"TEXAS INSTRUMENTS OPA2111 Manual\" (manuallib copy on Internet Archive)",
+      "doc_number": "SBOS140",
+      "revision": "",
+      "date": "",
+      "url": "https://archive.org/stream/manuallib-id-2548374/2548374_djvu.txt",
+      "url_kind": "archive",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Internet Archive OCR text of a manuallib copy of the TI OPA2111 datasheet. It came up in a search for SBOS138/SBOS140, and the summary tied SBOS140 to the OPA2111. The PDS letter is not shown, but it is probably the TI legacy re-issue of PDS-540E."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "1984 Burr-Brown Product Data Book (bitsavers scan on Internet Archive)",
+      "doc_number": "data book (OPA111 PDS-526 first edition, if included)",
+      "revision": "",
+      "date": "1984",
+      "url": "https://archive.org/details/bitsavers_burrBrowndwnProductDataBook_111008507",
+      "url_kind": "archive",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "The main Internet Archive item for the 1984 BB Product Data Book. The already-listed usermanual.wiki copy is a mirror of it. The search summary does not show whether the OPA111 is in it. It is the candidate source for the earliest PDS-526 letter."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "1984 Burr-Brown Product Data Book: Analog Signal Processing Components (manuals.plus copy)",
+      "doc_number": "data book",
+      "revision": "",
+      "date": "1984",
+      "url": "https://manuals.plus/m/e67aa78627cac1eefb988bfad306bb78f37a85b7d12fa7cfefc11cd8b0357377",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Another copy of the 1984 BB Product Data Book. Whether the OPA111 is in it is not shown."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "Burr-Brown Linear Products 1995 (IC data book)",
+      "doc_number": "data book (would carry the PDS-526 and PDS-540 letters current in 1995)",
+      "revision": "",
+      "date": "1995",
+      "url": "https://www.rsp-italy.it/Electronics/Databooks/Burr%20Brown/_contents/Burr-Brown%20Linear%20products%20%20-%201995.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Full 1995 BB Linear Products data book on rsp-italy.it. The search summary does not show whether it has the OPA111/OPA2111 or which letters. By date it would hold PDS-526J/K and PDS-540E."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "Burr Brown Databooks (index)",
+      "doc_number": "n/a",
+      "revision": "",
+      "date": "",
+      "url": "https://www.rsp-italy.it/Electronics/Databooks/Burr%20Brown/index.htm",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Index of scanned Burr-Brown data books on rsp-italy.it. Other editions there may hold earlier OPA111/OPA2111 letters."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Burr-Brown",
+      "doc_number": "PDS-526 (OPA111)",
+      "revision": "earlier letters (A–J implied)",
+      "date": "1980s–early 1990s",
+      "changes": "Earlier revisions probably printed in the 1986/1989 BB IC Data Books. Letters and changes not seen."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "doc_number": "PDS-540E / TI SBOS140 (OPA2111)",
+      "revision": "E",
+      "date": "October 1993",
+      "changes": "Latest known OPA2111 datasheet, redistributed by TI as SBOS140. Change details not seen, and no later TI revision letter was found."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "doc_number": "PDS-526K / TI SBOS138 (OPA111)",
+      "revision": "K",
+      "date": "August 1995",
+      "changes": "Latest known OPA111 datasheet, redistributed by TI as SBOS138 with a legacy cover page. Change details not seen, and no later TI revision letter was found."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "doc_number": "PDS-526 (OPA111)",
+      "revision": "first edition (letter not seen)",
+      "date": "1984 (copyright year)",
+      "changes": "The search summary of the PDS-526K copy gives 1984, most likely the copyright line, so the first OPA111 datasheet probably dates from 1984. That fits the OPA111 appearing around the 1984 BB Product Data Book. The first letter and its specs have not been seen."
+    },
+    {
+      "vendor": "Burr-Brown (Japan)",
+      "doc_number": "PDS-526 Japanese edition (OPA111)",
+      "revision": "K (from file name OPA111revK)",
+      "date": "not shown",
+      "changes": "Japanese translation of the rev K OPA111 datasheet, titled 'OPA111 ローノイズ高精度Difet オペアンプ', held in the Nihon University LEBRA Burr-Brown catalog archive. Change details are not shown."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "kind": "lifecycle",
+      "vendor": "Texas Instruments",
+      "when": "OPA2111: about 2019 (TI E2E thread 808890, 'OPA2111: amplifier end of life'). OPA111AM/BM: obsolete, date not established.",
+      "part_numbers_affected": [
+        "OPA2111KP",
+        "OPA2111AM",
+        "OPA111AM",
+        "OPA111BM"
+      ],
+      "identification": "Lifecycle status only. DigiKey lists OPA2111KP and OPA2111AM as obsolete, and Octopart lists OPA111AM/OPA111BM as obsolete.",
+      "summary": "OPA2111 was discontinued after about 26 years of production, and the OPA111 single is also obsolete. No die-revision or fab-transfer PCN for OPA111/OPA2111 was found. Generic RFAB/die-revision PCNs that appeared in searches (for example, 20220328001.1 and 20210811000.1A) were not shown to include OPA111-family parts.",
+      "spec_deltas": [
+        {
+          "parameter": "Lifecycle (OPA2111, OPA111)",
+          "before": "Active",
+          "after": "Obsolete / discontinued"
+        }
+      ],
+      "audio_impact": "None to the silicon. Parts on sale now are old stock from surplus brokers or possibly counterfeit.",
+      "compatibility_risk": "low - discontinuance only; no same-part-number silicon change",
+      "sources": [
+        "https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/808890/opa2111-amplifier-end-of-life",
+        "https://www.digikey.com/en/products/detail/texas-instruments/OPA2111KP/251137",
+        "https://www.digikey.com/en/products/detail/texas-instruments/OPA2111AM/301143",
+        "https://octopart.com/part/texas-instruments/OPA111BM"
+      ],
+      "confidence": "high",
+      "verification": "WebSearch confirmed the E2E EOL thread, OPA2111AM obsolete (DigiKey) and OPA111AM/BM obsolete (Octopart). No PDN number or exact date was found."
+    }
+  ],
+  "counterfeit_notes": "No documented counterfeit reports were found. The risk is structural: OPA2111 is NRND at TI, OPA2111KP is obsolete, OPA111 is no longer available, and supply is NOS or broker stock (a 2023 broker bought KP at €18 and resold at €35). eBay 'Audio Grade' marketing and cult prices for the metal-can AM invite remarks. Practical checks (general advice, not vendor guidance): (1) Burr-Brown logo and a plausible pre-2000 date code, with marking that matches grade and package (M = TO-99, P = plastic DIP). (2) Input bias current should be low-pA (datasheet max 1 pA for OPA111 best grade, 4 pA for OPA2111). A bipolar remark (nA) or generic JFET part (tens of pA) stands out. (3) GBW should be about 2 MHz and slew about 2 V/µs, so a faster slew suggests an NE5532/TL07x-class remark.",
+  "alternatives": [
+    "OPA627 / OPA637 (TI/BB Difet singles; the TI datasheet positions them as lower-noise, lower-offset, faster successors to OPA111)",
+    "OPA196 (suggested by a TI E2E engineer as comparable to OPA111: lower offset/drift, slightly higher Ib)",
+    "OPA827 (modern TI low-noise JFET single)",
+    "OPA2107 (Burr-Brown Difet dual of the same era)",
+    "OPA2604 / OPA2134 (Burr-Brown/TI FET-input audio duals)",
+    "OPA2140 / OPA1642 (modern TI JFET-input duals with pA-level bias)",
+    "OPA129 / OPA128 (Difet ultra-low-bias singles)"
+  ],
+  "ti_literature_numbers": [
+    "SBOS138",
+    "SBOS140"
+  ],
+  "archive_seed_urls": [
+    "http://focus.ti.com/lit/ds/symlink/opa111.pdf",
+    "http://focus.ti.com/lit/ds/symlink/opa2111.pdf",
+    "http://lam29.lebra.nihon-u.ac.jp/archives/BB_catalog/pdf/OPA111revK.pdf",
+    "http://www.burr-brown.com/download/datasheets/OPA111.pdf",
+    "http://www.burr-brown.com/download/datasheets/OPA2111.pdf",
+    "http://www.chipfind.net/datasheet/burr-brown/opa2111am.htm",
+    "http://www.lebra.nihon-u.ac.jp/archives/BB_catalog/pdf/OPA111revK.pdf",
+    "http://www.ti.com/lit/ds/symlink/opa111.pdf",
+    "http://www.ti.com/lit/gpn/opa111",
+    "http://www.ti.com/lit/gpn/opa2111",
+    "http://www.ti.com/product/OPA111/technicaldocuments",
+    "http://www.ti.com/product/OPA2111/toolssoftware",
+    "https://archive.org/details/bitsavers_burrBrowndwnProductDataBook_111008507",
+    "https://datasheet.octopart.com/OPA111AM-Texas-Instruments-datasheet-10400812.pdf",
+    "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/OPA2111.PDF",
+    "https://neurophysics.ucsd.edu/lab/FET%20OP%20AMPS/BB%20OPA111.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/56724/BURR-BROWN/OPA111.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/56736/BURR-BROWN/OPA2111.html",
+    "https://www.chipfind.net/datasheet/burr-brown/opa111.htm",
+    "https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/2/OPA2111.shtml",
+    "https://www.rsp-italy.it/Electronics/Databooks/Burr%20Brown/index.htm",
+    "https://www.ti.com/lit/ds/sbos138/sbos138.pdf",
+    "https://www.ti.com/lit/ds/sbos140/sbos140.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa111.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa2111.pdf",
+    "https://www.ti.com/product/OPA111",
+    "https://www.ti.com/product/OPA2111",
+    "https://www.tij.co.jp/product/jp/OPA2111"
+  ],
+  "open_questions": [
+    "No TI revision letter (for example SBOS138A or SBOS140A) was seen. The TI copies appear to be the unchanged BB PDS-526K and PDS-540E with a legacy cover. Check the footers.",
+    "Earlier PDS-526 and PDS-540 letters and their dates: the 1986 and 1989 BB IC Data Books (archive.org) probably hold them, but they were not seen.",
+    "Launch year is unverified. OPA111 is probably in the 1986 data book, and it may be in the 1984 Product Data Book.",
+    "The exact TI lifecycle code for OPA111 was not seen ('no longer available' per E2E). For OPA2111 (NRND), it is not known which orderables are still NRND.",
+    "The AM (metal can) vs KP (plastic) sonic split is not a documented silicon change. No PCN or die-revision evidence was found.",
+    "Per-grade datasheet maxima and typicals (Vos/Ib by grade, Iq, output current, supply range, GBW/SR as printed) were not checked. The ±18 V maximum supply and 0.8 fA/√Hz i_n remain unconfirmed.",
+    "The EWB model files disagree on OPA2111KP (100 µV/2 pA vs 300 µV/3 pA) and OPA2111BM Vos (100 vs 50 µV)."
+  ],
+  "sources": [
+    "https://www.radiolocman.com/datasheet/data.html?di=305427",
+    "https://www.radiolocman.com/datasheet/data.html?di=305543",
+    "https://datasheet.octopart.com/OPA111AM-Texas-Instruments-datasheet-10400812.pdf",
+    "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/OPA2111.PDF",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/56736/BURR-BROWN/OPA2111.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/56724/BURR-BROWN/OPA111.html",
+    "http://www.ti.com/product/OPA2111/toolssoftware",
+    "http://www.ti.com/product/OPA111/technicaldocuments",
+    "https://e2e.ti.com/support/amplifiers/f/amplifiers-forum/877288/opa111-direct-replacement-for-a-composite-opa",
+    "https://www.digikey.com/en/products/detail/texas-instruments/OPA2111KP/251137",
+    "https://www.mouser.com/en/ProductDetail/Texas-Instruments/OPA111AM?qs=rLYyFdxB%2FmqEmg3YiKM1Vg%3D%3D",
+    "http://www.chipdocs.com/datasheets/datasheet-pdf/BurrBrown-Corp/OPA111.html",
+    "https://archive.org/stream/bitsavers_burrBrowndwnIntegratedCircuitsDataBook_93705610/1989_Burr-Brown_Integrated_Circuits_Data_Book_djvu.txt",
+    "https://archive.org/stream/bitsavers_burrBrowndwnIntegratedCircuitsDataBook_95857617/1986_Burr-Brown_Integrated_Circuits_Data_Book_djvu.txt",
+    "https://www.ti.com/lit/ds/symlink/opa627.pdf",
+    "https://www.tij.co.jp/product/jp/OPA2111",
+    "https://github.com/electricant/electronics-libraries/blob/8350a98985f7e5c8c82fc2dece0517cb011b2e82/spice-models/pspice/burr_brn.lib",
+    "https://github.com/werner2101/spicelib/blob/5100096586b5599d5c5b3fc30f4de7ccd68165c5/indexfiles/ti_opamps.index",
+    "https://github.com/bestK1ngArthur/IU5/blob/fb5d060e5337a12ae2ce3f14e6e00d4cf9cdc7e2/Term%205/Computing%20means%20of%20ASOIS/Lab%201/EWBnew/MODELS/BUR_BRWN.M15",
+    "https://github.com/bestK1ngArthur/IU5/blob/fb5d060e5337a12ae2ce3f14e6e00d4cf9cdc7e2/Term%205/Computing%20means%20of%20ASOIS/Lab%201/EWBnew/MODELS/OPAMP_5T/BURR_BR1.LIB",
+    "https://github.com/macPimanov/CEB_IV_Fit/blob/e15299b8528b58b3a9dec170cf13e447d3be60f9/python/ceb_bindings.py",
+    "https://github.com/strfry/strfry.github.io/blob/bda9ddc846751b988380291f2b931bccb91997f0/_posts/2015-11-30-openbci-review.md",
+    "https://github.com/brain-duino/Arduino-Shield/blob/50b2d592417185e437e97ecf51fb89d0e126a82e/brain-duinoSV0.1/BrainA2-A-11Nov2014.sch",
+    "https://github.com/platinumNico/warehouse_production/blob/934292e64dda644fd99a5366b88a501f2bf834d3/database/data/po_omnia/2023.csv",
+    "https://www.westfloridacomponents.com/T541PE04/OPA111BM+OPA111+BM+Op+Amp+IC+Burr+Brown.html",
+    "https://www.westfloridacomponents.com/T421BPV05/OPA111AM+Operational+Amplifier+IC+Low+Noise+Op+Amp+Burr+Brown%C2%AE.html",
+    "https://www.monotaro.com/p/2690/8964/",
+    "https://octopart.com/opa2111am-burr+brown-22628912",
+    "https://tiiduka.blogspot.com/2010/12/lovely-cube-headamp-11-opa2111am.html",
+    "https://zigsow.jp/item/355116/review/364408",
+    "https://www.head-fi.org/threads/anyone-tried-the-opa-2111.52255/"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [
+      "OPA2111KU (SOIC) removed. The OPA2111 datasheet model list is AM/BM/KM/SM (TO-99) and KP (8-pin plastic DIP), and a targeted search found no KU part.",
+      "'No TI literature number was found for OPA2111' is wrong: it is SBOS140 (Burr-Brown PDS-540E, Oct 1993).",
+      "Discovery hint 'package-era split' as a silicon hazard: there is no evidence of a die change between the AM and KP. It is a grade/package difference plus one subjective review."
+    ],
+    "corrections": [
+      "Added OPA111 datasheet identity: SBOS138 = Burr-Brown PDS-526K, August 1995 (previously only from a TINA model header).",
+      "Added OPA2111 datasheet identity: SBOS140 = Burr-Brown PDS-540E, October 1993. Added SBOS140 to ti_literature_numbers.",
+      "e_n 8 nV/√Hz is a 100%-tested maximum at 10 kHz (both parts), not an unspecified headline.",
+      "Added datasheet headline maxima: OPA111 Ib 1 pA, Vos 250 µV, drift 1 µV/°C, Avol 120 dB min, CMRR 100 dB min; OPA2111 Ib 4 pA max.",
+      "Status updates: OPA2111 NRND (TI product page); OPA2111KP Obsolete (DigiKey); OPA111 'no longer available' (TI E2E).",
+      "Added part number OPA111SMQ (listed on chipdocs/digchip).",
+      "Added OPA196 as a TI-suggested alternative.",
+      "Added many mirrors (TI E2E PDF, Octopart TI legacy-cover PDF, alldatasheet BB and TI1 copies, RadioLocman, eicom, datasheet4u, radio-hobby, datasheetcatalog, studylib, digchip, chipdocs) and the 1986/1989 BB IC Data Books on archive.org as sources for older revisions.",
+      "Upgraded the TI product-page entries to medium (the ti.com/product/OPA111/technicaldocuments and ti.com/product/OPA2111/toolssoftware URLs were seen in search results)."
+    ],
+    "unverified_urls": [
+      "https://www.ti.com/lit/ds/symlink/opa2111.pdf",
+      "https://www.ti.com/lit/ds/symlink/opa111.pdf",
+      "http://www.ti.com/lit/gpn/opa111",
+      "http://www.ti.com/lit/gpn/opa2111",
+      "https://www.ti.com/lit/ds/sbos138/sbos138.pdf",
+      "https://www.ti.com/lit/ds/sbos140/sbos140.pdf",
+      "http://focus.ti.com/lit/ds/symlink/opa111.pdf",
+      "http://focus.ti.com/lit/ds/symlink/opa2111.pdf",
+      "http://www.burr-brown.com/download/datasheets/OPA111.pdf",
+      "http://www.burr-brown.com/download/datasheets/OPA2111.pdf",
+      "https://www.ti.com/product/OPA111",
+      "https://www.ti.com/product/OPA2111",
+      "https://usermanual.wiki/Document/1984BurrBrownProductDataBook.717472892/help"
+    ],
+    "claims_confirmed": [
+      "OPA2111 datasheet is TI SBOS140, Burr-Brown PDS-540E, October 1993: https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/OPA2111.PDF",
+      "OPA2111: 8 nV/√Hz max at 10 kHz (100% tested), Ib 4 pA max: https://www.alldatasheet.com/datasheet-pdf/pdf/56736/BURR-BROWN/OPA2111.html",
+      "OPA111 datasheet is SBOS138, Burr-Brown PDS-526K, August 1995: https://datasheet.octopart.com/OPA111AM-Texas-Instruments-datasheet-10400812.pdf",
+      "OPA111 headlines are 8 nV/√Hz max at 10 kHz, 1 pA max Ib, 250 µV max Vos, 1 µV/°C max drift, 120 dB min Avol and 100 dB min CMRR: https://www.radiolocman.com/datasheet/data.html?di=305427",
+      "OPA2111 is NRND on TI.com: http://www.ti.com/product/OPA2111/toolssoftware",
+      "OPA2111KP is obsolete / no longer manufactured: https://www.digikey.com/en/products/detail/texas-instruments/OPA2111KP/251137",
+      "OPA111 is no longer available, and a TI engineer suggests the OPA196: https://e2e.ti.com/support/amplifiers/f/amplifiers-forum/877288/opa111-direct-replacement-for-a-composite-opa",
+      "The OPA2111 model list is AM/BM/KM/SM/KP in TO-99 and 8-pin plastic DIP (no KU): https://www.digchip.com/datasheets/parts/datasheet/477/OPA2111KP.php",
+      "OPA111 series includes BM/AM/SM/SMQ: http://www.chipdocs.com/datasheets/datasheet-pdf/BurrBrown-Corp/OPA111.html",
+      "Mouser has an OPA111AM (Texas Instruments) product page: https://www.mouser.com/en/ProductDetail/Texas-Instruments/OPA111AM?qs=rLYyFdxB%2FmqEmg3YiKM1Vg%3D%3D",
+      "The 1986 and 1989 Burr-Brown IC Data Books exist as bitsavers full text on archive.org and matched an OPA111 query: https://archive.org/stream/bitsavers_burrBrowndwnIntegratedCircuitsDataBook_93705610/1989_Burr-Brown_Integrated_Circuits_Data_Book_djvu.txt"
+    ],
+    "web_searches_used": 6
+  },
+  "tier": "B",
+  "category": "jfet-input",
+  "product_pages": [
+    "http://www.ti.com/product/OPA111/technicaldocuments",
+    "http://www.ti.com/product/OPA2111/toolssoftware",
+    "https://www.tij.co.jp/product/jp/OPA2111",
+    "https://www.westfloridacomponents.com/T541PE04/OPA111BM+OPA111+BM+Op+Amp+IC+Burr+Brown.html"
+  ],
+  "revision_chain_notes": "OPA111, Burr-Brown PDS-526: first edition about 1984 (from the copyright year in the search summary; letter not seen) -> letters A to J (1984 to about 1994) all MISSING, with candidate sources in the 1984 BB Product Data Book (archive.org bitsavers item 111008507), the 1986 and 1989 BB IC Data Books (already listed), and the 1995 BB Linear Products book on rsp-italy.it -> PDS-526K, August 1995 (latest BB letter; octopart and TI copies already listed), plus a NEW Japanese-language rev K edition at lam29/www.lebra.nihon-u.ac.jp (OPA111revK.pdf, undated). TI SBOS138: legacy re-issue of PDS-526K with a TI cover page. No TI lettered revision (SBOS138A and so on) turned up in the searches. OPA2111, Burr-Brown PDS-540: first edition date unknown (in the 1989 BB IC Data Book at the latest; possibly 1986) -> letters A to D MISSING -> PDS-540E, October 1993 (latest). TI SBOS140: legacy re-issue of PDS-540E. No lettered TI revision found. A NEW archive.org manuallib OCR copy of the TI OPA2111 datasheet was added (revision not shown). No second-source vendor (National, ADI, Motorola, Philips, JRC, ST) turned up. The OPA111/OPA2111 still appear to be Burr-Brown/TI only. Still missing: every PDS-526 letter before K with its date, every PDS-540 letter before E, and any SBOS138/SBOS140 revision letters and dates. Most new copies (alldatasheet viewers, chipfind, digchip, datasheetcatalog, datasheet4u alternates, UCSD lab copy) do not show their revision in the search summaries. The focus.ti.com and ti.com symlink seed URLs were built from TI's standard URL pattern rather than seen in results. Treat them as Wayback lookup seeds only. WebSearch calls used: 6 of 6."
+}

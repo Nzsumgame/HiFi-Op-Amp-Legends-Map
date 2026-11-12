@@ -1,0 +1,1210 @@
+{
+  "id": "OPAx134",
+  "name": "OPA134 / OPA2134 / OPA4134 (Burr-Brown SoundPlus FET-input audio op-amp)",
+  "tagline": "Burr-Brown's 1997 SoundPlus FET-input audio op-amp: the classic 'laid-back Burr-Brown' first upgrade in CMoy amps, DAC output stages and sound cards.",
+  "technology": "FET-input (JFET) audio op-amp, Burr-Brown SoundPlus line; single/dual/quad. TI moved the die to a new wafer fab (PCN 20231219018.1, die revision A to B). Datasheet SBOS058B (revised Nov 2024; PCN 20240902002.1, 3 Sep 2024) describes the new die: OPA134 offset-trim pins 1/8 now NC (internal laser trim only), updated ESD structures and some revised specs. Old and new die ship under unchanged part numbers.",
+  "manufacturers": [
+    "Burr-Brown (originator)",
+    "Texas Instruments (acquirer, current maker)",
+    "Rochester Electronics (authorized aftermarket; sells Burr-Brown-marked OPA2134PA stock)"
+  ],
+  "part_numbers": [
+    {
+      "pn": "OPA134PA",
+      "channels": 1,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "listed by TI (part-details page ti.com/product/OPA134/part-details/OPA134PA seen in search results); lifecycle not stated",
+      "notes": "DIP-8 single. Pins 1 and 8 are offset trim through SBOS058A (Oct 2015) and NC from SBOS058B (2024). Pin 5 is NC in the standard single pinout, so reports of 'pins 1, 5 and 8 NC' mean only pins 1/8 changed."
+    },
+    {
+      "pn": "OPA134PAG4",
+      "channels": 1,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "possibly end-of-life (third-party distributor listing only; low confidence)",
+      "notes": "Green-suffix variant of OPA134PA. TI E2E thread 772760 asks about PA vs PAG4; answer not retrieved."
+    },
+    {
+      "pn": "OPA134UA",
+      "channels": 1,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "active (not re-verified)",
+      "notes": "SOIC-8 single. Named in the PCN 20231219018 affected-device list (search summary). Same trim-to-NC change as the PA."
+    },
+    {
+      "pn": "OPA2134PA",
+      "channels": 2,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments",
+        "Rochester Electronics (aftermarket)"
+      ],
+      "status": "active (TI part-details page exists; OPA2134 device status ACTIVE per TI product page summary)",
+      "notes": "DIP-8 dual. The usual op-amp-rolling part and the most frequently reported counterfeit. Rochester Electronics lists Burr-Brown OPA2134PA stock on DigiKey Marketplace."
+    },
+    {
+      "pn": "OPA2134PAG4",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "unknown (stocked at LCSC C1346490)",
+      "notes": "Green-suffix variant of OPA2134PA."
+    },
+    {
+      "pn": "OPA2134UA",
+      "channels": 2,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "active (not re-verified)",
+      "notes": "SOIC-8 dual. Named in the PCN 20231219018 affected-device list (search summary). Stock part in the Aune X1S DAC (Soomal)."
+    },
+    {
+      "pn": "OPA2134UA/2K5",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "unknown (seen in a GitHub BOM with LCSC C87361)",
+      "notes": "SOIC-8 tape-and-reel version of OPA2134UA."
+    },
+    {
+      "pn": "OPA4134PA",
+      "channels": 4,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "obsolete (TI package-option data as summarized in search results; medium confidence)",
+      "notes": "DIP-14 quad. Discontinued; the quad now ships in SOIC-14 only."
+    },
+    {
+      "pn": "OPA4134UA",
+      "channels": 4,
+      "vendors": [
+        "Burr-Brown",
+        "Texas Instruments"
+      ],
+      "status": "active (per package-option data in search summary)",
+      "notes": "SOIC-14 quad. Named in the PCN 20231219018 affected-device list."
+    },
+    {
+      "pn": "OPA4134UA/2K5",
+      "channels": 4,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active (per search summary)",
+      "notes": "SOIC-14 tape and reel. E4-suffix variants OPA4134UAE4 and OPA4134UA/2K5E4 are also listed as active in the same summary."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Burr-Brown",
+      "role": "originator",
+      "period": "1997-2000",
+      "notes": "Released in the SoundPlus line; BB sheet PDS-1339C printed December 1997 (search summary, medium confidence). TI's SBOS058 keeps the 'DECEMBER 1997' original date. BB sheet shows OPA134 pins 1/8 as offset trim."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "acquirer / current manufacturer",
+      "period": "2000-present",
+      "notes": "TI bought Burr-Brown in 2000 and kept literature number SBOS058: TI 'Original' listed as September 2000 in the SBOS058A revision history, Rev A Oct 2015, Rev B 2024 (trim pins NC in a sheet revised Aug 2024 per TI E2E; current PDF 'Revised November 2024'). PCN 20231219018.1 moved the die to a new fab; PCN 20240902002.1 (3 Sep 2024) changed the datasheet. BB-logo parts exist from the BB era and at least some of the TI era; marking cut-over not documented."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input voltage noise e_n",
+      "value": "8 nV/sqrt(Hz) typ",
+      "condition": "f = 1 kHz, 25 C",
+      "source": "Datasheet front-page text in search summaries (SBOS058A-era copies); dshills/KiCadAI transcription of SBOS058B"
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "8 MHz typ",
+      "condition": "typical",
+      "source": "TI OPA2134 product-page parametrics (search summary, 2026); DigiKey parametric data"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "20 V/us typ",
+      "condition": "typical",
+      "source": "TI OPA2134 product-page parametrics (search summary, 2026)"
+    },
+    {
+      "parameter": "THD+N",
+      "value": "0.00008% typ (headline); < 0.0004% over 20 Hz-20 kHz",
+      "condition": "1 kHz headline; 20 Hz-20 kHz with 2 kOhm load",
+      "source": "BB/TI front page 'ULTRA LOW DISTORTION: 0.00008%' (search result titles of BB copies); 20 Hz-20 kHz figure from earlier summaries, not re-read"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "5 V to 36 V total (+/-2.5 V to +/-18 V)",
+      "condition": "specified operating range",
+      "source": "Datasheet text in search summary; dshills/KiCadAI (SBOS058B)"
+    },
+    {
+      "parameter": "Quiescent current per amplifier",
+      "value": "4 mA typ, 5 mA max",
+      "condition": "per amplifier",
+      "source": "4 mA typ: TI product-page parametrics (search summary); 5 mA max: dshills/KiCadAI (SBOS058B)"
+    },
+    {
+      "parameter": "Input offset voltage",
+      "value": "2 mV max (TI product-page parametric); +/-0.5 mV typ (older sheets, third-party); SBOS058B 1.0 mV per a third-party reading (typ vs max unclear)",
+      "condition": "25 C",
+      "source": "TI OPA2134 product-page parametrics (search summary); raeq/wirebench; aklofas/kicad-happy-testharness (SBOS058B p7 sec. 5.7)"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "about 5 pA typ (BB-era headline)",
+      "condition": "25 C",
+      "source": "Third-party libraries; EEVblog 1752 says SBOS058B gives it as a +/- value (numbers not retrieved)"
+    },
+    {
+      "parameter": "Input common-mode range",
+      "value": "(V-)+2.5 V to (V+)-3.5 V",
+      "condition": "+/-15 V supply",
+      "source": "SBOS058B via dshills/KiCadAI; pre-2024 value not retrieved"
+    },
+    {
+      "parameter": "Output swing",
+      "value": "(V-)+1.2 V to (V+)-1.5 V",
+      "condition": "2 kOhm load",
+      "source": "SBOS058B via dshills/KiCadAI"
+    },
+    {
+      "parameter": "Output / short-circuit current",
+      "value": "about 30 mA (conservative)",
+      "condition": "short-circuit limit, 25 C",
+      "source": "dshills/KiCadAI reading of SBOS058B; exact values not retrieved"
+    },
+    {
+      "parameter": "Headroom (THD+N < 0.01%)",
+      "value": "23.6 dBu (BB/SBOS058A); 21.3 dBu in SBOS058B",
+      "condition": "datasheet 'headroom' spec",
+      "source": "23.6 dBu confirmed in datasheet search summary; 21.3 from EEVblog 1752 auto-transcript only"
+    },
+    {
+      "parameter": "Channel separation (dual/quad)",
+      "value": "135 dB (SBOS058A); 128 dB, 126 dB at 20 kHz (SBOS058B)",
+      "condition": "headline figure, probably 1 kHz",
+      "source": "EEVblog 1752 auto-transcript (not web-confirmed in this pass)"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "FET (JFET) input",
+      "condition": "",
+      "source": "TI/Burr-Brown SoundPlus description ('true FET input stage')"
+    },
+    {
+      "parameter": "Operating temperature",
+      "value": "-40 C to +85 C",
+      "condition": "specified range",
+      "source": "Datasheet text in search summary ('many specifications apply from -40C to +85C')"
+    }
+  ],
+  "reputation": {
+    "summary": "Widely described as the archetypal 'laid-back Burr-Brown sound' and a common first op-amp upgrade in CMoy headphone amps, DAC output stages and sound cards. AudioKarma/Xonar users contrast its warmth with the more 'clinical' LME49720; some diyAudio members prefer it to the LM4562. Soomal reviewers call it warm-leaning (偏暖) and smooth (柔润); Japanese hobby reviewers treat it as a natural all-rounder. Measured differences are small: NwAvGuy found OPA2134, NE5532 and LM4562 near analyzer residual. TI positions the OPA1656 as its 'next generation OPA2134 and OPA2604 replacement'. (Reputation not re-searched in this pass.)",
+    "sonic_descriptors": [
+      "warm (偏暖)",
+      "smooth / soft (柔润, 柔和)",
+      "laid-back ('typical Burr-Brown')",
+      "natural, little coloration (Japanese reviewers)",
+      "non-fatiguing",
+      "soft, rounded highs",
+      "fuller but looser bass than LM4562 (one user)",
+      "less dense and dynamic than OPA627 (Soomal; not re-read)"
+    ],
+    "typical_uses": [
+      "CMoy and portable headphone amps (tangentsoft CMoy guide lists OPA2134PA as an alternate)",
+      "DAC output stages (per Soomal): Aune X1S (OPA2134UA), Shanling H1.1, TempoTec Fantasia, Musway M1",
+      "Headphone amps (per Soomal): Topping NX3, a Lehmann-style desktop amp",
+      "PC sound cards and motherboard audio (Gigabyte G1.Sniper A88X; E-MU and Xonar op-amp rolling)",
+      "op-amp rolling in Fosi and similar amps",
+      "multimedia speakers (Soomal TP30 review)"
+    ],
+    "caveats": [
+      "Sonic claims are subjective; NwAvGuy's measurements put OPA2134, NE5532 and LM4562 essentially level.",
+      "FET-input: common-mode distortion in non-inverting stages with high source impedance (Self, Groner; from discovery notes, not re-verified).",
+      "DiyEden reports instability in circuits designed for OPA132 at low supply (single forum source).",
+      "Result depends on the circuit (Soomal found the G1.Sniper A88X harsh despite the OPA2134).",
+      "Minimum supply +/-2.5 V; input CM range stops 2.5 V above V- and 3.5 V below V+ (SBOS058B).",
+      "TI parts from about 2024-2025 on may be the new-fab die: pins 1/8 NC on OPA134, lower headroom/channel-separation specs, different ESD structures (see silicon_changes).",
+      "The '+/-18 V limit, 5 V/us slew' complaints refer to TI's NE5532 change, not the OPAx134.",
+      "Counterfeits are widespread, especially DIP-8 OPA2134PA."
+    ],
+    "sources": [
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100001743.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100004314.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100004482.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100001682.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100006052.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100006628.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100003735.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100004282.md",
+      "https://nihtila.com/2017/01/08/pcm1794a-output-stage-opamp-measurements-lm4562-ne5532-and-opa2134/",
+      "https://tangentsoft.com/audio/opamps.html",
+      "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/",
+      "https://audiokarma.org/forums/threads/opamp-question-lme49720-direct-sub-for-opa2134.434538/",
+      "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/911603/faq-opa1656-next-generation-opa2134-and-opa2604-replacement",
+      "https://nabe.adiary.jp/opamp-compare",
+      "https://w.atwiki.jp/higemouse/pages/35.html",
+      "https://www.ti.com/lit/ds/symlink/opa2134.pdf",
+      "https://www.ti.com/lit/ds/symlink/opa134.pdf",
+      "https://www.ti.com/lit/gpn/OPA2134",
+      "https://www.alldatasheet.jp/datasheet-pdf/pdf/56739/BURR-BROWN/OPA2134.html",
+      "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1450469/opa134-about-opa134-specifications",
+      "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1626121/opa134-internal-die-difference---date-code-2025",
+      "https://hackaday.com/2026/06/03/texas-instruments-changes-the-ne5532-and-others-into-incompatible-versions/",
+      "https://www.diyaudio.com/community/threads/ti-changed-ne5532-and-opa134-for-the-worse-and-says-no-impact.441303/",
+      "https://gearspace.com/board/geekzone/1464976-headsup-ti-has-changed-ne5532-k-version-2024-gt-opax134-lhm6518.html",
+      "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1321243/opa2134-counterfeits",
+      "https://forum.pedalpcb.com/threads/checking-for-fake-opa2134.4101/",
+      "https://tangentsoft.net/audio/opamps.html#134"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx134 High-Performance, SoundPlus Audio Operational Amplifiers",
+      "doc_number": "SBOS058",
+      "revision": "B",
+      "date": "2024-11",
+      "url": "https://www.ti.com/lit/ds/sbos058b/sbos058b.pdf",
+      "url_kind": "vendor_revision_specific",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Revision-specific TI URL seen in search results (with ?ts= parameter). Summary gives 'December 1997 - revised November 2024' and ties the A-to-B change to PCN 20240902002.1. New-fab die: OPA134 pins 1/8 NC."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx134 High-Performance, SoundPlus Audio Operational Amplifiers",
+      "doc_number": "SBOS058",
+      "revision": "B",
+      "date": "2024-11",
+      "url": "https://www.ti.com/lit/ds/symlink/opa2134.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Current symlink (earlier web sweep; dshills/KiCadAI registry records it as SBOS058B, revised Nov 2024). Same combined document as the OPA134 symlink."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx134 High-Performance, SoundPlus Audio Operational Amplifiers",
+      "doc_number": "SBOS058",
+      "revision": "B",
+      "date": "2024-11",
+      "url": "https://www.ti.com/lit/ds/symlink/opa134.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Now seen directly in search results (with and without ?ts=), titled with the Rev B wording."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx134 High-Performance, SoundPlus Audio Operational Amplifiers",
+      "doc_number": "SBOS058",
+      "revision": "",
+      "date": "2024",
+      "url": "https://www.ti.com/lit/pdf/sbos058",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "unknown",
+      "revision_text": "current",
+      "note": "Literature-number URL, seen in search results with the Rev B title."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA134, OPA2134, OPA4134 / OPAx134 High-Performance, SoundPlus...",
+      "doc_number": "SBOS058",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com/lit/gpn/OPA2134",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "unknown",
+      "revision_text": "current",
+      "note": "Generic-part-number redirect, seen in search results under both titles. https://www.ti.com/lit/gpn/OPA134 is the single-channel equivalent (earlier sweep)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx134 High-Performance, SoundPlus Audio Operational Amplifiers (Mouser copy)",
+      "doc_number": "SBOS058",
+      "revision": "B",
+      "date": "2024-08",
+      "url": "https://www.mouser.lt/datasheet/2/405/1/opa134_pdf_3fts_3d1724780991259_26ref_url_3dhttps_-3415891.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Seen in search results with the Rev B-style title ('High-Performance, SoundPlus'), fetched a week before PCN 20240902002.1. Likely freezes the Aug 2024 issue of Rev B that preceded the Nov 2024 re-date. Check the header."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx134 SoundPlus High Performance Audio Operational Amplifiers (Mouser copy)",
+      "doc_number": "SBOS058",
+      "revision": "A",
+      "date": "2015-10",
+      "url": "https://www.mouser.com/datasheet/2/405/1/opa2134_pdf_3fts_3d1704364966230_26ref_url_3dhttps-3378997.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Top result for a 'SBOS058A' 'OCTOBER 2015' search; title uses the Rev A wording. Last old-die sheet with offset-trim pins."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx134 SoundPlus High Performance Audio Operational Amplifiers (CERN copy)",
+      "doc_number": "SBOS058",
+      "revision": "A",
+      "date": "",
+      "url": "https://sy-dep-epc-lpc.web.cern.ch/components/datasheets/epc-lpc%20(converters)/OPA2134-OP%20Amp-Texas%20Instrument.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "CERN component library copy seen in search results with the Rev A-style title."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA134, OPA2134, OPA4134: High Performance Audio Operational Amplifiers (Mouser copy)",
+      "doc_number": "SBOS058",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.com/datasheet/2/405/opa2134-445535.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in search results. Title wording is the pre-2015 style. Check the header."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA134 / OPA2134 / OPA4134 SoundPlus High Performance Audio Operational Amplifiers (CERN copy)",
+      "doc_number": "PDS-1339C / SBOS058",
+      "revision": "",
+      "date": "1997-12",
+      "url": "https://sy-dep-epc-lpc.web.cern.ch/components/datasheets/epc-lpc%20(converters)/OPA134%20IC%20(BURR-BROWN).PDF",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "Burr-Brown era",
+      "note": "CERN copy labelled Burr-Brown, front text 'SUPERIOR SOUND QUALITY, ULTRA LOW DISTORTION: 0.00008%' (seen in search results). Old die, trim pins."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2134 datasheet (Burr-Brown)",
+      "doc_number": "SBOS058",
+      "revision": "",
+      "date": "1997",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/56739/BURR-BROWN/OPA2134.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "Burr-Brown era, exact revision unknown",
+      "note": "Seen in search results. Japanese mirror https://www.alldatasheet.jp/datasheet-pdf/pdf/56739/BURR-BROWN/OPA2134.html is the BB-era reference cited by Japanese hobbyists. Related alldatasheet entries: 170748 (BB OPA134), 213101 (BB OPA4134PA)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAX134 Datasheet (alldatasheet copy)",
+      "doc_number": "SBOS058",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/170751/TI/OPAX134.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in search results. Also alldatasheet 603024 (TI1 OPA134). Revisions not visible."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA134 OPA2134 OPA4134 (BB front page)",
+      "doc_number": "PDS-1339C / SBOS058 (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.audiodesignguide.com/HiResolution/opa2134.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "revision_text": "BB era (probable)",
+      "note": "Seen in search results with the BB front-page text 'FEATURES: SUPERIOR SOUND QUALITY, ULTRA LOW DISTORTION: 0.00008%'. Also https://www.audiodesignguide.com/Ibridone/opa134.pdf."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2134UA datasheet (Octopart copy)",
+      "doc_number": "SBOS058",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/OPA2134UA-Texas-Instruments-datasheet-58295731.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in search results for the SBOS058A query; front text is the THD+N graph. Other Octopart copies: OPA134PA 7265401 (TI legacy cover page), OPA4134UA 8191592 and 11768091 (BB front page). Revisions not visible."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA134 / OPA2134 / OPA4134 (other BB-style mirrors)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.kyohritsu.com/eclib/PDF/O/opa134.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in search results. Other BB-style copies seen: https://www.protricom.hu/images/Amplifiers/OPA2134.pdf, https://www.megastar.com/content/pdfs/OPA134-OPA2134-OPA4134.pdf, https://www.eltim.eu/data/mediablocks/opa134.pdf, https://www.kontest.ru/datasheet/burr-brown/opa2134[1].pdf."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2134 Datasheet Texas Instruments",
+      "doc_number": "SBOS058",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=305551",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in search results. Related radiolocman entries: di=305443 (OPA134), 306031 (OPA4134), 49436 (OPA2134PA), 49441 (OPA134PA), 203761 (OPA4134PA), 77929 (OPA134PAG4). Revisions not shown."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA4134 - High Performance AUDIO OPERATIONAL AMPLIFIERS (SoundPlus)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet/OPA4134.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed: not seen in this pass's searches."
+    },
+    {
+      "vendor": "Texas Instruments (legacy host)",
+      "title": "SoundPLUS High Performance AUDIO OPERATIONAL AMPLIFIERS",
+      "doc_number": "SBOS058",
+      "revision": "",
+      "date": "1997-12",
+      "url": "http://focus.ti.com/lit/ds/sbos058/sbos058.pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "pre-2015 (unlettered)",
+      "note": "Unconfirmed by web search; cited as 'Source:' in Eagle libraries on GitHub. Dead host; use the Wayback Machine."
+    },
+    {
+      "vendor": "Texas Instruments (legacy host)",
+      "title": "OPA2134 datasheet (legacy symlink)",
+      "doc_number": "SBOS058",
+      "revision": "",
+      "date": "2009",
+      "url": "http://focus.ti.com/lit/ds/symlink/opa2134.pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "pre-2015",
+      "note": "Unconfirmed by web search; cited in the CadSoft Eagle linear.lbr ChangeLog (2009-02-27) on GitHub."
+    },
+    {
+      "vendor": "Texas Instruments (legacy host)",
+      "title": "OPA134 datasheet (getliterature redirect)",
+      "doc_number": "SBOS058",
+      "revision": "",
+      "date": "",
+      "url": "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=OPA134&fileType=pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "revision_text": "whatever was current when fetched",
+      "note": "Unconfirmed by web search; recorded in Altium ECO logs on GitHub. Wayback captures may hold older revisions."
+    },
+    {
+      "vendor": "Texas Instruments (Rochester Electronics copy)",
+      "title": "sbos058a.pdf (OPAx134 SoundPlus High Performance Audio Operational Amplifiers)",
+      "doc_number": "SBOS058",
+      "revision": "A",
+      "date": "2015-10",
+      "url": "https://rocelec.widen.net/view/pdf/tcdkfjffsk/sbos058a.pdf?t.download=true&u=5oefqw",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Rochester Electronics (authorized aftermarket) hosts TI's revision-specific SBOS058A file. Good copy of the October 2015 Rev A, the last sheet with offset trim on OPA134 pins 1/8 (pre-PCN-20240902002.1)."
+    },
+    {
+      "vendor": "Burr-Brown (Octopart cache, listed under Texas Instruments)",
+      "title": "OPA134PA datasheet (distributor cover page 'The content and copyrights of the attached...' followed by the BB sheet)",
+      "doc_number": "PDS-1339C",
+      "revision": "PDS-1339C",
+      "date": "1997-12",
+      "url": "https://datasheet.octopart.com/OPA134PA-Texas-Instruments-datasheet-7265401.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Contains the Burr-Brown PDS-1339C string. It may be the original BB print or TI's unlettered SBOS058 re-issue (Sep 2000) if that kept the BB footer. The search summary could not tell which."
+    },
+    {
+      "vendor": "Burr-Brown (Octopart cache, listed under Texas Instruments)",
+      "title": "FEATURES: SUPERIOR SOUND QUALITY, ULTRA LOW DISTORTION: 0.00008% (OPA2134PA)",
+      "doc_number": "PDS-1339C",
+      "revision": "PDS-1339C",
+      "date": "1997-12",
+      "url": "https://datasheet.octopart.com/OPA2134PA-Texas-Instruments-datasheet-33018557.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Has the BB-style front page, the same as the CERN BB copy. It is the combined OPA134/OPA2134/OPA4134 sheet, not a separate OPA2134 sheet."
+    },
+    {
+      "vendor": "Burr-Brown (Octopart cache, listed under Texas Instruments)",
+      "title": "OPA4134UA-Texas-Instruments-datasheet-8191592.pdf",
+      "doc_number": "PDS-1339C",
+      "revision": "PDS-1339C",
+      "date": "1997-12",
+      "url": "https://datasheet.octopart.com/OPA4134UA-Texas-Instruments-datasheet-8191592.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Combined OPAx134 BB sheet cached under the OPA4134UA part number. No separate OPA4134 sheet exists."
+    },
+    {
+      "vendor": "Burr-Brown (Russian distributor copy, labelled Texas Instruments)",
+      "title": "TEXAS INSTRUMENTS (OPA4134UA) OP AMP QUAD AUDIO",
+      "doc_number": "PDS-1339C",
+      "revision": "PDS-1339C",
+      "date": "1997-12",
+      "url": "http://xn----ctbgeuhdtdb2b.xn--p1ai/cfiles/market/5570/1568722045.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "A distributor or market listing PDF on an IDN .rf domain. It contains the PDS-1339C string."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "FEATURES: SUPERIOR SOUND QUALITY, ULTRA LOW DISTORTION: 0.00008% (opa-2134-pa.pdf)",
+      "doc_number": "SBOS058 / PDS-1339 (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://cdn.soselectronic.com/productdata/31/6b/4356a41f/opa-2134-pa.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "SOS electronic distributor copy. Its front-page title matches the BB PDS-1339C sheet. Returned for the SBOS058A/B query, but no revision header was shown."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "Burr-Brown ChipFind datasheet opa2134[1].pdf",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.kontest.ru/datasheet/burr-brown/opa2134[1].pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Filed under burr-brown on kontest.ru, so probably a BB-era copy."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "BURR_BROWN_OPA2134_DATASHEET - RETROAMPLIS",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.retroamplis.com/WebRoot/StoreES2/Shops/62070367/654C/0E9C/37E1/48DF/950C/0A0C/6D10/3388/BURR_BROWN_OPA2134_DATASHEET_-_RETROAMPLIS.PDF",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Hobby or retailer copy labelled Burr-Brown."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "BURR BROWN OPA134/OPA2134/OPA4134 handbook(1)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://archive.org/details/manuallib-id-2650838",
+      "url_kind": "archive",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Internet Archive item (manuallib import) of a Burr-Brown OPAx134 sheet."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "BURR BROWN OPA134/OPA2134/OPA4134 handbook",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://archive.org/details/manuallib-id-2650662",
+      "url_kind": "archive",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Second Internet Archive manuallib item. It may be a different print from 2650838."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "BURR-BROWN OPA134, OPA2134, OPA4134 User Manual",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://manualmachine.com/burrbrown/opa2134/8642500-user-manual/",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Returned for both the PDS-1339 and SBOS058 queries. Revision text not shown."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2134 Datasheet pdf - High Performance AUDIO OPERATIONAL AMPLIFIERS - Burr Brown",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/2/OPA2134.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheetcatalog BB copy. The BB title suggests the PDS-1339 era."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2134PA Datasheet(PDF) - Burr-Brown (TI)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/56735/BURR-BROWN/OPA2134PA.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "alldatasheet BB set (IDs 567xx). Probably the same file as 56739."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA4134 Datasheet(PDF) - Burr-Brown (TI)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/56740/BURR-BROWN/OPA4134.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Returned for the Dec 1997 BB OPA4134 query. Combined OPAx134 sheet."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA4134PA Datasheet(PDF) - Burr-Brown (TI)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/213101/BURR-BROWN/OPA4134PA.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Separate alldatasheet upload (ID 213101), so possibly a different print from the 567xx set."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA134 Datasheet(PDF) - Burr-Brown (TI)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/56732/BURR-BROWN/OPA134.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "alldatasheet BB set."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA134PA Datasheet(PDF) - Burr-Brown (TI)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/56733/BURR-BROWN/OPA134PA.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "alldatasheet BB set."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA134 Datasheet(PDF) - Texas Instruments",
+      "doc_number": "SBOS058 (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/603024/TI1/OPA134.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "TI-labelled upload (TI1, ID 603024), a later upload than the 170751 TI copy. It could be the TI unlettered issue or Rev A."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA134 OPA2134 OPA4134 (audiodesignguide Ibridone project)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.audiodesignguide.com/Ibridone/opa134.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Hobby-site copy, different from the HiResolution/opa2134.pdf already listed. Returned for the Dec 1997 BB query."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA4134 Burr-Brown High Performance AUDIO OPERATIONAL AMPLIFIERS (ChipFind)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.chipfind.net/datasheet/burr-brown/opa4134.htm",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "ChipFind BB listing."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA4134 SOIC AMPLIFIERS Datasheet | Burr-Brown",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/Burr-Brown/OPA4134/475712",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheet4u BB copy."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA134 PDIP AUDIO OPERATIONAL AMPLIFIERS Datasheet | Burr-Brown",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/Burr-Brown/OPA134/475539",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheet4u BB copy."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA134 - High Performance Audio Operational Amplifiers (datasheet4u etcTI)",
+      "doc_number": "SBOS058 (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet/etcTI/OPA134-1427991",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Returned for the 'SBOS058 December 1997 Revised' query, but the summary did not say which revision it holds."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA134 Datasheet Texas Instruments (radiolocman)",
+      "doc_number": "SBOS058",
+      "revision": "",
+      "date": "",
+      "url": "https://radiolocman.com/datasheet/data.html?%2FOPA134=&di=305443",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "OPA134 entry, separate from the OPA2134 entry di=305551 already listed. Returned for the SBOS058A/B query."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA134, OPA2134, OPA4134: High Performance Audio ... (megastar)",
+      "doc_number": "SBOS058 (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.megastar.com/content/pdfs/OPA134-OPA2134-OPA4134.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Returned for the 'SBOS058 December 1997 Revised' query."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "opa134.pdf (eltim.eu)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.eltim.eu/data/mediablocks/opa134.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Distributor copy returned for PDS-1339, SBOS058 and Burr-Brown queries. Its revision is unknown."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA134 OPA2134 OPA4134 (electrokit)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.electrokit.com/upload/product/40359/40359134/opa2134.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Returned for the 'Burr-Brown Products from Texas Instruments' SBOS058 query. It could be the TI-era re-issue with the BB header."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2134 TI Datasheet (Scribd)",
+      "doc_number": "SBOS058",
+      "revision": "",
+      "date": "2012",
+      "url": "https://www.scribd.com/document/94443804/OPA2134-TI-Datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This pre-2015 upload would be a TI unlettered SBOS058 if it is TI-branded, but the summary did not confirm that."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "opa 134 datasheet (fdocument.org)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://fdocument.org/document/opa-134-datasheet.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Returned for the \"PDS-1339\" OPA134 query. A mirror of the same document is on pdfslide.tips."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "(PDF) opa 134 datasheet - PDFSLIDE.TIPS",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://pdfslide.tips/documents/opa-134-datasheet.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Returned for the \"PDS-1339\" OPA134 query."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "PCN 20240902002.1 (OPAx134 datasheet change)",
+      "doc_number": "PCN 20240902002.1",
+      "revision": "",
+      "date": "2024-09",
+      "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6370/PCN20240902002.1.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "unknown",
+      "revision_text": "PCN",
+      "note": "Digi-Key copy of the TI PCN that announced the SBOS058B spec changes (trim pins NC, lower headroom and channel separation). It is evidence for the A-to-B datasheet change, not a datasheet itself."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Burr-Brown",
+      "doc_number": "PDS-1339C (SBOS058)",
+      "revision": "BB original",
+      "date": "December 1997 (printed)",
+      "changes": "First release of 'SoundPlus High Performance AUDIO OPERATIONAL AMPLIFIERS' for OPA134/2134/4134; OPA134 pins 1/8 offset trim. PDS number from a search summary (medium confidence); the 'C' suffix implies earlier PDS-1339 issues, not found."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS058",
+      "revision": "original (no letter)",
+      "date": "September 2000 (as listed in the SBOS058A revision history)",
+      "changes": "TI re-issue of the BB sheet after the acquisition. Content presumed the same as the BB sheet."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS058",
+      "revision": "A",
+      "date": "Revised October 2015",
+      "changes": "Conversion to TI format: added ESD Ratings table, Feature Description, Device Functional Modes, Application and Implementation, Power Supply Recommendations, Layout, Device and Documentation Support and Mechanical/packaging sections. Title 'OPAx134 SoundPlus High Performance Audio Operational Amplifiers'. Still shows offset trim on OPA134 pins 1/8 (old die). Headroom 23.6 dBu; channel separation 135 dB (EEVblog 1752)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS058",
+      "revision": "B",
+      "date": "First issued about August 2024 (TI E2E; Mouser copy fetched 27 Aug 2024 has the new title); current PDF 'Revised November 2024'",
+      "changes": "New title 'OPAx134 High-Performance, SoundPlus Audio Operational Amplifiers'. OPA134 pins 1/8 become NC (internally laser-trimmed; do not connect). Per EEVblog 1752: headroom 23.6 to 21.3 dBu, channel separation 135 to 128 dB (126 dB at 20 kHz), overload recovery slightly worse, Ib given as +/-, some 600 ohm specs apparently removed. Announced by PCN 20240902002.1 ('accurately reflect device characteristics'). No SBOS058C found."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "PCN 20231219018.1",
+      "revision": "PCN",
+      "date": "December 2023 (number 20231219; Mouser file timestamped 22 Dec 2023)",
+      "changes": "General notice of OPAx134 transfer to a new wafer fab, with qualification data but no performance details. Affected-device list includes OPA134UA, OPA2134UA, OPA4134UA and package variants; die revision A to B. Part of TI's move out of 150 mm fabs (TI E2E 1626121). Whether PDIP variants are listed was not confirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "PCN 20240902002.1",
+      "revision": "PCN",
+      "date": "3 September 2024",
+      "changes": "Datasheet-only change for all OPAx134 versions, but it changes electrical specifications; offset trim changed to do-not-connect. Reflects actual performance of the new-fab die (TI E2E 1429728)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS058",
+      "revision": "B (first issue)",
+      "date": "December 1997, revised August 2024",
+      "changes": "A search summary shows the header 'SBOS058B – December 1997 – Revised August 2024'. This is the first issue of Rev B, which matches the Mouser copy fetched 27 Aug 2024 and PCN 20240902002.1 of 3 Sep 2024. A second summary shows the current TI PDF as 'SBOS058B – DECEMBER 1997 – REVISED NOVEMBER 2024', so TI seems to have re-dated Rev B in November 2024 without changing the letter. Both headers come only from search summaries."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS058",
+      "revision": "A",
+      "date": "December 1997, revised October 2015",
+      "changes": "A search summary confirms the header 'SBOS058A – DECEMBER 1997 – REVISED OCTOBER 2015'. The summary ties it to the Mouser copy https://www.mouser.com/datasheet/2/405/opa2134-445535.pdf, which the chain now lists as 'unknown, low'; that entry should read Rev A, medium confidence. A Rochester Electronics copy of sbos058a.pdf also exists."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "doc_number": "PDS-1339C",
+      "revision": "C",
+      "date": "December 1997 (printed)",
+      "changes": "A quoted \"PDS-1339C\" search confirms the string on Octopart caches of OPA134PA (7265401), OPA2134PA (33018557) and OPA4134UA (8191592). All are the combined OPA134/OPA2134/OPA4134 sheet. Quoted searches for PDS-1339A, PDS-1339B and PDS-1339D returned nothing, so no earlier or later BB letters are documented online."
+    }
+  ],
+  "silicon_changes": [
+    {
+      "kind": "die-redesign",
+      "vendor": "Texas Instruments",
+      "when": "PCN 20231219018.1 (fab move, Dec 2023); SBOS058B (about Aug 2024, current PDF Nov 2024); PCN 20240902002.1 (3 Sep 2024). New-die parts confirmed with 2025 date codes (TI E2E 1626121, March 2026).",
+      "part_numbers_affected": [
+        "OPA134PA",
+        "OPA134UA",
+        "OPA2134PA",
+        "OPA2134UA",
+        "OPA2134UA/2K5",
+        "OPA4134UA",
+        "OPA4134UA/2K5"
+      ],
+      "identification": "Part number unchanged, no suffix. TI's internal die revision goes from A to B (per the PCN), but no marking difference is documented. Datasheet SBOS058B or later = new die (OPA134 pins 1/8 NC); SBOS058A or earlier = old die with trim. TI E2E: the practical way to tell is measurement (offset; pin impedance / ESD-diode behaviour differs between 2025 and 2018 date codes); mixed stock may ship until old inventory clears. BB-logo parts are very likely old die; TI-logo parts can be either.",
+      "summary": "TI moved the OPAx134 die to a new wafer fab under the same part numbers as part of its exit from 150 mm fabs. The new die has no external offset-trim function (internal laser trim), updated ESD structures, and revised datasheet specs. TI says moving fabs always shifts performance somewhat and that the datasheet now reflects the actual device. TI E2E attributes in-circuit-test and functional failures on 2025 date-code parts most likely to the new ESD structures. Hackaday (Jun 2026), diyAudio and Gearspace criticise the change and TI's 'no impact' wording.",
+      "spec_deltas": [
+        {
+          "parameter": "OPA134 pins 1 and 8",
+          "before": "Offset trim (external nulling pot possible)",
+          "after": "NC (do not connect); internally laser-trimmed. TI E2E says leaving an old trim network in place is harmless, while the datasheet warns not to connect."
+        },
+        {
+          "parameter": "Headroom (THD+N < 0.01%)",
+          "before": "23.6 dBu (confirmed in datasheet search summary)",
+          "after": "21.3 dBu (EEVblog 1752 transcript only)"
+        },
+        {
+          "parameter": "Channel separation",
+          "before": "135 dB (EEVblog 1752)",
+          "after": "128 dB; 126 dB at 20 kHz (EEVblog 1752)"
+        },
+        {
+          "parameter": "Overload recovery time",
+          "before": "SBOS058A value (not retrieved)",
+          "after": "'slightly worse' (EEVblog 1752)"
+        },
+        {
+          "parameter": "Input bias current spec",
+          "before": "single-sign typical (about 5 pA, third-party)",
+          "after": "given as +/- (EEVblog 1752; numbers not retrieved)"
+        },
+        {
+          "parameter": "600 ohm load specifications",
+          "before": "present in older sheets (implied)",
+          "after": "apparently removed (EEVblog 1752; low confidence)"
+        },
+        {
+          "parameter": "Input offset voltage",
+          "before": "+/-0.5 mV typ, +/-2 mV max (third-party library)",
+          "after": "1.0 mV per a third-party reading of SBOS058B (typ vs max unclear); TI product-page parametric still shows 2 mV max. Low confidence."
+        },
+        {
+          "parameter": "Die revision / wafer fab",
+          "before": "Die rev A, legacy 150 mm fab",
+          "after": "Die rev B, new fab (PCN 20231219018.1)"
+        },
+        {
+          "parameter": "ESD / input protection structures",
+          "before": "Old structure (2018 date code)",
+          "after": "Updated ESD structures; different measured pin impedances (2025 date code)"
+        }
+      ],
+      "audio_impact": "Small on paper: about 2.3 dB less headroom before 0.01% THD+N, channel separation still very high (128 dB). No published old-vs-new THD, noise or listening comparison found. OPA134 trim circuits lose their adjustment. Japanese and Chinese hobby sources report no sonic change.",
+      "compatibility_risk": "medium: pin- and function-compatible for normal audio use per TI, but offset-trim circuits stop working, headroom is lower, and new ESD structures caused ICT/functional failures for at least one customer; old and new stock mixed with no marking difference.",
+      "sources": [
+        "https://www.mouser.com/PCN/Texas_Instruments_PCN20231219018_20231222025145143.pdf",
+        "https://www.mouser.com/PCN/Texas_Instruments_Datasheet_90_Day_20240902002.1.pdf",
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6370/PCN20240902002.1.pdf",
+        "https://www.ti.com/lit/ds/sbos058b/sbos058b.pdf",
+        "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1450469/opa134-about-opa134-specifications",
+        "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1429728/opa134-about-pcn",
+        "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1626121/opa134-internal-die-difference---date-code-2025",
+        "https://hackaday.com/2026/06/03/texas-instruments-changes-the-ne5532-and-others-into-incompatible-versions/",
+        "https://www.diyaudio.com/community/threads/ti-changed-ne5532-and-opa134-for-the-worse-and-says-no-impact.441303/",
+        "https://gearspace.com/board/geekzone/1464976-headsup-ti-has-changed-ne5532-k-version-2024-gt-opax134-lhm6518.html",
+        "https://www.youtube.com/watch?v=22ZmmZ67SMY",
+        "https://github.com/frankie-eight-days/eevblog-wiki/blob/8f04e3ddd3972c58bd354a5c9adffa92e4b63b45/transcripts/22ZmmZ67SMY.md",
+        "https://github.com/dshills/KiCadAI/blob/101a96fd1bf095a4b82727508f0a1e72177bc3f7/data/model-provenance/registry.json",
+        "https://github.com/aklofas/kicad-happy-testharness/blob/8bae5a0c5a74d2d41366f0a9ee4f9cfa12b2a043/reference/spice_constants_verification.md"
+      ],
+      "confidence": "high",
+      "verification": "WebSearch confirmed (via TI E2E 1429728) that PCN 20231219018.1 announced the OPAx134 fab transition with qualification reports, that PCN 20240902002.1 details the performance changes, and that the new die has no offset trim. Old-sheet 23.6 dBu headroom (11.7 Vrms) was confirmed; the new-die numbers (21.3 dBu, 128 dB) rest on the EEVblog transcript only."
+    }
+  ],
+  "counterfeit_notes": "Fakes are widely reported, especially DIP-8 OPA2134PA from marketplaces. Discussions: TI E2E 1321243 ('OPA2134: Counterfeits?') and 534233; PedalPCB 'checking for fake OPA2134?'; diyAudio 377960; kokoro-navi 2011 write-up (fake OPA2134PA/OPA2604AP); fakes reported in an Aune mini USB DAC. Summaries describe relabelled TL072s or other noisier op-amps and differing lot-code formats. Forum checks: quiescent current (about 4-5 mA per amplifier), unity-gain follower AC test, noise and offset, and logo/font/laser marking/moulding vs known-genuine parts. These are forum methods, not a TI guide; TI advises authorized distributors. Genuine Burr-Brown-era OPA2134PA stock is sold by Rochester Electronics (authorized aftermarket). Caveat: since 2024-2025 genuine TI parts may be the new-fab die, so a higher offset or different ESD/impedance behaviour alone does not prove a fake.",
+  "alternatives": [
+    "OPA1656 (TI's 'next generation OPA2134 and OPA2604 replacement'; CMOS input, about 2.9 nV/sqrt(Hz))",
+    "OPA1652 / OPA1654 (TI low-cost SoundPlus FET-input successors)",
+    "OPA1642 / OPA1644 (JFET-input SoundPlus)",
+    "OPA1688 (named as a successor by Japanese sources)",
+    "OPA2132 / OPA132 (sibling BB FET part; diyAudio 418419 reports TI BB op-amps such as OPA132/OPA627 losing offset-trim terminals too)",
+    "OPA2604 (legacy BB FET audio part, +/-24 V)",
+    "LME49720 / LM4562 (bipolar, pin-compatible, 'more clinical' per forum users)"
+  ],
+  "ti_literature_numbers": [
+    "SBOS058"
+  ],
+  "archive_seed_urls": [
+    "http://focus.ti.com/lit/ds/sbos058/sbos058.pdf",
+    "http://focus.ti.com/lit/ds/symlink/opa134.pdf",
+    "http://focus.ti.com/lit/ds/symlink/opa2134.pdf",
+    "http://focus.ti.com/lit/ds/symlink/opa4134.pdf",
+    "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=OPA134&fileType=pdf",
+    "http://www.ti.com/lit/ds/symlink/opa2134.pdf",
+    "https://datasheet.octopart.com/OPA134PA-Texas-Instruments-datasheet-7265401.pdf",
+    "https://datasheet.octopart.com/OPA2134PA-Texas-Instruments-datasheet-33018557.pdf",
+    "https://datasheet.octopart.com/OPA4134UA-Texas-Instruments-datasheet-8191592.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6370/PCN20240902002.1.pdf",
+    "https://rocelec.widen.net/view/pdf/tcdkfjffsk/sbos058a.pdf?t.download=true&u=5oefqw",
+    "https://sy-dep-epc-lpc.web.cern.ch/components/datasheets/epc-lpc%20(converters)/OPA134%20IC%20(BURR-BROWN).PDF",
+    "https://sy-dep-epc-lpc.web.cern.ch/components/datasheets/epc-lpc%20(converters)/OPA2134-OP%20Amp-Texas%20Instrument.pdf",
+    "https://www.audiodesignguide.com/HiResolution/opa2134.pdf",
+    "https://www.mouser.com/datasheet/2/405/1/opa2134_pdf_3fts_3d1704364966230_26ref_url_3dhttps-3378997.pdf",
+    "https://www.mouser.com/datasheet/2/405/opa2134-445535.pdf",
+    "https://www.mouser.lt/datasheet/2/405/1/opa134_pdf_3fts_3d1724780991259_26ref_url_3dhttps_-3415891.pdf",
+    "https://www.ti.com/lit/ds/sbos058a/sbos058a.pdf",
+    "https://www.ti.com/lit/ds/sbos058b/sbos058b.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa134.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa2134.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa4134.pdf",
+    "https://www.ti.com/lit/gpn/OPA134",
+    "https://www.ti.com/lit/gpn/OPA2134",
+    "https://www.ti.com/lit/pdf/sbos058"
+  ],
+  "open_questions": [
+    "Is the Aug 2024 SBOS058B issue textually different from the Nov 2024 re-date? The Mouser.lt 27 Aug 2024 copy should show.",
+    "21.3 dBu headroom and 135/128 dB channel separation rest on the EEVblog 1752 auto-transcript; confirm against the PDFs. Full SBOS058A vs B table (e_n, i_n, GBW, slew, THD+N, CMRR, Aol, CM range) still not compared.",
+    "Does the PCN 20231219018 affected list include the PDIP (PA) variants? The search summary named only UA variants plus 'package variants'.",
+    "SBOS058B Vos: third-party reads 1.0 mV; TI product page still shows 2 mV max. Which is typ/max in Rev B?",
+    "The '6.5 nV/sqrt(Hz), 2 pA typ, 3.5 mV max' text surfaced again; the summary attributes it to 'a dual, 10-MHz, single supply, low-noise, JFET precision amplifier', which is not the OPAx134 (8 MHz). It is most likely TI 'similar products' comparison text for another device (probably OPA2141). Do not use for OPAx134.",
+    "E2E 1626121 cites MPN SN412008DRE4; its relation to OPA2134 was not established.",
+    "Date-code cutover between old and new die is unknown; any lot-trace or marking difference?",
+    "Which revision each third-party mirror holds (alldatasheet, octopart, radiolocman, kyohritsu, protricom, megastar, CERN) is inferred from titles only.",
+    "Status of OPA134PAG4 (EOL per third-party only) and OPA2134PAG4 not confirmed on ti.com.",
+    "Inferred URLs never seen: ti.com/lit/ds/sbos058a/sbos058a.pdf, symlink/opa4134.pdf, focus.ti.com/lit/ds/symlink/opa134.pdf (archive seeds only)."
+  ],
+  "sources": [
+    "https://www.ti.com/lit/ds/sbos058b/sbos058b.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa134.pdf",
+    "https://www.ti.com/lit/pdf/sbos058",
+    "https://www.ti.com/lit/gpn/OPA2134",
+    "https://www.ti.com/product/OPA2134",
+    "https://www.ti.com/product/OPA134",
+    "https://www.ti.com/product/OPA4134",
+    "https://www.ti.com/product/OPA134/part-details/OPA134PA",
+    "https://www.ti.com/product/OPA2134/part-details/OPA2134PA",
+    "https://www.mouser.com/PCN/Texas_Instruments_PCN20231219018_20231222025145143.pdf",
+    "https://www.mouser.com/PCN/Texas_Instruments_Datasheet_90_Day_20240902002.1.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6370/PCN20240902002.1.pdf",
+    "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1450469/opa134-about-opa134-specifications",
+    "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1429728/opa134-about-pcn",
+    "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1626121/opa134-internal-die-difference---date-code-2025",
+    "https://e2e.ti.com/support/audio/f/6/t/772760?OPA134-What-is-the-difference-between-amplifiers-OPA134PA-and-OPA134PAG4-=",
+    "https://hackaday.com/2026/06/03/texas-instruments-changes-the-ne5532-and-others-into-incompatible-versions/",
+    "https://www.diyaudio.com/community/threads/ti-changed-ne5532-and-opa134-for-the-worse-and-says-no-impact.441303/",
+    "https://www.diyaudio.com/community/threads/opa132-opa627-and-other-ti-bb-op-amps-no-longer-have-an-offset-trim-terminal.418419/",
+    "https://gearspace.com/board/geekzone/1464976-headsup-ti-has-changed-ne5532-k-version-2024-gt-opax134-lhm6518.html",
+    "https://www.youtube.com/watch?v=22ZmmZ67SMY",
+    "https://github.com/frankie-eight-days/eevblog-wiki/blob/8f04e3ddd3972c58bd354a5c9adffa92e4b63b45/transcripts/22ZmmZ67SMY.md",
+    "https://www.mouser.com/datasheet/2/405/opa2134-445535.pdf",
+    "https://www.mouser.lt/datasheet/2/405/1/opa134_pdf_3fts_3d1724780991259_26ref_url_3dhttps_-3415891.pdf",
+    "https://www.mouser.com/datasheet/2/405/1/opa2134_pdf_3fts_3d1704364966230_26ref_url_3dhttps-3378997.pdf",
+    "https://sy-dep-epc-lpc.web.cern.ch/components/datasheets/epc-lpc%20(converters)/OPA134%20IC%20(BURR-BROWN).PDF",
+    "https://sy-dep-epc-lpc.web.cern.ch/components/datasheets/epc-lpc%20(converters)/OPA2134-OP%20Amp-Texas%20Instrument.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/56739/BURR-BROWN/OPA2134.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/170751/TI/OPAX134.html",
+    "https://www.alldatasheet.jp/datasheet-pdf/pdf/56739/BURR-BROWN/OPA2134.html",
+    "https://www.audiodesignguide.com/HiResolution/opa2134.pdf",
+    "https://datasheet.octopart.com/OPA2134UA-Texas-Instruments-datasheet-58295731.pdf",
+    "https://www.kyohritsu.com/eclib/PDF/O/opa134.pdf",
+    "https://www.radiolocman.com/datasheet/data.html?di=305551",
+    "https://www.digikey.com/en/products/detail/rochester-electronics-llc/OPA2134PA/13473850",
+    "https://www.lcsc.com/product-detail/Audio-Power-OpAmps_Texas-Instruments_C1346490.html",
+    "https://github.com/dshills/KiCadAI/blob/101a96fd1bf095a4b82727508f0a1e72177bc3f7/data/model-provenance/registry.json",
+    "https://github.com/dshills/KiCadAI/blob/101a96fd1bf095a4b82727508f0a1e72177bc3f7/data/components/audio_opamps.json",
+    "https://github.com/aklofas/kicad-happy-testharness/blob/8bae5a0c5a74d2d41366f0a9ee4f9cfa12b2a043/reference/spice_constants_verification.md",
+    "https://github.com/raeq/wirebench/blob/f45ea9ef79ae82da42ba6b593319ad78668eeba1/docs/component-library-data.md",
+    "https://github.com/kernd/LIT-Eagle/blob/f5a9bea2f2d0205ce80107cb6dad27e530c57e15/Libraries/ChangeLog.txt",
+    "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1321243/opa2134-counterfeits",
+    "https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/534233/original-or-fake-opa2134-opa2604",
+    "https://forum.pedalpcb.com/threads/checking-for-fake-opa2134.4101/",
+    "https://www.diyaudio.com/community/threads/upgrades-didnt-work-fake-opa2134.377960/",
+    "https://www2.kokoro-navi.com/diary4/2011/10/opa2134pa-opa2604ap-fake/",
+    "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/911603/faq-opa1656-next-generation-opa2134-and-opa2604-replacement",
+    "https://nihtila.com/2017/01/08/pcm1794a-output-stage-opamp-measurements-lm4562-ne5532-and-opa2134/",
+    "https://tangentsoft.com/audio/opamps.html",
+    "https://audiokarma.org/forums/threads/opamp-question-lme49720-direct-sub-for-opa2134.434538/"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [
+      "SBOS058C / 'B re-issue or C' revision: no SBOS058C exists in any result; the current document is SBOS058B 'December 1997 - revised November 2024'. The inferred sbos058c URL was dropped from archive seeds.",
+      "The draft gave SBOS058A the title 'OPAx134 High-Performance, SoundPlus...'. SBOS058A copies are titled 'OPAx134 SoundPlus High Performance Audio Operational Amplifiers'. The 'High-Performance, SoundPlus' wording belongs to Rev B.",
+      "The '6.5 nV/sqrt(Hz), 2 pA, 3.5 mV max' text is not an OPAx134 spec. The summary attributes it to a '10-MHz, single supply, low-noise, JFET precision' dual, most likely TI comparison text for another part.",
+      "The PCN 20240902002.1 date '2 Sep 2024 (inferred)' is wrong: the PCN is dated 3 September 2024.",
+      "'Burr-Brown PDS number not found' is superseded: a search summary gives PDS-1339C, printed December 1997."
+    ],
+    "corrections": [
+      "Added the revision-specific vendor URL https://www.ti.com/lit/ds/sbos058b/sbos058b.pdf (Rev B, revised Nov 2024) and upgraded symlink/opa134.pdf to high confidence (seen in search results).",
+      "Revision history: the TI 'Original' is listed as September 2000 in the SBOS058A revision history. Added the Rev A change list (conversion to TI format: ESD ratings, application/layout/support sections).",
+      "Rev B: first issued about Aug 2024 (TI E2E, plus the Mouser.lt copy fetched 27 Aug 2024 with the new title), current PDF Nov 2024. The Mouser.lt copy was upgraded to medium as the likely Aug 2024 issue.",
+      "Mouser 3378997 copy identified as probably SBOS058A (top hit for the 'SBOS058A OCTOBER 2015' query, Rev A title).",
+      "PCN 20231219018.1: Mouser copy timestamped 22 Dec 2023. Its affected list includes OPA134UA/OPA2134UA/OPA4134UA and variants, with die revision A to B. It is a general fab-transfer notice without performance details.",
+      "PCN 20240902002.1: dated 3 Sep 2024. It is a datasheet-only change but changes electrical specs; reason: 'accurately reflect device characteristics'.",
+      "OPA4134PA status set to obsolete. Added OPA4134UA/2K5 (active; E4 variants active) and OPA2134PAG4 (LCSC). OPA134PAG4 marked possibly EOL (low).",
+      "Key specs: GBW 8 MHz, slew 20 V/us, Iq 4 mA/ch typ and Vos 2 mV max confirmed from TI product-page parametrics. Headroom unit corrected to dBu, with 23.6 dBu confirmed for the old sheet.",
+      "E2E 1626121 is dated March 2026 in the summary and cites MPN SN412008DRE4.",
+      "Added mirrors: CERN (BB copy and TI Rev-A-style copy), Octopart copies, kyohritsu, protricom, megastar, eltim, kontest, audiodesignguide Ibridone, alldatasheet 170751/170748/213101, and more radiolocman IDs.",
+      "The focus.ti.com, getliterature and datasheetspdf entries were downgraded to low/unconfirmed (not seen in this pass's web searches).",
+      "Added Rochester Electronics as the aftermarket source of BB-era OPA2134PA, and diyAudio 418419 on TI BB parts losing trim pins."
+    ],
+    "unverified_urls": [
+      "https://www.ti.com/lit/ds/symlink/opa4134.pdf",
+      "https://www.ti.com/lit/ds/sbos058a/sbos058a.pdf",
+      "http://focus.ti.com/lit/ds/symlink/opa134.pdf",
+      "http://focus.ti.com/lit/ds/sbos058/sbos058.pdf",
+      "http://focus.ti.com/lit/ds/symlink/opa2134.pdf",
+      "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=OPA134&fileType=pdf",
+      "https://datasheetspdf.com/datasheet/OPA4134.html",
+      "https://www.ti.com/lit/gpn/OPA134"
+    ],
+    "claims_confirmed": [
+      "PCN 20231219018.1 is a general notice of the OPAx134 fab transfer with qualification data; the affected list includes OPA134UA/OPA2134UA/OPA4134UA with die revision A to B (https://www.mouser.com/PCN/Texas_Instruments_PCN20231219018_20231222025145143.pdf, https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1429728/opa134-about-pcn)",
+      "PCN 20240902002.1 is a datasheet change for OPAx134 dated 3 Sep 2024, changing electrical specs; offset trim became do-not-connect (https://www.mouser.com/PCN/Texas_Instruments_Datasheet_90_Day_20240902002.1.pdf)",
+      "SBOS058B is dated Dec 1997, revised Nov 2024, and changed from A under PCN 20240902002.1 (https://www.ti.com/lit/ds/sbos058b/sbos058b.pdf)",
+      "SBOS058A revision history lists the Original as September 2000 and describes the A changes as TI-format sections (https://www.ti.com/lit/ds/sbos058b/sbos058b.pdf)",
+      "OPA134 pins 1 and 8 became NC in the 2024 revision; TI E2E says the trim pin became NC in a sheet revised Aug 2024 (https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1450469/opa134-about-opa134-specifications, https://hackaday.com/2026/06/03/texas-instruments-changes-the-ne5532-and-others-into-incompatible-versions/)",
+      "2025 date-code parts show different pin impedance than 2018 parts; TI attributes ICT failures to updated ESD structures from the 150 mm fab transition (https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1626121/opa134-internal-die-difference---date-code-2025)",
+      "SBOS058A is dated Dec 1997, revised Oct 2015; the Mouser 3378997 copy has the Rev A title (https://www.mouser.com/datasheet/2/405/1/opa2134_pdf_3fts_3d1704364966230_26ref_url_3dhttps-3378997.pdf)",
+      "The BB sheet is PDS-1339C, printed December 1997 (https://www.alldatasheet.com/datasheet-pdf/pdf/56739/BURR-BROWN/OPA2134.html)",
+      "OPA4134PA is obsolete; OPA4134UA and its variants are active (https://datasheet.octopart.com/OPA4134UA-Texas-Instruments-datasheet-8191592.pdf)",
+      "OPA2134 is ACTIVE with GBW 8 MHz, SR 20 V/us, Iq 4 mA/ch and Vos max 2 mV (https://www.ti.com/product/OPA2134)",
+      "The old-sheet headroom spec is 23.6 dBu; the supply range is 5-36 V (+/-2.5 to +/-18 V); noise is 8 nV/sqrt(Hz) (https://www.ti.com/product/OPA134)",
+      "ti.com/lit/ds/symlink/opa134.pdf exists with the Rev B title (https://www.ti.com/lit/ds/symlink/opa134.pdf)",
+      "The Mouser.lt copy fetched 27 Aug 2024 carries the Rev B title (https://www.mouser.lt/datasheet/2/405/1/opa134_pdf_3fts_3d1724780991259_26ref_url_3dhttps_-3415891.pdf)",
+      "Rochester Electronics sells Burr-Brown OPA2134PA (https://www.digikey.com/en/products/detail/rochester-electronics-llc/OPA2134PA/13473850)"
+    ],
+    "web_searches_used": 12
+  },
+  "tier": "A",
+  "category": "jfet-input",
+  "product_pages": [
+    "https://www.ti.com/product/OPA2134"
+  ],
+  "revision_chain_notes": "Burr-Brown PDS-1339 (OPA134/OPA2134/OPA4134 combined sheet)\n- Known link: PDS-1339C, December 1997 only.\n- Missing: PDS-1339A and PDS-1339B. Their existence is implied by the 'C' suffix, but quoted searches found neither. There is also no PDS-1339D, so C appears to be the last BB print.\n- There is no separate BB sheet for OPA2134 or OPA4134. Every BB-era copy found, filed under any of the three part numbers, is the same combined sheet.\n- Confirmed copies with PDS-1339C: CERN (already listed) and Octopart 7265401, 33018557 and 8191592.\n- Many more BB-labelled mirrors exist (kontest, retroamplis, archive.org manuallib 2650838/2650662, alldatasheet 56732/56733/56735/56740/213101, datasheet4u 475539/475712, datasheetcatalog, chipfind, SOS electronic, electrokit), but none showed a revision.\n\nTI SBOS058, oldest to newest\n1. Unlettered original, September 2000 (from the SBOS058A revision history). No copy was positively identified by header. The best candidates:\n   - the PDS-1339C-bearing Octopart copies filed under Texas Instruments, if TI's re-issue kept the BB footer\n   - alldatasheet TI 170751 and TI1 603024\n   - Scribd 94443804 (pre-2015 upload)\n   - legacy focus.ti.com URLs (seeds)\n2. SBOS058A, revised October 2015. Header confirmed in a search summary and tied to Mouser opa2134-445535.pdf, so that existing entry should move from 'unknown, low' to 'A, medium'. New copy: Rochester rocelec.widen.net sbos058a.pdf.\n3. SBOS058B, revised August 2024. Header seen in a search summary; it matches the Mouser.lt copy fetched 27 Aug 2024 and PCN 20240902002.1 (Digi-Key PCN copy added).\n4. SBOS058B, revised November 2024 (current ti.com file). Apparently the same letter with a new date. No SBOS058C was found.\n\nStill missing\n- A header-verified copy of the September 2000 unlettered TI issue.\n- Any PDS-1339 A or B.\n- A header check on whether the 'Revised August 2024' and 'Revised November 2024' B files differ in content.\n\nArchive seeds\n- focus.ti.com/lit/ds/symlink/opa134.pdf and opa4134.pdf, http://www.ti.com/lit/ds/symlink/opa2134.pdf and ti.com/lit/ds/sbos058a/sbos058a.pdf follow TI's standard literature-URL pattern. Search did not show them; check them in the Wayback Machine.\n- The other seeds (Rochester, Octopart and Digi-Key PCN copies) were seen in search results."
+}

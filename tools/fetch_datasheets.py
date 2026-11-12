@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Download current *and historical* datasheets for every family in data/opamps.json.
+"""Download current *and historical* datasheets for every family in data/families/.
 
 Why this exists: several legendary audio op-amps changed silicon without changing part
 number (TI NE5532 rev K, TI OPAx134 after 2024, TI TL07x, ...). The only reliable way to
@@ -7,7 +7,8 @@ compare "old" and "new" parts is to keep every datasheet revision side by side. 
 usually serve only the latest revision, so this tool combines three sources:
 
   1. direct   - every URL recorded in the dataset (vendor, distributor and third-party
-                mirrors, many of which freeze an older revision).
+                mirrors, many of which freeze an older revision). When a host is unreachable
+                or serves no PDF, the latest Internet Archive copy of that URL is tried.
   2. ti       - TI literature numbers: probes ti.com/lit/ds/<lit><rev>/<lit><rev>.pdf
                 for rev in '' and a..z (TI keeps some lettered revisions online).
   3. wayback  - Internet Archive CDX prefix queries over every current and legacy vendor
@@ -41,8 +42,13 @@ import urllib.request
 from dataclasses import dataclass, field
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import dataset  # noqa: E402  (works under `python -I` too)
+
 ROOT = Path(__file__).resolve().parent.parent
-WAYBACK = os.environ.get("OPAMP_WAYBACK_BASE", "https://web.archive.org").rstrip("/")
+# Copies hosted in other people's GitHub repositories are not fetched.
+SKIP_HOSTS = {"github.com", "raw.githubusercontent.com", "objects.githubusercontent.com"}
+WAYBACK =os.environ.get("OPAMP_WAYBACK_BASE", "https://web.archive.org").rstrip("/")
 TI_BASE = os.environ.get("OPAMP_TI_BASE", "https://www.ti.com").rstrip("/")
 USER_AGENT = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -227,10 +233,14 @@ LABEL_PATTERNS = [
     ("burr-brown", re.compile(r"\bPDS-?\s?(\d{3,4})([A-Z]?)\b")),
     # National: "DS201116"
     ("national", re.compile(r"\bDS(\d{6})\b")),
+    # onsemi / Motorola: "NE5532/D"
+    ("onsemi", re.compile(r"\b([A-Z]{2,5}\d{3,6}[A-Z]?/D)\b")),
     # Linear: "1028fd" / "LT/TP 0697 4K"
     ("linear", re.compile(r"\b(\d{3,4})(f[a-z]{0,2})\b")),
     # ADI / ON: "Rev. F", "Rev. 7"
     ("rev", re.compile(r"\bRev(?:ision)?\.?\s*([A-Z0-9]{1,3})\b")),
+    # month-year as printed ("December 2015", "March, 2006")
+    ("month_year", re.compile(rf"\b({MONTH},?\s+(?:19|20)\d{{2}})\b", re.I)),
     # JRC: "Ver.2013-03-18" / "Ver.1.2"
     ("jrc", re.compile(r"\bVer\.?\s?([0-9][0-9.\-]{0,12})")),
     # Philips: "1997 Sep 29" / "Supersedes data of ..."
@@ -262,6 +272,9 @@ def label_pdf(data: bytes) -> dict:
     except Exception as e:  # noqa: BLE001
         out["error"] = f"unreadable: {e.__class__.__name__}"
         return out
+    snippet = re.sub(r"\s+", " ", text).strip()[:400]
+    if snippet:
+        out["snippet"] = snippet
     found = {}
     for key, pat in LABEL_PATTERNS:
         m = pat.search(text)
@@ -275,9 +288,25 @@ def label_pdf(data: bytes) -> dict:
         out["revision"] = ti.group(2).upper() or "-"
         out["date"] = (ti.group(4) or ti.group(3)).title()
     elif "burr-brown" in found:
-        out["doc_number"] = "PDS-" + found["burr-brown"].replace(" ", "")
-    elif "rev" in found:
-        out["revision"] = found["rev"]
+        num, _, letter = found["burr-brown"].partition(" ")
+        out["doc_number"] = "PDS-" + num
+        out["revision"] = letter or "-"
+    elif "jrc" in found:
+        out["revision"] = "Ver. " + found["jrc"].rstrip(".-")
+    elif "onsemi" in found:
+        out["doc_number"] = found["onsemi"]
+        if re.fullmatch(r"\d{1,2}", found.get("rev", "")):
+            out["revision"] = "Rev. " + found["rev"]
+    elif "national" in found:
+        out["doc_number"] = "DS" + found["national"]
+    elif "linear" in found:
+        out["doc_number"] = "".join(found["linear"].split())
+    elif re.fullmatch(r"[A-Z]{1,2}", found.get("rev", "")):
+        out["revision"] = found["rev"]  # ADI letter revisions
+    if "date" not in out and "philips" in found:
+        out["date"] = found["philips"]
+    elif "date" not in out and "month_year" in found:
+        out["date"] = found["month_year"].replace(",", "").title()
     return out
 
 
@@ -362,11 +391,13 @@ def expand_prefix(tpl: str, pn: str) -> str | None:
 def build_plan(family: dict) -> Plan:
     plan = Plan(family["id"])
     for ds in family.get("datasheets", []):
-        if ds.get("url") and ds.get("url_kind") != "product_page":
-            note = " ".join(x for x in (ds.get("vendor", ""), ds.get("doc_number", ""), ds.get("revision", "")) if x)
-            plan.direct.append((ds["url"], note))
+        note = " ".join(x for x in (ds.get("vendor", ""), ds.get("doc_number", ""), ds.get("revision", "")) if x)
+        for url in [ds.get("url", "")] + ds.get("also_urls", []):
+            if not url or ds.get("url_kind") == "product_page" or urllib.parse.urlsplit(url).hostname in SKIP_HOSTS:
+                continue
+            plan.direct.append((url, note))
             if ds.get("url_kind", "").startswith("vendor"):
-                plan.exact.append(ds["url"])
+                plan.exact.append(url)
         lit = (ds.get("doc_number") or "").strip()
         if re.fullmatch(r"S[A-Z]{3}\d{3}[A-Z]?", lit, re.I):
             plan.ti_lits.append(lit.upper()[:7])
@@ -461,14 +492,20 @@ def fetch_direct(plan: Plan, store: Store, args) -> None:
         if store.seen(key):
             continue
         status, body, final = http_get(url, delay=args.delay)
-        if status != 200:
-            store.mark(key, f"http {status}")
-            continue
         sha = store.add(plan.family, body, {"url": url, "kind": "direct", "note": note, "final_url": final},
-                        not args.no_label)
-        store.mark(key, sha or "not-a-pdf")
+                        not args.no_label) if status == 200 else None
+        if not sha and "wayback" in args.sources_set:
+            # Unreachable host, error page or HTML viewer: try the latest archived copy of the URL.
+            raw = f"{WAYBACK}/web/2id_/{url}"
+            wstatus, wbody, wfinal = http_get(raw, delay=args.delay, retries=2)
+            if wstatus == 200:
+                m = re.search(r"/web/(\d{14})", wfinal)
+                sha = store.add(plan.family, wbody, {"url": url, "kind": "wayback-latest", "note": note,
+                                                     "archive_url": wfinal,
+                                                     "wayback_ts": m.group(1) if m else ""}, not args.no_label)
+        store.mark(key, sha or (f"http {status}" if status != 200 else "not-a-pdf"))
         if not sha:
-            log(f"    - not a PDF (viewer page?): {url}")
+            log(f"    - no PDF from {url} (http {status})")
 
 
 def fetch_ti(plan: Plan, store: Store, args) -> None:
@@ -561,8 +598,12 @@ def write_index(store: Store, families: list[dict]) -> None:
                                      for s in e["sources"] if s}))
             k = pdf_date_key(e)
             first = f"{k[:4]}-{k[4:6]}-{k[6:8]}" if k != "99999999" else "?"
+            # PDFs are not committed, so link the archived or original copy rather than the local file.
+            best = next((s.get("archive_url") for s in e["sources"] if s.get("archive_url")), None) \
+                or next((s.get("url") for s in e["sources"] if s.get("url")), "")
+            name = Path(e["file"]).name
             lines.append(f"| {first} | {doc or '?'} | {lab.get('date', '')} | {lab.get('pages', '')} "
-                         f"| [{Path(e['file']).name}]({e['file']}) | {srcs} |")
+                         f"| [{name}]({best}) | {srcs} |")
         lines.append("")
     (store.out / "INDEX.md").write_text("\n".join(lines))
 
@@ -570,7 +611,8 @@ def write_index(store: Store, families: list[dict]) -> None:
 # --------------------------------------------------------------------------------------
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--data", default=str(ROOT / "data" / "opamps.json"))
+    ap.add_argument("--data", default=str(dataset.FAMILY_DIR),
+                    help="family directory (default) or a legacy single JSON file")
     ap.add_argument("--out", default=str(ROOT / "datasheets"))
     ap.add_argument("--family", nargs="*", help="family ids to fetch (default: all)")
     ap.add_argument("--sources", default="direct,ti,wayback", help="comma list of direct,ti,wayback")
@@ -580,7 +622,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--dry-run", action="store_true", help="print the fetch plan and exit")
     args = ap.parse_args(argv)
 
-    families = json.loads(Path(args.data).read_text())["families"]
+    families = dataset.load_families(args.data)
     if args.family:
         wanted = {f.lower() for f in args.family}
         families = [f for f in families if f["id"].lower() in wanted]
@@ -588,6 +630,7 @@ def main(argv: list[str] | None = None) -> int:
             log(f"no family matches {args.family}")
             return 2
     sources = {s.strip() for s in args.sources.split(",") if s.strip()}
+    args.sources_set = sources
 
     plans = [build_plan(f) for f in families]
     if args.dry_run:

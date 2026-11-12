@@ -1,0 +1,555 @@
+{
+  "id": "LT1115",
+  "name": "LT1115 (single ultralow-noise, low-distortion bipolar audio op amp)",
+  "tagline": "Linear Tech's 1989 audio-optimised 0.9 nV/rtHz bipolar single, a cult pick for MC/MM phono and mic preamps, prized for monitor-like resolution.",
+  "technology": "Bipolar single op amp with NPN inputs and internal compensation. The LTC macromodel header says 'extended phase compensation' and notes an input differential-mode clamp. Voltage noise is 0.9 nV/rtHz typ and 1.2 nV/rtHz max at 1 kHz, and both voltage and current noise are 100% tested. GBW is 40 MHz min. Linear Technology designed and made it, and the first data sheet is dated Dec 1989. Analog Devices has owned it since 2017.",
+  "manufacturers": [
+    "Linear Technology",
+    "Analog Devices"
+  ],
+  "part_numbers": [
+    {
+      "pn": "LT1115CN8#PBF",
+      "channels": 1,
+      "vendors": [
+        "Linear Technology",
+        "Analog Devices"
+      ],
+      "status": "Listed by Mouser, chip1stop and radiolocman as an Analog Devices part. The ADI lifecycle was not shown in the search summaries.",
+      "notes": "8-lead PDIP (N8, 0.300 in), commercial grade. The N8 package is confirmed by the datasheet. The status of the tin-lead LT1115CN8 (no #PBF) was not checked."
+    },
+    {
+      "pn": "LT1115CSW",
+      "channels": 1,
+      "vendors": [
+        "Linear Technology",
+        "Analog Devices"
+      ],
+      "status": "obsolete (Mouser lifecycle)",
+      "notes": "Tin-lead 16-lead wide SOIC (SW16). Mouser marks it Obsolete. The terra-eda library flags its 'wide-16 single-op-amp pinout'."
+    },
+    {
+      "pn": "LT1115CSW#PBF / LT1115CSW#TRPBF",
+      "channels": 1,
+      "vendors": [
+        "Linear Technology",
+        "Analog Devices"
+      ],
+      "status": "unverified (seen in a 2020 EasyEDA/LCSC library and a 2026 IC sitemap)",
+      "notes": "Lead-free SW16 orderables. This is the only corroborated surface-mount version. A DIY MC/MM phono preamp (schenkmi, 2021-2025) uses the LT1115 SO16 footprint."
+    },
+    {
+      "pn": "LT1115CS8",
+      "channels": 1,
+      "vendors": [
+        "Linear Technology"
+      ],
+      "status": "unconfirmed (probably never offered)",
+      "notes": "Named only in the discovery notes. No distributor, library or search result showed an SO-8 LT1115. Treat it as an error until a datasheet order table confirms it."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Linear Technology",
+      "role": "originator / sole manufacturer",
+      "period": "1989 (data sheet dated Dec 1989) - 2017",
+      "notes": "The LTC macromodel reads: 'LT1115 OP AMP MODEL, WRITTEN: 11-28-1989 ... REF. LT1115 DATA SHEET, LTC DEC 1989'. The legacy datasheet short link was http://www.linear.com/docs/1612. No second source is known. One alldatasheet entry labels the part 'Linear Integrated Systems', which is a mirror mislabel, not a second source."
+    },
+    {
+      "vendor": "Analog Devices",
+      "role": "acquirer (bought Linear Technology in 2017)",
+      "period": "2017 - present",
+      "notes": "The same part numbers continue under ADI, with a product page at analog.com/en/products/lt1115.html. ADI hosts the Linear-coded datasheet lt1115fa.pdf. No ADI re-spin, PCN or new datasheet revision was found (a PCN search returned nothing for the LT1115)."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Input voltage noise e_n",
+      "value": "0.9 nV/rtHz typ; 1.2 nV/rtHz max",
+      "condition": "f = 1 kHz; 100% tested",
+      "source": "LT1115 datasheet 1115fa (analog.com), as summarised by web search"
+    },
+    {
+      "parameter": "Input current noise i_n",
+      "value": "1.2 pA/rtHz (the summary does not say whether this is typ or max)",
+      "condition": "f = 1 kHz; 100% tested",
+      "source": "LT1115 datasheet 1115fa, as summarised by web search. Read the table to confirm typ versus max."
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "40 MHz min. A 70 MHz typ figure is unconfirmed.",
+      "condition": "not stated in the summary",
+      "source": "The datasheet (analog.com lt1115fa.pdf, manuals.plus copy) gives 40 MHz min. The 70 MHz figure comes only from the Wickerlib KiCad description 'IC OPAMP AUDIO 70MHZ DIP8'."
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "10 V/us min; >15 V/us typ",
+      "condition": "not stated in the summary",
+      "source": "LT1115 datasheet features, as summarised by web search"
+    },
+    {
+      "parameter": "Open-loop voltage gain",
+      "value": "2 million min",
+      "condition": "load not stated in the summary",
+      "source": "LT1115 datasheet features, as summarised by web search"
+    },
+    {
+      "parameter": "THD",
+      "value": "0.002%",
+      "condition": "10 kHz, AV = -10, RL = 600 ohm, VO = 7 Vrms",
+      "source": "LT1115 datasheet features (analog.com lt1115fa.pdf); also matches Frieve-A/audioreview"
+    },
+    {
+      "parameter": "IMD (CCIF)",
+      "value": "0.002%",
+      "condition": "AV = +10, RL = 600 ohm, VO = 7 Vrms",
+      "source": "LT1115 datasheet features, as summarised by web search"
+    },
+    {
+      "parameter": "Supply voltage",
+      "value": "+/-22 V (in the search summary; probably the absolute maximum). A +/-18 V figure from a third-party library is unconfirmed as the test condition.",
+      "condition": "-",
+      "source": "Web search summary of the datasheet; dfnr2/terra-eda-library description"
+    },
+    {
+      "parameter": "Input stage / compensation",
+      "value": "Bipolar NPN input pair, internally compensated, extended phase compensation, input differential-mode clamp",
+      "condition": "-",
+      "source": "Linear Technology SPICE macromodel header LT1115 (OPLTC.LIB, (C) LTC 1990)"
+    },
+    {
+      "parameter": "Channels / packages",
+      "value": "Single only. 8-lead PDIP (N8) and 16-lead wide SOIC (SW16).",
+      "condition": "-",
+      "source": "The datasheet confirms the N8 package. Mouser lists LT1115CSW. The EasyEDA/LCSC library lists LT1115CSW#PBF and #TRPBF."
+    },
+    {
+      "parameter": "Iq, output current, bias current, minimum stable gain",
+      "value": "not verified",
+      "condition": "-",
+      "source": "Read the lt1115fa.pdf electrical table."
+    }
+  ],
+  "reputation": {
+    "summary": "Linear Technology's dedicated ultralow-noise audio op amp. Its datasheet called it 'the lowest noise audio operational amplifier available', which is a vendor claim from 1989. Enthusiasts have long used it in low-source-impedance stages: MC/MM phono (RIAA) preamps, MC head amps and microphone preamps. The 1990s rec.audio FAQ said the LT1028 and LT1115 'are very well received for phono preamps, head amplifiers, and microphone preamplifiers'. diyAudio members call it 'very interesting sounding' and group it with the LT1028 and LT1122. Japanese hobbyists call it the most monitor-like LT part and use it in phono-EQ builds. A srad.jp commenter said its datasheet noise equals the AD797's at about half the Mouser price. Audiokarma has a thread on LT1115 op amps. No Audio Science Review or Samuel Groner measurement was located.",
+    "sonic_descriptors": [
+      "very interesting sounding (diyAudio)",
+      "monitor-like (JP community)",
+      "exceptional resolution (JP community)",
+      "clean and quiet with low-impedance sources"
+    ],
+    "typical_uses": [
+      "MC/MM phono RIAA equaliser / preamp",
+      "moving-coil head amp",
+      "microphone preamplifier",
+      "low-noise instrumentation / measurement preamp with low source impedance",
+      "single-op-amp socket rolling in DIY gear"
+    ],
+    "caveats": [
+      "Single only (no dual or quad), so dual sockets need an adapter.",
+      "The only SMD version is the 16-lead wide SOIC (SW16), which has a non-standard single pinout. No SO-8 exists, and the tin-lead LT1115CSW is obsolete at Mouser.",
+      "Expensive: about 20 USD according to Frieve, against about 2.7 USD for the ADA4898-1 with similar noise.",
+      "The noise is optimised for low source impedance. With high-impedance sources, current noise (about 1.2 pA/rtHz) cancels the benefit.",
+      "The rec.audio FAQ claimed it is 'not unity gain stable', but the LTC macromodel says it is internally compensated. The minimum stable gain was not confirmed this run. With 40 MHz+ GBW, careful layout and decoupling are needed."
+    ],
+    "sources": [
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf",
+      "https://audiokarma.org/forums/threads/linear-technology-lt1115-op-amps.722989/",
+      "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-10",
+      "https://audio-fragrance.blogspot.com/2020/06/lt1115eq.html",
+      "https://recorder-free-sheetmusic.jimdofree.com/2021/03/11/%E3%82%AA%E3%83%9A%E3%82%A2%E3%83%B3%E3%83%97lt1028%E3%81%A8lt1115%E3%81%AE%E6%84%9F%E6%83%B3/",
+      "https://zigsow.jp/item/267790/review/319043",
+      "https://github.com/tin-nl/st-diskmags/blob/b2fc161489e5ba11aefb74a6f540011a719040f5/dba/10/AUDIO003.TXT",
+      "https://github.com/haturatu/sradjp/blob/3ac50b7b5cb59fce3b8167b1104f9afae2cceacb/hardware.srad.jp/story/20/07/17/0740248/index.html",
+      "https://github.com/schenkmi/electronic-projects/tree/32878d662c621df94773c2fa8a7576cb8443d312/lt1115-phono-mm-mc",
+      "https://github.com/Frieve-A/audioreview/blob/e1178951e595d2c2d8a093a407569005a149a39c/_companies/en/linear-technology.md"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Analog Devices (Linear Technology document)",
+      "title": "LT1115 Ultralow Noise, Low Distortion, Audio Op Amp",
+      "doc_number": "1115fa",
+      "revision": "A",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current ADI-hosted datasheet, confirmed by search, with the indexed title '1 LT1115 1115fa'. The 'fa' suffix is Linear's convention for Revision A. The print date and footer code were not seen. No 1115fb (Rev B) was found."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "LT1115 datasheet (unversioned alias)",
+      "doc_number": "lt1115",
+      "revision": "",
+      "date": "",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed. Seen only in a third-party fetch script (terra-eda fetch_adi.py) and never in search results."
+    },
+    {
+      "vendor": "Linear Technology",
+      "title": "LT1115 datasheet (legacy linear.com document link, doc id 1612)",
+      "doc_number": "linear.com/docs/1612",
+      "revision": "",
+      "date": "",
+      "url": "http://www.linear.com/docs/1612",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed. Taken from the Wickerlib KiCad library. linear.com now redirects to analog.com; try Wayback snapshots."
+    },
+    {
+      "vendor": "DigiKey (distributor)",
+      "title": "LT1115 Datasheet by Analog Devices Inc. (HTML rendering)",
+      "doc_number": "1115fa (probable)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.com/htmldatasheets/production/80239/0/0/1/lt1115.html",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "DigiKey HTML copy of the ADI-branded datasheet. Also at /en/htmldatasheets/production/80239/0/0/1/lt1115. The revision was not shown in the summary."
+    },
+    {
+      "vendor": "alldatasheet (third party)",
+      "title": "LT1115 Datasheet (PDF) - Linear Technology",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/70309/LINER/LT1115.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "LTC-era copy (vendor code LINER). May freeze an older revision; the revision was not shown."
+    },
+    {
+      "vendor": "alldatasheet (third party)",
+      "title": "LT1115 Datasheet (PDF) - labelled 'Linear Integrated Systems'",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/257452/LINEAR/LT1115.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "A second alldatasheet copy. The manufacturer label is a mirror error; this is the Linear Technology document. The revision was not shown."
+    },
+    {
+      "vendor": "datasheetcatalog (third party)",
+      "title": "LT1115 Ultra-Low Noise, Low Distortion, Audio Op Amp - Linear Technology",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/L/T/1/1/LT1115.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "This long-standing mirror often holds pre-2005 Linear PDFs. The revision was not shown."
+    },
+    {
+      "vendor": "digchip (third party)",
+      "title": "LT1115, Ultra-low Noise, Low Distortion, Audio Operational",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/262/LT1115.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Older third-party copy. The revision was not shown."
+    },
+    {
+      "vendor": "radiolocman (third party)",
+      "title": "LT1115 Datasheet Linear Technology",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=338779",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Linear Technology-labelled copy, which may be an LTC-era revision. The same site also has ADI-labelled copies at di=151181 and di=525939 and an LT1115CN8#PBF page at di=525933."
+    },
+    {
+      "vendor": "radiolocman (third party)",
+      "title": "Datasheet LT1115 Analog Devices - Preview and Download",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=151181",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "ADI-labelled copy. The revision was not shown."
+    },
+    {
+      "vendor": "datasheet4u (third party)",
+      "title": "LT1115 Datasheet - Linear Technology",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/Linear/LT1115/1384323",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Linear-labelled copy. The revision was not shown."
+    },
+    {
+      "vendor": "studylib (third party)",
+      "title": "LT1115 - Ultra-Low Noise, Low Distortion, Audio Op Amp",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://studylib.net/doc/18040096/lt1115---ultra-low-noise--low-distortion--audio-op-amp",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "User-uploaded copy. The revision was not shown."
+    },
+    {
+      "vendor": "Scribd (third party)",
+      "title": "LT1115 Ultralow Noise Op Amp Datasheet",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/937398071/LT1115-Datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Recent user upload. The revision was not shown."
+    },
+    {
+      "vendor": "manuals.plus (third party)",
+      "title": "LT1115 Ultralow Noise, Low Distortion Audio Operational Amplifier Datasheet",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://manuals.plus/m/8ea94eb766861a12ae5a2311b5a35806e15365a6cc9add7475717bb16792ed34",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Text copy. The web summaries used it to confirm 40 MHz GBW and 0.9/1.2 nV/rtHz."
+    },
+    {
+      "vendor": "alldatasheet (third party; mirror mislabels vendor as Linear Integrated Systems)",
+      "title": "LT1115_1 Datasheet(PDF) - Ultralow Noise, Low Distortion, Audio Op Amp",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/257449/LINEAR/LT1115_1.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A second alldatasheet entry, separate from 257452 and 70309. The '_1' suffix alldatasheet uses for an additional copy suggests a different edition, possibly an older or a newer file, but the search summary does not show which revision it holds."
+    },
+    {
+      "vendor": "radiolocman (third party; listed under Analog Devices)",
+      "title": "LT1115 Datasheet Analog Devices, Download PDF",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=525939",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A third radiolocman entry (di=525939), filed under Analog Devices rather than Linear Technology. It is probably the ADI-hosted 1115fa (Rev A) file, but the summary does not show the revision."
+    },
+    {
+      "vendor": "datasheetq (third party)",
+      "title": "LT1115 Datasheet PDF - Linear Technology",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/LT1115-doc-Linear",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Mirror of the Linear Technology datasheet. The revision is not shown in the search summary."
+    },
+    {
+      "vendor": "datasheetbank (third party)",
+      "title": "LT1115 Datasheet PDF, Linear Technology: Ultralow Noise, Low Distortion, Audio Op Amp",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetbank.com/LT1115-doc-Linear",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Mirror of the Linear Technology datasheet. The revision is not shown in the search summary."
+    },
+    {
+      "vendor": "Linear Technology",
+      "title": "LT1115 data sheet (original release)",
+      "doc_number": "LT1115 (pre-Rev A)",
+      "revision": "original",
+      "date": "1989-12",
+      "url": "",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "Unconfirmed. Its existence and date come only from the LTC macromodel header 'REF. LT1115 DATA SHEET, LTC DEC 1989'. It may survive in LTC databooks (1990 and later) or old mirrors. Older mirrors (datasheetcatalog, digchip, studylib) title it 'Ultra-Low Noise', while the ADI file says 'Ultralow'; this may hint at an older copy, but the revision is not established."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Linear Technology",
+      "doc_number": "LT1115 data sheet",
+      "revision": "original",
+      "date": "Dec 1989",
+      "changes": "Initial release, cited by the LTC macromodel (written 11-28-1989) as 'LT1115 DATA SHEET, LTC DEC 1989'. No copy or change log was located. Unconfirmed by web search."
+    },
+    {
+      "vendor": "Linear Technology (now hosted by Analog Devices)",
+      "doc_number": "1115fa",
+      "revision": "A",
+      "date": "unknown",
+      "changes": "Current ADI-hosted file. What changed from the original was not found; early Linear revisions usually had no revision-history table. There is no evidence of a Rev B, an ADI-era revision, a PCN, or any change to specs, absolute maximums or pinout."
+    },
+    {
+      "vendor": "Linear Technology",
+      "doc_number": "LT1115 data sheet (pre-Rev A, original edition)",
+      "revision": "original (unlettered)",
+      "date": "1990-06-01 (unconfirmed)",
+      "changes": "One search summary says 'A datasheet was published on Jun 1, 1990' for the LT1115, apparently from the metadata of a mirror listing (probably radiolocman di=338779). That fits a production edition following the Dec 1989 data sheet that the macromodel cites. The summary shows no change content, and the source attribution is uncertain. Low confidence."
+    },
+    {
+      "vendor": "Linear Technology (now hosted by Analog Devices)",
+      "doc_number": "1115fa",
+      "revision": "A",
+      "date": "2002-11 (footer code 1102)",
+      "changes": "Search summaries give the footer of the Rev A datasheet as 'LW/TP 1102 1K REV A • PRINTED IN USA', and one summary ties it to analog.com lt1115fa.pdf. Linear's MMYY convention makes this a November 2002 Rev A printing (1K copies), which dates the current 1115fa file. The change content is not shown, and no revision-history table is visible. Medium confidence."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No documented counterfeit analysis was found. Marketplace pages advertise bulk 'free shipping 50pcs LT1115CN8' lots. Cheap bulk lots of a part that sells for about 20 USD each through ADI channels are a red flag for remarked parts or pulls. Buy from ADI or authorised distributors. Check the Linear/ADI logo, top mark and date code, and check that measured noise (0.9 nV/rtHz typ, 1.2 max at 1 kHz) and bias current match the datasheet. No SO-8 LT1115 exists (SMD is SW16 only), so treat any 'LT1115 SO-8' offer as fake. The tin-lead LT1115CSW is obsolete at Mouser, so new-stock offers of it are probably old or recovered stock. Confidence: low.",
+  "alternatives": [
+    "LT1028 / LT1028A (Linear/ADI sibling; ultralow noise, single, optimised for very low source impedance)",
+    "ADA4898-1 / ADA4898-2 (ADI; about 0.9 nV/rtHz per Frieve's comparison, much cheaper, dual available)",
+    "AD797 (ADI single; a srad.jp commenter said its datasheet noise equals the LT1115's)",
+    "OPA1611 / OPA1612 (TI low-noise bipolar audio)",
+    "LME49990 (National/TI 0.9 nV/rtHz single; availability not verified)"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://cds.linear.com/docs/Datasheet/1115fa.pdf",
+    "http://cds.linear.com/docs/en/datasheet/1115fa.pdf",
+    "http://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf",
+    "http://www.linear.com/docs/1612",
+    "http://www.linear.com/docs/Datasheet/1115fa.pdf",
+    "http://www.linear.com/pdf/1115.pdf",
+    "http://www.linear.com/pdf/1115fa.pdf",
+    "http://www.linear.com/product/LT1115",
+    "https://www.analog.com/en/products/lt1115.html",
+    "https://www.analog.com/en/products/lt1115/sample-buy.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf"
+  ],
+  "open_questions": [
+    "The print date and footer code of Rev A (1115fa) are unknown, and web summaries did not show them. Check the PDF footer and whether any 1115fb exists.",
+    "No online copy of the original Dec 1989 data sheet was confirmed. Check whether the older mirrors (datasheetcatalog, alldatasheet 70309, radiolocman di=338779, digchip) hold a pre-Rev A copy, and look in LTC databooks.",
+    "Inferred Linear URL patterns appear only in archive_seed_urls: linear.com/product/LT1115, cds.linear.com/docs/en/datasheet/1115fa.pdf, cds.linear.com/docs/Datasheet/1115fa.pdf, linear.com/docs/Datasheet/1115fa.pdf, linear.com/pdf/1115fa.pdf and linear.com/pdf/1115.pdf. None were seen in results.",
+    "LT1115CS8 is not corroborated. Confirm the order table: N8 and SW16 only, and whether any I or A grades existed.",
+    "ADI lifecycle for LT1115CN8#PBF and LT1115CSW#PBF is not verified. Only the tin-lead LT1115CSW is shown as Obsolete (Mouser).",
+    "Minimum stable gain is unconfirmed: the rec.audio FAQ says 'not unity gain stable', while the macromodel says internally compensated.",
+    "Typical GBW (70 MHz per Wickerlib), whether 1.2 pA/rtHz is typ or max, the supply spec condition (+/-18 V vs +/-22 V abs max), Iq, output current and bias current are not verified from the tables.",
+    "A PCN search found nothing for the LT1115 in either the Linear or ADI era. Check ADI's PCN database directly.",
+    "No Audio Science Review or Samuel Groner measurements were located."
+  ],
+  "sources": [
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf",
+    "https://www.analog.com/en/products/lt1115.html",
+    "https://www.analog.com/en/products/lt1115/sample-buy.html",
+    "https://www.mouser.com/ProductDetail/Analog-Devices/LT1115CSW?qs=ytflclh7QUV1TE7xHI4owQ%3D%3D",
+    "https://www.mouser.com/ProductDetail/Analog-Devices/LT1115CN8PBF?qs=ytflclh7QUWk8x4PZzUG3w%3D%3D",
+    "https://www.digikey.com/en/products/base-product/analog-devices-inc/505/LT1115/3877",
+    "https://www.digikey.com/htmldatasheets/production/80239/0/0/1/lt1115.html",
+    "https://manuals.plus/m/8ea94eb766861a12ae5a2311b5a35806e15365a6cc9add7475717bb16792ed34",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/70309/LINER/LT1115.html",
+    "https://www.datasheetcatalog.com/datasheets_pdf/L/T/1/1/LT1115.shtml",
+    "https://www.radiolocman.com/datasheet/data.html?di=338779",
+    "https://audiokarma.org/forums/threads/linear-technology-lt1115-op-amps.722989/",
+    "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-10",
+    "https://audio-fragrance.blogspot.com/2020/06/lt1115eq.html",
+    "https://recorder-free-sheetmusic.jimdofree.com/2021/03/11/%E3%82%AA%E3%83%9A%E3%82%A2%E3%83%B3%E3%83%97lt1028%E3%81%A8lt1115%E3%81%AE%E6%84%9F%E6%83%B3/",
+    "https://zigsow.jp/item/267790/review/319043",
+    "https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/OPLTC.LIB",
+    "https://github.com/hulkco/oshwi/blob/e5f4a648ec1f6a1ff7262f017528b9ff610a1b83/2019/Oshwi_M0/Libraries/wickerlib.dcm",
+    "https://github.com/Julien5/sandbox/blob/e00feef3301cb2f2251ec7703a4e7b7f5eaba985/misc/setup-4mhz/README.md",
+    "https://github.com/dfnr2/terra-eda-library/blob/6c3706c8677e7bf77d7dfe434ffff28471bb029a/db/tables/ic_opamp/run_330_adi_opamps.py",
+    "https://github.com/Jiangshan00001/easyeda_to_pads/blob/d963980383f0cec56b07889e3e317986bf5fbff1/converted/Audio_Power_OpAmps.p",
+    "https://github.com/tin-nl/st-diskmags/blob/b2fc161489e5ba11aefb74a6f540011a719040f5/dba/10/AUDIO003.TXT",
+    "https://github.com/schenkmi/electronic-projects/tree/32878d662c621df94773c2fa8a7576cb8443d312/lt1115-phono-mm-mc",
+    "https://github.com/Frieve-A/audioreview/blob/e1178951e595d2c2d8a093a407569005a149a39c/_companies/en/linear-technology.md",
+    "https://github.com/haturatu/sradjp/blob/3ac50b7b5cb59fce3b8167b1104f9afae2cceacb/hardware.srad.jp/story/20/07/17/0740248/index.html"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [
+      "A 15 MHz GBW (ipmgroup/SonarCore JSON) is refuted: the datasheet gives 40 MHz min.",
+      "The draft said the ADI lifecycle was 'unknown' for all orderables. Mouser now shows the tin-lead LT1115CSW as Obsolete."
+    ],
+    "corrections": [
+      "GBW is now 40 MHz min, taken from the datasheet. The 70 MHz typ figure is kept but marked unconfirmed (Wickerlib only).",
+      "Added e_n max 1.2 nV/rtHz at 1 kHz; both voltage and current noise are 100% tested.",
+      "Slew rate corrected to 10 V/us min and >15 V/us typ.",
+      "Added open-loop gain (2 million min), i_n (1.2 pA/rtHz at 1 kHz) and CCIF IMD (0.002%, AV=+10, RL=600 ohm, VO=7 Vrms). Added VO = 7 Vrms to the THD condition.",
+      "Supply: the search summary gives +/-22 V, probably the absolute maximum. The +/-18 V figure from terra-eda is marked unconfirmed.",
+      "Split the part numbers: LT1115CSW (tin-lead) is obsolete per Mouser. LT1115CSW#PBF/#TRPBF are unverified. LT1115CN8#PBF is listed at Mouser, chip1stop and radiolocman.",
+      "Added the ADI Sample & Buy page, DigiKey HTML datasheet and base product page, Mouser pages, and third-party mirrors (alldatasheet x2, datasheetcatalog, digchip, radiolocman, datasheet4u, studylib, Scribd, manuals.plus). Revisions are unknown for all of them.",
+      "Downgraded the unconfirmed entries to low confidence: lt1115.pdf alias, linear.com/docs/1612, Dec 1989 original and Reichelt.",
+      "Added the Audiokarma LT1115 thread as a reputation source. Softened the LME49990 'discontinued' claim to 'availability not verified'.",
+      "A PCN search returned nothing for the LT1115, so silicon_changes stays empty."
+    ],
+    "unverified_urls": [
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115.pdf",
+      "http://www.linear.com/docs/1612",
+      "https://www.reichelt.com/de/en/operational-amplifier-dip-8-lt-1115-cn8-p148545.html",
+      "http://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf",
+      "http://www.linear.com/product/LT1115",
+      "http://cds.linear.com/docs/en/datasheet/1115fa.pdf",
+      "http://cds.linear.com/docs/Datasheet/1115fa.pdf",
+      "http://www.linear.com/docs/Datasheet/1115fa.pdf",
+      "http://www.linear.com/pdf/1115fa.pdf",
+      "http://www.linear.com/pdf/1115.pdf",
+      "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-10",
+      "https://audio-fragrance.blogspot.com/2020/06/lt1115eq.html",
+      "https://recorder-free-sheetmusic.jimdofree.com/2021/03/11/%E3%82%AA%E3%83%9A%E3%82%A2%E3%83%B3%E3%83%97lt1028%E3%81%A8lt1115%E3%81%AE%E6%84%9F%E6%83%B3/",
+      "https://zigsow.jp/item/267790/review/319043"
+    ],
+    "claims_confirmed": [
+      "The ADI-hosted datasheet exists at lt1115fa.pdf, indexed as '1 LT1115 1115fa Ultralow Noise, Low Distortion, Audio Op Amp': https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf",
+      "The ADI product page exists: https://www.analog.com/en/products/lt1115.html; so does the Sample & Buy page: https://www.analog.com/en/products/lt1115/sample-buy.html",
+      "e_n is 0.9 nV/rtHz typ and 1.2 nV/rtHz max at 1 kHz: https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf",
+      "GBW is 40 MHz min: https://manuals.plus/m/8ea94eb766861a12ae5a2311b5a35806e15365a6cc9add7475717bb16792ed34",
+      "Slew rate is 10 V/us min and >15 V/us typ: https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf",
+      "Open-loop gain is 2 million min: https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf",
+      "THD is 0.002% at 10 kHz, AV=-10, RL=600 ohm, VO=7 Vrms; CCIF IMD is 0.002%: https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf",
+      "Current noise is 1.2 pA/rtHz at 1 kHz, and voltage and current noise are 100% tested: https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf",
+      "Supply is +/-22 V per the search summary (probably the absolute maximum): https://www.scribd.com/document/937398071/LT1115-Datasheet",
+      "The N8 package is an 8-lead PDIP (0.300 in): https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf",
+      "Mouser shows LT1115CSW as Obsolete: https://www.mouser.com/ProductDetail/Analog-Devices/LT1115CSW?qs=ytflclh7QUV1TE7xHI4owQ%3D%3D",
+      "Mouser lists LT1115CN8#PBF: https://www.mouser.com/ProductDetail/Analog-Devices/LT1115CN8PBF?qs=ytflclh7QUWk8x4PZzUG3w%3D%3D",
+      "DigiKey hosts an HTML copy of the ADI datasheet: https://www.digikey.com/htmldatasheets/production/80239/0/0/1/lt1115.html",
+      "Third-party mirrors exist, with revisions unknown: https://www.alldatasheet.com/datasheet-pdf/pdf/70309/LINER/LT1115.html, https://www.datasheetcatalog.com/datasheets_pdf/L/T/1/1/LT1115.shtml, https://www.radiolocman.com/datasheet/data.html?di=338779",
+      "The LT1115 PCN search returned no LT1115-specific PCN (silicon_changes stays empty).",
+      "An Audiokarma discussion thread on LT1115 op amps exists: https://audiokarma.org/forums/threads/linear-technology-lt1115-op-amps.722989/"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "bipolar-modern-low-noise",
+  "product_pages": [
+    "https://www.analog.com/en/products/lt1115.html",
+    "https://www.analog.com/en/products/lt1115/sample-buy.html",
+    "https://www.digikey.com/en/products/base-product/analog-devices-inc/505/LT1115/3877",
+    "https://www.mouser.com/ProductDetail/Analog-Devices/LT1115CN8PBF?qs=ytflclh7QUWk8x4PZzUG3w%3D%3D",
+    "https://www.mouser.com/ProductDetail/Analog-Devices/LT1115CSW?qs=ytflclh7QUV1TE7xHI4owQ%3D%3D",
+    "https://www.reichelt.com/de/en/operational-amplifier-dip-8-lt-1115-cn8-p148545.html"
+  ],
+  "revision_chain_notes": "Linear Technology LT1115 (the only maker; Analog Devices has hosted it since 2017, with no second source), oldest to newest: (1) The Dec 1989 original data sheet is cited by the LTC macromodel (written 11-28-1989). No copy has been located. (2) A possible 1990-06-01 publication of the original, unlettered edition comes from an unattributed search-summary date, probably a radiolocman mirror's metadata. Low confidence, and no copy with a visible revision has been confirmed. (3) Rev A, doc 1115fa, has the footer 'LW/TP 1102 1K REV A • PRINTED IN USA', which dates it to Nov 2002. This is the current file at analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf (medium confidence on the footer-to-file link). No Rev B, ADI-era re-issue or PCN was found. Missing links: a copy that holds the original 1989/1990 unlettered edition (candidates are the datasheetcatalog, alldatasheet 70309, 257449 (LT1115_1) and 257452, radiolocman 338779 and the datasheet4u mirrors, none with the revision shown), the exact pre-Rev A footer code, any intermediate 1990s reprint (e.g. in the 1990 or 1992 Linear Databook), and the Rev A change summary. New mirrors added this pass: alldatasheet 257449, radiolocman 525939, datasheetq and datasheetbank, all with the revision not shown."
+}

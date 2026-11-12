@@ -1,0 +1,800 @@
+{
+  "id": "NJM2068",
+  "name": "NJM2068 / JRC2068 (low-noise bipolar dual, New JRC → Nisshinbo)",
+  "tagline": "A cheap, quiet JRC bipolar dual. NwAvGuy used it for the O2's gain stage, and it is common in E-MU audio interfaces and in Japanese CD and AV gear.",
+  "technology": "Bipolar dual op-amp with the standard 4558 dual pinout. NJR's own SPICE macro-model uses a PNP input pair. Internally compensated. The features list calls 27 MHz the 'unity gain bandwidth', but the table gives GB 27 MHz at 10 kHz and a unity-gain frequency of only 5.5 MHz. The noise-selected D-rank grades (DD/MD/LD) have a guaranteed maximum equivalent input noise.",
+  "manufacturers": [
+    "New Japan Radio Co., Ltd. (NJR; 'JRC' logo/brand)",
+    "Nisshinbo Micro Devices Inc. (successor, 2022-)"
+  ],
+  "part_numbers": [
+    {
+      "pn": "NJM2068D",
+      "channels": 2,
+      "vendors": [
+        "NJR",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "listed by DigiKey under Nisshinbo Micro Devices (product 805544); lifecycle flag not seen",
+      "notes": "DIP8, standard grade. Listed in datasheet Ver.2011-03-18. Usually marked or sold as 'JRC2068D'."
+    },
+    {
+      "pn": "NJM2068DD",
+      "channels": 2,
+      "vendors": [
+        "NJR",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "listed by Mouser under Nisshinbo; also sold by Akizuki (g102358); lifecycle flag not seen",
+      "notes": "DIP8, D-rank (noise-selected): VNI max 1.4 uVrms (RIAA, Rs=2.2 kOhm) per Ver.2011-03-18. The Nisshinbo product page confirms that the D-rank parts (DD/LD/MD) have specified maximum noise."
+    },
+    {
+      "pn": "NJM2068M",
+      "channels": 2,
+      "vendors": [
+        "NJR",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "unknown (Mouser 513-NJM2068M stocked in a 2021 BOM)",
+      "notes": "DMP8 (5.3 mm-body SOP-8), standard grade. The Ver.2003-03-17 datasheet copy on Octopart is filed under NJM2068M."
+    },
+    {
+      "pn": "NJM2068MD",
+      "channels": 2,
+      "vendors": [
+        "NJR",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "unknown",
+      "notes": "DMP8, D-rank. The tape-and-reel orderable NJM2068MD-TE2 appears in the Yamaha YSP-600 service parts list. Also used in the Pioneer KEX-M8406ZT."
+    },
+    {
+      "pn": "NJM2068V",
+      "channels": 2,
+      "vendors": [
+        "NJR",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "unknown",
+      "notes": "SSOP8. No D-rank version (D-rank is DIP/DMP/SIP only per Ver.2011-03-18)."
+    },
+    {
+      "pn": "NJM2068L",
+      "channels": 2,
+      "vendors": [
+        "NJR",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "End of Life per Mouser (Nisshinbo listing, seen 2026)",
+      "notes": "SIP8, standard grade."
+    },
+    {
+      "pn": "NJM2068LD",
+      "channels": 2,
+      "vendors": [
+        "NJR",
+        "Nisshinbo Micro Devices"
+      ],
+      "status": "unknown (probably follows NJM2068L EOL; not verified)",
+      "notes": "SIP8, D-rank. Still named on the Nisshinbo product page's D-rank sentence."
+    },
+    {
+      "pn": "NJM2068E",
+      "channels": 2,
+      "vendors": [
+        "NJR"
+      ],
+      "status": "unknown",
+      "notes": "Package unknown; presumably EMP8/JEDEC SOP8. Not in Ver.2011-03-18, but alldatasheet hosts an NJRC 'NJM2068E' datasheet (6 pages, 160 KB), so it appears in at least one NJR datasheet edition. Revision and orderability not confirmed."
+    },
+    {
+      "pn": "JRC2068 / JRC2068D",
+      "channels": 2,
+      "vendors": [
+        "NJR"
+      ],
+      "status": "trade name",
+      "notes": "Market and community name taken from the 'JRC' logo marking, e.g. Soomal teardown captions and Chinese, Amazon and AliExpress listings. It is not a separate orderable part."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "New Japan Radio Co., Ltd. (NJR, 'JRC' brand)",
+      "role": "originator / sole manufacturer",
+      "period": "introduction year not established; a Ver.2003-03-17 datasheet exists, so it was in production by 2003 at the latest; NJR until 2021",
+      "notes": "No second sources are known. Datasheets carry a 'Ver.YYYY-MM-DD' footer and no change log. They were hosted at njr.com/semicon/PDF/ and later at njr.com/electronic_device/PDF/."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices Inc.",
+      "role": "successor (NJR merged with Ricoh Electronic Devices)",
+      "period": "2022-present",
+      "notes": "Mouser and DigiKey now list the parts under Nisshinbo. A Nisshinbo-labelled Octopart datasheet copy is still Ver.2011-03-18, so there is no sign of a new die with the rebrand. The merger date (Jan 2022) is general knowledge and was not re-verified by web search."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Equivalent input noise voltage (standard grade)",
+      "value": "0.44 uVrms typ / 0.56 uVrms max",
+      "condition": "FLAT+JIS-A weighting, Rs=300 Ohm, V+/V-=+/-15 V, Ta=25 C. A web summary of the features list quotes '0.56 uV typ', so check the features-line wording.",
+      "source": "NJR NJM2068_E Ver.2011-03-18 p.2"
+    },
+    {
+      "parameter": "Equivalent input noise voltage (D-rank DD/MD/LD)",
+      "value": "1.4 uVrms max",
+      "condition": "RIAA, Rs=2.2 kOhm (40 dB amp + 30 kHz LPF test circuit, p.5)",
+      "source": "NJR NJM2068_E Ver.2011-03-18 p.2, p.5"
+    },
+    {
+      "parameter": "e_n @1 kHz (nV/rtHz)",
+      "value": "not specified",
+      "condition": "The datasheet gives only integrated (weighted) noise voltage",
+      "source": "NJR NJM2068_E Ver.2011-03-18"
+    },
+    {
+      "parameter": "i_n",
+      "value": "not specified",
+      "condition": "h-milz/wireless-gk notes that Nisshinbo does not specify input noise current",
+      "source": "NJR NJM2068_E Ver.2011-03-18; github.com/h-milz/wireless-gk doc/Filterdesign.md"
+    },
+    {
+      "parameter": "Gain bandwidth product",
+      "value": "27 MHz typ (GB1) / 19 MHz typ (GB2)",
+      "condition": "GB1 at f=10 kHz, GB2 at f=100 kHz. The features list calls 27 MHz 'Unity Gain Bandwidth', which is misleading.",
+      "source": "NJR NJM2068_E Ver.2011-03-18 p.1-2"
+    },
+    {
+      "parameter": "Unity gain frequency fT",
+      "value": "5.5 MHz typ",
+      "condition": "AV=1",
+      "source": "NJR NJM2068_E Ver.2011-03-18 p.2"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "6 V/us typ",
+      "condition": "RL>=2 kOhm, +/-15 V",
+      "source": "NJR NJM2068_E Ver.2011-03-18 p.2"
+    },
+    {
+      "parameter": "THD",
+      "value": "0.001 % typ",
+      "condition": "AV=20 dB, Vo=5 V, RL=2 kOhm, f=1 kHz",
+      "source": "NJR NJM2068_E Ver.2011-03-18 p.2"
+    },
+    {
+      "parameter": "Supply voltage",
+      "value": "+/-4 V to +/-18 V recommended; absolute max +/-18 V",
+      "condition": "Ta=25 C",
+      "source": "NJR NJM2068_E Ver.2011-03-18 p.2"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "5 mA typ / 8 mA max (whole package), about 2.5 mA per channel typ",
+      "condition": "+/-15 V, no load",
+      "source": "NJR NJM2068_E Ver.2011-03-18 p.2; web datasheet copies (Mouser 217911 / DigiKey) agree"
+    },
+    {
+      "parameter": "Output swing / output current",
+      "value": "+/-12 V min, +/-13.5 V typ; output current not specified",
+      "condition": "RL>=2 kOhm, +/-15 V. There is only a typical Vom-vs-Io curve.",
+      "source": "NJR NJM2068_E Ver.2011-03-18 p.2-3"
+    },
+    {
+      "parameter": "Input offset voltage / bias current / offset current",
+      "value": "Vio 0.3 typ / 3 max mV; Ib 150 typ / 1000 max nA; Iio 5 typ / 200 max nA",
+      "condition": "Rs<=10 kOhm (Vio), +/-15 V",
+      "source": "NJR NJM2068_E Ver.2011-03-18 p.2; web datasheet copies agree on Ib 1000 nA max"
+    },
+    {
+      "parameter": "Open-loop gain / CMRR / SVR / Rin",
+      "value": "Av 90 min / 120 typ dB; CMR 80/110 dB; SVR 80/120 dB; Rin 50 kOhm min / 300 kOhm typ",
+      "condition": "RL>=2 kOhm, Vo=+/-10 V (Av); Rs<=10 kOhm (CMR, SVR)",
+      "source": "NJR NJM2068_E Ver.2011-03-18 p.2"
+    },
+    {
+      "parameter": "Absolute max input / dissipation / temperature",
+      "value": "Differential input +/-30 V; common-mode input +/-15 V (equal to supply below +/-15 V); Pd DIP8 500, DMP8 300, SSOP8 250, SIP8 800 mW; Topr -20 to +75 C",
+      "condition": "Ta=25 C",
+      "source": "NJR NJM2068_E Ver.2011-03-18 p.2"
+    },
+    {
+      "parameter": "Input stage type",
+      "value": "Bipolar, PNP differential input pair",
+      "condition": "Inferred from NJR's official SPICE macro-model (Q1/Q2 PNP). The datasheet itself says only 'Bipolar Technology' and 'specially designed low noise input transistors'.",
+      "source": "NJR macro-model (e.g. github.com/benkev/experimental ngspice/BipolarOpamp/NJM2068.lib, 'Version:2'); datasheet p.1"
+    }
+  ],
+  "reputation": {
+    "summary": "NwAvGuy measured the NJM2068 for the Objective2 (O2) and chose it for the gain stage. By his account it was quieter than the NE5532, LM4562 and OPA2134 at lower supply current, and it cost well under a dollar. That made it a favourite with the measurement-minded DIY community. The DIY SmartStand amp also copies the O2's NJM2068 gain stage with an NJM4556A output. In China, Soomal reviews found it in E-MU interfaces (0202/0204/0404/1212m), the Musiland X-Sword II and ooAoo sound cards, and many mid-range CD players. Soomal describes it as very low noise and high resolution, with a neutral, plain sound. Japanese op-amp swappers treat it as the classic quiet JRC dual, calling it relaxed with ample bass. Pro and MI gear uses it too: the Roland VG-99 input stage and GK-3 pickup (per h-milz), Yamaha and Pioneer AV and car units, and cheap MM phono preamps such as FX-Audio. The sound descriptors are community impressions, not measurements.",
+    "sonic_descriptors": [
+      "very low noise (噪声很小; Soomal)",
+      "high resolution (解析力高; Soomal)",
+      "neutral, plain (中性平白; Soomal)",
+      "relaxed, ample bass (JP community; folklore)",
+      "dense/mellow (JP community; unverified)"
+    ],
+    "typical_uses": [
+      "O2 (Objective2) headphone amp gain stage",
+      "E-MU 0202/0204/0404/1212m audio interfaces",
+      "Chinese PC sound cards (Musiland X-Sword II, ooAoo SQ710 II/SQ717a)",
+      "mid-range Japanese CD players and AV receivers (e.g. Yamaha YSP-600 uses NJM2068MD-TE2)",
+      "car audio (Pioneer KEX-M8406ZT, NJM2068MD)",
+      "MM phono / RIAA preamps (FX-Audio BOX-01/BOX-02)",
+      "guitar-synth/pro-audio input stages (Roland VG-99, GK-3 per h-milz)",
+      "active monitor speakers (ICON PX-T6A per Soomal)"
+    ],
+    "caveats": [
+      "Vendor notice: capacitive loads can cause oscillation. Add about 50 Ohm in series with the output (Ver.2011-03-18 p.2).",
+      "Minimum supply is +/-4 V (8 V total), so it is unsuitable for 5 V single-supply or USB-powered designs.",
+      "The '27 MHz' headline figure is GB at 10 kHz. The unity-gain frequency is only 5.5 MHz, so it is not comparable with other vendors' GBW numbers.",
+      "No noise-current or nV/rtHz spec, and input bias current is relatively high (150 nA typ, 1 uA max). Keep source and feedback impedances low.",
+      "Output current is not specified, and specs are given for loads of 2 kOhm and above. It is not a headphone driver: the O2 pairs it with NJM4556A outputs.",
+      "jh4vaj's pop-noise comparison found the standard NJM2068D had less turn-on pop than the noise-selected NJM2068DD. Both were among the low-pop group; NJM4558DD had the least. This is a single blog measurement.",
+      "A note.com blog (gokurakugadget) reports NJM2068D oscillating abnormally in an audio preamp. It is a single user report; see the vendor capacitive-load notice."
+    ],
+    "sources": [
+      "http://nwavguy.blogspot.com/2011/08/op-amp-measurements.html",
+      "http://nwavguy.blogspot.com/2011/08/o2-details.html",
+      "http://nwavguy.blogspot.com/2011/07/o2-headphone-amp.html",
+      "https://github.com/nuclearfurnace/smartstand/blob/master/README.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100000653.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100002759.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100001325.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100002513.md",
+      "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100000358.md",
+      "https://github.com/h-milz/wireless-gk/blob/de04383c61c3394c7e3615119e821fb2b3c88397/doc/Filterdesign.md",
+      "https://www.headphonesty.com/2018/03/1667/",
+      "https://www.jh4vaj.com/archives/44066",
+      "https://note.com/gokurakugadget/n/nec54d5129d60",
+      "https://bluegourd.jugem.jp/?eid=388",
+      "https://akizukidenshi.com/catalog/g/g102358/",
+      "https://www.mouser.com/ds/2/294/njr_njm2068_e-551643.pdf",
+      "http://www.njr.com/semicon/PDF/NJM2068_E.pdf",
+      "https://akizukidenshi.com/goodsaffix/NJM2068_j.pdf"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 LOW-NOISE DUAL OPERATIONAL AMPLIFIER (English)",
+      "doc_number": "NJM2068_E",
+      "revision": "Ver. 2011-03-18",
+      "date": "2011-03-18",
+      "url": "https://www.mouser.com/ds/2/294/NJM2068_E-217911.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Mouser copy. The search-result title shows 'NJM2068 - 1 - Ver.2011-03-18 LOW-NOISE DUAL OPERATIONAL AMPLIFIER'."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 LOW-NOISE DUAL OPERATIONAL AMPLIFIER (English)",
+      "doc_number": "NJM2068_E",
+      "revision": "Ver. 2011-03-18",
+      "date": "2011-03-18",
+      "url": "https://github.com/nuclearfurnace/smartstand/blob/master/datasheets/NJM2068_E.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Full 5-page text read in an earlier session (sha256 befc84af779c9c22400e3a8e6c9becca75fdb7e13564951d49a596c050389d98). Committed to GitHub on 2016-12-15. Lists D/M/V/L packages and D-rank DD/MD/LD. Includes the capacitive-load oscillation notice. Raw link: https://raw.githubusercontent.com/nuclearfurnace/smartstand/master/datasheets/NJM2068_E.pdf"
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices (listing) / NJR document",
+      "title": "NJM2068 LOW-NOISE DUAL OPERATIONAL AMPLIFIER (Octopart copy under the NJM2068DD Nisshinbo listing)",
+      "doc_number": "NJM2068_E",
+      "revision": "Ver. 2011-03-18",
+      "date": "2011-03-18",
+      "url": "https://datasheet.octopart.com/NJM2068DD-Nisshinbo-Micro-Devices-Inc.-datasheet-13544402.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The search-result title shows 'NJM2068 - 1 - Ver.2011-03-18'. It is filed under Nisshinbo Micro Devices Inc., which suggests the Nisshinbo-era distribution still used Ver.2011-03-18 when captured."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 LOW-NOISE DUAL OPERATIONAL AMPLIFIER (English), older revision",
+      "doc_number": "NJM2068_E",
+      "revision": "Ver. 2003-03-17",
+      "date": "2003-03-17",
+      "url": "https://datasheet.octopart.com/NJM2068M-NJR-datasheet-141065.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The search-result title shows 'NJM2068 - 1 - Ver.2003-03-17 LOW-NOISE DUAL OPERATIONAL AMPLIFIER'. It is the oldest revision found. Content not compared with Ver.2011-03-18."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 2回路入り低雑音オペアンプ (Japanese), Akizuki Denshi copy",
+      "doc_number": "NJM2068_J",
+      "revision": "Ver. 2011-03-18",
+      "date": "2011-03-18",
+      "url": "https://akizukidenshi.com/goodsaffix/NJM2068_j.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The search-result title shows 'NJM2068 - 1 - Ver.2011-03-18 2回路入り低雑音オペアンプ'. It is the Japanese edition of the same version."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "title": "NJM2068 Datasheet(E) (DigiKey copy)",
+      "doc_number": "NJM2068_E",
+      "revision": "",
+      "date": "",
+      "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7957/PdfFile_174588.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "The search result titles it 'NJM2068 Datasheet(E)'. The web summary gives Ib 1000 nA max and Icc 5 typ / 8 max mA, matching Ver.2011-03-18. The printed Ver. was not seen."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 datasheet (alldatasheet copy, 5 pages)",
+      "doc_number": "NJM2068_E",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/7240/NJRC/NJM2068.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Early alldatasheet id (7240), 5 pages. It may hold an early-2000s revision, possibly Ver.2003-03-17, but the revision was not seen."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068E / NJM2068DD / NJM2068M / NJM2068MD datasheet (alldatasheet copy, 6 pages)",
+      "doc_number": "NJM2068_E (edition listing NJM2068E)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/512051/NJRC/NJM2068E.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "A 6-page, 160 KB edition that differs from the 5-page Ver.2011-03-18 and names NJM2068E. Sibling ids: 512047 (MD), 512049 (M), 512052 (DD). A 6-page NJM2068DD copy is also on pdf.ic37.com. Revision and date not seen."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "title": "NJM2068 datasheet (English), current",
+      "doc_number": "NJM2068_E",
+      "revision": "",
+      "date": "",
+      "url": "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM2068_E.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed by web search. Seen only as the datasheet link in 2023-2026 GitHub projects. A third-party summary claims Ib max 500 nA and Icc max 7 mA. The copies found on the web (Mouser, DigiKey, Octopart Nisshinbo listing) show 1000 nA and 8 mA, so that claim is unsupported."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 datasheet (English), legacy njr.com/semicon location",
+      "doc_number": "NJM2068_E",
+      "revision": "",
+      "date": "",
+      "url": "http://www.njr.com/semicon/PDF/NJM2068_E.pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed. Linked in the SmartStand README (Dec 2016). The URL is dead now and needs the Wayback Machine."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 datasheet (English), njr.com/electronic_device location",
+      "doc_number": "NJM2068_E",
+      "revision": "",
+      "date": "",
+      "url": "https://www.njr.com/electronic_device/PDF/NJM2068_E.pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed. Seen in the dragonmux/HeadphoneAmp KiCad schematic. It was the later NJR site layout before the Nisshinbo move."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 datasheet (Mouser mirror, older file id)",
+      "doc_number": "NJM2068_E",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.com/ds/2/294/njr_njm2068_e-551643.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Unconfirmed. From the discovery notes only; web search surfaced the Mouser file 217911 (Ver.2011-03-18) instead."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 2回路入り低雑音オペアンプ (Japanese edition)",
+      "doc_number": "NJM2068_J (Japanese edition; hosted by Marutsu as njm2068d.pdf)",
+      "revision": "Ver. 2003-03-14",
+      "date": "2003-03-14",
+      "url": "https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/njm2068d.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The search-result title reads 'NJM2068 - 1 - Ver.2003-03-14 2 回路入り低雑音オペアンプ'. This is the oldest Japanese-edition copy found, 3 days older than the English Ver.2003-03-17. It is a new link in the chain."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 LOW-NOISE DUAL OPERATIONAL AMPLIFIER",
+      "doc_number": "NJM2068_E",
+      "revision": "Ver. 2011-03-18",
+      "date": "2011-03-18",
+      "url": "https://www.mouser.com/datasheet/2/294/NJM2068_E-1917171.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "This is a newer Mouser /datasheet/2/294/ upload (id 1917171), probably from the Nisshinbo-era listing. The result title shows 'NJM2068 - 1 - Ver.2011-03-18'."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 LOW-NOISE DUAL OPERATIONAL AMPLIFIER",
+      "doc_number": "NJM2068_E",
+      "revision": "Ver. 2011-03-18",
+      "date": "2011-03-18",
+      "url": "https://datasheet.octopart.com/NJM2068V-TE1-NJR-datasheet-13544402.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "The Octopart cache filed this under NJM2068V-TE1 / NJR. It has the same cache id (13544402) as the known Nisshinbo-labelled copy, but the URL is different. The title shows Ver.2011-03-18."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 Datasheet(PDF) - New Japan Radio",
+      "doc_number": "NJM2068_E (assumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1540191/NJRC/NJM2068.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This alldatasheet entry is much newer (id 1540191) than the 7240 and 512047-512052 entries, so it could be a later edition, but the Ver. date is not shown in the search summary. It is mirrored at alldatasheet.jp/datasheet-pdf/pdf/1540191/NJRC/NJM2068.html."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068DD Datasheet(PDF) - New Japan Radio",
+      "doc_number": "NJM2068_E (6-page edition set, ids 512047-512052)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/512052/NJRC/NJM2068DD.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This is part of the same alldatasheet upload set as the NJM2068E entry (512051). Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068M Datasheet(PDF) - New Japan Radio",
+      "doc_number": "NJM2068_E (6-page edition set, ids 512047-512052)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/512049/NJRC/NJM2068M.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Part of the 512047-512052 set. Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068MD Datasheet(PDF) - New Japan Radio",
+      "doc_number": "NJM2068_E (6-page edition set, ids 512047-512052)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/512047/NJRC/NJM2068MD.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Part of the 512047-512052 set. Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068L Datasheet(PDF) - New Japan Radio",
+      "doc_number": "NJM2068_E (6-page edition set, ids 512047-512052)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/512050/NJRC/NJM2068L.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Part of the 512047-512052 set. Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 datasheet(1/5 Pages) NJRC | LOW-NOISE DUAL OPERATIONAL AMPLIFIER",
+      "doc_number": "NJM2068_E",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.net/html-pdf/7240/NJRC/NJM2068.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "An HTML page view of the same 5-page alldatasheet document (id 7240) that is already listed at alldatasheet.com. Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 Datasheet, OPERATIONAL AMPLIFIER",
+      "doc_number": "NJM2068_E (assumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/454863/NewJapanRadio/NJM2068/1",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheetspdf.com id 454863 is the same id as the datasheet4u entry. Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 Datasheet - DIP AMPLIFIER | New Japan Radio",
+      "doc_number": "NJM2068_E (assumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet-pdf/NewJapanRadio/NJM2068/pdf.php?id=454863",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheet4u id 454863. Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR) / 'JRC'",
+      "title": "NJM2068 Datasheet PDF - Japan Radio Corporation",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/NJM2068-doc-JRC",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Filed under 'JRC'. Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR) / 'JRC'",
+      "title": "JRC2068 Datasheet - NJM2068 - Operational Amplifier - JRC",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcafe.com/jrc2068-datasheet-pdf/",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Filed under the JRC2068 marking. Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 Datasheet pdf - Low-Noise Dual Operational Amplifier - New Japan Radio",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetcatalog.com/datasheets_pdf/N/J/M/2/NJM2068.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "This datasheetcatalog listing typically holds older 2000s-era uploads. Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 datasheet - Low-noise Dual Operational Amplifier",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/330/NJM2068.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 datasheet - Low-Noise Dual Operational ...",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digchip.com/datasheets/parts/datasheet/2/330/NJM2068.php",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "A second digchip entry, which may be a different upload. Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 Low-Noise Op-Amp Datasheet (njm2068l)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/544651656/njm2068l",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "User upload on Scribd. Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 Low-Noise Op Amp Datasheet (2068DD Desym Amp Datasheet)",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://es.scribd.com/doc/227663670/2068DD-Desym-Amp-Datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "User upload on Scribd (c.2014 by doc id). Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJM2068 Datasheet Overview",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/465735150/NJM-2068-pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "User upload on Scribd. Ver. not shown."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "title": "NJR NJM2068M Datasheet",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/1032948612/NJR-NJM2068M-datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "User upload on Scribd. Ver. not shown."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "doc_number": "NJM2068_E",
+      "revision": "Ver.2003-03-17",
+      "date": "2003-03-17",
+      "changes": "Oldest version found (Octopart copy filed under NJM2068M). No change log is printed. Differences from Ver.2011-03-18 are not established."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "doc_number": "NJM2068_E / NJM2068_J",
+      "revision": "Ver.2011-03-18",
+      "date": "2011-03-18",
+      "changes": "No change log is printed; NJR datasheets carry only a Ver. date footer. Both the English and the Japanese (Akizuki) editions carry this Ver. Content: supply +/-4 to +/-18 V (abs max +/-18 V); VNI 0.44 typ / 0.56 max uV (FLAT+JIS-A, Rs=300 Ohm); D-rank max 1.4 uV (RIAA, Rs=2.2 kOhm), DIP/DMP/SIP only; GB 27 MHz at 10 kHz and 19 MHz at 100 kHz; fT 5.5 MHz; SR 6 V/us; Ib max 1000 nA; Icc 5/8 mA; packages DIP8, DMP8, SIP8, SSOP8; notice to add about 50 Ohm in series for capacitive loads. It still circulates under the Nisshinbo listing on Octopart."
+    },
+    {
+      "vendor": "New Japan Radio (NJR) / Nisshinbo",
+      "doc_number": "NJM2068_E (6-page edition)",
+      "revision": "unknown",
+      "date": "unknown",
+      "changes": "The 6-page edition on alldatasheet (ids 512047-512052) names NJM2068E, a part not in the 5-page Ver.2011-03-18. That suggests a package was added (EMP8/SOP8?). Ver. and date not seen."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "doc_number": "NJM2068_J (Japanese edition)",
+      "revision": "Ver.2003-03-14",
+      "date": "2003-03-14",
+      "changes": "This is the oldest Japanese-edition Ver. found (Marutsu copy njm2068d.pdf; title '2回路入り低雑音オペアンプ'). It is dated 3 days before the English Ver.2003-03-17, so the J and E editions of the 2003 issue were released together. No change log is printed, and differences from the Japanese Ver.2011-03-18 (Akizuki copy) are not established."
+    },
+    {
+      "vendor": "New Japan Radio (NJR)",
+      "doc_number": "NJM2068_E",
+      "revision": "Ver.2011-03-18",
+      "date": "2011-03-18",
+      "changes": "More copies were confirmed by result titles: the Mouser URL njr_njm2068_e-551643.pdf (already listed, revision previously 'unknown') holds Ver.2011-03-18, as do Mouser NJM2068_E-1917171.pdf and Octopart NJM2068V-TE1 (13544402). No change log is printed. The search summary repeats the content: 0.56 uV typ noise, 6 V/us, 27 MHz, packages DIP8/DMP8/SIP8/SSOP8, operating voltage +/-4 to +/-18 V."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No NJM2068-specific counterfeit or remarking reports were found in a limited web search. Generic Amazon and eBay listings sell 'NJM2068M SOP8 JRC2068' in lots of 5-10 from unnamed sellers. As with other popular 'JRC' audio duals, such marketplace parts carry a general risk of being remarked. Buy from authorized distributors (Mouser, DigiKey, Akizuki). A 'DD'/'MD' marking only means noise-selected, not a different die, so a big price premium for 'DD' from unknown sellers deserves suspicion. Check the logo style, lot codes and package: genuine DMP8 has a 5.3 mm-wide body, not a 3.9 mm JEDEC SOIC, even though listings call it 'SOP8'.",
+  "alternatives": [
+    "NJM4580 (Nisshinbo): similar noise floor and slightly better THD per h-milz; drop-in dual",
+    "NJM2114 (Nisshinbo): JRC's faster, 'higher-performance 2068' per the JP community",
+    "NJM5532 / NE5532: classic low-noise bipolar dual (check vendor die revisions)",
+    "LM4562 / LME49720 (TI): lower distortion, higher drive",
+    "OPA1612 / OPA1656 (TI): modern low-noise successors",
+    "MUSES8820 (Nisshinbo): premium JRC audio dual",
+    "NJM8068 (Nisshinbo): newer low-noise dual in SOP8 (e.g. NJM8068G-TE2); not compared here"
+  ],
+  "ti_literature_numbers": [],
+  "archive_seed_urls": [
+    "http://semicon.njr.co.jp/eng/PDF/NJM2068_E.pdf",
+    "http://www.njr.co.jp/electronic_device/products/NJM2068.html",
+    "http://www.njr.co.jp/products/semicon/PDF/NJM2068_E.pdf",
+    "http://www.njr.co.jp/products/semicon/PDF/NJM2068_J.pdf",
+    "http://www.njr.com/semicon/PDF/NJM2068_E.pdf",
+    "http://www.njr.com/semicon/PDF/NJM2068_J.pdf",
+    "https://akizukidenshi.com/goodsaffix/NJM2068_j.pdf",
+    "https://datasheet.octopart.com/NJM2068DD-Nisshinbo-Micro-Devices-Inc.-datasheet-13544402.pdf",
+    "https://datasheet.octopart.com/NJM2068M-NJR-datasheet-141065.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7957/PdfFile_174588.pdf",
+    "https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/njm2068d.pdf",
+    "https://www.mouser.com/ds/2/294/NJM2068_E-217911.pdf",
+    "https://www.mouser.com/ds/2/294/njr_njm2068_e-551643.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM2068_E.pdf",
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm2068",
+    "https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/NJM2068_J.pdf",
+    "https://www.njr.co.jp/electronic_device/PDF/NJM2068_J.pdf",
+    "https://www.njr.co.jp/electronic_device/products/NJM2068.html",
+    "https://www.njr.com/electronic_device/PDF/NJM2068_E.pdf"
+  ],
+  "open_questions": [
+    "Which Ver. is the current Nisshinbo NJM2068_E.pdf, and does it change any limits? The claimed Ib 500 nA / Icc 7 mA is unsupported; every web copy found shows 1000 nA / 8 mA.",
+    "What changed between Ver.2003-03-17 and Ver.2011-03-18? Are there versions before 2003 (JRC data-book era)? The introduction year is not established.",
+    "The 6-page edition naming NJM2068E (alldatasheet 512051): what is its Ver./date, what is the NJM2068E package, and is it orderable?",
+    "Lifecycle of NJM2068D/DD/M/MD/V/LD. Only NJM2068L is confirmed EOL (Mouser). Is NJM2068 on Nisshinbo's NRND/discontinued lists?",
+    "A web summary quotes the features line as '0.56 uV typ', while the table read earlier gives 0.44 typ / 0.56 max. Confirm the features-line wording.",
+    "No PCN or die/fab change for NJM2068 was found. The JRC to NJR to Nisshinbo rebrand appears to be branding only (Nisshinbo listings still carry Ver.2011-03-18), but this is unconfirmed. Old-lot vs new-lot sound claims remain anecdotal.",
+    "The NwAvGuy measurements, the Headphonesty article and the bluegourd eid=388 post were not re-verified by web search this session.",
+    "Inferred URLs, not seen in any source, are listed only in archive_seed_urls: njr.com/semicon/PDF/NJM2068_J.pdf, njr.co.jp/products/semicon/PDF/NJM2068_E.pdf and _J.pdf, semicon.njr.co.jp/eng/PDF/NJM2068_E.pdf, njr.co.jp/electronic_device/PDF/NJM2068_J.pdf, and nisshinbo .../ja/pdf/datasheet/NJM2068_J.pdf."
+  ],
+  "sources": [
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm2068",
+    "https://www.mouser.com/ds/2/294/NJM2068_E-217911.pdf",
+    "https://datasheet.octopart.com/NJM2068M-NJR-datasheet-141065.pdf",
+    "https://datasheet.octopart.com/NJM2068DD-Nisshinbo-Micro-Devices-Inc.-datasheet-13544402.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7957/PdfFile_174588.pdf",
+    "https://akizukidenshi.com/goodsaffix/NJM2068_j.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/7240/NJRC/NJM2068.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/512051/NJRC/NJM2068E.html",
+    "https://www.mouser.com/ProductDetail/Nisshinbo/NJM2068L?qs=7Wjyd1RpqPq2Xlm/n0WT2g%3D%3D",
+    "https://www.mouser.com/ProductDetail/Nisshinbo/NJM2068DD?qs=0og97vNlOmx0gC%2BLNfzRJw%3D%3D",
+    "https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM2068D/805544",
+    "https://www.jh4vaj.com/archives/44066",
+    "https://note.com/gokurakugadget/n/nec54d5129d60",
+    "https://github.com/nuclearfurnace/smartstand/blob/master/datasheets/NJM2068_E.pdf",
+    "https://github.com/nuclearfurnace/smartstand/blob/master/README.md",
+    "https://github.com/dragonmux/HeadphoneAmp/blob/6325eae67c03810adc2e4bc6fcc021d1b698db91/hardware/HeadphoneAmp/HeadphoneAmp.kicad_sch",
+    "https://github.com/wntrblm/coupling-constant/blob/6c94e8f9c3e1578c70e4f9cdc861fcb82259c628/hardware/mainboard/coupling-constant.kicad_sch",
+    "https://github.com/stavros-tsioulis/voltdocs-public/blob/f49eba34eb5a93ee912aa7793b39d19e6d66c7a4/entries/modules/analog/njm2068/index.md",
+    "https://github.com/benkev/experimental/blob/HEAD/ngspice/BipolarOpamp/NJM2068.lib",
+    "https://github.com/ejtagle/LTSpice-Models/blob/HEAD/sub/njm2068.sub",
+    "https://github.com/nuclearfurnace/ecad-libraries/blob/9023aca52ee79422f1d8e045d049f4f9caac0622/eagle/njr.lbr",
+    "https://github.com/h-milz/wireless-gk/blob/de04383c61c3394c7e3615119e821fb2b3c88397/doc/Filterdesign.md",
+    "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100000653.md",
+    "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100002759.md",
+    "https://github.com/sandralawsonbt/sandra/blob/04c028937bc5e9e7908862c187278758f961f725/manual/1009047/Yamaha-Ysp-600.html",
+    "https://github.com/sandralawsonbt/docman/blob/a5f95954c07dfbcca1ba39d6e38e80d415426f6d/manual/918954/Pioneer-Kex-M8406zt-Uc.html",
+    "https://github.com/dvnrrs/eagle-bom/blob/c76a5f2b6643d282966da6b412e70b40d3589ab9/BOM/Mouser%20Stock.txt",
+    "http://nwavguy.blogspot.com/2011/08/op-amp-measurements.html",
+    "http://nwavguy.blogspot.com/2011/08/o2-details.html"
+  ],
+  "verification": {
+    "status": "verified-with-corrections",
+    "refuted_claims": [],
+    "corrections": [
+      "The draft said the introduction date was not established and the part was in production by 2005. A Ver.2003-03-17 NJM2068 datasheet exists (Octopart), so the part existed by 2003 at the latest. Added it to revision_history and datasheets.",
+      "Draft said the NJM2068L (SIP8) status was unknown or possibly discontinued. Mouser lists NJM2068L (Nisshinbo) as End of Life.",
+      "The draft said NJM2068E appears only in an unverified discovery note. alldatasheet hosts an NJRC NJM2068E datasheet (6 pages), a different edition from the 5-page Ver.2011-03-18. The part number is now attributed to NJR, with package and status unknown.",
+      "Akizuki Japanese datasheet NJM2068_j.pdf: revision changed from unknown to Ver.2011-03-18.",
+      "Added a confirmed Mouser mirror, https://www.mouser.com/ds/2/294/NJM2068_E-217911.pdf (Ver.2011-03-18). The draft's Mouser 551643 URL was downgraded to low/unconfirmed.",
+      "The third-party claim of Ib max 500 nA and Icc max 7 mA is not supported. Web copies of the datasheet (Mouser, DigiKey, Nisshinbo-listed Octopart) show Ib 1000 nA max and Icc 5 typ / 8 max mA.",
+      "The jh4vaj pop claim was reworded to what the article shows: NJM2068D had less pop than NJM2068DD, both were in the low-pop group, and NJM4558DD was lowest.",
+      "The oscillation-report caveat is now attributed to the note.com gokurakugadget post, which web search found, rather than an unnamed blog.",
+      "Unconfirmed vendor URLs (the Nisshinbo NJM2068_E.pdf and the njr.com legacy locations) were downgraded to low confidence and marked unconfirmed. The Nisshinbo product page was upgraded to high."
+    ],
+    "unverified_urls": [
+      "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM2068_E.pdf",
+      "http://www.njr.com/semicon/PDF/NJM2068_E.pdf",
+      "https://www.njr.com/electronic_device/PDF/NJM2068_E.pdf",
+      "https://www.mouser.com/ds/2/294/njr_njm2068_e-551643.pdf",
+      "http://nwavguy.blogspot.com/2011/08/op-amp-measurements.html",
+      "http://nwavguy.blogspot.com/2011/08/o2-details.html",
+      "http://nwavguy.blogspot.com/2011/07/o2-headphone-amp.html",
+      "https://www.headphonesty.com/2018/03/1667/",
+      "https://bluegourd.jugem.jp/?eid=388"
+    ],
+    "claims_confirmed": [
+      "An English datasheet 'NJM2068 - 1 - Ver.2011-03-18 LOW-NOISE DUAL OPERATIONAL AMPLIFIER' exists on Mouser: https://www.mouser.com/ds/2/294/NJM2068_E-217911.pdf",
+      "An older revision, Ver.2003-03-17, exists: https://datasheet.octopart.com/NJM2068M-NJR-datasheet-141065.pdf",
+      "The Nisshinbo-listed NJM2068DD datasheet copy is still Ver.2011-03-18: https://datasheet.octopart.com/NJM2068DD-Nisshinbo-Micro-Devices-Inc.-datasheet-13544402.pdf",
+      "The Japanese datasheet held by Akizuki is Ver.2011-03-18: https://akizukidenshi.com/goodsaffix/NJM2068_j.pdf",
+      "The Nisshinbo product page exists and states that the D-rank NJM2068DD/LD/MD have specified maximum noise limits: https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm2068",
+      "Mouser lists NJM2068L (Nisshinbo) as End of Life: https://www.mouser.com/ProductDetail/Nisshinbo/NJM2068L?qs=7Wjyd1RpqPq2Xlm/n0WT2g%3D%3D",
+      "DigiKey lists NJM2068D under Nisshinbo Micro Devices Inc.: https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM2068D/805544",
+      "An NJRC NJM2068E datasheet (6 pages, 160 KB) is hosted on alldatasheet: https://www.alldatasheet.com/datasheet-pdf/pdf/512051/NJRC/NJM2068E.html",
+      "The datasheet gives Ib 150 typ / 1000 max nA and supply current 5 typ / 8 max mA: https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7957/PdfFile_174588.pdf",
+      "The features list calls 27 MHz 'unity gain bandwidth' and gives SR 6 V/us typ: https://www.scribd.com/document/544651656/njm2068l",
+      "jh4vaj measured smaller turn-on pop on NJM2068D than on NJM2068DD, with NJM4558DD lowest: https://www.jh4vaj.com/archives/44066",
+      "A Japanese blog reports NJM2068D oscillating in an audio preamp: https://note.com/gokurakugadget/n/nec54d5129d60"
+    ],
+    "web_searches_used": 6
+  },
+  "tier": "B",
+  "category": "japanese-audio-series",
+  "product_pages": [
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm2068",
+    "https://www.njr.co.jp/electronic_device/products/NJM2068.html"
+  ],
+  "revision_chain_notes": "NJR (New JRC) NJM2068 datasheet chain, oldest to newest. It is dated by 'Ver.YYYY-MM-DD' footers only, with no change logs.\n(1) Japanese edition NJM2068_J Ver.2003-03-14. NEW: Marutsu copy https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/njm2068d.pdf.\n(2) English edition NJM2068_E Ver.2003-03-17: Octopart NJM2068M copy (already known).\n(3) Ver.2011-03-18 in both editions. English: Mouser 217911, Mouser 551643 (now confirmed Ver.2011-03-18 by its title; the existing entry says 'unknown' and should be updated), NEW Mouser /datasheet/2/294/NJM2068_E-1917171.pdf, Octopart 13544402 (NJM2068DD-Nisshinbo and NEW NJM2068V-TE1-NJR URLs), and the GitHub copy. Japanese: Akizuki.\n(4) An undated 6-page NJM2068_E edition that adds NJM2068E, from alldatasheet ids 512047-512052 (the NEW entries added here are 512047 MD, 512049 M, 512050 L and 512052 DD; Ver. not shown).\n(5) A possibly later alldatasheet upload, id 1540191 (NEW; Ver. not shown).\n(6) The current Nisshinbo-hosted NJM2068_E PDF (Ver. not verified; the Nisshinbo-labelled Octopart copy is still Ver.2011-03-18, and no Nisshinbo-numbered reissue such as 'Ver.2.x' turned up in search).\nMissing links:\n- any pre-2003 edition (JRC databook era, 1980s-1990s; the introduction date is still unknown);\n- the Ver. date of the 6-page NJM2068E edition and of alldatasheet 1540191;\n- any Ver. between 2003 and 2011;\n- the Ver. currently served by nisshinbo-microdevices.co.jp and njr.com/electronic_device/PDF/;\n- the Japanese NJM2068_J PDF URL on njr.co.jp. The legacy product page https://www.njr.co.jp/electronic_device/products/NJM2068.html was added as a Wayback seed.\nNo second-source vendors were found; searches of datasheetcatalog, datasheetarchive, radiolocman and chipdip found only NJR/JRC copies. The many third-party mirrors added (datasheet4u/datasheetspdf 454863, datasheetq, datasheetcafe JRC2068, datasheetcatalog, digchip x2, Scribd x4, alldatasheet.net) do not show their Ver. in search summaries and are recorded at low confidence."
+}

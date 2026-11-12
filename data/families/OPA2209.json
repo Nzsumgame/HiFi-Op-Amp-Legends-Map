@@ -1,0 +1,391 @@
+{
+  "id": "OPA2209",
+  "name": "OPA209 / OPA2209 / OPA4209 (TI 36 V, 2.2 nV/rtHz bipolar, rail-to-rail output)",
+  "tagline": "A low-power 36 V TI precision op-amp (2.2 nV/rtHz, 2.5 mA/ch max, rail-to-rail output) that Head-Fi op-amp rollers praise for detail and treble clarity.",
+  "technology": "Bipolar-input precision op-amp. Supply 4.5 V to 36 V (±2.25 V to ±18 V). 2.2 nV/rtHz at 1 kHz, 18 MHz GBW, 6.4 V/us slew rate, rail-to-rail output, 2.5 mA per channel max quiescent current, 150 uV max offset. SMD packages only: SOT-23-5, MSOP-8, SOIC-8, TSSOP-14.",
+  "manufacturers": [
+    "Texas Instruments"
+  ],
+  "part_numbers": [
+    {
+      "pn": "OPA209",
+      "channels": 1,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active (TI product page is live; status not explicitly confirmed in this pass)",
+      "notes": "Single. Orderable examples: OPA209AIDBVT (SOT-23-5) and OPA209AIDR (SOIC-8). MSOP-8 is probably also offered (unconfirmed)."
+    },
+    {
+      "pn": "OPA2209",
+      "channels": 2,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active",
+      "notes": "Dual. Orderable example: OPA2209AID (SOIC-8). MSOP-8 is also listed for the family. TI marks the device ACTIVE."
+    },
+    {
+      "pn": "OPA4209",
+      "channels": 4,
+      "vendors": [
+        "Texas Instruments"
+      ],
+      "status": "active (TI product page is live; status not explicitly confirmed in this pass)",
+      "notes": "Quad. Orderable example: OPA4209AIPW (TSSOP-14)."
+    }
+  ],
+  "lineage": [
+    {
+      "vendor": "Texas Instruments",
+      "role": "original designer and sole manufacturer",
+      "period": "2008 to present",
+      "notes": "The SBOS426 datasheet is dated November 2008 (original issue). No second source is known."
+    }
+  ],
+  "key_specs": [
+    {
+      "parameter": "Voltage noise density",
+      "value": "2.2 nV/rtHz",
+      "condition": "f = 1 kHz, typ",
+      "source": "https://www.ti.com/lit/gpn/OPA2209"
+    },
+    {
+      "parameter": "Gain-bandwidth product",
+      "value": "18 MHz",
+      "condition": "typ",
+      "source": "https://www.ti.com/lit/gpn/OPA2209"
+    },
+    {
+      "parameter": "Slew rate",
+      "value": "6.4 V/us",
+      "condition": "typ",
+      "source": "https://www.ti.com/lit/gpn/OPA2209"
+    },
+    {
+      "parameter": "Offset voltage",
+      "value": "150 uV max (35 uV typ)",
+      "condition": "25 C. The 35 uV typical value comes only from a mirror's file name ('35uV Vos') and is unconfirmed.",
+      "source": "https://www.ti.com/lit/gpn/OPA2209"
+    },
+    {
+      "parameter": "Supply voltage",
+      "value": "4.5 V to 36 V (±2.25 V to ±18 V)",
+      "condition": "operating range",
+      "source": "https://www.ti.com/lit/gpn/OPA2209"
+    },
+    {
+      "parameter": "Quiescent current",
+      "value": "2.5 mA per channel max",
+      "condition": "max",
+      "source": "https://www.ti.com/lit/gpn/OPA2209"
+    },
+    {
+      "parameter": "Output",
+      "value": "rail-to-rail output swing",
+      "condition": "",
+      "source": "https://www.physics.utoronto.ca/~astummer/Archives/2014%20Micro%203D%20Magnetometer/Docs/TI%20OPA2209%20RRO%2036V%2035uV%20Vos.pdf"
+    }
+  ],
+  "reputation": {
+    "summary": "Several op-amp rollers name it a favourite in Head-Fi's 'The Opamp thread' and in the xDuoo XD-05 op-amp rolling threads. One poster calls it their 'favorite bipolar' and credits it with 'amazing resolution and detail level', 'great soundstage depth', an airy sound and 'the best treble detail and clarity'. Other posters rank it with the OPA2189 and OPA1692 among the top three duals on specs. Some comparisons are more mixed: one found it 'somewhat laid back' like the OP275, and another found its background brighter or noisier than the OPA1692's. These are individual forum impressions and were not re-checked in this pass.",
+    "sonic_descriptors": [
+      "detailed / high resolution (one poster)",
+      "airy",
+      "clear, detailed treble",
+      "deep soundstage",
+      "somewhat laid back (one comparison)"
+    ],
+    "typical_uses": [
+      "Op-amp rolling in the xDuoo XD-05 portable DAC/amp and similar socketed gear (needs an SMD-to-DIP adapter)",
+      "DAC output / filter stages (TI lists high-performance DAC output amplifiers as an application)",
+      "Low-noise instrumentation and ADC-driver stages"
+    ],
+    "caveats": [
+      "The praise is subjective and comes from a handful of Head-Fi posters.",
+      "One comparison heard a brighter or noisier background than the OPA1692.",
+      "It is a precision general-purpose part, not a TI SoundPlus audio part.",
+      "It is sold in SMD packages only, so DIP-8 sockets need an adapter board."
+    ],
+    "sources": [
+      "https://www.head-fi.org/threads/xduoo-xd-05-basic-opamp-rolling-what-are-you-running.949790/",
+      "https://www.head-fi.org/threads/xduoo-xd-05-portable-dac-amp-introduction-impressions.789886/page-91",
+      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-392",
+      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-385",
+      "https://www.head-fi.org/threads/the-opamp-thread.432749/page-391"
+    ]
+  },
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx209 2.2-nV/rtHz, Low-Power, 36-V Operational Amplifier",
+      "doc_number": "SBOS426",
+      "revision": "D",
+      "date": "2016-10",
+      "url": "https://www.ti.com/lit/ds/symlink/opa2209.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current TI symlink. Searches found no rev E, F or G, so rev D (October 2016) appears to be the latest revision."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx209 2.2-nV/rtHz, Low-Power, 36-V Operational Amplifier (GPN redirect)",
+      "doc_number": "SBOS426",
+      "revision": "D",
+      "date": "2016-10",
+      "url": "https://www.ti.com/lit/gpn/OPA2209",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "TI generic-part-number redirect to the current datasheet."
+    },
+    {
+      "vendor": "Mouser (mirror of TI)",
+      "title": "2.2nV/Hz Noise, Low-Power, 36V, Operational Amplifier datasheet",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.com/ds/2/405/opa2209-556484.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not visible in the search summary. The older-style title suggests a pre-D revision, but this is an inference. Unconfirmed."
+    },
+    {
+      "vendor": "Octopart (mirror of TI)",
+      "title": "OPA209 OPA2209 OPA4209 datasheet (OPA4209AIPW)",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/OPA4209AIPW-Texas-Instruments-datasheet-10674197.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Older 'www.ti.com' header format. It appeared in a search for SBOS426B/C, but the revision is not confirmed."
+    },
+    {
+      "vendor": "Octopart (mirror of TI)",
+      "title": "OPA209 OPA2209 OPA4209 datasheet (OPA209AIDR)",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/OPA209AIDR-Texas-Instruments-datasheet-21095356.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Older header format. Revision unconfirmed."
+    },
+    {
+      "vendor": "University of Toronto Physics (mirror of TI)",
+      "title": "TI OPA2209 RRO 36V 35uV Vos.pdf",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://www.physics.utoronto.ca/~astummer/Archives/2014%20Micro%203D%20Magnetometer/Docs/TI%20OPA2209%20RRO%2036V%2035uV%20Vos.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Sits in a 2014 project folder, so it probably freezes rev B (August 2010) or rev C (October 2013). Revision unconfirmed."
+    },
+    {
+      "vendor": "RadioLocman (mirror of TI)",
+      "title": "OPA2209 Datasheet",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=305603&%2FOPA2209=",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Sibling pages: OPA209 at di=305533 and OPA4209 at di=306069. Revision unconfirmed."
+    },
+    {
+      "vendor": "RadioLocman (mirror of TI)",
+      "title": "OPA209 Datasheet",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=305533",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision unconfirmed."
+    },
+    {
+      "vendor": "RadioLocman (mirror of TI)",
+      "title": "OPA4209 Datasheet",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=306069",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision unconfirmed."
+    },
+    {
+      "vendor": "Alldatasheet (mirror of TI)",
+      "title": "OPA209 Datasheet(PDF) - Texas Instruments",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/390722/TI/OPA209.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision unconfirmed."
+    },
+    {
+      "vendor": "ic37 (mirror of TI)",
+      "title": "OPA2209 (TI) datasheet pages",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.ic37.com/TI/OPA22_datasheet_11237625/OPA22_2.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Sibling pages exist for OPA209 and OPA4209. Revision unconfirmed."
+    }
+  ],
+  "revision_history": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS426",
+      "revision": "(original)",
+      "date": "2008-11",
+      "changes": "Initial release (November 2008 is the date carried in all later headers)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS426",
+      "revision": "A",
+      "date": "unknown (2008-2010)",
+      "changes": "Implied by the letter sequence only. Date and changes are unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS426",
+      "revision": "B",
+      "date": "2010-08",
+      "changes": "Revised August 2010. Changes not captured."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS426",
+      "revision": "C",
+      "date": "2013-10",
+      "changes": "Revised October 2013. Changes not captured."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS426",
+      "revision": "D",
+      "date": "2016-10",
+      "changes": "Revised October 2016 and the latest revision found. Title is now in the 'OPAx209 ...' format. Changes not captured."
+    }
+  ],
+  "silicon_changes": [],
+  "counterfeit_notes": "No specific counterfeit reports were found in this pass. TI makes the family only in SMD packages (SOT-23-5, MSOP-8, SOIC-8, TSSOP-14). Any 'DIP-8 OPA2209' must therefore be an SMD die on an adapter board, or a fake. Check the top marking and buy from authorised distributors.",
+  "alternatives": [
+    "OPA2210 (TI, 2.2 nV/rtHz 36 V precision bipolar, newer)",
+    "OPA1612 (TI SoundPlus, 1.1 nV/rtHz bipolar)",
+    "OPA2227 (TI, 3 nV/rtHz bipolar, older)",
+    "OPA1692 (TI SoundPlus, forum comparison point)",
+    "OPA2189 (TI, forum comparison point)"
+  ],
+  "ti_literature_numbers": [
+    "SBOS426"
+  ],
+  "archive_seed_urls": [
+    "http://focus.ti.com/lit/ds/symlink/opa209.pdf",
+    "https://www.mouser.com/ds/2/405/opa2209-556484.pdf",
+    "https://www.ti.com/lit/ds/sbos426b/sbos426b.pdf",
+    "https://www.ti.com/lit/ds/sbos426c/sbos426c.pdf",
+    "https://www.ti.com/lit/ds/sbos426d/sbos426d.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa209.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa2209.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa4209.pdf",
+    "https://www.ti.com/lit/gpn/OPA209",
+    "https://www.ti.com/lit/gpn/OPA2209",
+    "https://www.ti.com/lit/gpn/OPA4209",
+    "https://www.ti.com/product/OPA209",
+    "https://www.ti.com/product/OPA2209",
+    "https://www.ti.com/product/OPA4209"
+  ],
+  "open_questions": [
+    "Is there an SBOS426 revision later than D (October 2016)? None was found by search.",
+    "Date and content of SBOS426A, and what changed in revs B, C and D (for example, when the OPA2209 and OPA4209 were added).",
+    "Which SBOS426 revision each mirror holds: Mouser 556484, Octopart 10674197 and 21095356, UToronto, RadioLocman, Alldatasheet.",
+    "No OPA209-specific PCN (die revision or fab transfer) was found. Generic TI RFAB/FFAB PCNs appeared in search but were not tied to this family.",
+    "Unconfirmed specs to add from the datasheet: 0.1-10 Hz noise, offset drift, input bias current, THD+N and the exact per-part package list."
+  ],
+  "sources": [
+    "https://www.ti.com/lit/gpn/OPA2209",
+    "https://www.ti.com/lit/ds/symlink/opa2209.pdf",
+    "https://www.ti.com/product/OPA2209",
+    "https://www.ti.com/product/OPA209",
+    "https://www.ti.com/product/OPA4209",
+    "https://www.mouser.com/ds/2/405/opa2209-556484.pdf",
+    "https://datasheet.octopart.com/OPA4209AIPW-Texas-Instruments-datasheet-10674197.pdf",
+    "https://datasheet.octopart.com/OPA209AIDR-Texas-Instruments-datasheet-21095356.pdf",
+    "https://www.physics.utoronto.ca/~astummer/Archives/2014%20Micro%203D%20Magnetometer/Docs/TI%20OPA2209%20RRO%2036V%2035uV%20Vos.pdf",
+    "https://www.radiolocman.com/datasheet/data.html?di=305603&%2FOPA2209=",
+    "https://www.mouser.com/en/new/texas-instruments/ti-opa209/",
+    "https://www.head-fi.org/threads/xduoo-xd-05-basic-opamp-rolling-what-are-you-running.949790/",
+    "https://www.head-fi.org/threads/xduoo-xd-05-portable-dac-amp-introduction-impressions.789886/page-91",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-392",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-385",
+    "https://www.head-fi.org/threads/the-opamp-thread.432749/page-391"
+  ],
+  "verification": {
+    "status": "partially-verified",
+    "refuted_claims": [],
+    "corrections": [
+      "Channel counts corrected from 0 to 1 (OPA209), 2 (OPA2209) and 4 (OPA4209).",
+      "OPA2209 status corrected from unknown to active (TI lists it as ACTIVE). OPA209 and OPA4209 are marked active with a caveat.",
+      "Quiescent current clarified as 2.5 mA per channel max, not a total.",
+      "Added datasheet SBOS426 with revision history: original November 2008, B August 2010, C October 2013, D October 2016. Rev A is implied only.",
+      "Added package list (SOT-23-5, MSOP-8, SOIC-8, TSSOP-14; no DIP) and key specs.",
+      "No silicon changes or revision hazards are recorded, because no PCN or die change specific to this family was found."
+    ],
+    "unverified_urls": [
+      "https://www.mouser.com/ds/2/405/opa2209-556484.pdf (revision held unknown)",
+      "https://datasheet.octopart.com/OPA4209AIPW-Texas-Instruments-datasheet-10674197.pdf (revision held unknown)",
+      "https://datasheet.octopart.com/OPA209AIDR-Texas-Instruments-datasheet-21095356.pdf (revision held unknown)",
+      "https://www.physics.utoronto.ca/~astummer/Archives/2014%20Micro%203D%20Magnetometer/Docs/TI%20OPA2209%20RRO%2036V%2035uV%20Vos.pdf (revision held unknown)",
+      "https://www.radiolocman.com/datasheet/data.html?di=305603&%2FOPA2209=",
+      "https://www.radiolocman.com/datasheet/data.html?di=305533",
+      "https://www.radiolocman.com/datasheet/data.html?di=306069",
+      "https://www.alldatasheet.com/datasheet-pdf/pdf/390722/TI/OPA209.html",
+      "https://pdf.ic37.com/TI/OPA22_datasheet_11237625/OPA22_2.html",
+      "https://www.ti.com/lit/ds/symlink/opa209.pdf (archive seed built from the TI URL pattern)",
+      "https://www.ti.com/lit/ds/symlink/opa4209.pdf (archive seed built from the TI URL pattern)",
+      "https://www.ti.com/lit/gpn/OPA209 (archive seed built from the TI URL pattern)",
+      "https://www.ti.com/lit/gpn/OPA4209 (archive seed built from the TI URL pattern)",
+      "https://www.ti.com/lit/ds/sbos426b/sbos426b.pdf (archive seed built from the TI URL pattern)",
+      "https://www.ti.com/lit/ds/sbos426c/sbos426c.pdf (archive seed built from the TI URL pattern)",
+      "https://www.ti.com/lit/ds/sbos426d/sbos426d.pdf (archive seed built from the TI URL pattern)",
+      "http://focus.ti.com/lit/ds/symlink/opa209.pdf (legacy archive seed built from the TI URL pattern)"
+    ],
+    "claims_confirmed": [
+      "The datasheet is SBOS426D, 'November 2008 - Revised October 2016': https://www.ti.com/lit/gpn/OPA2209",
+      "Earlier revisions exist: SBOS426C (revised October 2013) and SBOS426B (revised August 2010): https://datasheet.octopart.com/OPA4209AIPW-Texas-Instruments-datasheet-10674197.pdf and https://www.radiolocman.com/datasheet/data.html?di=305533",
+      "Searches for SBOS426E, F or G returned nothing; D appears to be the latest: https://www.ti.com/lit/ds/symlink/opa2209.pdf",
+      "2.2 nV/rtHz at 1 kHz, 150 uV max offset, 18 MHz GBW, 6.4 V/us, ±2.25 V to ±18 V (4.5 V to 36 V) supply: https://www.ti.com/lit/gpn/OPA2209",
+      "2.5 mA per channel max quiescent current: https://www.mouser.com/ds/2/405/opa2209-556484.pdf",
+      "Packages are SOT-23-5, MSOP-8, SOIC-8 and TSSOP-14: https://www.ti.com/lit/gpn/OPA2209",
+      "OPA2209 is listed ACTIVE by TI: https://www.ti.com/product/OPA2209",
+      "Rail-to-rail output with 2.5 mA max supply current: https://www.physics.utoronto.ca/~astummer/Archives/2014%20Micro%203D%20Magnetometer/Docs/TI%20OPA2209%20RRO%2036V%2035uV%20Vos.pdf",
+      "Orderable part numbers OPA209AIDBVT and OPA2209AID exist: https://www.ti.com/product/OPA209/part-details/OPA209AIDBVT and https://www.ti.com/product/OPA2209/part-details/OPA2209AID"
+    ],
+    "web_searches_used": 5
+  },
+  "tier": "C",
+  "category": "bipolar-modern-low-noise",
+  "product_pages": [
+    "https://www.ti.com/product/OPA2209",
+    "https://www.mouser.com/en/new/texas-instruments/ti-opa209/"
+  ]
+}
