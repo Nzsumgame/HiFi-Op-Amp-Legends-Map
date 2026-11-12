@@ -80,7 +80,7 @@
       "pn": "NE5534N / NE5534AN",
       "channels": 1,
       "status": "unknown",
-      "note": "DIP (Signetics/Philips, onsemi). Vintage parts sold as NOS; onsemi NE5534AN at Mouser."
+      "note": "DIP (Signetics/Philips, onsemi). onsemi NE5534N obsolete (DigiKey); NE5534AN at Mouser."
     },
     {
       "pn": "NE5534DR2G",
@@ -110,7 +110,7 @@
       "pn": "NJM5534DD",
       "channels": 1,
       "status": "active",
-      "note": "Current JRC DIP8 (DigiKey, Mouser). SOP NJM5534MD suggested but unconfirmed."
+      "note": "JRC D-rank (noise-screened) DIP8; one distributor lists it obsolete. NJM5534MD is the SOP."
     }
   ],
   "key_specs": [
@@ -254,6 +254,31 @@
       ],
       "confidence": "low",
       "verification": "Reported by GroupDIY, Head-Fi and Japanese blogs; no vendor documentation."
+    },
+    {
+      "kind": "lifecycle",
+      "vendor": "Texas Instruments",
+      "when": "2023–2025 · EOL planned, then withdrawn",
+      "part_numbers_affected": [
+        "NE5534P",
+        "NE5534DR",
+        "NE5534AP",
+        "NE5534ADR",
+        "SA5534 / SA5534A"
+      ],
+      "identification": "No marking change. Check TI product pages for orderable status; DigiKey shows NE5534P and NE5534AP active again.",
+      "summary": "Forum posts report TI EOL dates for NE5534P/DR/AP/ADR (last order 2024-10-24, last ship 2025-04-25) and a TI lifetime-buy note for SA5534. A later TI notice quoted on diyAudio says select SFAB/DFAB devices stay orderable with no last-time-buy date.",
+      "spec_deltas": [],
+      "audio_impact": "None electrically; supply of TI NE5534 continues for now.",
+      "compatibility_risk": "low: availability issue only, no silicon change documented.",
+      "sources": [
+        "https://www.diyaudio.com/community/threads/ne5534a-end-of-life-announced.405443/page-9",
+        "https://www.diyaudio.com/community/goto/post?id=7516683",
+        "https://www.ti.com/ods/sysadd/oa/symlink/sa5534_oa.pdf",
+        "https://www.digikey.at/en/products/detail/onsemi/NE5534N/1484340"
+      ],
+      "confidence": "medium",
+      "verification": "TI notice seen only as a forum quote; SA5534 lifetime-buy note on ti.com; dates undated."
     }
   ],
   "datasheets": [
@@ -301,12 +326,12 @@
       "title": "NE5534 datasheet (TI document viewer / product datasheet alias)",
       "doc_number": "SLOS070",
       "revision": "D",
-      "date": "",
+      "date": "2014-11",
       "url": "https://www.ti.com/document-viewer/NE5534/datasheet",
       "url_kind": "vendor_current",
-      "confidence": "medium",
+      "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Cited in a project README; older /product/NE5534/datasheet alias exists.",
+      "note": "TI HTML viewer headed 'SLOS070D July 1979 – November 2014'.",
       "also_urls": [
         "http://www.ti.com/product/NE5534/datasheet"
       ]
@@ -587,8 +612,8 @@
       "url": "https://www.onsemi.com/pdf/datasheet/ne5534-d.pdf",
       "url_kind": "vendor_current",
       "confidence": "high",
-      "revision_status": "probable",
-      "note": "Header '© Semiconductor Components Industries, LLC, 2012'; reportedly Rev. 4."
+      "revision_status": "confirmed",
+      "note": "'December, 2024 − Rev. 4' seen; keeps ©2012 header."
     },
     {
       "vendor": "onsemi (ON Semiconductor)",
@@ -1012,6 +1037,42 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Index of Signetics scans; best lead for a Signetics sheet."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "NE5534, NE5534A low-noise operational amplifiers (SLOS070A)",
+      "doc_number": "SLOS070A",
+      "revision": "A",
+      "revision_status": "confirmed",
+      "date": "2003-03",
+      "url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309202010_Texas-Instruments-NE5534PS_C4369811.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "note": "LCSC copy with header 'SLOS070A – revised March 2003'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "SLOS070D July 1979 – November 2014 NE5534, NE5534A, SA5534, SA5534A (revision history)",
+      "doc_number": "SLOS070D",
+      "revision": "D",
+      "revision_status": "confirmed",
+      "date": "2014-11",
+      "url": "https://ti.com/document-viewer/NE5534/datasheet/revision_history",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "note": "TI HTML viewer; still current in 2026."
+    },
+    {
+      "vendor": "JRC / New Japan Radio",
+      "title": "NJM5534 low noise operational amplifier",
+      "doc_number": "NJM5534",
+      "revision": "Ver. 2011-02-22",
+      "revision_status": "probable",
+      "date": "2011-02-22",
+      "url": "https://www.mouser.com/datasheet/2/294/njm5534_e-1187216.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "note": "Mouser copy; newest JRC edition seen is Ver.2011-02-22."
     }
   ],
   "product_pages": [
@@ -1030,10 +1091,17 @@
     },
     {
       "vendor": "Texas Instruments",
+      "doc_number": "SLOS070A",
+      "revision": "A",
+      "date": "2003-03",
+      "changes": "'SLOS070A – July 1979 – revised March 2003' (LCSC copy). Change list not retrieved."
+    },
+    {
+      "vendor": "Texas Instruments",
       "doc_number": "SLOS070B",
       "revision": "B",
       "date": "2004-02",
-      "changes": "Unconfirmed; SA grades reportedly replaced SE. Change list not retrieved; whether SLOS070A exists is unknown."
+      "changes": "Header 'revised February 2004' seen in search results; copy not pinned. SA grades reportedly replaced SE."
     },
     {
       "vendor": "Texas Instruments",
@@ -1082,7 +1150,14 @@
       "doc_number": "NE5534/D",
       "revision": "Rev. 4",
       "date": "2024-12",
-      "changes": "Current onsemi file; keeps ©2012 copyright, probably the new 'DATA SHEET' template (cf. Mouser NE5534_D-1813172.pdf). Changes not shown."
+      "changes": "'December, 2024 − Rev. 4' confirmed; keeps ©2012 copyright, probably the new 'DATA SHEET' template. Changes not shown."
+    },
+    {
+      "vendor": "JRC / New Japan Radio",
+      "doc_number": "NJM5534",
+      "revision": "Ver. 2011-02-22",
+      "date": "2011-02-22",
+      "changes": "Newest JRC edition seen; recommends D-rank NJM5534DD/MD (≤1.4 µVrms RIAA, 2.2 kΩ) for lowest noise. Ver.2003-03-18 also exists."
     }
   ],
   "revision_chains": [
@@ -1093,6 +1168,10 @@
         {
           "rev": "original",
           "date": "1990-09"
+        },
+        {
+          "rev": "A",
+          "date": "2003-03"
         },
         {
           "rev": "B",
@@ -1108,10 +1187,9 @@
         }
       ],
       "missing": [
-        "SLOS070A",
         "pre-1990 editions"
       ],
-      "note": "No SLOS070E as of Sep 2026. Rev B unconfirmed; focus.ti.com seeds are pattern guesses."
+      "note": "TI viewer still shows Rev D (Nov 2014) in 2026; no SLOS070E. Rev B copy not pinned."
     },
     {
       "vendor": "Philips Semiconductors",
@@ -1155,9 +1233,18 @@
     {
       "vendor": "JRC / New Japan Radio / Nisshinbo",
       "doc_number": "NJM5534",
-      "known": [],
+      "known": [
+        {
+          "rev": "Ver. 2003-03-18",
+          "date": "2003-03-18"
+        },
+        {
+          "rev": "Ver. 2011-02-22",
+          "date": "2011-02-22"
+        }
+      ],
       "missing": [],
-      "note": "No Ver. dates seen; copies at alldatasheet 7454/7455/515327 and datasheet4u 455113."
+      "note": "Ver.2011-02-22 at Mouser; Ver.2003-03-18 copy not pinned. Scribd 'NJM5534-2-22-11' matches the 2011 date."
     }
   ],
   "ti_literature_numbers": [
@@ -1191,8 +1278,8 @@
     "https://www.ti.com/product/NE5534A"
   ],
   "open_questions": [
-    "Does TI PCN 20231114002 list the NE5534 as end of life? Product pages say active; read its device list.",
-    "Does SLOS070A exist, and is the Feb 2004 SLOS070B (ampslab copy) real? Watch for SLOS070E or an NE5534 PCN.",
+    "When did TI withdraw the NE5534 EOL, and in which PCN/PDN? Is SA5534 still lifetime-buy?",
+    "Which public copy holds SLOS070B (Feb 2004)? Watch for SLOS070E or an NE5534 PCN.",
     "Which NE5534/D revisions do the Mouser, RS and pub/Collateral copies hold? What is onsemi's lifecycle status?",
     "Philips/NXP URL, dates and discontinuation? NJM5534 Ver. and NJM5534MD? Did ST ever make the NE5534?",
     "Retrieve current noise, Iq, THD+N, output current and the compensation conditions behind 13 V/µs and 10 MHz."
@@ -1281,8 +1368,8 @@
     "https://archive.org/details/bitsavers_signeticsdcsAnalogApplications_33415016"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 9,
+    "status": "verified-with-corrections",
+    "web_searches_used": 15,
     "claims_confirmed": [
       "SLOS070D (revised Nov 2014) is the current datasheet; Rev C to D changes are template sections plus deleting Ordering Information - https://www.ti.com/lit/ds/symlink/ne5534.pdf",
       "No SLOS070E found as of Sep 2026 - https://www.mouser.com/catalog/specsheets/texas%20instruments_ne5534.pdf (titled '(Rev. D)')",
@@ -1296,7 +1383,13 @@
       "TI NE5534, NE5534A and NE5534P part-details pages are live - https://www.ti.com/product/NE5534A",
       "onsemi NE5534/D is live with a ©2012 header, listing NE5534DR2G and NE5534AN - https://www.onsemi.com/pdf/datasheet/ne5534-d.pdf",
       "NJM5534D and NJM5534M are obsolete; NJM5534DD is available - https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM5534D/805754",
-      "Signetics operated Albuquerque fabs FAB22 and FAB23 (no link to an NE5534 redesign) - https://en.wikipedia.org/wiki/Signetics"
+      "Signetics operated Albuquerque fabs FAB22 and FAB23 (no link to an NE5534 redesign) - https://en.wikipedia.org/wiki/Signetics",
+      "TI document viewer still heads the datasheet 'SLOS070D July 1979 – November 2014'; Rev D follows Rev C (Sep 2004): https://ti.com/document-viewer/NE5534/datasheet/revision_history , https://www.ti.com/document-viewer/NE5534/datasheet",
+      "SLOS070A exists: header 'July 1979 – revised March 2003' on an LCSC copy: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309202010_Texas-Instruments-NE5534PS_C4369811.pdf",
+      "onsemi NE5534/D current edition is 'December, 2024 − Rev. 4': https://www.onsemi.com/pdf/datasheet/ne5534-d.pdf",
+      "TI notice quoted on diyAudio: select SFAB/DFAB devices previously planned for EOL remain orderable with no last-time-buy date: https://www.diyaudio.com/community/threads/ne5534a-end-of-life-announced.405443/page-9",
+      "onsemi NE5534N listed obsolete by DigiKey: https://www.digikey.at/en/products/detail/onsemi/NE5534N/1484340",
+      "NJM5534 datasheet Ver.2011-02-22 recommends D-rank NJM5534DD/MD for lowest noise (≤1.4 µVrms RIAA): https://www.mouser.com/datasheet/2/294/njm5534_e-1187216.pdf"
     ],
     "refuted_claims": [
       "TI's NE5532 redesign records no NE5534 change: SLOS070D (Nov 2014, ±22 V) is current; the only 2026 RFAB PCN found (20251017000.1A) covers SN74LVC logic.",
@@ -1312,7 +1405,10 @@
       "Albuquerque-fire folklore kept at low confidence; Signetics fabs FAB22/FAB23 documented; rival Caen fab-fire claim noted.",
       "Raised confidence for datasheet URLs seen in results (TI, Mouser, sigmaelectronica, capi-gear, studylib, alldatasheet, ben.cz, onsemi).",
       "Added mirrors: Mouser, DigiKey HTML, radiolocman, tomek.cedro.info, alldatasheet 27248 and 867190, RS Online onsemi copy.",
-      "13 V/µs slew and 10 MHz UGBW confirmed; SE −55 to 125 °C confirmed for the 1990-era edition."
+      "13 V/µs slew and 10 MHz UGBW confirmed; SE −55 to 125 °C confirmed for the 1990-era edition.",
+      "Added SLOS070A (March 2003) to the TI chain; SLOS070A removed from missing: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309202010_Texas-Instruments-NE5534PS_C4369811.pdf",
+      "onsemi NE5534/D Rev. 4 (Dec 2024) raised from probable to confirmed: https://www.onsemi.com/pdf/datasheet/ne5534-d.pdf",
+      "Added TI lifecycle entry: NE5534 EOL planned for 2024–2025, then withdrawn per TI notice quoted on diyAudio: https://www.diyaudio.com/community/threads/ne5534a-end-of-life-announced.405443/page-9"
     ],
     "unverified_urls": [
       "https://static6.arrow.com/aropdfconversion/5161ed8c47595103f34b3df2b303c417ba15ec93/183ne5534.pdf",
@@ -1325,7 +1421,6 @@
       "https://www.alldatasheet.com/datasheet-pdf/pdf/27246/TI/NE5534.html",
       "https://datasheet4u.com/datasheet/etcTI/NE5534-1502989",
       "https://datasheet4u.com/datasheet/etcTI/NE5534A-1502990",
-      "https://www.ti.com/document-viewer/NE5534/datasheet",
       "https://www.ti.com/product/NE5534A/part-details/NE5534AP",
       "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1291587/ne5534a-eol-replacement",
       "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1116476/ne5534-comp-pin-pin-5",

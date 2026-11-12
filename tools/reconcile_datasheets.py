@@ -26,7 +26,7 @@ import dataset  # noqa: E402
 from normalize_data import norm_url, parse_date  # noqa: E402
 
 VENDOR_BY_DOC = [
-    (r"^S[A-Z]{3}\d{3}", "Texas Instruments"),
+    (r"^S[A-Z]{3}(?=[0-9A-Z]*\d)[0-9A-Z]{3}", "Texas Instruments"),
     (r"^PDS-", "Burr-Brown"),
     (r"^DS\d{6}", "National Semiconductor"),
     (r"/D$", "onsemi"),

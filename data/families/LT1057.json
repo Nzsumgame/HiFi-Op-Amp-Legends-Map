@@ -31,22 +31,28 @@
       "note": "Dual, standard 8-pin pinout, PDIP and SO. ADI product page live."
     },
     {
-      "pn": "LT1057ACN / LT1057CN8",
+      "pn": "LT1057ACN / LT1057ACN8 / LT1057CN8 (#PBF)",
       "channels": 2,
       "status": "unknown",
-      "note": "8-pin PDIP. 'ACN' (Baidu Tieba) probably means A-grade LT1057ACN8; codes unconfirmed."
+      "note": "8-pin PDIP; LT1057ACN8#PBF and LT1057CN8#PBF listed. 'ACN' probably shorthand."
     },
     {
-      "pn": "LT1057IS8 (#PBF)",
+      "pn": "LT1057IS8 / LT1057IS8#TR / LT1057S8 (#PBF, #TRPBF)",
       "channels": 2,
-      "status": "unknown",
-      "note": "SO-8, -40 °C to 85 °C (I grade)."
+      "status": "active",
+      "note": "SO-8. Leaded IS8 and IS8#TR discontinued by PDN 25_0027; #PBF versions replace."
     },
     {
-      "pn": "LT1057 (TO-5 metal can)",
+      "pn": "LT1057 (TO-5 metal can) / LT1057MH/883",
       "channels": 2,
       "status": "unknown",
-      "note": "'Gold can' prized by HIFIDIY users. Codes LT1057ACH/CH/AMH unconfirmed; likely NOS only."
+      "note": "'Gold can' prized by HIFIDIY users. LT1057MH/883 listed; ACH/CH codes unconfirmed."
+    },
+    {
+      "pn": "LT1057SW#TRPBF",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Wide SO-16 dual, in a distributor listing; package per suffix convention."
     },
     {
       "pn": "LT1058",
@@ -61,10 +67,10 @@
       "note": "14-pin plastic DIP."
     },
     {
-      "pn": "LT1058S",
+      "pn": "LT1058S / LT1058SW / LT1058ISW (#PBF, #TRPBF)",
       "channels": 4,
       "status": "unknown",
-      "note": "0 °C to 70 °C grade beside LT1058AC / LT1058C; probably wide SO (unconfirmed)."
+      "note": "Wide SO-16. LT1058ISW obsolete (PDN 25_0024); #TRPBF named replacement."
     }
   ],
   "key_specs": [
@@ -139,7 +145,53 @@
     "LF412A (reportedly upgraded by LT1057)",
     "OP-215 (reportedly upgraded by LT1057)"
   ],
-  "silicon_changes": [],
+  "silicon_changes": [
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices",
+      "when": "2022-10-12 · PCN 22_0241 / 22_0254",
+      "part_numbers_affected": [
+        "LT1057",
+        "LT1058"
+      ],
+      "summary": "ADI PCNs 22_0241 and 22_0254 (Rev. - and A) change the die-attach epoxy from Henkel 8290 to 8290A for 8-lead SOIC; LT1057 and LT1058 order codes are listed among affected parts.",
+      "identification": "Not marked on the part; date code after the PCN effective date. PCN 22_0172 also surfaces for LT1057, scope unseen.",
+      "spec_deltas": [],
+      "audio_impact": "None expected; assembly material only.",
+      "compatibility_risk": "low: same die, pinout and specification.",
+      "confidence": "medium",
+      "sources": [
+        "https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_22_0241_Rev_-_Form.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_22_0241_Rev_A_Form.pdf",
+        "https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_22_0254_Rev_-_Form.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_22_0254_Rev_A_Form.pdf"
+      ],
+      "verification": "Seen in search snippets; exact LT1057/LT1058 order codes in each PCN not checked."
+    },
+    {
+      "kind": "lifecycle",
+      "vendor": "Analog Devices",
+      "when": "2025 · PDN 25_0024 / PDN 25_0027",
+      "part_numbers_affected": [
+        "LT1058ISW",
+        "LT1057IS8",
+        "LT1057IS8#TR"
+      ],
+      "summary": "PDN 25_0024 discontinues LT1058ISW (replacement LT1058ISW#TRPBF); PDN 25_0027 discontinues LT1057IS8 and LT1057IS8#TR (replacements #PBF and #TRPBF, pin-compatible). Lead-finish and packaging codes only.",
+      "identification": "Discontinued codes lack the #PBF suffix; replacements are Pb-free versions of the same part.",
+      "spec_deltas": [],
+      "audio_impact": "None; no die change documented.",
+      "compatibility_risk": "low: same part in Pb-free finish, pin-to-pin per the PDN.",
+      "confidence": "medium",
+      "sources": [
+        "https://shop.richardsonrfpd.com/docs/rfpd/ADI_PDN_25_0024.pdf",
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7128/ADI_PDN_25_0024_Rev_-_Form.pdf",
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7121/ADI_PDN_25_0027_Rev_-_Form.pdf",
+        "https://www.digikey.sg/en/products/detail/analog-devices-inc/LT1058ISW/296282"
+      ],
+      "verification": "PDN parts tables seen in snippets; notice dates not shown (year from number)."
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Analog Devices",
@@ -260,6 +312,90 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Yumpu rehost of SP-Elektroniikka copy; revision not shown."
+    },
+    {
+      "vendor": "Linear Technology",
+      "title": "LT1057/LT1058 Dual and Quad, JFET Input Precision High Speed Op Amps (dtsheet, filed under LT1058SW)",
+      "doc_number": "10578fa",
+      "revision": "A",
+      "date": "",
+      "url": "https://dtsheet.com/model/2309240",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Page footers read 10578fa; oldest LTC revision found."
+    },
+    {
+      "vendor": "Linear Technology",
+      "title": "LT1057/LT1058 Dual and Quad, JFET Input Precision High Speed Op Amps (alldatasheet LT1057_1)",
+      "doc_number": "10578fc",
+      "revision": "C",
+      "date": "",
+      "url": "https://html.alldatasheet.com/html-pdf/257513/LINER/LT1057_1/779/5/LT1057_1.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Marked 10578fc."
+    },
+    {
+      "vendor": "Linear Technology",
+      "title": "LT1057/LT1058 Dual and Quad, JFET Input Precision High Speed Op Amps (RS Online copy)",
+      "doc_number": "10578fc",
+      "revision": "C",
+      "date": "",
+      "url": "https://nonprod.docs.rs-online.com/b6e7/0900766b810ed81e.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "RS copy reported to carry 10578fc."
+    },
+    {
+      "vendor": "Linear Technology",
+      "title": "LT1057/LT1058 Dual and Quad, JFET Input Precision High Speed Op Amps (Farnell 1712178)",
+      "doc_number": "10578fd",
+      "revision": "D",
+      "date": "",
+      "url": "https://www.farnell.com/datasheets/1712178.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Farnell copy showing 10578fd on page 2."
+    },
+    {
+      "vendor": "Linear Technology",
+      "title": "LT1057/LT1058 Dual and Quad, JFET Input Precision High Speed Op Amps (Japanese-distributor copy)",
+      "doc_number": "10578fd",
+      "revision": "D",
+      "date": "",
+      "url": "https://www.kyohritsu.com/eclib/PDF/L/lt1058.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Kyohritsu copy; reported as carrying 10578fd."
+    },
+    {
+      "vendor": "Linear Technology",
+      "title": "LT1057/LT1058 Dual and Quad, JFET Input Precision High Speed Op Amps (Scribd 10578fd)",
+      "doc_number": "10578fd",
+      "revision": "D",
+      "date": "",
+      "url": "https://www.scribd.com/document/372795871/10578fd-pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Upload named 10578fd."
+    },
+    {
+      "vendor": "Linear Technology",
+      "title": "LT1057/LT1058 datasheet (dtsheet #2309242)",
+      "doc_number": "10578f?",
+      "revision": "",
+      "date": "",
+      "url": "https://dtsheet.com/model/2309242",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Second dtsheet listing; revision not shown."
     }
   ],
   "product_pages": [
@@ -269,17 +405,31 @@
   "revision_history": [
     {
       "vendor": "Linear Technology",
+      "doc_number": "10578fa",
+      "revision": "A",
+      "date": "",
+      "changes": "Oldest suffix found (dtsheet copy). Changes unknown."
+    },
+    {
+      "vendor": "Linear Technology",
       "doc_number": "10578fb",
       "revision": "B",
       "date": "",
       "changes": "Changes unknown. Survives on Marutsu, Farnell and Futurlec mirrors."
     },
     {
+      "vendor": "Linear Technology",
+      "doc_number": "10578fc",
+      "revision": "C",
+      "date": "",
+      "changes": "Seen on alldatasheet and RS Online copies. Changes unknown."
+    },
+    {
       "vendor": "Linear Technology / Analog Devices",
       "doc_number": "10578fd",
       "revision": "D",
       "date": "",
-      "changes": "Current revision; change log not seen. Revisions A and C presumably exist."
+      "changes": "Current revision at ADI, LTC CDN, Farnell and Scribd; change log not seen."
     }
   ],
   "revision_chains": [
@@ -288,7 +438,15 @@
       "doc_number": "10578f",
       "known": [
         {
+          "rev": "A",
+          "date": ""
+        },
+        {
           "rev": "B",
+          "date": ""
+        },
+        {
+          "rev": "C",
           "date": ""
         },
         {
@@ -297,11 +455,9 @@
         }
       ],
       "missing": [
-        "original",
-        "A",
-        "C"
+        "original"
       ],
-      "note": "Rev B on Marutsu, Farnell, Futurlec; rev D at ADI and LTC CDN. Print dates unknown."
+      "note": "A and C seen on mirrors only (probable). Print dates unknown; no © line found."
     }
   ],
   "ti_literature_numbers": [],
@@ -314,10 +470,10 @@
     "https://www.linear.com/product/LT1058"
   ],
   "open_questions": [
-    "Print dates and change logs for rev B and D; do rev A, C or the original survive?",
-    "Current ADI lifecycle status per order code; were TO-5, CerDIP and A-grades discontinued, under which PDN?",
-    "Is ADI PCN 22_0172 relevant to LT1057/LT1058?",
-    "When was the part introduced, and which revision added SO packages and the I grade?",
+    "Print dates and change logs for 10578fa–fd; does the original (unsuffixed) sheet survive?",
+    "Lifecycle of TO-5, CerDIP and A-grade codes; which PDN covered them?",
+    "What does ADI PCN 22_0172 change, and does it cover LT1057/LT1058?",
+    "When was the part introduced (1988 LTC databook supplement?), and which revision added SO and I grade?",
     "Does the datasheet position it as an LF412A / OP-215 upgrade?"
   ],
   "sources": [
@@ -337,11 +493,25 @@
     "https://bbs.hifidiy.net/forum.php?action=printable&mod=viewthread&tid=536334",
     "https://mbb.eet-china.com/blog/1568300-286964.html",
     "https://www.digipine.com/index.php?mid=audio&document_srl=918",
-    "https://www.sounting.com/article/details/792"
+    "https://www.sounting.com/article/details/792",
+    "https://dtsheet.com/model/2309240",
+    "https://www.farnell.com/datasheets/1712178.pdf",
+    "https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_22_0241_Rev_-_Form.pdf",
+    "https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_22_0172_Rev_-_Form.pdf",
+    "https://shop.richardsonrfpd.com/docs/rfpd/ADI_PDN_25_0024.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7121/ADI_PDN_25_0027_Rev_-_Form.pdf",
+    "https://www.digikey.sg/en/products/detail/analog-devices-inc/LT1058ISW/296282",
+    "https://ciiva.com/part/lt1058cnpbf-1320373",
+    "https://www.radiolocman.com/datasheet/data.html?di=337795",
+    "https://www.omo-ic.com/pdf/417047/LT1057ACN8-PBF/P1-P3.html",
+    "https://www.microchipusa.com/product/linear-technology/uncategorized-8/LT1057SW-TRPBF",
+    "https://shop.richardsonrfpd.com/Products/Product/LT1057S8-hash-TRPBF",
+    "https://www.radiolocman.com/datasheet/data.html?di=519835",
+    "https://www.radiolocman.com/datasheet/data.html?di=519821"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 5,
+    "status": "verified-with-corrections",
+    "web_searches_used": 10,
     "claims_confirmed": [
       "Current ADI datasheet is 10578fd (rev D): https://www.analog.com/media/en/technical-documentation/data-sheets/10578fd.pdf",
       "Legacy LTC CDN copy of rev D: https://cds.linear.com/docs/en/datasheet/10578fd.pdf",
@@ -354,7 +524,12 @@
       "LT1057 is a matched JFET dual (8-pin); LT1058 the lowest-offset quad JFET in 14-pin pinout: https://www.farnell.com/datasheets/514478.pdf",
       "LT1057IS8#PBF exists (-40 °C to 85 °C): https://www.radiolocman.com/datasheet/data.html?di=337791",
       "LT1058CN#PBF exists: https://www.radiolocman.com/datasheet/data.html?di=338497",
-      "ADI product pages exist: https://www.analog.com/en/products/lt1057.html and https://www.analog.com/en/products/lt1058.html"
+      "ADI product pages exist: https://www.analog.com/en/products/lt1057.html and https://www.analog.com/en/products/lt1058.html",
+      "Revision suffixes 10578fa, fb, fc and fd all exist on mirror copies (https://dtsheet.com/model/2309240, https://html.alldatasheet.com/html-pdf/257513/LINER/LT1057_1/779/5/LT1057_1.html, https://www.farnell.com/datasheets/1712178.pdf).",
+      "PCN 22_0241/22_0254: epoxy Henkel 8290 to 8290A for 8-lead SOIC, published 2022-10-12, lists LT1057/LT1058 parts (https://www.analog.com/media/en/PCN/ADI_PCN_22_0241_Rev_A_Form.pdf).",
+      "PDN 25_0024 lists LT1058ISW; PDN 25_0027 lists LT1057IS8 and LT1057IS8#TR with #PBF/#TRPBF replacements (https://shop.richardsonrfpd.com/docs/rfpd/ADI_PDN_25_0024.pdf, https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7121/ADI_PDN_25_0027_Rev_-_Form.pdf).",
+      "DigiKey lists LT1058ISW obsolete; Ciiva lists LT1058CN#PBF in volume production (https://www.digikey.sg/en/products/detail/analog-devices-inc/LT1058ISW/296282, https://ciiva.com/part/lt1058cnpbf-1320373).",
+      "LT1057MH/883 metal-can code exists (https://www.radiolocman.com/datasheet/data.html?di=337795)."
     ],
     "refuted_claims": [],
     "corrections": [
@@ -364,7 +539,9 @@
       "'LT1057ACN' flagged as probable shorthand for LT1057ACN8.",
       "Added rev D datasheet (ADI and LTC CDN) and rev B mirrors (Marutsu, Farnell, Futurlec).",
       "Added key specs from the datasheet headline.",
-      "LF412A / OP-215 upgrade claim downgraded to unconfirmed."
+      "LF412A / OP-215 upgrade claim downgraded to unconfirmed.",
+      "Revision chain completed: 10578fa (A) and 10578fc (C) found; only the original sheet is missing.",
+      "LT1057IS8 and LT1058ISW leaded codes are discontinued (PDN 25_0027, 25_0024); #PBF versions continue. 'LT1058S' is the SW wide-SO package."
     ],
     "unverified_urls": [
       "https://www.linear.com/product/LT1057",

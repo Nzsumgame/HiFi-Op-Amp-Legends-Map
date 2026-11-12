@@ -173,7 +173,33 @@
     "LME49720 / LM4562 (Head-Fi comparison)",
     "LT1028 / OP37 (decompensated SR560 parts)"
   ],
-  "silicon_changes": [],
+  "silicon_changes": [
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Texas Instruments",
+      "when": "2019-08-29 · PCN 20190820005.1",
+      "part_numbers_affected": [
+        "OPA2211AIDRGR",
+        "OPA2211AIDRGT"
+      ],
+      "identification": "None: TI states no change to product identification. Proposed first ship 2019-11-29, so later SON date codes likely.",
+      "summary": "Die coat changed from PBO to polyimide (PI) on the SON-8 OPA2211A, for continuity of supply. TI anticipates no impact on form, fit or function. Die design unchanged.",
+      "spec_deltas": [
+        {
+          "parameter": "Die coat",
+          "before": "PBO",
+          "after": "polyimide (PI)"
+        }
+      ],
+      "audio_impact": "None expected: protective coating only.",
+      "compatibility_risk": "low - same die, package and specifications.",
+      "confidence": "medium",
+      "verification": "PCN text seen via a distributor-hosted copy; full affected-device list not read.",
+      "sources": [
+        "https://allelcoelec.my/datasheets.34/OPA2211AIDRGR.pdf"
+      ]
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Texas Instruments",
@@ -540,6 +566,42 @@
       "confidence": "high",
       "revision_status": "confirmed",
       "note": "No copy found; cited by TI PSpice model OPA211.LIB (06FEB2019)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx211 datasheet (TI document viewer)",
+      "doc_number": "SBOS377L",
+      "revision": "L",
+      "date": "2020-01",
+      "url": "https://www.ti.com/document-viewer/OPA211/datasheet",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "HTML viewer; header 'SBOS377L October 2006 – January 2020'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA211AIDR (distributor copy)",
+      "doc_number": "SBOS377",
+      "revision": "",
+      "date": "",
+      "url": "https://allelcoelec.pt/datasheets.37/OPA211AIDR.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Distributor PDF; may bundle PCN 20180221003."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2211AIDRGR (distributor copy)",
+      "doc_number": "SBOS377",
+      "revision": "",
+      "date": "",
+      "url": "https://allelcoelec.my/datasheets.34/OPA2211AIDRGR.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Distributor PDF; source of PCN 20190820005.1 text."
     }
   ],
   "product_pages": [
@@ -620,7 +682,7 @@
       "doc_number": "SBOS377J",
       "revision": "J",
       "date": "2018-02",
-      "changes": "Status changed from mixed (some Product Preview) to Production Data; Device Comparison table deleted; document references reformatted."
+      "changes": "Production Data for all; Device Comparison table deleted; references reformatted. Announced by info-only PCN 20180221003 (2018-02-22)."
     },
     {
       "vendor": "Texas Instruments",
@@ -749,7 +811,7 @@
     "https://www.ti.com/product/OPA2211A"
   ],
   "open_questions": [
-    "Do TI PCNs listed by Mouser (Cu bond wire, RFAB fab qualification) cover OPA211/OPA2211A orderables?",
+    "Do later TI fab or assembly PCNs (Cu wire, RFAB) cover OPA211/OPA2211A? Only die-coat PCN 20190820005.1 confirmed.",
     "Find copies of SBOS377 original, B–E, H, J and K, and read the A and F change logs.",
     "Was a commercial non-A OPA2211 ever released? Which orderables were Product Preview before rev J?",
     "Literature numbers and lifecycle of OPA211-EP, OPA2211-EP and OPA2211-HT; any SBOS638 revision after 2012?",
@@ -792,11 +854,14 @@
     "http://log-yoshinon.seesaa.net/category/22081616-1.html",
     "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13168392968",
     "https://github.com/nerd-46/E-commerce-Web-Design/blob/HEAD/products/shanling-em7-ak4493-music-streamer-dac/assets/product.js",
-    "https://github.com/nerd-46/E-commerce-Web-Design/blob/HEAD/products/shanling-m6-pro-21-dual-es9068as-mqa-16x-pure-music-portable-player-mp3-open-android-bluetooth-receiver-usb-dac/assets/product.js"
+    "https://github.com/nerd-46/E-commerce-Web-Design/blob/HEAD/products/shanling-m6-pro-21-dual-es9068as-mqa-16x-pure-music-portable-player-mp3-open-android-bluetooth-receiver-usb-dac/assets/product.js",
+    "https://www.ti.com/document-viewer/OPA211/datasheet",
+    "https://allelcoelec.my/datasheets.34/OPA2211AIDRGR.pdf",
+    "https://allelcoelec.pt/datasheets.37/OPA211AIDR.pdf"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 6,
+    "status": "verified-with-corrections",
+    "web_searches_used": 10,
     "claims_confirmed": [
       "Current vendor datasheet symlink is live: https://www.ti.com/lit/ds/symlink/opa211.pdf",
       "Product folders exist: https://www.ti.com/product/OPA211 and https://www.ti.com/product/OPA2211A",
@@ -808,7 +873,11 @@
       "OPA211-EP datasheet is SBOS638, June 2012, MSOP-8, −55 to +125 °C: https://www.ti.com/lit/gpn/OPA211-EP",
       "OPA2211-EP exists in DFN-8 3×3 mm as OPA2211MDRGTEP: https://www.ti.com/product/OPA2211-EP/part-details/OPA2211MDRGTEP",
       "1.1 nV/√Hz, 3.6 mA, 80 MHz (G = 100), 27 V/µs, ±2.25 to ±18 V, 700 ns settling: https://www.ti.com/product/OPA2211-EP and https://www.ti.com/product/OPA211-EP",
-      "Distributors still list OPA211AID, OPA211ID, OPA211IDR, OPA211IDGKT, OPA211AIDRGT and OPA2211AIDDAR: https://www.mouser.com/ProductDetail/Texas-Instruments/OPA211AID?qs=iSMark9AYDU9HlEFVq0C5A%3D%3D and https://www.digikey.com/en/products/detail/texas-instruments/OPA2211AIDDAR/2232387"
+      "Distributors still list OPA211AID, OPA211ID, OPA211IDR, OPA211IDGKT, OPA211AIDRGT and OPA2211AIDDAR: https://www.mouser.com/ProductDetail/Texas-Instruments/OPA211AID?qs=iSMark9AYDU9HlEFVq0C5A%3D%3D and https://www.digikey.com/en/products/detail/texas-instruments/OPA2211AIDDAR/2232387",
+      "TI document viewer header 'SBOS377L October 2006 – January 2020'; rev L history matches the record (https://ti.com/document-viewer/OPA211/datasheet/revision-history-sbos3773199).",
+      "PCN 20190820005.1 (2019-08-29): OPA2211AIDRGR/T die coat PBO to polyimide; first ship 2019-11-29; no form, fit, function change (https://allelcoelec.my/datasheets.34/OPA2211AIDRGR.pdf).",
+      "PCN 20180221003 (2018-02-22): information-only datasheet update SBOS377I to SBOS377J; copy attribution probable (https://allelcoelec.pt/datasheets.37/OPA211AIDR.pdf).",
+      "Nov 2025 package addendum lists OPA2211AIDRGR active, marking OBHQ (https://allelcoelec.my/datasheets.34/OPA2211AIDRGR.pdf)."
     ],
     "refuted_claims": [
       "'Revisions A–F undocumented / no rev G copy' is wrong: copies of revs A, F, G (Mouser) and I were found.",
@@ -820,7 +889,9 @@
       "Added OPA211-EP details (SBOS638, MSOP-8, OPA211MDGKTEP) and an OPA2211-EP entry (OPA2211MDRGTEP); SBOS638 added to literature numbers.",
       "Revision history split into A, B–E and F, with SBOS638 added.",
       "Rev H SON supply-pin swap added as a caveat.",
-      "No OPA211-specific PCN or die change found, so silicon_changes is empty; distributor PCN PDFs left as an open question."
+      "No OPA211-specific PCN or die change found, so silicon_changes is empty; distributor PCN PDFs left as an open question.",
+      "Added die-coat PCN 20190820005.1 (OPA2211A SON) as a silicon change; previously no OPA211-family PCN was recorded.",
+      "Rev J linked to info-only PCN 20180221003; TI document viewer added as rev L copy."
     ],
     "unverified_urls": [
       "https://www.ti.com/lit/ds/symlink/opa2211.pdf",

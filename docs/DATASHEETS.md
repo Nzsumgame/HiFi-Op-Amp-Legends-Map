@@ -24,11 +24,9 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 - **Texas Instruments SLOS481:** original (2010-07) · [A](https://cdn-reichelt.de/documents/datenblatt/A200/LM833-TI.pdf) (2010-08) · [B](https://www.ti.com/lit/ds/symlink/lm833.pdf) (2014-10)
 - **onsemi LM833/D:** 0 (1996) · [Rev. 6](https://media.digikey.com/pdf/Data%20Sheets/ON%20Semiconductor%20PDFs/LM833,NCV833.pdf) (2011-09) · [Rev. 8](https://www.onsemi.com/download/data-sheet/pdf/lm833-d.pdf) (2025-07) — missing Rev. 0–5, Rev. 7
-- **Texas Instruments (ex-National) SNOSBD8:** E (2012-05) · D — missing A–C
+- **Texas Instruments (ex-National) SNOSBD8:** [E](https://www.ti.com/lit/ds/symlink/lm833-n.pdf) (2012-05) · [D](https://datasheet.octopart.com/LM833M-NOPB-Texas-Instruments-datasheet-10846346.pdf) — missing A–C
 - **National Semiconductor DS005218:** 2004 edition (2004) — missing pre-2004 editions
 - **STMicroelectronics Doc ID 2169:** [Rev. 3](https://www.st.com/resource/en/datasheet/lm833.pdf) (2009-08) — missing Rev. 1, Rev. 2
-- **Texas Instruments (ex-National) SNOSBD8D:** [D](https://datasheet.octopart.com/LM833M-NOPB-Texas-Instruments-datasheet-10846346.pdf)
-- **Texas Instruments (ex-National) SNOSBD8E:** [E](https://www.ti.com/lit/ds/symlink/lm833-n.pdf) (2012-05)
 - 38 other copies with the revision not identified
 
 ### [LM4562 / LME49720 / LME49710 / LME49740](families/LME49720.md)
@@ -100,10 +98,10 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [NE5534 / NE5534A / SA5534 / SE5534 / NJM5534](families/NE5534.md)
 
-- **Texas Instruments SLOS070:** [original](http://www.ben.cz/_d/datasheet/ne5534.pdf) (1990-09) · [B](https://www.ampslab.com/PDF/ne5534p.pdf) (2004-02) · [C](https://www.mouser.com/catalog/specsheets/texas%20instruments_sa5534.pdf) (2004-09) · [D](https://www.ti.com/lit/ds/symlink/ne5534.pdf) (2014-11) — missing SLOS070A, pre-1990 editions
+- **Texas Instruments SLOS070:** [original](http://www.ben.cz/_d/datasheet/ne5534.pdf) (1990-09) · [A](https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309202010_Texas-Instruments-NE5534PS_C4369811.pdf) (2003-03) · [B](https://www.ampslab.com/PDF/ne5534p.pdf) (2004-02) · [C](https://www.mouser.com/catalog/specsheets/texas%20instruments_sa5534.pdf) (2004-09) · [D](https://www.ti.com/lit/ds/symlink/ne5534.pdf) (2014-11) — missing pre-1990 editions
+- **JRC / New Japan Radio NJM5534:** Ver. 2003-03-18 (2003-03-18) · [Ver. 2011-02-22](https://www.mouser.com/datasheet/2/294/njm5534_e-1187216.pdf) (2011-02-22)
 - **Philips Semiconductors NE5534 product specification:** 1994 Aug 31 (1994-08-31) · 2001 Aug 03 (2001-08-03) — missing pre-1994 Philips editions, Signetics originals (1979–1990s)
 - **onsemi (ON Semiconductor) NE5534/D:** [Rev. 3](https://www.mouser.com/datasheet/2/308/NE5534-D-99992.pdf) (2012-07) · [Rev. 4](https://www.onsemi.com/pdf/datasheet/ne5534-d.pdf) (2024-12) — missing Rev. 0, Rev. 1, Rev. 2
-- **JRC / New Japan Radio / Nisshinbo NJM5534:** 
 - 39 other copies with the revision not identified
 
 ### [NJM4580 / JRC4580 / RC4580](families/NJM4580.md)
@@ -222,19 +220,19 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [AD811](families/AD811.md)
 
-- **Analog Devices AD811:** E (2004-07) · D · F · [G](https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf) — missing A–C, original
+- **Analog Devices AD811:** F (2014-02) · [G](https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf) (2015-04) · D · [E](https://manualmachine.com/analogdevices/ad811e/7450881-datasheet) — missing A–C, original
+- **Analog Devices (alldatasheet mirror) AD811:** [G](https://www.alldatasheet.com/html-pdf/1010336/AD/AD811/57/2/AD811.html) (2015-04) · [D](https://www.alldatasheet.com/datasheet-pdf/pdf/48404/AD/AD811.html)
 - **Analog Devices (Mouser mirror) AD811:** [E](https://www.mouser.com/datasheet/2/609/AD811-256255.pdf) (2004-07)
 - **Analog Devices (Octopart mirror) AD811:** [E](https://datasheet.octopart.com/AD811JR-Analog-Devices-datasheet-87460.pdf) (2004-07)
-- **Analog Devices (alldatasheet mirror) AD811:** [G](https://www.alldatasheet.com/html-pdf/1010336/AD/AD811/57/2/AD811.html)
-- **Analog Devices (radiolocman mirror) AD811:** [G](https://www.radiolocman.com/datasheet/pdf.html?di=121471&p=1)
-- **Analog Devices (studylib mirror) AD811:** [F](https://studylib.net/doc/18789058/ad811--rev.-f-)
-- 5 other copies with the revision not identified
+- **Analog Devices (radiolocman mirror) AD811:** [G](https://www.radiolocman.com/datasheet/pdf.html?di=121471&p=1) (2015-04)
+- **Analog Devices (studylib mirror) AD811:** [F](https://studylib.net/doc/18789058/ad811--rev.-f-) (2014-02)
+- 8 other copies with the revision not identified
 
 ### [AD815](families/AD815.md)
 
-- **Analog Devices AD815:** [B](https://manualmachine.com/analogdevices/ad815ays/3999610-datasheet) · [D](https://www.analog.com/media/en/technical-documentation/data-sheets/ad815.pdf) — missing A, C, 0
+- **Analog Devices AD815:** [A](https://static.datasheets.com/doc/21704317-analog-devices-ad815ay-ds.pdf) (1996) · [B](https://manualmachine.com/analogdevices/ad815ays/3999610-datasheet) (1999) · [D](https://www.analog.com/media/en/technical-documentation/data-sheets/ad815.pdf) (2005-04) · [C](https://ja.datasheetq.com/pdf-html/792306-RevC/AD/1page/AD815.html) — missing 0
 - **Analog Devices PDN 10_0081:** [B](https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf)
-- 13 other copies with the revision not identified
+- 19 other copies with the revision not identified
 
 ### [AD823 / AD823A](families/AD823.md)
 
@@ -255,13 +253,14 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [AD844](families/AD844.md)
 
-- **Analog Devices AD844:** original (1989) · [G](https://www.analog.com/media/en/technical-documentation/data-sheets/ad844.pdf) (2017-08-15) · [C](https://www.farnell.com/datasheets/13931.pdf) · [E](https://www.farnell.com/datasheets/77786.pdf) — missing A, B, D, F
-- 11 other copies with the revision not identified
+- **Analog Devices AD844:** original (1989) · D (2001-11) · [F](https://dtsheet.com/doc/1842287/pdf-data-sheet-rev.-f) (2009-02) · [G](https://www.analog.com/media/en/technical-documentation/data-sheets/ad844.pdf) (2017-08-15) · [C](https://www.farnell.com/datasheets/13931.pdf) · [E](https://www.farnell.com/datasheets/77786.pdf) — missing A, B
+- **Analog Devices AD844 military:** [Rev. A](https://dtsheet.com/doc/1842288/ad844--military-data-sheet--rev.-a-)
+- 13 other copies with the revision not identified
 
 ### [AD846](families/AD846.md)
 
-- **Analog Devices AD846:** [B](https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf) — missing A, 0
-- 7 other copies with the revision not identified
+- **Analog Devices AD846:** [C](https://dtsheet.com/model/713229) (2000) · [B](https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf) — missing A, 0
+- 11 other copies with the revision not identified
 
 ### [AD8597 / AD8599](families/AD8599.md)
 
@@ -273,19 +272,21 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [AD8610 / AD8620](families/AD8610.md)
 
-- **Analog Devices (distributor mirror by AiChipLink) AD8610/AD8620:** original (2001) · F (2009) · [D](https://file.aichiplink.com/r/datasheets/analogdevices-ad8610armzreel-datasheets-5501.pdf) — missing A–C, E
-- **Analog Devices AD8610/AD8620 (ADI uses no literature number):** [F](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf) (2009)
+- **Analog Devices AD8610/AD8620:** original (2001) · B (2002-05) · E (2006) · [F](https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf) (2008-05) · D — missing A, C
+- **Analog Devices AD8610/AD8620 (ADI uses no literature number):** [F](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf) (2008-05)
+- **Analog Devices (distributor mirror by AiChipLink) AD8610/AD8620:** [D](https://file.aichiplink.com/r/datasheets/analogdevices-ad8610armzreel-datasheets-5501.pdf)
 - **Analog Devices (third-party mirror by DatasheetQ) AD8610/AD8620:** [D](https://www.datasheetq.com/AD8610-doc-ADI-RevD)
-- **Analog Devices (third-party mirror by RadioLocman) AD8610/AD8620 (RadioLocman di=121341):** [F](https://www.radiolocman.com/datasheet/pdf.html?di=121341&p=19) (2009)
+- **Analog Devices (third-party mirror by RadioLocman) AD8610/AD8620 (RadioLocman di=121341):** [F](https://www.radiolocman.com/datasheet/pdf.html?di=121341&p=19) (2008-05)
 - **Analog Devices (third-party mirror by datasheet.su) AD8610/AD8620:** [D](https://pdf4.datasheet.su/131220.pdf)
-- 11 other copies with the revision not identified
+- 13 other copies with the revision not identified
 
 ### [ADA4627-1 / ADA4637-1](families/ADA4627.md)
 
-- **Analog Devices ADA4627-1_4637-1:** original (2009) · A · [F](https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf) — missing B–E
+- **Analog Devices ADA4627-1_4637-1:** A (2009) · original (2009-07) · B (2009-10) · C (2010-07) · D (2010-10) · E (2014-01) · [F](https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf) (2015-06)
 - **Analog Devices ADA4637:** original
 - **Analog Devices (via datasheetq):** [A](https://www.datasheetq.com/ADA4627-1-doc-ADI-RevA)
-- 11 other copies with the revision not identified
+- **Analog Devices (via elecfans) ADA4627-1:** [B](https://pdf.elecfans.com/AD/ADA4627-1.html) (2009-10)
+- 15 other copies with the revision not identified
 
 ### [LF351 / LF353 / LF347](families/LF353.md)
 
@@ -316,16 +317,17 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [LME49713](families/LME49713.md)
 
-- **Texas Instruments SNAS386:** original (2007-09) · National dated (D or E?) (2010-05-21) · National dated (E?) (2010-06-02) · [F](https://www.ti.com/lit/ds/symlink/lme49713.pdf) (2013-03) — missing A–E
-- 8 other copies with the revision not identified
+- **Texas Instruments SNAS386:** original (2007-09) · National 2008 (2008) · D? (National, dated) (2010-05-21) · E (2010-06-02) · [F](https://www.ti.com/lit/ds/symlink/lme49713.pdf) (2013-03) — missing A–D
+- **National Semiconductor SNAS386:** [E](https://datasheet.octopart.com/LME49713HA-National-Semiconductor-datasheet-15941891.pdf) (2010-06-02)
+- 11 other copies with the revision not identified
 
 ### [LME49860 / LME49870](families/LME49860.md)
 
 - **Texas Instruments SNAS389:** 1.0 (2007-06-01) · 1.1 (2007-06-11) · [C](https://www.ti.com/lit/ds/symlink/lme49860.pdf) (2013-04) — missing A, B, -
 - **National Semiconductor National DS (later SNAS389):** 1.0 (2007-06-01) · 1.1 (2007-06-11)
+- **Texas Instruments (third-party copy) SNAS413:** B (2008-01-14) · [C](https://www.alldatasheet.com/datasheet-pdf/pdf/841155/TI1/LME49870.html) (2013-04) — missing A, -
 - **Texas Instruments (third-party copy) SNAS389:** [C](https://github.com/indare/pcb_work/blob/main/Audio/datasheets/opamps/TI_LME49860.pdf) (2013-04)
-- **National Semiconductor / Texas Instruments LME49870 (TI number unknown):**  — missing all revision letters and dates
-- 23 other copies with the revision not identified
+- 24 other copies with the revision not identified
 
 ### [LME49990 / LME49990MA](families/LME49990.md)
 
@@ -336,6 +338,7 @@ The known revision timeline of every datasheet document, oldest first, each revi
 ### [LT1028 / LT1128](families/LT1028.md)
 
 - **Linear Technology / Analog Devices 1028f:** A (2001-09) · B (2012-10) · C (2014-10) · D (2015-10) · original — missing B, original
+- **Analog Devices / Linear (third-party copy, radiolocman viewer) 1028fd:** [D](https://www.radiolocman.com/datasheet/pdf.html?di=151183&p=1)
 - **Linear Technology (hosted by Analog Devices) 1028fd:** [D](https://www.analog.com/media/en/technical-documentation/data-sheets/1028fd.pdf) (2015-10-28)
 - **Linear Technology (third-party GitHub copy) 1028fd:** [D](https://github.com/dfnr2/terra-eda-library/blob/main/datasheets/analog-devices/lt1028.pdf) (2015-10)
 - **Linear Technology (third-party Scribd copy) 1028fc:** [C](https://www.scribd.com/document/267915717/1028fc) (2014-10)
@@ -350,7 +353,7 @@ The known revision timeline of every datasheet document, oldest first, each revi
 - **Linear Technology 1363fa:** [A](http://cds.linear.com/docs/en/datasheet/1363fa.pdf)
 - **Linear Technology 13645f:** A (2000-04) — missing original (1994)
 - **Linear Technology 13645fa:** [A](https://github.com/indare/pcb_work/blob/c6d3acc4e15273756a5de0ede66dc656917d916f/Audio/datasheets/opamps/AD_LT1364.pdf) (2000-04)
-- 30 other copies with the revision not identified
+- 31 other copies with the revision not identified
 
 ### [LT1468 / LT1469 / LT1468-2 / LT1469-2](families/LT1469.md)
 
@@ -390,6 +393,8 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [NJM2114 / JRC2114](families/NJM2114.md)
 
+- **New Japan Radio (NJR), copy hosted by IBS Electronics NJM2114:** [Ver. 2012-07-26](https://datasheets.ibselectronics.com/NJM2114D-NJR-datasheet-37004363.pdf) (2012-07-26)
+- **New Japan Radio (NJR), copy hosted by Kyohritsu NJM2114:** [Ver. 2012-07-26](https://kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm2114.pdf) (2012-07-26)
 - **New Japan Radio (NJR), copy hosted by Mouser NJM2114_E (Mouser file NJM2114_E-364314.pdf):** [Ver. 2012-07-26](https://www.mouser.com/datasheet/2/294/NJM2114_E-364314.pdf) (2012-07-26)
 - **New Japan Radio (NJR), copy hosted by RX Electronics NJM2114:** [Ver. 2012-07-26](https://www.rxelectronics.ph/datasheet/57/njm2114l.pdf) (2012-07-26)
 - **New Japan Radio / Nisshinbo NJM2114_E:** Ver. 2012-07-26 (2012-07-26) — missing pre-2012 original, Nisshinbo-era edition
@@ -410,17 +415,17 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [OP27 / OP37](families/OP27.md)
 
-- **Analog Devices C00317 (OP27):** A (2001-09) · C (2003-01) · D (2005-09) · E (2005-12) · F (2006-05) · B · G · H — missing 0
+- **Analog Devices C00317 (OP27):** A (2001-09) · C (2003-01) · D (2005-09) · E (2005-12) · F (2006-05) · G (2015-03) · H (2015-10) · B — missing 0
 - **Precision Monolithics (PMI) OP-27 / OP-37:** 1982 catalog (1982) · 1984 data book (1984) · 1988 databook (1988) · 1990 Volume 10 (1990) — missing c. 1980 launch data sheet
+- **Texas Instruments SLOS100:** original (1989-02) · [B](https://www.alldatasheet.com/datasheet-pdf/pdf/27251/TI/OP27A.html) (1994-08) · C (2000-09) · [E](https://www.ti.com/lit/gpn/OP27) (2010-02) — missing A, D
 - **Analog Devices:** [A](https://datasheet.octopart.com/OP227EY-Analog-Devices-datasheet-136169.pdf) · [B](https://www.mit.edu/~6.301/OP37b.pdf) · [C](https://www.mit.edu/~6.301/OP27c.pdf)
-- **Analog Devices C00317:** [C](https://www.yumpu.com/en/document/view/30241975/op27-low-noise-precision-operational-amplifier-data-sheet-rev-c) (2003-01) · [G](https://dtsheet.com/doc/1387743/op27--rev.-g----analog-devices) · [H](https://www.analog.com/media/en/technical-documentation/data-sheets/op27.pdf)
-- **Texas Instruments SLOS100:** original (1989-02) · [B](https://www.alldatasheet.com/datasheet-pdf/pdf/27251/TI/OP27A.html) (1994-08) · [E](https://www.ti.com/lit/gpn/OP27) (2010-02) — missing A, C, D
+- **Analog Devices C00317:** [C](https://www.yumpu.com/en/document/view/30241975/op27-low-noise-precision-operational-amplifier-data-sheet-rev-c) (2003-01) · [G](https://dtsheet.com/doc/1387743/op27--rev.-g----analog-devices) (2015-03) · [H](https://www.analog.com/media/en/technical-documentation/data-sheets/op27.pdf) (2015-10)
 - **Analog Devices C00319:** [A](https://www.datasheetq.com/en/preview/OP37-ADI-RevA) (2002-02) · [B](https://www.radiolocman.com/datasheet/pdf.html?di=170593) (2002-12)
 - **Analog Devices C00319 (OP37):** A (2002-02) · B (2002-12) — missing 0
 - **Analog Devices C00317-0-5/06(F):** [F](https://media.digikey.com/pdf/Data%20Sheets/Analog%20Devices%20PDFs/OP27.pdf) (2006-05)
 - **Analog Devices C00319–0–12/02(B):** [B](https://www.analog.com/media/en/technical-documentation/data-sheets/OP37.pdf) (2002-12)
 - **Linear Technology OP-27/OP-37:** 1990 databook (1990)
-- 28 other copies with the revision not identified
+- 29 other copies with the revision not identified
 
 ### [OP275](families/OP275.md)
 
@@ -438,8 +443,8 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [OP285 / OP285GP / OP285GS / OP285GSZ](families/OP285.md)
 
-- **Analog Devices OP285:** [C](https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf) — missing A, B, 0
-- 6 other copies with the revision not identified
+- **Analog Devices OP285:** [A](https://manualmachine.com/analogdevices/op285a/7450884-datasheet) (2001) · [B](https://zh.datasheetq.com/pdf-html/908534/AD/1page/OP285.html) · [C](https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf) — missing 0 (c. 1992)
+- 11 other copies with the revision not identified
 
 ### [OPA111 / OPA2111](families/OPA111.md)
 
@@ -453,8 +458,9 @@ The known revision timeline of every datasheet document, oldest first, each revi
 ### [OPA1622](families/OPA1622.md)
 
 - **Texas Instruments SBOS727:** original (2015-11) · [A](https://raw.githubusercontent.com/crtvmng/onear_headphones/ac07195486b70f7883ffbb1b88fba6d123fb6d09/RelatedFiles/datasheets/OPA1622.PDF) (2015-11) · [B](https://www.ti.com/lit/ds/symlink/opa1622.pdf) (2016-05)
-- **Texas Instruments ZHCSEE5 (Chinese):** B (reported) — missing A, original
-- **Texas Instruments ZHCSEE5B (reported; unconfirmed):** [B](https://dfsimgcdn2.hqbuy.com/group5/M00/00/B6/wKiCy2DeetGAFWBCADDIBXPAwaA048.pdf)
+- **Texas Instruments ZHCSEE5 (Chinese):** B (2016-05) — missing A, original
+- **Texas Instruments ZHCSEE5B:** [B](https://www.ti.com.cn/document-viewer/cn/OPA1622/datasheet/6_ZHCSEE5B) (2016-05)
+- **Texas Instruments ZHCSEE5B (number confirmed; this copy unchecked):** [B](https://dfsimgcdn2.hqbuy.com/group5/M00/00/B6/wKiCy2DeetGAFWBCADDIBXPAwaA048.pdf)
 - 9 other copies with the revision not identified
 
 ### [OPA1641 / OPA1642 / OPA1644](families/OPA1642.md)
@@ -509,7 +515,7 @@ The known revision timeline of every datasheet document, oldest first, each revi
 - **Texas Instruments SBOS377:** original (2006-10) · [A](https://www.scribd.com/document/939959332/Opa-2211) (2007-02) · D (2008-02) · [F](https://www.kyohritsu.com/eclib/OTHER/DATASHEET/opa211.pdf) (2008-11) · [G](https://www.mouser.com/datasheet/2/405/sbos377g-125789.pdf) (2009-05) · H (2015-11) · [I](https://www.radiolocman.com/datasheet/data.html?di=305537) (2016-06) · J (2018-02) · K (2018-09) · [L](https://www.ti.com/lit/ds/symlink/opa211.pdf) (2020-01) — missing B, C, E
 - **Texas Instruments SBOS638:** [original](https://www.ti.com/lit/ds/symlink/opa211-ep.pdf) (2012-06)
 - **Texas Instruments unknown (OPA2211-EP):** 
-- 18 other copies with the revision not identified
+- 20 other copies with the revision not identified
 
 ### [OPA227 / OPA2227 / OPA4227 / OPA228 / OPA2228 / OPA4228](families/OPAx227.md)
 
@@ -534,10 +540,10 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [AD743 / AD745](families/AD743.md)
 
+- **Analog Devices AD743 data sheet:** [C](https://www.alldatasheet.com/datasheet-pdf/pdf/549295/AD/AD743.html) · D · [E](https://www.analog.com/media/en/technical-documentation/data-sheets/AD743.pdf) — missing A, B, original
 - **Analog Devices ad743.cir / ad745.cir:** AD745 A (1992-03) · AD743 A (1992-04) · AD745 B (1995-10)
-- **Analog Devices AD745 data sheet:** [C](https://www.frc.utexas.edu/page11/files/AD745.pdf) · [D](https://www.analog.com/media/en/technical-documentation/data-sheets/AD745.pdf) — missing A, B, original
-- **Analog Devices AD743 data sheet:** [E](https://www.analog.com/media/en/technical-documentation/data-sheets/AD743.pdf) — missing A–D, original
-- 21 other copies with the revision not identified
+- **Analog Devices AD745 data sheet:** [D](https://www.analog.com/media/en/technical-documentation/data-sheets/AD745.pdf) (2002) · [C](https://www.frc.utexas.edu/page11/files/AD745.pdf) — missing A, B, original
+- 24 other copies with the revision not identified
 
 ### [AD744 / AD746](families/AD744.md)
 
@@ -559,14 +565,15 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [AD820 / AD822 / AD824](families/AD822.md)
 
-- **Analog Devices AD820:** G · [H](https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf)
-- **Analog Devices AD822:** [J](https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf)
-- **Analog Devices AD824:** [E](https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf)
+- **Analog Devices AD822:** 0 (1993-07) · H (2008-08) · I (2010-01) · [J](https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf) (2015-09) — missing A–G
+- **Analog Devices AD820:** [H](https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf) (2011-03) · G — missing A–F, 0
+- **Analog Devices AD824:** D (2014-05) · [E](https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf) (2015-04) — missing A–C, 0
+- **Analog Devices AD820_JP:** [H](https://wcm-cce.cldnet.analog.com/media/jp/technical-documentation/data-sheets/AD820_JP.pdf) (2011-03)
 - **Octopart AD820:** [G](https://datasheet.octopart.com/AD820BRZ-Analog-Devices-datasheet-8455708.pdf)
-- **Radiolocman AD820:** [H](https://www.radiolocman.com/datasheet/pdf.html?di=121457)
-- **Radiolocman AD824:** [E](https://www.radiolocman.com/datasheet/pdf.html?di=168527)
-- **dtsheet.com AD822:** [J](https://dtsheet.com/doc/1387960/ad822--rev.-j----analog-devices)
-- 12 other copies with the revision not identified
+- **Radiolocman AD820:** [H](https://www.radiolocman.com/datasheet/pdf.html?di=121457) (2011-03)
+- **Radiolocman AD824:** [E](https://www.radiolocman.com/datasheet/pdf.html?di=168527) (2015-04)
+- **dtsheet.com AD822:** [J](https://dtsheet.com/doc/1387960/ad822--rev.-j----analog-devices) (2015-09)
+- 19 other copies with the revision not identified
 
 ### [AD825](families/AD825.md)
 
@@ -587,21 +594,22 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [AD828](families/AD828.md)
 
-- **Analog Devices AD828:** [C](https://www.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf) — missing A, B
-- 6 other copies with the revision not identified
+- **Analog Devices AD828:** [C](https://www.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf) (2002) · [B](https://www.alldatasheet.com/datasheet-pdf/view/48431/AD/AD828.html) — missing A, 0
+- 9 other copies with the revision not identified
 
 ### [AD843](families/AD843.md)
 
-- **Analog Devices AD843:** [D](https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf) — missing A–C, original (c. 1990)
-- **Analog Devices - third-party mirror (RadioLocman) AD843:** [D](https://www.radiolocman.com/datasheet/pdf.html?di=121483)
-- 14 other copies with the revision not identified
+- **Analog Devices AD843:** [D](https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf) (1995) — missing A–C, original (c. 1990)
+- **Analog Devices - third-party mirror (RadioLocman) AD843:** [D](https://www.radiolocman.com/datasheet/pdf.html?di=121483) (1995)
+- 20 other copies with the revision not identified
 
 ### [AD845](families/AD845.md)
 
-- **radiolocman.com AD845:** [E](https://www.radiolocman.com/datasheet/pdf.html?di=121495) (2003-10) · D (before 2003-10) · original (by 1990-12 (inferred)) — missing A–D, original
+- **Analog Devices AD845:** [E](https://www-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD845.pdf) (2003-10) · [D](https://manualmachine.com/analogdevices/ad845aq/3999410-datasheet) · original (by 1990-12 (inferred)) — missing A–C, original
 - **Analog Devices AD845 (ADI data sheet):** [E](https://www.analog.com/media/en/technical-documentation/data-sheets/AD845.pdf) (2003-10)
 - **Analog Devices (Mouser distributor copy) AD845 data sheet:** [E](https://www.mouser.com/datasheet/2/609/AD845-3119489.pdf) (2003-10)
-- 16 other copies with the revision not identified
+- **radiolocman.com AD845:** [E](https://www.radiolocman.com/datasheet/pdf.html?di=121495) (2003-10)
+- 21 other copies with the revision not identified
 
 ### [AD847 / AD827](families/AD847.md)
 
@@ -648,9 +656,10 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [ADA4625-1 / ADA4625-2](families/ADA4625.md)
 
-- **Analog Devices ADA4625-1 / ADA4625-1/ADA4625-2:** 0 (2017-10) · B (2025-03-03) · A
-- **Analog Devices ADA4625-1/ADA4625-2:** [B](https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1-4625-2.pdf) (2025-03) · [A](https://www.verical.com/datasheet/analog-devices-amplifier-ic-development-tools-EVAL-ADA4625-1ARDZ-5229613.pdf)
-- 9 other copies with the revision not identified
+- **Analog Devices ADA4625-1 / ADA4625-1/ADA4625-2:** 0 (2017-10) · A (2019-06) · B (2025-03-03)
+- **Analog Devices ADA4625-1/ADA4625-2:** [A](https://www.verical.com/datasheet/analog-devices-amplifier-ic-development-tools-EVAL-ADA4625-1ARDZ-5229613.pdf) (2019-06) · [B](https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1-4625-2.pdf) (2025-03)
+- **Analog Devices ADA4625-1:** [0](https://www.mouser.tw/ds/2/609/ADA4625-1-1274393.pdf) (2017-10)
+- 13 other copies with the revision not identified
 
 ### [ADA4898-1 / ADA4898-2](families/ADA4898.md)
 
@@ -662,28 +671,32 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 - **ROHM TSZ02201-0RAR1G200050-1-2:** [Rev. 001](https://fscdn.rohm.com/en/products/databook/datasheet/ic/amp_linear/opamp/ba15218f-e.pdf) (2013-09-10)
 - **ROHM legacy 'Standard ICs' sheet:** original
-- 9 other copies with the revision not identified
+- **ROHM (via elecfans) TSZ02201-0RAR1G200050-1-2:** [Rev. 001](https://pdf.elecfans.com/ROHM/BA15218F-E2.html) (2013-09-10)
+- 16 other copies with the revision not identified
 
 ### [EL2244 / EL2444](families/EL2244.md)
 
-- **Intersil FN7059:** [FN7059.1](https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1) (2004-07-14) · [FN7059.2](http://www.manuallib.com/download/pdf14/INTER-IL-EL2244-EL2444-DATA-SHEET.PDF) — missing FN7059.0 (c. 2002), any Renesas-era revision
+- **Intersil FN7059:** [FN7059.0](https://datasheet.eeworld.com.cn/view/24716765.html) (2002-08-16) · [FN7059.1](https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1) (2004-07-14) · [FN7059.2](https://www.mouser.com/catalog/specsheets/intersil_fn7059.pdf) (2005-05-16) — missing any Renesas-era revision
 - **Elantec EL2244C/EL2444C:** C (1995-12) — missing A, B
 - **Elantec none (Elantec pre-FN numbering):** [C](https://www.sm0vpo.com/_pdf/amplifiers/EL2244.PDF) (1995-12)
-- 5 other copies with the revision not identified
+- 9 other copies with the revision not identified
 
 ### [HA-2600 / HA-2602 / HA-2605 and HA-2620 / HA-2622 / HA-2625](families/HA2605.md)
 
 - **Harris / Intersil / Renesas File Number 2902 / FN2902 (HA-2600):** 1982 databook (1982) · 2902.2 (1996) · 2902.3 (1998-09) · FN2902.7 / Rev 7.00 (2006-01-16) — missing 2902.0, 2902.1, 2902.4, 2902.5, 2902.6
-- **Harris / Intersil / Renesas File Number 2903 / FN2903 (HA-2620/2625):** FN2903.6 (2003-06) · Harris three-grade edition · later 'DATASHEET' template — missing 2903.0, 2903.1, 2903.2, 2903.3, 2903.4, 2903.5
+- **Harris / Intersil / Renesas File Number 2903 / FN2903 (HA-2620/2625):** FN2903.6 (2003-06) · Rev. 8.00 (2006-01-16) · Rev. 9.00 (2019-03-21) · Harris three-grade edition — missing 2903.0, 2903.1, 2903.2, 2903.3, 2903.4, 2903.5, 2903.7
+- **Intersil (via elecfans) FN2903:** [Rev. 8.00](https://pdf.elecfans.com/INTERSIL/HA-2620_06.html) (2006-01-16)
 - **Intersil - distributor mirror (Digi-Key) FN2903:** [FN2903.6](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/967/HA-2620,25.pdf) (2003-06)
 - **Renesas (Intersil) FN2902:** [Rev. 7.00](https://www.renesas.com/en/document/dst/ha-2600-datasheet) (2006-01-16)
+- **Renesas (Intersil) FN2903:** [Rev. 9.00](https://www.renesas.com/en/document/dst/ha-2620-datasheet) (2019-03-21)
 - **Intersil HA-2600/883 and HA-2602/883 (file number unknown):** 
-- 29 other copies with the revision not identified
+- 30 other copies with the revision not identified
 
 ### [LF355 / LF356 / LF357 (LF155 / LF156 / LF157)](families/LF356.md)
 
 - **National Semiconductor TL/H/5646 → DS005646:** preliminary (1975) · 1980 databook (1980) · DS005646 (2000-05) · TL/H/5646 — missing 1982–1995 databook editions
 - **Texas Instruments SNOSBH0:** B (2013-03) · C (2013-03) · [D](https://www.ti.com/lit/ds/symlink/lf356.pdf) (2015-11) — missing A, original
+- **Texas Instruments SNOSD55:** [original](https://www.ti.com/document-viewer/lf356-mil/datasheet) (2017-06)
 - **Linear Technology lt0155:** 
 - **STMicroelectronics unknown:** 
 - 36 other copies with the revision not identified
@@ -700,17 +713,18 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [LME49721](families/LME49721.md)
 
-- **Texas Instruments SNAS371:** original (2007-09) · [C](https://www.ti.com/lit/ds/snas371c/snas371c.pdf) (2013-04) — missing A, B
+- **Texas Instruments SNAS371:** original (2007-09) · B (2010-04-21) · [C](https://www.ti.com/lit/ds/snas371c/snas371c.pdf) (2013-04) — missing A
 - **National Semiconductor:** [original](https://www.pken.net/ish_mm/datasheet/ns/lme49721.pdf) (2007-10)
+- **National Semiconductor SNAS371:** [B](https://img.pcbx.com/erp/file/part/spec/LME49721MAX%20NOPB-Texas%20Instruments.pdf) (2010-04-21)
 - **Texas Instruments SNAA051:** [A](https://www.ti.com/lit/pdf/snaa051)
-- 9 other copies with the revision not identified
+- 15 other copies with the revision not identified
 
 ### [LME49723 / LME49723MA / LME49723NA](families/LME49723.md)
 
-- **Texas Instruments SNAS429:** A (National format) (2008-02-11) · [B](https://www.ti.com/lit/ds/symlink/lme49723.pdf) (2013-04) — missing original (January 2008, unconfirmed)
+- **Texas Instruments SNAS429:** original (2008-01) · A (National format) (2008-02-11) · [B](https://www.ti.com/lit/ds/symlink/lme49723.pdf) (2013-04) — missing original (January 2008) copy
 - **National Semiconductor National DS number unknown (TI SNAS429A equivalent?):** [original](https://datasheet.octopart.com/LME49723MA-National-Semiconductor-datasheet-10848611.pdf) (2008-02)
 - **National Semiconductor unknown:** [original](https://datasheet.octopart.com/LME49723MAX/NOPB-Texas-Instruments-datasheet-10848611.pdf) (2008)
-- 12 other copies with the revision not identified
+- 14 other copies with the revision not identified
 
 ### [LME49880](families/LME49880.md)
 
@@ -719,16 +733,21 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [LMH6642 / LMH6643 / LMH6644](families/LMH6643.md)
 
-- **Texas Instruments SNOS966:** [O](https://datasheet.ciiva.com/13045/snos966o-122983-13045249.pdf) (2012-01) · [P](https://www.mouser.com/ds/2/405/snos966p-286592.pdf) (2013-03) · [Q](https://www.ti.com/lit/ds/snos966q/snos966q.pdf) (2014-09)
-- 6 other copies with the revision not identified
+- **National Semiconductor DS200185:** © 2003 (2003) · © 2004 (2004) · dated edition (2009-11-09)
+- **Texas Instruments SNOS966:** [O](https://datasheet.ciiva.com/13045/snos966o-122983-13045249.pdf) (2012-01) · [P](https://www.mouser.com/ds/2/405/snos966p-286592.pdf) (2013-03) · [Q](https://www.ti.com/lit/ds/snos966q/snos966q.pdf) (2014-09) — missing A–N (National era)
+- **Texas Instruments SNOSC61:** original (2012-01) · [C](https://www.ti.com/document-viewer/lmh6642q-q1/datasheet) (2014-09-10) — missing A, B
+- **National Semiconductor DS200894:** © 2004 (2004)
+- 16 other copies with the revision not identified
 
 ### [LT1057 / LT1058](families/LT1057.md)
 
-- **Linear Technology / Analog Devices 10578f:** B · D — missing A, C, original
+- **Linear Technology / Analog Devices 10578f:** A · B · C · D — missing original
 - **Analog Devices 10578fd:** [D](https://www.analog.com/media/en/technical-documentation/data-sheets/10578fd.pdf)
+- **Linear Technology 10578fa:** [A](https://dtsheet.com/model/2309240)
 - **Linear Technology 10578fb:** [B](https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/LT1057.pdf)
-- **Linear Technology 10578fd:** [D](https://cds.linear.com/docs/en/datasheet/10578fd.pdf)
-- 5 other copies with the revision not identified
+- **Linear Technology 10578fc:** [C](https://nonprod.docs.rs-online.com/b6e7/0900766b810ed81e.pdf)
+- **Linear Technology 10578fd:** [D](https://www.farnell.com/datasheets/1712178.pdf)
+- 6 other copies with the revision not identified
 
 ### [LT1115](families/LT1115.md)
 
@@ -779,17 +798,19 @@ The known revision timeline of every datasheet document, oldest first, each revi
 - **New JRC NJM2043_J:**  — missing Japanese edition and its Ver. date
 - 23 other copies with the revision not identified
 
-### [NJM2082 / NJM2082D / NJM2082DD / NJM2082M / NJM2082V](families/NJM2082.md)
+### [NJM2082 / NJM2082D / NJM2082DD / NJM2082M / NJM2082V / NJM2082L](families/NJM2082.md)
 
 - **New Japan Radio NJM2082_E:** [Ver. 2003-03-17](https://www.mouser.com/datasheet/2/294/njr_njm2082_e-547184.pdf) (2003-03-17)
-- 7 other copies with the revision not identified
+- 11 other copies with the revision not identified
 
 ### [NJM8801](families/NJM8801.md)
 
+- **New JRC NJM8801 (English datasheet):** Ver. 2012-02-17 (2012-02-17) — missing first release, editions after 2012-02-17
 - **New JRC NJM8801 (Japanese datasheet):** Ver. 2014-11-10 (2014-11-10) — missing earlier Japanese versions, including first release
+- **New JRC (via Chipsmall) NJM8801:** [Ver. 2014-11-10](https://datasheet.chipsmall.com/NJM8801E/630582.pdf) (2014-11-10)
 - **New JRC (via Kyohritsu Electronic Industry eclib mirror) NJM8801:** [Ver. 2014-11-10](https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm8801.pdf) (2014-11-10) — missing Nisshinbo-branded reissue (2022 or later)
-- **New JRC NJM8801 (English datasheet):**  — missing all Ver. numbers and dates, including the Mouser copy
-- 2 other copies with the revision not identified
+- **New Japan Radio (NJR), via Mouser NJM8801:** [Ver. 2012-02-17](https://www.mouser.com/ds/2/294/NJM8801_DataSheetE6-262233.pdf) (2012-02-17)
+- 3 other copies with the revision not identified
 
 ### [NJM8830 / NJM8830GM1](families/NJM8830.md)
 
@@ -799,9 +820,10 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [NJM8901 / NJM8901E](families/NJM8901.md)
 
+- **New Japan Radio / Nisshinbo Micro Devices NJM8901_E:** Ver. 2012-02-07 (2012-02-07) · [Ver. 2014-10-28](https://en.sekorm.com/doc/2511119.html) (2014-10-28) — missing first edition (if before 2012-02-07), editions after 2014-10-28, Nisshinbo re-issue
 - **JRC/Nisshinbo NJM8901_J:** old_pdf legacy copy — missing all Ver. dates
-- **New Japan Radio / Nisshinbo Micro Devices NJM8901_E:** [Ver. 2014-10-28](https://en.sekorm.com/doc/2511119.html) (2014-10-28) — missing first edition, editions before 2014-10-28, editions after 2014-10-28, Nisshinbo re-issue
-- 7 other copies with the revision not identified
+- **New Japan Radio (via Xon) NJM8901_E:** [Ver. 2012-02-07](https://xonelec.com/mpn/nisshinbo/njm8901e) (2012-02-07)
+- 8 other copies with the revision not identified
 
 ### [NL8802](families/NL8802.md)
 
@@ -810,8 +832,9 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [NL8902 / NL8902AN / NL8902GR](families/NL8902.md)
 
-- **Nisshinbo Micro Devices NL8902 datasheet:**  — missing initial release (c. 2025-05, probably Ver.1.0), later Ver. updates
-- 4 other copies with the revision not identified
+- **Nisshinbo Micro Devices NL8902 datasheet:** Ver. 1.0 — missing Ver. 1.0 date, later Ver. updates
+- **Nisshinbo Micro Devices (via Endrich) NL8902 datasheet (nl8902_s_e):** [Ver. 1.0](https://www.endrich.com/Datenbl%C3%A4tter/Aktive%20Komponenten/nl8902-s-e.pdf)
+- 6 other copies with the revision not identified
 
 ### [OP249](families/OP249.md)
 
@@ -821,9 +844,10 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [OPA128](families/OPA128.md)
 
-- **Texas Instruments (Burr-Brown content) SBOS148:** [PDS-653E](https://www.mouser.com/datasheet/2/405/opa128-445402.pdf) (1995-05) · original
-- **Burr-Brown PDS-653:** E (1995-05) — missing A–D
-- 7 other copies with the revision not identified
+- **Burr-Brown PDS-653:** original (1986) · E (1995-05) · [PDS-653E](https://www.electro-tech-online.com/custompdfs/2011/03/opa128.pdf) (1995-05) — missing A–D
+- **Texas Instruments SBOS148:** [PDS-653E](https://electronix.org.ru/datasheet/Burr-Brown/OPA128%20-%20sbos148.pdf) (1995-05) · original (2000-09)
+- **Texas Instruments (Burr-Brown content) SBOS148:** [PDS-653E](https://www.mouser.com/datasheet/2/405/opa128-445402.pdf) (1995-05)
+- 11 other copies with the revision not identified
 
 ### [OPA1602 / OPA1604](families/OPA1602.md)
 
@@ -866,31 +890,34 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [OPA209 / OPA2209 / OPA4209](families/OPA2209.md)
 
-- **Texas Instruments SBOS426:** original (2008-11) · B (2010-08) · C (2013-10) · [D](https://www.ti.com/lit/ds/symlink/opa2209.pdf) (2016-10) — missing A
-- 9 other copies with the revision not identified
+- **Texas Instruments SBOS426:** original (2008-11) · [B](https://html.alldatasheet.com/html-pdf/390721/TI/OPA209_10/122/4/OPA209_10.html) (2010-08) · [C](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/196/opa209.pdf) (2013-10) · [D](https://www.ti.com/lit/ds/symlink/opa2209.pdf) (2016-10-07) — missing A
+- 14 other copies with the revision not identified
 
 ### [OPA210 / OPA2210 / OPA4210](families/OPA2210.md)
 
-- **Texas Instruments:** * (2018-09) · A (2018-12) · D (2020-01) · E (2020-11) · F (2021-01) · G (2021-04) · [H](https://www.ti.com/lit/ds/symlink/opa2210.pdf) (2021-08) — missing B, C
-- **Texas Instruments (via alldatasheet.net):** [H](https://www.alldatasheet.net/datasheet-pdf/pdf/2222126/TI2/OPA2210.html)
-- 8 other copies with the revision not identified
+- **Texas Instruments SBOS924:** * (2018-09) · A (2018-12) · C (2019-09) · D (2020-01) · E (2020-11) · F (2021-01) · G (2021-04) · [H](https://www.ti.com/document-viewer/OPA210/datasheet) (2021-08-04) · B
+- **Texas Instruments (via alldatasheet.net) SBOS924:** [H](https://www.alldatasheet.net/datasheet-pdf/pdf/2222126/TI2/OPA2210.html)
+- 11 other copies with the revision not identified
 
 ### [OPA350 / OPA2350 / OPA4350](families/OPA2350.md)
 
-- **Texas Instruments SBOS099:** original (2000-09) · A (2001-07) · [C](https://www.mouser.com/datasheet/2/405/sbos099c-92750.pdf) (2005-01) · [D](https://www.ti.com/lit/ds/symlink/opa2350.pdf) (2015-12) — missing B
-- 10 other copies with the revision not identified
+- **Texas Instruments SBOS099:** original (2000-09) · A (2001-07) · [B](https://www.komponenten.es.aau.dk/fileadmin/komponenten/Data_Sheet/Linear/OPA350.pdf) (2004-02) · [C](https://www.mouser.com/datasheet/2/405/sbos099c-92750.pdf) (2005-01) · [D](https://www.ti.com/lit/ds/symlink/opa2350.pdf) (2015-12-21)
+- **Burr-Brown PDS-1470:** [PDS-1470B](https://manualmachine.com/burrbrown/opa350ua/4144788-datasheet) (1999-03) — missing original, PDS-1470A
+- **Texas Instruments ZHCSHC9:** [D](https://www.ti.com.cn/cn/lit/gpn/OPA2350) (2015-12)
+- 17 other copies with the revision not identified
 
 ### [OPA277 / OPA2277 / OPA4277](families/OPAx277.md)
 
-- **Texas Instruments SBOS079:** original (1999-03) · [A](https://www.mouser.com/datasheet/2/405/sbos079a-190468.pdf) (2005-04) · [B](https://docs.rs-online.com/0cbd/A700000008688789.pdf) (2015-06) · [C](https://www.ti.com/lit/ds/sbos079c/sbos079c.pdf) (2023-02)
+- **Texas Instruments SBOS079:** original (1999-03) · [A](https://www.mouser.com/datasheet/2/405/sbos079a-190468.pdf) (2005-04) · [B](https://docs.rs-online.com/0cbd/A700000008688789.pdf) (2015-06) · [C](https://www.ti.com/lit/ds/sbos079c/sbos079c.pdf) (2023-02-21)
 - **Texas Instruments SBOS611:** original (2012-03) · [B](https://www.mouser.com/ds/2/405/opa2277-die-558195.pdf) (2012-12) — missing A
-- 8 other copies with the revision not identified
+- **Burr-Brown PDS-1413:** [PDS-1413D](https://sy-dep-epc-lpc.web.cern.ch/components/datasheets/epc%20(fgc-dccts%29/DS22/OPA277_OPAMP_BURRBROWN.pdf) (1999-03) — missing original, PDS-1413A, PDS-1413B, PDS-1413C
+- 12 other copies with the revision not identified
 
 ### [THS4032 / THS4031 / THS4032-EP](families/THS4032.md)
 
-- **Texas Instruments SLOS224:** original (1999-07) · [C](https://www.alldatasheet.com/html-pdf/28740/TI/THS4032EVM/227/8/THS4032EVM.html) (2000-04) · G (2010-03) · H (2016-06) · I (2018-05) · J (2024-02) · [L](https://www.ti.com/lit/ds/symlink/ths4032.pdf) (2024-07) · K — missing A, B, D–F
-- **Texas Instruments THS4031-EP / THS4032-EP datasheet:**  — missing all revisions
-- 17 other copies with the revision not identified
+- **Texas Instruments SLOS224:** original (1999-07) · [C](https://www.alldatasheet.com/html-pdf/28740/TI/THS4032EVM/227/8/THS4032EVM.html) (2000-04) · G (2010-03) · H (2016-06) · [I](https://www.ti.com/lit/ds/slos224i/slos224i.pdf) (2018-05) · J (2024-02) · K (2024-05) · [L](https://www.ti.com/lit/ds/symlink/ths4032.pdf) (2024-07) — missing A, B, D–F
+- **Texas Instruments SLOS610:** unknown (2008-11-20) — missing revision letters
+- 19 other copies with the revision not identified
 
 ### [THS4631](families/THS4631.md)
 
@@ -905,11 +932,11 @@ The known revision timeline of every datasheet document, oldest first, each revi
 
 ### [TLE2081 / TLE2082 / TLE2084](families/TLE2081.md)
 
-- **Texas Instruments SLOS182:** original (1997-02) · B (2001-06) · [C](https://www.ti.com/lit/ds/symlink/tle2082.pdf) (2026-03) — missing A, original (no copy)
+- **Texas Instruments SLOS182:** original (1997-02) · [B](https://static.chipdip.ru/lib/005/DOC003005155.pdf) (2001-06) · [C](https://www.ti.com/document-viewer/TLE2081/datasheet/GUID-662CDA93-68B7-47A3-9DA4-E3C3FA412F78) (2026-03-04) — missing A, original (no copy)
 - **Texas Instruments (via alldatasheet) SLOS105:** original (1991-08) · [A](https://www.alldatasheet.com/html-pdf/184217/TI/TLE2082/174/6/TLE2082.html) (1994-08) — missing original (no copy), B (if any)
 - **Texas Instruments (via alldatasheet) SLOS182:** [B](https://www.alldatasheet.com/datasheet-pdf/pdf/28973/TI/TLE2081.html) (2001-06)
 - **Texas Instruments (via radiolocman) SLOS182:** [B](https://www.radiolocman.com/datasheet/data.html?/TLE2081=&di=330771)
-- 18 other copies with the revision not identified
+- 20 other copies with the revision not identified
 
 ### [TLE2141 / TLE2142 / TLE2144](families/TLE2142.md)
 
@@ -932,4 +959,4 @@ The known revision timeline of every datasheet document, oldest first, each revi
 - **NEC (served by Renesas) G10528EJ8V0DS00:** [8V0](https://www.renesas.com/us/en/document/dst/upc4570-data-sheet-g10528ej8v0ds00) (2010-04-01)
 - **Renesas R03DS0135EJ0100:** [Rev. 1.00](https://datasheet4u.com/pdf-down/u/P/C/uPC4570-Renesas.pdf) (2019-01-17)
 - **Renesas R03DS0135EJ0200:** [Rev. 2.00](https://www.renesas.com/en/document/dst/upc4570-datasheet) (2025-02-27)
-- 21 other copies with the revision not identified
+- 23 other copies with the revision not identified

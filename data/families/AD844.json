@@ -27,7 +27,7 @@
       "pn": "AD844AN",
       "channels": 1,
       "status": "obsolete",
-      "note": "Non-RoHS PDIP-8 predecessor; reportedly obsolete (Rochester lists it). Older date codes."
+      "note": "Non-RoHS PDIP-8; obsolete per DigiKey, which names AD844ANZ as direct substitute."
     },
     {
       "pn": "AD844AQ / AD844BQ",
@@ -57,9 +57,9 @@
   "key_specs": [
     {
       "parameter": "Input noise (1 kHz)",
-      "value": "2 nV/√Hz (unconfirmed)",
+      "value": "2 nV/√Hz",
       "condition": "f ≥ 1 kHz",
-      "source": "Unconfirmed"
+      "source": "ADI datasheet"
     },
     {
       "parameter": "GBW",
@@ -75,9 +75,9 @@
     },
     {
       "parameter": "Supply range",
-      "value": "±4.5 V to ±18 V (unconfirmed)",
+      "value": "±4.5 V to ±18 V",
       "condition": "dual supply",
-      "source": "Unconfirmed"
+      "source": "ADI product page"
     },
     {
       "parameter": "Supply current",
@@ -147,7 +147,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current, 20 pages. PDF metadata wrongly adds 'with Quad Low Noise'.",
+      "note": "Current, 20 pages; revision table dates Rev. G 5/2017.",
       "also_urls": [
         "https://www.analog.com/media/en/technical-documentation/data-sheets/AD844.pdf"
       ]
@@ -355,6 +355,54 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "All About Circuits AD844AN page; revision unknown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD844 data sheet Rev. F",
+      "doc_number": "AD844",
+      "revision": "F",
+      "revision_status": "probable",
+      "date": "2009-02",
+      "url": "https://dtsheet.com/doc/1842287/pdf-data-sheet-rev.-f",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "note": "dtsheet copy titled 'Rev. F'; Rev. F dated 2/09."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD844: Military Data Sheet (Rev. A)",
+      "doc_number": "AD844 military",
+      "revision": "Rev. A",
+      "revision_status": "probable",
+      "date": "",
+      "url": "https://dtsheet.com/doc/1842288/ad844--military-data-sheet--rev.-a-",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "note": "Separate military data sheet; title only seen."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD844 60 MHz, 2000 V/µs Monolithic Op Amp",
+      "doc_number": "AD844",
+      "revision": "",
+      "revision_status": "unknown",
+      "date": "",
+      "url": "https://www-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD844.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "note": "ADI CDN copy of the current data sheet."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD844 60 MHz, 2000 V/µs Monolithic Op Amp (Aalborg University copy)",
+      "doc_number": "AD844",
+      "revision": "",
+      "revision_status": "unknown",
+      "date": "",
+      "url": "https://www.komponenten.es.aau.dk/fileadmin/komponenten/Data_Sheet/Linear/AD844.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "note": "University copy; shows 2 nV/√Hz noise row."
     }
   ],
   "product_pages": [
@@ -379,16 +427,37 @@
     {
       "vendor": "Analog Devices",
       "doc_number": "AD844",
+      "revision": "D",
+      "date": "2001-11",
+      "changes": "Dated 11/01 in the Rev. G revision table. Changes not recorded."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD844",
       "revision": "E",
-      "date": "",
-      "changes": "Old ADI format, 'REV. E' footer; held by https://www.farnell.com/datasheets/77786.pdf. Changes not recorded."
+      "date": "2003-01",
+      "changes": "Old ADI format, 'REV. E' footer, dated 1/03; held by https://www.farnell.com/datasheets/77786.pdf. Changes not recorded."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD844",
+      "revision": "F",
+      "date": "2009-02",
+      "changes": "Dated 2/09 in the revision table; covers Rev. E to F changes (list not retrieved)."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD844",
       "revision": "G",
-      "date": "2017",
-      "changes": "Current: new 'Data Sheet' format, 20 pages, ©1989–2017. Changes since Rev. F not recorded."
+      "date": "2017-05",
+      "changes": "Current: new format, 20 pages. From Rev. F: Figure 32 changed, Ordering Guide edited; one copy also lists Absolute Maximum Ratings edits."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD844 military",
+      "revision": "Rev. A",
+      "date": "",
+      "changes": "Separate military data sheet (dtsheet title 'AD844: Military Data Sheet (Rev. A)'). Date unknown."
     }
   ],
   "revision_chains": [
@@ -405,21 +474,39 @@
           "date": ""
         },
         {
+          "rev": "D",
+          "date": "2001-11"
+        },
+        {
           "rev": "E",
-          "date": ""
+          "date": "2003-01"
+        },
+        {
+          "rev": "F",
+          "date": "2009-02"
         },
         {
           "rev": "G",
-          "date": "2017"
+          "date": "2017-05"
         }
       ],
       "missing": [
         "A",
-        "B",
-        "D",
-        "F"
+        "B"
       ],
-      "note": "Rev. F probably first new-format edition. Leads: Wayback snapshots of legacy analog.com paths; 1990s ADI databooks."
+      "note": "Dates for D–G from the Rev. G revision table. Rev. F copy on dtsheet; D copy not found."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD844 military",
+      "known": [
+        {
+          "rev": "Rev. A",
+          "date": ""
+        }
+      ],
+      "missing": [],
+      "note": "Military data sheet for /883B grades; only a dtsheet title seen."
     }
   ],
   "ti_literature_numbers": [],
@@ -435,11 +522,11 @@
     "https://www.farnell.com/datasheets/77786.pdf"
   ],
   "open_questions": [
-    "Rev. G print date, and dates and change lists for Revs. D, E and F?",
+    "Copies of Revs. A, B and D, and the Rev. E and F change lists?",
     "Which revision do the Octopart, DigiKey HTML, ChipDip, datasheets.pl and DatasheetCatalog copies hold?",
     "Lifecycle per ordering code, any AD844 PCN, and AD844JR-16 in PDN 10_0081 Rev. B?",
     "Older codes (AD844JN, BN, AR-16)? DLA SMD 5962 number for /883B (a 5962 revision list was seen)?",
-    "Confirm 2 nV/√Hz noise, ±4.5–±18 V supply, ~3 MΩ transresistance, Barrie Gilbert credit."
+    "Barrie Gilbert design credit and 1989 introduction date: any ADI history source?"
   ],
   "sources": [
     "https://www.analog.com/media/en/technical-documentation/data-sheets/ad844.pdf",
@@ -457,11 +544,14 @@
     "https://hackaday.com/2022/02/05/how-to-spot-a-fake-op-amp/",
     "https://super-freq.com/fake-op-amps/",
     "https://www.diyaudio.com/forums/digital-line-level/227677-using-ad844.html",
-    "https://www.diyaudio.com/community/threads/using-the-ad844-as-an-i-v.227677/page-121"
+    "https://www.diyaudio.com/community/threads/using-the-ad844-as-an-i-v.227677/page-121",
+    "https://www-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD844.pdf",
+    "https://www.komponenten.es.aau.dk/fileadmin/komponenten/Data_Sheet/Linear/AD844.pdf",
+    "https://www.digikey.bg/en/products/detail/analog-devices-inc/AD844AN/611708"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 10,
+    "status": "verified",
+    "web_searches_used": 14,
     "claims_confirmed": [
       "Current ADI datasheet is Rev. G, 20 pages (https://www.radiolocman.com/datasheet/data.html?di=351709, https://analog.com/en/products/ad844.html).",
       "Farnell 13931.pdf holds the old-format REV. C datasheet (https://www.farnell.com/datasheets/13931.pdf).",
@@ -472,14 +562,20 @@
       "Junction-isolated complementary bipolar process (https://datasheet.octopart.com/AD844ANZ-Analog-Devices-datasheet-9797614.pdf).",
       "Ordering codes ANZ, AQ, BQ, JRZ-16, JRZ-16-REEL7, SQ, SQ/883B (https://analog.com/en/products/ad844.html, https://www.digikey.com/en/products/detail/analog-devices-inc/AD844BQ/621197).",
       "AD844JR-16 listed in PDN 10_0081 Rev. B, medium confidence (https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf).",
-      "A separate AD844S product page exists (https://www.analog.com/en/products/ad844s.html)."
+      "A separate AD844S product page exists (https://www.analog.com/en/products/ad844s.html).",
+      "Rev. G revision table: Rev. G 5/2017 (Figure 32, Ordering Guide), Rev. F 2/09, Rev. E 1/03, Rev. D 11/01: https://www-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD844.pdf",
+      "Input voltage noise 2 nV/√Hz at f ≥ 1 kHz; open-loop transresistance 3.0 MΩ typ (VOUT ±10 V, 500 Ω): https://www.komponenten.es.aau.dk/fileadmin/komponenten/Data_Sheet/Linear/AD844.pdf",
+      "Operates from ±4.5 V to ±18 V supplies: https://www.analog.com/en/products/ad844.html",
+      "AD844AN obsolete at DigiKey, AD844ANZ named direct substitute: https://www.digikey.bg/en/products/detail/analog-devices-inc/AD844AN/611708"
     ],
     "refuted_claims": [],
     "corrections": [
       "Replaced placeholder 'AD844' part with single-channel ordering codes ANZ, AN, AQ, BQ, JRZ-16, JRZ-16-REEL7, JR-16, SQ, SQ/883B.",
       "Added complementary bipolar process; Barrie Gilbert attribution marked unconfirmed.",
       "Current datasheet is Rev. G; its PDF metadata wrongly adds 'with Quad Low Noise'.",
-      "No AD844-specific silicon changes or PCNs found."
+      "No AD844-specific silicon changes or PCNs found.",
+      "Noise 2 nV/√Hz and ±4.5–±18 V supply now confirmed (ADI datasheet and product page): https://www.komponenten.es.aau.dk/fileadmin/komponenten/Data_Sheet/Linear/AD844.pdf",
+      "Revision dates added: D 2001-11, E 2003-01, F 2009-02, G 2017-05 (revision table); 2017-08-15 is likely a file date: https://www-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD844.pdf"
     ],
     "unverified_urls": [
       "https://www.analog.com/static/imported-files/data_sheets/AD844.pdf",

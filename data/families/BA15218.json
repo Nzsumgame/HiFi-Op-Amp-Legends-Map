@@ -63,7 +63,7 @@
     },
     {
       "parameter": "Supply range",
-      "value": "4–32 V single; ±3 to ±16 V dual (dual limit unconfirmed)",
+      "value": "4–32 V single; ±3 to ±16 V dual",
       "condition": "operating range",
       "source": "ROHM legacy datasheet"
     },
@@ -244,6 +244,102 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "May hold several versions."
+    },
+    {
+      "vendor": "ROHM (via elecfans)",
+      "title": "BA15218F-E2 Low Noise Operational Amplifier",
+      "doc_number": "TSZ02201-0RAR1G200050-1-2",
+      "revision": "Rev. 001",
+      "date": "2013-09-10",
+      "url": "https://pdf.elecfans.com/ROHM/BA15218F-E2.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Mirror reportedly showing the 10.SEP.2013 Rev.001 date."
+    },
+    {
+      "vendor": "ROHM (via alldatasheet)",
+      "title": "BA15218F Datasheet (ROHM)",
+      "doc_number": "TSZ02201-0RAR1G200050-1-2 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://html.alldatasheet.vn/html-pdf/528172/ROHM/BA15218F/818/8/BA15218F.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Probably the TSZ sheet; sibling entry 506487 on alldatasheetit."
+    },
+    {
+      "vendor": "ROHM (via Elcodis)",
+      "title": "BA15218F-E2 Rohm Semiconductor Datasheet",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://elcodis.com/parts/1316622/BA15218F-E2_p9.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Page-by-page copy; revision not shown."
+    },
+    {
+      "vendor": "ROHM (via alldatasheet)",
+      "title": "BA15218F Datasheet (ROHM, legacy entry 35932)",
+      "doc_number": "none printed (legacy catalogue sheet)",
+      "revision": "original",
+      "date": "",
+      "url": "https://html.alldatasheet.co.kr/html-pdf/35932/ROHM/BA15218F/82/1/BA15218F.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Low entry number next to 35931; presumed legacy sheet."
+    },
+    {
+      "vendor": "ROHM (via Manualmachine)",
+      "title": "Datasheet BA15218N, BA15218F, BA15218 Datasheet (ROHM)",
+      "doc_number": "none printed (legacy catalogue sheet)",
+      "revision": "original",
+      "date": "",
+      "url": "https://manualmachine.com/datasheet/ba15218/3963790-datasheet-rohm",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Legacy sheet covering all three packages."
+    },
+    {
+      "vendor": "ROHM (via GetDatasheet)",
+      "title": "Dual high slew rate, low noise operational amplifier",
+      "doc_number": "none printed (legacy catalogue sheet)",
+      "revision": "original",
+      "date": "",
+      "url": "https://getdatasheet.com/datasheets/datainfo/107981/BA15218N.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "BA15218N.PDF, about 60 KB; presumed legacy sheet."
+    },
+    {
+      "vendor": "ROHM (via Sierra IC)",
+      "title": "BA15218 datasheet",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www.sierraic.com/buy_online/download/datasheet/511016/BA15218",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Distributor download; revision not shown."
+    },
+    {
+      "vendor": "ROHM (via ESPEC monitor)",
+      "title": "BA15218 / BA15218F / BA15218N datasheet",
+      "doc_number": "none printed (legacy catalogue sheet)",
+      "revision": "original",
+      "date": "",
+      "url": "https://monitor.espec.ws/download.php?id=141965",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Legacy-style copy covering all three packages."
     }
   ],
   "product_pages": [
@@ -276,7 +372,7 @@
         }
       ],
       "missing": [],
-      "note": "Undated catalogue sheet, pre-2013, covering DIP8, SOP8 and SIP8."
+      "note": "Undated catalogue sheet, pre-2013, covering DIP8, SOP8 and SIP8; many mirrors, none dated."
     },
     {
       "vendor": "ROHM",
@@ -288,7 +384,7 @@
         }
       ],
       "missing": [],
-      "note": "Whether a later revision exists is unknown."
+      "note": "Only Rev.001 seen on ROHM and mirrors; no later revision found."
     }
   ],
   "ti_literature_numbers": [],
@@ -302,8 +398,7 @@
   "open_questions": [
     "Which ROHM PDN covers the BA15218F-E2 LTB (2026-03-31)? TTI's ROHM PDN-1025006 is not yet tied to it.",
     "What are the lifecycle status and discontinuation dates of the BA15218N (SIP8) and DIP8 BA15218?",
-    "Is there a TSZ02201-0RAR1G200050 revision after Rev.001, and when was the legacy sheet issued?",
-    "Is the dual-supply lower limit ±3 V or ±2 V? Check the legacy PDF.",
+    "Is there a TSZ02201-0RAR1G200050 revision after Rev.001 (none found by 2026), and when was the legacy sheet issued?",
     "Is 'BA15218F-T1' a genuine older ROHM tape code? Which page sources the M5218 second-source claim?"
   ],
   "sources": [
@@ -316,11 +411,12 @@
     "https://www.digikey.co.uk/en/products/detail/rohm-semiconductor/BA15218F-E2/658252",
     "https://www.digikey.com/product-detail/en/rohm-semiconductor/BA15218/BA15218-ND/658251",
     "https://www.digikey.com/en/products/detail/rohm-semiconductor/BA15218N/658253",
-    "https://www.lcsc.com/product-detail/low-noise-amplifiers-lna-rf_rohm-semicon-ba15218f-e2_C79618.html"
+    "https://www.lcsc.com/product-detail/low-noise-amplifiers-lna-rf_rohm-semicon-ba15218f-e2_C79618.html",
+    "https://getdatasheet.com/datasheets/datainfo/107981/BA15218N.html"
   ],
   "verification": {
     "status": "verified-with-corrections",
-    "web_searches_used": 5,
+    "web_searches_used": 9,
     "claims_confirmed": [
       "Legacy ROHM sheet covers BA15218/F/N: 4–32 V supply, 1.0 µVrms RIAA, 3 V/µs, 10 MHz, 0.5 mV (https://www.alldatasheet.com/datasheet-pdf/pdf/35931/ROHM/BA15218.html).",
       "Packages: DIP8 (BA15218), SOP8 (BA15218F), SIP8 (BA15218N) (https://datasheet.octopart.com/BA15218-Rohm-datasheet-14139886.pdf).",
@@ -330,7 +426,8 @@
       "DigiKey lists the DIP8 BA15218 as obsolete (https://www.digikey.com/product-detail/en/rohm-semiconductor/BA15218/BA15218-ND/658251).",
       "C-Area wiki: clearer, more open highs than M5218 (veiled) and NJM4580 (sluggish bass) (https://w.atwiki.jp/higemouse/pages/104.html).",
       "A note.com headphone-amp BA15218 trial exists (https://note.com/jamjamjamw_w/n/n905ff5d7b92c).",
-      "Japanese hobbyists reportedly call it ROHM's faster M5218 second source (GBW 7 → 10 MHz); exact page not pinned (https://w.atwiki.jp/higemouse/pages/104.html)."
+      "Japanese hobbyists reportedly call it ROHM's faster M5218 second source (GBW 7 → 10 MHz); exact page not pinned (https://w.atwiki.jp/higemouse/pages/104.html).",
+      "Legacy sheet: single 4–32 V, dual ±3 to ±16 V; 110 dB open-loop gain, 0.0015% THD (https://getdatasheet.com/datasheets/datainfo/107981/BA15218N.html)."
     ],
     "refuted_claims": [],
     "corrections": [
@@ -341,7 +438,8 @@
       "Key specs added from the legacy ROHM datasheet (1.0 µVrms RIAA, 3 V/µs, 10 MHz, 0.5 mV, 4–32 V).",
       "Added current datasheet TSZ02201-0RAR1G200050-1-2 Rev.001 (10.SEP.2013) and legacy mirrors.",
       "Added lineage: hobbyist-reported M5218 second source.",
-      "Reputation softened to single-listener reports; no silicon changes found."
+      "Reputation softened to single-listener reports; no silicon changes found.",
+      "Dual-supply range confirmed as ±3 to ±16 V; removed the 'unconfirmed' flag."
     ],
     "unverified_urls": [
       "https://www.digikey.com/htmldatasheets/production/1815274/0/0/1/ba15218f.html",

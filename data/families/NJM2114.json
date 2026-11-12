@@ -36,10 +36,10 @@
       "note": "Noise-selected D-rank DIP-8 (limit not captured). Sold by Akizuki (g117705) and Keisei."
     },
     {
-      "pn": "NJM2114M / M-TE2",
+      "pn": "NJM2114M",
       "channels": 2,
-      "status": "unknown",
-      "note": "DMP-8 SMD, Mouser 513-NJM2114M; M-TE2 reel at DigiKey (1286476). Also M-TE1/-TE3, MD, MD-TE3."
+      "status": "NRND",
+      "note": "DMP-8 SMD, Mouser 513-NJM2114M. Also M-TE1/-TE3, MD, MD-TE3. Near-term discontinuation (distributor)."
     },
     {
       "pn": "NJM2114L",
@@ -52,6 +52,12 @@
       "channels": 2,
       "status": "unknown",
       "note": "Marking/trade name (JRC logo + '2114D'), not orderable. Aliases JRC2114DD, 2114DD."
+    },
+    {
+      "pn": "NJM2114M-TE2",
+      "channels": 2,
+      "status": "obsolete",
+      "note": "DMP-8 reel at DigiKey (1286476); Profusion lists it obsolete."
     }
   ],
   "key_specs": [
@@ -156,15 +162,19 @@
       ],
       "summary": "A Japanese audio blog reports Nisshinbo designated several ex-JRC op-amps as maintenance products (保守品, planned for discontinuation): NJM2114 with NJM4556A, NJM2082DD, NJM4560, NJM2041, NJM2043. NJM2068/NJM4580 inclusion unconfirmed. Lifecycle change only, no silicon change.",
       "spec_deltas": [],
-      "identification": "Reportedly on Nisshinbo's 保守品 list. DigiKey and Mouser still list NJM2114D/M. No 2025 datasheet NRND header found (unlike NJM4556A).",
+      "identification": "Distributors flag NJM2114L and NJM2114M-TE2 obsolete and NJM2114M as near-term discontinuation. Nisshinbo's 2025 DIP8 NRND notice excerpt does not show NJM2114D.",
       "audio_impact": "None; supply and lifecycle warning only.",
       "compatibility_risk": "low: no silicon change, only future availability risk; affected packages unknown",
-      "confidence": "low",
-      "verification": "Blog and Nisshinbo 保守品 list page found; no vendor NRND notice or distributor discontinued flag.",
+      "confidence": "medium",
+      "verification": "Blog, Nisshinbo list page and distributor lifecycle flags agree; no Nisshinbo notice naming NJM2114 seen.",
       "sources": [
         "https://foxtango101.blog.jp/archives/19678237.html",
         "https://www.nisshinbo-microdevices.co.jp/ja/design-support/discon/njx_discon.html",
-        "https://www.digikey.com/en/products/detail/njr-corporation-njrc/NJM2114D/11685570"
+        "https://www.digikey.com/en/products/detail/njr-corporation-njrc/NJM2114D/11685570",
+        "https://xonelec.com/mpn/nisshinbo/njm2114m",
+        "https://www.conevoelec.com/productdetail/nisshinbo-micro-devices-inc-njm2114l-11685294",
+        "https://us.profusion.uk/int/njm2114m-te2",
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7136/NRND_MNG-2025-0081.pdf"
       ]
     }
   ],
@@ -423,6 +433,30 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Index of all alldatasheet NJM2114 uploads."
+    },
+    {
+      "vendor": "New Japan Radio (NJR), copy hosted by Kyohritsu",
+      "title": "NJM2114",
+      "doc_number": "NJM2114",
+      "revision": "Ver. 2012-07-26",
+      "date": "2012-07-26",
+      "url": "https://kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm2114.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Footer Ver.2012-07-26; NJM5532-compatible text; DIP8/DMP8/SIP8."
+    },
+    {
+      "vendor": "New Japan Radio (NJR), copy hosted by IBS Electronics",
+      "title": "NJM2114D NJR datasheet",
+      "doc_number": "NJM2114",
+      "revision": "Ver. 2012-07-26",
+      "date": "2012-07-26",
+      "url": "https://datasheets.ibselectronics.com/NJM2114D-NJR-datasheet-37004363.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Footer Ver.2012-07-26."
     }
   ],
   "product_pages": [
@@ -458,7 +492,7 @@
         "pre-2012 original",
         "Nisshinbo-era edition"
       ],
-      "note": "Single source, dated versions. Candidates: alldatasheet 7258/7259/7263 (old), 2287944 (newer), datasheet.hk copy."
+      "note": "Ver. 2012-07-26 seen on Mouser, RX, Kyohritsu, IBS copies. Older candidates: alldatasheet 7258/7259/7263."
     },
     {
       "vendor": "New Japan Radio / Nisshinbo",
@@ -494,7 +528,7 @@
   ],
   "open_questions": [
     "Current Nisshinbo NJM2114_E/_J footer version? Any pre-2012 NJR edition (original introduction date)?",
-    "Which packages are on Nisshinbo's maintenance list versus obsolete list? Last-time-buy date?",
+    "Is NJM2114D on Nisshinbo's DIP8 NRND list (MNG-2025-0081, last buy 2027-09-30)? Last-time-buy dates for other packages?",
     "Does the NJR 2018-12-20 4-inch wafer line discontinuation letter cover NJM2114, implying a fab move?",
     "Extract from datasheet: e_n spot value, 0.9 µVrms condition, i_n, Vos/Ib, THD, Iq, DD noise limit.",
     "Verify Philips/Marantz CD-player I/V use; find objective measurements (ASR, Samuel Groner, jh4vaj)."
@@ -535,11 +569,18 @@
     "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100000597.md",
     "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100006247.md",
     "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100007515.md",
-    "https://github.com/techidaily/site-buynow-help/blob/07c27e88738a3ade4f2109b1819d0b838087fbc6/source/_posts/reviewing-the-creative-labs-sound-blaster-zxr-a-solid-choice-for-gamers-in-201n.md"
+    "https://github.com/techidaily/site-buynow-help/blob/07c27e88738a3ade4f2109b1819d0b838087fbc6/source/_posts/reviewing-the-creative-labs-sound-blaster-zxr-a-solid-choice-for-gamers-in-201n.md",
+    "https://kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm2114.pdf",
+    "https://datasheets.ibselectronics.com/NJM2114D-NJR-datasheet-37004363.pdf",
+    "https://xonelec.com/mpn/nisshinbo/njm2114m",
+    "https://www.conevoelec.com/productdetail/nisshinbo-micro-devices-inc-njm2114l-11685294",
+    "https://us.profusion.uk/int/njm2114m-te2",
+    "https://fpgacenter.com/product/nisshinbo-micro-devices-inc/NJM2114L",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7136/NRND_MNG-2025-0081.pdf"
   ],
   "verification": {
     "status": "partially-verified",
-    "web_searches_used": 6,
+    "web_searches_used": 10,
     "claims_confirmed": [
       "NJM2114 (bipolar NPN input) is among ex-JRC op-amps designated maintenance (保守品) products: https://foxtango101.blog.jp/archives/19678237.html",
       "Marutsu's NJM2114D page shows sales ended: https://www.marutsu.co.jp/pc/i/557442/",
@@ -548,7 +589,11 @@
       "±3.0 to ±22.0 V, 15 V/µs, 13 MHz, 0.9 µVrms, 60 mA: https://www.alldatasheet.com/datasheet-pdf/pdf/7258/NJRC/NJM2114.html and https://www.digchip.com/datasheets/parts/datasheet/330/NJM2114.php",
       "NJM2114L obsolete at Mouser: https://www.mouser.com/ProductDetail/Nisshinbo/NJM2114L?qs=kirO9wjNG99k5REOgAk0PQ%3D%3D",
       "DigiKey lists NJM2114D (11685570) and NJM2114M-TE2 (1286476): https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM2114D/11685570",
-      "Keisei lists NJM2114DD under Nisshinbo: https://www.keisei-net.co.jp/details.php?search=NJM2114DD"
+      "Keisei lists NJM2114DD under Nisshinbo: https://www.keisei-net.co.jp/details.php?search=NJM2114DD",
+      "Kyohritsu and IBS copies carry footer Ver.2012-07-26; no newer edition surfaced (https://kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm2114.pdf, https://datasheets.ibselectronics.com/NJM2114D-NJR-datasheet-37004363.pdf).",
+      "Distributor: NJM2114M to be discontinued in the near term, for current customers only (https://xonelec.com/mpn/nisshinbo/njm2114m).",
+      "NJM2114L listed obsolete (https://www.conevoelec.com/productdetail/nisshinbo-micro-devices-inc-njm2114l-11685294, https://fpgacenter.com/product/nisshinbo-micro-devices-inc/NJM2114L); NJM2114M-TE2 listed obsolete (https://us.profusion.uk/int/njm2114m-te2).",
+      "Nisshinbo MNG-2025-0081 (2025-06-16): DIP8 and TO-220F-3 products to NRND; last buy 2027-09-30, last ship 2028-03-31 (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7136/NRND_MNG-2025-0081.pdf)."
     ],
     "refuted_claims": [
       "NJM2114D 'still listed by Marutsu (item 557442)' is outdated: the page shows sales ended.",
@@ -563,7 +608,9 @@
       "Added key specs: ±3.0 to ±22.0 V, 15 V/µs, 13 MHz, 0.9 µVrms, 60 mA.",
       "Rejected aggregator specs (±3 to ±20 V, 1 pA bias, 3 MHz GBW) that conflict with the datasheet.",
       "NJM5532 positioning now sourced to the datasheet's own text.",
-      "No PCN found; NJR 2018-12-20 4-inch wafer line letter is an open lead."
+      "No PCN found; NJR 2018-12-20 4-inch wafer line letter is an open lead.",
+      "Distributors do flag NJM2114L and NJM2114M-TE2 obsolete; NJM2114M set NRND (near-term discontinuation); lifecycle confidence raised to medium.",
+      "NJM2114D on the 2025 DIP8 NRND list is unconfirmed: the notice excerpt lists NJM2115D, NJM2119D, not NJM2114D."
     ],
     "unverified_urls": [
       "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM2114_E.pdf",

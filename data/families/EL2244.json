@@ -32,27 +32,33 @@
   ],
   "part_numbers": [
     {
-      "pn": "EL2244CN / EL2244CS",
+      "pn": "EL2244CN / EL2244CS / EL2244CS-T7",
       "channels": 2,
-      "status": "unknown",
-      "note": "Elantec 8-pin PDIP / SO; early datasheets call it EL2244C. Likely obsolete."
+      "status": "obsolete",
+      "note": "Elantec 8-pin PDIP / SO; GlobalSpec lists EL2244CS Obsolete (EOL)."
     },
     {
-      "pn": "EL2244CSZ / EL2244CSZ-T13",
+      "pn": "EL2244CSZ / EL2244CSZ-T7 / EL2244CSZ-T13",
+      "channels": 2,
+      "status": "NRND",
+      "note": "Pb-free 8-pin SO and reels; FN7059.2 marks family NRND. Likely obsolete."
+    },
+    {
+      "pn": "EL2244CM / EL2244CM-T13 / EL2244CMZ-T13",
       "channels": 2,
       "status": "unknown",
-      "note": "Pb-free 8-pin SO, tube and 13-inch reel (FN7059.2). Likely obsolete."
+      "note": "Further orderable codes in distributor listings; package not confirmed."
     },
     {
       "pn": "EL2444CN / EL2444CS",
       "channels": 4,
-      "status": "unknown",
+      "status": "NRND",
       "note": "Quad: 14-pin PDIP / SO (0.150 in); early name EL2444C. Likely obsolete."
     },
     {
       "pn": "EL2444CSZ",
       "channels": 4,
-      "status": "unknown",
+      "status": "NRND",
       "note": "Pb-free 14-pin SO; reel variants in FN7059.2. Likely obsolete."
     }
   ],
@@ -127,9 +133,32 @@
   "alternatives": [
     "EL2044 (single-channel sibling)",
     "AD827 (ranked alongside it)",
-    "OP275 (soundstage reference in CN guides)"
+    "OP275 (soundstage reference in CN guides)",
+    "ISL55002 (Intersil-named substitute)",
+    "ISL55004 (Intersil-named substitute)"
   ],
-  "silicon_changes": [],
+  "silicon_changes": [
+    {
+      "kind": "lifecycle",
+      "vendor": "Intersil",
+      "when": "2005-05 · FN7059 Rev 2.00",
+      "part_numbers_affected": [
+        "EL2244",
+        "EL2444"
+      ],
+      "summary": "The May 16, 2005 FN7059 issue marks the family Not Recommended for New Designs and names ISL55002 and ISL55004 as possible substitutes. A third-party listing later shows EL2244CS as Obsolete (EOL).",
+      "identification": "Datasheet header 'NOT RECOMMENDED FOR NEW DESIGNS'; no marking change on parts.",
+      "spec_deltas": [],
+      "audio_impact": "None; lifecycle only. Supply now mainly old or broker stock.",
+      "compatibility_risk": "medium: suggested substitutes are different parts; check pinout and specs.",
+      "confidence": "medium",
+      "sources": [
+        "https://www.mouser.com/catalog/specsheets/intersil_fn7059.pdf",
+        "https://datasheets.globalspec.com/ds/renesas-electronics/el2244cs/bb0e8d60-7b0f-4b57-87d5-efbe24cf5130"
+      ],
+      "verification": "Seen in search snippets of FN7059 copies; Renesas notice not found."
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Elantec",
@@ -196,12 +225,12 @@
       "title": "EL2244, EL2444 Dual/Quad Low-Power 120MHz Unity-Gain Stable Op Amp",
       "doc_number": "FN7059",
       "revision": "FN7059.2",
-      "date": "",
+      "date": "2005-05-16",
       "url": "http://www.manuallib.com/download/pdf14/INTER-IL-EL2244-EL2444-DATA-SHEET.PDF",
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Latest found; lists the Pb-free Z parts. Print date unknown."
+      "note": "Lists Pb-free Z parts; Rev 2.00 dated 2005-05-16, marked NRND."
     },
     {
       "vendor": "Intersil",
@@ -226,6 +255,112 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Renesas-branded copy; EL2444CS at ID 1051980. Content changes unknown."
+    },
+    {
+      "vendor": "Intersil",
+      "title": "EL2244, EL2444 Dual/Quad Low-Power 120MHz Unity-Gain Stable Op Amp",
+      "doc_number": "FN7059",
+      "revision": "FN7059.2",
+      "date": "2005-05-16",
+      "url": "https://www.mouser.com/catalog/specsheets/intersil_fn7059.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Mouser copy; likely the May 2005 NRND issue."
+    },
+    {
+      "vendor": "Intersil",
+      "title": "EL2244, EL2444 Dual/Quad Low-Power 120MHz Unity-Gain Stable Op Amp",
+      "doc_number": "FN7059",
+      "revision": "FN7059.2",
+      "date": "2005-05-16",
+      "url": "https://chipfind.net/datasheet/html/intersil/el2244cm.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Reported as the 2005 issue; filed under EL2244CM."
+    },
+    {
+      "vendor": "Intersil",
+      "title": "EL2244, EL2444 Dual/Quad Low-Power 120MHz Unity-Gain Stable Op Amp",
+      "doc_number": "FN7059",
+      "revision": "FN7059.2",
+      "date": "2005-05-16",
+      "url": "https://datasheet.eeworld.com.cn/view/102424.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Reported as the 2005 issue."
+    },
+    {
+      "vendor": "Intersil",
+      "title": "EL2244, EL2444 Dual/Quad Low-Power 120MHz Unity-Gain Stable Op Amp",
+      "doc_number": "FN7059",
+      "revision": "FN7059.0",
+      "date": "2002-08-16",
+      "url": "https://datasheet.eeworld.com.cn/view/24716765.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Dated August 16, 2002; earliest Intersil issue found."
+    },
+    {
+      "vendor": "Intersil",
+      "title": "Datasheet EL2244, EL2444 (manualmachine #8396398)",
+      "doc_number": "FN7059",
+      "revision": "",
+      "date": "",
+      "url": "https://manualmachine.com/datasheet/el2244/8396398-datasheet-intersil",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Intersil copy; revision not shown.",
+      "also_urls": [
+        "https://pdf.jiepei.com/el2244cm-9753704.html",
+        "https://pdf.jiepei.com/el2244cn-9753708.html"
+      ]
+    },
+    {
+      "vendor": "Intersil",
+      "title": "EL2244, EL2444 (jiepei, filed under EL2244CSZ)",
+      "doc_number": "FN7059",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.jiepei.com/el2244csz-9753713.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Also filed under EL2244CM and EL2244CN.",
+      "also_urls": [
+        "https://datasheetbank.com/en/datasheet-html/363359/Intersil/6page/EL2244CMZ-T13.html"
+      ]
+    },
+    {
+      "vendor": "Intersil",
+      "title": "EL2244CN datasheet (datasheetq #363359)",
+      "doc_number": "FN7059",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetq.com/ja/pdf-html/363359/Intersil/1page/EL2244CN.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Intersil copy; same file on datasheetbank under EL2244CMZ-T13."
+    },
+    {
+      "vendor": "Renesas",
+      "title": "EL2244 datasheet (qdatasheet preview)",
+      "doc_number": "FN7059 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.qdatasheet.com/preview/EL2244-Renesas",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Renesas-labelled 11-page PDF; revision not shown.",
+      "also_urls": [
+        "https://datasheetbank.com/ja/preview/EL2244-Renesas"
+      ]
     }
   ],
   "product_pages": [],
@@ -241,8 +376,8 @@
       "vendor": "Intersil",
       "doc_number": "FN7059",
       "revision": "FN7059.0",
-      "date": "2002",
-      "changes": "Presumed first Intersil issue; an August 2002 version is reported. Not seen."
+      "date": "2002-08-16",
+      "changes": "First Intersil issue; a copy dated August 16, 2002 is on eeworld. Contents not checked."
     },
     {
       "vendor": "Intersil",
@@ -255,8 +390,8 @@
       "vendor": "Intersil",
       "doc_number": "FN7059",
       "revision": "FN7059.2",
-      "date": "",
-      "changes": "After July 2004. Lists Pb-free EL2244CSZ, EL2244CSZ-T13, EL2444CSZ; unknown whether .1 did."
+      "date": "2005-05-16",
+      "changes": "Rev 2.00, May 16, 2005: marked NRND, names ISL55002/ISL55004 substitutes; lists Pb-free EL2244CSZ, EL2244CSZ-T13, EL2444CSZ."
     }
   ],
   "revision_chains": [
@@ -280,19 +415,22 @@
       "doc_number": "FN7059",
       "known": [
         {
+          "rev": "FN7059.0",
+          "date": "2002-08-16"
+        },
+        {
           "rev": "FN7059.1",
           "date": "2004-07-14"
         },
         {
           "rev": "FN7059.2",
-          "date": ""
+          "date": "2005-05-16"
         }
       ],
       "missing": [
-        "FN7059.0 (c. 2002)",
         "any Renesas-era revision"
       ],
-      "note": "FN7059.2 print date unknown."
+      "note": "FN7059.0 date from a mirror copy (probable). FN7059.2 is the NRND issue."
     }
   ],
   "ti_literature_numbers": [],
@@ -301,10 +439,10 @@
     "https://www.renesas.com/us/en/products/el2244"
   ],
   "open_questions": [
-    "Lifecycle status on renesas.com (probably obsolete)?",
-    "Print date of FN7059.2; is there a later Renesas-era revision?",
-    "Is FN7059.0 the reported August 2002 version?",
-    "Elantec revisions before Rev C? Did early sheets quote 60 MHz, perhaps a −3 dB bandwidth?",
+    "Renesas lifecycle of EL2244CSZ and EL2444CSZ: EOL notice and last-time-buy date?",
+    "Is there a Renesas-era FN7059 revision after FN7059.2 (2005)?",
+    "Does the eeworld August 2002 copy carry the FN7059.0 number?",
+    "Elantec revisions before Rev C? Is the 60 MHz figure on datasheets.com a −3 dB bandwidth?",
     "Any PCN, die change or fab transfer across the Elantec, Intersil and Renesas eras?"
   ],
   "sources": [
@@ -322,11 +460,19 @@
     "https://tieba.baidu.com/p/7230761275",
     "http://www.360doc.com/content/18/0502/03/55110459_750368110.shtml",
     "https://max.book118.com/html/2017/0529/110024617.shtm",
-    "https://www.digipine.com/index.php?mid=audio&document_srl=918"
+    "https://www.digipine.com/index.php?mid=audio&document_srl=918",
+    "https://www.mouser.com/catalog/specsheets/intersil_fn7059.pdf",
+    "https://datasheet.eeworld.com.cn/view/24716765.html",
+    "https://datasheets.globalspec.com/ds/renesas-electronics/el2244cs/bb0e8d60-7b0f-4b57-87d5-efbe24cf5130",
+    "https://www.datasheets.com/renesas/el2244cmz-t13",
+    "https://findchips.com/detail/el2244cm/Intersil-Corporation?f=dsa",
+    "https://dtsheet.com/model/1562722",
+    "https://elcodis.com/parts/6138490/el2244csz-t7_p9.html",
+    "https://www.microchipusa.com/product/renesas-electronics-corporation/instrumentation-op-amps-buffer-amps/EL2244CSZ"
   ],
   "verification": {
     "status": "verified-with-corrections",
-    "web_searches_used": 5,
+    "web_searches_used": 9,
     "claims_confirmed": [
       "Intersil datasheet FN7059, 'EL2244, EL2444 Dual/Quad Low-Power 120MHz Unity-Gain Stable Op Amp'; an FN7059.2 copy exists (http://www.manuallib.com/download/pdf14/INTER-IL-EL2244-EL2444-DATA-SHEET.PDF)",
       "FN7059.1 dated July 14, 2004, copyright Intersil 2002–2004 (https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1)",
@@ -335,7 +481,11 @@
       "Elantec EL2244C/EL2444C Rev C, December 1995, exists (https://www.sm0vpo.com/_pdf/amplifiers/EL2244.PDF)",
       "Input noise 15 nV/√Hz at 10 kHz, 25 °C (https://www.sm0vpo.com/_pdf/amplifiers/EL2244.PDF)",
       "FN7059.2 lists Pb-free EL2244CSZ, EL2244CSZ-T13 and EL2444CSZ (http://www.manuallib.com/download/pdf14/INTER-IL-EL2244-EL2444-DATA-SHEET.PDF)",
-      "Elantec codes EL2244CN, EL2244CS, EL2444CS, EL2444CN exist (https://www.datasheetq.com/EL2244CN-doc-Elantec, https://www.alldatasheet.com/datasheet-pdf/pdf/59896/ELANTEC/EL2244CS.html, https://pdf.datasheet.live/69509328/intersil.com/EL2444CN.html)"
+      "Elantec codes EL2244CN, EL2244CS, EL2444CS, EL2444CN exist (https://www.datasheetq.com/EL2244CN-doc-Elantec, https://www.alldatasheet.com/datasheet-pdf/pdf/59896/ELANTEC/EL2244CS.html, https://pdf.datasheet.live/69509328/intersil.com/EL2444CN.html)",
+      "An FN7059 copy is Rev 2.00, May 16, 2005, marked Not Recommended for New Designs, substitutes ISL55002/ISL55004 (https://www.mouser.com/catalog/specsheets/intersil_fn7059.pdf).",
+      "An eeworld copy of the EL2244/EL2444 datasheet is dated August 16, 2002 (https://datasheet.eeworld.com.cn/view/24716765.html).",
+      "GlobalSpec lists Renesas EL2244CS as Obsolete (EOL) (https://datasheets.globalspec.com/ds/renesas-electronics/el2244cs/bb0e8d60-7b0f-4b57-87d5-efbe24cf5130).",
+      "Codes EL2244CM, EL2244CM-T13, EL2244CMZ-T13, EL2244CS-T7, EL2244CSZ-T7 appear in distributor listings (https://findchips.com/detail/el2244cm/Intersil-Corporation?f=dsa, https://www.datasheets.com/renesas/el2244cmz-t13, https://dtsheet.com/model/1562722)."
     ],
     "refuted_claims": [
       "'Roughly a 60 MHz class part': the FN7059 title and text give 120 MHz GBW; no 60 MHz figure found."
@@ -346,7 +496,8 @@
       "Added Intersil FN7059 (.1 and .2) and Elantec Rev C (December 1995).",
       "Added Pb-free EL2244CSZ, EL2244CSZ-T13, EL2444CSZ, plus EL2444CN and EL2444CS.",
       "Added key specs, lineage, revision history and mirrors; statuses marked likely obsolete.",
-      "Tagline, descriptors, uses and caveats filled from the reputation summary; its sources not independently checked."
+      "Tagline, descriptors, uses and caveats filled from the reputation summary; its sources not independently checked.",
+      "FN7059.2 dated 2005-05-16 and marked NRND; statuses changed from unknown to NRND/obsolete; added further orderable codes."
     ],
     "unverified_urls": [
       "http://www.intersil.com/data/fn/fn7059.pdf",

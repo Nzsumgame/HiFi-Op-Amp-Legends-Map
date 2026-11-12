@@ -20,15 +20,15 @@
       "vendor": "Texas Instruments",
       "role": "acquirer",
       "period": "2011–present",
-      "note": "Bought National in 2011. Reissued datasheet as SNAS429B (April 2013). Now NRND; no die/fab change documented."
+      "note": "Bought National in 2011. Reissued datasheet as SNAS429B (April 2013). TI shows Active; OPA1662 offered as newer drop-in."
     }
   ],
   "part_numbers": [
     {
       "pn": "LME49723",
       "channels": 2,
-      "status": "NRND",
-      "note": "Base part; no single or quad. Still made for existing customers, per TI."
+      "status": "active",
+      "note": "Base part; no single or quad. TI page: Active, newer version (OPA1662) available."
     },
     {
       "pn": "LME49723MA",
@@ -39,14 +39,14 @@
     {
       "pn": "LME49723MA/NOPB",
       "channels": 2,
-      "status": "NRND",
-      "note": "SOIC-8, lead-free, tube. Listed at DigiKey (1872061), Mouser 926-LME49723MA/NOPB."
+      "status": "active",
+      "note": "SOIC-8, lead-free, tube. DigiKey (1872061) Active; Mouser 926-LME49723MA/NOPB."
     },
     {
       "pn": "LME49723MAX/NOPB",
       "channels": 2,
-      "status": "unknown",
-      "note": "SOIC-8 tape-and-reel; listed at Octopart and Xecor. NRND family."
+      "status": "active",
+      "note": "SOIC-8 tape-and-reel; DigiKey (3739033, 1872060) lists Active."
     },
     {
       "pn": "LME49723NA/NOPB (National LME49723NA)",
@@ -113,7 +113,7 @@
       "SOIC-8 DIY audio stages, e.g. Rezzonics NuTube designs"
     ],
     "caveats": [
-      "TI lists the device as NRND.",
+      "TI lists it Active but points to OPA1662 as a newer drop-in.",
       "The DIP version is reportedly scarce; most stock is SOIC-8, needing an adapter for socket rolling.",
       "Praise comes from a handful of listeners. A Head-Fi comment (unconfirmed) says it sounds unlike LM4562/LME49720/LME49860.",
       "AudioKarma advises careful decoupling against oscillation on sister LME49720; no LME49723-specific report.",
@@ -129,13 +129,14 @@
       "https://github.com/Rezzonics/NuTubeAmp"
     ]
   },
-  "counterfeit_notes": "No LME49723-specific fakes reported, but sister LME parts are faked (remarked LME49710, tinytransistors.net 2022; fake LME49720NA on diyAudio). With the DIP scarce and NRND, distrust cheap marketplace 'LME49723NA' parts; buy LME49723MA/NOPB from TI, Mouser or DigiKey.",
+  "counterfeit_notes": "No LME49723-specific fakes reported, but sister LME parts are faked (remarked LME49710, tinytransistors.net 2022; fake LME49720NA on diyAudio). With the DIP scarce, distrust cheap marketplace 'LME49723NA' parts; buy LME49723MA/NOPB from TI, Mouser or DigiKey.",
   "alternatives": [
     "LME49720 / LM4562 (same family, standard pinout)",
     "LME49860 (high-voltage family member)",
     "OPA1612 / OPA1602",
     "NE5532 / NJM5532",
-    "OPA1656 / OPA1678"
+    "OPA1656 / OPA1678",
+    "OPA1662 (TI's suggested drop-in)"
   ],
   "silicon_changes": [],
   "datasheets": [
@@ -366,6 +367,39 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Hobby or distributor copy; edition and revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SNAS429",
+      "revision": "B",
+      "date": "2013-04",
+      "url": "https://www.ti.com/lit/gpn/lme49723",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Header: 'SNAS429B – January 2008 – revised April 2013'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SNAS429",
+      "revision": "",
+      "date": "",
+      "url": "https://www.promelec.ru/fs/sources/43/2c/7a/a8/0dcc392194306364fb9ba188.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Distributor copy; revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SNAS429",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheets.ibselectronics.com/LME49723MAX-NOPB-Texas-Instruments-datasheet-41216320.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "IBS Electronics copy for LME49723MAX/NOPB."
     }
   ],
   "product_pages": [
@@ -402,6 +436,10 @@
       "doc_number": "SNAS429",
       "known": [
         {
+          "rev": "original",
+          "date": "2008-01"
+        },
+        {
           "rev": "A (National format)",
           "date": "2008-02-11"
         },
@@ -411,9 +449,9 @@
         }
       ],
       "missing": [
-        "original (January 2008, unconfirmed)"
+        "original (January 2008) copy"
       ],
-      "note": "No rev C found; product NRND. National DS number and 2009–2011 editions unknown."
+      "note": "SNAS429B header dates the first release January 2008; no Rev C found. National DS number unknown."
     }
   ],
   "ti_literature_numbers": [
@@ -434,11 +472,11 @@
     "https://www.ti.com/product/LME49723"
   ],
   "open_questions": [
-    "What was National's DS document number, and was there a January 2008 edition before SNAS429A?",
+    "What was National's DS document number, and where is the January 2008 first edition?",
     "What changed in SNAS429B (April 2013)? The revision-history table was not seen.",
     "Check GBW 20 MHz and the product page's 'RRIO' wording against the datasheet; the part is believed not RRIO.",
     "Take input bias, offset, Iq per channel, open-loop gain and current noise from the datasheet.",
-    "Is LME49723NA/NOPB obsolete and LME49723MAX/NOPB active? No PCN/EOL found; DIP scarcity after TI transfer unexplained."
+    "Is LME49723NA/NOPB (DIP-8) obsolete? Not found at distributors; no PCN/EOL seen."
   ],
   "sources": [
     "https://www.ti.com/lit/ds/symlink/lme49723.pdf",
@@ -461,22 +499,26 @@
     "https://www.diyaudio.com/community/threads/curious-what-is-this-fake-opamp-not-lme49720na.386852/"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 5,
+    "status": "verified-with-corrections",
+    "web_searches_used": 8,
     "claims_confirmed": [
       "Datasheet SNAS429B, 'JANUARY 2008-REVISED APRIL 2013' at https://www.ti.com/lit/ds/symlink/lme49723.pdf",
       "Earlier SNAS429A / National-era copy dated February 11, 2008 (reportedly; https://datasheet.octopart.com/LME49723MA-National-Semiconductor-datasheet-10848611.pdf)",
       "SNAS429B mirror at https://datasheet.octopart.com/LME49723MA-NOPB-Texas-Instruments-datasheet-47564704.pdf",
-      "TI lists LME49723 as NRND (https://www.ti.com/product/LME49723)",
       "Key specs 3.6 nV/√Hz, THD+N 0.0002%, slew ±20 V/µs, ±26 mA output (https://www.ti.com/lit/ds/symlink/lme49723.pdf)",
       "Supply range ±2.5 V to ±17 V (https://www.alldatasheet.com/datasheet-pdf/pdf/216563/NSC/LME49723.html)",
       "LME49723MA/NOPB listed at DigiKey (https://www.digikey.com/en/products/detail/texas-instruments/LME49723MA-NOPB/1872061)",
-      "LME49723MAX/NOPB orderable exists (https://www.xecor.com/product/lme49723max-nopb)"
+      "LME49723MAX/NOPB orderable exists (https://www.xecor.com/product/lme49723max-nopb)",
+      "SNAS429B header reads 'January 2008 – revised April 2013'; TI lists Rev. B (04 Apr 2013) as current: https://www.ti.com/lit/gpn/lme49723",
+      "TI product page shows LME49723 Active with 'a newer version of this product is available', OPA1662 drop-in: https://www.ti.com/product/de-de/LME49723",
+      "DigiKey lists LME49723MAX/NOPB as Active: https://www.digikey.com/en/products/detail/texas-instruments/LME49723MAX-NOPB/3739033",
+      "DigiKey lists LME49723MA/NOPB as Active; the LME49723MABD board is obsolete: https://www.digikey.at/en/products/detail/texas-instruments/LME49723MA-NOPB/1872061"
     ],
     "refuted_claims": [
       "Input noise at 1 kHz is 3.6 nV/√Hz per SNAS429B, not 3.2 nV/√Hz.",
       "Status and literature number are known: TI shows NRND, literature number SNAS429.",
-      "A tape-and-reel LME49723MAX/NOPB does exist (Octopart, Xecor)."
+      "A tape-and-reel LME49723MAX/NOPB does exist (Octopart, Xecor).",
+      "'TI lists the device as NRND': TI and DigiKey show Active, with OPA1662 offered as newer drop-in: https://www.ti.com/product/LME49723"
     ],
     "corrections": [
       "Input noise corrected from 3.2 to 3.6 nV/√Hz typ.",
@@ -485,7 +527,8 @@
       "Added LME49723MAX/NOPB; split LME49723MA (National) from LME49723MA/NOPB (TI).",
       "Added slew ±20 V/µs, output ±26 mA, supply ±2.5 V to ±17 V, GBW 20 MHz (unconfirmed).",
       "Tagline now says 'one experienced diyAudio listener', matching the evidence.",
-      "Introduction date set to early 2008 from the datasheet header."
+      "Introduction date set to early 2008 from the datasheet header.",
+      "Lifecycle changed from NRND to Active for LME49723, MA/NOPB and MAX/NOPB; OPA1662 added as TI's suggested drop-in: https://www.ti.com/product/de-de/LME49723"
     ],
     "unverified_urls": [
       "https://www.ti.com/lit/gpn/lme49723",

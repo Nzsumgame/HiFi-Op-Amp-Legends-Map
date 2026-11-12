@@ -33,13 +33,13 @@
       "pn": "AD845JN / AD845JNZ",
       "channels": 1,
       "status": "unknown",
-      "note": "J grade, 0–70 °C, PDIP-8. JN reportedly discontinued; JNZ at RS UK (5229464)."
+      "note": "J grade, 0–70 °C, PDIP-8. JN obsolete (AERI); JNZ at RS UK (5229464)."
     },
     {
       "pn": "AD845KN / AD845KNZ",
       "channels": 1,
       "status": "unknown",
-      "note": "K (best) grade, 0–70 °C, PDIP-8. KN reportedly replaced by KNZ (PDN 10_0081)."
+      "note": "K grade, 0–70 °C, PDIP-8. KN replaced by KNZ; RS UK marks KNZ discontinued."
     },
     {
       "pn": "AD845JR-16 / AD845JRZ-16 (-REEL, -REEL7)",
@@ -51,7 +51,7 @@
       "pn": "AD845A",
       "channels": 1,
       "status": "unknown",
-      "note": "A grade, −40 to +85 °C. Orderable codes (e.g. AQ) not seen."
+      "note": "A grade, −40 to +85 °C. AD845AQ appears on mirror listings only."
     },
     {
       "pn": "AD845B (AD845BQ)",
@@ -69,9 +69,9 @@
   "key_specs": [
     {
       "parameter": "Input noise (1 kHz)",
-      "value": "4 µV p-p max (1 kHz density not captured)",
-      "condition": "0.1 Hz to 10 Hz",
-      "source": "Datasheet Rev. E"
+      "value": "25 nV/√Hz; 18 at 10 kHz; 4 µV p-p 0.1–10 Hz",
+      "condition": "all grades",
+      "source": "Datasheet Rev. E (mirror table)"
     },
     {
       "parameter": "GBW",
@@ -99,9 +99,9 @@
     },
     {
       "parameter": "Supply current",
-      "value": "about 10 mA",
-      "condition": "reviewer figure; datasheet not captured",
-      "source": "DiyEden / Soomal review (2005)"
+      "value": "10 mA typ, 12 mA max (reviewer: about 10 mA)",
+      "condition": "over temperature",
+      "source": "Datasheet Rev. E (mirror table)"
     },
     {
       "parameter": "Output current",
@@ -385,6 +385,83 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Same file ID 1088521 as datasheet4u; probably the same scan."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD845",
+      "revision": "D",
+      "date": "",
+      "url": "https://manualmachine.com/analogdevices/ad845aq/3999410-datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "A ManualMachine copy reportedly shows REV. D."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD845",
+      "revision": "",
+      "date": "",
+      "url": "https://manualmachine.com/analogdevices/ad845sq883b/3999328-datasheet/",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "ManualMachine SQ/883B copy; revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD845",
+      "revision": "",
+      "date": "",
+      "url": "https://manualmachine.com/analogdevices/ad845bq/3999409-datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Lists SQ-883B, SQ, chips, KN, JR-16-REEL7."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD845",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=171879",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Second RadioLocman AD845 PDF; revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD845",
+      "revision": "",
+      "date": "",
+      "url": "https://ew.lens.unifi.it/datasheets/AD845_16MHz_OpAmp[1].pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "University-hosted copy; revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD845",
+      "revision": "E",
+      "date": "2003-10",
+      "url": "https://www-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD845.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "ADI CDN host of the current PDF."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD845",
+      "revision": "",
+      "date": "",
+      "url": "https://docs.rs-online.com/875b/0900766b80de075f.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "RS PDF returned by AD845 searches; contents not confirmed."
     }
   ],
   "product_pages": [
@@ -406,7 +483,7 @@
       "doc_number": "AD845",
       "revision": "D",
       "date": "before 2003-10",
-      "changes": "Previous revision; contents not seen."
+      "changes": "Previous revision; alldatasheet and ManualMachine list REV. D copies. Contents not compared."
     },
     {
       "vendor": "Analog Devices",
@@ -438,10 +515,9 @@
         "original",
         "A",
         "B",
-        "C",
-        "D"
+        "C"
       ],
-      "note": "Only Rev. E copies found. Check alldatasheet 48467, datasheetcatalog, Octopart 65835, kontest.ru and 1990–92 ADI databooks."
+      "note": "Rev. D reportedly on alldatasheet and ManualMachine 3999410; no Rev. A–C copies found."
     }
   ],
   "ti_literature_numbers": [],
@@ -462,9 +538,9 @@
   ],
   "open_questions": [
     "ADI lifecycle status of AD845JNZ / KNZ / JRZ-16, and were AQ, BQ, SQ/883B or 5962 parts orderable?",
-    "Dates and copies of the original edition and Revs. A–D; which mirrors hold pre-E copies?",
-    "Confirm PDN 10_0081 directly: date, and whether JR-16 or A/B/S grades were included.",
-    "Datasheet e_n, i_n, THD and quiescent current; which docs.rs-online.com PDF (0900766b80ddff33, 0900766b80de075f, 0900766b80e431ff) holds it?",
+    "Dates of the original edition and Revs. A–D; confirm the ManualMachine 3999410 copy is Rev. D.",
+    "Confirm AD845 entries in PDN 10_0081 Rev. B (visible pages show AD526–AD712 only): date and grades.",
+    "Datasheet current noise and THD; does docs.rs-online.com 0900766b80de075f hold the AD845 datasheet?",
     "Is tangentsoft.net the English original of the Soomal survey? Wayback-check the legacy analog.com seed URLs."
   ],
   "sources": [
@@ -484,8 +560,8 @@
     "https://github.com/123xiao/geek-dev-personal-site/blob/62bb387208122938198d00bcff50e3103ea2ede4/ic/ic_sitemap_107.xml"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 5,
+    "status": "verified-with-corrections",
+    "web_searches_used": 8,
     "claims_confirmed": [
       "Datasheet title 'Precision, 16 MHz CBFET Op Amp'; vendor PDF exists: https://www.analog.com/media/en/technical-documentation/data-sheets/AD845.pdf",
       "Current datasheet revision is E: https://www.radiolocman.com/datasheet/pdf.html?di=121495",
@@ -495,7 +571,13 @@
       "±4.75 V to ±18 V and 50 mA output (third-party): https://www.utmel.com/components/ad845-op-amp-datasheet-pinout-and-ad845-vs-ad744?id=800",
       "AD845JNZ listed by RS UK: https://uk.rs-online.com/web/p/op-amps/5229464/",
       "ADI product page exists: https://www.analog.com/en/products/ad845.html",
-      "A PDN (reported as 10_0081) lists AD845KN with replacement AD845KNZ: https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf"
+      "A PDN (reported as 10_0081) lists AD845KN with replacement AD845KNZ: https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf",
+      "Noise 25 nV/√Hz at 1 kHz, 18 nV/√Hz at 10 kHz, all grades: https://www.radiolocman.com/datasheet/pdf.html?di=121495&p=2",
+      "Quiescent current about 10 mA typ, 12 mA max: https://www.radiolocman.com/datasheet/pdf.html?di=121495&p=2",
+      "Older REV. D copies listed by third-party mirrors: https://manualmachine.com/analogdevices/ad845aq/3999410-datasheet",
+      "AD845JN listed obsolete: https://www.aeri.com/pn/analog-devices-inc/AD845JN",
+      "RS UK marks AD845KNZ a discontinued product: https://uk.rs-online.com/web/p/op-amps/5230127",
+      "PDN 10_0081 Rev. B is a 20-page discontinued-parts list: https://wcm-cce.cldnet.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf"
     ],
     "refuted_claims": [
       "'CBFET' unverified: wrong. Datasheet title is 'Precision, 16 MHz CBFET Op Amp' on ADI's complementary bipolar process.",
@@ -509,7 +591,8 @@
       "Grades: J/K 0–70 °C, A/B −40–85 °C, S −55–125 °C.",
       "Reviewer's 9.5 V minimum supply matches the datasheet ±4.75 V.",
       "Added reported PDN 10_0081 discontinuance of non-Z JN/KN (about 2010); family status still unconfirmed.",
-      "No family-wide obsolescence notice, PCN, die revision or fab transfer found."
+      "No family-wide obsolescence notice, PCN, die revision or fab transfer found.",
+      "Input noise now 25 nV/√Hz at 1 kHz (18 at 10 kHz) and supply current 10 mA typ / 12 mA max from the Rev. E table: https://www.radiolocman.com/datasheet/pdf.html?di=121495&p=2"
     ],
     "unverified_urls": [
       "https://www.mouser.com/ProductDetail/Analog-Devices/AD845JNZ?qs=%2FtpEQrCGXCyqfS60ab%252BuTA%3D%3D",

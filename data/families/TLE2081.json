@@ -224,7 +224,7 @@
       "title": "TLE208x and TLE208xA Excalibur High-Speed Operational Amplifiers (TI.com: 'Excalibur High-Speed JFET-Input Op Amps datasheet')",
       "doc_number": "SLOS182",
       "revision": "C",
-      "date": "2026-03",
+      "date": "2026-03-04",
       "url": "https://www.ti.com/lit/ds/symlink/tle2082.pdf",
       "url_kind": "vendor_current",
       "confidence": "medium",
@@ -236,7 +236,7 @@
       "title": "TLE208x and TLE208xA Excalibur High-Speed Operational Amplifiers",
       "doc_number": "SLOS182",
       "revision": "C",
-      "date": "2026-03",
+      "date": "2026-03-04",
       "url": "https://www.ti.com/lit/ds/symlink/tle2084.pdf",
       "url_kind": "vendor_current",
       "confidence": "medium",
@@ -518,6 +518,50 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Index page; revision unknown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS182",
+      "revision": "C",
+      "date": "2026-03-04",
+      "url": "https://www.ti.com/document-viewer/TLE2081/datasheet/GUID-662CDA93-68B7-47A3-9DA4-E3C3FA412F78",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "TI viewer: 'SLOS182C February 1997 – March 2026', A grades included."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS182",
+      "revision": "B",
+      "date": "2001-06",
+      "url": "https://static.chipdip.ru/lib/005/DOC003005155.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Cover: 'SLOS182B – February 1997 – revised June 2001'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS182",
+      "revision": "",
+      "date": "",
+      "url": "https://xdevs.com/doc/_Datasheets/Amplifiers/tle2081.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "xDevs copy; revision not shown, probably pre-2026."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS182",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.ciiva.com/7738/1834262-7738590.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Ciiva copy; revision not shown."
     }
   ],
   "product_pages": [
@@ -567,7 +611,7 @@
       "vendor": "Texas Instruments",
       "doc_number": "SLOS182C",
       "revision": "C",
-      "date": "2026-03",
+      "date": "2026-03-04",
       "changes": "Modern TI format; dropped BiFET, slew-rate and offset-trim features; added Applications and filter figure; title drops JFET-Input and Y forms."
     }
   ],
@@ -605,14 +649,14 @@
         },
         {
           "rev": "C",
-          "date": "2026-03"
+          "date": "2026-03-04"
         }
       ],
       "missing": [
         "original (no copy)",
         "A"
       ],
-      "note": "Pre-2026 Wayback captures of the tle2082 symlink should hold Rev B. Older mirrors may hold earlier editions."
+      "note": "Rev B held by chipdip DOC003005155; Rev C (4 Mar 2026) on ti.com. Rev A not found."
     }
   ],
   "ti_literature_numbers": [
@@ -642,7 +686,7 @@
     "https://www.ti.com/product/TLE2084"
   ],
   "open_questions": [
-    "Compare Rev C and Rev B electrical tables (noise, Vos, slew, Iq): did the RFAB die change specs?",
+    "Compare Rev C (Mar 2026) and Rev B (chipdip copy) tables: did the RFAB die change specs?",
     "When was SLOS182A issued and what changed? Did TLE2081 and TLE2084 have pre-1997 datasheets?",
     "What is the lifecycle status of each orderable, including M grades, Y chip forms and 5962 SMD numbers?",
     "Check THD+N and resolve the open-loop gain conflict (LISO 110 dB vs EWB 96 dB) against the datasheet.",
@@ -710,8 +754,11 @@
       "TI describes TLE2081/2082/2084 as 38-V, 10-MHz, 40-V/µs JFET-input op-amps (https://www.ti.com/product/TLE2082; https://www.ti.com/product/TLE2081; https://www.ti.com/product/TLE2084)",
       "Datasheet: more than double the bandwidth and triple the slew of TL07x/TL08x, range to ±19 V (https://www.ti.com/lit/gpn/TLE2082)",
       "TLE2082CP orderable page exists (https://www.ti.com/product/TLE2082/part-details/TLE2082CP)",
-      "Mouser hosts a datasheet copy (https://www.mouser.com/datasheet/2/405/1/tle2081-3417641.pdf)"
+      "Mouser hosts a datasheet copy (https://www.mouser.com/datasheet/2/405/1/tle2081-3417641.pdf)",
+      "TI product page lists the datasheet as Rev. C, dated 04 Mar 2026: https://www.ti.com/product/TLE2082",
+      "SLOS182C header reads 'February 1997 – March 2026' and covers TLE2081/A, TLE2082/A, TLE2084/A: https://www.ti.com/document-viewer/TLE2081/datasheet/GUID-662CDA93-68B7-47A3-9DA4-E3C3FA412F78",
+      "SLOS182B is 'February 1997 – revised June 2001': https://static.chipdip.ru/lib/005/DOC003005155.pdf"
     ],
-    "web_searches_used": 5
+    "web_searches_used": 8
   }
 }

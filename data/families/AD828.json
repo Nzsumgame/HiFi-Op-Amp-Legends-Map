@@ -27,19 +27,25 @@
       "pn": "AD828AN",
       "channels": 2,
       "status": "obsolete",
-      "note": "8-lead PDIP. Listed in ADI PDN 10_0081 Rev. B; last-time-buy date unknown."
+      "note": "Leaded 8-lead PDIP. Reportedly in PDN 10_0081 Rev. B; not confirmed in its visible pages."
     },
     {
-      "pn": "AD828AR",
-      "channels": 2,
-      "status": "unknown",
-      "note": "8-lead SOIC, leaded (non-RoHS). Probably superseded by AD828ARZ."
-    },
-    {
-      "pn": "AD828ARZ",
+      "pn": "AD828ANZ",
       "channels": 2,
       "status": "active",
-      "note": "8-lead SOIC, RoHS. -REEL/-REEL7 suffixes likely but unconfirmed."
+      "note": "RoHS 8-lead PDIP; listed as production; in PCN 26_0029 (Camas fab)."
+    },
+    {
+      "pn": "AD828AR / AD828AR-REEL / AD828AR-REEL7",
+      "channels": 2,
+      "status": "obsolete",
+      "note": "Leaded 8-lead SOIC and reels; distributors list obsolete. Replaced by AD828ARZ."
+    },
+    {
+      "pn": "AD828ARZ / AD828ARZ-REEL / AD828ARZ-REEL7",
+      "channels": 2,
+      "status": "active",
+      "note": "RoHS 8-lead SOIC and reels; production per RadioLocman and Utmel."
     }
   ],
   "key_specs": [
@@ -72,6 +78,24 @@
       "value": "Not specified; video diff gain/phase 0.01% / 0.05°",
       "condition": "video load",
       "source": "ADI product page"
+    },
+    {
+      "parameter": "Input noise (1 kHz)",
+      "value": "10 nV/√Hz (at 10 kHz)",
+      "condition": "f = 10 kHz, ±5 V and ±15 V",
+      "source": "AD828 datasheet (cieri.net copy)"
+    },
+    {
+      "parameter": "Offset voltage",
+      "value": "2 mV max",
+      "condition": "",
+      "source": "ADI product page; datasheet"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "+5 V single, or ±5 V to ±15 V dual",
+      "condition": "operating",
+      "source": "Datasheet Rev. C"
     }
   ],
   "reputation": {
@@ -111,22 +135,44 @@
     "AD8056",
     "LM6172"
   ],
-  "silicon_changes": [],
+  "silicon_changes": [
+    {
+      "kind": "fab-or-process-transfer",
+      "vendor": "Analog Devices",
+      "when": "2026-04 · PCN 26_0029, eff. 2026-07-30",
+      "part_numbers_affected": [
+        "AD828ANZ",
+        "AD828ARZ",
+        "AD828ARZ-REEL7"
+      ],
+      "summary": "PCN 26_0029, 'Qualification of Wafer Fabrication Site Analog Devices, Inc. Camas WA for CB Products', qualifies ADI's Camas fab for complementary-bipolar parts. Published 27 April 2026, effective 30 July 2026; AD828 codes are listed.",
+      "identification": "No marking change described; parts with date codes after July 2026 may come from Camas.",
+      "spec_deltas": [],
+      "audio_impact": "None expected; datasheet limits unchanged. Listening claims for old vs new stock would be anecdotal.",
+      "compatibility_risk": "low: same datasheet, package and pinout.",
+      "confidence": "medium",
+      "sources": [
+        "https://www.analog.com/media/en/PCN/ADI_PCN_26_0029_Rev_-_Form.pdf"
+      ],
+      "verification": "PCN title, dates and AD828 listing seen in search snippets; full parts list not read."
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Analog Devices",
       "title": "AD828 Dual, Low Power Video Op Amp",
       "doc_number": "AD828",
       "revision": "C",
-      "date": "",
+      "date": "2002",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf",
       "also_urls": [
-        "https://www.analog.com/media/en/technical-documentation/data-sheets/ad828.pdf"
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/ad828.pdf",
+        "https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf"
       ],
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current ADI datasheet; header reads 'REV. C'."
+      "note": "Current ADI datasheet; header 'REV. C', © 2002."
     },
     {
       "vendor": "Analog Devices",
@@ -168,13 +214,17 @@
       "vendor": "Analog Devices",
       "title": "AD828 Datasheet view",
       "doc_number": "AD828",
-      "revision": "",
+      "revision": "B",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/view/48431/AD/AD828.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Revision unknown."
+      "revision_status": "probable",
+      "note": "Listed as Rev. B, 12 pages (256 kB).",
+      "also_urls": [
+        "https://www.alldatasheet.com/datasheet-pdf/pdf/48431/AD/AD828.html",
+        "https://www.alldatasheet.net/datasheet-pdf/pdf/48431/AD/AD828.html"
+      ]
     },
     {
       "vendor": "Analog Devices",
@@ -223,6 +273,87 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Futurlec page for the PDIP AD828AN; revision unknown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD AD828AR datasheet (dtsheet)",
+      "doc_number": "AD828",
+      "revision": "B",
+      "date": "",
+      "url": "https://dtsheet.com/doc/98149/ad-ad828ar",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "AD828AR copy labelled Rev. B."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD828AN, AD828AR-REEL7, AD828AR-REEL, AD828AR Datasheet (manualmachine #3999525)",
+      "doc_number": "AD828",
+      "revision": "",
+      "date": "",
+      "url": "https://manualmachine.com/analogdevices/ad828an/3999525-datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Older copy with leaded AN/AR ordering codes.",
+      "also_urls": [
+        "https://manualmachine.com/datasheet/ad828an/3999525-datasheet-analog-devices"
+      ]
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Datasheet AD828 (manualmachine #7451061)",
+      "doc_number": "AD828",
+      "revision": "C",
+      "date": "",
+      "url": "https://manualmachine.com/analogdevices/ad828c/7451061-datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Path suggests Rev. C; revision not shown in snippet.",
+      "also_urls": [
+        "https://manualmachine.com/datasheet/ad828/7451061-datasheet-analog-devices"
+      ]
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD828 (Analog Devices) datasheet (cieri.net)",
+      "doc_number": "AD828",
+      "revision": "",
+      "date": "",
+      "url": "https://www.cieri.net/Documenti/Data%20Sheets/Operational%20Amplifiers/AD828%20(Analog%20Devices).pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Gives 10 nV/√Hz noise at 10 kHz."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD828AR datasheet (alldatasheet #540313)",
+      "doc_number": "AD828",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.net/datasheet-pdf/pdf/540313/AD/AD828AR.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Later upload; also AD828AN entry #540312.",
+      "also_urls": [
+        "https://html.alldatasheet.net/html-pdf/540312/AD/AD828AN/294/10/AD828AN.html"
+      ]
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD828 JP data sheet (Japanese)",
+      "doc_number": "AD828_JP",
+      "revision": "",
+      "date": "",
+      "url": "https://www-cce.cldnet.analog.com/media/jp/technical-documentation/data-sheets/AD828_JP.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Japanese translation on ADI's CDN; revision not shown."
     }
   ],
   "product_pages": [
@@ -233,15 +364,15 @@
       "vendor": "Analog Devices",
       "doc_number": "AD828",
       "revision": "C",
-      "date": "",
-      "changes": "Current revision. Older-format ADI sheet without a revision-history table; change list unknown."
+      "date": "2002",
+      "changes": "Current revision, © 2002. Older-format ADI sheet without a revision-history table; change list unknown."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD828",
       "revision": "B",
       "date": "",
-      "changes": "Unconfirmed. A Rev. B copy with noise graphs reportedly circulates on mirrors; none located."
+      "changes": "Mirror copies labelled Rev. B (12 pages); same 130 MHz, 450 V/µs, 2 mV max offset headline specs."
     }
   ],
   "revision_chains": [
@@ -250,15 +381,19 @@
       "doc_number": "AD828",
       "known": [
         {
-          "rev": "C",
+          "rev": "B",
           "date": ""
+        },
+        {
+          "rev": "C",
+          "date": "2002"
         }
       ],
       "missing": [
-        "A",
-        "B"
+        "0",
+        "A"
       ],
-      "note": "Rev. C is current. Rev. B reportedly on mirrors, unconfirmed. Print dates unknown."
+      "note": "Rev. B seen on mirrors only (probable). Rev. C date from its © 2002 line."
     }
   ],
   "ti_literature_numbers": [],
@@ -269,11 +404,11 @@
     "https://www.analog.com/static/imported-files/data_sheets/AD828.pdf"
   ],
   "open_questions": [
-    "Rev. C print date and change list; do Rev. A/B copies survive, and which mirror holds Rev. B?",
-    "Lifecycle of AD828AR and reel variants; scope and date of PDN 10_0081 for AD828AN.",
-    "Missing specs: noise, settling, offset, supply range (±5/±15 V expected), swing into 150 Ω; 15 mA max or typ?",
-    "Is the AD828 unity-gain stable? ADI only says it is optimised for G ≥ +2.",
-    "Has any die or fab change occurred? No silicon-change PCN found."
+    "Rev. B print date and Rev. B→C change list; do Rev. 0/A copies survive?",
+    "Is AD828AN listed in PDN 10_0081 Rev. B, and when was it discontinued?",
+    "Will Camas-fab AD828 parts (PCN 26_0029) differ measurably from earlier stock?",
+    "Missing specs: settling, swing into 150 Ω, noise at 1 kHz; is 15 mA max or typ?",
+    "Is the AD828 unity-gain stable? ADI only says it targets gains of +2 or more."
   ],
   "sources": [
     "https://www.analog.com/en/products/ad828.html",
@@ -288,18 +423,35 @@
     "https://blog.csdn.net/helongfu/article/details/46286715",
     "https://m.elecfans.com/zt/145531/",
     "https://club.autohome.com.cn/bbs/threadowner-c-837-29858375-1.html",
-    "https://www.bilibili.com/video/BV1a5411Y7HQ/"
+    "https://www.bilibili.com/video/BV1a5411Y7HQ/",
+    "https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf",
+    "https://www.cieri.net/Documenti/Data%20Sheets/Operational%20Amplifiers/AD828%20(Analog%20Devices).pdf",
+    "https://www.radiolocman.com/datasheet/data.html?di=351347",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_26_0029_Rev_-_Form.pdf",
+    "https://www.aeri.com/pn/analog-devices-inc/AD828AR",
+    "https://www.fpgacenter.com/product/analog-devices/AD828AR",
+    "https://www.utmel.com/compare/AD828ARZ-REEL7--6163050-vs-AD828ARZ--6162199",
+    "https://www.ibselectronics.in/part/analog-devices/ad828anz/393060/",
+    "https://www.omo-ic.com/pdf/721671/AD828ANZ/P4-P6.html",
+    "https://wcm-cce.cldnet.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf",
+    "https://www.analog.com/ru/products/ad828.html"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 4,
+    "status": "verified-with-corrections",
+    "web_searches_used": 9,
     "claims_confirmed": [
       "ADI's 'Dual, Low Power Video Op Amp': low-cost dual optimised for G ≥ +2 and cable driving (https://www.analog.com/en/products/ad828.html).",
       "130 MHz at G = +2, 450 V/µs, 0.1 dB to 40 MHz, 0.01%/0.05° diff gain/phase, 15 mA supply, 50 mA min output (https://www.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf).",
       "Current ADI datasheet is Rev. C (https://www.analog.com/media/en/technical-documentation/data-sheets/ad828.pdf).",
       "RadioLocman mirrors hold Rev. C (https://www.radiolocman.com/datasheet/pdf.html?di=121449, https://www.rlocman.es/datasheet/pdf.html?di=170553&p=11).",
       "AD828ARZ is listed as in production (https://octopart.com/ad828arz-analog+devices-411908).",
-      "AD828AN reportedly appears in ADI PDN 10_0081 Rev. B (https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf)."
+      "AD828AN reportedly appears in ADI PDN 10_0081 Rev. B (https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf).",
+      "Rev. C copy carries © Analog Devices 2002; +5 V single or ±5 V to ±15 V supplies (https://www.radiolocman.com/datasheet/pdf.html?di=121449, https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf).",
+      "Rev. B copies exist on mirrors, 12 pages; ordering codes AD828AN (PDIP), AD828AR, -REEL, -REEL7 (SOIC), −40 to +85 °C (https://www.alldatasheet.com/datasheet-pdf/pdf/48431/AD/AD828.html, https://dtsheet.com/doc/98149/ad-ad828ar).",
+      "Input voltage noise 10 nV/√Hz at 10 kHz, ±5 V and ±15 V; offset 2 mV max (https://www.cieri.net/Documenti/Data%20Sheets/Operational%20Amplifiers/AD828%20(Analog%20Devices).pdf).",
+      "AD828AR and AD828AR-REEL listed obsolete by distributors (https://www.aeri.com/pn/analog-devices-inc/AD828AR, https://www.fpgacenter.com/product/analog-devices/AD828AR).",
+      "AD828ANZ, AD828ARZ, AD828ARZ-REEL7 listed in production and named in ADI PCN 26_0029 (https://www.radiolocman.com/datasheet/data.html?di=351347, https://www.analog.com/media/en/PCN/ADI_PCN_26_0029_Rev_-_Form.pdf).",
+      "PCN 26_0029 qualifies ADI's Camas WA wafer fab for complementary-bipolar products; published 2026-04-27, effective 2026-07-30 (https://www.analog.com/media/en/PCN/ADI_PCN_26_0029_Rev_-_Form.pdf)."
     ],
     "refuted_claims": [],
     "corrections": [
@@ -308,7 +460,9 @@
       "Added AD828ARZ, the RoHS SOIC ordering code.",
       "Claim that AD828 is a separate die from AD826 and AD827/AD847 softened to unconfirmed.",
       "Added tagline, key specs, Rev. C datasheet, product page and mirror entries.",
-      "Reputation summary kept attributed; caveats added (optimised for G ≥ +2, praise is subjective)."
+      "Reputation summary kept attributed; caveats added (optimised for G ≥ +2, praise is subjective).",
+      "AD828AR (and reels) changed from unknown to obsolete; added AD828ANZ and AD828ARZ reel codes.",
+      "Rev. B upgraded from unconfirmed to probable (mirror copies labelled Rev. B); Rev. C dated 2002."
     ],
     "unverified_urls": [
       "https://www.alldatasheet.com/datasheet-pdf/pdf/48433/AD/AD828AR.html",

@@ -1,6 +1,6 @@
 # OPA277 / OPA2277 / OPA4277
 
-**Precision bipolar op-amp, 36 V, 1/2/4 channels** · Burr-Brown (1999–2000) → Texas Instruments (2000–present) · Tier C (niche / baseline)
+**Precision bipolar op-amp, 36 V, 1/2/4 channels** · Burr-Brown (1997–2000) → Texas Instruments (2000–present) · Tier C (niche / baseline)
 
 *Burr-Brown's 10 µV, 0.1 µV/°C precision DC op-amp that Japanese rollers found surprisingly clear and balanced.*
 
@@ -37,9 +37,9 @@ None documented. Compare datasheet revisions before assuming old and new parts a
 | original | 1999-03 | no copy found |  | confirmed |
 | A | 2005-04 | [mouser.com](https://www.mouser.com/datasheet/2/405/sbos079a-190468.pdf) |  | confirmed |
 | B | 2015-06 | [docs.rs-online.com](https://docs.rs-online.com/0cbd/A700000008688789.pdf) | +2 | confirmed |
-| C | 2023-02 | [ti.com](https://www.ti.com/lit/ds/sbos079c/sbos079c.pdf) | +2 | confirmed |
+| C | 2023-02-21 | [ti.com](https://www.ti.com/lit/ds/sbos079c/sbos079c.pdf) | +4 | confirmed |
 
-Burr-Brown original carried over by TI. Rev B month conflicts: June vs April 2015.
+Rev C history dates B to April 2015; some rev B copies print June 2015.
 
 **Texas Instruments SBOS611**
 
@@ -50,8 +50,16 @@ Burr-Brown original carried over by TI. Rev B month conflicts: June vs April 201
 
 Missing revisions: A. OPA2277-DIE bare-die datasheet.
 
+**Burr-Brown PDS-1413**
+
+| Rev | Date | Best copy | More | Status |
+|---|---|---|---|---|
+| PDS-1413D | 1999-03 | [sy-dep-epc-lpc.web.cern.ch](https://sy-dep-epc-lpc.web.cern.ch/components/datasheets/epc%20(fgc-dccts%29/DS22/OPA277_OPAMP_BURRBROWN.pdf) | +1 | probable |
+
+Missing revisions: original, PDS-1413A, PDS-1413B, PDS-1413C. © 1997; only the D edition (March 1999) found.
+
 <details>
-<summary>Other copies, revision not identified (8)</summary>
+<summary>Other copies, revision not identified (12)</summary>
 
 - [mouser.com](https://www.mouser.com/ds/2/405/opa2277-200103.pdf) · Texas Instruments SBOS079 — Mouser copy; revision not visible.
 - [neuron.eng.wayne.edu](https://neuron.eng.wayne.edu/auth/ece4330/opa277p.pdf) · Burr-Brown / Texas Instruments SBOS079 — Old-format copy; 1999 original or rev A.
@@ -61,6 +69,10 @@ Missing revisions: A. OPA2277-DIE bare-die datasheet.
 - [datasheet.octopart.com](https://datasheet.octopart.com/OPA4277PA-Texas-Instruments-datasheet-7840277.pdf) · Texas Instruments SBOS079 — Octopart; also OPA2277UA 8441613, UA/2K5 8443537, U 8443531, OPA277U 8442274.
 - [cdn-reichelt.de](https://cdn-reichelt.de/documents/datenblatt/A200/OPA_4277_DB.pdf) · Texas Instruments SBOS079 — Reichelt copy; revision not visible.
 - [suzushoweb.com](https://suzushoweb.com/pdf_file/OPA2277P.pdf) · Texas Instruments SBOS079 — Japanese shop copy; revision not visible.
+- [manualmachine.com](https://manualmachine.com/burrbrown/opa277p/4167704-datasheet) · Burr-Brown PDS-1413 — Burr-Brown-branded copy; sibling entry 4196254.
+- [manualmachine.com](https://manualmachine.com/burrbrowncorporation/opa277/21733032-user-manual) · Burr-Brown 
+- [pdf.elecfans.com](https://pdf.elecfans.com/BURR-BROWN/OPA277.html) · Burr-Brown  — Burr-Brown-branded copy; OPA277P page also exists.
+- [dtsheet.com](https://dtsheet.com/model/2875970) · Burr-Brown  — Burr-Brown-branded listing; also 2875322, 2875325.
 
 </details>
 
@@ -107,7 +119,7 @@ Download every revision: `python tools/fetch_datasheets.py --family OPAx277`
 
 | Vendor | Role | Period | Note |
 |---|---|---|---|
-| Burr-Brown | originator | 1999–2000 | Original datasheet SBOS079, March 1999. |
+| Burr-Brown | originator | 1997–2000 | Burr-Brown PDS-1413 (© 1997; D edition March 1999), then SBOS079. |
 | Texas Instruments | acquirer | 2000–present | Bought Burr-Brown 2000; SBOS079 revs A (2005), B (2015), C (Feb 2023); added OPA2277-DIE and -EP. |
 
 
@@ -118,10 +130,11 @@ Download every revision: `python tools/fetch_datasheets.py --family OPAx277`
 
 | Vendor | Document | Rev | Date | Changes |
 |---|---|---|---|---|
-| Burr-Brown | SBOS079 | original | 1999-03 | Initial release; date taken from later revision headers. |
+| Burr-Brown | PDS-1413 | PDS-1413D | 1999-03 | Burr-Brown sheet for OPA277/2277/4277, © 1997, printed March 1999; replaces OP-177. |
+| Burr-Brown | SBOS079 | original | 1999-03 | Initial SBOS079 release; date from later headers. Burr-Brown PDS-1413D (March 1999) is the same edition era. |
 | Texas Instruments | SBOS079 | A | 2005-04 | Changes not recorded. |
-| Texas Instruments | SBOS079 | B | 2015 | Retitled 'OPAx277 High Precision Operational Amplifiers' (new TI format). Dated June 2015 in copies, April 2015 in rev C history. |
-| Texas Instruments | SBOS079 | C | 2023-02 | Changes not recorded; title now hyphenated 'High-Precision'. |
+| Texas Instruments | SBOS079 | B | 2015-04 | Retitled 'OPAx277 High Precision Operational Amplifiers'; added ESD ratings, applications, layout and packaging sections. Copies show June 2015; rev C history says April. |
+| Texas Instruments | SBOS079 | C | 2023-02-21 | Updated table/figure numbering; removed lead temperature from absolute maximums; updated OPA2277/OPA4277 SOIC thermal values; title hyphenated. |
 | Texas Instruments | SBOS611 | B | 2012-12 | OPA2277-DIE datasheet (original March 2012); changes not recorded. |
 
 
@@ -130,7 +143,7 @@ Download every revision: `python tools/fetch_datasheets.py --family OPAx277`
 <details>
 <summary>Verification and open questions</summary>
 
-Status: **verified-with-corrections**, 5 web searches.
+Status: **verified-with-corrections**, 9 web searches.
 
 **Confirmed:**
 
@@ -145,6 +158,11 @@ Status: **verified-with-corrections**, 5 web searches.
 - OPA2277-EP exists (https://www.ti.com/product/OPA2277-EP).
 - OPA2277PA / OPA277PA listed NRND (https://www.digikey.com/en/products/detail/texas-instruments/OPA2277PA/266145).
 - No PCN or new-die notice found for OPAx277.
+- Rev C history: 'Changes from Revision A (April 2005) to Revision B (April 2015)' added ESD, applications and layout sections (https://www.ti.com/document-viewer/OPA277/datasheet/GUID-493FA103-AF3C-42A5-B844-5D6B05ED2192).
+- Rev B to C: table, figure and cross-reference numbering updated (https://www.ti.com/document-viewer/OPA277/datasheet/GUID-493FA103-AF3C-42A5-B844-5D6B05ED2192).
+- Japanese rev C notes lead temperature removed from absolute maximums and SOIC thermal values updated (https://www.ti.com/jp/lit/gpn/OPA277).
+- Burr-Brown footer: © 1997, PDS-1413D, printed March 1999 (https://sy-dep-epc-lpc.web.cern.ch/components/datasheets/epc%20(fgc-dccts)/DS22/OPA277_OPAMP_BURRBROWN.pdf, https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/OPA2777_5F00_datasheet.pdf).
+- TI product page lists the rev C datasheet dated Feb 21, 2023 (https://www.ti.com/product/OPA277).
 
 **Corrections:**
 
@@ -153,6 +171,7 @@ Status: **verified-with-corrections**, 5 web searches.
 - Added OPA2277-EP, OPA2277-DIE, U/UA and OPA4277PA orderables.
 - Added SBOS079 revisions original (Mar 1999), A (Apr 2005), B (2015), C (Feb 2023) and SBOS611B.
 - Filled key specs, lineage and tagline (36 V, 1 MHz, 0.8 V/µs, 800 µA/amp).
+- Rev B dated April 2015 per rev C history; Burr-Brown PDS-1413D (© 1997) added as predecessor.
 
 **Links not confirmed:**
 
@@ -164,16 +183,16 @@ Status: **verified-with-corrections**, 5 web searches.
 **Open questions:**
 
 - Confirm voltage noise density (commonly quoted ~8 nV/√Hz at 1 kHz).
-- Was SBOS079 rev B dated June or April 2015?
-- What changed in SBOS079C (Feb 2023): format only, or specs/die? No PCN found.
-- Which old-format mirrors hold the 1999 Burr-Brown original and which rev A?
+- Do Burr-Brown PDS-1413 editions before D (1997–1998) survive?
+- Did SBOS079C (Feb 2023) change any electrical spec, or only format and thermal data? No PCN found.
+- Which old-format mirrors hold the 1999 SBOS079 original and which rev A?
 - Confirm per-orderable status (P/U/UA, OPA4277PA/UA) and the OPA2277-EP datasheet number.
 
 
 </details>
 
 <details>
-<summary>Sources (11)</summary>
+<summary>Sources (15)</summary>
 
 - [zigsow.jp/item/298614/review/321038](https://zigsow.jp/item/298614/review/321038)
 - [blog.siliconhouse.jp/archives/51995262.html](http://blog.siliconhouse.jp/archives/51995262.html)
@@ -186,6 +205,10 @@ Status: **verified-with-corrections**, 5 web searches.
 - [class.ece.iastate.edu/ee435/miscHandou…heet%20opa%20277.pdf](http://class.ece.iastate.edu/ee435/miscHandouts/datasheet%20opa%20277.pdf)
 - [mouser.com/ds/2/405/opa2277-die-558195.pdf](https://www.mouser.com/ds/2/405/opa2277-die-558195.pdf)
 - [digikey.com/en/products/detail/texas-i…nts/OPA2277PA/266145](https://www.digikey.com/en/products/detail/texas-instruments/OPA2277PA/266145)
+- [ti.com/document-viewer/OPA277/datashee…A5-B844-5D6B05ED2192](https://www.ti.com/document-viewer/OPA277/datasheet/GUID-493FA103-AF3C-42A5-B844-5D6B05ED2192)
+- [ti.com/jp/lit/gpn/OPA277](https://www.ti.com/jp/lit/gpn/OPA277)
+- [sy-dep-epc-lpc.web.cern.ch/components/…_OPAMP_BURRBROWN.pdf](https://sy-dep-epc-lpc.web.cern.ch/components/datasheets/epc%20(fgc-dccts%29/DS22/OPA277_OPAMP_BURRBROWN.pdf)
+- [e2e.ti.com/cfs-file/__key/communityser…7_5F00_datasheet.pdf](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/OPA2777_5F00_datasheet.pdf)
 
 </details>
 

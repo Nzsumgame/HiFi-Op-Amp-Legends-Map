@@ -237,6 +237,28 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "NJR end-of-life notice, not a datasheet; NJM8901 listing unconfirmed."
+    },
+    {
+      "vendor": "New Japan Radio (via Xon)",
+      "doc_number": "NJM8901_E",
+      "revision": "Ver. 2012-02-07",
+      "date": "2012-02-07",
+      "url": "https://xonelec.com/mpn/nisshinbo/njm8901e",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Oldest dated edition found; 'High Quality Audio J-FET Input' title."
+    },
+    {
+      "vendor": "New Japan Radio (via datasheetspdf)",
+      "doc_number": "NJM8901_E",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/1100564/NewJapanRadio/NJM8901/1",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "'J-FET Input Dual Operational Amplifier' copy; version not shown."
     }
   ],
   "product_pages": [
@@ -253,9 +275,16 @@
     {
       "vendor": "New Japan Radio Co. (NJR)",
       "doc_number": "NJM8901_E",
+      "revision": "Ver. 2012-02-07",
+      "date": "2012-02-07",
+      "changes": "Earliest dated edition found (Xon copy); operating voltage 4 V to 18 V. Changes versus 2014 edition unknown."
+    },
+    {
+      "vendor": "New Japan Radio Co. (NJR)",
+      "doc_number": "NJM8901_E",
       "revision": "Ver. 2014-10-28",
       "date": "2014-10-28",
-      "changes": "Only dated edition known (Sekorm copy). Changes unknown; may or may not be the first edition. Sibling NJM8801 is reportedly Ver. 2014-11-10."
+      "changes": "Later edition (Sekorm copy). Changes from Ver. 2012-02-07 unknown. Sibling NJM8801 is Ver. 2014-11-10."
     }
   ],
   "revision_chains": [
@@ -264,17 +293,20 @@
       "doc_number": "NJM8901_E",
       "known": [
         {
+          "rev": "Ver. 2012-02-07",
+          "date": "2012-02-07"
+        },
+        {
           "rev": "Ver. 2014-10-28",
           "date": "2014-10-28"
         }
       ],
       "missing": [
-        "first edition",
-        "editions before 2014-10-28",
+        "first edition (if before 2012-02-07)",
         "editions after 2014-10-28",
         "Nisshinbo re-issue"
       ],
-      "note": "Mouser 'E3', Datasheet4U 1100564 and Manualzz copies probably hold nearby editions; NJR-only part."
+      "note": "Xon copy Ver. 2012-02-07, Sekorm Ver. 2014-10-28; Mouser 'E3' copy version unread. NJR-only part."
     },
     {
       "vendor": "JRC/Nisshinbo",
@@ -308,8 +340,8 @@
     "https://www.njr.co.jp/electronic_device/PDF/old_pdf/NJM8901_J.pdf"
   ],
   "open_questions": [
-    "Build the datasheet Ver. list from the Mouser, Sekorm, Datasheet4U and Nisshinbo copies; did any change specs?",
-    "Is NJM8901 on Nisshinbo's maintenance/discontinued list or the 2018-12-20 NJR EOL notice? When did it launch?",
+    "Did Ver. 2014-10-28 change any spec from Ver. 2012-02-07? Which version is the Mouser 'E3' copy?",
+    "Is NJM8901 on Nisshinbo's maintenance or EOL lists? FindChips shows no stock; no notice found.",
     "Does a DIP8 NJM8901D exist? Is supply current per device or per channel?",
     "Did the JRC-to-Nisshinbo transition bring a fab move? Is NL8902 its intended replacement?",
     "What does the YouTube comparison (zS7Z64YsgOg) show? Any bench measurements?"
@@ -337,7 +369,7 @@
   ],
   "verification": {
     "status": "partially-verified",
-    "web_searches_used": 5,
+    "web_searches_used": 8,
     "claims_confirmed": [
       "High-quality audio J-FET dual balancing MUSES technology with mass production (https://en.sekorm.com/doc/2511119.html).",
       "13 nV/√Hz, 20 V/µs, 5 MHz, THD 0.003% (Av=10), ±4.0–±18 V, Icc 4–6 mA, Vio 2–10 mV, Ib 30–400 pA, Avd 86–110 dB, CMR 70–90 dB (https://en.sekorm.com/doc/2511119.html).",
@@ -350,7 +382,9 @@
       "Listed at Mouser under NJR and chip1stop under Nisshinbo (https://www.mouser.com/ProductDetail/NJR/NJM8901E?qs=sajaCoHCXPTKvhQTAp2OpA%3D%3D ; https://www.chip1stop.com/USA/en/product/detail?partId=NJR1-0013450).",
       "Nisshinbo Micro Devices (formerly New Japan Radio) is the current maker (https://www.censtry.com/product/nisshinbo-micro-devices-inc/njm8901e.html).",
       "Nisshinbo released the NL8902 JFET dual, news dated 2025-05-13 (https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html).",
-      "Several ex-JRC op-amps are maintenance / planned-discontinuation parts; NJM8901's inclusion unconfirmed (https://foxtango101.blog.jp/archives/19678237.html)."
+      "Several ex-JRC op-amps are maintenance / planned-discontinuation parts; NJM8901's inclusion unconfirmed (https://foxtango101.blog.jp/archives/19678237.html).",
+      "An NJM8901 datasheet copy is marked Ver.2012-02-07, 'High Quality Audio J-FET Input Dual Operational Amplifier': https://xonelec.com/mpn/nisshinbo/njm8901e",
+      "FindChips returns no NJM8901 stock and suggests NJM8801E: https://www.findchips.com/search/NJM8901"
     ],
     "refuted_claims": [],
     "corrections": [

@@ -29,6 +29,13 @@ Well regarded for rolling and DAC output stages, on forum impressions rather tha
 
 None documented. Compare datasheet revisions before assuming old and new parts are identical.
 
+<details>
+<summary>Other change notes: lifecycle, packaging, renumbering, lore (1)</summary>
+
+- **Package / assembly** · Texas Instruments, 2019-08-29 · PCN 20190820005.1: Die coat changed from PBO to polyimide (PI) on the SON-8 OPA2211A, for continuity of supply. TI anticipates no impact on form, fit or function. Die design unchanged. [[1]](https://allelcoelec.my/datasheets.34/OPA2211AIDRGR.pdf)
+
+</details>
+
 ## Datasheet timeline
 
 **Texas Instruments SBOS377**
@@ -44,7 +51,7 @@ None documented. Compare datasheet revisions before assuming old and new parts a
 | I | 2016-06 | [radiolocman.com](https://www.radiolocman.com/datasheet/data.html?di=305537) |  | confirmed |
 | J | 2018-02 | no copy found |  | confirmed |
 | K | 2018-09 | no copy found |  | confirmed |
-| L | 2020-01 | [ti.com](https://www.ti.com/lit/ds/symlink/opa211.pdf) | +1 | confirmed |
+| L | 2020-01 | [ti.com](https://www.ti.com/lit/ds/symlink/opa211.pdf) | +2 | confirmed |
 
 Missing revisions: B, C, E. No copies of original, D, H, J or K. Original leads: pdf.ic37.com 6037225, datasheet4u 574554.
 
@@ -61,7 +68,7 @@ OPA211-EP; later revisions unknown. Unlettered copies at radiolocman di=305539 a
 Literature number unidentified; copy at datasheet4u 1572858. OPA2211-HT datasheet number also unknown.
 
 <details>
-<summary>Other copies, revision not identified (18)</summary>
+<summary>Other copies, revision not identified (20)</summary>
 
 - [datasheet.octopart.com](https://datasheet.octopart.com/OPA211AID-Texas-Instruments-datasheet-100176885.pdf) · Texas Instruments SBOS377 — Same title as the TI symlink.
 - [convexoptimization.com](https://convexoptimization.com/TOOLS/opa211.pdf) · Texas Instruments SBOS377 — Same title as the TI symlink.
@@ -81,6 +88,8 @@ Literature number unidentified; copy at datasheet4u 1572858. OPA2211-HT datashee
 - [radiolocman.com](https://www.radiolocman.com/datasheet/data.html?di=305539) · Texas Instruments SBOS638 — Close di number to rev I entry; possibly c. 2016 copy.
 - [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/463398/TI1/OPA211-EP.html) · Texas Instruments SBOS638 — Lower ID suggests archived around the 2012 original.
 - [datasheet4u.com](https://datasheet4u.com/datasheets/etcTI/OPA2211-EP/1572858) · Texas Instruments unknown — OPA2211-EP; literature number still unidentified.
+- [allelcoelec.pt](https://allelcoelec.pt/datasheets.37/OPA211AIDR.pdf) · Texas Instruments SBOS377 — Distributor PDF; may bundle PCN 20180221003.
+- [allelcoelec.my](https://allelcoelec.my/datasheets.34/OPA2211AIDRGR.pdf) · Texas Instruments SBOS377 — Distributor PDF; source of PCN 20190820005.1 text.
 
 </details>
 
@@ -147,7 +156,7 @@ Download every revision: `python tools/fetch_datasheets.py --family OPAx211`
 | Texas Instruments | SBOS377G | G | 2009-05 | Base for rev H; copy on Mouser. Changes unknown. |
 | Texas Instruments | SBOS377H | H | 2015-11 | TI's new format: ESD Ratings, functional modes, application, layout and packaging sections added (inferred). No electrical-limit changes. |
 | Texas Instruments | SBOS377I | I | 2016-06 | Fixed OPA211 SON pins: V+ 4 → 7, V− 7 → 4 (rev H had them swapped). Documentation fix, not silicon. |
-| Texas Instruments | SBOS377J | J | 2018-02 | Status changed from mixed (some Product Preview) to Production Data; Device Comparison table deleted; document references reformatted. |
+| Texas Instruments | SBOS377J | J | 2018-02 | Production Data for all; Device Comparison table deleted; references reformatted. Announced by info-only PCN 20180221003 (2018-02-22). |
 | Texas Instruments | SBOS377K | K | 2018-09 | Name format 'OPA2x11' → 'OPAx211'; unit errors fixed in Typical Characteristics and Fig. 43; Fig. 51 reverted to rev I. |
 | Texas Instruments | SBOS377L | L | 2020-01 | NOM supply removed; specified temperature −40/+125 °C (was −55/+150); EC tables retitled by grade. Re-rendered November 2025 with addendum. |
 | Texas Instruments | SBOS638 | original | 2012-06 | OPA211-EP first issue. Later revisions not checked. |
@@ -158,7 +167,7 @@ Download every revision: `python tools/fetch_datasheets.py --family OPAx211`
 <details>
 <summary>Verification and open questions</summary>
 
-Status: **partially-verified**, 6 web searches.
+Status: **verified-with-corrections**, 10 web searches.
 
 **Confirmed:**
 
@@ -173,6 +182,10 @@ Status: **partially-verified**, 6 web searches.
 - OPA2211-EP exists in DFN-8 3×3 mm as OPA2211MDRGTEP: https://www.ti.com/product/OPA2211-EP/part-details/OPA2211MDRGTEP
 - 1.1 nV/√Hz, 3.6 mA, 80 MHz (G = 100), 27 V/µs, ±2.25 to ±18 V, 700 ns settling: https://www.ti.com/product/OPA2211-EP and https://www.ti.com/product/OPA211-EP
 - Distributors still list OPA211AID, OPA211ID, OPA211IDR, OPA211IDGKT, OPA211AIDRGT and OPA2211AIDDAR: https://www.mouser.com/ProductDetail/Texas-Instruments/OPA211AID?qs=iSMark9AYDU9HlEFVq0C5A%3D%3D and https://www.digikey.com/en/products/detail/texas-instruments/OPA2211AIDDAR/2232387
+- TI document viewer header 'SBOS377L October 2006 – January 2020'; rev L history matches the record (https://ti.com/document-viewer/OPA211/datasheet/revision-history-sbos3773199).
+- PCN 20190820005.1 (2019-08-29): OPA2211AIDRGR/T die coat PBO to polyimide; first ship 2019-11-29; no form, fit, function change (https://allelcoelec.my/datasheets.34/OPA2211AIDRGR.pdf).
+- PCN 20180221003 (2018-02-22): information-only datasheet update SBOS377I to SBOS377J; copy attribution probable (https://allelcoelec.pt/datasheets.37/OPA211AIDR.pdf).
+- Nov 2025 package addendum lists OPA2211AIDRGR active, marking OBHQ (https://allelcoelec.my/datasheets.34/OPA2211AIDRGR.pdf).
 
 **Refuted or corrected:**
 
@@ -187,6 +200,8 @@ Status: **partially-verified**, 6 web searches.
 - Revision history split into A, B–E and F, with SBOS638 added.
 - Rev H SON supply-pin swap added as a caveat.
 - No OPA211-specific PCN or die change found, so silicon_changes is empty; distributor PCN PDFs left as an open question.
+- Added die-coat PCN 20190820005.1 (OPA2211A SON) as a silicon change; previously no OPA211-family PCN was recorded.
+- Rev J linked to info-only PCN 20180221003; TI document viewer added as rev L copy.
 
 **Links not confirmed:**
 
@@ -204,7 +219,7 @@ Status: **partially-verified**, 6 web searches.
 
 **Open questions:**
 
-- Do TI PCNs listed by Mouser (Cu bond wire, RFAB fab qualification) cover OPA211/OPA2211A orderables?
+- Do later TI fab or assembly PCNs (Cu wire, RFAB) cover OPA211/OPA2211A? Only die-coat PCN 20190820005.1 confirmed.
 - Find copies of SBOS377 original, B–E, H, J and K, and read the A and F change logs.
 - Was a commercial non-A OPA2211 ever released? Which orderables were Product Preview before rev J?
 - Literature numbers and lifecycle of OPA211-EP, OPA2211-EP and OPA2211-HT; any SBOS638 revision after 2012?
@@ -214,7 +229,7 @@ Status: **partially-verified**, 6 web searches.
 </details>
 
 <details>
-<summary>Sources (37)</summary>
+<summary>Sources (40)</summary>
 
 - [head-fi.org/threads/the-opamp-thread.432749/page-19](https://www.head-fi.org/threads/the-opamp-thread.432749/page-19)
 - [head-fi.org/threads/the-opamp-thread.432749/page-2](https://www.head-fi.org/threads/the-opamp-thread.432749/page-2)
@@ -253,6 +268,9 @@ Status: **partially-verified**, 6 web searches.
 - [github.com/emoestudio/EmoeKiLib/blob/H…moe_OpAmps.kicad_sym](https://github.com/emoestudio/EmoeKiLib/blob/HEAD/symbol/Emoe_OpAmps.kicad_sym)
 - [github.com/dougmurray/horizon-pool/blo…PA211IDGKT-copy.json](https://github.com/dougmurray/horizon-pool/blob/HEAD/dtm-pool/parts/ic/opamp/OPA211IDGKT-copy.json)
 - [ti.com/product/ja-jp/OPA211](https://www.ti.com/product/ja-jp/OPA211)
+- [ti.com/document-viewer/OPA211/datasheet](https://www.ti.com/document-viewer/OPA211/datasheet)
+- [allelcoelec.my/datasheets.34/OPA2211AIDRGR.pdf](https://allelcoelec.my/datasheets.34/OPA2211AIDRGR.pdf)
+- [allelcoelec.pt/datasheets.37/OPA211AIDR.pdf](https://allelcoelec.pt/datasheets.37/OPA211AIDR.pdf)
 
 </details>
 

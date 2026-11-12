@@ -33,13 +33,13 @@
       "pn": "OPA210",
       "channels": 1,
       "status": "active",
-      "note": "Added as preview before rev E; SOT-23-5 (DBV) and VSSOP-8 in production at rev H."
+      "note": "Preview at rev F; D in production at G, DBV and DGK at H."
     },
     {
       "pn": "OPA4210",
       "channels": 4,
       "status": "unknown",
-      "note": "Unconfirmed: no TI page found; datasheet names only OPA210 and OPA2210."
+      "note": "Unconfirmed: no TI page found; SBOS924 names only OPA210 and OPA2210."
     }
   ],
   "key_specs": [
@@ -69,9 +69,9 @@
     },
     {
       "parameter": "Input bias current",
-      "value": "300 pA",
-      "condition": "headline; typ vs max unclear",
-      "source": "OPAx210 datasheet Rev. H"
+      "value": "±0.3 nA typ / ±2 nA max",
+      "condition": "25 °C; ±4 nA max at −40 to +85 °C",
+      "source": "SBOS924H"
     },
     {
       "parameter": "Supply current",
@@ -81,7 +81,7 @@
     },
     {
       "parameter": "Supply range",
-      "value": "up to 36 V (±18 V)",
+      "value": "±2.25 V to ±18 V (4.5 V to 36 V)",
       "condition": "total supply",
       "source": "OPAx210 datasheet Rev. H"
     },
@@ -93,7 +93,7 @@
     }
   ],
   "reputation": {
-    "summary": "Liked in phono and DIY circles. Hagerman sells an OPA2210 upgrade for the Bugle MC phono preamp promising about 6 dB less noise, and a TNT-Audio reviewer was surprised by the change. Audiophonics buyers report more clarity and better bass. Head-Fi reports are mixed. Rail-to-rail output is claimed but unconfirmed.",
+    "summary": "Liked in phono and DIY circles. Hagerman sells an OPA2210 upgrade for the Bugle MC phono preamp promising about 6 dB less noise, and a TNT-Audio reviewer was surprised by the change. Audiophonics buyers report more clarity and better bass. Head-Fi reports are mixed. The datasheet confirms rail-to-rail output.",
     "sonic_descriptors": [
       "more clarity",
       "better bass",
@@ -131,19 +131,19 @@
     {
       "vendor": "Texas Instruments",
       "title": "OPAx210 2.2-nV/rtHz Precision, Low-Power, 36-V Operational Amplifiers",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "H",
-      "date": "2021-08",
+      "date": "2021-08-04",
       "url": "https://www.ti.com/lit/ds/symlink/opa2210.pdf",
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Canonical TI link; latest revision found is H."
+      "note": "Canonical TI link; SBOS924H, Aug 4, 2021 per product page."
     },
     {
       "vendor": "Texas Instruments",
       "title": "OPA210, OPA2210 (OPAx210 datasheet)",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "H",
       "date": "",
       "url": "https://www.ti.com/lit/ds/symlink/opa210.pdf",
@@ -155,7 +155,7 @@
     {
       "vendor": "Texas Instruments",
       "title": "OPA210, OPA2210",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "",
       "date": "",
       "url": "https://www.ti.com/lit/gpn/OPA210",
@@ -167,7 +167,7 @@
     {
       "vendor": "Texas Instruments (via alldatasheet)",
       "title": "OPA2210 2.2-nV/rtHz, Precision, Low-Power, 36-V Operational Amplifier (23 pages)",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "",
       "date": "2018",
       "url": "https://www.alldatasheet.com/html-pdf/1082240/TI1/OPA2210/1235/18/OPA2210.html",
@@ -179,7 +179,7 @@
     {
       "vendor": "Texas Instruments (via alldatasheet)",
       "title": "OPA210, OPA2210",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1283980/TI/OPA2210.html",
@@ -191,7 +191,7 @@
     {
       "vendor": "Texas Instruments (via alldatasheet)",
       "title": "OPA210, OPA2210",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1283978/TI/OPA210.html",
@@ -203,7 +203,7 @@
     {
       "vendor": "Texas Instruments (via alldatasheet)",
       "title": "OPA210_V02",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1351983/TI/OPA210_V02.html",
@@ -215,7 +215,7 @@
     {
       "vendor": "Texas Instruments (via alldatasheet.net)",
       "title": "OPAx210 2.2-nV/rtHz Precision, Low-Power, 36-V Operational Amplifiers (44 pages)",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "H",
       "date": "",
       "url": "https://www.alldatasheet.net/datasheet-pdf/pdf/2222126/TI2/OPA2210.html",
@@ -231,7 +231,7 @@
     {
       "vendor": "Texas Instruments (via DigiKey)",
       "title": "OPA2210 by Texas Instruments Datasheet (HTML)",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "",
       "date": "",
       "url": "https://www.digikey.com/en/htmldatasheets/production/3832249/0/0/1/opa2210idgkr",
@@ -243,7 +243,7 @@
     {
       "vendor": "Texas Instruments (via datasheet4u)",
       "title": "OPA210, OPA2210 Datasheet (OPA2210-etcTI.pdf)",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "",
       "date": "",
       "url": "https://datasheet4u.com/datasheet/etcTI/OPA210-1514092",
@@ -258,7 +258,7 @@
     {
       "vendor": "Texas Instruments (via datasheet4u / datasheetspdf)",
       "title": "OPA2210 Datasheet - VSSOP amplifier",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "",
       "date": "",
       "url": "https://datasheet4u.com/datasheets/etcTI/OPA2210/1399669",
@@ -269,6 +269,80 @@
       "also_urls": [
         "https://datasheetspdf.com/pdf/1399669/etcTI/OPA2210/1"
       ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx210 2.2-nV/rtHz Precision, Low-Power, 36-V Operational Amplifiers (TI document viewer)",
+      "doc_number": "SBOS924",
+      "revision": "H",
+      "date": "2021-08",
+      "url": "https://www.ti.com/document-viewer/OPA210/datasheet",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "HTML datasheet, SBOS924H, September 2018 – August 2021.",
+      "also_urls": [
+        "https://ti.com/document-viewer/OPA2210/datasheet",
+        "https://www.ti.com/product/OPA2210/datasheet",
+        "https://www.ti.com/document-viewer/OPA2210/datasheet/GUID-93A5217F-E79D-4996-B7A3-846E51B87333"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx210 2.2-nV/rtHz Precision, Low-Power, 36-V Operational Amplifiers",
+      "doc_number": "SBOS924",
+      "revision": "H",
+      "date": "",
+      "url": "https://www.ti.com/lit/pdf/SBOS924",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Literature-number link to the current PDF."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx210 2.2-nV/rtHz Precision, Low-Power, 36-V Operational Amplifiers (Chinese)",
+      "doc_number": "SBOS924",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com.cn/lit/gpn/OPA2210",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Chinese translation; English version is authoritative.",
+      "also_urls": [
+        "https://www.ti.com.cn/cn/lit/gpn/OPA2210"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2210IDR datasheet (elecfans)",
+      "doc_number": "SBOS924",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.elecfans.com/BURR-BROWN/OPA2210IDR.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown.",
+      "also_urls": [
+        "https://pdf.elecfans.com/BURR-BROWN/OPA210IDBVR.html"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA210, OPA2210 (jiepei)",
+      "doc_number": "SBOS924",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.jiepei.com/opa210-34949943.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown.",
+      "also_urls": [
+        "https://pdf.jiepei.com/opa2210-42407536.html"
+      ]
     }
   ],
   "product_pages": [
@@ -278,58 +352,72 @@
   "revision_history": [
     {
       "vendor": "Texas Instruments",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "*",
       "date": "2018-09",
       "changes": "Initial release (OPA2210)."
     },
     {
       "vendor": "Texas Instruments",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "A",
       "date": "2018-12",
-      "changes": "Changes not recorded."
+      "changes": "First production-data release."
     },
     {
       "vendor": "Texas Instruments",
-      "doc_number": "",
+      "doc_number": "SBOS924",
+      "revision": "B",
+      "date": "",
+      "changes": "Changed an OPAx145 reference to OPA2210; fixed TIDA-01427 link. Date unknown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS924",
+      "revision": "C",
+      "date": "2019-09",
+      "changes": "Changed 'super-ß' wording to 'super beta'; added SOIC package."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS924",
       "revision": "D",
       "date": "2020-01",
-      "changes": "Changes not recorded. OPA210 (D, DGK) added as preview in a revision before E; letter unconfirmed."
+      "changes": "Added OPA2210 DRG package as advance information (preview)."
     },
     {
       "vendor": "Texas Instruments",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "E",
       "date": "2020-11",
-      "changes": "OPA2210 DRG package moved from preview to production."
+      "changes": "OPA2210 DRG package moved from preview to production (one excerpt places this at rev G)."
     },
     {
       "vendor": "Texas Instruments",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "F",
       "date": "2021-01",
-      "changes": "Changes not recorded."
+      "changes": "Added OPA210 with D and DGK packages as advance information (preview)."
     },
     {
       "vendor": "Texas Instruments",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "G",
       "date": "2021-04",
-      "changes": "Changes not recorded."
+      "changes": "OPA210 D (SOIC-8) moved to production; OPA210 DBV (SOT-23-5) added as preview."
     },
     {
       "vendor": "Texas Instruments",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "revision": "H",
-      "date": "2021-08",
-      "changes": "OPA210 DBV (SOT-23-5) and DGK (VSSOP-8) moved from preview to production. Latest revision found."
+      "date": "2021-08-04",
+      "changes": "OPA210 DBV (SOT-23-5) and DGK (VSSOP-8) moved from preview to production. Current revision."
     }
   ],
   "revision_chains": [
     {
       "vendor": "Texas Instruments",
-      "doc_number": "",
+      "doc_number": "SBOS924",
       "known": [
         {
           "rev": "*",
@@ -338,6 +426,14 @@
         {
           "rev": "A",
           "date": "2018-12"
+        },
+        {
+          "rev": "B",
+          "date": ""
+        },
+        {
+          "rev": "C",
+          "date": "2019-09"
         },
         {
           "rev": "D",
@@ -357,17 +453,16 @@
         },
         {
           "rev": "H",
-          "date": "2021-08"
+          "date": "2021-08-04"
         }
       ],
-      "missing": [
-        "B",
-        "C"
-      ],
-      "note": "SBOS literature number unconfirmed (possibly SBOS897). A revision after H is possible."
+      "missing": [],
+      "note": "Full chain known from the SBOS924H history; only rev B's date is unknown. No revision after H found."
     }
   ],
-  "ti_literature_numbers": [],
+  "ti_literature_numbers": [
+    "SBOS924"
+  ],
   "archive_seed_urls": [
     "https://www.ti.com/lit/ds/symlink/opa210.pdf",
     "https://www.ti.com/lit/ds/symlink/opa2210.pdf",
@@ -376,10 +471,9 @@
     "https://www.ti.com/product/OPA2210"
   ],
   "open_questions": [
-    "What is the TI literature number? SBOS897 is suggested but unverified.",
-    "Is there a revision after H (Aug 2021)? What changed in revisions B and C?",
-    "Does the OPA4210 quad exist?",
-    "Is the output rail-to-rail, and is 300 pA input bias typical or maximum?",
+    "Is there a revision after H (Aug 4, 2021)? When was revision B issued?",
+    "Does an OPA4210 quad exist? None found; SBOS924 covers only OPA210 and OPA2210.",
+    "Did the OPA2210 DRG package reach production at rev E or rev G? Excerpts disagree.",
     "Which revision does each alldatasheet or datasheet4u copy hold? Any PCN in TI's database?"
   ],
   "sources": [
@@ -396,11 +490,13 @@
     "https://www.diyaudio.com/community/threads/whats-the-best-dual-i-v-opamp-these-days.336309/page-4",
     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-465",
     "https://www.ti.com/product/OPA2210/part-details/OPA2210ID",
-    "https://www.ti.com/lit/gpn/OPA210"
+    "https://www.ti.com/lit/gpn/OPA210",
+    "https://www.ti.com/lit/pdf/SBOS924",
+    "https://www.ti.com/document-viewer/OPA210/datasheet"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 5,
+    "status": "verified-with-corrections",
+    "web_searches_used": 10,
     "claims_confirmed": [
       "Revisions * (Sep 2018), A (Dec 2018), D (Jan 2020), E (Nov 2020; OPA2210 DRG to production). https://www.ti.com/lit/ds/symlink/opa2210.pdf",
       "Revisions F (Jan 2021), G (Apr 2021), H (Aug 2021; OPA210 DBV and DGK to production). https://www.ti.com/lit/ds/symlink/opa2210.pdf",
@@ -408,7 +504,12 @@
       "2.2 nV/√Hz, 18 MHz, 6.4 V/µs, 5 µV typ / 35 µV max offset, 0.6 µV/°C drift, 300 pA, 2.2/2.5 mA Iq. https://www.ti.com/lit/ds/symlink/opa2210.pdf",
       "Early OPA2210-only 23-page edition mirrored at https://www.alldatasheet.com/html-pdf/1082240/TI1/OPA2210/1235/18/OPA2210.html",
       "OPA2210ID is orderable. https://www.ti.com/product/OPA2210/part-details/OPA2210ID",
-      "Audiophonics sells an OPA2210 DIP8 unit. https://www.audiophonics.fr/en/opa/opa2210-dual-opa-dip8-unit-p-18337.html"
+      "Audiophonics sells an OPA2210 DIP8 unit. https://www.audiophonics.fr/en/opa/opa2210-dual-opa-dip8-unit-p-18337.html",
+      "Literature number is SBOS924; current revision H, dated August 4, 2021 on the product page: https://www.ti.com/lit/pdf/SBOS924; https://www.ti.com/product/OPA2210",
+      "Rev. C (Sep 2019) added SOIC and 'super beta' wording; D added OPA2210 DRG preview: https://www.ti.com/document-viewer/OPA210/datasheet",
+      "Rev. F added OPA210 (D, DGK) as preview; G moved OPA210 D to production; H moved DBV and DGK: https://www.ti.com/document-viewer/OPA210/datasheet",
+      "Features list rail-to-rail output and ±2.25 V to ±18 V supply: https://www.ti.com/document-viewer/OPA210/datasheet/GUID-BC585858-C858-4063-8A19-77F546990105",
+      "Input bias current ±0.3 nA typ, ±2 nA max at 25 °C; ±4 nA and ±7 nA over temperature: https://www.ti.com/document-viewer/OPA2210/datasheet/GUID-93A5217F-E79D-4996-B7A3-846E51B87333"
     ],
     "refuted_claims": [],
     "corrections": [
@@ -418,7 +519,10 @@
       "Added OPAx209 lineage.",
       "Added 18 MHz GBW, 2.5 mA max Iq, 35 µV max offset and 0.6 µV/°C drift.",
       "Rail-to-rail output claim marked unconfirmed.",
-      "Added TI links and third-party mirrors."
+      "Added TI links and third-party mirrors.",
+      "Literature number is SBOS924, not the suggested SBOS897 (https://www.ti.com/lit/pdf/SBOS924).",
+      "OPA210 first appeared as preview at rev F, not before rev E (https://www.ti.com/document-viewer/OPA210/datasheet).",
+      "Rail-to-rail output now confirmed; 300 pA input bias is typical, 2 nA maximum (https://www.ti.com/product/OPA2210)."
     ],
     "unverified_urls": [
       "https://www.tnt-audio.com/ampli/hagerman_bugle_opa2210_e.html",

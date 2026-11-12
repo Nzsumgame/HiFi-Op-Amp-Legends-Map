@@ -36,7 +36,7 @@ AD797,Analog Devices (datasheet4u mirror),AD797,,unknown,,https://datasheet4u.co
 AD797,Analog Devices (datasheetcafe mirror),AD797,,unknown,,https://www.datasheetcafe.com/ad797-datasheet-op-amp/,third_party_mirror,low,,,Revision not shown.
 AD797,Analog Devices (datasheetarchive listing),AD797,,unknown,,https://www.datasheetarchive.com/AD797*-datasheet.html,third_party_mirror,low,,,Scan listing; likeliest source of pre-2000 revisions 0/A/B/C/D.
 AD797,Analog Devices (Scribd mirror),AD797,,unknown,,https://www.scribd.com/document/406461759/AD797-pdf,third_party_mirror,low,,,Separate Scribd upload.
-LM833,Texas Instruments,SLOS481,B,confirmed,2014-10,https://www.ti.com/lit/ds/symlink/lm833.pdf,vendor_current,medium,,,Serves newest revision; 36-page 2026 size hints at post-B revision.
+LM833,Texas Instruments,SLOS481,B,confirmed,2014-10,https://www.ti.com/lit/ds/symlink/lm833.pdf,vendor_current,high,,,Serves Rev B; TI viewer shows Oct 2014 as current.
 LM833,Texas Instruments,SLOS481,,unknown,,https://www.ti.com/lit/gpn/LM833,vendor_current,medium,,,TI GPN redirect to the current datasheet.
 LM833,Texas Instruments,SLOS481B,B,confirmed,2014-10,https://www.mouser.com/datasheet/2/405/slos481b-521846.pdf,distributor_mirror,high,,,Frozen Rev B; pre-consolidation reference with 16 MHz GBW text.
 LM833,Texas Instruments,SLOS481A,A,confirmed,2010-08,https://datasheet.octopart.com/LM833DR-Texas-Instruments-datasheet-21221952.pdf,distributor_mirror,medium,,,SLOS481A header attributed to this copy.
@@ -93,6 +93,7 @@ LM833,Motorola,LM833/D,,unknown,,https://datasheetspdf.com/pdf/54287/MotorolaInc
 LM833,Motorola,LM833/D,,unknown,,https://www.datasheetq.com/LM833-doc-Motorola,third_party_mirror,low,,,"datasheetq copy, labelled 'Motorola => Freescale'."
 LM833,Motorola,LM833/D,,unknown,,https://www.datasheetq.com/LM833N-doc-Motorola,third_party_mirror,low,,,Probably the same Motorola document as the LM833 entry.
 LM833,Motorola,LM833/D,,unknown,,https://www.chipfind.net/datasheet/motorola/lm833n.htm,third_party_mirror,low,,,ChipFind archive page for the Motorola LM833N.
+LM833,Texas Instruments,SLOS481B,B,confirmed,2014-10,https://ti.com/document-viewer/LM833/datasheet/revision_history,vendor_current,high,,,TI HTML viewer; lists changes from Rev A (Aug 2010).
 LME49720,Texas Instruments,SNAS326,K,confirmed,2013-12,https://www.ti.com/lit/ds/symlink/lm4562.pdf,vendor_current,high,,,"Current TI symlink, SNAS326K; no later revision found."
 LME49720,Texas Instruments,SNAS326,K,probable,,https://www.ti.com/lit/pdf/snas326,vendor_current,medium,,,TI literature-number link; revision served not shown.
 LME49720,Texas Instruments,SNAS326,K,confirmed,2013-12,https://www.ti.com/lit/ds/snas326k/snas326k.pdf,vendor_revision_specific,high,,,"Header: August 2006, revised December 2013."
@@ -343,7 +344,7 @@ NE5532,Signetics,not captured,,unknown,,https://www.datasheetarchive.com/ne5532n
 NE5534,Texas Instruments,SLOS070,D,confirmed,2014-11,https://www.ti.com/lit/ds/symlink/ne5534.pdf,vendor_current,high,,,Current symlink (©1979–2014). Rev D added template sections only.
 NE5534,Texas Instruments,SLOS070,D,confirmed,2014-11,https://www.ti.com/lit/ds/symlink/sa5534.pdf,vendor_current,medium,,,Same SLOS070 document under the SA5534 alias.
 NE5534,Texas Instruments,SLOS070,D,confirmed,,https://www.ti.com/lit/pdf/slos070,vendor_current,medium,,http://www.ti.com/lit/pdf/SLOS070,"Literature link; indexed under TI home-page title, may redirect."
-NE5534,Texas Instruments,SLOS070,D,confirmed,,https://www.ti.com/document-viewer/NE5534/datasheet,vendor_current,medium,,http://www.ti.com/product/NE5534/datasheet,Cited in a project README; older /product/NE5534/datasheet alias exists.
+NE5534,Texas Instruments,SLOS070,D,confirmed,2014-11,https://www.ti.com/document-viewer/NE5534/datasheet,vendor_current,high,,http://www.ti.com/product/NE5534/datasheet,TI HTML viewer headed 'SLOS070D July 1979 – November 2014'.
 NE5534,Texas Instruments,SLOS070D,D,confirmed,2014-11,https://www.mouser.com/catalog/specsheets/texas%20instruments_ne5534.pdf,distributor_mirror,medium,,,Mouser catalog copy titled '(Rev. D)'.
 NE5534,Texas Instruments,SLOS070D,D,probable,2014-11,https://www.mouser.com/datasheet/2/405/ne5534-407641.pdf,distributor_mirror,medium,,,Mouser datasheet-server copy; revision inferred from title format.
 NE5534,Texas Instruments,SLOS070,,unknown,,https://www.digikey.com/en/htmldatasheets/production/24123/0/0/1/ne5534ap,distributor_mirror,medium,,,DigiKey HTML rendering; revision not shown.
@@ -366,7 +367,7 @@ NE5534,Texas Instruments,SLOS070,original,probable,,https://www.silicon-ark.co.u
 NE5534,Texas Instruments,SLOS070,original,probable,,https://app-api.xcc.com/download/non-auth/rest/download-pdf?url=333d39ff315da52b88a3dcc34bb388631169884fb2a93f3510cc9e9b16fe4b0c7f8e5eccb3057017a545106c0faa1553600d68e6c934c4b91db5fbdf8e8edef38378cc51235611cc09b2dc87e1c56fe26fef517674b809de38effeb3e525f65b8f1b7358844c11b8d41556f01e821b81&filename=SE5534FKB.pdf,third_party_mirror,low,,,Unconfirmed URL; title suggests the 1990 edition.
 NE5534,Texas Instruments,SLOS070,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/27246/TI/NE5534.html,third_party_mirror,low,,,Unconfirmed URL; sibling 27248 (SE5534) confirmed.
 NE5534,Texas Instruments,SLOS070,,unknown,,https://datasheet4u.com/datasheet/etcTI/NE5534-1502989,third_party_mirror,low,,https://datasheet4u.com/datasheet/etcTI/NE5534A-1502990,Unconfirmed URL; NE5534A sibling entry 1502990 also unconfirmed.
-NE5534,onsemi (ON Semiconductor),NE5534/D,Rev. 4,probable,2024-12,https://www.onsemi.com/pdf/datasheet/ne5534-d.pdf,vendor_current,high,,,"Header '© Semiconductor Components Industries, LLC, 2012'; reportedly Rev. 4."
+NE5534,onsemi (ON Semiconductor),NE5534/D,Rev. 4,confirmed,2024-12,https://www.onsemi.com/pdf/datasheet/ne5534-d.pdf,vendor_current,high,,,"'December, 2024 − Rev. 4' seen; keeps ©2012 header."
 NE5534,onsemi (ON Semiconductor),NE5534/D,,unknown,,https://www.onsemi.com/download/data-sheet/pdf/ne5534-d.pdf,vendor_current,medium,,,Alternative onsemi download path.
 NE5534,onsemi (ON Semiconductor),NE5534/D,Rev. 3,confirmed,2012-07,https://www.mouser.com/datasheet/2/308/NE5534-D-99992.pdf,distributor_mirror,medium,,,"Footer 'July, 2012 - Rev. 3'."
 NE5534,onsemi (ON Semiconductor),NE5534/D,,unknown,,https://www.mouser.com/ds/2/308/ne5534-d-303735.pdf,distributor_mirror,medium,,,Older Mouser /ds/ path; may hold a different revision.
@@ -401,6 +402,9 @@ NE5534,JRC (Japan Radio Corporation),NJM5534,,unknown,,https://www.datasheetq.co
 NE5534,JRC / New Japan Radio,NJM5534,,unknown,,https://www.allaboutcircuits.com/electronic-components/datasheet/NJM5534D--New-Japan%20Radio/,third_party_mirror,low,,,AllAboutCircuits datasheet page.
 NE5534,JRC / New Japan Radio,-,,unknown,,https://www.scribd.com/document/619321914/NJM5534-2-22-11,third_party_mirror,low,,,"Discontinuation notice (NJM5534D/M obsolete, DD current); not a datasheet."
 NE5534,Signetics,-,,unknown,,https://datasheetarchive.com/NE5534%20signetics-datasheet.html,third_party_mirror,low,,,Index of Signetics scans; best lead for a Signetics sheet.
+NE5534,Texas Instruments,SLOS070A,A,confirmed,2003-03,https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309202010_Texas-Instruments-NE5534PS_C4369811.pdf,distributor_mirror,medium,,,LCSC copy with header 'SLOS070A – revised March 2003'.
+NE5534,Texas Instruments,SLOS070D,D,confirmed,2014-11,https://ti.com/document-viewer/NE5534/datasheet/revision_history,vendor_current,high,,,TI HTML viewer; still current in 2026.
+NE5534,JRC / New Japan Radio,NJM5534,Ver. 2011-02-22,probable,2011-02-22,https://www.mouser.com/datasheet/2/294/njm5534_e-1187216.pdf,distributor_mirror,medium,,,Mouser copy; newest JRC edition seen is Ver.2011-02-22.
 NJM4580,Texas Instruments,SLOS412E,E,confirmed,2024-11,https://www.ti.com/lit/ds/symlink/rc4580.pdf,vendor_current,high,,,Current revision; issued ~7 months after PCN 20240429005.1.
 NJM4580,Texas Instruments,SLOS412E,E,confirmed,2024-11,https://www.ti.com/lit/ds/slos412e/slos412e.pdf,vendor_revision_specific,high,,,Revision-specific path for Rev E.
 NJM4580,Texas Instruments,SLOS412E,E,confirmed,2024-11,https://www.ti.com/lit/gpn/RC4580,vendor_current,high,,,Generic-part-number redirect; title shows Rev. E.
@@ -852,19 +856,25 @@ AD8066,Analog Devices (China),02916 (CN translation),,unknown,,https://www.analo
 AD8066,Analog Devices (via Scribd),02916,,unknown,,https://www.scribd.com/document/608407822/AD8065-AD8066-p4,third_party_mirror,low,,,Partial upload (page 4).
 AD8066,Analog Devices (via searchdatasheet.com),02916,,unknown,,http://pdf.searchdatasheet.com/13613648/analog.com/AD8066AR.html,third_party_mirror,low,,,Non-RoHS part number; possibly a pre-2006 revision.
 AD8066,Analog Devices (via DataSheetAll),02916,,unknown,,https://www.datasheetall.com/adi/ad8065/,third_party_mirror,low,,,Aggregator page for the AD8065.
-AD811,Analog Devices,AD811,G,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad811.pdf,Current Rev. G; lowercase alias exists. Print date not seen.
-AD811,Analog Devices,AD811,G,confirmed,,https://www.analog.com/static/imported-files/data_sheets/AD811.pdf,vendor_legacy,high,,,Legacy path indexed as 'AD811 (Rev. G)'. Wayback seed.
+AD811,Analog Devices,AD811,G,confirmed,2015-04,https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad811.pdf https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf,Current Rev. G (4/15); lowercase and CDN aliases exist.
+AD811,Analog Devices,AD811,G,confirmed,2015-04,https://www.analog.com/static/imported-files/data_sheets/AD811.pdf,vendor_legacy,high,,,Legacy path indexed as 'AD811 (Rev. G)'. Wayback seed.
 AD811,Analog Devices (Mouser mirror),AD811,E,confirmed,2004-07,https://www.mouser.com/datasheet/2/609/AD811-256255.pdf,distributor_mirror,high,,,"Frozen Rev. E; history reads 'Rev. D to Rev. E, 7/04'."
 AD811,Analog Devices (Octopart mirror),AD811,E,confirmed,2004-07,https://datasheet.octopart.com/AD811JR-Analog-Devices-datasheet-87460.pdf,distributor_mirror,high,,,"Frozen Rev. E, filed under AD811JR."
-AD811,Analog Devices (studylib mirror),AD811,F,confirmed,,https://studylib.net/doc/18789058/ad811--rev.-f-,third_party_mirror,medium,,,Only Rev. F copy found; date and changes not seen.
-AD811,Analog Devices (radiolocman mirror),AD811,G,confirmed,,https://www.radiolocman.com/datasheet/pdf.html?di=121471&p=1,third_party_mirror,medium,,,Rev. G; ADI quick links dated 02/23/2017.
-AD811,Analog Devices (radiolocman mirror),AD811,G,confirmed,,https://www.radiolocman.com/datasheet/data.html?di=351543&%2FAD811=,third_party_mirror,medium,,,"Rev. G, 21 pages, 470 KB (reported)."
-AD811,Analog Devices (alldatasheet mirror),AD811,G,confirmed,,https://www.alldatasheet.com/html-pdf/1010336/AD/AD811/57/2/AD811.html,third_party_mirror,medium,,,"21-page copy, consistent with Rev. G (reported)."
-AD811,Analog Devices (alldatasheet mirror),AD811,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/48404/AD/AD811.html,third_party_mirror,low,,,Older 15-page layout; possibly Rev. C/D.
+AD811,Analog Devices (studylib mirror),AD811,F,confirmed,2014-02,https://studylib.net/doc/18789058/ad811--rev.-f-,third_party_mirror,medium,,,Rev. F (2/14): Ordering Guide change.
+AD811,Analog Devices (radiolocman mirror),AD811,G,confirmed,2015-04,https://www.radiolocman.com/datasheet/pdf.html?di=121471&p=1,third_party_mirror,medium,,,Rev. G; ADI quick links dated 02/23/2017.
+AD811,Analog Devices (radiolocman mirror),AD811,G,confirmed,2015-04,https://www.radiolocman.com/datasheet/data.html?di=351543&%2FAD811=,third_party_mirror,medium,,,"Rev. G, 21 pages, 470 KB (reported)."
+AD811,Analog Devices (alldatasheet mirror),AD811,G,confirmed,2015-04,https://www.alldatasheet.com/html-pdf/1010336/AD/AD811/57/2/AD811.html,third_party_mirror,medium,,,"21-page copy, consistent with Rev. G (reported)."
+AD811,Analog Devices (alldatasheet mirror),AD811,D,probable,,https://www.alldatasheet.com/datasheet-pdf/pdf/48404/AD/AD811.html,third_party_mirror,low,,https://www.alldatasheet.net/datasheet-pdf/pdf/48404/AD/AD811.html,"15-page, 230 KB copy listed as REV. D."
 AD811,Analog Devices (chipdip mirror),AD811,,unknown,,https://static.chipdip.ru/lib/143/DOC000143810.pdf,third_party_mirror,low,,,Old-style ADI header; probably before Rev. E.
 AD811,Analog Devices (datasheetcatalog mirror),AD811,,unknown,,https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/1/AD811.shtml,third_party_mirror,low,,,Revision unconfirmed.
 AD811,Analog Devices (datasheet4u mirror),AD811,,unknown,,https://datasheet4u.com/datasheets/Analog-Devices/AD811/1306850,third_party_mirror,low,,,Revision unconfirmed.
 AD811,Analog Devices (radiolocman mirror),AD811,,unknown,,https://radiolocman.com/datasheet/data.html?%2FAD811ANZ=&di=83869,third_party_mirror,low,,,Different RadioLocman ID; may hold an older revision.
+AD811,Analog Devices,AD811,E,probable,,https://manualmachine.com/analogdevices/ad811e/7450881-datasheet,third_party_mirror,low,,,Path suggests Rev. E; not confirmed.
+AD811,Analog Devices,AD811,,unknown,,https://www.cieri.net/Documenti/Data%20Sheets/Operational%20Amplifiers/AD811%20(Analog%20Devices).pdf,third_party_mirror,low,,,Revision not shown.
+AD811,Analog Devices,AD811,,unknown,,https://www.mikrocontroller.net/attachment/22441/AD811.pdf,third_party_mirror,low,,,Forum attachment; revision not shown.
+AD811,Analog Devices,AD811,G,probable,2015-04,https://ja.datasheetq.com/pdf-html/263805-2015/ADI/1page/AD811.html,third_party_mirror,medium,,https://ja.datasheetq.com/pdf-html/263805-2015/ADI/2page/AD811.html,Shows the 4/15 Rev. F to G history entry.
+AD811,Analog Devices,AD811,,unknown,,https://datasheet.lcsc.com/lcsc/2002250731_Analog-Devices-AD811JR_C9655.pdf,distributor_mirror,low,,,LCSC copy filed under AD811JR.
+AD811,Analog Devices,AD811,,unknown,,https://www.alldatasheet.net/datasheet-pdf/pdf/1978756/AD/AD811.html,third_party_mirror,low,,,Recent upload; probably Rev. G.
 AD815,Analog Devices,AD815,D,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad815.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD815.pdf,Current. Rev. D deleted VR-15/Y-15/YS-15 packages; print date unknown.
 AD815,Analog Devices,AD815,D,confirmed,,https://www.radiolocman.com/datasheet/pdf.html?di=170539&p=1,third_party_mirror,high,,,RadioLocman labels this copy 'Revision: D'.
 AD815,Analog Devices,AD815,D,confirmed,,https://www.rlocman.es/datasheet/pdf.html?di=121411,third_party_mirror,medium,,,Title says 'Revisión: D'.
@@ -885,6 +895,16 @@ AD815,Analog Devices,AD815,,unknown,,https://www.futurlec.com/AnalogDevices/AD81
 AD815,Analog Devices,AD815,,unknown,,https://elcodis.com/parts/1342043/AD815ARB-24.html,third_party_mirror,medium,,,Revision not shown.
 AD815,Analog Devices,AD815,,unknown,,https://es.scribd.com/document/236115967/AD815,third_party_mirror,low,,,Revision not shown.
 AD815,Analog Devices,PDN 10_0081,B,confirmed,,https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf,vendor_revision_specific,low,,,Reportedly lists AD815ARB-24 and AD815ARBZ-24-REEL; contents not seen.
+AD815,Analog Devices,AD815,A,probable,1996,https://static.datasheets.com/doc/21704317-analog-devices-ad815ay-ds.pdf,third_party_mirror,medium,,,"AD815AY copy with © 1996, reported as Rev. A."
+AD815,Analog Devices,AD815,B,probable,1999,https://manualmachine.com/analogdevices/ad815av/3999613-datasheet,third_party_mirror,medium,,https://manualmachine.com/datasheet/ad815av/3999613-datasheet-analog-devices,Rev. B with © 1999; also names AD815AV.
+AD815,Analog Devices,AD815,C,confirmed,,https://ja.datasheetq.com/pdf-html/792306-RevC/AD/1page/AD815.html,third_party_mirror,medium,,https://ru.datasheetq.com/pdf-html/792306/AD/1page/AD815.html https://datasheetbank.com/ru/datasheet-html/792306-RevC/AD/2page/AD815.html,Mirror labels this copy 'RevC'.
+AD815,Analog Devices,AD815,D,probable,2005-04,https://cn.elcodis.com/parts/5821502/AD815.html,third_party_mirror,medium,,https://elcodis.com/parts/5821502/AD815_p12.html https://cn.elcodis.com/parts/5821502/AD815_p12.html https://elcodis.com/parts/5821502/AD815_p11.html,History line '4/05—Data Sheet changed from REV C'.
+AD815,Analog Devices,AD815,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/48413/AD/AD815.html,third_party_mirror,medium,,https://www.alldatasheet.net/html-pdf/48413/AD/AD815/331/14/AD815.html,Main entry; alldatasheet also lists AD815_05 copy marked REV. C.
+AD815,Analog Devices,AD815,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/48419/AD/AD815-EB.html,third_party_mirror,low,,,Same 484xx upload batch; revision not shown.
+AD815,Analog Devices,AD815,,unknown,,https://www.rlocman.es/datasheet/data.html?di=524021,third_party_mirror,low,,,Revision not shown.
+AD815,Analog Devices,AD815,,unknown,,https://dtsheet.com/doc/93303/ad-ad815,third_party_mirror,low,,https://dtsheet.com/model/711698,Revision not shown.
+AD815,Analog Devices,AD815,,unknown,,https://tvsat.com.pl/PDF/A/AD815.pdf,third_party_mirror,low,,,Revision not shown.
+AD815,Analog Devices,AD815,,unknown,,https://pdf.jiepei.com/ad/ad815-detail-850935/,third_party_mirror,low,,https://pdf.jiepei.com/ad815arbz-24-26801801.html,Revision not shown.
 AD823,Analog Devices,D00901-0-11/11(E),E,confirmed,2011-11,https://www.analog.com/media/en/technical-documentation/data-sheets/AD823.pdf,vendor_current,high,,,Current Rev. E (also lowercase …/ad823.pdf); no Rev. F found.
 AD823,Analog Devices,D00901-0-11/11(E),E,confirmed,2011-11,https://github.com/oihdesigns/Micro-DMM/blob/main/Component%20Data%20Sheets/ad823.pdf,third_party_mirror,high,,,"Rev. E copy, created 2011-11-09; full revision history 0 to E."
 AD823,Analog Devices,C00901-0-5/04(A),A,confirmed,2004-05,https://futurlec.com/Datasheet/AnalogDevices/AD823AN.pdf,third_party_mirror,high,,,Futurlec copy; PDF title reads 'AD823 Rev. A'.
@@ -919,7 +939,7 @@ AD823,Analog Devices,D00901 (Rev. B),B,confirmed,2007-02,,vendor_legacy,high,,,K
 AD823,Analog Devices,D00901 (Rev. C),C,confirmed,2010-05,,vendor_legacy,high,,,Known from Rev. E history (Table 4); no copy located.
 AD823,Analog Devices,D00901 (Rev. D),D,confirmed,2010-06,,vendor_legacy,high,,,"Known from Rev. E history (Fig. 34, 36); Reichelt copy found."
 AD823,Analog Devices,D09439-0-5/12(A),A,confirmed,2012-05,,vendor_legacy,high,,,Initial AD823A datasheet; no copy located.
-AD844,Analog Devices,AD844,G,confirmed,2017-08-15,https://www.analog.com/media/en/technical-documentation/data-sheets/ad844.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD844.pdf,"Current, 20 pages. PDF metadata wrongly adds 'with Quad Low Noise'."
+AD844,Analog Devices,AD844,G,confirmed,2017-08-15,https://www.analog.com/media/en/technical-documentation/data-sheets/ad844.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD844.pdf,"Current, 20 pages; revision table dates Rev. G 5/2017."
 AD844,Analog Devices,AD844,G,confirmed,2017-08-15,https://www.radiolocman.com/datasheet/data.html?di=351709,third_party_mirror,high,,https://www.radiolocman.com/datasheet/data.html?/AD844AN=&di=351695,"Rev. G, 20 pages, 382 KB."
 AD844,Analog Devices,AD844,C,confirmed,,https://www.farnell.com/datasheets/13931.pdf,distributor_mirror,medium,,,Old-format REV. C datasheet.
 AD844,Analog Devices,AD844,C,confirmed,,https://www.alldatasheet.com/datasheet-pdf/pdf/48466/AD/AD844.html,third_party_mirror,medium,,https://www.alldatasheet.com/html-pdf/48466/AD/AD844/19/1/AD844.html,12-page old-format REV. C copy.
@@ -936,6 +956,10 @@ AD844,Analog Devices,AD844,,unknown,,https://datasheet4u.com/datasheet-pdf/Analo
 AD844,Analog Devices,AD844,,unknown,,https://www.futurlec.com/AnalogDevices/AD844AN.shtml,distributor_mirror,low,,https://www.futurlec.com/AnalogDevices/AD844ANpr.shtml,Futurlec AD844AN datasheet page.
 AD844,Analog Devices,AD844,,unknown,,https://www.scribd.com/document/373710257/AD844,third_party_mirror,low,,,User upload; revision unknown.
 AD844,Analog Devices,AD844,,unknown,,https://www.allaboutcircuits.com/electronic-components/datasheet/AD844AN--Analog-Devices/,third_party_mirror,low,,,All About Circuits AD844AN page; revision unknown.
+AD844,Analog Devices,AD844,F,probable,2009-02,https://dtsheet.com/doc/1842287/pdf-data-sheet-rev.-f,third_party_mirror,low,,,dtsheet copy titled 'Rev. F'; Rev. F dated 2/09.
+AD844,Analog Devices,AD844 military,Rev. A,probable,,https://dtsheet.com/doc/1842288/ad844--military-data-sheet--rev.-a-,third_party_mirror,low,,,Separate military data sheet; title only seen.
+AD844,Analog Devices,AD844,,unknown,,https://www-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD844.pdf,vendor_current,medium,,,ADI CDN copy of the current data sheet.
+AD844,Analog Devices,AD844,,unknown,,https://www.komponenten.es.aau.dk/fileadmin/komponenten/Data_Sheet/Linear/AD844.pdf,third_party_mirror,low,,,University copy; shows 2 nV/√Hz noise row.
 AD846,Analog Devices,AD846,B,confirmed,,https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284ad846.pdf,"Only vendor-hosted copy, in ADI's obsolete library; shows 'REV. B'."
 AD846,Alldatasheet,AD846,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/48468/AD/AD846.html,third_party_mirror,medium,,,"Older scan, probably a pre-web ADI copy."
 AD846,Alldatasheet,AD846,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/655325/AD/AD846_15.html,third_party_mirror,low,,,Later '_15' copy; unconfirmed whether it differs from the first.
@@ -944,6 +968,16 @@ AD846,Digchip,AD846,,unknown,,https://www.digchip.com/datasheets/parts/datasheet
 AD846,Studylib,AD846,,unknown,,https://studylib.net/doc/18488908/450-v--s--precision--current-feedback-op-amp-ad846,third_party_mirror,medium,,,Text copy of the ADI datasheet.
 AD846,IC-ON-LINE (datasheet.hk),AD846,,unknown,,http://www.datasheet.hk/view_download.php?id=1004051&file=0014\ad846an_125131.pdf,third_party_mirror,low,,,Content and revision unconfirmed.
 AD846,Datasheetq,AD846,,unknown,,https://www.datasheetq.com/AD846-doc-ADI,third_party_mirror,medium,,,
+AD846,Analog Devices,AD846,B,confirmed,,https://docs.ampnuts.ru/analog.com.datasheet/ad846/270284AD846.pdf,third_party_mirror,high,,,"Copy of ADI's obsolete-library Rev. B file, marked OBSOLETE."
+AD846,Analog Devices,AD846,C,probable,2000,https://dtsheet.com/model/713229,third_party_mirror,medium,,,Reported as Rev. C with a © 2000 line.
+AD846,Analog Devices,AD846,C,probable,,https://datasheet.eeworld.com.cn/view/278214.html,third_party_mirror,medium,,,Reported as Rev. C.
+AD846,Analog Devices,AD846,C,probable,,https://datasheetq.com/pdf-html/264433/ADI/10page/AD846.html,third_party_mirror,low,,https://datasheetq.com/pdf-html/264433/ADI/3page/AD846.html?lang=en,Reported to hold the Rev. C text.
+AD846,Analog Devices,AD846,C,probable,,https://manualmachine.com/analogdevices/ad846/3999327-datasheet,third_party_mirror,low,,,Reported to hold the Rev. C text.
+AD846,Analog Devices,AD846,C,probable,,https://html.alldatasheet.jp/html-pdf/48477/AD/AD846AR-16-REEL/97/3/AD846AR-16-REEL.html,third_party_mirror,medium,,,"Ordering guide lists AR-16 SOIC parts, so Rev. C."
+AD846,Analog Devices,AD846,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/48469/AD/AD846AN.html,third_party_mirror,low,,https://html.alldatasheet.net/html-pdf/48469/AD/AD846AN/281/11/AD846AN.html,Same upload batch as 48468; revision not shown.
+AD846,Analog Devices,AD846,,unknown,,https://html.alldatasheet.com/html-pdf/48470/AD/AD846BN/99/4/AD846BN.html,third_party_mirror,low,,,Revision not shown.
+AD846,Analog Devices,AD846,,unknown,,https://ru.elcodis.com/parts/6234235/AD846SQ_p10.html,third_party_mirror,low,,,Page-by-page copy; revision not shown.
+AD846,Analog Devices,AD846,,unknown,,https://pdf.jiepei.com/ad846sq-9740052.html,third_party_mirror,low,,,Revision not shown.
 AD8599,Analog Devices,AD8597/AD8599,F,confirmed,2015,https://www.analog.com/media/en/technical-documentation/data-sheets/AD8597_8599.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad8597_8599.pdf,Current Rev. F; printed date not read.
 AD8599,Analog Devices,AD8599-EP,Rev. 0,confirmed,2015-08,https://www.analog.com/media/en/technical-documentation/data-sheets/AD8599-EP.pdf,vendor_current,high,,,Initial version (8/15). Absolute maximum supply ±18 V.
 AD8599,Analog Devices,AD8599,A,confirmed,2007,https://www.bdtic.com/datasheet/adi/AD8599.pdf,third_party_mirror,medium,,,"Early dual-only edition: 1 nV/√Hz, −105 dB THD at 20 kHz."
@@ -963,10 +997,10 @@ AD8599,Analog Devices,AD8597/AD8599,,unknown,,https://datasheet.octopart.com/AD8
 AD8599,Analog Devices,AD8597/AD8599,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/250052/AD/AD8597.html,third_party_mirror,low,,,Separate AD8597 entry (ID 250052); revision not shown.
 AD8599,Analog Devices,AD8599 or AD8597/AD8599,,unknown,,https://www.datasheetcafe.com/ad8599-datasheet-analog-devices/,third_party_mirror,low,,,Revision not shown.
 AD8599,Analog Devices,AD8597/AD8599,,unknown,,https://www.scribd.com/document/971901231/AD8597-8599-LNA,third_party_mirror,low,,,"User upload; late 'Data Sheet' style, revision not shown."
-AD8610,Analog Devices,AD8610/AD8620 (ADI uses no literature number),F,confirmed,2009,https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad8610_8620.pdf,Combined single/dual datasheet; lowercase file name also indexed. Used by KiCad.
+AD8610,Analog Devices,AD8610/AD8620 (ADI uses no literature number),F,confirmed,2008-05,https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad8610_8620.pdf,Combined single/dual datasheet; Rev. F dated 5/08. Used by KiCad.
 AD8610,Analog Devices,AD8610/AD8620,,unknown,,http://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf,vendor_legacy,medium,,,Seen in 2016–2019 KiCad projects; Wayback may hold older revisions.
 AD8610,Analog Devices,AD8610/AD8620,,unknown,,https://www.analog.com/static/imported-files/data_sheets/ad8610_8620.pdf,vendor_legacy,high,,http://www.analog.com/static/imported-files/data_sheets/AD8610_8620.pdf,Indexed lowercase https form; Eagle cites the http mixed-case URL. Wayback seed.
-AD8610,Analog Devices (third-party mirror by RadioLocman),AD8610/AD8620 (RadioLocman di=121341),F,confirmed,2009,https://www.radiolocman.com/datasheet/pdf.html?di=121341&p=19,third_party_mirror,medium,,,Page title states 'Revision: F'; link opens page 19.
+AD8610,Analog Devices (third-party mirror by RadioLocman),AD8610/AD8620 (RadioLocman di=121341),F,confirmed,2008-05,https://www.radiolocman.com/datasheet/pdf.html?di=121341&p=19,third_party_mirror,medium,,,Page title states 'Revision: F'; link opens page 19.
 AD8610,Analog Devices (distributor mirror by AiChipLink),AD8610/AD8620,D,confirmed,,https://file.aichiplink.com/r/datasheets/analogdevices-ad8610armzreel-datasheets-5501.pdf,distributor_mirror,medium,,,Text begins 'REV. D Information furnished by Analog Devices'.
 AD8610,Analog Devices (third-party mirror by DatasheetQ),AD8610/AD8620,D,confirmed,,https://www.datasheetq.com/AD8610-doc-ADI-RevD,third_party_mirror,medium,,,Revision from the URL slug only; content not read.
 AD8610,Analog Devices (distributor mirror by Octopart),AD8610/AD8620,,unknown,,https://datasheet.octopart.com/AD8610ARZ-Analog-Devices-datasheet-9733451.pdf,distributor_mirror,medium,,https://datasheet.octopart.com/AD8620ARZ-Analog-Devices-datasheet-9733451.pdf,Also served under the AD8620ARZ path; revision not seen.
@@ -979,7 +1013,11 @@ AD8610,Analog Devices (distributor mirror by Octopart),AD8610/AD8620 (Octopart d
 AD8610,Analog Devices (third-party mirror by DigChip),AD8610/AD8620,,unknown,,https://www.digchip.com/datasheets/parts/datasheet/41/AD8610.php,third_party_mirror,low,,,DigChip often holds 2000s crawls; may be an early revision.
 AD8610,Analog Devices (third-party mirror by Datasheet4U),AD8610/AD8620 (Datasheet4U id 650259),,unknown,,https://datasheet4u.com/datasheet/Analog-Devices/AD8610-650259,third_party_mirror,low,,https://datasheet4u.com/datasheets/Analog-Devices/AD8610/650259,Same file (ID 650259) also at a second Datasheet4U path.
 AD8610,Analog Devices (third-party mirror by DataSheetAll),AD8610/AD8620,,unknown,,https://www.datasheetall.com/adi/ad8620/,third_party_mirror,low,,,Filed under the dual part number.
-ADA4627,Analog Devices,ADA4627-1_4637-1,F,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf,vendor_current,high,,https://www.analog.com/ADA4637-1/datasheet,"Current combined datasheet, Rev. F; footer D-code not seen."
+AD8610,Analog Devices,AD8610/AD8620,F,confirmed,2008-05,https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf,vendor_current,high,,,Marked Rev. F; revision table '5/08—Rev. E to Rev. F'.
+AD8610,Analog Devices,AD8610/AD8620,F,probable,2008-05,https://dtsheet.com/doc/1843336/pdf-data-sheet-rev.-f,third_party_mirror,low,,,Titled 'Rev. F'; content not read.
+AD8610,Analog Devices,AD8610/AD8620,,unknown,,https://html.alldatasheet.net/html-pdf/225369/AD/AD8610ARZ/58/2/AD8610ARZ.html,third_party_mirror,low,,,Shows '5/02—Rev. A to Rev. B' and '11/06—Rev. D to E'.
+AD8610,Analog Devices,AD8610/AD8620,,unknown,,https://www.alldatasheet.com/html-pdf/225373/AD/AD8610ARM-R2/64/2/AD8610ARM-R2.html,third_party_mirror,low,,,"Dates Rev. D to E as 1/06, conflicting with 11/06."
+ADA4627,Analog Devices,ADA4627-1_4637-1,F,confirmed,2015-06,https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf,vendor_current,high,,https://www.analog.com/ADA4637-1/datasheet,"Current combined datasheet, Rev. F (6/15); footer D-code not seen."
 ADA4627,Analog Devices,,,unknown,2009-12-22,http://www.analog.com/static/imported-files/data_sheets/ADA4627-1.pdf,vendor_legacy,low,,,"Standalone sheet cited by Eagle library 2009-12-22; legacy path, Wayback candidate."
 ADA4627,Analog Devices (via Octopart),,,unknown,,https://datasheet.octopart.com/ADA4637-1BRZ-Analog-Devices-datasheet-10549678.pdf,distributor_mirror,medium,,,Older ADA4637-only sheet with pre-merger title.
 ADA4627,Analog Devices (via datasheetq),,A,confirmed,,https://www.datasheetq.com/ADA4627-1-doc-ADI-RevA,third_party_mirror,medium,,,Rev. A per URL slug; standalone or combined unclear.
@@ -992,6 +1030,12 @@ ADA4627,Analog Devices (via DataSheetAll),,,unknown,,https://www.datasheetall.co
 ADA4627,Analog Devices,ADA4627-1_4637-1,,unknown,,https://www.analog.com/ADA4637-1/datasheet,vendor_current,medium,,,ADI short link; probably resolves to Rev. F.
 ADA4627,Analog Devices (via Digi-Key Austria),ADA4627-1_4637-1,,unknown,,https://www.digikey.at/htmldatasheets/production/752954/0/0/1/ada4627-1-ada4637-1.html,distributor_mirror,low,,,Same production ID 752954 as digikey.com; probably same revision.
 ADA4627,Analog Devices (via DigChip),,,unknown,,https://www.digchip.com/datasheets/1142281-ada4627-1.html,third_party_mirror,low,,,"Title '36 V High Performance, JFET-...' suggests an early, possibly preliminary edition."
+ADA4627,Analog Devices,ADA4627-1_4637-1,F,confirmed,2015-06,https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/ADA4627-1_4637-1.pdf,vendor_current,high,,,"'Rev. F', revision history from 7/09 Rev. 0."
+ADA4627,Analog Devices,ADA4627-1_4637-1_jp,,unknown,,https://wcm-cce.cldnet.analog.com/media/jp/technical-documentation/data-sheets/ADA4627-1_4637-1_jp.pdf,vendor_current,medium,,,ADI Japanese translation; revision not seen.
+ADA4627,Analog Devices,ADA4627-1_4637-1_cn,,unknown,,https://www.analog.com:443/media/cn/technical-documentation/data-sheets/ADA4627-1_4637-1_cn.pdf,vendor_current,medium,,,ADI Chinese translation; revision not seen.
+ADA4627,Analog Devices (via ChipDip),ADA4627-1_4637-1,,unknown,,https://static.chipdip.ru/lib/475/DOC034475165.pdf,third_party_mirror,low,,,Shows revision history; revision held not stated.
+ADA4627,Analog Devices (via elecfans),ADA4627-1,B,probable,2009-10,https://pdf.elecfans.com/AD/ADA4627-1.html,third_party_mirror,low,,,ADA4627-1-only sheet listing '10/09—Rev. A to Rev. B'.
+ADA4627,Analog Devices (via dtsheet),ADA4627-1,,unknown,,https://dtsheet.com/doc/2514466/ad-ada4627-1brz-36-v--19-mhz--low-noise--low-bias-current...,third_party_mirror,low,,,Early '36 V' title; lists 36 V abs max supply.
 LF353,Texas Instruments,SLOS012,C,confirmed,2016-03,https://www.ti.com/lit/ds/symlink/lf353.pdf,vendor_current,high,,,"TI's own LF353 (D, DR, P, PE4); Rev C current in 2025."
 LF353,Texas Instruments,SLOS012,,unknown,,https://www.ti.com/lit/gpn/lf353,vendor_current,high,,,Generic redirect to the current TI LF353 datasheet.
 LF353,Texas Instruments (third-party copy),SLOS012,B,probable,1994-08,https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/s2012/xg46_jy363/xg46_jy363/DataSheet/LF353P.pdf,third_party_mirror,medium,,,"2012 project copy, so pre-Rev C; probably SLOS012B."
@@ -1111,15 +1155,23 @@ LME49713,Texas Instruments,SNAS386,F,confirmed,2013-03,https://www.ti.com/lit/ds
 LME49713,Texas Instruments,SNAS386,F,confirmed,2013-03,https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/LME49713.pdf,distributor_mirror,high,,,Header: 'SNAS386F –SEPTEMBER 2007–REVISED MARCH 2013'.
 LME49713,Texas Instruments,SNAS386,F,confirmed,2013-03,https://www.mouser.com/ds/2/282/lme49713-224065.pdf,distributor_mirror,high,,https://www.mouser.com/datasheet/2/282/lme49713-224065.pdf,SNAS386F header.
 LME49713,Texas Instruments,SNAS386,F,probable,2013-03,https://www.digikey.com/htmldatasheets/production/2520799/0/0/1/lme49713.html,distributor_mirror,medium,,,HTML rendering; revision letter inferred.
-LME49713,National Semiconductor,SNAS386,,unknown,2010-05-21,https://www.farnell.com/datasheets/577866.pdf,distributor_mirror,high,,,"National format, dated May 21, 2010; TI letter probably D or E."
-LME49713,National Semiconductor,SNAS386,,unknown,2010-06-02,https://datasheet.octopart.com/LME49713HA-National-Semiconductor-datasheet-15941891.pdf,third_party_mirror,medium,,,"Last National-format revision, June 2, 2010; reportedly SNAS386E."
+LME49713,National Semiconductor,SNAS386,,unknown,2010-05-21,https://www.farnell.com/datasheets/577866.pdf,distributor_mirror,high,,,"National format, dated May 21, 2010; letter probably D."
+LME49713,National Semiconductor,SNAS386,E,probable,2010-06-02,https://datasheet.octopart.com/LME49713HA-National-Semiconductor-datasheet-15941891.pdf,third_party_mirror,medium,,,"Last National-format revision, June 2, 2010; same date as SNAS386E copies."
 LME49713,National Semiconductor,SNAS386,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/231848/NSC/LME49713.html,third_party_mirror,low,,,National-branded; low ID suggests an early 2007–2008 revision.
 LME49713,Texas Instruments,SNAS386,F,probable,,https://www.alldatasheet.com/datasheet-pdf/pdf/841142/TI1/LME49713.html,third_party_mirror,low,,,TI-branded copy; revision unconfirmed.
 LME49713,Texas Instruments,SNAS386,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/527547/TI1/LME49713HA.html,third_party_mirror,low,,,Filed under TI; may be a 2011–2012 National-format copy.
 LME49713,National Semiconductor,SNAS386,,unknown,,https://datasheetspdf.com/pdf/673116/NationalSemiconductor/LME49713/1,third_party_mirror,low,,https://datasheet4u.com/datasheets/National-Semiconductor/LME49713/673116,National-branded copy; date not seen.
 LME49713,Texas Instruments,SNAS386,,unknown,,https://datasheet4u.com/datasheet-pdf/etcTI/LME49713/pdf.php?id=1398614,third_party_mirror,low,,,TI-branded copy; revision unknown.
-LME49713,National Semiconductor,SNAS386,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=77688&%2FLME49713MA=,third_party_mirror,low,,,National-branded copy; date not seen.
+LME49713,National Semiconductor,SNAS386,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=77688&%2FLME49713MA=,third_party_mirror,low,,https://www.rlocman.es/datasheet/data.html?di=77688,National-branded copy; date not seen.
 LME49713,various,SNAS386,,unknown,,https://www.datasheetarchive.com/LME49713-datasheet.html,third_party_mirror,low,,,Index page that may hold several revisions.
+LME49713,National Semiconductor,SNAS386,E,confirmed,2010-06-02,https://dtsheet.com/model/2273590,third_party_mirror,medium,,,"Shows 'Literature Number: SNAS386E', dated June 2, 2010."
+LME49713,National Semiconductor,SNAS386,E,confirmed,2010-06-02,https://allchip.ru/content/pdfs/289/9254350.pdf,third_party_mirror,medium,,,"National document 202132, June 2, 2010, SNAS386E."
+LME49713,National Semiconductor,SNAS386,,unknown,2008,https://dtsheet.com/doc/227042/nsc-lme49713,third_party_mirror,low,,,"National copy, © 2008; reportedly dated January 29, 2008."
+LME49713,Texas Instruments,SNAS386,F,confirmed,2013-03,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2104/LME49713.pdf,distributor_mirror,high,,,"SNAS386F, September 2007, revised March 2013."
+LME49713,Texas Instruments,SNAS386,F,confirmed,2013-03,https://dtsheet.com/model/4344995,third_party_mirror,medium,,,"TI copy: September 2007, revised March 2013."
+LME49713,Texas Instruments,SNAS386,,unknown,,https://dtsheet.com/doc/2722407/ti1-lme49713-high-performance--high-fidelity-current-feed...,third_party_mirror,low,,,TI-branded copy; revision not shown.
+LME49713,National Semiconductor,SNAS386,,unknown,,https://ru.elcodis.com/parts/840110/LME49713MABD_dt645190.html,third_party_mirror,low,,https://ru.elcodis.com/parts/840110/LME49713MABD_p10.html,National-branded copy; date not seen.
+LME49713,National Semiconductor,SNAS386,,unknown,,https://ru.elcodis.com/parts/1322189/LME49713MANOPB_p3.html,third_party_mirror,low,,,National-branded copy; date not seen.
 LME49860,Texas Instruments,SNAS389,C,confirmed,2013-04,https://www.ti.com/lit/ds/symlink/lme49860.pdf,vendor_current,high,,,Current symlink; addendum lists only LME49860MAX/NOPB.
 LME49860,Texas Instruments (third-party copy),SNAS389,C,confirmed,2013-04,https://github.com/indare/pcb_work/blob/main/Audio/datasheets/opamps/TI_LME49860.pdf,third_party_mirror,high,,,"Frozen copy (1,870,670 bytes) with the Nov-2025 addendum."
 LME49860,National Semiconductor (third-party copy),National DS,,unknown,,http://www.alldatasheet.com/datasheet-pdf/pdf/182890/NSC/LME49860.html,third_party_mirror,medium,,,"NSC-labelled; likely National rev 1.0 or 1.1, unconfirmed."
@@ -1130,7 +1182,7 @@ LME49860,Texas Instruments (third-party copy),SNAS389,,unknown,,https://www.radi
 LME49860,National Semiconductor (third-party copy),National DS,,unknown,,https://datasheetspdf.com/datasheet/LME49860.html,third_party_mirror,medium,,,Labelled National Semiconductor; revision unknown.
 LME49860,Unknown (third-party copy),SNAS389 or National DS,,unknown,,https://www.digchip.com/datasheets/1110296-lme49860.html,third_party_mirror,low,,,Revision unknown; Scribd and Manualzz copies listed separately.
 LME49860,National Semiconductor (third-party copy),National DS,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/219107/NSC/LME49870.html,third_party_mirror,medium,,,"National-era LME49870, 34 pages, 957 KB; confirms the single exists."
-LME49860,Texas Instruments (third-party copy),unknown TI SNAS number,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/841155/TI1/LME49870.html,third_party_mirror,medium,,,"TI-format LME49870, about 35 pages, 985 KB."
+LME49860,Texas Instruments (third-party copy),SNAS413,C,probable,2013-04,https://www.alldatasheet.com/datasheet-pdf/pdf/841155/TI1/LME49870.html,third_party_mirror,medium,,,"TI-format LME49870, about 35 pages, 985 KB; probably SNAS413C (April 2013)."
 LME49860,Texas Instruments (third-party copy),unknown,,unknown,,https://www.datasheetcatalog.com/datasheets_pdf/L/M/E/4/LME49870.shtml,third_party_mirror,medium,,,Revision unknown.
 LME49860,"National Semiconductor (third-party copy, Octopart datasheet cache)",National DS (later SNAS389),,unknown,2007-06,https://datasheet.octopart.com/LM4562HA/NOPB-National-Semiconductor-datasheet-502379.pdf,third_party_mirror,medium,,,Filed under LM4562HA but shows 'June 2007' LME49860 National header.
 LME49860,National Semiconductor (third-party copy),National DS,,unknown,,https://datasheetspdf.com/pdf/588381/NationalSemiconductor/LME49860/1,third_party_mirror,low,,,PDF viewer behind the datasheetspdf page; National-attributed.
@@ -1143,11 +1195,17 @@ LME49860,"Unknown (third-party copy, Scribd)",SNAS389 or National DS,,unknown,,h
 LME49860,Unknown (third-party copy),SNAS389 or National DS,,unknown,,https://manualzz.com/doc/19778898/lme49860-44v-dual-high-performance--high-fidelity-audio-o...,third_party_mirror,low,,,Slug truncated as found; doc ID 19778898 should resolve.
 LME49860,Unknown (third-party copy),unknown,,unknown,,http://www.datasheetdir.com/LME49860+Audio-Amplifiers,third_party_mirror,low,,,Index page; edition unknown.
 LME49860,National Semiconductor (third-party copy),National DS,,unknown,,https://datasheetspdf.com/datasheet/LME49870.html,third_party_mirror,low,,,National-era LME49870 copy.
-LME49860,Texas Instruments (third-party copy),unknown TI SNAS number,,unknown,,https://www.alldatasheet.net/datasheet-pdf/pdf/841155/TI1/LME49870.html,third_party_mirror,low,,,"alldatasheet.net mirror of ID 841155, same file."
+LME49860,Texas Instruments (third-party copy),SNAS413,C,probable,2013-04,https://www.alldatasheet.net/datasheet-pdf/pdf/841155/TI1/LME49870.html,third_party_mirror,low,,,"alldatasheet.net mirror of ID 841155, same file; probably SNAS413C (April 2013)."
 LME49860,Texas Instruments (third-party index),unknown TI SNAS number,,unknown,,https://www.electronicsdatasheets.com/manufacturers/texas-instruments/parts/lme49870,third_party_mirror,low,,,Parts index listing TI as manufacturer.
 LME49860,Unknown (third-party copy),unknown,,unknown,,https://www.datasheetarchive.com/LME49870-datasheet.html,third_party_mirror,low,,,Index; may hold National and TI editions.
 LME49860,National Semiconductor,National DS (later SNAS389),1.0,confirmed,2007-06-01,,vendor_legacy,high,,,"Initial release, known from SNAS389C history; may be alldatasheet 182890."
 LME49860,National Semiconductor,National DS (later SNAS389),1.1,confirmed,2007-06-11,,vendor_legacy,high,,,Added MA/NA top marks; last National content before TI reformat.
+LME49860,Texas Instruments,SNAS389,C,probable,2013-04,https://ti.com/lit/pdf/snas389,vendor_current,medium,,,"TI literature link; product page lists Rev. C, 05 Apr 2013."
+LME49860,Texas Instruments (third-party copy),SNAS389,C,probable,2013-04,https://www.radiolocman.com/datasheet/data.html?di=161011,third_party_mirror,medium,,,TI-format title; SNAS389C header shown in mirrors.
+LME49860,Texas Instruments (third-party copy),SNAS389,,unknown,,https://kyohritsu.com/eclib/OTHER/DATASHEET/TI/lme49860.pdf,third_party_mirror,low,,,Japanese retailer copy of the TI datasheet.
+LME49860,Texas Instruments (third-party copy),SNAS389,,unknown,,https://www.promelec.ru/fs/sources/40/fd/4a/3c/188898eaaa50367d5a8e04fd.pdf,distributor_mirror,low,,,Russian distributor copy.
+LME49860,Texas Instruments (distributor copy),SNAS413,,unknown,,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1/LME49870.pdf,distributor_mirror,low,,,DigiKey media copy; revision not shown.
+LME49860,Texas Instruments (third-party copy),SNAS413C,C,probable,2013-04,https://html.alldatasheet.net/html-pdf/841155/TI1/LME49870/55/1/LME49870.html,third_party_mirror,medium,,,HTML page of alldatasheet 841155; header 'SNAS413C'.
 LME49990,Texas Instruments,SNOSB16,C,confirmed,2013-04,https://www.ti.com/lit/ds/symlink/lme49990.pdf,vendor_current,medium,,,"Canonical TI symlink, cited 2013. Later revision not ruled out."
 LME49990,Texas Instruments,SNOSB16,C,confirmed,2013-04,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/385/LME49990.pdf,distributor_mirror,high,,,Digi-Key copy of rev C; changes probably TI-layout conversion.
 LME49990,Texas Instruments,SNOSB16,B,confirmed,2011-08,https://www.mouser.com/datasheet/2/282/snosb16b-61898.pdf,distributor_mirror,high,,,"Mouser freezes rev B; matches PSpice model 'August 24, 2011'."
@@ -1177,7 +1235,7 @@ LT1028,Linear Technology (third-party Scribd copy),1028fc,C,confirmed,2014-10,ht
 LT1028,"Linear Technology (third-party copy, alldatasheet)",unknown,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/70264/LINER/LT1028.html,third_party_mirror,medium,,,"Linear-branded, 20 pages, 439 KB; probably original or Rev A."
 LT1028,"Analog Devices (third-party copy, alldatasheet)",unknown,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/1270639/AD/LT1028.html,third_party_mirror,medium,,,ADI-branded copy; revision not shown.
 LT1028,"Analog Devices (third-party copy, alldatasheet)",unknown,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/1955097/AD/LT1028.html,third_party_mirror,medium,,,Second ADI-branded entry; revision not shown.
-LT1028,"Analog Devices / Linear (third-party copy, radiolocman viewer)",unknown,,unknown,,https://www.radiolocman.com/datasheet/pdf.html?di=151183&p=1,third_party_mirror,medium,,,Page-1 headings show Rev B or later; page 20 is schematic.
+LT1028,"Analog Devices / Linear (third-party copy, radiolocman viewer)",1028fd,D,probable,,https://www.radiolocman.com/datasheet/pdf.html?di=151183&p=1,third_party_mirror,medium,,,"Text shows '1028fd' footer; 28 pages, ~730 KB, uploaded 2017-08."
 LT1028,"Linear Technology (third-party copy, Marutsu)",unknown,,unknown,,https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/LT1028.pdf,distributor_mirror,medium,,,Old Linear text style; may be an older revision.
 LT1028,"Linear Technology (third-party copy, s-manuals via manuals.plus)",unknown,,unknown,,https://manuals.plus/m/f169c6d63a3f76e698b4d60473eec520987f981e7489c35cb3a5f8b3bc2e81fa,third_party_mirror,medium,,,Contains the SW-package NRND note; revision not identified.
 LT1028,"Linear Technology (third-party copy, studylib)",unknown,,unknown,,https://studylib.net/doc/18104747/lt1028-lt1128---ultralow-noise-precision-high-speed-op-amps,third_party_mirror,medium,,,Revision not identified.
@@ -1196,6 +1254,7 @@ LT1028,"Linear Technology (third-party copy, datasheetq)",unknown,,unknown,,http
 LT1028,"Linear Technology (third-party copy, datasheetbank)",unknown,,unknown,,https://www.datasheetbank.com/en/preview/LT1028-Linear,third_party_mirror,low,,,Possible Rev A holder ('1028fa LT/CP 0901' footer); unattributed.
 LT1028,"Linear Technology (third-party copy, s-manuals via usermanual.wiki)",unknown,,unknown,,https://usermanual.wiki/Document/lt10282Clt1128linear.1657201834/help,third_party_mirror,low,,,Second host of the s-manuals copy; probably same file.
 LT1028,"Linear Technology (third-party copy, device.report)",unknown,,unknown,,https://device.report/linear-technology/lt1028cn8-pbf,third_party_mirror,low,,,LT1028CN8#PBF page; may hold a Linear-era PDF.
+LT1028,"Analog Devices (third-party copy, radiolocman)",unknown,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=525953,third_party_mirror,low,,,ADI-branded entry; per-orderable siblings di=525941–525951.
 LT1364,Analog Devices (Linear Technology document),13645fa,A,confirmed,2000-04,https://www.analog.com/media/en/technical-documentation/data-sheets/13645fa.pdf,vendor_current,high,,,"Footer '13645fa LT/TP 0400 2K REV A'; latest known, no 13645fb."
 LT1364,Analog Devices,13645fa,A,probable,2000-04,https://www.analog.com/LT1364/datasheet,vendor_current,medium,,,"ADI short link, presumably redirects to 13645fa.pdf."
 LT1364,Linear Technology,13645fa,A,confirmed,2000-04,http://cds.linear.com/docs/en/datasheet/13645fa.pdf,vendor_legacy,low,,,Legacy Linear CDN URL cited in an EAGLE library; redirect untested.
@@ -1232,6 +1291,7 @@ LT1364,Linear Technology (via Alldatasheet),,,unknown,,https://www.alldatasheet.
 LT1364,Linear Technology (via DataSheetAll),,,unknown,,https://www.datasheetall.com/linear/lt1363/,third_party_mirror,low,,,Revision unknown.
 LT1364,Linear Technology (via IC-ON-LINE / maxim4u.com),,,unknown,,http://www.maxim4u.com/view_online.php?id=1452508&file=0095%5Clt1364_989092.pdf,third_party_mirror,low,,,IC-ON-LINE mirror of an LT1364 PDF.
 LT1364,Jameco (distributor),,,unknown,,https://www.jameco.com/Jameco/Products/ProdDS/1734840.pdf,distributor_mirror,low,,,Generic cover sheet; part and revision unconfirmed. Verify before use.
+LT1364,RadioLocman (third party),,,unknown,,https://www.radiolocman.com/datasheet/pdf.html?di=151145,third_party_mirror,low,,,"12 pages, ~230 KB, uploaded 2017-08; presumed 13645fa."
 LT1469,Analog Devices (Linear Technology document),1469fb,B,confirmed,2011-01,https://www.analog.com/media/en/technical-documentation/data-sheets/1469fb.pdf,vendor_current,high,,,Current ADI file; revision history begins at Rev B. No Rev C.
 LT1469,Linear Technology (third-party GitHub mirror),1469fb,B,confirmed,2011-01-06,https://github.com/Vitorbnc/electronics-datasheets/blob/master/ICs/lt1469fb.pdf,third_party_mirror,high,,https://raw.githubusercontent.com/Vitorbnc/electronics-datasheets/master/ICs/lt1469fb.pdf,"20 pages; 'B 1/11 Change to Electrical Characteristics 3, 5, 6'."
 LT1469,Analog Devices (Linear Technology document),14692f,original,probable,,https://www.analog.com/media/en/technical-documentation/data-sheets/14692f.pdf,vendor_current,medium,,,Separate AV ≥ 2 dual datasheet; no-letter code implies first release. Undated.
@@ -1352,6 +1412,8 @@ NJM2114,"New Japan Radio (NJR), datasheet4u mirror",datasheet4u 704694,,unknown,
 NJM2114,"New Japan Radio (NJRC), alldatasheet mirror",alldatasheet id 7263 (NJM2114DD),,unknown,,https://www.alldatasheet.jp/datasheet-pdf/pdf/7263/NJRC/NJM2114DD.html,third_party_mirror,low,,,Early upload; probably same old edition as ids 7258/7259.
 NJM2114,"New Japan Radio (NJRC), alldatasheet mirror",alldatasheet id 2287944 (NJM2114D),,unknown,,https://www.alldatasheet.jp/datasheet-pdf/pdf/2287944/NJRC/NJM2114D.html,third_party_mirror,low,,,Much later upload; may be a 2012 or newer edition.
 NJM2114,Alldatasheet (aggregator listing),alldatasheet search NJM2114,,unknown,,https://www.alldatasheet.com/view.jsp?Searchword=NJM2114&sField=4,third_party_mirror,low,,,Index of all alldatasheet NJM2114 uploads.
+NJM2114,"New Japan Radio (NJR), copy hosted by Kyohritsu",NJM2114,Ver. 2012-07-26,confirmed,2012-07-26,https://kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm2114.pdf,third_party_mirror,medium,,,Footer Ver.2012-07-26; NJM5532-compatible text; DIP8/DMP8/SIP8.
+NJM2114,"New Japan Radio (NJR), copy hosted by IBS Electronics",NJM2114,Ver. 2012-07-26,confirmed,2012-07-26,https://datasheets.ibselectronics.com/NJM2114D-NJR-datasheet-37004363.pdf,distributor_mirror,medium,,,Footer Ver.2012-07-26.
 NJM4556,Nisshinbo Micro Devices,NJM4556A_E,Ver. 2025-03-06,confirmed,2025-03-06,https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM4556A_E.pdf,vendor_current,high,,,Current English datasheet; states AD and AL are NRND.
 NJM4556,Nisshinbo Micro Devices,NJM4556A_J,Ver. 2025-03-06,confirmed,2025-03-06,https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/NJM4556A_J.pdf,vendor_current,high,,,"Japanese edition; page-1 title shows no 保守品 line, unlike NJM4580_J."
 NJM4556,Nisshinbo Micro Devices,NJM4556A_E,Ver. 2025-03-06,confirmed,2025-03-06,https://github.com/1vers1on/m68k-computer/blob/main/docs/static/datasheets/NJM4556A_E.pdf,third_party_mirror,high,,,"Copy committed 2026-09-08, 4 pages."
@@ -1378,11 +1440,11 @@ NJM4556,New JRC (NJR),NJM4556A,,unknown,,https://datasheet4u.com/datasheet/New-J
 NJM4556,New JRC (NJR),NJM4556A,,unknown,,https://www.datasheetq.com/NJM4556A-doc-NJRC,third_party_mirror,low,,,"4 pages, 199.7 kB; may be a different, older edition."
 NJM4556,New JRC (NJR),NJM4556A,,unknown,,https://www.digchip.com/datasheets/parts/datasheet/330/NJM4556A.php,third_party_mirror,low,,https://www.digchip.com/datasheets/parts/datasheet/2/330/NJM4556A.php,Second digchip page also exists.
 NJM4556,JRC (New Japan Radio),NJM4556 (NJM4556D),,unknown,,https://www.datasheets360.com/part/detail/njm4556d/-3137595544822529180/,third_party_mirror,low,,,Non-A NJM4556D part page with datasheet link.
-OP27,Analog Devices,C00317,H,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/op27.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/OP27.pdf,Current copy (op27.pdf and OP27.pdf); Rev H pubcode and history unseen.
+OP27,Analog Devices,C00317,H,confirmed,2015-10,https://www.analog.com/media/en/technical-documentation/data-sheets/op27.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/OP27.pdf,"Current copy (op27.pdf and OP27.pdf); history G 3/15, H 10/15."
 OP27,Analog Devices,C00317,H,confirmed,,https://www.mouser.com/datasheet/2/609/OP27-1626182.pdf,distributor_mirror,high,,,"Titled 'Low Noise, Precision Operational Amplifier Data Sheet OP27 Rev. H'."
 OP27,Analog Devices,C00317,H,confirmed,,https://datasheet.octopart.com/OP27GZ-Analog-Devices-datasheet-67895395.pdf,distributor_mirror,medium,,,Title shows Rev. H.
 OP27,Analog Devices,C00317,H,confirmed,,https://www.radiolocman.com/datasheet/pdf.html?di=170597,third_party_mirror,medium,,,"Page title 'Datasheet OP27 Analog Devices, Revision: H'."
-OP27,Analog Devices,C00317,G,confirmed,,https://dtsheet.com/doc/1387743/op27--rev.-g----analog-devices,third_party_mirror,medium,,,Only Rev G copy found; date and contents unknown.
+OP27,Analog Devices,C00317,G,confirmed,2015-03,https://dtsheet.com/doc/1387743/op27--rev.-g----analog-devices,third_party_mirror,medium,,,Only Rev G copy found; date from Rev H history.
 OP27,Analog Devices,C00317-0-5/06(F),F,confirmed,2006-05,https://media.digikey.com/pdf/Data%20Sheets/Analog%20Devices%20PDFs/OP27.pdf,distributor_mirror,high,,,Frozen Rev F copy.
 OP27,Analog Devices,C00317-0-5/06(F),F,confirmed,2006,https://github.com/tardate/Datasheets/blob/main/components/OP27.pdf,third_party_mirror,high,,,Full 0→F history (no A→B entry); embedded PDF title says Rev E.
 OP27,Analog Devices,C00317,C,confirmed,2003-01,https://www.yumpu.com/en/document/view/30241975/op27-low-noise-precision-operational-amplifier-data-sheet-rev-c,third_party_mirror,medium,,,Yumpu title says Rev. C; date from Rev F history.
@@ -1423,6 +1485,11 @@ OP27,Analog Devices,,,unknown,,https://www.radiolocman.com/datasheet/data.html?d
 OP27,unknown (probably Analog Devices),,,unknown,,https://www.datasheetcafe.com/op27-datasheet-pdf/,third_party_mirror,low,,,Hobby datasheet site; vendor and revision unknown.
 OP27,unknown,,,unknown,,https://www.datasheetarchive.com/OP27C-datasheet.html,third_party_mirror,low,,,Often holds old PMI and TI scans.
 OP27,Linear Technology,,,unknown,1990,,archive,medium,,,Cited by LTC SPICE model headers; no online copy.
+OP27,Analog Devices,C00317,H,confirmed,2015-10,https://www.logosfoundation.org/instrum_gwr/pianet/op27.pdf,third_party_mirror,medium,,,Rev H copy; revision history ends G→H 10/15.
+OP27,Analog Devices,C00317,H,confirmed,2015-10,https://www.xonelec.com/mpn/analogdevices/op27gs,distributor_mirror,low,,,Distributor page quoting the Rev H revision history.
+OP27,Texas Instruments,SLOS100B,B,confirmed,1994-08,https://chipfind.net/datasheet/html/ti/op27e.html,third_party_mirror,medium,,,Header 'SLOS100B February 1989 Revised August 1994'.
+OP27,Texas Instruments,SLOS100C,C,confirmed,2000-09,,vendor_revision_specific,medium,,,Header 'SLOS100C – February 1989 – Revised September 2000'; host unidentified.
+OP27,Texas Instruments,SLOS100,,unknown,,https://e2echina.ti.com/cfs-file/__key/telligent-evolution-components-attachments/00-58-01-00-00-09-49-02/OP27.pdf,third_party_mirror,low,,,Forum attachment; revision not shown.
 OP275,Analog Devices,OP275,C,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf,vendor_current,high,,,Current; Rev. C per RadioLocman and Altium record. No Rev. D found.
 OP275,Analog Devices,OP275,C,probable,,https://www.analog.com/OP275/datasheet,vendor_current,medium,,,Short link; same title as the current PDF.
 OP275,Analog Devices,OP275,,unknown,,http://www.analog.com/static/imported-files/data_sheets/OP275.pdf,vendor_legacy,low,,,Legacy URL from a 2025 Altium record; may hold an older revision.
@@ -1455,7 +1522,7 @@ OP275,"Analog Devices (datasheet4u copy, new-style page)",OP275,,unknown,,https:
 OP275,"Analog Devices (Datasheet Archive, OP275GPZ entry)",OP275,,unknown,,https://datasheetarchive.com/OP275GPZ-datasheet.html,third_party_mirror,low,,,OP275GPZ (lead-free) index; revision not shown.
 OP275,Analog Devices (Datasheets.com),OP275,,unknown,,https://www.datasheets.com/analog-devices/OP275GPZ,third_party_mirror,low,,,"Lead-free entry, so probably Rev. C; not shown."
 OP275,Analog Devices (circuits-diy.com hobby page),OP275,,unknown,,https://www.circuits-diy.com/op275gp-dual-jfet-op-amp-datasheet/,third_party_mirror,low,,,Hobby page reproducing the OP275GP datasheet; revision not shown.
-OP285,Analog Devices,OP285,C,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf,vendor_current,high,,,Current revision; also indexed at upper-case .../OP285.pdf.
+OP285,Analog Devices,OP285,C,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf,vendor_current,high,,https://www-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/op285.pdf,Current revision; ADI CDN copy shows © 1992–2018.
 OP285,Analog Devices,OP285,C,confirmed,,https://www.radiolocman.com/datasheet/pdf.html?di=121465&p=14,third_party_mirror,high,,,"Mirror labelled Rev. C; page 14 PDIP outline, page 13 schematic."
 OP285,Analog Devices,OP285,,unknown,,https://datasheet.octopart.com/OP285GSZ-Analog-Devices-datasheet-9943224.pdf,distributor_mirror,medium,,,Octopart copy filed under OP285GSZ; revision not shown.
 OP285,Analog Devices,OP285,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/49049/AD/OP285.html,third_party_mirror,medium,,,Revision not shown; may hold an older revision (A/B).
@@ -1463,6 +1530,16 @@ OP285,Analog Devices,OP285,,unknown,,https://www.alldatasheet.com/datasheet-pdf/
 OP285,Analog Devices,OP285,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/603022/AD/OP285GSZ-REEL.html,third_party_mirror,medium,,,Newer upload; may hold Rev. B or C.
 OP285,Analog Devices,OP285,,unknown,,https://datasheetspdf.com/pdf/475442/AnalogDevices/OP285/1,third_party_mirror,medium,,,Revision not shown.
 OP285,Analog Devices,OP285,,unknown,,https://www.datasheetcatalog.com/datasheets_pdf/O/P/2/8/OP285.shtml,third_party_mirror,medium,,,Possible older revision; revision not shown.
+OP285,Analog Devices,OP285,B,probable,,https://zh.datasheetq.com/pdf-html/908534/AD/1page/OP285.html,third_party_mirror,medium,,,"Page marked Rev. B, © 1992–2017; SOIC_N only."
+OP285,Analog Devices,OP285,A,probable,2001,https://manualmachine.com/analogdevices/op285a/7450884-datasheet,third_party_mirror,medium,,,Rev. A copies marked © 2001; same file as next entry.
+OP285,Analog Devices,OP285,A,probable,2001,https://manualmachine.com/datasheet/op285/7450884-datasheet-analog-devices,third_party_mirror,medium,,,Alternate path to the Rev. A copy.
+OP285,Analog Devices,OP285,,unknown,,https://manualmachine.com/analogdevices/op285gsr/4144581-datasheet,third_party_mirror,low,,,"Older copy listing GP, GS and GSR codes."
+OP285,Analog Devices,OP285,,unknown,,https://manualmachine.com/analogdevices/op285gp/4144579-datasheet,third_party_mirror,low,,,PDIP part-number copy; revision not shown.
+OP285,Analog Devices,OP285,A,probable,,https://datasheet.chipsfind.com/OP285GS-434885.pdf,third_party_mirror,low,,,Reported among Rev. A (2001) copies; not opened.
+OP285,Analog Devices,OP285,A,probable,,https://pdf5.datasheet.su/op285gsz_2bcd790af5.pdf,third_party_mirror,low,,,Reported among Rev. A (2001) copies; not opened.
+OP285,Analog Devices,OP285,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/603023/AD/OP285.html,third_party_mirror,medium,,https://www.alldatasheet.net/datasheet-pdf/pdf/603023/AD/OP285.html,Revision not shown; also on alldatasheet.net.
+OP285,Analog Devices,OP285,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/49013/AD/OP-285.html,third_party_mirror,medium,,,Early upload under 'OP-285'; revision not shown.
+OP285,Analog Devices,OP285,,unknown,,https://radiolocman.com/datasheet/pdf.html?di=170565,third_party_mirror,medium,,,Second RadioLocman copy; revision not shown.
 OPA111,Burr-Brown / Texas Instruments,SBOS138 (Burr-Brown PDS-526K),PDS-526K,confirmed,1995-08,https://datasheet.octopart.com/OPA111AM-Texas-Instruments-datasheet-10400812.pdf,distributor_mirror,medium,,,TI legacy-cover reprint; SBOS138 / PDS-526K / Aug 1995 reported.
 OPA111,Burr-Brown / Texas Instruments,SBOS140 (Burr-Brown PDS-540E),PDS-540E,confirmed,1993-10,https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/OPA2111.PDF,third_party_mirror,medium,,,"E2E attachment: 8 nV/√Hz max at 10 kHz, 4 pA max Ib."
 OPA111,Texas Instruments,SBOS140 (presumed),,unknown,,https://www.ti.com/lit/ds/symlink/opa2111.pdf,vendor_current,low,,,Unconfirmed; cited by a 2015 blog.
@@ -1518,11 +1595,13 @@ OPA1622,Texas Instruments,unknown (TI Chinese ZHCS-series number not seen),,unkn
 OPA1622,Texas Instruments,SBOS727 (revision unconfirmed),,unknown,,https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/1/OPA1622.shtml,third_party_mirror,low,,,Revision not shown.
 OPA1622,Texas Instruments,SBOS727B,B,confirmed,2016-05,https://www.radiolocman.com/datasheet/data.html?di=305463,third_party_mirror,medium,,,Bare form of di=305463; header shows SBOS727B (May 2016).
 OPA1622,Texas Instruments,SBOS727 (revision not shown),,unknown,,https://www.digikey.com/en/htmldatasheets/production/1854367/0/0/1/opa1622idrct,distributor_mirror,low,,,DigiKey HTML rendering; revision not tied to this copy.
-OPA1622,Texas Instruments,ZHCSEE5B (reported; unconfirmed),B,probable,,https://dfsimgcdn2.hqbuy.com/group5/M00/00/B6/wKiCy2DeetGAFWBCADDIBXPAwaA048.pdf,distributor_mirror,low,,,"Reportedly ZHCSEE5B, unconfirmed; may match the elecfans copy."
+OPA1622,Texas Instruments,ZHCSEE5B (number confirmed; this copy unchecked),B,probable,,https://dfsimgcdn2.hqbuy.com/group5/M00/00/B6/wKiCy2DeetGAFWBCADDIBXPAwaA048.pdf,distributor_mirror,low,,,"Reportedly ZHCSEE5B, unconfirmed; may match the elecfans copy."
 OPA1622,Texas Instruments,SBOS727 (revision not shown),,unknown,,https://datasheetspdf.com/pdf/1407316/etcTI/OPA1622/1,third_party_mirror,low,,,Same ID 1407316 as datasheet4u; quotes rev B front-page text.
 OPA1622,Texas Instruments,SBOS727 (revision not shown),,unknown,,https://www.digchip.com/datasheets/parts/datasheet/2/477/OPA1622.php,third_party_mirror,low,,,Aggregator mirror; revision not shown.
 OPA1622,Texas Instruments,SBOS727 (revision not shown),,unknown,,https://datasheet4u.com/datasheet-pdf/Texas%20Instruments/OPA1622/pdf.php?id=1407316,third_party_mirror,low,,https://datasheet4u.com/datasheet/etcTI/OPA1622-1407316,Another form of datasheet4u 1407316; one more alias exists.
 OPA1622,Texas Instruments,SBOS727,original,confirmed,2015-11,,vendor_legacy,high,,,Known from the rev A revision history; no copy located.
+OPA1622,Texas Instruments,SBOS727B,B,confirmed,2016-05,https://ti.com/document-viewer/OPA1622/datasheet/revision_history,vendor_current,high,,,HTML viewer; header 'SBOS727B November 2015 – May 2016'.
+OPA1622,Texas Instruments,ZHCSEE5B,B,confirmed,2016-05,https://www.ti.com.cn/document-viewer/cn/OPA1622/datasheet/6_ZHCSEE5B,vendor_current,high,,,Chinese edition; header 'ZHCSEE5B November 2015 – May 2016'.
 OPA1642,Texas Instruments,SBOS484,D,confirmed,2016-04,https://www.ti.com/lit/ds/symlink/opa1642.pdf,vendor_current,high,,,Current shared SBOS484 symlink; no Rev E found as of 2026.
 OPA1642,Texas Instruments,SBOS484,D,confirmed,2016-04,https://www.ti.com/lit/ds/symlink/opa1641.pdf,vendor_current,medium,,,Live symlink to the same SBOS484; revision assumed D.
 OPA1642,Mouser (TI copy),SBOS484,D,probable,2016-04,https://www.mouser.com/datasheet/2/405/opa1642-407646.pdf,distributor_mirror,medium,,,"New TI format, reportedly SBOS484D; exact revision unconfirmed."
@@ -1673,6 +1752,9 @@ OPAx211,Texas Instruments,SBOS377A,A,confirmed,2007-02,,vendor_revision_specific
 OPAx211,Texas Instruments,SBOS377H,H,confirmed,2015-11,,vendor_revision_specific,high,,,No copy found; SON V+ and V− pins swapped (4 and 7).
 OPAx211,Texas Instruments,SBOS377J,J,confirmed,2018-02,,vendor_revision_specific,high,,,No copy found; attested by rev L history.
 OPAx211,Texas Instruments,SBOS377K,K,confirmed,2018-09,,vendor_revision_specific,high,,,No copy found; cited by TI PSpice model OPA211.LIB (06FEB2019).
+OPAx211,Texas Instruments,SBOS377L,L,confirmed,2020-01,https://www.ti.com/document-viewer/OPA211/datasheet,vendor_current,high,,,HTML viewer; header 'SBOS377L October 2006 – January 2020'.
+OPAx211,Texas Instruments,SBOS377,,unknown,,https://allelcoelec.pt/datasheets.37/OPA211AIDR.pdf,distributor_mirror,low,,,Distributor PDF; may bundle PCN 20180221003.
+OPAx211,Texas Instruments,SBOS377,,unknown,,https://allelcoelec.my/datasheets.34/OPA2211AIDRGR.pdf,distributor_mirror,low,,,Distributor PDF; source of PCN 20190820005.1 text.
 OPAx227,Texas Instruments,SBOS110C,C,confirmed,2022-11,https://www.ti.com/lit/ds/sbos110c/sbos110c.pdf,vendor_revision_specific,high,,,Current revision; change log: formatting and Absolute Maximum Ratings.
 OPAx227,Texas Instruments,SBOS110,C,confirmed,2022-11,https://www.ti.com/lit/ds/symlink/opa227.pdf,vendor_current,high,,,Current symlink; PDF body not read.
 OPAx227,Texas Instruments,SBOS110,C,confirmed,2022-11,https://www.ti.com/lit/gpn/OPA4227,vendor_current,high,,,Serves the current datasheet.
@@ -1746,8 +1828,8 @@ AD711,Analog Devices,,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/5
 AD711,Analog Devices,,,unknown,,https://datasheetspdf.com/datasheet/AD713.html,third_party_mirror,low,,,Title wording matches Rev. F; revision not shown.
 AD711,Analog Devices,,,unknown,,https://datasheet4u.com/datasheets/Analog-Devices/AD713/1186792,third_party_mirror,low,,,Revision not shown.
 AD711,Analog Devices,,,unknown,,https://www.futurlec.com/AnalogDevices/AD713JN.shtml,distributor_mirror,low,,,Futurlec page for non-RoHS AD713JN; revision not shown.
-AD743,Analog Devices,AD743 data sheet,E,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD743.pdf,vendor_current,high,,,Title reads 'REV. E'; print date and history not seen.
-AD743,Analog Devices,AD745 data sheet,D,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD745.pdf,vendor_current,high,,,Rev. D per ADI short link and RadioLocman. Print date not seen.
+AD743,Analog Devices,AD743 data sheet,E,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD743.pdf,vendor_current,high,,,Title reads 'REV. E'; a mirror copy shows © 2003.
+AD743,Analog Devices,AD745 data sheet,D,confirmed,2002,https://www.analog.com/media/en/technical-documentation/data-sheets/AD745.pdf,vendor_current,high,,,"Rev. D, © 2002 on the analog.com copy."
 AD743,Analog Devices,AD745 data sheet,D,confirmed,,https://www.analog.com/AD745/datasheet,vendor_current,medium,,,Short link; snippet shows 'REV. D'.
 AD743,Analog Devices,AD745 data sheet,,unknown,,http://www.analog.com/static/imported-files/data_sheets/AD745.pdf,vendor_legacy,low,,,Legacy URL cited by Eagle libraries for the R-16 footprint. Wayback seed.
 AD743,Analog Devices,AD743 data sheet,E,confirmed,,https://www.radiolocman.com/datasheet/pdf.html?di=170573,third_party_mirror,high,,,Mirror labels it Revision E.
@@ -1755,7 +1837,7 @@ AD743,Analog Devices,AD745 data sheet,D,confirmed,,https://www.radiolocman.com/d
 AD743,Analog Devices,AD745 data sheet,C,probable,,https://www.frc.utexas.edu/page11/files/AD745.pdf,third_party_mirror,medium,,,University-hosted copy; reportedly REV. C.
 AD743,Analog Devices,AD743 data sheet,E,confirmed,,https://pdf4pro.com/view/ad743-ultralow-noise-bifet-op-amp-data-sheet-rev-e-3678ff.html,third_party_mirror,medium,,,Mirror title states REV. E.
 AD743,Analog Devices,AD743 data sheet,,unknown,,https://pdf4pro.com/view/ad743-ultralow-noise-bifet-op-amp-data-sheet-17c893.html,third_party_mirror,medium,,,Separate copy without a revision; maybe older.
-AD743,Analog Devices,AD743 data sheet,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/549295/AD/AD743.html,third_party_mirror,medium,,,Revision not shown.
+AD743,Analog Devices,AD743 data sheet,C,probable,,https://www.alldatasheet.com/datasheet-pdf/pdf/549295/AD/AD743.html,third_party_mirror,medium,,,Listed as a 12-page Rev. C file (309 kB).
 AD743,Analog Devices,AD743 data sheet,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/549292/AD/AD743AN.html,third_party_mirror,medium,,,Revision not shown.
 AD743,Analog Devices,AD745 data sheet,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/553785/AD/AD745.html,third_party_mirror,medium,,,12-page copy; revision not shown.
 AD743,Analog Devices,AD745 data sheet,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/549299/AD/AD745.html,third_party_mirror,medium,,,Second entry; may hold a different revision.
@@ -1774,6 +1856,13 @@ AD743,Analog Devices,AD743 data sheet,,unknown,,https://www.alldatasheet.com/dat
 AD743,Analog Devices,AD743 data sheet,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/549293/AD/AD743.html,third_party_mirror,low,,,Same batch as IDs 549292/549295; revision not shown.
 AD743,Analog Devices,AD745 data sheet,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/48211/AD/AD745.html,third_party_mirror,low,,,Early upload (ID 48211); possibly Rev. C.
 AD743,Analog Devices,AD743 data sheet,,unknown,,https://archive.org/details/manuallib-id-2554330,archive,low,,,Internet Archive copy from manuallib; revision not shown.
+AD743,Analog Devices,AD743 data sheet,C,confirmed,,https://www.cieri.net/Documenti/Data%20Sheets/Operational%20Amplifiers/AD743%20(Analog%20Devices).pdf,third_party_mirror,medium,,,"Title block shows REV. C; mini-DIP, cerdip, SOIC, chip."
+AD743,Analog Devices,AD743 data sheet,C,confirmed,,https://chipfind.net/datasheet/html/ad/ad743.html,third_party_mirror,medium,,,"HTML copy of Rev. C, J/K/B/S spec columns."
+AD743,Analog Devices,AD743 data sheet,,unknown,,https://www.radiolocman.com/datasheet/pdf.html?di=120131,third_party_mirror,low,,,Second RadioLocman AD743 PDF; revision not shown.
+AD743,Analog Devices,AD743 data sheet,,unknown,,https://manualmachine.com/analogdevices/ad743/4000923-datasheet,third_party_mirror,low,,,Older ManualMachine copy; revision not shown.
+AD743,Analog Devices,AD745 data sheet,D,confirmed,2002,https://www-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD745.pdf,vendor_current,medium,,,ADI CDN host of the Rev. D PDF.
+AD743,Analog Devices,AD745 data sheet,,unknown,,https://www.radiolocman.com/datasheet/pdf.html?di=120135,third_party_mirror,low,,,Second RadioLocman AD745 PDF; may predate Rev. D.
+AD743,Analog Devices,AD745 data sheet,,unknown,,https://www.qrz.ru:443/reference/micro/analog/ad745.pdf,third_party_mirror,low,,,Old Russian reference mirror; revision not shown.
 AD744,Analog Devices,AD744,D,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad744.pdf,vendor_current,medium,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD744.pdf,Current ADI URL (uppercase AD744.pdf also indexed); Rev. D per radiolocman.
 AD744,Analog Devices,AD744,D,confirmed,,https://www.radiolocman.com/datasheet/pdf.html?di=120133,third_party_mirror,medium,,,Labelled 'Revision: D'; capture postdates ADI's 02/23/2017 quick-links page.
 AD744,Analog Devices,AD744,,unknown,,http://www.analog.com/static/imported-files/data_sheets/AD744.pdf,vendor_legacy,high,,,"Legacy path, still indexed; linked by ZeptoBars in 2014. Good Wayback seed."
@@ -1822,25 +1911,37 @@ AD8022,Analog Devices (DataSheetAll mirror),AD8022,,unknown,,https://www.datashe
 AD8022,Analog Devices (digchip mirror),AD8022,,unknown,,https://www.digchip.com/datasheets/parts/datasheet/041/AD8022.php,third_party_mirror,low,,,"Unusual title; possibly an early scrape (Rev 0 or A), unmarked."
 AD8022,Analog Devices (datasheetq mirror),AD8022,,unknown,,https://www.datasheetq.com/AD8022-Datasheet-PDF-ADI,third_party_mirror,low,,,Revision not shown.
 AD8022,Analog Devices (datasheetcafe mirror),AD8022,,unknown,,https://www.datasheetcafe.com/ad8022-datasheet-pdf/,third_party_mirror,low,,,Revision not shown.
-AD822,Analog Devices,AD822,J,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf,vendor_current,high,,,"Current revision, Rev. J."
-AD822,dtsheet.com,AD822,J,confirmed,,https://dtsheet.com/doc/1387960/ad822--rev.-j----analog-devices,third_party_mirror,medium,,,Mirror of Rev. J.
+AD822,Analog Devices,AD822,J,confirmed,2015-09,https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf,vendor_current,high,,,"Current revision, Rev. J."
+AD822,dtsheet.com,AD822,J,confirmed,2015-09,https://dtsheet.com/doc/1387960/ad822--rev.-j----analog-devices,third_party_mirror,medium,,,Mirror of Rev. J.
 AD822,Octopart,AD822,,unknown,,https://datasheet.octopart.com/AD822ARZ-Analog-Devices-datasheet-9563410.pdf,distributor_mirror,medium,,,Revision not shown; may predate Rev. J.
 AD822,Farnell,AD822,,unknown,,https://www.farnell.com/datasheets/92971.pdf,distributor_mirror,medium,,,Low Farnell doc ID suggests an older revision.
 AD822,Radiolocman,AD822,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=351381,third_party_mirror,medium,,,
 AD822,Radiolocman,AD822,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=32855,third_party_mirror,medium,,,"Legacy AD822AN listing; low ID, probably an old revision."
 AD822,alldatasheet,AD822,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/48425/AD/AD822.html,third_party_mirror,medium,,,Probably an older revision.
-AD822,Analog Devices,AD820,H,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf,vendor_current,high,,,"Current revision, Rev. H."
+AD822,Analog Devices,AD820,H,confirmed,2011-03,https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf,vendor_current,high,,,"Current revision, Rev. H."
 AD822,Octopart,AD820,G,confirmed,,https://datasheet.octopart.com/AD820BRZ-Analog-Devices-datasheet-8455708.pdf,distributor_mirror,high,,,Keeps the older Rev. G.
 AD822,Octopart,AD820,,unknown,,https://datasheet.octopart.com/AD820ARZ-Analog-Devices-datasheet-9572509.pdf,distributor_mirror,medium,,,
-AD822,Radiolocman,AD820,H,confirmed,,https://www.radiolocman.com/datasheet/pdf.html?di=121457,third_party_mirror,high,,,
+AD822,Radiolocman,AD820,H,confirmed,2011-03,https://www.radiolocman.com/datasheet/pdf.html?di=121457,third_party_mirror,high,,,
 AD822,alldatasheet,AD820,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/225472/AD/AD820.html,third_party_mirror,medium,,,
 AD822,alldatasheet,AD820,,unknown,,https://www.alldatasheet.com/html-pdf/48423/AD/AD820/19/1/AD820.html,third_party_mirror,medium,,,Lower ID than 225472; probably an older revision.
-AD822,Analog Devices,AD824,E,probable,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf,vendor_current,medium,,,Revision letter on the vendor copy not yet confirmed.
-AD822,Radiolocman,AD824,E,confirmed,,https://www.radiolocman.com/datasheet/pdf.html?di=168527,third_party_mirror,high,,,
+AD822,Analog Devices,AD824,E,confirmed,2015-04,https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf,vendor_current,medium,,,"Current revision, Rev. E (April 2015)."
+AD822,Radiolocman,AD824,E,confirmed,2015-04,https://www.radiolocman.com/datasheet/pdf.html?di=168527,third_party_mirror,high,,,
 AD822,Radiolocman,AD824,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=80108,third_party_mirror,medium,,,
 AD822,Farnell,AD824,,unknown,,https://www.farnell.com/datasheets/515250.pdf,distributor_mirror,medium,,,
 AD822,NRAO (cv.nrao.edu),AD824,,unknown,,https://www.cv.nrao.edu/~thunter/datasheets/AD824.pdf,third_party_mirror,medium,,,Observatory copy in the older ADI layout; likely an early revision.
 AD822,alldatasheet,AD824,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/48427/AD/AD824.html,third_party_mirror,medium,,,
+AD822,Analog Devices,AD822,,unknown,,https://xdevs.com/doc/_Datasheets/Amplifiers/AD822.pdf,third_party_mirror,low,,,xdevs copy; revision not shown.
+AD822,Analog Devices,AD822,,unknown,,https://xdevs.com/doc/Keithley/4200/ad822.pdf,third_party_mirror,low,,,Filed with Keithley 4200 docs; probably an older revision.
+AD822,Analog Devices,AD822-EP,,unknown,,https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD822-EP.pdf,vendor_current,medium,,,Separate enhanced-product datasheet.
+AD822,Analog Devices,AD822,,unknown,,https://www.radiolocman.com/datasheet/pdf.html?di=168529,third_party_mirror,low,,,Also di=121453.
+AD822,Analog Devices,AD820_JP,H,confirmed,2011-03,https://wcm-cce.cldnet.analog.com/media/jp/technical-documentation/data-sheets/AD820_JP.pdf,vendor_current,high,,,ADI Japanese edition of Rev. H.
+AD822,Analog Devices,AD820,H,probable,2011-03,https://www.scribd.com/document/556728599/AD820,third_party_mirror,low,,,"Scribd copy, © 2011; its G-to-H entry differs."
+AD822,Analog Devices,AD820,H,probable,2011-03,https://www.alldatasheet.com/html-pdf/1960199/AD/AD820ARMZ-R7/71/2/AD820ARMZ-R7.html,third_party_mirror,low,,,History shows 3/11 Rev. G to Rev. H.
+AD822,Analog Devices,AD820,,unknown,,"https://www.physics.utoronto.ca/~astummer/Archives/2008%20CATS%20-%20Cold%20Atoms%20Transfer%20System/Docs/AD820%20AnaDev,%20RRIO%20opamp%200.8uV%201.8MHz%205-36V.pdf",third_party_mirror,low,,,"Archived in 2008, so earlier than Rev. H."
+AD822,Analog Devices,AD824,E,confirmed,2015-04,https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf,vendor_current,high,,,ADI CDN copy; history shows 4/15 Rev. D to Rev. E.
+AD822,Analog Devices,AD824,E,confirmed,2015-04,https://dtsheet.com/doc/1845435/pdf-data-sheet-rev.-e,third_party_mirror,low,,,Titled Rev. E.
+AD822,Analog Devices,AD824,,unknown,,https://www.radiolocman.com/datasheet/pdf.html?di=121429,third_party_mirror,low,,,
+AD822,Analog Devices,AD824,,unknown,,https://www.cieri.net/Documenti/Data%20Sheets/Operational%20Amplifiers/AD824%20(Analog%20Devices).pdf,third_party_mirror,low,,,Personal archive copy.
 AD825,Analog Devices,AD825,G,confirmed,2014-04,https://www.analog.com/media/en/technical-documentation/data-sheets/AD825.pdf,vendor_current,high,,,"Current revision, 12 pages."
 AD825,Analog Devices (via RadioLocman),AD825,G,confirmed,2014-04,https://www.radiolocman.com/datasheet/pdf.html?di=171867,third_party_mirror,high,,https://www.rlocman.ru/datasheet/pdf.html?di=171867&p=1,Rev. G preview; rlocman.ru page 1 shows the Revision History.
 AD825,Analog Devices (University of Toronto copy),AD825,G,confirmed,2014-04,"https://www.physics.utoronto.ca/~astummer/Archives/2016_DigiPid/Docs/AnaDev%20AD825,%2026MHz%2030V.pdf",third_party_mirror,high,,,University copy (2016); '26MHz' filename label is unexplained.
@@ -1874,16 +1975,22 @@ AD826,Analog Devices,AD826,,unknown,,https://www.alldatasheet.com/datasheet-pdf/
 AD826,Analog Devices,AD826,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/520354/AD/AD826ARZ.html,third_party_mirror,low,,,"15 pages, 725 KB; matches Rev. C size, probably Rev. C."
 AD826,Analog Devices,D08950-0-4/10(C),C,confirmed,2010-04,https://www.radiolocman.com/datasheet/pdf.html?di=171829&p=14,third_party_mirror,high,,,Revision History page of the Rev. C mirror di=171829.
 AD826,Analog Devices,AD826,,unknown,,https://www.datasheetq.com/AD826-doc-ADI,third_party_mirror,low,,,Mirror; revision not shown.
-AD828,Analog Devices,AD828,C,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad828.pdf,Current ADI datasheet; header reads 'REV. C'.
+AD828,Analog Devices,AD828,C,confirmed,2002,https://www.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad828.pdf https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD828.pdf,"Current ADI datasheet; header 'REV. C', © 2002."
 AD828,Analog Devices,AD828,C,confirmed,,https://www.radiolocman.com/datasheet/pdf.html?di=121449,third_party_mirror,medium,,,RadioLocman mirror; title says Revision C.
 AD828,Analog Devices,AD828,C,confirmed,,https://www.rlocman.es/datasheet/pdf.html?di=170553&p=11,third_party_mirror,medium,,,"Spanish RadioLocman mirror, Revision C; page 11 shows outline dimensions."
 AD828,Analog Devices,AD828,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/48433/AD/AD828AR.html,third_party_mirror,low,,,"Revision unknown; low ID suggests an older scan, maybe Rev. B."
-AD828,Analog Devices,AD828,,unknown,,https://www.alldatasheet.com/datasheet-pdf/view/48431/AD/AD828.html,third_party_mirror,low,,,Revision unknown.
+AD828,Analog Devices,AD828,B,probable,,https://www.alldatasheet.com/datasheet-pdf/view/48431/AD/AD828.html,third_party_mirror,low,,https://www.alldatasheet.com/datasheet-pdf/pdf/48431/AD/AD828.html https://www.alldatasheet.net/datasheet-pdf/pdf/48431/AD/AD828.html,"Listed as Rev. B, 12 pages (256 kB)."
 AD828,Analog Devices,AD828,,unknown,,https://datasheet4u.com/datasheet/Analog-Devices/AD828-142631,third_party_mirror,low,,,Revision unknown.
 AD828,Analog Devices,AD828,,unknown,,https://studylib.net/doc/18150871/dual--low-power-video-op-amp-ad828,third_party_mirror,low,,,Revision unknown.
 AD828,Analog Devices,AD828,,unknown,,https://www.digchip.com/datasheets/parts/datasheet/041/AD828.php,third_party_mirror,low,,,Revision unknown.
 AD828,Analog Devices,AD828,,unknown,,https://www.futurlec.com/AnalogDevices/AD828AN.shtml,distributor_mirror,low,,,Futurlec page for the PDIP AD828AN; revision unknown.
-AD843,Analog Devices,AD843,D,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf,vendor_current,medium,,,"Current ADI PDF, 13 pages; date and change history not seen."
+AD828,Analog Devices,AD828,B,probable,,https://dtsheet.com/doc/98149/ad-ad828ar,third_party_mirror,low,,,AD828AR copy labelled Rev. B.
+AD828,Analog Devices,AD828,,unknown,,https://manualmachine.com/analogdevices/ad828an/3999525-datasheet,third_party_mirror,low,,https://manualmachine.com/datasheet/ad828an/3999525-datasheet-analog-devices,Older copy with leaded AN/AR ordering codes.
+AD828,Analog Devices,AD828,C,probable,,https://manualmachine.com/analogdevices/ad828c/7451061-datasheet,third_party_mirror,low,,https://manualmachine.com/datasheet/ad828/7451061-datasheet-analog-devices,Path suggests Rev. C; revision not shown in snippet.
+AD828,Analog Devices,AD828,,unknown,,https://www.cieri.net/Documenti/Data%20Sheets/Operational%20Amplifiers/AD828%20(Analog%20Devices).pdf,third_party_mirror,medium,,,Gives 10 nV/√Hz noise at 10 kHz.
+AD828,Analog Devices,AD828,,unknown,,https://www.alldatasheet.net/datasheet-pdf/pdf/540313/AD/AD828AR.html,third_party_mirror,low,,https://html.alldatasheet.net/html-pdf/540312/AD/AD828AN/294/10/AD828AN.html,Later upload; also AD828AN entry #540312.
+AD828,Analog Devices,AD828_JP,,unknown,,https://www-cce.cldnet.analog.com/media/jp/technical-documentation/data-sheets/AD828_JP.pdf,vendor_current,medium,,,Japanese translation on ADI's CDN; revision not shown.
+AD843,Analog Devices,AD843,D,confirmed,1995,https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf,vendor_current,medium,,,"Current ADI PDF, 13 pages, © 1995; change history not seen."
 AD843,Analog Devices,AD843,,unknown,,https://www.analog.com/static/imported-files/data_sheets/AD843.pdf,vendor_legacy,medium,,,Legacy ADI path; may hold an older revision. Check Wayback.
 AD843,Analog Devices (Octopart mirror),AD843,,unknown,,https://datasheet.octopart.com/AD843KN-Analog-Devices-datasheet-7595.pdf,distributor_mirror,medium,,,Filed under leaded AD843KN; possibly a pre-RoHS revision.
 AD843,Analog Devices (Digi-Key mirror),AD843,,unknown,,https://www.digikey.com/htmldatasheets/production/51948/0/0/1/ad843.html,distributor_mirror,medium,,,Digi-Key HTML rendering.
@@ -1892,13 +1999,20 @@ AD843,Analog Devices (alldatasheet mirror),AD843,,unknown,,https://www.alldatash
 AD843,Analog Devices (datasheetcatalog mirror),AD843,,unknown,,https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD843.shtml,third_party_mirror,medium,,https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD843KN.shtml,"2000s-era mirror, likely an older revision; also an AD843KN page."
 AD843,Analog Devices (digchip mirror),AD843,,unknown,,https://www.digchip.com/datasheets/parts/datasheet/041/AD843.php,third_party_mirror,medium,,,Revision not shown.
 AD843,Analog Devices (datasheetq mirror),AD843,,unknown,,https://www.datasheetq.com/AD843JN-ADI,third_party_mirror,medium,,,Filed under leaded AD843JN; revision not shown.
-AD843,Analog Devices - third-party mirror (RadioLocman),AD843,D,confirmed,,https://www.radiolocman.com/datasheet/pdf.html?di=121483,third_party_mirror,high,,,"Rev. D; p. 12 N-8/Q-8/H-12A/R-16 outlines, p. 9 sample-and-hold circuits."
+AD843,Analog Devices - third-party mirror (RadioLocman),AD843,D,confirmed,1995,https://www.radiolocman.com/datasheet/pdf.html?di=121483,third_party_mirror,high,,,"Rev. D; p. 12 N-8/Q-8/H-12A/R-16 outlines, p. 9 sample-and-hold circuits."
 AD843,Analog Devices - third-party mirror (alldatasheet),AD843,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/48465/AD/AD843.html,third_party_mirror,low,,,Old alldatasheet ID; revision not shown.
 AD843,Analog Devices (Farnell mirror),AD843,,unknown,,https://www.farnell.com/datasheets/2147042.pdf,distributor_mirror,low,,,"Fairly recent Farnell upload; probably Rev. D, unconfirmed."
 AD843,Analog Devices (alldatasheet mirror),AD843,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/1011842/AD/AD843.html,third_party_mirror,low,,,High ID suggests a recent upload; revision not shown.
 AD843,Analog Devices (datasheetarchive index),AD843,,unknown,,https://datasheetarchive.com/AD843-datasheet.html,third_party_mirror,low,,,Index often holding old data-book scans; best bet for pre-D editions.
 AD843,Analog Devices (Futurlec mirror),AD843,,unknown,,https://www.futurlec.com/AnalogDevices/AD843JN.shtml,distributor_mirror,low,,https://www.futurlec.com/AnalogDevices/AD843JNpr.shtml,Futurlec AD843JN page; often hosts older ADI editions.
 AD843,Analog Devices (datasheetq mirror),AD843,,unknown,,https://www.datasheetq.com/en/AD843-ADI,third_party_mirror,low,,,Datasheetq English AD843 page; revision not shown.
+AD843,Analog Devices,AD843,D,confirmed,1995,https://www-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf,vendor_current,medium,,,ADI CDN host of the Rev. D PDF.
+AD843,Analog Devices,AD843,,unknown,,https://www.radiolocman.com/datasheet/pdf.html?di=171875,third_party_mirror,low,,,Second RadioLocman AD843 PDF; revision not shown.
+AD843,Analog Devices,AD843,,unknown,,https://manualmachine.com/analogdevices/ad843/3999390-datasheet,third_party_mirror,low,,,ManualMachine copy; revision not shown.
+AD843,Analog Devices,AD843,,unknown,,https://www.alldatasheet.net/datasheet-pdf/pdf/539040/AD/AD843AQ.html,third_party_mirror,low,,,alldatasheet grade-specific listing; revision not shown.
+AD843,Analog Devices,AD843,,unknown,,https://www.alldatasheet.net/datasheet-pdf/pdf/575880/AD/AD843AQ.html,third_party_mirror,low,,,alldatasheet grade-specific listing; revision not shown.
+AD843,Analog Devices,AD843,,unknown,,https://www.alldatasheet.net/datasheet-pdf/pdf/48470/AD/AD843S.html,third_party_mirror,low,,,alldatasheet grade-specific listing; revision not shown.
+AD843,Analog Devices,AD843,,unknown,,https://www.alldatasheet.net/datasheet-pdf/pdf/48478/AD/AD843SH.html,third_party_mirror,low,,,alldatasheet grade-specific listing; revision not shown.
 AD845,Analog Devices,AD845 (ADI data sheet),E,confirmed,2003-10,https://www.analog.com/media/en/technical-documentation/data-sheets/AD845.pdf,vendor_current,medium,,,Current Rev. E; lowercase ad845.pdf path also indexed.
 AD845,radiolocman.com,AD845,E,confirmed,2003-10,https://www.radiolocman.com/datasheet/pdf.html?di=121495,third_party_mirror,medium,,,Mirror explicitly labelled Revision E.
 AD845,radiolocman.com,AD845,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=351783,third_party_mirror,medium,,,Second RadioLocman entry; revision may differ from di=121495.
@@ -1918,6 +2032,13 @@ AD845,Analog Devices - third-party mirror (Octopart),AD845,,unknown,,https://dat
 AD845,Analog Devices - third-party mirror,AD845,,unknown,,https://datasheetspdf.com/pdf/1088521/AnalogDevices/AD845/1,third_party_mirror,low,,https://datasheet4u.com/datasheets/Analog-Devices/AD845/1088521,Same ID 1088521 as datasheet4u copy; revision not shown.
 AD845,Analog Devices (Mouser distributor copy),AD845 data sheet,E,confirmed,2003-10,https://www.mouser.com/datasheet/2/609/AD845-3119489.pdf,distributor_mirror,high,,,"Mouser cache; title says REV. E, the current revision."
 AD845,Analog Devices (datasheet.es mirror),AD845,,unknown,,http://www.datasheet.es/PDF/1088521/AD845-pdf.html,third_party_mirror,low,,,Same file ID 1088521 as datasheet4u; probably the same scan.
+AD845,Analog Devices,AD845,D,probable,,https://manualmachine.com/analogdevices/ad845aq/3999410-datasheet,third_party_mirror,low,,,A ManualMachine copy reportedly shows REV. D.
+AD845,Analog Devices,AD845,,unknown,,https://manualmachine.com/analogdevices/ad845sq883b/3999328-datasheet/,third_party_mirror,low,,,ManualMachine SQ/883B copy; revision not shown.
+AD845,Analog Devices,AD845,,unknown,,https://manualmachine.com/analogdevices/ad845bq/3999409-datasheet,third_party_mirror,low,,,"Lists SQ-883B, SQ, chips, KN, JR-16-REEL7."
+AD845,Analog Devices,AD845,,unknown,,https://www.radiolocman.com/datasheet/pdf.html?di=171879,third_party_mirror,low,,,Second RadioLocman AD845 PDF; revision not shown.
+AD845,Analog Devices,AD845,,unknown,,https://ew.lens.unifi.it/datasheets/AD845_16MHz_OpAmp[1].pdf,third_party_mirror,low,,,University-hosted copy; revision not shown.
+AD845,Analog Devices,AD845,E,confirmed,2003-10,https://www-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD845.pdf,vendor_current,medium,,,ADI CDN host of the current PDF.
+AD845,Analog Devices,AD845,,unknown,,https://docs.rs-online.com/875b/0900766b80de075f.pdf,distributor_mirror,low,,,RS PDF returned by AD845 searches; contents not confirmed.
 AD847,Analog Devices,AD847,F,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/AD847.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad847.pdf,"N, R and Q packages, 12 pages; printed date not seen."
 AD847,Analog Devices,AD827,C,confirmed,2002-08,https://www.analog.com/media/en/technical-documentation/data-sheets/AD827.pdf,vendor_current,medium,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad827.pdf,"Rev. C (8/02, Outline Dimensions updated); later revision not ruled out."
 AD847,Analog Devices,AD847S,,unknown,,https://www.analog.com/media/en/technical-documentation/data-sheets/ad847s.pdf,vendor_current,medium,,,Separate S-grade (military) detail specification; revision unknown.
@@ -2012,18 +2133,24 @@ ADA4075-2,Analog Devices,ADA4075-2,,unknown,,https://www.datasheetarchive.com/AD
 ADA4075-2,Analog Devices,ADA4075-2,,unknown,,https://www.datasheetarchive.com/?q=ada4075-2arz,third_party_mirror,low,,,Search-results page; revision not shown.
 ADA4075-2,Analog Devices,ADA4075-2,,unknown,,https://www.alldatasheet.com/view.jsp?Searchword=ADA4075,third_party_mirror,low,,,Search listing linking entries 529384 (older) and 1969636 (newer).
 ADA4075-2,Analog Devices (unverified Farnell PDF),unknown,,unknown,,https://www.farnell.com/datasheets/2250832.pdf,distributor_mirror,low,,,Content unidentified; check it is the ADA4075-2 datasheet before use.
-ADA4625,Analog Devices,ADA4625-1/ADA4625-2,B,confirmed,2025-03,https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1-4625-2.pdf,vendor_current,high,,https://www.analog.com/ADA4625-2/datasheet,Current combined datasheet; issued with PCN 25_0070 (package outline).
+ADA4625,Analog Devices,ADA4625-1/ADA4625-2,B,confirmed,2025-03,https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1-4625-2.pdf,vendor_current,high,,https://www.analog.com/ADA4625-2/datasheet,"Current combined datasheet; history line 2/2025, product page 03/03/2025."
 ADA4625,Analog Devices,ADA4625-1,,unknown,2017-10,https://www.analog.com/media/en/technical-documentation/data-sheets/ada4625-1.pdf,vendor_legacy,medium,,https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1.pdf,"Legacy single-only URL, likely Rev 0; may now redirect."
-ADA4625,Analog Devices,ADA4625-1/ADA4625-2,A,confirmed,,https://www.verical.com/datasheet/analog-devices-amplifier-ic-development-tools-EVAL-ADA4625-1ARDZ-5229613.pdf,distributor_mirror,high,,,"Verical (Arrow) copy of Rev A, first combined datasheet."
-ADA4625,Analog Devices,ADA4625-1/ADA4625-2,A,confirmed,,https://www.radiolocman.com/datasheet/pdf.html?di=166129,third_party_mirror,high,,,"RadioLocman copy of Rev A, uploaded 2019-07-02."
-ADA4625,Analog Devices,ADA4625-1,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=403809,third_party_mirror,medium,,,Revision unknown; possibly Rev 0 or Rev B.
+ADA4625,Analog Devices,ADA4625-1/ADA4625-2,A,confirmed,2019-06,https://www.verical.com/datasheet/analog-devices-amplifier-ic-development-tools-EVAL-ADA4625-1ARDZ-5229613.pdf,distributor_mirror,high,,,"Verical (Arrow) copy of Rev A, first combined datasheet."
+ADA4625,Analog Devices,ADA4625-1/ADA4625-2,A,confirmed,2019-06,https://www.radiolocman.com/datasheet/pdf.html?di=166129,third_party_mirror,high,,https://www.rlocman.es/datasheet/pdf.html?di=166129,"RadioLocman copy of Rev A, uploaded 2019-07-02."
+ADA4625,Analog Devices,ADA4625-1,0,confirmed,2017-10,https://www.radiolocman.com/datasheet/data.html?di=403809,third_party_mirror,medium,,,"RadioLocman copy of Rev 0, uploaded 2017-11-02."
 ADA4625,Analog Devices,ADA4625-1/ADA4625-2,,unknown,,https://www.digikey.com/en/datasheets/analogdevicesinc/analog-devices-inc-ada4625-1,distributor_mirror,medium,,,"DigiKey viewer, probably tracks the current revision."
 ADA4625,Analog Devices,ADA4625-1,,unknown,,https://datasheet4u.com/datasheets/Analog-Devices/ADA4625-1/1380639,third_party_mirror,low,,,Revision unknown.
 ADA4625,Analog Devices,ADA4625-1/ADA4625-2,,unknown,,https://datasheet4u.com/datasheets/Analog-Devices/ADA4625-2/1426800,third_party_mirror,low,,,Revision unknown.
 ADA4625,Analog Devices,ADA4625-1/ADA4625-2,,unknown,,https://www.scribd.com/document/442424095/ADA4625-1-4625-2,third_party_mirror,low,,,Revision unknown; older upload suggests Rev A era.
 ADA4625,Analog Devices,ADA4625-1/ADA4625-2,,unknown,,https://www.scribd.com/document/911598287/ada4625-1-4625-2,third_party_mirror,low,,,Revision unknown.
-ADA4625,Analog Devices,UG-1201,,unknown,,https://datasheet.datasheetarchive.com/originals/dk/DKDS-11/219635.pdf,third_party_mirror,medium,,,"Evaluation board user guide, not the device datasheet."
+ADA4625,Analog Devices,UG-1201,,unknown,,https://datasheet.datasheetarchive.com/originals/dk/DKDS-11/219635.pdf,third_party_mirror,medium,,https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/user-guides/EVAL-ADA4625-1ARDZ-UG-1201.pdf,"Evaluation board user guide, not the device datasheet."
 ADA4625,Analog Devices,unknown,,unknown,,https://www.verical.com/datasheet/analog-devices-amplifier-ic-development-tools-eval-ada4625-2ardz-6732010.pdf,distributor_mirror,low,,,Contents and revision unknown.
+ADA4625,Analog Devices,ADA4625-1,0,confirmed,2017-10,https://www.mouser.tw/ds/2/609/ADA4625-1-1274393.pdf,distributor_mirror,high,,,"Mouser copy of Rev 0, single-only datasheet."
+ADA4625,Analog Devices,ADA4625-1/ADA4625-2,,unknown,,https://www-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf,vendor_current,medium,,,ADI CDN copy of the combined datasheet; revision not shown.
+ADA4625,Analog Devices,ADA4625-1,,unknown,,https://www-cce.cldnet.analog.com/media/jp/technical-documentation/data-sheets/ada4625-1_jp.pdf,vendor_current,medium,,,Japanese translation; ADI warns translations may lag English revisions.
+ADA4625,Analog Devices,ADA4625-1/ADA4625-2,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=630053,third_party_mirror,low,,,Revision not shown.
+ADA4625,Analog Devices,ADA4625-1,,unknown,,https://dtsheet.com/model/4160050,third_party_mirror,low,,https://datasheetspdf.com/datasheet/ADA4625-1.html,Revision not shown.
+ADA4625,Analog Devices,ADA4625-1,,unknown,,https://pdf.jiepei.com/ada4625-1_v01-33218450.html,third_party_mirror,low,,https://pdf.jiepei.com/ada4625-2-33218451.html,'_v01' filename suggests an earlier revision.
 ADA4898,Analog Devices,ADA4898-1/ADA4898-2 data sheet (combined single/dual; ADI uses no separate literature number),F,confirmed,2026-01-19,https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4898-1_4898-2.pdf,vendor_current,high,,https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf,"Current Rev. F: RD-8-1→RD-8-4, outline dimensions, ordering guide changes."
 ADA4898,Analog Devices,ADA4898-1/ADA4898-2 data sheet,D,probable,,https://www.analog.com/ADA4898-2/datasheet,vendor_current,medium,,,Short link to current PDF; search index still titles it Rev. D.
 ADA4898,Analog Devices,ADA4898-1/ADA4898-2 data sheet,,unknown,,http://www.analog.com/static/imported-files/data_sheets/ADA4898-1_4898-2.pdf,vendor_legacy,medium,,,Legacy ADI static URL; good Wayback seed for Rev. C/D copies.
@@ -2049,17 +2176,33 @@ BA15218,ROHM (via datasheetcatalog),,original,unknown,,https://www.datasheetcata
 BA15218,ROHM (via ChipFind),,original,unknown,,https://www.chipfind.net/datasheet/rohm/ba15218.htm,third_party_mirror,low,,,Presumed the undated legacy sheet.
 BA15218,ROHM (via datasheet4u),,original,unknown,,https://www.datasheet4u.com/datasheet-pdf/Rohm/BA15218/pdf.php?id=233243,third_party_mirror,low,,,Presumed legacy sheet; BA15218F (id 233244) and BA15218N (id 233245) pages exist.
 BA15218,ROHM (via Datasheet Archive),,,unknown,,https://datasheetarchive.com/BA15218F-datasheet.html,third_party_mirror,low,,,May hold several versions.
+BA15218,ROHM (via elecfans),TSZ02201-0RAR1G200050-1-2,Rev. 001,probable,2013-09-10,https://pdf.elecfans.com/ROHM/BA15218F-E2.html,third_party_mirror,low,,,Mirror reportedly showing the 10.SEP.2013 Rev.001 date.
+BA15218,ROHM (via alldatasheet),TSZ02201-0RAR1G200050-1-2 (presumed),,unknown,,https://html.alldatasheet.vn/html-pdf/528172/ROHM/BA15218F/818/8/BA15218F.html,third_party_mirror,low,,,Probably the TSZ sheet; sibling entry 506487 on alldatasheetit.
+BA15218,ROHM (via Elcodis),,,unknown,,https://elcodis.com/parts/1316622/BA15218F-E2_p9.html,third_party_mirror,low,,,Page-by-page copy; revision not shown.
+BA15218,ROHM (via alldatasheet),none printed (legacy catalogue sheet),original,unknown,,https://html.alldatasheet.co.kr/html-pdf/35932/ROHM/BA15218F/82/1/BA15218F.html,third_party_mirror,low,,,Low entry number next to 35931; presumed legacy sheet.
+BA15218,ROHM (via Manualmachine),none printed (legacy catalogue sheet),original,unknown,,https://manualmachine.com/datasheet/ba15218/3963790-datasheet-rohm,third_party_mirror,low,,,Legacy sheet covering all three packages.
+BA15218,ROHM (via GetDatasheet),none printed (legacy catalogue sheet),original,unknown,,https://getdatasheet.com/datasheets/datainfo/107981/BA15218N.html,third_party_mirror,low,,,"BA15218N.PDF, about 60 KB; presumed legacy sheet."
+BA15218,ROHM (via Sierra IC),,,unknown,,https://www.sierraic.com/buy_online/download/datasheet/511016/BA15218,distributor_mirror,low,,,Distributor download; revision not shown.
+BA15218,ROHM (via ESPEC monitor),none printed (legacy catalogue sheet),original,unknown,,https://monitor.espec.ws/download.php?id=141965,third_party_mirror,low,,,Legacy-style copy covering all three packages.
 EL2244,Elantec,none (Elantec pre-FN numbering),C,confirmed,1995-12,https://www.sm0vpo.com/_pdf/amplifiers/EL2244.PDF,third_party_mirror,high,,,Oldest found; header 'EL2244C/EL2444C December 1995 Rev C'. Noise source.
 EL2244,Elantec,none (Elantec),,unknown,,https://tvsat.com.pl/PDF/E/EL2444_ELAN.pdf,third_party_mirror,low,,,Elantec-branded copy; revision not shown.
 EL2244,Elantec,none (Elantec),,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/59896/ELANTEC/EL2244CS.html,third_party_mirror,low,,,Elantec-era copy; also EL2444CS (59898) and EL2244 (59900).
 EL2244,Elantec,none (Elantec),,unknown,,https://datasheetspdf.com/pdf/237670/ElantecSemiconductor/EL2244C/1,third_party_mirror,low,,,Elantec-era copy; revision unconfirmed.
 EL2244,Intersil,FN7059,FN7059.1,probable,2004-07-14,https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1,third_party_mirror,medium,,,"Dated July 14, 2004 (maybe PDF metadata); also on datasheet4u (1437145)."
-EL2244,Intersil,FN7059,FN7059.2,confirmed,,http://www.manuallib.com/download/pdf14/INTER-IL-EL2244-EL2444-DATA-SHEET.PDF,third_party_mirror,high,,,Latest found; lists the Pb-free Z parts. Print date unknown.
+EL2244,Intersil,FN7059,FN7059.2,confirmed,2005-05-16,http://www.manuallib.com/download/pdf14/INTER-IL-EL2244-EL2444-DATA-SHEET.PDF,third_party_mirror,high,,,"Lists Pb-free Z parts; Rev 2.00 dated 2005-05-16, marked NRND."
 EL2244,Intersil,FN7059,,unknown,,https://www.bndhep.net/Electronics/Data/EL2244.pdf,third_party_mirror,low,,,Intersil-era copy; revision unconfirmed.
 EL2244,Renesas,FN7059 (presumed),,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/1051967/RENESAS/EL2244.html,third_party_mirror,low,,,Renesas-branded copy; EL2444CS at ID 1051980. Content changes unknown.
+EL2244,Intersil,FN7059,FN7059.2,probable,2005-05-16,https://www.mouser.com/catalog/specsheets/intersil_fn7059.pdf,distributor_mirror,medium,,,Mouser copy; likely the May 2005 NRND issue.
+EL2244,Intersil,FN7059,FN7059.2,probable,2005-05-16,https://chipfind.net/datasheet/html/intersil/el2244cm.html,third_party_mirror,low,,,Reported as the 2005 issue; filed under EL2244CM.
+EL2244,Intersil,FN7059,FN7059.2,probable,2005-05-16,https://datasheet.eeworld.com.cn/view/102424.html,third_party_mirror,low,,,Reported as the 2005 issue.
+EL2244,Intersil,FN7059,FN7059.0,probable,2002-08-16,https://datasheet.eeworld.com.cn/view/24716765.html,third_party_mirror,low,,,"Dated August 16, 2002; earliest Intersil issue found."
+EL2244,Intersil,FN7059,,unknown,,https://manualmachine.com/datasheet/el2244/8396398-datasheet-intersil,third_party_mirror,low,,https://pdf.jiepei.com/el2244cm-9753704.html https://pdf.jiepei.com/el2244cn-9753708.html,Intersil copy; revision not shown.
+EL2244,Intersil,FN7059,,unknown,,https://pdf.jiepei.com/el2244csz-9753713.html,third_party_mirror,low,,https://datasheetbank.com/en/datasheet-html/363359/Intersil/6page/EL2244CMZ-T13.html,Also filed under EL2244CM and EL2244CN.
+EL2244,Intersil,FN7059,,unknown,,https://datasheetq.com/ja/pdf-html/363359/Intersil/1page/EL2244CN.html,third_party_mirror,low,,,Intersil copy; same file on datasheetbank under EL2244CMZ-T13.
+EL2244,Renesas,FN7059 (presumed),,unknown,,https://www.qdatasheet.com/preview/EL2244-Renesas,third_party_mirror,low,,https://datasheetbank.com/ja/preview/EL2244-Renesas,Renesas-labelled 11-page PDF; revision not shown.
 HA2605,Renesas (Intersil),FN2902,Rev. 7.00,confirmed,2006-01-16,https://www.renesas.com/en/document/dst/ha-2600-datasheet,vendor_current,medium,,,"Renesas re-template of FN2902.7, 9 pages; HA-2605 coverage unconfirmed."
 HA2605,Renesas (Intersil),not confirmed,,unknown,,https://www.renesas.com/en/document/dst/ha-2602883-datasheet,vendor_current,medium,,,Separate military-screened datasheet for the HA-2602 grade.
-HA2605,Renesas (Intersil),FN2903,,unknown,,https://www.renesas.com/en/document/dst/ha-2620-datasheet,vendor_current,medium,,,Current sheet; HA-2622 not in title. Latest revision unknown (FN2903.6 confirmed).
+HA2605,Renesas (Intersil),FN2903,Rev. 9.00,probable,2019-03-21,https://www.renesas.com/en/document/dst/ha-2620-datasheet,vendor_current,medium,,,Renesas HA-2620 sheet reported as FN2903 Rev. 9.00; HA-2622 absent.
 HA2605,Intersil (via Rochester Electronics / Octopart),FN2903,,unknown,,https://datasheet.octopart.com/HA2-2625-5-Rochester-Electronics-datasheet-181209774.pdf,distributor_mirror,medium,,,Rochester copy under HA2-2625-5; may be FN2903.6 (June 2003).
 HA2605,Intersil (via Sekorm),FN2903,,unknown,,https://en.sekorm.com/doc/766115.html,distributor_mirror,medium,,,Later 'DATASHEET' template; may be after FN2903.6.
 HA2605,Harris Semiconductor (via RS Online),not confirmed (Harris file number unknown),,unknown,,https://docs.rs-online.com/d1f9/0900766b80029c45.pdf,distributor_mirror,medium,,,Harris-era three-grade sheet including HA-2622; older than FN2903.6.
@@ -2088,6 +2231,10 @@ HA2605,Intersil (via alldatasheet),FN2903 (inferred),,unknown,,https://www.allda
 HA2605,Harris / Intersil (via datasheet4u),not shown,,unknown,,https://datasheet4u.com/part-number/HA2620.html,third_party_mirror,low,,,Part-number index; may link several Harris and Intersil editions.
 HA2605,Intersil/Harris (via Jotrin Electronics),n/a,,unknown,,https://file.jotrin.com/product/parts/HA2_2625_5,distributor_mirror,low,,,Distributor page that may link a datasheet; edition unknown.
 HA2605,Intersil/Harris (via Jotrin Electronics),n/a (/883 edition),,unknown,,https://www.jotrin.com/product/parts/HA2_2600_883,distributor_mirror,low,,,/883 part page; may carry the HA-2600/883 and HA-2602/883 sheet.
+HA2605,Renesas (Intersil),FN2903,Rev. 9.00,confirmed,2019-03-21,https://www.renesas.cn/document/dst/ha-2620-datasheet,vendor_current,medium,,,"Renesas China host; FN2903 Rev. 9.00, March 2019."
+HA2605,Intersil (via elecfans),FN2903,Rev. 8.00,probable,2006-01-16,https://pdf.elecfans.com/INTERSIL/HA-2620_06.html,third_party_mirror,low,,,'HA-2620_06' copy; likely the 2006 Rev. 8.00 edition.
+HA2605,Intersil (via datasheetspdf),FN2903,,unknown,,https://datasheetspdf.com/pdf/905896/Intersil/HA2625/1,third_party_mirror,low,,,'100MHz High Input Impedance Amplifiers'; revision not shown.
+HA2605,Intersil (via ManualMachine),FN2903,,unknown,,https://manualmachine.com/intersil/ha2625/4059487-datasheet,third_party_mirror,low,,,"HA-2620, HA-2625 copy; revision not shown."
 LF356,National Semiconductor,unknown (page numbered 8-1),original,unknown,1975,https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf156-1975.pdf,third_party_mirror,medium,,,"Preliminary launch sheet, metal-can LF156; pin 8 'current source reference'."
 LF356,National Semiconductor,databook pp. 3-1–3-13 (no DS number printed),,unknown,1980,https://github.com/chenshuo/nuedc/blob/main/docs/opamp/lf156-1980.pdf,third_party_mirror,high,,,"1980 databook edition: A/B grades, LF255/6/7; '2 pF on LF157'."
 LF356,National Semiconductor,DS005646,,unknown,2001-03-01,https://github.com/KAAHistory/KTIB/blob/master/Hardware/PSU/LF356N.pdf,third_party_mirror,high,,,"May 2000 edition, 24 pp; no LF256/LF257 or A grades."
@@ -2108,9 +2255,9 @@ LF356,Texas Instruments,SNOSBH0,,unknown,,https://datasheet.octopart.com/LF356M-
 LF356,Texas Instruments,SNOSBH0 or DS005646,,unknown,,https://materias.df.uba.ar/instru2018c2/files/2018/08/datasheetLF356.pdf,third_party_mirror,low,,,University of Buenos Aires course copy; vendor and edition unknown.
 LF356,Texas Instruments,SNOSBH0 (presumed),,unknown,,http://www.ti.com/lit/ds/symlink/lf357.pdf,vendor_legacy,low,,,"KiCad library link; no LF357 folder exists, resolution unverified."
 LF356,Texas Instruments,SNOSBH0,,unknown,,http://www.ti.com/lit/gpn/lf356,vendor_current,low,,,Unconfirmed generic-part-number redirect; gpn pattern confirmed for LF356-MIL.
-LF356,Texas Instruments,unknown,,unknown,,https://www.ti.com/lit/gpn/LF356-MIL,vendor_current,medium,,,Separate military datasheet for LF356-MIL; literature number unknown.
-LF356,Texas Instruments,unknown,,unknown,,https://www.mouser.com/datasheet/2/405/lf356-mil-1147661.pdf,distributor_mirror,medium,,https://www.alldatasheet.com/datasheet-pdf/pdf/953771/TI1/LF356-MIL.html,Mouser copy of LF356-MIL datasheet; may freeze an older revision.
-LF356,Texas Instruments,unknown,,unknown,,https://www.ti.com/lit/ds/symlink/lf356-mil.pdf,vendor_current,low,,,Unconfirmed symlink form; gpn form confirmed instead.
+LF356,Texas Instruments,SNOSD55,original,confirmed,2017-06,https://www.ti.com/lit/gpn/LF356-MIL,vendor_current,medium,,,"SNOSD55, initial release June 2017."
+LF356,Texas Instruments,SNOSD55,,unknown,,https://www.mouser.com/datasheet/2/405/lf356-mil-1147661.pdf,distributor_mirror,medium,,https://www.alldatasheet.com/datasheet-pdf/pdf/953771/TI1/LF356-MIL.html,Mouser copy of SNOSD55; revision not shown.
+LF356,Texas Instruments,SNOSD55,,unknown,,https://www.ti.com/lit/ds/symlink/lf356-mil.pdf,vendor_current,low,,,Unconfirmed symlink form; gpn form confirmed instead.
 LF356,STMicroelectronics,unknown,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/22739/STMICROELECTRONICS/LF356.html,third_party_mirror,medium,,https://datasheetspdf.com/datasheet/LF356.html,ST's own second-source datasheet; spec set not examined.
 LF356,National Semiconductor,TL/H/5646,,unknown,,https://www.physics.wisc.edu/courses/home/fall2018/623/ds/LF357-opamp.pdf,third_party_mirror,low,,,"Only copy found of pre-2000 TL/H/5646 edition, later renumbered DS005646."
 LF356,National Semiconductor,"unknown (likely TL/H/5646, inferred from the 'LF155 LF156 LF157' title)",,unknown,,https://www.scribd.com/document/238641235/Opamp-Lf155-Lf156-Lf157-Natsem,third_party_mirror,low,,,Title matches pre-2000 TL/H/5646 series title.
@@ -2128,6 +2275,9 @@ LF356,SGS-Thomson / STMicroelectronics,unknown,,unknown,,https://www.datasheetq.
 LF356,SGS-Thomson / STMicroelectronics,unknown,,unknown,,https://www.digchip.com/datasheets/parts/datasheet/456/LF356.php,third_party_mirror,low,,,digchip copy; title matches ST datasheet.
 LF356,SGS-Thomson / STMicroelectronics,unknown,,unknown,,https://datasheet4u.com/datasheet-pdf/STMicroelectronics/LF356/pdf.php?id=64845,third_party_mirror,low,,,"datasheet4u copy, id=64845."
 LF356,Linear Technology (now Analog Devices),lt0155 (file name),,unknown,,https://www.analog.com/media/en/technical-documentation/data-sheets/lt0155.pdf,vendor_current,low,,,"LT second-source sheet, LF155/LF155A/LF156/LF156A only; no LF157/LF357."
+LF356,Texas Instruments,SNOSD55,original,confirmed,2017-06,https://www.ti.com/document-viewer/lf356-mil/datasheet,vendor_current,high,,,"TI viewer: 'SNOSD55 June 2017', production data."
+LF356,Texas Instruments,SNOSBH0,D,confirmed,2015-11,https://ti.com/document-viewer/LF256/datasheet/device_and_documentation_support,vendor_current,high,,,TI viewer: 'SNOSBH0D May 2000 – November 2015'.
+LF356,Texas Instruments,SNOSBH0,,unknown,,https://www.logosfoundation.org/projects/plus-minus/LF356.pdf,third_party_mirror,low,,,Third-party LF356 copy; revision not shown.
 LM318,Texas Instruments (ex-National),SNOSBS8,C,confirmed,2013-03,https://www.ti.com/lit/ds/symlink/lm318-n.pdf,vendor_current,high,,,Latest revision; dated 2013-03-20 by a third-party citation.
 LM318,Texas Instruments (ex-National),SNOSBS8,,unknown,,https://www.ti.com/lit/gpn/LM118-N,vendor_current,medium,,,Serves the latest revision; LM118-N shares SNOSBS8 (inferred).
 LM318,Texas Instruments (ex-National),SNOSBS8,,unknown,,http://www.ti.com/lit/ds/symlink/lm118-n.pdf,vendor_current,low,,,Unconfirmed; doc number presumed.
@@ -2178,6 +2328,14 @@ LME49721,National Semiconductor,,,unknown,,https://datasheet4u.com/datasheet-pdf
 LME49721,Texas Instruments,SNAS371,,unknown,,https://radiolocman.com/datasheet/data.html?%2FLME49721=&di=300411,third_party_mirror,low,,,TI-branded copy on RadioLocman.
 LME49721,various,,,unknown,,https://www.datasheetarchive.com/LME49721%20-datasheet.html,third_party_mirror,low,,,Listing page; may hold several National and TI editions.
 LME49721,Texas Instruments,SNAA051,A,confirmed,,https://www.ti.com/lit/pdf/snaa051,vendor_current,high,,,"Evaluation-board application note, not the datasheet."
+LME49721,National Semiconductor,SNAS371B,B,probable,2010-04-21,https://img.pcbx.com/erp/file/part/spec/LME49721MAX%20NOPB-Texas%20Instruments.pdf,distributor_mirror,medium,,,"PCBX copy reportedly printed SNAS371B, dated 21 April 2010."
+LME49721,Texas Instruments,SNAS371,C,probable,2013-04,https://ti.com/lit/gpn/LME49721,vendor_current,high,,,TI part-number link; serves the latest revision.
+LME49721,National Semiconductor,,,unknown,,https://www.kyohritsu.com/eclib/OTHER/DATASHEET/NS/lme49721.pdf,distributor_mirror,medium,,,National-branded copy on Kyohritsu; revision not shown.
+LME49721,National Semiconductor,,,unknown,,https://dtsheet.com/doc/227058/nsc-lme49721,third_party_mirror,low,,,National-branded copy on dtsheet.
+LME49721,National Semiconductor,,,unknown,,https://datasheetspdf.com/pdf/624469/NationalSemiconductor/LME49721/1,third_party_mirror,low,,,Same file ID 624469 as the datasheet4u copy.
+LME49721,National Semiconductor,,,unknown,,https://elcodis.com/parts/1319246/LME49721MANOPB_p3.html,third_party_mirror,low,,,Page-by-page National copy on Elcodis; MAX/NOPB copy is part 1330462.
+LME49721,National Semiconductor,,,unknown,,https://pdf.elecfans.com/NSC/LME49721MA.html,third_party_mirror,low,,,National-branded copy on elecfans.
+LME49721,National Semiconductor,,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=77691,third_party_mirror,low,,,National-branded copy on RadioLocman.
 LME49723,Texas Instruments,SNAS429,B,confirmed,2013-04,https://www.ti.com/lit/ds/symlink/lme49723.pdf,vendor_current,high,,,Header 'SNAS429B -JANUARY 2008-REVISED APRIL 2013'.
 LME49723,Texas Instruments,SNAS429,B,confirmed,2013-04,https://datasheet.octopart.com/LME49723MA-NOPB-Texas-Instruments-datasheet-47564704.pdf,distributor_mirror,high,,,Title shows SNAS429B.
 LME49723,National Semiconductor,National DS number unknown (TI SNAS429A equivalent?),original,probable,2008-02,https://datasheet.octopart.com/LME49723MA-National-Semiconductor-datasheet-10848611.pdf,distributor_mirror,medium,,,National-era copy preserving the pre-TI edition; date reportedly 2008-02.
@@ -2197,6 +2355,9 @@ LME49723,Texas Instruments,SNAS429 (presumed),,unknown,,https://datasheetspdf.co
 LME49723,National Semiconductor,unknown,,unknown,,https://www.digchip.com/datasheets/parts/datasheet/321/LME49723.php,third_party_mirror,low,,,Title matches National format; edition and date not shown.
 LME49723,National Semiconductor,unknown,,unknown,,http://www.datasheetdir.com/LME49723+Audio-Amplifiers,third_party_mirror,low,,,Title matches National format; revision not shown.
 LME49723,Texas Instruments,unknown,,unknown,,https://www.aipcba.com/datasheet/lme49723-datasheet-pdf.html,third_party_mirror,low,,,Hobby or distributor copy; edition and revision not shown.
+LME49723,Texas Instruments,SNAS429,B,confirmed,2013-04,https://www.ti.com/lit/gpn/lme49723,vendor_current,high,,,Header: 'SNAS429B – January 2008 – revised April 2013'.
+LME49723,Texas Instruments,SNAS429,,unknown,,https://www.promelec.ru/fs/sources/43/2c/7a/a8/0dcc392194306364fb9ba188.pdf,distributor_mirror,low,,,Distributor copy; revision not shown.
+LME49723,Texas Instruments,SNAS429,,unknown,,https://datasheets.ibselectronics.com/LME49723MAX-NOPB-Texas-Instruments-datasheet-41216320.pdf,distributor_mirror,low,,,IBS Electronics copy for LME49723MAX/NOPB.
 LME49880,Texas Instruments,SNAS455,C,confirmed,2013-04,https://www.ti.com/lit/ds/symlink/lme49880.pdf,vendor_current,low,,,Latest revision seen; symlink URL inferred and unconfirmed.
 LME49880,Texas Instruments,SNAS455,C,probable,2013-04,https://www.kyohritsu.com/eclib/OTHER/DATASHEET/TI/lm49880.pdf,distributor_mirror,medium,,,"TI-branded copy at Kyoritsu; source of the 7 nV/√Hz, 0.00003% figures."
 LME49880,Texas Instruments,SNAS455,C,probable,2014,https://www.digikey.nl/htmldatasheets/production/764030/0/0/1/lme49880.html,distributor_mirror,medium,,,Digi-Key HTML; addendum still shows pre-EOL ACTIVE status.
@@ -2221,6 +2382,18 @@ LMH6643,National Semiconductor / Texas Instruments,,,unknown,,https://docs.ampnu
 LMH6643,Texas Instruments,SNOS966,,unknown,,https://datasheets.b-cdn.net/files/NOPB-Texas-Instruments-datasheet-10844996.pdf,third_party_mirror,low,,,CDN mirror of an Octopart-style datasheet; doc number presumed.
 LMH6643,Texas Instruments,SNOS966,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/558303/TI/LMH6642.html,third_party_mirror,low,,,Also hosts LMH6644MT (id 545522) and LMH6643 (id 842272).
 LMH6643,Texas Instruments,SNOS966,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=179947,third_party_mirror,low,,,Also di=300927 (LMH6643) and di=300923 (LMH6642).
+LMH6643,Texas Instruments,SNOS966,Q,confirmed,2014-09,https://ti.com/document-viewer/lmh6643/datasheet,vendor_current,high,,https://www.ti.com/document-viewer/LMH6642/datasheet,"HTML datasheet: SNOS966Q, May 2001 – September 2014."
+LMH6643,National Semiconductor,DS200185,,unknown,,https://xdevs.com/doc/_Datasheets/Amplifiers/LMH6644.pdf,third_party_mirror,medium,,,National copy with DS200185 footer.
+LMH6643,National Semiconductor,DS200185,,unknown,,https://dtsheet.com/model/2274041,third_party_mirror,low,,https://dtsheet.com/model/2274050,National DS200185 copy; date not seen.
+LMH6643,National Semiconductor,DS200185,,unknown,,https://manualmachine.com/nsc/lmh6642ma/4240980-datasheet,third_party_mirror,low,,https://manualmachine.com/datasheet/lmh6642mf/4230147-datasheet-nsc,National DS200185 copy; date not seen.
+LMH6643,National Semiconductor,,,unknown,,https://manualmachine.com/nsc/lmh6643ma/4230146-datasheet,third_party_mirror,low,,https://manualmachine.com/datasheet/lmh6643ma/4230146-datasheet-nsc,National copy; also lists die (MWC/MDC) options.
+LMH6643,National Semiconductor,DS200894,,unknown,2004,https://manualmachine.com/datasheet/lmh6642ep/8373947-datasheet-national-semiconductor,third_party_mirror,medium,,,"LMH6642EP/6643EP/6644EP datasheet, © 2004."
+LMH6643,National Semiconductor,,,unknown,,https://html.alldatasheet.net/html-pdf/579411/NSC/LMH6643MM/366/6/LMH6643MM.html,third_party_mirror,low,,https://html.alldatasheet.jp/html-pdf/9147/NSC/LMH6642/80/2/LMH6642.html,National-branded copy; date not seen.
+LMH6643,National Semiconductor,,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=81326,third_party_mirror,low,,,National-branded copy; date not seen.
+LMH6643,National Semiconductor,,,unknown,,https://cn.elcodis.com/parts/1319229/LMH6644MANOPB_p2.html,third_party_mirror,low,,,National-branded copy; date not seen.
+LMH6643,Texas Instruments,SNOS966,,unknown,,https://pdf.direnc.net/upload/lmh6642-lmh6643-lmh6644-datasheet.pdf,third_party_mirror,low,,https://datasheet.ciiva.com/6629/lmh6642-6629589.pdf,Revision not shown.
+LMH6643,Texas Instruments,SNOSC61,C,confirmed,2014-09-10,https://www.ti.com/document-viewer/lmh6642q-q1/datasheet,vendor_current,high,,https://ti.com/lit/gpn/LMH6643Q-Q1 https://ti.com/document-viewer/LMH6643Q-Q1/datasheet/revision_history,"Automotive Q-Q1 datasheet; Rev. C, Sep 10, 2014."
+LMH6643,Texas Instruments,SNOSC61,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=300929,third_party_mirror,low,,https://datasheetspdf.com/pdf/1501329/etcTI/LMH6643Q-Q1/1,Revision not shown.
 LT1057,Analog Devices,10578fd,D,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/10578fd.pdf,vendor_current,high,,,Current ADI-hosted revision; doc code suffix is the revision letter.
 LT1057,Linear Technology,10578fd,D,confirmed,,https://cds.linear.com/docs/en/datasheet/10578fd.pdf,vendor_legacy,high,,,Legacy LTC CDN copy of rev D.
 LT1057,Linear Technology,10578fb,B,confirmed,,https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/LT1057.pdf,distributor_mirror,high,,,Marutsu copy frozen at rev B (code 10578fb).
@@ -2231,6 +2404,13 @@ LT1057,Analog Devices,10578f?,,unknown,,https://www.radiolocman.com/datasheet/pd
 LT1057,Linear Technology,10578f?,,unknown,,https://www.radiolocman.com/datasheet/data.html?%2FLT1057=&di=337801,third_party_mirror,medium,,,RadioLocman copy of LTC-branded version; revision not shown.
 LT1057,Linear Technology,10578f?,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/70286/LINER/LT1058.html,third_party_mirror,medium,,,"Alldatasheet copy; revision not shown, possibly older LTC."
 LT1057,Linear Technology,10578f?,,unknown,,https://www.yumpu.com/en/document/view/26492486/lt1057-lt1058-dual-and-quad-jfet-input-sp-elektroniikka,third_party_mirror,low,,,Yumpu rehost of SP-Elektroniikka copy; revision not shown.
+LT1057,Linear Technology,10578fa,A,probable,,https://dtsheet.com/model/2309240,third_party_mirror,medium,,,Page footers read 10578fa; oldest LTC revision found.
+LT1057,Linear Technology,10578fc,C,probable,,https://html.alldatasheet.com/html-pdf/257513/LINER/LT1057_1/779/5/LT1057_1.html,third_party_mirror,medium,,,Marked 10578fc.
+LT1057,Linear Technology,10578fc,C,probable,,https://nonprod.docs.rs-online.com/b6e7/0900766b810ed81e.pdf,distributor_mirror,medium,,,RS copy reported to carry 10578fc.
+LT1057,Linear Technology,10578fd,D,probable,,https://www.farnell.com/datasheets/1712178.pdf,distributor_mirror,medium,,,Farnell copy showing 10578fd on page 2.
+LT1057,Linear Technology,10578fd,D,probable,,https://www.kyohritsu.com/eclib/PDF/L/lt1058.pdf,distributor_mirror,low,,,Kyohritsu copy; reported as carrying 10578fd.
+LT1057,Linear Technology,10578fd,D,probable,,https://www.scribd.com/document/372795871/10578fd-pdf,third_party_mirror,medium,,,Upload named 10578fd.
+LT1057,Linear Technology,10578f?,,unknown,,https://dtsheet.com/model/2309242,third_party_mirror,low,,,Second dtsheet listing; revision not shown.
 LT1115,Analog Devices (Linear Technology document),1115fa,A,confirmed,2002-11,https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115fa.pdf,vendor_current,high,,,Current file; footer 'LW/TP 1102 1K REV A' dates it Nov 2002.
 LT1115,Analog Devices,lt1115,,unknown,,https://www.analog.com/media/en/technical-documentation/data-sheets/lt1115.pdf,vendor_current,low,,,Unversioned alias seen only in a third-party fetch script.
 LT1115,Linear Technology,linear.com/docs/1612,,unknown,,http://www.linear.com/docs/1612,vendor_legacy,low,,,Legacy linear.com link from a KiCad library; try Wayback.
@@ -2367,9 +2547,19 @@ NJM2082,New Japan Radio,NJM2082_E,,unknown,,https://datasheetspdf.com/pdf/454869
 NJM2082,New Japan Radio,NJM2082_E,,unknown,,https://www.digchip.com/datasheets/parts/datasheet/330/NJM2082.php,third_party_mirror,medium,,,
 NJM2082,New Japan Radio,NJM2082_E,,unknown,,https://www.datasheetq.com/NJM2082V-doc-JRC,third_party_mirror,medium,,,The listing shows that an SSOP8 'V' variant exists.
 NJM2082,Various,,,unknown,,https://datasheetarchive.com/NJM2082-datasheet.html,third_party_mirror,medium,,,"Index page; multiple or unknown revisions, possibly older NJR scans."
-NJM8801,New JRC (via Kyohritsu Electronic Industry eclib mirror),NJM8801,Ver. 2014-11-10,confirmed,2014-11-10,https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm8801.pdf,third_party_mirror,high,,,Pre-merger New JRC Japanese edition; earliest version identified.
+NJM2082,New Japan Radio,NJM2082_E,Ver. 2003-03-17,probable,2003-03-17,https://www.mouser.com/datasheet/2/294/NJM2082_E-2302702.pdf,distributor_mirror,high,,,Newer Mouser copy adding a discontinuation notice.
+NJM2082,New Japan Radio,NJM2082_E,Ver. 2003-03-17,confirmed,2003-03-17,https://static6.arrow.com/aropdfconversion/c837fde0f7ce0c39f62972b25080e5af13cf889f/njm2082_e.pdf,distributor_mirror,medium,,,Arrow copy; carries the discontinued-product notice.
+NJM2082,New Japan Radio,NJM2082_E,Ver. 2003-03-17,confirmed,2003-03-17,https://electronicsdatasheets.com/download/51b1893fe34e24ce29000125.pdf?format=pdf,third_party_mirror,medium,,,"Ver.2003-03-17 stamp; lists DIP8, DMP8, SIP8, SSOP8."
+NJM2082,New Japan Radio,NJM2082,,unknown,,https://kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm2082.pdf,distributor_mirror,medium,,,Japanese edition; gives 13 nV/√Hz at 1 kHz.
+NJM2082,New Japan Radio,NJM2082_E,,unknown,,https://datasheet.chipsmall.com/NJM2082D/297560.pdf,third_party_mirror,low,,,
+NJM2082,New Japan Radio,NJM2082_E,,unknown,,https://elcodis.com/parts/1342304/NJM2082M_p2.html,third_party_mirror,low,,,Page-by-page copy.
+NJM2082,New Japan Radio,,,unknown,,https://electronicsdatasheets.com/download/51b1893fe34e24ce2900011d.pdf?format=pdf,third_party_mirror,low,,,Second electronicsdatasheets file; contents not seen.
+NJM8801,New JRC (via Kyohritsu Electronic Industry eclib mirror),NJM8801,Ver. 2014-11-10,confirmed,2014-11-10,https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm8801.pdf,third_party_mirror,high,,,Pre-merger Japanese edition; SOP8 JEDEC 150 mil and SSOP8.
 NJM8801,New Japan Radio (via datasheet4u),NJM8801,,unknown,,https://datasheet4u.com/datasheets/New-Japan-Radio/NJM8801/1100563,third_party_mirror,medium,,,"New JRC-branded copy, probably English; version unreadable."
-NJM8801,"New Japan Radio (NJR), via Mouser",NJM8801,,unknown,,https://www.mouser.com/ds/2/294/NJM8801_DataSheetE6-262233.pdf,distributor_mirror,low,,,Likely English edition; Ver. footer (x.y style) not seen.
+NJM8801,"New Japan Radio (NJR), via Mouser",NJM8801,Ver. 2012-02-17,confirmed,2012-02-17,https://www.mouser.com/ds/2/294/NJM8801_DataSheetE6-262233.pdf,distributor_mirror,low,,,English edition; lists EMP8 and SSOP8 packages.
+NJM8801,New JRC (via Chipsmall),NJM8801,Ver. 2014-11-10,confirmed,2014-11-10,https://datasheet.chipsmall.com/NJM8801E/630582.pdf,third_party_mirror,medium,,,Footer 'NJM8801 - 1 - Ver.2014-11-10'.
+NJM8801,New JRC (via Sekorm),NJM8801,,unknown,,https://en.sekorm.com/doc/3007502.html,third_party_mirror,low,,,Sekorm copy; version not shown.
+NJM8801,Nisshinbo Micro Devices (via Xon),NJM8801,,unknown,,https://xonstorage.blob.core.windows.net/pdf/nisshinbo_njm8801ete1_apr22_xonlink.pdf,distributor_mirror,low,,,"Nisshinbo-labelled NJM8801E-TE1 copy, filed April 2022; version not shown."
 NJM8830,Nisshinbo Micro Devices,NJM8830_E,,unknown,,https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM8830_E.pdf,vendor_current,medium,,,Current vendor PDF; Ver. number and date not captured.
 NJM8830,Mouser (mirror of Nisshinbo),NJM8830_E,Ver. 1.0,probable,2022-05-20,https://www.mouser.com/datasheet/2/294/NJM8830_E-2953374.pdf,distributor_mirror,medium,,,"Launch-era copy, likely the first release (Ver. 1.0)."
 NJM8830,LCSC (mirror of Nisshinbo),NJM8830_E,,unknown,2024-01-22,https://www.lcsc.com/datasheet/lcsc_datasheet_2401221619_Nisshinbo-Micro-Devices-Inc--NJM8830GM1-TE1_C19941438.pdf,distributor_mirror,medium,,,Upload date from filename stamp 2401221619; revision not captured.
@@ -2383,12 +2573,17 @@ NJM8901,New Japan Radio Co. (NJR),NJM8901_E,,unknown,,https://datasheet4u.com/da
 NJM8901,New Japan Radio Co. (NJR),NJM8901_E,,unknown,,http://www.datasheet26.com/circuit/1100564/NJM8901-даташит.html,third_party_mirror,low,,,"Russian mirror; same id as Datasheet4U, probably the same file."
 NJM8901,New Japan Radio Co. (NJR),NJM8901_E,,unknown,,https://manualzz.com/doc/28628839/new-japan-radio-njm8901-audio-amplifier-datasheet,third_party_mirror,low,,,Independent mirror; may be a different upload or revision.
 NJM8901,New Japan Radio Co. (NJR),181220_EOL,,unknown,2018-12-20,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/739/181220_EOL.pdf,distributor_mirror,low,,,"NJR end-of-life notice, not a datasheet; NJM8901 listing unconfirmed."
+NJM8901,New Japan Radio (via Xon),NJM8901_E,Ver. 2012-02-07,confirmed,2012-02-07,https://xonelec.com/mpn/nisshinbo/njm8901e,distributor_mirror,medium,,,Oldest dated edition found; 'High Quality Audio J-FET Input' title.
+NJM8901,New Japan Radio (via datasheetspdf),NJM8901_E,,unknown,,https://datasheetspdf.com/pdf/1100564/NewJapanRadio/NJM8901/1,third_party_mirror,low,,,'J-FET Input Dual Operational Amplifier' copy; version not shown.
 NL8802,Nisshinbo Micro Devices,NL8802_S_E,Ver. 1.0,confirmed,,https://www.mouser.com/datasheet/2/294/nl8802_s_e-3435312.pdf,distributor_mirror,medium,,,Lists EMP-8-AN and DFN3030-8-GQ (DFN under development). Possibly short-form.
 NL8802,Sekorm (third party),unknown,,unknown,,https://en.sekorm.com/doc/529625047.html,third_party_mirror,medium,,,Sekorm portal copy; version not shown.
 NL8902,Akizuki Denshi (distributor),unknown,,unknown,,https://akizukidenshi.com/catalog/g/g131145/,distributor_mirror,low,,,Retailer page; whether it holds a datasheet copy is unknown.
 NL8902,Kyohritsu eleshop (distributor),unknown,,unknown,,https://eleshop.jp/shop/g/gP7P122/,distributor_mirror,low,,,Retailer page with full ordering code NL8902ANAE2S; datasheet link unknown.
 NL8902,"Nisshinbo Micro Devices (launch coverage, third party)",n/a,,unknown,,https://www.electronicspecifier.com/products/mixed-signal-analog/nisshinbo-micro-devices-launches-nl8902,third_party_mirror,low,,,Launch news repeating key specs and packages; not a datasheet.
 NL8902,"Nisshinbo Micro Devices (launch coverage, third party)",n/a,,unknown,,https://audioxpress.com/news/new-nisshinbo-nl8902-high-performance-dual-audio-op-amp-with-jfet-input,third_party_mirror,low,,,Launch news confirming specs and packages; not a datasheet.
+NL8902,Nisshinbo Micro Devices (via Endrich),NL8902 datasheet (nl8902_s_e),Ver. 1.0,confirmed,,https://www.endrich.com/Datenbl%C3%A4tter/Aktive%20Komponenten/nl8902-s-e.pdf,distributor_mirror,high,,,English Ver.1.0; covers NL8902AN (EMP-8-AN) and NL8902GR (DFN4035-8-GR).
+NL8902,Nisshinbo Micro Devices (via Mouser),n/a,,unknown,,https://www.mouser.in/new/nisshinbo/nisshinbo-nl8902-op-amps,distributor_mirror,medium,,,"Mouser new-product page; 9 MHz, 20 V/µs, MUSES technology."
+NL8902,Nisshinbo Micro Devices (via Avnet),n/a,,unknown,,https://my.avnet.com/ebv/products/new-products/npi/2025/nisshinbo-micro-devices-nl8902/,distributor_mirror,medium,,,Avnet launch page; gives ±4.0 V to ±16 V supply.
 OP249,Analog Devices,OP249 (ADI data sheet; no separate literature number),I,confirmed,,https://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf,vendor_current,high,,,"Current Rev. I; history deletes OP249F columns, changes Table 4 offset specs."
 OP249,Analog Devices,OP249,I,confirmed,,https://www.analog.com/static/imported-files/data_sheets/op249.pdf,vendor_legacy,medium,,,Legacy lowercase path with Rev. I title; check Wayback for older revisions.
 OP249,Analog Devices,OP249,F,confirmed,,https://datasheet.octopart.com/OP249GPZ-Analog-Devices-datasheet-8484613.pdf,distributor_mirror,medium,,,"Octopart copy under OP249GPZ, frozen at Rev. F; older title order."
@@ -2413,8 +2608,15 @@ OPA128,Burr-Brown,PDS-653,,unknown,,https://www.alldatasheet.com/datasheet-pdf/p
 OPA128,Burr-Brown,PDS-653,,unknown,,https://edg.uchicago.edu/~tang/SNFactory/opa128.pdf,third_party_mirror,medium,,,University of Chicago copy; revision letter not known.
 OPA128,Burr-Brown,PDS-653,,unknown,,https://www.uni-ulm.de/fileadmin/website_uni_ulm/wwe/Datenblaetter/IC-analog/opa128.pdf,third_party_mirror,low,,,Uni Ulm copy; revision not shown.
 OPA128,Texas Instruments,SBOS148,,unknown,,https://datasheet.octopart.com/OPA128SM-Texas-Instruments-datasheet-8442411.pdf,distributor_mirror,low,,,Octopart-hosted TI-branded copy; revision not shown.
-OPA128,Texas Instruments,SBOS148,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=305433,third_party_mirror,low,,https://www.radiolocman.com/datasheet/pdf.html?di=83971,Radiolocman TI copy; revision not shown.
+OPA128,Texas Instruments,SBOS148,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=305433,third_party_mirror,low,,https://www.radiolocman.com/datasheet/pdf.html?di=83971,"TI copy, 11 pages; file published 2000-09-27."
 OPA128,Burr-Brown,PDS-653,,unknown,,https://www.datasheetcatalog.com/datasheets_pdf/O/P/A/1/OPA128.shtml,third_party_mirror,low,,,Burr-Brown copy; may be a pre-TI revision.
+OPA128,Burr-Brown,PDS-653,,unknown,1987-07,https://ftp.mirrorservice.org/sites/www.bitsavers.org/components/burrBrown/_dataBooks/1988_Burr-Brown_Integrated_Circuits_Data_Book_Supplement.pdf,archive,medium,,,Supplement dated July 1987; earliest OPA128 printing found.
+OPA128,Burr-Brown,PDS-653,PDS-653E,confirmed,1995-05,https://www.electro-tech-online.com/custompdfs/2011/03/opa128.pdf,third_party_mirror,medium,,,"Footer '©1986 Burr-Brown PDS-653E, May 1995'."
+OPA128,Burr-Brown,PDS-653,PDS-653E,probable,1995-05,https://manualmachine.com/datasheet/opa128km/4168028-datasheet-burr-brown,third_party_mirror,medium,,https://manualmachine.com/burrbrown/opa128jm/4168030-datasheet https://manualmachine.com/burrbrown/opa128sm/4167989-datasheet/,Reported as a PDS-653E copy.
+OPA128,Texas Instruments,SBOS148 / PDS-653E,PDS-653E,probable,1995-05,https://electronix.org.ru/datasheet/Burr-Brown/OPA128%20-%20sbos148.pdf,third_party_mirror,medium,,,TI SBOS148 wrapper over PDS-653E content.
+OPA128,Burr-Brown,PDS-653,,unknown,,https://www.nikhef.nl/~jo/virgo/gw/LA/FE/FE%20first-stage%20Amplifiers/OPA128.pdf,third_party_mirror,low,,,Research-group copy; revision not shown.
+OPA128,Burr-Brown,PDS-653,,unknown,,https://www.mikrocontroller.net/attachment/30117/OPA128KM.pdf,third_party_mirror,low,,,Forum attachment; revision not shown.
+OPA128,Burr-Brown,PDS-653,,unknown,,https://www.100y.com.tw/pdf_file/OPA128LM.pdf,distributor_mirror,low,,,Distributor copy; revision not shown.
 OPA1602,Texas Instruments,SBOS474B,B,confirmed,2011-11,https://www.ti.com/lit/ds/symlink/opa1602.pdf,vendor_current,high,,,Still current; no SBOS474C/D/E found. TI SPICE headers cite SBOS474B.
 OPA1602,Texas Instruments,SBOS474B,B,confirmed,2011-11,https://www.ti.com/lit/ds/symlink/opa1604.pdf,vendor_current,high,,,"Same shared family datasheet, SBOS474B."
 OPA1602,Texas Instruments (mirror: alldatasheet),SBOS474,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/437564/TI1/OPA1602.html,third_party_mirror,low,,,"Low ID suggests an early capture, rev A or B."
@@ -2497,7 +2699,7 @@ OPA2156,Alldatasheet (third party),SBOS900,,unknown,,https://www.alldatasheet.ne
 OPA2156,Scribd (third party),SBOS900,,unknown,,https://www.scribd.com/document/836955714/Opa-2156,third_party_mirror,low,,,User-uploaded copy; revision unknown.
 OPA2156,Texas Instruments,SBOS900,,unknown,,https://www.digikey.fr/htmldatasheets/production/5061362/0/0/1/opa2156.pdf,distributor_mirror,low,,,"Digi-Key France copy, same document ID 5061362 as digikey.com."
 OPA2156,Texas Instruments,SBOS900,,unknown,,https://www.alldatasheet.net/html-marking/1154469/TI1/OPA2156IDR/1289/18/OPA2156IDR.html,third_party_mirror,low,,,"OPA2156IDR marking page (OP2156), 35-page copy; revision unknown."
-OPA2209,Texas Instruments,SBOS426,D,confirmed,2016-10,https://www.ti.com/lit/ds/symlink/opa2209.pdf,vendor_current,high,,,"Current symlink; no rev E, F or G found."
+OPA2209,Texas Instruments,SBOS426,D,confirmed,2016-10-07,https://www.ti.com/lit/ds/symlink/opa2209.pdf,vendor_current,high,,,"Current symlink; TI product page lists Rev. D, 07 Oct 2016."
 OPA2209,Texas Instruments,SBOS426,D,confirmed,2016-10,https://www.ti.com/lit/gpn/OPA2209,vendor_current,high,,,TI generic-part-number redirect to the current datasheet.
 OPA2209,Mouser (mirror of TI),SBOS426,,unknown,,https://www.mouser.com/ds/2/405/opa2209-556484.pdf,distributor_mirror,low,,,Older-style title suggests a pre-D revision; unconfirmed.
 OPA2209,Octopart (mirror of TI),SBOS426,,unknown,,https://datasheet.octopart.com/OPA4209AIPW-Texas-Instruments-datasheet-10674197.pdf,distributor_mirror,low,,,"Older header format, possibly rev B or C; unconfirmed."
@@ -2508,19 +2710,32 @@ OPA2209,RadioLocman (mirror of TI),SBOS426,,unknown,,https://www.radiolocman.com
 OPA2209,RadioLocman (mirror of TI),SBOS426,,unknown,,https://www.radiolocman.com/datasheet/data.html?di=306069,third_party_mirror,low,,,Revision unconfirmed.
 OPA2209,Alldatasheet (mirror of TI),SBOS426,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/390722/TI/OPA209.html,third_party_mirror,low,,,Revision unconfirmed.
 OPA2209,ic37 (mirror of TI),SBOS426,,unknown,,https://pdf.ic37.com/TI/OPA22_datasheet_11237625/OPA22_2.html,third_party_mirror,low,,,Sibling pages exist for OPA209 and OPA4209. Revision unconfirmed.
-OPA2210,Texas Instruments,,H,confirmed,2021-08,https://www.ti.com/lit/ds/symlink/opa2210.pdf,vendor_current,medium,,,Canonical TI link; latest revision found is H.
-OPA2210,Texas Instruments,,H,probable,,https://www.ti.com/lit/ds/symlink/opa210.pdf,vendor_current,medium,,,OPA210 link to the same OPAx210 document.
-OPA2210,Texas Instruments,,,unknown,,https://www.ti.com/lit/gpn/OPA210,vendor_current,medium,,,TI generic-part-number redirect to the current datasheet.
-OPA2210,Texas Instruments (via alldatasheet),,,unknown,2018,https://www.alldatasheet.com/html-pdf/1082240/TI1/OPA2210/1235/18/OPA2210.html,third_party_mirror,medium,,,"Early OPA2210-only edition, 23 pages; likely rev * or A."
-OPA2210,Texas Instruments (via alldatasheet),,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/1283980/TI/OPA2210.html,third_party_mirror,low,,,Intermediate revision (maybe B–G); postdates OPA210 addition.
-OPA2210,Texas Instruments (via alldatasheet),,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/1283978/TI/OPA210.html,third_party_mirror,low,,,Intermediate revision; probably same file as 1283980.
-OPA2210,Texas Instruments (via alldatasheet),,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/1351983/TI/OPA210_V02.html,third_party_mirror,low,,,Second archived version of the OPA210 datasheet; revision unknown.
-OPA2210,Texas Instruments (via alldatasheet.net),,H,probable,,https://www.alldatasheet.net/datasheet-pdf/pdf/2222126/TI2/OPA2210.html,third_party_mirror,low,,https://www.alldatasheet.net/html-pdf/2222124/TI2/OPA210/61/1/OPA210.html https://www.alldatasheet.net/datasheet-pdf/download/2222125/TI2/OPAX210.html,44-page OPAx210 edition; matches current rev H.
-OPA2210,Texas Instruments (via DigiKey),,,unknown,,https://www.digikey.com/en/htmldatasheets/production/3832249/0/0/1/opa2210idgkr,distributor_mirror,low,,,DigiKey HTML rendering for OPA2210IDGKR; revision unknown.
-OPA2210,Texas Instruments (via datasheet4u),,,unknown,,https://datasheet4u.com/datasheet/etcTI/OPA210-1514092,third_party_mirror,low,,https://datasheet4u.com/datasheets/etcTI/OPA210/1514092,Intermediate revision; exact letter unknown.
-OPA2210,Texas Instruments (via datasheet4u / datasheetspdf),,,unknown,,https://datasheet4u.com/datasheets/etcTI/OPA2210/1399669,third_party_mirror,low,,https://datasheetspdf.com/pdf/1399669/etcTI/OPA2210/1,VSSOP OPA2210 copy; revision unknown.
-OPA2350,Texas Instruments,SBOS099,D,confirmed,2015-12,https://www.ti.com/lit/ds/symlink/opa2350.pdf,vendor_current,high,,,Current TI datasheet shared by all three parts; symlink serves latest.
-OPA2350,Texas Instruments,SBOS099,D,confirmed,2015-12,http://www.ti.com/lit/pdf/SBOS099,vendor_current,high,,,Literature-number link; resolves to the latest revision.
+OPA2209,Texas Instruments,SBOS426,D,confirmed,2016-10,https://www.ti.com/document-viewer/OPA209/datasheet,vendor_current,high,,https://www.ti.com/document-viewer/OPA209/datasheet/revision_history https://ti.com/document-viewer/OPA2209/datasheet,"HTML datasheet, SBOS426D, with revision history."
+OPA2209,Texas Instruments,SBOS426,C,confirmed,2013-10,https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/196/opa209.pdf,vendor_legacy,high,,,TI E2E attachment: 'SBOS426C – November 2008 – revised October 2013'.
+OPA2209,Texas Instruments,SBOS426,B,probable,2010-08,https://html.alldatasheet.com/html-pdf/390721/TI/OPA209_10/122/4/OPA209_10.html,third_party_mirror,medium,,,"'_10' copy; SBOS426B, revised August 2010, per snippet."
+OPA2209,Texas Instruments,SBOS426,,unknown,,https://dtsheet.com/model/2874523,third_party_mirror,low,,https://dtsheet.com/model/2874522,dtsheet copies reportedly include SBOS426B.
+OPA2209,Texas Instruments,SBOS426,,unknown,,https://pdf.elecfans.com/BURR-BROWN/OPA209AID.html,third_party_mirror,low,,,Probably Rev. D; its history differs from OPA2209AID copy.
+OPA2209,Texas Instruments,SBOS426,,unknown,,https://pdf.elecfans.com/BURR-BROWN/OPA2209AID.html,third_party_mirror,low,,,History mentions JEDEC thermal update; revision unclear.
+OPA2209,Texas Instruments,SBOS426,,unknown,,https://mootse.telecom-st-etienne.fr/pluginfile.php/17414/mod_resource/content/1/opa2209.pdf,third_party_mirror,low,,,University course copy; revision not shown.
+OPA2209,Texas Instruments,SBOS426,,unknown,,https://datasheetspdf.com/datasheet/OPA209.html,third_party_mirror,low,,https://pdf.jiepei.com/opa209-16165320.html,Revision not shown.
+OPA2210,Texas Instruments,SBOS924,H,confirmed,2021-08-04,https://www.ti.com/lit/ds/symlink/opa2210.pdf,vendor_current,medium,,,"Canonical TI link; SBOS924H, Aug 4, 2021 per product page."
+OPA2210,Texas Instruments,SBOS924,H,probable,,https://www.ti.com/lit/ds/symlink/opa210.pdf,vendor_current,medium,,,OPA210 link to the same OPAx210 document.
+OPA2210,Texas Instruments,SBOS924,,unknown,,https://www.ti.com/lit/gpn/OPA210,vendor_current,medium,,,TI generic-part-number redirect to the current datasheet.
+OPA2210,Texas Instruments (via alldatasheet),SBOS924,,unknown,2018,https://www.alldatasheet.com/html-pdf/1082240/TI1/OPA2210/1235/18/OPA2210.html,third_party_mirror,medium,,,"Early OPA2210-only edition, 23 pages; likely rev * or A."
+OPA2210,Texas Instruments (via alldatasheet),SBOS924,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/1283980/TI/OPA2210.html,third_party_mirror,low,,,Intermediate revision (maybe B–G); postdates OPA210 addition.
+OPA2210,Texas Instruments (via alldatasheet),SBOS924,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/1283978/TI/OPA210.html,third_party_mirror,low,,,Intermediate revision; probably same file as 1283980.
+OPA2210,Texas Instruments (via alldatasheet),SBOS924,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/1351983/TI/OPA210_V02.html,third_party_mirror,low,,,Second archived version of the OPA210 datasheet; revision unknown.
+OPA2210,Texas Instruments (via alldatasheet.net),SBOS924,H,probable,,https://www.alldatasheet.net/datasheet-pdf/pdf/2222126/TI2/OPA2210.html,third_party_mirror,low,,https://www.alldatasheet.net/html-pdf/2222124/TI2/OPA210/61/1/OPA210.html https://www.alldatasheet.net/datasheet-pdf/download/2222125/TI2/OPAX210.html,44-page OPAx210 edition; matches current rev H.
+OPA2210,Texas Instruments (via DigiKey),SBOS924,,unknown,,https://www.digikey.com/en/htmldatasheets/production/3832249/0/0/1/opa2210idgkr,distributor_mirror,low,,,DigiKey HTML rendering for OPA2210IDGKR; revision unknown.
+OPA2210,Texas Instruments (via datasheet4u),SBOS924,,unknown,,https://datasheet4u.com/datasheet/etcTI/OPA210-1514092,third_party_mirror,low,,https://datasheet4u.com/datasheets/etcTI/OPA210/1514092,Intermediate revision; exact letter unknown.
+OPA2210,Texas Instruments (via datasheet4u / datasheetspdf),SBOS924,,unknown,,https://datasheet4u.com/datasheets/etcTI/OPA2210/1399669,third_party_mirror,low,,https://datasheetspdf.com/pdf/1399669/etcTI/OPA2210/1,VSSOP OPA2210 copy; revision unknown.
+OPA2210,Texas Instruments,SBOS924,H,confirmed,2021-08,https://www.ti.com/document-viewer/OPA210/datasheet,vendor_current,high,,https://ti.com/document-viewer/OPA2210/datasheet https://www.ti.com/product/OPA2210/datasheet https://www.ti.com/document-viewer/OPA2210/datasheet/GUID-93A5217F-E79D-4996-B7A3-846E51B87333,"HTML datasheet, SBOS924H, September 2018 – August 2021."
+OPA2210,Texas Instruments,SBOS924,H,probable,,https://www.ti.com/lit/pdf/SBOS924,vendor_current,medium,,,Literature-number link to the current PDF.
+OPA2210,Texas Instruments,SBOS924,,unknown,,https://www.ti.com.cn/lit/gpn/OPA2210,vendor_current,low,,https://www.ti.com.cn/cn/lit/gpn/OPA2210,Chinese translation; English version is authoritative.
+OPA2210,Texas Instruments,SBOS924,,unknown,,https://pdf.elecfans.com/BURR-BROWN/OPA2210IDR.html,third_party_mirror,low,,https://pdf.elecfans.com/BURR-BROWN/OPA210IDBVR.html,Revision not shown.
+OPA2210,Texas Instruments,SBOS924,,unknown,,https://pdf.jiepei.com/opa210-34949943.html,third_party_mirror,low,,https://pdf.jiepei.com/opa2210-42407536.html,Revision not shown.
+OPA2350,Texas Instruments,SBOS099,D,confirmed,2015-12-21,https://www.ti.com/lit/ds/symlink/opa2350.pdf,vendor_current,high,,,Current TI datasheet shared by all three parts; symlink serves latest.
+OPA2350,Texas Instruments,SBOS099,D,confirmed,2015-12-21,http://www.ti.com/lit/pdf/SBOS099,vendor_current,high,,,Literature-number link; resolves to the latest revision.
 OPA2350,Texas Instruments,SBOS099,D,probable,2015-12,https://www.ti.com/lit/ds/symlink/opa350.pdf,vendor_current,low,,,Follows TI symlink pattern; not yet confirmed to resolve.
 OPA2350,Texas Instruments,SBOS099,D,probable,2015-12,https://www.ti.com/lit/ds/symlink/opa4350.pdf,vendor_current,low,,,Follows TI symlink pattern; not yet confirmed to resolve.
 OPA2350,Texas Instruments,SBOS099,C,confirmed,2005-01,https://www.mouser.com/datasheet/2/405/sbos099c-92750.pdf,distributor_mirror,high,,,Mouser copy frozen at rev C; filename carries the letter.
@@ -2537,9 +2752,20 @@ OPA2350,Texas Instruments,SBOS099,D,probable,2015-12,https://datasheets.b-cdn.ne
 OPA2350,Texas Instruments,SBOS099,D,probable,2015-12,https://www.scribd.com/document/460984995/OPA2350,third_party_mirror,low,,,Current-format title suggests rev D.
 OPA2350,Burr-Brown (TI),SBOS099,,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/229267/BURR-BROWN/OPA2350.html,third_party_mirror,low,,,"Listed under Burr-Brown; sibling pages for OPA2350UA (229276), OPA2350PA (229278)."
 OPA2350,Burr-Brown (TI),SBOS099,,unknown,,https://www.alldatasheet.com/datasheet-pdf/view/56774/BURR-BROWN/OPA2350.html,third_party_mirror,low,,,"Low entry number suggests an older upload, possibly rev A."
-OPAx277,Texas Instruments,SBOS079,C,confirmed,2023-02,https://www.ti.com/lit/ds/symlink/opa2277.pdf,vendor_current,high,,,Current revision C; history cites rev B as April 2015.
-OPAx277,Texas Instruments,SBOS079,C,confirmed,2023-02,https://www.ti.com/lit/ds/sbos079c/sbos079c.pdf,vendor_revision_specific,high,,,Revision-specific TI link for rev C.
-OPAx277,Texas Instruments,SBOS079,C,confirmed,2023-02,https://www.ti.com/lit/gpn/OPA277,vendor_current,medium,,,TI generic-part-number redirect to the current datasheet.
+OPA2350,Texas Instruments,SBOS099,D,confirmed,2015-12-21,https://www.ti.com/document-viewer/OPA350/datasheet,vendor_current,high,,,"TI HTML viewer, titled SBOS099D September 2000 – December 2015."
+OPA2350,Texas Instruments,ZHCSHC9,D,probable,2015-12,https://www.ti.com.cn/cn/lit/gpn/OPA2350,vendor_current,medium,,,"Chinese translation, labelled ZHCSHC9D, revised December 2015."
+OPA2350,Texas Instruments,SBOS099,B,confirmed,2004-02,https://www.komponenten.es.aau.dk/fileadmin/komponenten/Data_Sheet/Linear/OPA350.pdf,third_party_mirror,medium,,,"Aalborg University copy; header SBOS099B, revised February 2004."
+OPA2350,Burr-Brown,PDS-1470,PDS-1470B,probable,1999-03,https://manualmachine.com/burrbrown/opa350ua/4144788-datasheet,third_party_mirror,medium,,,"Burr-Brown sheet, © 1998, footer PDS-1470B, printed March 1999."
+OPA2350,Burr-Brown,PDS-1470,,unknown,,https://manualmachine.com/datasheet/opa350ea2k5/4196201-datasheet-burr-brown,third_party_mirror,low,,,Burr-Brown-branded copy; probably the PDS-1470 sheet.
+OPA2350,Burr-Brown,,,unknown,,https://dtsheet.com/model/2874931,third_party_mirror,low,,,Burr-Brown-branded listing; sibling entry 2874932.
+OPA2350,Burr-Brown,,,unknown,,https://www.fabian.com.mt/viewer/44990/pdf.pdf,third_party_mirror,low,,,Appeared in searches for PDS-1470.
+OPA2350,Burr-Brown,,,unknown,,https://pdf.elecfans.com/BURR-BROWN/OPA2350.html,third_party_mirror,low,,,Burr-Brown-branded copy; OPA2350PA page also exists.
+OPA2350,Burr-Brown,,,unknown,,https://manualmachine.com/burrbrown/opa350/8365044-user-manual,third_party_mirror,low,,,Burr-Brown-branded copy.
+OPA2350,Texas Instruments,SBOS099,,unknown,,https://www.vyssotski.ch/BasicsOfInstrumentation/Amplifier_opa2350.pdf,third_party_mirror,low,,,Course copy; revision not shown.
+OPA2350,Texas Instruments,SBOS099,,unknown,,https://www.scribd.com/document/525481293/opa350,third_party_mirror,low,,,
+OPAx277,Texas Instruments,SBOS079,C,confirmed,2023-02-21,https://www.ti.com/lit/ds/symlink/opa2277.pdf,vendor_current,high,,,Current revision C; history cites rev B as April 2015.
+OPAx277,Texas Instruments,SBOS079,C,confirmed,2023-02-21,https://www.ti.com/lit/ds/sbos079c/sbos079c.pdf,vendor_revision_specific,high,,,Revision-specific TI link for rev C.
+OPAx277,Texas Instruments,SBOS079,C,confirmed,2023-02-21,https://www.ti.com/lit/gpn/OPA277,vendor_current,medium,,,TI generic-part-number redirect to the current datasheet.
 OPAx277,Texas Instruments,SBOS079,A,confirmed,2005-04,https://www.mouser.com/datasheet/2/405/sbos079a-190468.pdf,distributor_mirror,high,,,Mouser copy preserving rev A.
 OPAx277,Texas Instruments,SBOS079,,unknown,,https://www.mouser.com/ds/2/405/opa2277-200103.pdf,distributor_mirror,low,,,Mouser copy; revision not visible.
 OPAx277,Texas Instruments,SBOS079,B,confirmed,2015-06,https://neuron.eng.wayne.edu/ECE330/OPA277.pdf,third_party_mirror,medium,,,Wayne State University course copy titled Rev. B.
@@ -2553,9 +2779,17 @@ OPAx277,Texas Instruments,SBOS079,,unknown,,https://datasheet.octopart.com/OPA42
 OPAx277,Texas Instruments,SBOS079,,unknown,,https://cdn-reichelt.de/documents/datenblatt/A200/OPA_4277_DB.pdf,distributor_mirror,low,,,Reichelt copy; revision not visible.
 OPAx277,Texas Instruments,SBOS079,,unknown,,https://suzushoweb.com/pdf_file/OPA2277P.pdf,distributor_mirror,low,,,Japanese shop copy; revision not visible.
 OPAx277,Texas Instruments,SBOS611,B,confirmed,2012-12,https://www.mouser.com/ds/2/405/opa2277-die-558195.pdf,distributor_mirror,high,,,"Bare-die datasheet, separate document."
+OPAx277,Texas Instruments,SBOS079,C,confirmed,2023-02-21,https://ti.com/document-viewer/OPA277/datasheet,vendor_current,high,,,"TI HTML viewer, SBOS079C March 1999 – February 2023."
+OPAx277,Texas Instruments,SBOS079,C,probable,2023-02,https://www.ti.com/jp/lit/gpn/OPA277,vendor_current,medium,,,Japanese translation of rev C.
+OPAx277,Burr-Brown,PDS-1413,PDS-1413D,probable,1999-03,https://sy-dep-epc-lpc.web.cern.ch/components/datasheets/epc%20(fgc-dccts)/DS22/OPA277_OPAMP_BURRBROWN.pdf,third_party_mirror,medium,,,"CERN copy of the Burr-Brown sheet; © 1997, printed March 1999."
+OPAx277,Burr-Brown,PDS-1413,PDS-1413D,probable,1999-03,https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/OPA2777_5F00_datasheet.pdf,vendor_legacy,medium,,,Burr-Brown copy on TI E2E forum; file misnamed OPA2777.
+OPAx277,Burr-Brown,PDS-1413,,unknown,,https://manualmachine.com/burrbrown/opa277p/4167704-datasheet,third_party_mirror,low,,,Burr-Brown-branded copy; sibling entry 4196254.
+OPAx277,Burr-Brown,,,unknown,,https://manualmachine.com/burrbrowncorporation/opa277/21733032-user-manual,third_party_mirror,low,,,
+OPAx277,Burr-Brown,,,unknown,,https://pdf.elecfans.com/BURR-BROWN/OPA277.html,third_party_mirror,low,,,Burr-Brown-branded copy; OPA277P page also exists.
+OPAx277,Burr-Brown,,,unknown,,https://dtsheet.com/model/2875970,third_party_mirror,low,,,"Burr-Brown-branded listing; also 2875322, 2875325."
 THS4032,Texas Instruments,SLOS224,L,confirmed,2024-07,https://www.ti.com/lit/ds/symlink/ths4032.pdf,vendor_current,high,,,Current THS4031/THS4032 sheet: 70 ns settling. TI E2E user cited revisions I–L.
 THS4032,Texas Instruments,SLOS224,C,confirmed,2000-04,https://www.alldatasheet.com/html-pdf/28740/TI/THS4032EVM/227/8/THS4032EVM.html,third_party_mirror,medium,,,"Filed under THS4032EVM: Rev C (60 ns, −90 dBc), 38 pages."
-THS4032,Texas Instruments,unknown,,unknown,,https://www.ti.com/lit/ds/symlink/ths4032-ep.pdf,vendor_current,medium,,,Separate enhanced-product datasheet; number and revision unconfirmed.
+THS4032,Texas Instruments,SLOS610,,unknown,2008-11-20,https://www.ti.com/lit/ds/symlink/ths4032-ep.pdf,vendor_current,medium,,,Feedback link litnum SLOS610; dated 2008-11-20. Revision unknown.
 THS4032,Texas Instruments,SLOS224,,unknown,,https://www.digikey.com/en/htmldatasheets/production/26719/0/0/1/ths4031cd,distributor_mirror,low,,,Possibly SLOS224I (May 2018); not confirmed.
 THS4032,Texas Instruments,SLOS224,,unknown,,https://radiolocman.com/datasheet/data.html?%2FTHS4032=&di=327591,third_party_mirror,low,,,Revision unconfirmed.
 THS4032,Texas Instruments,SLOS224,,unknown,,https://manualmachine.com/datasheet/ths4031/8414264-datasheet-texas-instruments/,third_party_mirror,low,,,Revision unconfirmed.
@@ -2573,6 +2807,10 @@ THS4032,Texas Instruments,SLOS224,,unknown,,https://www.electronicsdatasheets.co
 THS4032,Texas Instruments,unknown (separate Enhanced Product datasheet; literature number not shown),,unknown,,https://www.alldatasheet.com/datasheet-pdf/pdf/463260/TI1/THS4032-EP.html,third_party_mirror,low,,,"EP quotes 100 MHz, 100 V/µs, 60 ns, −90 dBc, 1.6 nV/√Hz."
 THS4032,Texas Instruments,unknown (EP datasheet literature number not shown),,unknown,,https://datasheet4u.com/datasheet/etcTI/THS4032-EP-1488360,third_party_mirror,low,,,Combined THS4031-EP/THS4032-EP; older all-caps TI title style.
 THS4032,Texas Instruments,unknown (EP datasheet literature number not shown),,unknown,,https://datasheet4u.com/datasheet/etcTI/THS4031-EP-1488359,third_party_mirror,low,,,THS4031-EP entry; likely the same EP document as 1488360.
+THS4032,Texas Instruments,SLOS224,I,confirmed,2018-05,https://www.ti.com/lit/ds/slos224i/slos224i.pdf,vendor_revision_specific,high,,,TI revision-specific path for Rev I.
+THS4032,Texas Instruments,SLOS224,L,confirmed,2024-07,https://www.ti.com/document-viewer/THS4032/datasheet/GUID-477D5AB9-7FFC-4228-A526-0DE6DAF9CE66,vendor_current,high,,,TI viewer revision history: changes K→L and J→K.
+THS4032,Texas Instruments,SLOS224,,unknown,,https://datasheet.ciiva.com/7738/1830916-7738519.pdf,third_party_mirror,low,,,Ciiva copy; revision not shown.
+THS4032,Texas Instruments,SLOS610,,unknown,,https://datasheets.globalspec.com/ds/texas-instruments/ths4032mdgnrep/002a7626-2f74-4d7c-a8d9-751ed936cc52,distributor_mirror,low,,,GlobalSpec THS4032MDGNREP datasheet entry.
 THS4631,Texas Instruments,SLOS451C,C,confirmed,2025-03,https://www.ti.com/lit/ds/symlink/ths4631.pdf,vendor_current,high,,,"Living symlink; still Rev C, no Rev D. Pad text says 'isolated'."
 THS4631,Texas Instruments,SLOS451C,C,confirmed,2025-03,https://www.ti.com/lit/ds/slos451c/slos451c.pdf,vendor_revision_specific,high,,,Revision-pinned Rev C; header 'December 2004 – revised March 2025'.
 THS4631,Texas Instruments,SLOS451C,C,confirmed,2025-03,https://github.com/wirthda/usb-oscilloscope/blob/main/docs/datasheets/ths4631_opamp.pdf,third_party_mirror,medium,,,Frozen Rev C copy with full revision history and 2025 orderables.
@@ -2618,8 +2856,8 @@ TLE2071,Texas Instruments,SLOS181 (presumed),,unknown,,https://datasheet4u.com/p
 TLE2071,Texas Instruments,SLOS181 (presumed),,unknown,,https://www.digchip.com/datasheets/parts/datasheet/477/TLE2074.php,third_party_mirror,low,,,Third-party copy.
 TLE2071,Texas Instruments,SLOS181 (presumed),,unknown,,https://datasheetarchive.com/TLE2074-datasheet.html,third_party_mirror,low,,,Index that may hold old data-book scans and pre-2004 revisions.
 TLE2071,Texas Instruments,unknown (not a datasheet),,unknown,,https://www.ti.com/pdfs/hirel/mltry/errata_lin_ana.pdf,vendor_legacy,low,,,"Military linear errata, not a datasheet; likely cites SLOS181 February 1997."
-TLE2081,Texas Instruments,SLOS182,C,confirmed,2026-03,https://www.ti.com/lit/ds/symlink/tle2082.pdf,vendor_current,medium,,,Current symlink; search index still showed the Rev B title.
-TLE2081,Texas Instruments,SLOS182,C,confirmed,2026-03,https://www.ti.com/lit/ds/symlink/tle2084.pdf,vendor_current,medium,,,New TI format; history lists Rev B (2001-06) to C (2026-03).
+TLE2081,Texas Instruments,SLOS182,C,confirmed,2026-03-04,https://www.ti.com/lit/ds/symlink/tle2082.pdf,vendor_current,medium,,,Current symlink; search index still showed the Rev B title.
+TLE2081,Texas Instruments,SLOS182,C,confirmed,2026-03-04,https://www.ti.com/lit/ds/symlink/tle2084.pdf,vendor_current,medium,,,New TI format; history lists Rev B (2001-06) to C (2026-03).
 TLE2081,Texas Instruments,SLOS182,,unknown,,https://www.ti.com/lit/gpn/TLE2082,vendor_current,high,,,TI generic-part redirect to the current PDF.
 TLE2081,Texas Instruments,SLOS182,,unknown,,https://www.ti.com/lit/ds/symlink/tle2082a.pdf,vendor_current,low,,,Seen only in a KiCad schematic; unconfirmed.
 TLE2081,Texas Instruments (via Mouser),SLOS182,,unknown,,https://www.mouser.com/datasheet/2/405/1/tle2081-3417641.pdf,distributor_mirror,medium,,,Mouser copy; revision unknown.
@@ -2643,6 +2881,10 @@ TLE2081,Texas Instruments (via radiolocman),SLOS182,,unknown,,https://radiolocma
 TLE2081,Texas Instruments (via DatasheetCatalog),unknown,,unknown,,https://www.datasheetcatalog.com/datasheets_pdf/T/L/E/2/TLE2082.shtml,third_party_mirror,low,,,Candidate for an older SLOS182 or SLOS105 edition.
 TLE2081,Texas Instruments (via Datasheet Archive),unknown,,unknown,,https://datasheetarchive.com/TLE2081.-datasheet.html,third_party_mirror,low,,,Index page; may list several scanned editions.
 TLE2081,Texas Instruments (via Datasheet Archive),unknown,,unknown,,https://datasheetarchive.com/4--TLE2081-datasheet.html,third_party_mirror,low,,,Index page; revision unknown.
+TLE2081,Texas Instruments,SLOS182,C,confirmed,2026-03-04,https://www.ti.com/document-viewer/TLE2081/datasheet/GUID-662CDA93-68B7-47A3-9DA4-E3C3FA412F78,vendor_current,high,,,"TI viewer: 'SLOS182C February 1997 – March 2026', A grades included."
+TLE2081,Texas Instruments,SLOS182,B,confirmed,2001-06,https://static.chipdip.ru/lib/005/DOC003005155.pdf,third_party_mirror,medium,,,Cover: 'SLOS182B – February 1997 – revised June 2001'.
+TLE2081,Texas Instruments,SLOS182,,unknown,,https://xdevs.com/doc/_Datasheets/Amplifiers/tle2081.pdf,third_party_mirror,low,,,"xDevs copy; revision not shown, probably pre-2026."
+TLE2081,Texas Instruments,SLOS182,,unknown,,https://datasheet.ciiva.com/7738/1834262-7738590.pdf,third_party_mirror,low,,,Ciiva copy; revision not shown.
 TLE2142,Texas Instruments,SLOS183,E,confirmed,2025-07,https://www.ti.com/lit/ds/symlink/tle2142.pdf,vendor_current,medium,,,"Current, new format; PCN20250730004 (die B→C, RFAB). Date not from PDF."
 TLE2142,Texas Instruments,SLOS183,E,confirmed,2025-07,https://www.ti.com/lit/ds/slos183e/slos183e.pdf,vendor_revision_specific,medium,,,Revision-specific TI URL for rev E.
 TLE2142,Texas Instruments,SLOS183,D,confirmed,2012-10,https://www.radiolocman.com/datasheet/data.html?%2FTLE2142=&di=330795,third_party_mirror,medium,,,"Header SLOS183D, Feb 1997, revised Oct 2012; page not checked."
@@ -2711,3 +2953,5 @@ uPC4570,NEC / Renesas (several),,,unknown,,https://www.datasheetarchive.com/uPC4
 uPC4570,NEC / Renesas (unclear),,,unknown,,https://datasheetspdf.com/datasheet/UPC4570.html,third_party_mirror,low,,,Document held unknown.
 uPC4570,NEC (via alldatasheet),,,unknown,,https://www.scribd.com/document/828979319/UPC4570-pdf-UPC4570-Description-UPC4570-Datasheet-UPC4570-view-ALLDATASHEET,third_party_mirror,low,,,Scribd re-upload of an alldatasheet page; distinct from 682301813.
 uPC4570,NEC / Renesas (index),,,unknown,,https://datasheet4u.com/part-number/UPC4570.html,third_party_mirror,low,,,Index page listing NEC entries and the Renesas R03DS0135 copy.
+uPC4570,Renesas Electronics (via chipdip),R03DS0135EJ,,unknown,,https://static.chipdip.ru/lib/349/DOC032349395.pdf,third_party_mirror,low,,,Renesas-era uPC4570 copy; revision not shown.
+uPC4570,Renesas Electronics (via datasheetspdf),R03DS0135EJ,,unknown,,https://datasheetspdf.com/pdf/1481590/Renesas/uPC4570G2/1,third_party_mirror,low,,,Renesas uPC4570G2 'Dual Operational Amplifier' copy.

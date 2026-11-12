@@ -42,10 +42,10 @@
       "note": "Commercial SOIC-8 / MSOP PowerPAD. Unconfirmed; THS4031CD and THS4031CDGNR siblings are listed."
     },
     {
-      "pn": "THS4032-EP",
+      "pn": "THS4032-EP (THS4032MDGNREP)",
       "channels": 2,
-      "status": "unknown",
-      "note": "Enhanced product (defense/aerospace) with its own datasheet; orderable and document number unconfirmed."
+      "status": "active",
+      "note": "Enhanced product, MSOP-8 PowerPAD, −55 to 125 °C; datasheet SLOS610. TI: Active."
     },
     {
       "pn": "THS4031",
@@ -57,15 +57,15 @@
   "key_specs": [
     {
       "parameter": "Input noise (1 kHz)",
-      "value": "1.6 nV/√Hz (Rev C); current datasheet reportedly 1.2",
-      "condition": "front-page headline",
-      "source": "SLOS224C; SLOS224L (reported)"
+      "value": "1.2 nV/√Hz (SLOS224L); 1.6 nV/√Hz through Rev I",
+      "condition": "f > 10 kHz",
+      "source": "SLOS224C/G; SLOS224L"
     },
     {
       "parameter": "Current noise",
-      "value": "1.2 pA/√Hz (reported)",
-      "condition": "",
-      "source": "SLOS224 (reported)"
+      "value": "2.3 pA/√Hz (SLOS224L); 1.2 pA/√Hz in older revisions",
+      "condition": "f > 10 kHz",
+      "source": "SLOS224G; SLOS224L"
     },
     {
       "parameter": "GBW",
@@ -81,7 +81,7 @@
     },
     {
       "parameter": "THD+N",
-      "value": "−90 dBc (Rev C) → −96 dBc (current, reported)",
+      "value": "−90 dBc (Rev C, Rev L); −96 dBc in between",
       "condition": "THD, f = 1 MHz",
       "source": "SLOS224C; SLOS224L"
     },
@@ -150,13 +150,13 @@
     {
       "kind": "datasheet-respec",
       "vendor": "Texas Instruments",
-      "when": "Post-SLOS224C (2000-04), rev unknown",
+      "when": "SLOS224I (2018) → J–L (2024)",
       "part_numbers_affected": [
         "THS4031",
         "THS4032"
       ],
-      "identification": "None known. No PCN, new-die note or marking change was found; compare the datasheet revision in use.",
-      "summary": "No evidence of a die change; only headline specs moved. Current documents quote 70 ns settling, −96 dBc THD at 1 MHz and 1.2 nV/√Hz; older revisions gave 60 ns (confirmed), −90 dBc and 1.6 nV/√Hz (unconfirmed). Looks like re-characterisation, not new silicon.",
+      "identification": "None known. No PCN, new-die note or marking change found; SLOS224I and earlier quote 60 ns and 1.6 nV/√Hz.",
+      "summary": "No evidence of a die change; the 2024 revisions re-specified headlines. Noise 1.6 → 1.2 nV/√Hz, current noise 1.2 → 2.3 pA/√Hz, settling 60 → 70 ns (±15 V). THD went −90 → −96 dBc, then back to −90 dBc in Rev L.",
       "spec_deltas": [
         {
           "parameter": "Settling time (0.1%)",
@@ -164,14 +164,24 @@
           "after": "70 ns"
         },
         {
+          "parameter": "Settling time (0.1%, ±5 V)",
+          "before": "45 ns",
+          "after": "55 ns"
+        },
+        {
           "parameter": "THD at 1 MHz",
-          "before": "-90 dBc (unconfirmed)",
-          "after": "-96 dBc"
+          "before": "-90 dBc (unconfirmed) (Rev C: −90 dBc)",
+          "after": "-96 dBc (to Rev K); −90 dBc again in Rev L, RL = 1 kΩ table"
         },
         {
           "parameter": "Voltage noise headline",
-          "before": "1.6 nV/rtHz (unconfirmed)",
+          "before": "1.6 nV/rtHz (unconfirmed) (confirmed in Rev G)",
           "after": "1.2 nV/rtHz"
+        },
+        {
+          "parameter": "Current noise",
+          "before": "1.2 pA/√Hz",
+          "after": "2.3 pA/√Hz"
         }
       ],
       "audio_impact": "Likely negligible for audio. Settling in the tens of ns is far beyond audio bandwidth.",
@@ -180,10 +190,11 @@
         "https://www.alldatasheet.com/html-pdf/28740/TI/THS4032EVM/227/8/THS4032EVM.html",
         "https://www.ti.com/lit/ds/symlink/ths4032.pdf",
         "https://amplifiers118.rssing.com/chan-14134185/article18055.html",
-        "https://www.ti.com/product/THS4032"
+        "https://www.ti.com/product/THS4032",
+        "https://www.ti.com/document-viewer/THS4032/datasheet/GUID-477D5AB9-7FFC-4228-A526-0DE6DAF9CE66"
       ],
       "confidence": "medium",
-      "verification": "Current 70 ns, −96 dBc and 1.2 nV/√Hz figures and older 60 ns confirmed; no PCN or die-change evidence."
+      "verification": "Rev L revision history confirms the noise and settling edits and the THD reversal; no PCN found."
     }
   ],
   "datasheets": [
@@ -214,14 +225,14 @@
     {
       "vendor": "Texas Instruments",
       "title": "100-MHz Low-Noise High-Speed Amplifier (THS4032-EP)",
-      "doc_number": "unknown",
+      "doc_number": "SLOS610",
       "revision": "",
-      "date": "",
+      "date": "2008-11-20",
       "url": "https://www.ti.com/lit/ds/symlink/ths4032-ep.pdf",
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Separate enhanced-product datasheet; number and revision unconfirmed."
+      "note": "Feedback link litnum SLOS610; dated 2008-11-20. Revision unknown."
     },
     {
       "vendor": "Texas Instruments",
@@ -426,6 +437,50 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "THS4031-EP entry; likely the same EP document as 1488360."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS224",
+      "revision": "I",
+      "date": "2018-05",
+      "url": "https://www.ti.com/lit/ds/slos224i/slos224i.pdf",
+      "url_kind": "vendor_revision_specific",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "TI revision-specific path for Rev I."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS224",
+      "revision": "L",
+      "date": "2024-07",
+      "url": "https://www.ti.com/document-viewer/THS4032/datasheet/GUID-477D5AB9-7FFC-4228-A526-0DE6DAF9CE66",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "TI viewer revision history: changes K→L and J→K."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS224",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.ciiva.com/7738/1830916-7738519.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Ciiva copy; revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS610",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheets.globalspec.com/ds/texas-instruments/ths4032mdgnrep/002a7626-2f74-4d7c-a8d9-751ed936cc52",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "GlobalSpec THS4032MDGNREP datasheet entry."
     }
   ],
   "product_pages": [
@@ -469,7 +524,7 @@
       "doc_number": "SLOS224",
       "revision": "I",
       "date": "2018-05",
-      "changes": "Header 'SLOS224I – July 1999 – Revised May 2018' (likely DigiKey copy); front page still 60 ns, 90 mA."
+      "changes": "Header 'SLOS224I – July 1999 – Revised May 2018'; TI path slos224i. Front page still 60 ns, 90 mA."
     },
     {
       "vendor": "Texas Instruments",
@@ -482,15 +537,22 @@
       "vendor": "Texas Instruments",
       "doc_number": "SLOS224",
       "revision": "K",
-      "date": "",
-      "changes": "Inferred from an E2E post; falls between February and July 2024."
+      "date": "2024-05",
+      "changes": "Deleted THS4031 THD+N and IMD rows (load condition reported inconsistently); fixed Figure 5-23 axis to 100 ns/div."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS224",
       "revision": "L",
       "date": "2024-07",
-      "changes": "Current symlink ('SLOS224L, revised July 2024'). Front page gives 70 ns settling; changes not shown."
+      "changes": "Current. THS4032 THD −96 → −90 dBc (RL = 1 kΩ table); thermal pad data; Iio units µA → nA; max 33 → 32 V."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS610",
+      "revision": "unknown",
+      "date": "2008-11-20",
+      "changes": "Separate THS4031-EP / THS4032-EP enhanced-product datasheet; quotes 60 ns, −90 dBc, 1.6 nV/√Hz."
     }
   ],
   "revision_chains": [
@@ -524,7 +586,7 @@
         },
         {
           "rev": "K",
-          "date": ""
+          "date": "2024-05"
         },
         {
           "rev": "L",
@@ -538,16 +600,21 @@
         "E",
         "F"
       ],
-      "note": "No copies matched to the original, G or K. Which revision moved settling 60 → 70 ns is unknown."
+      "note": "No copies matched to the original, G or K. Noise and settling edits came in J–L (2024)."
     },
     {
       "vendor": "Texas Instruments",
-      "doc_number": "THS4031-EP / THS4032-EP datasheet",
-      "known": [],
-      "missing": [
-        "all revisions"
+      "doc_number": "SLOS610 (THS4031-EP / THS4032-EP datasheet)",
+      "known": [
+        {
+          "rev": "unknown",
+          "date": "2008-11-20"
+        }
       ],
-      "note": "Literature number unknown, probably SGLS-series. Copies: alldatasheet 463260, datasheet4u 1488360/1488359."
+      "missing": [
+        "revision letters"
+      ],
+      "note": "SLOS610 per TI feedback link; copies: alldatasheet 463260, datasheet4u 1488360/1488359."
     }
   ],
   "ti_literature_numbers": [
@@ -571,10 +638,10 @@
     "https://www.ti.com/tool/THS4032EVM"
   ],
   "open_questions": [
-    "Dates and change lists for SLOS224J, K and L; copies of the original, A, B and D–F?",
-    "Which revision changed settling from 60 to 70 ns? Some summaries of the current sheet still quote 60 ns.",
-    "Did the noise and THD headlines really change (1.2 nV/√Hz, −96 dBc), and was silicon behind it?",
-    "THS4032-EP document number and orderable code; status of THS4032CD/CDGN/ID/IDGN codes?",
+    "Copies of SLOS224 original, A, B, D–F and K? Which revision (J, K or L) changed noise and settling?",
+    "Some summaries of the current sheet still quote 60 ns settling; do TI's product page figures lag the datasheet?",
+    "Were the 2024 noise and settling edits re-characterisation only, or backed by any silicon or test change?",
+    "SLOS610 revision letters; status of THS4032CD/CDGN/ID/IDGN codes?",
     "Which SLOS224 revision does each mirror hold (DigiKey, RadioLocman, ManualMachine, archive.org, alldatasheet)?"
   ],
   "sources": [
@@ -594,8 +661,8 @@
     "https://www.head-fi.org/threads/beresford-tc7520-opamp-rolling.426598/"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 6,
+    "status": "verified-with-corrections",
+    "web_searches_used": 9,
     "claims_confirmed": [
       "SLOS224C (April 2000) mirrored: 100 MHz (G=2), 275 MHz, 100 V/µs, 60 ns, 90 mA, 8.5 mA/ch, −90 dBc, 1.6 nV/√Hz - https://www.alldatasheet.com/html-pdf/28740/TI/THS4032EVM/227/8/THS4032EVM.html",
       "Current TI datasheet 'THS403x 100MHz, Low-Noise, High-Speed Amplifiers' gives 70 ns settling - https://www.ti.com/lit/ds/symlink/ths4032.pdf",
@@ -604,7 +671,12 @@
       "THS4032IDGNR is ACTIVE on TI.com - https://www.ti.com/product/THS4032/part-details/THS4032IDGNR",
       "THS4032-EP exists with its own datasheet - https://www.ti.com/product/THS4032-EP",
       "Built on a 30 V dielectrically isolated complementary bipolar process - https://www.ti.com/lit/ds/symlink/ths4032.pdf",
-      "THS4032EVM evaluation board exists - https://www.ti.com/tool/THS4032EVM"
+      "THS4032EVM evaluation board exists - https://www.ti.com/tool/THS4032EVM",
+      "SLOS224L revision history: noise 1.6 → 1.2 nV/√Hz, settling 60 → 70 ns (±15 V) and 45 → 55 ns (±5 V): https://www.ti.com/document-viewer/THS4032/datasheet/GUID-477D5AB9-7FFC-4228-A526-0DE6DAF9CE66",
+      "Rev L changed THS4032 THD from −96 to −90 dBc, moved to RL = 1 kΩ table; max voltage 33 → 32 V: https://www.ti.com/document-viewer/THS4032/datasheet/GUID-81E0CA5D-AD06-4E19-9518-97F331D71271",
+      "Rev K dated May 2024, Rev J February 2024: https://ti.com/document-viewer/THS4031/datasheet/GUID-81E0CA5D-AD06-4E19-9518-97F331D71271",
+      "THS4032-EP is active; orderable THS4032MDGNREP, MSOP-8 PowerPAD, −55 to 125 °C: https://www.ti.com/product/THS4032-EP",
+      "THS4031-EP/THS4032-EP datasheet reported as SLOS610 (feedback link), dated 2008-11-20: https://datasheets.globalspec.com/ds/texas-instruments/ths4032mdgnrep/002a7626-2f74-4d7c-a8d9-751ed936cc52"
     ],
     "refuted_claims": [],
     "corrections": [
@@ -612,7 +684,10 @@
       "Process refined: 30 V dielectrically isolated complementary bipolar (TI datasheet).",
       "Filled datasheets, revision history, key specs, lineage, alternatives, literature number (SLOS224) and archive seeds.",
       "Added the THS4031 single sibling and the THS4032-EP variant.",
-      "Added a spec-change entry (settling 60 → 70 ns) noting that no PCN or die change was found."
+      "Added a spec-change entry (settling 60 → 70 ns) noting that no PCN or die change was found.",
+      "THD headline: Rev L returned THS4032 THD to −90 dBc; current noise now 2.3 pA/√Hz, not 1.2: https://www.ti.com/document-viewer/THS4032/datasheet/GUID-477D5AB9-7FFC-4228-A526-0DE6DAF9CE66",
+      "Old 1.6 nV/√Hz noise confirmed (Rev G), so the noise delta is no longer unconfirmed: https://www.ti.com/document-viewer/THS4032/datasheet/GUID-477D5AB9-7FFC-4228-A526-0DE6DAF9CE66",
+      "THS4032-EP document identified as SLOS610 and orderable as THS4032MDGNREP (Active): https://www.ti.com/product/THS4032-EP"
     ],
     "unverified_urls": [
       "https://www.digikey.com/en/htmldatasheets/production/26719/0/0/1/ths4031cd",

@@ -26,7 +26,7 @@ URL = re.compile(r"https?://[^\s\"'<>)\]\\]+")  # stops at JSON escapes such as 
 IDENTIFIERS = [
     re.compile(r"\b(?:19|20)\d{9}(?:\.\d)?\b"),        # TI PCN 20231219018.1
     re.compile(r"\bP[CD]N\s*#?\s*\d{2}_\d{4}\b"),     # ADI PCN 26_0029 / PDN 10_0081
-    re.compile(r"\bS[A-Z]{3}\d{3}[A-Z]?\b"),           # TI literature number
+    re.compile(r"\bS[A-Z]{3}(?=[0-9A-Z]*\d)[0-9A-Z]{3}[A-Z]?\b"),  # TI literature number (SBOS058B, SNOSC61)
     re.compile(r"\bPDS-?\d{3,4}[A-Z]?\b"),             # Burr-Brown
     re.compile(r"\bDS\d{6}\b"),                        # National
     re.compile(r"\b[A-Z]{2,5}\d{3,6}[A-Z]?/D\b"),      # onsemi / Motorola

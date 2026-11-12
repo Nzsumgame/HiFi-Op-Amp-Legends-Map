@@ -40,6 +40,12 @@
       "channels": 1,
       "status": "obsolete",
       "note": "Q-8 cerdip, −55 to +125 °C; /883B is MIL-STD-883B processed, NSN-listed."
+    },
+    {
+      "pn": "AD846AR-16 / AD846AR-16-REEL",
+      "channels": 1,
+      "status": "obsolete",
+      "note": "16-lead SOIC (R-16), −40 to +85 °C; Rev. C ordering guide. Rochester lists AR-16."
     }
   ],
   "key_specs": [
@@ -222,6 +228,132 @@
       "confidence": "medium",
       "revision_status": "unknown",
       "note": ""
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "450 V/us, Precision, Current-Feedback Op Amp AD846",
+      "doc_number": "AD846",
+      "revision": "B",
+      "date": "",
+      "url": "https://docs.ampnuts.ru/analog.com.datasheet/ad846/270284AD846.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Copy of ADI's obsolete-library Rev. B file, marked OBSOLETE."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD846 datasheet (dtsheet)",
+      "doc_number": "AD846",
+      "revision": "C",
+      "date": "2000",
+      "url": "https://dtsheet.com/model/713229",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Reported as Rev. C with a © 2000 line."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD846 datasheet (eeworld)",
+      "doc_number": "AD846",
+      "revision": "C",
+      "date": "",
+      "url": "https://datasheet.eeworld.com.cn/view/278214.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Reported as Rev. C."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD846 datasheet (datasheetq HTML)",
+      "doc_number": "AD846",
+      "revision": "C",
+      "date": "",
+      "url": "https://datasheetq.com/pdf-html/264433/ADI/10page/AD846.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Reported to hold the Rev. C text.",
+      "also_urls": [
+        "https://datasheetq.com/pdf-html/264433/ADI/3page/AD846.html?lang=en"
+      ]
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "Analog Devices AD846 Datasheet (manualmachine)",
+      "doc_number": "AD846",
+      "revision": "C",
+      "date": "",
+      "url": "https://manualmachine.com/analogdevices/ad846/3999327-datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Reported to hold the Rev. C text."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD846AR-16-REEL datasheet (alldatasheet)",
+      "doc_number": "AD846",
+      "revision": "C",
+      "date": "",
+      "url": "https://html.alldatasheet.jp/html-pdf/48477/AD/AD846AR-16-REEL/97/3/AD846AR-16-REEL.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Ordering guide lists AR-16 SOIC parts, so Rev. C."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD846AN datasheet (alldatasheet)",
+      "doc_number": "AD846",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48469/AD/AD846AN.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Same upload batch as 48468; revision not shown.",
+      "also_urls": [
+        "https://html.alldatasheet.net/html-pdf/48469/AD/AD846AN/281/11/AD846AN.html"
+      ]
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD846BN datasheet (alldatasheet)",
+      "doc_number": "AD846",
+      "revision": "",
+      "date": "",
+      "url": "https://html.alldatasheet.com/html-pdf/48470/AD/AD846BN/99/4/AD846BN.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD846SQ datasheet (elcodis)",
+      "doc_number": "AD846",
+      "revision": "",
+      "date": "",
+      "url": "https://ru.elcodis.com/parts/6234235/AD846SQ_p10.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Page-by-page copy; revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD846SQ datasheet (jiepei)",
+      "doc_number": "AD846",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.jiepei.com/ad846sq-9740052.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
     }
   ],
   "product_pages": [
@@ -233,7 +365,14 @@
       "doc_number": "AD846",
       "revision": "B",
       "date": "",
-      "changes": "Final revision, kept in ADI's obsolete-data-sheets library. Change log and any earlier Rev. 0/A not found."
+      "changes": "Copy kept in ADI's obsolete-data-sheets library. Change log and any earlier Rev. 0/A not found."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD846",
+      "revision": "C",
+      "date": "2000",
+      "changes": "Seen on mirrors only (probable). © 2000; ordering guide adds AD846AR-16 and AR-16-REEL 16-lead SOIC (R-16)."
     }
   ],
   "revision_chains": [
@@ -244,13 +383,17 @@
         {
           "rev": "B",
           "date": ""
+        },
+        {
+          "rev": "C",
+          "date": "2000"
         }
       ],
       "missing": [
         "0",
         "A"
       ],
-      "note": "Rev. B is the final revision; whether Rev. 0/A were published is unconfirmed."
+      "note": "ADI hosts only Rev. B; Rev. C (© 2000, adds R-16 SOIC) survives on mirrors. Rev. 0/A not found."
     }
   ],
   "ti_literature_numbers": [],
@@ -262,9 +405,9 @@
     "https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284ad846.pdf"
   ],
   "open_questions": [
-    "Rev. B print date and change log; did Rev. 0/A exist, and does any mirror freeze them?",
+    "Rev. C exact date and change log; did Rev. 0/A exist, and does any mirror freeze them?",
     "Exact obsolescence date and discontinuance PCN number.",
-    "Were other packages or grades made beyond N-8/Q-8 (e.g. LCC or chip)?",
+    "Other packages beyond N-8, Q-8 and R-16? datasheets360 lists an AD846SH as discontinued.",
     "Datasheet offset drift, input bias current and operating supply range still to be recorded.",
     "A SPICE macro-model Rev. A (1/91) covers 'AD846 and AD846A'; what is 'AD846A'?"
   ],
@@ -279,11 +422,14 @@
     "https://www.diyaudio.com/community/threads/ad-846-an-is-ther-a-better-sounding-opamp-out-there.5807/",
     "https://www.diyaudio.com/community/threads/ad-846-replacement.118303/",
     "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-3",
-    "https://www.diyaudio.com/community/threads/i-v-and-analog-output-stage-for-ad1862.299414/"
+    "https://www.diyaudio.com/community/threads/i-v-and-analog-output-stage-for-ad1862.299414/",
+    "https://www.analog.com/jp/products/ad846.html",
+    "https://findchips.com/detail/AD846AR-16/Rochester-Electronics-LLC",
+    "https://datasheets360.com/part/detail/ad846sh/-7734040587893461/"
   ],
   "verification": {
     "status": "verified-with-corrections",
-    "web_searches_used": 8,
+    "web_searches_used": 12,
     "claims_confirmed": [
       "ADI datasheet hosted in the obsolete-data-sheets library, marked 'REV. B': https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/270284AD846.pdf",
       "Product page sits under ADI's obsolete products path: http://www.analog.com/en/products/obsolete/ad846.html",
@@ -293,7 +439,11 @@
       "200 MΩ transresistance into 500 Ω and 'true 12-bit' (0.01%) claim: https://studylib.net/doc/18488908/450-v--s--precision--current-feedback-op-amp-ad846",
       "AD1862 datasheet recommends NE5534 or AD846 for I/V: https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-3",
       "Discontinued; ADI reportedly suggests AD8001 or AD811 as replacements: https://www.diyaudio.com/community/threads/ad-846-replacement.118303/",
-      "diyAudio thread 'AD 846 AN is ther a better sounding opamp out there' exists: https://www.diyaudio.com/community/threads/ad-846-an-is-ther-a-better-sounding-opamp-out-there.5807/"
+      "diyAudio thread 'AD 846 AN is ther a better sounding opamp out there' exists: https://www.diyaudio.com/community/threads/ad-846-an-is-ther-a-better-sounding-opamp-out-there.5807/",
+      "Mirrors hold an AD846 Rev. C datasheet with a © 2000 line: https://dtsheet.com/model/713229; https://datasheet.eeworld.com.cn/view/278214.html",
+      "Rev. C ordering guide lists AD846AR-16 and AD846AR-16-REEL, R-16 SOIC, −40 to +85 °C: https://html.alldatasheet.jp/html-pdf/48477/AD/AD846AR-16-REEL/97/3/AD846AR-16-REEL.html",
+      "ADI's Japanese product page marks the AD846 discontinued: https://www.analog.com/jp/products/ad846.html",
+      "Rochester Electronics lists AD846AR-16: https://findchips.com/detail/AD846AR-16/Rochester-Electronics-LLC"
     ],
     "refuted_claims": [],
     "corrections": [
@@ -301,7 +451,8 @@
       "Part status corrected from 'unknown' to 'obsolete', per ADI's obsolete product path and datasheet library.",
       "Added ordering codes AD846BN, AD846AQ, AD846SQ and AD846SQ/883B from the datasheet ordering guide.",
       "Removed 'stable in open loop': forum claim only, not in the datasheet.",
-      "No PCN, die change or revision hazard found, so silicon_changes is empty."
+      "No PCN, die change or revision hazard found, so silicon_changes is empty.",
+      "Rev. B is not the last revision: mirrors show Rev. C (© 2000) adding the R-16 SOIC; ADI's obsolete library keeps Rev. B (https://dtsheet.com/model/713229)."
     ],
     "unverified_urls": [
       "https://www.alldatasheet.com/datasheet-pdf/pdf/655325/AD/AD846_15.html",

@@ -399,7 +399,7 @@ def build_plan(family: dict) -> Plan:
             if ds.get("url_kind", "").startswith("vendor"):
                 plan.exact.append(url)
         lit = (ds.get("doc_number") or "").strip()
-        if re.fullmatch(r"S[A-Z]{3}\d{3}[A-Z]?", lit, re.I):
+        if re.fullmatch(r"S[A-Z]{3}(?=[0-9A-Z]*\d)[0-9A-Z]{3}[A-Z]?", lit, re.I):
             plan.ti_lits.append(lit.upper()[:7])
     for lit in family.get("ti_literature_numbers", []):
         plan.ti_lits.append(lit.upper()[:7])

@@ -295,6 +295,102 @@
       "confidence": "high",
       "revision_status": "confirmed",
       "note": "Evaluation-board application note, not the datasheet."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49721 High Performance, High Fidelity Rail-to-Rail Input/Output Audio Operational Amplifier",
+      "doc_number": "SNAS371B",
+      "revision": "B",
+      "date": "2010-04-21",
+      "url": "https://img.pcbx.com/erp/file/part/spec/LME49721MAX%20NOPB-Texas%20Instruments.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "PCBX copy reportedly printed SNAS371B, dated 21 April 2010."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49721 High Performance, High Fidelity Rail-to-Rail Input/Output Audio Operational Amplifier",
+      "doc_number": "SNAS371",
+      "revision": "C",
+      "date": "2013-04",
+      "url": "https://ti.com/lit/gpn/LME49721",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "probable",
+      "note": "TI part-number link; serves the latest revision."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49721 High Performance, High Fidelity Rail-to-Rail Input/Output Audio Operational Amplifier",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/NS/lme49721.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "National-branded copy on Kyohritsu; revision not shown."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "nsc lme49721",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://dtsheet.com/doc/227058/nsc-lme49721",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "National-branded copy on dtsheet."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49721 High Performance, High Fidelity Rail-to-Rail Input/Output Audio Operational Amplifier",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/624469/NationalSemiconductor/LME49721/1",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Same file ID 624469 as the datasheet4u copy."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49721MA/NOPB Datasheet (National Semiconductor)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://elcodis.com/parts/1319246/LME49721MANOPB_p3.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Page-by-page National copy on Elcodis; MAX/NOPB copy is part 1330462."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49721MA Datasheet (NSC)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.elecfans.com/NSC/LME49721MA.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "National-branded copy on elecfans."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "Datasheet LME49721MA - National Semiconductor IC, OP AMP, 5 V, RRIO, SMD",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=77691",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "National-branded copy on RadioLocman."
     }
   ],
   "product_pages": [
@@ -307,6 +403,13 @@
       "revision": "original",
       "date": "2007-09",
       "changes": "Initial release. TI header gives September 2007 origination; the National copy is dated October 2007."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "doc_number": "SNAS371B",
+      "revision": "B",
+      "date": "2010-04-21",
+      "changes": "Reported date of a copy printed SNAS371B; changes not recorded. Some National copies carry a 2010 copyright."
     },
     {
       "vendor": "Texas Instruments",
@@ -326,15 +429,18 @@
           "date": "2007-09"
         },
         {
+          "rev": "B",
+          "date": "2010-04-21"
+        },
+        {
           "rev": "C",
           "date": "2013-04-04"
         }
       ],
       "missing": [
-        "A",
-        "B"
+        "A"
       ],
-      "note": "National October 2007 copy is probably the original; dates and changes for A and B not found."
+      "note": "Rev B date from one distributor copy (probable). National pages carry document code 202049; rev A not found."
     },
     {
       "vendor": "Texas Instruments",
@@ -362,7 +468,7 @@
     "https://www.ti.com/product/LME49721"
   ],
   "open_questions": [
-    "Dates and change lists for SNAS371A and SNAS371B are unknown.",
+    "Date and change list of SNAS371A; confirm SNAS371B date (21 April 2010) against the PDF.",
     "Which revision each mirror (Octopart, alldatasheet 538445/538446/2194639, datasheet4u, radiolocman) actually holds.",
     "Any PCN or fab/die transfer after the TI acquisition? Check TI PCN listings.",
     "Lifecycle status of legacy LME49721MA / MAX codes, and an explicit TI flag for LME49721MA/NOPB.",
@@ -382,11 +488,12 @@
     "https://nabe.adiary.jp/op-dbuf",
     "https://zigsow.jp/item/174207/review/97161",
     "https://akizukidenshi.com/catalog/g/g113344/",
-    "https://www.ti.com/product/LME49721/part-details/LME49721MA/NOPB"
+    "https://www.ti.com/product/LME49721/part-details/LME49721MA/NOPB",
+    "https://www.ti.com/product/de-de/LME49721"
   ],
   "verification": {
     "status": "verified-with-corrections",
-    "web_searches_used": 5,
+    "web_searches_used": 9,
     "claims_confirmed": [
       "Current TI datasheet is SNAS371C, 'September 2007 – revised April 2013' (https://www.ti.com/lit/ds/symlink/lme49721.pdf).",
       "Rev C (04/04/13) moved the National layout to TI format (https://www.ti.com/lit/ds/snas371c/snas371c.pdf).",

@@ -32,8 +32,8 @@
     {
       "pn": "OPA1622IDRCT",
       "channels": 2,
-      "status": "active",
-      "note": "250-unit reel, same die and marking. ACTIVE in the 10-Dec-2015 addendum. One grade only."
+      "status": "unknown",
+      "note": "250-unit reel, same die and marking. ACTIVE in 2015 addendum; RS lists discontinued."
     }
   ],
   "key_specs": [
@@ -307,7 +307,7 @@
     {
       "vendor": "Texas Instruments",
       "title": "OPA1622 SoundPlus 高保真、双极输入音频运算放大器 (Chinese-language TI datasheet, hqbuy CDN copy)",
-      "doc_number": "ZHCSEE5B (reported; unconfirmed)",
+      "doc_number": "ZHCSEE5B (number confirmed; this copy unchecked)",
       "revision": "B",
       "date": "",
       "url": "https://dfsimgcdn2.hqbuy.com/group5/M00/00/B6/wKiCy2DeetGAFWBCADDIBXPAwaA048.pdf",
@@ -366,6 +366,30 @@
       "confidence": "high",
       "revision_status": "confirmed",
       "note": "Known from the rev A revision history; no copy located."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA1622 datasheet (TI document viewer)",
+      "doc_number": "SBOS727B",
+      "revision": "B",
+      "date": "2016-05",
+      "url": "https://ti.com/document-viewer/OPA1622/datasheet/revision_history",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "HTML viewer; header 'SBOS727B November 2015 – May 2016'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA1622 Chinese datasheet (TI document viewer)",
+      "doc_number": "ZHCSEE5B",
+      "revision": "B",
+      "date": "2016-05",
+      "url": "https://www.ti.com.cn/document-viewer/cn/OPA1622/datasheet/6_ZHCSEE5B",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Chinese edition; header 'ZHCSEE5B November 2015 – May 2016'."
     }
   ],
   "product_pages": [
@@ -392,7 +416,7 @@
       "doc_number": "SBOS727B",
       "revision": "B",
       "date": "2016-05",
-      "changes": "Fixed the V+ pin number in Pin Functions and reformatted the supply-voltage line. Documentation only; current as of Sept 2026."
+      "changes": "Added TI Design reference; fixed V+ pin number in Pin Functions; reformatted supply-voltage line. Documentation only; still current Nov 2026."
     }
   ],
   "revision_chains": [
@@ -421,15 +445,15 @@
       "doc_number": "ZHCSEE5 (Chinese)",
       "known": [
         {
-          "rev": "B (reported)",
-          "date": ""
+          "rev": "B",
+          "date": "2016-05"
         }
       ],
       "missing": [
         "original",
         "A"
       ],
-      "note": "ZHCSEE5B reported once, uncorroborated; dates unknown."
+      "note": "ZHCSEE5B confirmed on ti.com.cn (November 2015 – May 2016); earlier Chinese editions unseen."
     }
   ],
   "ti_literature_numbers": [
@@ -455,7 +479,7 @@
   "open_questions": [
     "Find a copy of the November 2015 Product Preview (check Wayback for the sbos727 seed URLs).",
     "Which revision does each mirror hold (alldatasheet 772558, alldatasheet.net 2222714, datasheet4u 1407316, datasheetcatalog, elecfans)?",
-    "Confirm the Chinese datasheet number (ZHCSEE5B?) and the OPA1622IDRCT lifecycle status.",
+    "Is OPA1622IDRCT still active at TI (RS lists it discontinued)? Which revision is the hqbuy Chinese copy?",
     "Are there OPA1622-specific PCNs? Only generic TI fab PCNs surfaced. Is INA1620 built on the OPA1622 core?",
     "Independent bare-chip measurements (ASR, Samuel Groner) and confirmation of the device-adoption lists are wanted."
   ],
@@ -487,11 +511,14 @@
     "https://nabe.adiary.jp/0627",
     "https://blog-e.uosoft.net/entry/20180206/1517848227",
     "https://maimai-audio.blog.jp/archives/25643364.html",
-    "https://www.bilibili.com/video/BV1jU4y1F7hR/"
+    "https://www.bilibili.com/video/BV1jU4y1F7hR/",
+    "https://ti.com/document-viewer/OPA1622/datasheet/revision_history",
+    "https://www.ti.com.cn/document-viewer/cn/OPA1622/datasheet/6_ZHCSEE5B",
+    "https://uk.rs-online.com/web/p/op-amps/1330685/"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 6,
+    "status": "verified-with-corrections",
+    "web_searches_used": 10,
     "claims_confirmed": [
       "Current TI datasheet is SBOS727B, 'November 2015 – Revised May 2016': https://www.ti.com/lit/ds/symlink/opa1622.pdf",
       "No SBOS727C or SBOS727D found; rev B is the latest: https://www.ti.com/product/OPA1622",
@@ -501,7 +528,12 @@
       "32 MHz GBW (G=+1000), 10 V/µs, >600 pF drive, 136 dB open-loop gain (600 Ω): https://www.ti.com/product/OPA1622",
       "Chinese TI datasheet mirror exists: http://file.elecfans.com/web1/M00/00/0E/pIYBAFnLr4iAfZ1YACg4kPrx3Hg657.pdf",
       "VSON-to-DIP8 adapter (OPA1622 Dual OPA DIP8) sold for rolling: https://www.audiophonics.fr/en/opa/opa1622-dual-opa-dip8-unit-p-12489.html",
-      "No OPA1622-specific PCN surfaced; only generic TI fab-site and die PCNs: https://www.ti.com/quality-reliability/quality/product-change-notification.html"
+      "No OPA1622-specific PCN surfaced; only generic TI fab-site and die PCNs: https://www.ti.com/quality-reliability/quality/product-change-notification.html",
+      "TI document viewer header 'SBOS727B November 2015 – May 2016'; product page lists Rev. B, 03 May 2016 (https://ti.com/document-viewer/OPA1622/datasheet/revision_history).",
+      "Rev B added a TI Design reference, fixed the V+ pin number, reformatted supply voltage; rev A moved preview to production (https://ti.com/document-viewer/OPA1622/datasheet/revision_history).",
+      "Chinese datasheet is ZHCSEE5B, November 2015 – May 2016 (https://www.ti.com.cn/document-viewer/cn/OPA1622/datasheet/6_ZHCSEE5B).",
+      "RS lists OPA1622IDRCT as a discontinued product (https://uk.rs-online.com/web/p/op-amps/1330685/).",
+      "No OPA1622-specific PCN found in TI or distributor PCN listings (https://www.ti.com.cn/quality-reliability/quality/product-change-notification.html)."
     ],
     "refuted_claims": [],
     "corrections": [
@@ -509,7 +541,9 @@
       "OPA1622IDRCR confirmed active via TI part details; OPA1622IDRCR.B added as an identical orderable, not a silicon change.",
       "gpn redirect lowered to low confidence; sbos727c seed dropped (no SBOS727C/D found); alldatasheet 772558 seed added.",
       "Six mirrors added at low confidence: alldatasheet 772558, alldatasheet.net 2222714, RadioLocman, datasheet4u/datasheetspdf 1407316, datasheetcatalog, elecfans Chinese.",
-      "Tagline softened from 'became the default driver' to 'widely used'; rev A headline specs match rev B."
+      "Tagline softened from 'became the default driver' to 'widely used'; rev A headline specs match rev B.",
+      "ZHCSEE5B confirmed via ti.com.cn; Chinese chain updated.",
+      "OPA1622IDRCT status set unknown: RS lists it discontinued, TI part status not seen."
     ],
     "unverified_urls": [
       "http://www.ti.com/lit/gpn/opa1622",

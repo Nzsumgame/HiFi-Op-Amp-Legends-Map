@@ -39,8 +39,8 @@
     {
       "pn": "LT1364CS8 (#PBF, #TRPBF)",
       "channels": 2,
-      "status": "unknown",
-      "note": "8-lead SO, top mark '1364', θJA 190 °C/W. Suffixes are lead-free packing only."
+      "status": "active",
+      "note": "8-lead SO, top mark '1364', θJA 190 °C/W. #PBF/#TRPBF listed as production by ADI."
     },
     {
       "pn": "LT1365CN",
@@ -53,6 +53,12 @@
       "channels": 4,
       "status": "unknown",
       "note": "Quad, 16-lead narrow SO (pins 8, 9 NC), θJA 150 °C/W."
+    },
+    {
+      "pn": "LT1364CS8 / LT1363CS8 / LT1363CS8#TR (leaded)",
+      "channels": 2,
+      "status": "obsolete",
+      "note": "Discontinued per ADI PDN 25_0027; #PBF versions replace them. LT1363 is single."
     }
   ],
   "key_specs": [
@@ -215,7 +221,7 @@
       "part_numbers_affected": [
         "LT1364 (variants not itemised; per PCN 22_0241 affected-parts summary)"
       ],
-      "identification": "By date code only: parts coded 2242 (2022 week 42) or later use the new epoxy. No visible marking difference.",
+      "identification": "By date code only: parts coded 2242 (2022 week 42) or later use the new epoxy; rollout due complete by DC2317. No visible difference.",
       "summary": "Die-attach epoxy changed from Henkel 8290 to 8290A (Loctite Ablestik). ADI states no impact to fit, form or function, with improved reliability. Die and wafer process unchanged. PCN Rev - and Rev A exist.",
       "spec_deltas": [
         {
@@ -228,20 +234,22 @@
       "compatibility_risk": "low - qualified assembly material change; same die.",
       "sources": [
         "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5781/PCN_22_0241_Rev_A.pdf",
-        "https://www.mouser.com/PCN/ADI_PCN_22_0241.pdf"
+        "https://www.mouser.com/PCN/ADI_PCN_22_0241.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_22_0241_Rev_A_Form.pdf"
       ],
       "confidence": "medium",
-      "verification": "PCN summaries give the epoxy change, 2242 cut-in and LT1361/LT1362/LT1364 as affected. PDF not read."
+      "verification": "PCN text confirms the epoxy change and DC2242–DC2317 rollout; LT1364 listing not seen in excerpts."
     },
     {
       "kind": "package-or-assembly",
       "vendor": "Analog Devices (Linear Technology)",
       "when": "2024-10-08 · PCN 24_0234 / PCN 24_0236",
       "part_numbers_affected": [
+        "LT1364CN8#PBF (PCN 24_0234, PDIP)",
         "LT1364 (per PCN 24_0234 / 24_0236 summaries)"
       ],
       "identification": "Older parts carry the trace code on the package bottom; newer parts in the top-side laser mark. Identified by date code.",
-      "summary": "Marking only: bottom-side trace code moved into the top-side laser mark, standardising ADI marking and for environmental reasons. No form, fit, function or reliability impact. Both PCNs (Rev -) are companion notices for different package groups.",
+      "summary": "Marking only: bottom-side trace code moved into the top-side laser mark, standardising ADI marking. No form, fit, function or reliability impact. PCN 24_0234 covers PDIP (effective 2025-01-10); 24_0236 is its companion for other packages.",
       "spec_deltas": [
         {
           "parameter": "Trace code location",
@@ -258,7 +266,27 @@
         "https://www.analog.com/media/en/PCN/ADI_PCN_24_0236_Rev_-_Form.pdf"
       ],
       "confidence": "medium",
-      "verification": "PCN summaries confirm the change; LT1364 appeared alongside both PCNs. Per-part listing not read."
+      "verification": "PCN 24_0234 appendix lists LT1364CN8#PBF; LT1364 in 24_0236 not itemised."
+    },
+    {
+      "kind": "lifecycle",
+      "vendor": "Analog Devices",
+      "when": "2025 · PDN 25_0027",
+      "part_numbers_affected": [
+        "LT1364CS8",
+        "LT1363CS8",
+        "LT1363CS8#TR"
+      ],
+      "identification": "Leaded (non-#PBF) SO-8 codes only; LT1364CS8#PBF and LT1363CS8#PBF/#TRPBF are the named replacements.",
+      "summary": "Discontinuance of leaded SO-8 ordering codes; lead-free versions of the same parts continue. LT1365 not listed.",
+      "spec_deltas": [],
+      "audio_impact": "None; ordering-code change only.",
+      "compatibility_risk": "low - same part in lead-free finish.",
+      "confidence": "medium",
+      "verification": "PDN appendix lists codes and replacements; notice date not seen.",
+      "sources": [
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7121/ADI_PDN_25_0027_Rev_-_Form.pdf"
+      ]
     }
   ],
   "datasheets": [
@@ -703,6 +731,18 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Generic cover sheet; part and revision unconfirmed. Verify before use."
+    },
+    {
+      "vendor": "RadioLocman (third party)",
+      "title": "Datasheet LT1364, LT1365 (Analog Devices)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=151145",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "12 pages, ~230 KB, uploaded 2017-08; presumed 13645fa."
     }
   ],
   "product_pages": [
@@ -791,7 +831,7 @@
     "https://www.digikey.com/en/products/detail/analog-devices-inc/LT1364CN8-PBF/891887"
   ],
   "open_questions": [
-    "ADI lifecycle status (Production or NRND) of LT1363/LT1364/LT1365.",
+    "ADI lifecycle of LT1363, LT1364CN8 and LT1365 orderables; date of PDN 25_0027.",
     "Locate the 1994 originals (13645f, 1363f) in early mirrors; did Rev A change any limits? When was 1363fa printed?",
     "Graph G05: which curve is e_n and which i_n? (e_n at 10 Hz reads ~30 or ~57 nV/√Hz.)",
     "Pin each Head-Fi and Zigsow opinion to a specific post; re-confirm the AD8610 grouping.",
@@ -834,11 +874,14 @@
     "https://zigsow.jp/item/202929/review/319048",
     "https://mineden.net/opamp.html",
     "https://nw-electric.way-nifty.com/blog/2019/10/post-19bc00.html",
-    "https://www.sec.gov/Archives/edgar/data/0000006281/000119312518024527/d525969d8k.htm"
+    "https://www.sec.gov/Archives/edgar/data/0000006281/000119312518024527/d525969d8k.htm",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_22_0241_Rev_A_Form.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7121/ADI_PDN_25_0027_Rev_-_Form.pdf",
+    "https://www.analog.com/zh/products/lt1364"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 6,
+    "status": "verified-with-corrections",
+    "web_searches_used": 10,
     "claims_confirmed": [
       "ADI hosts 13645fa.pdf with footer '13645fa LT/TP 0400 2K REV A' (https://www.analog.com/media/en/technical-documentation/data-sheets/13645fa.pdf).",
       "ADI hosts LT1363 datasheet 1363fa.pdf (https://www.analog.com/media/en/technical-documentation/data-sheets/1363fa.pdf).",
@@ -849,7 +892,11 @@
       "Linear- and ADI-branded mirrors exist (https://www.radiolocman.com/datasheet/data.html?di=339539, https://www.radiolocman.com/datasheet/data.html?di=525753, https://www.alldatasheet.com/datasheet-pdf/pdf/698032/LINER/LT1364.html).",
       "Head-Fi: as quiet as OPA2134 with more transparency, less grain; OPA6x7 loses pace and rhythm (https://www.head-fi.org/threads/the-opamp-thread.432749/page-75).",
       "diyAudio: suits delta-sigma DAC filters and low-impedance headphones (https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-41).",
-      "No LT1364-specific counterfeit or die-change information found (https://www.alldatasheet.com/datasheet-pdf/pdf/698032/LINER/LT1364.html)."
+      "No LT1364-specific counterfeit or die-change information found (https://www.alldatasheet.com/datasheet-pdf/pdf/698032/LINER/LT1364.html).",
+      "PCN 24_0234 (PDIP trace code to top side, effective 2025-01-10) lists LT1364CN8#PBF (https://www.farnell.com/datasheets/4419216.pdf).",
+      "PCN 22_0241: Henkel 8290 to 8290A, from DC2242, complete by DC2317; no fit, form or function impact (https://www.analog.com/media/en/PCN/ADI_PCN_22_0241_Rev_A_Form.pdf).",
+      "PDN 25_0027 discontinues LT1364CS8, LT1363CS8, LT1363CS8#TR; #PBF codes replace them (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7121/ADI_PDN_25_0027_Rev_-_Form.pdf).",
+      "ADI product page lists LT1364CS8#PBF and #TRPBF in production (https://www.analog.com/zh/products/lt1364)."
     ],
     "refuted_claims": [
       "'No die change after ADI took over Linear' has no traceable source; not recorded as a silicon change.",
@@ -866,7 +913,9 @@
       "Added DigiKey HTML, RadioLocman, Alldatasheet, Datasheet4U, DigChip and DatasheetCatalog copies; none showed a revision letter.",
       "Added the analog.com/LT1364/datasheet short link and DigiKey/Arrow LT1364CN8#PBF listings.",
       "Output swing: added ±3.4 V into 150 Ω at ±5 V.",
-      "Akizuki product page lowered to medium confidence."
+      "Akizuki product page lowered to medium confidence.",
+      "LT1364CS8 #PBF/#TRPBF set active (ADI page); leaded LT1364CS8 and LT1363CS8/#TR added as obsolete per PDN 25_0027.",
+      "PCN 24_0234 entry now names LT1364CN8#PBF (PDIP); PCN 22_0241 rollout window DC2242–DC2317 added."
     ],
     "unverified_urls": [
       "http://cds.linear.com/docs/en/datasheet/13645fa.pdf",

@@ -150,7 +150,7 @@
     {
       "kind": "fab-or-process-transfer",
       "vendor": "Analog Devices",
-      "when": "2026 · PCN 26_0029 (date unconfirmed)",
+      "when": "2026-04-27 · PCN 26_0029",
       "part_numbers_affected": [
         "AD820",
         "AD822",
@@ -158,16 +158,18 @@
         "AD824",
         "AD8224"
       ],
-      "summary": "PCN 26_0029 lists AD820, AD822 and AD824 variants alongside the AD823 and AD8224 JFET amps. The nature of the change (fab/process, assembly, test or package) is not yet known; a family-wide PCN may mean a process or fab change.",
-      "identification": "ADI PCN 26_0029 Rev. -; the PCN should state how to tell pre- and post-change parts apart (date code or marking).",
+      "summary": "ADI qualifies its Camas, WA wafer fab for Complementary Bipolar (CB) products. Appendix A lists AD820, AD822 (ARZ, BRZ) and AD824ARZ-14 variants with AD812, AD817, OP467 and other families. Effective 30 July 2026.",
+      "identification": "Camas-fab material may ship from 30 July 2026; the PCN's qualification summary should give date-code or marking details.",
       "spec_deltas": [],
-      "audio_impact": "Unknown until the PCN text is read.",
-      "compatibility_risk": "medium: a 2026 PCN covers the whole JFET-RRO family; nature of change unconfirmed.",
-      "confidence": "low",
+      "audio_impact": "Unknown; qualification results not yet read. Same CB process, new fab site.",
+      "compatibility_risk": "medium: new wafer fab for the whole family; qualification data not yet checked.",
+      "confidence": "medium",
       "sources": [
         "https://www.farnell.com/datasheets/4778405.pdf",
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf"
-      ]
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_26_0029_Rev_-_Form.pdf"
+      ],
+      "verification": "PCN title, dates and affected-model list confirmed on analog.com; change details pending."
     }
   ],
   "datasheets": [
@@ -176,7 +178,7 @@
       "title": "Single-Supply, Rail-to-Rail Low Power FET-Input Op Amp Data Sheet AD822",
       "doc_number": "AD822",
       "revision": "J",
-      "date": "",
+      "date": "2015-09",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf",
       "url_kind": "vendor_current",
       "confidence": "high",
@@ -188,7 +190,7 @@
       "title": "AD822 (Rev. J) - Analog Devices",
       "doc_number": "AD822",
       "revision": "J",
-      "date": "",
+      "date": "2015-09",
       "url": "https://dtsheet.com/doc/1387960/ad822--rev.-j----analog-devices",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
@@ -260,7 +262,7 @@
       "title": "Single-Supply, Rail-to-Rail, Low Power, FET Input Op Amp AD820",
       "doc_number": "AD820",
       "revision": "H",
-      "date": "",
+      "date": "2011-03",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD820.pdf",
       "url_kind": "vendor_current",
       "confidence": "high",
@@ -296,7 +298,7 @@
       "title": "Datasheet AD820 Analog Devices, Revision: H",
       "doc_number": "AD820",
       "revision": "H",
-      "date": "",
+      "date": "2011-03",
       "url": "https://www.radiolocman.com/datasheet/pdf.html?di=121457",
       "url_kind": "third_party_mirror",
       "confidence": "high",
@@ -332,19 +334,19 @@
       "title": "Single Supply, Rail-to-Rail Low Power, FET-Input Op Amp Data Sheet AD824",
       "doc_number": "AD824",
       "revision": "E",
-      "date": "",
+      "date": "2015-04",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf",
       "url_kind": "vendor_current",
       "confidence": "medium",
-      "revision_status": "probable",
-      "note": "Revision letter on the vendor copy not yet confirmed."
+      "revision_status": "confirmed",
+      "note": "Current revision, Rev. E (April 2015)."
     },
     {
       "vendor": "Radiolocman",
       "title": "Datasheet AD824 Analog Devices, Revision: E",
       "doc_number": "AD824",
       "revision": "E",
-      "date": "",
+      "date": "2015-04",
       "url": "https://www.radiolocman.com/datasheet/pdf.html?di=168527",
       "url_kind": "third_party_mirror",
       "confidence": "high",
@@ -398,6 +400,150 @@
       "confidence": "medium",
       "revision_status": "unknown",
       "note": ""
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD822 datasheet",
+      "doc_number": "AD822",
+      "revision": "",
+      "date": "",
+      "url": "https://xdevs.com/doc/_Datasheets/Amplifiers/AD822.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "xdevs copy; revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD822 datasheet (Keithley 4200 documentation)",
+      "doc_number": "AD822",
+      "revision": "",
+      "date": "",
+      "url": "https://xdevs.com/doc/Keithley/4200/ad822.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Filed with Keithley 4200 docs; probably an older revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD822-EP datasheet",
+      "doc_number": "AD822-EP",
+      "revision": "",
+      "date": "",
+      "url": "https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD822-EP.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Separate enhanced-product datasheet."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD822 datasheet",
+      "doc_number": "AD822",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=168529",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Also di=121453."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD820 datasheet (Japanese)",
+      "doc_number": "AD820_JP",
+      "revision": "H",
+      "date": "2011-03",
+      "url": "https://wcm-cce.cldnet.analog.com/media/jp/technical-documentation/data-sheets/AD820_JP.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "ADI Japanese edition of Rev. H."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD820 datasheet",
+      "doc_number": "AD820",
+      "revision": "H",
+      "date": "2011-03",
+      "url": "https://www.scribd.com/document/556728599/AD820",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Scribd copy, © 2011; its G-to-H entry differs."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD820ARMZ-R7 datasheet",
+      "doc_number": "AD820",
+      "revision": "H",
+      "date": "2011-03",
+      "url": "https://www.alldatasheet.com/html-pdf/1960199/AD/AD820ARMZ-R7/71/2/AD820ARMZ-R7.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "History shows 3/11 Rev. G to Rev. H."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD820 AnaDev RRIO opamp 0.8uV 1.8MHz 5-36V",
+      "doc_number": "AD820",
+      "revision": "",
+      "date": "",
+      "url": "https://www.physics.utoronto.ca/~astummer/Archives/2008%20CATS%20-%20Cold%20Atoms%20Transfer%20System/Docs/AD820%20AnaDev,%20RRIO%20opamp%200.8uV%201.8MHz%205-36V.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Archived in 2008, so earlier than Rev. H."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD824 datasheet",
+      "doc_number": "AD824",
+      "revision": "E",
+      "date": "2015-04",
+      "url": "https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "ADI CDN copy; history shows 4/15 Rev. D to Rev. E."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD824 pdf data sheet rev. e",
+      "doc_number": "AD824",
+      "revision": "E",
+      "date": "2015-04",
+      "url": "https://dtsheet.com/doc/1845435/pdf-data-sheet-rev.-e",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "Titled Rev. E."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD824 datasheet",
+      "doc_number": "AD824",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=121429",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": ""
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD824 (Analog Devices) datasheet",
+      "doc_number": "AD824",
+      "revision": "",
+      "date": "",
+      "url": "https://www.cieri.net/Documenti/Data%20Sheets/Operational%20Amplifiers/AD824%20(Analog%20Devices).pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Personal archive copy."
     }
   ],
   "product_pages": [
@@ -409,16 +555,37 @@
     {
       "vendor": "Analog Devices",
       "doc_number": "AD822",
+      "revision": "0",
+      "date": "1993-07",
+      "changes": "Initial version."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD822",
+      "revision": "H",
+      "date": "2008-08",
+      "changes": "Changes to Features and General Description sections."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD822",
+      "revision": "I",
+      "date": "2010-01",
+      "changes": "Changes to Features and General Description sections."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD822",
       "revision": "J",
-      "date": "",
-      "changes": "Current revision; revision-history table not yet read."
+      "date": "2015-09",
+      "changes": "Current revision; changes to Figure 12."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD820",
       "revision": "H",
-      "date": "",
-      "changes": "Current revision; changes not yet read."
+      "date": "2011-03",
+      "changes": "Current revision; changes to Figure 43 per ADI Japanese edition (one copy lists added Table 5)."
     },
     {
       "vendor": "Analog Devices",
@@ -431,8 +598,15 @@
       "vendor": "Analog Devices",
       "doc_number": "AD824",
       "revision": "E",
-      "date": "",
-      "changes": "Latest revision seen (Radiolocman mirror); changes not yet read."
+      "date": "2015-04",
+      "changes": "Current revision; changed Figure 1 caption."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD824",
+      "revision": "D",
+      "date": "2014-05",
+      "changes": "Format update; removed 16-lead SOIC package; deleted dice characteristics."
     }
   ],
   "revision_chains": [
@@ -441,12 +615,32 @@
       "doc_number": "AD822",
       "known": [
         {
+          "rev": "0",
+          "date": "1993-07"
+        },
+        {
+          "rev": "H",
+          "date": "2008-08"
+        },
+        {
+          "rev": "I",
+          "date": "2010-01"
+        },
+        {
           "rev": "J",
-          "date": ""
+          "date": "2015-09"
         }
       ],
-      "missing": [],
-      "note": "Earlier revisions not located; older Farnell, Radiolocman and alldatasheet mirrors may hold some."
+      "missing": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "note": "Dates from the Rev. J history; revisions A–G not located."
     },
     {
       "vendor": "Analog Devices",
@@ -458,23 +652,40 @@
         },
         {
           "rev": "H",
-          "date": ""
+          "date": "2011-03"
         }
       ],
-      "missing": [],
-      "note": "Rev. G survives on Octopart; earlier revisions not located."
+      "missing": [
+        "0",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "note": "Rev. G survives on Octopart; ADI Japanese edition matches Rev. H."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD824",
       "known": [
         {
+          "rev": "D",
+          "date": "2014-05"
+        },
+        {
           "rev": "E",
-          "date": ""
+          "date": "2015-04"
         }
       ],
-      "missing": [],
-      "note": "Earlier revisions not located; the NRAO copy uses the older ADI layout."
+      "missing": [
+        "0",
+        "A",
+        "B",
+        "C"
+      ],
+      "note": "Rev. D dropped the 16-lead SOIC; the NRAO copy uses the older ADI layout."
     }
   ],
   "ti_literature_numbers": [],
@@ -491,10 +702,10 @@
     "https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf"
   ],
   "open_questions": [
-    "What does ADI PCN 26_0029 change, is the AD822 die affected, and what is the date-code cutover?",
+    "Do the PCN 26_0029 Camas qualification results show parameter shifts, and how are Camas-fab parts marked?",
     "What does ADI PCN 07_0024 Rev. E (lists AD822 variants) cover? Possibly the Pb-free Z-suffix transition.",
-    "Print dates and revision-history tables of AD822 Rev. J, AD820 Rev. H and AD824 Rev. E.",
-    "Which revisions do the Farnell, Octopart AD822ARZ, alldatasheet and NRAO mirrors hold?",
+    "What changed in AD822 Revs A–G, AD820 Revs 0–G and AD824 Revs 0–C?",
+    "Which revisions do the Farnell, Octopart AD822ARZ, alldatasheet, xdevs and NRAO mirrors hold?",
     "ADI lifecycle status per ordering code (e.g. AD822AN, AD824 PDIP), and AD822 noise, GBW and slew figures."
   ],
   "sources": [
@@ -511,11 +722,16 @@
     "https://arxiv.org/html/2409.13509v1",
     "https://zigsow.jp/item/322320/review/321035",
     "https://nabe.adiary.jp/opamp-speclist",
-    "https://akizukidenshi.com/catalog/g/g113753/"
+    "https://akizukidenshi.com/catalog/g/g113753/",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_26_0029_Rev_-_Form.pdf",
+    "https://xdevs.com/doc/_Datasheets/Amplifiers/AD822.pdf",
+    "https://wcm-cce.cldnet.analog.com/media/jp/technical-documentation/data-sheets/AD820_JP.pdf",
+    "https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_26_0032_Rev_-_Form.pdf"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 5,
+    "status": "verified-with-corrections",
+    "web_searches_used": 10,
     "claims_confirmed": [
       "AD822 current datasheet is Rev. J (https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf)",
       "AD822: 5–30 V single or ±2.5–±15 V, output within 10 mV of each rail (https://www.analog.com/media/en/technical-documentation/data-sheets/AD822.pdf)",
@@ -526,7 +742,12 @@
       "AD824: 500 µA/amp, 2 MHz, 2 V/µs, 2 pA bias, 3 V to ±15 V (https://www.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf)",
       "ADA4622-1/-2/-4 are the next generation of the AD820/AD822/AD824 (https://www.analog.com/en/products/ada4622-2.html)",
       "ADI PCN 26_0029 lists AD820, AD822, AD823, AD824 and AD8224 variants (https://www.farnell.com/datasheets/4778405.pdf)",
-      "ADI PCN 07_0024 Rev. E lists AD822 variants (https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf)"
+      "ADI PCN 07_0024 Rev. E lists AD822 variants (https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf)",
+      "PCN 26_0029: Camas WA wafer fab qualified for CB products; published 27 Apr 2026, effective 30 Jul 2026 (https://www.analog.com/media/en/PCN/ADI_PCN_26_0029_Rev_-_Form.pdf).",
+      "PCN 26_0029 Appendix A lists AD820ARZ, AD822ARZ, AD822BRZ and AD824ARZ-14 variants (https://www.analog.com/media/en/PCN/ADI_PCN_26_0029_Rev_-_Form.pdf).",
+      "AD822 history: 7/93 Rev. 0; 8/08 G→H; 1/10 H→I; 9/15 I→J, changes to Figure 12 (https://xdevs.com/doc/_Datasheets/Amplifiers/AD822.pdf).",
+      "AD820 history: 3/11 Rev. G to Rev. H, changes to Figure 43 (https://wcm-cce.cldnet.analog.com/media/jp/technical-documentation/data-sheets/AD820_JP.pdf).",
+      "AD824 history: 5/14 C→D removed 16-lead SOIC and dice data; 4/15 D→E Figure 1 caption (https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD824.pdf)."
     ],
     "refuted_claims": [
       "One 5–30 V range for the whole family is wrong: AD820 runs 5–36 V (±2.5–±18 V); AD824 runs 3 V to ±15 V."
@@ -536,7 +757,9 @@
       "Per-part supply, GBW, slew and supply-current figures added.",
       "Added current vendor datasheets (AD822 Rev. J, AD820 Rev. H, AD824 Rev. E probable), the AD820 Rev. G mirror and others.",
       "Added ADI PCN 26_0029 (AD820/AD822/AD823/AD824/AD8224) as a low-confidence possible change.",
-      "Added ADA4622-1/-2/-4 as ADI's stated next generation; reputation attributed to zigsow and nabe."
+      "Added ADA4622-1/-2/-4 as ADI's stated next generation; reputation attributed to zigsow and nabe.",
+      "PCN 26_0029 identified as a Camas wafer-fab qualification, dated 27 Apr 2026; confidence raised to medium.",
+      "AD824 Rev. E confirmed on the ADI copy; dates added for AD822 Rev. J (9/15), AD820 Rev. H (3/11)."
     ],
     "unverified_urls": [
       "http://www.analog.com/static/imported-files/data_sheets/AD822.pdf",

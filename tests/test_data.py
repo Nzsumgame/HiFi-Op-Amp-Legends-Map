@@ -32,7 +32,7 @@ class DataTest(unittest.TestCase):
     def test_seed_inputs(self):
         for f in FAMILIES:
             for lit in f.get("ti_literature_numbers", []):
-                self.assertRegex(lit, r"^S[A-Z]{3}\d{3}$", f["id"])
+                self.assertRegex(lit, r"^S[A-Z]{3}(?=[0-9A-Z]*\d)[0-9A-Z]{3}$", f["id"])
 
     def test_meta(self):
         meta = dataset.load_meta()

@@ -55,6 +55,12 @@
       "note": "Taped SOP-8 (-E1); -AP replaced -A after the 2024 back-end transfer."
     },
     {
+      "pn": "µPC4570GR-9LG-E2-A",
+      "channels": 2,
+      "status": "unknown",
+      "note": "TSSOP-8, −40 to 85 °C; covered by datasheet Rev. 2.00."
+    },
+    {
       "pn": "µPC4570HA",
       "channels": 2,
       "status": "unknown",
@@ -152,8 +158,8 @@
         "UPC4570G2-AP",
         "UPC4570G2-E1-AP"
       ],
-      "identification": "Orderable suffix '-AP' replaces '-A' on SOP-8 (G2), e.g. UPC4570G2-E1-A → UPC4570G2-E1-AP. Top-marking rule not known.",
-      "summary": "Renesas added (RL-BB-23-0058; samples 25 Aug 2023), then transferred (RL-BB-24-0007; published 19 Jan 2024, effective 13 May 2024) SOP back-end production. Plating and bond wire differ, outline slightly, tape box size too. Die unchanged; DIP and TSSOP not covered.",
+      "identification": "Orderable suffix '-AP' (Cu wire) or '-AX' (Au wire, high-quality) replaces '-A' on SOP-8 (G2), e.g. UPC4570G2-E1-A → UPC4570G2-E1-AP. Top-marking rule unknown.",
+      "summary": "Renesas added (RL-BB-23-0058, June 2023; samples 25 Aug 2023), then transferred (RL-BB-24-0007, 19 Jan 2024, effective 13 May 2024) SOP back-end to UTAC Thai (UTL). Cu wire for -AP, Au for -AX. EOL260002 (Feb 2026) ends select old codes. Die unchanged; DIP, TSSOP not covered.",
       "spec_deltas": [
         {
           "parameter": "Orderable suffix (SOP8)",
@@ -163,12 +169,17 @@
         {
           "parameter": "Lead plating and bond wire",
           "before": "original back-end specification",
-          "after": "different plating and wire specification. Exact materials were not captured."
+          "after": "different plating and wire specification. Exact materials were not captured. Cu wire on standard-quality -AP; Au wire on high-quality -AX codes."
         },
         {
           "parameter": "Package outline",
           "before": "original SOP8 (5.72 mm, 225 mil) outline",
           "after": "minor dimensional differences; same recommended land pattern"
+        },
+        {
+          "parameter": "Assembly site",
+          "before": "previous Renesas back-end",
+          "after": "UTAC Thai Limited (UTL), Thailand"
         }
       ],
       "audio_impact": "None expected: same die; plating or bond-wire changes have no documented electrical effect.",
@@ -177,10 +188,12 @@
         "https://www.renesas.com/en/document/pcn/addition-back-end-production-general-purpose-linear-ic-products-sop-package-products-rl-bb-23-0058",
         "https://www.renesas.com/en/document/pcn/transfer-back-end-production-general-purpose-linear-ic-products-sop-package-products-rl-bb-24-0007",
         "https://www.mouser.com/pdfDocs/RL-BB-24-0007-PCN-Standard-Linear-IC-SOP-240115d.pdf",
-        "https://www.renesas.com/en/products/upc4570/part-details/upc4570g2-e1-ap"
+        "https://www.renesas.com/en/products/upc4570/part-details/upc4570g2-e1-ap",
+        "https://renesas.com/en/document/transfer-back-end-production-general-purpose-linear-ic-products-sop-package-products-rl-bb-24-0007",
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8885/EOL260002.pdf"
       ],
       "confidence": "medium",
-      "verification": "PCN summaries and the -A to -AP mapping confirmed; Renesas -AP page live. PCN PDFs not read."
+      "verification": "PCN text confirms UTL site, -AP/-AX mapping and dates; uPC4570 rows in EOL260002 not seen."
     },
     {
       "kind": "datasheet-respec",
@@ -194,7 +207,7 @@
         "UPC4570GR-9LG-E1-A"
       ],
       "identification": "Datasheet number R03DS0135EJ (Rev. 1.00 / Rev. 2.00) versus NEC-era G10528EJ8V0DS00.",
-      "summary": "Renesas replaced the NEC datasheet with R03DS0135EJ: Rev. 1.00 (17 Jan 2019, 9 pages), Rev. 2.00 (27 Feb 2025, 11 pages). UPC258/UPC4558 also went to Rev. 2.00 that day, suggesting a family-wide update, possibly tied to -AP. No changed limits found; part still active.",
+      "summary": "Renesas replaced the NEC datasheet with R03DS0135EJ: Rev. 1.00 (17 Jan 2019, 9 pages), Rev. 2.00 (27 Feb 2025, 11 pages), covering G2 (SOP-8) and GR-9LG (TSSOP-8). UPC258/UPC4558 also went to Rev. 2.00 that day. No changed limits found.",
       "spec_deltas": [],
       "audio_impact": "Unknown; no silicon change documented and datasheet deltas not known.",
       "compatibility_risk": "low: same die as documented; check Rev. 2.00 limits before relying on NEC-era values.",
@@ -524,6 +537,28 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Index page listing NEC entries and the Renesas R03DS0135 copy."
+    },
+    {
+      "vendor": "Renesas Electronics (via chipdip)",
+      "doc_number": "R03DS0135EJ",
+      "revision": "",
+      "date": "",
+      "url": "https://static.chipdip.ru/lib/349/DOC032349395.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Renesas-era uPC4570 copy; revision not shown."
+    },
+    {
+      "vendor": "Renesas Electronics (via datasheetspdf)",
+      "doc_number": "R03DS0135EJ",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/1481590/Renesas/uPC4570G2/1",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Renesas uPC4570G2 'Dual Operational Amplifier' copy."
     }
   ],
   "product_pages": [
@@ -566,7 +601,7 @@
       "doc_number": "R03DS0135EJ0200",
       "revision": "Rev. 2.00",
       "date": "2025-02-27",
-      "changes": "Current edition, 11 pages; title changed from 'μPC4570' to 'UPC4570'. Change list not seen."
+      "changes": "Current edition, 11 pages; title changed from 'μPC4570' to 'UPC4570'. Change list not seen. Covers UPC4570G2 and UPC4570GR-9LG."
     }
   ],
   "revision_chains": [
@@ -649,10 +684,10 @@
     "https://www.zaikostore.com/jsp/pdf/PDFFILE/NEC/FIL6032625.PDF"
   ],
   "open_questions": [
-    "What changed from R03DS0135 Rev. 1.00 to Rev. 2.00? Are C (DIP) and HA (SIP) still listed?",
+    "What else changed in R03DS0135 Rev. 2.00? It lists only G2 and GR-9LG; are C and HA discontinued?",
     "Was the 2019 renumbering editorial, or tied to a fab or process change?",
     "When were NEC editions 7V0 and 8V0 printed, and which mirror holds which edition?",
-    "Confirm lifecycle per part, the ±4 to ±16 V supply range, and the -1 and -A suffix meanings.",
+    "Which uPC4570 codes are in EOL260002 (LTB 31 Mar 2026)? Confirm ±4 to ±16 V and the -1 suffix.",
     "Datasheet i_n, THD, Iq, output current, Vos, abs. max? Is unity-gain frequency near the macromodel's 7 MHz?"
   ],
   "sources": [
@@ -687,8 +722,8 @@
     "https://github.com/Jiangshan00001/easyeda_to_pads/blob/d963980383f0cec56b07889e3e317986bf5fbff1/converted/Low_Noise_OpAmps.p"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 5,
+    "status": "verified-with-corrections",
+    "web_searches_used": 8,
     "claims_confirmed": [
       "Current Renesas datasheet is R03DS0135EJ0200 Rev. 2.00, Feb.27.25, 11 pages: https://www.renesas.com/en/document/dst/upc4570-datasheet",
       "Earlier R03DS0135EJ0100 Rev. 1.00 is dated 2019.1.17: https://www.renesas.com/en/document/dst/upc4570-datasheet",
@@ -701,7 +736,10 @@
       "UPC4570C product and UPC4570C-A part pages live: https://www.renesas.com/en/products/upc4570c/part-details/upc4570c-a",
       "UPC4570G2 product page live: https://www.renesas.com/sg/en/products/analog-products/amplifiers/operational-amplifiers/general-purpose-op-amps/upc4570g2-ultra-low-noise-high-speed-wide-band-dual-operational-amplifier",
       "UPC4570G2-E1-A is orderable: https://www.ovaga.com/files/uploads/datasheets/9084f03e-30d2-4009-aa39-0d81903ea817.pdf",
-      "DigiKey Marketplace lists UPC4570C-A via Rochester: https://www.digikey.com/en/products/detail/rochester-electronics-llc/UPC4570C-A/12130950"
+      "DigiKey Marketplace lists UPC4570C-A via Rochester: https://www.digikey.com/en/products/detail/rochester-electronics-llc/UPC4570C-A/12130950",
+      "RL-BB-24-0007: SOP back-end moved to UTAC Thai (UTL); -AP Cu-wire and -AX Au-wire codes; effective 13 May 2024: https://renesas.com/en/document/transfer-back-end-production-general-purpose-linear-ic-products-sop-package-products-rl-bb-24-0007",
+      "EOL260002 (1 Feb 2026) ends select codes after RL-BB-24-0007; LTB 31 Mar 2026, obsolete 31 Jul 2026: https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8885/EOL260002.pdf",
+      "R03DS0135EJ0200 Rev. 2.00, 27 Feb 2025, 11 pages, covers UPC4570G2 and UPC4570GR-9LG: https://renesas.com/en/document/dst/upc4570-datasheet"
     ],
     "refuted_claims": [
       "Renesas did issue a new datasheet number: R03DS0135 (Rev. 1.00 2019-01-17, Rev. 2.00 Feb.27.25).",
@@ -719,7 +757,8 @@
       "Added UPC4570C-A and UPC4570G2-E1-A; package sizes confirmed (DIP-8 7.62 mm, SOP-8 5.72 mm, SIP-9).",
       "Added Renesas UPC4570C and UPC4570G2 pages and DigiKey/Rochester listing.",
       "Added mirrors: Reichelt, alldatasheet, Verical, Ovaga, datasheet4u, datasheetcatalog, Scribd, datasheetq.",
-      "Suzusho mirror and Renesas ja op-amp information document downgraded to low confidence."
+      "Suzusho mirror and Renesas ja op-amp information document downgraded to low confidence.",
+      "Added UTAC Thai assembly site, -AX Au-wire codes and EOL260002 to the back-end change; added µPC4570GR-9LG (TSSOP-8): https://renesas.com/en/document/transfer-back-end-production-general-purpose-linear-ic-products-sop-package-products-rl-bb-24-0007"
     ],
     "unverified_urls": [
       "https://suzushoweb.com/pdf_file/4d7de03535611.pdf",

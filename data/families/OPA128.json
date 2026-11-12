@@ -232,7 +232,7 @@
       "also_urls": [
         "https://www.radiolocman.com/datasheet/pdf.html?di=83971"
       ],
-      "note": "Radiolocman TI copy; revision not shown."
+      "note": "TI copy, 11 pages; file published 2000-09-27."
     },
     {
       "vendor": "Burr-Brown",
@@ -245,10 +245,105 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Burr-Brown copy; may be a pre-TI revision."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "1988 Burr-Brown Integrated Circuits Data Book Supplement (OPA128 p. 1-73)",
+      "doc_number": "PDS-653",
+      "revision": "",
+      "date": "1987-07",
+      "url": "https://ftp.mirrorservice.org/sites/www.bitsavers.org/components/burrBrown/_dataBooks/1988_Burr-Brown_Integrated_Circuits_Data_Book_Supplement.pdf",
+      "url_kind": "archive",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Supplement dated July 1987; earliest OPA128 printing found."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "Difet Electrometer-Grade OPERATIONAL AMPLIFIER OPA128",
+      "doc_number": "PDS-653",
+      "revision": "PDS-653E",
+      "date": "1995-05",
+      "url": "https://www.electro-tech-online.com/custompdfs/2011/03/opa128.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Footer '©1986 Burr-Brown PDS-653E, May 1995'."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "Datasheet OPA128SM, OPA128LM, OPA128KM, OPA128JM (manualmachine #4168028)",
+      "doc_number": "PDS-653",
+      "revision": "PDS-653E",
+      "date": "1995-05",
+      "url": "https://manualmachine.com/datasheet/opa128km/4168028-datasheet-burr-brown",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Reported as a PDS-653E copy.",
+      "also_urls": [
+        "https://manualmachine.com/burrbrown/opa128jm/4168030-datasheet",
+        "https://manualmachine.com/burrbrown/opa128sm/4167989-datasheet/"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA128 - sbos148 (electronix.org.ru)",
+      "doc_number": "SBOS148 / PDS-653E",
+      "revision": "PDS-653E",
+      "date": "1995-05",
+      "url": "https://electronix.org.ru/datasheet/Burr-Brown/OPA128%20-%20sbos148.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "TI SBOS148 wrapper over PDS-653E content."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA128 datasheet (Nikhef copy)",
+      "doc_number": "PDS-653",
+      "revision": "",
+      "date": "",
+      "url": "https://www.nikhef.nl/~jo/virgo/gw/LA/FE/FE%20first-stage%20Amplifiers/OPA128.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Research-group copy; revision not shown."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA128KM datasheet (mikrocontroller.net)",
+      "doc_number": "PDS-653",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mikrocontroller.net/attachment/30117/OPA128KM.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Forum attachment; revision not shown."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA128LM datasheet (100y.com.tw)",
+      "doc_number": "PDS-653",
+      "revision": "",
+      "date": "",
+      "url": "https://www.100y.com.tw/pdf_file/OPA128LM.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Distributor copy; revision not shown."
     }
   ],
   "product_pages": [],
   "revision_history": [
+    {
+      "vendor": "Burr-Brown",
+      "doc_number": "PDS-653",
+      "revision": "original",
+      "date": "1986",
+      "changes": "Copyright year of the sheet; OPA128 appears in the July 1987 data book supplement, page 1-73."
+    },
     {
       "vendor": "Burr-Brown",
       "doc_number": "PDS-653",
@@ -260,8 +355,8 @@
       "vendor": "Texas Instruments",
       "doc_number": "SBOS148",
       "revision": "original",
-      "date": "",
-      "changes": "Post-2000 TI re-issue (date unconfirmed); appears to carry PDS-653E (May 1995) content unchanged."
+      "date": "2000-09",
+      "changes": "TI re-issue; a TI copy was published 2000-09-27 (11 pages). Carries PDS-653E (May 1995) content unchanged."
     }
   ],
   "revision_chains": [
@@ -269,6 +364,10 @@
       "vendor": "Burr-Brown",
       "doc_number": "PDS-653",
       "known": [
+        {
+          "rev": "original",
+          "date": "1986"
+        },
         {
           "rev": "E",
           "date": "1995-05"
@@ -280,7 +379,7 @@
         "C",
         "D"
       ],
-      "note": "Rev E is the last Burr-Brown printing; earlier letters implied but not located."
+      "note": "Original from © 1986 and the 1987 supplement (probable). Letters A–D implied, not located."
     },
     {
       "vendor": "Texas Instruments",
@@ -288,11 +387,11 @@
       "known": [
         {
           "rev": "original",
-          "date": ""
+          "date": "2000-09"
         }
       ],
       "missing": [],
-      "note": "No revision letter seen; whether an SBOS148A exists is unknown."
+      "note": "TI copy published 2000-09-27; no SBOS148A seen."
     }
   ],
   "ti_literature_numbers": [
@@ -304,8 +403,8 @@
     "https://www.ti.com/product/OPA128"
   ],
   "open_questions": [
-    "Dates and content of Burr-Brown PDS-653 revisions A–D.",
-    "Exact TI issue date of SBOS148; did TI ever issue SBOS148A?",
+    "Dates and content of PDS-653 revisions A–D; does the 1989 Burr-Brown data book hold one?",
+    "Did TI ever issue SBOS148A after the September 2000 release?",
     "Per-grade (JM/KM/LM/SM) limits for bias current, offset and drift.",
     "Voltage and current noise density figures.",
     "Did a separate OPA128SM/883B ordering code exist? Is the die unchanged through the TI era?"
@@ -322,11 +421,15 @@
     "https://blog.csdn.net/helongfu/article/details/46286715",
     "https://www.kechuang.org/t/53064",
     "http://bbs.erji.net/forum.php?mod=viewthread&tid=2224333",
-    "https://shop.rfid-life.com/products/opa128-110db-gain-high-impedance-electrometer-amplifier-ultra-low-bias-current-op-amp-charge-amplifier"
+    "https://shop.rfid-life.com/products/opa128-110db-gain-high-impedance-electrometer-amplifier-ultra-low-bias-current-op-amp-charge-amplifier",
+    "https://www.electro-tech-online.com/custompdfs/2011/03/opa128.pdf",
+    "https://ftp.mirrorservice.org/sites/www.bitsavers.org/components/burrBrown/_dataBooks/1988_Burr-Brown_Integrated_Circuits_Data_Book_Supplement.pdf",
+    "https://bitsavers.org/components/burrBrown/_dataBooks",
+    "https://www.radiolocman.com/datasheet/data.html?di=82575"
   ],
   "verification": {
     "status": "verified-with-corrections",
-    "web_searches_used": 5,
+    "web_searches_used": 9,
     "claims_confirmed": [
       "TI literature number is SBOS148 (https://www.radiolocman.com/datasheet/pdf.html?di=83971, https://www.alldatasheet.com/datasheet-pdf/pdf/56727/BURR-BROWN/OPA128.html).",
       "Datasheet copy is Burr-Brown PDS-653E, May 1995 (https://www.mouser.com/datasheet/2/405/opa128-445402.pdf).",
@@ -334,7 +437,10 @@
       "GBW 1 MHz, slew rate 3 V/µs (https://edg.uchicago.edu/~tang/SNFactory/opa128.pdf).",
       "OPA128JM end of life, last-time buy 2020-05-14 (https://www.digikey.com/product-detail/en/texas-instruments/OPA128JM/OPA128JM-ND/301117).",
       "OPA128SM obsolete; variants listed NRND/discontinued (https://www.digikey.com/en/products/detail/texas-instruments/OPA128SM/301120, https://octopart.com/opa128sm-texas+instruments-420293).",
-      "OPA129 is a related part, compared on TI E2E (https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/712204/opa129-differences-from-opa128)."
+      "OPA129 is a related part, compared on TI E2E (https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/712204/opa129-differences-from-opa128).",
+      "PDS-653E copies read '©1986 Burr-Brown Corporation PDS-653E Printed in U.S.A. May, 1995' (https://www.electro-tech-online.com/custompdfs/2011/03/opa128.pdf).",
+      "TI-hosted OPA128 copy: 11 pages, file published Sep 27, 2000 (https://www.radiolocman.com/datasheet/pdf.html?di=83971).",
+      "OPA128 indexed at page 1-73 of Burr-Brown's 1988 Data Book Supplement, dated July 1987 (https://ftp.mirrorservice.org/sites/www.bitsavers.org/components/burrBrown/_dataBooks/1988_Burr-Brown_Integrated_Circuits_Data_Book_Supplement.pdf)."
     ],
     "refuted_claims": [],
     "corrections": [

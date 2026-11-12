@@ -176,7 +176,7 @@ def lineage_line(fam: dict) -> str:
 
 def doc_key(d: dict) -> tuple[str, str]:
     doc = (d.get("doc_number") or "").strip()
-    m = re.match(r"(S[A-Z]{3}\d{3})", doc)
+    m = re.match(r"(S[A-Z]{3}(?=[0-9A-Z]*\d)[0-9A-Z]{3})", doc)
     if m:
         doc = m.group(1)  # TI literature numbers group across revision letters
     return (d.get("vendor") or "").strip(), doc

@@ -58,7 +58,7 @@
     {
       "parameter": "Input noise (1 kHz)",
       "value": "6 nV/√Hz typ",
-      "condition": "frequency not seen (believed 1 kHz)",
+      "condition": "f = 1 kHz",
       "source": "AD8610/AD8620 datasheet"
     },
     {
@@ -69,15 +69,15 @@
     },
     {
       "parameter": "Slew rate",
-      "value": "60 V/µs typ (a parts DB says 50 V/µs)",
-      "condition": "test supply not seen",
-      "source": "AD8610/AD8620 datasheet"
+      "value": "60 V/µs typ, 40 V/µs min (a parts DB says 50)",
+      "condition": "RL = 2 kΩ",
+      "source": "Datasheet Rev. D"
     },
     {
       "parameter": "Supply range",
-      "value": "±5 V to ±13 V (abs max 27.3 V or ~27 V total)",
+      "value": "±5 V to ±13 V (abs max 27.3 V total)",
       "condition": "fully specified range",
-      "source": "Datasheet; Tangentsoft"
+      "source": "Datasheet Rev. D"
     },
     {
       "parameter": "Output current",
@@ -124,7 +124,7 @@
       "Precision instrumentation and photodiode amps"
     ],
     "caveats": [
-      "Specified only ±5 to ±13 V (abs max ~27 V total); not a drop-in for ±15 V rails.",
+      "Specified only ±5 to ±13 V (abs max 27.3 V total); not a drop-in for ±15 V rails.",
       "SOIC/MSOP only (dual SOIC only); DIP sockets need an adapter.",
       "±30 mA output; low-impedance headphones usually need a buffer (BUF634 in the Topping NX5).",
       "Tangentsoft advises against aggressive or bright systems. No ASR or Samuel Groner THD+N data found.",
@@ -168,10 +168,10 @@
         "AD8610ARZ-REEL7",
         "AD8610BRZ",
         "AD8620ARZ",
-        "other AD8610/AD8620 orderables (full list not read)"
+        "other AD8610/AD8620 reel variants (Appendix A)"
       ],
       "identification": "Not visible in the marking. Trace by ADI date code or lot against the PCN effective date.",
-      "summary": "ADI PCN 26_0028 qualifies its Limerick, Ireland fab (ADLK) for XF26/XF18/XF12/XF8 process products, leveraging an existing qualified process for supply continuity. AD8610 and AD8620 orderables are reportedly listed. Same die and part numbers; whether this is a move or an added fab is unknown.",
+      "summary": "ADI PCN 26_0028, 'Qualification of ADI Limerick Wafer Fab XF26, XF18, XF12, XF8 Processes', lists AD8610/AD8610ARZ and AD8620/AD8620ARZ with reel variants in Appendix A. Same die and part numbers; whether this is a move or an added fab is unknown.",
       "spec_deltas": [
         {
           "parameter": "Wafer fab site",
@@ -183,10 +183,11 @@
       "compatibility_risk": "low – same part numbers and datasheet; only lot provenance changes.",
       "sources": [
         "https://www.mouser.com/PCN/ADI_ADI_PCN_26_0028_Rev___Form.pdf",
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8899/ADI_PCN_26_0028_Rev_-_Form.pdf"
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8899/ADI_PCN_26_0028_Rev_-_Form.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_26_0028_Rev_-_Form.pdf"
       ],
-      "confidence": "medium",
-      "verification": "PCN scope confirmed; AD8610ARZ-REEL7, AD8610BRZ, AD8620ARZ reportedly listed. A conflicting 28 Sep 2025 effective date was discarded."
+      "confidence": "high",
+      "verification": "ADI PCN form: title and Appendix A list AD8610ARZ, AD8620ARZ; effective date not seen."
     },
     {
       "kind": "package-or-assembly",
@@ -295,12 +296,12 @@
       "title": "AD8610/AD8620: Precision, Very Low Noise, Low Input Bias Current, Wide Bandwidth JFET Operational Amplifiers",
       "doc_number": "AD8610/AD8620 (ADI uses no literature number)",
       "revision": "F",
-      "date": "2009",
+      "date": "2008-05",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf",
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Combined single/dual datasheet; lowercase file name also indexed. Used by KiCad.",
+      "note": "Combined single/dual datasheet; Rev. F dated 5/08. Used by KiCad.",
       "also_urls": [
         "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8610_8620.pdf"
       ]
@@ -337,7 +338,7 @@
       "title": "Datasheet AD8610, AD8620 Analog Devices, Revision: F",
       "doc_number": "AD8610/AD8620 (RadioLocman di=121341)",
       "revision": "F",
-      "date": "2009",
+      "date": "2008-05",
       "url": "https://www.radiolocman.com/datasheet/pdf.html?di=121341&p=19",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
@@ -493,6 +494,54 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Filed under the dual part number."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8610/AD8620 data sheet (ADI CDN copy)",
+      "doc_number": "AD8610/AD8620",
+      "revision": "F",
+      "revision_status": "confirmed",
+      "date": "2008-05",
+      "url": "https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "note": "Marked Rev. F; revision table '5/08—Rev. E to Rev. F'."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8610/AD8620 data sheet Rev. F (dtsheet)",
+      "doc_number": "AD8610/AD8620",
+      "revision": "F",
+      "revision_status": "probable",
+      "date": "2008-05",
+      "url": "https://dtsheet.com/doc/1843336/pdf-data-sheet-rev.-f",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "note": "Titled 'Rev. F'; content not read."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8610ARZ datasheet page 2 (revision history)",
+      "doc_number": "AD8610/AD8620",
+      "revision": "",
+      "revision_status": "unknown",
+      "date": "",
+      "url": "https://html.alldatasheet.net/html-pdf/225369/AD/AD8610ARZ/58/2/AD8610ARZ.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "note": "Shows '5/02—Rev. A to Rev. B' and '11/06—Rev. D to E'."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD8610ARM-R2 datasheet page 2 (revision history)",
+      "doc_number": "AD8610/AD8620",
+      "revision": "",
+      "revision_status": "unknown",
+      "date": "",
+      "url": "https://www.alldatasheet.com/html-pdf/225373/AD/AD8610ARM-R2/64/2/AD8610ARM-R2.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "note": "Dates Rev. D to E as 1/06, conflicting with 11/06."
     }
   ],
   "product_pages": [
@@ -511,6 +560,13 @@
     {
       "vendor": "Analog Devices",
       "doc_number": "AD8610/AD8620",
+      "revision": "B",
+      "date": "2002-05",
+      "changes": "'5/02—Rev. A to Rev. B' in the revision table (alldatasheet copy). Changes not seen."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD8610/AD8620",
       "revision": "D",
       "date": "",
       "changes": "Old 'REV. D' footer style. Frozen copies at aichiplink, DatasheetQ and datasheet.su. Changes not seen."
@@ -519,15 +575,15 @@
       "vendor": "Analog Devices",
       "doc_number": "AD8610/AD8620",
       "revision": "E",
-      "date": "",
-      "changes": "Presumed because Rev. F follows; no copy or date found."
+      "date": "2006",
+      "changes": "Rev. D to E dated 11/06 in one copy, 1/06 in another. Changes not seen."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD8610/AD8620",
       "revision": "F",
-      "date": "2009",
-      "changes": "Newest letter found, reported as 02/10/2009 (RadioLocman, ADI product page). Changes not seen; no Rev. G found."
+      "date": "2008-05",
+      "changes": "Newest letter; '5/08—Rev. E to Rev. F', changes to Figure 17. Earlier 02/10/2009 report likely a file date. No Rev. G found."
     }
   ],
   "revision_chains": [
@@ -540,21 +596,27 @@
           "date": "2001"
         },
         {
+          "rev": "B",
+          "date": "2002-05"
+        },
+        {
           "rev": "D",
           "date": ""
         },
         {
+          "rev": "E",
+          "date": "2006"
+        },
+        {
           "rev": "F",
-          "date": "2009"
+          "date": "2008-05"
         }
       ],
       "missing": [
         "A",
-        "B",
-        "C",
-        "E"
+        "C"
       ],
-      "note": "Original only inferred from the copyright line. Check Alldatasheet 102945, DigChip and Wayback for pre-D editions."
+      "note": "Rev. F (5/08) still current in 2026. Rev. E date conflicts (1/06 vs 11/06). Check Alldatasheet 102945, DigChip, Wayback."
     }
   ],
   "ti_literature_numbers": [],
@@ -574,9 +636,9 @@
     "https://www.analog.com/static/imported-files/data_sheets/ad8610_8620.pdf"
   ],
   "open_questions": [
-    "Is Rev. F (2009) still current? What changed from Rev. D to F, and when were A–C issued?",
+    "What changed from Rev. D to F? When were A, C, D issued? Rev. E: 1/06 or 11/06?",
     "Which XF process do these parts use, and which orderables does PDN 10_0081 Rev. B discontinue?",
-    "Abs max 27.3 V or 27 V? At what supply is 60 V/µs specified? Confirm e_n frequency, i_n, Iq, THD+N.",
+    "Which revision gives 50 V/µs slew? Confirm i_n, Iq and THD+N.",
     "Was there a separate single-channel AD8610 datasheet first? Does ADI call the trim DigiTrim? Confirm offset-null pins.",
     "Independent measurements (ASR, Samuel Groner) wanted; Head-Fi, Leckerton, diyAudio and Zigsow claims need re-reading."
   ],
@@ -615,8 +677,8 @@
     "https://static.chipdip.ru/lib/150/DOC000150035.pdf"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 6,
+    "status": "verified-with-corrections",
+    "web_searches_used": 10,
     "claims_confirmed": [
       "ADI datasheet URL exists (AD8610_8620.pdf and lowercase): https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf",
       "Legacy path indexed: https://www.analog.com/static/imported-files/data_sheets/ad8610_8620.pdf",
@@ -629,7 +691,11 @@
       "PCN 07_0024 Rev. E (mold compound/die-attach after Sumitomo discontinuation) lists AD8610/AD8620 variants: https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf",
       "PCN 26_0028 qualifies an ADI Ireland fab for XF26/XF18/XF12/XF8 products, returned for AD8610/AD8620: https://www.mouser.com/PCN/ADI_ADI_PCN_26_0028_Rev___Form.pdf",
       "PDN 10_0081 Rev. B discontinues AD8610/AD8620 variants with lead-free replacements: https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf",
-      "PCN 10_0004 (2010-11-23) and PCN 21_0001 (2021-03-22) list AD8610/AD8620 variants: https://www.analog.com/media/en/pcn/ADI_PCN_10_0004_Rev_-_Form.pdf, https://www.analog.com/media/en/PCN/ADI_PCN_21_0001_Rev_-_Form.pdf"
+      "PCN 10_0004 (2010-11-23) and PCN 21_0001 (2021-03-22) list AD8610/AD8620 variants: https://www.analog.com/media/en/pcn/ADI_PCN_10_0004_Rev_-_Form.pdf, https://www.analog.com/media/en/PCN/ADI_PCN_21_0001_Rev_-_Form.pdf",
+      "ADI data sheet is Rev. F; revision table '5/08—Rev. E to Rev. F' (Figure 17 changed); no Rev. G found: https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf",
+      "Revision table shows '5/02—Rev. A to Rev. B' and '11/06—Rev. D to Rev. E' (another copy says 1/06): https://html.alldatasheet.net/html-pdf/225369/AD/AD8610ARZ/58/2/AD8610ARZ.html , https://www.alldatasheet.com/html-pdf/225373/AD/AD8610ARM-R2/64/2/AD8610ARM-R2.html",
+      "PCN 26_0028 'Qualification of ADI Limerick Wafer Fab XF26, XF18, XF12, XF8 Processes' lists AD8610ARZ and AD8620ARZ in Appendix A: https://www.analog.com/media/en/PCN/ADI_PCN_26_0028_Rev_-_Form.pdf",
+      "Rev. D: abs max supply 27.3 V; slew 60 V/µs typ, 40 min (RL 2 kΩ); e_n 6 nV/√Hz at 1 kHz: https://dtsheet.com/model/713959"
     ],
     "refuted_claims": [
       "No ADI PCNs found: refuted; PCN 07_0024 Rev. E, PCN 10_0004, PCN 17_0079, PCN 21_0001, PCN 26_0028 and PDN 10_0081 Rev. B list AD8610/AD8620 variants.",
@@ -644,7 +710,10 @@
       "Added PCN 07_0024 Rev. E, PCN 26_0028 and the PCN 10_0004 / 17_0079 / 21_0001 change entries.",
       "Leaded AR/BR/ARM orderables linked to PDN 10_0081 Rev. B; exact list not seen.",
       "Added ~3 pA bias current and capacitive-load stability; −40 to +125 °C confirmed by Newark.",
-      "Abs max 27.3 V (Tangentsoft) vs ~27 V conflict noted, not resolved."
+      "Abs max 27.3 V (Tangentsoft) vs ~27 V conflict noted, not resolved.",
+      "Rev. F date corrected from 2009 to 2008-05 per the revision table; 02/10/2009 was likely a file date: https://wcm-cce.cldnet.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf",
+      "Abs max settled at 27.3 V (Rev. D copies), not ~27 V; noise frequency confirmed as 1 kHz: https://dtsheet.com/model/713959",
+      "PCN 26_0028 listing of AD8610/AD8620 confirmed on the ADI form; confidence raised to high: https://www.analog.com/media/en/PCN/ADI_PCN_26_0028_Rev_-_Form.pdf"
     ],
     "unverified_urls": [
       "https://www.head-fi.org/threads/ad-8620-is-here-and-sounding-wounderfull.12489/",

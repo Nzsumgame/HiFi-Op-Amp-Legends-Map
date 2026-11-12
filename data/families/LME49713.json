@@ -203,19 +203,19 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "unknown",
-      "note": "National format, dated May 21, 2010; TI letter probably D or E."
+      "note": "National format, dated May 21, 2010; letter probably D."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LME49713 High Performance, High Fidelity Current Feedback Audio Operational Amplifier (June 2, 2010)",
       "doc_number": "SNAS386",
-      "revision": "",
+      "revision": "E",
       "date": "2010-06-02",
       "url": "https://datasheet.octopart.com/LME49713HA-National-Semiconductor-datasheet-15941891.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "Last National-format revision, June 2, 2010; reportedly SNAS386E."
+      "revision_status": "probable",
+      "note": "Last National-format revision, June 2, 2010; same date as SNAS386E copies."
     },
     {
       "vendor": "National Semiconductor",
@@ -290,7 +290,10 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "National-branded copy; date not seen."
+      "note": "National-branded copy; date not seen.",
+      "also_urls": [
+        "https://www.rlocman.es/datasheet/data.html?di=77688"
+      ]
     },
     {
       "vendor": "various",
@@ -303,6 +306,105 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Index page that may hold several revisions."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49713 High Performance, High Fidelity Current Feedback Audio Operational Amplifier (June 2, 2010)",
+      "doc_number": "SNAS386",
+      "revision": "E",
+      "date": "2010-06-02",
+      "url": "https://dtsheet.com/model/2273590",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Shows 'Literature Number: SNAS386E', dated June 2, 2010."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49713 High Performance, High Fidelity Current Feedback Audio Operational Amplifier (June 2, 2010)",
+      "doc_number": "SNAS386",
+      "revision": "E",
+      "date": "2010-06-02",
+      "url": "https://allchip.ru/content/pdfs/289/9254350.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "National document 202132, June 2, 2010, SNAS386E."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49713 High Performance, High Fidelity Current Feedback Audio Operational Amplifier (2008)",
+      "doc_number": "SNAS386",
+      "revision": "",
+      "date": "2008",
+      "url": "https://dtsheet.com/doc/227042/nsc-lme49713",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "National copy, © 2008; reportedly dated January 29, 2008."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49713 High Performance, High Fidelity Current Feedback Audio Operational Amplifier (Digi-Key media mirror) - SNAS386F",
+      "doc_number": "SNAS386",
+      "revision": "F",
+      "date": "2013-03",
+      "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2104/LME49713.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "SNAS386F, September 2007, revised March 2013."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49713HA/NOPB datasheet (dtsheet)",
+      "doc_number": "SNAS386",
+      "revision": "F",
+      "date": "2013-03",
+      "url": "https://dtsheet.com/model/4344995",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "TI copy: September 2007, revised March 2013."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49713 datasheet (dtsheet doc 2722407)",
+      "doc_number": "SNAS386",
+      "revision": "",
+      "date": "",
+      "url": "https://dtsheet.com/doc/2722407/ti1-lme49713-high-performance--high-fidelity-current-feed...",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "TI-branded copy; revision not shown."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49713MABD datasheet (elcodis)",
+      "doc_number": "SNAS386",
+      "revision": "",
+      "date": "",
+      "url": "https://ru.elcodis.com/parts/840110/LME49713MABD_dt645190.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "National-branded copy; date not seen.",
+      "also_urls": [
+        "https://ru.elcodis.com/parts/840110/LME49713MABD_p10.html"
+      ]
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LME49713MA/NOPB datasheet (elcodis)",
+      "doc_number": "SNAS386",
+      "revision": "",
+      "date": "",
+      "url": "https://ru.elcodis.com/parts/1322189/LME49713MANOPB_p3.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "National-branded copy; date not seen."
     }
   ],
   "product_pages": [
@@ -319,16 +421,23 @@
     {
       "vendor": "National Semiconductor",
       "doc_number": "SNAS386",
-      "revision": "National 2010-05-21",
-      "date": "2010-05-21",
-      "changes": "National-format update (Farnell copy). Letter and change list unknown."
+      "revision": "National 2008",
+      "date": "2008",
+      "changes": "National-format copy (document 202132), © 2008, reportedly dated January 29, 2008. Letter unknown."
     },
     {
       "vendor": "National Semiconductor",
       "doc_number": "SNAS386",
-      "revision": "National 2010-06-02",
+      "revision": "National 2010-05-21",
+      "date": "2010-05-21",
+      "changes": "National-format update (Farnell copy). Probably D, as it precedes E by twelve days; change list unknown."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "doc_number": "SNAS386",
+      "revision": "E",
       "date": "2010-06-02",
-      "changes": "Last National-format revision (Octopart copy), possibly E. Change list unknown."
+      "changes": "Last National-format revision; copies show 'Literature Number: SNAS386E'. Change list unknown."
     },
     {
       "vendor": "Texas Instruments",
@@ -348,11 +457,15 @@
           "date": "2007-09"
         },
         {
-          "rev": "National dated (D or E?)",
+          "rev": "National 2008",
+          "date": "2008"
+        },
+        {
+          "rev": "D? (National, dated)",
           "date": "2010-05-21"
         },
         {
-          "rev": "National dated (E?)",
+          "rev": "E",
           "date": "2010-06-02"
         },
         {
@@ -364,10 +477,9 @@
         "A",
         "B",
         "C",
-        "D",
-        "E"
+        "D"
       ],
-      "note": "National printed dates, not letters; mapping of letters A–E to dated copies is unconfirmed."
+      "note": "National document 202132 copies carry dates; June 2, 2010 is SNAS386E. Letters A–D unmapped."
     }
   ],
   "ti_literature_numbers": [
@@ -385,7 +497,7 @@
     "https://www.ti.com/product/LME49713"
   ],
   "open_questions": [
-    "How do TI letters A–E map to National's dated versions? Is the June 2, 2010 copy SNAS386E?",
+    "Which TI letters (A–D) match the 2007, 2008 and May 21, 2010 National copies?",
     "What does the SNAS386F revision-history table list?",
     "TI's own status (Obsolete or NRND) and PDN number; distributors show obsolete, last-time buy 2017-11-02.",
     "Any die change or PCN? None found, presumably because the part was discontinued.",
@@ -409,7 +521,7 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
-    "web_searches_used": 8,
+    "web_searches_used": 12,
     "claims_confirmed": [
       "TI datasheet is SNAS386F, 'SEPTEMBER 2007–REVISED MARCH 2013' (https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/LME49713.pdf; https://www.mouser.com/ds/2/282/lme49713-224065.pdf).",
       "Farnell copy is the National-format datasheet dated May 21, 2010 (https://www.farnell.com/datasheets/577866.pdf).",
@@ -420,7 +532,11 @@
       "LME49713MA/NOPB obsolete; LME49713MAX/NOPB is the alternate packaging (https://www.digikey.com/en/products/detail/texas-instruments/LME49713MA-NOPB/1836036).",
       "Head-Fi thread 'LME49713, could be a killer opamp' exists (https://www.head-fi.org/threads/lme49713-could-be-a-killer-opamp.267524/).",
       "diyAudio user: ran hot or oscillated in Sony CDP-557ESD NE5534 sockets; AD844 worked (https://www.diyaudio.com/community/threads/lme49713-opamp-problem.151403/).",
-      "Forum: SO-8 single only, so NE5532 DIP sockets need adapters; no capacitor across the feedback resistor (https://www.diyaudio.com/forums/analog-line-level/330762-lme49713.html)."
+      "Forum: SO-8 single only, so NE5532 DIP sockets need adapters; no capacitor across the feedback resistor (https://www.diyaudio.com/forums/analog-line-level/330762-lme49713.html).",
+      "June 2, 2010 National copy carries 'Literature Number: SNAS386E': https://dtsheet.com/model/2273590; https://allchip.ru/content/pdfs/289/9254350.pdf",
+      "National document number is 202132; one copy carries © 2008: https://allchip.ru/content/pdfs/289/9254350.pdf; https://dtsheet.com/doc/227042/nsc-lme49713",
+      "Digi-Key also hosts SNAS386F (revised March 2013): https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2104/LME49713.pdf",
+      "2010 ordering information lists SOIC (M08A) and metal can (H08C): https://dtsheet.com/model/2273590"
     ],
     "refuted_claims": [],
     "corrections": [

@@ -41,7 +41,7 @@
       "pn": "HA2-2600-2",
       "channels": 1,
       "status": "unknown",
-      "note": "HA-2600 orderable, -2 temperature grade; listed on a Renesas part-details page."
+      "note": "HA-2600, -2 grade. Octopart shows LTB 2018-04-30, LTD 2018-10-30; distributor says 'Active Decline'."
     },
     {
       "pn": "HA-2602",
@@ -196,13 +196,13 @@
       "vendor": "Renesas (Intersil)",
       "title": "HA-2620, HA-2625 100MHz, High Input Impedance, Very Wideband, Uncompensated Operational Amplifiers",
       "doc_number": "FN2903",
-      "revision": "",
-      "date": "",
+      "revision": "Rev. 9.00",
+      "date": "2019-03-21",
       "url": "https://www.renesas.com/en/document/dst/ha-2620-datasheet",
       "url_kind": "vendor_current",
       "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "Current sheet; HA-2622 not in title. Latest revision unknown (FN2903.6 confirmed)."
+      "revision_status": "probable",
+      "note": "Renesas HA-2620 sheet reported as FN2903 Rev. 9.00; HA-2622 absent."
     },
     {
       "vendor": "Intersil (via Rochester Electronics / Octopart)",
@@ -539,6 +539,51 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "/883 part page; may carry the HA-2600/883 and HA-2602/883 sheet."
+    },
+    {
+      "vendor": "Renesas (Intersil)",
+      "title": "HA-2620 datasheet",
+      "doc_number": "FN2903",
+      "revision": "Rev. 9.00",
+      "date": "2019-03-21",
+      "url": "https://www.renesas.cn/document/dst/ha-2620-datasheet",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Renesas China host; FN2903 Rev. 9.00, March 2019."
+    },
+    {
+      "vendor": "Intersil (via elecfans)",
+      "doc_number": "FN2903",
+      "revision": "Rev. 8.00",
+      "date": "2006-01-16",
+      "url": "https://pdf.elecfans.com/INTERSIL/HA-2620_06.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "'HA-2620_06' copy; likely the 2006 Rev. 8.00 edition."
+    },
+    {
+      "vendor": "Intersil (via datasheetspdf)",
+      "doc_number": "FN2903",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/905896/Intersil/HA2625/1",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "'100MHz High Input Impedance Amplifiers'; revision not shown."
+    },
+    {
+      "vendor": "Intersil (via ManualMachine)",
+      "doc_number": "FN2903",
+      "revision": "",
+      "date": "",
+      "url": "https://manualmachine.com/intersil/ha2625/4059487-datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "HA-2620, HA-2625 copy; revision not shown."
     }
   ],
   "product_pages": [
@@ -599,9 +644,16 @@
     {
       "vendor": "Intersil / Renesas",
       "doc_number": "FN2903",
-      "revision": "later than .6 (possibly)",
-      "date": "",
-      "changes": "Later 'DATASHEET'-template HA-2620, HA-2625 edition (Sekorm copy). Revision and changes unconfirmed."
+      "revision": "Rev. 8.00",
+      "date": "2006-01-16",
+      "changes": "'DATASHEET'-template HA-2620, HA-2625 edition, same date as FN2902 Rev 7.00. Sekorm copy is this or Rev. 9.00."
+    },
+    {
+      "vendor": "Renesas",
+      "doc_number": "FN2903",
+      "revision": "Rev. 9.00",
+      "date": "2019-03-21",
+      "changes": "Current Renesas HA-2620 datasheet; 100 MHz, 35 V/µs, gain >5 stable. Change log not seen."
     }
   ],
   "revision_chains": [
@@ -648,8 +700,12 @@
           "date": "2003-06"
         },
         {
-          "rev": "later 'DATASHEET' template",
-          "date": ""
+          "rev": "Rev. 8.00",
+          "date": "2006-01-16"
+        },
+        {
+          "rev": "Rev. 9.00",
+          "date": "2019-03-21"
         }
       ],
       "missing": [
@@ -658,9 +714,10 @@
         "2903.2",
         "2903.3",
         "2903.4",
-        "2903.5"
+        "2903.5",
+        "2903.7"
       ],
-      "note": "Harris edition suffix and date unknown; Sekorm template revision (.7 or later) unknown."
+      "note": "Rev. 9.00 (2019) is the current Renesas HA-2620 sheet; Harris edition suffix and date unknown."
     },
     {
       "vendor": "Intersil",
@@ -689,8 +746,8 @@
     "https://www.renesas.com/en/products/ha-2620"
   ],
   "open_questions": [
-    "Which FN2903 revision is latest? Is the Sekorm 'DATASHEET' copy later than FN2903.6?",
-    "Renesas lifecycle for HA-2600, HA2-2600-2, HA-2602/883, HA-2605, HA-2620? Only HA3-2625-5 is confirmed obsolete.",
+    "What changed in FN2903 Rev. 9.00 (2019) versus Rev. 8.00 (2006)? Does Rev. 9.00 still cover HA-2625?",
+    "Renesas lifecycle for HA-2600, HA-2602/883, HA-2605, HA-2620? HA2-2600-2 shows a 2018 last-time-buy at Octopart.",
     "Printed dates of Harris-era datasheets? Does the current Renesas HA-2600 sheet still include HA-2605?",
     "Datasheet noise, THD, supply range, Iq and output current? Does Rochester use original Intersil die?",
     "Did Walt Jung recommend HA-2605/2625 for audio? Any PCN or fab move across Harris, Intersil, Renesas?"
@@ -715,7 +772,7 @@
   ],
   "verification": {
     "status": "partially-verified",
-    "web_searches_used": 5,
+    "web_searches_used": 8,
     "claims_confirmed": [
       "Renesas hosts the HA-2600 product page and datasheet (https://www.renesas.com/en/products/ha-2600, https://www.renesas.com/en/document/dst/ha-2600-datasheet).",
       "Renesas HA-2600 copy has PDF metadata dated 16 Jan 2006 (https://www.renesas.com/en/document/dst/ha-2600-datasheet).",
@@ -726,7 +783,10 @@
       "Harris-era 'HA-2620, HA-2622, HA-2625' datasheet on RS Online (https://docs.rs-online.com/d1f9/0900766b80029c45.pdf).",
       "Harris-era 'HA-2600, HA-2602, HA-2605' datasheet on a mirror (https://www.elektronik.ropla.eu/pdf/stock/hrs/ha-26(00_02_05).pdf).",
       "HA3-2625-5 is obsolete (https://www.digikey.com/en/products/detail/renesas-electronics-america-inc/HA3-2625-5/1062012).",
-      "Rochester Electronics HA-2620, HA-2625 datasheet copy under HA2-2625-5 (https://datasheet.octopart.com/HA2-2625-5-Rochester-Electronics-datasheet-181209774.pdf)."
+      "Rochester Electronics HA-2620, HA-2625 datasheet copy under HA2-2625-5 (https://datasheet.octopart.com/HA2-2625-5-Rochester-Electronics-datasheet-181209774.pdf).",
+      "Renesas HA-2620 datasheet is FN2903 Rev. 9.00, dated 21 March 2019: https://www.renesas.cn/document/dst/ha-2620-datasheet",
+      "FN2903 sheet: 100 MHz GBW, 35 V/µs, 150 kV/V, stable for gain >5, 500 MΩ: https://www.renesas.cn/document/dst/ha-2620-datasheet",
+      "Octopart lists HA2-2600-2 with LTB 2018-04-30 and LTD 2018-10-30: https://octopart.com/part/renesas/HA2-2600-2"
     ],
     "refuted_claims": [
       "HA-2620/2625 GBW is not ~40 MHz (EWB fu): the datasheet gives 100 MHz, stable only at gain >5 (https://www.renesas.com/en/products/ha-2620).",
@@ -740,7 +800,8 @@
       "Added datasheet headline specs (HA-2600: 12 MHz, 7 V/µs, 500 MΩ, 1 nA, 0.5 mV, 150 kV/V; HA-2620: 100 MHz, 35 V/µs, 500 MΩ); EWB values labelled as model parameters.",
       "Added orderables HA2-2600-2, HA2-2605-5, HA-2602/883, JM38510/12202BGC, HA3-2625-5 (obsolete), HA2-2625-5, HA7-2625.",
       "Added 22 datasheet, mirror and product-page entries, including Harris-era copies listing HA-2602 and HA-2622.",
-      "LT1363/LT1361 are voltage-feedback parts, not 'current-feedback-like'."
+      "LT1363/LT1361 are voltage-feedback parts, not 'current-feedback-like'.",
+      "FN2903 latest revision identified as Rev. 9.00 (2019-03-21), after Rev. 8.00 (2006-01-16): https://www.renesas.cn/document/dst/ha-2620-datasheet"
     ],
     "unverified_urls": [
       "http://www.intersil.com/data/fn/fn2902.pdf",

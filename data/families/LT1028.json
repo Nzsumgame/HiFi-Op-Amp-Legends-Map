@@ -83,6 +83,12 @@
       "channels": 1,
       "status": "unknown",
       "note": "Hobby shorthand for LT1028ACN8. I-grade and 100% 10 Hz-tested parts available on request."
+    },
+    {
+      "pn": "LT1028CS8 / LT1028CS8#TR (leaded)",
+      "channels": 1,
+      "status": "obsolete",
+      "note": "Discontinued per ADI PDN 25_0027; replaced by #PBF / #TRPBF."
     }
   ],
   "key_specs": [
@@ -207,7 +213,131 @@
     "LME49990 (0.9 nV/√Hz, discontinued)",
     "ADA4898-1/-2 (0.9 nV/√Hz, dual available)"
   ],
-  "silicon_changes": [],
+  "silicon_changes": [
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices (Linear Technology)",
+      "when": "2021-10-25 (WW44) · PCN 21_0060",
+      "part_numbers_affected": [
+        "LT1028CS8 (#PBF / #TRPBF variants)"
+      ],
+      "identification": "Older SO-8 parts have an ink top mark, newer ones a laser mark; text still reads '1028'.",
+      "summary": "Marking only: laser mark allowed as an alternative to the ink top mark on legacy Linear box-stock devices. No die change.",
+      "spec_deltas": [
+        {
+          "parameter": "Top-side mark method",
+          "before": "ink",
+          "after": "laser"
+        }
+      ],
+      "audio_impact": "None expected (marking only).",
+      "compatibility_risk": "low - marking change only; same die and package.",
+      "confidence": "medium",
+      "verification": "Rev B affected-models appendix lists LT1028CS8 variants; Rev - describes the change. PDF not read in full.",
+      "sources": [
+        "https://www-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf",
+        "https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_-_Form.pdf"
+      ]
+    },
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices (Linear Technology)",
+      "when": "2022-08-10 · PCN 22_0172 / 22_0176",
+      "part_numbers_affected": [
+        "LT1028CN8, LT1028CN8#PBF (PCN 22_0172, PDIP)",
+        "LT1028CSW#PBF, LT1028CSW#TRPBF (PCN 22_0176, SOIC-W)"
+      ],
+      "identification": "Ink versus laser top mark on PDIP and wide-SOIC parts; both genuine.",
+      "summary": "Marking only: top mark converted from ink to laser on legacy Linear PDIP (22_0172) and SOIC_W (22_0176, ADPG/UTL assembly) products. PCN 22_0176 published 2022-08-10, effective 2022-11-12; no form, fit, function or reliability impact.",
+      "spec_deltas": [
+        {
+          "parameter": "Top-side mark method",
+          "before": "ink",
+          "after": "laser"
+        }
+      ],
+      "audio_impact": "None expected (marking only).",
+      "compatibility_risk": "low - marking change only.",
+      "confidence": "medium",
+      "verification": "Affected-model appendices list the LT1028 parts; PCN 22_0172 date and scope seen only in fragments.",
+      "sources": [
+        "https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_22_0172_Rev_-_Form.pdf",
+        "https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_22_0176_Rev_-_Form.pdf"
+      ]
+    },
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices (Linear Technology)",
+      "when": "DC 2242 · PCN 22_0241 / 22_0254",
+      "part_numbers_affected": [
+        "LT1028ACN8#PBF, LT1028CN8, LT1028CN8#PBF (PCN 22_0241)",
+        "LT1028CS8 variants (PCN 22_0254)"
+      ],
+      "identification": "By date code only: parts coded 2242 or later use the new epoxy (rollout to DC2317). No visible difference.",
+      "summary": "Die-attach epoxy changed from Henkel 8290 to 8290A, which ADI calls more robust with less outgassing. No impact to fit, form or function. Die unchanged.",
+      "spec_deltas": [
+        {
+          "parameter": "Die-attach epoxy",
+          "before": "Henkel 8290",
+          "after": "Henkel 8290A"
+        }
+      ],
+      "audio_impact": "None expected: assembly material only.",
+      "compatibility_risk": "low - qualified assembly material change; same die.",
+      "confidence": "medium",
+      "verification": "Affected-model appendices list LT1028 parts; epoxy and date-code details from PCN text excerpts.",
+      "sources": [
+        "https://www.analog.com/media/en/PCN/ADI_PCN_22_0241_Rev_A_Form.pdf",
+        "https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_22_0241_Rev_-_Form.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_22_0254_Rev_A_Form.pdf",
+        "https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_22_0254_Rev_-_Form.pdf"
+      ]
+    },
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices (Linear Technology)",
+      "when": "2024-10 · PCN 24_0236",
+      "part_numbers_affected": [
+        "LT1028CS8 variants"
+      ],
+      "identification": "Older parts carry the trace code on the package bottom, newer ones in the top-side laser mark.",
+      "summary": "Marking only: bottom-side trace code moved into the top-side mark (companion of PCN 24_0234). No form, fit or function impact.",
+      "spec_deltas": [
+        {
+          "parameter": "Trace code location",
+          "before": "package bottom",
+          "after": "top-side laser mark"
+        }
+      ],
+      "audio_impact": "None expected (marking only).",
+      "compatibility_risk": "low - marking change only.",
+      "confidence": "low",
+      "verification": "Search excerpt lists LT1028CS8 variants in the affected-models appendix; PDF not read.",
+      "sources": [
+        "https://www.analog.com/media/en/PCN/ADI_PCN_24_0236_Rev_-_Form.pdf",
+        "https://www.farnell.com/datasheets/4419218.pdf"
+      ]
+    },
+    {
+      "kind": "lifecycle",
+      "vendor": "Analog Devices",
+      "when": "2025 · PDN 25_0027",
+      "part_numbers_affected": [
+        "LT1028CS8",
+        "LT1028CS8#TR"
+      ],
+      "identification": "Leaded (non-#PBF) SO-8 codes only; LT1028CS8#PBF and #TRPBF are the named pin-to-pin replacements.",
+      "summary": "Discontinuance of the leaded SO-8 ordering codes; the lead-free versions of the same part continue.",
+      "spec_deltas": [],
+      "audio_impact": "None; ordering-code change only.",
+      "compatibility_risk": "low - same part in lead-free finish.",
+      "confidence": "medium",
+      "verification": "PDN appendix lists the codes and replacements; notice date not seen.",
+      "sources": [
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7121/ADI_PDN_25_0027_Rev_-_Form.pdf"
+      ]
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Linear Technology (hosted by Analog Devices)",
@@ -284,14 +414,14 @@
     {
       "vendor": "Analog Devices / Linear (third-party copy, radiolocman viewer)",
       "title": "Datasheet LT1028, LT1128 Analog Devices",
-      "doc_number": "unknown",
-      "revision": "",
+      "doc_number": "1028fd",
+      "revision": "D",
       "date": "",
       "url": "https://www.radiolocman.com/datasheet/pdf.html?di=151183&p=1",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "Page-1 headings show Rev B or later; page 20 is schematic."
+      "revision_status": "probable",
+      "note": "Text shows '1028fd' footer; 28 pages, ~730 KB, uploaded 2017-08."
     },
     {
       "vendor": "Linear Technology (third-party copy, Marutsu)",
@@ -508,6 +638,18 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "LT1028CN8#PBF page; may hold a Linear-era PDF."
+    },
+    {
+      "vendor": "Analog Devices (third-party copy, radiolocman)",
+      "title": "Datasheet Analog Devices LT1028",
+      "doc_number": "unknown",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=525953",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "ADI-branded entry; per-orderable siblings di=525941–525951."
     }
   ],
   "product_pages": [
@@ -618,7 +760,7 @@
     "https://www.radiolocman.com/datasheet/pdf.html?di=151183&p=1"
   ],
   "open_questions": [
-    "Any PCN or die change? Check the ADI product page 'Documentation > PCN' section.",
+    "Read PCN 22_0172 and 24_0236 in full: dates and complete LT1028 orderable lists. Date of PDN 25_0027?",
     "Current status of LT1028CN8/CS8, LT1128 orderables; is LT1028CSW now obsolete? Is RS's 'discontinued' listing real?",
     "Which mirrors hold the original and Rev A? Check footers of alldatasheet 70264, Marutsu, Farnell, digchip, radiolocman.",
     "Did Texas Instruments second-source the LT1028 (TEXAS.LIB model, 08/31/89)?",
@@ -657,11 +799,18 @@
     "https://www.hifivision.com/threads/changing-opamps-in-asus-xonar-essense-st-stx.21045/",
     "https://recorder-free-sheetmusic.jimdofree.com/2021/03/11/%E3%82%AA%E3%83%9A%E3%82%A2%E3%83%B3%E3%83%97lt1028%E3%81%A8lt1115%E3%81%AE%E6%84%9F%E6%83%B3/",
     "https://bbs.kakaku.com/bbs/05602110365/SortID=9393198/",
-    "http://www.otomatsu.jp/OPAMPhikau.html"
+    "http://www.otomatsu.jp/OPAMPhikau.html",
+    "https://www-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf",
+    "https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_22_0172_Rev_-_Form.pdf",
+    "https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_22_0176_Rev_-_Form.pdf",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_22_0241_Rev_A_Form.pdf",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_22_0254_Rev_A_Form.pdf",
+    "https://www.analog.com/media/en/PCN/ADI_PCN_24_0236_Rev_-_Form.pdf",
+    "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7121/ADI_PDN_25_0027_Rev_-_Form.pdf"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 6,
+    "status": "verified-with-corrections",
+    "web_searches_used": 10,
     "claims_confirmed": [
       "ADI hosts Linear-branded 1028fd (Rev D); no Rev E / 1028fe found (https://www.analog.com/media/en/technical-documentation/data-sheets/1028fd.pdf).",
       "Rev D header reads 'For more information www.linear.com/LT1028' (https://www.analog.com/media/en/technical-documentation/data-sheets/1028fd.pdf).",
@@ -679,7 +828,14 @@
       "Weighed against AD797 for MC phono (https://www.audioasylum.com/cgi/t.mpl?f=tweaks&m=82848).",
       "Sold as a single DIP-8 unit for rolling (https://www.audiophonics.fr/en/opa/lt1028-single-opa-dip8-unit-p-16918.html).",
       "Marutsu mirror of the LT1028/LT1128 datasheet exists (https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/LT1028.pdf).",
-      "No TI second-source LT1028 datasheet or SLOS number found (https://datasheetarchive.com/LT1028-datasheet.html)."
+      "No TI second-source LT1028 datasheet or SLOS number found (https://datasheetarchive.com/LT1028-datasheet.html).",
+      "PCN 21_0060 Rev B lists LT1028CS8 variants; laser mark allowed instead of ink from WW44 2021 (https://www-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf).",
+      "PCN 22_0172 (PDIP laser mark) lists LT1028CN8 and LT1028CN8#PBF (https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_22_0172_Rev_-_Form.pdf).",
+      "PCN 22_0176: ink-to-laser top mark on SOIC_W, published 2022-08-10, lists LT1028CSW#PBF/#TRPBF (https://wcm-cce.cldnet.analog.com/media/en/PCN/ADI_PCN_22_0176_Rev_-_Form.pdf).",
+      "PCN 22_0241 lists LT1028ACN8#PBF, LT1028CN8, LT1028CN8#PBF; Henkel 8290 to 8290A from DC2242 (https://www.analog.com/media/en/PCN/ADI_PCN_22_0241_Rev_A_Form.pdf).",
+      "PCN 22_0254 (Henkel 8290 to 8290A epoxy) lists LT1028CS8 variants (https://www.analog.com/media/en/PCN/ADI_PCN_22_0254_Rev_A_Form.pdf).",
+      "PDN 25_0027 discontinues LT1028CS8 and LT1028CS8#TR; #PBF/#TRPBF are replacements (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7121/ADI_PDN_25_0027_Rev_-_Form.pdf).",
+      "Radiolocman LT1028/LT1128 copy carries the 1028fd footer, 28 pages (https://www.radiolocman.com/datasheet/pdf.html?di=151183&p=1)."
     ],
     "refuted_claims": [
       "The quote is 'the only real L.T. star', not 'the only real Linear Technology star'; it appears on page 41 of the diyAudio thread, not page 10."
@@ -693,7 +849,10 @@
       "Added the http://www.linear.com/LT1028 archive seed (from Rev D header) and mirror seeds.",
       "LT1028CSW NRND confirmed via a mirror and limited to that package.",
       "TI second source remains low confidence: no TI datasheet or SLOS number found.",
-      "silicon_changes empty: no PCN, die change or newer revision found."
+      "No die change or newer revision found; ADI marking, die-attach epoxy and leaded-code discontinuance notices added to silicon_changes.",
+      "Added PCN 21_0060, 22_0172/22_0176, 22_0241/22_0254, 24_0236 and PDN 25_0027 entries; all marking, assembly or lifecycle, none a die change.",
+      "Radiolocman 151183 copy set to probable Rev D (1028fd footer).",
+      "Added leaded LT1028CS8 / CS8#TR as obsolete (PDN 25_0027)."
     ],
     "unverified_urls": [
       "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-10",

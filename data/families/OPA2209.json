@@ -123,12 +123,12 @@
       "title": "OPAx209 2.2-nV/rtHz, Low-Power, 36-V Operational Amplifier",
       "doc_number": "SBOS426",
       "revision": "D",
-      "date": "2016-10",
+      "date": "2016-10-07",
       "url": "https://www.ti.com/lit/ds/symlink/opa2209.pdf",
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current symlink; no rev E, F or G found."
+      "note": "Current symlink; TI product page lists Rev. D, 07 Oct 2016."
     },
     {
       "vendor": "Texas Instruments",
@@ -249,6 +249,112 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Sibling pages exist for OPA209 and OPA4209. Revision unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPAx209 2.2-nV/rtHz, Low-Power, 36-V Operational Amplifier (TI document viewer)",
+      "doc_number": "SBOS426",
+      "revision": "D",
+      "date": "2016-10",
+      "url": "https://www.ti.com/document-viewer/OPA209/datasheet",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "HTML datasheet, SBOS426D, with revision history.",
+      "also_urls": [
+        "https://www.ti.com/document-viewer/OPA209/datasheet/revision_history",
+        "https://ti.com/document-viewer/OPA2209/datasheet"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA209, OPA2209, OPA4209 (SBOS426C)",
+      "doc_number": "SBOS426",
+      "revision": "C",
+      "date": "2013-10",
+      "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/196/opa209.pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "TI E2E attachment: 'SBOS426C – November 2008 – revised October 2013'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA209_10 datasheet (alldatasheet)",
+      "doc_number": "SBOS426",
+      "revision": "B",
+      "date": "2010-08",
+      "url": "https://html.alldatasheet.com/html-pdf/390721/TI/OPA209_10/122/4/OPA209_10.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "'_10' copy; SBOS426B, revised August 2010, per snippet."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2209AID datasheet (dtsheet)",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://dtsheet.com/model/2874523",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "dtsheet copies reportedly include SBOS426B.",
+      "also_urls": [
+        "https://dtsheet.com/model/2874522"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA209AID datasheet (elecfans)",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.elecfans.com/BURR-BROWN/OPA209AID.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Probably Rev. D; its history differs from OPA2209AID copy."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA2209AID datasheet (elecfans)",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.elecfans.com/BURR-BROWN/OPA2209AID.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "History mentions JEDEC thermal update; revision unclear."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "opa2209.pdf (Télécom Saint-Étienne course copy)",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://mootse.telecom-st-etienne.fr/pluginfile.php/17414/mod_resource/content/1/opa2209.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "University course copy; revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA209 datasheet (datasheetspdf)",
+      "doc_number": "SBOS426",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet/OPA209.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown.",
+      "also_urls": [
+        "https://pdf.jiepei.com/opa209-16165320.html"
+      ]
     }
   ],
   "product_pages": [
@@ -282,14 +388,14 @@
       "doc_number": "SBOS426",
       "revision": "C",
       "date": "2013-10",
-      "changes": "Changes not captured."
+      "changes": "Deleted device graphic; changed Figure 2 y-axis units label (per SBOS426D revision history)."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SBOS426",
       "revision": "D",
-      "date": "2016-10",
-      "changes": "Latest found. Title now 'OPAx209 …'. Changes not captured."
+      "date": "2016-10-07",
+      "changes": "Latest; title 'OPAx209 …'. New-format sections (ESD Ratings, application, power supply, layout); ordering table replaced by orderable addendum."
     }
   ],
   "revision_chains": [
@@ -311,13 +417,13 @@
         },
         {
           "rev": "D",
-          "date": "2016-10"
+          "date": "2016-10-07"
         }
       ],
       "missing": [
         "A"
       ],
-      "note": "Rev A implied only. D appears to be the latest; no E, F or G found."
+      "note": "Rev A not found in any copy. D (07 Oct 2016) is still current on TI's product page."
     }
   ],
   "ti_literature_numbers": [
@@ -340,10 +446,10 @@
     "https://www.ti.com/product/OPA4209"
   ],
   "open_questions": [
-    "Is there an SBOS426 revision after D (October 2016)?",
-    "When was SBOS426A issued, and what changed in revs B, C and D (e.g. when OPA2209/OPA4209 were added)?",
+    "When was SBOS426A issued, and what changed in revision B (e.g. when OPA2209/OPA4209 were added)?",
+    "Mirrors disagree on Rev. D changes (new sections vs JEDEC thermal update); check the SBOS426D history table.",
     "Which SBOS426 revision does each mirror hold (Mouser, Octopart, UToronto, RadioLocman, Alldatasheet)?",
-    "Is there any OPA209-specific PCN? Generic TI RFAB/FFAB PCNs are not yet tied to this family.",
+    "Is there any OPA209-specific PCN? None found; generic TI RFAB/FFAB PCNs are not tied to this family.",
     "Add from the datasheet: 0.1–10 Hz noise, offset drift, input bias current, THD+N, per-part package list."
   ],
   "sources": [
@@ -365,8 +471,8 @@
     "https://www.head-fi.org/threads/the-opamp-thread.432749/page-391"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 5,
+    "status": "verified",
+    "web_searches_used": 10,
     "claims_confirmed": [
       "Datasheet is SBOS426D, 'November 2008 - Revised October 2016': https://www.ti.com/lit/gpn/OPA2209",
       "Earlier SBOS426C (October 2013) and SBOS426B (August 2010) exist: https://datasheet.octopart.com/OPA4209AIPW-Texas-Instruments-datasheet-10674197.pdf and https://www.radiolocman.com/datasheet/data.html?di=305533",
@@ -376,7 +482,11 @@
       "Packages SOT-23-5, MSOP-8, SOIC-8, TSSOP-14: https://www.ti.com/lit/gpn/OPA2209",
       "OPA2209 listed ACTIVE by TI: https://www.ti.com/product/OPA2209",
       "Rail-to-rail output, 2.5 mA max supply current: https://www.physics.utoronto.ca/~astummer/Archives/2014%20Micro%203D%20Magnetometer/Docs/TI%20OPA2209%20RRO%2036V%2035uV%20Vos.pdf",
-      "OPA209AIDBVT and OPA2209AID exist: https://www.ti.com/product/OPA209/part-details/OPA209AIDBVT and https://www.ti.com/product/OPA2209/part-details/OPA2209AID"
+      "OPA209AIDBVT and OPA2209AID exist: https://www.ti.com/product/OPA209/part-details/OPA209AIDBVT and https://www.ti.com/product/OPA2209/part-details/OPA2209AID",
+      "TI product page lists the OPAx209 datasheet as Rev. D, dated 07 Oct 2016: https://www.ti.com/product/OPA2209",
+      "TI document viewer shows SBOS426D, November 2008 – October 2016: https://www.ti.com/document-viewer/OPA209/datasheet/revision_history",
+      "SBOS426C, revised October 2013, is hosted on TI E2E: https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/196/opa209.pdf",
+      "Rev. C deleted the device graphic and changed Figure 2's y-axis units label: https://www.ti.com/document-viewer/OPA209/datasheet/revision_history"
     ],
     "refuted_claims": [],
     "corrections": [
@@ -385,7 +495,8 @@
       "Quiescent current clarified as 2.5 mA per channel max, not total.",
       "Added SBOS426 history: original November 2008, B August 2010, C October 2013, D October 2016; A implied.",
       "Added package list (SOT-23-5, MSOP-8, SOIC-8, TSSOP-14; no DIP) and key specs.",
-      "No silicon changes recorded; no family-specific PCN or die change found."
+      "No silicon changes recorded; no family-specific PCN or die change found.",
+      "Rev. D date refined to 2016-10-07 from TI's product page (https://www.ti.com/product/OPA2209)."
     ],
     "unverified_urls": [
       "https://www.mouser.com/ds/2/405/opa2209-556484.pdf (revision held unknown)",

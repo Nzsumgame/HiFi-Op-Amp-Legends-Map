@@ -28,7 +28,7 @@
       "pn": "LME49860MAX/NOPB",
       "channels": 2,
       "status": "active",
-      "note": "SOIC-8 reel (2500), marking 'L49860 / MA'; .A/.B variants. Mouser 926-LME49860MAX/NOPB."
+      "note": "SOIC-8 reel (2500), marking 'L49860 / MA'; .A/.B variants. Active per Octopart, DigiKey (2026)."
     },
     {
       "pn": "LME49860MA/NOPB",
@@ -52,7 +52,7 @@
       "pn": "LME49870MA/NOPB",
       "channels": 1,
       "status": "obsolete",
-      "note": "44 V single; LTB 28 Sep 2016. TI literature number unknown; PDIP version unconfirmed."
+      "note": "44 V single; LTB 28 Sep 2016. Datasheet SNAS413C; PDIP version unconfirmed."
     }
   ],
   "key_specs": [
@@ -305,14 +305,14 @@
     {
       "vendor": "Texas Instruments (third-party copy)",
       "title": "LME49870 Datasheet (TI1)",
-      "doc_number": "unknown TI SNAS number",
-      "revision": "",
-      "date": "",
+      "doc_number": "SNAS413",
+      "revision": "C",
+      "date": "2013-04",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/841155/TI1/LME49870.html",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "TI-format LME49870, about 35 pages, 985 KB."
+      "revision_status": "probable",
+      "note": "TI-format LME49870, about 35 pages, 985 KB; probably SNAS413C (April 2013)."
     },
     {
       "vendor": "Texas Instruments (third-party copy)",
@@ -464,14 +464,14 @@
     {
       "vendor": "Texas Instruments (third-party copy)",
       "title": "LME49870 Datasheet(PDF) - Texas Instruments",
-      "doc_number": "unknown TI SNAS number",
-      "revision": "",
-      "date": "",
+      "doc_number": "SNAS413",
+      "revision": "C",
+      "date": "2013-04",
       "url": "https://www.alldatasheet.net/datasheet-pdf/pdf/841155/TI1/LME49870.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
-      "revision_status": "unknown",
-      "note": "alldatasheet.net mirror of ID 841155, same file."
+      "revision_status": "probable",
+      "note": "alldatasheet.net mirror of ID 841155, same file; probably SNAS413C (April 2013)."
     },
     {
       "vendor": "Texas Instruments (third-party index)",
@@ -520,6 +520,78 @@
       "confidence": "high",
       "revision_status": "confirmed",
       "note": "Added MA/NA top marks; last National content before TI reformat."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LME49860 datasheet (TI literature link)",
+      "doc_number": "SNAS389",
+      "revision": "C",
+      "revision_status": "probable",
+      "date": "2013-04",
+      "url": "https://ti.com/lit/pdf/snas389",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "note": "TI literature link; product page lists Rev. C, 05 Apr 2013."
+    },
+    {
+      "vendor": "Texas Instruments (third-party copy)",
+      "title": "LME49860, LME49860MABD, LME49860NABD (RadioLocman)",
+      "doc_number": "SNAS389",
+      "revision": "C",
+      "revision_status": "probable",
+      "date": "2013-04",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=161011",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "note": "TI-format title; SNAS389C header shown in mirrors."
+    },
+    {
+      "vendor": "Texas Instruments (third-party copy)",
+      "title": "LME49860 datasheet (Kyohritsu)",
+      "doc_number": "SNAS389",
+      "revision": "",
+      "revision_status": "unknown",
+      "date": "",
+      "url": "https://kyohritsu.com/eclib/OTHER/DATASHEET/TI/lme49860.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "note": "Japanese retailer copy of the TI datasheet."
+    },
+    {
+      "vendor": "Texas Instruments (third-party copy)",
+      "title": "LME49860 datasheet (Promelec)",
+      "doc_number": "SNAS389",
+      "revision": "",
+      "revision_status": "unknown",
+      "date": "",
+      "url": "https://www.promelec.ru/fs/sources/40/fd/4a/3c/188898eaaa50367d5a8e04fd.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "note": "Russian distributor copy."
+    },
+    {
+      "vendor": "Texas Instruments (distributor copy)",
+      "title": "LME49870 datasheet (DigiKey)",
+      "doc_number": "SNAS413",
+      "revision": "",
+      "revision_status": "unknown",
+      "date": "",
+      "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1/LME49870.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "note": "DigiKey media copy; revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments (third-party copy)",
+      "title": "LME49870 44V Single High Performance, High Fidelity Audio Operational Amplifier (page 1)",
+      "doc_number": "SNAS413C",
+      "revision": "C",
+      "revision_status": "probable",
+      "date": "2013-04",
+      "url": "https://html.alldatasheet.net/html-pdf/841155/TI1/LME49870/55/1/LME49870.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "note": "HTML page of alldatasheet 841155; header 'SNAS413C'."
     }
   ],
   "product_pages": [
@@ -558,6 +630,20 @@
       "revision": "C",
       "date": "2025-11-11",
       "changes": "Addendum refresh: only LME49860MAX/NOPB (.A/.B) Active, marking L49860/MA. NA and MA orderables gone after 2016 LTB."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SNAS413 (LME49870)",
+      "revision": "B",
+      "date": "2008-01-14",
+      "changes": "Earlier LME49870 edition, dated 14 Jan 2008 in search results. Changes not seen."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SNAS413 (LME49870)",
+      "revision": "C",
+      "date": "2013-04",
+      "changes": "'SEPTEMBER 2007 – REVISED APRIL 2013'; ±2.5 V to ±22 V operating, 46 V abs max. Probably the TI reformat."
     }
   ],
   "revision_chains": [
@@ -587,16 +673,27 @@
     },
     {
       "vendor": "National Semiconductor / Texas Instruments",
-      "doc_number": "LME49870 (TI number unknown)",
-      "known": [],
-      "missing": [
-        "all revision letters and dates"
+      "doc_number": "SNAS413",
+      "known": [
+        {
+          "rev": "B",
+          "date": "2008-01-14"
+        },
+        {
+          "rev": "C",
+          "date": "2013-04"
+        }
       ],
-      "note": "National copy (34 pages) and TI-format copy (35 pages) exist on alldatasheet."
+      "missing": [
+        "-",
+        "A"
+      ],
+      "note": "LME49870: 'SNAS413C – September 2007 – revised April 2013'; Rev. B dated 2008-01-14. National copy on alldatasheet."
     }
   ],
   "ti_literature_numbers": [
-    "SNAS389"
+    "SNAS389",
+    "SNAS413"
   ],
   "archive_seed_urls": [
     "http://www.national.com/ds/LM/LME49860.pdf",
@@ -619,10 +716,10 @@
     "https://www.ti.com/product/LME49870"
   ],
   "open_questions": [
-    "What are the LME49870's TI literature number and last revision? Did a PDIP LME49870NA/NOPB exist?",
-    "Which TI PCN set the 28 Sep 2016 LTB, and is LME49860MAX/NOPB still active in 2026?",
+    "Did a PDIP LME49870NA/NOPB exist? Which SNAS413 revisions (-, A) preceded Rev. B?",
+    "Which TI PCN set the 28 Sep 2016 LTB?",
     "Which National revision do the NSC mirrors hold? Did SNAS389 -, A or B ever exist?",
-    "Is it the same die as LME49720 ('a LME49720 that passed a higher voltage test')? Is LME49870 the single version?",
+    "Any TI or National statement that LME49860 is the LME49720 die qualified at 44 V?",
     "What did the head-fi round-up (thread 870832) measure? What op-amp did the LXA-OT1 kit ship with?"
   ],
   "sources": [
@@ -664,10 +761,17 @@
     "https://www.sara-mac.com/audio/lxa-ot1-%E3%82%AA%E3%83%9A%E3%82%A2%E3%83%B3%E3%83%97%E4%BA%A4%E6%8F%9B-lme49860na%E7%B7%A8.html",
     "https://bluegourd.jugem.jp/?eid=152",
     "https://www.diyaudio.com/community/threads/curious-what-is-this-fake-opamp-not-lme49720na.386852/",
-    "https://www.tinytransistors.net/2022/09/24/fake-lme49710/"
+    "https://www.tinytransistors.net/2022/09/24/fake-lme49710/",
+    "https://ti.com/lit/pdf/snas389",
+    "https://www.radiolocman.com/datasheet/data.html?di=161011",
+    "https://html.alldatasheet.net/html-pdf/841155/TI1/LME49870/55/1/LME49870.html",
+    "https://octopart.com/part/texas-instruments/LME49860MAX%2FNOPB",
+    "https://ti.com/product/LME49860/part-details/LME49860MAX/NOPB",
+    "https://www.head-fi.org/threads/lm4562-lme49720-lme49860-do-they-sound-different-to-you.521972/post-7437546",
+    "https://www.diyaudio.com/community/goto/post?id=1706578"
   ],
   "verification": {
-    "status": "partially-verified",
+    "status": "verified-with-corrections",
     "refuted_claims": [
       "Doubt that LME49870 exists is refuted: alldatasheet (NSC 219107, TI 841155), datasheetcatalog and DigiKey list the 44 V single (https://www.alldatasheet.com/datasheet-pdf/pdf/219107/NSC/LME49870.html).",
       "Claim that TI 'discontinued the entire 44V LME line' not adopted: the Nov-2025 addendum lists LME49860MAX/NOPB as Active."
@@ -680,7 +784,9 @@
       "Added distributor replacements OPA1612AID (MA/NOPB) and OPA2227P (NA/NOPB), both ±18 V class.",
       "Lineage: added the 2016 LTB; sibling LME49810 SNAS391C shares the April 2013 reformat date.",
       "Added http://www.ti.com/lit/gpn/lme49870 as an inferred archive seed.",
-      "No die change, process change or PCN found."
+      "No die change, process change or PCN found.",
+      "LME49870 TI literature number found: SNAS413 (Rev. C April 2013, Rev. B January 2008); alldatasheet 841155 attributed to SNAS413C: https://html.alldatasheet.net/html-pdf/841155/TI1/LME49870/55/1/LME49870.html",
+      "LME49860MAX/NOPB active status re-confirmed for 2026 via Octopart and DigiKey: https://octopart.com/part/texas-instruments/LME49860MAX%2FNOPB"
     ],
     "unverified_urls": [
       "https://www.ti.com/product/LME49870",
@@ -698,8 +804,12 @@
       "LME49860MA/NOPB and NA/NOPB on the 28-Sep-2016 LTB list with LME49710/LME49720 MA/NA (https://e2e.ti.com/support/audio-group/audio/f/audio-forum/456802/lme49870-eol)",
       "DigiKey lists LME49860NA/NOPB and MA/NOPB as obsolete (https://www.digikey.com/en/products/detail/texas-instruments/LME49860NA-NOPB/1647710; https://www.digikey.com/en/products/detail/texas-instruments/LME49860MA-NOPB/1647709)",
       "National-era LME49860 datasheet survives on alldatasheet (http://www.alldatasheet.com/datasheet-pdf/pdf/182890/NSC/LME49860.html)",
-      "Sibling LME49810 SNAS391C is 'MAY 2007-REVISED APRIL 2013' (https://media.digikey.com/pdf/data%20sheets/texas%20instruments%20pdfs/lme49810.pdf)"
+      "Sibling LME49810 SNAS391C is 'MAY 2007-REVISED APRIL 2013' (https://media.digikey.com/pdf/data%20sheets/texas%20instruments%20pdfs/lme49810.pdf)",
+      "TI product page lists the LME49860 datasheet as Rev. C, 05 Apr 2013; mirrors show 'SNAS389C June 2007 – revised April 2013': https://www.ti.com/product/LME49860 , https://www.radiolocman.com/datasheet/data.html?di=161011",
+      "LME49870 datasheet is SNAS413C, 'September 2007 – revised April 2013'; ±2.5 V to ±22 V, 46 V abs max: https://html.alldatasheet.net/html-pdf/841155/TI1/LME49870/55/1/LME49870.html",
+      "LME49860MAX/NOPB listed Production / manufacturer status ACTIVE by Octopart and Active by DigiKey: https://octopart.com/part/texas-instruments/LME49860MAX%2FNOPB , https://punchouttest.digikey.com.mx/en/products/detail/texas-instruments/LME49860MAX-NOPB/1872068",
+      "Forum posts (incl. a relayed ex-National account) say LME49860 is an LME49720 tested for 44 V; not vendor-confirmed: https://www.head-fi.org/threads/lm4562-lme49720-lme49860-do-they-sound-different-to-you.521972/post-7437546 , https://www.diyaudio.com/community/goto/post?id=1706578"
     ],
-    "web_searches_used": 6
+    "web_searches_used": 10
   }
 }

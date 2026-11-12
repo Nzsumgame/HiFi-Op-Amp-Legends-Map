@@ -19,22 +19,23 @@ Changes that can make two parts sold under the same number behave differently. E
 | [TLE2081](families/TLE2081.md) | Die redesign | Texas Instruments | 2023-12 · PCN 20231219013.1 | PCN 20231219013.1 (19 Dec 2023; Mouser copy 22 Dec 2023) moves TLE208x to RFAB with a die revision and assembly change. | medium |
 | [OP249](families/OP249.md) | Die redesign | Analog Devices | c. 2010 · PCN 10_0062 (dates inferred) | PCN 10_0062 'OP249 Data sheet and Die Changes': minor mask change for diode performance and stability, and lower-stress passivation on… | medium |
 | [LF356](families/LF356.md) | Die redesign | National Semiconductor | 1975 → by 1980 (earliest production) | The 1975 LF156 pinout made pin 8 a bias reference, with typical 15 V/µs and 1.4 µs versus 12 V/µs and 1.5 µs from 1980. | low |
+| [AD8610](families/AD8610.md) | Fab / process transfer | Analog Devices | 2026 · PCN 26_0028 Rev. - | ADI PCN 26_0028, 'Qualification of ADI Limerick Wafer Fab XF26, XF18, XF12, XF8 Processes', lists AD8610/AD8610ARZ and AD8620/AD8620ARZ… | high |
 | [LME49720](families/LME49720.md) | Fab / process transfer | Texas Instruments | 2018-03-09 · PCN 20180308002 | PCN 20180308002, 'Transfer of select VIP3 devices from GFAB to DFAB (DL-LIN) Wafer Fab site', moved LM4562/LME49720 wafers from closing TI… | high |
 | [LM833](families/LM833.md) | Fab / process transfer | onsemi… | 2001-07-19 · onsemi PCN 11528 | ON Semiconductor PCN 11528 moves the Motorola-design LM833 from the BMC fab in Mesa, AZ to ON's Tesla fab in Roznov, Czech Republic. | high |
 | [MC33078](families/MC33078.md) | Fab / process transfer | onsemi… | 2001-07 · PCN 11528 (PCN 11785 2001-09) | ON PCN 11528 (19 July 2001) moved devices from Motorola's BMC fab in Mesa, AZ to ON's Tesla fab in Roznov, Czech Republic. | high |
+| [AD822](families/AD822.md) | Fab / process transfer | Analog Devices | 2026-04-27 · PCN 26_0029 | ADI qualifies its Camas, WA wafer fab for Complementary Bipolar (CB) products. | medium |
 | [LF353](families/LF353.md) | Fab / process transfer | Texas Instruments… | 2022-12-21 · PCN 20221219006.1 | The TL072/TL074 RFAB notice lists LF347N and LF347 in Group 2: 'RFAB/Process migration and adding MLA Assembly site'. | medium |
 | [THS4631](families/THS4631.md) | Fab / process transfer | Texas Instruments | 2025-03 · SLOS451C (no PCN found) | Rev C re-characterises the part on 'new silicon data'; TI (E2E) cites a new process, advising no CF in new designs. | medium |
 | [TLE2142](families/TLE2142.md) | Fab / process transfer | Texas Instruments | 2025-07-31 · PCN20250730004.1 | TI added RFAB (Richardson, TIB process) as a fab alongside DL-LIN (Dallas): die revision B to C, datasheet SLOS183D to SLOS183E, new… | medium |
 | [AD711](families/AD711.md) | Fab / process transfer | Analog Devices | 2025-06 (eff. 2025-09) · PCN 25_0091 | Camas, WA wafer fab qualified for ADI's bipolar process 'to ensure reliable and continuous supply'. | medium |
 | [AD797](families/AD797.md) | Fab / process transfer | Analog Devices | 2026 · PCN 26_0029 Rev. - | 'Qualification of ADI Camas Wafer Fab CB Processes' qualifies Camas, WA for Complementary Bipolar products using an existing process… | medium |
 | [AD823](families/AD823.md) | Fab / process transfer | Analog Devices | 2026 · PCN 26_0029 Rev. - | PCN 26_0029, 'Qualification of ADI Camas Wafer Fab CB Processes', moves Complementary Bipolar production to the existing qualified Camas… | medium |
+| [AD828](families/AD828.md) | Fab / process transfer | Analog Devices | 2026-04 · PCN 26_0029, eff. 2026-07-30 | PCN 26_0029, 'Qualification of Wafer Fabrication Site Analog Devices, Inc. | medium |
 | [AD8512](families/AD8512.md) | Fab / process transfer | Analog Devices | 2025 · PCN 25_0156 Rev. - | Wafer-fab change: listed AD8510/AD8512/AD8513 part numbers move to an existing qualified process at ADI's Camas, WA fab to ensure supply. | medium |
-| [AD8610](families/AD8610.md) | Fab / process transfer | Analog Devices | 2026 · PCN 26_0028 Rev. - | ADI PCN 26_0028 qualifies its Limerick, Ireland fab (ADLK) for XF26/XF18/XF12/XF8 process products, leveraging an existing qualified… | medium |
 | [AD8656](families/AD8656.md) | Fab / process transfer | Analog Devices | 2023-08 · PCN 23_0068 (Rev. A 2024-05) | ADI added ADI Limerick (ADLK) as an alternate fab to TSMC Fab 9/2A/2B for 0.6 µm CMOS amps; some parts moved from 6- to 8-inch wafers. | medium |
 | [ADA4898](families/ADA4898.md) | Fab / process transfer | Analog Devices | 2023-04 · PCN 22_0142 (eff. 2023-07-07) | PCN 22_0142 (Rev. -, 4 Apr 2023; later Revs. A and C) adds ADI Wilmington, MA (ADWL) as an alternate wafer fab to Limerick, Ireland (ADLK)… | medium |
-| [LF356](families/LF356.md) | Fab / process transfer | Texas Instruments | 2018-09 · PCN 20180920003.1 | TI's 'FFAB BIFET Technology Qualification' PCN, approved 19 Sep 2018, lists LF356 wafer, metal-can, SOIC and PDIP devices. | medium |
+| [LF356](families/LF356.md) | Fab / process transfer | Texas Instruments | 2018-09 · PCN 20180920003.1 | TI PCN 20180920003.1 moves select BiFET devices from Greenock GFAB6 (150 mm, closing) to FFAB BiFET 200 mm; qualification approved 19 Sep… | medium |
 | [OP249](families/OP249.md) | Fab / process transfer | Analog Devices | before 2010 · PCN 10_0062 | PCN 10_0062 says OP249 moved to ADI's ADWIL (Wilmington) wafer fab and then showed more Vos variation. | medium |
-| [AD822](families/AD822.md) | Fab / process transfer | Analog Devices | 2026 · PCN 26_0029 (date unconfirmed) | PCN 26_0029 lists AD820, AD822 and AD824 variants alongside the AD823 and AD8224 JFET amps. | low |
 | [AD8022](families/AD8022.md) | Fab / process transfer | Analog Devices | 2026 · PCN 26_0028 Rev. - | PCN 26_0028 qualifies ADI Limerick, Ireland (ADLK) as a wafer fab for XF26/XF18/XF12/XF8 process products. | low |
 | [AD8599](families/AD8599.md) | Fab / process transfer | Analog Devices | 2025-06 (eff. 2025-09) · PCN 25_0091 | 'Qualification of ADI Camas Wafer Fab Bipolar Process': Camas, WA fab qualified for ADI bipolar products. | low |
 | [ADA4075-2](families/ADA4075-2.md) | Fab / process transfer | Analog Devices | 2023 · PCN 22_0142 | ADI added its Wilmington, MA fab (ADWL) as an alternate to Limerick (ADLK) for 'High Voltage Bipolar Products'. | low |
@@ -62,10 +63,10 @@ Changes that can make two parts sold under the same number behave differently. E
 | [OPA604](families/OPA604.md) | Datasheet respec | Texas Instruments | c. 2015–2016 (diyAudio, 2016-08-24) | Unannounced same-part-number derating: a TI non-conformance form said the OPA2604 must be held to ±20 V; at ±24 V parts showed long-term… | medium |
 | [4558](families/4558.md) | Datasheet respec | New JRC / Nisshinbo (NJM4558) | Old databook → Ver.2013-11-05 | JRC re-characterised the NJM4558 in Ver.2013-11-05: the operating range widened from −20/+75 °C to −40/+85 °C and typical bias is quoted… | medium |
 | [OPA827](families/OPA827.md) | Datasheet respec | Texas Instruments | 2012-02 · SBOS376G (Rev F was 2009-03) | Rev G moved from Mixed Status to Production Data, deleted the planned high grade, revised bias and drift text, set offset/drift/bias… | medium |
-| [THS4032](families/THS4032.md) | Datasheet respec | Texas Instruments | Post-SLOS224C (2000-04), rev unknown | No evidence of a die change; only headline specs moved. | medium |
+| [THS4032](families/THS4032.md) | Datasheet respec | Texas Instruments | SLOS224I (2018) → J–L (2024) | No evidence of a die change; the 2024 revisions re-specified headlines. | medium |
 | [LF356](families/LF356.md) | Datasheet respec | National Semiconductor | 1980 → 2000-05 (DS005646) | The LF157/LF357 schematic note changed from 2 pF to 3 pF and the feature-list load claim from 10,000 pF to 5,000 pF… | low |
 | [NJM4580](families/NJM4580.md) | Datasheet respec | Texas Instruments | 2024-11 · SLOS412D → SLOS412E | Rev E came during the SFAB-to-RFAB move and die consolidation; its change list is unknown. | low |
-| [uPC4570](families/uPC4570.md) | Datasheet respec | Renesas Electronics | 2019-01-17 / 2025-02-27 · R03DS0135EJ | Renesas replaced the NEC datasheet with R03DS0135EJ: Rev. 1.00 (17 Jan 2019, 9 pages), Rev. 2.00 (27 Feb 2025, 11 pages). | low |
+| [uPC4570](families/uPC4570.md) | Datasheet respec | Renesas Electronics | 2019-01-17 / 2025-02-27 · R03DS0135EJ | Renesas replaced the NEC datasheet with R03DS0135EJ: Rev. 1.00 (17 Jan 2019, 9 pages), Rev. 2.00 (27 Feb 2025, 11 pages), covering G2… | low |
 
 ## [NE5532 / NE5532A / SA5532 / SE5532](families/NE5532.md)
 
@@ -98,7 +99,7 @@ Changes that can make two parts sold under the same number behave differently. E
 
 **Die redesign: Texas Instruments, 2023-11-15 · PCN 20231114002.1.** TI confirmed on E2E (1652528) that NE5532, LM833, RC4580 and MC33078 now share one RC4580-based die, part numbers unchanged, after a reported SFAB-to-RFAB move with die shrink (SFAB closure 2024–2025). Publicised by Hackaday (3 Jun 2026) and Headphonesty (Jul 2026). No LM833-specific deltas documented.
 
-- **How to tell:** No datasheet revision after SLOS481B or marking change. PCN 20231114002.1 lists LM833DR; PCN 20240429005.1 membership unconfirmed. 2024+ date codes probably merged die.
+- **How to tell:** No datasheet revision after SLOS481B or marking change. PCN 20231114002.1 lists LM833DR in Group 1 (process migration, BOM options). 2024+ date codes probably merged die.
 - **Drop-in risk:** medium: same part number, new silicon and process; stages and protection may differ (unverified for LM833).
 - **Confidence:** high
 - [Spec deltas and sources](families/LM833.md#silicon-changes)
@@ -202,6 +203,15 @@ Changes that can make two parts sold under the same number behave differently. E
 - **Confidence:** low
 - [Spec deltas and sources](families/LF356.md#silicon-changes)
 
+## [AD8610 / AD8620](families/AD8610.md)
+
+**Fab / process transfer: Analog Devices, 2026 · PCN 26_0028 Rev. -.** ADI PCN 26_0028, 'Qualification of ADI Limerick Wafer Fab XF26, XF18, XF12, XF8 Processes', lists AD8610/AD8610ARZ and AD8620/AD8620ARZ with reel variants in Appendix A. Same die and part numbers; whether this is a move or an added fab is unknown.
+
+- **How to tell:** Not visible in the marking. Trace by ADI date code or lot against the PCN effective date.
+- **Drop-in risk:** low – same part numbers and datasheet; only lot provenance changes.
+- **Confidence:** high
+- [Spec deltas and sources](families/AD8610.md#silicon-changes)
+
 ## [LM4562 / LME49720 / LME49710 / LME49740](families/LME49720.md)
 
 **Fab / process transfer: Texas Instruments, 2018-03-09 · PCN 20180308002.** PCN 20180308002, 'Transfer of select VIP3 devices from GFAB to DFAB (DL-LIN) Wafer Fab site', moved LM4562/LME49720 wafers from closing TI Greenock to TI Dallas, same VIP3 process. First ship 2018-06-09; reissued as -001 (2018-03-26, first ship 2018-09-26). Stock reached distribution early 2019. No die redesign documented.
@@ -228,6 +238,15 @@ Changes that can make two parts sold under the same number behave differently. E
 - **Drop-in risk:** low: same design and part numbers; only process spread within datasheet limits.
 - **Confidence:** high
 - [Spec deltas and sources](families/MC33078.md#silicon-changes)
+
+## [AD820 / AD822 / AD824](families/AD822.md)
+
+**Fab / process transfer: Analog Devices, 2026-04-27 · PCN 26_0029.** ADI qualifies its Camas, WA wafer fab for Complementary Bipolar (CB) products. Appendix A lists AD820, AD822 (ARZ, BRZ) and AD824ARZ-14 variants with AD812, AD817, OP467 and other families. Effective 30 July 2026.
+
+- **How to tell:** Camas-fab material may ship from 30 July 2026; the PCN's qualification summary should give date-code or marking details.
+- **Drop-in risk:** medium: new wafer fab for the whole family; qualification data not yet checked.
+- **Confidence:** medium
+- [Spec deltas and sources](families/AD822.md#silicon-changes)
 
 ## [LF351 / LF353 / LF347](families/LF353.md)
 
@@ -283,6 +302,15 @@ Changes that can make two parts sold under the same number behave differently. E
 - **Confidence:** medium
 - [Spec deltas and sources](families/AD823.md#silicon-changes)
 
+## [AD828](families/AD828.md)
+
+**Fab / process transfer: Analog Devices, 2026-04 · PCN 26_0029, eff. 2026-07-30.** PCN 26_0029, 'Qualification of Wafer Fabrication Site Analog Devices, Inc. Camas WA for CB Products', qualifies ADI's Camas fab for complementary-bipolar parts. Published 27 April 2026, effective 30 July 2026; AD828 codes are listed.
+
+- **How to tell:** No marking change described; parts with date codes after July 2026 may come from Camas.
+- **Drop-in risk:** low: same datasheet, package and pinout.
+- **Confidence:** medium
+- [Spec deltas and sources](families/AD828.md#silicon-changes)
+
 ## [AD8510 / AD8512 / AD8513](families/AD8512.md)
 
 **Fab / process transfer: Analog Devices, 2025 · PCN 25_0156 Rev. -.** Wafer-fab change: listed AD8510/AD8512/AD8513 part numbers move to an existing qualified process at ADI's Camas, WA fab to ensure supply. ADI expects no fit, form, function or reliability impact. Previous fab not stated. Datasheet unchanged (Rev. K).
@@ -291,15 +319,6 @@ Changes that can make two parts sold under the same number behave differently. E
 - **Drop-in risk:** low: same part numbers and datasheet limits; vendor states no fit/form/function change
 - **Confidence:** medium
 - [Spec deltas and sources](families/AD8512.md#silicon-changes)
-
-## [AD8610 / AD8620](families/AD8610.md)
-
-**Fab / process transfer: Analog Devices, 2026 · PCN 26_0028 Rev. -.** ADI PCN 26_0028 qualifies its Limerick, Ireland fab (ADLK) for XF26/XF18/XF12/XF8 process products, leveraging an existing qualified process for supply continuity. AD8610 and AD8620 orderables are reportedly listed. Same die and part numbers; whether this is a move or an added fab is unknown.
-
-- **How to tell:** Not visible in the marking. Trace by ADI date code or lot against the PCN effective date.
-- **Drop-in risk:** low – same part numbers and datasheet; only lot provenance changes.
-- **Confidence:** medium
-- [Spec deltas and sources](families/AD8610.md#silicon-changes)
 
 ## [AD8655 / AD8656](families/AD8656.md)
 
@@ -321,9 +340,9 @@ Changes that can make two parts sold under the same number behave differently. E
 
 ## [LF355 / LF356 / LF357 (LF155 / LF156 / LF157)](families/LF356.md)
 
-**Fab / process transfer: Texas Instruments, 2018-09 · PCN 20180920003.1.** TI's 'FFAB BIFET Technology Qualification' PCN, approved 19 Sep 2018, lists LF356 wafer, metal-can, SOIC and PDIP devices. Later LF356s may use die from a different fab than National-era parts. Previous fab and any mask change are not stated.
+**Fab / process transfer: Texas Instruments, 2018-09 · PCN 20180920003.1.** TI PCN 20180920003.1 moves select BiFET devices from Greenock GFAB6 (150 mm, closing) to FFAB BiFET 200 mm; qualification approved 19 Sep 2018, first ship 25 Dec 2018. LF356 wafer, can, SOIC and PDIP listed. Mask change not stated.
 
-- **How to tell:** Not visible in the marking; SNOSBH0D unchanged. Only TI lot trace or date codes after implementation would indicate FFAB wafers.
+- **How to tell:** Not visible in the marking; SNOSBH0D unchanged. Only TI lot trace or date codes after Dec 2018 would indicate FFAB wafers.
 - **Drop-in risk:** low: same datasheet, pinout and limits; no published parametric change.
 - **Confidence:** medium
 - [Spec deltas and sources](families/LF356.md#silicon-changes)
@@ -336,15 +355,6 @@ Changes that can make two parts sold under the same number behave differently. E
 - **Drop-in risk:** low: same design and pinout; wider offset spread on post-transfer lots before the fix.
 - **Confidence:** medium
 - [Spec deltas and sources](families/OP249.md#silicon-changes)
-
-## [AD820 / AD822 / AD824](families/AD822.md)
-
-**Fab / process transfer: Analog Devices, 2026 · PCN 26_0029 (date unconfirmed).** PCN 26_0029 lists AD820, AD822 and AD824 variants alongside the AD823 and AD8224 JFET amps. The nature of the change (fab/process, assembly, test or package) is not yet known; a family-wide PCN may mean a process or fab change.
-
-- **How to tell:** ADI PCN 26_0029 Rev. -; the PCN should state how to tell pre- and post-change parts apart (date code or marking).
-- **Drop-in risk:** medium: a 2026 PCN covers the whole JFET-RRO family; nature of change unconfirmed.
-- **Confidence:** low
-- [Spec deltas and sources](families/AD822.md#silicon-changes)
 
 ## [AD8022](families/AD8022.md)
 
@@ -585,9 +595,9 @@ Changes that can make two parts sold under the same number behave differently. E
 
 ## [THS4032 / THS4031 / THS4032-EP](families/THS4032.md)
 
-**Datasheet respec: Texas Instruments, Post-SLOS224C (2000-04), rev unknown.** No evidence of a die change; only headline specs moved. Current documents quote 70 ns settling, −96 dBc THD at 1 MHz and 1.2 nV/√Hz; older revisions gave 60 ns (confirmed), −90 dBc and 1.6 nV/√Hz (unconfirmed). Looks like re-characterisation, not new silicon.
+**Datasheet respec: Texas Instruments, SLOS224I (2018) → J–L (2024).** No evidence of a die change; the 2024 revisions re-specified headlines. Noise 1.6 → 1.2 nV/√Hz, current noise 1.2 → 2.3 pA/√Hz, settling 60 → 70 ns (±15 V). THD went −90 → −96 dBc, then back to −90 dBc in Rev L.
 
-- **How to tell:** None known. No PCN, new-die note or marking change was found; compare the datasheet revision in use.
+- **How to tell:** None known. No PCN, new-die note or marking change found; SLOS224I and earlier quote 60 ns and 1.6 nV/√Hz.
 - **Drop-in risk:** low – pinout and package unchanged; no PCN; datasheet-level differences only.
 - **Confidence:** medium
 - [Spec deltas and sources](families/THS4032.md#silicon-changes)
@@ -612,7 +622,7 @@ Changes that can make two parts sold under the same number behave differently. E
 
 ## [µPC4570](families/uPC4570.md)
 
-**Datasheet respec: Renesas Electronics, 2019-01-17 / 2025-02-27 · R03DS0135EJ.** Renesas replaced the NEC datasheet with R03DS0135EJ: Rev. 1.00 (17 Jan 2019, 9 pages), Rev. 2.00 (27 Feb 2025, 11 pages). UPC258/UPC4558 also went to Rev. 2.00 that day, suggesting a family-wide update, possibly tied to -AP. No changed limits found; part still active.
+**Datasheet respec: Renesas Electronics, 2019-01-17 / 2025-02-27 · R03DS0135EJ.** Renesas replaced the NEC datasheet with R03DS0135EJ: Rev. 1.00 (17 Jan 2019, 9 pages), Rev. 2.00 (27 Feb 2025, 11 pages), covering G2 (SOP-8) and GR-9LG (TSSOP-8). UPC258/UPC4558 also went to Rev. 2.00 that day. No changed limits found.
 
 - **How to tell:** Datasheet number R03DS0135EJ (Rev. 1.00 / Rev. 2.00) versus NEC-era G10528EJ8V0DS00.
 - **Drop-in risk:** low: same die as documented; check Rev. 2.00 limits before relying on NEC-era values.
@@ -620,47 +630,59 @@ Changes that can make two parts sold under the same number behave differently. E
 - [Spec deltas and sources](families/uPC4570.md#silicon-changes)
 
 <details>
-<summary>Other change notes: lifecycle, packaging, renumbering, lore (50)</summary>
+<summary>Other change notes: lifecycle, packaging, renumbering, lore (62)</summary>
 
 - [OP27](families/OP27.md) · **Package / assembly** · Analog Devices, 2005-12 to 2006-05 · Rev. E → Rev. F: Rev. F added Pb-free lead-finish versions. No documented die change; one spec table covers leaded and Pb-free parts.
 - [OPA1611](families/OPA1611.md) · **Package / assembly** · Texas Instruments, 2026-02-24 · PCN 20260223007.1: TI PCN 20260223007.1 'Add Cu as Alternative Wire Base Metal for Selected Device(s)' qualifies Cu bond wire at the current assembly site. Samples 25 Apr 2026, first ship 25 May 2026. Not a fab, die or datasheet change. No other OPA161x PCN found.
 - [AD8022](families/AD8022.md) · **Package / assembly** · Analog Devices, 2014 · PCN 14_0246 (Rev. -, A, B): ASE Chungli, Taiwan added as an assembly subcontractor for 8- and 10-lead MSOP to secure supply. AD8022 MSOP variants are reportedly listed. Die and datasheet unchanged.
+- [AD811](families/AD811.md) · **Package / assembly** · Analog Devices, 2011-11-09 · PCN 11_0182: ADI's AD811 product page lists PCN 11_0182, a test-site transfer for the military AD811SQ/883B. No die or wafer-fab change is described.
 - [AD825](families/AD825.md) · **Package / assembly** · Analog Devices, 2010-08-04 · PCN 10_0117 Rev. A: PCN 10_0117, 'Halogen Free Material Change for SOIC_W Products at Carsem': SOIC_W assembly moves from Carsem S to Carsem M with halogen-free die attach and mold compound, AEC-Q100 qualified. Plausibly affects AD825ARZ-16. Die unchanged.
 - [AD8599](families/AD8599.md) · **Package / assembly** · Analog Devices, 2010-11-23 · PCN 10_0004: Package material only: SOIC narrow-body mold compound at Amkor changed to halogen-free. ADI states fit, form, function and reliability are unaffected.
 - [AD8610](families/AD8610.md) · **Package / assembly** · Analog Devices, 2007+ · PCN 07_0024 Rev. E: After Sumitomo discontinued certain mold compounds, ADI changed mold compound, and sometimes die-attach, for SOT23, MiniSO, MQFP, PDIP, PLCC, SOIC, SSOP and TSSOP packages. AD8610/AD8620 variants are reportedly listed. Package materials only; die unchanged.
 - [AD8610](families/AD8610.md) · **Package / assembly** · Analog Devices, 2017 · PCN 17_0079 Rev. -: ADI qualified TeamQuest Technology Inc. as an additional test site for TC-Vos (offset-drift) testing to secure continuity of supply. The TC-Vos test process itself is unchanged. The die, assembly and data sheet are unchanged.
 - [AD8610](families/AD8610.md) · **Package / assembly** · Analog Devices, 2021-03-22 · PCN 21_0001 Rev. -: ADI added Amkor Philippines as an alternate assembly site for 8/10-lead MSOP and MSOP_EP to secure supply. It states no expected change to device functionality, fit, form or reliability. The AD8610 is among the listed products. This is an assembly-site change only.
-- [ADA4625](families/ADA4625.md) · **Package / assembly** · Analog Devices, 2025 · PCN 25_0070: PCN 25_0070 revises the SOIC_N_EP package outline drawing alongside datasheet Rev B (03/2025); Mouser lists a PCN dated 2025-06-26. No die or electrical change is indicated, but the PCN body (assembly site, leadframe, EPAD size) is unread.
+- [ADA4625](families/ADA4625.md) · **Package / assembly** · Analog Devices, 2025 · PCN 25_0070: PCN 25_0070 (10-Mar-2025) revises the SOIC_N_EP outline drawing and adds six orderable parts, documented in datasheet Rev B; Mouser lists a PCN dated 2025-06-26. No die or electrical change indicated; PCN body (assembly site, leadframe, EPAD) unread.
 - [ADA4898](families/ADA4898.md) · **Package / assembly** · Analog Devices, Datasheet Rev. F (2026-01-19): The ADA4898-1 SOIC_N_EP outline was re-designated RD-8-1 to RD-8-4 with updated dimensions ('Changed RD-8-1 to RD-8-4 (Throughout)'). Not a die change; no PCN found. An earlier outline update was in Rev. D (5/12). Whether the physical pad changed is unconfirmed.
+- [LT1028](families/LT1028.md) · **Package / assembly** · Analog Devices (Linear Technology), 2021-10-25 (WW44) · PCN 21_0060: Marking only: laser mark allowed as an alternative to the ink top mark on legacy Linear box-stock devices. No die change.
+- [LT1028](families/LT1028.md) · **Package / assembly** · Analog Devices (Linear Technology), 2022-08-10 · PCN 22_0172 / 22_0176: Marking only: top mark converted from ink to laser on legacy Linear PDIP (22_0172) and SOIC_W (22_0176, ADPG/UTL assembly) products. PCN 22_0176 published 2022-08-10, effective 2022-11-12; no form, fit, function or reliability impact.
+- [LT1028](families/LT1028.md) · **Package / assembly** · Analog Devices (Linear Technology), DC 2242 · PCN 22_0241 / 22_0254: Die-attach epoxy changed from Henkel 8290 to 8290A, which ADI calls more robust with less outgassing. No impact to fit, form or function. Die unchanged.
+- [LT1057](families/LT1057.md) · **Package / assembly** · Analog Devices, 2022-10-12 · PCN 22_0241 / 22_0254: ADI PCNs 22_0241 and 22_0254 (Rev. - and A) change the die-attach epoxy from Henkel 8290 to 8290A for 8-lead SOIC; LT1057 and LT1058 order codes are listed among affected parts.
 - [LT1361](families/LT1361.md) · **Package / assembly** · Analog Devices (Linear Technology), 2021-11 · PCN 21_0060 (Rev -, A, B): Marking only, not a die change. On legacy Linear 8-SOICN products the top mark changed from ink to laser. Both marking styles are genuine. Rev B dated 11 Nov 2021.
 - [LT1361](families/LT1361.md) · **Package / assembly** · Analog Devices (Linear Technology), 2023-12 · PCN 22_0241 Rev A: Assembly material change: epoxy from Henkel 8290 to Henkel 8290A (Ablestik 8290 die-attach paste). Effective from date code 2242. ADI states no fit, form or function impact, improved reliability. Die and wafer process unchanged.
 - [LT1361](families/LT1361.md) · **Package / assembly** · Analog Devices (Linear Technology), 2024-10 · PCN 24_0236 / PCN 24_0234: Marking only, not a die change. The bottom-side trace code moved into the top-side laser mark to standardise ADI marking. PCN 24_0236 Rev - dated 8 Oct 2024. ADI states no form, fit, function or reliability impact.
 - [LT1364](families/LT1364.md) · **Package / assembly** · Analog Devices (Linear Technology), 2021-11-11 · PCN 21_0060 (Rev -/A/B): Marking only: legacy Linear 8-SOICN top mark changed from ink to laser. Both styles are genuine; no die change.
 - [LT1364](families/LT1364.md) · **Package / assembly** · Analog Devices (Linear Technology), DC 2242 · PCN 22_0241 (Rev A 2023-12-18): Die-attach epoxy changed from Henkel 8290 to 8290A (Loctite Ablestik). ADI states no impact to fit, form or function, with improved reliability. Die and wafer process unchanged. PCN Rev - and Rev A exist.
-- [LT1364](families/LT1364.md) · **Package / assembly** · Analog Devices (Linear Technology), 2024-10-08 · PCN 24_0234 / PCN 24_0236: Marking only: bottom-side trace code moved into the top-side laser mark, standardising ADI marking and for environmental reasons. No form, fit, function or reliability impact. Both PCNs (Rev -) are companion notices for different package groups.
+- [LT1364](families/LT1364.md) · **Package / assembly** · Analog Devices (Linear Technology), 2024-10-08 · PCN 24_0234 / PCN 24_0236: Marking only: bottom-side trace code moved into the top-side laser mark, standardising ADI marking. No form, fit, function or reliability impact. PCN 24_0234 covers PDIP (effective 2025-01-10); 24_0236 is its companion for other packages.
 - [NJM4580](families/NJM4580.md) · **Package / assembly** · Texas Instruments, 2023-11-15 · PCN 20231114002.1: TI E2E China ('RC4580: PCN change-Wire binding') reports PCN 20231114002.1 moves the RC4580 bond wire from gold to copper. The same PCN carries the NE5532DR/SA5532ADR/LM833DR/MC33078DR process migration. A customer asked about supply-current impact; TI's answer was not captured.
 - [OP275](families/OP275.md) · **Package / assembly** · Analog Devices, RoHS transition (date unconfirmed): Lead-free ordering codes replaced the leaded GP and GS codes. Distributors list OP275GS as obsolete and OP275GPZ/OP275GSZ as active. No die change was reported.
+- [OPAx211](families/OPAx211.md) · **Package / assembly** · Texas Instruments, 2019-08-29 · PCN 20190820005.1: Die coat changed from PBO to polyimide (PI) on the SON-8 OPA2211A, for continuity of supply. TI anticipates no impact on form, fit or function. Die design unchanged.
 - [OPA827](families/OPA827.md) · **Package / assembly** · Texas Instruments, 2024-06 · PCN 20240628012.1: TI PCN#20240628012.1 ('Qualification alternate Mount & Mold Compound material for select devices', 28 Jun 2024) lists OPA827AID. Samples until 28 Jul 2024; first ship 26 Sep 2024. No die, fab or datasheet change.
 - [OPA828](families/OPA828.md) · **Package / assembly** · Texas Instruments, 2022-10 preview · 2022-12 production: Package extension, no documented die change. TI added a thermally enhanced DGN single (SBOS671C preview, SBOS671D production) and the OPA2828 dual in DGN only, with tighter DC specs than SOIC. New silicon or just different trim/test is unknown. AC specs are shared.
-- [uPC4570](families/uPC4570.md) · **Package / assembly** · Renesas Electronics, 2023–2024 · PCN RL-BB-23-0058 / 24-0007: Renesas added (RL-BB-23-0058; samples 25 Aug 2023), then transferred (RL-BB-24-0007; published 19 Jan 2024, effective 13 May 2024) SOP back-end production. Plating and bond wire differ, outline slightly, tape box size too. Die unchanged; DIP and TSSOP not covered.
+- [uPC4570](families/uPC4570.md) · **Package / assembly** · Renesas Electronics, 2023–2024 · PCN RL-BB-23-0058 / 24-0007: Renesas added (RL-BB-23-0058, June 2023; samples 25 Aug 2023), then transferred (RL-BB-24-0007, 19 Jan 2024, effective 13 May 2024) SOP back-end to UTAC Thai (UTL). Cu wire for -AP, Au for -AX. EOL260002 (Feb 2026) ends select old codes. Die unchanged; DIP, TSSOP not covered.
 - [AD8022](families/AD8022.md) · **Package / assembly** · Analog Devices, c. 2010 · PCN 10_0339 (inferred date): PCN 10_0339 has an attachment 'AD8022ARMZ Marking Change' / 'Marking Comparison', showing the MSOP top mark changed. Reason and any other changes unknown. No die change indicated.
 - [AD8610](families/AD8610.md) · **Package / assembly** · Analog Devices, 2010-11-23 · PCN 10_0004: PCN 10_0004 moves SOIC narrow-body assembly at Amkor to a halogen-free mold compound, with no stated fit, form, function or reliability impact. AD8610/AD8620 variants are reportedly listed.
 - [AD8656](families/AD8656.md) · **Package / assembly** · Analog Devices, 2007 · PCN 07_0024 (form at Rev. E): ADI PCN 07_0024 Rev. E, the Sumitomo mold-compound discontinuation (mold compound and some die-attach changes across SOIC, MSOP/MiniSO and other packages), reportedly lists the AD8655 and AD8656. Package material only, not a die change.
 - [ADA4627](families/ADA4627.md) · **Package / assembly** · Analog Devices, 2014-02-13 · PCN 14_0038 Rev. -: Amkor Philippines qualified to assemble 3×3 mm LFCSP products, sawn-singulated leadframe, Amkor standard BOM, laser-marked pin 1. Assembly only, no die change. ADA4627-1/ADA4637-1 inclusion unconfirmed; would affect LFCSP only, not SOIC ARZ/BRZ.
+- [LT1028](families/LT1028.md) · **Package / assembly** · Analog Devices (Linear Technology), 2024-10 · PCN 24_0236: Marking only: bottom-side trace code moved into the top-side mark (companion of PCN 24_0234). No form, fit or function impact.
 - [OP275](families/OP275.md) · **Package / assembly** · Analog Devices, 2007+ · PCN 07_0024 Rev. E: Sumitomo discontinued mold compounds 6300H, 6650RL, 6710S, 6730B and 7050B, so ADI changed mold compound, and sometimes die-attach, for PDIP, SOIC and other packages, with a polyimide implementation. OP275 is linked to this PCN, but its parts-list row was not seen.
 - [OPA604](families/OPA604.md) · **Lifecycle** · Texas Instruments, c. 2016–2019 · EOL (no PDN found): OPA2604 discontinued ('OPA2604 has EOL status', TI E2E, by 2019–2020). In Aug 2016 it was nominally active but unobtainable (lead time over 6 months). TI suggested two OPA604s, OPA2134 or OPA1656; diyAudio cites OPA1688. No dual high-voltage JFET audio drop-in remains for ±20 V+ rails.
 - [LME49720](families/LME49720.md) · **Lifecycle** · Texas Instruments, 2017 · PDN 20170721000C: TI discontinued GFAB-sourced devices as Greenock closed (PDN 20170721000C; last order 2018-08-07, last ship 2019-02-07): LME49710HA/MAX/NA, replaced by OPA1611AID/AIDR. LM4562/LME49720 TO-99 went lifebuy c.2015–2017. Around 2025-01 stock tightened; one LME49720 1k price rose GBP 1.48→3.78, with no notice found.
 - [NJM4556](families/NJM4556.md) · **Lifecycle** · Nisshinbo Micro Devices (ex-New JRC), 2023-04 (保守品) · 2025-03-06 NRND: foxtango101 blog reported NJM4556A as 保守品 on 7 April 2023; the 2025-03-06 Nisshinbo datasheet marks DIP8 (AD) and SIP8 (AL) as NRND. Matches a March 2025 wave flagging DIPs (NJM2717D, NJM2392D, NJU7022D/7024D). No die or process change.
 - [OPA111](families/OPA111.md) · **Lifecycle** · Texas Instruments, c. 2019 · OPA2111 EOL (E2E 808890): OPA2111 was discontinued after about 26 years; OPA111AM/BM are also obsolete (date unknown). No die or fab PCN found. RFAB PCNs 20220328001.1 and 20210811000.1A were not shown to include these parts.
+- [EL2244](families/EL2244.md) · **Lifecycle** · Intersil, 2005-05 · FN7059 Rev 2.00: The May 16, 2005 FN7059 issue marks the family Not Recommended for New Designs and names ISL55002 and ISL55004 as possible substitutes. A third-party listing later shows EL2244CS as Obsolete (EOL).
 - [MUSES03](families/MUSES03.md) · **Lifecycle** · Nisshinbo Micro Devices, 2023-10 · EOL (launched 2017-03-24): Nisshinbo discontinued the MUSES03; it was on the discontinued list by 18 Oct 2023 (blog, updated 25 Oct). Stock reappeared briefly in Oct 2023; end of sales confirmed by Jan 2024. A June 2024 factory-visit post suggests process reasons, unconfirmed. MUSES01/02 stayed in production; no successor named.
 - [OPA627](families/OPA627.md) · **Lifecycle** · Texas Instruments, 2024 · TI E2E 1386960: Temporary supply suspension of the OPA627AU during the 2024–2025 documentation (and likely silicon) change. TI named the OPA828ID as pin-to-pin replacement, a different SiGe JFET-input die. Status stayed active; BU and TO-can stock was expected in about two months.
 - [LM6171](families/LM6171.md) · **Lifecycle** · Texas Instruments, 2023 · PDN 20230906005.3: TI PDN 20230906005.3 ('Discontinuance of Select Devices') includes LM6171BIM, replaced pin-to-pin by LM6171AIMX/NOPB. DigiKey lists LM6171BIM/NOPB obsolete. The A grade stays Active. SNOS745D (Nov 2023) coincides; its changes were not seen.
+- [LM833](families/LM833.md) · **Lifecycle** · onsemi, date unknown; obsolete in 2026 listings: onsemi has discontinued the through-hole LM833NG and the SOIC tube LM833DG; RS lists both discontinued or no longer stocked, Octopart shows LM833NG obsolete. LM833DR2G stays active. No discontinuance PCN captured.
+- [LT1028](families/LT1028.md) · **Lifecycle** · Analog Devices, 2025 · PDN 25_0027: Discontinuance of the leaded SO-8 ordering codes; the lead-free versions of the same part continue.
+- [LT1057](families/LT1057.md) · **Lifecycle** · Analog Devices, 2025 · PDN 25_0024 / PDN 25_0027: PDN 25_0024 discontinues LT1058ISW (replacement LT1058ISW#TRPBF); PDN 25_0027 discontinues LT1057IS8 and LT1057IS8#TR (replacements #PBF and #TRPBF, pin-compatible). Lead-finish and packaging codes only.
+- [LT1364](families/LT1364.md) · **Lifecycle** · Analog Devices, 2025 · PDN 25_0027: Discontinuance of leaded SO-8 ordering codes; lead-free versions of the same parts continue. LT1365 not listed.
 - [MUSES05](families/MUSES05.md) · **Lifecycle** · Nisshinbo Micro Devices, 2024-06 halt · restart by 2026 (undated): Production halted (by 2024-06 at the latest) because production materials were hard to obtain; the EN page says it resumes as MUSES05 after material adjustments. new_western_elec reportedly says a process material, not part of the chip. Die, attach, mould or OFC frame impact is undisclosed. Only known process risk.
+- [NE5534](families/NE5534.md) · **Lifecycle** · Texas Instruments, 2023–2025 · EOL planned, then withdrawn: Forum posts report TI EOL dates for NE5534P/DR/AP/ADR (last order 2024-10-24, last ship 2025-04-25) and a TI lifetime-buy note for SA5534. A later TI notice quoted on diyAudio says select SFAB/DFAB devices stay orderable with no last-time-buy date.
+- [NJM2114](families/NJM2114.md) · **Lifecycle** · Nisshinbo Micro Devices (ex-New JRC), 2023-04-07 · foxtango101 blog report: A Japanese audio blog reports Nisshinbo designated several ex-JRC op-amps as maintenance products (保守品, planned for discontinuation): NJM2114 with NJM4556A, NJM2082DD, NJM4560, NJM2041, NJM2043. NJM2068/NJM4580 inclusion unconfirmed. Lifecycle change only, no silicon change.
 - [4558](families/4558.md) · **Lifecycle** · Nisshinbo Micro Devices (ex-New JRC), 2020s (date not captured): Distributors list the DIP-8 NJM4558D ('JRC4558D') as discontinued, with remaining stock only. The Nisshinbo NJM4558 series page and the NJM4558C remain. No official successor statement was found.
 - [OP285](families/OP285.md) · **Lifecycle** · Analog Devices, 2017 · PDN 17_0038 (Rev. -, B, C): ADI discontinued the non-RoHS OP285GS variants and named the pin-compatible OP285GSZ as replacement. No die change is documented; this is a part-number and lead-finish transition.
 - [AD797](families/AD797.md) · **Lifecycle** · Analog Devices, 2010-05 · PDN 10_0081 (form Rev. B): PDN 10_0081 is ADI's May 2010 corporate obsolescence notice, mostly for Pb-plated models. One report placed AD797ANZ on it, but ANZ is still stocked, so this is doubtful. Which AD797 codes were discontinued is unconfirmed. No die change.
-- [LM833](families/LM833.md) · **Lifecycle** · onsemi, date unknown; obsolete in 2026 listings: onsemi/Octopart listings reportedly show the through-hole LM833N (PDIP-8) obsolete while SOIC parts such as LM833DR2G stay active. No discontinuance PCN captured.
-- [NJM2114](families/NJM2114.md) · **Lifecycle** · Nisshinbo Micro Devices (ex-New JRC), 2023-04-07 · foxtango101 blog report: A Japanese audio blog reports Nisshinbo designated several ex-JRC op-amps as maintenance products (保守品, planned for discontinuation): NJM2114 with NJM4556A, NJM2082DD, NJM4560, NJM2041, NJM2043. NJM2068/NJM4580 inclusion unconfirmed. Lifecycle change only, no silicon change.
 - [AD823](families/AD823.md) · **Renumbering / successor** · Analog Devices, 2012 · AD823A Rev. A 5/12, Rev. B 6/12: ADI introduced a materially different die under a near-identical name, alongside rather than replacing the original. AD823A uses the XFCB dielectrically isolated process with a two-stage folded-cascode design; AD823 uses the CB process with a nested integrator. Same pinout and supply; specs, output drive and packages differ.
 - [TL07x](families/TL07x.md) · **Renumbering / successor** · Texas Instruments, 2020-10 preview (Rev O); 2021 production: TI's next-generation TL07x: a new die on a 'modern process' inside SLOS080. Rail-inclusive (V+) input, clamped inputs, lower Iq, higher GBW and slew, far lower Vos and Ib, about twice the noise. TL072H production Jun 2021 (Rev R), TL071H Jul 2021 (Rev S). Now called 'FET-input'.
 - [LM833](families/LM833.md) · **Renumbering / successor** · Texas Instruments (ex-National Semiconductor), 2011–2012-05 · SNOSBD8E: After acquiring National in 2011, TI renamed National's LM833 to LM833-N to separate it from TI's own, different-die LM833 (SLOS481). Ordering a generic 'LM833' from TI gets the TI design, not the National part the reputation was built on.

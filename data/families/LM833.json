@@ -109,7 +109,7 @@
       "pn": "LM837 (LM837M, LM837N)",
       "channels": 4,
       "status": "unknown",
-      "note": "National 'Low Noise Quad Operational Amplifier'. No datasheet URL or TI status found."
+      "note": "Quad; TI datasheet Rev. C (Mar 2013). LM837M listed obsolete by distributors."
     }
   ],
   "key_specs": [
@@ -281,11 +281,11 @@
       ],
       "summary": "TI confirmed on E2E (1652528) that NE5532, LM833, RC4580 and MC33078 now share one RC4580-based die, part numbers unchanged, after a reported SFAB-to-RFAB move with die shrink (SFAB closure 2024–2025). Publicised by Hackaday (3 Jun 2026) and Headphonesty (Jul 2026). No LM833-specific deltas documented.",
       "spec_deltas": [],
-      "identification": "No datasheet revision after SLOS481B or marking change. PCN 20231114002.1 lists LM833DR; PCN 20240429005.1 membership unconfirmed. 2024+ date codes probably merged die.",
+      "identification": "No datasheet revision after SLOS481B or marking change. PCN 20231114002.1 lists LM833DR in Group 1 (process migration, BOM options). 2024+ date codes probably merged die.",
       "audio_impact": "Unknown for LM833. The two-NPN output may now be complementary (inference). NE5532 users in the same merge report changed behaviour.",
       "compatibility_risk": "medium: same part number, new silicon and process; stages and protection may differ (unverified for LM833).",
       "confidence": "high",
-      "verification": "PCN 20231114002 list puts LM833DR beside NE5532DR (22→18 V, 2→1 kV ESD); E2E and Hackaday confirmed.",
+      "verification": "PCN 20231114002.1 Group 1 lists LM833DR, MC33078DR, RC4580IP; E2E 1652528 and Hackaday confirm the merge.",
       "sources": [
         "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1652528/ne5532-ne5532-lm833-rc4580-and-mc33078-all-now-the-same-die",
         "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5726/PCN20231114002.1.pdf",
@@ -294,7 +294,8 @@
         "https://www.diyaudio.com/community/threads/ti-opamp-changes.441018/",
         "https://gearspace.com/board/geekzone/1464976-headsup-ti-has-changed-ne5532-k-version-2024-gt-opax134-lhm6518.html",
         "https://www.eevblog.com/forum/chat/ti-ne5532-audio-opamp-changes/125/",
-        "https://www.mouser.com/PCN/Texas_Instruments_PCN20240429005.1_Change_Notification.pdf"
+        "https://www.mouser.com/PCN/Texas_Instruments_PCN20240429005.1_Change_Notification.pdf",
+        "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/6/PCN20231114002.1.pdf"
       ]
     },
     {
@@ -323,18 +324,23 @@
       "vendor": "onsemi",
       "when": "date unknown; obsolete in 2026 listings",
       "part_numbers_affected": [
-        "LM833N (onsemi PDIP-8)"
+        "LM833N (onsemi PDIP-8)",
+        "LM833NG (onsemi PDIP-8, Pb-free)",
+        "LM833DG (onsemi SOIC-8 tube)"
       ],
-      "summary": "onsemi/Octopart listings reportedly show the through-hole LM833N (PDIP-8) obsolete while SOIC parts such as LM833DR2G stay active. No discontinuance PCN captured.",
+      "summary": "onsemi has discontinued the through-hole LM833NG and the SOIC tube LM833DG; RS lists both discontinued or no longer stocked, Octopart shows LM833NG obsolete. LM833DR2G stays active. No discontinuance PCN captured.",
       "spec_deltas": [],
       "identification": "Check onsemi or distributor lifecycle status; SOIC orderables (e.g. LM833DR2G) listed active.",
       "audio_impact": "None electrically; DIP rollers lose the Motorola-design LM833, leaving other vendors' dies.",
       "compatibility_risk": "low: availability issue only.",
-      "confidence": "low",
-      "verification": "Single listing summary; no PCN or date confirmed.",
+      "confidence": "medium",
+      "verification": "RS and Octopart listings plus LM833/D Rev. 8 discontinued note; no FPCN or date found.",
       "sources": [
         "https://octopart.com/part/onsemi/LM833N",
-        "https://www.onsemi.com/products/standard-products/amplifiers-comparators/operational-amplifiers-op-amps/lm833"
+        "https://www.onsemi.com/products/standard-products/amplifiers-comparators/operational-amplifiers-op-amps/lm833",
+        "https://uk.rs-online.com/web/p/op-amps/6254893",
+        "https://uk.rs-online.com/web/p/op-amps/7878664",
+        "https://octopart.com/part/onsemi/LM833NG"
       ]
     }
   ],
@@ -347,9 +353,9 @@
       "date": "2014-10",
       "url": "https://www.ti.com/lit/ds/symlink/lm833.pdf",
       "url_kind": "vendor_current",
-      "confidence": "medium",
+      "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Serves newest revision; 36-page 2026 size hints at post-B revision."
+      "note": "Serves Rev B; TI viewer shows Oct 2014 as current."
     },
     {
       "vendor": "Texas Instruments",
@@ -1022,6 +1028,18 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "ChipFind archive page for the Motorola LM833N."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "SLOS481B July 2010 – October 2014 LM833 (revision history)",
+      "doc_number": "SLOS481B",
+      "revision": "B",
+      "revision_status": "confirmed",
+      "date": "2014-10",
+      "url": "https://ti.com/document-viewer/LM833/datasheet/revision_history",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "note": "TI HTML viewer; lists changes from Rev A (Aug 2010)."
     }
   ],
   "product_pages": [
@@ -1053,7 +1071,7 @@
       "doc_number": "SLOS481B",
       "revision": "B",
       "date": "2014-10-22",
-      "changes": "Latest confirmed; 16 MHz GBW 'relatively stable over a wide range of supply voltages'. Date per TI PSpice model header."
+      "changes": "Latest; TI's new datasheet format, added power-supply and layout sections; 16 MHz GBW. Date per TI viewer and PSpice header."
     },
     {
       "vendor": "Texas Instruments (ex-National)",
@@ -1138,7 +1156,7 @@
         }
       ],
       "missing": [],
-      "note": "No SLOS481C or SLOS481D found. Original July 2010 copy unconfirmed (Octopart 10089682 candidate)."
+      "note": "TI viewer still shows Rev B (Oct 2014) as current. No SLOS481C or SLOS481D found."
     },
     {
       "vendor": "Texas Instruments (ex-National)",
@@ -1254,10 +1272,10 @@
     "https://www.ti.com/product/LM833-N/part-details/LM833M"
   ],
   "open_questions": [
-    "Any SLOS481 revision after B (e.g. SLOS481C) for the shared die? Check symlink (36 pages, 1,176,968 bytes) and Octopart 32026551.",
-    "Is LM833 on PCN 20240429005.1, 20250514001.1 or 20220615003.1? Is PCN 20231114002.1 really an Au-to-Cu wire-bond change?",
+    "Is LM833 also on PCN 20230627002.1, which an EEVblog post cites for the die change?",
+    "Is LM833 on PCN 20240429005.1, 20250514001.1 or 20220615003.1? What BOM options does PCN 20231114002.1 add?",
     "LM833 before/after deltas and date-code cut-over for the new TI die; is LM833-N affected, moved or NRND?",
-    "Source of the 140 dB dynamic-range claim; National original release date; SNOA586 / AN-346 title; LM837 datasheet and status.",
+    "Source of the 140 dB dynamic-range claim; National original release date; SNOA586 / AN-346 title; LM837 document number.",
     "Do Douglas Self, NwAvGuy or Cycfi measurements cover LM833? Was the E2E 1443925 responder from TI?"
   ],
   "sources": [
@@ -1312,8 +1330,8 @@
     "https://github.com/rhooper/ic-ocr-cataloger/blob/8e4af090cb19a1da4fe699bfdac5222f70510a43/ic_ocr_cataloger/data/national.tsv"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 9,
+    "status": "verified-with-corrections",
+    "web_searches_used": 15,
     "claims_confirmed": [
       "TI confirmed NE5532, LM833, RC4580 and MC33078 now share one die, part numbers unchanged: https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1652528/ne5532-ne5532-lm833-rc4580-and-mc33078-all-now-the-same-die",
       "Hackaday reported the merge on 3 June 2026: https://hackaday.com/2026/06/03/texas-instruments-changes-the-ne5532-and-others-into-incompatible-versions/",
@@ -1329,7 +1347,11 @@
       "onsemi LM833DR2G listed at 15 MHz, 10–36 V: https://ie.rs-online.com/web/p/op-amps/1629355",
       "PCN 20240429005.1 involves a die change from the RFAB process change: https://www.mouser.com/PCN/Texas_Instruments_PCN20240429005.1_Change_Notification.pdf",
       "PCN 20231114002.1 reportedly lists LM833DR, RC4580IP, MC33078DR, NE5532AP: https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5726/PCN20231114002.1.pdf",
-      "GroupDIY: LM833 has lower distortion but lower output drive than 5532: https://groupdiy.com/threads/lm833-vs-5532.3360/"
+      "GroupDIY: LM833 has lower distortion but lower output drive than 5532: https://groupdiy.com/threads/lm833-vs-5532.3360/",
+      "TI document viewer still heads the LM833 datasheet 'SLOS481B July 2010 – October 2014'; Rev B follows Rev A (August 2010): https://ti.com/document-viewer/LM833/datasheet/revision_history",
+      "PCN 20231114002.1 Group 1 (process migration & BOM option qualification) lists LM833DR, RC4560IP, RC4580IP, TL5580IPWR, MC33078DR: https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/6/PCN20231114002.1.pdf",
+      "onsemi LM833NG listed discontinued by RS and obsolete by Octopart; RS no longer stocks LM833DG: https://uk.rs-online.com/web/p/op-amps/6254893 , https://octopart.com/part/onsemi/LM833NG , https://uk.rs-online.com/web/p/op-amps/7878664",
+      "TI lists the LM837 datasheet as Rev. C, 27 Mar 2013: https://www.ti.com/product/de-de/LM837"
     ],
     "refuted_claims": [
       "TI LM833 '±22 V to ±18 V, 9 to 5 V/µs' change: these are NE5532 SLOS075K deltas; SLOS481A/B were always ±18 V, 7 V/µs.",
@@ -1344,7 +1366,9 @@
       "PCN 20231114002.1 subject left unverified; PCN 20250514001.1 and 20220615003.1 added as candidates.",
       "Added mirrors Octopart 32026551 and radiolocman di=82594; legacy onsemi URL and TI LM833M page added to archive seeds.",
       "Reichelt Rev A raised to high; unseen mirrors lowered to medium or marked unconfirmed.",
-      "Added GroupDIY view (lower distortion, lower drive); Douglas Self discussion not confirmed, so not asserted."
+      "Added GroupDIY view (lower distortion, lower drive); Douglas Self discussion not confirmed, so not asserted.",
+      "onsemi lifecycle entry widened to LM833NG and LM833DG and raised to medium confidence (RS, Octopart): https://uk.rs-online.com/web/p/op-amps/6254893",
+      "PCN 20231114002.1 subject: Group 1 is process migration and BOM option qualification, not only a wire-bond change: https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/6/PCN20231114002.1.pdf"
     ],
     "unverified_urls": [
       "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-301/4263.pdf",

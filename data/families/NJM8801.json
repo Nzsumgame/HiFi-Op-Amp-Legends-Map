@@ -33,13 +33,13 @@
       "pn": "NJM8801E / NJM8801E-TE2",
       "channels": 2,
       "status": "active",
-      "note": "SOP8, JEDEC 150 mil; -TE2 is tape and reel. DigiKey: not normally stocked."
+      "note": "SOP8, JEDEC 150 mil; -TE2 (also -TE1) tape and reel. DigiKey: Active, not stocked."
     },
     {
       "pn": "NJM8801VA3",
       "channels": 2,
       "status": "unknown",
-      "note": "Small SSOP8 with copper lead frame. Distributor status not checked."
+      "note": "Small SSOP8 with copper frame; in Ver. 2014-11-10. Lifecycle not found."
     }
   ],
   "key_specs": [
@@ -139,7 +139,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Pre-merger New JRC Japanese edition; earliest version identified."
+      "note": "Pre-merger Japanese edition; SOP8 JEDEC 150 mil and SSOP8."
     },
     {
       "vendor": "New Japan Radio (via datasheet4u)",
@@ -157,13 +157,46 @@
       "vendor": "New Japan Radio (NJR), via Mouser",
       "title": "NJM8801 (High Quality Audio Dual Operational Amplifier), English datasheet",
       "doc_number": "NJM8801",
-      "revision": "",
-      "date": "",
+      "revision": "Ver. 2012-02-17",
+      "date": "2012-02-17",
       "url": "https://www.mouser.com/ds/2/294/NJM8801_DataSheetE6-262233.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "English edition; lists EMP8 and SSOP8 packages."
+    },
+    {
+      "vendor": "New JRC (via Chipsmall)",
+      "doc_number": "NJM8801",
+      "revision": "Ver. 2014-11-10",
+      "date": "2014-11-10",
+      "url": "https://datasheet.chipsmall.com/NJM8801E/630582.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Footer 'NJM8801 - 1 - Ver.2014-11-10'."
+    },
+    {
+      "vendor": "New JRC (via Sekorm)",
+      "doc_number": "NJM8801",
+      "revision": "",
+      "date": "",
+      "url": "https://en.sekorm.com/doc/3007502.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
       "revision_status": "unknown",
-      "note": "Likely English edition; Ver. footer (x.y style) not seen."
+      "note": "Sekorm copy; version not shown."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices (via Xon)",
+      "doc_number": "NJM8801",
+      "revision": "",
+      "date": "",
+      "url": "https://xonstorage.blob.core.windows.net/pdf/nisshinbo_njm8801ete1_apr22_xonlink.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Nisshinbo-labelled NJM8801E-TE1 copy, filed April 2022; version not shown."
     }
   ],
   "product_pages": [
@@ -177,10 +210,17 @@
   "revision_history": [
     {
       "vendor": "New JRC",
+      "doc_number": "NJM8801 (English datasheet)",
+      "revision": "Ver. 2012-02-17",
+      "date": "2012-02-17",
+      "changes": "Earliest dated edition found; packages given as EMP8 and SSOP8."
+    },
+    {
+      "vendor": "New JRC",
       "doc_number": "NJM8801 (Japanese datasheet)",
       "revision": "Ver.2014-11-10",
       "date": "2014-11-10",
-      "changes": "Only version identified. No change list visible."
+      "changes": "Packages now SOP8 (JEDEC 150 mil) and SSOP8; other changes not listed."
     }
   ],
   "revision_chains": [
@@ -196,16 +236,22 @@
       "missing": [
         "earlier Japanese versions, including first release"
       ],
-      "note": "Only dated revision identified."
+      "note": "Ver. 2014-11-10 on Kyohritsu and Chipsmall; an English 2012-02-17 edition predates it."
     },
     {
       "vendor": "New JRC",
       "doc_number": "NJM8801 (English datasheet)",
-      "known": [],
-      "missing": [
-        "all Ver. numbers and dates, including the Mouser copy"
+      "known": [
+        {
+          "rev": "Ver. 2012-02-17",
+          "date": "2012-02-17"
+        }
       ],
-      "note": "Sibling English datasheets use Ver.x.y footers (NJM8080 Ver.6.0, NJM8068 Ver.3.1)."
+      "missing": [
+        "first release",
+        "editions after 2012-02-17"
+      ],
+      "note": "Mouser copy is Ver. 2012-02-17 (EMP8 listed); later copies list SOP8 instead."
     },
     {
       "vendor": "Nisshinbo Micro Devices",
@@ -231,10 +277,10 @@
     "https://www.njr.com/semicon/products/NJM8801.html"
   ],
   "open_questions": [
-    "What revision and date does the current Nisshinbo datasheet carry, and was it rebranded after 2022?",
-    "What is the English datasheet Ver. history, and were there Japanese versions before Ver.2014-11-10?",
+    "Does the Nisshinbo-labelled 2022 copy carry a new Ver. date or spec changes?",
+    "Were there editions before Ver. 2012-02-17, and did EMP8 become SOP8 by renaming only?",
     "Is the 6 mA supply current per package or per channel? Also needed: noise frequency, current noise, output current.",
-    "Is NJM8801VA3 still in production?",
+    "Is NJM8801VA3 still in production? Not seen in the visible part of NRND notice MNG-2025-0081.",
     "How is NJM8801 related to NJM8901?"
   ],
   "sources": [
@@ -256,7 +302,7 @@
     "http://www.njr.com/"
   ],
   "verification": {
-    "status": "partially-verified",
+    "status": "verified-with-corrections",
     "refuted_claims": [],
     "corrections": [
       "Kyohritsu mirror identified as the Japanese New JRC datasheet Ver.2014-11-10; revision and date were previously unknown.",
@@ -266,7 +312,8 @@
       "NJM8801E status changed from unknown to active (distributor-listed, not normally stocked at DigiKey).",
       "Introduction dated 'by Nov 2014' from the datasheet version.",
       "'MUSES technology' claim sourced to the vendor's own product pages.",
-      "Added typical use: Pioneer OEM, sold as a service part."
+      "Added typical use: Pioneer OEM, sold as a service part.",
+      "Ver. 2014-11-10 is not the earliest edition: the Mouser English copy is Ver. 2012-02-17: https://www.mouser.com/ds/2/294/NJM8801_DataSheetE6-262233.pdf"
     ],
     "unverified_urls": [
       "https://www.youtube.com/watch?v=zS7Z64YsgOg",
@@ -287,8 +334,13 @@
       "NJM8801E sold by DigiKey, not normally stocked (https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM8801E/2442899)",
       "Zigsow review titled 'NJM4580以上MUSES8820未満' (https://zigsow.jp/item/329409/review/329949)",
       "stereo.jp 'JRC訪問記' names NJM8801 as MUSES tech applied to mass production (https://stereo.jp/?p=3614)",
-      "NJM8801-E sold as a Pioneer service part (https://www.soundservice.gr/e-shop/en/product.php?products_id=8416)"
+      "NJM8801-E sold as a Pioneer service part (https://www.soundservice.gr/e-shop/en/product.php?products_id=8416)",
+      "Mouser NJM8801 English datasheet is Ver.2012-02-17, packages EMP8 and SSOP8: https://www.mouser.com/ds/2/294/NJM8801_DataSheetE6-262233.pdf",
+      "Ver.2014-11-10 copy lists SOP8 JEDEC 150 mil and SSOP8 (NJM8801VA3): https://datasheet.chipsmall.com/NJM8801E/630582.pdf",
+      "4.5 nV/√Hz, 15 MHz, 0.0005% THD, bipolar input: https://kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm8801.pdf",
+      "DigiKey lists NJM8801E as Active: https://www.digikey.hk/en/products/detail/nisshinbo-micro-devices-inc/NJM8801E/2442899",
+      "NJM8801 not seen in the visible part of Nisshinbo NRND notice MNG-2025-0081: https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7136/NRND_MNG-2025-0081.pdf"
     ],
-    "web_searches_used": 5
+    "web_searches_used": 7
   }
 }

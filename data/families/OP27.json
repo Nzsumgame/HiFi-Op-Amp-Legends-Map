@@ -274,7 +274,7 @@
       "audio_impact": "Unknown; no measurement comparisons found.",
       "compatibility_risk": "low: same pinout, sockets and headline specs; differences only in unspecified parameters.",
       "confidence": "medium",
-      "verification": "Based on TI and ADI datasheets; not separately rechecked.",
+      "verification": "SLOS100E header (Feb 1989, revised Feb 2010) reconfirmed; die origin still undocumented.",
       "sources": [
         "https://www.ti.com/lit/gpn/OP27",
         "https://www.ti.com/product/OP27",
@@ -341,12 +341,12 @@
       "title": "Low Noise, Precision Operational Amplifier Data Sheet OP27 (Rev. H)",
       "doc_number": "C00317",
       "revision": "H",
-      "date": "",
+      "date": "2015-10",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/op27.pdf",
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current copy (op27.pdf and OP27.pdf); Rev H pubcode and history unseen.",
+      "note": "Current copy (op27.pdf and OP27.pdf); history G 3/15, H 10/15.",
       "also_urls": [
         "https://www.analog.com/media/en/technical-documentation/data-sheets/OP27.pdf"
       ]
@@ -392,12 +392,12 @@
       "title": "OP27 (Rev. G)",
       "doc_number": "C00317",
       "revision": "G",
-      "date": "",
+      "date": "2015-03",
       "url": "https://dtsheet.com/doc/1387743/op27--rev.-g----analog-devices",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Only Rev G copy found; date and contents unknown."
+      "note": "Only Rev G copy found; date from Rev H history."
     },
     {
       "vendor": "Analog Devices",
@@ -890,6 +890,66 @@
       "confidence": "medium",
       "revision_status": "unknown",
       "note": "Cited by LTC SPICE model headers; no online copy."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP27 data sheet (Rev. H)",
+      "doc_number": "C00317",
+      "revision": "H",
+      "date": "2015-10",
+      "url": "https://www.logosfoundation.org/instrum_gwr/pianet/op27.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Rev H copy; revision history ends G→H 10/15."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "OP27GS (Rev. H data sheet)",
+      "doc_number": "C00317",
+      "revision": "H",
+      "date": "2015-10",
+      "url": "https://www.xonelec.com/mpn/analogdevices/op27gs",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "Distributor page quoting the Rev H revision history."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OP27A, OP27C, OP27E, OP27G",
+      "doc_number": "SLOS100B",
+      "revision": "B",
+      "date": "1994-08",
+      "url": "https://chipfind.net/datasheet/html/ti/op27e.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Header 'SLOS100B February 1989 Revised August 1994'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OP27/OP37 combined datasheet",
+      "doc_number": "SLOS100C",
+      "revision": "C",
+      "date": "2000-09",
+      "url": "",
+      "url_kind": "vendor_revision_specific",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Header 'SLOS100C – February 1989 – Revised September 2000'; host unidentified."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OP27 datasheet (TI E2E China attachment)",
+      "doc_number": "SLOS100",
+      "revision": "",
+      "date": "",
+      "url": "https://e2echina.ti.com/cfs-file/__key/telligent-evolution-components-attachments/00-58-01-00-00-09-49-02/OP27.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Forum attachment; revision not shown."
     }
   ],
   "product_pages": [
@@ -945,15 +1005,15 @@
       "vendor": "Analog Devices",
       "doc_number": "C00317",
       "revision": "G",
-      "date": "",
-      "changes": "Exists (dtsheet copy); changes unknown."
+      "date": "2015-03",
+      "changes": "Copies disagree: Ordering Guide changed, or Absolute Maximum Ratings, General Description and Outline Dimensions edited."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "C00317",
       "revision": "H",
-      "date": "",
-      "changes": "Current analog.com copy, new 'Data Sheet OP27' style. Reportedly 16 Dec 2016 (unconfirmed); changes unknown."
+      "date": "2015-10",
+      "changes": "Current analog.com copy. Copies disagree: Figure 2 edited, or Features, General Description and Application Information changed."
     },
     {
       "vendor": "Analog Devices",
@@ -982,6 +1042,13 @@
       "revision": "B",
       "date": "1994-08",
       "changes": "Details unknown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS100C",
+      "revision": "C",
+      "date": "2000-09",
+      "changes": "Combined OP27/OP37 edition; details unknown."
     },
     {
       "vendor": "Texas Instruments",
@@ -1043,17 +1110,17 @@
         },
         {
           "rev": "G",
-          "date": ""
+          "date": "2015-03"
         },
         {
           "rev": "H",
-          "date": ""
+          "date": "2015-10"
         }
       ],
       "missing": [
         "0"
       ],
-      "note": "No copies of 0, A, B, D, E. Dates of G and H unknown."
+      "note": "No copies of 0, A, B, D, E. Rev H history: G March 2015, H October 2015."
     },
     {
       "vendor": "Analog Devices",
@@ -1086,16 +1153,19 @@
           "date": "1994-08"
         },
         {
+          "rev": "C",
+          "date": "2000-09"
+        },
+        {
           "rev": "E",
           "date": "2010-02"
         }
       ],
       "missing": [
         "A",
-        "C",
         "D"
       ],
-      "note": "8-grade edition (archive.org, docplayer, ic37, atrinelec) revision unknown."
+      "note": "8-grade OP27/OP37 copies (archive.org, docplayer, ic37, atrinelec) are B or C; revision unconfirmed per copy."
     },
     {
       "vendor": "Linear Technology",
@@ -1162,7 +1232,7 @@
   ],
   "open_questions": [
     "OP27 Rev G and H dates and change lists: did either change specs or die?",
-    "Current OP37 ordering codes and lifecycle; is ADI OP27 really NRND (only a 2026 article says so)?",
+    "Current OP37 codes and lifecycle; is ADI OP27 NRND? Distributors disagree (Production vs NRND/Decline).",
     "Are TI (SLOS100) and LTC dies own designs or PMI-licensed? Do unspecified parameters differ?",
     "Unexplained OP37 die text '1427U' / '1990'; meaning of OP27S/OP37S; TI OP37 literature number.",
     "Read Douglas Self's 'The OP27 Opamp' section and diyAudio/phonoclone pages; find ASR or Groner measurements."
@@ -1188,11 +1258,16 @@
     "https://github.com/tardate/Datasheets/blob/main/components/OP27.pdf",
     "https://github.com/reivax-boucoi/Datasheets/blob/master/OP37_low_noise_opamp.pdf",
     "https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/OPLTC.LIB",
-    "https://github.com/tin-nl/st-diskmags/blob/b2fc161489e5ba11aefb74a6f540011a719040f5/dba/10/AUDIO003.TXT"
+    "https://github.com/tin-nl/st-diskmags/blob/b2fc161489e5ba11aefb74a6f540011a719040f5/dba/10/AUDIO003.TXT",
+    "https://www.logosfoundation.org/instrum_gwr/pianet/op27.pdf",
+    "https://www.xonelec.com/mpn/analogdevices/op27gs",
+    "https://chipfind.net/datasheet/html/ti/op27e.html",
+    "https://octopart.com/part/analog-devices/OP27GPZ",
+    "https://www.abacuselect.com/products/catalog/analog-devices-OP27GPZ-operational-amplifiers/"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 6,
+    "status": "verified-with-corrections",
+    "web_searches_used": 10,
     "claims_confirmed": [
       "Current ADI OP27 is Rev H: https://www.analog.com/media/en/technical-documentation/data-sheets/op27.pdf and https://www.mouser.com/datasheet/2/609/OP27-1626182.pdf",
       "DigiKey mirror holds Rev F: https://media.digikey.com/pdf/Data%20Sheets/Analog%20Devices%20PDFs/OP27.pdf",
@@ -1208,12 +1283,17 @@
       "OP27 Rev H: 3.5 nV/√Hz at 10 Hz, 2.7 Hz corner, gain 1.8 million: https://www.analog.com/media/en/technical-documentation/data-sheets/op27.pdf",
       "OP37: 17 V/µs, 63 MHz, gains above 5: https://www.analog.com/media/en/technical-documentation/data-sheets/OP37.pdf",
       "OP27 reported NRND, OP27GPZ stocked: https://theobsolescencebrief.com/op27-replacement-precision-op-amp/ and https://www.digikey.com/en/products/detail/analog-devices-inc/OP27GPZ/820340",
-      "ADI OP227 Rev A copy exists: https://datasheet.octopart.com/OP227EY-Analog-Devices-datasheet-136169.pdf"
+      "ADI OP227 Rev A copy exists: https://datasheet.octopart.com/OP227EY-Analog-Devices-datasheet-136169.pdf",
+      "OP27 Rev H revision history: Rev F to G dated 3/15, Rev G to H dated 10/15 (https://www.logosfoundation.org/instrum_gwr/pianet/op27.pdf, https://www.xonelec.com/mpn/analogdevices/op27gs).",
+      "TI SLOS100E header: February 1989, revised February 2010; product page lists Rev. E, 29 Jan 2010 (https://www.ti.com/lit/gpn/op27, https://ti.com/product/op27).",
+      "A combined OP27/OP37 TI sheet is SLOS100C, revised September 2000; SLOS100B revised August 1994 (https://chipfind.net/datasheet/html/ti/op27e.html).",
+      "OP27GPZ lifecycle conflicts: Octopart 'Production' (https://octopart.com/part/analog-devices/OP27GPZ); Abacus 'NRFND Decline' (https://www.abacuselect.com/products/catalog/analog-devices-OP27GPZ-operational-amplifiers/)."
     ],
     "refuted_claims": [
       "'No TI datasheet found' is wrong: TI publishes SLOS100 (Feb 1989, Rev E Feb 2010) and an OP37G datasheet.",
       "Current ADI OP27 is not 'F or later' unknown: Rev H is current, Rev G also exists.",
-      "'Different dies' across vendors is unconfirmed; only different vendors and grade sets are confirmed."
+      "'Different dies' across vendors is unconfirmed; only different vendors and grade sets are confirmed.",
+      "Rev H 'reportedly 16 Dec 2016' is wrong: the revision history dates Rev H to 10/15 (October 2015)."
     ],
     "corrections": [
       "TI confirmed as second source; added SLOS100 and TI OP27A/OP27C/OP37G. MicroSim 'ti' models are not TI evidence.",
@@ -1222,7 +1302,9 @@
       "Added OP27-LTC, OP27S, OP37S pages, LTC datasheets, analog.com OP27-OP37.pdf and OP227 Rev A copy.",
       "Second-source changes split into TI and LTC entries with grade-set deltas; confidence medium.",
       "OP27 status: reported NRND, OP27GPZ still stocked (unconfirmed on analog.com).",
-      "Added OPA27/OPA37 naming warning and OPA227/AD797 replacement suggestions."
+      "Added OPA27/OPA37 naming warning and OPA227/AD797 replacement suggestions.",
+      "Rev G dated 2015-03 and Rev H 2015-10 from the Rev H revision history; change lists differ between copies.",
+      "Added TI SLOS100C (Sept 2000) to the SLOS100 chain; chipfind SLOS100B copy and E2E China copy added."
     ],
     "unverified_urls": [
       "http://www.analog.com/static/imported-files/data_sheets/OP27.pdf",

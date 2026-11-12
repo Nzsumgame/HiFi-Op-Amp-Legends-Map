@@ -33,45 +33,45 @@
       "pn": "NL8902AN / NL8902ANAE2S",
       "channels": 2,
       "status": "active",
-      "note": "EMP-8 (EMP-8-AN). Stocked by Akizuki, Kyohritsu eleshop, Profusion. No DIP-8 version."
+      "note": "EMP-8 (EMP-8-AN); samples NL8902ANAE2S-ES at DigiKey. Akizuki, eleshop, Profusion stock it."
     },
     {
-      "pn": "NL8902GR",
+      "pn": "NL8902GR / NL8902GRAE4S",
       "channels": 2,
-      "status": "unknown",
-      "note": "DFN4035-8-GR. In the launch release; full ordering code and stock not seen."
+      "status": "active",
+      "note": "DFN4035-8-GR, −40 to 125 °C; element14 lists NL8902GRAE4S."
     }
   ],
   "key_specs": [
     {
       "parameter": "Input noise (1 kHz)",
-      "value": "10 nV/√Hz typ",
+      "value": "10 nV/√Hz typ; 1.4 µVrms (20 Hz–20 kHz)",
       "condition": "f = 1 kHz",
-      "source": "audioXpress launch news"
+      "source": "Datasheet Ver.1.0"
     },
     {
       "parameter": "GBW",
       "value": "9 MHz typ",
       "condition": "press-release figure",
-      "source": "audioXpress launch news"
+      "source": "Datasheet Ver.1.0; audioXpress"
     },
     {
       "parameter": "Slew rate",
       "value": "20 V/µs typ",
       "condition": "press-release figure",
-      "source": "audioXpress launch news"
+      "source": "Datasheet Ver.1.0; audioXpress"
     },
     {
       "parameter": "THD+N",
       "value": "0.0004% THD typ",
       "condition": "f = 1 kHz",
-      "source": "audioXpress launch news"
+      "source": "Datasheet Ver.1.0; audioXpress"
     },
     {
       "parameter": "Supply range",
-      "value": "±4.0 V to ±16 V (reportedly; one summary: 4–16 V)",
-      "condition": "operating range; check datasheet",
-      "source": "Nisshinbo release 2025-05-13"
+      "value": "±4.0 V to ±16 V; abs. max 18 V per rail (36 V)",
+      "condition": "operating (Avnet); abs. max (datasheet)",
+      "source": "Datasheet Ver.1.0; Avnet"
     },
     {
       "parameter": "Supply current",
@@ -183,6 +183,40 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Launch news confirming specs and packages; not a datasheet."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices (via Endrich)",
+      "title": "NL8902 High Quality Sound, JFET Input, Dual Audio Operational Amplifier",
+      "doc_number": "NL8902 datasheet (nl8902_s_e)",
+      "revision": "Ver. 1.0",
+      "date": "",
+      "url": "https://www.endrich.com/Datenbl%C3%A4tter/Aktive%20Komponenten/nl8902-s-e.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "English Ver.1.0; covers NL8902AN (EMP-8-AN) and NL8902GR (DFN4035-8-GR)."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices (via Mouser)",
+      "doc_number": "n/a",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.in/new/nisshinbo/nisshinbo-nl8902-op-amps",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Mouser new-product page; 9 MHz, 20 V/µs, MUSES technology."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices (via Avnet)",
+      "doc_number": "n/a",
+      "revision": "",
+      "date": "",
+      "url": "https://my.avnet.com/ebv/products/new-products/npi/2025/nisshinbo-micro-devices-nl8902/",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Avnet launch page; gives ±4.0 V to ±16 V supply."
     }
   ],
   "product_pages": [
@@ -191,17 +225,30 @@
     "https://gb.profusion.uk/uk/nl8902anae2s",
     "https://www.macnica.co.jp/en/business/semiconductor/manufacturers/nisshinbo-microdevices/news/147476/"
   ],
-  "revision_history": [],
+  "revision_history": [
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "doc_number": "NL8902 datasheet (nl8902_s_e)",
+      "revision": "Ver. 1.0",
+      "date": "",
+      "changes": "First release, c. May 2025 launch. Covers EMP-8-AN and DFN4035-8-GR; 10 nV/√Hz, 0.0004%, 20 V/µs."
+    }
+  ],
   "revision_chains": [
     {
       "vendor": "Nisshinbo Micro Devices",
       "doc_number": "NL8902 datasheet",
-      "known": [],
+      "known": [
+        {
+          "rev": "Ver. 1.0",
+          "date": ""
+        }
+      ],
       "missing": [
-        "initial release (c. 2025-05, probably Ver.1.0)",
+        "Ver. 1.0 date",
         "later Ver. updates"
       ],
-      "note": "Sole-source part. First-release Ver. string, date and vendor PDF URL not yet found."
+      "note": "English file nl8902_s_e.pdf Ver.1.0 (Endrich copy); Japanese file and dates not found."
     }
   ],
   "ti_literature_numbers": [],
@@ -217,9 +264,9 @@
     "https://www.nisshinbo-microdevices.co.jp/ja/products/operational-amplifier/spec/?product=nl8902"
   ],
   "open_questions": [
-    "Find the datasheet PDF, Ver. and date. NL8802's file is nl8802_s_e.pdf (Ver.1.0), so NL8902_E/J.pdf seeds may be wrong.",
-    "Supply range: '±4.0 V to ±16 V' or '4 V to 16 V dual supply'? Check the datasheet.",
-    "NL8902GR (DFN4035-8): full ordering code and distributor availability?",
+    "Date of datasheet Ver.1.0 and the official Nisshinbo URL; does a Japanese nl8902_s_j.pdf exist?",
+    "Confirm the recommended operating range (±4.0 V to ±16 V per Avnet) in the datasheet table.",
+    "NL8902GRAE4S (DFN4035-8): broad distributor availability beyond element14?",
     "Is NL8902 related to JRC's NJM8901 or derived from the MUSES8920 die?",
     "What did new_western_elec's Oct 2025 'NL8902とMUSES8921' post and NS-kobo's phono-EQ notes conclude?"
   ],
@@ -251,8 +298,8 @@
     "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8920a"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 5,
+    "status": "verified-with-corrections",
+    "web_searches_used": 8,
     "claims_confirmed": [
       "Nisshinbo announced the NL8902 Series JFET-input dual on 2025-05-13: https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html",
       "The vendor product page exists: https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=nl8902",
@@ -264,7 +311,12 @@
       "Vendor wording 'MUSES high-quality sound technology with improved productivity', launch 2025-05-13: https://news.mynavi.jp/techplus/article/20250513-3301537/",
       "new_western_elec post 'NL8902とMUSES8921' exists (Oct 2025): https://nw-electric.way-nifty.com/blog/2025/10/post-0c41e4.html",
       "NS-kobo phono-EQ comparison reportedly rates NL8902AN above OPA2604AP: http://ns-kobo.la.coocan.jp/Op-amp_Comparison.html",
-      "NL8802 sibling datasheet on Mouser is marked Ver.1.0: https://www.mouser.com/datasheet/2/294/nl8802_s_e-3435312.pdf"
+      "NL8802 sibling datasheet on Mouser is marked Ver.1.0: https://www.mouser.com/datasheet/2/294/nl8802_s_e-3435312.pdf",
+      "NL8902 datasheet Ver.1.0 (nl8902_s_e): 10 nV/√Hz, 0.0004% at 1 kHz, 20 V/µs, abs. max 18 V (36 V): https://www.endrich.com/Datenbl%C3%A4tter/Aktive%20Komponenten/nl8902-s-e.pdf",
+      "Datasheet covers NL8902AN (EMP-8-AN) and NL8902GR (DFN4035-8-GR); 1.4 µVrms 20 Hz–20 kHz: https://www.endrich.com/Datenbl%C3%A4tter/Aktive%20Komponenten/nl8902-s-e.pdf",
+      "Avnet gives ±4.0 V to ±16 V supply: https://my.avnet.com/ebv/products/new-products/npi/2025/nisshinbo-micro-devices-nl8902/",
+      "element14 lists NL8902GRAE4S, 9 MHz, −40 to 125 °C, DFN4035: https://nz.element14.com/nisshinbo-micro-devices/nl8902grae4s/op-amp-9mhz-40-to-125deg-c-dfn4035/dp/4866427",
+      "DigiKey lists sample code NL8902ANAE2S-ES: https://www.digikey.co.uk/en/products/detail/nisshinbo-micro-devices-inc/NL8902ANAE2S-ES/26846252"
     ],
     "refuted_claims": [
       "Release date is not 'c.2025, first coverage Sept 2025': Nisshinbo announced NL8902 on 2025-05-13."
@@ -277,7 +329,9 @@
       "Added press-release key specs: 10 nV/√Hz, 0.0004% THD, 20 V/µs, 9 MHz, 10 pA, 1.3 mA/ch, EMIRR 82 dB, ±4 to ±16 V, unity-gain stable.",
       "Status set to active: vendor product page is live; Akizuki and Kyohritsu stock it.",
       "Nisshinbo file naming (nl8802_s_e.pdf, Ver.1.0) casts doubt on the inferred NL8902_E.pdf seed.",
-      "Reputation adds NS-kobo's phono-EQ result and Macnica's 'entry-level' positioning."
+      "Reputation adds NS-kobo's phono-EQ result and Macnica's 'entry-level' positioning.",
+      "Datasheet located: file nl8902_s_e.pdf, Ver.1.0, so the NL8902_E.pdf seed is likely wrong: https://www.endrich.com/Datenbl%C3%A4tter/Aktive%20Komponenten/nl8902-s-e.pdf",
+      "NL8902GR orderable identified as NL8902GRAE4S and set active: https://nz.element14.com/nisshinbo-micro-devices/nl8902grae4s/op-amp-9mhz-40-to-125deg-c-dfn4035/dp/4866427"
     ],
     "unverified_urls": [
       "https://www.nisshinbo-microdevices.co.jp/ja/products/operational-amplifier/spec/?product=nl8902",

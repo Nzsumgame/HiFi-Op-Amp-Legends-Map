@@ -383,6 +383,147 @@
       "confidence": "low",
       "revision_status": "confirmed",
       "note": "Reportedly lists AD815ARB-24 and AD815ARBZ-24-REEL; contents not seen."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD815AY datasheet (datasheets.com)",
+      "doc_number": "AD815",
+      "revision": "A",
+      "date": "1996",
+      "url": "https://static.datasheets.com/doc/21704317-analog-devices-ad815ay-ds.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "AD815AY copy with © 1996, reported as Rev. A."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD815-EB, AD815AYS, AD815AY, AD815AVR, AD815AV datasheet",
+      "doc_number": "AD815",
+      "revision": "B",
+      "date": "1999",
+      "url": "https://manualmachine.com/analogdevices/ad815av/3999613-datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Rev. B with © 1999; also names AD815AV.",
+      "also_urls": [
+        "https://manualmachine.com/datasheet/ad815av/3999613-datasheet-analog-devices"
+      ]
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD815 High Output Current Differential Driver (Rev. C)",
+      "doc_number": "AD815",
+      "revision": "C",
+      "date": "",
+      "url": "https://ja.datasheetq.com/pdf-html/792306-RevC/AD/1page/AD815.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Mirror labels this copy 'RevC'.",
+      "also_urls": [
+        "https://ru.datasheetq.com/pdf-html/792306/AD/1page/AD815.html",
+        "https://datasheetbank.com/ru/datasheet-html/792306-RevC/AD/2page/AD815.html"
+      ]
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD815 datasheet (elcodis)",
+      "doc_number": "AD815",
+      "revision": "D",
+      "date": "2005-04",
+      "url": "https://cn.elcodis.com/parts/5821502/AD815.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "History line '4/05—Data Sheet changed from REV C'.",
+      "also_urls": [
+        "https://elcodis.com/parts/5821502/AD815_p12.html",
+        "https://cn.elcodis.com/parts/5821502/AD815_p12.html",
+        "https://elcodis.com/parts/5821502/AD815_p11.html"
+      ]
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD815 datasheet (alldatasheet 48413)",
+      "doc_number": "AD815",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48413/AD/AD815.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Main entry; alldatasheet also lists AD815_05 copy marked REV. C.",
+      "also_urls": [
+        "https://www.alldatasheet.net/html-pdf/48413/AD/AD815/331/14/AD815.html"
+      ]
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD815-EB datasheet (alldatasheet)",
+      "doc_number": "AD815",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48419/AD/AD815-EB.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Same 484xx upload batch; revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD815 datasheet (rlocman.es)",
+      "doc_number": "AD815",
+      "revision": "",
+      "date": "",
+      "url": "https://www.rlocman.es/datasheet/data.html?di=524021",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD815 datasheet (dtsheet)",
+      "doc_number": "AD815",
+      "revision": "",
+      "date": "",
+      "url": "https://dtsheet.com/doc/93303/ad-ad815",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown.",
+      "also_urls": [
+        "https://dtsheet.com/model/711698"
+      ]
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD815.pdf (tvsat.com.pl)",
+      "doc_number": "AD815",
+      "revision": "",
+      "date": "",
+      "url": "https://tvsat.com.pl/PDF/A/AD815.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "title": "AD815 High Output Current Differential Driver (jiepei)",
+      "doc_number": "AD815",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.jiepei.com/ad/ad815-detail-850935/",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown.",
+      "also_urls": [
+        "https://pdf.jiepei.com/ad815arbz-24-26801801.html"
+      ]
     }
   ],
   "product_pages": [
@@ -393,22 +534,29 @@
       "vendor": "Analog Devices",
       "doc_number": "AD815",
       "revision": "D",
-      "date": "",
-      "changes": "Deleted VR-15, Y-15, YS-15 packages, leaving RB-24 SOIC only; changed Ordering Guide."
+      "date": "2005-04",
+      "changes": "Deleted VR-15, Y-15, YS-15 packages, leaving RB-24 SOIC only; changed Ordering Guide. Dated by '4/05' history line (probable)."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD815",
       "revision": "C",
       "date": "",
-      "changes": "Existence implied by Rev. D; contents and date not found."
+      "changes": "Copies survive (datasheetq 792306-RevC; alldatasheet AD815_05, 16 pages). Date and changes unknown."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD815",
       "revision": "B",
-      "date": "",
-      "changes": "Seen on a manualmachine copy listing AD815AY, AYS, AVR and AD815-EB. Changes unknown (low confidence)."
+      "date": "1999",
+      "changes": "Copies on manualmachine list AD815AY, AYS, AVR, AV and AD815-EB; © 1999. Changes unknown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD815",
+      "revision": "A",
+      "date": "1996",
+      "changes": "AD815AY copy on datasheets.com with © 1996, reported as Rev. A. Changes unknown."
     }
   ],
   "revision_chains": [
@@ -417,20 +565,26 @@
       "doc_number": "AD815",
       "known": [
         {
+          "rev": "A",
+          "date": "1996"
+        },
+        {
           "rev": "B",
+          "date": "1999"
+        },
+        {
+          "rev": "C",
           "date": ""
         },
         {
           "rev": "D",
-          "date": ""
+          "date": "2005-04"
         }
       ],
       "missing": [
-        "0",
-        "A",
-        "C"
+        "0"
       ],
-      "note": "No print dates known. Rev. B copies on manualmachine; Rev. D current."
+      "note": "A and B dated by copyright lines; D by its '4/05' history entry (probable). Rev. 0 not found."
     }
   ],
   "ti_literature_numbers": [],
@@ -443,9 +597,9 @@
     "https://www.analog.com/static/imported-files/data_sheets/AD815.pdf"
   ],
   "open_questions": [
-    "Print dates of Rev. D and earlier revisions (0, A, B, C)?",
+    "Exact dates of Rev. C and Rev. D; was a Rev. 0 published around 1995–1996?",
     "Does PDN 10_0081 cover the AD815? Last-time-buy and discontinuance dates?",
-    "Which revision does each alldatasheet (48414–48418, 225474/225476) and datasheetcatalog mirror hold?",
+    "Which revision do alldatasheet 48413–48419 and 225474/225476 copies hold? AD815_05 is Rev. C.",
     "Was there any die or fab change before discontinuance? None found.",
     "Check forum DC offset (~50 mV) and package descriptions against the datasheets; legacy analog.com seed URLs are guesses."
   ],
@@ -463,11 +617,12 @@
     "https://pinkfishmedia.net/forum/threads/ad815-preamp-build-thread.46481/page-5",
     "https://linearaudio.net/ad815-power-amp",
     "https://s3t.it/headphone-amplifiers/ad815-the-buffa/",
-    "https://www.head-fi.org/threads/new-portable-headphone-amplifier-opa132-ad815-development.492155/"
+    "https://www.head-fi.org/threads/new-portable-headphone-amplifier-opa132-ad815-development.492155/",
+    "https://www.analog.com/jp/products/ad815.html"
   ],
   "verification": {
     "status": "verified-with-corrections",
-    "web_searches_used": 8,
+    "web_searches_used": 12,
     "claims_confirmed": [
       "Current ADI datasheet is Rev. D (https://www.radiolocman.com/datasheet/pdf.html?di=170539&p=1; https://manualzz.com/doc/48845416/ad815--rev.-d-).",
       "Rev. D deleted VR-15, Y-15 and YS-15 packages and changed the Ordering Guide (https://www.analog.com/media/en/technical-documentation/data-sheets/AD815.pdf).",
@@ -477,7 +632,11 @@
       "Current datasheet lists 24-pin SOIC (RB) only, industrial −40 to +85 °C (https://www.analog.com/media/en/technical-documentation/data-sheets/ad815.pdf).",
       "AD815ARBZ-24 and AD815ARBZ-24-REEL listed Obsolete (https://www.mouser.com/ProductDetail/Analog-Devices/AD815ARBZ-24?qs=Lds8L0UsNW4AveIzWG7liw%3D%3D).",
       "Older datasheet names AD815-EB, AD815AYS, AD815AY, AD815AVR (https://manualmachine.com/analogdevices/ad815ays/3999610-datasheet).",
-      "Sibling AD816 datasheet is in ADI's obsolete folder (https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/AD816.pdf)."
+      "Sibling AD816 datasheet is in ADI's obsolete folder (https://www.analog.com/media/en/technical-documentation/obsolete-data-sheets/AD816.pdf).",
+      "Rev. D revision history reads '4/05—Data Sheet changed from REV C': https://cn.elcodis.com/parts/5821502/AD815.html",
+      "Rev. C copy survives, labelled RevC: https://ja.datasheetq.com/pdf-html/792306-RevC/AD/1page/AD815.html",
+      "Older copies carry © 1996 (Rev. A) and © 1999 (Rev. B): https://static.datasheets.com/doc/21704317-analog-devices-ad815ay-ds.pdf; https://manualmachine.com/analogdevices/ad815av/3999613-datasheet",
+      "ADI's Japanese product page lists the AD815 as discontinued: https://www.analog.com/jp/products/ad815.html"
     ],
     "refuted_claims": [],
     "corrections": [

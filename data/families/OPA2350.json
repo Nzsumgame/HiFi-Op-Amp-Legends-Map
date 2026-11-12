@@ -13,8 +13,8 @@
     {
       "vendor": "Burr-Brown",
       "role": "originator",
-      "period": "late 1990s–2000",
-      "note": "Single-supply CMOS design; exact introduction year unconfirmed. Old mirrors carry the Burr-Brown-style title."
+      "period": "1998–2000",
+      "note": "Single-supply CMOS design; Burr-Brown datasheet PDS-1470B carries © 1998, printed March 1999."
     },
     {
       "vendor": "Texas Instruments",
@@ -145,7 +145,7 @@
       "title": "OPA350, OPA2350, OPA4350 High-Speed, Single-Supply, Rail-to-Rail Operational Amplifiers",
       "doc_number": "SBOS099",
       "revision": "D",
-      "date": "2015-12",
+      "date": "2015-12-21",
       "url": "https://www.ti.com/lit/ds/symlink/opa2350.pdf",
       "url_kind": "vendor_current",
       "confidence": "high",
@@ -157,7 +157,7 @@
       "title": "OPA350, OPA2350, OPA4350 datasheet (literature-number link)",
       "doc_number": "SBOS099",
       "revision": "D",
-      "date": "2015-12",
+      "date": "2015-12-21",
       "url": "http://www.ti.com/lit/pdf/SBOS099",
       "url_kind": "vendor_current",
       "confidence": "high",
@@ -355,6 +355,138 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "Low entry number suggests an older upload, possibly rev A."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA350, OPA2350, OPA4350 High-Speed, Single-Supply, Rail-to-Rail Operational Amplifiers",
+      "doc_number": "SBOS099",
+      "revision": "D",
+      "date": "2015-12-21",
+      "url": "https://www.ti.com/document-viewer/OPA350/datasheet",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "TI HTML viewer, titled SBOS099D September 2000 – December 2015."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA350, OPA2350, OPA4350 High-Speed, Single-Supply, Rail-to-Rail Operational Amplifiers (Chinese)",
+      "doc_number": "ZHCSHC9",
+      "revision": "D",
+      "date": "2015-12",
+      "url": "https://www.ti.com.cn/cn/lit/gpn/OPA2350",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Chinese translation, labelled ZHCSHC9D, revised December 2015."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA350, OPA2350, OPA4350 High-Speed, Single-Supply, Rail-to-Rail Operational Amplifiers",
+      "doc_number": "SBOS099",
+      "revision": "B",
+      "date": "2004-02",
+      "url": "https://www.komponenten.es.aau.dk/fileadmin/komponenten/Data_Sheet/Linear/OPA350.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Aalborg University copy; header SBOS099B, revised February 2004."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "Burr Brown OPA2350EA-250, OPA350UA, OPA350EA-250, OPA4350EA-2K5, OPA4350UA Datasheet",
+      "doc_number": "PDS-1470",
+      "revision": "PDS-1470B",
+      "date": "1999-03",
+      "url": "https://manualmachine.com/burrbrown/opa350ua/4144788-datasheet",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Burr-Brown sheet, © 1998, footer PDS-1470B, printed March 1999."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "Datasheet OPA2350EA-250, OPA350UA, OPA350EA-250, OPA4350EA-2K5, OPA4350UA (Burr Brown)",
+      "doc_number": "PDS-1470",
+      "revision": "",
+      "date": "",
+      "url": "https://manualmachine.com/datasheet/opa350ea2k5/4196201-datasheet-burr-brown",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Burr-Brown-branded copy; probably the PDS-1470 sheet."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "BB OPA2350",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://dtsheet.com/model/2874931",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Burr-Brown-branded listing; sibling entry 2874932."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA350 datasheet",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www.fabian.com.mt/viewer/44990/pdf.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Appeared in searches for PDS-1470."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "OPA2350 (Burr-Brown) datasheet",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.elecfans.com/BURR-BROWN/OPA2350.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Burr-Brown-branded copy; OPA2350PA page also exists."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "title": "BURR-BROWN OPA350, OPA2350, OPA4350 User Manual",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://manualmachine.com/burrbrown/opa350/8365044-user-manual",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Burr-Brown-branded copy."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "Amplifier opa2350",
+      "doc_number": "SBOS099",
+      "revision": "",
+      "date": "",
+      "url": "https://www.vyssotski.ch/BasicsOfInstrumentation/Amplifier_opa2350.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Course copy; revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "opa350",
+      "doc_number": "SBOS099",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/525481293/opa350",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": ""
     }
   ],
   "product_pages": [
@@ -364,11 +496,18 @@
   ],
   "revision_history": [
     {
+      "vendor": "Burr-Brown",
+      "doc_number": "PDS-1470",
+      "revision": "PDS-1470B",
+      "date": "1999-03",
+      "changes": "Burr-Brown datasheet (© 1998) for OPA350/2350/4350: 38 MHz, 22 V/µs, 5 nV/√Hz, 2.7–5.5 V."
+    },
+    {
       "vendor": "Texas Instruments",
       "doc_number": "SBOS099",
       "revision": "original",
       "date": "2000-09",
-      "changes": "First SBOS099 release at the Burr-Brown/TI transition. No earlier Burr-Brown document identified."
+      "changes": "First SBOS099 release at the Burr-Brown/TI transition; replaced Burr-Brown PDS-1470."
     },
     {
       "vendor": "Texas Instruments",
@@ -381,8 +520,8 @@
       "vendor": "Texas Instruments",
       "doc_number": "SBOS099",
       "revision": "B",
-      "date": "",
-      "changes": "Must exist between A and C; date and changes unknown."
+      "date": "2004-02",
+      "changes": "Revised February 2004; changes unknown. Copy held at Aalborg University."
     },
     {
       "vendor": "Texas Instruments",
@@ -395,11 +534,26 @@
       "vendor": "Texas Instruments",
       "doc_number": "SBOS099",
       "revision": "D",
-      "date": "2015-12",
-      "changes": "Current revision. Probably a move to TI's modern format (ESD ratings, pin tables, layout sections); unconfirmed. No die change indicated."
+      "date": "2015-12-21",
+      "changes": "Current revision, published 21 December 2015; history lists changes from rev C. Probably TI modern format; no die change indicated."
     }
   ],
   "revision_chains": [
+    {
+      "vendor": "Burr-Brown",
+      "doc_number": "PDS-1470",
+      "known": [
+        {
+          "rev": "PDS-1470B",
+          "date": "1999-03"
+        }
+      ],
+      "missing": [
+        "original",
+        "PDS-1470A"
+      ],
+      "note": "Burr-Brown predecessor of SBOS099, © 1998; earlier editions not located."
+    },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SBOS099",
@@ -413,18 +567,32 @@
           "date": "2001-07"
         },
         {
+          "rev": "B",
+          "date": "2004-02"
+        },
+        {
           "rev": "C",
           "date": "2005-01"
         },
         {
           "rev": "D",
+          "date": "2015-12-21"
+        }
+      ],
+      "missing": [],
+      "note": "Rev B at Aalborg University, C at Mouser; rev A date reported but no copy located."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "ZHCSHC9",
+      "known": [
+        {
+          "rev": "D",
           "date": "2015-12"
         }
       ],
-      "missing": [
-        "B"
-      ],
-      "note": "Rev C frozen at Mouser; rev A date reported but no copy located; any pre-2000 Burr-Brown document unknown."
+      "missing": [],
+      "note": "Chinese translation of SBOS099D."
     }
   ],
   "ti_literature_numbers": [
@@ -442,9 +610,9 @@
     "https://www.ti.com/product/OPA4350"
   ],
   "open_questions": [
-    "When was the OPA350 family introduced, and was there a pre-September-2000 Burr-Brown datasheet?",
-    "Date of SBOS099B, change lists for revs A–D, and which mirror holds rev A (July 2001)?",
-    "Does any TI RFAB fab-transfer or die-revision PCN (2021–2023 era) cover OPA350/OPA2350/OPA4350?",
+    "Do Burr-Brown PDS-1470 / PDS-1470A editions survive, and when was the OPA350 introduced?",
+    "Does SBOS099A (reported July 2001) exist, and what changed in revs A–D?",
+    "No PCN naming OPA350/OPA2350/OPA4350 found; does any TI fab-transfer PCN cover them?",
     "Lifecycle status of OPA350, OPA4350 and DIP OPA2350PA; only the OPA2350 base part is confirmed ACTIVE.",
     "Confirm the 5 nV/√Hz frequency (believed 100 kHz), 1 kHz noise and quiescent current against SBOS099D."
   ],
@@ -464,11 +632,15 @@
     "https://users.ece.utexas.edu/~valvano/Datasheets/OPA4350.pdf",
     "https://www.ti.com/product/OPA2350/part-details/OPA2350EA/250",
     "https://www.ti.com/product/OPA4350/part-details/OPA4350EA/2K5",
-    "https://en.wikipedia.org/wiki/Burr-Brown_Corporation"
+    "https://en.wikipedia.org/wiki/Burr-Brown_Corporation",
+    "https://www.ti.com/document-viewer/OPA350/datasheet",
+    "https://www.komponenten.es.aau.dk/fileadmin/komponenten/Data_Sheet/Linear/OPA350.pdf",
+    "https://manualmachine.com/burrbrown/opa350ua/4144788-datasheet",
+    "https://www.ti.com.cn/cn/lit/gpn/OPA2350"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 5,
+    "status": "verified-with-corrections",
+    "web_searches_used": 10,
     "claims_confirmed": [
       "SBOS099D, dated September 2000 and revised December 2015, covers all three parts: https://www.ti.com/lit/ds/symlink/opa2350.pdf and https://datasheets.b-cdn.net/files/250-Texas-Instruments-datasheet-10254417.pdf",
       "SBOS099C dated September 2000, revised January 2005: https://www.mouser.com/datasheet/2/405/sbos099c-92750.pdf and https://www.radiolocman.com/datasheet/data.html?di=279149&%2FOPA350=",
@@ -478,7 +650,12 @@
       "Single and dual in MSOP-8/SO-8/DIP-8; quad in SSOP-16/SO-14: https://users.ece.utexas.edu/~valvano/Datasheets/OPA4350.pdf",
       "Specified −40 to 85 °C, operating −55 to 150 °C: https://www.kontest.ru/datasheet/ti/opa2350.pdf",
       "Orderable pages for OPA2350EA/250 and OPA4350EA/2K5: https://www.ti.com/product/OPA2350/part-details/OPA2350EA/250 and https://www.ti.com/product/OPA4350/part-details/OPA4350EA/2K5",
-      "Burr-Brown mirrors exist for OPA2350, OPA2350UA and OPA2350PA: https://www.alldatasheet.com/datasheet-pdf/pdf/229267/BURR-BROWN/OPA2350.html"
+      "Burr-Brown mirrors exist for OPA2350, OPA2350UA and OPA2350PA: https://www.alldatasheet.com/datasheet-pdf/pdf/229267/BURR-BROWN/OPA2350.html",
+      "SBOS099D published 21 December 2015; history lists changes from rev C (January 2005) (https://www.ti.com/document-viewer/OPA350/datasheet, https://www.ti.com/product/OPA4350).",
+      "SBOS099B header: September 2000, revised February 2004 (https://www.komponenten.es.aau.dk/fileadmin/komponenten/Data_Sheet/Linear/OPA350.pdf).",
+      "Burr-Brown predecessor datasheet footer: © 1998, PDS-1470B, printed March 1999; 38 MHz, 22 V/µs, 5 nV/√Hz (https://manualmachine.com/burrbrown/opa350ua/4144788-datasheet).",
+      "Chinese TI datasheet ZHCSHC9D, September 2000 – revised December 2015 (https://www.ti.com.cn/cn/lit/gpn/OPA2350).",
+      "No TI PCN naming OPA350, OPA2350 or OPA4350 found among recent TI RFAB/FFAB fab-transfer notices."
     ],
     "refuted_claims": [],
     "corrections": [
@@ -488,7 +665,10 @@
       "Added SBOS099 (rev D, December 2015) and its revision history back to September 2000.",
       "Added mirrors, including a Mouser copy frozen at rev C (sbos099c).",
       "Cocolog OPA2353 praise attributed to the sibling part, not the OPA2350.",
-      "No family-specific PCN or die change found, so silicon_changes is empty."
+      "No family-specific PCN or die change found, so silicon_changes is empty.",
+      "SBOS099B dated February 2004 (date was unknown).",
+      "Burr-Brown PDS-1470B (March 1999, © 1998) predates SBOS099; lineage period set to 1998–2000.",
+      "SBOS099D exact date set to 21 December 2015."
     ],
     "unverified_urls": [
       "https://www.ti.com/lit/ds/symlink/opa350.pdf",

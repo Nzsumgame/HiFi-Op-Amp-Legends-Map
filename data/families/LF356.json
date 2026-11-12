@@ -87,7 +87,7 @@
       "pn": "LF356-MIL",
       "channels": 1,
       "status": "active",
-      "note": "Separate TI folder; SOIC-8 and TO-CAN-8, 36 V, 5 MHz, 12 V/µs."
+      "note": "Own datasheet SNOSD55 (2017); TO-99, SOIC-8, PDIP-8; 5 MHz, 12 V/µs."
     },
     {
       "pn": "LF356A",
@@ -272,22 +272,23 @@
         "LF356M/NOPB",
         "LF356N/NOPB"
       ],
-      "summary": "TI's 'FFAB BIFET Technology Qualification' PCN, approved 19 Sep 2018, lists LF356 wafer, metal-can, SOIC and PDIP devices. Later LF356s may use die from a different fab than National-era parts. Previous fab and any mask change are not stated.",
-      "identification": "Not visible in the marking; SNOSBH0D unchanged. Only TI lot trace or date codes after implementation would indicate FFAB wafers.",
+      "summary": "TI PCN 20180920003.1 moves select BiFET devices from Greenock GFAB6 (150 mm, closing) to FFAB BiFET 200 mm; qualification approved 19 Sep 2018, first ship 25 Dec 2018. LF356 wafer, can, SOIC and PDIP listed. Mask change not stated.",
+      "identification": "Not visible in the marking; SNOSBH0D unchanged. Only TI lot trace or date codes after Dec 2018 would indicate FFAB wafers.",
       "spec_deltas": [
         {
           "parameter": "Wafer fab",
-          "before": "previous (National-heritage) fab, not named in the retrieved document",
-          "after": "FFAB"
+          "before": "GFAB6 BiFET 150 mm, Greenock (earlier: previous (National-heritage) fab, not named in the retrieved document)",
+          "after": "FFAB BiFET 200 mm"
         }
       ],
       "audio_impact": "None documented; datasheet limits unchanged and no pre- versus post-transfer measurements known.",
       "compatibility_risk": "low: same datasheet, pinout and limits; no published parametric change.",
       "sources": [
-        "https://www.farnell.com/datasheets/2674716.pdf"
+        "https://www.farnell.com/datasheets/2674716.pdf",
+        "https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/779227/lf347-pcn-20180920003-1"
       ],
       "confidence": "medium",
-      "verification": "PCN identity, title, date and LF356 listing confirmed; source fab and implementation date unknown."
+      "verification": "PCN title, dates, GFAB6-to-FFAB move confirmed; LF356 row garbled in one extract."
     },
     {
       "kind": "die-redesign",
@@ -647,26 +648,26 @@
     {
       "vendor": "Texas Instruments",
       "title": "LF356-MIL JFET Input Operational Amplifier datasheet",
-      "doc_number": "unknown",
-      "revision": "",
-      "date": "",
+      "doc_number": "SNOSD55",
+      "revision": "original",
+      "date": "2017-06",
       "url": "https://www.ti.com/lit/gpn/LF356-MIL",
       "url_kind": "vendor_current",
       "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "Separate military datasheet for LF356-MIL; literature number unknown."
+      "revision_status": "confirmed",
+      "note": "SNOSD55, initial release June 2017."
     },
     {
       "vendor": "Texas Instruments",
       "title": "LF356-MIL JFET Input Operational Amplifier",
-      "doc_number": "unknown",
+      "doc_number": "SNOSD55",
       "revision": "",
       "date": "",
       "url": "https://www.mouser.com/datasheet/2/405/lf356-mil-1147661.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Mouser copy of LF356-MIL datasheet; may freeze an older revision.",
+      "note": "Mouser copy of SNOSD55; revision not shown.",
       "also_urls": [
         "https://www.alldatasheet.com/datasheet-pdf/pdf/953771/TI1/LF356-MIL.html"
       ]
@@ -674,7 +675,7 @@
     {
       "vendor": "Texas Instruments",
       "title": "LF356-MIL JFET Input Operational Amplifier (symlink)",
-      "doc_number": "unknown",
+      "doc_number": "SNOSD55",
       "revision": "",
       "date": "",
       "url": "https://www.ti.com/lit/ds/symlink/lf356-mil.pdf",
@@ -889,6 +890,40 @@
       "confidence": "low",
       "revision_status": "unknown",
       "note": "LT second-source sheet, LF155/LF155A/LF156/LF156A only; no LF157/LF357."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LF356-MIL JFET Input Operational Amplifier",
+      "doc_number": "SNOSD55",
+      "revision": "original",
+      "date": "2017-06",
+      "url": "https://www.ti.com/document-viewer/lf356-mil/datasheet",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "TI viewer: 'SNOSD55 June 2017', production data."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SNOSBH0",
+      "revision": "D",
+      "date": "2015-11",
+      "url": "https://ti.com/document-viewer/LF256/datasheet/device_and_documentation_support",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "TI viewer: 'SNOSBH0D May 2000 – November 2015'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SNOSBH0",
+      "revision": "",
+      "date": "",
+      "url": "https://www.logosfoundation.org/projects/plus-minus/LF356.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Third-party LF356 copy; revision not shown."
     }
   ],
   "product_pages": [
@@ -958,6 +993,13 @@
       "revision": "D",
       "date": "2015-11",
       "changes": "Added pin, ESD (±1000 V HBM), thermal, application, layout and packaging sections; removed THIGH. No limit changes. Still current."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SNOSD55",
+      "revision": "original",
+      "date": "2017-06",
+      "changes": "New LF356-MIL datasheet: TO-99, SOIC, PDIP; cites JM38510/11401 or /11402; recommended range 0–70 °C."
     }
   ],
   "revision_chains": [
@@ -1012,7 +1054,7 @@
         "original",
         "A"
       ],
-      "note": "Every copy found holds Rev D or no revision. LF356-MIL document number unknown."
+      "note": "TI viewer shows Rev D (Nov 2015) as current; no Rev E found."
     },
     {
       "vendor": "STMicroelectronics",
@@ -1037,6 +1079,18 @@
       ],
       "missing": [],
       "note": "Now hosted by ADI; revision and date not shown. No linear.com URL found."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SNOSD55",
+      "known": [
+        {
+          "rev": "original",
+          "date": "2017-06"
+        }
+      ],
+      "missing": [],
+      "note": "LF356-MIL datasheet; no later revision seen."
     }
   ],
   "ti_literature_numbers": [],
@@ -1062,8 +1116,8 @@
     "https://www.ti.com/product/LF356-MIL"
   ],
   "open_questions": [
-    "PCN 20180920003.1: previous fab, implementation date, date-code boundary, any mask change? Is FFAB Freising?",
-    "LF356-MIL: literature number, revisions, orderables, same die as LF356, and JM38510/11401 or /11402 mapping?",
+    "PCN 20180920003.1: exact LF356 orderables moved, date-code boundary, any mask change? Is FFAB Freising?",
+    "LF356-MIL: same die as LF356? Datasheet says 0–70 °C, product page −40 to 85 °C; which is right?",
     "Which editions do mirrors hold (Octopart 7085376/10845638, Rapid, alldatasheet 166824)? Do SNOSBH0 original, A, B, C copies exist?",
     "ST, PMI, LT, Motorola and Fairchild datasheets: document numbers, revisions, spec differences versus National?",
     "Was the 2 pF to 3 pF LF357 change real silicon? Did pin-8 LF156s ever ship?"
@@ -1106,8 +1160,8 @@
     "http://waltjung.org"
   ],
   "verification": {
-    "status": "partially-verified",
-    "web_searches_used": 5,
+    "status": "verified-with-corrections",
+    "web_searches_used": 8,
     "claims_confirmed": [
       "Current TI datasheet is SNOSBH0D, 'May 2000 – revised November 2015' (Rev. D); no Rev E (https://www.ti.com/lit/ds/symlink/lf356.pdf).",
       "TI literature-number link exists (https://www.ti.com/lit/pdf/snosbh0).",
@@ -1118,7 +1172,11 @@
       "LF356N/NOPB stocked at LCSC C19573, DigiKey, Mouser, Arrow (https://www.lcsc.com/product-detail/FET-Input-Amplifiers_Texas-Instruments-LF356N-NOPB_C19573.html).",
       "ST published its own LF356 datasheet (https://www.alldatasheet.com/datasheet-pdf/pdf/22739/STMICROELECTRONICS/LF356.html, https://datasheetspdf.com/datasheet/LF356.html).",
       "May 2000 DS005646 title mirrored on Octopart (https://datasheet.octopart.com/LF356N-NOPB-National-Semiconductor-datasheet-7277453.pdf).",
-      "Dec 2001 title with LF256/LF257 mirrored at MIT (https://www.mit.edu/~6.301/LF155.pdf)."
+      "Dec 2001 title with LF256/LF257 mirrored at MIT (https://www.mit.edu/~6.301/LF155.pdf).",
+      "PCN 20180920003.1: Greenock GFAB closure, GFAB6 BiFET 150 mm to FFAB BiFET 200 mm, approved 19 Sep 2018, first ship 25 Dec 2018: https://www.farnell.com/datasheets/2674716.pdf",
+      "Current LF356 datasheet is SNOSBH0D, May 2000 – November 2015; Rev D removed THIGH, added ESD and thermal tables: https://ti.com/document-viewer/LF256/datasheet/device_and_documentation_support",
+      "LF356-MIL datasheet is SNOSD55, June 2017; TO-99, SOIC, PDIP; JM38510/11401 or /11402: https://www.ti.com/document-viewer/lf356-mil/datasheet",
+      "TI product page: LF356-MIL military-grade, 30-V, 5-MHz, active; LF156QML suggested: https://ti.com/product/LF356-MIL"
     ],
     "refuted_claims": [
       "Claim that LF356 was renamed '-N' after the TI transfer is false: folders are LF356 and LF356-MIL (https://www.ti.com/product/LF356, https://www.ti.com/product/LF356-MIL)."
@@ -1130,7 +1188,9 @@
       "TI symlink lf356.pdf raised to high confidence (Rev. D); added ti.com/lit/pdf/snosbh0.",
       "National.com legacy URLs, ti.com/lit/gpn/lf356 and lf356-mil symlink lowered to low confidence.",
       "ST second source confirmed by its own datasheet; added ST part and datasheet entries.",
-      "Added mirrors: Octopart 7277453 (May 2000), MIT 6.301 (Dec 2001), RadioLocman, Digi-Key HTML, Octopart 10845638, alldatasheet, datasheetcatalog, Rapid, UBA."
+      "Added mirrors: Octopart 7277453 (May 2000), MIT 6.301 (Dec 2001), RadioLocman, Digi-Key HTML, Octopart 10845638, alldatasheet, datasheetcatalog, Rapid, UBA.",
+      "PCN 20180920003.1 source fab identified as Greenock GFAB6 (150 mm), destination FFAB 200 mm, first ship 25 Dec 2018: https://www.farnell.com/datasheets/2674716.pdf",
+      "LF356-MIL literature number set to SNOSD55 (June 2017): https://www.ti.com/document-viewer/lf356-mil/datasheet"
     ],
     "unverified_urls": [
       "http://www.national.com/ds/LF/LF356.pdf",
