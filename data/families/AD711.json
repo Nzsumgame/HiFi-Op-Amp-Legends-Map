@@ -1,217 +1,160 @@
 {
   "id": "AD711",
-  "name": "AD711 / AD712 / AD713 (ADI precision BiFET single / dual / quad)",
-  "tagline": "ADI's laser-trimmed BiFET family (AD712 ©1986; 0.0003% THD, 20 V/µs, pA bias), sold as an LF411/412 and TL081/082 upgrade and a common 1990s DIY TL072 swap.",
-  "technology": "BiFET: JFET-input op amp with bipolar gain and output stages. Offset and drift are set by laser wafer trimming. Internally compensated and unity-gain stable. The AD713 is four AD711-type amplifiers on one monolithic die (AD713 Rev. F). Common-mode range is asymmetric (+14.5 V / -11.5 V at ±15 V supplies, AD712 Rev. I).",
+  "name": "AD711 / AD712 / AD713",
+  "type": "BiFET (JFET-input) precision op-amp, 1/2/4 channels",
+  "tier": "C",
+  "category": "jfet-input",
+  "tagline": "ADI's laser-trimmed 1986 BiFET family (0.0003% THD, 20 V/µs, pA bias): the classic 1990s TL072/LF412 upgrade.",
   "manufacturers": [
     "Analog Devices"
-  ],
-  "part_numbers": [
-    {
-      "pn": "AD711AQ / AD711JNZ / AD711JRZ / AD711KNZ / AD711KRZ (+ -REEL / -REEL7 options)",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "Listed by ADI and distributors (Mouser has an AD711JRZ page). A search summary says ADI PDN 10_0081 Rev. B lists AD711JNZ, which would mean the PDIP option was discontinued. That is unconfirmed.",
-      "notes": "Single. ADI calls it an 'enhanced replacement for LF411 and TL081'. Current data sheet is Rev. E. AD711J: 16 V/µs min slew, 3 MHz min unity-gain bandwidth."
-    },
-    {
-      "pn": "AD711B / AD711C / AD711S / AD711T (older grades)",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown (probably obsolete; not in the ordering lists seen)",
-      "notes": "AD711 data sheet features cite AD711C (0.25 mV max Vos) and AD711S/T processed to MIL-STD-883B. B/C/T SPICE macro-models still circulate. The TO-99 (H-8) metal can appears in Eagle libraries; its status is unknown."
-    },
-    {
-      "pn": "AD712JNZ / AD712KNZ",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "active (listed in the Rev. I ordering guide, 11/2018)",
-      "notes": "8-lead PDIP, 0 to 70 °C. Z = RoHS-compliant. K grade is tighter: Vos 1.0 mV max, SR 18 V/µs min, GBW 3.4 MHz min."
-    },
-    {
-      "pn": "AD712JRZ / AD712JRZ-REEL / AD712JRZ-REEL7 / AD712KRZ / AD712KRZ-REEL / AD712KRZ-REEL7",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "active (listed in the Rev. I ordering guide, 11/2018)",
-      "notes": "8-lead SOIC_N, 0 to 70 °C."
-    },
-    {
-      "pn": "AD712AQ",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "active in the Rev. I ordering guide (11/2018)",
-      "notes": "8-lead CERDIP, -40 to +85 °C."
-    },
-    {
-      "pn": "AD712SQ/883B",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "active in the Rev. I ordering guide (11/2018)",
-      "notes": "CERDIP, -55 to +125 °C, processed to MIL-STD-883B."
-    },
-    {
-      "pn": "AD712-EP (Enhanced Product)",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown (a separate AD712-EP data sheet, Rev. 0, is on analog.com)",
-      "notes": "Enhanced-product (defence/aerospace flow) version with its own data sheet. The orderable part number and temperature grade were not captured."
-    },
-    {
-      "pn": "AD712B / AD712C / AD712T grades",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "obsolete (removed from the data sheet in Rev. F, 6/2006: 'Deleted B, C, and T Models')",
-      "notes": "Older data sheets describe 'seven performance grades'. B/C/T SPICE models still circulate."
-    },
-    {
-      "pn": "AD713 (e.g. AD713JNZ; J/K/A/B/S/T grade models exist)",
-      "channels": 4,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown. A search summary says PDN 10_0081 Rev. B lists AD713JNZ (Pb-free), which would mean the PDIP option was discontinued; unconfirmed. The product page ad713.html is live.",
-      "notes": "Quad: four AD711-type amplifiers on one die. Current data sheet is Rev. F."
-    }
   ],
   "lineage": [
     {
       "vendor": "Analog Devices",
-      "role": "originator and sole manufacturer",
-      "period": "1986 to present",
-      "notes": "The AD712 Rev. I data sheet carries '©1986–2018 Analog Devices'. No second source was found. The 1991–92 SPICE macro-models were written by ADI's PMI group; that is modelling work, not a second source. ADI also offers an AD712-EP enhanced-product version."
+      "role": "originator",
+      "period": "1986–present",
+      "note": "Sole source (AD712 ©1986–2018). 1991–92 SPICE models by ADI's PMI group. AD712-EP added later."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "AD711AQ / JNZ / JRZ / KNZ / KRZ (-REEL, -REEL7)",
+      "channels": 1,
+      "status": "unknown",
+      "note": "LF411/TL081 replacement. Mouser lists AD711JRZ; JNZ reportedly in PDN 10_0081 Rev. B."
+    },
+    {
+      "pn": "AD711B / C / S / T",
+      "channels": 1,
+      "status": "unknown",
+      "note": "Probably obsolete. AD711C 0.25 mV max Vos; S/T to MIL-STD-883B. TO-99 (H-8) status unknown."
+    },
+    {
+      "pn": "AD712JNZ / AD712KNZ",
+      "channels": 2,
+      "status": "active",
+      "note": "PDIP-8, 0–70 °C; in Rev. I guide. Z = RoHS (lead finish, c. 2005–2006)."
+    },
+    {
+      "pn": "AD712JRZ / KRZ (-REEL, -REEL7)",
+      "channels": 2,
+      "status": "active",
+      "note": "SOIC-8, 0–70 °C; in Rev. I ordering guide (11/2018)."
+    },
+    {
+      "pn": "AD712AQ",
+      "channels": 2,
+      "status": "active",
+      "note": "CERDIP-8, −40 to +85 °C."
+    },
+    {
+      "pn": "AD712SQ/883B",
+      "channels": 2,
+      "status": "active",
+      "note": "CERDIP, −55 to +125 °C, MIL-STD-883B."
+    },
+    {
+      "pn": "AD712-EP",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Enhanced Product with own datasheet (Rev. 0); orderable number and grade unknown."
+    },
+    {
+      "pn": "AD712B / C / T",
+      "channels": 2,
+      "status": "obsolete",
+      "note": "Deleted from the datasheet in Rev. F (6/2006); once 'seven performance grades'."
+    },
+    {
+      "pn": "AD713 (e.g. AD713JNZ; J/K/A/B/S/T)",
+      "channels": 4,
+      "status": "unknown",
+      "note": "Four AD711-type amps on one die. JNZ reportedly in PDN 10_0081 Rev. B."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise e_n",
-      "value": "18 nV/√Hz typ at 1 kHz (45 at 10 Hz, 22 at 100 Hz, 16 at 10 kHz); 2 µV p-p from 0.1 to 10 Hz",
-      "condition": "±15 V, 25 °C",
-      "source": "AD712 data sheet Rev. I (11/2018), Table 1. The noise rows were added in Rev. H (7/2010)."
+      "parameter": "Input noise (1 kHz)",
+      "value": "18 nV/√Hz (10 Hz: 45, 100 Hz: 22, 10 kHz: 16)",
+      "condition": "typ ±15 V; 0.1–10 Hz: 2 µV p-p",
+      "source": "AD712 datasheet Rev. I"
     },
     {
-      "parameter": "Input current noise i_n",
-      "value": "0.01 pA/√Hz typ",
-      "condition": "f = 1 kHz",
-      "source": "AD712 Rev. I, Table 1"
+      "parameter": "Current noise",
+      "value": "0.01 pA/√Hz",
+      "condition": "typ, 1 kHz",
+      "source": "AD712 datasheet Rev. I"
     },
     {
-      "parameter": "Unity-gain (small-signal) bandwidth",
+      "parameter": "GBW",
       "value": "4.0 MHz typ; 3.0 MHz min (J/A/S), 3.4 MHz min (K)",
-      "condition": "±15 V, 25 °C",
-      "source": "AD712 Rev. I, Table 1. AD711J is also 3 MHz min (AD711 data sheet features)."
+      "condition": "unity gain, ±15 V",
+      "source": "AD712 datasheet Rev. I"
     },
     {
       "parameter": "Slew rate",
-      "value": "20 V/µs typ; 16 V/µs min (J/A/S), 18 V/µs min (K)",
-      "condition": "±15 V, 25 °C",
-      "source": "AD712 Rev. I, Table 1. AD711J is also 16 V/µs min (AD711 data sheet features)."
+      "value": "20 V/µs typ; 16 min (J/A/S), 18 min (K)",
+      "condition": "±15 V; full-power BW 200 kHz",
+      "source": "AD712 datasheet Rev. I"
     },
     {
-      "parameter": "Full-power response",
-      "value": "200 kHz typ",
-      "condition": "±15 V",
-      "source": "AD712 Rev. I, Table 1"
-    },
-    {
-      "parameter": "THD",
-      "value": "0.0003% typ",
-      "condition": "Figure 17 test: 3 V rms, RL = 2 kΩ, CL = 100 pF",
-      "source": "AD712 Rev. I, Table 1 and Figure 17"
-    },
-    {
-      "parameter": "Crosstalk (AD712)",
-      "value": "120 dB at 1 kHz; 90 dB at 100 kHz",
-      "condition": "typ",
-      "source": "AD712 Rev. I, Table 1"
-    },
-    {
-      "parameter": "Settling time to 0.01%",
-      "value": "1.0 µs typ, 1.2 µs max",
-      "condition": "10 V step",
-      "source": "AD712 Rev. I, Table 1. AD711 features also give 1.0 µs to ±0.01%."
+      "parameter": "THD+N",
+      "value": "0.0003% THD; crosstalk 120 dB @1 kHz, 90 dB @100 kHz",
+      "condition": "3 V rms, 2 kΩ, 100 pF (Fig. 17)",
+      "source": "AD712 datasheet Rev. I"
     },
     {
       "parameter": "Supply range",
-      "value": "±4.5 V to ±18 V operating; rated at ±15 V; absolute max ±18 V",
+      "value": "±4.5 V to ±18 V; rated ±15 V; abs. max ±18 V",
       "condition": "",
-      "source": "AD712 Rev. I, Tables 1 and 2"
+      "source": "AD712 datasheet Rev. I"
     },
     {
-      "parameter": "Quiescent current",
-      "value": "5.0 mA typ total for both amplifiers (about 2.5 mA per channel); 6.8 mA max (J/A/S), 6.0 mA max (K)",
-      "condition": "±15 V",
-      "source": "AD712 Rev. I, Table 1. The per-channel figure is derived by halving the total."
+      "parameter": "Supply current",
+      "value": "5.0 mA typ both amps; max 6.8 (J/A/S), 6.0 (K)",
+      "condition": "±15 V, AD712",
+      "source": "AD712 datasheet Rev. I"
     },
     {
-      "parameter": "Output current / swing",
-      "value": "+25 mA typ; +13.9 V / -13.3 V typ",
+      "parameter": "Output current",
+      "value": "+25 mA typ; swing +13.9 V / −13.3 V",
       "condition": "±15 V",
-      "source": "AD712 Rev. I, Table 1"
+      "source": "AD712 datasheet Rev. I"
+    },
+    {
+      "parameter": "Offset voltage",
+      "value": "0.3/3 mV (J), 0.2/1.0 mV (K) typ/max; 7 µV/°C",
+      "condition": "25 °C, laser-trimmed",
+      "source": "AD712 datasheet Rev. I"
     },
     {
       "parameter": "Input bias current",
-      "value": "25 pA typ (J), 20 pA typ (K), 75 pA max; doubles every 10 °C",
-      "condition": "VCM = 0 V, after 5 min warm-up",
-      "source": "AD712 Rev. I, Table 1"
+      "value": "25 pA (J), 20 pA (K) typ; 75 pA max; doubles/10 °C",
+      "condition": "VCM = 0 V, 5 min warm-up",
+      "source": "AD712 datasheet Rev. I"
     },
     {
-      "parameter": "Input offset voltage",
-      "value": "0.3 mV typ / 3 mV max (J); 0.2 mV typ / 1.0 mV max (K); drift 7 µV/°C typ. AD711C (older grade): 0.25 mV max",
-      "condition": "25 °C, laser-trimmed",
-      "source": "AD712 Rev. I, Table 1; AD711 data sheet features for the AD711C"
-    },
-    {
-      "parameter": "Open-loop gain / CMRR",
-      "value": "400 V/mV typ (150 min J, 200 min K); CMRR 88 dB typ",
-      "condition": "VOUT ±10 V; VCM ±10 V",
-      "source": "AD712 Rev. I, Table 1 (open-loop gain row added in Rev. H)"
-    },
-    {
-      "parameter": "Input stage / common-mode range",
-      "value": "JFET (BiFET). CM range +14.5 V / -11.5 V typ. Output phase reversal typically when either input goes below about -14.1 V",
-      "condition": "±15 V",
-      "source": "AD712 Rev. I, Table 1 and footnote 4"
-    },
-    {
-      "parameter": "Thermal resistance θJA",
-      "value": "PDIP 165 °C/W; SOIC 120 °C/W; CERDIP 110 °C/W (θJC 22)",
-      "condition": "",
-      "source": "AD712 Rev. I, Table 3 (added in Rev. I, 11/2018)"
+      "parameter": "Input stage",
+      "value": "JFET (BiFET); CM +14.5 / −11.5 V; reversal below −14.1 V",
+      "condition": "±15 V; CMRR 88 dB typ",
+      "source": "AD712 datasheet Rev. I"
     }
   ],
   "reputation": {
-    "summary": "The AD712 was a mainstream 'better' audio dual in the late 1980s and 1990s. The rec.audio FAQ (v1.5, June 1993, from an archived text file) lists it among the better op amps for audio, next to NE5532, LM833, AD827 and OPA2604. ADI marketed the AD711/AD712 as enhanced replacements for the LF411/TL081 and LF412/TL082, so DIYers used the AD712 as a drop-in upgrade in TL072/TL082 sockets. Its strengths are 0.0003% THD, 120 dB crosstalk, 20 V/µs slew and pA bias, which suit high-impedance line stages and filters. It is now a tier-C legacy part, overtaken by lower-noise JFET parts. The discovery claims about CD-player use and Walt Jung's ADI-era writing were not web-verified. No modern measurements and no verified sonic descriptors were collected.",
+    "summary": "A mainstream 'better' audio dual of the late 1980s and 1990s: the 1993 rec.audio FAQ lists the AD712 with NE5532, LM833, AD827 and OPA2604. Marketed as an LF411/TL081 and LF412/TL082 upgrade, it became a drop-in TL072 swap. Low THD, 120 dB crosstalk and pA bias suit high-impedance line stages and filters. Now a legacy part; no sonic descriptors collected.",
     "sonic_descriptors": [],
     "typical_uses": [
-      "Drop-in TL072/TL082/LF412 upgrade in CD-player and DAC output/filter stages (DIY practice; attributed to forum sources)",
-      "High-impedance line buffers and active filters (the data sheet includes second-order and 9-pole Chebyshev filter examples)",
-      "DAC/ADC buffers and I/V stages that need fast settling (the data sheet shows AD565A/AD7545 settling examples)",
-      "Photodiode and electrometer preamps (pA bias, with guarding)"
+      "drop-in TL072/TL082/LF412 upgrade in CD and DAC output stages",
+      "high-impedance line buffers and active filters",
+      "DAC/ADC buffers needing 1.0 µs settling to 0.01%",
+      "photodiode and electrometer preamps (pA bias, guarding)"
     ],
     "caveats": [
-      "Voltage noise of 18 nV/√Hz at 1 kHz is high next to bipolar parts (NE5532, OP27) and modern JFETs (OPA1642, OPA827). It is a poor choice for low-impedance or MM-phono inputs.",
-      "Output phase reversal if either input goes more negative than about -14.1 V at ±15 V supplies. The CM range reaches only -11.5 V (data sheet footnote).",
-      "Needs at least ±4.5 V supplies and is not rail-to-rail.",
-      "Output is about 25 mA. It is not a headphone driver.",
-      "Loads above about 1500 pF need a 100 Ω isolation resistor (data sheet Figure 46).",
-      "JFET bias current doubles every 10 °C. Hot chassis raise bias and offset errors in DC-coupled designs.",
-      "Pinout is the standard single (AD711) / dual (AD712) / quad (AD713). Check the pinout before swapping parts."
+      "18 nV/√Hz is noisy next to NE5532, OP27, OPA1642 or OPA827; poor for low-impedance or MM-phono inputs.",
+      "Output phase reversal below about −14.1 V input at ±15 V; CM range only to −11.5 V.",
+      "Needs ±4.5 V minimum, not rail-to-rail; ~25 mA output is no headphone driver.",
+      "Loads above ~1500 pF need a 100 Ω isolation resistor (Figure 46).",
+      "Bias current doubles every 10 °C, raising offset errors in hot DC-coupled designs."
     ],
     "sources": [
       "https://www.analog.com/media/en/technical-documentation/data-sheets/AD712.pdf",
@@ -224,6 +167,49 @@
       "https://www.analog.com/en/products/ad712.html"
     ]
   },
+  "counterfeit_notes": "None documented. The risk is fake OPA627s: ZeptoBars found an AD744 die; Head-Fi reports remarked AD711s (~18 kΩ between pins). Tell-tales: ~20 vs ~55 V/µs slew, lower supply current. Pre-Rev. D datasheets show the die photo.",
+  "alternatives": [
+    "ADA4627-1 / ADA4625 / ADA4610",
+    "AD8610 / AD8620",
+    "OPA1641 / OPA1642 / OPA1644",
+    "OPA134 / OPA2134 / OPA4134 (2024 die change)",
+    "OPA827 / OPA828",
+    "AD825 (reportedly better AD712 replacement)",
+    "AD823",
+    "TL072 / LF412 / TL081 / LF411"
+  ],
+  "silicon_changes": [
+    {
+      "kind": "fab-or-process-transfer",
+      "vendor": "Analog Devices",
+      "when": "2025-06 (eff. 2025-09) · PCN 25_0091",
+      "part_numbers_affected": [
+        "AD711",
+        "AD712",
+        "AD713"
+      ],
+      "identification": "None given. Standard lot traceability; no marking or date-code change mentioned; previous fab not named.",
+      "summary": "Camas, WA wafer fab qualified for ADI's bipolar process 'to ensure reliable and continuous supply'. Published 6 Jun 2025, effective 8 Sep 2025; Rev. A form and report followed. Lists multiple AD711/AD712/AD713 variants. Separate from PCN 26_0029 (Camas complementary bipolar: AD797, AD823).",
+      "spec_deltas": [
+        {
+          "parameter": "Wafer fab site",
+          "before": "previous ADI bipolar fab (not named in the sources seen)",
+          "after": "ADI Camas, WA qualified"
+        }
+      ],
+      "audio_impact": "None documented; ADI expects no change to fit, form, function or reliability. Typical values may shift within limits.",
+      "compatibility_risk": "low: same part numbers and datasheet; drop-in per ADI. Only lot provenance changes.",
+      "sources": [
+        "https://www.analog.com/media/en/PCN/ADI_PCN_25_0091_Rev_-_Form.pdf",
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7135/ADI_PCN_25_0091_Rev_-_Form.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_25_0091_Rev_A_Form.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_25_0091_Rev_-_Qualification%20of%20ADI%20Camas%20Wafer%20Fab%20Bipolar%20Process.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_25_0091_Rev_A_Qualification%20ADI%20Camas%20Wafer%20Fab%20BIPOLAR%20Process.pdf"
+      ],
+      "confidence": "medium",
+      "verification": "Rev. - and Rev. A forms and qualification reports found; summary confirms AD711/AD712/AD713 coverage."
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Analog Devices",
@@ -235,7 +221,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current vendor copy. The web search result title reads 'Precision, Low Cost, High Speed BiFET Dual Op Amp Data Sheet AD712 Rev. I'. The footer code was taken from the verified GitHub copy of the same revision."
+      "note": "Current vendor copy; footer code from the verified GitHub copy."
     },
     {
       "vendor": "Analog Devices",
@@ -247,271 +233,274 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Verified by extracting the PDF: metadata title 'AD712 (Rev. I)', created 2018-11-14, 20 pages, ©1986–2018. Its revision history runs back to Rev. C→D (9/2001)."
+      "note": "Verified: 'AD712 (Rev. I)', created 2018-11-14, 20 pages."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD712 data sheet (Rev H, 07/2010)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "H",
       "date": "2010-07",
       "url": "https://www.datasheetcatalog.com/datasheets_pdf/A/D/7/1/AD712.shtml",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "The datasheetcatalog.com listing is labelled 'Dual Precision, Low Cost, High Speed, BiFET Op Amp Data Sheet (Rev H, 07/2010)'. The PDF was not opened."
+      "note": "Listing labelled Rev H, 07/2010; PDF not opened."
     },
     {
       "vendor": "Analog Devices",
       "title": "Dual Precision, Low Cost, High Speed BiFET Op Amp AD712",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "G",
       "date": "2006",
       "url": "https://datasheet.octopart.com/AD712JNZ-Analog-Devices-datasheet-9622412.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "probable",
-      "note": "Octopart copy for AD712JNZ. The search summary identifies it as Rev. G. Its 'Dual ...' title fits a copy from before Rev. H, which changed the product title. The PDF was not opened."
+      "note": "Pre-Rev. H 'Dual …' title; reportedly Rev. G."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD712 Dual Precision, Low Cost, High Speed, BiFET Op Amp (15 pages)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48163/AD/AD712.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "alldatasheet copy: 15 pages, 635 KB. Revision letter not seen. It may freeze an old-format revision (Rev. E or earlier); unconfirmed."
+      "note": "15 pages, 635 KB; maybe Rev. B or another old revision."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD712-EP: Dual Precision, Low Cost, High Speed BiFET Op Amp (Enhanced Product)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "Rev. 0",
       "date": "",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD712-EP.pdf",
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Separate data sheet for the enhanced-product version. The search result title confirms Rev. 0. The date was not captured."
+      "note": "Separate Enhanced Product datasheet; date unknown."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD712 data sheet (legacy analog.com path)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "http://www.analog.com/static/imported-files/data_sheets/AD712.pdf",
       "url_kind": "vendor_legacy",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed on the web. The URL was seen only in Eagle libraries on GitHub. It probably held Rev. G or H. Use it as a Wayback seed."
+      "note": "Legacy path seen in Eagle libraries; probably Rev. G or H."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD711: Precision, Low Cost, High Speed, BiFET Op Amp (Data Sheet)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "E",
       "date": "",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD711.pdf",
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The web search result for this URL shows the old-format footer 'REV. E'. Radiolocman and studylib copies are also labelled Rev. E, and the radiolocman copy has 17 pages. The AD711 did not follow the AD712's move to Rev. I."
+      "note": "Old-format 'REV. E' footer; AD711 never followed AD712 to Rev. I."
     },
     {
       "vendor": "Analog Devices",
       "title": "Datasheet AD711 Analog Devices, Revision: E",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "E",
       "date": "",
       "url": "https://www.radiolocman.com/datasheet/pdf.html?di=171885",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Radiolocman copy, 17 pages, 630 KB."
+      "note": "17 pages, 630 KB."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD711 Precision, Low Cost, High Speed, BiFET Op Amp (Rev. E)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "E",
       "date": "",
       "url": "https://studylib.net/doc/25493162/ad711-precision--low-cost--high-speed--bifet-op-amp--rev.e-",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Studylib copy. The page slug names Rev. E."
+      "note": "Page slug names Rev. E."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD711 Precision, Low Cost, High Speed, BiFET Op Amp (12 pages)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48159/AD/AD711.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "alldatasheet copy of 12 pages, against 17 pages for Rev. E, so it is probably an older revision. The features cite the AD711C and AD711S/T (MIL-STD-883B) grades. Revision unconfirmed."
+      "note": "12 pages vs 17 for Rev. E; probably older. Cites C/S/T grades."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD711 data sheet (datasheetcatalog listing)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.datasheetcatalog.com/datasheets_pdf/A/D/7/1/AD711.shtml",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision not seen; unconfirmed."
+      "note": "Revision not seen."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD711 data sheet (legacy analog.com path)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "http://www.analog.com/static/imported-files/data_sheets/AD711.pdf",
       "url_kind": "vendor_legacy",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed on the web. The URL was seen only in GitHub Eagle libraries, which also list a TO-99 (H-8) package. Use it as a Wayback seed."
+      "note": "Legacy path from Eagle libraries (which list TO-99); Wayback seed."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD713: Precision, High Speed, BiFET Quad Op Amp (Data Sheet)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "F",
       "date": "",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad713.pdf",
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The search result title is 'Precision, High Speed, BiFET Quad Op Amp AD713 Rev. F'. The confirmed URL uses a lowercase file name (ad713.pdf)."
+      "note": "Current Rev. F; confirmed URL is lowercase ad713.pdf.",
+      "also_urls": [
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/AD713.pdf"
+      ]
     },
     {
       "vendor": "Analog Devices",
       "title": "Datasheet AD713 Analog Devices, Revision: C",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "C",
       "date": "",
       "url": "https://www.radiolocman.com/datasheet/pdf.html?di=120129",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Radiolocman copy of an older revision (Rev. C)."
+      "note": "Older AD713 revision C."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD713 Quad Precision, Low Cost, High Speed, BiFET Op Amp",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.farnell.com/datasheets/77832.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Farnell copy. The older 'Quad Precision, Low Cost ...' title suggests a revision before Rev. F; unconfirmed."
+      "note": "Older 'Quad Precision, Low Cost' title; before Rev. F."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD713 quad BiFET op amp data sheet (legacy analog.com path)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "2011",
       "url": "http://www.analog.com/static/imported-files/data_sheets/AD713.pdf",
       "url_kind": "vendor_legacy",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed on the web. The URL was seen in MIT OpenCourseWare course content on GitHub. Use it as a Wayback seed."
+      "note": "Legacy path seen in MIT OpenCourseWare content; Wayback seed."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD711 Precision, Low Cost, High Speed, BiFET Op Amp",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "A",
       "date": "",
       "url": "https://people.duke.edu/~hpgavin/ExperimentalSystems/AD711.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "University (Duke, H. Gavin, Experimental Systems course) copy. One search listed it as 'REV. A Information furnished by Analog Devices is believed to be accurate...', so its footer reads REV. A. It is the oldest AD711 revision found so far and is evidence for the early part. Date not shown."
+      "note": "Duke course copy, footer 'REV. A'; oldest AD711 revision found."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD711 data sheet (legacy analog.com HTML/PDF datasheet link)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "E",
       "date": "",
       "url": "https://www.analog.com/en/ad711/datasheet.html",
       "url_kind": "vendor_legacy",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Old analog.com datasheet URL pattern. Its search snippet reads 'REV. E Information furnished by Analog Devices is believed to be accurate...'."
+      "note": "Old analog.com datasheet URL; snippet shows 'REV. E'."
     },
     {
       "vendor": "Analog Devices",
       "title": "Datasheet AD711 Analog Devices, Revision: E",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "E",
       "date": "",
       "url": "https://www.radiolocman.com/datasheet/pdf.html?di=120125",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "This is a second radiolocman entry, separate from the known di=171885. The page title says Revision: E."
+      "note": "Second radiolocman Rev. E entry, separate from di=171885."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD711_02 Datasheet(PDF) - Analog Devices",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/225364/AD/AD711_02.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is a second alldatasheet AD711 document (ID 225364), separate from the known 48159. The '_02' suffix marks a different upload/edition than 48159. It may be a 2002-era revision, but the revision is not shown in the summary."
+      "note": "Second alldatasheet AD711 upload; maybe a 2002-era revision."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD711 Datasheet - Analog Devices (datasheet4u)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://datasheet4u.com/datasheets/Analog-Devices/AD711/1513065",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision not shown in the search summary."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD711 Datasheet PDF - Analog Devices (datasheetq)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.datasheetq.com/AD711-doc-ADI",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision not shown in the search summary."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices",
       "title": "Precision, Low Cost, High Speed BiFET Dual Op Amp AD712 Rev. H",
-      "doc_number": "D00823 (Rev. H edition)",
+      "doc_number": "D00823",
       "revision": "H",
       "date": "2010",
       "url": "http://hpm-elektronik.de/downloads/datasheet/ad712.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Copy held by a German distributor (HPM Elektronik). The search result title shows 'AD712 Rev. H'. This is the second Rev. H copy after datasheetcatalog."
+      "note": "German distributor copy titled 'AD712 Rev. H'."
     },
     {
       "vendor": "Analog Devices",
@@ -523,214 +512,279 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "The radiolocman page title says Revision: I."
+      "note": "Page title says Revision: I."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD712 datasheet (9/15 pages) - Dual Precision, Low Cost, High Speed, BiFET Op Amp",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "B",
       "date": "",
       "url": "https://www.alldatasheet.com/html-pdf/48163/AD/AD712/211/9/AD712.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "probable",
-      "note": "This is the HTML page view of the same alldatasheet document 48163 that is already listed as a PDF with revision unknown. The document is 15 pages and has the old 'Dual Precision...' title. A search summary said Rev. B appears in the alldatasheet AD712 results, but no page footer confirmed it. If true, this is a very early (late-1980s/1990s) AD712 edition. Needs verification."
+      "note": "HTML view of alldatasheet 48163; Rev. B reported, not footer-confirmed."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD712TQ/883B datasheet - Dual Precision, Low Cost, High Speed, BiFET op Amp",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.digchip.com/datasheets/parts/datasheet/041/AD712TQ_883B.php",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The old 'Dual Precision...' title means it is older than Rev. H. It is filed under the T-grade /883B part, and T grades were deleted in Rev. F (6/2006). That suggests a Rev. E or earlier document, but this is an inference. The revision is not shown."
+      "note": "T-grade /883B copy with old title; likely Rev. E or earlier."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD713 Quad Precision, Low Cost, High Speed, BiFET Op Amp",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://agelectronica.lat/pdfs/textos/A/AD713BQ.PDF",
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Copy held by a Mexican distributor (AG Electronica), filed under the AD713BQ part. It has the older 'Quad Precision, Low Cost...' title (the same as farnell 77832), not the Rev. F title 'Precision, High Speed, BiFET Quad Op Amp'. The B grade also points to a pre-Rev. F edition. Revision not shown."
+      "note": "AG Electronica AD713BQ copy; old title and B grade, pre-Rev. F."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD713 Datasheet(PDF) - Analog Devices",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/542637/AD/AD713.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision not shown in the search summary."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD713 Datasheet | BiFET Quad Op Amp",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://datasheetspdf.com/datasheet/AD713.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The 'BiFET Quad Op Amp' title wording matches the Rev. F title, but the revision is not shown."
+      "note": "Title wording matches Rev. F; revision not shown."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD713 datasheet PDF - Op Amp (datasheet4u)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://datasheet4u.com/datasheets/Analog-Devices/AD713/1186792",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision not shown in the search summary."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD713 Quad Hi-Speed BiFET Op-Amp Datasheet (Futurlec)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.futurlec.com/AnalogDevices/AD713JN.shtml",
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Futurlec distributor product/datasheet page for the AD713JN, which has the old 'JN' (non-RoHS) ordering code. Revision not shown."
+      "note": "Futurlec page for non-RoHS AD713JN; revision not shown."
     }
+  ],
+  "product_pages": [
+    "https://www.analog.com/en/products/ad711.html",
+    "https://www.analog.com/en/products/ad712.html",
+    "https://www.analog.com/en/products/ad713.html"
   ],
   "revision_history": [
     {
       "vendor": "Analog Devices",
-      "doc_number": "AD712 data sheet (D00823)",
-      "revision": "Rev. H to Rev. I",
-      "date": "11/2018",
-      "changes": "Added the Thermal Resistance section and Table 3 (θJA PDIP 165, SOIC 120, CERDIP 110 °C/W). Changes to Table 2 (power dissipation now points to Table 3). Changes to the Ordering Guide. No electrical spec changes are listed."
+      "doc_number": "D00823 (AD712)",
+      "revision": "I",
+      "date": "2018-11",
+      "changes": "Added Thermal Resistance and Table 3 (θJA PDIP 165, SOIC 120, CERDIP 110 °C/W; θJC 22); ordering guide changes. No electrical changes."
     },
     {
       "vendor": "Analog Devices",
-      "doc_number": "AD712 data sheet (D00823)",
-      "revision": "Rev. G to Rev. H",
-      "date": "7/2010",
-      "changes": "Changes to the product title (from 'Dual Precision, Low Cost, High Speed BiFET Op Amp'). Added Input Voltage Noise, Input Current Noise and Open-Loop Gain to Table 1. Moved Figures 29, 30, 34, 44 and 45. Changes to the Ordering Guide."
+      "doc_number": "D00823 (AD712)",
+      "revision": "H",
+      "date": "2010-07",
+      "changes": "New title (was 'Dual Precision, Low Cost, High Speed BiFET Op Amp'). Added voltage noise, current noise, open-loop gain (400 V/mV typ) to Table 1."
     },
     {
       "vendor": "Analog Devices",
-      "doc_number": "AD712 data sheet (D00823)",
-      "revision": "Rev. F to Rev. G",
-      "date": "8/2006",
-      "changes": "Edits to Figure 1 (connection diagram). Change to the 9-Pole Chebychev Filter section."
+      "doc_number": "D00823 (AD712)",
+      "revision": "G",
+      "date": "2006-08",
+      "changes": "Edits to Figure 1 and the 9-pole Chebyshev filter section."
     },
     {
       "vendor": "Analog Devices",
-      "doc_number": "AD712 data sheet (D00823)",
-      "revision": "Rev. E to Rev. F",
-      "date": "6/2006",
-      "changes": "Updated format. Deleted the B, C and T models (grades). Changes to General Description, Product Highlights, Specifications and Figure 43. The spec edits are not itemised."
+      "doc_number": "D00823 (AD712)",
+      "revision": "F",
+      "date": "2006-06",
+      "changes": "New format; deleted B, C and T grades; changes to description, highlights, specifications (not itemised) and Figure 43."
     },
     {
       "vendor": "Analog Devices",
-      "doc_number": "AD712 data sheet (D00823)",
-      "revision": "Rev. D to Rev. E",
-      "date": "7/2002",
+      "doc_number": "D00823 (AD712)",
+      "revision": "E",
+      "date": "2002-07",
       "changes": "Edits to Features."
     },
     {
       "vendor": "Analog Devices",
-      "doc_number": "AD712 data sheet (D00823)",
-      "revision": "Rev. C to Rev. D",
-      "date": "9/2001",
-      "changes": "Edits to Features, General Description, Connection Diagram and Ordering Guide. Deleted the metallization (die) photograph. Edits to Absolute Maximum Ratings, Figure 7 and Outline Dimensions."
+      "doc_number": "D00823 (AD712)",
+      "revision": "D",
+      "date": "2001-09",
+      "changes": "Edits to features, description, connection diagram, ordering guide, ratings, Figure 7, outlines; deleted die photograph."
     },
     {
       "vendor": "Analog Devices",
-      "doc_number": "AD712-EP data sheet",
+      "doc_number": "D00823 (AD712)",
+      "revision": "B",
+      "date": "",
+      "changes": "Reportedly alldatasheet 48163 (15 pages, old title); not footer-confirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD711",
+      "revision": "A",
+      "date": "",
+      "changes": "Copy at people.duke.edu with 'REV. A' footer. Revs. B–D not found."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD711",
+      "revision": "E",
+      "date": "",
+      "changes": "Current, old-format 'REV. E' footer. Change log not recorded."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD713",
+      "revision": "F",
+      "date": "",
+      "changes": "Current; Rev. C survives on radiolocman. Revs. D and E and changes not recorded."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD712-EP",
       "revision": "Rev. 0",
-      "date": "unknown",
-      "changes": "Initial release of the enhanced-product data sheet."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD711 data sheet",
-      "revision": "Rev. E (current)",
-      "date": "unknown",
-      "changes": "Current AD711 revision (old-format 'REV. E' footer). The change log and the dates of earlier revisions were not captured."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD713 data sheet",
-      "revision": "Rev. C … Rev. F (current)",
-      "date": "unknown",
-      "changes": "Rev. F is current on analog.com. Rev. C survives on radiolocman. The Rev. D and Rev. E dates and the change details were not captured."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD711 data sheet",
-      "revision": "Rev. A",
-      "date": "unknown",
-      "changes": "A Rev. A copy exists at people.duke.edu (the footer 'REV. A' shows in the search snippet). Its date and changes versus the original edition were not shown. Rev. B, C and D of the AD711 were not found."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD712 data sheet (D00823)",
-      "revision": "Rev. B (unconfirmed)",
-      "date": "unknown",
-      "changes": "A search summary put Rev. B in the alldatasheet AD712 results (document 48163, 15 pages, old 'Dual Precision...' title). No footer confirmed it, and the date and changes were not shown."
+      "date": "",
+      "changes": "Initial Enhanced Product datasheet."
     }
   ],
-  "silicon_changes": [
+  "revision_chains": [
     {
-      "kind": "fab-or-process-transfer",
       "vendor": "Analog Devices",
-      "when": "PCN 25_0091 Rev. -, published 6 Jun 2025, effective 8 Sep 2025. A Rev. A form and a Rev. A qualification report followed; their dates were not captured.",
-      "part_numbers_affected": [
-        "AD711 (variants not itemised in search summary)",
-        "AD712 (multiple variants)",
-        "AD713 (multiple variants)"
-      ],
-      "identification": "None given. ADI says it keeps standard lot traceability. The summaries mention no marking change or new date-code scheme, and do not name the source fab.",
-      "summary": "ADI PCN 25_0091 qualifies the Camas, WA wafer fab for the ADI bipolar process 'to ensure reliable and continuous supply'. It lists multiple AD711, AD712 and AD713 part numbers. A companion report, 'Qualification of ADI Camas Wafer Fab Bipolar Process', mentions AD712 alongside AD624 and AD8221. The part numbers stay the same while the wafer fab changes. This is separate from PCN 26_0029 (Camas, Complementary Bipolar process), which covers AD797 and AD823.",
-      "spec_deltas": [
+      "doc_number": "D00823 (AD712)",
+      "known": [
         {
-          "parameter": "Wafer fab site",
-          "before": "previous ADI bipolar fab (not named in the sources seen)",
-          "after": "ADI Camas, WA qualified"
+          "rev": "original",
+          "date": "1986"
+        },
+        {
+          "rev": "B",
+          "date": ""
+        },
+        {
+          "rev": "C",
+          "date": ""
+        },
+        {
+          "rev": "D",
+          "date": "2001-09"
+        },
+        {
+          "rev": "E",
+          "date": "2002-07"
+        },
+        {
+          "rev": "F",
+          "date": "2006-06"
+        },
+        {
+          "rev": "G",
+          "date": "2006-08"
+        },
+        {
+          "rev": "H",
+          "date": "2010-07"
+        },
+        {
+          "rev": "I",
+          "date": "2018-11"
         }
       ],
-      "audio_impact": "None documented. ADI states no expected impact to fit, form, function or reliability. A fab transfer of the same design can shift typical, unspecified parameters within data-sheet limits, but no listening or measurement comparison was found.",
-      "compatibility_risk": "low - same part numbers and data sheet, and a drop-in by ADI's statement. The main effect is lot provenance (Camas wafers versus the previous fab).",
-      "sources": [
-        "https://www.analog.com/media/en/PCN/ADI_PCN_25_0091_Rev_-_Form.pdf",
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7135/ADI_PCN_25_0091_Rev_-_Form.pdf",
-        "https://www.analog.com/media/en/PCN/ADI_PCN_25_0091_Rev_A_Form.pdf",
-        "https://www.analog.com/media/en/PCN/ADI_PCN_25_0091_Rev_-_Qualification%20of%20ADI%20Camas%20Wafer%20Fab%20Bipolar%20Process.pdf",
-        "https://www.analog.com/media/en/PCN/ADI_PCN_25_0091_Rev_A_Qualification%20ADI%20Camas%20Wafer%20Fab%20BIPOLAR%20Process.pdf"
+      "missing": [
+        "A"
       ],
-      "confidence": "medium",
-      "verification": "Adversarial check of a completeness-sweep entry. A search on '25_0091' with AD711/AD712/AD713 returned the Rev. - and Rev. A forms and both qualification reports, and the summary said the PCN covers multiple AD711/AD712/AD713 part numbers. Not refuted; kept at medium confidence."
+      "note": "Rev. B unconfirmed. No copies found of original through F; digchip TQ/883B copy likely ≤ Rev. E."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD711",
+      "known": [
+        {
+          "rev": "A",
+          "date": ""
+        },
+        {
+          "rev": "E",
+          "date": ""
+        }
+      ],
+      "missing": [
+        "original",
+        "B",
+        "C",
+        "D"
+      ],
+      "note": "No dates or change log. Alldatasheet 48159 and 225364 ('AD711_02') unplaced."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD713",
+      "known": [
+        {
+          "rev": "C",
+          "date": ""
+        },
+        {
+          "rev": "F",
+          "date": ""
+        }
+      ],
+      "missing": [
+        "original",
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "note": "Farnell 77832 and AG Electronica AD713BQ copies predate Rev. F. No dates known."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD712-EP",
+      "known": [
+        {
+          "rev": "Rev. 0",
+          "date": ""
+        }
+      ],
+      "missing": [],
+      "note": "Date unknown."
     }
-  ],
-  "counterfeit_notes": "No counterfeit AD711/712/713 parts have been documented. The risk runs the other way: fake OPA627s. The ZeptoBars decap (2014, covered by Hackaday) found an AD744 die under an OPA627 marking. Users in the Head-Fi thread 'fake opa627's in the wild' also report remarked AD711-type parts sold as OPA627, with about 18 kΩ measured between pins as a check. That report is forum-level only (low confidence). Electrical clues: an AD711-class die slews about 20 V/µs, against about 55 V/µs for the OPA627. It also draws far less supply current (AD712 Rev. I: 5.0 mA typ for two amplifiers). Data sheets before Rev. D (9/2001) carried a metallization photograph, which helps when comparing decapped dies. Buy from authorised distributors; current PDIP/SOIC production carries the Z (RoHS) suffix.",
-  "alternatives": [
-    "ADI ADA4627-1 / ADA4625-1/-2 / ADA4610 (modern ADI JFET-input precision parts)",
-    "ADI AD8610 / AD8620 (lower-noise ADI JFET single/dual)",
-    "TI OPA1641 / OPA1642 / OPA1644 (low-distortion audio JFET single/dual/quad)",
-    "TI OPA2134 / OPA134 / OPA4134 (audio FET-input drop-in; see the TI 2024 die-change caveat)",
-    "TI OPA827 / OPA828 (premium low-noise JFET singles)",
-    "ADI AD825 (fast JFET; some DIYers call it the better AD712 replacement; unverified)",
-    "ADI AD823 (JFET-input dual, rail-to-rail output)",
-    "TL072 / LF412 / TL081 / LF411 (the parts the AD711/AD712 were marketed to replace)"
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -754,17 +808,11 @@
     "https://www.farnell.com/datasheets/77832.pdf"
   ],
   "open_questions": [
-    "Web checking was limited to 5 searches. ADI's PCN database was not searched, so no die change, fab transfer or PCN was found for AD711/712/713. That means none was found, not that none exists. The RoHS 'Z' suffix transition (c. 2005–2006) was a lead-finish change, not a silicon change.",
-    "ADI PDN 10_0081 Rev. B reportedly lists AD711JNZ and AD713JNZ (search summary only; not read). Were these PDIP options discontinued c. 2010, and which options remain in production?",
-    "AD711 Rev. E: print date and revision history not captured. When were the AD711 B/C/S/T grades dropped, and is the TO-99 can obsolete?",
-    "AD713 Rev. F date and change log, and the dates of Rev. C through E, are unknown.",
-    "AD712-EP: orderable part number, grade and Rev. 0 date not captured.",
-    "Revisions of the alldatasheet AD711 (12 pp) and AD712 (15 pp) copies and the Farnell AD713 copy were not seen. The Octopart copy's Rev. G identification rests on a search summary.",
-    "The AD712 original (1986), Rev. A, B and C dates are unknown; the Rev. I change log starts at Rev. C→D (9/2001).",
-    "Rev. F (6/2006) lists 'Changes to Specifications Section' without detail. A Rev. E (2002) copy is needed to check whether any limits changed.",
-    "The report of AD711 dies inside fake OPA627s comes only from Head-Fi forum posts. The only documented decap is the AD744 case.",
-    "The discovery claims about Walt Jung's ADI-era writing and CD-player/DAC use were not verified. No modern measurements or community sound descriptors were collected.",
-    "The inferred URLs remain unverified: uppercase AD713.pdf, the /UploadedFiles/Data_Sheets/ pattern and the static/imported-files legacy paths."
+    "Any die, fab or PCN changes in ADI's PCN database beyond PCN 25_0091?",
+    "Were AD711JNZ and AD713JNZ discontinued via PDN 10_0081 Rev. B (c. 2010)? Which options remain?",
+    "Dates and change logs for AD711 Rev. E, AD713 Rev. F and AD712 original–Rev. C? When were AD711 B/C/S/T dropped?",
+    "AD712-EP orderable number, grade and Rev. 0 date?",
+    "Did AD712 Rev. F change spec limits? Compare with a Rev. E copy."
   ],
   "sources": [
     "https://www.analog.com/media/en/technical-documentation/data-sheets/AD712.pdf",
@@ -799,20 +847,35 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "AD712 current datasheet is Rev. I: https://www.analog.com/media/en/technical-documentation/data-sheets/AD712.pdf",
+      "AD711 current datasheet carries 'REV. E': https://www.analog.com/media/en/technical-documentation/data-sheets/AD711.pdf (also https://www.radiolocman.com/datasheet/pdf.html?di=171885, 17 pp)",
+      "AD713 current datasheet is Rev. F: https://www.analog.com/media/en/technical-documentation/data-sheets/ad713.pdf",
+      "Radiolocman holds AD713 Rev. C: https://www.radiolocman.com/datasheet/pdf.html?di=120129",
+      "Octopart reportedly holds AD712 Rev. G: https://datasheet.octopart.com/AD712JNZ-Analog-Devices-datasheet-9622412.pdf",
+      "Datasheetcatalog lists AD712 Rev. H, 07/2010: https://www.datasheetcatalog.com/datasheets_pdf/A/D/7/1/AD712.shtml",
+      "AD712-EP datasheet exists at Rev. 0: https://www.analog.com/media/en/technical-documentation/data-sheets/AD712-EP.pdf",
+      "AD711 replaces LF411/TL081; AD711J 16 V/µs min, 3 MHz min, 1.0 µs settling to 0.01%: https://www.analog.com/en/products/ad711.html",
+      "AD713 is four AD711-type amplifiers on one die: https://www.analog.com/media/en/technical-documentation/data-sheets/ad713.pdf",
+      "Fake-OPA627 decap revealed an AD744 die: https://zeptobars.com/en/read/OPA627-AD744-real-vs-fake-china-ebay and https://hackaday.com/2014/04/10/fake-audiophile-opamps-revealed/",
+      "Forum reports of remarked AD711s sold as OPA627: https://www.head-fi.org/threads/fake-opa627s-in-the-wild.316937/",
+      "AD711, AD712 and AD713 product pages are live: https://www.analog.com/en/products/ad713.html"
+    ],
     "refuted_claims": [
-      "The draft implied that the AD711 and AD713 data sheets follow the AD712 revision chain (Rev. I, 11/2018). Refuted: the current AD711 is Rev. E and the current AD713 is Rev. F.",
-      "The discovery hint that AD711-class dies are 'found in remarked fake OPA627s' is not supported as a documented decap finding. The ZeptoBars/Hackaday decap found an AD744 die. The AD711 version survives only as Head-Fi forum reports and was downgraded to low confidence."
+      "AD711 and AD713 do not follow the AD712 chain (Rev. I): current AD711 is Rev. E, AD713 Rev. F.",
+      "AD711 dies in fake OPA627s are not a documented decap finding (that was AD744); forum reports only, low confidence."
     ],
     "corrections": [
-      "The AD711 current data sheet is Rev. E, old format. Revision recorded, confidence raised to high, and radiolocman and studylib Rev. E mirrors added.",
-      "The AD713 current data sheet is Rev. F at the lowercase URL .../data-sheets/ad713.pdf. Added it, plus a radiolocman Rev. C mirror and a Farnell copy.",
-      "Added the AD712 vendor_current entry (analog.com, Rev. I), an Octopart mirror identified as Rev. G, and a datasheetcatalog listing of Rev. H (07/2010).",
-      "Added the AD712-EP enhanced-product variant and its Rev. 0 data sheet.",
-      "AD711 is marketed as an enhanced replacement for LF411/TL081 (the dual AD712 for LF412/TL082). Updated the tagline, technology and alternatives; the tagline's CD-player claim was softened.",
-      "Listed AD711 orderable parts (AQ/JNZ/JRZ/KNZ/KRZ) and the older C/S/T grades named in the data sheet features.",
-      "Added the AD713 construction (four AD711-type amplifiers on one die).",
-      "Downgraded the legacy static/imported-files URLs to low confidence because they are not web-confirmed.",
-      "Added a possible AD711JNZ/AD713JNZ discontinuance (PDN 10_0081 Rev. B) as low-confidence status notes."
+      "AD711 current datasheet is old-format Rev. E; radiolocman and studylib mirrors added.",
+      "AD713 current datasheet is Rev. F at lowercase ad713.pdf; radiolocman Rev. C and Farnell copies added.",
+      "Added AD712 Rev. I vendor entry, Octopart Rev. G and datasheetcatalog Rev. H (07/2010).",
+      "Added AD712-EP and its Rev. 0 datasheet.",
+      "AD711/AD712 marketed as LF411/TL081 and LF412/TL082 replacements; CD-player claim softened.",
+      "Listed AD711 orderables (AQ/JNZ/JRZ/KNZ/KRZ) and older C/S/T grades.",
+      "Added AD713 construction: four AD711-type amps on one die.",
+      "Legacy static/imported-files URLs downgraded to low confidence.",
+      "Possible AD711JNZ/AD713JNZ discontinuance (PDN 10_0081 Rev. B) noted, low confidence."
     ],
     "unverified_urls": [
       "http://www.analog.com/static/imported-files/data_sheets/AD711.pdf",
@@ -825,29 +888,6 @@
       "https://www.head-fi.org/threads/ad823-ad712-op-amps.30156/",
       "https://www.diyaudio.com/community/threads/which-op-amp-afraid-to-ask-really.137963/",
       "http://www.analog.com/library/analogDialogue/archives/39-05/op_amp_applications_handbook.html"
-    ],
-    "claims_confirmed": [
-      "AD712 current vendor data sheet is Rev. I: https://www.analog.com/media/en/technical-documentation/data-sheets/AD712.pdf",
-      "AD711 current vendor data sheet carries 'REV. E': https://www.analog.com/media/en/technical-documentation/data-sheets/AD711.pdf (also https://www.radiolocman.com/datasheet/pdf.html?di=171885, 17 pp)",
-      "AD713 current data sheet is Rev. F: https://www.analog.com/media/en/technical-documentation/data-sheets/ad713.pdf",
-      "A Radiolocman copy freezes AD713 Rev. C: https://www.radiolocman.com/datasheet/pdf.html?di=120129",
-      "An Octopart mirror holds AD712 Rev. G (per search summary): https://datasheet.octopart.com/AD712JNZ-Analog-Devices-datasheet-9622412.pdf",
-      "Datasheetcatalog lists AD712 Rev. H, 07/2010: https://www.datasheetcatalog.com/datasheets_pdf/A/D/7/1/AD712.shtml",
-      "An AD712-EP data sheet exists at Rev. 0: https://www.analog.com/media/en/technical-documentation/data-sheets/AD712-EP.pdf",
-      "AD711 is an enhanced replacement for LF411/TL081; AD711J is 16 V/µs min slew and 3 MHz min GBW, settling to 0.01% in 1.0 µs: https://www.analog.com/en/products/ad711.html",
-      "The AD713 is four AD711-type amplifiers on one monolithic die: https://www.analog.com/media/en/technical-documentation/data-sheets/ad713.pdf",
-      "The fake-OPA627 decap revealed an AD744 die: https://zeptobars.com/en/read/OPA627-AD744-real-vs-fake-china-ebay and https://hackaday.com/2014/04/10/fake-audiophile-opamps-revealed/",
-      "Forum reports of remarked AD711 parts sold as OPA627: https://www.head-fi.org/threads/fake-opa627s-in-the-wild.316937/",
-      "AD711, AD712 and AD713 product pages are live on analog.com: https://www.analog.com/en/products/ad713.html"
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "jfet-input",
-  "product_pages": [
-    "https://www.analog.com/en/products/ad711.html",
-    "https://www.analog.com/en/products/ad712.html",
-    "https://www.analog.com/en/products/ad713.html"
-  ],
-  "revision_chain_notes": "Four searches found no new dates or change logs. The main new finding is a Rev. A copy of the AD711 data sheet at people.duke.edu. No second source for AD711/712/713 was found (ADI only, 1986 to present).\n\nAD712 data sheet (D00823):\n- Original c.1986 edition: missing.\n- Rev. A: missing.\n- Rev. B: unconfirmed. It may be alldatasheet 48163, per a search summary only.\n- Rev. C: date unknown, no copy.\n- Rev. D (9/2001) and Rev. E (7/2002): no confirmed copy. The digchip AD712TQ/883B copy is probably Rev. E or earlier, since it still lists the T grade.\n- Rev. F (6/2006): no confirmed copy.\n- Rev. G (8/2006): octopart.\n- Rev. H (7/2010): datasheetcatalog, and now hpm-elektronik.de.\n- Rev. I (11/2018): analog.com and GitHub, and now radiolocman di=120127.\n- Still missing: copies of the original edition and of Rev. A through F, and the dates of Rev. A through C.\n\nAD711 data sheet:\n- Original edition: missing.\n- Rev. A: new, copy at people.duke.edu. Date not shown.\n- Rev. B, C and D: missing.\n- Rev. E (current, date not shown): analog.com PDF, the legacy analog.com/en/ad711/datasheet.html, radiolocman di=171885 and di=120125, studylib.\n- Unplaced copies: alldatasheet 48159 and the new alldatasheet 225364 ('AD711_02').\n- Still missing: all revision dates, the change log, and copies of Rev. B, C and D.\n\nAD713 data sheet:\n- Original, Rev. A and Rev. B: missing.\n- Rev. C: radiolocman di=120129.\n- Rev. D and E: missing.\n- Rev. F (current): analog.com.\n- Unplaced copies with the older 'Quad Precision, Low Cost...' title: farnell 77832 and agelectronica AD713BQ.PDF, both pre-Rev. F.\n- Still missing: all dates and change details.\n\nAD712-EP data sheet: only Rev. 0 is known, with no date."
+    ]
+  }
 }

@@ -1,149 +1,128 @@
 {
   "id": "LME49713",
-  "name": "LME49713 (National / TI high-fidelity current-feedback audio op-amp)",
-  "tagline": "National's current-feedback single: 1.9 nV/√Hz, 0.00036% THD+N, 1900 V/µs, ±100 mA. Head-Fi and diyAudio builders praise it for quiet headphone and buffer stages with strong drive.",
-  "technology": "Single-channel bipolar current-feedback (CFB) audio op-amp from National's LME49xxx high-performance audio line. Someone who worked on the chip said it was made on National's LME high-voltage process (forum attribution). Packages: SOIC-8 and 8-lead TO-99 metal can; no DIP-8. Supply ±5 V to ±18 V.",
+  "name": "LME49713",
+  "type": "Bipolar current-feedback audio op-amp, single",
+  "tier": "B",
+  "category": "headphone-driver",
+  "tagline": "Current-feedback single: 1.9 nV/√Hz, 0.00036% THD+N, 1900 V/µs, ±100 mA. A quiet, muscular headphone and buffer stage.",
   "manufacturers": [
     "National Semiconductor",
     "Texas Instruments"
+  ],
+  "lineage": [
+    {
+      "vendor": "National Semiconductor",
+      "role": "originator",
+      "period": "2007–2011",
+      "note": "LME49xxx audio line with LME49710/20/40. Released 2007-09; reportedly on National's LME high-voltage process."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "acquirer",
+      "period": "2011–2017",
+      "note": "Acquired National 2011-09; reissued SNAS386F in 2013-03. Last-time buy expired 2017-11-02; no PDN number found."
+    }
   ],
   "part_numbers": [
     {
       "pn": "LME49713",
       "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "obsolete (per distributor listings)",
-      "notes": "Generic device name. Single current-feedback op-amp. TI literature SNAS386."
+      "status": "obsolete",
+      "note": "Generic device name; status per distributor listings."
     },
     {
       "pn": "LME49713HA/NOPB",
       "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "obsolete (distributors show last-time buy expired 2017-11-02)",
-      "notes": "8-lead TO-99 metal can, lead-free orderable. Digi-Key 296-41515-ND. LCSC and broker stock still listed."
+      "status": "obsolete",
+      "note": "TO-99 metal can, lead-free; Digi-Key 296-41515-ND. LTB expired 2017-11-02; brokers/LCSC still list."
     },
     {
       "pn": "LME49713HA",
       "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
       "status": "obsolete",
-      "notes": "TO-99 metal can base marking/ordering code (National era, before /NOPB)."
+      "note": "TO-99 metal can, National-era code before /NOPB."
     },
     {
-      "pn": "LME49713MA/NOPB",
+      "pn": "LME49713MA/NOPB / MAX/NOPB",
       "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "obsolete (per Digi-Key listing)",
-      "notes": "SOIC-8 in rails, lead-free. Digi-Key lists LME49713MAX/NOPB as the alternate packaging."
-    },
-    {
-      "pn": "LME49713MAX/NOPB",
-      "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "obsolete (per distributor listings)",
-      "notes": "SOIC-8 on tape and reel."
+      "status": "obsolete",
+      "note": "SOIC-8 lead-free: MA/NOPB in rails, LME49713MAX/NOPB on tape and reel."
     },
     {
       "pn": "LME49713MA",
       "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
       "status": "obsolete",
-      "notes": "SOIC-8 base marking/ordering code (National era)."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "National Semiconductor",
-      "role": "Originator",
-      "period": "2007-2011",
-      "notes": "Part of the LME49xxx high-performance audio op-amp family, alongside LME49710/LME49720/LME49740. The TI datasheet header gives the original release as September 2007. National-format revisions dated May 21, 2010 and June 2, 2010 survive on mirrors."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "role": "Owner after acquiring National (September 2011); discontinued the part",
-      "period": "2011-2017",
-      "notes": "Reissued the datasheet as SNAS386F in March 2013. Distributors list the part as obsolete, with the last-time buy expiring 2017-11-02. No TI discontinuance notice (PDN) number was found."
+      "note": "SOIC-8, National-era code."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Supply voltage range",
-      "value": "±5 V to ±18 V",
-      "condition": "operating",
-      "source": "https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/LME49713.pdf"
-    },
-    {
-      "parameter": "Input voltage noise density",
+      "parameter": "Input noise (1 kHz)",
       "value": "1.9 nV/√Hz",
-      "condition": "typ (headline figure; test frequency per datasheet table)",
-      "source": "https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/LME49713.pdf"
+      "condition": "typ, headline figure",
+      "source": "SNAS386F"
     },
     {
       "parameter": "THD+N",
       "value": "0.00036%",
-      "condition": "typ, 1 kHz (load and level per datasheet)",
-      "source": "https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/LME49713.pdf"
+      "condition": "typ, 1 kHz",
+      "source": "SNAS386F"
     },
     {
       "parameter": "Slew rate",
       "value": "±1900 V/µs",
       "condition": "typ",
-      "source": "https://www.farnell.com/datasheets/577866.pdf"
+      "source": "National datasheet 2010-05-21"
     },
     {
-      "parameter": "Bandwidth",
-      "value": "132 MHz",
-      "condition": "typ small-signal. This is a current-feedback part, so bandwidth depends mostly on the feedback resistor rather than being a gain-bandwidth product.",
-      "source": "https://www.farnell.com/datasheets/577866.pdf"
+      "parameter": "GBW",
+      "value": "132 MHz bandwidth (CFB: set by feedback resistor)",
+      "condition": "typ, small-signal",
+      "source": "National datasheet 2010-05-21"
     },
     {
       "parameter": "Output current",
       "value": "±100 mA",
       "condition": "typ",
-      "source": "https://www.farnell.com/datasheets/577866.pdf"
+      "source": "National datasheet 2010-05-21"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "±5 V to ±18 V",
+      "condition": "operating",
+      "source": "SNAS386F"
     },
     {
       "parameter": "Input bias current",
       "value": "1.8 µA",
-      "condition": "typ (as a forum post quotes the datasheet)",
-      "source": "https://www.diyaudio.com/forums/analog-line-level/330762-lme49713.html"
+      "condition": "typ",
+      "source": "Datasheet, as quoted on diyAudio"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "Bipolar, current feedback",
+      "condition": "SOIC-8 or TO-99; no DIP-8",
+      "source": "SNAS386F"
     }
   ],
   "reputation": {
-    "summary": "Head-Fi has a thread titled 'LME49713, could be a killer opamp'. On diyAudio, someone who worked on the chip called it the best-sounding op-amp made on National's LME high-voltage process, and said that in extended listening sessions it was preferred over voltage-feedback parts in most applications. One Head-Fi user called a simple headphone amp built with it 'quite amazing - dead silent and with real drive' and said it drives 150-ohm loads easily. It is a niche, enthusiast-praised part rather than a mainstream standard. It is not a drop-in replacement for standard duals, and it is fast and tricky to stabilise.",
+    "summary": "A niche enthusiast favourite. Head-Fi titled a thread 'LME49713, could be a killer opamp'. A diyAudio poster who worked on the chip called it the best-sounding op-amp on National's LME process, preferred to voltage-feedback parts in listening tests. A Head-Fi user found it 'dead silent and with real drive' into 150 Ω. Fast and tricky to stabilise.",
     "sonic_descriptors": [
-      "dead silent (one Head-Fi user)",
-      "real drive / effortless load driving (one Head-Fi user)"
+      "dead silent",
+      "real drive",
+      "effortless load driving"
     ],
     "typical_uses": [
-      "Headphone amplifier / output buffer (drives 150 Ω loads)",
-      "DAC output / I/V stages (on SOIC-to-DIP adapters)",
-      "Make-up gain stage for passive summing mixers (Gearspace RMS Folcrom thread)"
+      "Headphone amp or output buffer (drives 150 Ω)",
+      "DAC output and I/V stages on SOIC-to-DIP adapters",
+      "Make-up gain for passive summing mixers (RMS Folcrom)"
     ],
     "caveats": [
-      "Single channel, SOIC-8 or TO-99 only: needs an adapter for DIP-8 sockets and cannot directly replace dual NE5532/LME49720 parts.",
-      "Current-feedback part: the feedback resistor sets bandwidth and stability, and a capacitor must not go across the feedback resistor. Voltage-feedback circuits can oscillate.",
-      "diyAudio report: it ran very hot/oscillated in the NE5534 sockets of a Sony CDP-557ESD, where an AD844 worked instead.",
-      "Input bias current of about 1.8 µA typ can cause large offsets with high-value bias resistors.",
-      "Obsolete since the 2017 last-time buy, so sourcing is limited to old stock and brokers."
+      "Single, SOIC-8 or TO-99 only: needs a DIP-8 adapter; not a drop-in for dual NE5532/LME49720.",
+      "Current feedback: feedback resistor sets bandwidth and stability; no capacitor across it. VFB circuits may oscillate.",
+      "diyAudio: ran hot or oscillated in a Sony CDP-557ESD's NE5534 sockets, where an AD844 worked.",
+      "About 1.8 µA input bias current can cause large offsets with high-value bias resistors.",
+      "Obsolete since the 2017 last-time buy; only old stock and brokers remain."
     ],
     "sources": [
       "https://www.head-fi.org/threads/lme49713-could-be-a-killer-opamp.267524/",
@@ -154,6 +133,14 @@
       "https://gearspace.com/board/geekslutz-forum/438035-rms-folcrom-lme49713-opamp.html"
     ]
   },
+  "counterfeit_notes": "No LME49713-specific fakes reported, but sibling LME49720/LM4562 fakes are well documented on diyAudio. Obsolete since 2017, so marketplace SOIC/TO-99 units carry remark risk. Check marking, date code and can finish; bench-test bias current, slew and distortion.",
+  "alternatives": [
+    "AD844 (current feedback, DIP-8)",
+    "LME49710 (VFB sibling, easier to stabilise)",
+    "OPA1611",
+    "THS3091 / THS3491 (CFB, not audio-specified)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "Texas Instruments",
@@ -165,7 +152,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Canonical TI symlink pattern. Search did not return this URL directly: unconfirmed. Content is expected to match the SNAS386F mirrors."
+      "note": "Canonical TI link, not checked directly; should match SNAS386F mirrors."
     },
     {
       "vendor": "Texas Instruments",
@@ -177,7 +164,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Search result title shows 'SNAS386F –SEPTEMBER 2007–REVISED MARCH 2013'."
+      "note": "Header: 'SNAS386F –SEPTEMBER 2007–REVISED MARCH 2013'."
     },
     {
       "vendor": "Texas Instruments",
@@ -186,10 +173,13 @@
       "revision": "F",
       "date": "2013-03",
       "url": "https://www.mouser.com/ds/2/282/lme49713-224065.pdf",
+      "also_urls": [
+        "https://www.mouser.com/datasheet/2/282/lme49713-224065.pdf"
+      ],
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Search result title shows the SNAS386F header. The same file is also served at https://www.mouser.com/datasheet/2/282/lme49713-224065.pdf."
+      "note": "SNAS386F header."
     },
     {
       "vendor": "Texas Instruments",
@@ -201,33 +191,31 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "probable",
-      "note": "HTML rendering of the TI datasheet. Revision letter is inferred, not seen."
+      "note": "HTML rendering; revision letter inferred."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LME49713 High Performance, High Fidelity Current Feedback Audio Operational Amplifier (May 21, 2010)",
-      "doc_number": "SNAS386 (National printed dates, not letters)",
+      "doc_number": "SNAS386",
       "revision": "",
       "date": "2010-05-21",
       "url": "https://www.farnell.com/datasheets/577866.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "unknown",
-      "revision_text": "National dated May 21, 2010 (TI letter unconfirmed, probably D or E)",
-      "note": "Farnell copy frozen at the National-format revision. Search result title shows 'May 21, 2010'."
+      "note": "National format, dated May 21, 2010; TI letter probably D or E."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LME49713 High Performance, High Fidelity Current Feedback Audio Operational Amplifier (June 2, 2010)",
-      "doc_number": "SNAS386 (National printed dates, not letters)",
+      "doc_number": "SNAS386",
       "revision": "",
       "date": "2010-06-02",
       "url": "https://datasheet.octopart.com/LME49713HA-National-Semiconductor-datasheet-15941891.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "revision_text": "National dated June 2, 2010 (one search summary called it SNAS386E; letter unconfirmed)",
-      "note": "Octopart copy of the last National-format revision (date from search summary)."
+      "note": "Last National-format revision, June 2, 2010; reportedly SNAS386E."
     },
     {
       "vendor": "National Semiconductor",
@@ -239,8 +227,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "revision_text": "National era, date not seen",
-      "note": "National-branded copy. Low alldatasheet ID suggests an early (2007-2008) revision. Unconfirmed."
+      "note": "National-branded; low ID suggests an early 2007–2008 revision."
     },
     {
       "vendor": "Texas Instruments",
@@ -252,7 +239,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "probable",
-      "note": "TI-branded copy. Revision unconfirmed."
+      "note": "TI-branded copy; revision unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -264,7 +251,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Filed under TI. May be a National-format copy from the 2011-2012 transition. Revision unconfirmed."
+      "note": "Filed under TI; may be a 2011–2012 National-format copy."
     },
     {
       "vendor": "National Semiconductor",
@@ -273,11 +260,13 @@
       "revision": "",
       "date": "",
       "url": "https://datasheetspdf.com/pdf/673116/NationalSemiconductor/LME49713/1",
+      "also_urls": [
+        "https://datasheet4u.com/datasheets/National-Semiconductor/LME49713/673116"
+      ],
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "revision_text": "National era, date not seen",
-      "note": "National-branded copy. The same file appears at https://datasheet4u.com/datasheets/National-Semiconductor/LME49713/673116. Revision unconfirmed."
+      "note": "National-branded copy; date not seen."
     },
     {
       "vendor": "Texas Instruments",
@@ -289,8 +278,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "revision_text": "TI era, not seen",
-      "note": "TI-branded copy. Revision unconfirmed."
+      "note": "TI-branded copy; revision unknown."
     },
     {
       "vendor": "National Semiconductor",
@@ -302,8 +290,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "revision_text": "National era, date not seen",
-      "note": "National-branded copy. Revision unconfirmed."
+      "note": "National-branded copy; date not seen."
     },
     {
       "vendor": "various",
@@ -315,47 +302,73 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "revision_text": "multiple / unknown",
-      "note": "Index page that may hold several revisions. Contents not seen."
+      "note": "Index page that may hold several revisions."
     }
+  ],
+  "product_pages": [
+    "https://www.ti.com/product/LME49713"
   ],
   "revision_history": [
     {
       "vendor": "National Semiconductor",
       "doc_number": "SNAS386",
-      "revision": "initial (TI letter '-' / A, unconfirmed)",
+      "revision": "original",
       "date": "2007-09",
-      "changes": "Initial release. Date taken from the TI header 'SEPTEMBER 2007'."
+      "changes": "Initial release, per TI header 'SEPTEMBER 2007'. TI letter ('-' or A) unconfirmed."
     },
     {
       "vendor": "National Semiconductor",
       "doc_number": "SNAS386",
-      "revision": "National dated May 21, 2010 (letter unconfirmed)",
+      "revision": "National 2010-05-21",
       "date": "2010-05-21",
-      "changes": "National-format update (Farnell copy). Change list not captured."
+      "changes": "National-format update (Farnell copy). Letter and change list unknown."
     },
     {
       "vendor": "National Semiconductor",
       "doc_number": "SNAS386",
-      "revision": "National dated June 2, 2010 (possibly E; unconfirmed)",
+      "revision": "National 2010-06-02",
       "date": "2010-06-02",
-      "changes": "Last National-format revision (Octopart copy). Change list not captured."
+      "changes": "Last National-format revision (Octopart copy), possibly E. Change list unknown."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SNAS386",
       "revision": "F",
       "date": "2013-03",
-      "changes": "TI-format reissue, header 'SNAS386F – SEPTEMBER 2007 – REVISED MARCH 2013'. The exact change list was not captured; for other 2013 ex-National reissues TI typically noted 'changed layout of National data sheet to TI format' (unconfirmed for this part)."
+      "changes": "TI-format reissue, 'SNAS386F – SEPTEMBER 2007 – REVISED MARCH 2013'. Change list unknown; likely the usual National-to-TI layout change."
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No LME49713-specific counterfeit reports were found. Fakes of its siblings (LME49720, LM4562) are well documented on diyAudio. The part has been obsolete since the 2017 last-time buy, and SOIC and TO-99 units on eBay, AliExpress or broker sites carry elevated remark/fake risk. Check marking, date code and the metal-can finish, and bench-test bias current, slew rate and distortion.",
-  "alternatives": [
-    "AD844 (Analog Devices current-feedback, DIP-8 available; one diyAudio user found it stable where LME49713 oscillated)",
-    "LME49710 (National/TI voltage-feedback single from the same family; easier to stabilise; status not verified)",
-    "OPA1611 (TI low-noise voltage-feedback audio single)",
-    "THS3091 / THS3491 (TI high-voltage current-feedback amplifiers; not audio-specified)"
+  "revision_chains": [
+    {
+      "vendor": "National Semiconductor / Texas Instruments",
+      "doc_number": "SNAS386",
+      "known": [
+        {
+          "rev": "original",
+          "date": "2007-09"
+        },
+        {
+          "rev": "National dated (D or E?)",
+          "date": "2010-05-21"
+        },
+        {
+          "rev": "National dated (E?)",
+          "date": "2010-06-02"
+        },
+        {
+          "rev": "F",
+          "date": "2013-03"
+        }
+      ],
+      "missing": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "note": "National printed dates, not letters; mapping of letters A–E to dated copies is unconfirmed."
+    }
   ],
   "ti_literature_numbers": [
     "SNAS386"
@@ -372,10 +385,10 @@
     "https://www.ti.com/product/LME49713"
   ],
   "open_questions": [
-    "How do TI revision letters A-E map to the National dated versions (Sept 2007 initial, May 21 2010, June 2 2010, and any 2008-2009 revisions)? Is June 2, 2010 really SNAS386E?",
-    "The SNAS386F revision-history table was not captured.",
-    "TI's own status for the part (Obsolete or NRND) and the discontinuance notice (PDN) number were not seen. Distributors show obsolete with last-time buy 2017-11-02.",
-    "No die change, PCN or 'same part number, different silicon' event was found. This is presumably because the part was discontinued rather than moved to a new process. Unconfirmed.",
+    "How do TI letters A–E map to National's dated versions? Is the June 2, 2010 copy SNAS386E?",
+    "What does the SNAS386F revision-history table list?",
+    "TI's own status (Obsolete or NRND) and PDN number; distributors show obsolete, last-time buy 2017-11-02.",
+    "Any die change or PCN? None found, presumably because the part was discontinued.",
     "Exact test conditions for the 1.9 nV/√Hz and 0.00036% THD+N headline figures."
   ],
   "sources": [
@@ -396,13 +409,26 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 8,
+    "claims_confirmed": [
+      "TI datasheet is SNAS386F, 'SEPTEMBER 2007–REVISED MARCH 2013' (https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/LME49713.pdf; https://www.mouser.com/ds/2/282/lme49713-224065.pdf).",
+      "Farnell copy is the National-format datasheet dated May 21, 2010 (https://www.farnell.com/datasheets/577866.pdf).",
+      "Octopart copy is the National-format LME49713HA datasheet dated June 2, 2010 (https://datasheet.octopart.com/LME49713HA-National-Semiconductor-datasheet-15941891.pdf).",
+      "Supply ±5 V to ±18 V, noise 1.9 nV/√Hz, THD+N 0.00036% (https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/LME49713.pdf).",
+      "Slew ±1900 V/µs, output ±100 mA, bandwidth 132 MHz, closed-loop bandwidth set by feedback resistor (https://www.farnell.com/datasheets/577866.pdf).",
+      "LME49713HA/NOPB obsolete, last-time buy expired 2017-11-02 (https://www.digikey.com/en/products/detail/texas-instruments/LME49713HA-NOPB/1997968; https://www.findchips.com/search/lme49713).",
+      "LME49713MA/NOPB obsolete; LME49713MAX/NOPB is the alternate packaging (https://www.digikey.com/en/products/detail/texas-instruments/LME49713MA-NOPB/1836036).",
+      "Head-Fi thread 'LME49713, could be a killer opamp' exists (https://www.head-fi.org/threads/lme49713-could-be-a-killer-opamp.267524/).",
+      "diyAudio user: ran hot or oscillated in Sony CDP-557ESD NE5534 sockets; AD844 worked (https://www.diyaudio.com/community/threads/lme49713-opamp-problem.151403/).",
+      "Forum: SO-8 single only, so NE5532 DIP sockets need adapters; no capacitor across the feedback resistor (https://www.diyaudio.com/forums/analog-line-level/330762-lme49713.html)."
+    ],
     "refuted_claims": [],
     "corrections": [
-      "Channel count changed from 0 to 1 for every part number (single op-amp).",
-      "Status changed from 'unknown' to obsolete. Distributors list LME49713HA/NOPB as obsolete with last-time buy 2017-11-02, and LME49713MA/NOPB as obsolete with MAX/NOPB as the alternate packaging.",
-      "Added the orderable codes LME49713HA/NOPB, LME49713MA/NOPB and LME49713MAX/NOPB. Package mapping: HA = TO-99 metal can, MA = SOIC-8. One search summary wrongly called MA a TO-99 part.",
-      "Added TI literature SNAS386, current revision F (header: September 2007, revised March 2013), plus National-era copies dated May 21, 2010 (Farnell) and June 2, 2010 (Octopart).",
-      "Filled tagline, key_specs, lineage, caveats, counterfeit notes and alternatives. The draft's empty silicon_changes stays empty: no die change or PCN was found."
+      "Channel count set to 1 for every part number (single op-amp).",
+      "Status set to obsolete: HA/NOPB obsolete with last-time buy 2017-11-02; MA/NOPB obsolete with MAX/NOPB as alternate packaging.",
+      "Added HA/NOPB, MA/NOPB and MAX/NOPB codes. HA = TO-99 metal can, MA = SOIC-8 (not TO-99, as one summary claimed).",
+      "Added TI literature SNAS386 rev. F (September 2007, revised March 2013) and National copies dated May 21, 2010 and June 2, 2010.",
+      "Filled tagline, key specs, lineage, caveats, counterfeit notes and alternatives. silicon_changes stays empty: no die change or PCN found."
     ],
     "unverified_urls": [
       "https://www.ti.com/lit/ds/symlink/lme49713.pdf",
@@ -416,24 +442,6 @@
       "https://datasheet4u.com/datasheet-pdf/etcTI/LME49713/pdf.php?id=1398614",
       "https://www.radiolocman.com/datasheet/data.html?di=77688&%2FLME49713MA=",
       "https://www.datasheetarchive.com/LME49713-datasheet.html"
-    ],
-    "claims_confirmed": [
-      "The TI datasheet is SNAS386F, 'SEPTEMBER 2007–REVISED MARCH 2013' (https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/LME49713.pdf; https://www.mouser.com/ds/2/282/lme49713-224065.pdf).",
-      "The Farnell copy is the National-format datasheet dated May 21, 2010 (https://www.farnell.com/datasheets/577866.pdf).",
-      "The Octopart copy is the National-format datasheet for LME49713HA dated June 2, 2010 (https://datasheet.octopart.com/LME49713HA-National-Semiconductor-datasheet-15941891.pdf).",
-      "Supply ±5 V to ±18 V, noise 1.9 nV/√Hz, THD+N 0.00036% (https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/LME49713.pdf).",
-      "Slew rate ±1900 V/µs, output current ±100 mA, bandwidth 132 MHz, and closed-loop bandwidth set by the feedback resistor (https://www.farnell.com/datasheets/577866.pdf).",
-      "LME49713HA/NOPB is obsolete with last-time buy expiring 2017-11-02 (https://www.digikey.com/en/products/detail/texas-instruments/LME49713HA-NOPB/1997968; https://www.findchips.com/search/lme49713).",
-      "LME49713MA/NOPB is listed as obsolete, with LME49713MAX/NOPB as the alternate packaging (https://www.digikey.com/en/products/detail/texas-instruments/LME49713MA-NOPB/1836036).",
-      "The Head-Fi thread 'LME49713, could be a killer opamp' exists (https://www.head-fi.org/threads/lme49713-could-be-a-killer-opamp.267524/).",
-      "A diyAudio user reported the part running hot/oscillating in the NE5534 sockets of a Sony CDP-557ESD, where an AD844 worked instead (https://www.diyaudio.com/community/threads/lme49713-opamp-problem.151403/).",
-      "Forum posts say it is SO-8 single only, so NE5532 DIP sockets need adapters, and that a capacitor must not go across the feedback resistor (https://www.diyaudio.com/forums/analog-line-level/330762-lme49713.html)."
-    ],
-    "web_searches_used": 8
-  },
-  "tier": "B",
-  "category": "headphone-driver",
-  "product_pages": [
-    "https://www.ti.com/product/LME49713"
-  ]
+    ]
+  }
 }

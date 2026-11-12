@@ -1,186 +1,119 @@
 {
   "id": "EL2244",
-  "name": "EL2244 / EL2444 (Elantec/Intersil dual/quad high-speed video op-amp)",
-  "tagline": "Elantec's dual 120 MHz, 325 V/us video op-amp that Chinese and Korean op-amp-swap guides rank beside the AD827 for neutral, wide, detailed sound.",
-  "technology": "Voltage-feedback, unity-gain-stable, low-power high-speed op-amp built on Elantec's proprietary complementary bipolar process. The EL2244 (dual) and EL2444 (quad) are multi-channel versions of the single EL2044. They have a 120 MHz GBW, 325 V/us slew rate and 5.2 mA per amplifier.",
+  "name": "EL2244 / EL2444",
+  "type": "High-speed VFB video op-amp, 2/4 channels",
+  "tier": "C",
+  "category": "high-speed-video-crossover",
+  "tagline": "Elantec's 120 MHz, 325 V/µs video dual, ranked beside the AD827 by CN/KR swap guides for neutral, detailed sound.",
   "manufacturers": [
-    "Elantec Semiconductor",
+    "Elantec",
     "Intersil",
-    "Renesas Electronics (Intersil successor)"
+    "Renesas"
+  ],
+  "lineage": [
+    {
+      "vendor": "Elantec",
+      "role": "originator",
+      "period": "by 1995–2002",
+      "note": "Dual/quad of the EL2044 on Elantec's complementary bipolar process. Codes EL2244CN/CS, EL2444CN/CS."
+    },
+    {
+      "vendor": "Intersil",
+      "role": "acquirer",
+      "period": "2002–2017",
+      "note": "Bought Elantec in 2002; reissued the datasheet as FN7059 (© 2002–2004) and added Pb-free Z codes."
+    },
+    {
+      "vendor": "Renesas",
+      "role": "current",
+      "period": "2017–present",
+      "note": "Owns the Intersil portfolio; a Renesas-branded datasheet exists. Lifecycle status unconfirmed."
+    }
   ],
   "part_numbers": [
     {
-      "pn": "EL2244",
+      "pn": "EL2244CN / EL2244CS",
       "channels": 2,
-      "vendors": [
-        "Elantec",
-        "Intersil",
-        "Renesas"
-      ],
-      "status": "unknown (likely obsolete; not confirmed)",
-      "notes": "Base part number for the dual. Early Elantec datasheets call it EL2244C."
+      "status": "unknown",
+      "note": "Elantec 8-pin PDIP / SO; early datasheets call it EL2244C. Likely obsolete."
     },
     {
-      "pn": "EL2244CN",
+      "pn": "EL2244CSZ / EL2244CSZ-T13",
       "channels": 2,
-      "vendors": [
-        "Elantec",
-        "Intersil"
-      ],
-      "status": "unknown (likely obsolete; not confirmed)",
-      "notes": "8-pin PDIP (Elantec ordering code)."
+      "status": "unknown",
+      "note": "Pb-free 8-pin SO, tube and 13-inch reel (FN7059.2). Likely obsolete."
     },
     {
-      "pn": "EL2244CS",
-      "channels": 2,
-      "vendors": [
-        "Elantec",
-        "Intersil"
-      ],
-      "status": "unknown (likely obsolete; not confirmed)",
-      "notes": "8-pin SO."
-    },
-    {
-      "pn": "EL2244CSZ",
-      "channels": 2,
-      "vendors": [
-        "Intersil",
-        "Renesas"
-      ],
-      "status": "unknown (likely obsolete; not confirmed)",
-      "notes": "Pb-free 8-pin SO. Listed in FN7059.2."
-    },
-    {
-      "pn": "EL2244CSZ-T13",
-      "channels": 2,
-      "vendors": [
-        "Intersil",
-        "Renesas"
-      ],
-      "status": "unknown (likely obsolete; not confirmed)",
-      "notes": "Pb-free 8-pin SO on 13-inch tape and reel. Listed in FN7059.2."
-    },
-    {
-      "pn": "EL2444",
+      "pn": "EL2444CN / EL2444CS",
       "channels": 4,
-      "vendors": [
-        "Elantec",
-        "Intersil",
-        "Renesas"
-      ],
-      "status": "unknown (likely obsolete; not confirmed)",
-      "notes": "Base part number for the quad. Early Elantec datasheets call it EL2444C."
-    },
-    {
-      "pn": "EL2444CN",
-      "channels": 4,
-      "vendors": [
-        "Elantec",
-        "Intersil"
-      ],
-      "status": "unknown (likely obsolete; not confirmed)",
-      "notes": "14-pin PDIP."
-    },
-    {
-      "pn": "EL2444CS",
-      "channels": 4,
-      "vendors": [
-        "Elantec",
-        "Intersil",
-        "Renesas"
-      ],
-      "status": "unknown (likely obsolete; not confirmed)",
-      "notes": "14-pin SO (0.150 in)."
+      "status": "unknown",
+      "note": "Quad: 14-pin PDIP / SO (0.150 in); early name EL2444C. Likely obsolete."
     },
     {
       "pn": "EL2444CSZ",
       "channels": 4,
-      "vendors": [
-        "Intersil",
-        "Renesas"
-      ],
-      "status": "unknown (likely obsolete; not confirmed)",
-      "notes": "Pb-free 14-pin SO. Tape-and-reel variants appear in FN7059.2."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "Elantec Semiconductor",
-      "role": "originator",
-      "period": "by 1995 (Rev C dated Dec 1995) to 2002",
-      "notes": "Designed as the dual/quad of the EL2044 on Elantec's complementary bipolar process. Ordering codes EL2244CN/CS and EL2444CN/CS."
-    },
-    {
-      "vendor": "Intersil",
-      "role": "acquirer / second owner",
-      "period": "2002-2017",
-      "notes": "Intersil acquired Elantec in 2002 and reissued the datasheet as FN7059, whose copyright line reads 2002-2004. It added the Pb-free Z ordering codes."
-    },
-    {
-      "vendor": "Renesas Electronics",
-      "role": "current owner of the Intersil portfolio",
-      "period": "2017-present",
-      "notes": "Alldatasheet hosts a Renesas-branded EL2244 datasheet. The lifecycle status on renesas.com is not confirmed."
+      "status": "unknown",
+      "note": "Pb-free 14-pin SO; reel variants in FN7059.2. Likely obsolete."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Gain-bandwidth product",
-      "value": "120 MHz",
-      "condition": "typ",
-      "source": "https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1"
+      "parameter": "Input noise (1 kHz)",
+      "value": "15 nV/√Hz (at 10 kHz)",
+      "condition": "f = 10 kHz, 25 °C",
+      "source": "Elantec Rev C (Dec 1995)"
+    },
+    {
+      "parameter": "GBW",
+      "value": "120 MHz typ",
+      "condition": "",
+      "source": "Intersil FN7059"
     },
     {
       "parameter": "Slew rate",
-      "value": "325 V/us",
-      "condition": "typ",
-      "source": "https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1"
+      "value": "325 V/µs typ",
+      "condition": "",
+      "source": "Intersil FN7059"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "2.5 V to 36 V single (about ±1.25 V to ±18 V)",
+      "condition": "operating",
+      "source": "Intersil FN7059"
     },
     {
       "parameter": "Supply current",
-      "value": "5.2 mA per amplifier",
-      "condition": "typ",
-      "source": "https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1"
-    },
-    {
-      "parameter": "Supply voltage range",
-      "value": "2.5 V to 36 V single supply (about +/-1.25 V to +/-18 V)",
-      "condition": "operating",
-      "source": "https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1"
-    },
-    {
-      "parameter": "Input voltage noise",
-      "value": "15 nV/rtHz",
-      "condition": "f = 10 kHz, TA = 25 C",
-      "source": "https://www.sm0vpo.com/_pdf/amplifiers/EL2244.PDF"
-    },
-    {
-      "parameter": "Stability",
-      "value": "unity-gain stable (voltage feedback)",
+      "value": "5.2 mA per amplifier typ",
       "condition": "",
-      "source": "http://www.manuallib.com/download/pdf14/INTER-IL-EL2244-EL2444-DATA-SHEET.PDF"
+      "source": "Intersil FN7059"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "Complementary bipolar, voltage feedback",
+      "condition": "unity-gain stable",
+      "source": "Intersil FN7059.2"
     }
   ],
   "reputation": {
-    "summary": "This summary comes from the earlier discovery sweep and was not re-checked in this pass. Chinese sound-card and car-head-unit modding (摩机) guides, including the Baidu Tieba 40-op-amp list, PCPOP, 360doc and book118, rank it with the AD827 among the best voltage-feedback duals. They describe a neutral tone, a soundstage slightly wider than the OP275, and strong treble and resolution. The same guides criticise a thin midrange, light bass and bland musicality, and call it hard to use well. A Korean digipine tone summary also lists it. All of this is subjective forum and guide opinion.",
+    "summary": "Chinese sound-card and car head-unit modding (摩机) guides (Baidu Tieba's 40-op-amp list, PCPOP, 360doc, book118) rank it with the AD827 among the best voltage-feedback duals: neutral, a soundstage slightly wider than OP275, strong treble and resolution. They fault its thin mids, light bass and bland musicality, and call it hard to use well. Korea's digipine also lists it.",
     "sonic_descriptors": [
       "neutral",
       "wide soundstage",
-      "strong treble / high resolution",
-      "thin midrange (criticism)",
-      "light bass (criticism)",
-      "bland musicality (criticism)"
+      "strong treble, high resolution",
+      "thin midrange",
+      "light bass",
+      "bland musicality"
     ],
     "typical_uses": [
-      "op-amp swaps in PC sound cards",
-      "car head-unit modding (摩机)",
-      "DIY I/V and buffer stages in CN/KR hobby builds"
+      "Op-amp swaps in PC sound cards",
+      "Car head-unit modding (摩机)",
+      "DIY I/V and buffer stages (CN/KR builds)"
     ],
     "caveats": [
-      "It is a 120 MHz, 325 V/us video op-amp, so tight decoupling and a careful layout are needed. Oscillation risk in sockets and adapters fits the guides' 'hard to use well' remark.",
-      "Input noise of 15 nV/rtHz is high compared with dedicated audio op-amps.",
-      "The praise is subjective and comes from CN/KR modding sources only.",
-      "The part is probably obsolete, so it is supplied mainly from old or broker stock."
+      "120 MHz, 325 V/µs video part: needs tight decoupling and layout; may oscillate in sockets.",
+      "15 nV/√Hz input noise is high next to dedicated audio op-amps.",
+      "Praise is subjective and comes only from CN/KR modding sources.",
+      "Probably obsolete; supply is mainly old or broker stock."
     ],
     "sources": [
       "https://www.pcpop.com/article/335971_all.shtml",
@@ -190,6 +123,13 @@
       "https://www.digipine.com/index.php?mid=audio&document_srl=918"
     ]
   },
+  "counterfeit_notes": "No counterfeit reports found. Old and probably obsolete, it reaches CN mod buyers via brokers, so treat DIP and SO stock of unverified provenance, Elantec-marked included, as possibly remarked. Pb-free 'Z' parts are a new number, not a die change.",
+  "alternatives": [
+    "EL2044 (single-channel sibling)",
+    "AD827 (ranked alongside it)",
+    "OP275 (soundstage reference in CN guides)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "Elantec",
@@ -201,7 +141,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Oldest revision located. The page header reads 'EL2244C/EL2444C December 1995 Rev C'. It is the source of the 15 nV/rtHz noise figure."
+      "note": "Oldest found; header 'EL2244C/EL2444C December 1995 Rev C'. Noise source."
     },
     {
       "vendor": "Elantec",
@@ -213,7 +153,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Elantec-branded copy. The revision was not visible in the search summary, so it is unconfirmed."
+      "note": "Elantec-branded copy; revision not shown."
     },
     {
       "vendor": "Elantec",
@@ -225,7 +165,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Elantec-era copy. The revision is unconfirmed. Alldatasheet also has EL2444CS (id 59898) and EL2244 (id 59900)."
+      "note": "Elantec-era copy; also EL2444CS (59898) and EL2244 (59900)."
     },
     {
       "vendor": "Elantec",
@@ -237,33 +177,31 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Elantec-era copy. The revision is unconfirmed."
+      "note": "Elantec-era copy; revision unconfirmed."
     },
     {
       "vendor": "Intersil",
       "title": "EL2244, EL2444 Dual/Quad Low-Power 120MHz Unity-Gain Stable Op Amp",
       "doc_number": "FN7059",
-      "revision": "",
-      "date": "2004-07",
+      "revision": "FN7059.1",
+      "date": "2004-07-14",
       "url": "https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
-      "revision_status": "unknown",
-      "revision_text": "FN7059.1",
-      "note": "The aggregator gives the date as July 14, 2004 and the copyright as Intersil 2002-2004. The date may come from PDF metadata. A mirror of the same file is at datasheet4u.com/datasheets/Intersil/EL2244/1437145."
+      "revision_status": "probable",
+      "note": "Dated July 14, 2004 (maybe PDF metadata); also on datasheet4u (1437145)."
     },
     {
       "vendor": "Intersil",
       "title": "EL2244, EL2444 Dual/Quad Low-Power 120MHz Unity-Gain Stable Op Amp",
       "doc_number": "FN7059",
-      "revision": "",
+      "revision": "FN7059.2",
       "date": "",
       "url": "http://www.manuallib.com/download/pdf14/INTER-IL-EL2244-EL2444-DATA-SHEET.PDF",
       "url_kind": "third_party_mirror",
       "confidence": "high",
-      "revision_status": "unknown",
-      "revision_text": "FN7059.2",
-      "note": "This is the latest revision located. The ordering table lists the Pb-free EL2244CSZ, EL2244CSZ-T13 and EL2444CSZ variants. The print date was not established."
+      "revision_status": "confirmed",
+      "note": "Latest found; lists the Pb-free Z parts. Print date unknown."
     },
     {
       "vendor": "Intersil",
@@ -275,7 +213,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Intersil-era copy. The revision is unconfirmed."
+      "note": "Intersil-era copy; revision unconfirmed."
     },
     {
       "vendor": "Renesas",
@@ -287,45 +225,75 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Renesas-era copy. The revision and whether the content changed are unconfirmed. There is also an EL2444CS copy at alldatasheet id 1051980."
+      "note": "Renesas-branded copy; EL2444CS at ID 1051980. Content changes unknown."
     }
   ],
+  "product_pages": [],
   "revision_history": [
     {
       "vendor": "Elantec",
       "doc_number": "EL2244C/EL2444C",
-      "revision": "Rev C",
-      "date": "December 1995",
-      "changes": "Earliest revision located. Rev A/B and their changes are unknown."
+      "revision": "C",
+      "date": "1995-12",
+      "changes": "Earliest revision found; Rev A/B and their changes unknown."
     },
     {
       "vendor": "Intersil",
       "doc_number": "FN7059",
-      "revision": "FN7059.0 (unconfirmed)",
-      "date": "c. 2002 (one search summary mentions an August 2002 version; unconfirmed)",
-      "changes": "Presumably the first Intersil-numbered issue after the Elantec acquisition. Not seen directly."
+      "revision": "FN7059.0",
+      "date": "2002",
+      "changes": "Presumed first Intersil issue; an August 2002 version is reported. Not seen."
     },
     {
       "vendor": "Intersil",
       "doc_number": "FN7059",
       "revision": "FN7059.1",
-      "date": "July 14, 2004 (per aggregator)",
-      "changes": "Changes not established. The copyright line reads Intersil 2002-2004."
+      "date": "2004-07-14",
+      "changes": "Changes unknown; copyright Intersil 2002–2004."
     },
     {
       "vendor": "Intersil",
       "doc_number": "FN7059",
       "revision": "FN7059.2",
-      "date": "unknown (after July 2004)",
-      "changes": "The ordering information includes the Pb-free Z parts (EL2244CSZ, EL2244CSZ-T13, EL2444CSZ). Whether FN7059.1 already listed them is unknown."
+      "date": "",
+      "changes": "After July 2004. Lists Pb-free EL2244CSZ, EL2244CSZ-T13, EL2444CSZ; unknown whether .1 did."
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "This check found no specific counterfeit or remarking reports. The part is old and probably obsolete, and CN audio-mod buyers get it mainly from brokers and the secondary market. Treat DIP and SO stock with unverified provenance, including Elantec-marked parts, as at risk of being remarked or relabelled. Pb-free 'Z' parts are a separate part number, not a die change.",
-  "alternatives": [
-    "EL2044 (single-channel member of the same family)",
-    "AD827 (dual high-speed video op-amp the guides rank alongside it)",
-    "OP275 (the soundstage reference in the CN guides)"
+  "revision_chains": [
+    {
+      "vendor": "Elantec",
+      "doc_number": "EL2244C/EL2444C",
+      "known": [
+        {
+          "rev": "C",
+          "date": "1995-12"
+        }
+      ],
+      "missing": [
+        "A",
+        "B"
+      ],
+      "note": "No Elantec revision after Rev C seen."
+    },
+    {
+      "vendor": "Intersil/Renesas",
+      "doc_number": "FN7059",
+      "known": [
+        {
+          "rev": "FN7059.1",
+          "date": "2004-07-14"
+        },
+        {
+          "rev": "FN7059.2",
+          "date": ""
+        }
+      ],
+      "missing": [
+        "FN7059.0 (c. 2002)",
+        "any Renesas-era revision"
+      ],
+      "note": "FN7059.2 print date unknown."
+    }
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -333,11 +301,11 @@
     "https://www.renesas.com/us/en/products/el2244"
   ],
   "open_questions": [
-    "Current lifecycle status on renesas.com (probably obsolete) was not confirmed.",
-    "The print date of FN7059.2 was not established, nor whether a later Renesas-era revision exists.",
-    "Is FN7059.0 the 'August 2002' version mentioned in one search summary?",
-    "Elantec revisions before Rev C (Dec 1995) are unknown. Did the Elantec-era title or specs quote a different bandwidth? The draft recalled '60 MHz', which may be a -3 dB bandwidth figure; unconfirmed.",
-    "No PCN, die change or fab transfer was found. The Elantec-to-Intersil-to-Renesas transfers and the Pb-free conversion are not documented as silicon changes."
+    "Lifecycle status on renesas.com (probably obsolete)?",
+    "Print date of FN7059.2; is there a later Renesas-era revision?",
+    "Is FN7059.0 the reported August 2002 version?",
+    "Elantec revisions before Rev C? Did early sheets quote 60 MHz, perhaps a −3 dB bandwidth?",
+    "Any PCN, die change or fab transfer across the Elantec, Intersil and Renesas eras?"
   ],
   "sources": [
     "https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1",
@@ -358,16 +326,27 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "Intersil datasheet FN7059, 'EL2244, EL2444 Dual/Quad Low-Power 120MHz Unity-Gain Stable Op Amp'; an FN7059.2 copy exists (http://www.manuallib.com/download/pdf14/INTER-IL-EL2244-EL2444-DATA-SHEET.PDF)",
+      "FN7059.1 dated July 14, 2004, copyright Intersil 2002–2004 (https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1)",
+      "Dual/quad of the EL2044 on Elantec's complementary bipolar process: 325 V/µs, 120 MHz, 5.2 mA per amplifier (https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1)",
+      "Single supply 2.5 V to 36 V (https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1)",
+      "Elantec EL2244C/EL2444C Rev C, December 1995, exists (https://www.sm0vpo.com/_pdf/amplifiers/EL2244.PDF)",
+      "Input noise 15 nV/√Hz at 10 kHz, 25 °C (https://www.sm0vpo.com/_pdf/amplifiers/EL2244.PDF)",
+      "FN7059.2 lists Pb-free EL2244CSZ, EL2244CSZ-T13 and EL2444CSZ (http://www.manuallib.com/download/pdf14/INTER-IL-EL2244-EL2444-DATA-SHEET.PDF)",
+      "Elantec codes EL2244CN, EL2244CS, EL2444CS, EL2444CN exist (https://www.datasheetq.com/EL2244CN-doc-Elantec, https://www.alldatasheet.com/datasheet-pdf/pdf/59896/ELANTEC/EL2244CS.html, https://pdf.datasheet.live/69509328/intersil.com/EL2444CN.html)"
+    ],
     "refuted_claims": [
-      "The draft technology note called it 'roughly a 60 MHz class part'. The FN7059 datasheet title and text give a 120 MHz gain-bandwidth product. No 60 MHz figure was found."
+      "'Roughly a 60 MHz class part': the FN7059 title and text give 120 MHz GBW; no 60 MHz figure found."
     ],
     "corrections": [
-      "Channel counts set: EL2244 family = 2, EL2444 family = 4 (the draft had 0).",
-      "Technology corrected to Elantec complementary bipolar, dual/quad of the EL2044, 120 MHz GBW, 325 V/us, 5.2 mA per amplifier.",
-      "Added the Intersil document number FN7059 (revisions .1 and .2) and the Elantec Rev C of December 1995.",
-      "Added the Pb-free part numbers EL2244CSZ, EL2244CSZ-T13 and EL2444CSZ, plus EL2444CN and EL2444CS.",
-      "Added key specs, lineage, revision history and datasheet mirrors. Statuses are marked unconfirmed (likely obsolete).",
-      "Filled the empty tagline, sonic descriptors, uses and caveats from the existing reputation summary. The reputation sources were not re-checked in this pass."
+      "Channel counts set: EL2244 = 2, EL2444 = 4.",
+      "Process corrected to Elantec complementary bipolar, dual/quad of the EL2044 (120 MHz, 325 V/µs, 5.2 mA/amp).",
+      "Added Intersil FN7059 (.1 and .2) and Elantec Rev C (December 1995).",
+      "Added Pb-free EL2244CSZ, EL2244CSZ-T13, EL2444CSZ, plus EL2444CN and EL2444CS.",
+      "Added key specs, lineage, revision history and mirrors; statuses marked likely obsolete.",
+      "Tagline, descriptors, uses and caveats filled from the reputation summary; its sources not independently checked."
     ],
     "unverified_urls": [
       "http://www.intersil.com/data/fn/fn7059.pdf",
@@ -376,20 +355,6 @@
       "https://www.bndhep.net/Electronics/Data/EL2244.pdf",
       "https://www.alldatasheet.com/datasheet-pdf/pdf/1051967/RENESAS/EL2244.html",
       "https://datasheetspdf.com/pdf/237670/ElantecSemiconductor/EL2244C/1"
-    ],
-    "claims_confirmed": [
-      "The Intersil datasheet is FN7059, titled 'EL2244, EL2444 Dual/Quad Low-Power 120MHz Unity-Gain Stable Op Amp'; a FN7059.2 copy exists (http://www.manuallib.com/download/pdf14/INTER-IL-EL2244-EL2444-DATA-SHEET.PDF)",
-      "FN7059.1 is dated July 14, 2004 with copyright Intersil 2002-2004 (https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1)",
-      "It is the dual/quad version of the EL2044 on Elantec's complementary bipolar process: 325 V/us, 120 MHz GBW, 5.2 mA per amplifier (https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1)",
-      "It runs on a single supply from 2.5 V to 36 V (https://datasheetspdf.com/pdf/1437145/Intersil/EL2244/1)",
-      "An Elantec EL2244C/EL2444C datasheet Rev C dated December 1995 exists (https://www.sm0vpo.com/_pdf/amplifiers/EL2244.PDF)",
-      "Input noise is 15 nV/rtHz at 10 kHz, 25 C (https://www.sm0vpo.com/_pdf/amplifiers/EL2244.PDF)",
-      "FN7059.2 lists the Pb-free EL2244CSZ, EL2244CSZ-T13 and EL2444CSZ (http://www.manuallib.com/download/pdf14/INTER-IL-EL2244-EL2444-DATA-SHEET.PDF)",
-      "The Elantec ordering codes EL2244CN, EL2244CS, EL2444CS and EL2444CN exist (https://www.datasheetq.com/EL2244CN-doc-Elantec, https://www.alldatasheet.com/datasheet-pdf/pdf/59896/ELANTEC/EL2244CS.html, https://pdf.datasheet.live/69509328/intersil.com/EL2444CN.html)"
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "high-speed-video-crossover",
-  "product_pages": []
+    ]
+  }
 }

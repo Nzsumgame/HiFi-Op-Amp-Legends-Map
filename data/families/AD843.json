@@ -1,237 +1,148 @@
 {
   "id": "AD843",
-  "name": "AD843 (34 MHz CBFET JFET-input single op-amp)",
-  "tagline": "ADI's 34 MHz, 250 V/us CBFET single op-amp. A DiyEden/Soomal headphone-amp study called it the only rival to the OPA627, and smoother; Head-Fi opinion is split.",
-  "technology": "Fast-settling JFET-input single op-amp on ADI's CBFET process. The ADI data sheet is titled '34 MHz, CBFET Fast Settling Op Amp': 34 MHz bandwidth, 250 V/us slew rate, 135 ns settling to 0.01% for a 10 V step, 0.6 nA input bias current. ADI's SPICE macro-model (Rev. A, 1/92) uses a p-channel JFET input pair, with the dominant pole at about 1.23 kHz and about 10.7 mA typical supply current. Single channel only; ADI never made a dual AD843. Packages: 8-lead plastic DIP (N-8), 16-pin SOIC (R-16), cerdip (Q) and metal can (H).",
+  "name": "AD843",
+  "type": "JFET-input (CBFET) fast-settling op-amp, single",
+  "tier": "C",
+  "category": "jfet-input",
+  "tagline": "ADI's 34 MHz, 250 V/µs CBFET single. A Soomal study called it the only OPA627 rival, and smoother; Head-Fi is split.",
   "manufacturers": [
     "Analog Devices"
-  ],
-  "part_numbers": [
-    {
-      "pn": "AD843JN",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown (probably a legacy leaded part; not among the Production codes found)",
-      "notes": "J grade (0 to 70 C), 8-lead plastic DIP (N-8). This is the audio-rolling part: Soomal/DiyEden priced it at $8.56 each. Futurlec and datasheetq still list it. The J-grade macro-model has worst-case Vos 2 mV and Ios 0.5 nA."
-    },
-    {
-      "pn": "AD843JNZ",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "Lead-free ('Z') version of the AD843JN, listed in an IC-database sitemap. Not seen in the Production list found by search."
-    },
-    {
-      "pn": "AD843KN",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown (probably a legacy leaded part)",
-      "notes": "K grade (0 to 70 C), plastic DIP. Octopart and alldatasheet hold data-sheet copies filed under AD843KN. The K-grade macro-model has tighter limits: worst-case Vos 1 mV, Ios 0.2 nA."
-    },
-    {
-      "pn": "AD843KNZ",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "production (ADI lifecycle, via search summary 2026)",
-      "notes": "Lead-free version of the AD843KN. ADI lists it as Production, so it is the current DIP audio-rolling part."
-    },
-    {
-      "pn": "AD843JR-16",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown (still offered by brokers)",
-      "notes": "J grade, 16-pin SOIC (R-16), confirmed by the data sheet's connection diagrams. It is not an SO-8. -REEL and -REEL7 versions are listed."
-    },
-    {
-      "pn": "AD843JRZ-16",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "production (the -REEL7 version is listed as Production)",
-      "notes": "Lead-free version of the AD843JR-16, 16-pin SOIC. -REEL and -REEL7 versions are listed."
-    },
-    {
-      "pn": "AD843JRZ-16-REEL7",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "production (ADI lifecycle, via search summary 2026)",
-      "notes": "Tape-and-reel form of the AD843JRZ-16."
-    },
-    {
-      "pn": "AD843AQ",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "A grade (industrial, -40 to +85 C). 'Q' is ADI's cerdip code. Same worst-case model as the J grade."
-    },
-    {
-      "pn": "AD843BQ",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "B grade (industrial, -40 to +85 C), cerdip. Same worst-case model as the K grade."
-    },
-    {
-      "pn": "AD843BH",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "B grade, metal-can ('H') package. The pin count was not checked."
-    },
-    {
-      "pn": "AD843SQ",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "production (ADI lifecycle, via search summary 2026)",
-      "notes": "S grade (military temperature range, -55 to +125 C), cerdip. Mouser lists it."
-    },
-    {
-      "pn": "AD843SQ/883B",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "production (ADI lifecycle, via search summary 2026)",
-      "notes": "MIL-STD-883 screened S grade, cerdip. Octopart lists it."
-    },
-    {
-      "pn": "AD843SH",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "S grade, metal can. An /883B version is listed."
-    }
   ],
   "lineage": [
     {
       "vendor": "Analog Devices",
-      "role": "originator and sole manufacturer",
-      "period": "c. 1990 onward (the macro-model is copyright 1991 and dated 1/92 Rev. A). Still in production: ADI's product page says at least one model is in production.",
-      "notes": "The macro-model is credited 'JCB / PMI', i.e. modelled by ADI's Precision Monolithics group. No second sources or licensed copies were found. The discovery notes treat the AD843 as a separate die from the AD845 and AD847. The ADI product page says the part is appropriate for new designs but that newer alternatives may exist."
+      "role": "originator",
+      "period": "c. 1990–present",
+      "note": "Sole source; macro-model by ADI's PMI group (©1991, Rev. A 1/92). ADI: suitable for new designs."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "AD843JN / AD843JNZ",
+      "channels": 1,
+      "status": "unknown",
+      "note": "J grade (0 to +70 °C), 8-lead PDIP. Classic audio-rolling part (about $8.56 in 2005)."
+    },
+    {
+      "pn": "AD843KN",
+      "channels": 1,
+      "status": "unknown",
+      "note": "K grade (0 to +70 °C), PDIP, tighter offset. Probably legacy leaded code."
+    },
+    {
+      "pn": "AD843KNZ",
+      "channels": 1,
+      "status": "active",
+      "note": "Lead-free AD843KN; ADI lists Production. Current DIP choice for op-amp rolling."
+    },
+    {
+      "pn": "AD843JR-16",
+      "channels": 1,
+      "status": "unknown",
+      "note": "J grade, 16-pin SOIC (R-16), not SO-8. -REEL/-REEL7 listed; brokers still offer it."
+    },
+    {
+      "pn": "AD843JRZ-16 / AD843JRZ-16-REEL7",
+      "channels": 1,
+      "status": "active",
+      "note": "Lead-free 16-pin SOIC; -REEL7 listed as Production; -REEL also exists."
+    },
+    {
+      "pn": "AD843AQ / AD843BQ",
+      "channels": 1,
+      "status": "unknown",
+      "note": "A/B grades (−40 to +85 °C), cerdip. A matches J limits; B matches K."
+    },
+    {
+      "pn": "AD843BH",
+      "channels": 1,
+      "status": "unknown",
+      "note": "B grade, metal can (H-12A TO-8 per datasheet outline); pin count unchecked."
+    },
+    {
+      "pn": "AD843SQ / AD843SQ/883B",
+      "channels": 1,
+      "status": "active",
+      "note": "S grade (−55 to +125 °C), cerdip; /883B MIL-screened. Mouser and Octopart list them."
+    },
+    {
+      "pn": "AD843SH",
+      "channels": 1,
+      "status": "unknown",
+      "note": "S grade, metal can; an /883B version is listed."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Unity-gain bandwidth",
-      "value": "34 MHz",
-      "condition": "Data sheet title and front page",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf"
+      "parameter": "Input noise (1 kHz)",
+      "value": "19 nV/√Hz",
+      "condition": "frequency unconfirmed",
+      "source": "Datasheet (Octopart AD843KN copy)"
+    },
+    {
+      "parameter": "GBW",
+      "value": "34 MHz unity-gain bandwidth",
+      "condition": "datasheet title",
+      "source": "Datasheet Rev. D"
     },
     {
       "parameter": "Slew rate",
-      "value": "250 V/us",
-      "condition": "Data sheet front-page value (via distributor product page)",
-      "source": "http://www.bdtic.com/en/adi/ad843"
+      "value": "250 V/µs; settles to 0.01% in 135 ns",
+      "condition": "settling for 10 V step",
+      "source": "Datasheet Rev. D"
     },
     {
-      "parameter": "Settling time",
-      "value": "135 ns to 0.01%",
-      "condition": "10 V step",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf"
+      "parameter": "Supply range",
+      "value": "Unverified; needs ≥8.2 V (0.5 V/33 Ω), ≥12.2 V (2 V/330 Ω)",
+      "condition": "hobbyist measurement, AD843JN",
+      "source": "Soomal/DiyEden table"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "13 mA max (10.7 mA typ in model; 11.7 mA grade models)",
+      "condition": "",
+      "source": "Datasheet; ADI macro-model Rev. A"
+    },
+    {
+      "parameter": "Offset voltage",
+      "value": "0.5 mV typ (model); max 2 mV J/A/S, 1 mV K/B",
+      "condition": "grade macro-models use datasheet max",
+      "source": "ADI macro-model Rev. A"
     },
     {
       "parameter": "Input bias current",
-      "value": "0.6 nA",
-      "condition": "Data sheet front-page value",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf"
-    },
-    {
-      "parameter": "Input voltage noise",
-      "value": "19 nV/rtHz",
-      "condition": "Measurement frequency not shown in the search summary. Medium confidence.",
-      "source": "https://datasheet.octopart.com/AD843KN-Analog-Devices-datasheet-7595.pdf"
-    },
-    {
-      "parameter": "Supply current (max)",
-      "value": "13 mA",
-      "condition": "Data sheet maximum, via search summary. Macro-model typical is 10.7 mA; grade models use 11.7 mA.",
-      "source": "https://datasheet.octopart.com/AD843KN-Analog-Devices-datasheet-7595.pdf"
+      "value": "0.6 nA; Ios 0.1 nA typ, max 0.5 nA J/A/S, 0.2 nA K/B",
+      "condition": "Ios from grade macro-models",
+      "source": "Datasheet Rev. D; ADI macro-model"
     },
     {
       "parameter": "Input stage",
-      "value": "JFET (CBFET process); p-channel JFET input pair in the model",
-      "condition": "ADI SPICE macro-model Rev. A, 1/92",
-      "source": "https://raw.githubusercontent.com/electricant/electronics-libraries/8350a98985f7e5c8c82fc2dece0517cb011b2e82/spice-models/espice.ugr.es/analog/ad843.cir"
-    },
-    {
-      "parameter": "Input offset voltage",
-      "value": "0.5 mV typical model value; worst case 2 mV (J/A/S) and 1 mV (K/B)",
-      "condition": "ADI says the grade macro-models use the worst-case values in the data sheet",
-      "source": "https://raw.githubusercontent.com/electricant/electronics-libraries/8350a98985f7e5c8c82fc2dece0517cb011b2e82/spice-models/espice.ugr.es/analog/ad843j.cir"
-    },
-    {
-      "parameter": "Input offset current",
-      "value": "0.1 nA typical model value; worst case 0.5 nA (J/A/S) and 0.2 nA (K/B)",
-      "condition": "Grade macro-models, as above",
-      "source": "https://raw.githubusercontent.com/electricant/electronics-libraries/8350a98985f7e5c8c82fc2dece0517cb011b2e82/spice-models/espice.ugr.es/analog/ad843k.cir"
-    },
-    {
-      "parameter": "Temperature grades",
-      "value": "J/K 0 to +70 C; A/B -40 to +85 C; S -55 to +125 C",
-      "condition": "Data sheet general description",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf"
-    },
-    {
-      "parameter": "Packages",
-      "value": "16-pin SOIC (R-16), 8-lead plastic DIP (N-8), cerdip, metal can",
-      "condition": "Data sheet connection diagrams",
-      "source": "https://www.analog.com/static/imported-files/data_sheets/AD843.pdf"
-    },
-    {
-      "parameter": "Minimum supply to drive headphones",
-      "value": "8.2 V for 0.5 V into 33 ohm; 12.2 V for 2.0 V into 330 ohm",
-      "condition": "Hobbyist measurement (DiyEden/Soomal table, AD843JN)",
-      "source": "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100000343.md"
-    },
-    {
-      "parameter": "Supply range, output current, THD, current noise",
-      "value": "not verified",
-      "condition": "Not shown in the search summaries",
-      "source": "n/a"
+      "value": "p-channel JFET pair (CBFET); dominant pole ≈1.23 kHz",
+      "condition": "",
+      "source": "ADI macro-model Rev. A, 1/92"
     }
   ],
   "reputation": {
-    "summary": "A niche cult part with split opinion. DiyEden published a Chinese translation of an English headphone-amp op-amp study on Soomal (2005). It quotes an article called 'The best op-amp I've heard' naming the AD843 the only op-amp that can rival the OPA627. The author found it smoother than the OPA627, trading some resolution for smoothness, with 'boldness, charm, vitality and passion'. A pair cost about half as much as a pair of OPA627s. The same study rates the AD845 as less detailed and says to upgrade to the AD843, and rates the AD8610 as having more detail and smoothness than the AD843. Head-Fi opinion (from an earlier search summary, not re-checked) is largely negative: 'harsh and unpleasant', 'no competition for OPA637', 'stay away from this - bad offset, oscillation, etc.'. One user found 2x AD843JN on an adapter 'really good' but warm, because of the high quiescent current. It also appears in Maverick TubeMagic D1 op-amp rolling lists. No objective measurements (Audio Science Review, Samuel Groner) were found.",
+    "summary": "A niche cult part with split opinion. A 2005 Soomal/DiyEden translation of an English headphone-amp study named it the only op-amp to rival the OPA627: smoother, slightly less resolving, with 'boldness, charm, vitality and passion', at half the price. It rated AD845 below and AD8610 above it. Head-Fi is reportedly mostly negative: harsh, bad offset, oscillation. No objective measurements found.",
     "sonic_descriptors": [
-      "smooth (smoother than OPA627, per DiyEden)",
-      "bold / energetic ('气魄、神韵、活力和热情')",
-      "slightly less resolving than OPA627",
-      "harsh and unpleasant (Head-Fi dissent)"
+      "smoother than OPA627",
+      "bold, energetic (气魄、神韵、活力和热情)",
+      "less resolving than OPA627",
+      "warm (2× AD843JN adapter)",
+      "harsh (Head-Fi dissent)"
     ],
     "typical_uses": [
-      "headphone amplifier op-amp rolling (CMoy-style, single-channel sockets)",
-      "DAC output stage rolling, used in pairs on dual adapters",
-      "replacement for OPA627 in single sockets"
+      "Headphone amp op-amp rolling (CMoy-style single sockets)",
+      "DAC output stages, two on a dual adapter",
+      "OPA627 substitute in single sockets",
+      "Maverick TubeMagic D1 op-amp rolling"
     ],
     "caveats": [
-      "High quiescent current: 13 mA max per the data sheet, about 10.7 mA typical in ADI's model. It runs warm and is poor for battery amps.",
-      "Needs a high supply voltage: hobbyist-measured minimums of 8.2 V and 12.2 V. The sound degrades quickly as the supply voltage drops.",
-      "Head-Fi reports of bad offset and oscillation. It is a 34 MHz, 250 V/us part, so it is sensitive to layout and decoupling.",
-      "Single only: dual-socket use needs two chips on an adapter.",
-      "The surface-mount version is a 16-pin SOIC (R-16), not an SO-8, so it does not fit standard SO-8 adapters."
+      "High quiescent current (13 mA max, about 10.7 mA typ): runs warm, poor for battery amps.",
+      "Needs high supply (hobbyist minimums 8.2 V and 12.2 V); sound degrades as voltage drops.",
+      "Head-Fi reports bad offset and oscillation; a 34 MHz, 250 V/µs part is layout- and decoupling-sensitive.",
+      "Single only: dual sockets need two chips on an adapter.",
+      "SMD version is 16-pin SOIC (R-16), not SO-8; standard SO-8 adapters do not fit."
     ],
     "sources": [
       "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100000343.md",
@@ -242,18 +153,27 @@
       "http://www.head-fi.org/t/470639/maverick-audio-tubemagic-d1-dac-amp-condensed-faq-and-info-thread"
     ]
   },
+  "counterfeit_notes": "No AD843 fakes reported (not specifically searched). Marketplace DIP JN/KN may be relabelled pulls. Iq should be 10–13 mA; much lower suggests a TL071-class die. Offset within 2 mV (J) or 1 mV (K). 8-pin SOIC 'AD843' is suspect.",
+  "alternatives": [
+    "OPA627 / OPA827",
+    "AD8610 / AD8620 (more detail, lower current)",
+    "AD845 (cheaper, smoother, less detailed)",
+    "ADA4627-1 (modern OPA627-class single)",
+    "OPA828 (modern high-speed JFET single)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "Analog Devices",
       "title": "34 MHz, CBFET Fast Settling Op Amp AD843",
-      "doc_number": "AD843 (ADI data sheet; no separate literature number found)",
+      "doc_number": "AD843",
       "revision": "D",
       "date": "",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf",
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Current ADI URL. Search summaries say it is Rev. D; the revision date and change history were not seen."
+      "note": "Current ADI PDF, 13 pages; date and change history not seen."
     },
     {
       "vendor": "Analog Devices",
@@ -265,7 +185,7 @@
       "url_kind": "vendor_legacy",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Legacy ADI path, still indexed. It may hold an older revision; check it in the Wayback Machine."
+      "note": "Legacy ADI path; may hold an older revision. Check Wayback."
     },
     {
       "vendor": "Analog Devices (Octopart mirror)",
@@ -277,7 +197,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Filed under the leaded AD843KN part number, so it may be a pre-RoHS revision (unconfirmed)."
+      "note": "Filed under leaded AD843KN; possibly a pre-RoHS revision."
     },
     {
       "vendor": "Analog Devices (Digi-Key mirror)",
@@ -289,7 +209,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "HTML rendering of the data sheet on Digi-Key."
+      "note": "Digi-Key HTML rendering."
     },
     {
       "vendor": "Analog Devices (alldatasheet mirror)",
@@ -301,7 +221,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The higher alldatasheet ID suggests a later upload than the AD843KN copy."
+      "note": "Higher ID suggests a later upload than the AD843KN copy."
     },
     {
       "vendor": "Analog Devices (alldatasheet mirror)",
@@ -313,7 +233,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The low alldatasheet ID suggests an early upload, possibly an older revision (unconfirmed)."
+      "note": "Low ID suggests an early upload, possibly an older revision."
     },
     {
       "vendor": "Analog Devices (datasheetcatalog mirror)",
@@ -322,10 +242,13 @@
       "revision": "",
       "date": "",
       "url": "https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD843.shtml",
+      "also_urls": [
+        "https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD843KN.shtml"
+      ],
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "A 2000s-era mirror, likely to freeze an older revision (unconfirmed). There is also an AD843KN page: https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD843KN.shtml"
+      "note": "2000s-era mirror, likely an older revision; also an AD843KN page."
     },
     {
       "vendor": "Analog Devices (digchip mirror)",
@@ -349,7 +272,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Filed under the leaded AD843JN; revision not shown."
+      "note": "Filed under leaded AD843JN; revision not shown."
     },
     {
       "vendor": "Analog Devices - third-party mirror (RadioLocman)",
@@ -361,7 +284,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Labelled 'Revision: D'. Page 12 has the outline dimensions for the N-8, Q-8, H-12A TO-8 and R-16 SOIC packages; page 9 has the sample-and-hold circuits."
+      "note": "Rev. D; p. 12 N-8/Q-8/H-12A/R-16 outlines, p. 9 sample-and-hold circuits."
     },
     {
       "vendor": "Analog Devices - third-party mirror (alldatasheet)",
@@ -373,7 +296,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "alldatasheet holds other captures under IDs 575873, 1011842 and 48472 (AD843KN), for example https://www.alldatasheet.com/datasheet-pdf/pdf/1011842/AD/AD843.html. Their revisions were not shown."
+      "note": "Old alldatasheet ID; revision not shown."
     },
     {
       "vendor": "Analog Devices (Farnell mirror)",
@@ -385,7 +308,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Farnell datasheet copy, found in search results. The summary gave only the title and no revision letter or date. The Farnell ID 2147042 suggests a fairly recent upload, so it is probably Rev. D, but this is not confirmed."
+      "note": "Fairly recent Farnell upload; probably Rev. D, unconfirmed."
     },
     {
       "vendor": "Analog Devices (alldatasheet mirror)",
@@ -397,7 +320,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A third alldatasheet entry, with a different ID from the known entries 48465, 48472 and 575873. Its high ID suggests a recent upload. The revision was not shown in the summary."
+      "note": "High ID suggests a recent upload; revision not shown."
     },
     {
       "vendor": "Analog Devices (datasheetarchive index)",
@@ -409,7 +332,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Datasheet Archive index page for the AD843. It often holds scans from older ADI data books, so it may be the best place to look for pre-Rev. D editions. The revision was not shown in the summary."
+      "note": "Index often holding old data-book scans; best bet for pre-D editions."
     },
     {
       "vendor": "Analog Devices (Futurlec mirror)",
@@ -418,10 +341,13 @@
       "revision": "",
       "date": "",
       "url": "https://www.futurlec.com/AnalogDevices/AD843JN.shtml",
+      "also_urls": [
+        "https://www.futurlec.com/AnalogDevices/AD843JNpr.shtml"
+      ],
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Futurlec datasheet page for the AD843JN. It has a related product page at https://www.futurlec.com/AnalogDevices/AD843JNpr.shtml. Futurlec often hosts older ADI editions, but the revision was not shown in the summary."
+      "note": "Futurlec AD843JN page; often hosts older ADI editions."
     },
     {
       "vendor": "Analog Devices (datasheetq mirror)",
@@ -433,33 +359,42 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Datasheetq English page for the AD843. This URL is different from the known datasheetq.com/AD843JN-ADI entry. The revision was not shown."
+      "note": "Datasheetq English AD843 page; revision not shown."
     }
+  ],
+  "product_pages": [
+    "https://www.analog.com/en/products/ad843.html",
+    "https://analog.com/en/products/ad843.html",
+    "https://www.mouser.com/ProductDetail/Analog-Devices/AD843?qs=%2BEew9%2B0nqrB%2BSgFNFWjoZw%3D%3D",
+    "https://www.futurlec.com/AnalogDevices/AD843JNpr.shtml"
   ],
   "revision_history": [
     {
       "vendor": "Analog Devices",
       "doc_number": "AD843",
       "revision": "D",
-      "date": "unknown",
-      "changes": "Current revision per search summary; the change log was not seen. Earlier revisions (0/A/B/C under ADI's scheme) are implied but no copy was identified by letter."
-    },
+      "date": "",
+      "changes": "Current revision (product page, RadioLocman). Date and change log not seen; earlier letters 0/A/B/C implied but not located."
+    }
+  ],
+  "revision_chains": [
     {
       "vendor": "Analog Devices",
       "doc_number": "AD843",
-      "revision": "D",
-      "date": "unknown",
-      "changes": "The current revision per the product page and RadioLocman. The changes and date were not shown in any search summary."
+      "known": [
+        {
+          "rev": "D",
+          "date": ""
+        }
+      ],
+      "missing": [
+        "original (c. 1990)",
+        "A",
+        "B",
+        "C"
+      ],
+      "note": "Old mirrors and ADI 1990/1992 Linear Products Data Book scans may hold pre-D editions."
     }
-  ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No reports of fake AD843s were found, but this was not searched specifically. Generic caution: DIP AD843JN/KN parts sold on marketplaces are likely relabelled or pulled parts. Check the ADI logo style and date code. Measure quiescent current: roughly 10-13 mA is expected (13 mA data-sheet max, about 10.7 mA model typical). A much lower Iq points to a substituted die such as a TL071-class part. Also check the offset against the grade limits: 2 mV for J, 1 mV for K. A genuine SOIC part is a 16-pin R-16 package; an 8-pin SOIC marked AD843 is suspect.",
-  "alternatives": [
-    "OPA627 / OPA827 (TI JFET-input; the reference it is compared with in the DiyEden study)",
-    "AD8610 / AD8620 (ADI precision JFET; DiyEden rates it smoother, with more detail than the AD843, and much lower supply current)",
-    "AD845 (ADI JFET-input sibling; cheaper, smoother, less detailed per DiyEden)",
-    "ADA4627-1 (modern ADI OPA627-class JFET single; suggested successor, not compared by listeners)",
-    "OPA828 (modern TI high-speed JFET single; suggested successor)"
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -484,16 +419,11 @@
     "https://www.futurlec.com/AnalogDevices/AD843JN.shtml"
   ],
   "open_questions": [
-    "Data sheet chain: Rev. D is current, but its date and change log were not seen. Which revision letters (0/A/B/C) the legacy ADI static URL and the mirrors (Octopart AD843KN, alldatasheet 48472, datasheetcatalog) hold was not determined; check them in the Wayback Machine.",
-    "The http://www.analog.com/UploadedFiles/Data_Sheets/AD843.pdf path is an inferred ADI pattern and was not seen in any search result.",
-    "Lifecycle of the leaded (non-Z) DIP/SOIC codes and of the AQ/BQ/BH/SH codes is unknown. Only AD843KNZ, AD843JRZ-16-REEL7, AD843SQ and AD843SQ/883B were seen listed as Production.",
-    "No AD843-specific PCN (fab, die or assembly change) was found. The search returned only generic ADI PCNs not tied to this part, so no silicon change is recorded.",
-    "Input voltage noise of 19 nV/rtHz and 13 mA max supply current come from search summaries; the test frequency and conditions need checking against the PDF. Supply range, output current and THD are not verified.",
-    "Metal-can ('H') pin count not checked.",
-    "Which Head-Fi thread contains the 'harsh', 'bad offset, oscillation' and '2x AD843JN' remarks? Not re-checked in this pass.",
-    "Is the DiyEden/Soomal text a translation of Warren Young's (Tangent) 'Notes on Audio Op-Amps'? Unconfirmed.",
-    "Does the AD843 share its CBFET die design with the AD845/AD847? Not searched.",
-    "A docs.rs-online.com PDF (https://docs.rs-online.com/9226/0900766b80e431ff.pdf) appeared in an AD843 search, but its content was not confirmed to be the AD843 data sheet."
+    "Rev. D date and change log; which letters do the legacy ADI path and old mirrors hold?",
+    "Lifecycle of leaded codes and AQ/BQ/BH/SH; only KNZ, JRZ-16-REEL7, SQ, SQ/883B confirmed Production.",
+    "Check noise (19 nV/√Hz) and 13 mA conditions in the PDF; supply range, output current, THD unverified.",
+    "Which Head-Fi threads hold the 'harsh', 'bad offset' and '2× AD843JN' remarks? Is Soomal's text a Tangent translation?",
+    "Does the AD843 share a die with AD845/AD847? Is docs.rs-online.com/9226/0900766b80e431ff.pdf the AD843 datasheet?"
   ],
   "sources": [
     "https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf",
@@ -519,14 +449,25 @@
   ],
   "verification": {
     "status": "partially-verified",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "Datasheet title '34 MHz, CBFET Fast Settling Op Amp', current revision Rev. D (https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf).",
+      "34 MHz bandwidth, 135 ns settling to 0.01% (10 V step), 0.6 nA bias (https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf).",
+      "Slew rate 250 V/µs (http://www.bdtic.com/en/adi/ad843).",
+      "Five grades: J/K 0 to +70 °C, A/B −40 to +85 °C, S −55 to +125 °C (https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf).",
+      "Connection diagrams show 16-pin SOIC (R-16) and 8-lead PDIP (N-8) (https://www.analog.com/static/imported-files/data_sheets/AD843.pdf).",
+      "Family in Production; AD843KNZ, AD843JRZ-16-REEL7, AD843SQ, AD843SQ/883B listed Production (https://analog.com/en/products/ad843.html).",
+      "Noise 19 nV/√Hz and 13 mA max supply, reportedly (https://datasheet.octopart.com/AD843KN-Analog-Devices-datasheet-7595.pdf).",
+      "Distributor and third-party copies exist (https://www.digikey.com/htmldatasheets/production/51948/0/0/1/ad843.html, https://www.alldatasheet.com/datasheet-pdf/pdf/48472/AD/AD843KN.html, https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD843.shtml)."
+    ],
     "refuted_claims": [],
     "corrections": [
-      "The SMD package is confirmed as a 16-pin SOIC (R-16) from the data sheet's connection diagrams; the draft had it only as inferred.",
-      "Lifecycle statuses changed from 'unknown' to 'production' for AD843KNZ, AD843JRZ-16 (via -REEL7), AD843SQ and AD843SQ/883B. Added AD843JRZ-16-REEL7 and AD843SQ/883B as separate part numbers.",
-      "Datasheets list populated: ADI current PDF (Rev. D), legacy ADI static path, and mirrors on Octopart, Digi-Key, alldatasheet (two IDs), datasheetcatalog, digchip and datasheetq.",
-      "Added data-sheet key specs: 34 MHz, 250 V/us slew, 135 ns settling to 0.01%, 0.6 nA Ib, 19 nV/rtHz (medium confidence), 13 mA max supply current (medium confidence), and the temperature ranges by grade.",
-      "Removed the obsolete TOOLING open question (search budget was available this pass). The counterfeit note now expects an Iq of 10-13 mA and flags an 8-pin SOIC marking as suspect.",
-      "Dropped the unsourced 'ADI lively/punchy character' sonic descriptor."
+      "SMD package confirmed as 16-pin SOIC (R-16) from the connection diagrams.",
+      "Statuses set to production for AD843KNZ, AD843JRZ-16 (via -REEL7), AD843SQ, AD843SQ/883B; added -REEL7 and /883B codes.",
+      "Datasheet list populated: ADI Rev. D, legacy ADI path, and Octopart, Digi-Key, alldatasheet, datasheetcatalog, digchip, datasheetq mirrors.",
+      "Added key specs: 34 MHz, 250 V/µs, 135 ns settling, 0.6 nA, 19 nV/√Hz, 13 mA max, grade temperature ranges.",
+      "Counterfeit note now expects Iq of 10–13 mA and flags an 8-pin SOIC marking as suspect.",
+      "Dropped the unsourced 'ADI lively/punchy character' descriptor."
     ],
     "unverified_urls": [
       "http://www.analog.com/UploadedFiles/Data_Sheets/AD843.pdf",
@@ -539,26 +480,6 @@
       "https://www.head-fi.org/threads/new-wna-mkll-head-amp-kit.99596/page-22",
       "http://www.head-fi.org/t/470639/maverick-audio-tubemagic-d1-dac-amp-condensed-faq-and-info-thread",
       "https://docs.rs-online.com/9226/0900766b80e431ff.pdf"
-    ],
-    "claims_confirmed": [
-      "The ADI data sheet title is '34 MHz, CBFET Fast Settling Op Amp' and the current revision is Rev. D (https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf)",
-      "The data sheet specifies 34 MHz bandwidth, 135 ns settling to 0.01% for a 10 V step and 0.6 nA input bias current (https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf)",
-      "The slew rate is 250 V/us (http://www.bdtic.com/en/adi/ad843)",
-      "There are five grades: J/K 0 to +70 C, A/B -40 to +85 C, S -55 to +125 C (https://www.analog.com/media/en/technical-documentation/data-sheets/AD843.pdf)",
-      "The connection diagrams show a 16-pin SOIC (R-16) and an 8-lead plastic DIP (N-8) (https://www.analog.com/static/imported-files/data_sheets/AD843.pdf)",
-      "The AD843 family is in Production; AD843KNZ, AD843JRZ-16-REEL7, AD843SQ and AD843SQ/883B are listed as Production (https://analog.com/en/products/ad843.html)",
-      "Input voltage noise is 19 nV/rtHz and supply current is 13 mA max, per a search summary (https://datasheet.octopart.com/AD843KN-Analog-Devices-datasheet-7595.pdf)",
-      "Distributor and third-party data-sheet copies exist (https://www.digikey.com/htmldatasheets/production/51948/0/0/1/ad843.html, https://www.alldatasheet.com/datasheet-pdf/pdf/48472/AD/AD843KN.html, https://www.datasheetcatalog.com/datasheets_pdf/A/D/8/4/AD843.shtml)"
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "jfet-input",
-  "product_pages": [
-    "https://www.analog.com/en/products/ad843.html",
-    "https://analog.com/en/products/ad843.html",
-    "https://www.mouser.com/ProductDetail/Analog-Devices/AD843?qs=%2BEew9%2B0nqrB%2BSgFNFWjoZw%3D%3D",
-    "https://www.futurlec.com/AnalogDevices/AD843JNpr.shtml"
-  ],
-  "revision_chain_notes": "Only one vendor document exists: the Analog Devices AD843 data sheet, titled \"34 MHz, CBFET Fast Settling Op Amp\". The AD843 was ADI-only. No second source, licensee or acquirer re-issue was found; the Precision Monolithics group was in-house at ADI. Chain, oldest to newest: the original edition (Rev. 0 in ADI's current scheme, or an unlettered data-book edition) is MISSING. It is c. 1990; the SPICE macro-model is copyright 1991 and dated 1/92 Rev. A, but that date belongs to the model, not the data sheet. Rev. A, Rev. B and Rev. C are also MISSING: no copy or date was found by letter in 4 searches, and no search summary showed a \"REV. x\" footer or a revision history block for the AD843. The only confirmed revision is Rev. D, the current one on analog.com/media/.../AD843.pdf (13 pages, about 485 KB) and on RadioLocman; its date and change log were still not shown. New copies found, all with revision not shown: Farnell 2147042.pdf, alldatasheet 1011842, Datasheet Archive's index page, Futurlec's AD843JN page and datasheetq/en. Which letter a copy holds can only be read from the file itself. Old alldatasheet IDs (48465 and 48472), datasheetcatalog, digchip, Datasheet Archive and Futurlec are the likeliest to hold pre-D editions. That is inferred from their IDs, which suggest early uploads, and is unconfirmed. Next steps: check Wayback captures of the archive seed URLs, the old analog.com static/imported-files path, for earlier letters. Also check the ADI 1990/1992 Linear Products Data Book scans on bitsavers or worldradiohistory for the original edition. The legacy ADI path pattern www.analog.com/UploadedFiles/Data_Sheets/ is another option, but it was NOT confirmed for the AD843 and is not listed as a seed."
+    ]
+  }
 }

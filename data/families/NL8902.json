@@ -1,146 +1,117 @@
 {
   "id": "NL8902",
-  "name": "NL8902 (Nisshinbo JFET-input dual audio op-amp)",
-  "tagline": "Nisshinbo's May 2025 JFET-input 'entry' dual built on MUSES know-how. A Japanese DIY blogger ranked it above MUSES8920 and NL8802 in listening tests.",
-  "technology": "JFET-input dual audio op-amp. Nisshinbo describes it as MUSES sound technology with improved productivity. Headline claims: unity-gain stable, EMI-hardened input (EMIRR 82 dB at 1.8 GHz), 1.3 mA per channel. It is the JFET counterpart of the bipolar NL8802. Packages are SMD only: EMP-8 (AN) and DFN4035-8 (GR). No die, process or fab details are published.",
+  "name": "NL8902 / NL8902AN / NL8902GR",
+  "type": "JFET-input audio dual, unity-gain stable, SMD only",
+  "tier": "C",
+  "category": "japanese-audio-series",
+  "tagline": "Nisshinbo's 2025 'entry' JFET dual built on MUSES know-how; one Japanese DIYer ranks it above MUSES8920 and NL8802.",
   "manufacturers": [
     "Nisshinbo Micro Devices"
+  ],
+  "lineage": [
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "role": "originator",
+      "period": "2025–present",
+      "note": "Launched 2025-05-13 as JFET counterpart of bipolar NL8802. Sole source; Macnica distributes it."
+    },
+    {
+      "vendor": "New Japan Radio (JRC) / Nisshinbo MUSES line",
+      "role": "design heritage",
+      "period": "2010s–2020s",
+      "note": "Marketed as MUSES sound technology with improved productivity. Link to JRC NJM8901 or MUSES8920 die unknown."
+    }
   ],
   "part_numbers": [
     {
       "pn": "NL8902",
       "channels": 2,
-      "vendors": [
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "active (announced 2025-05-13; vendor product page live)",
-      "notes": "Series name. Separate from MUSES8920/8920A/8921."
+      "status": "active",
+      "note": "Series name; announced 2025-05-13. Not a MUSES8920/8920A/8921 revision."
     },
     {
-      "pn": "NL8902AN (ordering code NL8902ANAE2S)",
+      "pn": "NL8902AN / NL8902ANAE2S",
       "channels": 2,
-      "vendors": [
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "active (stocked by Akizuki as NL8902AN and by Kyohritsu eleshop and Profusion as NL8902ANAE2S)",
-      "notes": "EMP-8 package (EMP-8-AN). There is no DIP-8 version, so socket rolling needs an EMP8-to-DIP8 adapter board. The earlier draft guessed an 'AE1S' suffix by analogy with NL8802ANAE1S. The observed code is NL8902ANAE2S."
+      "status": "active",
+      "note": "EMP-8 (EMP-8-AN). Stocked by Akizuki, Kyohritsu eleshop, Profusion. No DIP-8 version."
     },
     {
       "pn": "NL8902GR",
       "channels": 2,
-      "vendors": [
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "listed in the launch press release; distributor stock not seen",
-      "notes": "DFN4035-8-GR package. Full ordering suffix not captured."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "Nisshinbo Micro Devices",
-      "role": "originator / sole source",
-      "period": "2025-05-13 (launch news) to present",
-      "notes": "Launched in the NL line next to the bipolar NL8802. No second sources are known. Macnica distributes it and markets it as 'a new standard for entry-level models'."
-    },
-    {
-      "vendor": "New Japan Radio (JRC) / Nisshinbo MUSES line",
-      "role": "design heritage",
-      "period": "2010s-2020s",
-      "notes": "The vendor positions it as MUSES technology with improved productivity, the NL-line counterpart of the JFET MUSES8920/8920A. JRC's older NJM8901 was described in nearly the same words, but no link between the two parts is known (open question)."
+      "status": "unknown",
+      "note": "DFN4035-8-GR. In the launch release; full ordering code and stock not seen."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input stage type",
-      "value": "JFET input",
-      "condition": "n/a",
-      "source": "https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html"
-    },
-    {
-      "parameter": "Channels",
-      "value": "2 (dual)",
-      "condition": "n/a",
-      "source": "https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html"
-    },
-    {
-      "parameter": "Input voltage noise density",
-      "value": "10 nV/rtHz (typ)",
+      "parameter": "Input noise (1 kHz)",
+      "value": "10 nV/√Hz typ",
       "condition": "f = 1 kHz",
-      "source": "https://audioxpress.com/news/new-nisshinbo-nl8902-high-performance-dual-audio-op-amp-with-jfet-input; https://www.macnica.co.jp/en/business/semiconductor/manufacturers/nisshinbo-microdevices/news/147476/"
+      "source": "audioXpress launch news"
     },
     {
-      "parameter": "THD",
-      "value": "0.0004% (typ)",
-      "condition": "f = 1 kHz",
-      "source": "https://audioxpress.com/news/new-nisshinbo-nl8902-high-performance-dual-audio-op-amp-with-jfet-input"
+      "parameter": "GBW",
+      "value": "9 MHz typ",
+      "condition": "press-release figure",
+      "source": "audioXpress launch news"
     },
     {
       "parameter": "Slew rate",
-      "value": "20 V/us (typ)",
+      "value": "20 V/µs typ",
       "condition": "press-release figure",
-      "source": "https://audioxpress.com/news/new-nisshinbo-nl8902-high-performance-dual-audio-op-amp-with-jfet-input"
+      "source": "audioXpress launch news"
     },
     {
-      "parameter": "Gain-bandwidth product",
-      "value": "9 MHz (typ)",
+      "parameter": "THD+N",
+      "value": "0.0004% THD typ",
+      "condition": "f = 1 kHz",
+      "source": "audioXpress launch news"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "±4.0 V to ±16 V (reportedly; one summary: 4–16 V)",
+      "condition": "operating range; check datasheet",
+      "source": "Nisshinbo release 2025-05-13"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "1.3 mA per channel typ",
       "condition": "press-release figure",
-      "source": "https://audioxpress.com/news/new-nisshinbo-nl8902-high-performance-dual-audio-op-amp-with-jfet-input"
+      "source": "Macnica news 147476"
     },
     {
       "parameter": "Input bias current",
-      "value": "10 pA (typ)",
+      "value": "10 pA typ",
       "condition": "press-release figure",
-      "source": "https://audioxpress.com/news/new-nisshinbo-nl8902-high-performance-dual-audio-op-amp-with-jfet-input"
+      "source": "audioXpress launch news"
     },
     {
-      "parameter": "Quiescent current",
-      "value": "1.3 mA per channel (typ)",
-      "condition": "press-release figure",
-      "source": "https://www.macnica.co.jp/en/business/semiconductor/manufacturers/nisshinbo-microdevices/news/147476/"
-    },
-    {
-      "parameter": "EMIRR",
-      "value": "82 dB",
-      "condition": "f = 1.8 GHz",
-      "source": "https://www.macnica.co.jp/en/business/semiconductor/manufacturers/nisshinbo-microdevices/news/147476/"
-    },
-    {
-      "parameter": "Supply voltage range",
-      "value": "±4.0 V to ±16 V (dual supply)",
-      "condition": "operating range; one search summary gave '4 V to 16 V dual supply', so check against the datasheet",
-      "source": "https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html (via search summary)"
-    },
-    {
-      "parameter": "Stability",
-      "value": "unity-gain stable",
-      "condition": "n/a",
-      "source": "https://www.macnica.co.jp/en/business/semiconductor/manufacturers/nisshinbo-microdevices/news/147476/"
-    },
-    {
-      "parameter": "Packages",
-      "value": "EMP-8 (NL8902AN), DFN4035-8 (NL8902GR); no DIP",
-      "condition": "n/a",
-      "source": "https://audioxpress.com/news/new-nisshinbo-nl8902-high-performance-dual-audio-op-amp-with-jfet-input"
+      "parameter": "Input stage",
+      "value": "JFET; EMI-hardened, EMIRR 82 dB",
+      "condition": "EMIRR at f = 1.8 GHz",
+      "source": "Macnica news 147476"
     }
   ],
   "reputation": {
-    "summary": "A new part with little coverage outside Japan. Most of the praise comes from new_western_elec (nw-electric.way-nifty.com), a Japanese DIY-audio blogger. In a Sept 2025 A/B session he ranked OPA2604 < MUSES8820 < MUSES8920 < NL8802 < NL8902, and he heard more high-frequency extension and more detail than MUSES8920. His Oct 2025 post compares NL8902 with the new MUSES8921. NS-kobo's phono-EQ listening comparison reportedly found NL8902AN better than OPA2604AP, with richer musical reproduction (known only from a search summary; the attribution is not fully certain). The distributor Macnica pitches it as entry-level with sound 'on par with higher-end models'. That is marketing. No measurements from Audio Science Review or other independent sources were found.",
+    "summary": "Little coverage outside Japan. Blogger new_western_elec ranked it top in a Sept 2025 A/B (OPA2604 < MUSES8820 < MUSES8920 < NL8802 < NL8902), hearing more treble extension and detail than MUSES8920. NS-kobo's phono-EQ test reportedly preferred it to OPA2604AP. Macnica's 'on par with higher-end models' is marketing. No ASR or other independent measurements exist.",
     "sonic_descriptors": [
-      "more high-frequency extension than MUSES8920 (new_western_elec)",
-      "more information/detail than MUSES8920 and NL8802 (new_western_elec ranking)",
-      "richer musical reproduction than OPA2604AP in a phono EQ (NS-kobo, via search summary)",
-      "JFET character like MUSES8920"
+      "extended highs",
+      "detailed",
+      "rich, musical (reportedly)",
+      "MUSES8920-like JFET character"
     ],
     "typical_uses": [
-      "op-amp rolling in DAC output, line and phono-EQ stages on EMP8-to-DIP8 adapters (community use)",
-      "vendor-listed uses: preamplifiers, active filters, line amplifiers, I/V conversion amplifiers"
+      "DAC output, line and phono-EQ stages via EMP8-to-DIP8 adapter",
+      "Preamplifiers and line amplifiers",
+      "Active filters",
+      "I/V conversion amplifiers"
     ],
     "caveats": [
-      "The praise comes from one or two Japanese hobbyist listeners. There are no independent measurements.",
-      "SMD only (EMP-8 / DFN4035-8). DIP sockets need an adapter board, and the adapter and layout can colour comparisons.",
-      "Only press-release typical figures are known. The datasheet min/max tables and the datasheet version were not checked.",
-      "Supply risk: new_western_elec has voiced worry about Nisshinbo restructuring and past MUSES discontinuations (blog opinion, low confidence).",
-      "Do not confuse it with MUSES8920/8920A/8921. Those are separate part numbers, not revisions of NL8902."
+      "Praise comes from one or two Japanese hobbyist listeners; no independent measurements.",
+      "SMD only (EMP-8 / DFN4035-8). DIP sockets need an adapter, which can colour comparisons.",
+      "Only press-release typical figures are known; datasheet min/max tables and version unchecked.",
+      "new_western_elec worries about supply, citing Nisshinbo restructuring and past MUSES discontinuations (opinion).",
+      "Not a revision of MUSES8920/8920A/8921; those are separate parts."
     ],
     "sources": [
       "https://nw-electric.way-nifty.com/blog/2025/09/post-02dac7.html",
@@ -152,6 +123,18 @@
       "https://nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html"
     ]
   },
+  "counterfeit_notes": "No NL8902 fakes reported. Cheaper non-MUSES branding may deter counterfeiters, unlike faked MUSES01 (inference). It ships only in EMP-8 and DFN4035-8, so a native DIP-8 'NL8902' is suspect; retailer DIP adapters are fine. Buy via Akizuki, Kyohritsu, Marutsu or Macnica.",
+  "alternatives": [
+    "NL8802 (bipolar sibling)",
+    "MUSES8921 (2025 JFET dual, 8.0 nV/√Hz)",
+    "MUSES8920A / MUSES8920AE (same electricals as MUSES8920)",
+    "MUSES01 (flagship JFET dual)",
+    "NJM8901 (older BiFET entry MUSES-technology dual)",
+    "OPA1642",
+    "OPA2604",
+    "OPA1656"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "Akizuki Denshi (distributor)",
@@ -163,7 +146,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The retailer page was confirmed by search. Akizuki usually attaches a datasheet PDF, but whether this page holds a copy, and which version, is unconfirmed."
+      "note": "Retailer page; whether it holds a datasheet copy is unknown."
     },
     {
       "vendor": "Kyohritsu eleshop (distributor)",
@@ -175,7 +158,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The retailer page was confirmed by search and gives the full ordering code NL8902ANAE2S. Whether it links a datasheet copy is unconfirmed."
+      "note": "Retailer page with full ordering code NL8902ANAE2S; datasheet link unknown."
     },
     {
       "vendor": "Nisshinbo Micro Devices (launch coverage, third party)",
@@ -187,7 +170,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Launch news on Electronic Specifier that repeats the key specs: 10nV/rtHz at 1kHz, 0.0004% THD, 20V/us, 9MHz GBP, 10pA input bias current, +/-4.0 to +/-16V supply, EMP-8-AN and DFN4035-8-GR packages. It is not a datasheet copy and no datasheet revision is shown."
+      "note": "Launch news repeating key specs and packages; not a datasheet."
     },
     {
       "vendor": "Nisshinbo Micro Devices (launch coverage, third party)",
@@ -199,19 +182,27 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "audioXpress launch article. It is not a datasheet and shows no revision. Its only use is to confirm the launch-time spec set and packages (EMP-8-AN, DFN4035-8-GR)."
+      "note": "Launch news confirming specs and packages; not a datasheet."
     }
   ],
+  "product_pages": [
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=nl8902",
+    "https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html",
+    "https://gb.profusion.uk/uk/nl8902anae2s",
+    "https://www.macnica.co.jp/en/business/semiconductor/manufacturers/nisshinbo-microdevices/news/147476/"
+  ],
   "revision_history": [],
-  "silicon_changes": [],
-  "counterfeit_notes": "No reports of NL8902 counterfeits were found. Fake MUSES-branded parts are widely reported (e.g. MUSES01 fakes). NL parts are cheaper and not MUSES-branded, so they may be less attractive to counterfeiters (inference). Nisshinbo makes the NL8902 only in EMP-8 and DFN4035-8, so any 'NL8902' sold as a native DIP-8 part should be treated as suspect. Retailers' DIP adapter modules are legitimate. Buy from Akizuki, Kyohritsu eleshop, Marutsu, Macnica or other authorized channels.",
-  "alternatives": [
-    "NL8802 (Nisshinbo): bipolar-input sibling, ranked just below NL8902 by new_western_elec",
-    "MUSES8921 (Nisshinbo, Oct 2025): JFET dual; press figures 8.0 nV/rtHz, 11 MHz GBW, 25 V/us, 0.0004% THD, 5 pA Ib (not rechecked this session)",
-    "MUSES8920A / MUSES8920AE (Nisshinbo): replaced MUSES8920 with no change in electrical characteristics, per the vendor",
-    "MUSES01 (Nisshinbo/JRC): flagship JFET dual",
-    "NJM8901 (JRC/Nisshinbo): older BiFET 'entry' MUSES-technology dual",
-    "TI OPA1642 / OPA2604 / OPA1656: Western FET/CMOS-input audio duals"
+  "revision_chains": [
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "doc_number": "NL8902 datasheet",
+      "known": [],
+      "missing": [
+        "initial release (c. 2025-05, probably Ver.1.0)",
+        "later Ver. updates"
+      ],
+      "note": "Sole-source part. First-release Ver. string, date and vendor PDF URL not yet found."
+    }
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -226,12 +217,11 @@
     "https://www.nisshinbo-microdevices.co.jp/ja/products/operational-amplifier/spec/?product=nl8902"
   ],
   "open_questions": [
-    "The datasheet PDF URL, version (Ver.x.x) and date were not found. The NL8802 datasheet copy on Mouser is nl8802_s_e-3435312.pdf, marked Ver.1.0, which suggests Nisshinbo names files '<pn>_s_e.pdf'. So the inferred seeds NL8902_E.pdf and NL8902_J.pdf may be wrong. A Mouser copy of the NL8902 datasheet was not found.",
-    "Supply range: one search summary says '±4.0 V to ±16 V' and another says '4 V to 16 V dual supply'. The datasheet has to settle it.",
-    "NL8902GR (DFN4035-8): full ordering code and distributor availability were not seen.",
-    "Is NL8902 related to JRC's NJM8901 or derived from the MUSES8920 die? Unknown.",
-    "The conclusion of new_western_elec's Oct 2025 'NL8902とMUSES8921' post was not captured.",
-    "NS-kobo's NL8902AN phono-EQ remarks are known only from a search summary. Confirm the wording."
+    "Find the datasheet PDF, Ver. and date. NL8802's file is nl8802_s_e.pdf (Ver.1.0), so NL8902_E/J.pdf seeds may be wrong.",
+    "Supply range: '±4.0 V to ±16 V' or '4 V to 16 V dual supply'? Check the datasheet.",
+    "NL8902GR (DFN4035-8): full ordering code and distributor availability?",
+    "Is NL8902 related to JRC's NJM8901 or derived from the MUSES8920 die?",
+    "What did new_western_elec's Oct 2025 'NL8902とMUSES8921' post and NS-kobo's phono-EQ notes conclude?"
   ],
   "sources": [
     "https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html",
@@ -262,18 +252,32 @@
   ],
   "verification": {
     "status": "partially-verified",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "Nisshinbo announced the NL8902 Series JFET-input dual on 2025-05-13: https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html",
+      "The vendor product page exists: https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=nl8902",
+      "10 nV/√Hz, 0.0004% THD at 1 kHz, 20 V/µs, 9 MHz GBW, 10 pA Ib; EMP-8-AN and DFN4035-8-GR: https://audioxpress.com/news/new-nisshinbo-nl8902-high-performance-dual-audio-op-amp-with-jfet-input",
+      "EMIRR 82 dB at 1.8 GHz, 1.3 mA/ch, unity-gain stable, 'a new standard for entry-level models': https://www.macnica.co.jp/en/business/semiconductor/manufacturers/nisshinbo-microdevices/news/147476/",
+      "Supply range ±4.0 V to ±16 V (secondary summary of vendor pages): https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html",
+      "Ordering code NL8902ANAE2S sold at Kyohritsu eleshop: https://eleshop.jp/shop/g/gP7P122/",
+      "NL8902AN sold at Akizuki: https://akizukidenshi.com/catalog/g/g131145/",
+      "Vendor wording 'MUSES high-quality sound technology with improved productivity', launch 2025-05-13: https://news.mynavi.jp/techplus/article/20250513-3301537/",
+      "new_western_elec post 'NL8902とMUSES8921' exists (Oct 2025): https://nw-electric.way-nifty.com/blog/2025/10/post-0c41e4.html",
+      "NS-kobo phono-EQ comparison reportedly rates NL8902AN above OPA2604AP: http://ns-kobo.la.coocan.jp/Op-amp_Comparison.html",
+      "NL8802 sibling datasheet on Mouser is marked Ver.1.0: https://www.mouser.com/datasheet/2/294/nl8802_s_e-3435312.pdf"
+    ],
     "refuted_claims": [
-      "The draft's 'release date unconfirmed / c.2025 (first coverage Sept 2025)' is wrong: Nisshinbo announced the NL8902 on 2025-05-13."
+      "Release date is not 'c.2025, first coverage Sept 2025': Nisshinbo announced NL8902 on 2025-05-13."
     ],
     "corrections": [
       "Release date set to 2025-05-13 (Nisshinbo news and Mynavi article dated 20250513).",
-      "The full EMP-8 ordering code is NL8902ANAE2S, not an AE1S analog of NL8802ANAE1S.",
+      "EMP-8 ordering code is NL8902ANAE2S, not an AE1S analog of NL8802ANAE1S.",
       "Added part number NL8902GR (DFN4035-8-GR).",
-      "Package question resolved: SMD only (EMP-8, DFN4035-8), no DIP-8.",
-      "Added press-release key specs: 10 nV/rtHz, 0.0004% THD at 1 kHz, 20 V/us, 9 MHz GBW, 10 pA Ib, 1.3 mA/ch, EMIRR 82 dB at 1.8 GHz, ±4 to ±16 V (supply wording conflicts between summaries), unity-gain stable.",
-      "Status changed from 'presumed' to active: the vendor product page is live and Akizuki and Kyohritsu stock it.",
-      "Removed the obsolete 'tooling limit' open question. Added a note that Nisshinbo's file naming (nl8802_s_e.pdf on Mouser, Ver.1.0) casts doubt on the inferred NL8902_E.pdf seed.",
-      "Reputation now adds NS-kobo's phono-EQ result (NL8902AN over OPA2604AP) and Macnica's 'entry-level' marketing positioning."
+      "Packages: SMD only (EMP-8, DFN4035-8), no DIP-8.",
+      "Added press-release key specs: 10 nV/√Hz, 0.0004% THD, 20 V/µs, 9 MHz, 10 pA, 1.3 mA/ch, EMIRR 82 dB, ±4 to ±16 V, unity-gain stable.",
+      "Status set to active: vendor product page is live; Akizuki and Kyohritsu stock it.",
+      "Nisshinbo file naming (nl8802_s_e.pdf, Ver.1.0) casts doubt on the inferred NL8902_E.pdf seed.",
+      "Reputation adds NS-kobo's phono-EQ result and Macnica's 'entry-level' positioning."
     ],
     "unverified_urls": [
       "https://www.nisshinbo-microdevices.co.jp/ja/products/operational-amplifier/spec/?product=nl8902",
@@ -288,29 +292,6 @@
       "https://av.watch.impress.co.jp/docs/news/2054127.html",
       "https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8921.html",
       "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8920a"
-    ],
-    "claims_confirmed": [
-      "Nisshinbo announced the NL8902 Series, a JFET-input dual audio op-amp, in a news release dated 2025-05-13: https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html",
-      "The vendor product page exists: https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=nl8902",
-      "Specs 10 nV/rtHz and 0.0004% THD at 1 kHz, 20 V/us, 9 MHz GBW, 10 pA Ib; packages EMP-8-AN and DFN4035-8-GR: https://audioxpress.com/news/new-nisshinbo-nl8902-high-performance-dual-audio-op-amp-with-jfet-input",
-      "EMIRR 82 dB at 1.8 GHz, 1.3 mA/ch, unity-gain stable, marketed as 'a new standard for entry-level models': https://www.macnica.co.jp/en/business/semiconductor/manufacturers/nisshinbo-microdevices/news/147476/",
-      "Supply range ±4.0 V to ±16 V (search summary of vendor/press pages): https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html",
-      "Ordering code NL8902ANAE2S is sold at Kyohritsu eleshop: https://eleshop.jp/shop/g/gP7P122/",
-      "NL8902AN is sold at Akizuki: https://akizukidenshi.com/catalog/g/g131145/",
-      "Vendor wording 'MUSES high-quality sound technology with improved productivity', launch covered 2025-05-13: https://news.mynavi.jp/techplus/article/20250513-3301537/",
-      "The new_western_elec post 'NL8902とMUSES8921' exists (Oct 2025): https://nw-electric.way-nifty.com/blog/2025/10/post-0c41e4.html",
-      "NS-kobo phono-EQ comparison reportedly rates NL8902AN above OPA2604AP: http://ns-kobo.la.coocan.jp/Op-amp_Comparison.html",
-      "The NL8802 sibling datasheet copy on Mouser is marked Ver.1.0: https://www.mouser.com/datasheet/2/294/nl8802_s_e-3435312.pdf"
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "japanese-audio-series",
-  "product_pages": [
-    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=nl8902",
-    "https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html",
-    "https://gb.profusion.uk/uk/nl8902anae2s",
-    "https://www.macnica.co.jp/en/business/semiconductor/manufacturers/nisshinbo-microdevices/news/147476/"
-  ],
-  "revision_chain_notes": "NL8902 has one vendor document, the Nisshinbo Micro Devices NL8902 datasheet. Nisshinbo is the sole source: the part launched 2025-05-13, and there are no acquirer re-issues or second sources. The chain from oldest to newest is: (1) the initial release around May 2025, with its revision string not seen. It is probably 'Ver.1.0' by analogy with the sibling NL8802 copy on Mouser, but that is unconfirmed. (2) Any later Ver. updates are unknown. None of the search summaries showed a doc number or a 'Ver.' footer. The search found no distributor copy of the datasheet PDF (Mouser /datasheet/2/, DigiKey, alldatasheet and similar). The only new URLs are two launch news articles, from Electronic Specifier and audioXpress, and they are not datasheets. Still missing: the Ver. string and date of the first release, any later revisions and their change summaries, and a revision-specific vendor PDF URL (the PDF link on the product page was not captured). Since the part is new (2025), there are no legacy vendor URLs from earlier eras, and the only archive seed is the current product page. Search budget: 3 WebSearch calls were issued. Two returned results, and the third was refused because the session-wide budget (200/200) was used up."
+    ]
+  }
 }

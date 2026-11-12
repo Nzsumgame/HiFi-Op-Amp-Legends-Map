@@ -1,133 +1,123 @@
 {
   "id": "MUSES8921",
-  "name": "MUSES8921 / MUSES8921AN (JFET-input dual, 2025 reworked derivative of MUSES8920/A)",
-  "tagline": "Nisshinbo's Oct 2025 'standard' JFET-input MUSES: MUSES8920/A reworked with flagship sound-tuning methods, with 5 pA bias pitched at DAC I/V stages.",
-  "technology": "JFET-input dual op-amp. Nisshinbo says it is based on MUSES8920/A, with the signal and power-supply paths reviewed and the element placement optimised ('素子配置の最適化'). That suggests a die re-layout, but a new layout is not confirmed. The process is not stated for MUSES8921. Operating supply is ±3.5 to ±17 V, the same range as MUSES8920A. The confirmed package is EMP8 (SOP8-class SMD). An earlier pass reported that the MUSES8920A datasheet says 'J-FET input, bipolar technology'; that was not re-verified.",
+  "name": "MUSES8921 / MUSES8921AN",
+  "type": "JFET-input audio op-amp, dual",
+  "tier": "C",
+  "category": "japanese-audio-series",
+  "tagline": "Nisshinbo's Oct 2025 'standard' JFET MUSES: MUSES8920/A reworked with flagship tuning methods; 5 pA bias for DAC I/V.",
   "manufacturers": [
     "Nisshinbo Micro Devices"
+  ],
+  "lineage": [
+    {
+      "vendor": "New Japan Radio (JRC/NJR)",
+      "role": "originator",
+      "period": "early 2010s–end of production",
+      "note": "Made predecessor MUSES8920 (separate part number); English datasheet Ver.10 mirrored at Mouser and DigiKey."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "role": "acquirer",
+      "period": "after MUSES8920 ended–present",
+      "note": "MUSES8920A replaced MUSES8920 with unchanged specs, circuit and sound; still sold as MUSES8920AE."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "role": "current",
+      "period": "2025-10-09–present",
+      "note": "Originator and sole source of MUSES8921, the 'standard model' of the J-FET MUSES line."
+    }
   ],
   "part_numbers": [
     {
       "pn": "MUSES8921",
       "channels": 2,
-      "vendors": [
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "active (released 2025-10-09)",
-      "notes": "Series/base name used on the vendor pages, the datasheet title and Akizuki listing g131734. One search summary listed DIP8 and SOP8 (EMP8) packages. No native-DIP8 orderable code was seen in any listing, so the DIP8 is unconfirmed. Vendor sample price: ¥500 each at 1,000 units."
+      "status": "active",
+      "note": "Released 2025-10-09. Sample price ¥500 at 1,000 units. Native DIP8 reported once, unconfirmed."
     },
     {
-      "pn": "MUSES8921AN",
+      "pn": "MUSES8921AN / MUSES8921ANAE2S",
       "channels": 2,
-      "vendors": [
-        "Nisshinbo Micro Devices"
-      ],
       "status": "active",
-      "notes": "EMP8 (SOP8-class) surface-mount version, named in Kyoritsu Products 'MUSES8921AN DIP化モジュール' listings (eleshop Q1U411, Yodobashi, Digit). The previous pass removed the 'AN' suffix as unverified; it is now confirmed for MUSES8921 in these retail listings. The full Nisshinbo orderable code (any taping suffix) was not seen."
+      "note": "EMP-8-AN (SOP8-class, 3.9×5.0×1.65 mm). ANAE2S is the DigiKey orderable code."
+    },
+    {
+      "pn": "MUSES8921GR",
+      "channels": 2,
+      "status": "unknown",
+      "note": "DFN4035-8-GR (4.0×3.5×0.75 mm), listed in the English datasheet."
     },
     {
       "pn": "MUSES8921AN-DIP",
       "channels": 2,
-      "vendors": [
-        "Kyoritsu Products (sold via eleshop / Digit / Yodobashi)"
-      ],
-      "status": "active (retail module; Digit announced stock on X on 2026-01-19, per the decoded status ID)",
-      "notes": "NOT a Nisshinbo part: a MUSES8921AN (EMP8) mounted on a DIP-8 conversion board with gold-plated round pins, for op-amp rolling. The draft's Japanese 'MUSES8921 DIP8' retail listing at about ¥1,700 is probably this module; not confirmed."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "New Japan Radio (JRC/NJR)",
-      "role": "originator of the predecessor design MUSES8920 (different part number)",
-      "period": "early 2010s until production ended",
-      "notes": "The JFET-input mass-production MUSES model. An English MUSES8920 datasheet 'Ver.10' is mirrored at Mouser (MUSES8920_E-259012.pdf), and DigiKey also hosts a copy. Dates of 2012-04-02 and 2013-11-25 from an earlier pass were not re-verified. Nisshinbo's MUSES8920A page says MUSES8920 production has ended and MUSES8920A replaces it."
-    },
-    {
-      "vendor": "Nisshinbo Micro Devices (NJR's successor company)",
-      "role": "MUSES8920A, the direct predecessor (separate part number)",
-      "period": "after MUSES8920 ended; still sold (e.g. MUSES8920AE at Akizuki g118179 and Kyoritsu eleshop)",
-      "notes": "Nisshinbo says MUSES8920A replaces MUSES8920 with no change in electrical characteristics, equivalent circuit or sound. Its headline typical specs match MUSES8921's."
-    },
-    {
-      "vendor": "Nisshinbo Micro Devices",
-      "role": "originator and sole source of MUSES8921",
-      "period": "2025-10-09 to present",
-      "notes": "English news release dated 2025-10-09 (about/info/20251009.html). The same date comes from decoding the Nisshinbo X post ID (06:05 UTC). Covered by AV Watch, PHILE WEB, Nikkei xTECH, EDN Japan, Macnica, New Electronics (UK), Electronics-Lab and Aeneas (TW). Vendor positioning: the 'standard model' of the J-FET-input MUSES line. No second source."
+      "status": "active",
+      "note": "Kyoritsu Products module, not Nisshinbo: AN on gold-pin DIP-8 board. Digit stock 2026-01-19."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise density e_n",
-      "value": "8.0 nV/rtHz typ",
+      "parameter": "Input noise (1 kHz)",
+      "value": "8.0 nV/√Hz typ",
       "condition": "f = 1 kHz",
-      "source": "Nisshinbo release 2025-10-09; New Electronics / Electronics-Lab launch articles"
+      "source": "Nisshinbo release 2025-10-09"
     },
     {
-      "parameter": "Gain-bandwidth product",
+      "parameter": "GBW",
       "value": "11 MHz typ",
-      "condition": "not stated in summary",
-      "source": "Kyoritsu MUSES8921AN-DIP listing and Nisshinbo release (search summaries)"
-    },
-    {
-      "parameter": "THD",
-      "value": "0.0004% typ",
-      "condition": "f = 1 kHz (other conditions not seen)",
-      "source": "New Electronics / Electronics-Lab launch articles citing Nisshinbo"
+      "condition": "",
+      "source": "Nisshinbo release; Kyoritsu listing"
     },
     {
       "parameter": "Slew rate",
-      "value": "25 V/us typ",
-      "condition": "not stated in summary",
-      "source": "Nisshinbo release; Kyoritsu listing (search summaries)"
+      "value": "25 V/µs typ",
+      "condition": "",
+      "source": "Nisshinbo release; Kyoritsu listing"
+    },
+    {
+      "parameter": "THD+N",
+      "value": "0.0004% typ (THD)",
+      "condition": "f = 1 kHz",
+      "source": "Launch articles citing Nisshinbo"
     },
     {
       "parameter": "Input bias current",
       "value": "5 pA typ",
-      "condition": "not stated; the vendor highlights it for I/V converter use",
-      "source": "Nisshinbo release 2025-10-09; Nisshinbo X post 2025-10-09"
+      "condition": "highlighted for I/V converters",
+      "source": "Nisshinbo release 2025-10-09"
     },
     {
-      "parameter": "Operating supply voltage",
-      "value": "±3.5 V to ±17 V",
-      "condition": "dual supply; absolute maximum ±18 V (the max figure comes from a single search summary)",
-      "source": "Nisshinbo release / launch articles; Kyoritsu MUSES8921AN-DIP listing (search summaries)"
+      "parameter": "Supply range",
+      "value": "±3.5 V to ±17 V (abs. max ±18 V, reportedly)",
+      "condition": "dual supply, same as MUSES8920A",
+      "source": "Nisshinbo release; Kyoritsu listing"
     },
     {
-      "parameter": "Input stage / channels / package",
-      "value": "J-FET input, dual; EMP8 (SOP8-class) confirmed, DIP8 unconfirmed",
-      "condition": "-",
-      "source": "Nisshinbo product pages; Akizuki datasheet title; Kyoritsu module listings"
-    },
-    {
-      "parameter": "Sample price",
-      "value": "¥500 each",
-      "condition": "1,000-unit quantity",
-      "source": "Nisshinbo launch release (search summary, earlier pass)"
+      "parameter": "Input stage",
+      "value": "J-FET input; EMP8 confirmed, DIP8 unconfirmed",
+      "condition": "",
+      "source": "Datasheet Ver. 1.0"
     }
   ],
   "reputation": {
-    "summary": "Too new (October 2025) for a settled enthusiast consensus. Most of the praise is the vendor's own claim, repeated by Japanese and international trade press: MUSES flagship sound-tuning methods were applied to MUSES8920/A by reviewing the signal and power paths and optimising element placement. Japanese DIY blogger new_western_elec compared it with NL8902 (Oct 2025) and published a listening post, 'MUSES8921を試聴しました' (Apr 2026). Per a search summary of that post, he treats MUSES8920 -> 8920A -> 8921 as step-wise version upgrades of the JFET MUSES line, and hears 8920A as slightly shallower and narrower in space than 8920 but wider in bandwidth. His specific MUSES8921 verdict was not captured. No ASR, Groner or other independent measurements were found. The headline typical specs equal MUSES8920A's, so any improvement is a sound/layout claim, not a spec gain.",
+    "summary": "Too new (October 2025) for a consensus. Praise is mostly Nisshinbo's own claim, repeated by trade press: flagship tuning applied to MUSES8920/A via signal/power-path review and element placement. Blogger new_western_elec compared it with NL8902 and posted a listening test (Apr 2026), framing 8920 → 8920A → 8921 as step-wise upgrades. Headline specs equal MUSES8920A's. No independent measurements.",
     "sonic_descriptors": [
-      "Vendor marketing only: 'true sound that resonates with the heart' (心に響く\"真実の音\") (Macnica/Nisshinbo launch headline)",
-      "Vendor claim: better sound than MUSES8920/A through signal/power-path review and element-placement optimisation",
-      "new_western_elec (per search summary, Apr 2026): part of a step-wise 8920 -> 8920A -> 8921 evolution; detailed MUSES8921 descriptors not captured",
-      "Predecessor MUSES8920, NOT MUSES8921 (JP community folklore, not re-verified): clean and dry, high resolution, no harshness"
+      "'true sound' (vendor claim)",
+      "better than MUSES8920/A (vendor)",
+      "step-wise 8920A upgrade (blogger)"
     ],
     "typical_uses": [
-      "DAC I/V converter (5 pA input bias; the vendor says it is ideal for this)",
-      "Preamplifier / line amplifier",
-      "Active filters",
-      "Headphone amplifiers, including portable (vendor target market)",
-      "PC, desktop and portable audio (vendor target market)",
-      "Op-amp rolling via the Kyoritsu MUSES8921AN-DIP conversion module"
+      "DAC I/V converters (5 pA bias)",
+      "Preamps, line amps and active filters",
+      "Headphone amps, including portable",
+      "PC, desktop and portable audio",
+      "Op-amp rolling via Kyoritsu MUSES8921AN-DIP module"
     ],
     "caveats": [
-      "Different part number from MUSES8920/MUSES8920A; do not treat it as the same die.",
-      "Headline typical specs (8.0 nV/rtHz, 0.0004%, 25 V/us, 11 MHz, 5 pA, ±3.5 to ±17 V) match MUSES8920A's; measured benefits are unproven.",
-      "No independent measurements or ASR/Groner data found.",
-      "Retail 'DIP' units seen in Japan are the SMD MUSES8921AN on an adapter board (Kyoritsu MUSES8921AN-DIP), not a native DIP8, so check the height and fit in sockets.",
-      "Costs more at retail than MUSES8920AE (about ¥1,700 vs ¥1,200 in Japanese listings; the MUSES8921 price probably includes the adapter).",
-      "Long-term supply of the MUSES line is uncertain. new_western_elec reported (2024-06 factory visit) that MUSES05 and MUSES03 were dropped, and he voiced concern after Nisshinbo HD news in Dec 2025 (earlier pass, not re-verified)."
+      "Separate part number from MUSES8920/8920A; do not assume the same die.",
+      "Typical specs (8.0 nV/√Hz, 0.0004%, 25 V/µs, 11 MHz, 5 pA, ±3.5–±17 V) match MUSES8920A; benefits unmeasured; no ASR/Groner data.",
+      "Retail 'DIP' units are SMD MUSES8921AN on an adapter board; check height and socket fit.",
+      "Costs more than MUSES8920AE (about ¥1,700 vs ¥1,200 in Japan; the 8921 price probably includes the adapter).",
+      "MUSES line supply uncertain: MUSES05/03 reportedly dropped (2024-06), blogger concern after Dec 2025 Nisshinbo HD news."
     ],
     "sources": [
       "https://www.nisshinbo-microdevices.co.jp/en/about/info/20251009.html",
@@ -148,6 +138,17 @@
       "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8921"
     ]
   },
+  "counterfeit_notes": "No MUSES8921 fakes reported yet. MUSES01/02 fakes are reportedly common on Chinese marketplaces (genuine laser-marked, fakes ink-printed). Buy from Akizuki, Kyoritsu, Mouser or DigiKey. Distrust any native-DIP8 'MUSES8921D'; relabelled MUSES8920/A is a plausible risk.",
+  "alternatives": [
+    "MUSES8920A / MUSES8920AE (same headline specs)",
+    "NL8902 (Nisshinbo JFET dual)",
+    "MUSES01 (flagship JFET dual)",
+    "MUSES8820 / NL8802 (bipolar siblings)",
+    "MUSES8832 (low-voltage ±1.35 V / +2.7 V bipolar)",
+    "OPA1642 (JFET)",
+    "OPA1656 (CMOS)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "Nisshinbo Micro Devices (copy hosted by Akizuki Denshi)",
@@ -159,19 +160,19 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Japanese datasheet Ver.1.0 (the launch version), attached to Akizuki catalogue g131734. Revision confirmed from the search-result title; the printed date was not seen."
+      "note": "Launch version, Akizuki catalogue g131734; printed date not seen."
     },
     {
       "vendor": "Nisshinbo Micro Devices (copy hosted by Topas Electronic, DE)",
       "title": "Datasheet MUSES8921 High Quality Sound, J-FET Input Dual Operational Amplifier (English)",
       "doc_number": "MUSES8921_E",
-      "revision": "",
+      "revision": "Ver. 1.0",
       "date": "",
       "url": "https://www.topas.de/fileadmin/Dateien/NIS/MUSES8921_E.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "English datasheet copy from a European distributor. URL and title confirmed by search; revision not shown in the summary."
+      "revision_status": "probable",
+      "note": "English copy from a German distributor; Ver. 1.0 reported, not seen."
     },
     {
       "vendor": "Nisshinbo Micro Devices (alldatasheet.jp copy)",
@@ -183,7 +184,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Third-party copy (alldatasheet ID 2271959); URL confirmed by search, revision not seen."
+      "note": "alldatasheet ID 2271959; revision not seen."
     },
     {
       "vendor": "Nisshinbo Micro Devices",
@@ -195,7 +196,7 @@
       "url_kind": "vendor_current",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed. The draft inferred this URL from Nisshinbo naming patterns. A WebSearch summary text quoted it, but it never appeared as a result link. The filename matches the Akizuki copy."
+      "note": "Inferred from Nisshinbo naming; filename matches the Akizuki copy."
     },
     {
       "vendor": "Nisshinbo Micro Devices",
@@ -207,7 +208,7 @@
       "url_kind": "vendor_current",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed; inferred from Nisshinbo naming patterns. The filename matches the Topas copy."
+      "note": "Inferred from Nisshinbo naming; filename matches the Topas copy."
     },
     {
       "vendor": "Nisshinbo Micro Devices (alldatasheetcn.com search index)",
@@ -219,46 +220,73 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Chinese sister site of alldatasheet. This is a search/index page, probably pointing to the same file as alldatasheet.jp entry 2271959, which is already listed. No version was shown."
+      "note": "Chinese index page, probably the same file as alldatasheet.jp 2271959."
     },
     {
       "vendor": "Nisshinbo Micro Devices (Datasheet Archive MUSES index)",
       "title": "Datasheet Archive: MUSES datasheets",
-      "doc_number": "n/a (generic MUSES index page)",
+      "doc_number": "MUSES",
       "revision": "",
       "date": "",
       "url": "https://datasheetarchive.com/muses-datasheet.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Generic index of MUSES-family datasheets that came up for MUSES8921 queries. The search result did not confirm that it holds a MUSES8921 file."
+      "note": "Generic MUSES index; MUSES8921 file not confirmed."
     }
+  ],
+  "product_pages": [
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8921",
+    "https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES8921.html",
+    "https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8921.html",
+    "https://akizukidenshi.com/catalog/g/g131734/",
+    "https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES8921ANAE2S/28174519",
+    "https://www.nisshinbo-microdevices.co.jp/en/about/info/20251009.html",
+    "https://www.everythingpe.com/products/power-operational-amplifiers/nisshinbo-micro-devices/1071-353-muses8921-series",
+    "https://digit.theshop.jp/items/132565365",
+    "https://eleshop.jp/shop/g/gQ1U411/"
   ],
   "revision_history": [
     {
       "vendor": "Nisshinbo Micro Devices",
-      "doc_number": "MUSES8921_J (Japanese datasheet)",
-      "revision": "Ver.1.0",
-      "date": "not seen (product released 2025-10-09)",
-      "changes": "Initial release. It is the only version found (Akizuki copy). No later Ver. was seen as of Sep 2026."
+      "doc_number": "MUSES8921_J",
+      "revision": "Ver. 1.0",
+      "date": "2025-10",
+      "changes": "Initial release at launch (2025-10-09); printed date not seen. No later version found as of Sep 2026."
     },
     {
       "vendor": "Nisshinbo Micro Devices",
-      "doc_number": "MUSES8921_E (English datasheet)",
-      "revision": "Ver.1.0",
-      "date": "not shown (product released 2025-10-09)",
-      "changes": "First English edition. The web-search summary calls the topas.de copy (MUSES8921_E.pdf) 'Ver.1.0', but the PDF title in the result did not show the Ver. string (medium confidence). It lists these variants: MUSES8921AN (EMP-8-AN, 3.9x5.0x1.65 mm) and MUSES8921GR (DFN4035-8-GR, 4.0x3.5x0.75 mm). Typical specs are 8.0 nV/rtHz, 0.0004% THD, 25 V/us, 11 MHz GBP, 5 pA Ib and a +/-3.5 V to +/-17 V supply. No later English Ver. was found as of Sep 2026."
+      "doc_number": "MUSES8921_E",
+      "revision": "Ver. 1.0",
+      "date": "2025-10",
+      "changes": "First English edition (Topas copy). Lists MUSES8921AN (EMP-8-AN) and MUSES8921GR (DFN4035-8-GR). No later version found as of Sep 2026."
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No counterfeit reports specific to MUSES8921 were found; the part has only been on sale since October 2025. General Japanese community advice (earlier pass, not re-verified) is that MUSES01/02 fakes are common on Chinese marketplaces; genuine parts are laser-marked and fakes are often ink-printed. Buy from authorised channels such as Akizuki, Kyoritsu Eleshop/Digit, Mouser and DigiKey. Be sceptical of any bare 'MUSES8921D' or native-DIP8 MUSES8921: only the EMP8 MUSES8921AN is confirmed, and retail DIP units seen are Kyoritsu adapter modules (MUSES8921AN-DIP). Relabelled MUSES8920/8920A or generic JFET duals are a plausible but unverified risk. There is no same-number silicon change: MUSES8921 is a separate part number and a vendor-described derivative of MUSES8920/A.",
-  "alternatives": [
-    "MUSES8920A / MUSES8920AE: the direct predecessor, with the same headline specs",
-    "NL8902: a Nisshinbo JFET dual compared with MUSES8920 and MUSES8921 by new_western_elec",
-    "MUSES01: Nisshinbo flagship JFET-input dual",
-    "MUSES8820 / NL8802: bipolar-input siblings",
-    "MUSES8832: Nisshinbo low-voltage (±1.35 V / +2.7 V) bipolar-input dual with full-swing output",
-    "TI OPA1642 (JFET) / OPA1656 (CMOS): modern non-Japanese low-bias audio duals"
+  "revision_chains": [
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "doc_number": "MUSES8921_J",
+      "known": [
+        {
+          "rev": "Ver. 1.0",
+          "date": "2025-10"
+        }
+      ],
+      "missing": [],
+      "note": "Akizuki copy and vendor URL; watch vendor PDF for silent in-place updates."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "doc_number": "MUSES8921_E",
+      "known": [
+        {
+          "rev": "Ver. 1.0",
+          "date": "2025-10"
+        }
+      ],
+      "missing": [],
+      "note": "Topas copy and vendor URL; Ver. reported, not seen. No Mouser/LCSC/Octopart copy found."
+    }
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -280,14 +308,11 @@
     "https://www.topas.de/fileadmin/Dateien/NIS/MUSES8921_E.pdf"
   ],
   "open_questions": [
-    "The printed date of datasheet Ver.1.0 was not seen, and the English datasheet's Ver. is not confirmed. No later revision was found.",
-    "The vendor PDF URLs .../ja/pdf/datasheet/MUSES8921_J.pdf and .../en/pdf/datasheet/MUSES8921_E.pdf are not confirmed as result links (the _J URL appeared only in summary text).",
-    "Does a native DIP8 orderable version exist (e.g. a 'D' suffix)? One search summary mentioned DIP8, but no listing shows a DIP8 code. What is the full Nisshinbo orderable code for MUSES8921AN (taping suffix)?",
-    "Is MUSES8921 a new mask/die layout, or MUSES8920A silicon with other changes? The vendor wording '素子配置の最適化' (element placement optimisation) suggests a re-layout; unconfirmed.",
-    "Quiescent current, input current noise, output current, output swing and THD test conditions were not seen for MUSES8921. The ±18 V absolute maximum rests on one search summary.",
-    "The detailed MUSES8921 verdicts of new_western_elec (2025-10 NL8902 comparison; 2026-04 listening post) were not captured.",
-    "No independent measurements (ASR, Groner, Japanese blog THD/FFT) were found.",
-    "The Mouser MUSES8920A PDF (…/MUSES8920A_E-3675900.pdf), the MUSES8920 datasheet dates (2012-04-02, 2013-11-25) and the MUSES8920A 'bipolar technology' wording are still unverified."
+    "Printed date of datasheet Ver. 1.0 and the English edition's Ver.; check the vendor PDF URLs directly.",
+    "Is there a native DIP8 (e.g. 'D' suffix) orderable version?",
+    "Is MUSES8921 a new die layout ('素子配置の最適化', element placement optimisation) or MUSES8920A silicon?",
+    "Missing specs: supply current, current noise, output current and swing, THD test conditions; confirm ±18 V absolute maximum.",
+    "Independent measurements (ASR, Groner, blog FFTs) and new_western_elec's detailed MUSES8921 verdict."
   ],
   "sources": [
     "https://www.nisshinbo-microdevices.co.jp/en/about/info/20251009.html",
@@ -328,53 +353,39 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "Nisshinbo announced the MUSES8921 series on 2025-10-09 (https://www.nisshinbo-microdevices.co.jp/en/about/info/20251009.html).",
+      "Akizuki's Japanese datasheet copy is Ver.1.0 (https://akizukidenshi.com/goodsaffix/MUSES8921_J.pdf).",
+      "Topas hosts an English datasheet copy, MUSES8921_E.pdf (https://www.topas.de/fileadmin/Dateien/NIS/MUSES8921_E.pdf).",
+      "Operating supply ±3.5 to ±17 V (https://www.newelectronics.co.uk/content/product-launches/nisshinbo-presents-new-dual-operational-amplifier-with-j-fet-input-for-high-quality-sound).",
+      "8.0 nV/√Hz and 0.0004% THD at 1 kHz, 25 V/µs, 5 pA bias (https://www.electronics-lab.com/nisshinbo-launches-dual-audio-operational-amplifier-for-high-quality-sound-and-audio-applications/).",
+      "11 MHz GBW, ±3.5 to ±17 V, EMP8-to-DIP module for MUSES8921AN (https://eleshop.jp/shop/g/gQ1U411/).",
+      "Kyoritsu Products sells MUSES8921AN as the MUSES8921AN-DIP module (https://www.yodobashi.com/product/100000001009795066/).",
+      "Based on MUSES8920/A with signal/power path review and element-placement optimisation (https://av.watch.impress.co.jp/docs/news/2054127.html).",
+      "Official product pages exist (https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8921 ; https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES8921.html).",
+      "new_western_elec posted a MUSES8921 listening test in Apr 2026 (https://nw-electric.way-nifty.com/blog/2026/04/post-f925c9.html).",
+      "Mouser hosts the English MUSES8920 datasheet Ver.10 (https://www.mouser.com/datasheet/2/294/MUSES8920_E-259012.pdf)."
+    ],
     "refuted_claims": [
-      "The draft said the supply range was unconfirmed for MUSES8921. It is confirmed as ±3.5 to ±17 V operating (absolute maximum ±18 V per one summary).",
-      "The previous pass removed the 'AN' suffix as unverified. MUSES8921AN is confirmed as the EMP8 part name in Kyoritsu Products module listings."
+      "Supply range is not unconfirmed: it is ±3.5 to ±17 V operating (absolute maximum ±18 V, reportedly).",
+      "The 'AN' suffix is real: MUSES8921AN is the EMP8 part name in Kyoritsu Products module listings."
     ],
     "corrections": [
-      "Added part number MUSES8921AN (EMP8/SOP8-class) and the third-party Kyoritsu module MUSES8921AN-DIP (EMP8 on a DIP-8 conversion board). The Japanese 'DIP8' retail units are probably this module, not a native DIP8.",
-      "Added datasheet Ver.1.0 (Japanese, MUSES8921_J) from the Akizuki copy. Added an English copy at Topas and a third-party copy at alldatasheet.jp. Started revision_history with Ver.1.0.",
-      "Added the official English news release (2025-10-09) and the English MUSES-series page. Launch-date evidence is now a vendor release, not only the decoded X ID.",
-      "Added key spec: operating supply ±3.5 to ±17 V (absolute maximum ±18 V). THD condition set to f = 1 kHz.",
-      "The inferred vendor PDF URLs (MUSES8921_J/_E.pdf) are kept as low-confidence vendor_current datasheet entries. The _J URL appeared in a search summary, not as a result link.",
-      "Reputation now adds a hedged search-summary reading of new_western_elec's April 2026 post (step-wise 8920 -> 8920A -> 8921 evolution); his MUSES8921-specific verdict is still not captured.",
-      "Added the MUSES8920 Ver.10 English datasheet copies (Mouser, DigiKey) to lineage and archive seeds.",
-      "silicon_changes stays empty. The discovery hint is confirmed only in the sense that MUSES8921 has its own part number and is a vendor-described MUSES8920/A derivative. No same-number revision, PCN or die change was found."
+      "Added MUSES8921AN (EMP8) and the Kyoritsu MUSES8921AN-DIP module; Japanese 'DIP8' retail units are probably this module.",
+      "Added datasheet Ver.1.0 (Japanese, Akizuki), English copy at Topas and alldatasheet.jp copy; revision history started.",
+      "Added the English news release (2025-10-09) and English MUSES-series page as launch-date evidence.",
+      "Added supply ±3.5 to ±17 V (abs. max ±18 V); THD condition set to f = 1 kHz.",
+      "Inferred vendor PDF URLs (MUSES8921_J/_E.pdf) kept as low-confidence datasheet entries.",
+      "Reputation adds new_western_elec's April 2026 framing (8920 → 8920A → 8921); his specific verdict not captured.",
+      "Added MUSES8920 Ver.10 English datasheet copies (Mouser, DigiKey) to lineage and archive seeds.",
+      "silicon_changes stays empty: MUSES8921 is a separate part number; no same-number revision, PCN or die change found."
     ],
     "unverified_urls": [
       "https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES8921_J.pdf",
       "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES8921_E.pdf",
       "https://www.mouser.com/datasheet/2/294/MUSES8920A_E-3675900.pdf",
       "https://shopping.yahoo.co.jp/searchranking/%E9%AB%98%E9%9F%B3%E8%B3%AA%E3%82%AA%E3%83%9A%E3%82%A2%E3%83%B3%E3%83%97/0/"
-    ],
-    "claims_confirmed": [
-      "Nisshinbo announced the MUSES8921 series on 2025-10-09 (https://www.nisshinbo-microdevices.co.jp/en/about/info/20251009.html)",
-      "The Japanese datasheet copy at Akizuki is Ver.1.0 (https://akizukidenshi.com/goodsaffix/MUSES8921_J.pdf)",
-      "An English datasheet copy MUSES8921_E.pdf is hosted by Topas (https://www.topas.de/fileadmin/Dateien/NIS/MUSES8921_E.pdf)",
-      "Operating supply is ±3.5 to ±17 V (https://www.newelectronics.co.uk/content/product-launches/nisshinbo-presents-new-dual-operational-amplifier-with-j-fet-input-for-high-quality-sound)",
-      "Typical specs 8.0 nV/rtHz @1 kHz, 0.0004% THD @1 kHz, 25 V/us and 5 pA bias (https://www.electronics-lab.com/nisshinbo-launches-dual-audio-operational-amplifier-for-high-quality-sound-and-audio-applications/)",
-      "11 MHz GBW, ±3.5 to ±17 V and an EMP8-to-DIP module for MUSES8921AN (https://eleshop.jp/shop/g/gQ1U411/)",
-      "MUSES8921AN is sold as a DIP-conversion module MUSES8921AN-DIP by Kyoritsu Products (https://www.yodobashi.com/product/100000001009795066/)",
-      "Based on MUSES8920/A, with signal/power path review and element-placement optimisation (https://av.watch.impress.co.jp/docs/news/2054127.html)",
-      "Official English and Japanese product pages exist (https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8921 ; https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES8921.html)",
-      "new_western_elec published a MUSES8921 listening post in Apr 2026 (https://nw-electric.way-nifty.com/blog/2026/04/post-f925c9.html)",
-      "Mouser hosts an English MUSES8920 datasheet Ver.10 (https://www.mouser.com/datasheet/2/294/MUSES8920_E-259012.pdf)"
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "japanese-audio-series",
-  "product_pages": [
-    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8921",
-    "https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES8921.html",
-    "https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8921.html",
-    "https://akizukidenshi.com/catalog/g/g131734/",
-    "https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES8921ANAE2S/28174519",
-    "https://www.nisshinbo-microdevices.co.jp/en/about/info/20251009.html",
-    "https://www.everythingpe.com/products/power-operational-amplifiers/nisshinbo-micro-devices/1071-353-muses8921-series",
-    "https://digit.theshop.jp/items/132565365",
-    "https://eleshop.jp/shop/g/gQ1U411/"
-  ],
-  "revision_chain_notes": "MUSES8921 has one vendor document with two language editions, both from Nisshinbo Micro Devices. There are no acquirer reissues and no second sources. Its JRC/NJR ancestry belongs to separate part numbers (MUSES8920 at Ver.2012-04-02 and Ver.10, then MUSES8920A).\n\n(1) MUSES8921_J (Japanese). Ver.1.0 is the only version known, released at launch on 2025-10-09. Holding copies: akizukidenshi.com/goodsaffix/MUSES8921_J.pdf (the title shows Ver.1.0) and the vendor's /ja/pdf/datasheet/MUSES8921_J.pdf.\n\n(2) MUSES8921_E (English). Ver.1.0 is the only version known, per the search summary for the topas.de copy; the title did not show it. Holding copies: topas.de and the vendor's /en/pdf/datasheet/MUSES8921_E.pdf.\n\nAcross 4 searches, no Ver.1.1, Ver.2.0 or later edition turned up in either language. The part is less than a year old, so there are no earlier editions to find. The only chain link that could still be missing is a quiet post-launch update in place at the vendor URLs. To catch one, the vendor PDF URLs are added as archive seeds so Wayback captures can be compared. The date and version inside the vendor-hosted PDFs have still not been checked directly.\n\nDistributor coverage found: DigiKey product page for MUSES8921ANAE2S (version not shown); retail DIP-module listings at digit.theshop.jp and eleshop.jp; index pages at alldatasheetcn and datasheetarchive. No MUSES8921 copy was found at mouser.com/datasheet, mm.digikey.com, LCSC, Octopart or datasheet4u; the Mouser and DigiKey PDF hits were MUSES8920 only."
+    ]
+  }
 }

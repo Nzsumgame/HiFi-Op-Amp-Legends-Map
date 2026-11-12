@@ -1,197 +1,141 @@
 {
   "id": "OPA2107",
-  "name": "OPA2107 (Burr-Brown/TI precision Difet JFET-input dual)",
-  "tagline": "Burr-Brown Difet JFET dual (4.5 MHz, 18 V/us) that op-amp rollers call warm and full; HiFiMAN paired it with the OPA627 in its HM-801 and HM-901.",
-  "technology": "Dual FET-input op-amp on Burr-Brown's proprietary dielectrically isolated (Difet) process. The datasheet says Difet keeps input bias current very low (10 pA max) without giving up offset, drift or noise. The Burr-Brown macromodel (Rev A, 10/17/90) uses a P-channel JFET input pair (.MODEL JX PJF). The datasheet and TI parametrics give 4.5 MHz GBW, 18 V/us slew and unity-gain stability. It is the faster sibling of the OPA2111 Difet dual: the 1996 EWB library gives the OPA2111 2 MHz and 2 V/us.",
+  "name": "OPA2107 / OPA2107AP / OPA2107AU",
+  "type": "Difet JFET-input precision dual op-amp",
+  "tier": "B",
+  "category": "jfet-input",
+  "tagline": "Burr-Brown Difet JFET dual (4.5 MHz, 18 V/µs) rollers call warm and full; HiFiMAN paired it with OPA627 in HM-801/901.",
   "manufacturers": [
     "Burr-Brown",
     "Texas Instruments"
-  ],
-  "part_numbers": [
-    {
-      "pn": "OPA2107AP",
-      "channels": 2,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "Obsolete (DigiKey listing)",
-      "notes": "8-pin plastic DIP. c't Lab's AD16-8 parts list calls for 'OPA2107A DIL'. This is the version used for op-amp rolling."
-    },
-    {
-      "pn": "OPA2107AU",
-      "channels": 2,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "Obsolete (search summary for the family; not confirmed for this part alone)",
-      "notes": "SO-8. Listed in the 1996 EWB libraries and the EasyEDA Precision_OpAmps library. The datasheet lists DIP-8 and SO-8 packages."
-    },
-    {
-      "pn": "OPA2107AU-2K5",
-      "channels": 2,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "unknown (probably obsolete along with the AU)",
-      "notes": "SO-8 on tape and reel (2500 pieces). Named in the manualmachine datasheet mirror title 'OPA2107AP, OPA2107AU, OPA2107AU-2K5'."
-    },
-    {
-      "pn": "OPA2107AM",
-      "channels": 2,
-      "vendors": [
-        "Burr-Brown"
-      ],
-      "status": "unknown (legacy; probably obsolete)",
-      "notes": "TO-99 metal can inferred from Burr-Brown's M-suffix convention. Seen only in the 1996 EWB Burr-Brown model libraries. Not among the packages the late datasheets list (DIP-8, SO-8)."
-    },
-    {
-      "pn": "OPA2107BM",
-      "channels": 2,
-      "vendors": [
-        "Burr-Brown"
-      ],
-      "status": "unknown (legacy; probably obsolete)",
-      "notes": "Probably the TO-99 high grade. In the EWB files it has Aol 100,000 (vs 63,000) and about half the bias and offset current. BURR_BR1.LIB gives Vos 50 uV, but BUR_BRWN.M15 gives 100 uV."
-    },
-    {
-      "pn": "OPA2107SM",
-      "channels": 2,
-      "vendors": [
-        "Burr-Brown"
-      ],
-      "status": "unknown (legacy; probably obsolete)",
-      "notes": "TO-99, presumably the military-temperature (S) grade. Seen only in the 1996 EWB libraries."
-    }
   ],
   "lineage": [
     {
       "vendor": "Burr-Brown",
       "role": "originator",
-      "period": "1989 to 2000",
-      "notes": "Product data sheet PDS-863 series, (c)1989. The TI reissue header gives an original date of January 1989. Editions seen: PDS-863B (printed October 1993) and PDS-863E (printed April 1998). The BB macromodel is dated 10/17/90 Rev A. The OPA2107E model was revised 3/21/92. The 1996 EWB libraries list the AM, AP, AU, BM and SM grades."
+      "period": "1989–2000",
+      "note": "PDS-863, ©1989 (original January 1989); editions B 1993-10, E 1998-04. Macromodel Rev A 10/17/90; OPA2107E model 3/21/92."
     },
     {
       "vendor": "Texas Instruments",
-      "role": "acquirer (bought Burr-Brown in 2000)",
-      "period": "2000 to obsolescence (date not found)",
-      "notes": "TI reissued the datasheet as SBOS161 (rev A dated July 2003) and published a PSpice model, SBOM045. The OPA2107AP is now obsolete (DigiKey). A die broker, diedevices.com, lists OPA2107 bare die. HiFiMAN designed it into the HM-801 (2009), HM-602 (2010), HM-601LE (on sale in 2014) and HM-901 (2013). No second source is known."
+      "role": "acquirer",
+      "period": "2000–obsolete",
+      "note": "Bought Burr-Brown in 2000. Reissued as SBOS161 (rev A, July 2003); PSpice model SBOM045. No second source."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "OPA2107AP",
+      "channels": 2,
+      "status": "obsolete",
+      "note": "DIP-8, the rolling version; c't Lab AD16-8 specifies it. Obsolete per DigiKey."
+    },
+    {
+      "pn": "OPA2107AU / OPA2107AU-2K5",
+      "channels": 2,
+      "status": "unknown",
+      "note": "SO-8; -2K5 = 2,500-piece tape and reel. Reportedly obsolete. Model CMRR 92 dB."
+    },
+    {
+      "pn": "OPA2107AM",
+      "channels": 2,
+      "status": "unknown",
+      "note": "TO-99 inferred from M suffix; 1996 EWB libraries only. Model Aol 63,000, CMRR 94 dB."
+    },
+    {
+      "pn": "OPA2107BM",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Likely TO-99 top grade. Models: Aol 100,000, CMRR 100 dB, Vos 50–100 µV, half bias."
+    },
+    {
+      "pn": "OPA2107SM",
+      "channels": 2,
+      "status": "unknown",
+      "note": "TO-99, presumably military-temperature grade; only in 1996 EWB libraries."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise density",
-      "value": "8 nV/rtHz",
-      "condition": "f = 10 kHz (datasheet headline; the 1 kHz value was not seen)",
-      "source": "TI SBOS161A features list: https://www.ti.com/lit/ds/symlink/opa2107.pdf"
+      "parameter": "Input noise (1 kHz)",
+      "value": "8 nV/√Hz (at 10 kHz; 1 kHz value not seen)",
+      "condition": "f = 10 kHz, headline",
+      "source": "SBOS161A"
     },
     {
-      "parameter": "Input offset voltage",
-      "value": "1 mV max (headline); about 100 uV typical in the EWB models",
-      "condition": "25 C",
-      "source": "TI SBOS161A features; EWB BURR_BR1.LIB / BUR_BRWN.M15"
-    },
-    {
-      "parameter": "Offset drift",
-      "value": "10 uV/C max",
-      "condition": "headline",
-      "source": "TI SBOS161A features: https://www.ti.com/lit/ds/symlink/opa2107.pdf"
-    },
-    {
-      "parameter": "Input bias current",
-      "value": "10 pA max (headline); models give about 1-4 pA",
-      "condition": "25 C",
-      "source": "TI SBOS161A features; EWB model libraries"
-    },
-    {
-      "parameter": "Settling time",
-      "value": "2 us to 0.01%",
-      "condition": "headline",
-      "source": "TI SBOS161A features: https://www.ti.com/lit/ds/symlink/opa2107.pdf"
-    },
-    {
-      "parameter": "Gain-bandwidth product",
-      "value": "4.5 MHz",
-      "condition": "typical",
-      "source": "TI product folder and distributor parametrics (https://www.ti.com/product/OPA2107, industrycomponent OPA2107AP listing '4.5MHZ'); matches the BB macromodel GA/(2*pi*C2) = 4.50 MHz"
+      "parameter": "GBW",
+      "value": "4.5 MHz typ",
+      "condition": "matches BB macromodel (4.50 MHz)",
+      "source": "TI product page; distributor parametrics"
     },
     {
       "parameter": "Slew rate",
-      "value": "18 V/us",
-      "condition": "typical",
-      "source": "TI/distributor parametrics (https://www.ti.com/product/OPA2107); matches the BB macromodel ISS/C2 = 18.0 V/us"
+      "value": "18 V/µs typ",
+      "condition": "settling 2 µs to 0.01%",
+      "source": "TI product page; distributor parametrics"
     },
     {
-      "parameter": "Supply voltage",
-      "value": "+/-4.5 V to +/-18 V (9 V to 36 V)",
+      "parameter": "Supply range",
+      "value": "±4.5 V to ±18 V (9 V to 36 V)",
       "condition": "operating range",
-      "source": "Distributor parametric listing: https://www.industrycomponent.com/en/index.php?main_page=product_info&products_id=2165455"
+      "source": "Distributor parametrics"
     },
     {
-      "parameter": "Quiescent current",
-      "value": "under 2.5 mA per amplifier (datasheet text); a parametric listing gives 'Iq per channel 4.5 mA', which is probably the total for both amplifiers or a max value (unresolved)",
-      "condition": "+/-15 V",
-      "source": "Datasheet description (https://www.ti.com/lit/ds/symlink/opa2107.pdf); the OPA2107E macromodel implies about 2.25 mA per amplifier"
+      "parameter": "Supply current",
+      "value": "<2.5 mA per amp (a listing says 4.5 mA/ch)",
+      "condition": "±15 V; discrepancy unresolved",
+      "source": "SBOS161A"
     },
     {
-      "parameter": "Open-loop gain",
-      "value": "63,000 V/V (about 96 dB) for A and S grades; 100,000 V/V for BM",
-      "condition": "DC, model values (not a datasheet figure)",
-      "source": "EWB BURR_BR1.LIB and BUR_BRWN.M15"
+      "parameter": "Output current",
+      "value": "≈40 mA short-circuit",
+      "condition": "model-derived",
+      "source": "EWB and BB macromodels"
     },
     {
-      "parameter": "CMRR",
-      "value": "94 dB (AP/AM/SM), 92 dB (AU), 100 dB (BM)",
-      "condition": "model values (not a datasheet figure)",
-      "source": "EWB BURR_BR1.LIB"
+      "parameter": "Offset voltage",
+      "value": "1 mV max (early edition 500 µV); drift 10 µV/°C max",
+      "condition": "25 °C; models ≈100 µV typ",
+      "source": "SBOS161A; PDS-863 early edition"
     },
     {
-      "parameter": "Output current limit",
-      "value": "about 40 mA",
-      "condition": "short-circuit; model-derived",
-      "source": "EWB BURR_BR1.LIB (0.04 A); BB macromodel"
-    },
-    {
-      "parameter": "Minimum usable supply in headphone-amp test",
-      "value": "10.6 V total, for both 0.5 V into 33 ohm and 2.0 V into 330 ohm",
-      "condition": "Tangent 'Notes on Op-Amps' bench test (OPA627: 6.8 V / 9.8 V). Price then $12.25 per dual at Digi-Key.",
-      "source": "Soomal repost of the DiyEden translation: https://github.com/h2dcc/soomal.github.io/blob/main/content/posts/10100000343.md"
+      "parameter": "Input bias current",
+      "value": "10 pA max (models ≈1–4 pA)",
+      "condition": "25 °C",
+      "source": "SBOS161A"
     },
     {
       "parameter": "Input stage",
-      "value": "P-channel JFET differential pair (Difet, dielectrically isolated)",
+      "value": "P-channel JFET pair, Difet dielectric isolation",
       "condition": "unity-gain stable",
-      "source": "Datasheet description; BB macromodel .MODEL JX PJF"
+      "source": "Datasheet; BB macromodel (PJF)"
     }
   ],
   "reputation": {
-    "summary": "A cult favourite from the Head-Fi op-amp-rolling era. Forum threads (Head-Fi 'OPA2107 WOW', diyAudio), Japanese blogs and Zigsow reviews reportedly call it warm, full and tube-like, placing it between the OPA2604 and OPA627. Those pages were not re-checked. Soomal (2016) puts it in a warm, full, spacious 'DiFET' sound group, a group that also covers the OPA2134 and OPA2604, and says the OPA627/637 beat it on treble resolution. Soomal's 2013 HM-901 review admits its reviewers had not heard the OPA2107 in any other device. HiFiMAN used it in the HM-801 (with OPA627), HM-602, HM-601LE and HM-901 (OPA627 + OPA2107 in the LPF). c't Lab (2007) specifies it, or an AD712, as the input amplifier of its AD16-8 ADC card, and calls it 'weit besser' (far better) than a TL072 for the 16-bit DA12-8. No independent measurements were found.",
+    "summary": "A cult favourite of the Head-Fi rolling era. Forums, Japanese blogs and Zigsow call it warm, full and tube-like, between OPA2604 and OPA627. Soomal groups it in a warm, spacious 'DiFET' sound but says OPA627/637 resolve treble better. HiFiMAN used it in several players; c't Lab calls it 'weit besser' than a TL072. No independent measurements.",
     "sonic_descriptors": [
       "warm",
       "full",
-      "tube-like (forum)",
-      "wide soundstage (forum)",
-      "good imaging (forum)",
-      "detailed midrange (JP blogs)",
-      "non-fatiguing highs (JP blogs)",
-      "spacious DiFET-family sound (Soomal)",
-      "less treble resolution than OPA627/OPA637 (Soomal)"
+      "tube-like",
+      "wide soundstage",
+      "good imaging",
+      "detailed midrange",
+      "non-fatiguing highs",
+      "less treble resolution"
     ],
     "typical_uses": [
-      "DAC low-pass filter (HiFiMAN HM-901, with OPA627)",
-      "DAP analogue stage (HiFiMAN HM-801, with OPA627)",
-      "Portable headphone-amp stage (HiFiMAN HM-602, HM-601LE)",
-      "Op-amp rolling in DACs and preamps (DIP-8 OPA2107AP)",
-      "Precision high-impedance instrumentation (c't Lab AD16-8 ADC input amp)"
+      "DAC low-pass filter: HiFiMAN HM-901 (2013), with OPA627",
+      "DAP analogue stage: HiFiMAN HM-801 (2009), with OPA627",
+      "Portable amp stage: HiFiMAN HM-602 (2010), HM-601LE (2014)",
+      "DIP-8 op-amp rolling in DACs and preamps",
+      "Precision ADC/DAC input amp: c't Lab AD16-8, DA12-8"
     ],
     "caveats": [
-      "Obsolete at TI (OPA2107AP per DigiKey), so supply is now NOS or pulled stock.",
-      "Needs a fairly high supply: Tangent measured a 10.6 V minimum (OPA627: 6.8/9.8 V). The rated range is +/-4.5 V to +/-18 V.",
-      "Modest output current (about 40 mA per the models); buffer it for low-impedance headphones.",
-      "Most sonic praise is forum or blog impression, and Soomal's 'DiFET sound' group also includes non-Difet parts (OPA2134).",
-      "Counterfeit or remark risk on NOS parts is a general concern for obsolete audio op-amps; no OPA2107-specific report was verified."
+      "Obsolete at TI (OPA2107AP per DigiKey); supply is NOS or pulled stock.",
+      "Needs a fairly high supply: Tangent measured 10.6 V minimum (OPA627: 6.8/9.8 V); Digi-Key price then $12.25.",
+      "Modest output current (about 40 mA per models); buffer it for low-impedance headphones.",
+      "Praise is mostly forum impression; Soomal's 'DiFET' group includes non-Difet OPA2134, and its HM-901 reviewers hadn't heard it elsewhere.",
+      "NOS remark risk is a general concern for obsolete audio op-amps; no OPA2107-specific report."
     ],
     "sources": [
       "https://github.com/h2dcc/soomal.github.io/blob/main/content/posts/10100004544.md",
@@ -212,6 +156,17 @@
       "https://www.alldatasheet.com/datasheet-pdf/pdf/177039/BURR-BROWN/OPA2107.html"
     ]
   },
+  "counterfeit_notes": "No OPA2107-specific fake reports. Stock is NOS, pulled or broker parts, even die. Check logo era (BB vs TI) against date code and marking. Genuine parts show pA bias, ~18 V/µs and ~4.5 MHz; remarked bipolar parts show nA bias.",
+  "alternatives": [
+    "OPA2604 (Burr-Brown FET audio dual)",
+    "OPA1642 / OPA1644",
+    "OPA2140 (precision JFET dual)",
+    "OPA2134",
+    "Two OPA627 on a dual adapter",
+    "AD712 (c't Lab's named alternative) / AD8620",
+    "OPA2111 (slower Difet sibling: 2 MHz, 2 V/µs)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "Texas Instruments",
@@ -223,7 +178,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current TI copy. The URL showed up in search results with the features list (8 nV/rtHz at 10 kHz, 1 mV max Vos). The doc number, the July 2003 revision date and the January 1989 original date come from search summaries. The unlettered SBOS161 edition was not seen."
+      "note": "Current TI copy; original date January 1989. Unlettered SBOS161 not seen."
     },
     {
       "vendor": "Texas Instruments",
@@ -235,7 +190,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "TI generic-part-number link, which resolves to the current datasheet. Seen in search results."
+      "note": "TI generic-part-number link resolving to the current datasheet."
     },
     {
       "vendor": "Burr-Brown",
@@ -246,8 +201,8 @@
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/177039/BURR-BROWN/OPA2107.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
-      "revision_status": "confirmed",
-      "note": "Search summaries place the PDS-863B and PDS-863E editions on the Burr-Brown mirrors (alldatasheet 177039, datasheetspdf/datasheet4u 475543, chipfind) but do not say which mirror holds which. Its HTML viewer shows 11 pages. Unconfirmed which edition this copy holds."
+      "revision_status": "probable",
+      "note": "11-page copy; PDS-863B or E, which one unconfirmed."
     },
     {
       "vendor": "Burr-Brown",
@@ -258,20 +213,20 @@
       "url": "https://pdf.dzsc.com/OPA/OPA2107.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "low",
-      "revision_status": "confirmed",
-      "note": "This is the last Burr-Brown edition before TI. The dzsc copy has the late-1990s BB layout ('1 ® OPA2107 FEATURES G VERY LOW NOISE'), and a search summary linked PDS-863E to it among other mirrors. Unconfirmed that this copy is rev E."
+      "revision_status": "probable",
+      "note": "Last BB edition before TI; late-1990s layout, 1 mV max Vos."
     },
     {
       "vendor": "Burr-Brown",
       "title": "Precision Dual Difet OPERATIONAL AMPLIFIER OPA2107 (bb2107.pdf)",
       "doc_number": "PDS-863",
-      "revision": "",
+      "revision": "B",
       "date": "",
       "url": "https://www2.ung.si/~sstanic/belle/monitor/schemes/bb2107.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "low",
-      "revision_status": "unknown",
-      "note": "University of Nova Gorica copy with a Burr-Brown title. Revision not identified; unconfirmed."
+      "revision_status": "probable",
+      "note": "University of Nova Gorica copy; reportedly PDS-863B, October 1993."
     },
     {
       "vendor": "Burr-Brown",
@@ -283,19 +238,19 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Farnell distributor mirror. Which revision it freezes is unconfirmed."
+      "note": "Mixed-case TI layout; probably an SBOS161-family edition (inference)."
     },
     {
       "vendor": "Burr-Brown",
       "title": "OPA2107 datasheet (datasheetspdf mirror)",
-      "doc_number": "PDS-863",
-      "revision": "",
+      "doc_number": "SBOS161 (probable)",
+      "revision": "A",
       "date": "",
       "url": "https://datasheetspdf.com/pdf/475543/Burr-Brown/OPA2107/1",
       "url_kind": "third_party_mirror",
       "confidence": "low",
-      "revision_status": "unknown",
-      "note": "The same ID, 475543, is used by datasheet4u and datasheet-pdf.com. Revision unconfirmed."
+      "revision_status": "probable",
+      "note": "Same ID 475543 as datasheet4u; probably the TI SBOS161A file."
     },
     {
       "vendor": "Burr-Brown",
@@ -307,7 +262,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This copy lists the -2K5 tape-and-reel ordering code, so it is probably a late edition (PDS-863E or SBOS161). Unconfirmed."
+      "note": "Lists the -2K5 reel code, so probably PDS-863E or SBOS161."
     },
     {
       "vendor": "Burr-Brown",
@@ -319,7 +274,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Burr-Brown copy. Revision unconfirmed."
+      "note": "Burr-Brown copy; revision unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -331,7 +286,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "TI-branded mirror. Unconfirmed which SBOS161 edition it holds."
+      "note": "TI-branded mirror; SBOS161 edition unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -343,7 +298,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "TI-era copy on a Russian mirror. Revision unconfirmed."
+      "note": "TI-era copy on a Russian mirror; revision unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -355,7 +310,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "TI-attributed copy. Revision unconfirmed."
+      "note": "TI-attributed copy; revision unconfirmed."
     },
     {
       "vendor": "Burr-Brown",
@@ -367,8 +322,7 @@
       "url_kind": "archive",
       "confidence": "low",
       "revision_status": "unknown",
-      "revision_text": "1990",
-      "note": "Search surfaced it for an OPA2107 query, so it may hold the earliest PDS-863 edition. Unconfirmed that it contains OPA2107."
+      "note": "May hold the earliest PDS-863 edition; OPA2107 inclusion unconfirmed."
     },
     {
       "vendor": "Burr-Brown - third-party mirror",
@@ -380,7 +334,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The search result title reads 'FEATURES G VERY LOW NOISE: 8nV/rtHz at 10kHz G LOW VOS: 500uV max'. Every other copy says 1 mV max, so this is a different, probably earlier, Burr-Brown edition with a tighter headline VOS."
+      "note": "Earlier BB edition: front page reads 'LOW VOS: 500uV max'."
     },
     {
       "vendor": "Burr-Brown - institute mirror (Jozef Stefan Institute)",
@@ -392,7 +346,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is a Burr-Brown-style edition with a 1 mV max VOS front page. meditronik.com.pl/doc/plus/opa2107.pdf and pdf.dzsc.com/OPA/OPA2107.pdf carry the same title."
+      "note": "BB-style edition, 1 mV max Vos; same title as Meditronik, dzsc."
     },
     {
       "vendor": "Burr-Brown - distributor mirror (Meditronik, PL)",
@@ -404,7 +358,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The revision is not shown in the search summary."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Burr-Brown - archive",
@@ -416,7 +370,7 @@
       "url_kind": "archive",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This databook came up in a search for 'OPA2107 PDS- 1989'. The OPA2107's (c)1989 introduction makes it a likely first-edition source, but the summary did not confirm that the OPA2107 is inside."
+      "note": "Likely first-edition source; OPA2107 inclusion unconfirmed."
     },
     {
       "vendor": "Texas Instruments (Burr-Brown product), third-party mirror",
@@ -428,7 +382,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "probable",
-      "note": "A search summary says this copy contains SBOS161A (January 1989, revised July 2003), even though the site labels it Burr-Brown. It shares ID 475543 with the datasheetspdf.com copy that is already listed as 'B or E'. That copy is probably the same TI SBOS161A file, not a Burr-Brown PDS edition."
+      "note": "Reportedly holds SBOS161A despite the Burr-Brown label."
     },
     {
       "vendor": "Burr-Brown (TI), third-party mirror",
@@ -440,7 +394,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Same mirror ID (475543) as the datasheet4u and datasheetspdf copies. The search summary does not show the edition."
+      "note": "Same mirror ID 475543 as datasheet4u; edition not shown."
     },
     {
       "vendor": "Texas Instruments, third-party mirror",
@@ -452,7 +406,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A second RadioLocman entry, separate from the listed di=259167. The search summary says only 'SBOS161A, Jan 1989 revised July 2003' in general terms and does not tie it to this copy."
+      "note": "Second RadioLocman entry, separate from di=259167; edition not shown."
     },
     {
       "vendor": "Burr-Brown (TI), third-party mirror",
@@ -464,7 +418,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "HTML page view (page 3 of 11) of alldatasheet document 177039, the file already listed as PDS-863B with low confidence. The copy is 11 pages."
+      "note": "HTML view, page 3 of 11, of alldatasheet document 177039."
     },
     {
       "vendor": "Burr-Brown (TI), third-party mirror",
@@ -476,7 +430,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "685 KB, 11 pages, per the search summary. It is probably the same file as 177039, filed under the AP part number."
+      "note": "685 KB, 11 pages; probably the same file as 177039."
     },
     {
       "vendor": "Burr-Brown (TI), third-party mirror",
@@ -488,7 +442,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "685 KB, 11 pages, per the search summary. It is probably the same file as 177039, filed under the AU part number."
+      "note": "685 KB, 11 pages; probably the same file as 177039."
     },
     {
       "vendor": "Burr-Brown, third-party mirror",
@@ -500,7 +454,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The upper-case 'Precision Dual Difet OPERATIONAL AMPLIFIER' title matches the Burr-Brown PDS typesetting, not the TI SBOS161 format. The edition is not shown."
+      "note": "Upper-case title matches Burr-Brown PDS typesetting; edition not shown."
     },
     {
       "vendor": "Burr-Brown, third-party mirror",
@@ -512,7 +466,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Page for the AP part number. The edition is not shown."
+      "note": "AP part-number page; edition not shown."
     },
     {
       "vendor": "Burr-Brown, third-party mirror",
@@ -524,7 +478,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Page for the AU part number. The edition is not shown."
+      "note": "AU part-number page; edition not shown."
     },
     {
       "vendor": "unknown (Burr-Brown/TI), third-party mirror",
@@ -536,7 +490,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The search summary shows no edition."
+      "note": "Edition not shown."
     },
     {
       "vendor": "unknown (Burr-Brown/TI), third-party mirror",
@@ -548,77 +502,90 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Aggregated listing page that may hold several OPA2107 editions and databook extracts. No editions were shown in the search summary."
+      "note": "Listing page that may hold several editions and databook extracts."
     }
+  ],
+  "product_pages": [
+    "https://www.ti.com/product/OPA2107",
+    "https://www.digikey.com/en/products/detail/texas-instruments/OPA2107AP/251135",
+    "https://octopart.com/part/texas-instruments/OPA2107",
+    "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA2107AP?qs=7nS3%2BbEUL6u2bEm4i5B9fA%3D%3D"
   ],
   "revision_history": [
     {
       "vendor": "Burr-Brown",
       "doc_number": "PDS-863",
-      "revision": "original (letter not seen)",
-      "date": "January 1989",
-      "changes": "Initial release. The date is inferred from the original date in the SBOS161A header and the (c)1989 notice; this edition itself was not seen."
+      "revision": "original",
+      "date": "1989-01",
+      "changes": "Initial release; date inferred from the SBOS161A header and ©1989 notice. Letter and copy not seen."
     },
     {
       "vendor": "Burr-Brown",
       "doc_number": "PDS-863",
       "revision": "B",
-      "date": "October 1993",
-      "changes": "Change content unknown. Printed in U.S.A. October 1993, (c)1989."
+      "date": "1993-10",
+      "changes": "PDS-863B, printed October 1993, ©1989. Change content unknown."
     },
     {
       "vendor": "Burr-Brown",
       "doc_number": "PDS-863",
       "revision": "E",
-      "date": "April 1998",
-      "changes": "Change content unknown. Last Burr-Brown edition seen; printed April 1998. Revisions C and D were not seen."
+      "date": "1998-04",
+      "changes": "PDS-863E, printed April 1998; last Burr-Brown edition seen. Change content unknown; C and D not seen."
+    },
+    {
+      "vendor": "Burr-Brown",
+      "doc_number": "PDS-863",
+      "revision": "pre-E edition (letter not shown)",
+      "date": "",
+      "changes": "Headline Vos relaxed from 500 µV max (rtellason copy) to 1 mV max by PDS-863E; which edition changed it is unknown."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SBOS161",
       "revision": "A",
-      "date": "July 2003",
-      "changes": "TI-format reissue ('January 1989 - revised July 2003'). Change content unknown. The unlettered SBOS161 edition was not seen."
-    },
-    {
-      "vendor": "Burr-Brown",
-      "doc_number": "PDS-863B",
-      "revision": "B",
-      "date": "(c)1989, printed October 1993",
-      "changes": "Early Burr-Brown edition, per a search summary. Its contents were not seen."
-    },
-    {
-      "vendor": "Burr-Brown",
-      "doc_number": "PDS-863E",
-      "revision": "E",
-      "date": "printed April 1998",
-      "changes": "Later Burr-Brown edition, per a search summary. Its contents were not seen."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SBOS161A",
-      "revision": "A",
-      "date": "January 1989 - Revised July 2003",
-      "changes": "The TI-era SBOS-numbered edition, which lists 1 mV max VOS, 10 uV/C max drift, 10 pA max IB and 8 nV/rtHz at 10 kHz. The changes from the Burr-Brown PDS editions were not captured."
-    },
+      "date": "2003-07",
+      "changes": "TI reissue, 'January 1989 - revised July 2003': 1 mV max Vos, 10 µV/°C, 10 pA, 8 nV/√Hz at 10 kHz. Changes unknown."
+    }
+  ],
+  "revision_chains": [
     {
       "vendor": "Burr-Brown",
       "doc_number": "PDS-863",
-      "revision": "pre-E edition (letter not shown; original, A, B, C or D)",
-      "date": "between January 1989 and April 1998 (exact date not shown)",
-      "changes": "Search-result titles show two versions of the front-page offset limit. The rtellason.com copy reads 'LOW VOS: 500µV max'. The PDS-863E copy (pdf.dzsc.com, April 1998), the Meditronik copy and the TI SBOS161A read 'LOW VOS: 1mV max'. So the VOS limit was relaxed from 500 µV to 1 mV in some edition up to and including PDS-863E. Which edition made the change is not shown."
+      "known": [
+        {
+          "rev": "original",
+          "date": "1989-01"
+        },
+        {
+          "rev": "B",
+          "date": "1993-10"
+        },
+        {
+          "rev": "E",
+          "date": "1998-04"
+        }
+      ],
+      "missing": [
+        "PDS-863C",
+        "PDS-863D"
+      ],
+      "note": "Original letter (unlettered or A) unseen; 1989 databook or 1990 Supplement 33b may hold it."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS161",
+      "known": [
+        {
+          "rev": "A",
+          "date": "2003-07"
+        }
+      ],
+      "missing": [
+        "original (c. 2000–2001)"
+      ],
+      "note": "SBOS161A appears final. The focus.ti.com seed is a pattern guess; burr-brown.com-era URL not found."
     }
-  ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No OPA2107-specific counterfeit report was found. The part is obsolete (OPA2107AP per DigiKey), so what is sold now is NOS, pulled or broker stock, including bare die from die brokers. General checks: see whether the logo era (BB vs TI) matches the date code, and look at marking quality and package moulding. On the bench, a genuine part should show pA-level input bias current (10 pA max), about 18 V/us slew and about 4.5 MHz GBW. A remarked bipolar part will show nA-level bias current. A remarked generic JFET dual will usually be noisier than 8 nV/rtHz at 10 kHz.",
-  "alternatives": [
-    "OPA2604 (Burr-Brown FET-input audio dual)",
-    "OPA1642 / OPA1644 (TI modern JFET-input audio dual/quad)",
-    "OPA2140 (TI precision JFET-input dual)",
-    "OPA2134 (TI FET-input audio dual)",
-    "Two OPA627 on a dual adapter (same Difet family)",
-    "AD712 (ADI JFET dual; c't Lab's named alternative) / AD8620",
-    "OPA2111 (slower Difet dual sibling, legacy)"
   ],
   "ti_literature_numbers": [
     "SBOS161"
@@ -638,16 +605,11 @@
     "https://www2.ung.si/~sstanic/belle/monitor/schemes/bb2107.pdf"
   ],
   "open_questions": [
-    "Which mirror holds which edition (PDS-863B vs PDS-863E vs SBOS161A) was not established. Editions PDS-863 original, A, C and D and the unlettered SBOS161 were not seen.",
-    "What changed between editions is unknown.",
-    "The TI obsolescence date, the PCN/EOL notice number and the last-time-buy date were not found. The OPA2107AU and AU-2K5 statuses are not confirmed individually.",
-    "No die, fab or process change is documented. A TI-era fab transfer was neither confirmed nor ruled out.",
-    "The quiescent-current discrepancy is unresolved: the datasheet text says under 2.5 mA per amplifier, while a parametric listing gives 4.5 mA 'per channel'.",
-    "The 1 kHz noise, i_n, THD+N and guaranteed Aol/CMRR datasheet values were not captured. Aol and CMRR in this record are model values.",
-    "When the TO-99 grades (AM, BM, SM) were dropped is unknown; the TO-99 package is inferred.",
-    "The contents of the 1990 bitsavers data-book supplement were not checked.",
-    "The forum and blog reputation pages were not re-checked.",
-    "Whether the original HM-601 (not LE) used the OPA2107 is unverified."
+    "Which mirror holds which edition (PDS-863B, PDS-863E, SBOS161A), and what changed between editions?",
+    "Find the PDS-863 original or PDS-863A, PDS-863C, PDS-863D and unlettered SBOS161; check the 1989 databook and 1990 Supplement 33b.",
+    "TI obsolescence date, PCN/EOL number and last-time-buy? Are AU and AU-2K5 obsolete? Any TI-era fab transfer?",
+    "Resolve Iq: under 2.5 mA per amplifier (datasheet) vs 4.5 mA 'per channel' (parametric listing).",
+    "Datasheet 1 kHz noise, i_n, THD+N, Aol/CMRR? When were TO-99 grades dropped? Did the HM-601 (non-LE) use it?"
   ],
   "sources": [
     "https://www.ti.com/lit/ds/symlink/opa2107.pdf",
@@ -681,19 +643,31 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 6,
+    "claims_confirmed": [
+      "TI datasheet is SBOS161A, 'January 1989 - revised July 2003', at https://www.ti.com/lit/ds/symlink/opa2107.pdf",
+      "PDS-863B printed October 1993 and PDS-863E April 1998, both ©1989, on Burr-Brown mirrors such as https://www.alldatasheet.com/datasheet-pdf/pdf/177039/BURR-BROWN/OPA2107.html",
+      "OPA2107AP is Obsolete: https://www.digikey.com/en/products/detail/texas-instruments/OPA2107AP/251135",
+      "TI product folder exists: https://www.ti.com/product/OPA2107",
+      "Features: 8 nV/√Hz at 10 kHz, Vos 1 mV max, drift 10 µV/°C max, IB 10 pA max, 2 µs settling, unity-gain stable, Difet: https://www.ti.com/lit/ds/symlink/opa2107.pdf",
+      "GBW 4.5 MHz, slew 18 V/µs, supply ±4.5 V to ±18 V (9–36 V): https://www.industrycomponent.com/en/index.php?main_page=product_info&products_id=2165455",
+      "Iq under 2.5 mA per amplifier; DIP-8 and SO-8 packages: https://www.farnell.com/datasheets/9308.pdf",
+      "OPA2107AU-2K5 ordering code: https://manualmachine.com/datasheet/opa2107ap/4144735-datasheet-burr-brown/",
+      "A die broker lists OPA2107 bare die: https://diedevices.com/product-detail/Amplifiers/Operational_Amplifier/Precision_Amplifier/OPA2107"
+    ],
     "refuted_claims": [
-      "The draft said the Burr-Brown PDS number and first-release date were unknown and dated the part only 'by 1990'. The datasheet is PDS-863, (c)1989, and the TI header gives an original date of January 1989.",
-      "The looser 'early-to-mid 1990s design' framing is contradicted by the January 1989 original date.",
-      "The draft said the TI datasheet literature number was unknown. It is SBOS161, rev A, July 2003."
+      "PDS number and first release are known: PDS-863, ©1989, original date January 1989 (not just 'by 1990').",
+      "An 'early-to-mid 1990s design' is contradicted by the January 1989 original date.",
+      "TI literature number is known: SBOS161, rev A, July 2003."
     ],
     "corrections": [
-      "Datasheets: SBOS161A (TI, July 2003) was added as vendor_current at ti.com/lit/ds/symlink/opa2107.pdf, with high confidence. The ti.com/product/OPA2107 folder was confirmed and raised to high. The ti.com/lit/gpn link was added.",
-      "Revision history: PDS-863B (October 1993), PDS-863E (April 1998) and SBOS161A (July 2003) were added, plus an inferred January 1989 original.",
-      "Mirrors added at low confidence: pdf.dzsc.com, www2.ung.si (university), farnell.com/datasheets/9308.pdf, datasheetspdf 475543, manualmachine, chipfind, alldatasheet TI2 2195756, eicom.ru, radiolocman, and the bitsavers 1990 BB data-book supplement. Which edition each holds is not identified.",
-      "Part numbers: OPA2107AP set to Obsolete (DigiKey). OPA2107AU-2K5 (tape and reel) was added.",
-      "Key specs: datasheet headline limits were added (8 nV/rtHz at 10 kHz, Vos 1 mV max, drift 10 uV/C max, IB 10 pA max, settling 2 us to 0.01%). GBW 4.5 MHz and slew 18 V/us now cite TI/distributor parametrics. The supply range is +/-4.5 V to +/-18 V. Iq is under 2.5 mA per amplifier, with the conflicting 4.5 mA parametric figure noted. The EWB 'max supply field' entry was replaced by the datasheet range.",
-      "ti_literature_numbers now includes SBOS161. More archive seeds were added (TI gpn, Farnell, ung.si, dzsc, bitsavers).",
-      "Discovery hazard hint: 'obsolete' is confirmed. 'High risk of remarked fakes' remains a general concern with no OPA2107-specific evidence. No silicon change or PCN was found, so silicon_changes stays empty."
+      "Added SBOS161A (TI, July 2003) as vendor_current; ti.com/product/OPA2107 confirmed; ti.com/lit/gpn link added.",
+      "Revision history: added PDS-863B (Oct 1993), PDS-863E (Apr 1998), SBOS161A (Jul 2003) and inferred January 1989 original.",
+      "Added low-confidence mirrors (dzsc, ung.si, Farnell 9308, datasheetspdf, manualmachine, chipfind, alldatasheet, eicom, radiolocman, bitsavers); editions unidentified.",
+      "OPA2107AP set to Obsolete (DigiKey); OPA2107AU-2K5 added.",
+      "Key specs: added datasheet limits; GBW and slew cite TI/distributor parametrics; supply ±4.5 V to ±18 V; Iq conflict noted.",
+      "ti_literature_numbers now includes SBOS161; more archive seeds added.",
+      "Obsolete status confirmed; remark risk remains general with no OPA2107-specific evidence. No silicon change or PCN found."
     ],
     "unverified_urls": [
       "http://focus.ti.com/lit/ds/symlink/opa2107.pdf",
@@ -708,27 +682,6 @@
       "https://blog.goo.ne.jp/mig218/e/74b5ccf2be50b4455b318e6d4f6371a4",
       "https://www.tangentsoft.net/audio/opamps.html",
       "http://www.bitsavers.org/components/burrBrown/_dataBooks/1990_Burr-Brown_Integrated_Circuits_Data_Book_Supplement_33b.pdf"
-    ],
-    "claims_confirmed": [
-      "The TI datasheet is SBOS161A, 'January 1989 - revised July 2003', hosted at https://www.ti.com/lit/ds/symlink/opa2107.pdf",
-      "The Burr-Brown data sheet PDS-863B was printed October 1993 and PDS-863E April 1998, both (c)1989. Search summary over the Burr-Brown mirrors, e.g. https://www.alldatasheet.com/datasheet-pdf/pdf/177039/BURR-BROWN/OPA2107.html",
-      "The OPA2107AP is Obsolete: https://www.digikey.com/en/products/detail/texas-instruments/OPA2107AP/251135",
-      "The TI product folder exists: https://www.ti.com/product/OPA2107",
-      "Datasheet features: 8 nV/rtHz at 10 kHz, Vos 1 mV max, drift 10 uV/C max, IB 10 pA max, 2 us settling to 0.01%, unity-gain stable, Difet dielectrically isolated process: https://www.ti.com/lit/ds/symlink/opa2107.pdf",
-      "GBW 4.5 MHz, slew 18 V/us, supply +/-4.5 V to +/-18 V (9-36 V): https://www.industrycomponent.com/en/index.php?main_page=product_info&products_id=2165455",
-      "Quiescent current is under 2.5 mA per amplifier (datasheet text), in DIP-8 and SO-8 packages: https://www.farnell.com/datasheets/9308.pdf",
-      "OPA2107AU-2K5 ordering code: https://manualmachine.com/datasheet/opa2107ap/4144735-datasheet-burr-brown/",
-      "A die broker lists OPA2107 bare die: https://diedevices.com/product-detail/Amplifiers/Operational_Amplifier/Precision_Amplifier/OPA2107"
-    ],
-    "web_searches_used": 6
-  },
-  "tier": "B",
-  "category": "jfet-input",
-  "product_pages": [
-    "https://www.ti.com/product/OPA2107",
-    "https://www.digikey.com/en/products/detail/texas-instruments/OPA2107AP/251135",
-    "https://octopart.com/part/texas-instruments/OPA2107",
-    "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA2107AP?qs=7nS3%2BbEUL6u2bEm4i5B9fA%3D%3D"
-  ],
-  "revision_chain_notes": "Searches used: 6 of 6.\n\nBURR-BROWN PDS-863 (oldest to newest):\n(1) Original edition, January 1989. The date is inferred from the SBOS161A header and the (c)1989 notice. The letter (unlettered or A) has not been seen, and no copy was found. The 1989 BB IC Data Book and the 1990 Supplement 33b on bitsavers/archive.org are the best candidates for its content.\n(2) PDS-863B, printed October 1993. Copies: alldatasheet 177039 (already listed, low) and its HTML view at html.alldatasheet.com (new). A search summary also tied PDS-863B / October 1993 to the ung.si copy (www2.ung.si/~sstanic/belle/monitor/schemes/bb2107.pdf). That copy is listed as 'unknown', so upgrade it to probably B at low-medium confidence.\n(3) PDS-863C and (4) PDS-863D: still MISSING. Their dates and copies were not found.\n(5) PDS-863E, printed April 1998. Copy: pdf.dzsc.com (already listed). Its front page shows 'LOW VOS: 1mV max'.\nThe rtellason.com copy has 'LOW VOS: 500µV max', so it is an edition earlier than E; its letter is not shown.\n\nTEXAS INSTRUMENTS SBOS161:\n(a) Unlettered SBOS161, about 2000-2001 after the TI takeover: still MISSING. No copy or date was found, and a search that excluded 'SBOS161A' returned nothing for it.\n(b) SBOS161A, 'January 1989 - Revised July 2003': ti.com symlink and gpn (already listed). New mirror: datasheet4u ID 475543, which a search summary says holds SBOS161A. The already-listed datasheetspdf.com/pdf/475543 copy and the new datasheet-pdf.com 475543 copy are probably the same TI file, not a Burr-Brown PDS edition.\nThe Farnell 9308 copy's title uses the mixed-case TI layout ('FEATURES Very Low Noise ... Low VOS: 1mV max'), the same as ti.com/lit/gpn. It therefore probably holds an SBOS161-family edition, not PDS-863 (inference, low confidence).\nSBOS161A appears to be the last revision; no B was seen.\n\nOTHER VENDORS: No second source was found.\n\nNEW COPIES, EDITION NOT SHOWN: alldatasheet 177040 (AP) and 177041 (AU), both 685 KB and 11 pages; datasheetcatalog OPA2107, OPA2107AP and OPA2107AU; digchip; datasheetarchive; RadioLocman di=305535; Octopart and Mouser product pages.\n\nARCHIVE SEED: http://focus.ti.com/lit/ds/symlink/opa2107.pdf. This URL was not seen in any search result. It was built from TI's standard legacy symlink pattern and the current ti.com symlink, for a Wayback lookup only.\n\nSTILL MISSING: the original or PDS-863A text; PDS-863C and PDS-863D; the unlettered SBOS161 and its date; the change content of every revision; the burr-brown.com-era URL (not found)."
+    ]
+  }
 }

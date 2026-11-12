@@ -1,30 +1,29 @@
-# MUSES8920 / MUSES8920A (JFET-input dual, mass-production MUSES)
+# MUSES8920 / MUSES8920A
 
-New Japan Radio Co. (New JRC / NJR) (2011 (launch) to 2021) → Nisshinbo Micro Devices Inc. (2022 to present) · Tier A (legend / revision hazard)
+**JFET-input audio dual, mass-production MUSES** · New Japan Radio (JRC) (2011–2021) → Nisshinbo Micro Devices (2022–present) · Tier A (legend / revision hazard)
 
-*New JRC's affordable JFET-input MUSES dual, called the 'budget MUSES01': a clean, grain-free, high-resolution upgrade over NE5532/NJM4580.*
+*New JRC's affordable JFET MUSES, the 'budget MUSES01': a clean, grain-free upgrade over NE5532/NJM4580.*
 
-| Slew rate |
-|---|
-| 25 V/us typ. |
+| Input noise (1 kHz) | GBW | Slew rate | THD+N | Supply range |
+|---|---|---|---|---|
+| 8.0 nV/√Hz typ | 11 MHz typ | 25 V/µs typ | 0.00004% (8920, Av = 1); 0.0004% (8920A) | ±3.5 to ±16 V (8920); ±3.5 to ±17 V (8920A) |
 
 ## Why it's rated
 
-In Japanese, Chinese and English rolling communities MUSES8920 is called the 'budget MUSES01' (Head-Fi) and is a common cheap JFET upgrade for NE5532/NJM4580 sockets. Japanese listeners describe it as clean, dry and high-resolution with no grain, keeping some of OPA2604's softness with a thinner line and a wider stage. A diyAudio I/V comparison found only subtle gains over NE5532: a little more clarity and detail, the same soundstage. Soomal (CN) called its sound thick and restrained (厚重，内敛) but said MUSES-equipped DACs it had heard were distinctive rather than outstanding. Commercial users include the Shanling M2 DAP (post-DAC low-pass filter), VentureCraft Vantam (balanced headphone output), TEAC AX-505 and Magnetar UDP800. In new_western_elec's 2025 ranking it placed above MUSES8820 and OPA2604 but below Nisshinbo's NL8802/NL8902. A Head-Fi round-up measured it; the figures were not captured.
+Called the 'budget MUSES01' (Head-Fi) and a common cheap JFET upgrade for NE5532/NJM4580 sockets. Japanese listeners hear it as clean, dry and grain-free with a wide stage. diyAudio found only subtle gains over NE5532 in I/V use; Soomal called it thick and restrained. new_western_elec (2025) ranked it above MUSES8820 and OPA2604, below NL8802/NL8902.
 
-**Described as:** clean, dry (JP), high resolution (JP), no harshness or grain (JP), slightly clearer and more detailed than NE5532, differences subtle (diyAudio, I/V), OPA2604-like softness, thinner line, wider soundstage (JP, kakaku), thick, restrained (Soomal: 厚重，内敛), a bit rounded off and cautious at the bass/treble extremes (Head-Fi), smoother with more low-end thickness than MUSES8820 (JP search summary, source page unclear)
+**Described as:** clean, dry, high resolution, no grain, slightly clearer than NE5532, OPA2604-like softness, wider stage, thick, restrained (厚重，内敛), cautious at the extremes, smoother than MUSES8820 (reportedly)
 
-**Used in:** op-amp rolling in DACs, CD players and headphone amps (replacing NE5532/NJM4580/OPA2604), DAC I/V conversion (J-FET input, pA bias current), DAC post-filter / low-pass and line output stages (e.g. Shanling M2 LPF, Magnetar UDP800 analog stage), balanced headphone output in portable gear (VentureCraft Vantam: two MUSES8920; the unbalanced output uses TPA6120A), integrated amplifier signal stages (TEAC AX-505)
+**Used in:** Rolling in DACs, CD players, headphone amps, preamps, DAC I/V conversion (pA bias current), DAC post-filters and line outputs (Shanling M2, Magnetar UDP800), Balanced headphone output (VentureCraft Vantam: two MUSES8920), Integrated amp signal stages (TEAC AX-505)
 
 ## Watch out
 
-- Needs at least +/-3.5 V supply, so it is unsuited to very low-voltage rails. The maximum operating supply is +/-16 V for MUSES8920 and +/-17 V for MUSES8920A. JRC's low-voltage MUSES is MUSES8832 (2014).
-- MUSES8920D (DIP8) is discontinued. The replacement MUSES8920A is surface-mount only (AD DIP8 never released), so socketed gear needs an SOP8-to-DIP8 adapter such as Akizuki's MUSES8920AE DIP module kit.
-- Nisshinbo says 8920A is electrically and sonically equivalent. new_western_elec (Nov 2025) heard deeper sub-bass, a slightly thinner bass line, less treble extension and 'something catching' vs the old 8920D, and suggested unit variation. This is one listener, and the SMD-on-adapter vs DIP comparison is a likely confound.
-- Fake MUSES8920D parts have been reported (new_western_elec, Nov 2023). Buy from authorised channels.
-- Some listeners find it restrained or cautious at the frequency extremes. Soomal found MUSES-based DACs characterful but not outstanding overall.
-- In some circuits the gain over NE5532 is small (diyAudio I/V comparison).
-- **Counterfeits:** new_western_elec reported in November 2023 that fake MUSES8920D parts were circulating, per a search summary that names AliExpress and Mercari. The identifying features in that post were not captured. AliExpress still lists 'NEW GENUINE ORIGINAL' MUSES8920D DIP8 lots years after end of production. Other documented MUSES fakes (maimai-audio, fakecomponents on X, rarirureluis) are MUSES01/02, with thin, irregular numerals, lighter print instead of laser etching and wrong JRC logo details. Practical checks: (1) Buy from authorised channels (Mouser, DigiKey, Akizuki, eleshop, Seiwa, Profusion). (2) Treat cheap 'new' MUSES8920D as suspect, since production has ended. (3) A bare DIP8 chip marked 'MUSES8920A' is suspect, because MUSES8920AD was never released and legitimate DIP-form 8920A items are adapter boards (inference). (4) Compare the marking font, logo and laser etch against genuine JRC-era parts under magnification.
+- Needs at least ±3.5 V; maximum ±16 V (8920) or ±17 V (8920A). For low voltage, see MUSES8832.
+- MUSES8920D is discontinued and the 8920A is SMD-only; DIP sockets need an SOP8-to-DIP8 adapter.
+- new_western_elec heard 8920A vs 8920D differences (sub-bass, treble); one listener, adapter vs DIP confound.
+- Fake MUSES8920D parts reported (Nov 2023); buy from authorised channels.
+- Gains over NE5532 can be small; some find it cautious at the extremes. Soomal: MUSES DACs characterful, not outstanding.
+- **Counterfeits:** Fake MUSES8920D parts were reported in Nov 2023 (new_western_elec; AliExpress, Mercari), and 'new genuine' DIP8 lots still appear. A bare DIP8 marked 'MUSES8920A' is suspect: no AD was released. Compare font, logo and laser etch with genuine JRC parts.
 
 ## Silicon changes
 
@@ -33,8 +32,8 @@ None documented. Compare datasheet revisions before assuming old and new parts a
 <details>
 <summary>Other change notes: lifecycle, packaging, renumbering, lore (2)</summary>
 
-- **Renumbering / successor** · Nisshinbo Micro Devices, After New JRC merged into Nisshinbo Micro Devices (2022). One search summary dates the MUSES8920A announcement to March 2024. By November 2025 it was in distribution (Akizuki, eleshop, Mouser, Profusion) and being compared with the 8920D.: Nisshinbo ended MUSES8920 production and replaced it with MUSES8920A. The vendor says the A can replace the old part, its electrical characteristics are unchanged, and its circuit and sound quality are equivalent ('置き換えが可能で、電気的特性に変更は無く、回路や音質は同等'). No source gives the reason for the suffix change (fab, process, material or assembly), and no PCN number was found. Documented differences: the DIP8 package was dropped, and the datasheet maximum operating supply rose from +/-16 V to +/-17 V. The apparent THD headline difference comes from different test conditions, not a confirmed spec change. [[1]](https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8920A.html) [[2]](https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES8920A.html) [[3]](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8920a) [[4]](https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES8920A_J.pdf) [[5]](https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES8920A_E.pdf) [[6]](https://www.seiwa-tr.co.jp/topics/muses8920a-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E9%AB%98%E9%9F%B3%E8%B3%AA%E3%82%AA%E3%83%9A%E3%82%A2%E3%83%B3%E3%83%97/) [[7]](https://akizukidenshi.com/catalog/g/g118179/) [[8]](https://akizukidenshi.com/catalog/g/g129639/) [[9]](https://akizukidenshi.com/goodsaffix/MUSES8920A_E.pdf) [[10]](https://gb.profusion.uk/media/assets/product/documents/MUSES8920A.pdf) [[11]](https://www.mouser.com/pdfdocs/MUSES8920_E.PDF) [[12]](https://www.alldatasheet.com/datasheet-pdf/pdf/808066/NJRC/MUSES8920.html) [[13]](https://www.njr.com/semicon/products/MUSES8920.html) [[14]](https://nw-electric.way-nifty.com/blog/2025/11/post-38fcc1.html) [[15]](https://nw-electric.way-nifty.com/blog/2026/04/post-f925c9.html)
-- **Renumbering / successor** · Nisshinbo Micro Devices, Announced October 2025 (Nisshinbo X post about 9 Oct 2025; PHILE WEB 14 Oct 2025; EDN Japan 27 Oct 2025). A new_western_elec listening report followed in April 2026.: MUSES8921 is a new JFET-input dual that Nisshinbo says is based on the 2011 MUSES8920. It applies sound-quality techniques from the flagship MUSES development: the signal and power paths were redesigned and the element placement optimised. This means a revised die layout under a new part number, not a change under the old one. Enthusiast blogs describe the line as MUSES8920 -> MUSES8920A -> MUSES8921 incremental upgrades, but the vendor still lists MUSES8920A. [[1]](https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8921.html) [[2]](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8921) [[3]](https://www.phileweb.com/news/audio/202510/14/26952.html) [[4]](https://av.watch.impress.co.jp/docs/news/2054127.html) [[5]](https://xtech.nikkei.com/atcl/nxt/column/18/00001/11169/) [[6]](https://edn.itmedia.co.jp/edn/articles/2510/27/news032.html) [[7]](https://www.macnica.co.jp/business/semiconductor/manufacturers/nisshinbo-microdevices/news/148497/) [[8]](https://x.com/NisshinboMicro/status/1976167097869734097) [[9]](https://akizukidenshi.com/catalog/g/g131734/) [[10]](https://nw-electric.way-nifty.com/blog/2026/04/post-f925c9.html)
+- **Renumbering / successor** · Nisshinbo Micro Devices, 2024-03 (reported); sold by 2025-11: Nisshinbo ended MUSES8920 production and replaced it with MUSES8920A, stating electrical characteristics are unchanged and circuit and sound equivalent. No reason or PCN was found. Documented differences: DIP8 dropped and maximum supply raised from ±16 V to ±17 V. The THD headline gap reflects different test conditions. [[1]](https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8920A.html) [[2]](https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES8920A.html) [[3]](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8920a) [[4]](https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES8920A_J.pdf) [[5]](https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES8920A_E.pdf) [[6]](https://www.seiwa-tr.co.jp/topics/muses8920a-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E9%AB%98%E9%9F%B3%E8%B3%AA%E3%82%AA%E3%83%9A%E3%82%A2%E3%83%B3%E3%83%97/) [[7]](https://akizukidenshi.com/catalog/g/g118179/) [[8]](https://akizukidenshi.com/catalog/g/g129639/) [[9]](https://akizukidenshi.com/goodsaffix/MUSES8920A_E.pdf) [[10]](https://gb.profusion.uk/media/assets/product/documents/MUSES8920A.pdf) [[11]](https://www.mouser.com/pdfdocs/MUSES8920_E.PDF) [[12]](https://www.alldatasheet.com/datasheet-pdf/pdf/808066/NJRC/MUSES8920.html) [[13]](https://www.njr.com/semicon/products/MUSES8920.html) [[14]](https://nw-electric.way-nifty.com/blog/2025/11/post-38fcc1.html) [[15]](https://nw-electric.way-nifty.com/blog/2026/04/post-f925c9.html)
+- **Renumbering / successor** · Nisshinbo Micro Devices, 2025-10-09 (announced): MUSES8921 is a new JFET dual based on the 2011 MUSES8920, with signal and power paths redesigned and element placement optimised using flagship MUSES techniques: a revised layout under a new number. Blogs call it the next step after MUSES8920A, which the vendor still lists. [[1]](https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8921.html) [[2]](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8921) [[3]](https://www.phileweb.com/news/audio/202510/14/26952.html) [[4]](https://av.watch.impress.co.jp/docs/news/2054127.html) [[5]](https://xtech.nikkei.com/atcl/nxt/column/18/00001/11169/) [[6]](https://edn.itmedia.co.jp/edn/articles/2510/27/news032.html) [[7]](https://www.macnica.co.jp/business/semiconductor/manufacturers/nisshinbo-microdevices/news/148497/) [[8]](https://x.com/NisshinboMicro/status/1976167097869734097) [[9]](https://akizukidenshi.com/catalog/g/g131734/) [[10]](https://nw-electric.way-nifty.com/blog/2026/04/post-f925c9.html)
 
 </details>
 
@@ -46,7 +45,12 @@ None documented. Compare datasheet revisions before assuming old and new parts a
 |---|---|---|---|---|
 | Ver. 2012-04-02 | 2012-04-02 | [mouser.com](https://www.mouser.com/pdfdocs/MUSES8920_E.PDF) |  | confirmed |
 | Ver. 2013-11-25 | 2013-11-25 | [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/808066/NJRC/MUSES8920.html) | +1 | confirmed |
+| Mouser 1917228 |  | no copy found |  | confirmed |
+| Nisshinbo final |  | no copy found |  | confirmed |
 | Ver. 10 |  | [mouser.com](https://www.mouser.com/datasheet/2/294/MUSES8920_E-259012.pdf) |  | confirmed |
+| Ver.10 |  | no copy found |  | confirmed |
+
+Missing revisions: 2011 first edition, revision adding KX7 (2016-09 or later). 'Ver.10' may be a truncated date stamp. Legacy NJR URL is the best Wayback seed.
 
 **Nisshinbo Micro Devices MUSES8920A_E**
 
@@ -54,6 +58,18 @@ None documented. Compare datasheet revisions before assuming old and new parts a
 |---|---|---|---|---|
 | Ver. 0.2 |  | [gb.profusion.uk](https://gb.profusion.uk/media/assets/product/documents/MUSES8920A.pdf) |  | confirmed |
 | Ver. 1.0 |  | [mouser.com](https://www.mouser.com/datasheet/2/294/MUSES8920A_E-3675900.pdf) |  | probable |
+| current |  | no copy found |  | confirmed |
+
+Missing revisions: version dates, Ver.1.1 or later. Current Nisshinbo copy and alldatasheet 2271958 show no revision.
+
+**Nisshinbo Micro Devices MUSES8920A_J**
+
+| Rev | Date | Best copy | More | Status |
+|---|---|---|---|---|
+| Ver. 1.0 |  | no copy found |  | confirmed |
+| current |  | no copy found |  | confirmed |
+
+Missing revisions: version dates. Ver.1.0 held by Akizuki; Nisshinbo copy revision not shown.
 
 **Nisshinbo Micro Devices MUSES8920A (Japanese edition; file named MUSES8920A_E.pdf)**
 
@@ -61,28 +77,32 @@ None documented. Compare datasheet revisions before assuming old and new parts a
 |---|---|---|---|---|
 | Ver. 1.0 |  | [akizukidenshi.com](https://akizukidenshi.com/goodsaffix/MUSES8920A_E.pdf) |  | confirmed |
 
+**New Japan Radio MUSES8920_J**
+
+Missing revisions: all dated versions. Only the legacy NJR URL and a SlideShare copy, revisions unknown.
+
 <details>
 <summary>Other copies, revision not identified (19)</summary>
 
-- [mouser.com](https://www.mouser.com/datasheet/2/294/MUSES8920_E-1917228.pdf) · New Japan Radio (NJR/JRC) / Nisshinbo MUSES8920_E — Unconfirmed in this pass (URL seen only in an earlier sweep). The file ID is next to NJM4556A_E-1917507 (Ver.2020-03-26).
-- [digikey.com](https://www.digikey.com/en/htmldatasheets/production/5048864/0/0/1/muse8920) · DigiKey (NJR/Nisshinbo document) MUSES8920_E (assumed) — New in this pass. The URL appeared in results (the slug is misspelled 'muse8920'). Revision not shown.
-- [mm.digikey.com](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8072/MUSES8920%20Datasheet.pdf) · DigiKey (NJR/Nisshinbo document) MUSES8920_E (assumed) — Unconfirmed in this pass (URL seen only in an earlier sweep). Revision not shown.
-- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES8920_E.pdf) · Nisshinbo Micro Devices MUSES8920_E — Unconfirmed. Never seen in any search result; inferred from the MUSES8920A_E.pdf path. The file may have been removed after discontinuation; archive it.
-- [datasheet4u.com](https://datasheet4u.com/datasheets/New-Japan-Radio/MUSES8920/1007645) · New Japan Radio (NJR/JRC) MUSES8920_E — Re-confirmed. The same file ID 1007645 is at https://datasheet4u.com/datasheet/NewJapanRadio/MUSES8920-1007645 and https://datasheetspdf.com/pdf/1007645/NewJapanRadio/MUSES8920/1 (both re-confirmed), and at http://www.datasheet.jp/pdf/1007645/MUSES8920.html (earlier sweep). Revision not shown.
-- [scribd.com](https://www.scribd.com/document/478761947/MUSES8920-NewJapanRadio) · New Japan Radio (NJR/JRC) MUSES8920_E — Unconfirmed in this pass (Scribd upload seen only in an earlier sweep). Revision not shown.
-- [digchip.com](https://www.digchip.com/datasheets/parts/datasheet/2/330/MUSES8920.php) · New Japan Radio (NJR/JRC) MUSES8920_E — Unconfirmed in this pass (seen only in an earlier sweep). The datasheetarchive listing https://www.datasheetarchive.com/MUSES8920-datasheet.html was re-confirmed. Revision not shown.
-- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES8920A_E.pdf) · Nisshinbo Micro Devices MUSES8920A_E — Re-confirmed in search results. Current vendor URL; the printed revision was not shown.
-- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/2271958/NISSHINBO/MUSES8920A.html) · Nisshinbo Micro Devices MUSES8920A_E — Re-confirmed. alldatasheet ID 2271958; revision not shown.
-- [electronicsdatasheets.com](https://www.electronicsdatasheets.com/parts/nisshinbo-holdings/MUSES8920A) · Nisshinbo Micro Devices MUSES8920A_E (assumed) — New in this pass; URL seen in results. Revision not shown.
-- [alldatasheet.jp](https://www.alldatasheet.jp/datasheet-pdf/pdf/808066/NJRC/MUSES8920.html) · New Japan Radio (NJR/JRC) MUSES8920_E (same file ID 808066 as alldatasheet.com) — Japanese mirror of alldatasheet. The summary gives 309 Kbytes and 8 pages. It is probably the same English Ver.2013-11-25 file, not a Japanese-language edition (inferred from the shared ID).
-- [datasheetspdf.com](https://datasheetspdf.com/pdf/1007645/NewJapanRadio/MUSES8920/1) · New Japan Radio (NJR/JRC) MUSES8920_E (assumed) — Has the same file ID 1007645 as the datasheet4u copy already listed, so it is probably the same file.
-- [datasheet.jp](http://www.datasheet.jp/pdf/1007645/MUSES8920.html) · New Japan Radio (NJR/JRC) MUSES8920_E (assumed) — Also has file ID 1007645, the same as the datasheet4u and datasheetspdf copies.
-- [datasheetarchive.com](https://www.datasheetarchive.com/MUSES8920-datasheet.html) · New Japan Radio (NJR/JRC) MUSES8920_E (assumed) — A datasheetarchive index page, which may hold more than one copy or revision.
-- [slideshare.net](https://www.slideshare.net/spicepark/muses8920-j) · New Japan Radio (NJR/JRC) MUSES8920_J — A copy of the Japanese-language edition, the only third-party copy of MUSES8920_J found. The upload probably dates from the NJR era. Its Ver. date is not shown in the summary.
-- [njr.co.jp](https://www.njr.co.jp/electronic_device/PDF/MUSES8920_J.pdf) · New Japan Radio (NJR/JRC) MUSES8920_J — Legacy NJR Japanese datasheet URL. The search summary says the Green_Semicon shop page cites it as the manufacturer PDF. It is a good Wayback seed for dated Japanese Ver. revisions.
-- [semicon.njr.co.jp](http://semicon.njr.co.jp/eng/PDF/MUSES8920_E.pdf) · New Japan Radio (NJR/JRC) MUSES8920_E — Legacy NJR semiconductor-site English datasheet URL, found in search results. It probably served the 2011–2013 date-stamped revisions and is a good Wayback seed.
-- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES8920A_J.pdf) · Nisshinbo Micro Devices MUSES8920A_J — Current official Japanese-language MUSES8920A datasheet on Nisshinbo's own site. Akizuki holds a Japanese Ver.1.0 (already listed), so this copy is Ver.1.0 or later.
-- [electronicsdatasheets.com](https://electronicsdatasheets.com/manufacturers/nisshinbo-holdings/parts/muses8920a) · Nisshinbo Micro Devices MUSES8920A_E (assumed) — Another URL form of the electronicsdatasheets entry already listed under /parts/nisshinbo-holdings/MUSES8920A. It may be the same content.
+- [mouser.com](https://www.mouser.com/datasheet/2/294/MUSES8920_E-1917228.pdf) · New Japan Radio (NJR/JRC) / Nisshinbo MUSES8920_E — Revision not shown; file ID near NJM4556A_E-1917507 (2020).
+- [digikey.com](https://www.digikey.com/en/htmldatasheets/production/5048864/0/0/1/muse8920) · DigiKey (NJR/Nisshinbo document) MUSES8920_E (assumed) — DigiKey HTML version (slug misspelled 'muse8920'). Revision not shown.
+- [mm.digikey.com](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8072/MUSES8920%20Datasheet.pdf) · DigiKey (NJR/Nisshinbo document) MUSES8920_E (assumed) — Revision not shown.
+- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES8920_E.pdf) · Nisshinbo Micro Devices MUSES8920_E — Inferred URL, never seen; may be removed. Archive it.
+- [datasheet4u.com](https://datasheet4u.com/datasheets/New-Japan-Radio/MUSES8920/1007645) · New Japan Radio (NJR/JRC) MUSES8920_E — Same file ID 1007645 at datasheetspdf and datasheet.jp. Revision not shown.
+- [scribd.com](https://www.scribd.com/document/478761947/MUSES8920-NewJapanRadio) · New Japan Radio (NJR/JRC) MUSES8920_E — Scribd upload; revision not shown.
+- [digchip.com](https://www.digchip.com/datasheets/parts/datasheet/2/330/MUSES8920.php) · New Japan Radio (NJR/JRC) MUSES8920_E — Revision not shown.
+- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES8920A_E.pdf) · Nisshinbo Micro Devices MUSES8920A_E — Current vendor URL; printed revision not shown.
+- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/2271958/NISSHINBO/MUSES8920A.html) · Nisshinbo Micro Devices MUSES8920A_E — alldatasheet ID 2271958, 19 pages; revision not shown.
+- [electronicsdatasheets.com](https://www.electronicsdatasheets.com/parts/nisshinbo-holdings/MUSES8920A) · Nisshinbo Micro Devices MUSES8920A_E (assumed) — Revision not shown.
+- [alldatasheet.jp](https://www.alldatasheet.jp/datasheet-pdf/pdf/808066/NJRC/MUSES8920.html) · New Japan Radio (NJR/JRC) MUSES8920_E (same file ID 808066 as alldatasheet.com) — Same file ID 808066 (309 KB, 8 pages); likely English Ver.2013-11-25.
+- [datasheetspdf.com](https://datasheetspdf.com/pdf/1007645/NewJapanRadio/MUSES8920/1) · New Japan Radio (NJR/JRC) MUSES8920_E (assumed) — Same file ID 1007645 as the datasheet4u copy.
+- [datasheet.jp](http://www.datasheet.jp/pdf/1007645/MUSES8920.html) · New Japan Radio (NJR/JRC) MUSES8920_E (assumed) — Same file ID 1007645 as the datasheet4u and datasheetspdf copies.
+- [datasheetarchive.com](https://www.datasheetarchive.com/MUSES8920-datasheet.html) · New Japan Radio (NJR/JRC) MUSES8920_E (assumed) — Index page; may hold several copies or revisions.
+- [slideshare.net](https://www.slideshare.net/spicepark/muses8920-j) · New Japan Radio (NJR/JRC) MUSES8920_J — Only third-party copy of the Japanese edition; version not shown.
+- [njr.co.jp](https://www.njr.co.jp/electronic_device/PDF/MUSES8920_J.pdf) · New Japan Radio (NJR/JRC) MUSES8920_J — Legacy NJR Japanese URL, cited by Green_Semicon. Wayback seed for dated versions.
+- [semicon.njr.co.jp](http://semicon.njr.co.jp/eng/PDF/MUSES8920_E.pdf) · New Japan Radio (NJR/JRC) MUSES8920_E — Legacy NJR English URL; likely served 2011–2013 revisions. Wayback seed.
+- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES8920A_J.pdf) · Nisshinbo Micro Devices MUSES8920A_J — Current official Japanese datasheet; Ver.1.0 or later.
+- [electronicsdatasheets.com](https://electronicsdatasheets.com/manufacturers/nisshinbo-holdings/parts/muses8920a) · Nisshinbo Micro Devices MUSES8920A_E (assumed) — Alternate URL form of the electronicsdatasheets entry.
 
 </details>
 
@@ -94,15 +114,15 @@ Download every revision: `python tools/fetch_datasheets.py --family MUSES8920`
 
 | Part number | Ch | Status | Note |
 |---|---|---|---|
-| MUSES8920D | 2 | obsolete (Nisshinbo: MUSES8920 production completed, replaced by MUSES8920A) |  |
-| MUSES8920E | 2 | obsolete (series production completed) |  |
-| MUSES8920KX7 | 2 | obsolete (series production completed; assumed to include this package) |  |
-| MUSES8920AE (orderable MUSES8920AE-TE1) | 2 | active |  |
-| MUSES8920AKX7 | 2 | active (listed in the MUSES8920A datasheet) |  |
-| MUSES8920AD | 2 | not released (listed in the Ver.0.2 preliminary datasheet; 'Under Development' per an earlier summary of Ver.1.0) |  |
-| MUSES8921AN / MUSES8921GR | 2 | active (announced 2025-10-09) |  |
+| MUSES8920D | 2 | obsolete | Original DIP8 socket-rolling part. Fakes reported (Nov 2023); treat new stock as suspect. |
+| MUSES8920E | 2 | obsolete | SOP8 (EMP8). Mouser lists it under NJR and Nisshinbo brands. |
+| MUSES8920KX7 | 2 | obsolete | DFN8-X7 (ESON8-X7), added 2016-09-02. Assumed discontinued with the series. |
+| MUSES8920AE / MUSES8920AE-TE1 | 2 | active | SOP8 150 mil (EMP8). Direct replacement; vendor says specs and sound unchanged. |
+| MUSES8920AKX7 | 2 | active | DFN8-X7 (ESON8-X7). |
+| MUSES8920AD | 2 | unknown | DIP8 in the Ver.0.2 preliminary only; never released. DIP 8920As are adapter modules. |
+| MUSES8921AN / MUSES8921GR | 2 | active | Successor, new part number (2025-10-09). SOP8/DFN8; JPY 500/550 samples, 100k/month. |
 
-**Related / alternatives:** MUSES8921 (Nisshinbo, 2025-10-09): re-designed successor of MUSES8920/A in SOP8/DFN8 (MUSES8921AN/GR), new part number, NL8902 (Nisshinbo): J-FET-input dual built on MUSES techniques, ranked above MUSES8920 by new_western_elec (2025), MUSES8920AE (the direct replacement, SMD only), MUSES01 (JRC/Nisshinbo flagship JFET-input dual), MUSES8820 / NL8802 (bipolar siblings), MUSES8832 (JRC low-voltage bipolar MUSES, 2014), TI OPA1642 (JFET-input audio dual), TI OPA1656 (CMOS-input audio dual), TI OPA2604 (classic FET-input audio dual)
+**Related / alternatives:** MUSES8921 (2025 redesigned successor), MUSES8920AE (direct SMD replacement), NL8902 (ranked higher by new_western_elec), MUSES01 (flagship JFET dual), MUSES8820 / NL8802 (bipolar siblings), MUSES8832 (low-voltage MUSES, 2014), OPA1642 / OPA1656, OPA2604 (classic FET-input dual)
 
 ## Evidence
 
@@ -111,17 +131,13 @@ Download every revision: `python tools/fetch_datasheets.py --family MUSES8920`
 
 | Parameter | Value | Conditions | Source |
 |---|---|---|---|
-| Input voltage noise e_n | 8.0 nV/rtHz typ. | f = 1 kHz | MUSES8920_E Ver.2012-04-02 (Mouser /pdfdocs/) and MUSES8920A datasheet / Nisshinbo series page (search summaries) |
-| THD (MUSES8920) | 0.00004% typ. | Av = 1 (full conditions not captured) | MUSES8920_E Ver.2012-04-02 feature list (search summary of https://www.mouser.com/pdfdocs/MUSES8920_E.PDF) |
-| THD (MUSES8920A) | 0.0004% typ. per one summary; another summary gives 0.00004% (Av=1) - unresolved | f = 1 kHz | Nisshinbo MUSES8920A page/datasheet (search summaries conflict; see open_questions) |
-| Slew rate | 25 V/us typ. | V+/V- = +/-15 V (test condition per summary) | MUSES8920_E and MUSES8920A datasheets (search summaries) |
-| Gain-bandwidth product | 11 MHz typ. | V+/V- = +/-15 V | MUSES8920A datasheet / Nisshinbo series page (search summary) |
-| Input bias current | 5 pA typ. | not captured | MUSES8920A datasheet (search summary). The MUSES8920_E text cites low bias current as the reason it suits I/V converters. |
-| Operating supply voltage (MUSES8920) | +/-3.5 V to +/-16 V | dual supply | MUSES8920_E datasheet (search summary citing alldatasheet 808066 / Mouser copies) |
-| Operating supply voltage (MUSES8920A) | +/-3.5 V to +/-17 V | dual supply | MUSES8920A datasheet / Nisshinbo series page (search summary) |
-| Input stage | J-FET input (bipolar process) |  | MUSES8920A datasheet; MUSES8920_E title 'High Quality Audio J-FET Input Dual Operational Amplifier' |
-| Packages | MUSES8920: DIP8 (D), SOP8/EMP8 (E), DFN8-X7 (KX7, from 2016). MUSES8920A: SOP8 JEDEC 150 mil (AE), DFN8-X7 (AKX7); DIP8 (AD) only in the Ver.0.2 preliminary |  | njr.com MUSES8920 product page; JRC news 2016-09-02; MUSES8920A datasheets |
-| Target applications | I/V converters, preamplifiers, active filters, headphone amplifiers, line amplifiers (high-end, professional and portable audio; Ver.0.2 also lists car audio) |  | MUSES8920A datasheet; MUSES8920_E description |
+| Input noise (1 kHz) | 8.0 nV/√Hz typ | f = 1 kHz | MUSES8920_E Ver.2012-04-02; MUSES8920A |
+| GBW | 11 MHz typ | ±15 V | MUSES8920A datasheet |
+| Slew rate | 25 V/µs typ | ±15 V | MUSES8920_E; MUSES8920A |
+| THD+N | 0.00004% (8920, Av = 1); 0.0004% (8920A) | 8920A: 1 kHz, Av = +10, 5 Vrms, 2 kΩ | MUSES8920_E; MUSES8920A datasheet |
+| Supply range | ±3.5 to ±16 V (8920); ±3.5 to ±17 V (8920A) | dual supply | MUSES8920_E; MUSES8920A |
+| Input bias current | 5 pA typ |  | MUSES8920A datasheet |
+| Input stage | J-FET input on a bipolar process |  | MUSES8920A datasheet |
 
 
 </details>
@@ -131,8 +147,8 @@ Download every revision: `python tools/fetch_datasheets.py --family MUSES8920`
 
 | Vendor | Role | Period | Note |
 |---|---|---|---|
-| New Japan Radio Co. (New JRC / NJR) | originator / designer and manufacturer | 2011 (launch) to 2021 |  |
-| Nisshinbo Micro Devices Inc. | successor company (New JRC merged into Nisshinbo Micro Devices in 2022); current manufacturer | 2022 to present |  |
+| New Japan Radio (JRC) | originator | 2011–2021 | Launched 2011, J-FET sibling of MUSES8820 (2010). A 'mass-production' MUSES; layout and lead-frame reportedly simplified for cost. |
+| Nisshinbo Micro Devices | current | 2022–present | Took over after the 2022 merger. Replaced MUSES8920 with MUSES8920A (reportedly March 2024); MUSES8921 followed 2025-10-09. |
 
 
 </details>
@@ -142,18 +158,17 @@ Download every revision: `python tools/fetch_datasheets.py --family MUSES8920`
 
 | Vendor | Document | Rev | Date | Changes |
 |---|---|---|---|---|
-| New Japan Radio | product launch (no document) | n/a | 2011 | MUSES8920 released, per Nisshinbo's 2025-10-09 MUSES8921 release ('based on the MUSES8920 released in 2011'). |
-| New Japan Radio | MUSES8920_E | Ver.2012-04-02 | 2012-04-02 | Earliest dated English revision seen (Mouser /pdfdocs/). No change log; NJR datasheets of this era carry none. |
-| New Japan Radio | MUSES8920_E | Ver.2013-11-25 | 2013-11-25 | Later date-stamped revision (alldatasheet 808066; label from an earlier sweep). Changes unknown. It predates KX7 (2016). |
-| New Japan Radio | JRC news item (no document number) | n/a | 2016-09-02 | KX7 (DFN8-X7) small leadless package added to MUSES8920 and MUSES8832. |
-| New Japan Radio | MUSES8920_E | 'Ver.10' (as printed) | unknown (probably 2016-09 or later) | Mouser copy 259012. A search summary says it lists MUSES8920KX7 DFN8-X7, so it is probably the revision that adds KX7, or a later one. |
-| New Japan Radio / Nisshinbo | MUSES8920_E | unknown | unknown (Mouser ingest probably 2020 or later) | Mouser copy 1917228 (not re-confirmed). Possibly the last English revision of the original part (inferred). |
-| Nisshinbo Micro Devices | MUSES8920A_E | Ver.0.2 (PRELIMINARY) | unknown | Preliminary datasheet for the replacement MUSES8920A. Lists DIP8, SOP8 (EMP8) and DFN8-X7. |
-| Nisshinbo Micro Devices | MUSES8920A_E / MUSES8920A (JP) | Ver.1.0 | unknown (around March 2024 announcement; inferred) | First production datasheet: orderable SOP8 (AE) and DFN8-X7 (AKX7), with DIP8 (AD) not released. Japanese-language Ver.1.0 confirmed on Akizuki. |
-| Nisshinbo Micro Devices | product page notice (no PCN number found) | n/a | announced March 2024 (per one search summary; medium) | MUSES8920 production completed and replaced by MUSES8920A with no change in electrical characteristics, circuit or sound quality (Nisshinbo JA series page). |
-| Nisshinbo Micro Devices | News release 20251009 (MUSES8921) | n/a | 2025-10-09 | MUSES8921 (SOP8/DFN8; MUSES8921AN/GR) launched as a separate part number. It re-designs the MUSES8920 signal path, power path and element placement. |
-| New Japan Radio | MUSES8920_E | Ver.2013-11-25 | 2013-11-25 | Re-confirmed by search summary: the alldatasheet 808066 copy is Ver.2013-11-25, 8 pages, 309 Kbytes. The change log is not shown. It is the second date-stamped English revision after Ver.2012-04-02. |
-| Nisshinbo Micro Devices | MUSES8920A_E | unknown (alldatasheet 2271958 copy) | unknown | The search summary shows the alldatasheet MUSES8920A copy is 19 pages, against 8 pages for the NJR-era MUSES8920_E (2013). The document was fully reformatted into Nisshinbo's newer long-form template. The summary gives THD 0.0004% at 1 kHz, 8.0 nV/√Hz, 25 V/µs, GBW 11 MHz, IB 5 pA and ±3.5 V to ±17 V. Revision number not shown. |
+| New Japan Radio | product launch |  | 2011 | MUSES8920 released, per Nisshinbo's 2025-10-09 MUSES8921 release. |
+| New Japan Radio | MUSES8920_E | Ver. 2012-04-02 | 2012-04-02 | Earliest dated English revision seen. No change log. |
+| New Japan Radio | MUSES8920_E | Ver. 2013-11-25 | 2013-11-25 | 8 pages, 309 KB (alldatasheet 808066). Changes not shown; predates KX7. |
+| New Japan Radio | JRC news item |  | 2016-09-02 | KX7 (DFN8-X7) package added to MUSES8920 and MUSES8832. |
+| New Japan Radio | MUSES8920_E | Ver.10 (as printed) |  | Mouser copy 259012; reportedly lists KX7, so probably 2016-09 or later. |
+| New Japan Radio / Nisshinbo | MUSES8920_E |  |  | Mouser copy 1917228, probably ingested 2020 or later; possibly the last English revision. |
+| Nisshinbo Micro Devices | MUSES8920A_E | Ver. 0.2 (preliminary) |  | Preliminary MUSES8920A datasheet; lists DIP8, SOP8 (EMP8) and DFN8-X7. |
+| Nisshinbo Micro Devices | MUSES8920A_E / MUSES8920A (JP) | Ver. 1.0 |  | First production datasheet: AE and AKX7 orderable, AD not released. Probably around March 2024. Japanese Ver.1.0 at Akizuki. |
+| Nisshinbo Micro Devices | product page notice |  | 2024-03 | MUSES8920 production ended; replaced by MUSES8920A with unchanged characteristics, circuit and sound. Date reported, no PCN found. |
+| Nisshinbo Micro Devices | News release 20251009 |  | 2025-10-09 | MUSES8921 (MUSES8921AN/GR, SOP8/DFN8) launched; MUSES8920 signal path, power path and element placement redesigned. |
+| Nisshinbo Micro Devices | MUSES8920A_E |  |  | alldatasheet 2271958: 19 pages in Nisshinbo's long-form template vs 8 for MUSES8920_E. THD 0.0004%, 11 MHz, ±3.5 to ±17 V. |
 
 
 </details>
@@ -165,43 +180,41 @@ Status: **verified-with-corrections**, 9 web searches.
 
 **Confirmed:**
 
-- Nisshinbo says MUSES8920A can replace MUSES8920 with no change in electrical characteristics, circuit or sound: https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8920A.html
-- MUSES8920 production has ended and MUSES8920AE is the successor: https://akizukidenshi.com/catalog/g/g118179/
+- Nisshinbo: MUSES8920A replaces MUSES8920 with no change in characteristics, circuit or sound: https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8920A.html
+- MUSES8920 production has ended; MUSES8920AE is the successor: https://akizukidenshi.com/catalog/g/g118179/
 - Akizuki sells an SOP8-to-DIP 'MUSES8920AE DIP化モジュールキット': https://akizukidenshi.com/catalog/g/g129639/
-- The Akizuki MUSES8920A datasheet is Ver.1.0, Japanese-language: https://akizukidenshi.com/goodsaffix/MUSES8920A_E.pdf
-- The Mouser legacy copy is 'MUSES8920 - 1 - Ver.2012-04-02' with 8 nV/rtHz, 25 V/us and THD 0.00004% (Av=1): https://www.mouser.com/pdfdocs/MUSES8920_E.PDF
-- The Mouser 259012 copy is titled 'MUSES8920 - 1 - Ver.10' and, per a search summary, lists MUSES8920KX7 DFN8-X7 (ESON8-X7): https://www.mouser.com/datasheet/2/294/MUSES8920_E-259012.pdf
-- MUSES8920 operating voltage is +/-3.5 V to +/-16 V: https://html.alldatasheet.com/html-pdf/808066/NJRC/MUSES8920/98/1/MUSES8920.html
-- MUSES8920A: +/-3.5 V to +/-17 V, 8.0 nV/rtHz, 25 V/us, 11 MHz, 5 pA; I/V, preamp, filter, headphone and line uses: https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES8920A.html
-- The Profusion MUSES8920A copy is the PRELIMINARY datasheet: https://gb.profusion.uk/media/assets/product/documents/MUSES8920A.pdf
+- Akizuki MUSES8920A datasheet is Japanese-language Ver.1.0: https://akizukidenshi.com/goodsaffix/MUSES8920A_E.pdf
+- Mouser legacy copy is Ver.2012-04-02: 8 nV/√Hz, 25 V/µs, THD 0.00004% (Av=1): https://www.mouser.com/pdfdocs/MUSES8920_E.PDF
+- Mouser 259012 is titled 'Ver.10' and reportedly lists MUSES8920KX7 DFN8-X7: https://www.mouser.com/datasheet/2/294/MUSES8920_E-259012.pdf
+- MUSES8920 operating voltage ±3.5 V to ±16 V: https://html.alldatasheet.com/html-pdf/808066/NJRC/MUSES8920/98/1/MUSES8920.html
+- MUSES8920A: ±3.5 to ±17 V, 8.0 nV/√Hz, 25 V/µs, 11 MHz, 5 pA: https://www.nisshinbo-microdevices.co.jp/en/MUSES/series/MUSES8920A.html
+- Profusion MUSES8920A copy is the PRELIMINARY datasheet: https://gb.profusion.uk/media/assets/product/documents/MUSES8920A.pdf
 - Current vendor datasheet URL exists: https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES8920A_E.pdf
-- The njr.com product page lists MUSES8920D, MUSES8920E and MUSES8920KX7: https://www.njr.com/semicon/products/MUSES8920.html
-- MUSES8921 was announced 2025-10-09 in SOP8/DFN8 and is based on MUSES8920 (released 2011), with a redesigned signal path, power path and element placement: https://www.nisshinbo-microdevices.co.jp/en/about/info/20251009.html
-- MUSES8921AN/GR sample prices are JPY 500/550 with a planned 100k units per month: https://www.nikkei.com/article/DGXZRSP697873_Z01C25A0000000/
-- MUSES8920A standard model announced March 2024 (search summary): https://xtech.nikkei.com/atcl/nxt/column/18/00001/11169/
-- new_western_elec reported fake MUSES8920D in circulation (Nov 2023): https://nw-electric.way-nifty.com/blog/2023/11/post-4538b2.html
-- The new_western_elec MUSES8820 / MUSES8920 / MUSES8920A comparison post exists: https://nw-electric.way-nifty.com/blog/2025/11/post-38fcc1.html
-- MUSES02 fakes show thin, irregular marking numerals: https://x.com/fakecomponents/status/1272450211823202305
+- njr.com lists MUSES8920D, MUSES8920E and MUSES8920KX7: https://www.njr.com/semicon/products/MUSES8920.html
+- MUSES8921 announced 2025-10-09, based on MUSES8920 (2011), redesigned paths and placement: https://www.nisshinbo-microdevices.co.jp/en/about/info/20251009.html
+- MUSES8921AN/GR samples JPY 500/550, 100k units per month planned: https://www.nikkei.com/article/DGXZRSP697873_Z01C25A0000000/
+- MUSES8920A standard model announced March 2024 (reported): https://xtech.nikkei.com/atcl/nxt/column/18/00001/11169/
+- new_western_elec reported fake MUSES8920D (Nov 2023): https://nw-electric.way-nifty.com/blog/2023/11/post-4538b2.html
+- new_western_elec MUSES8820 / MUSES8920 / MUSES8920A comparison: https://nw-electric.way-nifty.com/blog/2025/11/post-38fcc1.html
+- MUSES02 fakes show thin, irregular numerals: https://x.com/fakecomponents/status/1272450211823202305
 
 **Refuted or corrected:**
 
-- 'No vendor-documented or community-documented counterfeit case specific to MUSES8920 was found': refuted. new_western_elec posted 'MUSES8920Dの偽物が出回っているらしい' (Nov 2023) (https://nw-electric.way-nifty.com/blog/2023/11/post-4538b2.html).
-- The operating supply of +/-3.5 V to +/-17 V was presented as applying to the whole family: refuted for the original part. MUSES8920_E gives +/-3.5 V to +/-16 V; +/-17 V is the MUSES8920A figure.
-- The THD headline of 0.0004% was treated as the family value: the original MUSES8920_E feature list gives 0.00004% (Av=1). The 8920A figure remains unresolved.
-- Counterfeit caveat 'None specific to MUSES8920 was found' removed from reputation.caveats (see above).
-- [change register] The previous 'THD headline unresolved' framing was replaced: the MUSES8920A 0.0004% figure is specified at Av=+10, Vo=5 Vrms, RL=2 kOhm (a different test condition), not a spec change
+- No MUSES8920 counterfeit case known: refuted; new_western_elec reported fake MUSES8920D in Nov 2023 (https://nw-electric.way-nifty.com/blog/2023/11/post-4538b2.html).
+- ±3.5 V to ±17 V applies to the whole family: refuted; MUSES8920_E gives ±16 V, ±17 V is the MUSES8920A figure.
+- 0.0004% THD as the family value: MUSES8920_E gives 0.00004% (Av=1); the 8920A figure uses Av=+10, 5 Vrms, 2 kΩ, so not a spec change.
 
 **Corrections:**
 
-- MUSES8920 launch year set to 2011, per Nisshinbo's MUSES8921 release ('based on the MUSES8920 released in 2011'). The earlier text said '2010-2011, unconfirmed'.
-- Added MUSES8921 details: announced 2025-10-09 (Nisshinbo newsroom 20251009), SOP8 and DFN8, part numbers MUSES8921AN/GR, sample prices JPY 500/550. Added to part_numbers as a separate successor part number.
-- Added MUSES8920A announcement date March 2024 (search summary, medium confidence; exact source attribution uncertain).
-- Silicon change spec_deltas now include the supply range (+/-16 V to +/-17 V) and the unresolved THD headline difference, alongside the package change.
-- Mouser 259012 'Ver.10': a search summary says it lists MUSES8920KX7 DFN8-X7, so it probably dates from 2016-09 or later, not 2015. Revision history updated.
-- Akizuki MUSES8920A copy raised to high confidence (title with 'Ver.1.0' re-confirmed). Added the Akizuki MUSES8920AE DIP module kit (g129639) as confirmation that DIP-form 8920A items are adapters.
-- Added mirrors: DigiKey HTML datasheet (5048864, 'muse8920' slug), electronicsdatasheets.com MUSES8920A, and the alldatasheet html-pdf page view.
-- Counterfeit notes rewritten: MUSES8920D fakes reported (new_western_elec 2023-11); MUSES01/02 fake markers added (fakecomponents on X, rarirureluis); AliExpress 'genuine new' MUSES8920D listings noted.
-- Datasheet entries not re-seen in this pass were lowered to low confidence and marked unconfirmed: Mouser 1917228, mm.digikey, Scribd, digchip, Mouser 3675900, the DigiKey product page and Nisshinbo MUSES8920_E.pdf.
+- Launch year set to 2011, per Nisshinbo's MUSES8921 release (previously '2010–2011, unconfirmed').
+- Added MUSES8921: announced 2025-10-09, SOP8/DFN8, MUSES8921AN/GR, samples JPY 500/550.
+- Added the reported March 2024 MUSES8920A announcement (medium confidence).
+- Supply range (±16 → ±17 V) and THD headline difference added to the change entry's spec deltas.
+- Mouser 259012 'Ver.10' dated 2016-09 or later, not 2015, because it reportedly lists KX7.
+- Akizuki MUSES8920A copy raised to high confidence; Akizuki DIP module kit (g129639) added.
+- Added mirrors: DigiKey HTML datasheet (5048864), electronicsdatasheets MUSES8920A, alldatasheet html-pdf view.
+- Counterfeit notes rewritten: MUSES8920D fakes (2023-11), MUSES01/02 fake markers, AliExpress 'genuine new' MUSES8920D listings.
+- Unconfirmed copies set to low confidence: Mouser 1917228, mm.digikey, Scribd, digchip, Mouser 3675900, DigiKey product page, Nisshinbo MUSES8920_E.pdf.
 
 **Links not confirmed:**
 
@@ -220,17 +233,11 @@ Status: **verified-with-corrections**, 9 web searches.
 
 **Open questions:**
 
-- THD conflict: MUSES8920_E gives 0.00004% (Av=1); one summary of the 8920A page gives 0.0004% at 1 kHz, another 0.00004%. Read the 8920A datasheet feature list directly.
-- Supply range rose from +/-16 V (8920) to +/-17 V (8920A) despite the 'no change' statement. Compare the full electrical tables, including absolute maximum ratings.
-- What does 'Ver.10' (Mouser 259012) mean, and is it the first revision with KX7? The KX7 listing comes from a single search summary.
-- Which revisions do these copies hold: Mouser 1917228, the DigiKey HTML and mm.digikey copies, datasheet4u/datasheetspdf 1007645, Scribd 478761947, digchip and electronicsdatasheets? Confirm the Ver.2013-11-25 label on alldatasheet 808066.
-- Current Nisshinbo MUSES8920A_E revision and printed date (Ver.1.0 or later), and the date of the Ver.0.2 preliminary.
-- Confirm the March 2024 MUSES8920A announcement against a Nisshinbo newsroom item. Is there a discontinuation notice or PCN number, and a last-time-buy date for MUSES8920D/E/KX7?
-- Why the 'A' suffix (fab, process, material or assembly change)? No source found.
-- MUSES8921AN vs MUSES8921GR: which is SOP8 and which is DFN8?
-- Identifying features of the fake MUSES8920D in new_western_elec's Nov 2023 post. Did the top marking change from JRC to Nisshinbo on late 8920 lots? (Discovery hint, unverified.)
-- The Head-Fi round-up measurement numbers for MUSES8920 were not captured.
-- Inferred URLs never seen in any search result: Nisshinbo .../en/pdf/datasheet/MUSES8920_E.pdf, http://www.njr.com/semicon/PDF/MUSES8920_E.pdf, .../ja/pdf/datasheet/MUSES8920_J.pdf and MUSES8920A_J.pdf.
+- Read the full 8920A electrical tables: why did the supply rise to ±17 V despite 'no change'?
+- What does 'Ver.10' mean (first with KX7?), and what did the Head-Fi round-up measure?
+- Which revisions do undated mirrors hold (Mouser 1917228, DigiKey, 1007645, Scribd, digchip)? Dates for MUSES8920A Ver.0.2 and Ver.1.0?
+- Is there a PCN, discontinuation notice or last-time-buy date for MUSES8920D/E/KX7, and why the 'A' suffix?
+- How to spot the fake MUSES8920D; did late markings change from JRC to Nisshinbo? Which MUSES8921 suffix is SOP8?
 
 
 </details>

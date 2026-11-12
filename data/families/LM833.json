@@ -1,225 +1,189 @@
 {
   "id": "LM833",
-  "name": "LM833 / LM833-N (LM837 quad)",
-  "tagline": "Cheap, quiet (4.5 nV/rtHz, 15-16 MHz, 7 V/us) bipolar audio dual found throughout consumer and pro gear; the budget sibling of the NE5532.",
-  "technology": "Bipolar dual op-amp, internally compensated. Several different dies are sold under the one generic number. National's LM833 (TI LM833-N today) has a complementary emitter-follower output that uses a vertical PNP. TI's own LM833 (SLOS481, July 2010) has a quasi-complementary output made from two NPNs (TI E2E 430833). In E2E thread 1443925 a responder said TI's MC33078 and LM833 appear to be the same die because all specs and graphs are identical. Motorola/onsemi and ST have their own versions. TI confirmed on E2E (thread 1652528; reported by Hackaday 3 June 2026 and Headphonesty July 2026) that its NE5532, LM833, RC4580 and MC33078 now share one die.",
+  "name": "LM833 / LM833-N / LM837",
+  "type": "Bipolar low-noise audio dual (LM837 quad)",
+  "tier": "A",
+  "category": "bipolar-classic",
+  "tagline": "Cheap, quiet (4.5 nV/√Hz, 15–16 MHz, 7 V/µs) audio dual found throughout consumer and pro gear; the NE5532's sibling.",
   "manufacturers": [
     "National Semiconductor",
     "Texas Instruments",
     "Motorola",
-    "ON Semiconductor / onsemi",
+    "onsemi",
     "STMicroelectronics"
+  ],
+  "lineage": [
+    {
+      "vendor": "National Semiconductor",
+      "role": "originator",
+      "period": "by 1990s–2011",
+      "note": "Named the LM833 (TI E2E 430833). DS005218, © 2004. 1980s introduction unverified."
+    },
+    {
+      "vendor": "Motorola → onsemi",
+      "role": "second source",
+      "period": "Motorola era–present",
+      "note": "Own design. onsemi LM833/D Rev. 6 (Sept 2011); current 'LM833, NCV833' Rev. 8 (July 2025)."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "role": "second source",
+      "period": "2009–present",
+      "note": "Datasheet Doc ID 2169 Rev 3, August 2009."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "second source",
+      "period": "2010–present",
+      "note": "Own LM833 (SLOS481, July 2010) with NPN output stage; reportedly same die as MC33078 (E2E 1443925)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "acquirer",
+      "period": "2011–present",
+      "note": "Renamed National's part LM833-N (SNOSBD8); SNOSBD8D still 'LM833', -N first in SNOSBD8E (May 2012)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "current",
+      "period": "cut-over undocumented; public 2026",
+      "note": "LM833 merged onto the NE5532/RC4580/MC33078 die (E2E 1652528; Hackaday 3 June 2026)."
+    }
   ],
   "part_numbers": [
     {
       "pn": "LM833P",
       "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active (TI product page live; lifecycle not re-checked)",
-      "notes": "TI's own LM833 design (SLOS481), PDIP-8. Now on the shared NE5532/MC33078/RC4580 die per TI E2E 1652528 (cut-over date not documented)."
+      "status": "active",
+      "note": "TI's own design (SLOS481), PDIP-8. Now on the shared die (E2E 1652528)."
     },
     {
       "pn": "LM833DR",
       "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active (not re-checked)",
-      "notes": "TI's own LM833, SOIC-8 tape and reel. Search summaries say PCN 20231114002.1 lists it with RC4580IP, MC33078DR and NE5532AP; PCN content not verified."
+      "status": "active",
+      "note": "TI SOIC-8 reel. Reportedly listed in PCN 20231114002.1 with NE5532AP, MC33078DR, RC4580IP."
     },
     {
       "pn": "LM833-N (LM833M/NOPB, LM833MX/NOPB, LM833N/NOPB)",
       "channels": 2,
-      "vendors": [
-        "Texas Instruments (ex-National)"
-      ],
-      "status": "unknown (TI product page and LM833M part-details page live; lifecycle not checked)",
-      "notes": "The original National die, datasheet SNOSBD8 (Rev E, May 2012). LM833MX/NOPB seen only in a GitHub EasyEDA library."
+      "status": "unknown",
+      "note": "Original National die, SNOSBD8 (Rev E, May 2012). TI product page live."
     },
     {
       "pn": "LM833N / LM833M (National)",
       "channels": 2,
-      "vendors": [
-        "National Semiconductor"
-      ],
-      "status": "obsolete brand (now TI LM833-N)",
-      "notes": "National marking. Per TI E2E 430833, NS named it LM833 and TI renamed it LM833-N after the acquisition. LM833, LM833M and LM833N appear in National's MicroSim 8.0-era PSpice library."
+      "status": "obsolete",
+      "note": "National marking, now TI LM833-N. Also LM833MM/MMX in National's order list."
     },
     {
       "pn": "LM833 (Motorola)",
       "channels": 2,
-      "vendors": [
-        "Motorola"
-      ],
-      "status": "obsolete brand (now onsemi)",
-      "notes": "Motorola 'SEMICONDUCTOR TECHNICAL DATA' datasheet. Soomal photographed a Motorola LM833N in a Philips CD614 CD player."
+      "status": "obsolete",
+      "note": "Motorola brand, now onsemi. Soomal found a Motorola LM833N in a Philips CD614."
     },
     {
       "pn": "LM833NG / LM833DG",
       "channels": 2,
-      "vendors": [
-        "onsemi"
-      ],
-      "status": "discontinued (OPNs marked discontinued per onsemi LM833/D Rev. 8, July 2025; Arrow lists LM833NG as discontinued)",
-      "notes": "onsemi PDIP and SOIC Pb-free orderables covered by LM833/D."
+      "status": "obsolete",
+      "note": "onsemi PDIP / SOIC Pb-free; discontinued per LM833/D Rev. 8 (July 2025) and Arrow."
     },
     {
       "pn": "LM833DR2G",
       "channels": 2,
-      "vendors": [
-        "onsemi"
-      ],
-      "status": "active (per onsemi parametric scrape; still listed by RS as onsemi LM833DR2G, 15 MHz, 10-36 V)",
-      "notes": "SOIC-8 tape and reel. Widely used in open-source designs (JLCPCB part C7969)."
+      "status": "active",
+      "note": "onsemi SOIC-8 reel, 15 MHz, 10–36 V (RS). JLCPCB part C7969."
     },
     {
       "pn": "NCV833 (NCV833DR2G)",
       "channels": 2,
-      "vendors": [
-        "onsemi"
-      ],
-      "status": "active per an onsemi parametric scrape (automotive/AEC-Q; date unknown)",
-      "notes": "Automotive version on the 'LM833, NCV833' datasheet LM833/D."
+      "status": "active",
+      "note": "onsemi automotive (AEC-Q) version on datasheet LM833/D."
     },
     {
-      "pn": "LM833 (ST)",
+      "pn": "LM833 / LM833DT (ST)",
       "channels": 2,
-      "vendors": [
-        "STMicroelectronics"
-      ],
-      "status": "unknown (ST product page live)",
-      "notes": "ST (ex-SGS-Thomson) second source, datasheet Doc ID 2169 Rev 3. Orderable suffixes not verified."
+      "status": "unknown",
+      "note": "ST (ex-SGS-Thomson) second source, Doc ID 2169 Rev 3. ST product page live."
     },
     {
       "pn": "LM837 (LM837M, LM837N)",
       "channels": 4,
-      "vendors": [
-        "National Semiconductor"
-      ],
-      "status": "unknown (National-era part; TI status not verified)",
-      "notes": "National 'Low Noise Quad Operational Amplifier' per National's catalogue list and MicroSim library. No datasheet URL or TI lifecycle found."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "National Semiconductor",
-      "role": "originator of the LM833 name (per TI E2E 430833)",
-      "period": "by the 1990s to 2011",
-      "notes": "TI E2E: LM833-N is 'originally from National Semiconductor which was named LM833 by NS'. SNOSBD8E header 'MAY 2004 - REVISED MAY 2012' dates a document edition, not the part introduction. The 1980s introduction claim is not verified."
-    },
-    {
-      "vendor": "Motorola -> ON Semiconductor (onsemi)",
-      "role": "second source / independent design",
-      "period": "Motorola era to present",
-      "notes": "Motorola 'SEMICONDUCTOR TECHNICAL DATA' LM833 datasheet exists. onsemi LM833/D Rev. 6 (September 2011); current 'LM833, NCV833' LM833/D is Rev. 8 (July 2025), confirmed."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "role": "second source",
-      "period": "at least 2009 to present",
-      "notes": "Datasheet Doc ID 2169 Rev 3, August 2009 (header confirmed)."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "role": "own second-source design (LM833)",
-      "period": "July 2010 to present",
-      "notes": "SLOS481, first dated July 2010. Per TI E2E 430833, TI changed the output stage to NPN type from National's vertical PNP. Headline figures (4.5 nV/rtHz, 16 MHz, 7 V/us, 0.002%, ±5 to ±18 V) match TI's MC33078; an E2E 1443925 reply said the two appear to be the same die."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "role": "acquirer of National",
-      "period": "2011 to present",
-      "notes": "After the acquisition TI renamed National's LM833 to LM833-N (SNOSBD8) to distinguish it from TI's own LM833 (E2E 430833). SNOSBD8D, still titled 'LM833' under a TI cover, preceded the rename; -N first seen in SNOSBD8E (May 2012)."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "role": "die consolidation",
-      "period": "cut-over date not documented (PCN activity 2023-2025 suspected); public confirmation on TI E2E, Hackaday 3 June 2026",
-      "notes": "TI E2E thread 1652528 ('NE5532, LM833, RC4580 and MC33078 all now the same die'), Hackaday and Headphonesty report TI confirmed the merge. Earlier search summaries tie it to an SFAB (Sherman) to RFAB (Richardson) move (not re-confirmed). PCN 20240429005.1 (April 30 2024) covers RFAB qualification with die revision; LM833 membership not confirmed."
+      "status": "unknown",
+      "note": "National 'Low Noise Quad Operational Amplifier'. No datasheet URL or TI status found."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise e_n",
-      "value": "4.5 nV/rtHz (typ)",
-      "condition": "typ, datasheet headline (all vendors)",
-      "source": "TI LM833 product page / SLOS481; onsemi parametrics"
+      "parameter": "Input noise (1 kHz)",
+      "value": "4.5 nV/√Hz typ",
+      "condition": "headline, all vendors",
+      "source": "SLOS481B; onsemi LM833/D"
     },
     {
-      "parameter": "Gain-bandwidth product",
-      "value": "16 MHz typ (TI LM833, SLOS481B); 15 MHz typ (onsemi LM833; National/TI LM833-N)",
+      "parameter": "GBW",
+      "value": "16 MHz (TI LM833); 15 MHz typ / 10 min (National, onsemi)",
       "condition": "typ",
-      "source": "SLOS481B ('high gain bandwidth of 16 MHz which stays relatively stable over a wide range of supply voltages'); RS onsemi LM833DR2G listing (15 MHz)"
+      "source": "SLOS481B; DS005218; RS onsemi listing"
     },
     {
       "parameter": "Slew rate",
-      "value": "7 V/us (typ)",
+      "value": "7 V/µs typ (5 V/µs min, National)",
       "condition": "typ",
-      "source": "TI SLOS481A/B; onsemi parametrics"
+      "source": "SLOS481A/B; DS005218"
     },
     {
-      "parameter": "THD",
-      "value": "0.002% (typ)",
-      "condition": "datasheet headline",
-      "source": "TI SLOS481A/B"
+      "parameter": "THD+N",
+      "value": "0.002% typ",
+      "condition": "headline; 140 dB DR, source unclear",
+      "source": "SLOS481A/B"
     },
     {
       "parameter": "Supply range",
-      "value": "±5 V to ±18 V (10 V to 36 V)",
+      "value": "±5 V to ±18 V (10–36 V)",
       "condition": "specified operating range",
-      "source": "TI SLOS481A/B; onsemi (RS listing LM833DR2G 10-36 V)"
+      "source": "SLOS481A/B; onsemi LM833/D"
     },
     {
-      "parameter": "Input offset voltage",
-      "value": "0.15 mV typ (TI LM833); 5 mV max (onsemi parametric table)",
-      "condition": "headline / parametric",
-      "source": "TI SLOS481A search summary; onsemi table as scraped on GitHub"
+      "parameter": "Offset voltage",
+      "value": "0.15 mV typ (TI); 5 mV max (onsemi)",
+      "condition": "onsemi drift 2 µV/°C",
+      "source": "SLOS481A; onsemi parametric table"
     },
     {
-      "parameter": "Dynamic range",
-      "value": "140 dB (>140 dB)",
-      "condition": "headline feature",
-      "source": "Attributed in the draft to TI SLOS481; not re-confirmed in this pass and likely from the National/TI LM833-N (SNOSBD8) feature list (unconfirmed)"
+      "parameter": "Input bias current",
+      "value": "≈300 nA typ (onsemi)",
+      "condition": "CMRR 100 dB typ; −40 to +85 °C",
+      "source": "onsemi parametric table"
     },
     {
-      "parameter": "Output stage",
-      "value": "TI LM833: quasi-complementary, two NPN devices. LM833-N/National: complementary emitter-follower pair (vertical PNP)",
-      "condition": "block diagram",
-      "source": "TI E2E thread 430833 (confirmed); SLOS481B / SNOSBD8E block diagrams"
+      "parameter": "Output current",
+      "value": "≈29 mA typ (onsemi)",
+      "condition": "isolate loads above 50 pF",
+      "source": "onsemi parametric table; SNOSBD8E"
     },
     {
-      "parameter": "Capacitive load",
-      "value": "Up to 50 pF causes little change in phase; loads above 50 pF must be isolated from the output",
-      "condition": "application note in datasheet",
-      "source": "TI LM833-N SNOSBD8E"
-    },
-    {
-      "parameter": "onsemi LM833 other parametrics",
-      "value": "Ibias ~300 nA typ, CMRR 100 dB typ, output current ~29 mA typ, Vos drift 2 uV/C, -40 to +85 C",
-      "condition": "parametric table (typ)",
-      "source": "onsemi parametric data as scraped into GitHub repo fei-team-project/component-finder-backend (third-party copy)"
+      "parameter": "Input stage",
+      "value": "Bipolar; TI out: 2-NPN quasi-compl.; National: NPN + VPNP",
+      "condition": "60° phase margin (National)",
+      "source": "TI E2E 430833; SLOS481B; SNOSBD8E"
     }
   ],
   "reputation": {
-    "summary": "A budget, low-noise (4.5 nV/rtHz) bipolar audio dual that datasheets aim at 'all preamp and high level stages in PCM and HiFi systems'. Common in CD players, portable players, graphic equalizers and DIY mic preamps, and usually weighed against the NE5532. GroupDIY forum posters (search-summary level) describe it as having lower distortion but lower output drive than the 5532, suited to high-gain/low-distortion work where drive is not needed, and as National's attempt to rival the 5532 that did not beat it. A search summary attributes to Mithat Konar's 2026 blog the view that the LM833 now out-specs the revised TI NE5532 in most respects. No verified sound descriptors or published measurements (Self, Groner, ASR) were found; treat as thin.",
+    "summary": "A cheap, quiet audio dual aimed at 'all preamp and high level stages in PCM and HiFi systems', common in CD players, equalizers and mic preamps. GroupDIY posters find lower distortion but less drive than the NE5532; Mithat Konar (2026) reportedly says it now out-specs TI's revised NE5532. No verified sound descriptors or measurements (Self, Groner, ASR).",
     "sonic_descriptors": [],
     "typical_uses": [
-      "Preamp and line-level stages in PCM/CD and hi-fi equipment (per datasheet)",
-      "CD players: Philips CD614 with a Motorola LM833N (Soomal teardown photo)",
-      "Portable players: HiFiMan HM-601 used a TI LM833 as the I/V converter after a TDA1543 DAC (Soomal)",
-      "Graphic equalizers and tone-control stages",
-      "Mic preamps (as an NE5532 alternative)",
-      "Consumer-audio op-amp sockets / op-amp rolling baseline"
+      "Preamp and line stages in CD and hi-fi gear",
+      "Philips CD614 CD player (Motorola LM833N, Soomal)",
+      "HiFiMan HM-601 I/V after TDA1543 DAC (TI LM833)",
+      "Graphic equalizers, tone controls and mic preamps",
+      "Op-amp rolling baseline in consumer sockets"
     ],
     "caveats": [
-      "TI 'LM833' and TI 'LM833-N' are two different devices with different output stages (TI E2E 430833). Check the logo and exact orderable.",
-      "TI merged LM833 onto one die shared with NE5532/MC33078/RC4580 (TI E2E 1652528). New-date-code TI parts may behave differently; LM833-specific deltas and the cut-over date are not documented in sources found.",
-      "Some search summaries say TI's LM833 went from ±22 V to ±18 V and from 9 to 5 V/us. Those are NE5532 (SLOS075K) deltas; TI's LM833 was always specified at ±18 V and 7 V/us.",
-      "Lower output drive than NE5532 per forum reports; capacitive loads above 50 pF must be isolated (LM833-N datasheet).",
-      "TI LM833 is specified only to ±18 V supplies.",
-      "onsemi LM833NG/LM833DG are discontinued; LM833DR2G/NCV833DR2G appear active."
+      "TI 'LM833' and 'LM833-N' are different devices with different output stages; check logo and exact orderable.",
+      "TI's LM833 now shares the NE5532/MC33078/RC4580 die; newer date codes may behave differently. Cut-over undocumented.",
+      "Reported ±22→±18 V and 9→5 V/µs changes are NE5532 (SLOS075K) deltas; TI's LM833 was always ±18 V, 7 V/µs.",
+      "Lower output drive than NE5532 (forum reports); isolate capacitive loads above 50 pF (LM833-N datasheet).",
+      "onsemi LM833NG/LM833DG discontinued; LM833DR2G and NCV833DR2G appear active."
     ],
     "sources": [
       "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/430833/lm833-and-lm833-n-clarification-on-data-sheet-differences-sought",
@@ -238,812 +202,26 @@
       "https://gearspace.com/board/geekzone/1464976-headsup-ti-has-changed-ne5532-k-version-2024-gt-opax134-lhm6518.html"
     ]
   },
-  "datasheets": [
-    {
-      "vendor": "Texas Instruments",
-      "title": "LM833 Dual High-Speed Audio Operational Amplifier",
-      "doc_number": "SLOS481",
-      "revision": "B",
-      "date": "2014-10",
-      "url": "https://www.ti.com/lit/ds/symlink/lm833.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "Symlink always serves the newest revision. A 2026 GitHub benchmark recorded it as 36 pages / 1,176,968 bytes, possibly a revision newer than B (unverified). No 'SLOS481C' header found in web search this pass. Snapshot with a date."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "LM833 Dual High-Speed Audio Operational Amplifier (GPN link)",
-      "doc_number": "SLOS481",
-      "revision": "",
-      "date": "",
-      "url": "https://www.ti.com/lit/gpn/LM833",
-      "url_kind": "vendor_current",
-      "confidence": "medium",
-      "revision_status": "unknown",
-      "revision_text": "current (unknown)",
-      "note": "TI generic-part-number redirect to the current datasheet; seen in search results without a revision letter."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "LM833 Dual High-Speed Audio Operational Amplifier",
-      "doc_number": "SLOS481B",
-      "revision": "B",
-      "date": "2014-10",
-      "url": "https://www.mouser.com/datasheet/2/405/slos481b-521846.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "Frozen Rev B copy (file name gives revision); search summary confirms its 16 MHz GBW text. Pre-consolidation reference."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "LM833 Dual High-Speed Audio Operational Amplifier ( ... [truncated]",
-      "doc_number": "SLOS481A",
-      "revision": "A",
-      "date": "2010-08",
-      "url": "https://datasheet.octopart.com/LM833DR-Texas-Instruments-datasheet-21221952.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "Seen in search results this pass (title truncated). An earlier summary attributed the SLOS481A header to it."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "LM833 (TI) - Octopart copy under LM833P",
-      "doc_number": "SLOS481 (presumed A)",
-      "revision": "A",
-      "date": "",
-      "url": "https://datasheet.octopart.com/LM833P-Texas-Instruments-datasheet-21221952.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "probable",
-      "note": "Unconfirmed: not re-seen this pass; revision inferred from shared file id only."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "LM833 (TI) - Octopart copy, newer-style layout (pinout header 'IN2+ IN2- OUT2 VCC+ VCC- IN1+ IN1- OUT1')",
-      "doc_number": "SLOS481 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet.octopart.com/LM833DR-Texas-Instruments-datasheet-32026551.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "New find this pass; revision unconfirmed. Higher file id than the Rev A copy, so worth checking whether it freezes Rev B or a later (post-merge) revision."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "LM833 Dual High-Speed Audio Operational Amplifier (Rev. A)",
-      "doc_number": "SLOS481A",
-      "revision": "A",
-      "date": "2010-08",
-      "url": "https://cdn-reichelt.de/documents/datenblatt/A200/LM833-TI.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "Reichelt copy titled '(Rev. A)', seen this pass."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "dual high-speed audio operational amplifier",
-      "doc_number": "SLOS481 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet.octopart.com/LM833P-Texas-Instruments-datasheet-10089682.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Older-style lower-case TI title (seen this pass). Revision not visible; may be the only copy of the original, un-lettered SLOS481."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "LM833 Datasheet Texas Instruments",
-      "doc_number": "SLOS481 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.radiolocman.com/datasheet/data.html?di=300003",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Seen this pass; revision not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "LM833P Datasheet Texas Instruments",
-      "doc_number": "SLOS481 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.radiolocman.com/datasheet/data.html?di=82594",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "New find this pass; lower id than di=300003, so possibly an older revision (unconfirmed)."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "title": "LM833-N Dual Audio Operational Amplifier",
-      "doc_number": "SNOSBD8E",
-      "revision": "E",
-      "date": "2012-05",
-      "url": "https://www.ti.com/lit/ds/symlink/lm833-n.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "Current datasheet for the ex-National die; header 'SNOSBD8E -MAY 2004-REVISED MAY 2012' confirmed in search results this pass."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "title": "LM833-N Dual Audio Operational Amplifier",
-      "doc_number": "SNOSBD8E",
-      "revision": "E",
-      "date": "2012-05",
-      "url": "https://www.ti.com/lit/gpn/lm833-n",
-      "url_kind": "vendor_current",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "GPN redirect; not re-seen this pass (earlier sweep showed the Rev E header)."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "title": "LM833-N Dual Audio Operational Amplifier",
-      "doc_number": "SNOSBD8E",
-      "revision": "E",
-      "date": "2012-05",
-      "url": "https://www.mouser.com/datasheet/2/282/lm833-n-220371.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "Frozen Rev E copy (earlier sweep); not re-seen this pass."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "title": "LM833-N Dual Audio Operational Amplifier (Rev. E)",
-      "doc_number": "SNOSBD8E",
-      "revision": "E",
-      "date": "2012-05",
-      "url": "https://www.farnell.com/datasheets/2364222.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "Farnell copy titled '(Rev. E)' (earlier sweep); not re-seen this pass."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "title": "LM833-N Dual Audio Operational Amplifier (Rev. E)",
-      "doc_number": "SNOSBD8E",
-      "revision": "E",
-      "date": "2012-05",
-      "url": "https://datasheet.octopart.com/LM833N-Texas-Instruments-datasheet-12515562.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "Octopart copy titled '(Rev. E)' (earlier sweep); not re-seen this pass."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "title": "LM833 Dual Audio Operational Amplifier, Literature Number: SNOSBD8D",
-      "doc_number": "SNOSBD8D",
-      "revision": "D",
-      "date": "",
-      "url": "https://datasheet.octopart.com/LM833M-NOPB-Texas-Instruments-datasheet-10846346.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "Transitional National datasheet under a TI cover, before the -N rename (earlier sweep); not re-seen this pass."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "LM833 Dual Audio Operational Amplifier General Description",
-      "doc_number": "unknown (National DS number not retrieved)",
-      "revision": "",
-      "date": "",
-      "url": "https://web.ece.ucsb.edu/~ilan/Classes/ECE2A_F2010/Labs/Datasheets/lm833.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "UCSB course copy in original National format; seen this pass."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "LM833 Dual Audio Operational Amplifier",
-      "doc_number": "unknown",
-      "revision": "",
-      "date": "",
-      "url": "https://www.qsl.net/n9zia/vision/LM833.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Hobby-site copy in National format. Unconfirmed this pass."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "LM833 Dual Audio Operational Amplifier General Description",
-      "doc_number": "unknown",
-      "revision": "",
-      "date": "",
-      "url": "https://docs.lightningmaps.org/files/extra/Datasheets/OP-Amp/lm833.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Copy in National format. Unconfirmed this pass."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "LM833N Datasheet (PDF) - National Semiconductor (TI)",
-      "doc_number": "unknown",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/95604/NSC/LM833N.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "18 pages per earlier summary; may be TI-wrapped. Unconfirmed this pass."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "LM833 Datasheet (PDF) - National Semiconductor (TI)",
-      "doc_number": "unknown",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/95601/NSC/LM833.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Revision not visible. Unconfirmed this pass."
-    },
-    {
-      "vendor": "onsemi",
-      "title": "LM833, NCV833 - Low Noise, Audio Dual Operational Amplifier",
-      "doc_number": "LM833/D",
-      "revision": "Rev. 8",
-      "date": "2025",
-      "url": "https://www.onsemi.com/download/data-sheet/pdf/lm833-d.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "Current onsemi datasheet; 'July, 2025 - Rev. 8' confirmed in search results. LM833NG/LM833DG OPNs marked discontinued."
-    },
-    {
-      "vendor": "onsemi",
-      "title": "DATA SHEET www.onsemi.com (c) Semiconductor Components Industries, LLC, 2011",
-      "doc_number": "LM833/D",
-      "revision": "",
-      "date": "2011",
-      "url": "https://www.onsemi.com/pdf/datasheet/lm833-d.pdf",
-      "url_kind": "vendor_legacy",
-      "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "Legacy onsemi URL pattern (used by KiCad libraries); seen this pass. Served revision may change over time."
-    },
-    {
-      "vendor": "onsemi",
-      "title": "LM833/D",
-      "doc_number": "LM833/D",
-      "revision": "Rev. 6",
-      "date": "2011",
-      "url": "https://www.mouser.com/datasheet/2/308/lm833-d-1192563.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "Frozen Rev 6 copy; header seen in an earlier sweep, not re-seen this pass."
-    },
-    {
-      "vendor": "onsemi",
-      "title": "LM833 - Low Noise Audio Dual Operational Amplifier",
-      "doc_number": "LM833/D",
-      "revision": "",
-      "date": "",
-      "url": "https://www.mouser.com/datasheet/2/308/LM833-D-93350.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Older Mouser copy; revision not visible. Unconfirmed this pass."
-    },
-    {
-      "vendor": "onsemi",
-      "title": "LM833DR2G datasheet (distributor original)",
-      "doc_number": "LM833/D (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-301/4263.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Unconfirmed URL: seen only in a SamacSys KiCad model on GitHub, never in web search."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "LM833 (Motorola SEMICONDUCTOR TECHNICAL DATA)",
-      "doc_number": "LM833/D (Motorola, presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://eletrodex.org/eletrodex/Loja_Tray/Datasheets/Semicondutores/CIs%20Amp-Ops/Uso_Geral/lm833.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Motorola-format datasheet; document number presumed. Unconfirmed this pass."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "LM833 Datasheet (PDF) - Motorola, Inc",
-      "doc_number": "unknown",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/3069/MOTOROLA/LM833.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Motorola-era copy. Unconfirmed this pass."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "LM833 Low noise dual operational amplifier",
-      "doc_number": "Doc ID 2169",
-      "revision": "Rev. 3",
-      "date": "2009-08",
-      "url": "https://www.st.com/resource/en/datasheet/lm833.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "Header 'August 2009 Doc ID 2169 Rev 3' confirmed in search results this pass."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "LM833 Datasheet (PDF) - STMicroelectronics",
-      "doc_number": "Doc ID 2169 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/22771/STMICROELECTRONICS/LM833.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Possibly an older ST/SGS-Thomson revision. Unconfirmed this pass."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "LM833 Dual Audio Operational Amplifier",
-      "doc_number": "DS005218 (National DS number, from the file name)",
-      "revision": "",
-      "date": "",
-      "url": "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS005218.PDF",
-      "url_kind": "third_party_mirror",
-      "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "The file name gives National's DS number DS005218 for the LM833. A search summary of DS005218 copies quotes 'high gain bandwidth 15MHz (typical) and 10MHz (minimum)', 'slew rate 7 V/us (typical) and 5V/us (minimum)', 0.002% distortion, 60 deg phase margin. The summary does not show the edition date."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "LM833 Dual Audio Operational Amplifier",
-      "doc_number": "DS005218 (per search summary)",
-      "revision": "",
-      "date": "2004",
-      "url": "https://www.jameco.com/Jameco/Products/ProdDS/1309253.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Came up for both a 'DS0 ... May 2004' search and a 'DS005218' search. The search summary said the National datasheets are '(c) 2004, DS005218', with order numbers LM833M/MX/N/MM/MMX in M08A, N08E and MUA08A packages. That summary may mix several copies."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "LM833 Dual Audio Operational Amplifier General Description",
-      "doc_number": "DS005218 (per search summary)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.jameco.com/Jameco/Products/ProdDS/120942.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Top result for the query '\"DS005218\" LM833'. It is a separate Jameco file from 1309253.pdf, so it may be a different National edition."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "LM833 Dual Audio Operational Amplifier General Description",
-      "doc_number": "DS005218 (per search summary)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.sm5cbw.se/audio/ic-data/LM833.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Hobby site copy that came up for the query '\"DS005218\" LM833'."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "LM833 Dual Audio Operational Amplifier General Description",
-      "doc_number": "DS005218 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet.octopart.com/LM833MM/NOPB-National-Semiconductor-datasheet-9811680.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Octopart cache file labeled National Semiconductor. Came up for both the DS005218 and 'May 2004' searches."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "NATIONAL SEMICONDUCTOR (LM833M/NOPB) DUAL ...",
-      "doc_number": "DS005218 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet.octopart.com/LM833M/NOPB-National-Semiconductor-datasheet-8191293.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "The title looks like a distributor (Farnell/Newark-style) cover wrapped around the National datasheet. Came up for the DS005218 search."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "NATIONAL SEMICONDUCTOR (LM833MX/NOPB) DUAL ...",
-      "doc_number": "DS005218 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet.octopart.com/LM833MX-NOPB-Texas-Instruments-datasheet-7578376.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Octopart lists it under Texas Instruments, but the title says National Semiconductor. The title looks like a distributor cover around the National datasheet."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "title": "LM833 Dual Audio Operational Amplifier - bidulic",
-      "doc_number": "DS005218 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://p.pdfhall.com/lm833-dual-audio-operational-amplifier-bidulic-bidulic_5b70245d097c47ee718b45af.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "pdfhall HTML rendering. Came up for the DS005218 search."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "title": "LM833 Dual Audio Operational Amplifier: Literature Number: SNOSBD8D",
-      "doc_number": "SNOSBD8D",
-      "revision": "D",
-      "date": "",
-      "url": "https://www.scribd.com/doc/102660047/lm833",
-      "url_kind": "third_party_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "The Scribd title shows 'Literature Number: SNOSBD8D': the National LM833 datasheet under a TI cover, from before the LM833-N rename."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "title": "LM833 LM833 Dual Audio Operational Amplifier Literature Number: SNOSBD8D",
-      "doc_number": "SNOSBD8D",
-      "revision": "D",
-      "date": "",
-      "url": "https://datasheet.octopart.com/LM833M-National-Semiconductor-datasheet-10846346.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "Same Octopart file id (10846346) as the LM833M-NOPB copy already listed, but reached through a different URL (under the National Semiconductor label). The title shows SNOSBD8D."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National, Japan)",
-      "title": "LM833 LM833 Dual Audio Operational Amplifier Literature Number: JAJSB49",
-      "doc_number": "JAJSB49",
-      "revision": "",
-      "date": "",
-      "url": "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/TI/lm833n.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "Japanese-language copy of the National LM833 datasheet under a TI cover, literature number JAJSB49. It is the TI Japan counterpart of the SNOSBD8 document; which English edition it translates is not shown."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "title": "LM833-N www.ti.com SNOSBD8E - MAY 2004 - REVISED MAY 2012",
-      "doc_number": "SNOSBD8E",
-      "revision": "E",
-      "date": "2012-05",
-      "url": "https://datasheet.octopart.com/LM833M-Texas-Instruments-datasheet-28360528.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "The header shown in the search title confirms SNOSBD8E."
-    },
-    {
-      "vendor": "onsemi",
-      "title": "LM833, NCV833 - (c) Semiconductor Components Industries, LLC, 2011 September, 2011 - Rev. 6",
-      "doc_number": "LM833/D",
-      "revision": "Rev. 6",
-      "date": "2011",
-      "url": "https://media.digikey.com/pdf/Data%20Sheets/ON%20Semiconductor%20PDFs/LM833,NCV833.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "The footer shown in the search title confirms Rev. 6, September 2011."
-    },
-    {
-      "vendor": "onsemi",
-      "title": "LM833 Datasheet by ON Semiconductor | Digi-Key Electronics",
-      "doc_number": "LM833/D (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.digikey.com/htmldatasheets/production/99691/0/0/1/lm833.html",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Digi-Key HTML rendering of the ON Semiconductor datasheet."
-    },
-    {
-      "vendor": "onsemi (presumed)",
-      "title": "LM833 Low Noise Op Amp Overview (lm833-rev2-pdf)",
-      "doc_number": "LM833/D (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.scribd.com/document/426804758/lm833-rev2-pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Came up for an onsemi LM833/D revision search. The Scribd slug 'lm833-rev2' may point to an early onsemi Rev. 2. Neither the vendor nor the revision is confirmed."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "LM833 Datasheet - SOP amplifier | STMicroelectronics",
-      "doc_number": "Doc ID 2169 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet4u.com/datasheets/STMicroelectronics/LM833/1394947",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "datasheet4u copy of the ST LM833 datasheet."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "LM833DT Datasheet STMicroelectronics",
-      "doc_number": "Doc ID 2169 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.radiolocman.com/datasheet/data.html?di=147172",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "radiolocman copy under the part number LM833DT."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "LM833DT Datasheet(PDF) - STMicroelectronics",
-      "doc_number": "Doc ID 2169 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/527770/STMICROELECTRONICS/LM833DT.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "A second alldatasheet ST entry (id 527770, separate from the already listed 22771). The much higher id suggests a later upload, possibly a newer edition."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "LM833 Datasheet PDF - STMicroelectronics",
-      "doc_number": "Doc ID 2169 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.datasheetq.com/LM833-doc-ST-Microelectronics",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "datasheetq copy of the ST LM833 datasheet."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "LM833_05 Datasheet PDF - STMicroelectronics",
-      "doc_number": "Doc ID 2169 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.datasheetq.com/LM833_05-doc-ST-Microelectronics",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "A separate datasheetq ST entry with the suffix '_05'. It may be an ST edition from before Rev 3 (August 2009), such as a 2005 revision. This is not confirmed."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "LM833 datasheet, Pinout, application circuits Low Noise Dual Operational Amplifier",
-      "doc_number": "Doc ID 2169 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "http://www.datasheetdir.com/STMICROELECTRONICS-LM833+Operational-Amplifiers",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "datasheetdir page for the ST LM833."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "LM833DT STMicroelectronics - Datasheet PDF & Technical Specs",
-      "doc_number": "Doc ID 2169 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.allaboutcircuits.com/electronic-components/datasheet/LM833DT--STMicroelectronics/",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "allaboutcircuits component page that links the ST datasheet."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "LM833N Datasheet(PDF) - Motorola, Inc",
-      "doc_number": "LM833/D (Motorola, presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/3070/MOTOROLA/LM833N.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "The alldatasheet entry for LM833N (id 3070). It sits next to the already listed LM833 entry (id 3069), so it is probably the same Motorola document."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "LM833 datasheet, amplifier equivalent, Motorola Inc",
-      "doc_number": "LM833/D (Motorola, presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheetspdf.com/pdf/54287/MotorolaInc/LM833/1",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "datasheetspdf copy of the Motorola LM833 datasheet."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "LM833 Datasheet PDF - Motorola => Freescale",
-      "doc_number": "LM833/D (Motorola, presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.datasheetq.com/LM833-doc-Motorola",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "datasheetq copy of the Motorola LM833 datasheet (the site labels it 'Motorola => Freescale')."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "LM833N Datasheet PDF - Motorola => Freescale",
-      "doc_number": "LM833/D (Motorola, presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.datasheetq.com/LM833N-doc-Motorola",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "datasheetq LM833N entry. Probably the same Motorola document as the LM833 entry."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "LM833 Motorola Dual Low Noise, Audio Amplifier ChipFind Datasheet Archive",
-      "doc_number": "LM833/D (Motorola, presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.chipfind.net/datasheet/motorola/lm833n.htm",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "ChipFind archive page for the Motorola LM833N."
-    }
-  ],
-  "revision_history": [
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS481",
-      "revision": "original",
-      "date": "JULY 2010",
-      "changes": "Initial release of TI's own LM833 datasheet (date from 'JULY 2010 - REVISED ...' headers). Octopart ...-10089682.pdf may be the original (unverified)."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS481A",
-      "revision": "A",
-      "date": "REVISED AUGUST 2010",
-      "changes": "Change-log content not retrieved."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS481B",
-      "revision": "B",
-      "date": "REVISED OCTOBER 2014 (22 Oct 2014 per TI PSpice model header)",
-      "changes": "Change-log not retrieved. Latest revision confirmed; describes 16 MHz GBW 'relatively stable over a wide range of supply voltages'. Any later revision covering the shared die is unverified."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "doc_number": "SNOSBD8D",
-      "revision": "D",
-      "date": "unknown",
-      "changes": "National LM833 datasheet under a TI cover page, before the LM833-N rename."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "doc_number": "SNOSBD8E",
-      "revision": "E",
-      "date": "MAY 2004 - REVISED MAY 2012",
-      "changes": "Reformatted into TI style as 'LM833-N' (header confirmed). Detailed change log not retrieved."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "doc_number": "SNOA586D (AN-346)",
-      "revision": "D",
-      "date": "07 May 2013",
-      "changes": "Cited as 'EVM Users Guide' (AN-346) in TI's LM833 PSpice model header. Title and content not retrieved."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "doc_number": "Doc ID 2169",
-      "revision": "Rev 3",
-      "date": "August 2009",
-      "changes": "Header confirmed; change-log content not retrieved."
-    },
-    {
-      "vendor": "onsemi",
-      "doc_number": "LM833/D",
-      "revision": "Rev. 6",
-      "date": "September, 2011",
-      "changes": "Change-log content not retrieved."
-    },
-    {
-      "vendor": "onsemi",
-      "doc_number": "LM833/D",
-      "revision": "Rev. 8",
-      "date": "July, 2025",
-      "changes": "Title 'LM833, NCV833'. LM833NG and LM833DG OPNs marked discontinued (confirmed via search summaries). Rev. 7 not seen."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "PCN 20240429005.1",
-      "revision": ".1",
-      "date": "April 30, 2024",
-      "changes": "RFAB qualification using qualified process technology with die revision and datasheet update for select devices; die changed as a result of the process change. Linked by commentators to the NE5532/LM833/MC33078/RC4580 merge; LM833 on its device list not confirmed."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "PCN 20231114002.1",
-      "revision": ".1",
-      "date": "not shown in search",
-      "changes": "Search summaries say its device list includes LM833DR, RC4580IP, MC33078DR and NE5532AP. One summary linked it to an RC4580 wire-bond (Au to Cu) change, probably conflated with an E2E China RC4580 thread; subject unverified."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "DS005218",
-      "revision": "edition not identified",
-      "date": "(c) 2004 per search summary",
-      "changes": "National's own LM833 datasheet under DS number DS005218. A search summary gives order numbers LM833M, LM833MX, LM833N, LM833MM, LM833MMX in M08A, N08E and MUA08A packages. It also quotes GBW 15 MHz typ / 10 MHz min, SR 7 V/us typ / 5 V/us min, 0.002% THD, 60 deg phase margin, 4.5 nV/rtHz and 140 dB dynamic range. Any earlier (pre-2004) edition dates were not found."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National, Japan)",
-      "doc_number": "JAJSB49",
-      "revision": "not shown",
-      "date": "not shown",
-      "changes": "Japanese translation of the National LM833 datasheet under a TI literature-number cover (kyohritsu.com copy)."
-    },
-    {
-      "vendor": "Motorola",
-      "doc_number": "LM833/D",
-      "revision": "Rev 0 (per search summary only)",
-      "date": "1996 (per search summary only)",
-      "changes": "A search summary described the eletrodex.org Motorola 'SEMICONDUCTOR TECHNICAL DATA' copy as a '1996 (Rev 0)' document. The footer text itself was not shown. Treat this as low confidence."
-    },
-    {
-      "vendor": "onsemi",
-      "doc_number": "LM833/D",
-      "revision": "Rev. 6",
-      "date": "September, 2011",
-      "changes": "Two more copies are confirmed Rev. 6 by their search-title footers: mouser LM833-D-93350.pdf (already listed with revision unknown) and media.digikey.com LM833,NCV833.pdf. By Rev. 6 the document already covered NCV833 (Digi-Key file name 'LM833,NCV833'). Change log not retrieved."
-    }
+  "counterfeit_notes": "No LM833-specific counterfeit reports; unbranded DIP listings circulate (some mislabel onsemi 'LM833NG/NOPB'). Buy authorised; check logo, orderable and date code agree. 'New' onsemi LM833NG/DG stock is surplus or suspect. NE5532-family relabelled fakes are well documented.",
+  "alternatives": [
+    "NE5532 (higher output drive)",
+    "MC33078",
+    "LM4562 / LME49720",
+    "OPA1612 / OPA1602",
+    "onsemi LM833DR2G or ST LM833",
+    "TI LM833-N (ex-National die)"
   ],
   "silicon_changes": [
     {
       "kind": "second-source-difference",
       "vendor": "Texas Instruments (own LM833 design) vs National Semiconductor (now sold by TI as LM833-N); onsemi (Motorola design) and other vendors also make their own LM833",
-      "when": "TI's own LM833 datasheet SLOS481 dates from July 2010. After the 2011 National acquisition, TI sold both dies; the National part is documented as LM833-N (SNOSBD8E, revised May 2012).",
+      "when": "2010-07 · SLOS481 vs SNOSBD8",
       "part_numbers_affected": [
         "LM833 (TI own design: LM833P, LM833DR)",
         "LM833-N (ex-National: LM833M/NOPB, LM833MX/NOPB, LM833N/NOPB)",
         "LM833 (onsemi/Motorola design, e.g. LM833DR2G)"
       ],
-      "identification": "Check the orderable code and datasheet. TI's own design is LM833P/LM833DR (datasheet SLOS481). The ex-National die is LM833M, LM833MX or LM833N with /NOPB (datasheet SNOSBD8, LM833-N). National-logo parts are the National die; Motorola/onsemi and ST parts are other dies.",
-      "summary": "TI sells two different LM833 devices; TI E2E thread 430833 calls them 'two different devices'. National's original LM833 has a complementary emitter-follower output (NPN plus vertical PNP). TI's own second-source LM833 (2010) uses a quasi-complementary output made of two NPN devices. In E2E thread 1443925 a TI engineer said TI's LM833 and MC33078 appear to be the same die, because all specs and graphs are identical. onsemi keeps Motorola's design.",
+      "summary": "TI sells two different LM833 devices (E2E 430833). National's original has a complementary NPN + vertical-PNP output; TI's own 2010 LM833 uses a quasi-complementary two-NPN output and reportedly shares the MC33078 die (E2E 1443925). onsemi keeps Motorola's design. TI has sold both since acquiring National in 2011.",
       "spec_deltas": [
         {
           "parameter": "Output stage topology",
@@ -1056,8 +234,11 @@
           "after": "16 MHz (TI LM833, SLOS481B)"
         }
       ],
-      "audio_impact": "A different output-stage topology can change crossover and load-driving behaviour. No published audio measurements comparing the two were found.",
-      "compatibility_risk": "medium - same pinout and similar headline specs, but a different die and output stage. Circuits tuned on the National part may behave differently.",
+      "identification": "TI design: LM833P/LM833DR (SLOS481). Ex-National: LM833M/MX/N with /NOPB (SNOSBD8, LM833-N). National, Motorola/onsemi and ST logos mark other dies.",
+      "audio_impact": "Different output topology can change crossover and load-driving behaviour. No published comparison measurements.",
+      "compatibility_risk": "medium: same pinout and similar specs, but different die and output stage.",
+      "confidence": "high",
+      "verification": "Confirmed via TI E2E threads and both TI datasheets.",
       "sources": [
         "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/430833/lm833-and-lm833-n-clarification-on-data-sheet-differences-sought",
         "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1443925/mc33078-are-the-specs-the-same-as-lm833",
@@ -1065,46 +246,46 @@
         "https://www.ti.com/lit/ds/symlink/lm833-n.pdf",
         "https://www.mouser.com/datasheet/2/405/slos481b-521846.pdf",
         "https://www.onsemi.com/pdf/datasheet/lm833-d.pdf"
-      ],
-      "confidence": "high",
-      "verification": "Not re-searched: high-confidence entry of a kind outside the priority list. The National-to-LM833-N rename was moved into its own entry. The LM833-N datasheet SNOSBD8E (revised May 2012) was seen in search results."
+      ]
     },
     {
       "kind": "renumbering-or-successor",
       "vendor": "Texas Instruments (ex-National Semiconductor)",
-      "when": "After TI acquired National in 2011. The LM833-N datasheet SNOSBD8E was revised in May 2012.",
+      "when": "2011–2012-05 · SNOSBD8E",
       "part_numbers_affected": [
         "LM833-N",
         "LM833M/NOPB",
         "LM833MX/NOPB",
         "LM833N/NOPB"
       ],
-      "identification": "The product and datasheet name is LM833-N (SNOSBD8). The orderable codes keep National's format (LM833M, LM833MX, LM833N plus /NOPB). A plain 'LM833' at TI means TI's own design (LM833P, LM833DR; SLOS481).",
-      "summary": "TI renamed National's LM833 to LM833-N to separate it from TI's own LM833 (SLOS481), which is a different die. A buyer who orders the generic 'LM833' from TI gets the TI design, not the National part the audio reputation was built on.",
+      "summary": "After acquiring National in 2011, TI renamed National's LM833 to LM833-N to separate it from TI's own, different-die LM833 (SLOS481). Ordering a generic 'LM833' from TI gets the TI design, not the National part the reputation was built on.",
       "spec_deltas": [],
-      "audio_impact": "The rename changes nothing electrically. The risk is receiving TI's different die when ordering the generic 'LM833' (see the second-source entry).",
-      "compatibility_risk": "low - naming change only. The die difference is covered in the second-source entry.",
+      "identification": "Product and datasheet name LM833-N (SNOSBD8); orderables keep National format (LM833M, LM833MX, LM833N + /NOPB). Plain TI 'LM833' is TI's design.",
+      "audio_impact": "None electrically; the risk is receiving TI's different die when ordering generic 'LM833'.",
+      "compatibility_risk": "low: naming change only; die difference covered by the second-source entry.",
+      "confidence": "high",
+      "verification": "TI LM833-N product page and SNOSBD8E list the /NOPB orderables; no NRND or obsolete status found.",
       "sources": [
         "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/430833/lm833-and-lm833-n-clarification-on-data-sheet-differences-sought",
         "https://www.ti.com/lit/ds/symlink/lm833-n.pdf",
         "https://www.ti.com/product/LM833-N"
-      ],
-      "confidence": "high",
-      "verification": "Searched LM833-N status. Found the TI LM833-N product page and SNOSBD8E ('May 2004 - revised May 2012') listing the LM833M/LM833MX/LM833N /NOPB orderables. No NRND or obsolete status was found."
+      ]
     },
     {
       "kind": "die-redesign",
       "vendor": "Texas Instruments",
-      "when": "Process-migration PCN 20231114002.1 dated 15 Nov 2023; search summaries say it lists LM833DR. SFAB closure was planned for 2024-2025. TI confirmed the die merge on E2E (thread 1652528), and it was publicised in June-July 2026 (Hackaday 3 Jun 2026, Headphonesty Jul 2026).",
+      "when": "2023-11-15 · PCN 20231114002.1",
       "part_numbers_affected": [
         "LM833DR (listed in PCN 20231114002.1)",
         "LM833P and other TI SLOS481 LM833 orderables (covered by the E2E die-merge statement; PCN listing not seen)"
       ],
-      "identification": "No LM833 datasheet revision after SLOS481B and no LM833 datasheet PCN were found, and no marking change is documented. PCN 20231114002.1 (15 Nov 2023) lists LM833DR among devices for process migration and BOM-option qualification (Group 1, per search summary). Whether LM833 is in PCN 20240429005.1 is unconfirmed. TI LM833 parts with 2024-or-later date codes are probably the merged die (inference). The ex-National LM833-N is not named in the merge.",
-      "summary": "TI confirmed on its E2E forum (thread 'NE5532, LM833, RC4580 and MC33078 all now the same die') that these four parts now share one die, with part numbers unchanged. Reporting describes a move from SFAB (Sherman, 150 mm wafers) to RFAB (Richardson) on a newer process with a die-shrink redesign. The shared die is RC4580-based (Hackaday quotes Rich Cabot: 'they just relabeled a 4580'), and Headphonesty describes it as having NPN inputs and a complementary output. The LM833DR appears in the same November 2023 PCN as the NE5532DR. For NE5532 the documented deltas are large (±22 V to ±18 V; 9 to 5 V/µs; SLOS075K). No LM833-specific before/after deltas are documented. TI's LM833 was already rated ±18 V and 7 V/µs and was reportedly already the same die as MC33078, so its change may be smaller (inference).",
+      "summary": "TI confirmed on E2E (1652528) that NE5532, LM833, RC4580 and MC33078 now share one RC4580-based die, part numbers unchanged, after a reported SFAB-to-RFAB move with die shrink (SFAB closure 2024–2025). Publicised by Hackaday (3 Jun 2026) and Headphonesty (Jul 2026). No LM833-specific deltas documented.",
       "spec_deltas": [],
-      "audio_impact": "Unknown for LM833 specifically; no old-versus-new LM833 measurements were found. If the merged die is RC4580-derived with a complementary output, the former two-NPN quasi-complementary output of TI's LM833 may have changed (inference). For NE5532 in the same merge, users report changed behaviour and boards failing QA (Headphonesty).",
-      "compatibility_risk": "medium - same part number, new silicon on a new process. TI's LM833 supply rating was already ±18 V, but the input and output stages, stability and protection details may differ. None of this is verified for LM833.",
+      "identification": "No datasheet revision after SLOS481B or marking change. PCN 20231114002.1 lists LM833DR; PCN 20240429005.1 membership unconfirmed. 2024+ date codes probably merged die.",
+      "audio_impact": "Unknown for LM833. The two-NPN output may now be complementary (inference). NE5532 users in the same merge report changed behaviour.",
+      "compatibility_risk": "medium: same part number, new silicon and process; stages and protection may differ (unverified for LM833).",
+      "confidence": "high",
+      "verification": "PCN 20231114002 list puts LM833DR beside NE5532DR (22→18 V, 2→1 kV ESD); E2E and Hackaday confirmed.",
       "sources": [
         "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1652528/ne5532-ne5532-lm833-rc4580-and-mc33078-all-now-the-same-die",
         "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5726/PCN20231114002.1.pdf",
@@ -1114,59 +295,931 @@
         "https://gearspace.com/board/geekzone/1464976-headsup-ti-has-changed-ne5532-k-version-2024-gt-opax134-lhm6518.html",
         "https://www.eevblog.com/forum/chat/ti-ne5532-audio-opamp-changes/125/",
         "https://www.mouser.com/PCN/Texas_Instruments_PCN20240429005.1_Change_Notification.pdf"
-      ],
-      "confidence": "high",
-      "verification": "Searched the PCN 20231114002 device list: results put LM833DR in its process-migration/BOM group, alongside NE5532DR/SA5532ADR (22 to 18 V, 2 to 1 kV ESD). The E2E 1652528 title and the Hackaday/Cabot coverage were confirmed. No LM833 datasheet PCN was found. LM833 membership in PCN 20240429005.1 is still unconfirmed."
+      ]
     },
     {
       "kind": "fab-or-process-transfer",
       "vendor": "onsemi (ON Semiconductor, ex-Motorola)",
-      "when": "Initial PCN 11528 issued 19 July 2001",
+      "when": "2001-07-19 · onsemi PCN 11528",
       "part_numbers_affected": [
         "LM833D",
         "LM833DR2",
         "LM833N"
       ],
-      "identification": "No marking rule was found to tell Mesa wafers from Roznov wafers. Pre-2001/2002 date codes would be Mesa BMC material (inference). The later Pb-free orderables are LM833DG, LM833DR2G and LM833NG.",
-      "summary": "ON Semiconductor PCN 11528 lists the LM833 for transfer from the Motorola BMC wafer fab in Mesa, AZ to ON's Tesla wafer fab in Roznov, Czech Republic. This is a same-part-number fab move of the Motorola-design LM833, separate from the TI die issues. A later onsemi Roznov conversion from 150 mm to 200 mm wafers (IPCN/FPCN23597 series) exists, but no source ties it to LM833.",
+      "summary": "ON Semiconductor PCN 11528 moves the Motorola-design LM833 from the BMC fab in Mesa, AZ to ON's Tesla fab in Roznov, Czech Republic. A later Roznov 150→200 mm conversion (IPCN/FPCN23597) is not tied to LM833.",
       "spec_deltas": [],
-      "audio_impact": "None documented. The same design moved to another fab.",
-      "compatibility_risk": "low - same design and part numbers; any difference would be process spread within datasheet limits.",
+      "identification": "No marking rule separates Mesa from Roznov wafers; pre-2001/2002 date codes are probably Mesa. Later Pb-free codes: LM833DG, LM833DR2G, LM833NG.",
+      "audio_impact": "None documented; same design moved fabs.",
+      "compatibility_risk": "low: same design and part numbers; only process spread within limits.",
+      "confidence": "high",
+      "verification": "PCN 11528 names LM833D and LM833N; LM833DR2 not separately seen.",
       "sources": [
         "https://www.onsemi.com/pub/docs/pcn/11528.pdf",
         "https://www.onsemi.com/pdf/datasheet/lm833-d.pdf"
-      ],
-      "confidence": "high",
-      "verification": "Search confirmed that onsemi PCN 11528 (issued 19 July 2001) names LM833D and LM833N for transfer to the Tesla wafer fab in Roznov. LM833DR2 comes from the completeness sweep and was not separately seen."
+      ]
     },
     {
       "kind": "lifecycle",
       "vendor": "onsemi",
-      "when": "Date not captured; listed as obsolete in current (2026) listings",
+      "when": "date unknown; obsolete in 2026 listings",
       "part_numbers_affected": [
         "LM833N (onsemi PDIP-8)"
       ],
-      "identification": "Check the onsemi or distributor lifecycle status. The SOIC orderables (e.g. LM833DR2G) are listed as active.",
-      "summary": "A search summary of the onsemi/Octopart listings reports that onsemi's through-hole LM833N (PDIP-8) is obsolete while SOIC variants such as LM833DR2G stay active. No discontinuance PCN number was captured.",
+      "summary": "onsemi/Octopart listings reportedly show the through-hole LM833N (PDIP-8) obsolete while SOIC parts such as LM833DR2G stay active. No discontinuance PCN captured.",
       "spec_deltas": [],
-      "audio_impact": "None electrical. DIY users who roll DIP op-amps in sockets lose onsemi's Motorola-design LM833 in DIP, and the remaining DIP LM833s are other vendors' dies.",
-      "compatibility_risk": "low - availability issue only.",
+      "identification": "Check onsemi or distributor lifecycle status; SOIC orderables (e.g. LM833DR2G) listed active.",
+      "audio_impact": "None electrically; DIP rollers lose the Motorola-design LM833, leaving other vendors' dies.",
+      "compatibility_risk": "low: availability issue only.",
+      "confidence": "low",
+      "verification": "Single listing summary; no PCN or date confirmed.",
       "sources": [
         "https://octopart.com/part/onsemi/LM833N",
         "https://www.onsemi.com/products/standard-products/amplifiers-comparators/operational-amplifiers-op-amps/lm833"
-      ],
-      "confidence": "low",
-      "verification": "Found during the PCN 11528 search: a search summary says LM833N is listed obsolete and LM833DR2G active. No PCN or date confirmed."
+      ]
     }
   ],
-  "counterfeit_notes": "No LM833-specific counterfeit reports found. Generic unbranded 'LM833 LM833N' DIP listings circulate on eBay/Amazon (e.g. listings mislabelling onsemi 'LM833NG/NOPB'). Buy from authorised distributors and check that logo, orderable and date code agree (TI LM833P/LM833DR vs LM833-N LM833M/LM833N vs onsemi LM833DR2G/NCV833 vs ST). Note onsemi LM833NG/LM833DG are discontinued, so 'new' stock of them is surplus or suspect. Relabelled-die fakes are well documented for the related NE5532 family.",
-  "alternatives": [
-    "NE5532 (onsemi or older-date-code TI stock; higher output drive)",
-    "MC33078 (onsemi, the original Motorola design)",
-    "LM4562 / LME49720 (National/TI high-performance audio dual)",
-    "OPA1612 / OPA1602 (TI modern low-noise bipolar audio dual)",
-    "onsemi LM833DR2G or ST LM833 (to avoid TI's shared die)",
-    "TI LM833-N (ex-National die, if still available)"
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "LM833 Dual High-Speed Audio Operational Amplifier",
+      "doc_number": "SLOS481",
+      "revision": "B",
+      "date": "2014-10",
+      "url": "https://www.ti.com/lit/ds/symlink/lm833.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Serves newest revision; 36-page 2026 size hints at post-B revision."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LM833 Dual High-Speed Audio Operational Amplifier (GPN link)",
+      "doc_number": "SLOS481",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com/lit/gpn/LM833",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "TI GPN redirect to the current datasheet."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LM833 Dual High-Speed Audio Operational Amplifier",
+      "doc_number": "SLOS481B",
+      "revision": "B",
+      "date": "2014-10",
+      "url": "https://www.mouser.com/datasheet/2/405/slos481b-521846.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Frozen Rev B; pre-consolidation reference with 16 MHz GBW text."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LM833 Dual High-Speed Audio Operational Amplifier ( ... [truncated]",
+      "doc_number": "SLOS481A",
+      "revision": "A",
+      "date": "2010-08",
+      "url": "https://datasheet.octopart.com/LM833DR-Texas-Instruments-datasheet-21221952.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "SLOS481A header attributed to this copy."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LM833 (TI) - Octopart copy under LM833P",
+      "doc_number": "SLOS481",
+      "revision": "A",
+      "date": "",
+      "url": "https://datasheet.octopart.com/LM833P-Texas-Instruments-datasheet-21221952.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Revision inferred from shared file id only."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LM833 (TI) - Octopart copy, newer-style layout (pinout header 'IN2+ IN2- OUT2 VCC+ VCC- IN1+ IN1- OUT1')",
+      "doc_number": "SLOS481",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/LM833DR-Texas-Instruments-datasheet-32026551.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Newer layout; may freeze Rev B or a post-merge revision."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LM833 Dual High-Speed Audio Operational Amplifier (Rev. A)",
+      "doc_number": "SLOS481A",
+      "revision": "A",
+      "date": "2010-08",
+      "url": "https://cdn-reichelt.de/documents/datenblatt/A200/LM833-TI.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Reichelt copy titled '(Rev. A)'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "dual high-speed audio operational amplifier",
+      "doc_number": "SLOS481",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/LM833P-Texas-Instruments-datasheet-10089682.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Old lowercase TI title; possibly the original July 2010 SLOS481."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LM833 Datasheet Texas Instruments",
+      "doc_number": "SLOS481",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=300003",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "LM833P Datasheet Texas Instruments",
+      "doc_number": "SLOS481",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=82594",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Lower id than di=300003; possibly an older revision."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "title": "LM833-N Dual Audio Operational Amplifier",
+      "doc_number": "SNOSBD8E",
+      "revision": "E",
+      "date": "2012-05",
+      "url": "https://www.ti.com/lit/ds/symlink/lm833-n.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current ex-National datasheet: 'SNOSBD8E – May 2004 – revised May 2012'."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "title": "LM833-N Dual Audio Operational Amplifier",
+      "doc_number": "SNOSBD8E",
+      "revision": "E",
+      "date": "2012-05",
+      "url": "https://www.ti.com/lit/gpn/lm833-n",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "GPN redirect showing the Rev E header."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "title": "LM833-N Dual Audio Operational Amplifier",
+      "doc_number": "SNOSBD8E",
+      "revision": "E",
+      "date": "2012-05",
+      "url": "https://www.mouser.com/datasheet/2/282/lm833-n-220371.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Frozen Rev E copy."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "title": "LM833-N Dual Audio Operational Amplifier (Rev. E)",
+      "doc_number": "SNOSBD8E",
+      "revision": "E",
+      "date": "2012-05",
+      "url": "https://www.farnell.com/datasheets/2364222.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Farnell copy titled '(Rev. E)'."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "title": "LM833-N Dual Audio Operational Amplifier (Rev. E)",
+      "doc_number": "SNOSBD8E",
+      "revision": "E",
+      "date": "2012-05",
+      "url": "https://datasheet.octopart.com/LM833N-Texas-Instruments-datasheet-12515562.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Octopart copy titled '(Rev. E)'."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "title": "LM833 Dual Audio Operational Amplifier, Literature Number: SNOSBD8D",
+      "doc_number": "SNOSBD8D",
+      "revision": "D",
+      "date": "",
+      "url": "https://datasheet.octopart.com/LM833M-NOPB-Texas-Instruments-datasheet-10846346.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "National datasheet under TI cover, before the -N rename."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LM833 Dual Audio Operational Amplifier General Description",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://web.ece.ucsb.edu/~ilan/Classes/ECE2A_F2010/Labs/Datasheets/lm833.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "UCSB course copy in original National format."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LM833 Dual Audio Operational Amplifier",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www.qsl.net/n9zia/vision/LM833.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Hobby-site copy in National format."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LM833 Dual Audio Operational Amplifier General Description",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://docs.lightningmaps.org/files/extra/Datasheets/OP-Amp/lm833.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Ambiguous: shown with National title and as LM833-N Rev. E."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LM833N Datasheet (PDF) - National Semiconductor (TI)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/95604/NSC/LM833N.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "18 pages; may be TI-wrapped."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LM833 Datasheet (PDF) - National Semiconductor (TI)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/95601/NSC/LM833.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not visible."
+    },
+    {
+      "vendor": "onsemi",
+      "title": "LM833, NCV833 - Low Noise, Audio Dual Operational Amplifier",
+      "doc_number": "LM833/D",
+      "revision": "Rev. 8",
+      "date": "2025-07",
+      "url": "https://www.onsemi.com/download/data-sheet/pdf/lm833-d.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current onsemi datasheet; LM833NG/LM833DG marked discontinued."
+    },
+    {
+      "vendor": "onsemi",
+      "title": "DATA SHEET www.onsemi.com (c) Semiconductor Components Industries, LLC, 2011",
+      "doc_number": "LM833/D",
+      "revision": "",
+      "date": "2011",
+      "url": "https://www.onsemi.com/pdf/datasheet/lm833-d.pdf",
+      "url_kind": "vendor_legacy",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Legacy onsemi URL used by KiCad; served revision may change."
+    },
+    {
+      "vendor": "onsemi",
+      "title": "LM833/D",
+      "doc_number": "LM833/D",
+      "revision": "Rev. 6",
+      "date": "2011-09",
+      "url": "https://www.mouser.com/datasheet/2/308/lm833-d-1192563.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Frozen Rev. 6 copy."
+    },
+    {
+      "vendor": "onsemi",
+      "title": "LM833 - Low Noise Audio Dual Operational Amplifier",
+      "doc_number": "LM833/D",
+      "revision": "Rev. 6",
+      "date": "2011-09",
+      "url": "https://www.mouser.com/datasheet/2/308/LM833-D-93350.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "Older Mouser copy; footer shows Rev. 6."
+    },
+    {
+      "vendor": "onsemi",
+      "title": "LM833DR2G datasheet (distributor original)",
+      "doc_number": "LM833/D",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-301/4263.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen only in a SamacSys KiCad model; unconfirmed."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "LM833 (Motorola SEMICONDUCTOR TECHNICAL DATA)",
+      "doc_number": "LM833/D",
+      "revision": "0",
+      "date": "1996",
+      "url": "https://eletrodex.org/eletrodex/Loja_Tray/Datasheets/Semicondutores/CIs%20Amp-Ops/Uso_Geral/lm833.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Motorola format; reportedly 1996 Rev 0, footer unseen."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "LM833 Datasheet (PDF) - Motorola, Inc",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/3069/MOTOROLA/LM833.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Motorola-era copy."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "LM833 Low noise dual operational amplifier",
+      "doc_number": "Doc ID 2169",
+      "revision": "Rev. 3",
+      "date": "2009-08",
+      "url": "https://www.st.com/resource/en/datasheet/lm833.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Header 'August 2009 Doc ID 2169 Rev 3'."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "LM833 Datasheet (PDF) - STMicroelectronics",
+      "doc_number": "Doc ID 2169",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/22771/STMICROELECTRONICS/LM833.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Possibly an older ST/SGS-Thomson revision."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LM833 Dual Audio Operational Amplifier",
+      "doc_number": "DS005218",
+      "revision": "",
+      "date": "",
+      "url": "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS005218.PDF",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "National DS number from file name; edition date unknown."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LM833 Dual Audio Operational Amplifier",
+      "doc_number": "DS005218",
+      "revision": "",
+      "date": "2004",
+      "url": "https://www.jameco.com/Jameco/Products/ProdDS/1309253.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Reportedly © 2004; LM833M/MX/N/MM/MMX in M08A, N08E, MUA08A."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LM833 Dual Audio Operational Amplifier General Description",
+      "doc_number": "DS005218",
+      "revision": "",
+      "date": "",
+      "url": "https://www.jameco.com/Jameco/Products/ProdDS/120942.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Separate Jameco file; may be a different National edition."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LM833 Dual Audio Operational Amplifier General Description",
+      "doc_number": "DS005218",
+      "revision": "",
+      "date": "",
+      "url": "https://www.sm5cbw.se/audio/ic-data/LM833.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Hobby-site copy."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LM833 Dual Audio Operational Amplifier General Description",
+      "doc_number": "DS005218",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/LM833MM/NOPB-National-Semiconductor-datasheet-9811680.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Octopart file labelled National Semiconductor."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "NATIONAL SEMICONDUCTOR (LM833M/NOPB) DUAL ...",
+      "doc_number": "DS005218",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/LM833M/NOPB-National-Semiconductor-datasheet-8191293.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Distributor cover around the National datasheet."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "NATIONAL SEMICONDUCTOR (LM833MX/NOPB) DUAL ...",
+      "doc_number": "DS005218",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/LM833MX-NOPB-Texas-Instruments-datasheet-7578376.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Listed under TI, but titled National; distributor cover."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "title": "LM833 Dual Audio Operational Amplifier - bidulic",
+      "doc_number": "DS005218",
+      "revision": "",
+      "date": "",
+      "url": "https://p.pdfhall.com/lm833-dual-audio-operational-amplifier-bidulic-bidulic_5b70245d097c47ee718b45af.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "pdfhall HTML rendering."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "title": "LM833 Dual Audio Operational Amplifier: Literature Number: SNOSBD8D",
+      "doc_number": "SNOSBD8D",
+      "revision": "D",
+      "date": "",
+      "url": "https://www.scribd.com/doc/102660047/lm833",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "National LM833 under TI cover, before the -N rename."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "title": "LM833 LM833 Dual Audio Operational Amplifier Literature Number: SNOSBD8D",
+      "doc_number": "SNOSBD8D",
+      "revision": "D",
+      "date": "",
+      "url": "https://datasheet.octopart.com/LM833M-National-Semiconductor-datasheet-10846346.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Same file id 10846346 via a National-labelled URL."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National, Japan)",
+      "title": "LM833 LM833 Dual Audio Operational Amplifier Literature Number: JAJSB49",
+      "doc_number": "JAJSB49",
+      "revision": "",
+      "date": "",
+      "url": "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/TI/lm833n.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Japanese TI edition of SNOSBD8; source English edition unknown."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "title": "LM833-N www.ti.com SNOSBD8E - MAY 2004 - REVISED MAY 2012",
+      "doc_number": "SNOSBD8E",
+      "revision": "E",
+      "date": "2012-05",
+      "url": "https://datasheet.octopart.com/LM833M-Texas-Instruments-datasheet-28360528.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Header confirms SNOSBD8E."
+    },
+    {
+      "vendor": "onsemi",
+      "title": "LM833, NCV833 - (c) Semiconductor Components Industries, LLC, 2011 September, 2011 - Rev. 6",
+      "doc_number": "LM833/D",
+      "revision": "Rev. 6",
+      "date": "2011-09",
+      "url": "https://media.digikey.com/pdf/Data%20Sheets/ON%20Semiconductor%20PDFs/LM833,NCV833.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Footer confirms Rev. 6; already covered NCV833."
+    },
+    {
+      "vendor": "onsemi",
+      "title": "LM833 Datasheet by ON Semiconductor | Digi-Key Electronics",
+      "doc_number": "LM833/D",
+      "revision": "",
+      "date": "",
+      "url": "https://www.digikey.com/htmldatasheets/production/99691/0/0/1/lm833.html",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Digi-Key HTML rendering."
+    },
+    {
+      "vendor": "onsemi (presumed)",
+      "title": "LM833 Low Noise Op Amp Overview (lm833-rev2-pdf)",
+      "doc_number": "LM833/D",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/426804758/lm833-rev2-pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Slug hints at onsemi Rev. 2; vendor and revision unconfirmed."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "LM833 Datasheet - SOP amplifier | STMicroelectronics",
+      "doc_number": "Doc ID 2169",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheets/STMicroelectronics/LM833/1394947",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheet4u copy of the ST datasheet."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "LM833DT Datasheet STMicroelectronics",
+      "doc_number": "Doc ID 2169",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=147172",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "radiolocman copy under LM833DT."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "LM833DT Datasheet(PDF) - STMicroelectronics",
+      "doc_number": "Doc ID 2169",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/527770/STMICROELECTRONICS/LM833DT.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Later upload than 22771; possibly a newer edition."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "LM833 Datasheet PDF - STMicroelectronics",
+      "doc_number": "Doc ID 2169",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/LM833-doc-ST-Microelectronics",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheetq copy of the ST datasheet."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "LM833_05 Datasheet PDF - STMicroelectronics",
+      "doc_number": "Doc ID 2169",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/LM833_05-doc-ST-Microelectronics",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "'_05' suffix may mean a 2005 pre-Rev 3 edition."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "LM833 datasheet, Pinout, application circuits Low Noise Dual Operational Amplifier",
+      "doc_number": "Doc ID 2169",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheetdir.com/STMICROELECTRONICS-LM833+Operational-Amplifiers",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheetdir page for the ST LM833."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "LM833DT STMicroelectronics - Datasheet PDF & Technical Specs",
+      "doc_number": "Doc ID 2169",
+      "revision": "",
+      "date": "",
+      "url": "https://www.allaboutcircuits.com/electronic-components/datasheet/LM833DT--STMicroelectronics/",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Component page linking the ST datasheet."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "LM833N Datasheet(PDF) - Motorola, Inc",
+      "doc_number": "LM833/D",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/3070/MOTOROLA/LM833N.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Next to id 3069; probably the same Motorola document."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "LM833 datasheet, amplifier equivalent, Motorola Inc",
+      "doc_number": "LM833/D",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/54287/MotorolaInc/LM833/1",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheetspdf copy of the Motorola datasheet."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "LM833 Datasheet PDF - Motorola => Freescale",
+      "doc_number": "LM833/D",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/LM833-doc-Motorola",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "datasheetq copy, labelled 'Motorola => Freescale'."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "LM833N Datasheet PDF - Motorola => Freescale",
+      "doc_number": "LM833/D",
+      "revision": "",
+      "date": "",
+      "url": "https://www.datasheetq.com/LM833N-doc-Motorola",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Probably the same Motorola document as the LM833 entry."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "LM833 Motorola Dual Low Noise, Audio Amplifier ChipFind Datasheet Archive",
+      "doc_number": "LM833/D",
+      "revision": "",
+      "date": "",
+      "url": "https://www.chipfind.net/datasheet/motorola/lm833n.htm",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "ChipFind archive page for the Motorola LM833N."
+    }
+  ],
+  "product_pages": [
+    "http://www.ti.com/product/LM833/datasheet/specifications",
+    "http://www.tij.co.jp/document-viewer/jp/LM833/datasheet/application_and_implementation",
+    "https://www.ti.com/product/LM833",
+    "https://www.ti.com/product/LM833-N",
+    "https://www.mouser.com/new/texas-instruments/ti-lm833-amplifiers/",
+    "https://www.st.com/en/amplifiers-and-comparators/lm833.html",
+    "https://www.onsemi.com/products/standard-products/amplifiers-comparators/operational-amplifiers-op-amps/lm833"
+  ],
+  "revision_history": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS481",
+      "revision": "original",
+      "date": "2010-07",
+      "changes": "Initial release of TI's own LM833 datasheet. Octopart 10089682 copy may be this edition."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS481A",
+      "revision": "A",
+      "date": "2010-08",
+      "changes": "Change log unknown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS481B",
+      "revision": "B",
+      "date": "2014-10-22",
+      "changes": "Latest confirmed; 16 MHz GBW 'relatively stable over a wide range of supply voltages'. Date per TI PSpice model header."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "doc_number": "SNOSBD8D",
+      "revision": "D",
+      "date": "",
+      "changes": "National LM833 datasheet under a TI cover, before the LM833-N rename."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "doc_number": "SNOSBD8E",
+      "revision": "E",
+      "date": "2012-05",
+      "changes": "Reformatted in TI style as 'LM833-N'; original date May 2004. Change log unknown."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "doc_number": "SNOA586D (AN-346)",
+      "revision": "D",
+      "date": "2013-05-07",
+      "changes": "Cited as 'EVM Users Guide' (AN-346) in TI's LM833 PSpice model header; title and content unknown."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "doc_number": "DS005218",
+      "revision": "2004 edition",
+      "date": "2004",
+      "changes": "National's LM833 datasheet: 15 MHz typ / 10 min, 7 V/µs typ / 5 min, 0.002% THD, 60° margin, 4.5 nV/√Hz, 140 dB."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National, Japan)",
+      "doc_number": "JAJSB49",
+      "revision": "",
+      "date": "",
+      "changes": "Japanese translation of the National LM833 datasheet under TI cover (kyohritsu.com copy)."
+    },
+    {
+      "vendor": "Motorola",
+      "doc_number": "LM833/D",
+      "revision": "0",
+      "date": "1996",
+      "changes": "Reportedly the eletrodex Motorola copy; footer unseen, low confidence."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "doc_number": "Doc ID 2169",
+      "revision": "Rev. 3",
+      "date": "2009-08",
+      "changes": "Header confirmed; change log unknown."
+    },
+    {
+      "vendor": "onsemi",
+      "doc_number": "LM833/D",
+      "revision": "Rev. 6",
+      "date": "2011-09",
+      "changes": "Already covered NCV833. Copies at Mouser (two files) and Digi-Key. Change log unknown."
+    },
+    {
+      "vendor": "onsemi",
+      "doc_number": "LM833/D",
+      "revision": "Rev. 8",
+      "date": "2025-07",
+      "changes": "Titled 'LM833, NCV833'; LM833NG and LM833DG marked discontinued. Rev. 7 not seen."
+    }
+  ],
+  "revision_chains": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS481",
+      "known": [
+        {
+          "rev": "original",
+          "date": "2010-07"
+        },
+        {
+          "rev": "A",
+          "date": "2010-08"
+        },
+        {
+          "rev": "B",
+          "date": "2014-10-22"
+        }
+      ],
+      "missing": [],
+      "note": "No SLOS481C or SLOS481D found. Original July 2010 copy unconfirmed (Octopart 10089682 candidate)."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "doc_number": "SNOSBD8",
+      "known": [
+        {
+          "rev": "D",
+          "date": ""
+        },
+        {
+          "rev": "E",
+          "date": "2012-05"
+        }
+      ],
+      "missing": [
+        "A",
+        "B",
+        "C"
+      ],
+      "note": "Original date May 2004 matches DS005218 © 2004. JAJSB49 is the Japanese edition."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "doc_number": "DS005218",
+      "known": [
+        {
+          "rev": "2004 edition",
+          "date": "2004"
+        }
+      ],
+      "missing": [
+        "pre-2004 editions"
+      ],
+      "note": "Copies at Jameco, sm5cbw.se, Octopart; editions not shown. No national.com URL found."
+    },
+    {
+      "vendor": "Motorola",
+      "doc_number": "LM833/D",
+      "known": [
+        {
+          "rev": "0",
+          "date": "1996"
+        }
+      ],
+      "missing": [],
+      "note": "Rev 0 attribution low confidence; other Motorola revisions unknown."
+    },
+    {
+      "vendor": "onsemi",
+      "doc_number": "LM833/D",
+      "known": [
+        {
+          "rev": "Rev. 6",
+          "date": "2011-09"
+        },
+        {
+          "rev": "Rev. 8",
+          "date": "2025-07"
+        }
+      ],
+      "missing": [
+        "Rev. 0–5",
+        "Rev. 7"
+      ],
+      "note": "Scribd 'lm833-rev2' copy may be an early revision (unconfirmed)."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "doc_number": "Doc ID 2169",
+      "known": [
+        {
+          "rev": "Rev. 3",
+          "date": "2009-08"
+        }
+      ],
+      "missing": [
+        "Rev. 1",
+        "Rev. 2"
+      ],
+      "note": "datasheetq 'LM833_05' may be a 2005 edition; alldatasheet 527770 may be newer."
+    }
   ],
   "ti_literature_numbers": [
     "SLOS481",
@@ -1201,17 +1254,11 @@
     "https://www.ti.com/product/LM833-N/part-details/LM833M"
   ],
   "open_questions": [
-    "Has TI issued an SLOS481 revision after B (22 Oct 2014) for the shared die? No 'SLOS481C' header found in web search this pass. Check the symlink (36 pages / 1,176,968 bytes in a 2026 benchmark) and Octopart copy ...-32026551.pdf.",
-    "Is LM833 on the device list of PCN 20240429005.1, PCN 20250514001.1 (die also changed per summary) or PCN 20220615003.1 (RFAB qualification)? What is the subject of PCN 20231114002.1 (lists LM833DR per summaries)?",
-    "LM833-specific before/after spec deltas of the new TI die (abs-max supply, slew, GBW, input stage, input protection, output swing, output-stage topology) and the date-code cut-over.",
-    "Was the E2E 1443925 'same die' reply from a TI employee, and does it mean TI's LM833 was always the MC33078 die?",
-    "Is the ex-National LM833-N also affected, moved, or NRND?",
-    "Which datasheet carries the '140 dB dynamic range' headline (National LM833-N suspected; draft attributed it to SLOS481)?",
-    "National LM833 DS number and original release date (1980s claim unverified).",
-    "Title of SNOA586 / AN-346 (cited in TI's LM833 PSpice model).",
-    "LM837 quad datasheet(s), DS/SNOS number and TI lifecycle status.",
-    "Measurements/sound descriptors: does Douglas Self's 'Op amps in small-signal audio design - Part 3' (EE Times / eeNews Europe) discuss LM833? Do NwAvGuy's op-amp measurements or Cycfi's op-amp shootout include LM833?",
-    "Inferred (never seen in results) archive URLs: ti.com/lit/ds/slos481b/..., slos481a/..., slos481/..., snosbd8e/..., snosbd8d/..., ti.com/lit/an/snoa586d/..., national.com/ds/LM/LM833.pdf, national.com/pf/LM/LM833.html, national.com/pf/LM/LM837.html."
+    "Any SLOS481 revision after B (e.g. SLOS481C) for the shared die? Check symlink (36 pages, 1,176,968 bytes) and Octopart 32026551.",
+    "Is LM833 on PCN 20240429005.1, 20250514001.1 or 20220615003.1? Is PCN 20231114002.1 really an Au-to-Cu wire-bond change?",
+    "LM833 before/after deltas and date-code cut-over for the new TI die; is LM833-N affected, moved or NRND?",
+    "Source of the 140 dB dynamic-range claim; National original release date; SNOA586 / AN-346 title; LM837 datasheet and status.",
+    "Do Douglas Self, NwAvGuy or Cycfi measurements cover LM833? Was the E2E 1443925 responder from TI?"
   ],
   "sources": [
     "https://www.ti.com/product/LM833",
@@ -1266,20 +1313,38 @@
   ],
   "verification": {
     "status": "partially-verified",
+    "web_searches_used": 9,
+    "claims_confirmed": [
+      "TI confirmed NE5532, LM833, RC4580 and MC33078 now share one die, part numbers unchanged: https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1652528/ne5532-ne5532-lm833-rc4580-and-mc33078-all-now-the-same-die",
+      "Hackaday reported the merge on 3 June 2026: https://hackaday.com/2026/06/03/texas-instruments-changes-the-ne5532-and-others-into-incompatible-versions/",
+      "Headphonesty (July 2026): RC4580-derived design with NPN inputs and complementary output: https://www.headphonesty.com/2026/07/industry-trusted-op-amp-rebuilt-boards-failing/",
+      "LM833 and LM833-N are different devices; TI used NPN output and renamed National's part: https://e2e.ti.com/support/audio-group/audio/f/audio-forum/430833/lm833-and-lm833-n-clarification-on-data-sheet-differences-sought",
+      "E2E reply: MC33078 and LM833 appear to be the same die: https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1443925/mc33078-are-the-specs-the-same-as-lm833",
+      "SLOS481B (July 2010, revised Oct 2014) states 16 MHz GBW: https://www.mouser.com/datasheet/2/405/slos481b-521846.pdf",
+      "SNOSBD8E header 'May 2004 – revised May 2012': https://www.ti.com/lit/ds/symlink/lm833-n.pdf",
+      "onsemi 'LM833, NCV833' is July 2025 Rev. 8: https://www.onsemi.com/download/data-sheet/pdf/lm833-d.pdf",
+      "onsemi LM833NG/LM833DG discontinued: https://www.onsemi.com/pdf/datasheet/lm833-d.pdf , https://www.arrow.com/en/products/lm833ng/on-semiconductor",
+      "ST header 'August 2009 Doc ID 2169 Rev 3': https://www.st.com/resource/en/datasheet/lm833.pdf",
+      "Reichelt copy titled '(Rev. A)': https://cdn-reichelt.de/documents/datenblatt/A200/LM833-TI.pdf",
+      "onsemi LM833DR2G listed at 15 MHz, 10–36 V: https://ie.rs-online.com/web/p/op-amps/1629355",
+      "PCN 20240429005.1 involves a die change from the RFAB process change: https://www.mouser.com/PCN/Texas_Instruments_PCN20240429005.1_Change_Notification.pdf",
+      "PCN 20231114002.1 reportedly lists LM833DR, RC4580IP, MC33078DR, NE5532AP: https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5726/PCN20231114002.1.pdf",
+      "GroupDIY: LM833 has lower distortion but lower output drive than 5532: https://groupdiy.com/threads/lm833-vs-5532.3360/"
+    ],
     "refuted_claims": [
-      "TI LM833 '±22 V to ±18 V, 9 to 5 V/us' change: still refuted for LM833 (SLOS481A/B already ±5 to ±18 V, 7 V/us); these are NE5532 SLOS075K deltas. Kept only as a caveat.",
-      "'SLOS481C' as an established revision: no header found in web search this pass (targeted query returned only SLOS481/A/B material). Kept as open question only.",
-      "Draft attribution of '15 MHz' and '140 dB' to the TI SLOS481 feature list: SLOS481B gives 16 MHz; 15 MHz belongs to onsemi and National LM833-N. 140 dB re-attributed as uncertain."
+      "TI LM833 '±22 V to ±18 V, 9 to 5 V/µs' change: these are NE5532 SLOS075K deltas; SLOS481A/B were always ±18 V, 7 V/µs.",
+      "'SLOS481C' as an established revision: no header found.",
+      "15 MHz and 140 dB attributed to SLOS481: SLOS481B gives 16 MHz; 15 MHz is onsemi and National; 140 dB source uncertain."
     ],
     "corrections": [
-      "GBW key spec: TI LM833 = 16 MHz typ (SLOS481B text); 15 MHz = onsemi / National LM833-N. Lineage note and tagline updated accordingly; GBW added as a spec delta in the LM833 vs LM833-N silicon entry.",
-      "onsemi LM833/D Rev. 8 (July 2025) upgraded to high confidence; LM833NG/LM833DG status changed to 'discontinued' (confirmed).",
-      "Die-consolidation silicon change upgraded to high confidence (TI E2E 1652528 plus Hackaday and Headphonesty); 'when' reworded because the production cut-over date is not documented; Headphonesty's RC4580-based NPN-input / complementary-output description added.",
-      "E2E 1443925 'same die' statement: confirmed wording ('based on the fact that all the specification and graphs are identical, it appears the MC33078 and LM833 are the same die'); the responder's TI affiliation is not confirmed.",
-      "PCN 20231114002.1: noted that one summary linked it to an RC4580 wire-bond change (likely conflation); subject left unverified. PCN 20250514001.1 and 20220615003.1 added as candidate PCNs in open questions.",
-      "Added new mirrors: Octopart LM833DR ...-32026551.pdf (newer-style TI layout, revision unknown), radiolocman di=82594 (LM833P). Added legacy onsemi URL product.do?id=LM833DG and TI LM833M part-details page to archive seeds.",
-      "Reichelt Rev A copy upgraded to high (title '(Rev. A)' seen this pass). Mirrors not re-seen this pass were downgraded from high to medium (Mouser/Farnell/Octopart SNOSBD8E copies, Mouser onsemi Rev 6), and the low-confidence ones are marked unconfirmed.",
-      "Reputation: added the GroupDIY 'LM833 vs 5532' forum view (lower distortion, lower output drive), attributed to forum posters and not to Douglas Self. The discovery claim that 'Self discusses it as a 5532 alternative' was not confirmed, so it is not asserted."
+      "GBW: TI LM833 16 MHz (SLOS481B); 15 MHz for onsemi and National LM833-N; added as a spec delta.",
+      "onsemi LM833/D Rev. 8 (July 2025) confirmed; LM833NG/LM833DG set to discontinued.",
+      "Die consolidation raised to high confidence (E2E 1652528, Hackaday, Headphonesty); cut-over date undocumented.",
+      "E2E 1443925 'same die' wording confirmed; responder's TI affiliation unconfirmed.",
+      "PCN 20231114002.1 subject left unverified; PCN 20250514001.1 and 20220615003.1 added as candidates.",
+      "Added mirrors Octopart 32026551 and radiolocman di=82594; legacy onsemi URL and TI LM833M page added to archive seeds.",
+      "Reichelt Rev A raised to high; unseen mirrors lowered to medium or marked unconfirmed.",
+      "Added GroupDIY view (lower distortion, lower drive); Douglas Self discussion not confirmed, so not asserted."
     ],
     "unverified_urls": [
       "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-301/4263.pdf",
@@ -1303,36 +1368,6 @@
       "http://www.national.com/ds/LM/LM833.pdf",
       "http://www.national.com/pf/LM/LM833.html",
       "http://www.national.com/pf/LM/LM837.html"
-    ],
-    "claims_confirmed": [
-      "TI confirmed on E2E that NE5532, LM833, RC4580 and MC33078 are now the same die, with part numbers unchanged: https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1652528/ne5532-ne5532-lm833-rc4580-and-mc33078-all-now-the-same-die",
-      "Hackaday reported the merge on 3 June 2026: https://hackaday.com/2026/06/03/texas-instruments-changes-the-ne5532-and-others-into-incompatible-versions/",
-      "Headphonesty (July 2026) says the RC4580-derived design has NPN inputs and a complementary output: https://www.headphonesty.com/2026/07/industry-trusted-op-amp-rebuilt-boards-failing/",
-      "LM833 and LM833-N are two different devices. TI changed its LM833 output stage to NPN from National's VPNP and renamed National's part LM833-N after the acquisition: https://e2e.ti.com/support/audio-group/audio/f/audio-forum/430833/lm833-and-lm833-n-clarification-on-data-sheet-differences-sought",
-      "An E2E reply said MC33078 and LM833 appear to be the same die because their specs and graphs are identical: https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1443925/mc33078-are-the-specs-the-same-as-lm833",
-      "SLOS481B (July 2010, revised Oct 2014) states a 16 MHz GBW 'relatively stable over a wide range of supply voltages': https://www.mouser.com/datasheet/2/405/slos481b-521846.pdf",
-      "The SNOSBD8E header reads 'MAY 2004-REVISED MAY 2012': https://www.ti.com/lit/ds/symlink/lm833-n.pdf",
-      "The onsemi 'LM833, NCV833' datasheet is 'July, 2025 - Rev. 8': https://www.onsemi.com/download/data-sheet/pdf/lm833-d.pdf",
-      "onsemi LM833NG/LM833DG OPNs are marked discontinued: https://www.onsemi.com/pdf/datasheet/lm833-d.pdf , https://www.arrow.com/en/products/lm833ng/on-semiconductor",
-      "ST LM833 datasheet header reads 'August 2009 Doc ID 2169 Rev 3': https://www.st.com/resource/en/datasheet/lm833.pdf",
-      "Reichelt copy is titled 'LM833 Dual High-Speed Audio Operational Amplifier (Rev. A)': https://cdn-reichelt.de/documents/datenblatt/A200/LM833-TI.pdf",
-      "onsemi LM833DR2G is listed at 15 MHz, 10-36 V: https://ie.rs-online.com/web/p/op-amps/1629355",
-      "PCN 20240429005.1 involves a die change resulting from the process change (RFAB): https://www.mouser.com/PCN/Texas_Instruments_PCN20240429005.1_Change_Notification.pdf",
-      "Search summary says PCN 20231114002.1 lists LM833DR, RC4580IP, MC33078DR and NE5532AP: https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5726/PCN20231114002.1.pdf",
-      "GroupDIY forum view: LM833 has lower distortion but lower output drive than 5532: https://groupdiy.com/threads/lm833-vs-5532.3360/"
-    ],
-    "web_searches_used": 9
-  },
-  "tier": "A",
-  "category": "bipolar-classic",
-  "product_pages": [
-    "http://www.ti.com/product/LM833/datasheet/specifications",
-    "http://www.tij.co.jp/document-viewer/jp/LM833/datasheet/application_and_implementation",
-    "https://www.ti.com/product/LM833",
-    "https://www.ti.com/product/LM833-N",
-    "https://www.mouser.com/new/texas-instruments/ti-lm833-amplifiers/",
-    "https://www.st.com/en/amplifiers-and-comparators/lm833.html",
-    "https://www.onsemi.com/products/standard-products/amplifiers-comparators/operational-amplifiers-op-amps/lm833"
-  ],
-  "revision_chain_notes": "TI SLOS481 (TI's own LM833): original JULY 2010 -> A (REVISED AUGUST 2010) -> B (REVISED OCTOBER 2014). Searches for SLOS481C/SLOS481D found nothing, so there is no evidence of a Rev C+. The original July 2010 edition is still missing as a confirmed copy. The best candidate is the already-listed Octopart LM833P ...-10089682.pdf, which uses the old lowercase TI-style title 'dual high-speed audio operational amplifier'; its revision is unconfirmed.\n\nNational LM833: DS number found. National's datasheet is DS005218 (pdf.datasheetcatalog.com/.../DS005218.PDF; a search summary gives (c) 2004). Individual National edition dates (pre-2004 editions) are still missing. Copies whose edition is not shown: Jameco 120942 and 1309253, sm5cbw.se, and Octopart 9811680, 8191293 and 7578376. No legacy national.com URL came up in any search.\n\nTI SNOSBD8 (ex-National): A, B and C are still missing, and no search result mentioned them. D is confirmed (new copies: Scribd 102660047, Octopart LM833M-National ...-10846346); its date is still unknown. E is MAY 2004 - REVISED MAY 2012 (new copy: Octopart ...-28360528). Related document found: JAJSB49, the Japanese TI edition of the National LM833 datasheet (kyohritsu copy); its date is not shown. The 'MAY 2004' origin date in SNOSBD8 matches the (c) 2004 DS005218 edition.\n\nMotorola LM833/D: one search summary says the eletrodex copy is '1996 Rev 0' (low confidence, footer not shown). Other Motorola revisions and dates are still missing. New copies with no revision shown: alldatasheet 3070, datasheetspdf 54287, datasheetq (2 entries), chipfind.\n\nonsemi LM833/D: Rev. 6 (September 2011) -> [Rev. 7 missing] -> Rev. 8 (July 2025). Rev. 6 is now also confirmed for the already-listed mouser LM833-D-93350.pdf (search-title footer) and for a new copy at media.digikey.com (LM833,NCV833.pdf). Rev. 0-5 (ON Semi era, around 2000-2010) are still missing. The Scribd 'lm833-rev2-pdf' copy may be an early revision, but neither its vendor nor its revision is confirmed.\n\nST Doc ID 2169: only Rev 3 (August 2009) is confirmed. Rev 1, Rev 2 and anything after Rev 3 are still missing. The datasheetq entry 'LM833_05' may be a 2005 edition (unverified). A second alldatasheet entry (527770, LM833DT) may be a newer upload. New copies with no revision shown: datasheet4u 1394947, radiolocman di=147172, datasheetdir, allaboutcircuits.\n\nSide notes: the already-listed docs.lightningmaps.org lm833.pdf showed up once with the title 'LM833-N Dual Audio Operational Amplifier (Rev. E)'. It may therefore be SNOSBD8E rather than a pure National copy, but another search showed it with the National 'General Description' title, so this is ambiguous. No legacy vendor URLs (focus.ti.com, national.com) came up, so archive_seed_urls is empty."
+    ]
+  }
 }

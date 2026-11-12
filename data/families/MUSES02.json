@@ -1,175 +1,127 @@
 {
   "id": "MUSES02",
-  "name": "MUSES02 / MUSES02D (dual bipolar-input, OFC lead frame)",
-  "tagline": "New JRC's Dec-2009 bipolar-input MUSES dual with an oxygen-free-copper lead frame. It is widely rolled and praised for dynamics, a full mid-bass and high resolution.",
-  "technology": "Bipolar-input dual op-amp. The datasheet title is \"High Quality Audio, Bipolar Input, Dual Operational Amplifier\" (JP: 2回路入り バイポーラ入力 高音質オペアンプ). It uses a high-purity oxygen-free-copper (OFC) lead frame; per NJR and JAS Journal 2014 (the \"M-Spec frame\"), this is derived from copper NJR developed for magnetron tubes. It comes in DIP8 only (MUSES02D). It is NOT a JFET part (MUSES01 is the JFET-input MUSES). Some sources mislabel it, e.g. Soomal's 2015 Vantam review loosely refers to the 'MUSES series J-FET' when describing a MUSES02-equipped device.",
+  "name": "MUSES02 / MUSES02D",
+  "type": "Bipolar-input audio op-amp, dual, OFC lead frame",
+  "tier": "A",
+  "category": "japanese-audio-series",
+  "tagline": "JRC's 2009 bipolar MUSES dual with an oxygen-free-copper frame, rolled widely for dynamics, full mid-bass, resolution.",
   "manufacturers": [
-    "New Japan Radio Co., Ltd. (NJR / JRC / New JRC)",
-    "Nisshinbo Micro Devices Inc."
+    "JRC/Nisshinbo"
+  ],
+  "lineage": [
+    {
+      "vendor": "New Japan Radio (JRC/NJR)",
+      "role": "originator",
+      "period": "2009–2021",
+      "note": "Announced by PHILE WEB 2009-12-08; retail 2009-12-24 unconfirmed. OFC 'M-Spec frame' derived from NJR magnetron copper."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "role": "current",
+      "period": "2022–present",
+      "note": "Formed from New JRC and RICOH Electronic Devices. Same part name; maintenance product since the 2025-03-19 datasheet."
+    }
   ],
   "part_numbers": [
     {
       "pn": "MUSES02",
       "channels": 2,
-      "vendors": [
-        "New Japan Radio (NJR)",
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "Maintenance product (保守品), confirmed by the header of the Nisshinbo JP datasheet dated 20250319. Nisshinbo defines maintenance products as ones to be discontinued in the near future and supplied only for current projects, not new designs (NRND-equivalent). Still listed at Mouser, DigiKey and Marutsu.",
-      "notes": "Family and datasheet name. Mouser and DigiKey (MUSES02-ND, product 2202386) list 'MUSES02' as the orderable. Single-source; no second sources."
+      "status": "NRND",
+      "note": "Maintenance product (保守品). Orderable at Mouser, DigiKey (MUSES02-ND, 2202386), Marutsu. Single source."
     },
     {
       "pn": "MUSES02D",
       "channels": 2,
-      "vendors": [
-        "New Japan Radio (NJR)",
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "Maintenance product: the JP datasheet 20250319 header reads 'MUSES02D は保守品です' (confirmed by web search)",
-      "notes": "DIP8 package designation used in the datasheet and in Japanese retail (Akizuki g103417, Eleshop). Kyohritsu 'KP-MUSES02D' is a retail pack, not a vendor part number. alldatasheet's 'MUSE02' listing (ID 1244749, 12 pages, same title) is a typo'd upload of the same datasheet, not a separate part."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "New Japan Radio Co., Ltd. (NJR / JRC)",
-      "role": "Originator: designer and manufacturer",
-      "period": "2009 (announced Dec 2009) – 2021",
-      "notes": "PHILE WEB announced MUSES02 on 2009-12-08, including consumer sales. A retail release date of 2009-12-24 is unconfirmed. English datasheets Ver.2009-12-18 and Ver.2015-04-13 carry NJR branding (both confirmed on Mouser copies)."
-    },
-    {
-      "vendor": "Nisshinbo Micro Devices Inc.",
-      "role": "Successor (integration of New JRC and RICOH Electronic Devices)",
-      "period": "2022 – present",
-      "notes": "Continues MUSES02 under Nisshinbo branding with the same part name. The JP datasheet dated 20250319 classifies MUSES02D as a maintenance product (保守品). No second-source die exists."
+      "status": "NRND",
+      "note": "DIP8 only, no SMD. Datasheet: 'MUSES02D は保守品です'. Kyohritsu KP-MUSES02D is a retail pack."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise density e_n",
+      "parameter": "Input noise (1 kHz)",
       "value": "4.5 nV/√Hz typ",
-      "condition": "f = 1 kHz (condition per distributor/Scribd spec summary)",
-      "source": "Nisshinbo MUSES02_J.pdf (20250319) feature list; Scribd 'MUSES02 Chip Specs' / Microchip USA summaries (web search 2026-09)"
+      "condition": "f = 1 kHz",
+      "source": "MUSES02_J Ver. 2025-03-19"
     },
     {
-      "parameter": "Gain-bandwidth product",
-      "value": "11 MHz typ",
-      "condition": "Typical",
-      "source": "Distributor / datasheet summaries (Scribd, Microchip USA, DigiKey HTML datasheet), web search 2026-09"
+      "parameter": "GBW",
+      "value": "11 MHz typ (open-loop gain 110 dB typ)",
+      "condition": "typ",
+      "source": "Distributor summaries; MUSES02_J"
     },
     {
       "parameter": "Slew rate",
       "value": "5 V/µs typ",
-      "condition": "Typical",
-      "source": "Distributor / datasheet summaries (web search 2026-09)"
+      "condition": "typ",
+      "source": "Distributor summaries"
     },
     {
-      "parameter": "Open-loop voltage gain",
-      "value": "110 dB typ",
-      "condition": "Typical",
-      "source": "Nisshinbo MUSES02_J.pdf (20250319) feature list (web search 2026-09)"
+      "parameter": "THD+N",
+      "value": "−100 dB (0.001%) typ (THD)",
+      "condition": "AV = +10, 1 kHz, 5 Vrms, 2 kΩ",
+      "source": "Datasheet p.3 (third-party transcript)"
     },
     {
-      "parameter": "Input offset voltage",
+      "parameter": "Supply range",
+      "value": "±3.5 V to ±16 V (abs. max ±18 V; VCM ±15 V)",
+      "condition": "recommended operating",
+      "source": "MUSES02_J; MUSES02_E Ver. 2009-12-18"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "8 mA typ",
+      "condition": "probably both channels, no signal",
+      "source": "Distributor summaries (medium conf.)"
+    },
+    {
+      "parameter": "Output current",
+      "value": "50 mA",
+      "condition": "min/typ not shown",
+      "source": "Distributor summary (low confidence)"
+    },
+    {
+      "parameter": "Offset voltage",
       "value": "0.3 mV typ / 3 mV max",
-      "condition": "Ta = 25 °C",
-      "source": "Nisshinbo MUSES02_J.pdf (20250319) feature list (web search 2026-09)"
+      "condition": "Ta = 25 °C; CMRR 80 dB (Mouser)",
+      "source": "MUSES02_J Ver. 2025-03-19"
     },
     {
       "parameter": "Input bias current",
       "value": "100 nA typ / 500 nA max",
       "condition": "Ta = 25 °C",
-      "source": "100 nA typ in distributor summary (web search 2026-09); 500 nA max from discovery-pass JP datasheet summary and the indare/pcb_work repo IB table"
+      "source": "Distributor summary; JP datasheet"
     },
     {
-      "parameter": "Supply current",
-      "value": "8 mA typ",
-      "condition": "Condition not shown (likely total for both channels, no signal); distributor summary",
-      "source": "Scribd / Microchip USA spec summaries (web search 2026-09); not seen in vendor PDF, medium confidence"
-    },
-    {
-      "parameter": "Output current",
-      "value": "50 mA",
-      "condition": "Distributor summary; min/typ and conditions not shown",
-      "source": "Distributor spec summary (web search 2026-09); low confidence"
-    },
-    {
-      "parameter": "THD",
-      "value": "−100 dB (0.001%) typ",
-      "condition": "AV = +10, f = 1 kHz, Vo = 5 Vrms, RL = 2 kΩ",
-      "source": "Third-party transcription of NJR_MUSES02.pdf p.3 in indare/pcb_work AudioV2/spice/README.md (not seen directly in vendor PDF; medium confidence)"
-    },
-    {
-      "parameter": "CMRR",
-      "value": "80 dB",
-      "condition": "As listed by distributor (min/typ not stated)",
-      "source": "Mouser parametric listing (discovery pass; not re-verified)"
-    },
-    {
-      "parameter": "Operating supply range",
-      "value": "±3.5 V to ±16 V",
-      "condition": "Recommended operating",
-      "source": "Nisshinbo MUSES02_J.pdf (20250319) summary (web search 2026-09); Mouser/DigiKey list 16 V"
-    },
-    {
-      "parameter": "Absolute max supply voltage",
-      "value": "±18 V",
-      "condition": "Absolute maximum rating",
-      "source": "MUSES02_E.PDF Ver.2009-12-18 (Mouser copy) via discovery-pass search summary"
-    },
-    {
-      "parameter": "Common-mode input voltage (abs max)",
-      "value": "±15 V",
-      "condition": "Absolute maximum rating",
-      "source": "MUSES02_E.PDF Ver.2009-12-18 (Mouser copy) via discovery-pass search summary"
-    },
-    {
-      "parameter": "Operating / storage temperature",
-      "value": "-40 to +85 °C / -50 to +150 °C",
-      "condition": "Datasheet ratings",
-      "source": "MUSES02 datasheet via DigiKey HTML datasheet summary (discovery pass)"
-    },
-    {
-      "parameter": "Input stage type",
-      "value": "Bipolar",
-      "condition": "-",
-      "source": "Datasheet title 'High Quality Audio, Bipolar Input, Dual Operational Amplifier'"
-    },
-    {
-      "parameter": "Current noise i_n",
-      "value": "Not captured",
-      "condition": "-",
-      "source": "Not visible in any source reached"
+      "parameter": "Input stage",
+      "value": "Bipolar (not JFET; MUSES01 is the JFET MUSES)",
+      "condition": "op −40 to +85 °C; storage −50 to +150",
+      "source": "Datasheet title; DigiKey HTML datasheet"
     }
   ],
   "reputation": {
-    "summary": "The bipolar partner to the JFET MUSES01, and a common premium DIP8 dual for op-amp rolling in Japanese, Chinese and English communities. It is also used as the front-end op-amp in portable amps: FiiO E12A and A5 (with LME49600), FiiO X7 AM2/AM5 modules, and VentureCraft SoundDroid Vantam. Listeners describe dynamics, a thick mid-bass and bass, 'richness' (芳醇) and high resolution (Japanese blogs). The Japanese rule of thumb is MUSES01 for vocals, MUSES02 for jazz and classical (unverified). Fosi Audio sells it as a replacement op-amp and lists it as compatible for the ZA3 and V3. Soomal (2017 FiiO A5 review) is more critical: MUSES02 'generally has good midrange stability, very steady, but somewhat dull (有些呆)'. The mid-bass vagueness in Soomal's 2015 Vantam review was attributed to the TPA6120A unbalanced output, not to MUSES02 vs LME49860. In an ASR phono-stage input-shorted noise test, the 33 EUR MUSES02 measured only about 0.3 dB better A-weighted noise than the 5 EUR OPA1656, i.e. about the same.",
+    "summary": "The bipolar partner to JFET MUSES01 and a premium DIP8 rolling favourite in Japan, China and the West. Japanese blogs praise dynamics, thick mid-bass and resolution; reportedly 'MUSES01 for vocals, MUSES02 for jazz and classical'. Soomal finds it steady but somewhat dull. ASR: the €33 MUSES02 measured only about 0.3 dB quieter than the €5 OPA1656 in a phono stage.",
     "sonic_descriptors": [
       "dynamic",
-      "thick, rich mid-bass and bass with punch (JP blogs)",
-      "芳醇 (rich, mellow richness)",
-      "high resolution / high information density (JP blogs)",
-      "monitor-like thick core (Mineden table)",
-      "warm, restrained (内敛) overall voicing in the Vantam (Soomal, applies to both MUSES02 and LME49860 settings)",
-      "critic: steady but somewhat dull / not lively midrange (Soomal, FiiO A5 review)"
+      "thick, punchy mid-bass",
+      "rich, mellow (芳醇)",
+      "high resolution",
+      "monitor-like thick core",
+      "warm, restrained (内敛)",
+      "steady but dull (Soomal)"
     ],
     "typical_uses": [
-      "Op-amp rolling in DACs and amplifiers (Fosi ZA3 / V3 list it as compatible)",
-      "Portable headphone amps: FiiO E12A and A5 (MUSES02 + LME49600, per Soomal)",
-      "FiiO X7 amp modules AM2 (MUSES02 + BUF634) and AM5 (MUSES02 + TPA6120A2), per a review aggregation",
-      "VentureCraft SoundDroid Vantam (MUSES02 or LME49860 front end, per Soomal)",
-      "Audio preamplifiers, active filters, line amplifiers (datasheet application list)",
+      "Op-amp rolling in DACs and amps (Fosi ZA3/V3 compatible)",
+      "FiiO E12A/A5 (+LME49600); X7 AM2 (+BUF634), AM5 (+TPA6120A2)",
+      "VentureCraft SoundDroid Vantam front end (or LME49860)",
+      "Preamps, active filters and line amplifiers",
       "Upgrade from NJM4580 / NE5532 in Japanese DIY"
     ],
     "caveats": [
-      "Counterfeits and remarked parts are widely reported in marketplace listings (community reports)",
-      "MUSES02D is a maintenance product (保守品) per the Nisshinbo JP datasheet of 2025-03-19; Nisshinbo says such parts will be discontinued in the near future and are not for new designs",
-      "Bipolar input with 100 nA typ (500 nA max) bias current, so DC offset can rise with high source impedances or in DC-coupled designs",
-      "Minimum supply is ±3.5 V, which is marginal on low-voltage single-rail gear",
-      "Datasheet THD is specified at AV=+10 / 5 Vrms / 2 kΩ, not directly comparable to LME49860 / OPA1612 figures",
-      "Measured noise advantage over far cheaper parts is small (ASR: ~0.3 dB A-weighted vs OPA1656 in one phono stage)",
-      "Voicing is subjective and polarising: Soomal finds the midrange steady but dull",
-      "DIP8 only, with no SMD option",
-      "Sonic descriptors are subjective listening impressions, not measurements"
+      "Counterfeits and remarks are widely reported on marketplaces.",
+      "Maintenance product since 2025-03-19: to be discontinued soon, not for new designs. DIP8 only.",
+      "100 nA typ (500 nA max) bias: offset rises with high source impedance or DC coupling. Needs ±3.5 V minimum.",
+      "Datasheet THD (AV=+10, 5 Vrms, 2 kΩ) is not comparable to LME49860/OPA1612 figures; measured noise edge is small.",
+      "Voicing is subjective and polarising; descriptors are listening impressions, not measurements."
     ],
     "sources": [
       "https://akizukidenshi.com/catalog/g/g103417/",
@@ -193,6 +145,18 @@
       "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES02_E.pdf"
     ]
   },
+  "counterfeit_notes": "Fakes are common on AliExpress, eBay, Amazon JP and Yahoo Auctions. Genuine: soft copper-toned OFC leads, round pin-1 indent, sharp logo. Markings legitimately vary by lot and era. Genuine costs about €33–$44 (Mouser, 2023); far-cheaper listings are suspect.",
+  "alternatives": [
+    "MUSES8820 ('budget MUSES02')",
+    "MUSES01 (JFET sibling, 2009)",
+    "MUSES03 (reportedly discontinued 2023)",
+    "MUSES05 (2021 flagship)",
+    "NL8802 (unverified)",
+    "OPA1656 (within 0.3 dB on ASR noise)",
+    "LME49860 / LME49720 (LM4562) / OPA1612",
+    "Sparkos Labs SS3602 (discrete DIP8)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "New Japan Radio (NJR)",
@@ -201,10 +165,13 @@
       "revision": "Ver. 2009-12-18",
       "date": "2009-12-18",
       "url": "http://www.mouser.com/pdfdocs/MUSES02_E.PDF",
+      "also_urls": [
+        "https://www.mouser.com/pdfdocs/MUSES02_E.PDF?origin=new"
+      ],
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Earliest version found; Mouser freezes it. Search result title shows the page-1 header 'MUSES02 - 1 - Ver.2009-12-18' (confirmed 2026-09). Also served at https://www.mouser.com/pdfdocs/MUSES02_E.PDF?origin=new."
+      "note": "Earliest version found, frozen by Mouser; header 'Ver.2009-12-18'."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -216,7 +183,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Search result title shows 'MUSES02 - 1 - Ver.2015-04-13' (confirmed 2026-09). MUSES01 carries the same Ver.2015-04-13 date (Mouser MUSES01_E-259020.pdf), suggesting a batch reissue of the MUSES datasheets. Changes from 2009 unknown."
+      "note": "Same date as MUSES01 reissue, suggesting batch reissue; changes unknown."
     },
     {
       "vendor": "Nisshinbo Micro Devices",
@@ -228,7 +195,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "URL confirmed indexed (2026-09), but the version string was not visible in the search summary. May match the 20250319 JP reissue."
+      "note": "Version not seen; may match the 2025-03-19 Japanese reissue."
     },
     {
       "vendor": "Nisshinbo Micro Devices",
@@ -240,7 +207,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Search result title shows '- 1 - 20250319 MUSES02 MUSES02D は保守品です' (confirmed 2026-09). Feature list: e_n 4.5 nV/√Hz, VIO 0.3/3 mV, AV 110 dB, ±3.5 to ±16 V."
+      "note": "Header '20250319 … MUSES02D は保守品です'; e_n 4.5 nV/√Hz, ±3.5–±16 V."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -249,22 +216,30 @@
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/808061/NJRC/MUSES02.html",
+      "also_urls": [
+        "https://www.alldatasheet.com/datasheet-pdf/view/808061/NJRC/MUSES02.html",
+        "https://www.alldatasheet.com/html-pdf/808061/NJRC/MUSES02/198/2/MUSES02.html"
+      ],
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Listing confirmed (2026-09): 12 pages, 396 KB; also at /datasheet-pdf/view/808061/NJRC/MUSES02.html and page views /html-pdf/808061/NJRC/MUSES02/198/2/MUSES02.html. NJR era, so Ver.2009-12-18 or Ver.2015-04-13; which one not confirmed."
+      "note": "12 pages, 396 KB, NJR era: Ver. 2009-12-18 or 2015-04-13."
     },
     {
       "vendor": "New Japan Radio (NJR)",
       "title": "MUSE02 datasheet (alldatasheet listing under NJRC)",
-      "doc_number": "MUSES02_E (listed as MUSE02)",
+      "doc_number": "MUSES02_E",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1244749/NJRC/MUSE02.html",
+      "also_urls": [
+        "https://www.alldatasheetcn.com/html-pdf/1244749/NJRC/MUSE02/929/8/MUSE02.html",
+        "https://www.alldatasheet.com/datasheet-pdf/view/1244749/NJRC/MUSE02.html"
+      ],
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Listing confirmed (2026-09); 12 pages, same title 'High Quality Audio, Bipolar Input, Dual Operational Amplifier'. Also at https://www.alldatasheetcn.com/html-pdf/1244749/NJRC/MUSE02/929/8/MUSE02.html and /datasheet-pdf/view/1244749/NJRC/MUSE02.html. Higher-numbered upload; revision not shown."
+      "note": "Misspelt 'MUSE02' upload of the same 12-page datasheet; later ID."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -276,7 +251,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Confirmed indexed (2026-09), also on digikey.at. NJR-era HTML rendering; revision not shown."
+      "note": "NJR-era HTML rendering; also on digikey.at."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -285,10 +260,14 @@
       "revision": "",
       "date": "",
       "url": "https://www.datasheet4u.com/datasheet-pdf/NewJapanRadio/MUSES02/pdf.php?id=1007642",
+      "also_urls": [
+        "https://datasheetspdf.com/pdf/1007642/NewJapanRadio/MUSES02/1",
+        "http://www.datasheet.jp/pdf/1007642/MUSES02.html"
+      ],
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Confirmed indexed (2026-09). The same ID 1007642 is at https://datasheetspdf.com/pdf/1007642/NewJapanRadio/MUSES02/1 and http://www.datasheet.jp/pdf/1007642/MUSES02.html. Revision unknown (NJR era)."
+      "note": "ID 1007642, NJR era; revision unknown."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -300,7 +279,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Found in web search 2026-09; NJR-branded listing. Revision unknown."
+      "note": "NJR-branded listing; revision unknown."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -312,7 +291,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Found in web search 2026-09; Elcodis usually freezes older NJR copies. Revision unknown."
+      "note": "Elcodis usually freezes older NJR copies."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -324,7 +303,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed: not surfaced in 2026-09 searches. The filename suggests a copy of a Mouser file MUSES02_E-1917145.pdf, possibly newer than 259016."
+      "note": "Filename suggests Mouser MUSES02_E-1917145.pdf, possibly newer than 259016."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -336,7 +315,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Aggregator page confirmed indexed (2026-09); revision(s) not visible."
+      "note": "Aggregator page; revisions not visible."
     },
     {
       "vendor": "Nisshinbo Micro Devices",
@@ -348,19 +327,19 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Confirmed indexed (2026-09); points to the current vendor/distributor copy. Revision unknown."
+      "note": "Points to the current vendor or distributor copy."
     },
     {
       "vendor": "Nisshinbo Micro Devices",
-      "title": "MUSES02 local copy in indare/pcb_work (NJR_MUSES02.pdf, labelled Nisshinbo)",
-      "doc_number": "MUSES02 (language unknown)",
+      "title": "MUSES02 third-party copy (NJR_MUSES02.pdf, labelled Nisshinbo)",
+      "doc_number": "MUSES02",
       "revision": "",
       "date": "",
       "url": "https://github.com/indare/pcb_work/blob/c6d3acc4e15273756a5de0ede66dc656917d916f/Audio/datasheets/opamps/NJR_MUSES02.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed URL, built from the repo path and commit seen in GitHub code search; the repo README cites its p.3 for THD −100 dB. Revision not seen."
+      "note": "Inferred URL; p.3 is the THD −100 dB source. Language unknown."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -372,7 +351,7 @@
       "url_kind": "vendor_legacy",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This legacy NJR vendor PDF path appeared in search results, but the result title showed only 'Njr', not the Ver. header. It is probably Ver.2015-04-13 or later, but that is unconfirmed. Seed it to the Wayback Machine, because snapshots may hold different Ver. dates."
+      "note": "Legacy NJR path, probably Ver. 2015-04-13 or later. Wayback seed."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -384,7 +363,7 @@
       "url_kind": "vendor_legacy",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A search summary cited this URL, apparently from a diyAudio MUSE op-amp thread. It is an early NJR host and probably served the launch-era Ver.2009-12-18 or another pre-2015 Ver., but no header was shown. It is the best archive seed for early English revisions."
+      "note": "Early NJR host, cited on diyAudio; best seed for pre-2015 versions."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -396,7 +375,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Regional mirror of the known digikey.com HTML datasheet (same production ID 663074), so it is probably the same revision."
+      "note": "Regional mirror of DigiKey ID 663074; same revision likely."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -408,19 +387,19 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Japanese mirror of alldatasheet document 808061. That is the same file as the known alldatasheet.com entry (12 pages, 396 KB)."
+      "note": "Japanese mirror of alldatasheet 808061."
     },
     {
       "vendor": "New Japan Radio (NJR)",
       "title": "MUSE02 データシート(PDF) - New Japan Radio (alldatasheet.jp)",
-      "doc_number": "MUSES02_E (listed as MUSE02)",
+      "doc_number": "MUSES02_E",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.jp/datasheet-pdf/pdf/1244749/NJRC/MUSE02.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Japanese mirror of alldatasheet document 1244749. That is the same file as the known alldatasheet.com MUSE02 entry. It is a later upload ID than 808061, so it may hold a different Ver."
+      "note": "Japanese mirror of alldatasheet 1244749; may hold a different Ver."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -432,7 +411,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Page-view rendering of alldatasheet document 808061. The rendered page text may show the Ver. header."
+      "note": "Page view of 808061; rendered text may show the Ver. header."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -444,7 +423,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Uses the same ID (1007642) as the known datasheet4u copy, so it is probably the same file."
+      "note": "Same ID 1007642 as datasheet4u; probably the same file."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -456,7 +435,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Third-party copy; the search summary did not show its revision."
+      "note": "Third-party copy; revision unknown."
     },
     {
       "vendor": "New Japan Radio (NJR)",
@@ -468,44 +447,82 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Third-party copy; the search summary did not show its revision."
+      "note": "Third-party copy; revision unknown."
     }
+  ],
+  "product_pages": [
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses02",
+    "https://www.njr.com/electronic_device/products/MUSES02.html",
+    "https://www.njr.co.jp/MUSES/series/MUSES02.html",
+    "https://www.njr.com/semicon/products/MUSES02.html",
+    "https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES02/2202386",
+    "https://www.mouser.com/ProductDetail/Nisshinbo/MUSES02?qs=lTIKtKbByhhPORZIYvXQtw%3D%3D",
+    "https://www.win-source.net/products/detail/njr-corporation-njrc/muses02.html",
+    "https://www.integrated-circuit.com/products-detail/MUSES02/EIS-1388003.html"
   ],
   "revision_history": [
     {
       "vendor": "New Japan Radio (NJR)",
       "doc_number": "MUSES02_E",
-      "revision": "Ver.2009-12-18",
+      "revision": "Ver. 2009-12-18",
       "date": "2009-12-18",
-      "changes": "Earliest English datasheet found; coincides with the Dec 2009 launch. NJR datasheets carry no change-log table. (Header confirmed on Mouser copy.)"
+      "changes": "Earliest English datasheet, at the December 2009 launch. NJR datasheets carry no change log."
     },
     {
       "vendor": "New Japan Radio (NJR)",
       "doc_number": "MUSES02_E",
-      "revision": "Ver.2015-04-13",
+      "revision": "Ver. 2015-04-13",
       "date": "2015-04-13",
-      "changes": "Reissued English datasheet (header confirmed on Mouser copy 259016). MUSES01 was reissued with the same date, suggesting a batch MUSES reissue. Changes unknown; no PCN found."
+      "changes": "Reissue (Mouser 259016), same date as MUSES01, suggesting a batch reissue. Changes unknown; no PCN."
     },
     {
       "vendor": "Nisshinbo Micro Devices",
       "doc_number": "MUSES02_J",
-      "revision": "20250319",
+      "revision": "Ver. 2025-03-19",
       "date": "2025-03-19",
-      "changes": "Nisshinbo-format Japanese reissue. The header states 'MUSES02D は保守品です' (maintenance product; lifecycle change, NRND-equivalent). No electrical spec change is evident; the key typicals match earlier versions. (Header confirmed by web search.)"
+      "changes": "Nisshinbo-format Japanese reissue marking MUSES02D a maintenance product (NRND-equivalent). Key typicals unchanged."
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "Community reports (low-to-medium confidence), consistent across English, Japanese and Chinese sources: counterfeits and remarked parts are common on AliExpress, eBay, Amazon JP and Yahoo Auctions. Checks: (1) genuine parts have an OFC lead frame, so the leads are soft and very pliable and copper-toned, while fakes have stiff plated leads (Head-Fi opamp thread p.307); (2) the round pin-1 indent should sit right at pin 1, and fakes often show a flat stamped circle (Head-Fi); (3) genuine logo is described as finely detailed and sharp, while fakes use coarse or white-ink printing. An AliExpress SEO article claims raised, laser-like lettering marks fakes, which contradicts other reports; treat marking texture as unreliable. Caveat from maimai-audio: print, logo position, back finish and lead finish vary legitimately by lot and era (NJR vs Nisshinbo branding), so variation alone is not proof. Pricing: the '$3–5 genuine' figure circulating in SEO articles is not supported; the ASR test cites 33 EUR for a MUSES02 and a diyAudio thread (Apr 2023) cites about $44 at Mouser. Treat listings far below authorized-distributor prices (Mouser, DigiKey, Akizuki, Marutsu, Eleshop) as suspect.",
-  "alternatives": [
-    "MUSES8820 (Nisshinbo's lower-cost bipolar MUSES; community calls it a 'budget MUSES02')",
-    "MUSES01 (JFET-input sibling from the same 2009 launch)",
-    "MUSES03 (MUSES JFET part; reported discontinued in 2023 by Japanese blogs)",
-    "MUSES05 (2021 MUSES flagship)",
-    "Nisshinbo NL8802 (per discovery notes; unverified)",
-    "TI OPA1656 (CMOS; within ~0.3 dB of MUSES02 in an ASR phono input-shorted noise test)",
-    "TI LME49860 / LME49720 (LM4562)",
-    "TI OPA1612",
-    "Sparkos Labs SS3602 (discrete DIP8 drop-in)"
+  "revision_chains": [
+    {
+      "vendor": "JRC/Nisshinbo",
+      "doc_number": "MUSES02_E",
+      "known": [
+        {
+          "rev": "Ver. 2009-12-18",
+          "date": "2009-12-18"
+        },
+        {
+          "rev": "Ver. 2015-04-13",
+          "date": "2015-04-13"
+        },
+        {
+          "rev": "Nisshinbo reissue",
+          "date": ""
+        }
+      ],
+      "missing": [
+        "Ver. 2010–2014",
+        "Ver. 2016–2021",
+        "Nisshinbo English reissue date"
+      ],
+      "note": "Legacy semicon.njr.co.jp and njr.com PDFs are the best Wayback seeds for intermediate versions."
+    },
+    {
+      "vendor": "JRC/Nisshinbo",
+      "doc_number": "MUSES02_J",
+      "known": [
+        {
+          "rev": "Ver. 2025-03-19",
+          "date": "2025-03-19"
+        }
+      ],
+      "missing": [
+        "2009 launch edition",
+        "all JRC-era Japanese versions"
+      ],
+      "note": "No njr.co.jp MUSES02_J URL seen; MUSES01 has a sibling legacy path."
+    }
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -527,15 +544,11 @@
     "https://www.njr.com/semicon/products/MUSES02.html"
   ],
   "open_questions": [
-    "The version string of the current Nisshinbo English MUSES02_E.pdf is unknown. Does it match the JP 20250319 reissue and carry the MUSES02D maintenance-product note?",
-    "What changed between Ver.2009-12-18, Ver.2015-04-13 and the 2025-03-19 Nisshinbo reissue? No change log or PCN was found.",
-    "When exactly did MUSES02D enter maintenance (保守品) status, and is a last-time-buy / EOL date announced on the Nisshinbo discon page?",
-    "i_n and the exact conditions for supply current (8 mA typ) and output current (50 mA) are from distributor summaries only. THD −100 dB (AV=+10, 1 kHz, 5 Vrms, 2 kΩ) comes only from a third-party transcription.",
-    "Which revision do the mirror copies hold: alldatasheet 808061 and 1244749 ('MUSE02'), DigiKey htmldatasheet 663074, datasheet4u / datasheetspdf / datasheet.jp 1007642, datasheet.su, Elcodis 1321987, Scribd 'MUSES02-E-1917145' and the indare/pcb_work NJR_MUSES02.pdf?",
-    "Inferred URLs, not seen in results: https://www.mouser.com/datasheet/2/294/MUSES02_E-1917145.pdf (from the Scribd filename), the NJR legacy PDF patterns semicon.njr.co.jp/eng/PDF/, semicon.njr.co.jp/jpn/PDF/, njr.co.jp/products/semicon/PDF/ and njr.com/semicon/PDF/, and the GitHub blob URL of the indare/pcb_work PDF.",
-    "No die, process or fab change is documented. Lot-to-lot marking and finish differences are reported (maimai-audio) but not linked to any silicon change.",
-    "Retail release date: 2009-12-24 (search summary) vs the PHILE WEB announcement of 2009-12-08; the exact date is unconfirmed.",
-    "The Japanese 'MUSES01 for vocals / MUSES02 for jazz' heuristic and the existence and positioning of Nisshinbo NL8802 were not re-verified."
+    "What version is the current Nisshinbo English datasheet, and does it carry the maintenance note?",
+    "What changed between Ver. 2009-12-18, Ver. 2015-04-13 and the 2025-03-19 reissue?",
+    "When did MUSES02D enter maintenance status, and is a last-time-buy date announced?",
+    "Confirm current noise, supply/output current conditions and the THD −100 dB figure from the vendor PDF.",
+    "Which version does each mirror hold (alldatasheet, DigiKey 663074, datasheet4u 1007642, Elcodis, Scribd)?"
   ],
   "sources": [
     "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES02_E.pdf",
@@ -589,20 +602,38 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 9,
+    "claims_confirmed": [
+      "Nisshinbo JP datasheet dated 20250319; header 'MUSES02D は保守品です' (https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES02_J.pdf).",
+      "JP datasheet: e_n 4.5 nV/√Hz, VIO 0.3/3 mV, AV 110 dB, ±3.5 to ±16 V (https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES02_J.pdf).",
+      "Nisshinbo maintenance products will be discontinued soon; current projects only (https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/).",
+      "Mouser copy header 'MUSES02 - 1 - Ver.2009-12-18' (http://www.mouser.com/pdfdocs/MUSES02_E.PDF).",
+      "Mouser copy header 'MUSES02 - 1 - Ver.2015-04-13' (https://www.mouser.com/ds/2/294/MUSES02_E-259016.pdf).",
+      "MUSES01 has the same Ver.2015-04-13 date (https://www.mouser.com/datasheet/2/294/MUSES01_E-259020.pdf).",
+      "Nisshinbo English datasheet URL exists (https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES02_E.pdf).",
+      "alldatasheet 808061 is NJR MUSES02, 12 pages, 396 KB (https://www.alldatasheet.com/datasheet-pdf/pdf/808061/NJRC/MUSES02.html).",
+      "alldatasheet 1244749 'MUSE02': 12 pages, same title (https://www.alldatasheetcn.com/html-pdf/1244749/NJRC/MUSE02/929/8/MUSE02.html).",
+      "GBW 11 MHz, 5 V/µs, 4.5 nV/√Hz at 1 kHz, 8 mA (https://www.scribd.com/document/886394217/MUSES02-Chip-Specs; https://www.microchipusa.com/product/nisshinbo-micro-devices-inc/instrumentation-op-amps-buffer-amps/MUSES02).",
+      "Legacy NJR product pages exist (https://www.njr.com/electronic_device/products/MUSES02.html; https://www.njr.com/semicon/products/MUSES02.html).",
+      "ASR: €33 MUSES02 only about 0.3 dB quieter (A-weighted) than €5 OPA1656 (https://www.audiosciencereview.com/forum/index.php?threads/measured-effect-of-op-amp-rolling-on-a-phono-equalizer-input-shorted-noise.49014/).",
+      "diyAudio: about $44 each at Mouser, Apr 2023 (https://www.diyaudio.com/community/threads/muses02-pricing.398302/).",
+      "Genuine parts have pliable copper leads and a round pin-1 indent (https://www.head-fi.org/threads/the-opamp-thread.432749/page-307).",
+      "MUSES03 reportedly discontinued in 2023 (https://nw-electric.way-nifty.com/blog/2023/11/post-31270f.html)."
+    ],
     "refuted_claims": [
-      "Discovery hint: 'genuine MUSES02 costs about $3–5 from authorized channels; anything under $1.50 is fake'. The figure comes from an AliExpress SEO article and is contradicted by the ASR test (MUSES02 bought at 33 EUR) and a diyAudio 'MUSES02 pricing?' thread (about $44 at Mouser, Apr 2023). The $3–5 figure was removed; only the general 'far below authorized price is suspect' advice was kept.",
-      "Discovery praise: 'Soomal finds it muddy next to the LME49860'. Still refuted: Soomal attributes the Vantam's mid-bass vagueness to the TPA6120A output, not to the MUSES02."
+      "'Genuine costs $3–5; under $1.50 is fake' comes from an AliExpress SEO article; ASR (€33) and diyAudio (about $44, Apr 2023) contradict it.",
+      "'Soomal finds it muddy next to LME49860': Soomal blames the Vantam's mid-bass vagueness on the TPA6120A output, not MUSES02."
     ],
     "corrections": [
-      "Datasheets: Mouser Ver.2009-12-18 (pdfdocs/MUSES02_E.PDF), Mouser Ver.2015-04-13 (MUSES02_E-259016.pdf) and Nisshinbo JP 20250319 raised to high confidence (headers seen in search results). Nisshinbo EN PDF, alldatasheet 808061/1244749, DigiKey HTML 663074, datasheet4u/datasheetspdf 1007642 and datasheetarchive raised to medium (confirmed indexed, revision not visible).",
-      "Added mirrors: datasheet.jp 1007642, datasheet.su, Elcodis 1321987, Octopart datasheet page, alldatasheetcn 1244749. Added legacy NJR product page njr.com/semicon/products/MUSES02.html. Nisshinbo spec product page and njr.co.jp MUSES brand page downgraded to low (not surfaced by web search).",
-      "Status: MUSES02/MUSES02D maintenance status (保守品) confirmed via the JP datasheet header. Added Nisshinbo's definition (to be discontinued in the near future; current projects only, not new designs).",
-      "Revision history: noted that MUSES01 also has a Ver.2015-04-13 datasheet (Mouser MUSES01_E-259020.pdf), suggesting a batch reissue.",
-      "Key specs: e_n condition set to f = 1 kHz; GBW 11 MHz, SR 5 V/µs, AV 110 dB, VIO 0.3/3 mV and ±3.5 to ±16 V confirmed. Added supply current 8 mA typ and output current 50 mA from distributor summaries (medium/low). Replaced the 'not captured' row with i_n only.",
-      "Reputation: the ASR phono-noise comparison is now confirmed and quantified (MUSES02 at 33 EUR, about 0.3 dB better A-weighted than the 5 EUR OPA1656).",
-      "Counterfeit notes: added Head-Fi checks (pliable copper leads, pin-1 round indent vs a flat stamped circle). Flagged the contradictory AliExpress-article claim about laser-like lettering. Replaced the pricing claim.",
-      "Alternatives: MUSES03 noted as reported discontinued in 2023 (Japanese blogs).",
-      "silicon_changes stays empty: no PCN, die change or fab change was found in any search."
+      "Mouser Ver.2009-12-18, Ver.2015-04-13 and Nisshinbo JP 20250319 raised to high confidence; indexed mirrors raised to medium.",
+      "Added mirrors (datasheet.jp, datasheet.su, Elcodis, Octopart, alldatasheetcn) and the legacy njr.com product page; unsurfaced Nisshinbo/njr.co.jp pages downgraded to low.",
+      "Maintenance status (保守品) confirmed from the JP datasheet header, with Nisshinbo's definition.",
+      "Noted MUSES01's matching Ver.2015-04-13 datasheet, suggesting a batch reissue.",
+      "Key specs confirmed (e_n at 1 kHz, GBW, SR, AV, VIO, supply range); added 8 mA supply and 50 mA output from distributors.",
+      "ASR phono-noise comparison confirmed and quantified.",
+      "Counterfeit notes: added Head-Fi lead and pin-1 checks; flagged contradictory laser-lettering claim; replaced pricing claim.",
+      "MUSES03 noted as reportedly discontinued in 2023.",
+      "silicon_changes stays empty: no PCN, die or fab change found."
     ],
     "unverified_urls": [
       "https://www.scribd.com/document/726748128/MUSES02-E-1917145",
@@ -619,37 +650,6 @@
       "https://www.phileweb.com/news/audio/200912/08/9589.html",
       "https://www.jas-audio.or.jp/journal-pdf/2014/07/201407_015-018.pdf",
       "https://www.mouser.com/pdfDocs/njropamp_selection-guide_20190606.pdf"
-    ],
-    "claims_confirmed": [
-      "Nisshinbo JP datasheet MUSES02_J.pdf is dated 20250319 and its header says 'MUSES02D は保守品です' — https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES02_J.pdf",
-      "JP datasheet features: e_n 4.5 nV/√Hz, VIO 0.3 mV typ / 3 mV max, AV 110 dB typ, ±3.5 to ±16 V — https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES02_J.pdf",
-      "Nisshinbo maintenance products will be discontinued in the near future and are for current projects only — https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/",
-      "Mouser copy header 'MUSES02 - 1 - Ver.2009-12-18' — http://www.mouser.com/pdfdocs/MUSES02_E.PDF",
-      "Mouser copy header 'MUSES02 - 1 - Ver.2015-04-13' — https://www.mouser.com/ds/2/294/MUSES02_E-259016.pdf",
-      "MUSES01 has the same Ver.2015-04-13 date — https://www.mouser.com/datasheet/2/294/MUSES01_E-259020.pdf",
-      "Nisshinbo English datasheet URL exists — https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES02_E.pdf",
-      "alldatasheet 808061 is NJR MUSES02, 12 pages, 396 KB — https://www.alldatasheet.com/datasheet-pdf/pdf/808061/NJRC/MUSES02.html",
-      "alldatasheet 1244749 'MUSE02' has 12 pages with the same bipolar dual title — https://www.alldatasheetcn.com/html-pdf/1244749/NJRC/MUSE02/929/8/MUSE02.html",
-      "GBW 11 MHz, SR 5 V/µs, 4.5 nV/√Hz at 1 kHz, 8 mA typ supply current — https://www.scribd.com/document/886394217/MUSES02-Chip-Specs and https://www.microchipusa.com/product/nisshinbo-micro-devices-inc/instrumentation-op-amps-buffer-amps/MUSES02",
-      "Legacy NJR product pages exist — https://www.njr.com/electronic_device/products/MUSES02.html and https://www.njr.com/semicon/products/MUSES02.html",
-      "ASR: the 33 EUR MUSES02 was only about 0.3 dB better A-weighted than the 5 EUR OPA1656 in input-shorted phono noise — https://www.audiosciencereview.com/forum/index.php?threads/measured-effect-of-op-amp-rolling-on-a-phono-equalizer-input-shorted-noise.49014/",
-      "diyAudio thread cites MUSES02 at about $44 each at Mouser (Apr 2023) — https://www.diyaudio.com/community/threads/muses02-pricing.398302/",
-      "Genuine parts have pliable copper leads and a round pin-1 indent — https://www.head-fi.org/threads/the-opamp-thread.432749/page-307",
-      "MUSES03 reported discontinued in 2023 — https://nw-electric.way-nifty.com/blog/2023/11/post-31270f.html"
-    ],
-    "web_searches_used": 9
-  },
-  "tier": "A",
-  "category": "japanese-audio-series",
-  "product_pages": [
-    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses02",
-    "https://www.njr.com/electronic_device/products/MUSES02.html",
-    "https://www.njr.co.jp/MUSES/series/MUSES02.html",
-    "https://www.njr.com/semicon/products/MUSES02.html",
-    "https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES02/2202386",
-    "https://www.mouser.com/ProductDetail/Nisshinbo/MUSES02?qs=lTIKtKbByhhPORZIYvXQtw%3D%3D",
-    "https://www.win-source.net/products/detail/njr-corporation-njrc/muses02.html",
-    "https://www.integrated-circuit.com/products-detail/MUSES02/EIS-1388003.html"
-  ],
-  "revision_chain_notes": "MUSES02_E (English, NJR then Nisshinbo): Ver.2009-12-18 (launch; header confirmed on Mouser pdfdocs copy) -> Ver.2015-04-13 (header confirmed on Mouser /ds/2/294/MUSES02_E-259016.pdf) -> current Nisshinbo English reissue (date unknown). Missing: any Ver. dated 2010-2014 or 2016-2021, and the date of the Nisshinbo English reissue. Neither the search asking for 2010/2012/2018/2019/2020 Ver. dates nor the other searches found any. The legacy vendor URLs semicon.njr.co.jp/eng/PDF/MUSES02_E.pdf (early host) and njr.com/electronic_device/PDF/MUSES02_E.pdf (later host) are the best Wayback seeds for recovering intermediate Ver. dates. No search result showed which Ver. either one serves. MUSES02_J (Japanese): only the Nisshinbo 20250319 edition is known (it marks MUSES02D as a maintenance product). Missing: every JRC/New JRC-era Japanese Ver., including the 2009 launch edition. A sibling legacy path exists for MUSES01 (njr.co.jp/electronic_device/PDF/MUSES01_J.pdf), but no MUSES02_J URL on njr.co.jp appeared, so none is recorded. The new third-party copies (alldatasheet.jp 808061/1244749, datasheet.jp 1007642, datasheetspdf, digchip) show no revision in their summaries. They are probably duplicates of the already-known files with the same IDs."
+    ]
+  }
 }

@@ -1,152 +1,168 @@
 {
   "id": "AD8512",
-  "name": "AD8510 / AD8512 (ADI precision JFET-input dual)",
-  "tagline": "ADI's 8 MHz JFET-input dual with 8 nV/√Hz noise and 0.0005% THD+N. A Chinese DIY forum post compares its sound to the AD823 and says it suits headphone amps.",
-  "technology": "Precision JFET-input op-amp: very low noise (8 nV/√Hz at 1 kHz), low input bias current, 8 MHz GBW, 20 V/µs slew, dual supply ±5 V to ±15 V. Comes as single (AD8510), dual (AD8512) and quad (AD8513).",
+  "name": "AD8510 / AD8512 / AD8513",
+  "type": "Precision JFET-input op-amp, 1/2/4 channels",
+  "tier": "C",
+  "category": "jfet-input",
+  "tagline": "ADI's 8 MHz JFET dual with 8 nV/√Hz and 0.0005% THD+N; one Chinese DIY report likens it to the AD823 in headphone amps.",
   "manufacturers": [
     "Analog Devices"
-  ],
-  "part_numbers": [
-    {
-      "pn": "AD8510",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "production (unconfirmed)",
-      "notes": "Single. Covered by the shared AD8510/AD8512/AD8513 datasheet. Recalled from memory, not web-confirmed: A and B offset grades in SOIC-8 (R) and MSOP-8 (RM), e.g. AD8510ARZ, AD8510ARMZ, AD8510BRZ."
-    },
-    {
-      "pn": "AD8512",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "production",
-      "notes": "Dual; this is the catalogue's lead part. ADI lists its status as Production. AD8512ARZ is confirmed (Octopart datasheet link). AD8512ARMZ (MSOP-8) and AD8512BRZ (B grade, tighter Vos) are recalled from memory and unconfirmed. Older non-RoHS parts without the Z suffix (AD8512AR/ARM/BR) are probably obsolete (unconfirmed)."
-    },
-    {
-      "pn": "AD8513",
-      "channels": 4,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "production (unconfirmed)",
-      "notes": "Quad. Added to the datasheet later, because early editions are titled 'AD8510/AD8512' only. Packages are SOIC-14 and TSSOP-14 (from memory, unconfirmed)."
-    },
-    {
-      "pn": "AD8512-EP",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "Enhanced Product (defense/aerospace flow) version of the dual, with its own separate datasheet (radiolocman listing). Status not checked."
-    }
   ],
   "lineage": [
     {
       "vendor": "Analog Devices",
-      "role": "originator / sole source",
-      "period": "early 2000s to present (introduction year not confirmed)",
-      "notes": "The datasheet reached Rev. K in January 2010. The earliest editions covered only the AD8510/AD8512 (RS mirror title); the AD8513 quad was added later."
+      "role": "originator",
+      "period": "early 2000s–present",
+      "note": "Sole source. Introduction year unconfirmed. Early editions covered AD8510/AD8512 only; AD8513 quad added later."
     },
     {
       "vendor": "Analog Devices",
-      "role": "wafer-fab change (PCN 25_0156)",
-      "period": "2025",
-      "notes": "PCN 25_0156 lists AD8510/AD8512/AD8513 part numbers. It moves production to an existing qualified process at ADI's Camas, WA fab to secure supply. The previous fab is not stated in the search summaries."
+      "role": "current",
+      "period": "2025–present",
+      "note": "PCN 25_0156 moves AD8510/AD8512/AD8513 to an existing qualified process at ADI's Camas, WA fab."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "AD8510ARZ / ARMZ / BRZ",
+      "channels": 1,
+      "status": "active",
+      "note": "Single; A/B offset grades, SOIC-8 (R) and MSOP-8 (RM). Orderables and status unconfirmed."
+    },
+    {
+      "pn": "AD8512ARZ / ARMZ / BRZ",
+      "channels": 2,
+      "status": "active",
+      "note": "Dual, ADI 'Production'. ARZ confirmed; ARMZ (MSOP-8) and BRZ (tighter Vos) unconfirmed."
+    },
+    {
+      "pn": "AD8512AR / ARM / BR",
+      "channels": 2,
+      "status": "obsolete",
+      "note": "Older non-RoHS codes without Z suffix; probably obsolete (unconfirmed)."
+    },
+    {
+      "pn": "AD8513",
+      "channels": 4,
+      "status": "active",
+      "note": "Quad, added to the datasheet later. SOIC-14 / TSSOP-14 (unconfirmed). Status unconfirmed."
+    },
+    {
+      "pn": "AD8512-EP",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Enhanced Product (defense/aerospace) dual with its own datasheet."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise density",
-      "value": "8 nV/√Hz typ",
+      "parameter": "Input noise (1 kHz)",
+      "value": "8 nV/√Hz typ (7.6 nV/√Hz at 10 kHz)",
       "condition": "f = 1 kHz",
-      "source": "ADI datasheet Rev. K (ad8510_8512_8513.pdf), via web search summary"
+      "source": "Datasheet Rev. K"
     },
     {
-      "parameter": "Input voltage noise density",
-      "value": "7.6 nV/√Hz typ",
-      "condition": "f = 10 kHz",
-      "source": "ADI datasheet / product page, via web search summary"
-    },
-    {
-      "parameter": "Gain-bandwidth product",
-      "value": "8 MHz",
-      "condition": "typ",
-      "source": "ADI datasheet Rev. K, via web search summary"
+      "parameter": "GBW",
+      "value": "8 MHz typ",
+      "condition": "",
+      "source": "Datasheet Rev. K"
     },
     {
       "parameter": "Slew rate",
-      "value": "20 V/µs",
-      "condition": "typ",
-      "source": "ADI datasheet Rev. K, via web search summary"
+      "value": "20 V/µs typ; settling 500 ns to 0.1%",
+      "condition": "",
+      "source": "Datasheet Rev. K"
     },
     {
       "parameter": "THD+N",
       "value": "0.0005%",
       "condition": "1 kHz, G = +1, RL = 2 kΩ",
-      "source": "ADI datasheet Rev. K, via web search summary"
-    },
-    {
-      "parameter": "Settling time",
-      "value": "500 ns",
-      "condition": "to 0.1%",
-      "source": "ADI datasheet Rev. K front page, via web search summary"
+      "source": "Datasheet Rev. K"
     },
     {
       "parameter": "Offset voltage",
-      "value": "400 µV max",
-      "condition": "front-page figure (grade not stated in summary)",
-      "source": "ADI datasheet Rev. K front page, via web search summary"
-    },
-    {
-      "parameter": "Offset drift (TCVos)",
-      "value": "1 µV/°C typ",
-      "condition": "",
-      "source": "ADI datasheet Rev. K front page, via web search summary"
+      "value": "400 µV max; drift 1 µV/°C typ",
+      "condition": "front-page figure, grade not stated",
+      "source": "Datasheet Rev. K"
     },
     {
       "parameter": "Input bias current",
       "value": "25 pA typ",
-      "condition": "front-page figure (JFET input; rises steeply with temperature)",
-      "source": "ADI datasheet Rev. K front page, via web search summary"
+      "condition": "rises steeply with temperature",
+      "source": "Datasheet Rev. K"
     },
     {
-      "parameter": "Supply voltage",
+      "parameter": "Supply range",
       "value": "±5 V to ±15 V",
-      "condition": "dual-supply operation",
-      "source": "ADI datasheet Rev. K front page, via web search summary"
+      "condition": "dual supply",
+      "source": "Datasheet Rev. K"
     },
     {
       "parameter": "Supply current",
       "value": "2.5 mA per amplifier",
-      "condition": "AD8510/AD8512, −40 °C to +125 °C (limit)",
-      "source": "ADI datasheet, via web search summary"
+      "condition": "AD8510/AD8512, −40 to +125 °C limit",
+      "source": "Datasheet Rev. K"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "JFET",
+      "condition": "",
+      "source": "Datasheet Rev. K"
     }
   ],
   "reputation": {
-    "summary": "This is a niche, tier-C reputation. The main praise found is a single post in a Chinese erji.net thread ('谈谈自己用过的一些运放', op-amps I have used). The poster says it sounds almost the same as the AD823, with more output current and lower supply current. They call it slightly harsh but 'not unpleasant and equally appealing', and think it works in headphone amps. No wider consensus in Western audio forums was confirmed in this pass.",
+    "summary": "A niche reputation. The main praise is one post in an erji.net thread on op-amps the poster has used: it sounds almost like the AD823, with more output current and lower supply current, slightly harsh but 'not unpleasant', and suits headphone amps. No wider consensus in Western forums is known.",
     "sonic_descriptors": [
-      "close to AD823 (per one erji.net poster)",
-      "slightly harsh / forward but not unpleasant (same source)"
+      "close to AD823",
+      "slightly harsh / forward",
+      "not unpleasant"
     ],
     "typical_uses": [
-      "op-amp swaps in DIY headphone amplifiers (erji.net report)",
-      "general low-noise JFET-input audio gain stages (inferred from specs)"
+      "Op-amp swaps in DIY headphone amplifiers",
+      "Low-noise JFET-input audio gain stages (inferred from specs)"
     ],
     "caveats": [
-      "Praise comes from a single forum source and should not be generalised.",
-      "Needs at least ±5 V (about 10 V total). The output is not rail-to-rail.",
-      "Sold only in SMD packages (SOIC/MSOP/TSSOP), so DIP sockets need an adapter.",
-      "JFET input bias current roughly doubles for every 10 °C rise, so it is best kept away from hot spots."
+      "Praise comes from a single forum post; do not generalise.",
+      "Needs at least ±5 V (about 10 V total); output is not rail-to-rail.",
+      "SMD only (SOIC/MSOP/TSSOP); DIP sockets need an adapter.",
+      "JFET bias current roughly doubles every 10 °C; keep it away from hot spots."
     ],
     "sources": [
       "http://www.erji.net/forum.php?mod=viewthread&tid=2120812",
       "https://www.analog.com/en/products/ad8512.html"
     ]
   },
+  "counterfeit_notes": "No family-specific counterfeit reports. As a mid-price SMD-only ADI JFET part, relabelled or reclaimed marketplace units are a generic risk. Buy from authorised distributors and check ADI marking and date codes.",
+  "alternatives": [
+    "AD8620",
+    "ADA4610-2",
+    "AD823 (said to sound similar)",
+    "OPA1642",
+    "OPA2140",
+    "OPA2134"
+  ],
+  "silicon_changes": [
+    {
+      "vendor": "Analog Devices",
+      "kind": "fab-or-process-transfer",
+      "when": "2025 · PCN 25_0156 Rev. -",
+      "part_numbers_affected": [
+        "AD8510",
+        "AD8512",
+        "AD8513"
+      ],
+      "summary": "Wafer-fab change: listed AD8510/AD8512/AD8513 part numbers move to an existing qualified process at ADI's Camas, WA fab to ensure supply. ADI expects no fit, form, function or reliability impact. Previous fab not stated. Datasheet unchanged (Rev. K).",
+      "spec_deltas": [],
+      "identification": "No date-code or trace-code cutover known; check the PCN's effective date and date codes.",
+      "audio_impact": "None claimed; datasheet limits unchanged. Typical noise, bias and offset distributions could shift within limits (unverified).",
+      "compatibility_risk": "low: same part numbers and datasheet limits; vendor states no fit/form/function change",
+      "confidence": "medium",
+      "verification": "PCN form text confirmed; previous fab and dates not established.",
+      "sources": [
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7560/ADI_PCN_25_0156_Rev_-_Form.pdf"
+      ]
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Analog Devices",
@@ -158,7 +174,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The current ADI edition; the search result title reads 'AD8510/AD8512/AD8513 (Rev. K)'. No newer revision was found as of Sep 2026."
+      "note": "Current ADI edition; no newer revision known as of Sep 2026."
     },
     {
       "vendor": "Analog Devices",
@@ -170,7 +186,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "ADI short-link redirect to the current datasheet."
+      "note": "ADI short link redirecting to the current datasheet."
     },
     {
       "vendor": "Analog Devices (mirror by radiolocman)",
@@ -200,13 +216,13 @@
       "vendor": "Analog Devices (mirror by RS Components)",
       "title": "AD8510/AD8512 Precision, Very Low Noise, Low Input Bias Current, Wide Bandwidth JFET Operational Amplifiers",
       "doc_number": "AD8510_8512",
-      "revision": "",
+      "revision": "A",
       "date": "",
       "url": "https://docs.rs-online.com/17b1/0900766b801ce1ae.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "The title names only the AD8510/AD8512, so this frozen copy is likely an older revision from before the quad was added. The revision letter was not visible in the search summary."
+      "revision_status": "probable",
+      "note": "Early edition before the AD8513; 'REV. A' footer visible; early 2000s."
     },
     {
       "vendor": "Analog Devices (mirror by Octopart)",
@@ -218,7 +234,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Revision letter not shown in the search summary."
+      "note": "Revision letter not known."
     },
     {
       "vendor": "Analog Devices (mirror by alldatasheet)",
@@ -230,7 +246,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The low alldatasheet ID suggests an early upload, possibly an old revision. Revision unconfirmed. The AD8510 copy is at https://www.alldatasheet.com/datasheet-pdf/pdf/83235/AD/AD8510.html"
+      "note": "Low ID suggests an early upload, possibly an old revision."
     },
     {
       "vendor": "Analog Devices (Internet Archive)",
@@ -242,7 +258,7 @@
       "url_kind": "archive",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "archive.org copy (from manuallib) of an edition that includes the AD8513. Revision letter not known."
+      "note": "archive.org copy (via manuallib) of an edition including the AD8513."
     },
     {
       "vendor": "Analog Devices (mirror by radiolocman)",
@@ -254,7 +270,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Separate datasheet for the Enhanced Product dual. The vendor URL was not confirmed."
+      "note": "Separate Enhanced Product datasheet; vendor URL unconfirmed."
     },
     {
       "vendor": "Analog Devices (mirror by datasheet4u)",
@@ -272,14 +288,13 @@
       "vendor": "Analog Devices (mirror by Mouser)",
       "title": "AD8512-EP (Rev. 0)",
       "doc_number": "AD8512-EP",
-      "revision": "",
+      "revision": "0",
       "date": "",
       "url": "https://www.mouser.com/datasheet/2/609/AD8512_EP-1502215.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
-      "revision_status": "unknown",
-      "revision_text": "0",
-      "note": "The search result title reads 'AD8512-EP (Rev. 0)'. This is the enhanced-product (EP) datasheet, a separate document from AD8510_8512_8513. Rev. 0 is the initial release of the EP document. radiolocman di=166159 (already listed) may hold the same or a later edition."
+      "revision_status": "confirmed",
+      "note": "Initial EP datasheet, separate from AD8510_8512_8513."
     },
     {
       "vendor": "Analog Devices (mirror by alldatasheet)",
@@ -291,7 +306,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The AD8510 entry sits next to the listed AD8512 entry (83236). The close IDs suggest both were uploaded at the same time as an early edition, but the revision is not shown in the search summary."
+      "note": "Sibling of ID 83236; probably the same early edition."
     },
     {
       "vendor": "Analog Devices (mirror by alldatasheet)",
@@ -303,7 +318,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is a separate, much later alldatasheet upload (ID 1957163) than 83236. It probably holds a late edition, possibly Rev. K, but the summary does not show the revision."
+      "note": "Much later upload; probably a late edition, possibly Rev. K."
     },
     {
       "vendor": "Analog Devices (mirror by radiolocman)",
@@ -315,7 +330,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This radiolocman entry is separate from the listed di=170505 and di=121323. The revision is not shown in the search summary."
+      "note": "Separate from di=170505 and di=121323."
     },
     {
       "vendor": "Analog Devices (mirror by DatasheetBank)",
@@ -327,7 +342,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The title matches the wording of the current datasheet title. The revision is not shown."
+      "note": "Title matches the current datasheet wording."
     },
     {
       "vendor": "Analog Devices (mirror by DataSheetAll)",
@@ -339,7 +354,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The revision is not shown in the search summary."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices (mirror by DataSheetAll)",
@@ -351,7 +366,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The revision is not shown in the search summary."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices (mirror by DataSheetAll)",
@@ -363,68 +378,77 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the enhanced-product (EP) datasheet mirror. The revision is not shown."
+      "note": "Enhanced Product (EP) datasheet mirror."
     }
+  ],
+  "product_pages": [
+    "https://www.analog.com/en/products/ad8512.html",
+    "https://www.analog.com/en/products/ad8510.html",
+    "https://www.analog.com/en/products/ad8513.html"
   ],
   "revision_history": [
     {
       "vendor": "Analog Devices",
+      "doc_number": "AD8510_8512",
+      "revision": "A",
+      "date": "",
+      "changes": "Early 2000s edition covering AD8510/AD8512 only (RS mirror, 'REV. A' footer). Changes from Rev. 0 unknown."
+    },
+    {
+      "vendor": "Analog Devices",
       "doc_number": "AD8510_8512_8513",
       "revision": "K",
-      "date": "2010-01",
-      "changes": "Latest edition. The change list from Rev. J was not retrieved."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD8510_8512 (early title)",
-      "revision": "early edition (letter unknown)",
-      "date": "unknown (early 2000s)",
-      "changes": "Covered only the AD8510/AD8512 (RS mirror title). A later revision added the AD8513 quad. Revisions 0 through J exist by implication, but their dates are unconfirmed."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD8510_8512 (early title, AD8510/AD8512 only)",
-      "revision": "A",
-      "date": "unknown (early 2000s; old ADI 'REV. A' footer style)",
-      "changes": "The copy already listed at https://docs.rs-online.com/17b1/0900766b801ce1ae.pdf shows the footer text 'REV. A Information furnished by Analog Devices is believed to be accurate...' in its search result title. That copy is therefore Rev. A, the edition before the AD8513 was added, and its revision should be updated from 'unknown' to A. The change list from Rev. 0 is not shown."
+      "date": "2010-01-21",
+      "changes": "Latest edition. AD8513 quad added somewhere in B–J. Changes from Rev. J unknown."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD8512-EP",
       "revision": "0",
-      "date": "unknown",
-      "changes": "Initial release of the enhanced-product (military/aerospace EP) AD8512-EP datasheet, a document separate from AD8510_8512_8513. Held by the Mouser copy mouser.com/datasheet/2/609/AD8512_EP-1502215.pdf."
+      "date": "",
+      "changes": "Initial release of the separate Enhanced Product (military/aerospace) datasheet; Mouser copy."
     }
   ],
-  "silicon_changes": [
+  "revision_chains": [
     {
       "vendor": "Analog Devices",
-      "when": "2025 (PCN 25_0156 Rev. -)",
-      "part_numbers_affected": [
-        "AD8510",
-        "AD8512",
-        "AD8513"
+      "doc_number": "AD8510_8512 / AD8510_8512_8513",
+      "known": [
+        {
+          "rev": "A",
+          "date": ""
+        },
+        {
+          "rev": "K",
+          "date": "2010-01-21"
+        }
       ],
-      "identification": "Not established. The search summaries did not show a date-code or trace-code cutover, so check the PCN's effective date and date codes.",
-      "summary": "Wafer-fab change: production of the listed AD8510/AD8512/AD8513 part numbers uses an existing qualified process at ADI's Camas, WA fab to ensure continuous supply. ADI says it expects no impact on fit, form, function or reliability. The datasheet was not revised (still Rev. K).",
-      "spec_deltas": [],
-      "audio_impact": "None claimed by ADI; datasheet limits are unchanged. As with any fab or process move, typical noise, bias-current and offset distributions could shift within those limits, which is not verified.",
-      "compatibility_risk": "low: same part numbers and datasheet limits, and the vendor states no fit/form/function change",
-      "sources": [
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7560/ADI_PCN_25_0156_Rev_-_Form.pdf"
+      "missing": [
+        "0",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
       ],
-      "confidence": "medium",
-      "kind": "fab-or-process-transfer"
+      "note": "Rev. A covers AD8510/AD8512 only; AD8513 added in B–J. No pre-2004 analog.com URLs found."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD8512-EP",
+      "known": [
+        {
+          "rev": "0",
+          "date": ""
+        }
+      ],
+      "missing": [],
+      "note": "Later EP revisions unknown."
     }
-  ],
-  "counterfeit_notes": "No specific counterfeit reports for this family were found in this pass. It is a mid-price SMD-only ADI JFET part, so relabelled or reclaimed units on marketplace listings are a generic risk. Buy from authorised distributors and check the ADI marking and date codes.",
-  "alternatives": [
-    "AD8620 (ADI dual JFET, AD8610 family)",
-    "ADA4610-2 (ADI low-noise precision RRO JFET dual)",
-    "AD823 (ADI JFET dual, which the erji.net source says sounds similar)",
-    "OPA1642 (TI JFET audio dual)",
-    "OPA2140 (TI precision JFET dual)",
-    "OPA2134 (TI audio FET dual)"
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -442,11 +466,11 @@
     "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8510_8512_8513.pdf"
   ],
   "open_questions": [
-    "Dates and change lists for Rev. 0 to Rev. J. Which revision added the AD8513? Which revisions do the RS, alldatasheet and Octopart copies hold?",
-    "PCN 25_0156 details: previous fab, effective and last-ship dates, how to tell Camas-built units apart (date or trace code), exact orderable list, and whether ADI hosts a copy on analog.com.",
+    "Dates and changes for Rev. 0 to J; which revision added the AD8513; which revisions the mirrors hold.",
+    "PCN 25_0156: previous fab, effective dates, how to identify Camas-built units, orderable list, analog.com copy.",
     "Will a post-PCN datasheet revision (Rev. L) appear with changed typicals?",
-    "Lifecycle status of the AD8510, AD8513, AD8512-EP and the older non-RoHS (non-Z) orderables.",
-    "Is there audio praise beyond the single erji.net thread (e.g. diyaudio, head-fi)?"
+    "Lifecycle status of AD8510, AD8513, AD8512-EP and the older non-RoHS (non-Z) orderables.",
+    "Is there audio praise beyond the single erji.net thread (diyAudio, Head-Fi)?"
   ],
   "sources": [
     "http://www.erji.net/forum.php?mod=viewthread&tid=2120812",
@@ -462,35 +486,27 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 6,
+    "claims_confirmed": [
+      "Current ADI datasheet is AD8510/AD8512/AD8513 Rev. K (https://www.analog.com/media/en/technical-documentation/data-sheets/ad8510_8512_8513.pdf).",
+      "Rev. K is dated 01/21/2010 (https://www.radiolocman.com/datasheet/pdf.html?di=170505).",
+      "PCN 25_0156 moves AD8510/AD8512/AD8513 to an existing qualified Camas, WA process, no expected fit/form/function impact (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7560/ADI_PCN_25_0156_Rev_-_Form.pdf).",
+      "8 MHz GBW, 20 V/µs, 7.6 nV/√Hz at 10 kHz, 0.0005% THD+N; AD8512 in Production (https://www.analog.com/en/products/ad8512.html).",
+      "Front page: 8 nV/√Hz, 400 µV max Vos, 1 µV/°C, 25 pA, 500 ns settling, ±5 to ±15 V (https://www.analog.com/media/en/technical-documentation/data-sheets/ad8510_8512_8513.pdf).",
+      "An early 'AD8510/AD8512'-only edition is mirrored by RS (https://docs.rs-online.com/17b1/0900766b801ce1ae.pdf).",
+      "An AD8512-EP datasheet exists (https://www.radiolocman.com/datasheet/pdf.html?di=166159)."
+    ],
     "refuted_claims": [],
     "corrections": [
-      "AD8512 channels changed from 0 to 2 and status from unknown to production (ADI product page).",
-      "Added family members AD8510 (single), AD8513 (quad; same datasheet) and AD8512-EP (separate Enhanced Product datasheet).",
-      "Added the current datasheet AD8510_8512_8513 Rev. K (Jan 2010) and mirrors, including an early 'AD8510/AD8512'-only edition on RS Components.",
-      "Added the silicon/process change PCN 25_0156 (2025, move to ADI's Camas, WA fab) for AD8510/AD8512/AD8513.",
-      "Filled key_specs from the Rev. K front page, and scoped the reputation to a single attributed erji.net source."
+      "AD8512 channels changed from 0 to 2; status from unknown to Production (ADI product page).",
+      "Added AD8510 (single), AD8513 (quad, same datasheet) and AD8512-EP (separate datasheet).",
+      "Added datasheet Rev. K (Jan 2010) and mirrors, including the early RS Components edition.",
+      "Added PCN 25_0156 (2025, move to ADI's Camas, WA fab) for AD8510/AD8512/AD8513.",
+      "Key specs filled from the Rev. K front page; reputation scoped to one erji.net source."
     ],
     "unverified_urls": [
       "http://www.analog.com/static/imported-files/data_sheets/AD8510_8512_8513.pdf",
       "https://www.analog.com/AD8510/datasheet"
-    ],
-    "claims_confirmed": [
-      "The current ADI datasheet is AD8510/AD8512/AD8513 Rev. K (https://www.analog.com/media/en/technical-documentation/data-sheets/ad8510_8512_8513.pdf).",
-      "Rev. K is listed as dated 01/21/2010 (https://www.radiolocman.com/datasheet/pdf.html?di=170505).",
-      "PCN 25_0156 lists AD8510/AD8512/AD8513 part numbers and describes using an existing qualified process at ADI's Camas, WA fab, with no expected fit/form/function/reliability impact (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7560/ADI_PCN_25_0156_Rev_-_Form.pdf).",
-      "Specs of 8 MHz GBW, 20 V/µs slew, 7.6 nV/√Hz at 10 kHz and 0.0005% THD+N (1 kHz, G=+1, RL=2k), with AD8512 status Production (https://www.analog.com/en/products/ad8512.html).",
-      "Front-page specs: 8 nV/√Hz at 1 kHz, 400 µV max Vos, 1 µV/°C TCVos, 25 pA Ib, 500 ns settling to 0.1%, ±5 V to ±15 V (https://www.analog.com/media/en/technical-documentation/data-sheets/ad8510_8512_8513.pdf).",
-      "An early edition titled 'AD8510/AD8512' (no AD8513) is mirrored by RS (https://docs.rs-online.com/17b1/0900766b801ce1ae.pdf).",
-      "An AD8512-EP datasheet exists (https://www.radiolocman.com/datasheet/pdf.html?di=166159)."
-    ],
-    "web_searches_used": 6
-  },
-  "tier": "C",
-  "category": "jfet-input",
-  "product_pages": [
-    "https://www.analog.com/en/products/ad8512.html",
-    "https://www.analog.com/en/products/ad8510.html",
-    "https://www.analog.com/en/products/ad8513.html"
-  ],
-  "revision_chain_notes": "Analog Devices AD8510_8512 / AD8510_8512_8513, known so far (oldest to newest): Rev. 0 (date unknown, no copy found). Rev. A (date unknown, early 2000s; AD8510/AD8512 only). The RS Components mirror docs.rs-online.com/17b1/0900766b801ce1ae.pdf, already listed as 'unknown', holds Rev. A: its search result title shows the 'REV. A' footer. Revs. B through J are missing: no dates, copies or change lists were found. The AD8513 quad was added somewhere in B-J, and the revision that added it is unknown. Rev. K is dated 2010-01-21 (analog.com current, radiolocman di=170505). New mirrors whose revision was not shown: alldatasheet 83235 (AD8510, a sibling of 83236 and probably early), alldatasheet 1957163 (a later upload), radiolocman data.html?di=350333, datasheetbank and datasheetall. A separate document, AD8512-EP, has Rev. 0 (date unknown) on Mouser. Later EP revisions are unknown. Archive seeds: the uppercase analog.com media URL was seen in search summaries. The http://www.analog.com/static/imported-files/data_sheets/AD8510_8512_8513.pdf seed was built from ADI's standard legacy path pattern and was not seen in results, so treat it as unverified. Still missing: Rev. 0 and Revs. B-J (dates, change lists, copies), the revision that first added the AD8513, the Rev. J to K change summary, and any pre-2004 'UploadedFiles' URLs on analog.com. There were no second sources or acquirer re-issues: ADI is the sole source."
+    ]
+  }
 }

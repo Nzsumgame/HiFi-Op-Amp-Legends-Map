@@ -1,230 +1,156 @@
 {
   "id": "AD797",
-  "name": "AD797 (ultralow-noise, ultralow-distortion bipolar single)",
-  "tagline": "ADI's 0.9 nV/√Hz, −120 dB THD single op amp. It is a reference part for moving-coil phono and mic preamps, and a long-standing rival to the OPA627 in op-amp-rolling debates.",
-  "technology": "Bipolar, single-channel, voltage-feedback. Ultralow-noise bipolar input stage, 110 MHz gain-bandwidth (specified at G = 1000) and 20 V/µs slew. ADI makes no dual or quad version, so dual sockets need an adapter. ADI PCN 26_0029 (2026) places AD797ARZ/BRZ among its Complementary Bipolar (CB) process products; this comes from a search summary of the PCN.",
+  "name": "AD797 (AD797AN / AD797BN / AD797AR / AD797BR)",
+  "type": "Bipolar single, ultralow-noise, ultralow-distortion",
+  "tier": "A",
+  "category": "bipolar-modern-low-noise",
+  "tagline": "ADI's 0.9 nV/√Hz, −120 dB THD single: the reference for MC phono and mic preamps, and the OPA627's old rival.",
   "manufacturers": [
     "Analog Devices"
+  ],
+  "lineage": [
+    {
+      "vendor": "Analog Devices",
+      "role": "originator",
+      "period": "1992–present",
+      "note": "Sole source; SPICE model dated 10/1992. Designer reportedly Scott Wurcer. Camas fab qualified 2026 (PCN 26_0029)."
+    }
   ],
   "part_numbers": [
     {
       "pn": "AD797ANZ",
       "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "listed and shipping at DigiKey (AD797ANZ-ND, 751113) and Newark in 2026. One distributor listing reportedly says 'Available until stocks are exhausted', a possible EOL sign; ADI lifecycle not confirmed.",
-      "notes": "8-lead PDIP, Pb-free, A grade. A Polish forum thread titled 'AD797ANZ fake or not' shows Z-suffix DIPs are suspected fakes too."
+      "status": "active",
+      "note": "PDIP-8, A grade, Pb-free. Stocked 2026; one listing says 'until stocks are exhausted'."
     },
     {
-      "pn": "AD797ARZ",
+      "pn": "AD797ARZ / AD797ARZ-REEL7",
       "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "believed active: listed in ADI PCN 26_0029 (2026 Camas fab qualification), which implies it is still in production",
-      "notes": "8-lead SOIC, Pb-free, A grade."
+      "status": "active",
+      "note": "SOIC-8, A grade, Pb-free; REEL7 is 7-inch reel. ARZ in PCN 26_0029."
     },
     {
-      "pn": "AD797ARZ-REEL7",
+      "pn": "AD797BRZ / AD797BRZ-REEL / AD797BRZ-REEL7",
       "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "listed at DigiKey (product 3897137); ADI lifecycle not confirmed",
-      "notes": "7-inch tape-and-reel version of AD797ARZ."
-    },
-    {
-      "pn": "AD797BRZ",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "believed active: listed in ADI PCN 26_0029 (2026)",
-      "notes": "8-lead SOIC, Pb-free, B grade with tighter specs."
-    },
-    {
-      "pn": "AD797BRZ-REEL / AD797BRZ-REEL7",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "Reel versions of AD797BRZ, seen in an EasyEDA-converted parts library and a Mouser URL list; not web-confirmed this pass. Whether PCN 26_0029 also covers the reel codes was not captured."
+      "status": "active",
+      "note": "SOIC-8, B grade (tighter specs). BRZ in PCN 26_0029; reel codes unconfirmed."
     },
     {
       "pn": "AD797AN",
       "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown (probably obsolete: pre-RoHS leaded version; unverified)",
-      "notes": "8-lead PDIP, A grade, leaded. Futurlec still has an AD797AN datasheet page. This is the grade most often reported faked."
+      "status": "unknown",
+      "note": "Leaded PDIP-8, A grade, probably obsolete. Most often faked grade."
     },
     {
       "pn": "AD797BN",
       "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown (probably obsolete: leaded; unverified)",
-      "notes": "8-lead PDIP, B grade. No Pb-free AD797BNZ was found in web search."
+      "status": "unknown",
+      "note": "Leaded PDIP-8, B grade, probably obsolete. No Pb-free AD797BNZ found."
     },
     {
       "pn": "AD797AR",
       "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "obsolete (Mouser lifecycle)",
-      "notes": "8-lead SOIC, A grade, leaded."
+      "status": "obsolete",
+      "note": "Leaded SOIC-8, A grade (Mouser lifecycle)."
     },
     {
       "pn": "AD797BR",
       "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown (probably obsolete: leaded; unverified)",
-      "notes": "8-lead SOIC, B grade, leaded."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "Analog Devices",
-      "role": "originator and sole source",
-      "period": "1992 to present",
-      "notes": "The Rev. K data sheet footer reads '©1992–2015 Analog Devices'. The ADI SPICE macromodel header reads '1.0 (10/1992)', so the part existed by 1992. The discovery notes credit Scott Wurcer as the designer, but web search did not confirm it. No second source or licensed copy was found. In 2026 ADI PCN 26_0029 qualified its Camas, WA wafer fab for Complementary Bipolar products, including AD797ARZ/BRZ."
+      "status": "unknown",
+      "note": "Leaded SOIC-8, B grade, probably obsolete."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise e_n",
-      "value": "0.9 nV/√Hz typ, 1.2 nV/√Hz max",
+      "parameter": "Input noise (1 kHz)",
+      "value": "0.9 nV/√Hz typ, 1.2 max; 50 nV p-p 0.1–10 Hz",
       "condition": "1 kHz",
-      "source": "ADI AD797 data sheet Rev. K feature list (confirmed via web search summary)"
+      "source": "Datasheet Rev. K"
     },
     {
-      "parameter": "0.1 Hz to 10 Hz noise",
-      "value": "50 nV p-p",
-      "condition": "typ",
-      "source": "ADI data sheet feature list (confirmed via web search summary)"
+      "parameter": "Current noise",
+      "value": "about 2.0 pA/√Hz typ (unconfirmed)",
+      "condition": "1 kHz",
+      "source": "Builder's datasheet table"
     },
     {
-      "parameter": "Input current noise i_n",
-      "value": "about 2.0 pA/√Hz",
-      "condition": "1 kHz, typ",
-      "source": "builder's datasheet table (indare/pcb_work); not web-confirmed from the ADI table"
-    },
-    {
-      "parameter": "THD",
-      "value": "−120 dB",
-      "condition": "20 kHz",
-      "source": "ADI data sheet features (confirmed via web search summary)"
-    },
-    {
-      "parameter": "Gain-bandwidth product",
+      "parameter": "GBW",
       "value": "110 MHz",
       "condition": "G = 1000",
-      "source": "ADI data sheet features (confirmed via web search summary)"
+      "source": "Datasheet Rev. K"
     },
     {
       "parameter": "Slew rate",
-      "value": "20 V/µs",
-      "condition": "typ",
-      "source": "ADI data sheet; terra-eda-library (not re-confirmed this pass)"
+      "value": "20 V/µs typ; settles 800 ns to 16 bits",
+      "condition": "settling: 10 V step",
+      "source": "Datasheet Rev. K"
     },
     {
-      "parameter": "Settling time",
-      "value": "800 ns to 16 bits",
-      "condition": "10 V step",
-      "source": "ADI data sheet features (confirmed via web search summary)"
+      "parameter": "THD+N",
+      "value": "−120 dB THD",
+      "condition": "20 kHz",
+      "source": "Datasheet Rev. K"
     },
     {
-      "parameter": "Input offset voltage",
-      "value": "80 µV max",
-      "condition": "",
-      "source": "ADI data sheet features; also quoted in the diyAudio 2021 counterfeit thread"
+      "parameter": "Supply range",
+      "value": "±5 V to ±15 V specified (10–36 V total, unconfirmed)",
+      "condition": "dual supply",
+      "source": "Datasheet Rev. K"
     },
     {
-      "parameter": "Offset voltage drift",
-      "value": "0.2 µV/°C",
-      "condition": "typ",
-      "source": "terra-eda-library AD797 entry; PatrickBaus PhD thesis table"
-    },
-    {
-      "parameter": "Open-loop gain",
-      "value": "20 V/µV",
-      "condition": "typ",
-      "source": "PatrickBaus PhD thesis, citing the data sheet"
-    },
-    {
-      "parameter": "Input bias current",
-      "value": "0.25 µA",
-      "condition": "typ",
-      "source": "terra-eda-library AD797 entry (third-party EDA database)"
-    },
-    {
-      "parameter": "CMRR / PSRR",
-      "value": "130 dB / 130 dB",
-      "condition": "typ",
-      "source": "terra-eda-library AD797 entry (third-party EDA database)"
-    },
-    {
-      "parameter": "Quiescent current",
-      "value": "8.2 mA typ (about 8 mA nominal per ADI features). Fakes measured about 1 mA.",
+      "parameter": "Supply current",
+      "value": "8.2 mA typ (about 8 mA); fakes draw about 1 mA",
       "condition": "±15 V",
-      "source": "diyAudio 2021 counterfeit thread ('AD797 quiescent current is 8.2 mA'); ADI feature summary 'supply current 8 mA'; terra-eda-library"
+      "source": "Datasheet Rev. K; diyAudio thread"
     },
     {
       "parameter": "Output current",
       "value": "50 mA",
-      "condition": "high output drive",
-      "source": "ADI data sheet features (confirmed via web search summary)"
-    },
-    {
-      "parameter": "Supply voltage",
-      "value": "specified ±5 V to ±15 V (10 V to 36 V total in a third-party EDA database)",
-      "condition": "dual supply",
-      "source": "ADI data sheet features (±5 V to ±15 V confirmed); total range from terra-eda-library"
-    },
-    {
-      "parameter": "Input stage type",
-      "value": "bipolar",
       "condition": "",
-      "source": "ADI product page / data sheet"
+      "source": "Datasheet Rev. K"
     },
     {
-      "parameter": "Channels / packages",
-      "value": "single; 8-lead PDIP (N) and SOIC (R)",
+      "parameter": "Offset voltage",
+      "value": "80 µV max; drift 0.2 µV/°C typ (unconfirmed)",
       "condition": "",
-      "source": "ADI ordering codes (AN/BN/AR/BR, Z = Pb-free); DigiKey 8-PDIP / 8-SOIC listings"
+      "source": "Datasheet Rev. K"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "0.25 µA typ (unconfirmed)",
+      "condition": "",
+      "source": "Third-party EDA database"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "Bipolar; Aol 20 V/µV, CMRR/PSRR 130 dB typ (unconfirmed)",
+      "condition": "",
+      "source": "Datasheet Rev. K (via thesis/EDA tables)"
     }
   ],
   "reputation": {
-    "summary": "The benchmark ultralow-noise bipolar single. Builders use it for MC phono head amps (audioXpress MC100, Wyn Palmer MC preamp), mic preamps and DAC I/V stages, and it has long been set against the OPA627 in Head-Fi and diyAudio debates. Japanese reviewers reportedly call its sound 'satin-finish', robust and crisper than the OPA627 (not re-verified). Soomal (China) groups it with the AD847 as famous for big dynamics, a grand sound and powerful bass. Soomal's Creative AE-9 review says the AD797 (and OPA1611) had better dynamics and resolution than the NE5534 but sounded too hard to be pleasing there. Engineering sources use it as a reference low-noise part. Its place in Samuel Groner's distortion survey is unverified.",
+    "summary": "The benchmark low-noise bipolar single, used in MC head amps (audioXpress MC100, Wyn Palmer), mic preamps and DAC I/V, and long set against the OPA627 on Head-Fi and diyAudio. Japanese reviewers reportedly hear a 'satin-finish', crisper sound. Soomal praises big dynamics and bass but found it too hard in the Creative AE-9.",
     "sonic_descriptors": [
-      "sweet, sublime clarity (Head-Fi; not re-verified)",
-      "satin-finish, high-quality sound (Zigsow JP; not re-verified)",
-      "robust, full-bodied; crisper and more 'digital' than OPA627 (JP reviews; not re-verified)",
-      "huge dynamics, grand sound, powerful bass (Soomal: 以动态大，声音大气，低频气势十足闻名)",
-      "ADI-style emphasised bass and treble with powerful but dry bass; Soomal says AD847/AD797 share the trend",
-      "better dynamics and resolution than NE5534 but too hard, not pleasing (Soomal AE-9 review: 偏硬，不够讨喜)"
+      "sweet, sublime clarity",
+      "satin-finish (Zigsow)",
+      "robust, crisper than OPA627",
+      "huge dynamics, powerful bass",
+      "dry, emphasised bass/treble",
+      "too hard (偏硬)"
     ],
     "typical_uses": [
-      "moving-coil phono head amps and RIAA preamps",
-      "microphone and mixing-console preamps",
+      "Moving-coil phono head amps and RIAA preamps",
+      "Microphone and console preamps",
       "DAC I/V converters",
-      "test and measurement low-noise front ends (e.g. precision current sources, sonar LNAs)",
-      "single-channel op-amp rolling, usually on a dual adapter"
+      "Low-noise test and measurement front ends",
+      "Single-channel rolling on a dual adapter"
     ],
     "caveats": [
-      "Sensitive to layout, decoupling and capacitive load, so it is not a safe blind drop-in for rolling. The datasheet has a 'Driving Capacitive Loads' section (radiolocman Rev. K p.13).",
-      "Single only. Dual sockets need an adapter board, which adds lead length and oscillation risk.",
-      "High current noise (about 2 pA/√Hz) makes it a poor fit for high source or feedback impedances. One builder's datasheet review found it runs at gain 2, correcting an earlier 'needs gain ≥10' assumption, but loses its e_n advantage in a 20 kΩ network through i_n×R.",
+      "Sensitive to layout, decoupling and capacitive load; not a safe blind drop-in (datasheet 'Driving Capacitive Loads').",
+      "Single only; dual adapters add lead length and oscillation risk.",
+      "About 2 pA/√Hz current noise: loses its edge with high source or feedback impedances. Works at gain 2.",
       "Draws about 8 mA per amplifier, more than typical audio duals.",
-      "Heavily counterfeited, especially DIP parts (including ANZ) and any metal-can 'AD797'.",
-      "Sonic descriptors are subjective and mostly single-source forum or review impressions."
+      "Heavily counterfeited, especially DIP parts (including ANZ) and any metal-can 'AD797'."
     ],
     "sources": [
       "https://www.head-fi.org/threads/ad797-vs-opa627.59802/",
@@ -245,6 +171,63 @@
       "https://www.head-fi.org/threads/cheapish-ad797-and-opa627-on-ebay-fakes.270562/"
     ]
   },
+  "counterfeit_notes": "A 2021 diyAudio thread found thousands of eBay fakes behaving like LM741s: 33.8 nV/√Hz, about 1 mA, 0.3–0.9 V offset, pin 8 open. Soomal says no metal-can AD797 exists. Check Iq (about 8 mA), offset (≤80 µV), noise; buy authorized.",
+  "alternatives": [
+    "AD8597 / AD8599",
+    "ADA4898-1 / ADA4898-2",
+    "LT1028 / LT1115",
+    "OPA1611 / OPA1612",
+    "LME49990 (reportedly discontinued)",
+    "ADA4897-1",
+    "ADA4075-2"
+  ],
+  "silicon_changes": [
+    {
+      "kind": "fab-or-process-transfer",
+      "vendor": "Analog Devices",
+      "when": "2026 · PCN 26_0029 Rev. -",
+      "part_numbers_affected": [
+        "AD797ARZ",
+        "AD797BRZ"
+      ],
+      "summary": "'Qualification of ADI Camas Wafer Fab CB Processes' qualifies Camas, WA for Complementary Bipolar products using an existing process; AD797ARZ/BRZ reportedly listed. Same process at another fab, no stated die redesign; source fab unnamed. Related PCN 25_0087 moved CBCMOS1 from Wilmington to Camas.",
+      "identification": "Nothing visible; no top-mark change. Old- and new-fab parts are distinguishable only by lot or date code via ADI or distributor. Cut-over date code unknown.",
+      "spec_deltas": [
+        {
+          "parameter": "Wafer fab site",
+          "before": "previous ADI fab (not named in the sources seen)",
+          "after": "ADI Camas, WA (existing qualified CB process)"
+        }
+      ],
+      "audio_impact": "None expected; ADI states no fit, form, function or reliability impact and unchanged limits. No old-vs-new comparisons known.",
+      "compatibility_risk": "low: same process at another fab; no stated data-sheet or marking change. Full parts list unread.",
+      "sources": [
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf",
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6899/ADI_PCN_25_0087_Rev_-_Form.pdf"
+      ],
+      "confidence": "medium",
+      "verification": "PCN scope confirmed; AD797ARZ/BRZ listing not itemised in the confirming result."
+    },
+    {
+      "kind": "lifecycle",
+      "vendor": "Analog Devices",
+      "when": "2010-05 · PDN 10_0081 (form Rev. B)",
+      "part_numbers_affected": [
+        "AD797 orderable(s) not confirmed (one report named AD797ANZ)"
+      ],
+      "summary": "PDN 10_0081 is ADI's May 2010 corporate obsolescence notice, mostly for Pb-plated models. One report placed AD797ANZ on it, but ANZ is still stocked, so this is doubtful. Which AD797 codes were discontinued is unconfirmed. No die change.",
+      "identification": "Check the ordering code against the PDN 10_0081 Rev. B parts list; most listed models are non-Z (Pb-plated).",
+      "spec_deltas": [],
+      "audio_impact": "None (lifecycle only).",
+      "compatibility_risk": "low: lifecycle notice only; Pb-free ARZ/BRZ (and ANZ per distributors) still offered.",
+      "sources": [
+        "https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf",
+        "https://www.digikey.com/en/products/detail/analog-devices-inc/AD797ANZ/751113"
+      ],
+      "confidence": "low",
+      "verification": "PDN scope confirmed; AD797ANZ listing unconfirmed and conflicts with current availability."
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Analog Devices",
@@ -256,7 +239,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current ADI PDF. The uppercase path .../data-sheets/AD797.pdf also indexes as 'Rev. K'. No Rev. L was found as of Sept 2026. The Revision History on p.2 was not captured."
+      "note": "Current PDF; uppercase AD797.pdf path also Rev. K. No Rev. L found."
     },
     {
       "vendor": "Analog Devices",
@@ -268,7 +251,7 @@
       "url_kind": "vendor_legacy",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Legacy ADI URL, seen as the 'Source:' line in Eagle libraries (GitHub evidence only). A good Wayback Machine seed for older revisions."
+      "note": "Legacy ADI URL from Eagle library 'Source:' lines; good Wayback seed."
     },
     {
       "vendor": "Analog Devices",
@@ -280,7 +263,7 @@
       "url_kind": "vendor_legacy",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed: the capitalised 'Data_Sheets' variant of the legacy path did not appear in web search this pass."
+      "note": "Capitalised 'Data_Sheets' legacy path variant; unconfirmed."
     },
     {
       "vendor": "Analog Devices (radiolocman mirror)",
@@ -292,7 +275,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Page-by-page viewer. Web search confirms the 'Revision: K' title and p.13 'Driving Capacitive Loads'."
+      "note": "Page viewer; 'Driving Capacitive Loads' on p. 13."
     },
     {
       "vendor": "Analog Devices (radiolocman mirror)",
@@ -304,7 +287,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Second radiolocman entry, found this pass. It may hold a different revision from di=35353; revision not shown in the summary."
+      "note": "Second radiolocman entry; may hold a different revision."
     },
     {
       "vendor": "Analog Devices (dicks-website.eu mirror)",
@@ -316,7 +299,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Hobbyist mirror of Rev. K, confirmed by web search."
+      "note": "Hobbyist mirror of Rev. K."
     },
     {
       "vendor": "Analog Devices (RS Components mirror)",
@@ -328,7 +311,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Frozen Rev. J copy; the Rev. J title is confirmed by web search."
+      "note": "Frozen Rev. J copy."
     },
     {
       "vendor": "Analog Devices (jouyaelec.ir mirror)",
@@ -340,7 +323,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Second copy of Rev. J; the Rev. J title is confirmed by web search."
+      "note": "Second copy of Rev. J."
     },
     {
       "vendor": "Analog Devices (Manualzz mirror)",
@@ -351,8 +334,8 @@
       "url": "https://manualzz.com/doc/o/p5onj/ad797--rev.-i--features",
       "url_kind": "third_party_mirror",
       "confidence": "low",
-      "revision_status": "confirmed",
-      "note": "Unconfirmed: did not appear in web search this pass. It would be the only copy of Rev. I."
+      "revision_status": "probable",
+      "note": "Would be the only Rev. I copy; unconfirmed."
     },
     {
       "vendor": "Analog Devices (Scribd mirror)",
@@ -363,8 +346,8 @@
       "url": "https://www.scribd.com/doc/48810000/AD797",
       "url_kind": "third_party_mirror",
       "confidence": "low",
-      "revision_status": "confirmed",
-      "note": "Unconfirmed: did not appear in web search this pass."
+      "revision_status": "probable",
+      "note": "Rev. H, about 2010; unconfirmed."
     },
     {
       "vendor": "Analog Devices (DigiKey mirror)",
@@ -376,7 +359,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Frozen Rev. G copy; the Rev. G title is confirmed by web search. Date not confirmed."
+      "note": "Frozen Rev. G copy; date unconfirmed."
     },
     {
       "vendor": "Analog Devices (alldatasheet mirror)",
@@ -388,7 +371,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "probable",
-      "note": "Unconfirmed: this ID did not appear in web search this pass; only the generic search page alldatasheet.com/view.jsp?Searchword=AD797 did. 20 pp, 520 KB reported earlier."
+      "note": "Reported Rev. F, 20 pages; unconfirmed."
     },
     {
       "vendor": "Analog Devices (Octopart mirror)",
@@ -400,7 +383,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Frozen Rev. E copy; the Rev. E title is confirmed by web search. Octopart files it under AD797ARZ, which does not prove that Rev. E listed Z codes."
+      "note": "Frozen Rev. E; filing under ARZ doesn't prove Z codes listed."
     },
     {
       "vendor": "Analog Devices (Octopart mirror)",
@@ -412,7 +395,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The URL is confirmed by web search, but the revision was not shown."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices (alldatasheet mirror)",
@@ -423,8 +406,8 @@
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48364/AD/AD797.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
-      "revision_status": "confirmed",
-      "note": "Unconfirmed: did not appear in web search this pass. 16 pp, older layout, reported earlier."
+      "revision_status": "probable",
+      "note": "Older 16-page layout, reported Rev. C; unconfirmed."
     },
     {
       "vendor": "Analog Devices (Reichelt mirror)",
@@ -436,7 +419,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The URL and the asterisked title are confirmed by web search. The asterisk probably marks a patent footnote, which suggests an early revision; this is an inference."
+      "note": "Asterisked title 'AD797*' suggests an early revision (inference)."
     },
     {
       "vendor": "Analog Devices (om3bc.com mirror)",
@@ -448,7 +431,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed: did not appear in web search this pass. Ham-radio hobby mirror."
+      "note": "Ham-radio hobby mirror; unconfirmed."
     },
     {
       "vendor": "Analog Devices (datasheetcatalog mirror)",
@@ -460,7 +443,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed: did not appear in web search this pass."
+      "note": "Revision unknown; unconfirmed."
     },
     {
       "vendor": "Analog Devices (Scribd mirror)",
@@ -472,7 +455,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed: did not appear in web search this pass. Other Scribd copies were reported earlier: /document/53177036/AD797 and /document/406461759/AD797-pdf."
+      "note": "Other Scribd copies: 53177036 and 406461759."
     },
     {
       "vendor": "Analog Devices (yumpu mirror)",
@@ -484,7 +467,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The URL is confirmed by web search, but the revision letter is truncated."
+      "note": "Revision letter truncated in title."
     },
     {
       "vendor": "Analog Devices (yumpu mirror)",
@@ -496,7 +479,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Second yumpu copy, confirmed by web search. It may hold a different revision from 25325091."
+      "note": "Second yumpu copy; may differ from 25325091."
     },
     {
       "vendor": "Analog Devices (Japanese translation, Manualzz mirror)",
@@ -508,7 +491,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed: did not appear in web search this pass. ADI Japanese-language data sheet; JP translations usually lag the English revision."
+      "note": "Japanese translation; JP editions usually lag English."
     },
     {
       "vendor": "Analog Devices (datasheet4u mirror)",
@@ -520,7 +503,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Confirmed by web search. The same file is also indexed at datasheet4u.com/datasheet/AnalogDevices/AD797-1186795."
+      "note": "Also indexed at datasheet4u.com/datasheet/AnalogDevices/AD797-1186795."
     },
     {
       "vendor": "Analog Devices (Futurlec page)",
@@ -532,7 +515,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Found this pass: a datasheet page under the leaded AD797AN part number. It may link an older revision."
+      "note": "Datasheet page under leaded AD797AN; may link an older revision."
     },
     {
       "vendor": "Analog Devices (DataSheetAll mirror)",
@@ -544,7 +527,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Found this pass; the revision it holds is unknown."
+      "note": "Revision unknown."
     },
     {
       "vendor": "Analog Devices",
@@ -556,7 +539,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "This is ADI's official Japanese edition, and the PDF title reads 'Rev. G'. ADI's JP site still serves Rev. G even though the English sheet is at Rev. K. It is probably a translation of English Rev. G, but that was not verified. The Manualzz JP copy already listed (revision unknown) is probably the same edition."
+      "note": "Official JP edition, still Rev. G; probably translates English Rev. G."
     },
     {
       "vendor": "Analog Devices (TME distributor mirror)",
@@ -568,7 +551,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The search result title shows Rev. K."
+      "note": "Rev. K distributor copy."
     },
     {
       "vendor": "Analog Devices (TME distributor mirror)",
@@ -580,7 +563,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The search result title shows Rev. E. This is a second independent copy of Rev. E, alongside the Octopart one."
+      "note": "Second independent Rev. E copy."
     },
     {
       "vendor": "Analog Devices (nickersonm.com lab/personal mirror)",
@@ -592,7 +575,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The search result title shows Rev. E. The host name suggests a JILA lab page."
+      "note": "Rev. E copy, apparently a JILA lab page."
     },
     {
       "vendor": "Analog Devices (Octopart mirror)",
@@ -604,7 +587,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the AD797ANZ alias of Octopart datasheet ID 9571263. The AD797BRZ alias of the same ID is already listed."
+      "note": "AD797ANZ alias of Octopart ID 9571263."
     },
     {
       "vendor": "Analog Devices (alldatasheet mirror)",
@@ -616,7 +599,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is a third alldatasheet ID for AD797, alongside 48364 and 225476. The ID is high, so it is probably a recent (Rev. K) upload."
+      "note": "High alldatasheet ID; probably a recent Rev. K upload."
     },
     {
       "vendor": "Analog Devices (datasheetq mirror)",
@@ -628,7 +611,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is an aggregator page. The search did not show the revision."
+      "note": "Aggregator page; revision not shown."
     },
     {
       "vendor": "Analog Devices (datasheetq mirror)",
@@ -640,7 +623,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is an aggregator document page. It may hold an older copy than /en/AD797-ADI."
+      "note": "Aggregator document page; may be older than /en/AD797-ADI."
     },
     {
       "vendor": "Analog Devices (datasheet4u mirror)",
@@ -652,7 +635,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the HTML viewer page for the same datasheet4u ID 1186795 as the pdf.php link already listed."
+      "note": "HTML viewer for datasheet4u ID 1186795."
     },
     {
       "vendor": "Analog Devices (datasheetcafe mirror)",
@@ -664,7 +647,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The search did not show the revision."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices (datasheetarchive listing)",
@@ -676,7 +659,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is a listing page for scanned copies. It is the likeliest place to find pre-2000 revisions (0/A/B/C/D), but none were confirmed from the search summary."
+      "note": "Scan listing; likeliest source of pre-2000 revisions 0/A/B/C/D."
     },
     {
       "vendor": "Analog Devices (Scribd mirror)",
@@ -688,137 +671,135 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This Scribd upload is separate from the two already listed."
+      "note": "Separate Scribd upload."
     }
+  ],
+  "product_pages": [
+    "https://www.analog.com/en/products/ad797.html"
   ],
   "revision_history": [
     {
       "vendor": "Analog Devices",
-      "doc_number": "D00846-0 (AD797)",
-      "revision": "K",
-      "date": "March 2015 (footer 3/15(K), ©1992–2015)",
-      "changes": "Current revision as of Sept 2026. The Rev. J to Rev. K change-log was not retrieved. No sign of spec changes."
+      "doc_number": "AD797",
+      "revision": "C (unconfirmed)",
+      "date": "",
+      "changes": "Older 16-page layout (alldatasheet 48364). Revs 0/A/B/D not located; Reichelt copy probably this era."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD797",
-      "revision": "J",
-      "date": "not captured (before March 2015)",
-      "changes": "Existence confirmed by the RS and jouyaelec mirror titles. Change-log not retrieved."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD797",
-      "revision": "I",
-      "date": "not captured",
-      "changes": "Reported from the Manualzz copy; not web-confirmed."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD797",
-      "revision": "H",
-      "date": "about 2010 (unverified)",
-      "changes": "Reported from the Scribd copy; not web-confirmed."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD797",
-      "revision": "G",
-      "date": "possibly 2008 (unverified)",
-      "changes": "Existence confirmed by the DigiKey mirror title 'AD797 Rev. G'. Change-log not retrieved."
+      "revision": "E",
+      "date": "",
+      "changes": "Copies on Octopart, TME (ad797anz.pdf) and jila1.nickersonm.com. When Z codes were added is unknown."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD797",
       "revision": "F",
-      "date": "not captured",
-      "changes": "Reported for alldatasheet ID 225476; not web-confirmed."
+      "date": "",
+      "changes": "Reported for alldatasheet ID 225476; unconfirmed."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD797",
-      "revision": "E",
-      "date": "not captured",
-      "changes": "Existence confirmed by the Octopart mirror title 'AD797 Rev. E'. When the Z (RoHS) ordering codes were added is unknown."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD797",
-      "revision": "C (unconfirmed)",
-      "date": "not captured",
-      "changes": "Older 16-page layout (alldatasheet ID 48364); not web-confirmed. Revisions 0/A/B/D were not located. The asterisked Reichelt copy is probably from this early period."
+      "revision": "G",
+      "date": "2008",
+      "changes": "DigiKey mirror titled 'AD797 Rev. G'; date possible only. Change log not retrieved."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD797 (JP)",
       "revision": "G",
-      "date": "not shown",
-      "changes": "This is the Japanese-language edition, and its title reads 'Rev. G'. It is still the current JP download on analog.com, while the English sheet is at Rev. K. It is probably a translation of English Rev. G, but that was not verified. The search showed no change-log."
+      "date": "",
+      "changes": "Japanese edition, still current JP download; probably translates English Rev. G."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD797",
-      "revision": "E",
-      "date": "not shown",
-      "changes": "Two more copies confirm this revision exists: TME ad797anz.pdf and jila1.nickersonm.com/AD797ANZ.pdf, whose titles both show Rev. E. No date or change-log was shown."
-    }
-  ],
-  "silicon_changes": [
-    {
-      "kind": "fab-or-process-transfer",
-      "vendor": "Analog Devices",
-      "when": "2026 (PCN 26_0029 Rev. -; publication and first-ship dates not captured)",
-      "part_numbers_affected": [
-        "AD797ARZ",
-        "AD797BRZ"
-      ],
-      "identification": "Nothing visible on the part. The PCN keeps traceability through standard ADI lot records and states no top-mark change. Old-fab and new-fab parts can be told apart only by lot or date code, through ADI or the distributor. No cut-over date code was captured.",
-      "summary": "ADI PCN 26_0029, 'Qualification of ADI Camas Wafer Fab CB Processes', qualifies the Camas, WA wafer fab for Complementary Bipolar (CB) products using an existing qualified process. An earlier search summary lists AD797ARZ and AD797BRZ. This moves the same process to another fab; no die redesign is stated. The source fab is not confirmed. A related PCN, 25_0087, moved CBCMOS1 products from Wilmington, MA to Camas.",
-      "spec_deltas": [
-        {
-          "parameter": "Wafer fab site",
-          "before": "previous ADI fab (not named in the sources seen)",
-          "after": "ADI Camas, WA (existing qualified CB process)"
-        }
-      ],
-      "audio_impact": "None expected. ADI states no expected impact to fit, form, function or reliability, and the data-sheet limits are unchanged. No measurements comparing old-fab and new-fab parts are known.",
-      "compatibility_risk": "low - same process qualified at another fab, with no stated data-sheet or marking change. The full PCN parts list was not read.",
-      "sources": [
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf",
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6899/ADI_PCN_25_0087_Rev_-_Form.pdf"
-      ],
-      "confidence": "medium",
-      "verification": "A search on PCN 26_0029 confirmed its scope: Camas qualified for CB products, with no expected fit/form/function or reliability impact. That result did not itemize AD797 orderables, so the AD797ARZ/BRZ listing still rests on an earlier pass's search summary."
+      "revision": "H",
+      "date": "2010",
+      "changes": "Reported from the Scribd copy, about 2010; unconfirmed."
     },
     {
-      "kind": "lifecycle",
       "vendor": "Analog Devices",
-      "when": "May 2010 (PDN 10_0081, the 'May 2010 ADI Corporate Obsolescence Process'; the form is at Rev. B)",
-      "part_numbers_affected": [
-        "AD797 orderable(s) not confirmed (one search summary named AD797ANZ)"
-      ],
-      "identification": "Check the ordering code against the PDN 10_0081 Rev. B parts list. Most models in this PDN have Pb plating (non-Z codes).",
-      "summary": "PDN 10_0081 is ADI's formal notice for the May 2010 corporate obsolescence round, and most models on it are Pb-plated. One search summary said AD797ANZ is on the list, but AD797ANZ is still stocked by major distributors, so that summary is doubtful. Which AD797 codes, if any, were discontinued is unconfirmed. The die does not change.",
-      "spec_deltas": [],
-      "audio_impact": "None (lifecycle only).",
-      "compatibility_risk": "low - lifecycle notice only. Pb-free AD797 codes (ARZ/BRZ, and ANZ per distributors) are still offered.",
-      "sources": [
-        "https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf",
-        "https://www.digikey.com/en/products/detail/analog-devices-inc/AD797ANZ/751113"
-      ],
-      "confidence": "low",
-      "verification": "Two searches confirmed that PDN 10_0081 is the May 2010 obsolescence notice for mostly Pb-plated models. The AD797ANZ listing came only from a search summary and conflicts with the part's current distributor availability, so it is unconfirmed."
+      "doc_number": "AD797",
+      "revision": "I",
+      "date": "",
+      "changes": "Reported from the Manualzz copy; unconfirmed."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD797",
+      "revision": "J",
+      "date": "",
+      "changes": "Before March 2015; copies on RS and jouyaelec. Change log not retrieved."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "D00846-0 (AD797)",
+      "revision": "K",
+      "date": "2015-03",
+      "changes": "Current; footer 3/15(K), ©1992–2015. J→K change log not retrieved; no sign of spec changes."
     }
   ],
-  "counterfeit_notes": "Counterfeiting is heavy. A 2021 diyAudio thread ('*Thousands Sold*, Great Reviews... Received Fake AD797 Like LM741. Did You Buy These?') reports thousands of fakes sold on eBay (over 2,500 in five-packs alone; seller AdeleParts2010). They behaved like LM741s: 33.8 nV/√Hz noise against the genuine 0.9 nV/√Hz, about 1 mA supply current against 8.2 mA, and 0.3 V to 0.9 V offset against 80 µV max. Pin 8 was open circuit, and the offset-null network looked like an LM741's. Negative eBay feedback later disappeared. A Head-Fi thread ('Cheapish AD797 and OPA627 on eBay, fakes?') and a Polish audiostereo.pl thread ('AD797ANZ fake or not') report the same problem; neither was re-checked. Soomal (China) says ADI never made a metal-can AD797, so every gold metal-can 'AD797' is fake (Soomal's statement, not an ADI document). Screening: (1) measure quiescent current, about 8 mA per part; (2) measure offset (≤80 µV) and noise; (3) check pin 8 for a diode junction; (4) reject metal cans and unusually cheap DIP AN/BN/ANZ. Buy only from authorized distributors.",
-  "alternatives": [
-    "AD8597 (single) / AD8599 (dual), later ADI parts sold under the same 'Ultralow Distortion, Ultralow Noise' title, with a dual option",
-    "ADA4898-1 / ADA4898-2, ADI 0.9 nV/√Hz bipolar in single and dual",
-    "LT1028 / LT1115, Linear (now ADI) sub-1 nV/√Hz singles; the LT1115 is audio-oriented",
-    "OPA1611 / OPA1612, TI 1.1 nV/√Hz audio bipolar in single and dual",
-    "LME49990, National/TI 0.9 nV/√Hz single (reportedly discontinued; not re-verified)",
-    "ADA4897-1, ADI 1 nV/√Hz, rail-to-rail output, low power",
-    "ADA4075-2, ADI lower-power low-noise dual"
+  "revision_chains": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "D00846-0 (AD797)",
+      "known": [
+        {
+          "rev": "C",
+          "date": ""
+        },
+        {
+          "rev": "E",
+          "date": ""
+        },
+        {
+          "rev": "F",
+          "date": ""
+        },
+        {
+          "rev": "G",
+          "date": "2008"
+        },
+        {
+          "rev": "H",
+          "date": "2010"
+        },
+        {
+          "rev": "I",
+          "date": ""
+        },
+        {
+          "rev": "J",
+          "date": ""
+        },
+        {
+          "rev": "K",
+          "date": "2015-03"
+        }
+      ],
+      "missing": [
+        "original",
+        "A",
+        "B",
+        "D"
+      ],
+      "note": "Original c. 1992. C, F, H, I unconfirmed. Try datasheetarchive AD797* and Wayback static/imported-files path."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD797 (JP)",
+      "known": [
+        {
+          "rev": "G",
+          "date": ""
+        }
+      ],
+      "missing": [],
+      "note": "Only the Japanese Rev. G edition found; earlier JP editions unknown."
+    }
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -841,15 +822,11 @@
     "https://www.analog.com/static/imported-files/data_sheets/AD797.pdf"
   ],
   "open_questions": [
-    "PCN 26_0029: the exact publication date, first-ship date and date-code cut-over, the source fab, whether reel codes and the AD797ANZ are covered, and whether any data-sheet parameter changes. Read the full PCN PDF (DigiKey-hosted copy); an analog.com-hosted copy was not located.",
-    "The Rev. K Revision History table (p.2) was not read, so the J→K and earlier change-logs are unknown. The printed dates of Rev. E, G, H, I and J are not captured.",
-    "Revisions I, H, F and C rest on single unconfirmed mirror sightings. Revisions 0, A, B and D were not located.",
-    "ADI lifecycle status of AD797ANZ is unclear: DigiKey and Newark list it, but one distributor listing reportedly says 'Available until stocks are exhausted'. AN, BN and BR status is unverified; only AD797AR is confirmed obsolete (Mouser).",
-    "The inferred JP data-sheet seed (/media/jp/.../AD797_jp.pdf) is not shown by any source.",
-    "ADI PDN 14_0014 came up in an AD797 search in an earlier run. Whether it covers the leaded AD797 AN/BN/AR/BR is unknown.",
-    "The i_n (about 2 pA/√Hz), drift, Aol, Ib, CMRR/PSRR and total supply range values come from third-party sources; confirm them against Rev. K Table 1.",
-    "Scott Wurcer as designer is still not web-verified.",
-    "Early data sheets may have listed a cerdip military grade or chips; this is unverified."
+    "PCN 26_0029: publication, first-ship and date-code cut-over dates, source fab, coverage of reels and AD797ANZ?",
+    "What does the Rev. K revision history (p. 2) say, and when were Revs E–J printed?",
+    "What is ADI's lifecycle status for AD797ANZ, AN, BN and BR? Does PDN 14_0014 cover leaded codes?",
+    "Confirm i_n, drift, Aol, Ib, CMRR/PSRR and total supply range against Rev. K Table 1.",
+    "Was Scott Wurcer the designer? Did early sheets list a cerdip military grade or chips?"
   ],
   "sources": [
     "https://www.analog.com/media/en/technical-documentation/data-sheets/ad797.pdf",
@@ -891,18 +868,35 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 9,
+    "claims_confirmed": [
+      "Datasheet titled 'Ultralow Distortion, Ultralow Noise Op Amp Data Sheet AD797 Rev. K' — https://www.analog.com/media/en/technical-documentation/data-sheets/AD797.pdf",
+      "Rev. K footer 'D00846-0-3/15(K)', ©1992–2015 — https://www.analog.com/media/en/technical-documentation/data-sheets/ad797.pdf and http://www.dicks-website.eu/low_noise_amp_part2/datasheet_AD797A.pdf",
+      "No Rev. L found; Rev. K latest — https://www.analog.com/en/products/ad797.html",
+      "RS mirror holds Rev. J — https://docs.rs-online.com/b77f/0900766b814b7923.pdf",
+      "jouyaelec mirror holds Rev. J — https://www.jouyaelec.ir/stfiles/getappdocument/1/true/71ba9592-f5f4-42b4-9a7c-4a3b05a0e5e0.pdf",
+      "DigiKey mirror holds Rev. G — https://media.digikey.com/pdf/Data%20Sheets/Analog%20Devices%20PDFs/AD797.pdf",
+      "Octopart AD797ARZ mirror holds Rev. E — https://datasheet.octopart.com/AD797ARZ-Analog-Devices-datasheet-12470.pdf",
+      "radiolocman holds Rev. K, 'Driving Capacitive Loads' p. 13 — https://www.radiolocman.com/datasheet/pdf.html?di=35353&p=13",
+      "Reichelt copy has old asterisked title 'AD797*' — https://cdn-reichelt.de/documents/datenblatt/A200/DATASHEET_AD797-AD-EN.pdf",
+      "PCN 26_0029 lists AD797ARZ/BRZ with standard lot traceability — https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf",
+      "AD797AR obsolete per Mouser — https://www.mouser.com/ProductDetail/Analog-Devices/AD797AR?qs=/tpEQrCGXCwkMztnqVySyg%3D%3D",
+      "AD797ANZ listed at DigiKey (751113) — https://www.digikey.com/en/products/detail/analog-devices-inc/AD797ANZ/751113",
+      "Fakes: 33.8 nV/√Hz, 1 mA vs 0.9 nV/√Hz, 8.2 mA; 0.3–0.9 V offset; pin 8 open — https://www.diyaudio.com/community/threads/thousands-sold-great-reviews-received-fake-ad797-like-lm741-did-you-buy-these.370952/",
+      "0.9/1.2 nV/√Hz, 50 nV p-p, 80 µV, ±5–±15 V, −120 dB at 20 kHz, 800 ns, 110 MHz (G = 1000), 50 mA — https://www.analog.com/media/en/technical-documentation/data-sheets/AD797.pdf"
+    ],
     "refuted_claims": [
-      "The draft's position that no AD797 fab, die or assembly PCN exists ('No silicon change is known'; discovery hint 'no known die change') is out of date. ADI PCN 26_0029 (2026) qualifies the Camas, WA wafer fab for CB products and lists AD797ARZ and AD797BRZ. It is a fab-site change, not a stated die redesign.",
-      "The archive seed http://www.analog.com/UploadedFiles/Data_Sheets/AD797.pdf was dropped. It was an inferred URL that no source shows, and the draft itself said the form 'may never have existed'."
+      "'No silicon change is known' is out of date: PCN 26_0029 (2026) qualifies the Camas fab for CB products including AD797ARZ/BRZ. Fab-site change, not a stated redesign.",
+      "Inferred seed http://www.analog.com/UploadedFiles/Data_Sheets/AD797.pdf dropped: no source shows it, and it may never have existed."
     ],
     "corrections": [
-      "Rev. K date confirmed from the data sheet footer 'D00846-0-3/15(K)', ©1992–2015. The ADI document number D00846-0 was added and the date is no longer 'third-party citation only'.",
-      "silicon_changes: added PCN 26_0029 (Camas wafer fab qualification for Complementary Bipolar products; AD797ARZ/BRZ; identified only by lot traceability), medium confidence.",
-      "AD797AR status set to obsolete (Mouser). AD797ANZ is listed at DigiKey and Newark, with one reported 'available until stocks are exhausted' note. ARZ and BRZ are believed active because PCN 26_0029 covers them.",
-      "GBW condition corrected to 'G = 1000'. Settling-time condition set to '10 V step'. Added Vos 80 µV max. Supply range 'specified ±5 V to ±15 V' confirmed.",
-      "Counterfeit figures (33.8 nV/√Hz, about 1 mA, 8.2 mA genuine) confirmed in the diyAudio thread. Added the details on Vos (0.3–0.9 V), pin 8 open and seller AdeleParts2010.",
-      "Mirror confidences raised to high where search titles show the revision: RS Rev. J, jouyaelec Rev. J, DigiKey Rev. G, Octopart ARZ Rev. E, radiolocman Rev. K, dicks-website Rev. K. Raised to medium for the Octopart BRZ, Reichelt, yumpu 25325091 and datasheet4u copies, whose URLs are confirmed but whose revision is not.",
-      "Added new mirror entries: radiolocman di=334961, yumpu 25325031, Futurlec AD797AN page and DataSheetAll. Added DigiKey product pages for ANZ and ARZ-REEL7."
+      "Rev. K date confirmed from footer 'D00846-0-3/15(K)', ©1992–2015; document number D00846-0 added.",
+      "Added PCN 26_0029 (Camas CB fab qualification; AD797ARZ/BRZ; lot traceability only), medium confidence.",
+      "AD797AR set obsolete (Mouser). AD797ANZ at DigiKey and Newark; ARZ and BRZ believed active via PCN 26_0029.",
+      "GBW condition corrected to G = 1000; settling condition 10 V step; added Vos 80 µV max; ±5 to ±15 V confirmed.",
+      "Counterfeit figures confirmed; added 0.3–0.9 V offset, pin 8 open and seller AdeleParts2010.",
+      "Mirror confidence raised where titles show revisions: RS J, jouyaelec J, DigiKey G, Octopart ARZ E, radiolocman K, dicks-website K.",
+      "Added mirrors radiolocman di=334961, yumpu 25325031, Futurlec AD797AN, DataSheetAll; DigiKey pages for ANZ and ARZ-REEL7."
     ],
     "unverified_urls": [
       "https://www.analog.com/static/imported-files/Data_Sheets/AD797.pdf",
@@ -926,29 +920,6 @@
       "http://www.sg-acoustics.ch/analogue_audio/ic_opamps/pdf/opamp_distortion.pdf",
       "https://www.audiostereo.pl/topic/128124-ad797anz-fake-or-not",
       "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8597_8599.pdf"
-    ],
-    "claims_confirmed": [
-      "The ADI data sheet is titled 'Ultralow Distortion, Ultralow Noise Op Amp Data Sheet AD797 Rev. K' — https://www.analog.com/media/en/technical-documentation/data-sheets/AD797.pdf",
-      "The Rev. K footer reads 'D00846-0-3/15(K)', ©1992–2015 (March 2015) — https://www.analog.com/media/en/technical-documentation/data-sheets/ad797.pdf and http://www.dicks-website.eu/low_noise_amp_part2/datasheet_AD797A.pdf",
-      "No Rev. L found; Rev. K is the latest found (Sept 2026) — https://www.analog.com/en/products/ad797.html",
-      "RS mirror holds Rev. J — https://docs.rs-online.com/b77f/0900766b814b7923.pdf",
-      "jouyaelec mirror holds Rev. J — https://www.jouyaelec.ir/stfiles/getappdocument/1/true/71ba9592-f5f4-42b4-9a7c-4a3b05a0e5e0.pdf",
-      "DigiKey mirror holds Rev. G — https://media.digikey.com/pdf/Data%20Sheets/Analog%20Devices%20PDFs/AD797.pdf",
-      "Octopart AD797ARZ mirror holds Rev. E — https://datasheet.octopart.com/AD797ARZ-Analog-Devices-datasheet-12470.pdf",
-      "radiolocman holds Rev. K, with 'Driving Capacitive Loads' on p.13 — https://www.radiolocman.com/datasheet/pdf.html?di=35353&p=13",
-      "Reichelt copy has the old asterisked title 'AD797*' — https://cdn-reichelt.de/documents/datenblatt/A200/DATASHEET_AD797-AD-EN.pdf",
-      "PCN 26_0029 'Qualification of ADI Camas Wafer Fab CB Processes' lists AD797ARZ/AD797BRZ, with traceability via standard ADI lot traceability — https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8933/ADI_PCN_26_0029_Rev_-_Form.pdf",
-      "AD797AR is obsolete per Mouser — https://www.mouser.com/ProductDetail/Analog-Devices/AD797AR?qs=/tpEQrCGXCwkMztnqVySyg%3D%3D",
-      "AD797ANZ is listed at DigiKey (751113) — https://www.digikey.com/en/products/detail/analog-devices-inc/AD797ANZ/751113",
-      "The fake AD797s measured 33.8 nV/√Hz and 1 mA against genuine 0.9 nV/√Hz and 8.2 mA, with 0.3–0.9 V offset against 80 µV max, pin 8 open and thousands sold — https://www.diyaudio.com/community/threads/thousands-sold-great-reviews-received-fake-ad797-like-lm741-did-you-buy-these.370952/",
-      "Specs 0.9 nV/√Hz typ (1.2 max), 50 nV p-p (0.1–10 Hz), 80 µV max Vos, ±5 V to ±15 V, −120 dB THD at 20 kHz, 800 ns to 16 bits, 110 MHz GBW at G = 1000 and 50 mA output — https://www.analog.com/media/en/technical-documentation/data-sheets/AD797.pdf"
-    ],
-    "web_searches_used": 9
-  },
-  "tier": "A",
-  "category": "bipolar-modern-low-noise",
-  "product_pages": [
-    "https://www.analog.com/en/products/ad797.html"
-  ],
-  "revision_chain_notes": "ADI AD797 English data sheet (D00846-0), oldest to newest. Original edition, about 1992: the SPICE model is dated 10/1992 and the Rev. K footer reads ©1992–2015. No Rev. 0 copy was located, and nothing suggests a c.1990 sheet; 1992 is the earliest date found. Rev. A: not located. Rev. B: not located. Rev. C: unconfirmed (alldatasheet 48364, old 16-page layout; the asterisked Reichelt copy and om3bc copy are probably from the same pre-2000 period). Rev. D: not located. Rev. E: confirmed by titles on Octopart 12470, TME ad797anz.pdf and jila1.nickersonm.com; date unknown. Rev. F: unconfirmed (alldatasheet 225476). Rev. G: confirmed on DigiKey, possibly 2008. Rev. H: Scribd 48810000, about 2010, unverified. Rev. I: Manualzz. Rev. J: confirmed on RS and jouyaelec, before 3/2015. Rev. K: 3/2015, current, on analog.com, TME, radiolocman and dicks-website. ADI Japanese edition: only Rev. G was found (analog.com/media/jp/.../ad797_jp.pdf, title shows Rev. G); earlier JP editions were not found. Still missing: English Revs. 0/A/B/D, confirmation of C and F, dates for Revs. C–J, and every change-log entry. The next step is the datasheetarchive AD797* listing and Wayback captures of the legacy static/imported-files/data_sheets/AD797.pdf path. Eight WebSearch calls were used, and none returned pre-Rev. E content."
+    ]
+  }
 }

@@ -1,144 +1,98 @@
 {
   "id": "AD811",
-  "name": "AD811 (Analog Devices single high-speed current-feedback op-amp, used as a DAC I/V stage)",
-  "tagline": "Analog Devices current-feedback video amp (2500 V/us, 25 ns settling) that diyAudio builders use as a very fast I/V stage for current-output DACs.",
-  "technology": "Single-channel bipolar wideband current-feedback op-amp, designed for broadcast video. Rated 2500 V/us slew, 25 ns settling to 0.1%, 1.9 nV/rtHz voltage noise and ±4.5 V to ±18 V supplies.",
+  "name": "AD811",
+  "type": "Current-feedback video op-amp, single",
+  "tier": "B",
+  "category": "high-speed-video-crossover",
+  "tagline": "ADI current-feedback video amp (2500 V/µs, 25 ns settling) that diyAudio builders use as a very fast DAC I/V stage.",
   "manufacturers": [
     "Analog Devices"
-  ],
-  "part_numbers": [
-    {
-      "pn": "AD811",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown (product-page lifecycle status not confirmed in this pass)",
-      "notes": "Base part number; single current-feedback amplifier."
-    },
-    {
-      "pn": "AD811AN",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "obsolete",
-      "notes": "PDIP-8 (ADI 'N' suffix). DigiKey lists it as Obsolete / no longer manufactured. Some DIP units sold for DAC op-amp rolling may be old stock."
-    },
-    {
-      "pn": "AD811ANZ",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "RoHS ('Z') PDIP version; radiolocman has a datasheet listing for it. Lifecycle status not confirmed."
-    },
-    {
-      "pn": "AD811JR",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "SOIC ('R' suffix), J (commercial) grade. Octopart hosts the Rev. E datasheet under this PN. Exact package pin count and status not confirmed."
-    },
-    {
-      "pn": "AD811ARZ-16",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown (still listed by RS)",
-      "notes": "16-lead wide SOIC, RoHS; RS lists it as a 2500 V/us video amplifier IC in 16-pin SOIC W."
-    },
-    {
-      "pn": "AD811ARZ-16-REEL7",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "7-inch tape-and-reel version of AD811ARZ-16; radiolocman has a datasheet listing for it."
-    }
   ],
   "lineage": [
     {
       "vendor": "Analog Devices",
-      "role": "originator and sole manufacturer",
-      "period": "pre-2004 to present (introduction date unconfirmed; the datasheet went from Rev. D to Rev. E in 7/04 and is now at Rev. G)",
-      "notes": "No second sources found. Old datasheet copies carry the 1990s ADI 'a' logo header."
+      "role": "originator",
+      "period": "before 2004–present",
+      "note": "Sole maker. Old copies carry ADI's 1990s 'a' logo; datasheet Rev. D → E in 7/04, now Rev. G."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "AD811AN",
+      "channels": 1,
+      "status": "obsolete",
+      "note": "PDIP-8; DigiKey lists it obsolete. DIP units sold for rolling may be old stock."
+    },
+    {
+      "pn": "AD811ANZ",
+      "channels": 1,
+      "status": "unknown",
+      "note": "RoHS PDIP; RadioLocman has a datasheet listing. Status unconfirmed."
+    },
+    {
+      "pn": "AD811JR",
+      "channels": 1,
+      "status": "unknown",
+      "note": "SOIC, J (commercial) grade; Octopart files Rev. E under it. Pin count unconfirmed."
+    },
+    {
+      "pn": "AD811ARZ-16 / AD811ARZ-16-REEL7",
+      "channels": 1,
+      "status": "unknown",
+      "note": "16-lead wide SOIC, RoHS; tube still listed by RS, plus 7-inch reel."
     }
   ],
   "key_specs": [
     {
-      "parameter": "-3 dB bandwidth",
-      "value": "140 MHz",
-      "condition": "G = +1",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf"
+      "parameter": "Input noise (1 kHz)",
+      "value": "1.9 nV/√Hz",
+      "condition": "datasheet front page",
+      "source": "AD811 datasheet Rev. G"
     },
     {
-      "parameter": "-3 dB bandwidth",
-      "value": "120 MHz",
-      "condition": "G = +2",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf"
-    },
-    {
-      "parameter": "0.1 dB flatness bandwidth",
-      "value": "35 MHz",
-      "condition": "G = +2",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf"
+      "parameter": "GBW",
+      "value": "−3 dB BW 140 MHz (G = +1), 120 MHz (G = +2)",
+      "condition": "0.1 dB flatness 35 MHz (G = +2)",
+      "source": "AD811 datasheet Rev. G"
     },
     {
       "parameter": "Slew rate",
-      "value": "2500 V/us",
-      "condition": "datasheet front page",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf"
-    },
-    {
-      "parameter": "Settling time",
-      "value": "25 ns to 0.1%; 65 ns to 0.01%",
-      "condition": "2 V step (0.1%); 10 V step (0.01%)",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf"
-    },
-    {
-      "parameter": "Input voltage noise",
-      "value": "1.9 nV/rtHz",
-      "condition": "datasheet front page",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf"
-    },
-    {
-      "parameter": "Differential gain / phase",
-      "value": "0.01% / 0.01°",
-      "condition": "video",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf"
+      "value": "2500 V/µs",
+      "condition": "25 ns to 0.1% (2 V); 65 ns to 0.01%",
+      "source": "AD811 datasheet Rev. G"
     },
     {
       "parameter": "Supply range",
       "value": "±4.5 V to ±18 V",
       "condition": "specified range",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf"
+      "source": "AD811 datasheet Rev. G"
     },
     {
-      "parameter": "Output swing",
-      "value": "±2.3 V",
-      "condition": "into 75 Ω, VS = ±5 V",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf"
+      "parameter": "Output current",
+      "value": "Not captured; swing ±2.3 V into 75 Ω at ±5 V",
+      "condition": "",
+      "source": "AD811 datasheet Rev. G"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "Bipolar, current feedback",
+      "condition": "DG/DP 0.01% / 0.01° (video)",
+      "source": "AD811 datasheet Rev. G"
     }
   ],
   "reputation": {
-    "summary": "diyAudio posters rate it highly as an I/V converter for current-output DACs. There is a dedicated thread ('AD811 as I/V stage for current DACs...'), a build thread ('AD811 IV completed and tested') and posts in the long 'Best opamp for I/V conversion?' thread. Those posters say it sounds better than other op-amps they tried in a classic I/V stage, including an OPA861 alternative. They credit its 2500 V/us slew and 25 ns settling (versus about 550 ns quoted for the OPA627). This is enthusiast forum opinion, not measured audio data.",
+    "summary": "diyAudio posters rate it highly as an I/V converter for current-output DACs, in a dedicated thread, a build thread and the long 'Best opamp for I/V conversion?' thread. They say it beats other op-amps they tried, including an OPA861 alternative, crediting 2500 V/µs and 25 ns settling (vs ~550 ns quoted for OPA627). Forum opinion, not measurements.",
     "sonic_descriptors": [],
     "typical_uses": [
-      "I/V converter after current-output audio DACs (posters mention PCM61, PCM1702 and similar)",
-      "Video line driver / broadcast video (datasheet)",
-      "ADC/DAC buffer (datasheet application list)"
+      "I/V after current-output DACs (PCM61, PCM1702)",
+      "Video line driver / broadcast video",
+      "ADC/DAC buffer"
     ],
     "caveats": [
-      "Current-feedback amplifier: the feedback resistor value sets bandwidth and stability. The usual voltage-feedback I/V topology with a capacitor directly across the feedback resistor needs care with a CFA.",
-      "Runs hot: diyAudio posters recommend a small heatsink at ±14 V supplies.",
-      "AD811AN (DIP-8) is listed obsolete at DigiKey. Newer stock is SOIC (including the 16-lead wide SOIC AD811ARZ-16), so DIP sockets need an adapter.",
-      "The praise comes from a handful of diyAudio threads. It is subjective, and treating slew rate or settling time as proof of sound quality is the posters' reasoning, not ADI's."
+      "Current feedback: the feedback resistor sets bandwidth and stability; a capacitor across it needs care.",
+      "Runs hot; diyAudio posters suggest a small heatsink at ±14 V.",
+      "AD811AN DIP-8 is obsolete; newer stock is SOIC (incl. 16-lead wide), so DIP sockets need adapters.",
+      "Praise comes from a few diyAudio threads; linking slew or settling to sound is the posters' reasoning."
     ],
     "sources": [
       "https://www.diyaudio.com/community/threads/ad811-as-i-v-stage-for-current-dacs-and-test-some-other-opamps-including-burson-audio-opamps-as-i-v.394295/",
@@ -146,6 +100,13 @@
       "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-24"
     ]
   },
+  "counterfeit_notes": "No AD811 fake reports found. AD811AN (PDIP-8) is obsolete, so cheap DIP-8 AD811s for DAC rolling are old stock at best and may be relabelled. Check date codes and markings, and confirm current-feedback behaviour and very fast edges.",
+  "alternatives": [
+    "OPA861 (diyAudio I/V comparison)",
+    "AD844 (ADI CFA for DAC I/V)",
+    "OPA627 (VFB favourite, ~550 ns settling)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "Analog Devices",
@@ -157,7 +118,10 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current ADI datasheet (Rev. G). A lowercase alias also exists: https://www.analog.com/media/en/technical-documentation/data-sheets/ad811.pdf. The print date of Rev. G was not visible in search summaries."
+      "note": "Current Rev. G; lowercase alias exists. Print date not seen.",
+      "also_urls": [
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/ad811.pdf"
+      ]
     },
     {
       "vendor": "Analog Devices",
@@ -169,7 +133,7 @@
       "url_kind": "vendor_legacy",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Legacy ADI 'static/imported-files' path, indexed with the title 'AD811 (Rev. G)'. Useful as a Wayback seed."
+      "note": "Legacy path indexed as 'AD811 (Rev. G)'. Wayback seed."
     },
     {
       "vendor": "Analog Devices (Mouser mirror)",
@@ -181,7 +145,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Frozen copy of Rev. E. Its revision history reads 'Rev. D to Rev. E, 7/04'."
+      "note": "Frozen Rev. E; history reads 'Rev. D to Rev. E, 7/04'."
     },
     {
       "vendor": "Analog Devices (Octopart mirror)",
@@ -193,7 +157,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Frozen copy of Rev. E, filed under AD811JR."
+      "note": "Frozen Rev. E, filed under AD811JR."
     },
     {
       "vendor": "Analog Devices (studylib mirror)",
@@ -205,7 +169,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Only copy of Rev. F found. Its date and change list were not visible in search summaries."
+      "note": "Only Rev. F copy found; date and changes not seen."
     },
     {
       "vendor": "Analog Devices (radiolocman mirror)",
@@ -217,7 +181,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Rev. G with ADI product-page quick links dated 02/23/2017."
+      "note": "Rev. G; ADI quick links dated 02/23/2017."
     },
     {
       "vendor": "Analog Devices (radiolocman mirror)",
@@ -229,7 +193,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Search summary describes it as Rev. G, 21 pages, 470 KB."
+      "note": "Rev. G, 21 pages, 470 KB (reported)."
     },
     {
       "vendor": "Analog Devices (alldatasheet mirror)",
@@ -241,7 +205,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "21-page copy, consistent with Rev. G. Revision attribution comes from a search summary."
+      "note": "21-page copy, consistent with Rev. G (reported)."
     },
     {
       "vendor": "Analog Devices (alldatasheet mirror)",
@@ -253,7 +217,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Shorter, older 15-page layout; possibly Rev. C/D. Revision unconfirmed."
+      "note": "Older 15-page layout; possibly Rev. C/D."
     },
     {
       "vendor": "Analog Devices (chipdip mirror)",
@@ -265,7 +229,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Old-style ADI header suggests a revision before Rev. E. Revision unconfirmed."
+      "note": "Old-style ADI header; probably before Rev. E."
     },
     {
       "vendor": "Analog Devices (datasheetcatalog mirror)",
@@ -301,52 +265,79 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Different radiolocman document ID from the Rev. G copies; it may hold an older revision. Revision unconfirmed."
+      "note": "Different RadioLocman ID; may hold an older revision."
     }
+  ],
+  "product_pages": [
+    "https://www.analog.com/en/products/ad811.html"
   ],
   "revision_history": [
     {
       "vendor": "Analog Devices",
       "doc_number": "AD811",
       "revision": "C or earlier",
-      "date": "unknown",
-      "changes": "Early 1990s-style datasheets (15-page layout with the 'a' logo). Revision letters and dates unconfirmed."
+      "date": "",
+      "changes": "Early 1990s-style sheets (15 pages, 'a' logo). Letters and dates unconfirmed."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD811",
       "revision": "D",
-      "date": "unknown (before 7/04)",
-      "changes": "Existence implied by the Rev. D to Rev. E entry; no details."
+      "date": "",
+      "changes": "Implied by the Rev. D to Rev. E entry (before 7/04)."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD811",
       "revision": "E",
-      "date": "7/04",
-      "changes": "Rev. D to Rev. E: updated format; changes to the Maximum Power Dissipation section; changes to the Ordering Guide; updated Outline Dimensions."
+      "date": "2004-07",
+      "changes": "Updated format; changed Maximum Power Dissipation section, Ordering Guide and Outline Dimensions."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD811",
       "revision": "F",
-      "date": "unknown",
-      "changes": "Unknown. A copy exists on studylib."
+      "date": "",
+      "changes": "Changes unknown; a copy exists on studylib."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD811",
       "revision": "G",
-      "date": "unknown (in circulation by 2017)",
-      "changes": "Unknown. This is the current revision (21 pages) on analog.com."
+      "date": "",
+      "changes": "Current, 21 pages; in circulation by 2017. Changes unknown."
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No AD811-specific counterfeit reports were found in this pass. AD811AN (PDIP-8) is listed obsolete at DigiKey, so DIP-8 AD811s sold cheaply on marketplaces for DAC op-amp rolling are old stock at best and may be relabelled. Check date codes and markings, and check that the part shows current-feedback behaviour and very fast edges.",
-  "alternatives": [
-    "OPA861 (compared against the AD811 in the diyAudio I/V thread)",
-    "AD844 (another ADI current-feedback amp often used for DAC I/V)",
-    "OPA627 (voltage-feedback I/V favourite; diyAudio posters contrast its 550 ns settling)"
+  "revision_chains": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD811",
+      "known": [
+        {
+          "rev": "D",
+          "date": ""
+        },
+        {
+          "rev": "E",
+          "date": "2004-07"
+        },
+        {
+          "rev": "F",
+          "date": ""
+        },
+        {
+          "rev": "G",
+          "date": ""
+        }
+      ],
+      "missing": [
+        "original",
+        "A",
+        "B",
+        "C"
+      ],
+      "note": "Older 15-page copies (alldatasheet 48404, chipdip) may hold Rev. C/D; F and G undated."
+    }
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -358,12 +349,11 @@
     "https://www.mouser.com/datasheet/2/609/AD811-256255.pdf"
   ],
   "open_questions": [
-    "What are the print dates and change lists for Rev. F and Rev. G? Neither was visible in search summaries.",
-    "Which revision letter do the older mirror copies hold (alldatasheet 48404, which is 15 pages; chipdip DOC000143810; radiolocman di=83869)? What were the Rev. A to C dates, and when was the part introduced?",
-    "What is the full current ordering matrix and lifecycle status of AD811ANZ, AD811JR/JRZ, AD811ARZ-16 and the military grades? Only AD811AN is confirmed obsolete (DigiKey).",
-    "PCN 26_0029 and PDN 24_0080 came up in AD811-related searches, but their contents were not visible. Do they affect any AD811 part (e.g. PDIP discontinuance or an assembly/test site change)?",
-    "No die or process change was found for the AD811. A silicon change is unconfirmed either way.",
-    "What are the output current and quiescent supply current specs? They matter for the heatsink caveat and were not confirmed in this pass."
+    "Print dates and change lists for Rev. F and Rev. G?",
+    "Which revisions do alldatasheet 48404, chipdip DOC000143810 and RadioLocman di=83869 hold? When was the part introduced?",
+    "Lifecycle of AD811ANZ, AD811JR/JRZ, AD811ARZ-16 and military grades? Only AD811AN is confirmed obsolete.",
+    "Do PCN 26_0029 or PDN 24_0080 affect any AD811 part (PDIP discontinuance, site change)?",
+    "Output current and quiescent current specs (relevant to heatsinking)? Any die or process change?"
   ],
   "sources": [
     "https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf",
@@ -384,15 +374,26 @@
   ],
   "verification": {
     "status": "partially-verified",
+    "web_searches_used": 8,
+    "claims_confirmed": [
+      "Current ADI AD811 datasheet is Rev. G, also indexed as 'AD811 (Rev. G)' at the legacy path: https://www.analog.com/static/imported-files/data_sheets/AD811.pdf",
+      "RadioLocman copy labelled 'Revision: G', ADI quick links 'Last Content Update: 02/23/2017': https://www.radiolocman.com/datasheet/pdf.html?di=121471&p=1",
+      "Rev. E mirrored at Mouser: https://www.mouser.com/datasheet/2/609/AD811-256255.pdf",
+      "Rev. E mirrored at Octopart under AD811JR: https://datasheet.octopart.com/AD811JR-Analog-Devices-datasheet-87460.pdf",
+      "Rev. D to Rev. E (7/04): updated format, power dissipation, ordering guide, outline dimensions: https://www.mouser.com/datasheet/2/609/AD811-256255.pdf",
+      "Rev. F copy on studylib: https://studylib.net/doc/18789058/ad811--rev.-f-",
+      "140/120 MHz BW, 35 MHz 0.1 dB, 2500 V/µs, 25 ns/65 ns settling, 1.9 nV/√Hz, 0.01%/0.01° DG/DP, ±4.5 to ±18 V, ±2.3 V into 75 Ω: https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf",
+      "AD811AN is obsolete: https://www.digikey.com/en/products/detail/analog-devices-inc/AD811AN/611545",
+      "AD811ARZ-16 listed at RS as a 16-pin wide-SOIC 2500 V/µs video amp: https://nz.rs-online.com/web/p/video-amplifiers-ics/5237689"
+    ],
     "refuted_claims": [],
     "corrections": [
-      "All part_numbers: channels changed from 0 to 1 (the AD811 is a single amplifier).",
-      "AD811AN status changed from 'unknown' to 'obsolete' (DigiKey).",
-      "Added AD811ANZ, AD811ARZ-16 and AD811ARZ-16-REEL7. They were found in distributor and mirror listings, but their statuses are unconfirmed.",
-      "The draft had empty datasheets, key_specs and revision_history. Added: ADI Rev. G (current plus legacy URL), Rev. E (7/04) mirrors at Mouser and Octopart, a Rev. F mirror at studylib, Rev. G mirrors, and older-layout mirrors with revision unconfirmed.",
-      "Technology line refined to match the datasheet's 'wideband current-feedback' description and confirmed specs.",
-      "Reputation reworded as attributed diyAudio opinion. Caveats and typical uses added.",
-      "Not adopted: a search-engine summary claimed the whole AD811 family is obsolete. No source showed this; only AD811AN is confirmed obsolete."
+      "Channels corrected from 0 to 1 (single amplifier).",
+      "AD811AN status set to obsolete (DigiKey).",
+      "Added AD811ANZ, AD811ARZ-16 and AD811ARZ-16-REEL7 from listings; statuses unconfirmed.",
+      "Added datasheets (Rev. G current and legacy, Rev. E at Mouser/Octopart, Rev. F at studylib, older mirrors), key specs and revision history.",
+      "Reputation reworded as attributed diyAudio opinion; caveats and uses added.",
+      "Not adopted: a claim that the whole AD811 family is obsolete; only AD811AN is confirmed."
     ],
     "unverified_urls": [
       "https://www.alldatasheet.com/datasheet-pdf/pdf/48404/AD/AD811.html",
@@ -403,23 +404,6 @@
       "https://www.diyaudio.com/community/threads/ad811-as-i-v-stage-for-current-dacs-and-test-some-other-opamps-including-burson-audio-opamps-as-i-v.394295/",
       "https://www.diyaudio.com/community/threads/ad811-iv-completed-and-tested.405493/",
       "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-24"
-    ],
-    "claims_confirmed": [
-      "The current ADI AD811 datasheet is Rev. G at analog.com, also indexed as 'AD811 (Rev. G)' at the legacy path: https://www.analog.com/static/imported-files/data_sheets/AD811.pdf",
-      "A radiolocman copy is labelled 'Revision: G', with ADI quick links reading 'Last Content Update: 02/23/2017': https://www.radiolocman.com/datasheet/pdf.html?di=121471&p=1",
-      "The Rev. E datasheet is mirrored at Mouser: https://www.mouser.com/datasheet/2/609/AD811-256255.pdf",
-      "The Rev. E datasheet is mirrored at Octopart under AD811JR: https://datasheet.octopart.com/AD811JR-Analog-Devices-datasheet-87460.pdf",
-      "Rev. D to Rev. E (7/04) changes were: updated format, Maximum Power Dissipation section, Ordering Guide and Outline Dimensions: https://www.mouser.com/datasheet/2/609/AD811-256255.pdf",
-      "A Rev. F copy exists on studylib: https://studylib.net/doc/18789058/ad811--rev.-f-",
-      "Specs: 140 MHz (G=+1) and 120 MHz (G=+2) -3 dB bandwidth; 35 MHz 0.1 dB bandwidth; 2500 V/us slew; 25 ns settling to 0.1% (2 V step) and 65 ns to 0.01% (10 V step); 1.9 nV/rtHz noise; 0.01%/0.01° DG/DP; ±4.5 V to ±18 V supplies; ±2.3 V into 75 Ω at ±5 V: https://www.analog.com/media/en/technical-documentation/data-sheets/AD811.pdf",
-      "AD811AN is obsolete: https://www.digikey.com/en/products/detail/analog-devices-inc/AD811AN/611545",
-      "AD811ARZ-16 is a 16-pin wide-SOIC 2500 V/us video amplifier listed at RS: https://nz.rs-online.com/web/p/video-amplifiers-ics/5237689"
-    ],
-    "web_searches_used": 8
-  },
-  "tier": "B",
-  "category": "high-speed-video-crossover",
-  "product_pages": [
-    "https://www.analog.com/en/products/ad811.html"
-  ]
+    ]
+  }
 }

@@ -1,204 +1,207 @@
 {
   "id": "TLE2142",
-  "name": "TLE2141 / TLE2142 / TLE2144 (TI Excalibur low-noise high-speed bipolar)",
-  "tagline": "TI Excalibur complementary-bipolar amp: 10.5 nV/rtHz, 5.9 MHz, runs on up to ±22 V and drives 10 nF loads. A niche pick found in some high-end DAC output stages.",
-  "technology": "Complementary bipolar (TI Excalibur process), internally compensated; single (TLE2141), dual (TLE2142), quad (TLE2144); A-suffix = tighter-precision grade",
+  "name": "TLE2141 / TLE2142 / TLE2144",
+  "type": "Complementary-bipolar low-noise op-amp, 1/2/4 channels",
+  "tier": "C",
+  "category": "bipolar-modern-low-noise",
+  "tagline": "TI Excalibur part: 10.5 nV/√Hz, 5.9 MHz, up to ±22 V, drives 10 nF; found in some high-end DAC output stages.",
   "manufacturers": [
     "Texas Instruments"
-  ],
-  "part_numbers": [
-    {
-      "pn": "TLE2141",
-      "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active (listed in TI PCN20250730004, July 2025 fab/die transition)",
-      "notes": "Single. Datasheet SLOS183."
-    },
-    {
-      "pn": "TLE2141A",
-      "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "Tighter-precision grade (the family title says 'TLE214x, TLE214xA'). Orderable status not confirmed."
-    },
-    {
-      "pn": "TLE2142",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active (TI product page and orderables such as TLE2142CP / TLE2142IP listed; lifecycle not explicitly confirmed)",
-      "notes": "Dual; the audio-relevant member. C/I/M temperature grades."
-    },
-    {
-      "pn": "TLE2142A",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "Tighter-precision dual grade; TI gpn link ti.com/lit/gpn/TLE2142A exists."
-    },
-    {
-      "pn": "TLE2144",
-      "channels": 4,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active (TI product page exists; lifecycle not explicitly confirmed)",
-      "notes": "Quad."
-    },
-    {
-      "pn": "TLE2144A",
-      "channels": 4,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "Tighter-precision quad grade; not confirmed as orderable."
-    },
-    {
-      "pn": "TLE2142-Q1",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active (TI product page exists; lifecycle not confirmed)",
-      "notes": "Automotive-qualified version with its own datasheet (literature number not seen)."
-    },
-    {
-      "pn": "TLE2142-EP",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "Enhanced Product version; separate datasheet seen on alldatasheet."
-    },
-    {
-      "pn": "TLE2144-EP",
-      "channels": 4,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "Enhanced Product quad; separate datasheet seen on alldatasheet."
-    },
-    {
-      "pn": "TLE2142AM / TLE2142AM-D / TLE2142M-D",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "Military-temperature and '-D' die/wafer products, each with a TI product page. Lifecycle not confirmed."
-    },
-    {
-      "pn": "TLE2142Y",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "likely obsolete (unconfirmed)",
-      "notes": "Chip-form version named in the older standalone datasheet 'TLE2142, TLE2142A, TLE2142Y'."
-    }
   ],
   "lineage": [
     {
       "vendor": "Texas Instruments",
       "role": "originator",
-      "period": "early 1990s to present",
-      "notes": "Part of TI's Excalibur complementary-bipolar line. Standalone per-device datasheets (e.g., 'TLE2142, TLE2142A, TLE2142Y') came first. A combined TLE214x/TLE214xA datasheet, SLOS183, followed in February 1997."
+      "period": "early 1990s–present",
+      "note": "Excalibur complementary-bipolar line. Per-device datasheets first; combined TLE214x/TLE214xA sheet SLOS183 from 1997-02."
     },
     {
       "vendor": "Texas Instruments",
-      "role": "fab transition",
-      "period": "2025 onward",
-      "notes": "PCN20250730004.1 (31 Jul 2025) adds RFAB (Richardson) as a fab site using TIB process technology, alongside DL-LIN (Dallas). The die revision moves from B to C and the datasheet from SLOS183D to SLOS183E. First ship 29 Oct 2025."
+      "role": "current",
+      "period": "2025–",
+      "note": "PCN20250730004.1 (2025-07-31): RFAB fab added, die rev B→C, SLOS183D→SLOS183E; first ship 2025-10-29."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "TLE2141",
+      "channels": 1,
+      "status": "active",
+      "note": "Single. Listed in PCN20250730004 (July 2025 fab/die transition)."
+    },
+    {
+      "pn": "TLE2141A",
+      "channels": 1,
+      "status": "unknown",
+      "note": "Tighter-precision grade; orderable status unconfirmed."
+    },
+    {
+      "pn": "TLE2142 (e.g. TLE2142CP / TLE2142IP)",
+      "channels": 2,
+      "status": "active",
+      "note": "Dual, the audio-relevant member. C/I/M temperature grades. Lifecycle not explicitly confirmed."
+    },
+    {
+      "pn": "TLE2142A",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Tighter-precision dual; TI link ti.com/lit/gpn/TLE2142A exists."
+    },
+    {
+      "pn": "TLE2144",
+      "channels": 4,
+      "status": "active",
+      "note": "Quad. Product page exists; lifecycle not explicitly confirmed."
+    },
+    {
+      "pn": "TLE2144A",
+      "channels": 4,
+      "status": "unknown",
+      "note": "Tighter-precision quad; orderable status unconfirmed."
+    },
+    {
+      "pn": "TLE2142-Q1",
+      "channels": 2,
+      "status": "active",
+      "note": "Automotive-qualified; own datasheet, literature number unknown. Lifecycle unconfirmed."
+    },
+    {
+      "pn": "TLE2142-EP",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Enhanced Product; separate datasheet on alldatasheet."
+    },
+    {
+      "pn": "TLE2144-EP",
+      "channels": 4,
+      "status": "unknown",
+      "note": "Enhanced Product quad; separate datasheet on alldatasheet."
+    },
+    {
+      "pn": "TLE2142AM / TLE2142AM-D / TLE2142M-D",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Military-temperature and '-D' die/wafer products with TI product pages."
+    },
+    {
+      "pn": "TLE2142Y",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Chip form, in the old standalone datasheet. Likely obsolete (unconfirmed)."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise density",
-      "value": "10.5 nV/√Hz",
-      "condition": "f = 1 kHz, typ",
-      "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+      "parameter": "Input noise (1 kHz)",
+      "value": "10.5 nV/√Hz (15 nV/√Hz at 10 Hz)",
+      "condition": "typ",
+      "source": "SLOS183 (TI datasheet)"
     },
     {
-      "parameter": "Input voltage noise density",
-      "value": "15 nV/√Hz",
-      "condition": "f = 10 Hz, typ",
-      "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
-    },
-    {
-      "parameter": "Gain-bandwidth product",
+      "parameter": "GBW",
       "value": "5.9 MHz",
       "condition": "typ",
-      "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+      "source": "SLOS183 (TI datasheet)"
     },
     {
       "parameter": "Slew rate",
       "value": "27 V/µs min",
-      "condition": "datasheet features list",
-      "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+      "condition": "settling 340–400 ns",
+      "source": "SLOS183 (TI datasheet)"
     },
     {
-      "parameter": "Settling time",
-      "value": "340–400 ns",
-      "condition": "features list (to 0.1% / 0.01% class)",
-      "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
-    },
-    {
-      "parameter": "Saturation recovery",
-      "value": "150 ns",
-      "condition": "typ",
-      "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
-    },
-    {
-      "parameter": "Short-circuit output current",
-      "value": "20 mA min",
-      "condition": "features list",
-      "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
-    },
-    {
-      "parameter": "Capacitive load capability",
-      "value": "10,000 pF",
-      "condition": "stable driving large capacitive loads",
-      "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
-    },
-    {
-      "parameter": "Supply voltage range",
+      "parameter": "Supply range",
       "value": "±2 V to ±22 V",
-      "condition": "performance relatively independent of supply over this range",
-      "source": "TI SLOS183 (https://www.ti.com/lit/ds/symlink/tle2142.pdf)"
+      "condition": "performance largely supply-independent",
+      "source": "SLOS183 (TI datasheet)"
+    },
+    {
+      "parameter": "Output current",
+      "value": "20 mA min short-circuit",
+      "condition": "drives 10,000 pF; 150 ns sat. recovery",
+      "source": "SLOS183 (TI datasheet)"
+    },
+    {
+      "parameter": "Offset voltage",
+      "value": "500 µV max",
+      "condition": "25 °C",
+      "source": "SLOS183D"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "Complementary bipolar (Excalibur), internally compensated",
+      "condition": "A suffix = tighter precision",
+      "source": "SLOS183 (TI datasheet)"
     }
   ],
   "reputation": {
-    "summary": "A niche, lightly discussed part among hi-fi hobbyists. In Head-Fi op-amp rolling threads, one poster says a 4300-euro Acoustic Arts DAC uses eight TLE2142s in its output stage. One user liked its tonality, body and bass. Another was not impressed compared with the LM4562. There is no broad consensus.",
+    "summary": "Niche and lightly discussed. A Head-Fi poster says a 4300-euro Acoustic Arts DAC uses eight TLE2142s in its output stage (unverified). One user liked its tonality, body and bass; another preferred the LM4562. There is no broad consensus.",
     "sonic_descriptors": [
-      "good tonality (one Head-Fi user)",
-      "body (one Head-Fi user)",
-      "good bass (one Head-Fi user)"
+      "good tonality",
+      "body",
+      "good bass"
     ],
     "typical_uses": [
-      "DAC output stages (per a Head-Fi report on an Acoustic Arts DAC)",
-      "op-amp rolling in headphone amps / DACs",
-      "high-rail (up to ±22 V) line stages"
+      "DAC output stages (Acoustic Arts DAC, reportedly)",
+      "Op-amp rolling in headphone amps and DACs",
+      "High-rail line stages up to ±22 V"
     ],
     "caveats": [
-      "Praise is sparse and mixed: one Head-Fi user preferred the LM4562.",
-      "Parts made from late October 2025 may be die revision C (RFAB, TIB process). No listening or measurement comparisons with older die B stock have been found.",
-      "The Acoustic Arts DAC claim is second-hand from a forum post and has not been independently verified."
+      "Praise is sparse and mixed; one Head-Fi user preferred the LM4562.",
+      "Parts from late October 2025 may be die rev C (RFAB); no comparisons with die B yet.",
+      "The Acoustic Arts DAC claim is second-hand from a forum post."
     ],
     "sources": [
       "https://www.head-fi.org/threads/audio-gd-discrete-op-amps-reviewed-opa-earth-opa-moon-opa-sun-v-2.397691/page-16",
       "https://www.head-fi.org/threads/best-sounding-cheep-op-amp-for-cmoys-opa2227-opa2228-ad8066-other.243642/page-4"
     ]
   },
+  "counterfeit_notes": "No specific counterfeit reports. Buy from authorized distributors, as with other TI DIP op-amps sold on marketplaces. Genuine stock from late October 2025 on may be die revision C from RFAB.",
+  "alternatives": [
+    "LM4562 / LME49720",
+    "NE5532",
+    "TLE2072 (Excalibur JFET-input sibling)",
+    "OPA2134"
+  ],
+  "silicon_changes": [
+    {
+      "vendor": "Texas Instruments",
+      "when": "2025-07-31 · PCN20250730004.1",
+      "part_numbers_affected": [
+        "TLE2141 (confirmed in PCN listing)",
+        "TLE2142 (likely; same SLOS183 datasheet, not explicitly confirmed)",
+        "TLE2144 (likely; not explicitly confirmed)"
+      ],
+      "identification": "Die rev C and RFAB fab codes on reel/box labels; date codes after late October 2025; datasheet SLOS183E. Dallas die-B stock may ship in parallel.",
+      "summary": "TI added RFAB (Richardson, TIB process) as a fab alongside DL-LIN (Dallas): die revision B to C, datasheet SLOS183D to SLOS183E, new assembly BOM options. Part of TI's move off 200 mm fabs. First ship 29 Oct 2025. TI expects no form, fit, function or reliability impact.",
+      "spec_deltas": [
+        {
+          "parameter": "Die revision",
+          "before": "B",
+          "after": "C"
+        },
+        {
+          "parameter": "Wafer fab",
+          "before": "DL-LIN (Dallas)",
+          "after": "DL-LIN or RFAB (Richardson, TIB process)"
+        },
+        {
+          "parameter": "Datasheet",
+          "before": "SLOS183D (Oct 2012)",
+          "after": "SLOS183E (Jul 2025)"
+        }
+      ],
+      "audio_impact": "Unknown. A new die on a different process could change noise, distortion or stability. No measurements or listening comparisons found.",
+      "compatibility_risk": "medium: new die and process under same part number; SLOS183E tables not yet compared with rev D.",
+      "sources": [
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7170/PCN20250730004.1.pdf",
+        "https://www.ti.com/lit/ds/slos183e/slos183e.pdf"
+      ],
+      "confidence": "medium",
+      "kind": "fab-or-process-transfer",
+      "verification": "PCN lists TLE2141; TLE2142 and TLE2144 inclusion likely but not explicit."
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Texas Instruments",
@@ -210,7 +213,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Current TI datasheet in the new format ('1 Features'). Issued with PCN20250730004 (die rev B to C, RFAB). The July 2025 date comes from a search summary, not the PDF page."
+      "note": "Current, new format; PCN20250730004 (die B→C, RFAB). Date not from PDF."
     },
     {
       "vendor": "Texas Instruments",
@@ -234,7 +237,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Search summaries give SLOS183D (Feb 1997, rev Oct 2012) as the pre-2025 revision. This mirror probably freezes rev D, but that is inferred from the summary and not confirmed on the page."
+      "note": "Header SLOS183D, Feb 1997, revised Oct 2012; page not checked."
     },
     {
       "vendor": "Texas Instruments",
@@ -246,7 +249,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "probable",
-      "note": "Mirror of the TLE2141 datasheet from the same SLOS183 family document. Revision unconfirmed."
+      "note": "TLE2141 mirror of the SLOS183 family sheet; revision unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -258,7 +261,7 @@
       "url_kind": "vendor_legacy",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "TI gpn redirect indexed with the old-format title. It probably resolves to the current revision now. Unconfirmed."
+      "note": "TI redirect indexed with old title; probably current revision now."
     },
     {
       "vendor": "Texas Instruments",
@@ -270,7 +273,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Older standalone TLE2142 datasheet that includes the Y (chip) version. Its literature number and date were not seen. Unconfirmed."
+      "note": "Old standalone TLE2142 sheet with Y chip version; number, date unknown."
     },
     {
       "vendor": "Texas Instruments",
@@ -282,7 +285,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision not shown in the search summary. Unconfirmed."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Texas Instruments",
@@ -294,7 +297,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A later alldatasheet upload (higher ID). Revision unconfirmed."
+      "note": "Later alldatasheet upload (higher ID); revision unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -306,7 +309,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "An early alldatasheet upload (low ID), so it may hold an older revision. Unconfirmed."
+      "note": "Early alldatasheet upload (low ID); may be an older revision."
     },
     {
       "vendor": "Texas Instruments",
@@ -318,7 +321,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision not shown. Unconfirmed."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Texas Instruments",
@@ -330,7 +333,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Separate automotive datasheet. Literature number and revision not seen."
+      "note": "Separate automotive datasheet; literature number and revision unknown."
     },
     {
       "vendor": "Texas Instruments",
@@ -342,7 +345,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Enhanced Product datasheet mirror. Unconfirmed details."
+      "note": "Enhanced Product datasheet mirror; details unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -354,7 +357,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Enhanced Product quad datasheet mirror. Unconfirmed details."
+      "note": "Enhanced Product quad datasheet mirror; details unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -366,7 +369,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the same file ID (1442138) as the datasheet4u copy already listed. The singular title ('...OPERATIONAL AMPLIFIER') and the 'etcTI' category point to an older per-device edition, but the search summary shows no header or footer."
+      "note": "Same file as datasheet4u 1442138; singular title suggests older per-device edition."
     },
     {
       "vendor": "Texas Instruments",
@@ -390,7 +393,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The singular title matches the old per-device edition's wording, not the SLOS183 family title. The revision was not shown."
+      "note": "Singular title matches old per-device edition; revision not shown."
     },
     {
       "vendor": "Texas Instruments",
@@ -402,7 +405,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the alldatasheet.net copy of the alldatasheet.com entry 228137 already listed. It is the same file, so it is a duplicate kept only as a fallback host."
+      "note": "Duplicate of alldatasheet.com 228137, kept as fallback host."
     },
     {
       "vendor": "Texas Instruments",
@@ -414,7 +417,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is a TLE2141 entry. It could be the SLOS183 family sheet or an older standalone TLE2141 edition; the summary does not say which."
+      "note": "SLOS183 family sheet or older standalone TLE2141 edition; unclear."
     },
     {
       "vendor": "Texas Instruments",
@@ -426,7 +429,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "It sits next to file 1442138 (TLE2142) in datasheet4u's etcTI category. It may be an older per-device TLE2141 edition, but this is not confirmed."
+      "note": "Next to file 1442138; may be older per-device TLE2141 edition."
     },
     {
       "vendor": "Texas Instruments",
@@ -438,7 +441,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Aggregator page. The revision was not shown."
+      "note": "Aggregator page; revision not shown."
     },
     {
       "vendor": "Texas Instruments",
@@ -450,7 +453,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The Datasheet Archive often holds several scans of different ages under one part number. It is worth checking for SLOS183A/B/C or pre-1997 editions. Nothing specific was shown."
+      "note": "Often holds several scans; check for SLOS183A/B/C or pre-1997 editions."
     },
     {
       "vendor": "Texas Instruments",
@@ -462,7 +465,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Search listing that may hold several editions. Nothing specific was shown."
+      "note": "Search listing that may hold several editions."
     },
     {
       "vendor": "Texas Instruments",
@@ -474,7 +477,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Digchip mirrors are usually early-2000s scrapes, so this copy may be an early SLOS183 lettered revision. That is not confirmed."
+      "note": "Digchip scrapes are usually early-2000s; may be early lettered SLOS183."
     },
     {
       "vendor": "Texas Instruments",
@@ -486,90 +489,79 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Aggregator page, probably a current SLOS183 copy. The revision was not shown."
+      "note": "Aggregator page, probably current SLOS183; revision not shown."
     }
+  ],
+  "product_pages": [
+    "https://www.ti.com/product/TLE2142",
+    "https://www.ti.com/product/TLE2141",
+    "https://www.ti.com/product/TLE2141A",
+    "https://www.ti.com/product/TLE2144",
+    "https://www.ti.com/product/TLE2141-EP",
+    "https://www.ti.com/product/TLE2142-Q1"
   ],
   "revision_history": [
     {
       "vendor": "Texas Instruments",
+      "doc_number": "unknown (standalone 'TLE2142, TLE2142A, TLE2142Y')",
+      "revision": "",
+      "date": "",
+      "changes": "Pre-1997 per-device edition with TLE2142Y. Text cites 'patent-pending' input, 6-Hz 1/f corner, 40 V/µs into 800 pF; later text says 10 Hz (unconfirmed)."
+    },
+    {
+      "vendor": "Texas Instruments",
       "doc_number": "SLOS183",
-      "revision": "(original)",
-      "date": "February 1997",
-      "changes": "First combined TLE214x/TLE214xA family datasheet, replacing the per-device datasheets."
+      "revision": "original",
+      "date": "1997-02",
+      "changes": "First combined TLE214x/TLE214xA family datasheet, replacing the per-device sheets."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS183",
       "revision": "D",
-      "date": "October 2012",
-      "changes": "Last old-format revision. Detailed changes not seen. Dates of revisions A–C unknown."
+      "date": "2012-10",
+      "changes": "Last old format. Front page: 10.5 nV/√Hz, 15 nV/√Hz at 10 Hz, 10,000 pF, 20 mA, 27 V/µs, 5.9 MHz, 500 µV Vio."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS183",
       "revision": "E",
-      "date": "July 2025",
-      "changes": "Moved to TI's new datasheet format. Issued under PCN20250730004 (RFAB fab option, die revision B to C, BOM options). The specific spec-table changes were not seen."
-    },
+      "date": "2025-07",
+      "changes": "New TI format, issued under PCN20250730004 (RFAB fab, die B→C, BOM options). Spec-table changes not seen."
+    }
+  ],
+  "revision_chains": [
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS183",
-      "revision": "D",
-      "date": "February 1997 - revised October 2012",
-      "changes": "A search summary confirms the header 'SLOS183D - FEBRUARY 1997 - REVISED OCTOBER 2012' (radiolocman copy). Its front-page specs: 15 nV/rtHz at 10 Hz and 10.5 nV/rtHz at 1 kHz, 10,000-pF load capability, 20 mA minimum short-circuit output current, 27 V/us minimum slew rate, 5.9 MHz GBW, and 500 uV maximum Vio at 25 C. The change list against revision C was not shown."
+      "known": [
+        {
+          "rev": "original",
+          "date": "1997-02"
+        },
+        {
+          "rev": "D",
+          "date": "2012-10"
+        },
+        {
+          "rev": "E",
+          "date": "2025-07"
+        }
+      ],
+      "missing": [
+        "A",
+        "B",
+        "C"
+      ],
+      "note": "No copy identified for original, A, B or C. Old aggregator scrapes may hold them."
     },
     {
       "vendor": "Texas Instruments",
-      "doc_number": "unknown (standalone 'TLE2142, TLE2142A, TLE2142Y' per-device datasheet, pre-SLOS183)",
-      "revision": "unknown",
-      "date": "unknown (before February 1997)",
-      "changes": "The old per-device edition (title 'TLE2142, TLE2142A, TLE2142Y EXCALIBUR LOW-NOISE HIGH-SPEED...', icbase copy) includes the TLE2142Y chip-form device. Its description, as seen in a search snippet, mentions a 'patent-pending' input stage giving 10.5 nV/rtHz with a 6-Hz 1/f corner and a symmetrical 40 V/us slew rate into loads up to 800 pF. Another snippet, probably from the current TI text, says a 10-Hz 1/f corner. Which snippet came from which copy is not certain, so this possible spec or wording change needs checking against the PDFs."
+      "doc_number": "unknown (pre-1997 per-device sheets)",
+      "known": [],
+      "missing": [],
+      "note": "TLE2142 sheet on icbase; probable copies on datasheet4u 1442138/1442136, semiconductors.es. Numbers, dates unknown."
     }
-  ],
-  "silicon_changes": [
-    {
-      "vendor": "Texas Instruments",
-      "when": "PCN20250730004.1 issued 31 Jul 2025; proposed first ship 29 Oct 2025",
-      "part_numbers_affected": [
-        "TLE2141 (confirmed in PCN listing)",
-        "TLE2142 (likely; same SLOS183 datasheet, not explicitly confirmed)",
-        "TLE2144 (likely; not explicitly confirmed)"
-      ],
-      "identification": "Die revision C (was B) and RFAB fab-site codes on reel/box labels. Date codes after late October 2025. Datasheet SLOS183E instead of SLOS183D. Existing DL-LIN (Dallas) die-B material may ship in parallel.",
-      "summary": "TI qualified RFAB (Richardson) using TIB process technology as an extra fab alongside DL-LIN (Dallas), with a die revision from B to C, a datasheet update from SLOS183D to SLOS183E, and new assembly BOM options. This is part of TI's multiyear move off 200 mm factories. TI states there is no anticipated impact on form, fit, function, quality or reliability.",
-      "spec_deltas": [
-        {
-          "parameter": "Die revision",
-          "before": "B",
-          "after": "C"
-        },
-        {
-          "parameter": "Wafer fab",
-          "before": "DL-LIN (Dallas)",
-          "after": "DL-LIN or RFAB (Richardson, TIB process)"
-        },
-        {
-          "parameter": "Datasheet",
-          "before": "SLOS183D (Oct 2012)",
-          "after": "SLOS183E (Jul 2025)"
-        }
-      ],
-      "audio_impact": "Unknown. A new die on a different process under the same part number could change noise, distortion or stability details. No measurements or listening comparisons found.",
-      "compatibility_risk": "medium: new die and process under an unchanged part number. TI claims no form/fit/function change, but the SLOS183E spec tables have not been compared with rev D.",
-      "sources": [
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7170/PCN20250730004.1.pdf",
-        "https://www.ti.com/lit/ds/slos183e/slos183e.pdf"
-      ],
-      "confidence": "medium",
-      "kind": "fab-or-process-transfer"
-    }
-  ],
-  "counterfeit_notes": "No specific counterfeit reports found in this pass. As with other TI DIP op-amps sold on marketplaces, buy from authorized distributors. Note that genuine post-October-2025 stock may be die revision C from RFAB.",
-  "alternatives": [
-    "LM4562 / LME49720 (named in a Head-Fi comparison)",
-    "NE5532",
-    "TLE2072 (TI Excalibur JFET-input sibling)",
-    "OPA2134"
   ],
   "ti_literature_numbers": [
     "SLOS183"
@@ -590,12 +582,11 @@
     "https://www.ti.com/product/TLE2144"
   ],
   "open_questions": [
-    "Dates and change lists for SLOS183 revisions A, B and C. Literature numbers of the pre-1997 standalone TLE2141/TLE2142/TLE2144 datasheets.",
-    "Does PCN20250730004 explicitly list TLE2142, TLE2144, the A grades, -Q1 and -EP? Which spec values changed from SLOS183D to SLOS183E?",
-    "Lifecycle status of each orderable (C/I/M grades, A grades, Y chip versions, -EP, AM-D/M-D).",
-    "Literature numbers and revisions of the TLE2142-Q1 and TLE2142-EP / TLE2144-EP datasheets.",
+    "Dates and changes for SLOS183 A, B, C; literature numbers of pre-1997 standalone sheets?",
+    "Does PCN20250730004 list TLE2142, TLE2144, A grades, -Q1, -EP? Which specs changed from SLOS183D to E?",
+    "Lifecycle status of each orderable (C/I/M, A grades, Y, -EP, AM-D/M-D); -Q1/-EP literature numbers?",
     "Do die rev C (RFAB) parts measure or sound different from die rev B?",
-    "Which revision is held by each mirror (radiolocman, alldatasheet IDs 28934/228137/955854, datasheet4u, icbase)?"
+    "Was the 1/f corner 6 Hz or 10 Hz? Check old and new PDFs."
   ],
   "sources": [
     "https://www.ti.com/lit/ds/symlink/tle2142.pdf",
@@ -612,11 +603,22 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 6,
+    "claims_confirmed": [
+      "Family datasheet SLOS183 'TLE214x, TLE214xA Excalibur...'; rev D Feb 1997, revised Oct 2012 (https://www.radiolocman.com/datasheet/data.html?%2FTLE2142=&di=330795).",
+      "Current SLOS183E dated July 2025, new format (https://www.ti.com/lit/ds/slos183e/slos183e.pdf).",
+      "PCN20250730004.1 (31 Jul 2025, first ship 29 Oct 2025): RFAB/TIB added, die B→C, TLE2141 datasheet SLOS183D→E, no anticipated impact (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7170/PCN20250730004.1.pdf).",
+      "10.5 nV/√Hz, 15 nV/√Hz at 10 Hz, 5.9 MHz, 27 V/µs, 340–400 ns settling, 150 ns recovery, 20 mA, 10,000 pF (https://www.ti.com/lit/ds/symlink/tle2142.pdf).",
+      "Performance largely supply-independent over ±2 V to ±22 V (https://www.ti.com/lit/ds/symlink/tle2142.pdf).",
+      "Older standalone 'TLE2142, TLE2142A, TLE2142Y' datasheet exists on a mirror (https://www.icbase.com/File/PDF/TTI/TTI20590106.pdf).",
+      "TLE2142-Q1 has its own TI datasheet and product page (https://www.ti.com/lit/ds/symlink/tle2142-q1.pdf).",
+      "TI product pages exist for TLE2142AM, TLE2142AM-D and TLE2142M-D (https://www.ti.com/product/TLE2142AM-D)."
+    ],
     "refuted_claims": [],
     "corrections": [
-      "Draft part_numbers had only TLE2142 with channels 0 and status unknown. Set it to 2 channels and added TLE2141 (1 ch), TLE2144 (4 ch), the A grades, -Q1, -EP, AM/M-D and the Y chip version.",
-      "Technology changed from 'precision bipolar dual' to complementary bipolar Excalibur process covering single/dual/quad.",
-      "Filled in the empty datasheets, revision_history, key_specs, silicon_changes, lineage, ti_literature_numbers (SLOS183) and archive seeds from web-confirmed facts."
+      "TLE2142 set to 2 channels; added TLE2141, TLE2144, A grades, -Q1, -EP, AM/M-D and Y chip version.",
+      "Technology corrected from 'precision bipolar dual' to complementary-bipolar Excalibur, single/dual/quad.",
+      "Filled datasheets, revision history, key specs, silicon changes, lineage, SLOS183 and archive seeds."
     ],
     "unverified_urls": [
       "https://www.ti.com/lit/ds/slos183d/slos183d.pdf",
@@ -629,28 +631,6 @@
       "https://datasheet4u.com/datasheet/etcTI/TLE2142-1442138",
       "https://www.alldatasheet.com/datasheet-pdf/pdf/254693/TI/TLE2142-EP.html",
       "https://www.alldatasheet.com/datasheet-pdf/pdf/254694/TI/TLE2144-EP.html"
-    ],
-    "claims_confirmed": [
-      "The family datasheet is SLOS183 'TLE214x, TLE214xA Excalibur Low-Noise High-Speed Precision Operational Amplifiers'; rev D is Feb 1997, revised Oct 2012 (https://www.radiolocman.com/datasheet/data.html?%2FTLE2142=&di=330795)",
-      "Current revision SLOS183E is dated July 2025 and is in the new format (https://www.ti.com/lit/ds/slos183e/slos183e.pdf)",
-      "PCN20250730004.1 (31 Jul 2025, first ship 29 Oct 2025) adds RFAB with TIB process, changes die rev B to C, and moves TLE2141's datasheet from SLOS183D to SLOS183E; no anticipated form/fit/function impact (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7170/PCN20250730004.1.pdf)",
-      "Specs: 10.5 nV/√Hz at 1 kHz, 15 nV/√Hz at 10 Hz, 5.9 MHz GBW, 27 V/µs min slew, 340–400 ns settling, 150 ns saturation recovery, 20 mA min short-circuit current, 10,000 pF load capability (https://www.ti.com/lit/ds/symlink/tle2142.pdf)",
-      "Performance is relatively independent of supply over ±2 V to ±22 V (https://www.ti.com/lit/ds/symlink/tle2142.pdf)",
-      "An older standalone 'TLE2142, TLE2142A, TLE2142Y' datasheet exists on a third-party mirror (https://www.icbase.com/File/PDF/TTI/TTI20590106.pdf)",
-      "TLE2142-Q1 has its own TI datasheet and product page (https://www.ti.com/lit/ds/symlink/tle2142-q1.pdf)",
-      "TI product pages exist for TLE2142AM, TLE2142AM-D and TLE2142M-D (https://www.ti.com/product/TLE2142AM-D)"
-    ],
-    "web_searches_used": 6
-  },
-  "tier": "C",
-  "category": "bipolar-modern-low-noise",
-  "product_pages": [
-    "https://www.ti.com/product/TLE2142",
-    "https://www.ti.com/product/TLE2141",
-    "https://www.ti.com/product/TLE2141A",
-    "https://www.ti.com/product/TLE2144",
-    "https://www.ti.com/product/TLE2141-EP",
-    "https://www.ti.com/product/TLE2142-Q1"
-  ],
-  "revision_chain_notes": "TI is the only vendor found. No second sources or acquirer re-issues turned up for TLE2141/2142/2144.\n\nRevision chain, oldest to newest:\n(1) Pre-1997 per-device datasheets. The dual sheet is 'TLE2142, TLE2142A, TLE2142Y EXCALIBUR LOW-NOISE HIGH-SPEED PRECISION OPERATIONAL AMPLIFIER' (icbase TTI20590106.pdf, already listed). Singular-title copies that probably belong to this generation are datasheet4u/datasheetspdf 1442138 (TLE2142) and 1442136 (TLE2141), and semiconductors.es. Their literature number(s) and dates are still MISSING, as are any separate TLE2141 and TLE2144 standalone lit numbers.\n(2) SLOS183 original, February 1997: the combined TLE214x/TLE214xA sheet. No copy has been identified as holding it.\n(3) SLOS183A, B and C: dates and copies still MISSING. None of the 4 searches surfaced these letters. Likely holders are older aggregator scrapes (digchip, datasheetarchive, alldatasheet 28934 TLE214X / 228137 / 201893), but none showed a header.\n(4) SLOS183D, 'FEBRUARY 1997 - REVISED OCTOBER 2012': confirmed again from the header in the search summary (radiolocman di=330795).\n(5) SLOS183E, July 2025: new-format sheet on ti.com, tied to PCN20250730004 (RFAB fab, die B to C).\n\nA possible text change between the old per-device edition and later SLOS183 text was seen: 'patent-pending' input stage with a 6-Hz 1/f corner versus 10-Hz. It needs checking. The derivative datasheets (TLE2141-EP, TLE2142-EP, TLE2144-EP, TLE2142-Q1) have unknown lit numbers and revision chains.\n\nThe archive seed URLs follow TI's standard legacy URL patterns (focus.ti.com symlink, and a slos183d revision-specific path modelled on the confirmed slos183e path). They were NOT seen in search results and should be treated as candidate Wayback lookups only.\n\nSources: https://www.radiolocman.com/datasheet/data.html?%2FTLE2142=&di=330795 ; https://www.icbase.com/File/PDF/TTI/TTI20590106.pdf ; https://datasheetspdf.com/pdf/1442138/etcTI/TLE2142/1 ; https://semiconductors.es/datasheet/TLE2142.html ; https://www.alldatasheet.com/datasheet-pdf/pdf/201893/TI/TLE2141.html ; https://datasheet4u.com/datasheet/etcTI/TLE2141-1442136 ; https://www.ti.com/product/TLE2141 ; https://www.ti.com/product/TLE2144"
+    ]
+  }
 }

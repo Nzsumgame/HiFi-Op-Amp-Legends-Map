@@ -1,119 +1,115 @@
 {
   "id": "AD8022",
-  "name": "AD8022 (ADI dual high-speed, low-noise op-amp)",
-  "tagline": "ADI's 130 MHz, 2.5 nV/√Hz XFCB bipolar dual; Head-Fi op-amp rollers say it beats NJM4580 in resolution and comes close to an AD797.",
-  "technology": "Dual voltage-feedback bipolar op-amp on ADI's high-voltage XFCB (complementary bipolar) process. Datasheet title: 'Dual High Speed, Low Noise Op Amp'. High output current, built to stay stable into capacitive loads.",
+  "name": "AD8022",
+  "type": "High-speed, low-noise bipolar op-amp, dual",
+  "tier": "C",
+  "category": "high-speed-video-crossover",
+  "tagline": "ADI's 130 MHz, 2.5 nV/√Hz XFCB bipolar dual. Head-Fi rollers say it out-resolves NJM4580 and nears an AD797.",
   "manufacturers": [
     "Analog Devices"
+  ],
+  "lineage": [
+    {
+      "vendor": "Analog Devices",
+      "role": "originator",
+      "period": "c. 2000–present",
+      "note": "Sole source on XFCB high-voltage bipolar. Datasheet Rev A 9/02, B 5/05, C 8/11."
+    }
   ],
   "part_numbers": [
     {
       "pn": "AD8022ARZ",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "available from distributors (RS, LCSC); ADI lifecycle state not confirmed in this pass (believed production)",
-      "notes": "8-lead SOIC_N, lead-free (Z). Reel suffixes (-REEL/-REEL7) are not confirmed."
+      "status": "active",
+      "note": "8-lead SOIC_N, lead-free. Stocked by RS, LCSC; ADI lifecycle unconfirmed."
     },
     {
       "pn": "AD8022ARMZ",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "in stock at LCSC; ADI lifecycle state not confirmed (believed production)",
-      "notes": "8-lead MSOP, lead-free. Covered by PCN 14_0246, which added ASE Chungli as an MSOP assembly site (summary says it is listed)."
+      "status": "active",
+      "note": "8-lead MSOP, lead-free; LCSC stock. Reel suffixes -REEL/-REEL7 unconfirmed."
     },
     {
       "pn": "AD8022AR",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "legacy leaded SOIC code; probably obsolete (not confirmed)",
-      "notes": "Named in the SOIC ordering options of older datasheets. Marketplace listings still use this code."
+      "status": "unknown",
+      "note": "Legacy leaded SOIC code from older datasheets; probably obsolete."
     },
     {
       "pn": "AD8022ARM",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unconfirmed; would be a legacy leaded MSOP code",
-      "notes": "Not confirmed by any search result. Kept only as a probable pre-RoHS code."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "Analog Devices",
-      "role": "originator and sole source",
-      "period": "Rev 0 datasheet (date not confirmed) to present; Rev A 9/02, Rev B 5/05, Rev C 8/11",
-      "notes": "Single-source ADI part on the XFCB high-voltage bipolar process. No second sources are known."
+      "status": "unknown",
+      "note": "Probable pre-RoHS MSOP code; never confirmed."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise",
+      "parameter": "Input noise (1 kHz)",
       "value": "2.5 nV/√Hz",
-      "condition": "@ 100 kHz",
-      "source": "https://www.analog.com/en/products/ad8022.html"
+      "condition": "f = 100 kHz",
+      "source": "ADI product page"
     },
     {
-      "parameter": "Input current noise",
+      "parameter": "Current noise",
       "value": "1.2 pA/√Hz",
       "condition": "typ",
-      "source": "https://www.analog.com/en/products/ad8022.html"
+      "source": "ADI product page"
     },
     {
-      "parameter": "-3 dB bandwidth",
-      "value": "130 MHz",
+      "parameter": "GBW",
+      "value": "130 MHz (−3 dB bandwidth)",
       "condition": "G = +1",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8022.pdf"
+      "source": "Datasheet Rev. C"
     },
     {
       "parameter": "Slew rate",
-      "value": "50 V/µs",
+      "value": "50 V/µs; settles 68 ns to 0.1%",
       "condition": "typ",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8022.pdf"
-    },
-    {
-      "parameter": "Settling time",
-      "value": "68 ns",
-      "condition": "to 0.1%",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8022.pdf"
-    },
-    {
-      "parameter": "Quiescent current",
-      "value": "4.0 mA per amplifier",
-      "condition": "typ",
-      "source": "https://www.analog.com/en/products/ad8022.html"
+      "source": "Datasheet Rev. C"
     },
     {
       "parameter": "Supply range",
       "value": "+5 V single, or ±2.5 V to ±12 V",
       "condition": "operating",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8022.pdf"
+      "source": "Datasheet Rev. C"
+    },
+    {
+      "parameter": "Supply current",
+      "value": "4.0 mA per amplifier",
+      "condition": "typ",
+      "source": "ADI product page"
+    },
+    {
+      "parameter": "Output current",
+      "value": "High output current; stable into capacitive loads",
+      "condition": "",
+      "source": "Datasheet Rev. C"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "Bipolar, voltage feedback (XFCB complementary bipolar)",
+      "condition": "",
+      "source": "ADI product page"
     }
   ],
   "reputation": {
-    "summary": "Posters in Head-Fi's 'The Opamp thread' say replacing the NJM4580 with the AD8022 improved resolution and timbre accuracy, and that it sounds close to the AD797ANZ. They describe it as spatial, clear and very transparent ('pure music'), and say it can drive headphones directly. Caveats: it needs careful decoupling or it oscillates, and its high input bias current makes it poor for high-impedance inputs. This is a niche reputation from forum op-amp rolling, not a widely cited audio standard.",
+    "summary": "Head-Fi 'Opamp thread' posters say swapping NJM4580 for AD8022 improved resolution and timbre, coming close to an AD797ANZ. They call it spatial, clear and transparent ('pure music') and say it can drive headphones directly. It needs careful decoupling, and high bias current suits low-impedance sources only. A niche forum reputation.",
     "sonic_descriptors": [
       "resolving",
       "transparent",
       "spatial",
       "clear",
-      "accurate timbre (per Head-Fi posters)"
+      "accurate timbre"
     ],
     "typical_uses": [
-      "op-amp rolling in NJM4580/NE5532 sockets (DACs, portable players, sound cards)",
-      "direct headphone drive at modest levels (per forum posters)",
-      "low-impedance, low-noise preamp and ADC-driver stages (datasheet design intent)"
+      "Rolling in NJM4580 / NE5532 sockets",
+      "Direct headphone drive at modest levels (forum reports)",
+      "Low-impedance, low-noise preamp and ADC-driver stages"
     ],
     "caveats": [
-      "130 MHz bandwidth: needs tight decoupling and short layout, and can oscillate in socket adapters",
-      "bipolar input with relatively high input bias current: poor choice behind high-impedance sources or large feedback resistors",
-      "SOIC/MSOP only, so it needs a DIP-8 adapter for socket rolling"
+      "130 MHz bandwidth: needs tight decoupling and short layout; can oscillate in socket adapters.",
+      "Relatively high input bias current: poor behind high-impedance sources or large feedback resistors.",
+      "SOIC / MSOP only; needs a DIP-8 adapter for socket rolling."
     ],
     "sources": [
       "https://www.head-fi.org/threads/the-opamp-thread.432749/page-113",
@@ -121,6 +117,88 @@
       "https://www.analog.com/en/products/ad8022.html"
     ]
   },
+  "counterfeit_notes": "No documented AD8022 counterfeits. Cheap multi-pack listings (e.g. Amazon 'AD8022ARZ AD8022AR SOP-8') are of unknown origin. Buy from authorised distributors; remarked SOIC audio duals are common.",
+  "alternatives": [
+    "AD797 (single)",
+    "AD8599",
+    "LME49720 / LM4562",
+    "OPA1612",
+    "AD8066 (FET input)",
+    "NE5532"
+  ],
+  "silicon_changes": [
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices",
+      "when": "2014 · PCN 14_0246 (Rev. -, A, B)",
+      "part_numbers_affected": [
+        "AD8022ARMZ",
+        "AD8022ARMZ-REEL / -REEL7 (if listed)"
+      ],
+      "summary": "ASE Chungli, Taiwan added as an assembly subcontractor for 8- and 10-lead MSOP to secure supply. AD8022 MSOP variants are reportedly listed. Die and datasheet unchanged.",
+      "identification": "ASE Chungli parts carry a backside tool or laser mark 'TAIWAN' (country of origin); otherwise use a date code after the PCN effective date.",
+      "spec_deltas": [
+        {
+          "parameter": "MSOP assembly site",
+          "before": "existing site(s)",
+          "after": "existing site(s) plus ASE Chungli, Taiwan"
+        }
+      ],
+      "audio_impact": "None expected (same die).",
+      "compatibility_risk": "low: assembly site added; same die and datasheet.",
+      "sources": [
+        "https://www.analog.com/media/en/pcn/ADI_PCN_14_0246_Rev_-_Form.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_14_0246_Rev_A_Form.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_14_0246_Rev_B_Form.pdf",
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1898/ADI_PCN_14_0246_Rev_-_Form.pdf"
+      ],
+      "confidence": "medium",
+      "verification": "PCN content and Rev. -, A, B forms confirmed; AD8022ARMZ listing reported but not directly seen."
+    },
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices",
+      "when": "c. 2010 · PCN 10_0339 (inferred date)",
+      "part_numbers_affected": [
+        "AD8022ARMZ"
+      ],
+      "summary": "PCN 10_0339 has an attachment 'AD8022ARMZ Marking Change' / 'Marking Comparison', showing the MSOP top mark changed. Reason and any other changes unknown. No die change indicated.",
+      "identification": "Old and new top marks are shown in ADI's marking-comparison attachment; the marking text itself has not been read.",
+      "spec_deltas": [],
+      "audio_impact": "None (marking only).",
+      "compatibility_risk": "low: marking only; matters when identifying genuine or older stock.",
+      "sources": [
+        "https://www.analog.com/media/en/pcn/ADI_PCN_10_0339_Rev_-_AD8022ARMZ%20Marking%20Change.docx"
+      ],
+      "confidence": "low",
+      "verification": "ADI-hosted attachment found; PCN text not retrieved (unrelated PCN 20_0339 came up instead). Scope unconfirmed."
+    },
+    {
+      "kind": "fab-or-process-transfer",
+      "vendor": "Analog Devices",
+      "when": "2026 · PCN 26_0028 Rev. -",
+      "part_numbers_affected": [
+        "AD8022ARMZ, AD8022ARMZ-REEL, AD8022ARMZ-REEL7 (reported once; unconfirmed)"
+      ],
+      "summary": "PCN 26_0028 qualifies ADI Limerick, Ireland (ADLK) as a wafer fab for XF26/XF18/XF12/XF8 process products. One source listed AD8022ARMZ and reel variants; a second check did not confirm it.",
+      "identification": "No marking change. Trace by ADI lot or date code against the PCN effective date.",
+      "spec_deltas": [
+        {
+          "parameter": "Wafer fab site",
+          "before": "previous fab for XF-process products (not named)",
+          "after": "ADI Limerick, Ireland (ADLK) qualified"
+        }
+      ],
+      "audio_impact": "None documented; ADI states no fit, form, function or reliability impact.",
+      "compatibility_risk": "low: same design and datasheet per ADI; AD8022 listing unconfirmed.",
+      "sources": [
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8899/ADI_PCN_26_0028_Rev_-_Form.pdf",
+        "https://www.mouser.com/PCN/ADI_ADI_PCN_26_0028_Rev___Form.pdf"
+      ],
+      "confidence": "low",
+      "verification": "PCN scope confirmed; AD8022 inclusion seen only once and unconfirmed."
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Analog Devices",
@@ -132,7 +210,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current ADI datasheet. The lowercase path .../ad8022.pdf also resolves. Revision history lists 8/11 Rev B→C, 5/05 Rev A→B and 9/02 Rev 0→A."
+      "note": "Current ADI datasheet; lowercase .../ad8022.pdf also resolves."
     },
     {
       "vendor": "Analog Devices (University of Chicago EDG mirror)",
@@ -142,9 +220,9 @@
       "date": "2002-09",
       "url": "https://edg.uchicago.edu/~bogdan/ADC_QUIET/DOC/parts/AD8022.pdf",
       "url_kind": "third_party_mirror",
-      "confidence": "medium",
+      "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Search snippet shows 'REV. A' in this copy. It preserves the pre-2005 Rev A."
+      "note": "Shows 'REV. A'; preserves the pre-2005 edition."
     },
     {
       "vendor": "Analog Devices (RadioLocman mirror)",
@@ -156,7 +234,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Page 3 shows the revision history (8/11 B→C, 5/05 A→B, 9/02 0→A). The same document is at radiolocman.com di=121365."
+      "note": "Page 3 shows revision history (8/11, 5/05, 9/02)."
     },
     {
       "vendor": "Analog Devices (RadioLocman mirror)",
@@ -168,7 +246,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is a separate document ID from di=121365 and may hold an older revision. Revision unconfirmed."
+      "note": "Separate document ID (di=79818); may hold an older revision."
     },
     {
       "vendor": "Analog Devices (Internet Archive)",
@@ -180,7 +258,7 @@
       "url_kind": "archive",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "archive.org item of the Rev C datasheet (from manuallib)."
+      "note": "Internet Archive item of Rev C (from manuallib)."
     },
     {
       "vendor": "Analog Devices (Digi-Key mirror)",
@@ -192,7 +270,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "HTML rendering of the datasheet on Digi-Key. Revision unconfirmed."
+      "note": "Digi-Key HTML rendering; revision unconfirmed."
     },
     {
       "vendor": "Analog Devices (Octopart mirror)",
@@ -216,7 +294,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision unconfirmed. The early upload ID makes it a candidate for an old revision."
+      "note": "Early upload ID; candidate for an old revision (0 or A)."
     },
     {
       "vendor": "Analog Devices (alldatasheet mirror)",
@@ -228,7 +306,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision unconfirmed. Possibly Rev B or C."
+      "note": "Revision unconfirmed; possibly Rev B or C."
     },
     {
       "vendor": "Analog Devices (alldatasheet mirror)",
@@ -264,7 +342,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Mislabelled path (IR folder and filename) that the search index titles as AD8022. Revision and content unconfirmed."
+      "note": "Mislabelled IR path titled AD8022; reportedly Rev B, unconfirmed."
     },
     {
       "vendor": "Analog Devices (icbase.com mirror)",
@@ -276,7 +354,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The search-result title shows 'Rev. C'. This is a distributor (icbase) PDF copy of the current ADI edition."
+      "note": "icbase distributor PDF of the current Rev C."
     },
     {
       "vendor": "Analog Devices (Manual Library mirror)",
@@ -288,7 +366,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The title shows Rev C. This is the Manual Library source of the already-listed Internet Archive item manuallib-id-2588286."
+      "note": "Manual Library source of the archive.org item manuallib-id-2588286."
     },
     {
       "vendor": "Analog Devices (RadioLocman mirror, .com domain)",
@@ -300,7 +378,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The title shows 'Revision: C'. This is the same RadioLocman document id (di=121365) as the listed rlocman.de copy, but on the radiolocman.com domain."
+      "note": "Same RadioLocman document (di=121365) on the .com domain."
     },
     {
       "vendor": "Analog Devices (datasheetbank mirror)",
@@ -312,7 +390,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The singular title 'Dual High Speed, Low Noise Op Amp' suggests the Rev B or C era, but no revision marking appears in the search summary."
+      "note": "Singular title suggests Rev B or C era; no marking seen."
     },
     {
       "vendor": "Analog Devices (DataSheetAll mirror)",
@@ -324,7 +402,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The search summary shows no revision."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices (digchip mirror)",
@@ -336,7 +414,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The title wording differs from all known ADI editions and may be an auto-generated description. digchip copies are often early scrapes, so this could be an early revision (0 or A), but no revision marking is shown."
+      "note": "Unusual title; possibly an early scrape (Rev 0 or A), unmarked."
     },
     {
       "vendor": "Analog Devices (datasheetq mirror)",
@@ -348,7 +426,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The search summary shows no revision."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices (datasheetcafe mirror)",
@@ -360,120 +438,70 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The search summary shows no revision."
+      "note": "Revision not shown."
     }
+  ],
+  "product_pages": [
+    "https://www.analog.com/en/products/ad8022.html"
   ],
   "revision_history": [
     {
       "vendor": "Analog Devices",
       "doc_number": "AD8022",
       "revision": "0",
-      "date": "unknown (before 9/02)",
-      "changes": "Initial release. Date not confirmed."
+      "date": "",
+      "changes": "Initial release, before 9/02 (reportedly c. 1999–2000)."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD8022",
       "revision": "A",
-      "date": "2002-09 (9/02)",
-      "changes": "Rev 0 → Rev A. Change details not captured."
+      "date": "2002-09",
+      "changes": "Rev 0 → A. Details not captured."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD8022",
       "revision": "B",
-      "date": "2005-05 (5/05)",
-      "changes": "Rev A → Rev B. Change details not captured; the timing matches ADI's Pb-free (Z) ordering-code updates (unconfirmed)."
+      "date": "2005-05",
+      "changes": "Rev A → B. Details not captured; timing matches Pb-free (Z) code updates (unconfirmed)."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD8022",
       "revision": "C",
-      "date": "2011-08 (8/11)",
-      "changes": "Rev B → Rev C, the current revision. Change details not captured."
+      "date": "2011-08",
+      "changes": "Rev B → C, current. Details not captured."
     }
   ],
-  "silicon_changes": [
+  "revision_chains": [
     {
-      "kind": "package-or-assembly",
       "vendor": "Analog Devices",
-      "when": "2014 (PCN 14_0246; revised as Rev. A and Rev. B)",
-      "part_numbers_affected": [
-        "AD8022ARMZ",
-        "AD8022ARMZ-REEL / -REEL7 (if listed)"
-      ],
-      "identification": "Devices assembled at ASE Chungli have a tool mark or laser mark on the backside giving the country of origin, TAIWAN. Otherwise, use a date code after the PCN effective date.",
-      "summary": "ASE Chungli, Taiwan was qualified and added as an assembly subcontractor for 8- and 10-lead MSOP devices to secure supply. AD8022 MSOP variants are listed per the search summary. The die and data sheet are unchanged.",
-      "spec_deltas": [
+      "doc_number": "AD8022",
+      "known": [
         {
-          "parameter": "MSOP assembly site",
-          "before": "existing site(s)",
-          "after": "existing site(s) plus ASE Chungli, Taiwan"
+          "rev": "0",
+          "date": ""
+        },
+        {
+          "rev": "A",
+          "date": "2002-09"
+        },
+        {
+          "rev": "B",
+          "date": "2005-05"
+        },
+        {
+          "rev": "C",
+          "date": "2011-08"
         }
       ],
-      "audio_impact": "None expected (same die).",
-      "compatibility_risk": "low - assembly subcontractor added; same die and data sheet",
-      "sources": [
-        "https://www.analog.com/media/en/pcn/ADI_PCN_14_0246_Rev_-_Form.pdf",
-        "https://www.analog.com/media/en/PCN/ADI_PCN_14_0246_Rev_A_Form.pdf",
-        "https://www.analog.com/media/en/PCN/ADI_PCN_14_0246_Rev_B_Form.pdf",
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1898/ADI_PCN_14_0246_Rev_-_Form.pdf"
+      "missing": [
+        "0",
+        "B"
       ],
-      "confidence": "medium",
-      "verification": "A search confirmed the PCN content (ASE Chungli for 8L/10L MSOP, backside TAIWAN country-of-origin mark) and the Rev. -, A and B forms. The AD8022ARMZ listing is from a search summary."
-    },
-    {
-      "kind": "package-or-assembly",
-      "vendor": "Analog Devices",
-      "when": "c. 2010 (inferred from the PCN number 10_0339; dates not captured)",
-      "part_numbers_affected": [
-        "AD8022ARMZ"
-      ],
-      "identification": "Top-mark change on the MSOP. The old and new markings are shown in ADI's 'AD8022ARMZ Marking Change' comparison attached to the PCN; the marking text itself was not read.",
-      "summary": "ADI PCN 10_0339 has an attachment titled 'Marking Comparison' / 'AD8022ARMZ Marking Change', which shows that the AD8022ARMZ top mark changed. The reason and whether other changes came with it were not read. No die change is indicated.",
-      "spec_deltas": [],
-      "audio_impact": "None (marking only).",
-      "compatibility_risk": "low - marking change; it matters only when identifying genuine or older stock by top mark",
-      "sources": [
-        "https://www.analog.com/media/en/pcn/ADI_PCN_10_0339_Rev_-_AD8022ARMZ%20Marking%20Change.docx"
-      ],
-      "confidence": "low",
-      "verification": "New item found during verification: an ADI-hosted attachment for PCN 10_0339 turned up in a search result. A follow-up search did not retrieve the PCN text (it returned the unrelated PCN 20_0339), so the scope is unconfirmed."
-    },
-    {
-      "kind": "fab-or-process-transfer",
-      "vendor": "Analog Devices",
-      "when": "2026 (PCN 26_0028 Rev. -; dates not reliably captured)",
-      "part_numbers_affected": [
-        "AD8022ARMZ, AD8022ARMZ-REEL, AD8022ARMZ-REEL7 (per one search summary; unconfirmed)"
-      ],
-      "identification": "None on the marking. Trace by ADI lot or date code against the PCN effective date.",
-      "summary": "ADI PCN 26_0028 qualifies ADI Limerick, Ireland (ADLK) as a wafer-fab site for XF26/XF18/XF12/XF8 process products. One search summary listed AD8022ARMZ and its reel variants as affected. A second search did not confirm the listing.",
-      "spec_deltas": [
-        {
-          "parameter": "Wafer fab site",
-          "before": "previous fab for XF-process products (not named)",
-          "after": "ADI Limerick, Ireland (ADLK) qualified"
-        }
-      ],
-      "audio_impact": "None documented. ADI states no fit/form/function or reliability impact.",
-      "compatibility_risk": "low - same design and data sheet under ADI's stated equivalence; the listing is unconfirmed",
-      "sources": [
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8899/ADI_PCN_26_0028_Rev_-_Form.pdf",
-        "https://www.mouser.com/PCN/ADI_ADI_PCN_26_0028_Rev___Form.pdf"
-      ],
-      "confidence": "low",
-      "verification": "New item found during verification: one search summary named AD8022ARMZ as affected by PCN 26_0028. A second, targeted search ('PCN 26_0028' AD8022) confirmed the PCN scope but not the AD8022 listing, so it is unconfirmed."
+      "note": "Rev A copy at UChicago EDG; Rev C at ADI, icbase, manuallib, RadioLocman. No Rev 0 or B copy found."
     }
-  ],
-  "counterfeit_notes": "No documented AD8022 counterfeit reports found in this pass. Low-cost multi-pack marketplace listings (e.g. Amazon 'AD8022ARZ AD8022AR SOP-8') come from unknown sources. Buy from authorized distributors, because remarked parts are common for SOIC audio duals.",
-  "alternatives": [
-    "AD797 (single; the Head-Fi comparison point)",
-    "AD8599",
-    "LME49720 / LM4562",
-    "OPA1612",
-    "AD8066 (FET input, for high-impedance sources)",
-    "NE5532 (the classic bipolar dual it is rolled against)"
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -485,12 +513,11 @@
     "https://www.analog.com/static/imported-files/data_sheets/AD8022.pdf"
   ],
   "open_questions": [
-    "Date of the Rev 0 initial datasheet.",
-    "What changed in Rev A (9/02), Rev B (5/05) and Rev C (8/11)? The revision-history text was not captured.",
-    "ADI lifecycle status (Production / NRND) for AD8022ARZ and AD8022ARMZ, and the full ordering list including reel suffixes and whether AD8022ARM existed.",
-    "Which revisions the alldatasheet copies (IDs 48381, 471193, 1978754) and RadioLocman di=79818 hold.",
-    "Does PCN 14_0246 explicitly list AD8022ARMZ? Also, are there any fab or die PCNs for the XFCB process affecting AD8022?",
-    "Input bias current spec value (the caveat is qualitative only)."
+    "Find a Rev 0 copy and its date, and a confirmed Rev B copy.",
+    "Wayback lookup of http://www.analog.com/static/imported-files/data_sheets/ may yield Rev B.",
+    "What changed in Rev A (9/02), Rev B (5/05) and Rev C (8/11)?",
+    "ADI lifecycle status and full ordering list, including reel suffixes and AD8022ARM.",
+    "Input bias current value; which revisions alldatasheet 48381/471193/1978754 and RadioLocman di=79818 hold."
   ],
   "sources": [
     "https://www.analog.com/en/products/ad8022.html",
@@ -507,12 +534,24 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 6,
+    "claims_confirmed": [
+      "Current datasheet is AD8022 Rev. C (https://www.analog.com/media/en/technical-documentation/data-sheets/AD8022.pdf)",
+      "Revision history: 8/11 B→C, 5/05 A→B, 9/02 0→A (https://www.rlocman.de/datasheet/pdf.html?di=121365&p=3)",
+      "UChicago EDG mirror holds REV. A (https://edg.uchicago.edu/~bogdan/ADC_QUIET/DOC/parts/AD8022.pdf)",
+      "archive.org holds Rev C (https://archive.org/details/manuallib-id-2588286)",
+      "2.5 nV/√Hz @100 kHz, 1.2 pA/√Hz, 130 MHz, 50 V/µs, 68 ns, 4.0 mA/amp, XFCB (https://www.analog.com/en/products/ad8022.html)",
+      "Supply +5 V or ±2.5 V to ±12 V; SOIC_N and MSOP (https://www.analog.com/media/en/technical-documentation/data-sheets/ad8022.pdf)",
+      "AD8022ARMZ in stock at LCSC (https://www.lcsc.com/product-detail/General-Purpose-Amplifiers_Analog-Devices_AD8022ARMZ_Analog-Devices-ADI-AD8022ARMZ_C207453.html)",
+      "PCN 14_0246 adds ASE Chungli for 8L/10L MSOP; AD8022 reportedly included (https://www.analog.com/media/en/pcn/ADI_PCN_14_0246_Rev_-_Form.pdf)",
+      "Product-page content last updated 02/23/2017 (https://www.rlocman.es/datasheet/pdf.html?di=121365&p=1)"
+    ],
     "refuted_claims": [],
     "corrections": [
-      "Channels changed from 0 to 2. The single placeholder 'AD8022' part number was replaced by the orderable codes AD8022ARZ, AD8022ARMZ, AD8022AR and AD8022ARM (unconfirmed).",
-      "Technology now names the XFCB high-voltage complementary bipolar process and voltage-feedback topology.",
-      "Added datasheet revisions and dates: Rev 0 (date unknown), Rev A 9/02, Rev B 5/05, Rev C 8/11 (current).",
-      "Added PCN 14_0246 (MSOP assembly-site addition, ASE Chungli). It is an assembly change, not a die change."
+      "Channels set to 2; placeholder replaced by AD8022ARZ, AD8022ARMZ, AD8022AR and AD8022ARM (unconfirmed).",
+      "Technology now names the XFCB complementary bipolar process and voltage-feedback topology.",
+      "Added datasheet revisions: Rev 0 (date unknown), A 9/02, B 5/05, C 8/11.",
+      "Added PCN 14_0246 (MSOP assembly-site addition, ASE Chungli); assembly, not die, change."
     ],
     "unverified_urls": [
       "https://www.head-fi.org/threads/the-opamp-thread.432749/page-113",
@@ -526,24 +565,6 @@
       "https://pdf2.datasheet.su/international%20rectifier/auir2085s.pdf",
       "https://www.analog.com/static/imported-files/data_sheets/AD8022.pdf",
       "https://www.analog.com/UploadedFiles/Data_Sheets/AD8022.pdf"
-    ],
-    "claims_confirmed": [
-      "Current ADI datasheet is 'Dual High Speed, Low Noise Op Amp Data Sheet AD8022 Rev. C' (https://www.analog.com/media/en/technical-documentation/data-sheets/AD8022.pdf)",
-      "Revision history: 8/11 Rev B→C, 5/05 Rev A→B, 9/02 Rev 0→A (https://www.rlocman.de/datasheet/pdf.html?di=121365&p=3)",
-      "The University of Chicago EDG mirror holds a REV. A copy (https://edg.uchicago.edu/~bogdan/ADC_QUIET/DOC/parts/AD8022.pdf)",
-      "archive.org holds a Rev C copy (https://archive.org/details/manuallib-id-2588286)",
-      "Specs: 2.5 nV/√Hz @100 kHz, 1.2 pA/√Hz, 130 MHz (G=+1), 50 V/µs, 68 ns to 0.1%, 4.0 mA per amp, XFCB high-voltage bipolar process (https://www.analog.com/en/products/ad8022.html)",
-      "Supply +5 V or ±2.5 V to ±12 V; SOIC_N (AR/ARZ) and MSOP (ARMZ) packages (https://www.analog.com/media/en/technical-documentation/data-sheets/ad8022.pdf)",
-      "AD8022ARMZ is in stock at LCSC (https://www.lcsc.com/product-detail/General-Purpose-Amplifiers_Analog-Devices_AD8022ARMZ_Analog-Devices-ADI-AD8022ARMZ_C207453.html)",
-      "PCN 14_0246 adds ASE Chungli as an assembly site for 8L/10L MSOP, and AD8022 MSOP variants are reported as included (https://www.analog.com/media/en/pcn/ADI_PCN_14_0246_Rev_-_Form.pdf)",
-      "The mirrored ADI product-page quick links show last content update 02/23/2017 (https://www.rlocman.es/datasheet/pdf.html?di=121365&p=1)"
-    ],
-    "web_searches_used": 6
-  },
-  "tier": "C",
-  "category": "high-speed-video-crossover",
-  "product_pages": [
-    "https://www.analog.com/en/products/ad8022.html"
-  ],
-  "revision_chain_notes": "Analog Devices AD8022 is the only document. The part is single-source, and no acquirer re-issue or second source was found. Known chain, oldest to newest: Rev 0 (initial release, date still unknown, before 9/02) -> Rev A (9/02) -> Rev B (5/05) -> Rev C (8/11, current; ADI product page content last updated 02/23/2017).\n\nCopies holding each revision:\n- Rev 0: none found. This is the missing link, and its date is unconfirmed. The alldatasheet id 48381 copy and the digchip copy (digchip.com/.../041/AD8022.php, with an unusual title 'Dual Low Noise, Low Distortion, High ...') are candidates, but no revision marking is shown.\n- Rev A: the University of Chicago EDG copy. The search snippet for edg.uchicago.edu/~bogdan/ADC_QUIET/DOC/parts/AD8022.pdf literally shows 'REV. A Information furnished by Analog Devices...', so its confidence can be raised to high. Its title uses the plural 'Dual High Speed Low Noise Op Amps'.\n- Rev B: no copy confirmed. The search engine's AI summary called the datasheet.su copy (pdf2.datasheet.su/international%20rectifier/auir2085s.pdf, already listed, singular title without 'Data Sheet') Rev B, but no page text showed a Rev B marking, so this is unverified and stays low confidence.\n- Rev C: analog.com (upper- and lowercase PDF URLs), icbase.com ADI13561611.pdf, manuallib / archive.org 2588286, and RadioLocman di=121365 (.de and .com).\n\nStill missing:\n1. A copy of Rev 0 and its release date. The AD8022 appeared around 1999-2000, but this is not confirmed.\n2. A confirmed Rev B (5/05) copy.\n3. Per-revision change descriptions from the Rev C revision-history table. The search summaries did not show them.\n4. A legacy http://www.analog.com/static/imported-files/data_sheets/ URL. None was found, so none is recorded, but a Wayback lookup of that path could yield Rev B.\n\nAll 4 searches were used."
+    ]
+  }
 }

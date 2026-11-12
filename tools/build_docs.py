@@ -101,9 +101,18 @@ def link(url: str, label: str | None = None) -> str:
 def short(text, n: int = 80) -> str:
     """First sentence / clause of `text` (ignoring abbreviations like 'c.'), cut to about n characters."""
     text = esc(text)
-    m = re.search(r"[.;](?=\s+[A-Z(])", text[20:])
-    first = text[: 20 + m.start() + 1] if m else text
-    return first if len(first) <= n else first[: n - 1].rsplit(" ", 1)[0] + "…"
+    first = text
+    for m in re.finditer(r"\.(?=\s+[A-Z])", text):
+        head = text[: m.start() + 1]
+        if m.start() >= 20 and head.count("(") == head.count(")") and not re.search(r"\b(?:c|vs|approx|e\.g|i\.e)\.$", head):
+            first = head
+            break
+    if len(first) <= n:
+        return first
+    cut = first[: n - 1].rsplit(" ", 1)[0].rstrip(",;:(")
+    if cut.count("(") > cut.count(")"):
+        cut = cut[: cut.rfind("(")].rstrip()
+    return cut + "…"
 
 
 def table(headers: list[str], rows: list[list]) -> list[str]:
@@ -388,7 +397,12 @@ def hazards_page(fams: list[dict]) -> str:
         if f["id"] != current:
             L += [f"## [{esc(f['name'])}](families/{f['id']}.md)", ""]
             current = f["id"]
-        L += change_card(ch, "###")
+        # Compact entry; the family page has the spec deltas and sources.
+        L += [f"**{kind_title(ch)}: {esc(ch.get('vendor'))}, {esc(ch.get('when'))}.** {esc(ch.get('summary'))}", ""]
+        facts = [("How to tell", ch.get("identification")), ("Drop-in risk", ch.get("compatibility_risk")),
+                 ("Confidence", ch.get("confidence"))]
+        L += [f"- **{k}:** {esc(v)}" for k, v in facts if v]
+        L += [f"- [Spec deltas and sources](families/{f['id']}.md#silicon-changes)", ""]
     other = change_rows(fams, False)
     L += details(f"Other change notes: lifecycle, packaging, renumbering, lore ({len(other)})",
                  [f"- [{esc(f['id'])}](families/{f['id']}.md) · **{kind_title(ch)}** · {esc(ch.get('vendor'))}, "

@@ -1,162 +1,132 @@
 {
   "id": "OPA128",
-  "name": "OPA128 (Burr-Brown Difet electrometer-grade op-amp, TO-99 metal can)",
-  "tagline": "Burr-Brown's TO-99 Difet electrometer amp (75 fA max bias). Chinese DIYers collect OPA128SM cans for preamps and praise its resolution despite its 1 MHz GBW.",
-  "technology": "Single-channel Difet (dielectrically isolated FET-input) electrometer-grade op-amp in a TO-99 metal can. The best grade has 75 fA max bias current, 500 uV max offset and 5 uV/C max drift. It is slow, at about 1 MHz GBW and 3 V/us. Marketed as an improved pin-for-pin replacement for the ADI AD515.",
+  "name": "OPA128",
+  "type": "Difet electrometer-grade op-amp, single, TO-99 can",
+  "tier": "C",
+  "category": "jfet-input",
+  "tagline": "Burr-Brown's 75 fA electrometer can, collected by Chinese DIYers for preamps despite only 1 MHz GBW.",
   "manufacturers": [
     "Burr-Brown",
     "Texas Instruments"
   ],
-  "part_numbers": [
-    {
-      "pn": "OPA128",
-      "channels": 1,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "discontinued (TI NRND, then lifetime buy)",
-      "notes": "Base part number. Graded JM/KM/LM/SM, all in the TO-99 metal can. The exact per-grade limits were not confirmed in this pass."
-    },
-    {
-      "pn": "OPA128JM",
-      "channels": 1,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "obsolete (DigiKey shows last-time-buy 2020-05-14)",
-      "notes": "Lowest commercial grade (per-grade Ib/Vos limits unconfirmed)."
-    },
-    {
-      "pn": "OPA128KM",
-      "channels": 1,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "NRND/discontinued (Octopart); presumably obsolete after the 2020 LTB",
-      "notes": "Mid commercial grade (unconfirmed limits)."
-    },
-    {
-      "pn": "OPA128LM",
-      "channels": 1,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "NRND/discontinued; presumably obsolete after the 2020 LTB",
-      "notes": "Presumed best grade, carrying the 75 fA max headline bias current (grade assignment unconfirmed)."
-    },
-    {
-      "pn": "OPA128SM",
-      "channels": 1,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "obsolete (DigiKey/Octopart)",
-      "notes": "Military-temperature grade. CN sellers trade military-pulled cans marked 'OPA128SM/883'. A separate /883B ordering code was not confirmed."
-    }
-  ],
   "lineage": [
     {
       "vendor": "Burr-Brown",
-      "role": "originator (Difet process)",
+      "role": "originator",
       "period": "until 2000",
-      "notes": "Datasheet PDS-653, last Burr-Brown printing rev E dated May 1995. Positioned as an improved pin-for-pin replacement for the AD515."
+      "note": "Difet process. Datasheet PDS-653, last printing rev E (1995-05). Improved pin-for-pin AD515 replacement."
     },
     {
       "vendor": "Texas Instruments",
-      "role": "owner after acquiring Burr-Brown",
-      "period": "2000 to c.2020",
-      "notes": "Re-issued the datasheet as SBOS148. The parts went NRND and were discontinued, with DigiKey showing an LTB of 2020-05-14 for OPA128JM."
+      "role": "acquirer",
+      "period": "2000–c.2020",
+      "note": "Re-issued datasheet as SBOS148. Went NRND, then discontinued; OPA128JM last-time buy 2020-05-14."
     },
     {
       "vendor": "Analog Devices",
-      "role": "pin-compatible predecessor/competitor (AD515)",
+      "role": "pin-compatible predecessor (AD515)",
       "period": "pre-OPA128",
-      "notes": "The OPA128 datasheet names itself an improved pin-for-pin replacement for the AD515."
+      "note": "OPA128 datasheet calls itself an improved pin-for-pin replacement for the AD515."
     },
     {
       "vendor": "Texas Instruments (Burr-Brown)",
       "role": "sibling / de-facto successor (OPA129)",
       "period": "later",
-      "notes": "The OPA129 is a related Difet electrometer amp in SO-8. A TI E2E thread covers its differences from the OPA128."
+      "note": "OPA129: related Difet electrometer amp in SO-8; TI E2E thread covers the differences."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "OPA128",
+      "channels": 1,
+      "status": "obsolete",
+      "note": "Base part. Grades JM/KM/LM/SM, all TO-99; TI NRND, then lifetime buy."
+    },
+    {
+      "pn": "OPA128JM",
+      "channels": 1,
+      "status": "obsolete",
+      "note": "Lowest commercial grade. DigiKey last-time buy 2020-05-14."
+    },
+    {
+      "pn": "OPA128KM",
+      "channels": 1,
+      "status": "NRND",
+      "note": "Mid commercial grade. Listed NRND/discontinued; presumably obsolete after 2020 LTB."
+    },
+    {
+      "pn": "OPA128LM",
+      "channels": 1,
+      "status": "NRND",
+      "note": "Presumed best grade (75 fA max), unconfirmed. Presumably obsolete after 2020 LTB."
+    },
+    {
+      "pn": "OPA128SM",
+      "channels": 1,
+      "status": "obsolete",
+      "note": "Military-temperature grade. Pulled cans sold as 'OPA128SM/883'; /883B code unconfirmed."
     }
   ],
   "key_specs": [
     {
       "parameter": "Input bias current",
       "value": "75 fA max",
-      "condition": "headline figure (best grade), 25 C",
-      "source": "https://www.alldatasheet.com/html-pdf/56727/BURR-BROWN/OPA128/500/1/OPA128.html"
+      "condition": "best grade, 25 °C",
+      "source": "PDS-653 (alldatasheet copy)"
     },
     {
-      "parameter": "Input offset voltage",
-      "value": "500 uV max",
-      "condition": "headline figure (best grade)",
-      "source": "https://www.alldatasheet.com/html-pdf/56727/BURR-BROWN/OPA128/500/1/OPA128.html"
+      "parameter": "Offset voltage",
+      "value": "500 µV max; drift 5 µV/°C max",
+      "condition": "best grade",
+      "source": "PDS-653 (alldatasheet copy)"
     },
     {
-      "parameter": "Offset drift",
-      "value": "5 uV/C max",
-      "condition": "headline figure (best grade)",
-      "source": "https://www.alldatasheet.com/html-pdf/56727/BURR-BROWN/OPA128/500/1/OPA128.html"
-    },
-    {
-      "parameter": "Open-loop gain",
-      "value": "110 dB min",
-      "condition": "headline figure",
-      "source": "https://www.alldatasheet.com/html-pdf/56727/BURR-BROWN/OPA128/500/1/OPA128.html"
-    },
-    {
-      "parameter": "CMRR",
-      "value": "90 dB min",
-      "condition": "headline figure",
-      "source": "https://www.alldatasheet.com/html-pdf/56727/BURR-BROWN/OPA128/500/1/OPA128.html"
-    },
-    {
-      "parameter": "Gain-bandwidth product",
+      "parameter": "GBW",
       "value": "1 MHz",
       "condition": "typical",
-      "source": "https://edg.uchicago.edu/~tang/SNFactory/opa128.pdf"
+      "source": "PDS-653 (U. Chicago copy)"
     },
     {
       "parameter": "Slew rate",
-      "value": "3 V/us",
+      "value": "3 V/µs",
       "condition": "typical",
-      "source": "https://edg.uchicago.edu/~tang/SNFactory/opa128.pdf"
+      "source": "PDS-653 (U. Chicago copy)"
     },
     {
-      "parameter": "Supply voltage",
-      "value": "up to +/-18 V",
-      "condition": "maximum rating as summarized; the minimum operating supply was not confirmed",
-      "source": "https://shop.rfid-life.com/products/opa128-110db-gain-high-impedance-electrometer-amplifier-ultra-low-bias-current-op-amp-charge-amplifier"
+      "parameter": "Supply range",
+      "value": "up to ±18 V",
+      "condition": "max rating; minimum unconfirmed",
+      "source": "Seller listing (rfid-life)"
     },
     {
       "parameter": "Output current",
-      "value": "10 mA",
-      "condition": "as summarized from a seller listing (low confidence)",
-      "source": "https://shop.rfid-life.com/products/opa128-110db-gain-high-impedance-electrometer-amplifier-ultra-low-bias-current-op-amp-charge-amplifier"
+      "value": "10 mA (low confidence)",
+      "condition": "seller listing",
+      "source": "Seller listing (rfid-life)"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "Difet (dielectrically isolated JFET)",
+      "condition": "Aol 110 dB min, CMRR 90 dB min",
+      "source": "PDS-653 (alldatasheet copy)"
     }
   ],
   "reputation": {
-    "summary": "Its audio praise is niche and mostly Chinese. On a CSDN listening ranking of classic audio op-amps, 'OPA128SM x2' sits just below the OPA1612 and is credited with good overtone rendering and high resolution. CN DIYers collect military-pulled OPA128SM/883 gold cans as '发烧运放' (audiophile op-amps) for preamps, sometimes selling them alongside the OPA627. The same sources warn that its low GBW and slew rate make it a poor general-purpose audio op-amp, though some value it for DAC I/V stages. It was designed as an electrometer (fA-level input) amplifier, not an audio part.",
+    "summary": "Niche, mostly Chinese audio praise. A CSDN listening ranking puts 'OPA128SM x2' just below the OPA1612 for overtones and resolution. CN DIYers collect military-pulled OPA128SM/883 gold cans as '发烧运放' for preamps, often beside the OPA627. Low GBW and slew make it a poor general-purpose audio part, though some like it for DAC I/V. It was designed as an electrometer.",
     "sonic_descriptors": [
-      "good overtone rendering (CSDN)",
-      "high resolution (CSDN)"
+      "good overtone rendering",
+      "high resolution"
     ],
     "typical_uses": [
-      "preamp line stage in CN DIY builds (with a TO-99 adapter)",
-      "DAC I/V conversion (per CN forum claims)",
-      "design intent: electrometer, photodiode / ionization-chamber / charge amplifiers"
+      "Preamp line stage with TO-99 adapter (CN DIY)",
+      "DAC I/V conversion (CN forum claims)",
+      "Electrometer, photodiode, ionization-chamber, charge amplifiers"
     ],
     "caveats": [
-      "Only 1 MHz GBW and 3 V/us slew, so it is not a general-purpose audio op-amp.",
-      "Single channel in TO-99, so dual-socket audio use needs two cans and an adapter.",
-      "Discontinued (TI LTB 2020), so most available stock is pulled or surplus.",
-      "The praise comes from a small number of Chinese enthusiast sources."
+      "Only 1 MHz GBW and 3 V/µs slew; not a general-purpose audio op-amp.",
+      "Single channel in TO-99: dual-socket use needs two cans and an adapter.",
+      "Discontinued (TI LTB 2020); most stock is pulled or surplus.",
+      "Praise comes from a small number of Chinese enthusiast sources."
     ],
     "sources": [
       "https://blog.csdn.net/helongfu/article/details/46286715",
@@ -164,6 +134,15 @@
       "http://bbs.erji.net/forum.php?mod=viewthread&tid=2224333"
     ]
   },
+  "counterfeit_notes": "No OPA128-specific fake reports. Discontinued since 2020; CN stock is sold as pulled 'OPA128SM/883' cans, so distrust 'new' stock. Remarking is plausible. fA bias needs an electrometer setup to confirm; supply current, GBW and slew are quicker checks.",
+  "alternatives": [
+    "OPA129 (Difet electrometer, SO-8)",
+    "AD549 (ADI electrometer, TO-99)",
+    "LMP7721 (TI 3 fA-class electrometer)",
+    "ADA4530-1 (ADI femtoamp electrometer)",
+    "OPA627 / OPA637 (Difet TO-99 for audio)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "Texas Instruments",
@@ -175,8 +154,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "unknown",
-      "revision_text": "(no revision letter seen)",
-      "note": "The doc number SBOS148 is confirmed. The TI symlink URL follows TI's standard pattern but search did not confirm it (unconfirmed). The part is discontinued, so TI may have pulled the link."
+      "note": "No revision letter. Standard TI link, unconfirmed; may be pulled."
     },
     {
       "vendor": "Texas Instruments (Burr-Brown content)",
@@ -188,7 +166,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Mouser copy. The search summary ties it to SBOS148, Burr-Brown PDS-653E, May 1995."
+      "note": "Mouser copy: SBOS148, Burr-Brown PDS-653E, May 1995."
     },
     {
       "vendor": "Burr-Brown",
@@ -200,7 +178,10 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Burr-Brown-branded 9-page copy. Check it for a pre-E PDS-653 revision."
+      "also_urls": [
+        "https://www.alldatasheet.com/html-pdf/56727/BURR-BROWN/OPA128/500/1/OPA128.html"
+      ],
+      "note": "Burr-Brown 9-page copy; may be a pre-E revision."
     },
     {
       "vendor": "Burr-Brown",
@@ -212,7 +193,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "University of Chicago copy. Revision letter not visible in the search summary."
+      "note": "University of Chicago copy; revision letter not known."
     },
     {
       "vendor": "Burr-Brown",
@@ -224,7 +205,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Uni Ulm copy. Revision not shown (unconfirmed)."
+      "note": "Uni Ulm copy; revision not shown."
     },
     {
       "vendor": "Texas Instruments",
@@ -236,7 +217,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Octopart-hosted TI-branded copy. Revision not shown (unconfirmed)."
+      "note": "Octopart-hosted TI-branded copy; revision not shown."
     },
     {
       "vendor": "Texas Instruments",
@@ -248,7 +229,10 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Radiolocman TI copy. A second entry exists at pdf.html?di=83971. Revision not shown (unconfirmed)."
+      "also_urls": [
+        "https://www.radiolocman.com/datasheet/pdf.html?di=83971"
+      ],
+      "note": "Radiolocman TI copy; revision not shown."
     },
     {
       "vendor": "Burr-Brown",
@@ -260,33 +244,56 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Burr-Brown-branded copy that may hold a pre-TI revision (unconfirmed)."
+      "note": "Burr-Brown copy; may be a pre-TI revision."
     }
   ],
+  "product_pages": [],
   "revision_history": [
     {
       "vendor": "Burr-Brown",
       "doc_number": "PDS-653",
       "revision": "E",
-      "date": "May 1995",
-      "changes": "This is the last Burr-Brown printing found. The letter E implies earlier revisions A-D, but those were not located and the change content is not documented."
+      "date": "1995-05",
+      "changes": "Last Burr-Brown printing found. Implies earlier revisions A–D, not located; change content undocumented."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SBOS148",
-      "revision": "(original, no letter seen)",
-      "date": "not confirmed (post-2000 TI re-issue)",
-      "changes": "TI assigned a literature number to the Burr-Brown document. It appears to carry the PDS-653E (May 1995) content unchanged."
+      "revision": "original",
+      "date": "",
+      "changes": "Post-2000 TI re-issue (date unconfirmed); appears to carry PDS-653E (May 1995) content unchanged."
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No OPA128-specific counterfeit report was found. The part has been discontinued since the 2020 lifetime buy, and stock circulating in CN markets is described as military-pulled 'OPA128SM/883' cans, so treat any 'new' stock with suspicion. Remarking of TO-99 Difet parts is plausible. A genuine part's fA-level bias current can only be confirmed with an electrometer-grade test setup. Checking supply current, GBW and slew against the datasheet is a quicker sanity check.",
-  "alternatives": [
-    "OPA129 (TI/Burr-Brown Difet electrometer, SO-8)",
-    "AD549 (ADI electrometer, TO-99)",
-    "LMP7721 (TI, 3 fA-class electrometer)",
-    "ADA4530-1 (ADI femtoamp electrometer)",
-    "OPA627 / OPA637 (Burr-Brown Difet TO-99 for actual audio duty)"
+  "revision_chains": [
+    {
+      "vendor": "Burr-Brown",
+      "doc_number": "PDS-653",
+      "known": [
+        {
+          "rev": "E",
+          "date": "1995-05"
+        }
+      ],
+      "missing": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "note": "Rev E is the last Burr-Brown printing; earlier letters implied but not located."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS148",
+      "known": [
+        {
+          "rev": "original",
+          "date": ""
+        }
+      ],
+      "missing": [],
+      "note": "No revision letter seen; whether an SBOS148A exists is unknown."
+    }
   ],
   "ti_literature_numbers": [
     "SBOS148"
@@ -297,12 +304,11 @@
     "https://www.ti.com/product/OPA128"
   ],
   "open_questions": [
-    "Dates and content of the earlier Burr-Brown PDS-653 revisions A-D.",
-    "Exact TI issue date of SBOS148, and whether TI ever issued an SBOS148A.",
-    "Per-grade (JM/KM/LM/SM) limits for Ib, Vos and drift.",
-    "Voltage and current noise density figures (not confirmed in this pass).",
-    "Whether a separate OPA128SM/883B ordering code existed.",
-    "No same-part-number silicon change is known. The Difet die appears unchanged through the TI era, but this is unconfirmed."
+    "Dates and content of Burr-Brown PDS-653 revisions A–D.",
+    "Exact TI issue date of SBOS148; did TI ever issue SBOS148A?",
+    "Per-grade (JM/KM/LM/SM) limits for bias current, offset and drift.",
+    "Voltage and current noise density figures.",
+    "Did a separate OPA128SM/883B ordering code exist? Is the die unchanged through the TI era?"
   ],
   "sources": [
     "https://www.alldatasheet.com/html-pdf/56727/BURR-BROWN/OPA128/500/1/OPA128.html",
@@ -315,17 +321,28 @@
     "https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/712204/opa129-differences-from-opa128",
     "https://blog.csdn.net/helongfu/article/details/46286715",
     "https://www.kechuang.org/t/53064",
-    "http://bbs.erji.net/forum.php?mod=viewthread&tid=2224333"
+    "http://bbs.erji.net/forum.php?mod=viewthread&tid=2224333",
+    "https://shop.rfid-life.com/products/opa128-110db-gain-high-impedance-electrometer-amplifier-ultra-low-bias-current-op-amp-charge-amplifier"
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "TI literature number is SBOS148 (https://www.radiolocman.com/datasheet/pdf.html?di=83971, https://www.alldatasheet.com/datasheet-pdf/pdf/56727/BURR-BROWN/OPA128.html).",
+      "Datasheet copy is Burr-Brown PDS-653E, May 1995 (https://www.mouser.com/datasheet/2/405/opa128-445402.pdf).",
+      "75 fA max bias, 500 µV max offset, 5 µV/°C drift, 110 dB min Aol, 90 dB min CMRR; improved AD515 replacement (https://www.alldatasheet.com/html-pdf/56727/BURR-BROWN/OPA128/500/1/OPA128.html).",
+      "GBW 1 MHz, slew rate 3 V/µs (https://edg.uchicago.edu/~tang/SNFactory/opa128.pdf).",
+      "OPA128JM end of life, last-time buy 2020-05-14 (https://www.digikey.com/product-detail/en/texas-instruments/OPA128JM/OPA128JM-ND/301117).",
+      "OPA128SM obsolete; variants listed NRND/discontinued (https://www.digikey.com/en/products/detail/texas-instruments/OPA128SM/301120, https://octopart.com/opa128sm-texas+instruments-420293).",
+      "OPA129 is a related part, compared on TI E2E (https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/712204/opa129-differences-from-opa128)."
+    ],
     "refuted_claims": [],
     "corrections": [
-      "Channels changed from 0 to 1 for all part numbers (single op-amp).",
-      "Statuses changed from 'unknown' to NRND/discontinued/obsolete. DigiKey shows an LTB of 2020-05-14 for OPA128JM and lists OPA128SM as obsolete.",
-      "Added TI literature number SBOS148 and Burr-Brown document PDS-653E (May 1995).",
-      "Added the confirmed headline specs: 75 fA max Ib, 500 uV Vos, 5 uV/C drift, 110 dB Aol, 90 dB CMRR, 1 MHz GBW, 3 V/us slew.",
-      "Added the AD515 pin-for-pin replacement lineage and the OPA129 sibling."
+      "Channels set to 1 for all part numbers (single op-amp).",
+      "Statuses set to NRND/discontinued/obsolete: OPA128JM LTB 2020-05-14; OPA128SM obsolete (DigiKey).",
+      "Added TI literature number SBOS148 and Burr-Brown PDS-653E (May 1995).",
+      "Added headline specs: 75 fA Ib, 500 µV Vos, 5 µV/°C drift, 110 dB Aol, 90 dB CMRR, 1 MHz GBW, 3 V/µs.",
+      "Added AD515 pin-for-pin replacement lineage and the OPA129 sibling."
     ],
     "unverified_urls": [
       "https://www.ti.com/lit/ds/symlink/opa128.pdf",
@@ -337,19 +354,6 @@
       "https://blog.csdn.net/helongfu/article/details/46286715",
       "https://www.kechuang.org/t/53064",
       "http://bbs.erji.net/forum.php?mod=viewthread&tid=2224333"
-    ],
-    "claims_confirmed": [
-      "The OPA128 datasheet has TI literature number SBOS148 (https://www.radiolocman.com/datasheet/pdf.html?di=83971, https://www.alldatasheet.com/datasheet-pdf/pdf/56727/BURR-BROWN/OPA128.html).",
-      "The datasheet copy is Burr-Brown PDS-653E, dated May 1995 (https://www.mouser.com/datasheet/2/405/opa128-445402.pdf).",
-      "Headline specs are 75 fA max bias, 500 uV max offset, 5 uV/C max drift, 110 dB min Aol and 90 dB min CMRR. It is an improved pin-for-pin replacement for the AD515 (https://www.alldatasheet.com/html-pdf/56727/BURR-BROWN/OPA128/500/1/OPA128.html).",
-      "GBW is 1 MHz and slew rate is 3 V/us (https://edg.uchicago.edu/~tang/SNFactory/opa128.pdf).",
-      "OPA128JM reached end of life with an LTB of 05-14-2020 (https://www.digikey.com/product-detail/en/texas-instruments/OPA128JM/OPA128JM-ND/301117).",
-      "OPA128SM is obsolete, and the variants are listed NRND/discontinued (https://www.digikey.com/en/products/detail/texas-instruments/OPA128SM/301120, https://octopart.com/opa128sm-texas+instruments-420293).",
-      "The OPA129 is a related part, discussed against the OPA128 on TI E2E (https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/712204/opa129-differences-from-opa128)."
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "jfet-input",
-  "product_pages": []
+    ]
+  }
 }

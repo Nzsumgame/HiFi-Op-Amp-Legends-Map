@@ -1,330 +1,254 @@
 {
   "id": "TL07x",
-  "name": "TL071 / TL072 / TL074 (incl. TL07xH next-gen die)",
-  "tagline": "TI's 1978 BiFET and the cheap JFET-input op-amp in countless mixers, synths, pedals and DAC filters. Enthusiasts use it as the baseline that \"upgrade\" op-amps are compared against.",
-  "technology": "BiFET: JFET input stage with a bipolar output stage (legacy TI die, per SLOS080N). The TL07xH die (2020 onward) is described by TI only as 'FET-input' on a 'modern process'; a community claim that it is CMOS is unconfirmed. TL07xH inputs are diode-clamped to both rails and the common-mode range includes V+. TI PCN 20221219006.1 (21 Dec 2022) qualified the RFAB fab with a die revision and datasheet update for TL072/TL074 devices. From Rev U (Dec 2022) the plain C/AC/BC/I grades in non-PS/NS packages are specified with new-die values, and per Rev W (Jul 2025) they can come from either flow: legacy (CSO: SFAB) or latest (CSO: RFB).",
+  "name": "TL071 / TL072 / TL074 (incl. TL07xH)",
+  "type": "JFET-input (BiFET) op-amp, 1/2/4 channels",
+  "tier": "A",
+  "category": "legacy-general-purpose",
+  "tagline": "TI's 1978 BiFET, found in countless mixers, synths, pedals and DAC filters: the baseline 'upgrades' are judged by.",
   "manufacturers": [
-    "Texas Instruments (originator, 1978-present)",
-    "STMicroelectronics / SGS-Thomson (second source; own datasheets for TL071, TL072, TL074)",
-    "Diodes Incorporated (TL072, datasheet DS31865; product now marked Obsolete)",
-    "JRC / New Japan Radio / Nisshinbo (NJM072 / NJM074 equivalents)",
-    "Motorola (historical TL071C/TL072C/TL074C datasheet); onsemi status not verified"
-  ],
-  "part_numbers": [
-    {
-      "pn": "TL071 (TL071CP, TL071CDR, TL071CPSR, TL071IP, TL071IDR)",
-      "channels": 1,
-      "vendors": [
-        "Texas Instruments",
-        "STMicroelectronics"
-      ],
-      "status": "active",
-      "notes": "Per TI Rev W (Jul 2025), only the PS (SO-8) package TL071CPSR keeps OFFSET N1/N2 on pins 1/5. On the D and P packages, pins 1/5/8 are now NC ('Do not connect'). Rev V still showed offset pins on D, P and PS. Web-confirmed: the Rev W changelog deletes the trim function from all packages except PS."
-    },
-    {
-      "pn": "TL071A (TL071ACP, TL071ACD, TL071ACDR)",
-      "channels": 1,
-      "vendors": [
-        "Texas Instruments",
-        "STMicroelectronics"
-      ],
-      "status": "active",
-      "notes": "Tighter Vos grade (6 mV max, legacy table). TI's TL071ACD part page still summarises legacy specs: 30 V, 3 MHz, 13 V/us, 6 mV. TL071ACD is named in the title of PCN 20221219008 (content not retrieved)."
-    },
-    {
-      "pn": "TL071B (TL071BCP, TL071BCDR)",
-      "channels": 1,
-      "vendors": [
-        "Texas Instruments",
-        "STMicroelectronics"
-      ],
-      "status": "active",
-      "notes": "Tightest Vos grade (3 mV max, legacy table)."
-    },
-    {
-      "pn": "TL071H (TL071HIDBVR, TL071HIDCKR, TL071HIDR)",
-      "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active",
-      "notes": "New die, -40 to 125 C. Preview note removed in SLOS080S (Jul 2021). Markings: TL071HIDR 'TL071D', DBV 'T71V', DCK '1IO'."
-    },
-    {
-      "pn": "TL072 (TL072CP, TL072CDR, TL072CPWR, TL072CPS/CPSR, TL072IP, TL072IDR)",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments",
-        "STMicroelectronics",
-        "Diodes Incorporated (obsolete)",
-        "Motorola (historical)"
-      ],
-      "status": "active",
-      "notes": "TI tube-packed D orderables (TL072CD, TL072ID, etc.) were listed ACTIVE in the Feb 2020 addendum (Rev N copy) and are gone from the 2025/2026 addenda. TI markings did not change across the die move (e.g. 'TL072CP', 'TL072C'). TL072 devices are listed in TI PCN 20221219006.1 (RFAB, die revision). ST orderables include TL072CDT, TL072IDT and TL072BIDT; ST DocID2298 Rev 8 removed TL072IYD/AIYD/BIYD."
-    },
-    {
-      "pn": "TL072A (TL072ACP, TL072ACDR, TL072ACPS)",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments",
-        "STMicroelectronics"
-      ],
-      "status": "active",
-      "notes": "TL072ACPS (PS package) is still specified with legacy-die values. TL072ACDRE4 is named in the title of PCN 20221219008 (content not retrieved)."
-    },
-    {
-      "pn": "TL072B (TL072BCP, TL072BCDR)",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments",
-        "STMicroelectronics"
-      ],
-      "status": "active",
-      "notes": "TL072BCD is marked Obsolete in the Rev V/W addenda."
-    },
-    {
-      "pn": "TL072H (TL072HIDR, TL072HIDDFR, TL072HIPWR)",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active",
-      "notes": "New die. Preview note removed in SLOS080R (Jun 2021). TI part page for TL072HIDR: dual, 40 V, 5 MHz, 4 mV, 20 V/us, in to V+, -40 to 125 C. Markings: TL072HIDR 'TL072D', PW '072HPW', DDF 'O72F'."
-    },
-    {
-      "pn": "TL072M (TL072MJG, TL072MJGB, TL072MFKB, TL072MUB; SMD 8102305xx; JM38510/11905BPA)",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active",
-      "notes": "Military -55 to 125 C. Added to SLOS080 in Rev N (2017). Rev W: 'manufactured on the legacy flow (CSO: SFAB)'."
-    },
-    {
-      "pn": "TL074 (TL074CN, TL074CDR, TL074CDBR, TL074CPWR, TL074CNSR, TL074IN, TL074IDR)",
-      "channels": 4,
-      "vendors": [
-        "Texas Instruments",
-        "STMicroelectronics"
-      ],
-      "status": "active",
-      "notes": "TL074CD, TL074ID and TL074CPW are Obsolete (Rev V/W addenda). The NS-package TL074CNSR is still specified with legacy values. TL074 devices are listed in PCN 20221219006.1; a TI E2E thread reports TL074CDR date codes 2436, 2443 and 2522 behaving as the new process. ST orderable seen: TL074CD."
-    },
-    {
-      "pn": "TL074A (TL074ACN, TL074ACDR, TL074ACNSR)",
-      "channels": 4,
-      "vendors": [
-        "Texas Instruments",
-        "STMicroelectronics"
-      ],
-      "status": "active",
-      "notes": "TL074ACD is Obsolete."
-    },
-    {
-      "pn": "TL074B (TL074BCN, TL074BCDR)",
-      "channels": 4,
-      "vendors": [
-        "Texas Instruments",
-        "STMicroelectronics"
-      ],
-      "status": "active",
-      "notes": "TL074BCD is Obsolete."
-    },
-    {
-      "pn": "TL074H (TL074HIDR, TL074HIDYYR, TL074HIPWR)",
-      "channels": 4,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active",
-      "notes": "New die. Thermal data added in SLOS080P (Nov 2020). Markings: 'TL074HID', PW 'TL074PW'."
-    },
-    {
-      "pn": "TL074M (TL074MJ, TL074MJB, TL074MFK, TL074MFKB, TL074MWB; SMD 8102306xx)",
-      "channels": 4,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active",
-      "notes": "Legacy flow (SFAB), per Rev W."
-    },
-    {
-      "pn": "TL074-EP (enhanced product)",
-      "channels": 4,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "Known only from the title of TI PCN 20120814000 ('TL074-EP', Mouser copy). Orderables, datasheet and status were not checked."
-    },
-    {
-      "pn": "TL072 (Diodes Incorporated)",
-      "channels": 2,
-      "vendors": [
-        "Diodes Incorporated"
-      ],
-      "status": "obsolete",
-      "notes": "The diodes.com product page marks TL072 Obsolete. Datasheet DS31865 Rev. 2-4, December 2023."
-    },
-    {
-      "pn": "TL071C/AC, TL072C/AC, TL074C/AC (Motorola)",
-      "channels": 0,
-      "vendors": [
-        "Motorola"
-      ],
-      "status": "obsolete (historical; onsemi successor status not verified)",
-      "notes": "Channels 0 means the entry covers single, dual and quad. Known from a Motorola datasheet copy on studylib.net. No onsemi document number or orderable was verified."
-    },
-    {
-      "pn": "NJM072 (NJM072B, NJM072C; NJM072CA series; orderable NJM072CG-TE2)",
-      "channels": 2,
-      "vendors": [
-        "JRC / Nisshinbo"
-      ],
-      "status": "active (Nisshinbo lists an NJM072CA series product page)",
-      "notes": "JRC's TL072-class JFET dual. The datasheet says it is 'ideally suited for ... high fidelity and audio amplifier applications'. Datasheet revision and date were not retrieved."
-    },
-    {
-      "pn": "NJM074 (NJM074CA series)",
-      "channels": 4,
-      "vendors": [
-        "JRC / Nisshinbo"
-      ],
-      "status": "active (Nisshinbo lists an NJM074CA series product page)",
-      "notes": "Quad equivalent. Its datasheet says NJM074/084 have the same electrical characteristics as NJM072B/082B except supply current."
-    }
+    "Texas Instruments",
+    "STMicroelectronics",
+    "Diodes Incorporated",
+    "JRC/Nisshinbo",
+    "Motorola"
   ],
   "lineage": [
     {
       "vendor": "Texas Instruments",
       "role": "originator",
-      "period": "1978-present",
-      "notes": "Datasheet SLOS080 ('SEPTEMBER 1978'). Oldest revision seen: D (Aug 1996). The TL07xH next-gen die was added in Oct 2020 (Rev O). PCN 20221219006.1 (21 Dec 2022, proposed first ship 20 Mar 2023) moved TL072/TL074 devices to the RFAB fab with a die revision. Since Rev U (Dec 2022), the non-H, non-M, non-PS/NS orderables are specified with new-die values. Rev W (Jul 2025) says they may be built on the legacy (SFAB) or the latest (RFB) flow."
+      "period": "1978–present",
+      "note": "SLOS080 from Sep 1978. TL07xH new die added 2020; plain TL072/TL074 moved to RFAB die 2022–2023."
     },
     {
       "vendor": "STMicroelectronics (SGS-Thomson)",
       "role": "second source",
-      "period": "unknown-present",
-      "notes": "Separate datasheets: TL072 DocID2298 Rev 8 (June 2014); TL074 DocID2297 Rev 5 (November 2013); TL071 Rev 3 (September 2008, doc number not captured). ST specs differ from TI's legacy die (15 nV/rtHz, 4 MHz typ)."
+      "period": "–present",
+      "note": "Own datasheets and die: 15 nV/√Hz, 4 MHz typ. Oldest edition seen: SGS-Thomson 1998."
     },
     {
       "vendor": "Diodes Incorporated",
       "role": "second source",
-      "period": "unknown-2020s (now Obsolete)",
-      "notes": "TL072 datasheet DS31865 Rev. 2-4, December 2023; the product page lists TL072 as Obsolete."
+      "period": "–2020s",
+      "note": "TL072, datasheet DS31865 Rev. 2-4 (Dec 2023); now Obsolete."
     },
     {
-      "vendor": "JRC / New Japan Radio / Nisshinbo",
-      "role": "second source (NJM072/NJM074)",
-      "period": "unknown-present",
-      "notes": "Nisshinbo Micro Devices has product pages for the NJM072CA and NJM074CA series. Old NJRC datasheets are mirrored on alldatasheet, datasheet4u and datasheetq."
+      "vendor": "JRC/Nisshinbo",
+      "role": "second source",
+      "period": "–present",
+      "note": "NJM072 / NJM074 equivalents; Nisshinbo lists NJM072CA and NJM074CA series."
     },
     {
-      "vendor": "Motorola / onsemi",
-      "role": "second source (historical)",
-      "period": "unknown",
-      "notes": "A Motorola TL071C/AC, TL072C/AC, TL074C/AC datasheet is mirrored on studylib.net. onsemi's status and document number were not verified."
+      "vendor": "Motorola",
+      "role": "second source",
+      "period": "historical",
+      "note": "TL071C/AC, TL072C/AC, TL074C/AC datasheet mirrored; onsemi successor status unverified."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "TL071 (TL071CP, TL071CDR, TL071CPSR, TL071IP, TL071IDR)",
+      "channels": 1,
+      "status": "active",
+      "note": "D/P pins 1, 5, 8 now NC (Rev W); only TL071CPSR (PS) keeps offset null."
+    },
+    {
+      "pn": "TL071A (TL071ACP, TL071ACD, TL071ACDR)",
+      "channels": 1,
+      "status": "active",
+      "note": "Vos 6 mV max (legacy); TL071ACD page shows legacy specs; named in PCN 20221219008."
+    },
+    {
+      "pn": "TL071B (TL071BCP, TL071BCDR)",
+      "channels": 1,
+      "status": "active",
+      "note": "Tightest grade, Vos 3 mV max (legacy table)."
+    },
+    {
+      "pn": "TL071H (TL071HIDBVR, TL071HIDCKR, TL071HIDR)",
+      "channels": 1,
+      "status": "active",
+      "note": "New die, −40 to 125 °C; production since Rev S. Marks 'TL071D', 'T71V', '1IO'."
+    },
+    {
+      "pn": "TL072 (TL072CP, TL072CDR, TL072CPWR, TL072CPS/CPSR, TL072IP, TL072IDR)",
+      "channels": 2,
+      "status": "active",
+      "note": "Same markings across the die move. Tube D orderables dropped. ST: TL072CDT, TL072IDT, TL072BIDT."
+    },
+    {
+      "pn": "TL072A (TL072ACP, TL072ACDR, TL072ACPS)",
+      "channels": 2,
+      "status": "active",
+      "note": "PS package TL072ACPS keeps legacy-die specs. TL072ACDRE4 named in PCN 20221219008."
+    },
+    {
+      "pn": "TL072B (TL072BCP, TL072BCDR)",
+      "channels": 2,
+      "status": "active",
+      "note": "TL072BCD Obsolete (Rev V/W addenda)."
+    },
+    {
+      "pn": "TL072H (TL072HIDR, TL072HIDDFR, TL072HIPWR)",
+      "channels": 2,
+      "status": "active",
+      "note": "New die since Rev R; 40 V, 5 MHz, 20 V/µs. Marks 'TL072D', '072HPW', 'O72F'."
+    },
+    {
+      "pn": "TL072M (TL072MJG, TL072MJGB, TL072MFKB, TL072MUB; SMD 8102305xx; JM38510/11905BPA)",
+      "channels": 2,
+      "status": "active",
+      "note": "Military −55 to 125 °C, added Rev N (2017); legacy flow (CSO: SFAB)."
+    },
+    {
+      "pn": "TL074 (TL074CN, TL074CDR, TL074CDBR, TL074CPWR, TL074CNSR, TL074IN, TL074IDR)",
+      "channels": 4,
+      "status": "active",
+      "note": "TL074CD/ID/CPW Obsolete; TL074CNSR keeps legacy specs. TL074CDR 2436/2443/2522 behave as new die."
+    },
+    {
+      "pn": "TL074A (TL074ACN, TL074ACDR, TL074ACNSR)",
+      "channels": 4,
+      "status": "active",
+      "note": "TL074ACD Obsolete."
+    },
+    {
+      "pn": "TL074B (TL074BCN, TL074BCDR)",
+      "channels": 4,
+      "status": "active",
+      "note": "TL074BCD Obsolete."
+    },
+    {
+      "pn": "TL074H (TL074HIDR, TL074HIDYYR, TL074HIPWR)",
+      "channels": 4,
+      "status": "active",
+      "note": "New die; thermal data added Rev P (Nov 2020). Marks 'TL074HID', 'TL074PW'."
+    },
+    {
+      "pn": "TL074M (TL074MJ, TL074MJB, TL074MFK, TL074MFKB, TL074MWB; SMD 8102306xx)",
+      "channels": 4,
+      "status": "active",
+      "note": "Military; legacy flow (SFAB) per Rev W."
+    },
+    {
+      "pn": "TL074-EP (enhanced product)",
+      "channels": 4,
+      "status": "unknown",
+      "note": "Known only from the title of TI PCN 20120814000."
+    },
+    {
+      "pn": "TL072 (Diodes Incorporated)",
+      "channels": 2,
+      "status": "obsolete",
+      "note": "Diodes product page marks it Obsolete. Datasheet DS31865 Rev. 2-4 (Dec 2023)."
+    },
+    {
+      "pn": "TL071C/AC, TL072C/AC, TL074C/AC (Motorola)",
+      "channels": 0,
+      "status": "obsolete",
+      "note": "Covers single, dual and quad. Historical Motorola datasheet; no onsemi orderable verified."
+    },
+    {
+      "pn": "NJM072 (NJM072B, NJM072C; NJM072CA series; orderable NJM072CG-TE2)",
+      "channels": 2,
+      "status": "active",
+      "note": "JRC TL072-class dual, 'ideally suited for … high fidelity and audio'."
+    },
+    {
+      "pn": "NJM074 (NJM074CA series)",
+      "channels": 4,
+      "status": "active",
+      "note": "Quad; same electrical characteristics as NJM072B except supply current."
     }
   ],
   "key_specs": [
     {
-      "parameter": "e_n @1 kHz (TI legacy die)",
-      "value": "18 nV/rtHz typ",
-      "condition": "+/-15 V, RS=20 ohm, 25 C (also 10 Hz-10 kHz: 4 uVrms)",
-      "source": "TI SLOS080N (Jul 2017), Switching Characteristics. Rev U-W keep this for PS/NS packages and TL07xM (EC tables); the Rev W Features footnote may assign 18 nV to TL07xM only (see open questions)"
+      "parameter": "Input noise (1 kHz)",
+      "value": "18 nV/√Hz legacy → 37 nV/√Hz new die; ST 15 nV/√Hz",
+      "condition": "25 °C; new die 21 nV/√Hz at 10 kHz",
+      "source": "SLOS080N / W; ST DocID2298"
     },
     {
-      "parameter": "e_n @1 kHz (TI new die: TL07xH, and all non-PS/NS non-M from Rev U)",
-      "value": "37 nV/rtHz typ (21 nV/rtHz @10 kHz; 0.1-10 Hz 9.2 uVpp / 1.4 uVrms)",
-      "condition": "VS 4.5-40 V, 25 C",
-      "source": "TI SLOS080W sec 5.7 and 5.9; Rev W changelog (Features Vn changed 18 to 37 nV/rtHz), web-confirmed at ti.com/lit/ds/symlink/tl072.pdf"
-    },
-    {
-      "parameter": "e_n @1 kHz (ST TL072)",
-      "value": "15 nV/rtHz typ",
-      "condition": "RS=100 ohm",
-      "source": "ST DocID2298 Rev 8 (Jun 2014), as summarised by bandrews/whichpart C6961"
-    },
-    {
-      "parameter": "i_n",
-      "value": "0.01 pA/rtHz (legacy) vs 80 fA/rtHz (TL07xH)",
+      "parameter": "Current noise",
+      "value": "0.01 pA/√Hz legacy → 80 fA/√Hz new die",
       "condition": "1 kHz",
-      "source": "SLOS080N; SLOS080W sec 5.7 (sec 5.9 lists 10 fA/rtHz for the legacy table)"
+      "source": "SLOS080N / SLOS080W"
     },
     {
       "parameter": "GBW",
-      "value": "3 MHz typ (legacy unity-gain BW) vs 5.25 MHz (new die); ST TL072 4 MHz typ",
-      "condition": "+/-15 V, 25 C",
-      "source": "SLOS080N; SLOS080U-W; TI part pages (TL071ACD '3 MHz', TL072HIDR '5 MHz'); RS listing for ST TL072IDT (4 MHz)"
+      "value": "3 MHz legacy → 5.25 MHz new die; ST 4 MHz",
+      "condition": "±15 V, 25 °C",
+      "source": "SLOS080N / U–W; ST via RS"
     },
     {
       "parameter": "Slew rate",
-      "value": "13 V/us typ (8 min C/AC/BC/I; 5 min M) legacy vs 20 V/us new die",
-      "condition": "legacy: VI=10 V, CL=100 pF, RL=2k; new: VS=40 V, G=+1, CL=20 pF",
-      "source": "SLOS080N; SLOS080W sec 5.7; TI part pages (TL071ACD 13 V/us, TL072HIDR 20 V/us). Rev V/W legacy AC table also prints 20 typ"
+      "value": "13 V/µs typ (8 min) legacy → 20 V/µs new die",
+      "condition": "legacy CL 100 pF; new VS 40 V",
+      "source": "SLOS080N / SLOS080W"
     },
     {
-      "parameter": "THD / THD+N",
-      "value": "0.003% typ (legacy) vs 0.00012% (new die)",
-      "condition": "legacy: 6 Vrms, RL>=2k, 1 kHz, G=1, RS<=1k; new: VS=40 V, 6 Vrms, G=+1, 1 kHz",
-      "source": "SLOS080N; SLOS080W"
+      "parameter": "THD+N",
+      "value": "0.003% legacy → 0.00012% new die (VS = 40 V)",
+      "condition": "6 Vrms, 1 kHz, G = 1",
+      "source": "SLOS080N / SLOS080W"
     },
     {
       "parameter": "Supply range",
-      "value": "Legacy: recommended +/-5 to +/-15 V; abs max 36 V total (+/-18 V before Rev N). New die: 4.5-40 V (+/-2.25 to +/-20 V), abs max 42 V",
-      "condition": "Rev V/W recommended 10-30 V for PS/NS and TL07xM",
-      "source": "SLOS080N sec 6.1/6.3; SLOS080W sec 5.1/5.3; TI part pages headline 30 V (TL071ACD) vs 40 V (TL072HIDR)"
+      "value": "legacy ±5 to ±15 V (36 V max) → new 4.5–40 V (42 V max)",
+      "condition": "PS/NS and M: 10–30 V (Rev V/W)",
+      "source": "SLOS080N / SLOS080W"
     },
     {
-      "parameter": "Iq per channel",
-      "value": "1.4 mA typ / 2.5 mA max (legacy) vs 0.9375 mA typ / 1.125 mA max (TL07xH)",
-      "condition": "no load, 25 C",
-      "source": "SLOS080N; SLOS080W sec 5.7"
+      "parameter": "Supply current",
+      "value": "1.4 / 2.5 mA legacy → 0.9375 / 1.125 mA new (typ/max)",
+      "condition": "per channel, no load",
+      "source": "SLOS080N / SLOS080W"
     },
     {
-      "parameter": "Output drive",
-      "value": "Legacy: +/-13.5 V typ into 10k, +/-10 V min into >=2k at +/-15 V; short-circuit duration unlimited (no current figure). New die: ISC +/-26 mA, CLOAD 300 pF",
-      "condition": "25 C",
-      "source": "SLOS080N; SLOS080W sec 5.7"
+      "parameter": "Output current",
+      "value": "legacy ±10 V min into 2 kΩ; new die ISC ±26 mA",
+      "condition": "±15 V, 25 °C",
+      "source": "SLOS080N / SLOS080W"
     },
     {
-      "parameter": "Vos / Ib",
-      "value": "Legacy C grade 3 mV typ / 10 mV max, Ib 65 pA typ / 200 pA max. TL07xH: +/-1 mV typ / +/-4 mV max, Ib +/-1 pA typ / +/-120 pA max",
-      "condition": "25 C",
-      "source": "SLOS080N; SLOS080W; TI TL072HIDR part page (4 mV)"
+      "parameter": "Offset voltage",
+      "value": "3/10 mV legacy C → ±1/±4 mV new die (typ/max)",
+      "condition": "25 °C",
+      "source": "SLOS080N / SLOS080W"
     },
     {
-      "parameter": "Input stage / common-mode",
-      "value": "Legacy: JFET input, VICR +/-11 V min (-12 to +15 typ), phase reversal if input nears V-. New: 'FET-input', VCM (V-)+1.5 V to V+, diode-clamped inputs, 'No Phase Reversal' plot",
-      "condition": "",
-      "source": "SLOS080N sec 7.1 and 8.3.2; SLOS080W sec 5.1 note 2, sec 5.7, Fig 5-26"
+      "parameter": "Input bias current",
+      "value": "65/200 pA legacy → ±1/±120 pA new die (typ/max)",
+      "condition": "25 °C",
+      "source": "SLOS080N / SLOS080W"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "JFET legacy; new 'FET-input', CM to V+, clamped inputs",
+      "condition": "legacy reverses near V−",
+      "source": "SLOS080N / SLOS080W"
     }
   ],
   "reputation": {
-    "summary": "It is the ubiquitous low-cost BiFET. TI's datasheet (and the Diodes and JRC equivalents) calls it 'ideally suited for high-fidelity and audio preamplifier applications'. Hi-fi enthusiasts treat it as the stock or baseline part that upgrades (OPA2134, NE5532 and others) are judged against, not as a favourite in its own right. It is valued for its JFET input (high-impedance sources), low distortion at line level and low price. Its noise (18 nV/rtHz, legacy die) is considered acceptable in DAC low-pass filters, tone controls and crossovers, but not in low-impedance, high-gain stages. Douglas Self's EE Times series on op-amp selection reviews it among JFET-input types; a search summary says he uses TL072s where a DC servo is needed. NwAvGuy's op-amp measurements and Cycfi's op-amp shootout are frequently cited comparisons. It is standard in synth and Eurorack, guitar-pedal and pro-audio-mixer designs. Since 2024-2026, pedal and synth forums (PedalPCB, Mod Wiggler, the Gremblog) discuss TI's doubled noise spec.",
+    "summary": "The ubiquitous cheap BiFET, which TI calls 'ideally suited for high-fidelity and audio preamplifier applications'. Enthusiasts treat it as the stock part that upgrades (OPA2134, NE5532) are judged against. JFET input and low distortion suit filters, tone controls and crossovers, not low-impedance high-gain stages. Douglas Self, NwAvGuy and Cycfi compare it; synth forums discuss TI's doubled noise spec.",
     "sonic_descriptors": [
-      "'class-A output sound style' attributed to JFET op-amps (Soomal, CN; folklore)",
-      "'bright and open' (Patina pedal-modelling project; folklore)",
-      "'warm/smooth' (synth and pedal builders, per discovery notes; not verified)",
-      "adequate or neutral where noise is not critical (secondary summaries of Self/ESP; not quoted verbatim)"
+      "class-A sound (folklore)",
+      "bright and open (folklore)",
+      "warm, smooth (unverified)",
+      "neutral where noise allows"
     ],
     "typical_uses": [
-      "DAC low-pass filter and output stages (e.g. YBA Design WD202 uses a TI TL072 after an OPA2134 I/V stage, per Soomal)",
-      "PC sound cards and USB interfaces (TerraTec DMX 6 Fire USB, Tempotec Fantasia, Audioprobe Spartan Cue)",
-      "active speakers and headphone amps (ICON PX-T6A, DA&T HA-1)",
-      "DC servos in preamps (Self, per search summary)",
-      "Eurorack and synth VCF/LFO/BBD/mixer circuits",
-      "guitar pedals and buffers",
-      "active crossovers, EQ and tone-control stages in mixers"
+      "DAC low-pass filters and output stages",
+      "sound cards, USB interfaces, active speakers, headphone amps",
+      "DC servos in preamps (Self)",
+      "Eurorack, synth and guitar-pedal circuits",
+      "active crossovers, EQ and tone controls in mixers"
     ],
     "caveats": [
-      "Legacy die phase reversal: TI Rev N says to keep single-supply inputs above 1 V to avoid the output going high, and to keep VCM >= V- + 4 V.",
-      "Legacy die needs 10 V total supply minimum (recommended 10-30 V in Rev V/W), so it is not usable at 5 V.",
-      "Output swing is only +/-10 V min into 2 kOhm at +/-15 V, so it is weak for 600-ohm or headphone loads.",
-      "Since PCN 20221219006.1 (first ship proposed 20 Mar 2023) and Rev U, the same TI part number can be the new die, with e_n 37 nV/rtHz (about 6 dB noisier at 1 kHz) but lower THD+N, faster slew and inputs that reach V+. Batch-to-batch sound or noise differences are possible.",
-      "A TI E2E thread reports TL074CDR date codes 2436, 2443 and 2522 failing a customer's functional test: the output swung to the -13 V rail where older parts stopped near -11.5 V, and ESD/protection structures changed.",
-      "TL071 in D/P packages no longer has offset-null pins (NC, 'Do not connect') per Rev W. Old boards with a trimmer on pins 1/5 lose the trim function.",
-      "New-die inputs are diode-clamped (differential input limited to VS+0.2 V, 10 mA). This can matter in comparator or clipper circuits that relied on the legacy die's wide differential range."
+      "Legacy die reverses phase near V−; needs 10 V minimum supply, so unusable at 5 V.",
+      "Only ±10 V min into 2 kΩ: weak for 600 Ω or headphone loads.",
+      "Since PCN 20221219006.1 the same part number may be the new die: ~6 dB noisier, lower THD+N.",
+      "TL074CDR date codes 2436/2443/2522 failed a customer test: output swung to −13 V, not −11.5 V.",
+      "TL071 D/P lost offset-null pins (Rev W); new-die inputs are diode-clamped (VS+0.2 V, 10 mA)."
     ],
     "sources": [
       "https://www.ti.com/lit/ds/symlink/tl072.pdf",
@@ -346,930 +270,29 @@
       "https://www.ti.com/product/TL072"
     ]
   },
-  "datasheets": [
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise, FET-Input Operational Amplifiers",
-      "doc_number": "SLOS080",
-      "revision": "W",
-      "date": "2025-07",
-      "url": "https://www.ti.com/lit/ds/symlink/tl072.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "Current revision (89 pp). Web search found no Rev X as of Sep 2026. Rev W changes (web-confirmed): Features Vn 18 to 37 nV/rtHz; trim removed except on the PS package; device table updated to the addendum. The draft also records the old/new die note and the nomenclature table (CSO SFAB vs RFB) from text extraction."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx datasheet (tl071 symlink)",
-      "doc_number": "SLOS080",
-      "revision": "W",
-      "date": "2025-07",
-      "url": "https://www.ti.com/lit/ds/symlink/tl071.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "low",
-      "revision_status": "confirmed",
-      "note": "unconfirmed: alias symlink widely referenced in KiCad libraries. Assumed to serve SLOS080; not seen in web results."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise, FET-Input Operational Amplifiers (tl074 symlink)",
-      "doc_number": "SLOS080",
-      "revision": "W",
-      "date": "2025-07",
-      "url": "https://www.ti.com/lit/ds/symlink/tl074.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "The web result title matches the current Rev W title, so it serves SLOS080. The revision letter was not shown in the result."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx datasheet (tl072h symlink)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.ti.com/lit/ds/symlink/tl072h.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "revision_text": "current",
-      "note": "unconfirmed: seen in KiCad projects (ts=2021). TL07xH has no separate datasheet; it lives in SLOS080 from Rev O."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise, FET-Input Operational Amplifiers (GitHub copy)",
-      "doc_number": "SLOS080",
-      "revision": "W",
-      "date": "2025-07",
-      "url": "https://raw.githubusercontent.com/jcfurey/cambridge_reverb/HEAD/datasheets/TL072_TI.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "Header verified by text extraction in an earlier session; not re-checked by web search. Byte-identical copy at https://raw.githubusercontent.com/reeenatamc/feuoir-interface/HEAD/docs/datasheets/tl072.pdf."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise, FET-Input Operational Amplifiers (GitHub copy)",
-      "doc_number": "SLOS080",
-      "revision": "W",
-      "date": "2025-07",
-      "url": "https://raw.githubusercontent.com/escaroda/goya1746/HEAD/docs/datasheets/tl072.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "A different file build of Rev W (PDF ModDate 2025-10-28). Checked in an earlier session; not re-checked by web search."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise FET-Input Operational Amplifiers (GitHub copy)",
-      "doc_number": "SLOS080",
-      "revision": "V",
-      "date": "2023-04",
-      "url": "https://raw.githubusercontent.com/james-l-key/Esp32_patch_bay_circuit/HEAD/DataSheets/tl072.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "Frozen Rev V (addendum 18-Jun-2025, 92 pp). Carries the full revision history N to V and still shows TL071 offset pins on D/P/PS. Text-extracted in an earlier session. Rev V date (April 2023) is also confirmed by the Rev W changelog seen via web search."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise FET-Input Operational Amplifiers (makerhero copy)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.makerhero.com/img/files/download/TL07XX-Datasheet.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "revision_text": "V? (U-V era)",
-      "note": "unconfirmed: the title has no comma ('Low-Noise FET-Input'), which matches the Rev V wording, so it likely holds Rev U or V. One search summary attributed it to Rev M, which conflicts with the title."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07XX datasheet (alldatasheet copy, 84 pp)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1314025/TI/TL07XX.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "unconfirmed: the page count (84) matches none of N (69), V (92) or W (89), so it is probably an O-U revision."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx datasheet",
-      "doc_number": "SLOS080",
-      "revision": "Q",
-      "date": "2021-06",
-      "url": "https://www.ti.com/lit/ds/slos080q/slos080q.pdf",
-      "url_kind": "vendor_revision_specific",
-      "confidence": "low",
-      "revision_status": "confirmed",
-      "note": "unconfirmed: URL seen in the dodotronix/dodo_klibs KiCad symbol (mid-June 2021). Not seen in web results; TI may no longer serve it."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise JFET-Input Operational Amplifiers (GitHub copy)",
-      "doc_number": "SLOS080",
-      "revision": "N",
-      "date": "2017-07",
-      "url": "https://raw.githubusercontent.com/BertyBasset/Datasheet-Viewer/HEAD/Amplifiers/TL07xx%20low%20noise%20JFET%20Op%20Amp.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "Last pre-TL07xH revision (addendum 6-Feb-2020, 69 pp). Legacy-die specs: 18 nV, 3 MHz, 13 V/us. History covers J to N. Text-extracted in an earlier session."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "slos080n (Scribd copy)",
-      "doc_number": "SLOS080",
-      "revision": "N",
-      "date": "2017-07",
-      "url": "https://www.scribd.com/document/391109026/slos080n",
-      "url_kind": "third_party_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "The Scribd title names 'slos080n'. The date is carried over from the Rev N copy above."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise JFET-Input Operational Amplifiers (components101 copy)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "2015-06",
-      "url": "https://components101.com/sites/default/files/component_datasheet/TL074%20Datasheet.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "revision_text": "M? (JFET-Input era K-N)",
-      "note": "unconfirmed: a search summary attributed Rev M (June 2015) to this copy. Other JFET-Input-era copies with unconfirmed revisions: https://www.thonk.co.uk/wp-content/uploads/2019/06/tl0xx.pdf, https://datasheet.octopart.com/TL072CD-Texas-Instruments-datasheet-82512266.pdf, https://www.electronicoscaldas.com/datasheet/TL071-TL071A-TL071B-TL072-TL072A-TL072B-TL074-TL074A-TL074B_TI.pdf."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL071, TL071A, TL071B, TL072, TL072A, TL072B, TL074, ... (Mouser copy)",
-      "doc_number": "SLOS080",
-      "revision": "L",
-      "date": "2014-02",
-      "url": "https://www.mouser.com/datasheet/2/405/slos080l-316255.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "The Mouser filename names slos080l. The date is from the zaccesss REPORT citation ('SLOS080L, Feb. 2014'); the header was not seen."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07x datasheet (Mouser copies, revision not identified)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.mouser.com/datasheet/2/405/tl072-557363.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "unconfirmed revision. The page-1 symbol text matches the K-N layout. Sibling copies: https://www.mouser.com/datasheet/2/405/tl074-557399.pdf and https://web.ece.ucsb.edu/Faculty/rodwell/Classes/ECE137B/datasheets/tl072.pdf."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL071, TL071A, TL071B, TL072, TL072A, TL072B, TL074, TL074A, TL074B Low-Noise JFET-Input Operational Amplifiers",
-      "doc_number": "SLOS080",
-      "revision": "J",
-      "date": "2005-03",
-      "url": "https://leachlegacy.ece.gatech.edu/ece4435/sp08/TL071ckt.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "University copy (Georgia Tech). The web result title shows 'SLOS080J SEPTEMBER 1978 REVISED MARCH 2005'."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL071 ... TL074B datasheet (UCSB copy)",
-      "doc_number": "SLOS080",
-      "revision": "J",
-      "date": "2005-03",
-      "url": "https://web.ece.ucsb.edu/Faculty/rodwell/Classes/ECE137A/datasheets/tl071a.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "A search summary identifies it as SLOS080J (March 2005)."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TEXAS INSTRUMENTS (TL072ACD) LOW NOISE JFET ... (Jameco copy)",
-      "doc_number": "SLOS080",
-      "revision": "J",
-      "date": "2005-03",
-      "url": "https://www.jameco.com/jameco/products/prodds/759762.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "A search summary identifies it as SLOS080J. Also https://datasheet.octopart.com/TL072IP-Texas-Instruments-datasheet-10746755.pdf (J per the same summary). The revision of https://datasheet.octopart.com/TL072IP-Texas-Instruments-datasheet-8317744.pdf is unknown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL071 ... TL074 Low-Noise JFET-Input Operational Amplifiers",
-      "doc_number": "SLOS080",
-      "revision": "D",
-      "date": "1996-08",
-      "url": "https://datasheet.octopart.com/TL072CP-Various-datasheet-7282711.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "confirmed",
-      "note": "unconfirmed: two search summaries mention 'SLOS080D - SEPTEMBER 1978 - REVISED AUGUST 1996' but do not say which mirror holds it. Candidates are this Octopart file and https://www.yumpu.com/en/document/view/25322032/low-noise-jfet-input-operational-amplifiers-multimania."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "TL072, TL072A, TL072B - Low noise JFET dual operational amplifiers",
-      "doc_number": "DocID2298",
-      "revision": "Rev. 8",
-      "date": "2014-06",
-      "url": "https://www.st.com/resource/en/datasheet/tl072.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "The web result header shows 'June 2014 DocID2298 Rev 8'. Rev 8 removed TL072IYD/AIYD/BIYD and updated the order-code table. An older ST revision (2007) is mirrored at https://www.alldatasheet.com/datasheet-pdf/pdf/194858/STMICROELECTRONICS/TL072_07.html (unconfirmed)."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "TL074 - Low-noise JFET quad operational amplifier",
-      "doc_number": "DocID2297",
-      "revision": "Rev. 5",
-      "date": "2013-11",
-      "url": "https://www.st.com/resource/en/datasheet/tl074.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "Per the web search summary. An older 2008 revision is mirrored at https://www.alldatasheet.com/datasheet-pdf/pdf/242228/STMICROELECTRONICS/TL074_08.html (unconfirmed)."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "TL071 - Low noise JFET single operational amplifier",
-      "doc_number": "unknown (ST)",
-      "revision": "Rev. 3",
-      "date": "2008-09",
-      "url": "https://www.st.com/resource/en/datasheet/tl071.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "The web result header shows 'September 2008 Rev 3'. The document number was not captured."
-    },
-    {
-      "vendor": "Diodes Incorporated",
-      "title": "TL072",
-      "doc_number": "DS31865",
-      "revision": "Rev. 2",
-      "date": "2023-12",
-      "url": "https://www.diodes.com/datasheet/download/TL072.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "The header appears in the web result title. The product is marked Obsolete at https://www.diodes.com/part/view/TL072."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "TL071C,AC TL072C,AC TL074C,AC Low noise, JFET input op-amps",
-      "doc_number": "unknown",
-      "revision": "",
-      "date": "",
-      "url": "https://studylib.net/doc/18637375/tl071c-ac-tl072c-ac-tl074c-ac-low-noise--jfet-input",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "unconfirmed: historical Motorola datasheet mirror. Document number and date not seen."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL071, TL071A, TL071B, TL072, TL072A, TL072B, TL074, ... (Mouser copy)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.mouser.com/datasheet/2/405/texas%20instruments_tl072-1208707.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Came up in searches for SLOS080C/E/F and SLOS080A/B/D/I, but the summary shows no revision header. The title uses the old all-part-numbers style from before Rev K (Jan 2014), so this may be a copy from before 2014 (Rev J or earlier). Not verified."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL071, TL071A, TL071B, TL072 TL072A, TL072B, TL074, TL074A, TL074B (UCSD Physics 120 course copy)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://neurophysics.ucsd.edu/courses/physics_120/TI071.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "University course copy with the old-format title from before Rev K. It could be one of the missing revisions from 1996 to 2005 (E to J). The summary shows no revision."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL071 datasheet (41 pages) TI | LOW-NOISE JFET-INPUT OPERATIONAL AMPLIFIERS",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/html-pdf/206601/TI/TL071/78/3/TL071.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "alldatasheet HTML view (ID 206601, 41 pages) with the upper-case old-style title. Found in a search for the 'SEPTEMBER 1978 – REVISED' header, but the summary shows no revision letter."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise JFET-Input Operational Amplifiers",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.logosfoundation.org/elektron/mixers/tl071.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "The 'TL07xx Low-Noise JFET-Input' title belongs to the new-format sheets, roughly Rev K to N (2014-2017). The exact revision is not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise JFET-Input Operational Amplifiers",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.electronicoscaldas.com/datasheet/TL071-TL071A-TL071B-TL072-TL072A-TL072B-TL074-TL074A-TL074B_TI.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Distributor copy (Electronicos Caldas) with the Rev K-N era title. Revision not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise JFET-Input Operational Amplifiers",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://aionfx.com/app/files/datasheets/texas-instruments-tl072.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Hobby-site copy (Aion FX) with the Rev K-N era title. Revision not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise FET-Input Operational Amplifiers",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.dexhal.cz/data/files/tl071(1).pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "The title says 'FET-Input' rather than 'JFET-Input' and has no comma after 'Low-Noise'. That differs from both the Rev K-N title and the current 'Low-Noise, FET-Input' title, so this is probably from the TL07xH era (Rev O or later). Not verified."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL071 Low-Noise JFET-Input Operational Amplifiers (Texas Instruments)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet4u.com/datasheet/etcTI/TL071-1396328",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "datasheet4u copy. Revision not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "Low-Noise JFET-Input Operational Amplifiers (MultiMania)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.yumpu.com/en/document/view/25322032/low-noise-jfet-input-operational-amplifiers-multimania",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Yumpu re-host of a copy that was on a MultiMania personal site, so probably an older revision. Revision not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL072 Datasheet Texas Instruments (radiolocman)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.radiolocman.com/datasheet/data.html?di=328435&%2FTL072=",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Found in a search for the 1999-2004 'REVISED' header. The summary shows no revision. One result in that search mentioned a PDF published in March 2001, but it was not clear which one."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL072 Datasheet(PDF) - Texas Instruments (alldatasheet 764831)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/764831/TI/TL072.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "alldatasheet entry separate from the known 1314025 TL07XX copy. Revision not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TEXAS INSTRUMENTS (TL072ID) DUAL LOW NOISE ... (Octopart cache)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet.octopart.com/TL072ID-Texas-Instruments-datasheet-7835781.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Octopart cache. Came up in the SLOS080A/B/D/I search, but the summary tied only the known 7282711 copy to SLOS080D. Revision not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TEXAS INSTRUMENTS (TL072IP) LOW NOISE JFET ... (Octopart cache)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet.octopart.com/TL072IP-Texas-Instruments-datasheet-8317744.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Octopart cache. Revision not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL072 (each amplifier) TL074 (each amplifier) (Mouser tl074 copy)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.mouser.com/datasheet/2/405/tl074-557399.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "TL074 counterpart of the known Mouser tl072-557363.pdf (same search-snippet text). It is probably the same revision as that copy, which is also unknown (Rev K-N format)."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL072 Low-Noise Op-Amp Datasheet (Scribd)",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.scribd.com/document/340345307/tl072-pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Scribd upload separate from the known slos080n document (391109026). It came up in a search for text that mentions 18 nV/rtHz, so it is probably from before Rev U, but the revision is not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TI Japan symlink TL074 datasheet",
-      "doc_number": "SLOS080",
-      "revision": "",
-      "date": "",
-      "url": "https://www.ti.com/jp/lit/ds/symlink/tl074.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "TI Japan-site symlink path. The search title was just 'Ti'. It is not known whether this is the English sheet or a Japanese translation, or which revision it is."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "TL071C,AC TL072C,AC TL074C,AC Low Noise, JFET Input Operational Amplifiers (SFU reference copy)",
-      "doc_number": "not shown",
-      "revision": "",
-      "date": "",
-      "url": "https://www2.ensc.sfu.ca/reference/data-sheets/TL07X.PDF",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "University reference-library copy of the Motorola sheet. The Motorola document number (xxx/D) and revision are not shown."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "TL071 (Top View) TL072 (Top View) TL074 (Top View) D SUFFIX PLASTIC PACKAGE (SFU ENSC220 lab copy)",
-      "doc_number": "not shown",
-      "revision": "",
-      "date": "",
-      "url": "https://www.sfu.ca/~ljilja/ENSC220/Labs/Lab_writeups/tl071crev1.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "The filename 'tl071crev1' hints at a Motorola 'Rev 1' edition, but the search summary does not show a revision string. Not verified."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "TL071C,AC TL072C,AC TL074C,AC Low Noise, JFET Input Operational Amplifiers (datasheetcatalog PDF)",
-      "doc_number": "not shown",
-      "revision": "",
-      "date": "",
-      "url": "https://pdf.datasheetcatalog.com/datasheet/motorola/TL072ACP.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "datasheetcatalog PDF of the Motorola sheet. Revision not shown."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "TL071C Datasheet pdf - LOW NOISE, JFET INPUT OPERATIONAL AMPLIFIERS - Motorola",
-      "doc_number": "not shown",
-      "revision": "",
-      "date": "",
-      "url": "http://www.datasheetcatalog.com/datasheets_pdf/T/L/0/7/TL071C.shtml",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "datasheetcatalog index page for the Motorola TL071C sheet."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "TL071C Datasheet(PDF) - Motorola, Inc (alldatasheet 5772)",
-      "doc_number": "not shown",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/5772/MOTOROLA/TL071C.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "alldatasheet copy of the Motorola sheet. Revision not shown."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "TL071C,AC - TL072C,AC TL074C,AC (Silicon Ark copy)",
-      "doc_number": "not shown",
-      "revision": "",
-      "date": "",
-      "url": "https://www.silicon-ark.co.uk/datasheets/tl071-tl074-datasheet-motorola.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Copy from a UK component supplier (Silicon Ark). Revision not shown."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "TL071C LOW NOISE, JFET INPUT OPERATIONAL AMPLIFIERS (datasheet4u)",
-      "doc_number": "not shown",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet4u.com/datasheet-pdf/Motorola/TL071C/pdf.php?id=321069",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "datasheet4u copy (id 321069, same id as the datasheetspdf.com entry). Revision not shown."
-    },
-    {
-      "vendor": "Motorola",
-      "title": "TL071C Datasheet, OPERATIONAL AMPLIFIERS (datasheetspdf)",
-      "doc_number": "not shown",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheetspdf.com/pdf/321069/Motorola/TL071C/1",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "There is also a related entry at https://datasheetspdf.com/pdf/321040/Motorola/TL071/1. Revision not shown."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "Datasheet TL072, TL072A, TL072B STMicroelectronics (radiolocman)",
-      "doc_number": "DocID2298 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=179807",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Could hold a DocID2298 revision earlier than Rev 8. The revision is not shown."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "TL072 Datasheet(PDF) - STMicroelectronics (alldatasheet 159225)",
-      "doc_number": "DocID2298 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/159225/STMICROELECTRONICS/TL072.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Revision not shown."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "TL074 Datasheet(PDF) - STMicroelectronics (alldatasheet 25382)",
-      "doc_number": "DocID2297 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/25382/STMICROELECTRONICS/TL074.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "The low alldatasheet ID (25382) points to an early upload, which may be an older ST or SGS-Thomson edition. Revision not shown."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "title": "Datasheet TL074 STMicroelectronics (radiolocman)",
-      "doc_number": "DocID2297 (presumed)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=167737",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Revision not shown."
-    },
-    {
-      "vendor": "SGS-Thomson Microelectronics",
-      "title": "Datasheet TL072CN, TL072CD, TL072C, TL072ACN, TL072ACD (SGS Thomson Microelectronics) - ManualMachine",
-      "doc_number": "not shown",
-      "revision": "",
-      "date": "1998",
-      "url": "https://manualmachine.com/datasheet/tl072cn/4451986-datasheet-sgs-thomson-microelectronics/",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "The search summary says this is a 1998 version. It would be the oldest ST/SGS-Thomson TL072 edition found, from before DocID numbering. The exact date line and revision are not shown."
-    },
-    {
-      "vendor": "SGS-Thomson Microelectronics",
-      "title": "TL072CN Datasheet - LOW NOISE DUAL JFET OP-AMPS from SGS-Thomson Microelectronics (chipdocs)",
-      "doc_number": "not shown",
-      "revision": "",
-      "date": "",
-      "url": "http://www.chipdocs.com/pndecoder/datasheets/STM/TL072CN.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Also https://www.chipdocs.com/pndecoder/datasheets/STM/TL072C.html and the series page http://www.chipdocs.com/datasheets/datasheet-pdf/SGSThomson-Microelectronics/TL072.html. Revision not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx datasheet",
-      "doc_number": "SLOS080",
-      "revision": "U",
-      "date": "2022-12",
-      "url": "",
-      "url_kind": "archive",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "No copy located. Known from the Rev V revision history. This is the revision that moved non-PS/NS, non-M specs to new-die values, and it coincides with PCN 20221219006.1 (21 Dec 2022, 'Datasheet update')."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx datasheet",
-      "doc_number": "SLOS080",
-      "revision": "T",
-      "date": "2021-12",
-      "url": "",
-      "url_kind": "archive",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "No copy located. From the Rev V history (DCK pinout fix)."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx datasheet",
-      "doc_number": "SLOS080",
-      "revision": "S",
-      "date": "2021-07",
-      "url": "",
-      "url_kind": "archive",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "No copy located. TL071H released to production."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx datasheet",
-      "doc_number": "SLOS080",
-      "revision": "R",
-      "date": "2021-06",
-      "url": "",
-      "url_kind": "archive",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "No copy located. TL072H released to production."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx datasheet",
-      "doc_number": "SLOS080",
-      "revision": "P",
-      "date": "2020-11",
-      "url": "",
-      "url_kind": "archive",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "No copy located."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx datasheet",
-      "doc_number": "SLOS080",
-      "revision": "O",
-      "date": "2020-10",
-      "url": "",
-      "url_kind": "archive",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "No copy located. First revision to include TL07xH."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx Low-Noise JFET-Input Operational Amplifiers",
-      "doc_number": "SLOS080",
-      "revision": "M",
-      "date": "2015-06",
-      "url": "",
-      "url_kind": "archive",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "Two web search summaries say SLOS080M is printed 'REVISED JUNE 2015'. The draft had February 2014, taken from the Rev N changelog heading. Exactly which mirror holds M is unconfirmed (see the components101 entry)."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "TL07xx datasheet",
-      "doc_number": "SLOS080",
-      "revision": "K",
-      "date": "2014-01",
-      "url": "",
-      "url_kind": "archive",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "Format-only update from J. Web-confirmed: 'Changes from Revision J (March 2005) to Revision K' updated to the new TI format with no specification changes. No copy located."
-    }
-  ],
-  "revision_history": [
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "D",
-      "date": "August 1996",
-      "changes": "Content unknown. The revision's existence comes from web search summaries of mirrored copies."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "J",
-      "date": "March 2005",
-      "changes": "Content unknown. Copies survive at Georgia Tech, UCSB, Jameco and Octopart."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "K",
-      "date": "January 2014",
-      "changes": "Updated to the new TI datasheet format, with 'no specification changes'. Added ESD warning."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "L",
-      "date": "February 2014",
-      "changes": "Moved Tstg to a Handling Ratings table. Added the Device and Documentation Support section and the Mechanical, Packaging and Orderable Information section."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "M",
-      "date": "June 2015",
-      "changes": "Added the Device Information table, Pin Configuration, ESD Ratings, Feature Description, Device Functional Modes, Application, Power Supply and Layout sections. Moved Typical Characteristics into Specifications. The date follows the printed header per web summaries; the Rev N changelog heading reportedly shows February 2014."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "N",
-      "date": "July 2017",
-      "changes": "Added TL072M and TL074M. Rewrote Absolute Maximum Ratings: supply restated from +/-18 V to -0.3/36 V total; input from +/-15 V to VCC- -0.3 V / VCC- +36 V; differential-input parameter deleted; input clamp current added. Recommended VCM max changed from VCC+ -4 V to VCC+. Added TL07xI -40 C and CFP thermal data. Updated pinouts. The 20-pin LCCC was dropped from the device table."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "O",
-      "date": "October 2020",
-      "changes": "NEW SILICON: added the TL07xH next-generation devices (features, description, device info). Added SOT-23-14, VSSOP-8, SOT-23-8, SC70-5 and SOT-23-5 packages, plus the TSSOP/VSSOP/DDF (TL072x) and DYY (TL074x) pinouts."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "P",
-      "date": "November 2020",
-      "changes": "Added TL074H SOIC/TSSOP thermal data and the Typical Characteristics: TL07xH section."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "Q",
-      "date": "June 2021",
-      "changes": "Deleted VSSOP-8 and the TL072x DGK package. Added D/DCK/DBV for TL071H, IB/IOS specs for DCK/DBV, TL071H IQ, and D/DDF/PW thermal data for TL072H."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "R",
-      "date": "June 2021",
-      "changes": "Removed the preview note from TL072H SOIC-8, SOT-23-8 and TSSOP-8 (production). Added TL072H ESD info and IQ spec."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "S",
-      "date": "July 2021",
-      "changes": "Removed the preview note from TL071H SOIC-8, SOT-23-5 and SC70-5."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "T",
-      "date": "December 2021",
-      "changes": "Corrected the DCK pinout diagram and table."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "U",
-      "date": "December 2022",
-      "changes": "SPEC CHANGE (issued alongside PCN 20221219006.1, 21 Dec 2022): merged the TL07xH and TL07xx Abs Max, ESD, ROC, thermal and EC tables. For all non-NS/non-PS packages and non-TL07xM devices, GBW changed from 3 to 5.25 MHz, e_n at 1 kHz to 37 nV/rtHz, and THD+N to 0.00012%. The legacy switching tables were renamed Electrical Characteristics (AC)."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "V",
-      "date": "April 2023",
-      "changes": "Updated the Overview, Functional Block Diagram and Feature Description sections."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "W",
-      "date": "July 2025",
-      "changes": "PIN FUNCTION CHANGE (web-confirmed): deleted the trim (offset null) function from all packages except PS (SO-8), so TL071 D/P pins 1, 5 and 8 are now NC. Features Vn changed from 18 to 37 nV/rtHz. Updated the device table to match the addendum and the front-page image. Per text extraction, also added a note on old vs new dies and a Device Nomenclature table (H = new die, CSO RFB; M = legacy CSO SFAB; other suffixes either flow), and deleted THD+N plots and some application examples."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "doc_number": "DocID2298 (TL072)",
-      "revision": "Rev 8",
-      "date": "June 2014",
-      "changes": "Removed part numbers TL072IYD, TL072AIYD and TL072BIYD. Updated Table 5 (order codes)."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "doc_number": "DocID2297 (TL074)",
-      "revision": "Rev 5",
-      "date": "November 2013",
-      "changes": "Latest seen. Change log not retrieved."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "doc_number": "TL071 (number not captured)",
-      "revision": "Rev 3",
-      "date": "September 2008",
-      "changes": "Latest seen. Change log not retrieved."
-    },
-    {
-      "vendor": "Diodes Incorporated",
-      "doc_number": "DS31865 (TL072)",
-      "revision": "Rev. 2-4",
-      "date": "December 2023",
-      "changes": "Latest seen. Change log not retrieved. The product is now Obsolete."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "N",
-      "date": "July 2017",
-      "changes": "From the Rev N changelog heading 'Changes from Revision M (February 2014) to Revision N': updated the data sheet text to the latest documentation and translation standards, and added the TL072M and TL074M devices. This adds to the Abs Max and ROC changes already recorded."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS080",
-      "revision": "U (letter per existing chain; the search snippet showed only the changelog text)",
-      "date": "December 2022",
-      "changes": "Search confirms the changelog note: input voltage noise density at 1 kHz changed to 37 nV/rtHz for all non-PS/non-NS packages and all non-TL07xM devices. Older EC tables list 18 nV/rtHz at f = 1 kHz for the standard TL072."
-    },
-    {
-      "vendor": "STMicroelectronics",
-      "doc_number": "TL071 (DocID not captured)",
-      "revision": "Rev 1 to Rev 3 (the rev-to-change mapping is not shown)",
-      "date": "up to September 2008 (Rev 3)",
-      "changes": "The revision history table lists an initial release, then an update that added Table 2 (operating conditions) and expanded Table 6 (order codes), plus a format update. Which of these is Rev 2 and which is Rev 3 is not shown."
-    },
-    {
-      "vendor": "SGS-Thomson Microelectronics",
-      "doc_number": "not shown",
-      "revision": "not shown",
-      "date": "1998",
-      "changes": "The search summary shows a 1998 SGS-Thomson/ST edition of the TL072/TL072A/TL072B sheet (manualmachine mirror). Content not seen."
-    }
+  "counterfeit_notes": "TL072 itself is too cheap to fake but reportedly hides inside remarked OPA2604, OPA2134 and OPA1612 (TL082). Check for solvent-removable marks, resurfaced tops, ~1.4 mA/ch, ~3 MHz. Genuine post-2023 TI parts may be the new die (37 nV/√Hz, ~0.94 mA/ch).",
+  "alternatives": [
+    "TL071H / TL072H / TL074H (new die)",
+    "ST TL072 / TL074 (15 nV/√Hz)",
+    "NJM072 / NJM074",
+    "LF353 / TL082",
+    "OPA1642 / OPA1644",
+    "OPA2134 / OPA4134 (2024 die change)",
+    "OPA1678 / OPA1679",
+    "AD712"
   ],
   "silicon_changes": [
     {
       "kind": "renumbering-or-successor",
       "vendor": "Texas Instruments",
-      "when": "Oct 2020 (SLOS080O, preview); production TL072H Jun 2021 (Rev R), TL071H Jul 2021 (Rev S)",
+      "when": "2020-10 preview (Rev O); 2021 production",
       "part_numbers_affected": [
         "TL071H",
         "TL072H",
         "TL074H"
       ],
-      "identification": "The H is in the orderable (e.g. TL072HIDR, TL072HIPWR, TL072HIDDFR, TL074HIDR, TL071HIDBVR); I-grade (-40 to 125 C) only. Top marks per the Rev W addendum: TL072HIDR 'TL072D', TL071HIDR 'TL071D', TL074HIDR 'TL074HID', TL072HIPWR '072HPW', TL072HIDDFR 'O72F', TL071HIDBVR 'T71V'. So a pulled SOIC marked 'TL072D' may be an H-die part. Rev W says: 'If y = H, the die is manufactured on the latest flow (CSO: RFB)'. The same new-flow die now also ships under unsuffixed TL07x numbers (see the die-redesign entry).",
-      "summary": "TI's 'next-generation' TL07x: a new die on a 'modern process', sold under H-suffixed orderables within the TL07x datasheet. It has rail-inclusive (V+) common-mode input, diode-clamped inputs, lower Iq, higher GBW and slew, much lower Vos and Ib, and about 2x the voltage noise of the legacy die. TI now calls the family 'FET-input' rather than 'JFET-input'. The TI part page for TL072HIDR reads 40 V, 5 MHz, 4 mV, 20 V/us, in to V+.",
+      "identification": "H in the orderable (TL072HIDR, TL074HIDR, TL071HIDBVR…), I-grade only. Top mark 'TL072D' may be an H die. Rev W: H = latest flow (CSO: RFB).",
+      "summary": "TI's next-generation TL07x: a new die on a 'modern process' inside SLOS080. Rail-inclusive (V+) input, clamped inputs, lower Iq, higher GBW and slew, far lower Vos and Ib, about twice the noise. TL072H production Jun 2021 (Rev R), TL071H Jul 2021 (Rev S). Now called 'FET-input'.",
       "spec_deltas": [
         {
           "parameter": "e_n @1 kHz",
@@ -1317,8 +340,8 @@
           "after": "V- +1.5 V to V+, no phase reversal; inputs clamped (diff <= VS+0.2 V, 10 mA)"
         }
       ],
-      "audio_impact": "About 6 dB higher voltage noise at 1 kHz hurts low-impedance, high-gain stages (mic/phono, low-Z filters). Distortion, slew, single-supply headroom and supply current improve. The flatter noise corner (37 at 1 kHz vs 21 at 10 kHz) means more low-frequency noise than the legacy spec.",
-      "compatibility_risk": "medium: signal pinout is identical for the dual and quad, but the noise doubles and the TL071H SOIC has no offset-null pins. The input clamps and different CM limits can change behaviour in comparator or clipping circuits.",
+      "audio_impact": "About 6 dB more noise at 1 kHz hurts low-impedance high-gain stages; distortion, slew, headroom and supply current improve.",
+      "compatibility_risk": "medium: same pinout, but noise doubles, TL071H SOIC lacks offset null, input clamps differ.",
       "sources": [
         "https://www.ti.com/lit/ds/symlink/tl072.pdf",
         "https://www.ti.com/product/TL072",
@@ -1329,12 +352,12 @@
         "https://raw.githubusercontent.com/BertyBasset/Datasheet-Viewer/HEAD/Amplifiers/TL07xx%20low%20noise%20JFET%20Op%20Amp.pdf"
       ],
       "confidence": "high",
-      "verification": "Not re-searched: high confidence and not from the sweep. It rests on TI SLOS080 Revs O-W and the TL072HIDR part page cited by the research pass. A search listing of the TI datasheet confirms TL071H/TL072H/TL074H inside the TL07xx 'FET-Input' datasheet."
+      "verification": "Based on SLOS080 Revs O–W and the TL072HIDR part page; TI datasheet listing confirms H parts."
     },
     {
       "kind": "die-redesign",
       "vendor": "Texas Instruments",
-      "when": "PCN 20220615003.1, dated 16 Jun 2022 (samples until 16 Jul 2022; proposed first ship 16 Sep 2022), covers some orderables (TL071CDR and TL072CDRG4 per search summary). PCN 20221219006.1, issued 21 Dec 2022 (samples until 20 Jan 2023; proposed first ship 20 Mar 2023), covers the main TL072/TL074 list. Datasheet Rev U Dec 2022; nomenclature note and TL071 trim removal in Rev W, Jul 2025.",
+      "when": "2022-06 / 2022-12 · PCN 20221219006.1",
       "part_numbers_affected": [
         "TL071CP",
         "TL071CDR",
@@ -1365,8 +388,8 @@
         "TL074IN",
         "TL074IDR"
       ],
-      "identification": "The part number and top marking do not change (e.g. still 'TL072CP', 'TL072C'). Two PCNs are involved. PCN 20220615003.1 ('Qualification of new Fab site (RFAB) using qualified Process Technology, Die Revision, Datasheet update and additional Assembly site/BOM options for select devices') moves parts from SH-BIP-1 (Sherman) to RFAB (Richardson) with die rev C to A and adds MLA (Kuala Lumpur) assembly; search summaries list TL071CDR and TL072CDRG4 in it. PCN 20221219006.1 (same title pattern) lists the TL072 and TL074 devices. Inference: parts with date codes before about 2238 (Sep 2022, for 20220615003.1 orderables) or about 2312 (Mar 2023, for 20221219006.1 orderables) should be legacy die. Post-PCN date codes seen with new-die behaviour include TL074CDR 2436, 2443 and 2522 (E2E). Rev W says: 'If y != H and y != M, the die is manufactured on the legacy flow (CSO: SFAB) or the latest flow (CSO: RFB)', so either die may ship; that RFB denotes RFAB is an inference. PS/NS-package orderables and TL07xM keep legacy-die specs. Bench check: about 0.94 vs 1.4 mA/ch Iq; 37 vs 18 nV/rtHz; the negative output swing reaches the rail.",
-      "summary": "Through PCNs 20220615003.1 (Jun 2022) and 20221219006.1 (Dec 2022), TI moved ordinary TL071/TL072/TL074 C/AC/BC/I grades from Sherman to the RFAB fab on a revised die, with no part-number change. This is the same new-flow die as the TL07xH. The new process has updated ESD structures and input protection; TI's E2E reply on the same PCN for the TL082 says the new die adds clamp diodes to VCC+. Since Rev U the datasheet specifies these parts with new-die values. Rev W says either fab flow may ship and removes TL071 offset null on D/P packages. This confirms the community reports that 'TL072 now specs 37 nV' (PedalPCB, the Gremblog).",
+      "identification": "Same part number and marking. Legacy die likely before date codes ~2238 (PCN 20220615003.1 parts) or ~2312. New die: ~0.94 mA/ch, 37 nV/√Hz, swings to negative rail.",
+      "summary": "PCNs 20220615003.1 (Jun 2022; TL071CDR, TL072CDRG4) and 20221219006.1 (Dec 2022; TL072/TL074 list) moved plain C/AC/BC/I grades from Sherman to RFAB with die rev C→A and MLA assembly. Same die as TL07xH, with new ESD and clamp diodes to VCC+. Rev U specs new-die values; Rev W says either flow ships.",
       "spec_deltas": [
         {
           "parameter": "Wafer fab",
@@ -1374,7 +397,7 @@
           "after": "RFAB (Richardson, TX)"
         },
         {
-          "parameter": "Die revision (PCN 20220615003.1, per search summary)",
+          "parameter": "Die revision (PCN 20220615003.1)",
           "before": "C",
           "after": "A"
         },
@@ -1424,8 +447,8 @@
           "after": "37 nV/rtHz (Rev W)"
         }
       ],
-      "audio_impact": "Old boards re-populated with current-production TI TL071/TL072/TL074 may measure about 6 dB more hiss at 1 kHz but lower distortion. Output clipping levels differ, since the new die swings closer to the negative rail. Inputs driven near or above V+ now meet clamp diodes. Units may differ from each other because both dies ship under one part number. Offset-trimmed TL071 designs lose the trim.",
-      "compatibility_risk": "medium: pin-compatible drop-in, but noise doubles and saturation and protection behaviour changed. Customers saw functional-test failures on post-PCN date codes (E2E threads for TL074CDR and TL072CDR). High risk for TL071 sockets that use the pins 1/5 offset trimmer.",
+      "audio_impact": "Re-populated boards may gain ~6 dB hiss but lower distortion; clipping differs; units vary; TL071 trim lost.",
+      "compatibility_risk": "medium: pin-compatible but noisier, different clipping; high for TL071 sockets using a pins 1/5 trimmer.",
       "sources": [
         "https://www.mouser.com/PCN/Texas_Instruments_PCN20221219006_20221221091103261.pdf",
         "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/14/ti_5F00_202212190061_5F00_12252022_5F00_.pdf",
@@ -1440,19 +463,19 @@
         "https://raw.githubusercontent.com/james-l-key/Esp32_patch_bay_circuit/HEAD/DataSheets/tl072.pdf"
       ],
       "confidence": "high",
-      "verification": "Searched PCN 20220615003.1 with TL071CDR/TL072CDRG4: search summaries list both, with SH-BIP-1 to RFAB, die rev C to A and MLA assembly. E2E 1453480 links TL072CDR functional failures to that PCN, and E2E 1428797 confirms the same PCN's new die has clamp diodes to VCC+. The PCN 20221219006.1 facts were not re-searched (high confidence already). A general query for 20220615003 with TL07x found no independent device list."
+      "verification": "PCN summaries list TL071CDR and TL072CDRG4; E2E threads 1453480 and 1428797 confirm failures and clamp diodes."
     },
     {
       "kind": "second-source-difference",
       "vendor": "STMicroelectronics",
-      "when": "Ongoing (ST TL072 DocID2298 Rev 8, June 2014; TL074 DocID2297 Rev 5, Nov 2013)",
+      "when": "2013-11 / 2014-06 · ST DocID2297 / 2298",
       "part_numbers_affected": [
         "TL071 (ST)",
         "TL072 (ST, e.g. TL072CDT, TL072IDT, TL072BIDT)",
         "TL074 (ST, e.g. TL074CD)"
       ],
       "identification": "ST logo and ST orderables.",
-      "summary": "The ST second-source die has its own spec set, which differs on paper from the TI legacy die: lower noise and higher bandwidth. This is a different-vendor die under the same generic part number, not a documented ST die change; no ST PCN was found.",
+      "summary": "ST's second-source die has its own specs: lower noise and higher bandwidth than TI's legacy die. A different vendor's die under the same generic number; no ST PCN found.",
       "spec_deltas": [
         {
           "parameter": "e_n @1 kHz",
@@ -1470,7 +493,7 @@
           "after": "ST 0.01% (2 Vpp, 2k, 20 dB gain)"
         }
       ],
-      "audio_impact": "On paper, ST parts are now the lowest-noise TL072 option, since TI's current plain TL072 specs 37 nV/rtHz.",
+      "audio_impact": "On paper ST is now the lowest-noise TL072, since TI's plain TL072 specs 37 nV/√Hz.",
       "compatibility_risk": "low: same pinout and supply class.",
       "sources": [
         "https://www.st.com/resource/en/datasheet/tl072.pdf",
@@ -1479,19 +502,1095 @@
         "https://github.com/bandrews/whichpart/blob/HEAD/basicpart/content/components/C6961.md"
       ],
       "confidence": "medium",
-      "verification": "Not re-searched: a second-source comparison, not a sweep item. The ST datasheet (tl074.pdf, Nov 2013) appeared in search results, consistent with the cited revision."
+      "verification": "ST tl074.pdf (Nov 2013) seen in search results, matching the cited revision."
     }
   ],
-  "counterfeit_notes": "No counterfeits of the TL072 itself were documented; it is too cheap to be worth faking. The TL072 (and TL082) die is reportedly the usual body inside remarked premium audio parts, according to discovery notes; this session did not re-verify them. Examples: fake OPA2604s on Yahoo Auctions (a Japanese blog found 70 of 75 fake, including remarked TL072s); fake OPA2134s (PedalPCB, diyAudio and TI E2E threads); and a batch of fake OPA1612 that were TL082 dies. How to spot them: laser marks that wipe off with solvent, ground or reblacked tops, and wrong font or logo. On the bench, look for TL07x-like behaviour: roughly 1.4 mA/ch Iq, about 3 MHz GBW, and a noise floor far above the premium part's spec. Caution: a genuine TI TL072/TL074 shipped after PCN 20221219006.1 (from about Mar 2023) may be the new die, with 37 nV/rtHz, about 0.94 mA/ch and a different output swing. The E2E TL074CDR failures on date codes 2436/2443/2522 were genuine new-process parts, not fakes. Compare against Rev W sec 5.7, not the old 18 nV figure.",
-  "alternatives": [
-    "TI TL072H / TL074H / TL071H (same pinout; new die, 4.5-40 V, lower THD, higher noise)",
-    "ST TL072 / TL074 (second source still specified at 15 nV/rtHz)",
-    "JRC/Nisshinbo NJM072 / NJM074",
-    "TI LF353 / TL082 (legacy BiFET siblings)",
-    "TI OPA1642 / OPA1644 (JFET-input audio op-amps)",
-    "TI OPA2134 / OPA4134 (note its own 2024 die change)",
-    "TI OPA1678 / OPA1679 (low-cost CMOS audio)",
-    "ADI AD712 (precision BiFET)"
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise, FET-Input Operational Amplifiers",
+      "doc_number": "SLOS080",
+      "revision": "W",
+      "date": "2025-07",
+      "url": "https://www.ti.com/lit/ds/symlink/tl072.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Current, 89 pages; no Rev X as of Sep 2026."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx datasheet (tl071 symlink)",
+      "doc_number": "SLOS080",
+      "revision": "W",
+      "date": "2025-07",
+      "url": "https://www.ti.com/lit/ds/symlink/tl071.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Alias symlink used in KiCad libraries; assumed to serve SLOS080."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise, FET-Input Operational Amplifiers (tl074 symlink)",
+      "doc_number": "SLOS080",
+      "revision": "W",
+      "date": "2025-07",
+      "url": "https://www.ti.com/lit/ds/symlink/tl074.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Result title matches current Rev W; letter not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx datasheet (tl072h symlink)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com/lit/ds/symlink/tl072h.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Seen in KiCad projects (2021); TL07xH lives inside SLOS080 since Rev O."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise, FET-Input Operational Amplifiers (GitHub copy)",
+      "doc_number": "SLOS080",
+      "revision": "W",
+      "date": "2025-07",
+      "url": "https://raw.githubusercontent.com/jcfurey/cambridge_reverb/HEAD/datasheets/TL072_TI.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Header verified by text extraction.",
+      "also_urls": [
+        "https://raw.githubusercontent.com/reeenatamc/feuoir-interface/HEAD/docs/datasheets/tl072.pdf"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise, FET-Input Operational Amplifiers (GitHub copy)",
+      "doc_number": "SLOS080",
+      "revision": "W",
+      "date": "2025-07",
+      "url": "https://raw.githubusercontent.com/escaroda/goya1746/HEAD/docs/datasheets/tl072.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Different Rev W build (PDF ModDate 2025-10-28)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise FET-Input Operational Amplifiers (GitHub copy)",
+      "doc_number": "SLOS080",
+      "revision": "V",
+      "date": "2023-04",
+      "url": "https://raw.githubusercontent.com/james-l-key/Esp32_patch_bay_circuit/HEAD/DataSheets/tl072.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Frozen Rev V, 92 pages; still shows TL071 offset pins."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise FET-Input Operational Amplifiers (makerhero copy)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.makerhero.com/img/files/download/TL07XX-Datasheet.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Title wording suggests Rev U or V; one summary said M."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07XX datasheet (alldatasheet copy, 84 pp)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1314025/TI/TL07XX.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "84 pages matches no known revision; probably O–U."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx datasheet",
+      "doc_number": "SLOS080",
+      "revision": "Q",
+      "date": "2021-06",
+      "url": "https://www.ti.com/lit/ds/slos080q/slos080q.pdf",
+      "url_kind": "vendor_revision_specific",
+      "confidence": "low",
+      "revision_status": "confirmed",
+      "note": "URL from a mid-2021 KiCad symbol; TI may no longer serve it."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise JFET-Input Operational Amplifiers (GitHub copy)",
+      "doc_number": "SLOS080",
+      "revision": "N",
+      "date": "2017-07",
+      "url": "https://raw.githubusercontent.com/BertyBasset/Datasheet-Viewer/HEAD/Amplifiers/TL07xx%20low%20noise%20JFET%20Op%20Amp.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Last pre-TL07xH revision, 69 pages; legacy specs 18 nV, 3 MHz."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "slos080n (Scribd copy)",
+      "doc_number": "SLOS080",
+      "revision": "N",
+      "date": "2017-07",
+      "url": "https://www.scribd.com/document/391109026/slos080n",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Scribd title names 'slos080n'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise JFET-Input Operational Amplifiers (components101 copy)",
+      "doc_number": "SLOS080",
+      "revision": "M",
+      "date": "2015-06",
+      "url": "https://components101.com/sites/default/files/component_datasheet/TL074%20Datasheet.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Reportedly Rev M (June 2015); JFET-Input era title."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL071, TL071A, TL071B, TL072, TL072A, TL072B, TL074, ... (Mouser copy)",
+      "doc_number": "SLOS080",
+      "revision": "L",
+      "date": "2014-02",
+      "url": "https://www.mouser.com/datasheet/2/405/slos080l-316255.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Filename names slos080l; date per a cited 'SLOS080L, Feb. 2014'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07x datasheet (Mouser copies, revision not identified)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.com/datasheet/2/405/tl072-557363.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "K–N layout; revision unknown. TL074 sibling listed separately.",
+      "also_urls": [
+        "https://web.ece.ucsb.edu/Faculty/rodwell/Classes/ECE137B/datasheets/tl072.pdf"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL071, TL071A, TL071B, TL072, TL072A, TL072B, TL074, TL074A, TL074B Low-Noise JFET-Input Operational Amplifiers",
+      "doc_number": "SLOS080",
+      "revision": "J",
+      "date": "2005-03",
+      "url": "https://leachlegacy.ece.gatech.edu/ece4435/sp08/TL071ckt.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Georgia Tech copy: 'SLOS080J SEPTEMBER 1978 REVISED MARCH 2005'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL071 ... TL074B datasheet (UCSB copy)",
+      "doc_number": "SLOS080",
+      "revision": "J",
+      "date": "2005-03",
+      "url": "https://web.ece.ucsb.edu/Faculty/rodwell/Classes/ECE137A/datasheets/tl071a.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Reportedly SLOS080J (March 2005)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TEXAS INSTRUMENTS (TL072ACD) LOW NOISE JFET ... (Jameco copy)",
+      "doc_number": "SLOS080",
+      "revision": "J",
+      "date": "2005-03",
+      "url": "https://www.jameco.com/jameco/products/prodds/759762.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Reportedly SLOS080J; Octopart 10746755 likewise.",
+      "also_urls": [
+        "https://datasheet.octopart.com/TL072IP-Texas-Instruments-datasheet-10746755.pdf"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL071 ... TL074 Low-Noise JFET-Input Operational Amplifiers",
+      "doc_number": "SLOS080",
+      "revision": "D",
+      "date": "1996-08",
+      "url": "https://datasheet.octopart.com/TL072CP-Various-datasheet-7282711.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "SLOS080D (Aug 1996) seen; this or the Yumpu copy holds it."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "TL072, TL072A, TL072B - Low noise JFET dual operational amplifiers",
+      "doc_number": "DocID2298",
+      "revision": "Rev. 8",
+      "date": "2014-06",
+      "url": "https://www.st.com/resource/en/datasheet/tl072.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "'June 2014 DocID2298 Rev 8'; removed TL072IYD/AIYD/BIYD."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "TL074 - Low-noise JFET quad operational amplifier",
+      "doc_number": "DocID2297",
+      "revision": "Rev. 5",
+      "date": "2013-11",
+      "url": "https://www.st.com/resource/en/datasheet/tl074.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Current ST TL074 revision."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "TL071 - Low noise JFET single operational amplifier",
+      "doc_number": "",
+      "revision": "Rev. 3",
+      "date": "2008-09",
+      "url": "https://www.st.com/resource/en/datasheet/tl071.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Header reads 'September 2008 Rev 3'; document number unknown."
+    },
+    {
+      "vendor": "Diodes Incorporated",
+      "title": "TL072",
+      "doc_number": "DS31865",
+      "revision": "Rev. 2-4",
+      "date": "2023-12",
+      "url": "https://www.diodes.com/datasheet/download/TL072.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Product now marked Obsolete."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "TL071C,AC TL072C,AC TL074C,AC Low noise, JFET input op-amps",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://studylib.net/doc/18637375/tl071c-ac-tl072c-ac-tl074c-ac-low-noise--jfet-input",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Historical Motorola datasheet; number and date not seen."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL071, TL071A, TL071B, TL072, TL072A, TL072B, TL074, ... (Mouser copy)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.com/datasheet/2/405/texas%20instruments_tl072-1208707.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Old all-part-numbers title; probably pre-2014 (Rev J or earlier)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL071, TL071A, TL071B, TL072 TL072A, TL072B, TL074, TL074A, TL074B (UCSD Physics 120 course copy)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://neurophysics.ucsd.edu/courses/physics_120/TI071.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Old-format course copy; could be a missing revision E–J."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL071 datasheet (41 pages) TI | LOW-NOISE JFET-INPUT OPERATIONAL AMPLIFIERS",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/html-pdf/206601/TI/TL071/78/3/TL071.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "41-page HTML view with old upper-case title."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise JFET-Input Operational Amplifiers",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.logosfoundation.org/elektron/mixers/tl071.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Rev K–N era title (2014–2017)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise JFET-Input Operational Amplifiers",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.electronicoscaldas.com/datasheet/TL071-TL071A-TL071B-TL072-TL072A-TL072B-TL074-TL074A-TL074B_TI.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Rev K–N era title; revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise JFET-Input Operational Amplifiers",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://aionfx.com/app/files/datasheets/texas-instruments-tl072.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Aion FX hobby copy, Rev K–N era title."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise FET-Input Operational Amplifiers",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.dexhal.cz/data/files/tl071(1).pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "'FET-Input' title without comma; probably Rev O or later."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL071 Low-Noise JFET-Input Operational Amplifiers (Texas Instruments)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet/etcTI/TL071-1396328",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "Low-Noise JFET-Input Operational Amplifiers (MultiMania)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.yumpu.com/en/document/view/25322032/low-noise-jfet-input-operational-amplifiers-multimania",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Re-host of a MultiMania copy; probably older; maybe Rev D."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL072 Datasheet Texas Instruments (radiolocman)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=328435&%2FTL072=",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Possibly a 1999–2004 revision; one hit mentioned March 2001."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL072 Datasheet(PDF) - Texas Instruments (alldatasheet 764831)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/764831/TI/TL072.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Separate from alldatasheet 1314025; revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TEXAS INSTRUMENTS (TL072ID) DUAL LOW NOISE ... (Octopart cache)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/TL072ID-Texas-Instruments-datasheet-7835781.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Octopart cache; revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TEXAS INSTRUMENTS (TL072IP) LOW NOISE JFET ... (Octopart cache)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/TL072IP-Texas-Instruments-datasheet-8317744.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Octopart cache; revision not shown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL072 (each amplifier) TL074 (each amplifier) (Mouser tl074 copy)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.com/datasheet/2/405/tl074-557399.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "TL074 sibling of Mouser tl072-557363; same K–N format."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL072 Low-Noise Op-Amp Datasheet (Scribd)",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.scribd.com/document/340345307/tl072-pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Cites 18 nV/√Hz, so probably before Rev U."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TI Japan symlink TL074 datasheet",
+      "doc_number": "SLOS080",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com/jp/lit/ds/symlink/tl074.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "TI Japan path; language and revision unknown."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "TL071C,AC TL072C,AC TL074C,AC Low Noise, JFET Input Operational Amplifiers (SFU reference copy)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www2.ensc.sfu.ca/reference/data-sheets/TL07X.PDF",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "SFU reference copy; Motorola xxx/D number not shown."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "TL071 (Top View) TL072 (Top View) TL074 (Top View) D SUFFIX PLASTIC PACKAGE (SFU ENSC220 lab copy)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www.sfu.ca/~ljilja/ENSC220/Labs/Lab_writeups/tl071crev1.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Filename 'tl071crev1' hints at Motorola Rev 1; unverified."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "TL071C,AC TL072C,AC TL074C,AC Low Noise, JFET Input Operational Amplifiers (datasheetcatalog PDF)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.datasheetcatalog.com/datasheet/motorola/TL072ACP.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "TL071C Datasheet pdf - LOW NOISE, JFET INPUT OPERATIONAL AMPLIFIERS - Motorola",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "http://www.datasheetcatalog.com/datasheets_pdf/T/L/0/7/TL071C.shtml",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Index page for the Motorola TL071C sheet."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "TL071C Datasheet(PDF) - Motorola, Inc (alldatasheet 5772)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/5772/MOTOROLA/TL071C.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "TL071C,AC - TL072C,AC TL074C,AC (Silicon Ark copy)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://www.silicon-ark.co.uk/datasheets/tl071-tl074-datasheet-motorola.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "UK supplier copy; revision not shown."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "TL071C LOW NOISE, JFET INPUT OPERATIONAL AMPLIFIERS (datasheet4u)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet4u.com/datasheet-pdf/Motorola/TL071C/pdf.php?id=321069",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Same ID 321069 as the datasheetspdf entry."
+    },
+    {
+      "vendor": "Motorola",
+      "title": "TL071C Datasheet, OPERATIONAL AMPLIFIERS (datasheetspdf)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/321069/Motorola/TL071C/1",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Related entry 321040 (TL071); revision not shown."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "Datasheet TL072, TL072A, TL072B STMicroelectronics (radiolocman)",
+      "doc_number": "DocID2298 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=179807",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "May hold a DocID2298 revision before Rev 8."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "TL072 Datasheet(PDF) - STMicroelectronics (alldatasheet 159225)",
+      "doc_number": "DocID2298 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/159225/STMICROELECTRONICS/TL072.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "TL074 Datasheet(PDF) - STMicroelectronics (alldatasheet 25382)",
+      "doc_number": "DocID2297 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/25382/STMICROELECTRONICS/TL074.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Low ID suggests an early ST or SGS-Thomson edition."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "title": "Datasheet TL074 STMicroelectronics (radiolocman)",
+      "doc_number": "DocID2297 (presumed)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/pdf.html?di=167737",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown."
+    },
+    {
+      "vendor": "SGS-Thomson Microelectronics",
+      "title": "Datasheet TL072CN, TL072CD, TL072C, TL072ACN, TL072ACD (SGS Thomson Microelectronics) - ManualMachine",
+      "doc_number": "",
+      "revision": "",
+      "date": "1998",
+      "url": "https://manualmachine.com/datasheet/tl072cn/4451986-datasheet-sgs-thomson-microelectronics/",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Reportedly 1998: oldest SGS-Thomson TL072 edition, pre-DocID."
+    },
+    {
+      "vendor": "SGS-Thomson Microelectronics",
+      "title": "TL072CN Datasheet - LOW NOISE DUAL JFET OP-AMPS from SGS-Thomson Microelectronics (chipdocs)",
+      "doc_number": "",
+      "revision": "",
+      "date": "",
+      "url": "http://www.chipdocs.com/pndecoder/datasheets/STM/TL072CN.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "SGS-Thomson copy; revision not shown.",
+      "also_urls": [
+        "https://www.chipdocs.com/pndecoder/datasheets/STM/TL072C.html",
+        "http://www.chipdocs.com/datasheets/datasheet-pdf/SGSThomson-Microelectronics/TL072.html"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx datasheet",
+      "doc_number": "SLOS080",
+      "revision": "U",
+      "date": "2022-12",
+      "url": "",
+      "url_kind": "archive",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "No copy found. First to specify new-die values; with PCN 20221219006.1."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx datasheet",
+      "doc_number": "SLOS080",
+      "revision": "T",
+      "date": "2021-12",
+      "url": "",
+      "url_kind": "archive",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "No copy found. DCK pinout fix."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx datasheet",
+      "doc_number": "SLOS080",
+      "revision": "S",
+      "date": "2021-07",
+      "url": "",
+      "url_kind": "archive",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "No copy found. TL071H released to production."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx datasheet",
+      "doc_number": "SLOS080",
+      "revision": "R",
+      "date": "2021-06",
+      "url": "",
+      "url_kind": "archive",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "No copy found. TL072H released to production."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx datasheet",
+      "doc_number": "SLOS080",
+      "revision": "P",
+      "date": "2020-11",
+      "url": "",
+      "url_kind": "archive",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "No copy found."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx datasheet",
+      "doc_number": "SLOS080",
+      "revision": "O",
+      "date": "2020-10",
+      "url": "",
+      "url_kind": "archive",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "No copy found. First revision with TL07xH."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx Low-Noise JFET-Input Operational Amplifiers",
+      "doc_number": "SLOS080",
+      "revision": "M",
+      "date": "2015-06",
+      "url": "",
+      "url_kind": "archive",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Printed 'REVISED JUNE 2015'; Rev N history says February 2014."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "TL07xx datasheet",
+      "doc_number": "SLOS080",
+      "revision": "K",
+      "date": "2014-01",
+      "url": "",
+      "url_kind": "archive",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "No copy found. Format-only update from J."
+    }
+  ],
+  "product_pages": [
+    "https://www.ti.com/product/TL072",
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm072ca",
+    "https://www.datasheets.com/texas-instruments/tl072",
+    "https://www.st.com/en/amplifiers-and-comparators/tl072.html"
+  ],
+  "revision_history": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080",
+      "revision": "original",
+      "date": "1978-09",
+      "changes": "Initial release ('SEPTEMBER 1978' in all later headers)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080D",
+      "revision": "D",
+      "date": "1996-08",
+      "changes": "Content unknown; known from mirrored copies."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080J",
+      "revision": "J",
+      "date": "2005-03",
+      "changes": "Content unknown; copies at Georgia Tech, UCSB, Jameco, Octopart."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080K",
+      "revision": "K",
+      "date": "2014-01",
+      "changes": "New TI format, 'no specification changes'; added ESD warning."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080L",
+      "revision": "L",
+      "date": "2014-02",
+      "changes": "Handling Ratings table; added device, documentation and packaging sections."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080M",
+      "revision": "M",
+      "date": "2015-06",
+      "changes": "Added device info, pin, ESD, application, power and layout sections. Rev N history dates M February 2014."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080N",
+      "revision": "N",
+      "date": "2017-07",
+      "changes": "Added TL072M/TL074M. Abs max restated (±18 V → 36 V total); VCM max to VCC+; I-grade −40 °C, CFP thermal; LCCC dropped."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080O",
+      "revision": "O",
+      "date": "2020-10",
+      "changes": "New silicon: added TL07xH and SOT-23-14, SOT-23-8, SC70-5, SOT-23-5, TSSOP/DDF/DYY packages."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080P",
+      "revision": "P",
+      "date": "2020-11",
+      "changes": "Added TL074H thermal data and TL07xH typical characteristics."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080Q",
+      "revision": "Q",
+      "date": "2021-06",
+      "changes": "Deleted VSSOP-8 (DGK); added TL071H D/DCK/DBV, IB/IOS, IQ, TL072H thermal data."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080R",
+      "revision": "R",
+      "date": "2021-06",
+      "changes": "TL072H SOIC-8, SOT-23-8, TSSOP-8 to production; ESD and IQ added."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080S",
+      "revision": "S",
+      "date": "2021-07",
+      "changes": "TL071H SOIC-8, SOT-23-5, SC70-5 to production."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080T",
+      "revision": "T",
+      "date": "2021-12",
+      "changes": "Corrected DCK pinout."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "PCN 20220615003.1",
+      "revision": "PCN",
+      "date": "2022-06-16",
+      "changes": "RFAB fab, die rev C→A, MLA assembly for select devices (TL071CDR, TL072CDRG4). Samples to 2022-07-16; first ship 2022-09-16."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080U",
+      "revision": "U",
+      "date": "2022-12",
+      "changes": "Merged TL07xH and TL07xx tables; non-PS/NS, non-M specs now 5.25 MHz, 37 nV/√Hz, 0.00012% THD+N."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "PCN 20221219006.1",
+      "revision": "PCN",
+      "date": "2022-12-21",
+      "changes": "RFAB fab, die revision, datasheet update for TL072/TL074. Samples to 2023-01-20; proposed first ship 2023-03-20."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080V",
+      "revision": "V",
+      "date": "2023-04",
+      "changes": "Updated overview, block diagram and feature description."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080W",
+      "revision": "W",
+      "date": "2025-07",
+      "changes": "Trim removed except PS package; Features Vn 18 → 37 nV/√Hz; die nomenclature (H new, M legacy, others either flow); THD+N plots dropped."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "doc_number": "DocID2298 (TL072)",
+      "revision": "Rev. 8",
+      "date": "2014-06",
+      "changes": "Removed TL072IYD, TL072AIYD, TL072BIYD; updated order codes."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "doc_number": "DocID2297 (TL074)",
+      "revision": "Rev. 5",
+      "date": "2013-11",
+      "changes": "Latest seen; change log not recorded."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "doc_number": "TL071",
+      "revision": "Rev. 3",
+      "date": "2008-09",
+      "changes": "Revs 1–3: initial release, added operating-conditions table and order codes, format update (mapping unknown)."
+    },
+    {
+      "vendor": "SGS-Thomson Microelectronics",
+      "doc_number": "",
+      "revision": "",
+      "date": "1998",
+      "changes": "1998 TL072/TL072A/TL072B edition (ManualMachine mirror); content not seen."
+    },
+    {
+      "vendor": "Diodes Incorporated",
+      "doc_number": "DS31865 (TL072)",
+      "revision": "Rev. 2-4",
+      "date": "2023-12",
+      "changes": "Latest seen; product now Obsolete."
+    }
+  ],
+  "revision_chains": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS080",
+      "known": [
+        {
+          "rev": "original",
+          "date": "1978-09"
+        },
+        {
+          "rev": "D",
+          "date": "1996-08"
+        },
+        {
+          "rev": "J",
+          "date": "2005-03"
+        },
+        {
+          "rev": "K",
+          "date": "2014-01"
+        },
+        {
+          "rev": "L",
+          "date": "2014-02"
+        },
+        {
+          "rev": "M",
+          "date": "2015-06"
+        },
+        {
+          "rev": "N",
+          "date": "2017-07"
+        },
+        {
+          "rev": "O",
+          "date": "2020-10"
+        },
+        {
+          "rev": "P",
+          "date": "2020-11"
+        },
+        {
+          "rev": "Q",
+          "date": "2021-06"
+        },
+        {
+          "rev": "R",
+          "date": "2021-06"
+        },
+        {
+          "rev": "S",
+          "date": "2021-07"
+        },
+        {
+          "rev": "T",
+          "date": "2021-12"
+        },
+        {
+          "rev": "U",
+          "date": "2022-12"
+        },
+        {
+          "rev": "V",
+          "date": "2023-04"
+        },
+        {
+          "rev": "W",
+          "date": "2025-07"
+        }
+      ],
+      "missing": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "note": "Rev U first specs 37 nV/√Hz; Rev W changes Features. Unplaced pre-2014 copies may hold E–J."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "doc_number": "DocID2298 (TL072)",
+      "known": [
+        {
+          "rev": "Rev. 8",
+          "date": "2014-06"
+        }
+      ],
+      "missing": [
+        "Rev. 1",
+        "Rev. 2",
+        "Rev. 3",
+        "Rev. 4",
+        "Rev. 5",
+        "Rev. 6",
+        "Rev. 7"
+      ],
+      "note": "1998 SGS-Thomson edition and chipdocs copies predate DocID numbering; revisions not shown."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "doc_number": "DocID2297 (TL074)",
+      "known": [
+        {
+          "rev": "Rev. 5",
+          "date": "2013-11"
+        }
+      ],
+      "missing": [
+        "Rev. 1",
+        "Rev. 2",
+        "Rev. 3",
+        "Rev. 4"
+      ],
+      "note": "Alldatasheet 25382 may be an old edition."
+    },
+    {
+      "vendor": "STMicroelectronics",
+      "doc_number": "TL071",
+      "known": [
+        {
+          "rev": "Rev. 1",
+          "date": ""
+        },
+        {
+          "rev": "Rev. 2",
+          "date": ""
+        },
+        {
+          "rev": "Rev. 3",
+          "date": "2008-09"
+        }
+      ],
+      "missing": [],
+      "note": "Document number and per-revision dates unknown."
+    },
+    {
+      "vendor": "Diodes Incorporated",
+      "doc_number": "DS31865",
+      "known": [
+        {
+          "rev": "Rev. 2-4",
+          "date": "2023-12"
+        }
+      ],
+      "missing": [],
+      "note": ""
+    },
+    {
+      "vendor": "Motorola",
+      "doc_number": "",
+      "known": [],
+      "missing": [],
+      "note": "Eight mirrors; xxx/D number unknown. 'tl071crev1' filename hints Rev 1. No onsemi or National sheet found."
+    }
   ],
   "ti_literature_numbers": [
     "SLOS080"
@@ -1529,20 +1628,11 @@
     "https://www.ti.com/lit/ds/symlink/tl074h.pdf"
   ],
   "open_questions": [
-    "Is TL071 listed in PCN 20221219006.1? Web summaries confirm only TL072 and TL074 devices. What does the companion PCN 20221219008 (21 Dec 2022; title lists TL071ACD, TL072ACDRE4, TL072HIDR, TL074CDBR) change?",
-    "What is the exact date-code cutover to the RFAB die (proposed first ship 20 Mar 2023)? Does legacy-die stock still ship under D/P/N/PW part numbers? Does 'CSO: RFB' in Rev W correspond to RFAB, and is it printed on reel/tube labels?",
-    "The Hackaday (Jun 2026) article from the discovery notes was not located in two searches. The noise change itself is confirmed by TI's datasheet and forum posts.",
-    "TI changed the title from 'JFET-Input' (Rev N) to 'FET-Input' (Rev V/W). A search summary claimed the TL07xH is CMOS; TI does not say so. Is the input stage JFET or CMOS?",
-    "Rev W Features footnote: one summary says 18 nV applies to TL07xM only and 37 nV to all other devices. The draft (EC tables) keeps 18 nV for PS/NS packages too. Which is right?",
-    "SLOS080M date: mirrors print 'REVISED JUNE 2015', but the Rev N changelog heading reportedly says February 2014. Which mirror holds M, and which holds D (Aug 1996)?",
-    "TI revisions A-C and E-I (1978-2005) are unknown. No copies of K, O, P, R, S, T or U were located. The alldatasheet 84-page copy may be one of O-U.",
-    "Datasheet inconsistencies: the Rev V/W legacy AC table gives SR typ 20 V/us (Rev N gives 13). Rev W Description says ESD 1.5 kV HBM, while the Overview says 2 kV and the ESD table says +/-2000 V. Rev W also mislabels the PS package as '(PDIP, 8)' in its changelog (confirmed wording in a web summary).",
-    "ST: what are the change logs for DocID2298 / DocID2297 and the TL071 doc number? Has ST changed its die since 2013-2014?",
-    "onsemi TL07x: existence, document number and status were not verified. Only a Motorola datasheet mirror was seen.",
-    "JRC NJM072/NJM074: datasheet revision/date not retrieved.",
-    "What do the other TL07x-related PCNs change? TI PCN 20120814000 (TL074-EP) and PCN 20170919002 surfaced in searches; contents not read.",
-    "The archive_seed_urls for TI slos080<rev> paths other than slos080q, and for tl071h, tl074h, tl072b, focus.ti.com and litv/pdf/slos080j, are INFERRED patterns that were not observed.",
-    "Reputation descriptors are mostly folklore or secondary. Self/ESP quotes were not verified verbatim."
+    "Is TL071 in PCN 20221219006.1? What does PCN 20221219008 (TL071ACD, TL072ACDRE4, TL072HIDR, TL074CDBR) change?",
+    "Exact date-code cutover to RFAB? Does legacy die still ship? Is 'CSO: RFB' RFAB, and on labels?",
+    "Is the TL07xH input JFET or CMOS? Does 18 nV/√Hz apply to TL07xM only, or PS/NS too?",
+    "Do SLOS080A, SLOS080B, SLOS080C or SLOS080E–I copies survive? Which mirrors hold M and D?",
+    "What do PCN 20120814000 (TL074-EP) and PCN 20170919002 change? onsemi status? Any ST die change?"
   ],
   "sources": [
     "https://www.ti.com/lit/ds/symlink/tl072.pdf",
@@ -1581,26 +1671,54 @@
     "https://nw-electric.way-nifty.com/blog/2019/10/post-19bc00.html",
     "https://forum.pedalpcb.com/threads/checking-for-fake-opa2134.4101/",
     "https://www.diyaudio.com/community/threads/upgrades-didnt-work-fake-opa2134.377960/",
-    "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1321243/opa2134-counterfeits"
+    "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1321243/opa2134-counterfeits",
+    "https://www.thonk.co.uk/wp-content/uploads/2019/06/tl0xx.pdf",
+    "https://datasheet.octopart.com/TL072CD-Texas-Instruments-datasheet-82512266.pdf",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/194858/STMICROELECTRONICS/TL072_07.html",
+    "https://www.alldatasheet.com/datasheet-pdf/pdf/242228/STMICROELECTRONICS/TL074_08.html",
+    "https://datasheetspdf.com/pdf/321040/Motorola/TL071/1"
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 16,
+    "claims_confirmed": [
+      "PCN 20221219006.1 (21 Dec 2022): RFAB, die revision, datasheet update; lists TL072/TL074; samples to 20 Jan 2023, first ship 20 Mar 2023: https://www.mouser.com/PCN/Texas_Instruments_PCN20221219006_20221221091103261.pdf",
+      "TL074CDR 2436/2443/2522 failed FCT: output to −13 V vs −11.5 V; TI cited new ESD and protection: https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1583912/tl074-tl074-tl074cdr-functional-failure-after-pcn-20221219006-1-fct-fail-on-new-date-code-2436-2443-2522",
+      "SLOS080W (July 2025) vs V (April 2023): Features noise 18 → 37 nV/√Hz; trim deleted except PS: https://www.ti.com/lit/ds/symlink/tl072.pdf",
+      "Rev W errata: PS mislabelled '(PDIP, 8)' in changelog; ESD 1.5 kV vs 2 kV; legacy AC table SR 20 typ.",
+      "TL07xH is TI's next-generation TL07x, noise 18 → 37 nV/√Hz: https://www.ti.com/product/TL072",
+      "TL072HIDR: dual, 40 V, 5 MHz, 4 mV, 20 V/µs, input to V+, −40 to 125 °C: https://www.ti.com/product/TL072H/part-details/TL072HIDR",
+      "TL071ACD: 30 V, 3 MHz, 13 V/µs, 6 mV, JFET-input: https://www.ti.com/product/TL071A/part-details/TL071ACD",
+      "tl074 symlink serves 'TL07xx Low-Noise, FET-Input Operational Amplifiers': https://www.ti.com/lit/ds/symlink/tl074.pdf",
+      "SLOS080J 'REVISED MARCH 2005' survives: https://leachlegacy.ece.gatech.edu/ece4435/sp08/TL071ckt.pdf",
+      "Rev J→K was format only; Mouser holds SLOS080L: https://www.mouser.com/datasheet/2/405/slos080l-316255.pdf",
+      "SLOS080M printed 'REVISED JUNE 2015' (e.g. https://components101.com/sites/default/files/component_datasheet/TL074%20Datasheet.pdf)",
+      "SLOS080D 'REVISED AUGUST 1996' exists (e.g. https://datasheet.octopart.com/TL072CP-Various-datasheet-7282711.pdf)",
+      "ST TL072 DocID2298 Rev 8 (June 2014) removed TL072IYD/AIYD/BIYD: https://www.st.com/resource/en/datasheet/tl072.pdf",
+      "ST TL074 DocID2297 Rev 5 (November 2013): https://www.st.com/resource/en/datasheet/tl074.pdf",
+      "ST TL071 Rev 3 (September 2008): https://www.st.com/resource/en/datasheet/tl071.pdf",
+      "ST TL072IDT specified at 4 MHz: https://uk.rs-online.com/web/p/op-amps/1656766",
+      "Diodes TL072 DS31865 Rev. 2-4 (December 2023), product Obsolete: https://www.diodes.com/part/view/TL072",
+      "Nisshinbo NJM072CA/NJM074CA; NJM074 matches NJM072B except supply current: https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm072ca",
+      "Community reports of 18 → 37 nV/√Hz: https://forum.pedalpcb.com/threads/tl072-alternatives.29806/ and https://blog.gremblor.com/2024/10/op-amps/",
+      "Self's EE Times series reviews the TL072: https://www.eetimes.com/op-amps-in-small-signal-audio-design-part-4-selecting-the-right-op-amp-jfet-input-types-reviewed/"
+    ],
     "refuted_claims": [
-      "Draft: 'No TI PCN was found / located' for moving plain TL07x onto the new die. Refuted: PCN 20221219006.1 (21 Dec 2022, RFAB fab, process technology, die revision, datasheet update) lists TL072 and TL074 devices, with proposed first ship 20 Mar 2023 (https://www.mouser.com/PCN/Texas_Instruments_PCN20221219006_20221221091103261.pdf).",
-      "Draft: SLOS080M dated February 2014. Two web summaries say SLOS080M is printed 'SEPTEMBER 1978 - REVISED JUNE 2015'.",
-      "[change register] merged, not refuted: LF353 sweep entry (PCN 20220615003.1 listing TL071/TL072/TL081/TL082). Its TL07x content (TL071CDR, TL072CDRG4, Jun 2022 dates, die rev C to A, VCC+ clamp) was folded into the TL07x RFAB die-redesign entry. TL081/TL082 belong to the TL08x family and are not carried here."
+      "'No TI PCN found' for the plain TL07x die move is wrong: PCN 20221219006.1 lists TL072/TL074 (https://www.mouser.com/PCN/Texas_Instruments_PCN20221219006_20221221091103261.pdf).",
+      "SLOS080M is not dated February 2014: two summaries show 'SEPTEMBER 1978 - REVISED JUNE 2015'.",
+      "Merged, not refuted: the LF353 entry's TL07x content on PCN 20220615003.1 (TL071CDR, TL072CDRG4, die rev C→A) folded in; TL081/TL082 excluded."
     ],
     "corrections": [
-      "Added PCN 20221219006.1 (issued 21 Dec 2022; samples to 20 Jan 2023; proposed first ship 20 Mar 2023) to silicon_changes, lineage, caveats and counterfeit notes. The companion PCN 20221219008 (content unknown) is noted.",
-      "Added the TI E2E report: TL074CDR date codes 2436, 2443 and 2522 failed a customer FCT. The output swung to -13 V vs about -11.5 V on old parts; TI cited the new process with updated ESD/protection. Added as spec delta and caveat.",
-      "Changed the Rev M date from February 2014 to June 2015 (printed header per web summaries).",
-      "Added Rev D (August 1996) to revision history, with a low-confidence mirror candidate.",
-      "Added mirrors: Rev J copies (Georgia Tech, UCSB, Jameco, Octopart), Rev L (Mouser slos080l), Rev N (Scribd), JFET-era copies with unknown revision (components101, thonk, Mouser, UCSB 137B), a U/V-era copy (makerhero) and an alldatasheet 84-page copy.",
-      "ST: TL072 DocID2298 Rev 8 (June 2014) raised to high confidence and its change log added (removed TL072IYD/AIYD/BIYD). Added TL074 DocID2297 Rev 5 (Nov 2013) and TL071 Rev 3 (Sep 2008).",
-      "Added Diodes Incorporated TL072 (DS31865 Rev. 2-4, Dec 2023; product Obsolete), the Motorola TL071C/072C/074C historical datasheet, the TL074-EP part (from a PCN title), and Nisshinbo NJM072CA/NJM074CA product pages (status now active).",
-      "Downgraded unobserved URLs (tl071 and tl072h symlinks, slos080q) to low confidence with 'unconfirmed' notes. The tl074 symlink rose to medium because it appeared in web results with the FET-Input title.",
-      "Removed the ST tl071/tl074 URLs from the 'inferred' list, since both were observed in web results.",
-      "Reputation: added the EE Times Self series, NwAvGuy, Cycfi, Mod Wiggler, PedalPCB and Gremblog sources, and the DC-servo use. Descriptors stay flagged as folklore or secondary."
+      "Added PCN 20221219006.1 (21 Dec 2022; samples to 20 Jan 2023; first ship 20 Mar 2023); companion PCN 20221219008 noted.",
+      "Added E2E TL074CDR failure report (2436/2443/2522; −13 V vs −11.5 V swing) as spec delta and caveat.",
+      "Rev M date changed from February 2014 to June 2015.",
+      "Added Rev D (August 1996) with a low-confidence mirror.",
+      "Added mirrors: Rev J (Georgia Tech, UCSB, Jameco, Octopart), Rev L (Mouser), Rev N (Scribd), JFET-era, U/V-era and alldatasheet 84-page copies.",
+      "ST: DocID2298 Rev 8 raised to high confidence with change log; added DocID2297 Rev 5 and TL071 Rev 3.",
+      "Added Diodes TL072 (DS31865, Obsolete), Motorola datasheet, TL074-EP and Nisshinbo NJM072CA/NJM074CA (active).",
+      "Unobserved tl071/tl072h symlinks and slos080q downgraded; tl074 symlink raised to medium.",
+      "ST tl071/tl074 URLs removed from the inferred list (both observed).",
+      "Added Self (EE Times), NwAvGuy, Cycfi, Mod Wiggler, PedalPCB, Gremblog sources and DC-servo use."
     ],
     "unverified_urls": [
       "https://www.ti.com/lit/ds/symlink/tl071.pdf",
@@ -1631,38 +1749,6 @@
       "https://www.ti.com/lit/ds/symlink/tl072b.pdf",
       "http://www.ti.com/litv/pdf/slos080j",
       "http://focus.ti.com/lit/ds/symlink/tl072.pdf"
-    ],
-    "claims_confirmed": [
-      "TI PCN 20221219006.1 (21 Dec 2022) 'Qualification of new Fab site (RFAB) using qualified Process Technology, Die Revision, Datasheet update and additional Assembly site/BOM options' lists TL072 and TL074 devices; proposed first ship 20 Mar 2023; samples until 20 Jan 2023: https://www.mouser.com/PCN/Texas_Instruments_PCN20221219006_20221221091103261.pdf",
-      "TL074CDR date codes 2436/2443/2522 failed FCT after the PCN. The output reached -13 V vs -11.5 V on old parts, and TI cited the new process with updated ESD structures and protection scheme: https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/1583912/tl074-tl074-tl074cdr-functional-failure-after-pcn-20221219006-1-fct-fail-on-new-date-code-2436-2443-2522",
-      "SLOS080W is dated July 2025. Changes from Rev V (April 2023): Features noise 18 to 37 nV/rtHz; trim function deleted except on the PS package; device table updated to the addendum: https://www.ti.com/lit/ds/symlink/tl072.pdf",
-      "TL07xH is TI's next generation of the TL07x, with noise 18 to 37 nV/rtHz at 1 kHz: https://www.ti.com/product/TL072",
-      "TL072HIDR part page: dual, 40 V, 5 MHz, 4 mV, 20 V/us, in to V+, -40 to 125 C: https://www.ti.com/product/TL072H/part-details/TL072HIDR",
-      "TL071ACD part page: 30 V, 3 MHz, 13 V/us, 6 mV, JFET-input: https://www.ti.com/product/TL071A/part-details/TL071ACD",
-      "The tl074 symlink serves the 'TL07xx Low-Noise, FET-Input Operational Amplifiers' datasheet: https://www.ti.com/lit/ds/symlink/tl074.pdf",
-      "SLOS080J 'SEPTEMBER 1978 - REVISED MARCH 2005' survives on university and distributor copies: https://leachlegacy.ece.gatech.edu/ece4435/sp08/TL071ckt.pdf",
-      "Rev J to K was a format update with no specification changes: https://www.mouser.com/datasheet/2/405/slos080l-316255.pdf",
-      "A Mouser copy of SLOS080L exists (filename slos080l): https://www.mouser.com/datasheet/2/405/slos080l-316255.pdf",
-      "SLOS080M is printed 'REVISED JUNE 2015' (per search summaries of JFET-era mirrors, e.g. https://components101.com/sites/default/files/component_datasheet/TL074%20Datasheet.pdf)",
-      "SLOS080D 'REVISED AUGUST 1996' exists (per search summaries of mirrors, e.g. https://datasheet.octopart.com/TL072CP-Various-datasheet-7282711.pdf)",
-      "ST TL072 datasheet is DocID2298 Rev 8, June 2014, which removed TL072IYD/AIYD/BIYD: https://www.st.com/resource/en/datasheet/tl072.pdf",
-      "ST TL074 datasheet is DocID2297 Rev 5, November 2013: https://www.st.com/resource/en/datasheet/tl074.pdf",
-      "ST TL071 datasheet is Rev 3, September 2008: https://www.st.com/resource/en/datasheet/tl071.pdf",
-      "ST TL072IDT is specified at 4 MHz: https://uk.rs-online.com/web/p/op-amps/1656766",
-      "Diodes Inc TL072 datasheet is DS31865 Rev. 2-4, December 2023, and the product is Obsolete: https://www.diodes.com/part/view/TL072",
-      "Nisshinbo lists NJM072CA and NJM074CA series; NJM074 has the same electrical characteristics as NJM072B except supply current: https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm072ca",
-      "Community reports that TI's TL072 noise spec went from 18 to 37 nV/rtHz: https://forum.pedalpcb.com/threads/tl072-alternatives.29806/ and https://blog.gremblor.com/2024/10/op-amps/",
-      "Self's EE Times series reviews JFET-input op-amps, including the TL072: https://www.eetimes.com/op-amps-in-small-signal-audio-design-part-4-selecting-the-right-op-amp-jfet-input-types-reviewed/"
-    ],
-    "web_searches_used": 16
-  },
-  "tier": "A",
-  "category": "legacy-general-purpose",
-  "product_pages": [
-    "https://www.ti.com/product/TL072",
-    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=njm072ca",
-    "https://www.datasheets.com/texas-instruments/tl072",
-    "https://www.st.com/en/amplifiers-and-comparators/tl072.html"
-  ],
-  "revision_chain_notes": "TI SLOS080 (TL071/TL072/TL074), known chain from oldest to newest: original SEPTEMBER 1978; D Aug 1996; J Mar 2005; K Jan 2014; L Feb 2014; M Jun 2015 (the header date; Rev N's changelog heading gives M as February 2014, and search re-confirmed that heading); N Jul 2017; O Oct 2020 (TL07xH die added); P Nov 2020; Q Jun 2021; R Jun 2021; S Jul 2021; T Dec 2021; U Dec 2022; V Apr 2023; W Jul 2025.\nSTILL MISSING: A, B and C (1978-1996) and E, F, G, H and I (1996-2005). Searches for these literal strings (SLOS080A/B/C/E/F/G/H/I) found no match. Several copies that pre-date Rev K have no revision shown, and any of them could hold one of E to J: Mouser texas instruments_tl072-1208707.pdf, UCSD neurophysics TI071.pdf, alldatasheet 206601 (41 pages), Yumpu/MultiMania, radiolocman 328435, and Octopart TL072ID 7835781 and TL072IP 8317744. They need to be opened to read the headers.\n37 nV/rtHz: search confirmed the changelog note that e_n at 1 kHz was 'changed to 37 nV/rtHz for all non-PS/non-NS packages and non-TL07xM devices'. The existing chain places this in Rev U (Dec 2022, issued alongside PCN 20221219006.1), so Rev U is the first revision to show 37 nV/rtHz in the EC table for plain TL07x. Rev W (Jul 2025) is the first to change the front-page Features bullet from 18 to 37 nV/rtHz. Revisions up to T give 18 nV/rtHz for the legacy devices. The search snippet did not itself show the letter U.\nMotorola TL071C/AC-TL072C/AC-TL074C/AC: 8 mirrors found (SFU x2, datasheetcatalog x2, alldatasheet, Silicon Ark, datasheet4u, datasheetspdf). The Motorola xxx/D document number and revision are still not shown. The SFU filename 'tl071crev1.pdf' hints at Rev 1, which is not verified.\nonsemi: no onsemi TL07x datasheet or publication order number surfaced.\nNational Semiconductor: no National TL071/TL072/TL074 datasheet surfaced (results returned only TI and ST copies).\nST TL072 DocID2298: known Rev 8 (Jun 2014). Revs 1-7 are missing. A 1998 SGS-Thomson edition (manualmachine) and chipdocs SGS-Thomson copies were found, with no revision shown.\nST TL074 DocID2297: known Rev 5 (Nov 2013). Revs 1-4 are missing, and alldatasheet 25382 may be an old edition.\nST TL071: Rev 3 (Sep 2008). The DocID is still not captured. The revision-history content (initial release, operating-conditions table added, order codes expanded, format update) was seen, but without per-revision dates.\nDiodes DS31865 and JRC/Nisshinbo: nothing new.\nArchive seed: only http://focus.ti.com/lit/ds/symlink/tl072.pdf, taken from the task's example. Search did not surface it or the tl071/tl074 versions of the same pattern."
+    ]
+  }
 }

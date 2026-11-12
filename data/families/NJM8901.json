@@ -1,156 +1,122 @@
 {
   "id": "NJM8901",
-  "name": "NJM8901 / NJM8901E (New JRC entry-tier JFET-input audio dual)",
-  "tagline": "Entry-tier New JRC JFET-input audio dual (13 nV/√Hz, 20 V/µs) that applies MUSES know-how to mass-production process; one blog review calls it easy to listen to, with light bass.",
-  "technology": "JFET-input (BiFET) dual audio op-amp. Distributor and vendor copy says it balances MUSES-series technology against normal mass-production techniques, reaching audio quality at controlled cost through 'original process tuning and assembly technology'. stereo.jp's report on a visit to JRC puts it in the entry tier with NJM8801 and NJM4582, below the mass-production MUSES (MUSES8820 / 8920 / 8832) and the flagship MUSES01 / 02 / 03. The low input bias current of the JFET inputs suits it to I/V (transimpedance) converters. Compensation, lead-frame and die details are not documented in any source that was seen.",
+  "name": "NJM8901 / NJM8901E",
+  "type": "JFET-input (BiFET) audio op-amp, dual",
+  "tier": "C",
+  "category": "japanese-audio-series",
+  "tagline": "Entry-tier JRC JFET dual (13 nV/√Hz, 20 V/µs) using MUSES know-how; reportedly easy-listening with light bass.",
   "manufacturers": [
-    "New Japan Radio Co. (New JRC / NJR)",
-    "Nisshinbo Micro Devices Inc."
+    "JRC/Nisshinbo"
+  ],
+  "lineage": [
+    {
+      "vendor": "New Japan Radio (JRC/NJR)",
+      "role": "originator",
+      "period": "launch date unknown–2021",
+      "note": "Entry tier with bipolar NJM8801 and NJM4582, below MUSES8820/8920/8832 and MUSES01/02/03 (stereo.jp)."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "role": "current",
+      "period": "2022–present",
+      "note": "Successor to New Japan Radio (merger reportedly January 2022); distributors now credit Nisshinbo."
+    }
   ],
   "part_numbers": [
     {
       "pn": "NJM8901",
       "channels": 2,
-      "vendors": [
-        "New JRC",
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "unconfirmed (no manufacturer lifecycle page seen)",
-      "notes": "Base part number: a J-FET input dual operational amplifier (sekorm datasheet copy). Only the E (EMP8) package variant appeared in the searches."
+      "status": "unknown",
+      "note": "Base part number; no manufacturer lifecycle page seen."
     },
     {
       "pn": "NJM8901E",
       "channels": 2,
-      "vendors": [
-        "New JRC",
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "listed by distributors (Mouser, chip1stop, Akizuki, Kyohritsu eleshop); manufacturer lifecycle unconfirmed",
-      "notes": "EMP8 package. Nisshinbo names EMP8 as 'SOP8 JEDEC 150mil'. It is surface-mount, so a DIP8 socket needs an adapter board. Akizuki sells it as '2回路入HiFiオペアンプ NJM8901E'. Whether a DIP8 NJM8901D exists is unknown, because none was seen."
+      "status": "active",
+      "note": "EMP8 (SOP8 JEDEC 150 mil) SMD. Sold by Mouser, chip1stop, Akizuki, Kyohritsu eleshop."
     },
     {
       "pn": "NJM8901E-TE2",
       "channels": 2,
-      "vendors": [
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "obsolete (per Profusion only; not confirmed by Nisshinbo)",
-      "notes": "Tape-and-reel orderable code for NJM8901E (SOP8/EMP8). Profusion plc marks it Obsolete. Treat this as a single distributor's flag until Nisshinbo's discontinued-products list confirms it."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "New Japan Radio Co. (New JRC / NJR)",
-      "role": "originator / designer and manufacturer",
-      "period": "launch date unknown to 2021",
-      "notes": "The entry-tier BiFET part alongside the bipolar NJM8801 and the NJM4582 (stereo.jp). No launch press release was found. The sibling NJM8801 datasheet is reportedly Ver.2014-11-10 (Kyohritsu mirror); this was not re-verified."
-    },
-    {
-      "vendor": "Nisshinbo Micro Devices Inc.",
-      "role": "successor company / current rights holder",
-      "period": "2022 to present",
-      "notes": "Distributor listings now credit the part to Nisshinbo Micro Devices (formerly New Japan Radio). The merger date (January 2022) comes from general knowledge and was not re-verified in this pass."
+      "status": "unknown",
+      "note": "Tape-and-reel NJM8901E. Profusion alone marks it obsolete; Nisshinbo has not confirmed."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input stage type",
-      "value": "JFET input (BiFET)",
-      "condition": "datasheet title and description",
-      "source": "https://en.sekorm.com/doc/2511119.html"
-    },
-    {
-      "parameter": "Channels",
-      "value": "2 (dual)",
-      "condition": "datasheet title",
-      "source": "https://en.sekorm.com/doc/2511119.html"
-    },
-    {
-      "parameter": "Input voltage noise",
+      "parameter": "Input noise (1 kHz)",
       "value": "13 nV/√Hz",
-      "condition": "typ; test conditions not shown in the search summary",
-      "source": "https://en.sekorm.com/doc/2511119.html ; https://akizukidenshi.com/catalog/g/g108175/"
+      "condition": "typ; test conditions not shown",
+      "source": "Datasheet (Sekorm copy)"
+    },
+    {
+      "parameter": "GBW",
+      "value": "5 MHz typ (open-loop gain 86 dB min / 110 dB typ)",
+      "condition": "typ",
+      "source": "Datasheet (Sekorm copy)"
     },
     {
       "parameter": "Slew rate",
       "value": "20 V/µs",
       "condition": "typ",
-      "source": "https://en.sekorm.com/doc/2511119.html"
+      "source": "Datasheet (Sekorm copy)"
     },
     {
-      "parameter": "Gain bandwidth product",
-      "value": "5 MHz",
-      "condition": "typ",
-      "source": "https://en.sekorm.com/doc/2511119.html"
+      "parameter": "THD+N",
+      "value": "0.003% (THD)",
+      "condition": "Av = 10, typ",
+      "source": "Datasheet (Sekorm copy)"
     },
     {
-      "parameter": "THD",
-      "value": "0.003%",
-      "condition": "Av=10, typ",
-      "source": "https://en.sekorm.com/doc/2511119.html"
-    },
-    {
-      "parameter": "Supply voltage",
+      "parameter": "Supply range",
       "value": "±4.0 V to ±18 V",
-      "condition": "recommended operating range",
-      "source": "https://en.sekorm.com/doc/2511119.html"
+      "condition": "recommended operating",
+      "source": "Datasheet (Sekorm copy)"
     },
     {
       "parameter": "Supply current",
       "value": "4 mA typ / 6 mA max",
-      "condition": "per device or per channel not confirmed",
-      "source": "https://en.sekorm.com/doc/2511119.html"
+      "condition": "per device or channel unconfirmed",
+      "source": "Datasheet (Sekorm copy)"
     },
     {
-      "parameter": "Input offset voltage",
+      "parameter": "Offset voltage",
       "value": "2 mV typ / 10 mV max",
-      "condition": "as summarised",
-      "source": "https://en.sekorm.com/doc/2511119.html"
+      "condition": "",
+      "source": "Datasheet (Sekorm copy)"
     },
     {
       "parameter": "Input bias current",
       "value": "30 pA typ / 400 pA max",
-      "condition": "as summarised",
-      "source": "https://en.sekorm.com/doc/2511119.html"
+      "condition": "",
+      "source": "Datasheet (Sekorm copy)"
     },
     {
-      "parameter": "Open-loop voltage gain",
-      "value": "86 dB min / 110 dB typ",
-      "condition": "large signal",
-      "source": "https://en.sekorm.com/doc/2511119.html"
-    },
-    {
-      "parameter": "CMRR",
-      "value": "70 dB min / 90 dB typ",
-      "condition": "as summarised",
-      "source": "https://en.sekorm.com/doc/2511119.html"
-    },
-    {
-      "parameter": "Package",
-      "value": "EMP8 (SOP8 JEDEC 150 mil)",
-      "condition": "NJM8901E",
-      "source": "https://www.profusionplc.com/parts/njm8901e-te2 ; https://www.nisshinbo-microdevices.co.jp/en/design-support/package/emp8.html"
+      "parameter": "Input stage",
+      "value": "JFET (BiFET); CMRR 70 dB min / 90 dB typ",
+      "condition": "",
+      "source": "Datasheet (Sekorm copy)"
     }
   ],
   "reputation": {
-    "summary": "A niche Japanese-market part with little coverage, not a recognised 'legend'. Japanese retailers market it as a Hi-Fi op-amp (Akizuki: '2回路入HiFiオペアンプ'), and one auction seller calls it 'MUSESの量産型'. The only listening report is the guiblo blog comparison (2023). It describes NJM8901E as easy to listen to with light bass, and MUSES8820D as giving noticeably deeper, weightier bass. A Japanese YouTube op-amp comparison reportedly includes it, but its content was not verified. No bench measurements were found.",
+    "summary": "A niche Japanese-market part, not a legend. Akizuki sells it as a 'HiFi op-amp'; one auction seller calls it 'mass-production MUSES'. The only listening report, a 2023 guiblo blog comparison, finds it easy to listen to with light bass, while MUSES8820D gives deeper, weightier bass. A Japanese YouTube comparison reportedly includes it. No measurements found.",
     "sonic_descriptors": [
-      "light / lean bass (低音があっさり目), from guiblo only",
-      "easy to listen to (聴きやすい), from guiblo only",
-      "less bass weight than MUSES8820D, from guiblo only"
+      "light bass (低音があっさり目)",
+      "easy listening (聴きやすい)",
+      "less weight than MUSES8820D"
     ],
     "typical_uses": [
-      "op-amp rolling in DACs and headphone amplifiers, the guiblo context (needs an SOP8-to-DIP8 adapter)",
-      "I/V converter, preamp, active-filter and line-amp stages (the application list in the vendor and retailer copy)",
-      "budget step up from generic NJM4580 / NJM4558-class duals (inferred from the entry-tier positioning, not from a user report)"
+      "Op-amp rolling in DACs and headphone amps (needs adapter)",
+      "I/V converters, thanks to low JFET bias current",
+      "Preamp, active-filter and line-amp stages",
+      "Budget step up from NJM4580/NJM4558-class duals (inferred)"
     ],
     "caveats": [
-      "Evidence is thin: one subjective, unblinded blog comparison and a YouTube shoot-out that was not checked. No measurements were found.",
-      "The sound descriptors come from a single listener.",
-      "NJM8901E is SMD (EMP8 = SOP8 150 mil), so DIP8 sockets need an adapter.",
-      "Typical offset is 2 mV and the maximum is 10 mV. That is high for DC-coupled stages, so use coupling capacitors or a DC servo where needed.",
-      "Supply is ±4 V minimum, so the part is not suited to low-voltage single-cell rails.",
-      "Lifecycle is uncertain: one distributor (Profusion) flags NJM8901E-TE2 as obsolete."
+      "Thin evidence: one unblinded blog comparison and an unchecked YouTube shoot-out; descriptors come from a single listener.",
+      "NJM8901E is SMD (EMP8 = SOP8 150 mil); DIP8 sockets need an adapter.",
+      "Offset 2 mV typ, 10 mV max: use coupling capacitors or a DC servo in DC-coupled stages.",
+      "Needs at least ±4 V supply; unsuited to low-voltage rails.",
+      "Lifecycle uncertain: Profusion flags NJM8901E-TE2 obsolete."
     ],
     "sources": [
       "https://guiblo.hatenablog.com/entry/2023/03/31/222008",
@@ -160,90 +126,105 @@
       "https://www.youtube.com/watch?v=zS7Z64YsgOg"
     ]
   },
+  "counterfeit_notes": "No NJM8901-specific counterfeit reports found, though none were sought directly. Low-volume part seen at brokers (veswin, censtry, ovaga); the reel code is flagged obsolete. Buy from Mouser, chip1stop, Akizuki or Kyohritsu eleshop.",
+  "alternatives": [
+    "NL8902 (Nisshinbo JFET dual, 2025-05)",
+    "MUSES8920 / MUSES8920A",
+    "MUSES8921 (reportedly 2025)",
+    "NJM8801 (bipolar entry-tier sibling)",
+    "NJM4582",
+    "MUSES8820 (more bass, per guiblo)",
+    "MUSES01 (flagship JFET dual)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "New Japan Radio Co. (NJR)",
       "title": "NJM8901 (English datasheet, Mouser-hosted copy)",
-      "doc_number": "unknown (no separate document number seen)",
+      "doc_number": "NJM8901_E",
       "revision": "",
       "date": "",
       "url": "https://www.mouser.com/ds/2/294/NJM8901_DataSheetE3-262000.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The URL appeared in the search results with the title 'NJM8901', but its content and the Ver. date were not seen. Mouser's ds/2/294 path is its NJR folder, so this copy may freeze an older NJR-branded version."
+      "note": "Mouser NJR folder; Ver. date not seen; 'E3' meaning unknown."
     },
     {
       "vendor": "New Japan Radio / Nisshinbo Micro Devices",
       "title": "NJM8901 High Quality Audio J-FET Input Dual Operational Amplifier",
-      "doc_number": "unknown",
-      "revision": "",
-      "date": "",
+      "doc_number": "NJM8901_E",
+      "revision": "Ver. 2014-10-28",
+      "date": "2014-10-28",
       "url": "https://en.sekorm.com/doc/2511119.html",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "Sekorm copy. Its summary gives the key specs (13 nV/√Hz, 20 V/µs, 5 MHz, ±4 to ±18 V), but the version date was not shown."
+      "revision_status": "probable",
+      "note": "Sekorm copy; source of the key specs."
     },
     {
       "vendor": "New Japan Radio Co. (NJR)",
       "title": "NJM8901 Datasheet - Operational Amplifier",
-      "doc_number": "unknown",
+      "doc_number": "NJM8901_E",
       "revision": "",
       "date": "",
       "url": "https://datasheet4u.com/datasheets/New-Japan-Radio/NJM8901/1100564",
+      "also_urls": [
+        "https://datasheet4u.com/datasheet-pdf/NewJapanRadio/NJM8901/pdf.php?id=1100564",
+        "http://www.datasheet26.com/circuit/1100564/NJM8901-даташит.html"
+      ],
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The listing credits New Japan Radio, so it is probably a pre-Nisshinbo copy, but its revision was not seen."
+      "note": "Credits New Japan Radio, so probably pre-Nisshinbo."
     },
     {
       "vendor": "New Japan Radio Co. (NJR)",
       "title": "NJM8901 J-FET input dual operational amplifier datasheet, Japanese edition (NJM8901_J.pdf, 'old_pdf' archive path)",
-      "doc_number": "NJM8901_J (file name; no separate document number seen)",
+      "doc_number": "NJM8901_J",
       "revision": "",
       "date": "",
       "url": "https://www.njr.co.jp/electronic_device/PDF/old_pdf/NJM8901_J.pdf",
       "url_kind": "vendor_legacy",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The search summary cited this URL as NJR's Japanese datasheet. The 'old_pdf' folder suggests it is a superseded edition kept by NJR, but the Ver. date was not shown in the summary. Worth archiving, because it may predate the Ver.2014-10-28 English edition."
+      "note": "Superseded Japanese edition; may predate Ver. 2014-10-28. Worth archiving."
     },
     {
       "vendor": "New Japan Radio Co. (NJR)",
       "title": "NJM8901 Datasheet PDF (Datasheet4U PDF viewer, id 1100564)",
-      "doc_number": "unknown",
+      "doc_number": "NJM8901_E",
       "revision": "",
       "date": "",
       "url": "https://datasheet4u.com/datasheet-pdf/NewJapanRadio/NJM8901/pdf.php?id=1100564",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The PDF endpoint for the same Datasheet4U entry (id 1100564) whose HTML page is already listed. The revision was not shown in the summary."
+      "note": "PDF endpoint of the Datasheet4U entry above."
     },
     {
       "vendor": "New Japan Radio Co. (NJR)",
       "title": "Datasheet NJM8901 PDF - New Japan Radio (datasheet26)",
-      "doc_number": "unknown",
+      "doc_number": "NJM8901_E",
       "revision": "",
       "date": "",
       "url": "http://www.datasheet26.com/circuit/1100564/NJM8901-даташит.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Russian-language mirror. It has the same id 1100564 as the Datasheet4U entry, so it probably holds the same file. The revision was not shown."
+      "note": "Russian mirror; same id as Datasheet4U, probably the same file."
     },
     {
       "vendor": "New Japan Radio Co. (NJR)",
       "title": "New Japan Radio NJM8901 audio amplifier datasheet (Manualzz)",
-      "doc_number": "unknown",
+      "doc_number": "NJM8901_E",
       "revision": "",
       "date": "",
       "url": "https://manualzz.com/doc/28628839/new-japan-radio-njm8901-audio-amplifier-datasheet",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Independent mirror of the NJR datasheet. It may hold a different upload or revision from the Mouser and Datasheet4U copies. The revision was not shown in the summary."
+      "note": "Independent mirror; may be a different upload or revision."
     },
     {
       "vendor": "New Japan Radio Co. (NJR)",
@@ -255,28 +236,60 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is an NJR end-of-life notice, not a datasheet. It came up in an NJM8901/NJM8901E search, but the summary did NOT confirm that NJM8901 is on it. Check the notice before citing it for the part's EOL or maintenance status."
+      "note": "NJR end-of-life notice, not a datasheet; NJM8901 listing unconfirmed."
     }
+  ],
+  "product_pages": [
+    "https://akizukidenshi.com/catalog/g/g108175/",
+    "https://www.mouser.com/ProductDetail/NJR/NJM8901E?qs=sajaCoHCXPTKvhQTAp2OpA%3D%3D",
+    "https://njr.com/semicon/products/NJM8901.html",
+    "https://www.nisshinbo-microdevices.co.jp/ja/design-support/discon/njx_discon.html",
+    "https://www.chip1stop.com/USA/en/view/dispDetail/DispDetail?partId=NJR1-0013450",
+    "https://www.mouser.jp/ProductDetail/Nisshinbo/NJM8901E?qs=sajaCoHCXPTKvhQTAp2OpA%3D%3D",
+    "https://eleshop.jp/shop/g/gE91121/",
+    "https://akizukidenshi.com/catalog/g/gI-08175/"
   ],
   "revision_history": [
     {
       "vendor": "New Japan Radio Co. (NJR)",
-      "doc_number": "NJM8901 English datasheet (no separate document number seen)",
-      "revision": "Ver.2014-10-28",
+      "doc_number": "NJM8901_E",
+      "revision": "Ver. 2014-10-28",
       "date": "2014-10-28",
-      "changes": "Changes were not shown in the summary. The search summary gave this Ver. date for the Sekorm copy (https://en.sekorm.com/doc/2511119.html, already listed). It is the only dated NJM8901 edition confirmed so far and is close to the reported Ver.2014-11-10 of the sibling NJM8801. It is not known whether this is the first edition or a later revision."
+      "changes": "Only dated edition known (Sekorm copy). Changes unknown; may or may not be the first edition. Sibling NJM8801 is reportedly Ver. 2014-11-10."
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No NJM8901-specific counterfeit reports were found, but no search targeted counterfeits directly. It is a low-volume Japanese-market part. It turns up at broker and secondary-market sites (veswin, censtry, ovaga), and a distributor flags the reel code as obsolete, so buy from authorised channels (Mouser, chip1stop, Akizuki, Kyohritsu eleshop) where possible. Treat the absence of reports as unknown, not as evidence the part is clean.",
-  "alternatives": [
-    "NL8902 (Nisshinbo, released May 2025): newer high-quality-sound JFET-input dual audio op-amp; whether it is positioned as NJM8901's successor is not stated",
-    "MUSES8920 / MUSES8920A (JRC / Nisshinbo): JFET-input dual one tier up (mass-production MUSES); the 'A' variant was not re-verified",
-    "MUSES8921 (Nisshinbo, reportedly 2025): described in earlier research as an upgraded MUSES8920A; not re-verified",
-    "NJM8801 (JRC / Nisshinbo): bipolar-input sibling in the same entry tier",
-    "NJM4582 (JRC / Nisshinbo): third entry-tier part (per stereo.jp)",
-    "MUSES8820 (JRC / Nisshinbo): bipolar mass-production MUSES dual; guiblo reports noticeably more bass than NJM8901E",
-    "MUSES01 (JRC / Nisshinbo): flagship JFET-input dual"
+  "revision_chains": [
+    {
+      "vendor": "JRC/Nisshinbo",
+      "doc_number": "NJM8901_E",
+      "known": [
+        {
+          "rev": "Ver. 2014-10-28",
+          "date": "2014-10-28"
+        }
+      ],
+      "missing": [
+        "first edition",
+        "editions before 2014-10-28",
+        "editions after 2014-10-28",
+        "Nisshinbo re-issue"
+      ],
+      "note": "Mouser 'E3', Datasheet4U 1100564 and Manualzz copies probably hold nearby editions; NJR-only part."
+    },
+    {
+      "vendor": "JRC/Nisshinbo",
+      "doc_number": "NJM8901_J",
+      "known": [
+        {
+          "rev": "old_pdf legacy copy",
+          "date": ""
+        }
+      ],
+      "missing": [
+        "all Ver. dates"
+      ],
+      "note": "Japanese edition at njr.co.jp old_pdf path; reportedly now a maintenance product with discontinuation planned."
+    }
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -295,15 +308,11 @@
     "https://www.njr.co.jp/electronic_device/PDF/old_pdf/NJM8901_J.pdf"
   ],
   "open_questions": [
-    "The datasheet version history is unknown. No copy's 'Ver.' date was seen. Check the Mouser mirror (filename 'DataSheetE3'), the sekorm and datasheet4u copies, and the Nisshinbo PDF to build the revision list and to see whether any version changes specs or package.",
-    "The official Nisshinbo datasheet and product-page URLs were not seen in the search results. Every Nisshinbo, njr.co.jp and Kyohritsu eclib URL in archive_seed_urls is inferred from sibling-part patterns.",
-    "Lifecycle: Profusion flags NJM8901E-TE2 as Obsolete. A Japanese blog (foxtango101) reports that several ex-JRC op-amps were designated 保守品 (maintenance / planned discontinuation), but whether NJM8901 is among them was not confirmed. Check Nisshinbo's discontinued / maintenance list.",
-    "Launch date is unknown. An onlinecomponents copy of the 2011 NJR short-form catalogue appeared in one search, but whether it lists NJM8901 was not confirmed.",
-    "Does a DIP8 NJM8901D, or any other package, exist? Only NJM8901E (EMP8) was seen.",
-    "Is the 4 / 6 mA supply current per device or per channel, and what are the test conditions (e.g. ±15 V, f = 1 kHz) for noise and THD?",
-    "No PCN, die change or marking change was found. Did the JRC-to-Nisshinbo transition bring a fab move for this part?",
-    "Is NL8902 positioned as NJM8901's replacement? Do MUSES8920A and MUSES8921 exist as described?",
-    "Confirm the YouTube video (zS7Z64YsgOg) content, and capture the guiblo test details (device, circuit position, adapter). No measurements were found."
+    "Build the datasheet Ver. list from the Mouser, Sekorm, Datasheet4U and Nisshinbo copies; did any change specs?",
+    "Is NJM8901 on Nisshinbo's maintenance/discontinued list or the 2018-12-20 NJR EOL notice? When did it launch?",
+    "Does a DIP8 NJM8901D exist? Is supply current per device or per channel?",
+    "Did the JRC-to-Nisshinbo transition bring a fab move? Is NL8902 its intended replacement?",
+    "What does the YouTube comparison (zS7Z64YsgOg) show? Any bench measurements?"
   ],
   "sources": [
     "https://en.sekorm.com/doc/2511119.html",
@@ -323,20 +332,36 @@
     "https://www.youtube.com/watch?v=zS7Z64YsgOg",
     "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/njm8801.pdf",
     "https://nw-electric.way-nifty.com/blog/2025/09/post-02dac7.html",
-    "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/"
+    "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/",
+    "https://www.censtry.com/product/nisshinbo-micro-devices-inc/njm8901e.html"
   ],
   "verification": {
     "status": "partially-verified",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "High-quality audio J-FET dual balancing MUSES technology with mass production (https://en.sekorm.com/doc/2511119.html).",
+      "13 nV/√Hz, 20 V/µs, 5 MHz, THD 0.003% (Av=10), ±4.0–±18 V, Icc 4–6 mA, Vio 2–10 mV, Ib 30–400 pA, Avd 86–110 dB, CMR 70–90 dB (https://en.sekorm.com/doc/2511119.html).",
+      "Vendor copy: original process tuning and assembly technology; JFET low bias suits I/V converters (https://akizukidenshi.com/catalog/g/g108175/ ; https://eleshop.jp/shop/g/gE91121/).",
+      "Entry tier with NJM8801 and NJM4582 in JRC's audio line (https://stereo.jp/?p=3614).",
+      "Akizuki sells NJM8901E as '2回路入HiFiオペアンプ' (https://akizukidenshi.com/catalog/g/g108175/).",
+      "Profusion marks SOP8 NJM8901E-TE2 obsolete (https://www.profusionplc.com/parts/njm8901e-te2).",
+      "EMP8 = SOP8 JEDEC 150 mil (https://www.nisshinbo-microdevices.co.jp/en/design-support/package/emp8.html).",
+      "Mouser hosts an NJM8901 datasheet in its NJR folder (https://www.mouser.com/ds/2/294/NJM8901_DataSheetE3-262000.pdf).",
+      "Listed at Mouser under NJR and chip1stop under Nisshinbo (https://www.mouser.com/ProductDetail/NJR/NJM8901E?qs=sajaCoHCXPTKvhQTAp2OpA%3D%3D ; https://www.chip1stop.com/USA/en/product/detail?partId=NJR1-0013450).",
+      "Nisshinbo Micro Devices (formerly New Japan Radio) is the current maker (https://www.censtry.com/product/nisshinbo-micro-devices-inc/njm8901e.html).",
+      "Nisshinbo released the NL8902 JFET dual, news dated 2025-05-13 (https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html).",
+      "Several ex-JRC op-amps are maintenance / planned-discontinuation parts; NJM8901's inclusion unconfirmed (https://foxtango101.blog.jp/archives/19678237.html)."
+    ],
     "refuted_claims": [],
     "corrections": [
-      "Key specs: added the datasheet values from the sekorm copy (13 nV/√Hz, 20 V/µs, 5 MHz GBW, THD 0.003% at Av=10, ±4 to ±18 V, 4/6 mA, Vio 2/10 mV, Ib 30/400 pA, Avd 86/110 dB, CMR 70/90 dB). The draft had only input type and channel count.",
-      "Package: the E suffix is now confirmed as EMP8. Nisshinbo names EMP8 as SOP8 JEDEC 150 mil, and Profusion lists NJM8901E-TE2 as SOP8. The draft had this only as inferred.",
-      "Part numbers: added NJM8901E-TE2, flagged Obsolete by Profusion (single-distributor flag, unconfirmed by Nisshinbo). Replaced 'unknown' status on NJM8901E with its confirmed distributor listings.",
-      "Datasheets: added two copies seen in search results (the Mouser-hosted NJR PDF and the sekorm doc), a datasheet4u copy, and two product pages. All revisions are unknown.",
-      "Technology: replaced the 'not confirmed' wording with the vendor/retailer description (MUSES know-how, original process tuning and assembly technology, I/V converter suitability). Added NJM4582 as the third entry-tier part.",
-      "Alternatives: NL8902 is confirmed as a real Nisshinbo JFET-input dual (news dated 2025-05-13); its relation to NJM8901 is still unstated.",
-      "Removed caveats saying no search could run. Added the high Vio (10 mV max) and ±4 V minimum supply as practical caveats.",
-      "Archive seeds: added the Mouser datasheet URL. The Nisshinbo, NJR legacy and Kyohritsu seeds are kept but remain inferred."
+      "Key specs added from the Sekorm datasheet copy; previously only input type and channel count.",
+      "E suffix confirmed as EMP8 (SOP8 JEDEC 150 mil); Profusion lists NJM8901E-TE2 as SOP8.",
+      "Added NJM8901E-TE2 (obsolete per Profusion only); NJM8901E status set from distributor listings.",
+      "Added Mouser and Sekorm datasheet copies, a Datasheet4U copy and two product pages; revisions unknown.",
+      "Technology description taken from vendor/retailer copy; NJM4582 added as third entry-tier part.",
+      "NL8902 confirmed as a real Nisshinbo JFET dual (2025-05-13); relation to NJM8901 unstated.",
+      "Added caveats for high offset (10 mV max) and ±4 V minimum supply.",
+      "Added the Mouser datasheet seed; Nisshinbo, NJR legacy and Kyohritsu seeds remain inferred."
     ],
     "unverified_urls": [
       "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM8901_E.pdf",
@@ -352,34 +377,6 @@
       "https://nw-electric.way-nifty.com/blog/2025/09/post-02dac7.html",
       "https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/",
       "https://www.nisshinbo-microdevices.co.jp/en/buy/online/eol.html"
-    ],
-    "claims_confirmed": [
-      "NJM8901 is a high-quality audio J-FET input dual op-amp that balances MUSES technology against mass-production techniques (https://en.sekorm.com/doc/2511119.html)",
-      "Specs: 13 nV/√Hz, 20 V/µs, GBW 5 MHz, THD 0.003% (Av=10), recommended supply ±4.0 to ±18 V, Icc 4-6 mA, Vio 2-10 mV, Ib 30-400 pA, Avd 86-110 dB, CMR 70-90 dB (https://en.sekorm.com/doc/2511119.html)",
-      "Vendor copy: MUSES know-how applied to high-volume production through original process tuning and assembly technology; suitable for I/V converters because of JFET low bias current (https://akizukidenshi.com/catalog/g/g108175/ ; https://eleshop.jp/shop/g/gE91121/)",
-      "Entry tier with NJM8801 and NJM4582 in JRC's high-quality audio line (https://stereo.jp/?p=3614)",
-      "NJM8901E is sold by Akizuki as '2回路入HiFiオペアンプ' (https://akizukidenshi.com/catalog/g/g108175/)",
-      "NJM8901E-TE2 is a SOP8-package JFET-input dual that Profusion marks Obsolete (https://www.profusionplc.com/parts/njm8901e-te2)",
-      "EMP8 = SOP8 JEDEC 150 mil package (https://www.nisshinbo-microdevices.co.jp/en/design-support/package/emp8.html)",
-      "Mouser hosts an NJM8901 datasheet PDF in its NJR folder (https://www.mouser.com/ds/2/294/NJM8901_DataSheetE3-262000.pdf)",
-      "NJM8901E is listed at Mouser under NJR and at chip1stop under Nisshinbo Micro Devices (https://www.mouser.com/ProductDetail/NJR/NJM8901E?qs=sajaCoHCXPTKvhQTAp2OpA%3D%3D ; https://www.chip1stop.com/USA/en/product/detail?partId=NJR1-0013450)",
-      "Nisshinbo Micro Devices (formerly New Japan Radio) is the current manufacturer (https://www.censtry.com/product/nisshinbo-micro-devices-inc/njm8901e.html)",
-      "NL8902, a JFET-input dual audio op-amp, was released by Nisshinbo (news dated 2025-05-13) (https://www.nisshinbo-microdevices.co.jp/en/about/info/20250513.html)",
-      "Several ex-JRC Nisshinbo op-amps have been designated maintenance / planned-discontinuation parts; NJM8901's inclusion is not confirmed (https://foxtango101.blog.jp/archives/19678237.html)"
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "japanese-audio-series",
-  "product_pages": [
-    "https://akizukidenshi.com/catalog/g/g108175/",
-    "https://www.mouser.com/ProductDetail/NJR/NJM8901E?qs=sajaCoHCXPTKvhQTAp2OpA%3D%3D",
-    "https://njr.com/semicon/products/NJM8901.html",
-    "https://www.nisshinbo-microdevices.co.jp/ja/design-support/discon/njx_discon.html",
-    "https://www.chip1stop.com/USA/en/view/dispDetail/DispDetail?partId=NJR1-0013450",
-    "https://www.mouser.jp/ProductDetail/Nisshinbo/NJM8901E?qs=sajaCoHCXPTKvhQTAp2OpA%3D%3D",
-    "https://eleshop.jp/shop/g/gE91121/",
-    "https://akizukidenshi.com/catalog/g/gI-08175/"
-  ],
-  "revision_chain_notes": "NJR / Nisshinbo NJM8901 datasheet (English edition, file name NJM8901_E, no separate document number seen). Known chain, oldest to newest: (1) editions before 2014-10-28: none found. (2) Ver.2014-10-28: the search summary gives this date for the Sekorm copy (en.sekorm.com/doc/2511119.html). Other copies that probably hold the same or a nearby edition: Mouser NJM8901_DataSheetE3-262000.pdf (whether 'E3' means a third revision is unconfirmed) and Datasheet4U id 1100564 (HTML page plus pdf.php endpoint, also mirrored at datasheet26). The Manualzz copy 28628839 shows no revision. (3) Nisshinbo re-issue after 2022: not found. Mouser.jp and Chip1Stop now list the part under Nisshinbo, and the Nisshinbo 保守品 (maintenance products) page probably covers it (the summary said NJM8901E is a maintenance product with discontinuation planned). NJR Japanese edition NJM8901_J: a legacy copy sits at njr.co.jp/electronic_device/PDF/old_pdf/NJM8901_J.pdf with no Ver. date shown, so it may be an earlier or superseded Japanese edition. Missing links: the launch or first edition and its date, any Ver. between launch and 2014-10-28, any Ver. after 2014-10-28 (including a Nisshinbo-branded edition), and the Ver. dates of the Japanese edition. A Digi-Key-hosted NJR EOL notice dated 2018-12-20 (181220_EOL.pdf) came up for this part, but it is not confirmed to list NJM8901. No second-source vendors were found; NJM8901 appears to be NJR-only. Budget: 4 of 4 WebSearch calls used."
+    ]
+  }
 }

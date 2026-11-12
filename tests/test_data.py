@@ -11,65 +11,40 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 import dataset  # noqa: E402
+from schema import check_family  # noqa: E402
 
-DATA = {"families": dataset.load_families()}
-
-TIERS = {"A", "B", "C"}
-CATEGORIES = {"bipolar-classic", "bipolar-modern-low-noise", "jfet-input", "cmos-input", "japanese-audio-series",
-              "high-speed-video-crossover", "headphone-driver", "legacy-general-purpose"}
-URL_KINDS = {"vendor_current", "vendor_revision_specific", "vendor_legacy", "distributor_mirror",
-             "third_party_mirror", "archive", "product_page"}
-CONF = {"high", "medium", "low"}
-KINDS = {"die-redesign", "fab-or-process-transfer", "second-source-difference", "datasheet-respec",
-         "package-or-assembly", "lifecycle", "renumbering-or-successor", "folklore-unconfirmed"}
-REQUIRED = ["id", "name", "tier", "category", "technology", "manufacturers", "part_numbers", "reputation",
-            "datasheets", "silicon_changes"]
+FAMILIES = dataset.load_families()
 
 
 class DataTest(unittest.TestCase):
-    def test_families_well_formed(self):
-        ids = [f["id"] for f in DATA["families"]]
+    def test_ids_unique_and_match_file_names(self):
+        ids = [f["id"] for f in FAMILIES]
         self.assertEqual(len(ids), len(set(ids)), "duplicate family ids")
-        for f in DATA["families"]:
-            with self.subTest(family=f.get("id")):
-                for key in REQUIRED:
-                    self.assertIn(key, f)
-                self.assertRegex(f["id"], r"^[A-Za-z0-9._-]+$")
-                self.assertIn(f["tier"], TIERS)
-                self.assertIn(f["category"], CATEGORIES)
-                self.assertTrue(f["part_numbers"])
+        files = {p.stem for p in dataset.FAMILY_DIR.glob("*.json")}
+        self.assertEqual(files, set(ids))
+        for f in FAMILIES:
+            self.assertRegex(f["id"], r"^[A-Za-z0-9._-]+$")
 
-    def test_datasheet_records(self):
-        for f in DATA["families"]:
-            for d in f["datasheets"]:
-                with self.subTest(family=f["id"], url=d.get("url")):
-                    self.assertIn(d["url_kind"], URL_KINDS)
-                    self.assertIn(d["confidence"], CONF)
-                    if d["url"]:  # a document may be known (doc number, rev, date) without a live URL
-                        self.assertRegex(d["url"], r"^https?://[^\s]+$")
+    def test_schema_and_length_caps(self):
+        problems = [p for f in FAMILIES for p in check_family(f)]
+        self.assertEqual(problems, [], "\n".join(problems[:40]))
 
-    def test_silicon_changes(self):
-        for f in DATA["families"]:
-            for ch in f["silicon_changes"]:
-                with self.subTest(family=f["id"], when=ch.get("when")):
-                    self.assertIn(ch["confidence"], CONF)
-                    self.assertTrue(ch["sources"], "silicon change without sources")
-                    self.assertRegex(ch["compatibility_risk"].lower(), r"^(high|medium|low)")
-                    if "kind" in ch:
-                        self.assertIn(ch["kind"], KINDS)
-
-    def test_seed_urls(self):
-        for f in DATA["families"]:
-            for u in f.get("archive_seed_urls", []):
-                self.assertRegex(u, r"^https?://[^\s]+$", f["id"])
+    def test_seed_inputs(self):
+        for f in FAMILIES:
             for lit in f.get("ti_literature_numbers", []):
                 self.assertRegex(lit, r"^S[A-Z]{3}\d{3}$", f["id"])
+
+    def test_meta(self):
+        meta = dataset.load_meta()
+        self.assertEqual(meta.get("schema_version"), 2)
+        for x in meta.get("excluded_candidates", []):
+            self.assertTrue(x.get("name") and x.get("reason"))
 
     def test_relative_links_resolve(self):
         link = re.compile(r"\]\(([^)#\s]+)(?:#[^)]*)?\)")
         pages = [ROOT / "README.md"] + sorted((ROOT / "docs").rglob("*.md"))
         for page in pages:
-            for target in link.findall(page.read_text()):
+            for target in link.findall(page.read_text(encoding="utf-8")):
                 if re.match(r"^[a-z]+:", target):
                     continue
                 with self.subTest(page=str(page.relative_to(ROOT)), target=target):

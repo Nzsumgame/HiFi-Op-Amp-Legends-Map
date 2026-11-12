@@ -1,225 +1,160 @@
 {
   "id": "THS4631",
-  "name": "THS4631 (single high-voltage, high-slew-rate, wideband JFET-input op amp)",
-  "tagline": "A ±15 V JFET-input op amp with 210 MHz GBW and 1000 V/µs slew. It is a cult DAC I/V and buffer part in Japan, praised as airy and transparent once it is stable.",
-  "technology": "TI's JFET-input high-speed voltage-feedback op amp; the datasheet calls the input stage JFET. Single channel, unity-gain stable: 325 MHz bandwidth at G=1, 210 MHz GBW. Runs on ±5 to ±15 V (10–30 V single supply). SMD only: SOIC-8 (D), HSOIC-8 PowerPAD (DDA; 'SOIC-PP' in Rev B) and HVSSOP-8 PowerPAD (DGN; 'MSOP-PP' in Rev B). Standard single-op-amp pinout: 2 = IN−, 3 = IN+, 4 = V−, 6 = OUT, 7 = V+; 1, 5 and 8 are NC. TI's documents disagree about the thermal pad. Rev B, and the layout text of the current Rev C, say the PowerPAD is 'electrically isolated from all pins and the active circuitry', recommend grounding it, and allow any potential from VS− to VS+. The new Pin Functions table in Rev C says the pad is 'internally connected to V−'.",
+  "name": "THS4631",
+  "type": "JFET-input wideband op-amp, single, ±15 V",
+  "tier": "C",
+  "category": "high-speed-video-crossover",
+  "tagline": "A ±15 V JFET-input op-amp with 210 MHz GBW and 1000 V/µs; a Japanese cult I/V part, airy and transparent once stable.",
   "manufacturers": [
     "Texas Instruments"
+  ],
+  "lineage": [
+    {
+      "vendor": "Texas Instruments",
+      "role": "originator",
+      "period": "2004–present",
+      "note": "Sole source. SLOS451 Dec 2004; Rev A 2005, B 2011, C 2025 ('new silicon data')."
+    }
   ],
   "part_numbers": [
     {
       "pn": "THS4631DDA",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
       "status": "active",
-      "notes": "HSOIC-8 PowerPAD, tube of 75, marking '4631'. Active in the 12-Aug-2017 and 23-May-2025 package addenda. TI's evaluation board is THS4631DDAEVM."
+      "note": "HSOIC-8 PowerPAD, tube of 75, marking '4631'; θJA 45.8 °C/W. EVM: THS4631DDAEVM."
     },
     {
       "pn": "THS4631DR",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
       "status": "active",
-      "notes": "SOIC-8 (D), reel of 2500, marking '4631'. Active in the 2017 and May-2025 addenda."
+      "note": "SOIC-8 (D), reel of 2500, marking '4631'; θJA 95 °C/W."
     },
     {
       "pn": "THS4631DGNR",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
       "status": "active",
-      "notes": "HVSSOP-8 PowerPAD (DGN), reel of 2500, marking 'ADK'. Active in the 2017 and May-2025 addenda."
+      "note": "HVSSOP-8 PowerPAD (DGN), reel of 2500, marking 'ADK'; θJA 58.4 °C/W."
     },
     {
       "pn": "THS4631DDA.A / THS4631DDA.B / THS4631DR.A / THS4631DR.B / THS4631DGNR.A / THS4631DGNR.B",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
       "status": "active",
-      "notes": "Separate orderables in the 23-May-2025 addendum, with the same markings. The '.A'/'.B' suffixes are a TI-wide addendum convention in 2025–2026, not specific to the THS4631."
+      "note": "Separate orderables in May-2025 addendum; '.A'/'.B' is a TI-wide convention, same markings."
     },
     {
       "pn": "THS4631D",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
       "status": "obsolete",
-      "notes": "SOIC-8 tube of 75, marking '4631'. Active in the Aug-2017 addendum. TI's part-details page and DigiKey now list it as discontinued/obsolete. It is listed in TI's discontinuance notice PDN20230907001 (7 Sep 2023, with a last-time buy). The DR reel stays active."
+      "note": "SOIC-8 tube of 75. Discontinued by PDN20230907001 (7 Sep 2023, last-time buy)."
     },
     {
       "pn": "THS4631DGN",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
       "status": "obsolete",
-      "notes": "HVSSOP/MSOP-8 PowerPAD tube, marking 'ADK'. The 2017 addendum gives a tube of 80; the Rev B ordering table says 100. It is listed in TI PDN20230907001 (7 Sep 2023) and is Obsolete in the May-2025 addendum. The DGNR reel stays active."
+      "note": "HVSSOP-8 tube (80 or 100), marking 'ADK'. Discontinued by PDN20230907001 (Sep 2023)."
     },
     {
       "pn": "THS4631DE4 / THS4631DGNG4 / THS4631DGNRG4",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "not listed in 2025 (presumed discontinued)",
-      "notes": "Eco-plan variants listed ACTIVE in the 12-Aug-2017 addendum and absent from the 23-May-2025 addendum. No PDN was found for them."
+      "status": "obsolete",
+      "note": "Eco-plan variants: active in Aug-2017 addendum, absent in 2025. Presumed discontinued; no PDN found."
     },
     {
       "pn": "THS4631DDAR",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "not listed in 2017 or 2025 addenda (presumed discontinued)",
-      "notes": "DDA reel of 2500. It appears in the SLOS451B ordering table (Aug 2011) only."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "Texas Instruments",
-      "role": "originator / sole source",
-      "period": "December 2004 – present",
-      "notes": "SLOS451 was first issued in December 2004. Revisions: Rev A March 2005, Rev B August 2011, Rev C March 2025 (the headers of Rev A, B and C were confirmed by web search). There are no known second sources. The part number is unchanged, but SLOS451C re-specifies several limits 'with new silicon data' (see silicon_changes). The D and DGN tube SKUs were discontinued under PDN20230907001 (Sep 2023)."
+      "status": "obsolete",
+      "note": "DDA reel of 2500; only in SLOS451B ordering table (2011). Presumed discontinued."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise e_n",
-      "value": "7 nV/√Hz typ",
-      "condition": "f > 10 kHz, VS=±15 V. The 1 kHz value is not tabulated.",
-      "source": "TI SLOS451C and SLOS451B"
+      "parameter": "Input noise (1 kHz)",
+      "value": "7 nV/√Hz typ (1 kHz value not tabulated)",
+      "condition": "f > 10 kHz, ±15 V",
+      "source": "SLOS451C / SLOS451B"
     },
     {
-      "parameter": "Input current noise i_n",
+      "parameter": "Current noise",
       "value": "20 fA/√Hz typ",
       "condition": "f > 10 kHz",
-      "source": "TI SLOS451B and SLOS451C electrical tables"
+      "source": "SLOS451C / SLOS451B"
     },
     {
-      "parameter": "Gain-bandwidth product",
-      "value": "210 MHz typ",
-      "condition": "G ≥ 20",
-      "source": "TI SLOS451C (same in Rev B)"
-    },
-    {
-      "parameter": "Small-signal bandwidth (−3 dB)",
-      "value": "325 MHz (G=1), 105 MHz (G=2), 55 MHz (G=5), 25 MHz (G=10)",
-      "condition": "VO=200 mVpp, RF=499 Ω (RF=0 at G=1)",
-      "source": "TI SLOS451C (same in Rev B)"
+      "parameter": "GBW",
+      "value": "210 MHz (G≥20); −3 dB 325/105/55/25 MHz at G=1/2/5/10",
+      "condition": "200 mVpp, RF = 499 Ω",
+      "source": "SLOS451C (same in Rev B)"
     },
     {
       "parameter": "Slew rate",
-      "value": "550 V/µs (2 V step, G=2); 900 V/µs (10 V step, G=2); 1000 V/µs (10 V step, G=5)",
-      "condition": "VS=±15 V, RF=499 Ω",
-      "source": "TI SLOS451C (same in Rev B)"
+      "value": "550 (2 V, G=2) / 900 (10 V, G=2) / 1000 V/µs (10 V, G=5)",
+      "condition": "±15 V, RF = 499 Ω",
+      "source": "SLOS451C (same in Rev B)"
     },
     {
-      "parameter": "Harmonic distortion",
-      "value": "HD2 −76 dBc / HD3 −94 dBc (RL=1 kΩ); HD2 −65 dBc / HD3 −62 dBc (RL=100 Ω)",
-      "condition": "G=2, VO=2 Vpp, f=5 MHz. No audio-band THD+N is specified.",
-      "source": "TI SLOS451C (same in Rev B)"
+      "parameter": "THD+N",
+      "value": "HD2/HD3 −76/−94 dBc (1 kΩ); −65/−62 dBc (100 Ω)",
+      "condition": "G=2, 2 Vpp, 5 MHz; no audio THD+N",
+      "source": "SLOS451C (same in Rev B)"
     },
     {
-      "parameter": "Supply voltage",
-      "value": "Recommended ±5 to ±15 V (10–30 V single); specified operating ±4 to ±16.5 V; absolute max 33 V total",
-      "condition": "—",
-      "source": "TI SLOS451C sections 6.1, 6.3, 6.5 (same in Rev B)"
+      "parameter": "Supply range",
+      "value": "±5 to ±15 V rec. (±4 to ±16.5 V spec); 33 V abs. max",
+      "condition": "10–30 V single supply",
+      "source": "SLOS451C (same in Rev B)"
     },
     {
-      "parameter": "Quiescent current (single channel)",
-      "value": "Rev C: 12.5 mA typ, 10 mA min, 14.5 mA max (25 °C); 9 mA min, 15 mA max (−40 to 85 °C). Rev B: 11.5 mA typ, 10 mA min / 13 mA max (25 °C); 9 mA min / 14 mA max over temperature.",
-      "condition": "VS=±15 V",
-      "source": "TI SLOS451C table; SLOS451B table (GitHub mirror)"
+      "parameter": "Supply current",
+      "value": "12.5 mA typ, 14.5 max (Rev C); 11.5 typ, 13 max (Rev B)",
+      "condition": "±15 V, 25 °C; 15 / 14 mA max hot",
+      "source": "SLOS451C / SLOS451B"
     },
     {
-      "parameter": "Static output current",
-      "value": "Rev C: ±180 mA typ, ±120 mA min (25 °C), ±90 mA min (−40 to 85 °C). Rev B: 98 mA sourcing / 95 mA sinking typ; 90 / 85 mA min (25 °C); 80 / 80 mA (−40 to 85 °C).",
-      "condition": "RL=20 Ω",
-      "source": "TI SLOS451C and SLOS451B tables. The Features list in both revisions says 95 mA; absolute maximum is 150 mA."
+      "parameter": "Output current",
+      "value": "±180 mA typ, ±120 mA min (Rev C); 98/95 mA typ (Rev B)",
+      "condition": "RL=20 Ω; Features 95 mA; abs max 150",
+      "source": "SLOS451C / SLOS451B"
     },
     {
-      "parameter": "Output voltage swing",
-      "value": "±13.5 V typ / ±13 V min (RL=1 kΩ); ±11 V typ / ±10 V min (RL=100 Ω)",
-      "condition": "VS=±15 V",
-      "source": "TI SLOS451C (same in Rev B)"
+      "parameter": "Offset voltage",
+      "value": "±260 µV typ, ±500 µV max; drift 2.5 / 12 µV/°C",
+      "condition": "25 °C; ±2000 µV max −40 to 85 °C",
+      "source": "SLOS451C"
     },
     {
-      "parameter": "Input offset voltage / drift",
-      "value": "±260 µV typ, ±500 µV max (25 °C), ±2000 µV max (−40 to 85 °C); drift ±2.5 µV/°C typ, ±12 µV/°C max",
-      "condition": "VCM=0 V",
-      "source": "TI SLOS451C"
-    },
-    {
-      "parameter": "Input bias / offset current",
-      "value": "Ib ±50 pA typ, ±100 pA max (25 °C), ±2000 pA max (−40 to 85 °C); Ios ±25 pA typ, ±100 pA max",
-      "condition": "VCM=0 V",
-      "source": "TI SLOS451C"
-    },
-    {
-      "parameter": "Input impedance (differential and common-mode)",
-      "value": "10^9 Ω || 3.9 pF",
-      "condition": "—",
-      "source": "TI SLOS451C/B. Rev A changed it from 10^9 Ω || 6.5 pF."
-    },
-    {
-      "parameter": "Open-loop gain / CMRR / PSRR",
-      "value": "AOL 80 dB typ (70 dB min); CMRR 95 dB typ (86 dB min); PSRR± 95 dB typ (85 dB min)",
-      "condition": "RL=1 kΩ; VCM=±10 V",
-      "source": "TI SLOS451C (same in Rev B)"
-    },
-    {
-      "parameter": "0.1 dB flatness",
-      "value": "Rev C: 6 MHz with CF=8.2 pF; 20 MHz without CF. Rev B: 38 MHz with CF=8.2 pF.",
-      "condition": "G=2, RF=499 Ω",
-      "source": "TI SLOS451C table and revision history; SLOS451B table"
-    },
-    {
-      "parameter": "Settling time",
-      "value": "40 ns (0.1%), 190 ns (0.01%)",
-      "condition": "G=−1, 2 V step, CF=4.7 pF",
-      "source": "TI SLOS451C (same in Rev B)"
-    },
-    {
-      "parameter": "Thermal resistance θJA / θJC",
-      "value": "θJA: D 95, DDA 45.8, DGN 58.4 °C/W. θJC: 38.3, 9.2, 4.7 °C/W.",
-      "condition": "JEDEC high-K board",
-      "source": "TI SLOS451C 6.4 (identical in SLOS451B)"
+      "parameter": "Input bias current",
+      "value": "±50 pA typ, ±100 pA max; Ios ±25 / ±100 pA",
+      "condition": "25 °C; ±2000 pA max −40 to 85 °C",
+      "source": "SLOS451C"
     },
     {
       "parameter": "Input stage",
-      "value": "JFET (N-channel JFET pair in TI's 2011 macromodel)",
-      "condition": "—",
-      "source": "TI SLOS451C text; TI PSpice model THS4631.LIB"
+      "value": "JFET (N-channel pair in TI model); 10^9 Ω || 3.9 pF",
+      "condition": "unity-gain stable",
+      "source": "SLOS451C; TI PSpice THS4631.LIB"
     }
   ],
   "reputation": {
-    "summary": "A niche cult part in the Japanese DIY and op-amp-rolling scene. It is mostly used for I/V after current-output DACs, and in headphone amps and buffers via DIP-8 conversion boards. One Ameblo blog title calls it 'the rumoured op-amp' (噂のオペアンプ). Shirokuma sells it pre-mounted on a dual 8-pin DIP board. Users report extended highs, air and transparency when it is not oscillating. A Zigsow review calls it a 'tsundere honours-student character' (ツンデレ優等生キャラ). TI's datasheet lists 'Current DAC output buffer' as an application. No Audio Science Review or other audio-band measurements are known to this record.",
+    "summary": "A niche cult part in Japan's DIY scene, mostly for I/V after current-output DACs and in headphone amps via DIP-8 adapters. An Ameblo blog calls it 'the rumoured op-amp' (噂のオペアンプ); Shirokuma sells it pre-mounted. Users report extended highs, air and transparency when it is not oscillating. TI lists 'current DAC output buffer' as an application. No audio-band measurements known.",
     "sonic_descriptors": [
       "airy",
       "transparent",
       "extended highs",
       "expressive",
-      "'tsundere honours student' (ツンデレ優等生): excellent once stable"
+      "tsundere honours student (ツンデレ)"
     ],
     "typical_uses": [
       "I/V conversion after current-output DACs",
-      "DIP-8 op-amp rolling via conversion boards (e.g. Shirokuma dual board)",
-      "Headphone amp op-amp swap (e.g. Elekit TU-HP01, per the xgender-isao blog)",
+      "DIP-8 rolling via conversion boards (Shirokuma dual board)",
+      "Headphone amp swap (Elekit TU-HP01, per xgender-isao blog)",
       "High-impedance wideband buffer / line driver"
     ],
     "caveats": [
-      "Oscillates easily in rolling and adapter use. Japanese users report needing an output Zobel network. TI's datasheet warns that large feedback resistors oscillate with the input capacitance and recommends a feedback capacitor, which matters for I/V stages.",
-      "Runs hot: 12.5 mA typ and 14.5 mA max quiescent current per channel in Rev C (11.5 typ / 13 max in Rev B), about 0.375 W idle at ±15 V. A dual adapter carries two chips.",
-      "The thermal pad connection is ambiguous. The current datasheet's layout text says the PowerPAD is electrically isolated, recommends ground and allows VS− to VS+. Rev C's pin table says the pad is internally connected to V−. Tying the pad to V− satisfies both readings.",
-      "SMD only, so socket use needs an adapter. It is a single, so it replaces a dual only on a dual-conversion board.",
-      "Noise is specified only above 10 kHz, and there is no audio-band THD+N spec.",
-      "Parts shipped after the March 2025 datasheet (Rev C) may be re-characterised silicon. The listening impressions (c. 2018–2020) predate this."
+      "Oscillates easily on adapters; users add an output Zobel. TI warns large feedback resistors oscillate; use a feedback capacitor.",
+      "Runs hot: 12.5 mA typ per channel (Rev C), about 0.375 W idle at ±15 V; dual adapters carry two.",
+      "Thermal pad ambiguous: layout text says isolated (ground it), Rev C pin table says V−. Tie it to V−.",
+      "SMD single only; needs an adapter, dual-conversion board for dual sockets. Noise specified only above 10 kHz.",
+      "Parts shipped after Rev C (March 2025) may be new silicon; listening reports (c. 2018–2020) predate it."
     ],
     "sources": [
       "https://maimai-audio.blog.jp/archives/27286777.html",
@@ -234,293 +169,27 @@
       "https://zigsow.jp/item/267790/review/319043"
     ]
   },
-  "datasheets": [
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631 High-Voltage, High-Slew-Rate, Wideband FET-Input Operational Amplifier",
-      "doc_number": "SLOS451C",
-      "revision": "C",
-      "date": "2025-03",
-      "url": "https://www.ti.com/lit/ds/symlink/ths4631.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "TI's living symlink. September 2026 search results still show the Rev C title, and no Rev D was seen. Its layout text still says the PowerPAD is 'electrically isolated'. A later revision would replace it silently."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631 High-Voltage, High-Slew-Rate, Wideband FET-Input Operational Amplifier (Rev. C)",
-      "doc_number": "SLOS451C",
-      "revision": "C",
-      "date": "2025-03",
-      "url": "https://www.ti.com/lit/ds/slos451c/slos451c.pdf",
-      "url_kind": "vendor_revision_specific",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "TI's revision-specific Rev C URL, confirmed by web search (the search listed it with a ?ts= parameter). Header 'DECEMBER 2004 – REVISED MARCH 2025'."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631 High-Voltage, High-Slew-Rate, Wideband FET-Input Operational Amplifier datasheet (Rev. C)",
-      "doc_number": "SLOS451C",
-      "revision": "C",
-      "date": "2025-03",
-      "url": "https://github.com/wirthda/usb-oscilloscope/blob/main/docs/datasheets/ths4631_opamp.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "A frozen Rev C copy in a GitHub student project, read in full in an earlier pass. It has the full revision history and the 2025 orderable table. The URL was not re-checked by web search in this pass."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "High-Voltage High Slew Rate Wideband FET-Input Op Amp datasheet (Rev. B)",
-      "doc_number": "SLOS451B",
-      "revision": "B",
-      "date": "2011-08",
-      "url": "https://github.com/studyHooligen/DataSheet/blob/master/opAmplifier/ths4631.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "A frozen TI Rev B PDF, read in full in an earlier pass. It is the last revision describing the legacy limits: Iq 11.5 mA typ / 13 mA max, output current 98 / 95 mA typ, 38 MHz flatness, PowerPAD isolated. The 'REVISED AUGUST 2011' header was confirmed by web search. The GitHub URL was not re-checked."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631 datasheet (old-format TI PDF, Kyohritsu copy)",
-      "doc_number": "SLOS451B",
-      "revision": "B",
-      "date": "2011-08",
-      "url": "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/TI/ths4631.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "probable",
-      "note": "A copy held by a Japanese parts distributor, confirmed to exist by web search. The search summary loosely associated it with SLOS451B. The revision is unconfirmed; it may be A or B."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631 datasheet (Rev. A)",
-      "doc_number": "SLOS451A",
-      "revision": "A",
-      "date": "2005-03",
-      "url": "https://datasheet.octopart.com/THS4631D-Texas-Instruments-datasheet-150388.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "The Rev A date is confirmed by the Rev B and Rev C revision histories and by web search. The search summary names this Octopart copy as the SLOS451A revision. The PDF was not opened."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631 datasheet (Octopart THS4631DGN copy)",
-      "doc_number": "SLOS451",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet.octopart.com/THS4631DGN-Texas-Instruments-datasheet-166161802.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Unconfirmed revision. The old-format title suggests Rev A or B. Seen in search results only."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631: High-Voltage Wideband Fet-Input Op Amp (DigiKey copy)",
-      "doc_number": "SLOS451",
-      "revision": "",
-      "date": "",
-      "url": "https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/THS4631.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Unconfirmed revision. DigiKey's static copy with an old-format title, likely Rev A or B. Seen in search results only."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631 Datasheet (PDF) – Texas Instruments (alldatasheet)",
-      "doc_number": "SLOS451",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/128592/TI/THS4631.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Unconfirmed revision. A low index number suggests an early (2005–2011) copy. A second copy is at https://www.alldatasheet.net/datasheet-pdf/pdf/1490020/TI/THS4631.html."
-    },
-    {
-      "vendor": "University of Toronto, Department of Physics",
-      "title": "THS4631 (old-format first page 'DGN-8 DDA-8 D-8 ... Photodiode Circuit THS4631 www.ti.com')",
-      "doc_number": "SLOS451 (letter unknown)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.physics.utoronto.ca/~astummer/Archives/Misc%20Minor/2017-11%20APD%20amplifier,%20THS4631%20eval%20module.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "A university-hosted copy archived around November 2017, so it predates the March 2025 Rev C re-characterisation. The file name suggests it may be bundled with EVM material."
-    },
-    {
-      "vendor": "RadioLocman (third party)",
-      "title": "THS4631 Datasheet Texas Instruments",
-      "doc_number": "SLOS451 (letter unknown)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.radiolocman.com/datasheet/data.html?di=327729",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Other part-specific pages exist: THS4631D at https://www.radiolocman.com/datasheet/data.html?di=82549&%2FTHS4631D= and THS4631DDA at https://www.radiolocman.com/datasheet/data.html?/THS4631DDA=&di=82332."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631 Datasheet | FET-INPUT OPERATIONAL AMPLIFIER (datasheetspdf.com)",
-      "doc_number": "SLOS451B",
-      "revision": "B",
-      "date": "2011-08",
-      "url": "https://datasheetspdf.com/datasheet/THS4631.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "probable",
-      "note": "A search summary said a datasheetspdf.com copy shows 'SLOS451B–DECEMBER 2004–REVISED AUGUST 2011'. The summary did not say which datasheetspdf.com page, so it could be this page or /pdf/1488418/. Not verified by opening the file."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631 AMPLIFIER Datasheet pdf - OPERATIONAL AMPLIFIER (datasheetspdf.com, etcTI)",
-      "doc_number": "SLOS451",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheetspdf.com/pdf/1488418/etcTI/THS4631/1",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Revision not shown in the search summary. It could be the same SLOS451B copy the summary attributed to datasheetspdf.com."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631DDA Datasheet Texas Instruments (RadioLocman)",
-      "doc_number": "SLOS451",
-      "revision": "",
-      "date": "",
-      "url": "https://www.radiolocman.com/datasheet/data.html?/THS4631DDA=&di=82332",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "This is a different RadioLocman entry from the known di=327729. The low di number suggests an early upload, possibly Rev * or A, but the summary does not show the revision."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631D Datasheet Texas Instruments (RadioLocman)",
-      "doc_number": "SLOS451",
-      "revision": "",
-      "date": "",
-      "url": "https://radiolocman.com/datasheet/data.html?%2FTHS4631D=&di=82549",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "This is a different RadioLocman entry from the known di=327729. It has a low (early) di number. The revision is not shown in the summary."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631DGNR datasheet (Octopart datasheet cache)",
-      "doc_number": "SLOS451",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet.octopart.com/THS4631DGNR-Texas-Instruments-datasheet-10255746.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "The snippet title matches the old-format front page of the Octopart 150388 copy, which is Rev A. The revision letter is not shown for this cache ID."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631 Datasheet(PDF) - Texas Instruments (alldatasheet, ID 1610849)",
-      "doc_number": "SLOS451",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1610849/TI/THS4631.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "This is a second alldatasheet TI entry, separate from the known ID 128592. The high ID suggests a recent upload, possibly Rev B or C. The revision is not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631 Datasheet(PDF) - National Semiconductor (TI) (alldatasheet, ID 578401)",
-      "doc_number": "SLOS451",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/578401/NSC/THS4631.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "alldatasheet files this under NSC (National), which is almost certainly a mislabel. THS4631 was only ever a TI part, and no National edition exists. The revision is not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "THS4631 (original release)",
-      "doc_number": "SLOS451",
-      "revision": "",
-      "date": "2004-12",
-      "url": "",
-      "url_kind": "archive",
-      "confidence": "high",
-      "revision_status": "unknown",
-      "revision_text": "* (original)",
-      "note": "Known from the revision histories in Rev B and Rev C. It specified input impedance as 10^9 Ω || 6.5 pF. No copy was located."
-    }
-  ],
-  "revision_history": [
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS451",
-      "revision": "*",
-      "date": "December 2004",
-      "changes": "Initial release."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS451A",
-      "revision": "A",
-      "date": "March 2005",
-      "changes": "Related-products table changed. Input impedance changed from 10^9 || 6.5 to 10^9 || 3.9 (Ω || pF). Figure labels corrected from RL=499 Ω to RF=499 Ω. Large-signal transient figures and the EVM schematic added."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS451B",
-      "revision": "B",
-      "date": "August 2011",
-      "changes": "Tstg corrected to −65 °C to 150 °C. No electrical changes were listed."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS451C",
-      "revision": "C",
-      "date": "March 2025",
-      "changes": "New TI format, with Pin Functions and ESD tables. OPA656 related-product values updated. 0–70 °C columns deleted. 0.1 dB flatness with CF=8.2 pF changed from 38 to 6 MHz, and 20 MHz without CF added. Static output current changed to 180 mA typ, 120 mA min at 25 °C and 90 mA min over temperature. Iq max changed from 13 to 14.5 mA (25 °C) and from 14 to 15 mA (over temperature). 'Updated graphs with new silicon data'. Changes not listed: Iq typ 11.5 to 12.5 mA; the pin table says the thermal pad is connected to V−; package names changed to HSOIC/HVSSOP."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS451B",
-      "revision": "B",
-      "date": "DECEMBER 2004 - REVISED AUGUST 2011",
-      "changes": "Revision history from Rev A (March 2005) to Rev B: in Absolute Maximum Ratings, Tstg changed from '65°C to 150°C' to '–65°C to 150°C'."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS451C",
-      "revision": "C",
-      "date": "DECEMBER 2004 - REVISED MARCH 2025",
-      "changes": "Performance specs revised for a new manufacturing process ('new silicon data'). TI E2E thread 1514297 asks whether Rev C applies to all ICs or only newly ordered ones."
-    }
+  "counterfeit_notes": "No specific reports. Genuine marks: '4631' on D/DDA, 'ADK' on DGN; DDA has an exposed pad. 'New' THS4631D/DGN tube stock (obsolete since 2023) is suspect. Buy authorized or Shirokuma/eleshop.jp boards. Markings cannot distinguish pre/post-2025 silicon.",
+  "alternatives": [
+    "THS4601 (FET, 180 MHz, 100 V/µs)",
+    "OPA627 (difet, 16 MHz, 55 V/µs)",
+    "OPA656 (±5 V only, 230 MHz)",
+    "OPA657 (decompensated, min gain 7)",
+    "LF357 / LF357H (decompensated JFET classic)",
+    "OPA828 (calmer, lower-power ±15 V I/V)"
   ],
   "silicon_changes": [
     {
       "kind": "fab-or-process-transfer",
       "vendor": "Texas Instruments",
-      "when": "Published in SLOS451C (March 2025). Rev B (Aug 2011) was still current in 2019, and TI's PSpice model dated 2020-11-02 still uses Rev B Iq and Isc values. No PCN was located, and the physical change date is unknown. The Sep 2023 PDN20230907001 discontinued only the D and DGN tube SKUs; that is a SKU action, not evidence of a die change.",
+      "when": "2025-03 · SLOS451C (no PCN found)",
       "part_numbers_affected": [
         "THS4631DDA",
         "THS4631DR",
         "THS4631DGNR"
       ],
-      "identification": "By datasheet only. SLOS451C (Rev C, March 2025) says 'Updated graphs with new silicon data' and carries new limits; SLOS451B (Aug 2011) describes the legacy part. TI E2E thread 1514297 ('THS4631: Revision C - Relevant to all IC's or only to newly ordered ones') attributes the changes to a new manufacturing process. The top marking is unchanged ('4631' on D/DDA, 'ADK' on DGN in both the 2017 and 2025 addenda), and no date-code cutoff or PCN was found. The '.A'/'.B' orderable suffixes are TI-wide and are not evidence of a die change.",
-      "summary": "Rev C re-characterises the THS4631 on 'new silicon data', and on E2E TI says the performance changes come from a new manufacturing process. TI recommends omitting the feedback capacitor in new designs that use the new silicon. Output current rises sharply (98 to 180 mA typ), quiescent current rises (11.5 to 12.5 mA typ; 13 to 14.5 mA max), and 0.1 dB flatness with CF = 8.2 pF is re-specified from 38 to 6 MHz. The new pin table ties the PowerPAD to V-, while the layout text still says isolated. Headline specs are unchanged: 7 nV/rtHz, 210 MHz GBW, 1000 V/us, +/-500 uV Vos max, 100 pA Ib max. Whether the die was also redesigned is not stated.",
+      "summary": "Rev C re-characterises the part on 'new silicon data'; TI (E2E) cites a new process, advising no CF in new designs. Output current, Iq, flatness changed; headlines (7 nV/√Hz, 210 MHz, 1000 V/µs, ±500 µV, 100 pA) did not. Rev B was current in 2019; TI's 2020-11-02 model used it.",
+      "identification": "Datasheet only: SLOS451C (Mar 2025) vs SLOS451B (Aug 2011). Markings unchanged ('4631', 'ADK'); no date-code cutoff. PDN20230907001 (Sep 2023) only dropped tube SKUs; '.A'/'.B' suffixes prove nothing.",
       "spec_deltas": [
         {
           "parameter": "Static output current, sourcing (RL=20 ohm)",
@@ -558,8 +227,9 @@
           "after": "Pin table: internally connected to V-; the layout text in the same Rev C still says isolated/ground"
         }
       ],
-      "audio_impact": "No listening or measurement comparison of old and new lots was found. Expect more idle heat, stronger static drive and a different response with feedback capacitance. The part is already oscillation-prone in I/V stages, so Zobel and CF values tuned on old parts may need re-checking; TI now advises leaving out CF in new designs. The Japanese impressions (c. 2018-2020) predate Rev C.",
-      "compatibility_risk": "medium: pinout, package and headline AC specs are unchanged. But higher Iq, a changed compensated-loop response and the ambiguous pad potential can upset marginal thermal or stability designs, or adapters that ground the pad. Tie the pad to V-.",
+      "audio_impact": "Untested by listeners. Expect more idle heat, stronger drive and different response with CF; recheck Zobel and CF values tuned on old parts.",
+      "compatibility_risk": "medium: same pinout and AC specs, but higher Iq, changed loop response, pad potential; tie pad to V−.",
+      "confidence": "medium",
       "sources": [
         "https://www.ti.com/lit/ds/slos451c/slos451c.pdf",
         "https://www.ti.com/lit/ds/symlink/ths4631.pdf",
@@ -568,18 +238,311 @@
         "https://github.com/studyHooligen/DataSheet/blob/master/opAmplifier/ths4631.pdf",
         "https://github.com/wirthda/usb-oscilloscope/blob/main/sim/PSpice/LIB/ths4631_b.lib"
       ],
-      "confidence": "medium",
-      "verification": "Two searches. They confirmed SLOS451C (Mar 2025) and found TI E2E 1514297, where TI attributes the Rev C changes to a new manufacturing process and advises omitting CF for the new silicon. This supports a real silicon change and moves the kind from pure datasheet-respec to process transfer. A candidate PCN (20240826006.0) that surfaced could not be tied to the THS4631 and is not cited."
+      "verification": "SLOS451C and TI E2E 1514297 confirm a process change. Candidate PCN 20240826006.0 not tied to THS4631."
     }
   ],
-  "counterfeit_notes": "No THS4631-specific counterfeit reports are known; this pass did not search for them specifically. Genuine markings are '4631' on SOIC-8 (D) and HSOIC-8 PowerPAD (DDA), and 'ADK' on HVSSOP-8 PowerPAD (DGN). A DDA part must have an exposed pad underneath. The THS4631D and THS4631DGN tube SKUs have been obsolete since PDN20230907001 (Sep 2023), so 'new' stock under those part numbers from brokers is old or suspect. Hobbyists usually buy the part pre-mounted on DIP adapters (e.g. Shirokuma) or as bare DDA parts (e.g. eleshop.jp). Prefer authorized distributors. The marking cannot tell pre- and post-2025 silicon apart.",
-  "alternatives": [
-    "THS4601: TI ±15 V FET-input, 180 MHz, 100 V/µs, 5.4 nV/√Hz, unity-gain stable. Listed in the THS4631 Related Products table.",
-    "OPA627: ±15 V difet, 16 MHz, 55 V/µs, 4.5 nV/√Hz. The audiophile benchmark; listed in the Related Products table.",
-    "OPA656: ±5 V FET-input, 230 MHz, 400 V/µs, 6 nV/√Hz. Low-voltage only.",
-    "OPA657: ±5 V FET-input, decompensated (min gain 7). Not a drop-in for unity-gain I/V use.",
-    "LF357 (LF357H metal can): the classic decompensated JFET part the Japanese community compares it with.",
-    "OPA828: modern ±18 V JFET-input audio/precision part (catalogued separately). A calmer, lower-power ±15 V I/V choice."
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631 High-Voltage, High-Slew-Rate, Wideband FET-Input Operational Amplifier",
+      "doc_number": "SLOS451C",
+      "revision": "C",
+      "date": "2025-03",
+      "url": "https://www.ti.com/lit/ds/symlink/ths4631.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Living symlink; still Rev C, no Rev D. Pad text says 'isolated'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631 High-Voltage, High-Slew-Rate, Wideband FET-Input Operational Amplifier (Rev. C)",
+      "doc_number": "SLOS451C",
+      "revision": "C",
+      "date": "2025-03",
+      "url": "https://www.ti.com/lit/ds/slos451c/slos451c.pdf",
+      "url_kind": "vendor_revision_specific",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Revision-pinned Rev C; header 'December 2004 – revised March 2025'."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631 High-Voltage, High-Slew-Rate, Wideband FET-Input Operational Amplifier datasheet (Rev. C)",
+      "doc_number": "SLOS451C",
+      "revision": "C",
+      "date": "2025-03",
+      "url": "https://github.com/wirthda/usb-oscilloscope/blob/main/docs/datasheets/ths4631_opamp.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Frozen Rev C copy with full revision history and 2025 orderables."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "High-Voltage High Slew Rate Wideband FET-Input Op Amp datasheet (Rev. B)",
+      "doc_number": "SLOS451B",
+      "revision": "B",
+      "date": "2011-08",
+      "url": "https://github.com/studyHooligen/DataSheet/blob/master/opAmplifier/ths4631.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Frozen Rev B: legacy Iq, output current, 38 MHz flatness, isolated pad."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631 datasheet (old-format TI PDF, Kyohritsu copy)",
+      "doc_number": "SLOS451B",
+      "revision": "B",
+      "date": "2011-08",
+      "url": "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/TI/ths4631.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Japanese distributor copy; probably Rev B, possibly A."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631 datasheet (Rev. A)",
+      "doc_number": "SLOS451A",
+      "revision": "A",
+      "date": "2005-03",
+      "url": "https://datasheet.octopart.com/THS4631D-Texas-Instruments-datasheet-150388.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Octopart copy identified as SLOS451A; PDF not opened."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631 datasheet (Octopart THS4631DGN copy)",
+      "doc_number": "SLOS451",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/THS4631DGN-Texas-Instruments-datasheet-166161802.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Old-format title suggests Rev A or B."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631: High-Voltage Wideband Fet-Input Op Amp (DigiKey copy)",
+      "doc_number": "SLOS451",
+      "revision": "",
+      "date": "",
+      "url": "https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/THS4631.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Old-format static copy, likely Rev A or B."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631 Datasheet (PDF) – Texas Instruments (alldatasheet)",
+      "doc_number": "SLOS451",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/128592/TI/THS4631.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Low index suggests an early (2005–2011) copy.",
+      "also_urls": [
+        "https://www.alldatasheet.net/datasheet-pdf/pdf/1490020/TI/THS4631.html"
+      ]
+    },
+    {
+      "vendor": "University of Toronto, Department of Physics",
+      "title": "THS4631 (old-format first page 'DGN-8 DDA-8 D-8 ... Photodiode Circuit THS4631 www.ti.com')",
+      "doc_number": "SLOS451 (letter unknown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.physics.utoronto.ca/~astummer/Archives/Misc%20Minor/2017-11%20APD%20amplifier,%20THS4631%20eval%20module.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "University copy archived about November 2017, pre-Rev C; possibly with EVM material."
+    },
+    {
+      "vendor": "RadioLocman (third party)",
+      "title": "THS4631 Datasheet Texas Instruments",
+      "doc_number": "SLOS451 (letter unknown)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=327729",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Part-specific THS4631D and THS4631DDA pages also exist.",
+      "also_urls": [
+        "https://www.radiolocman.com/datasheet/data.html?/THS4631DDA=&di=82332"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631 Datasheet | FET-INPUT OPERATIONAL AMPLIFIER (datasheetspdf.com)",
+      "doc_number": "SLOS451B",
+      "revision": "B",
+      "date": "2011-08",
+      "url": "https://datasheetspdf.com/datasheet/THS4631.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Reportedly shows 'SLOS451B – revised August 2011'; unopened."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631 AMPLIFIER Datasheet pdf - OPERATIONAL AMPLIFIER (datasheetspdf.com, etcTI)",
+      "doc_number": "SLOS451",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/1488418/etcTI/THS4631/1",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision not shown; may be the same SLOS451B copy."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631DDA Datasheet Texas Instruments (RadioLocman)",
+      "doc_number": "SLOS451",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?/THS4631DDA=&di=82332",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Early upload (low di number), possibly original or Rev A."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631D Datasheet Texas Instruments (RadioLocman)",
+      "doc_number": "SLOS451",
+      "revision": "",
+      "date": "",
+      "url": "https://radiolocman.com/datasheet/data.html?%2FTHS4631D=&di=82549",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Early upload (low di number); revision not shown.",
+      "also_urls": [
+        "https://www.radiolocman.com/datasheet/data.html?di=82549&%2FTHS4631D="
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631DGNR datasheet (Octopart datasheet cache)",
+      "doc_number": "SLOS451",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/THS4631DGNR-Texas-Instruments-datasheet-10255746.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Old-format front page like the Rev A Octopart copy."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631 Datasheet(PDF) - Texas Instruments (alldatasheet, ID 1610849)",
+      "doc_number": "SLOS451",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/1610849/TI/THS4631.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Recent upload (high ID), possibly Rev B or C."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631 Datasheet(PDF) - National Semiconductor (TI) (alldatasheet, ID 578401)",
+      "doc_number": "SLOS451",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/578401/NSC/THS4631.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Filed under NSC, a mislabel; THS4631 was only ever TI."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "THS4631 (original release)",
+      "doc_number": "SLOS451",
+      "revision": "original",
+      "date": "2004-12",
+      "url": "",
+      "url_kind": "archive",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Known from Rev B/C histories; specified 10^9 Ω || 6.5 pF."
+    }
+  ],
+  "product_pages": [
+    "https://www.ti.com/product/THS4631",
+    "https://ie.rs-online.com/web/p/op-amps/8144010",
+    "https://uk.rs-online.com/web/p/op-amps/2525583",
+    "https://uk.rs-online.com/web/p/op-amps/1977544"
+  ],
+  "revision_history": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS451",
+      "revision": "original",
+      "date": "2004-12",
+      "changes": "Initial release."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS451A",
+      "revision": "A",
+      "date": "2005-03",
+      "changes": "Related-products table changed; input impedance 10^9 || 6.5 → 10^9 || 3.9 (Ω || pF); RL→RF labels fixed; transient figures, EVM schematic added."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS451B",
+      "revision": "B",
+      "date": "2011-08",
+      "changes": "Tstg corrected from '65°C to 150°C' to '–65°C to 150°C'. No electrical changes."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS451C",
+      "revision": "C",
+      "date": "2025-03",
+      "changes": "New format; 'new silicon data': output current 180 mA typ, Iq max 14.5/15 mA, flatness 38→6 MHz. Unlisted: Iq typ 12.5 mA, pad to V−."
+    }
+  ],
+  "revision_chains": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS451",
+      "known": [
+        {
+          "rev": "original",
+          "date": "2004-12"
+        },
+        {
+          "rev": "A",
+          "date": "2005-03"
+        },
+        {
+          "rev": "B",
+          "date": "2011-08"
+        },
+        {
+          "rev": "C",
+          "date": "2025-03"
+        }
+      ],
+      "missing": [
+        "original"
+      ],
+      "note": "No copy of the original found. Rev A and B have no TI revision-pinned URL."
+    }
   ],
   "ti_literature_numbers": [
     "SLOS451"
@@ -607,14 +570,11 @@
     "https://www.ti.com/tool/THS4631DDAEVM"
   ],
   "open_questions": [
-    "Is Rev C's 'new silicon data' a real die, process, fab or leadframe change? Is there a PCN, and from which date code?",
-    "Is the DDA/DGN pad internally tied to V− on current parts? Rev C's pin table says yes; its layout text and Rev B say it is isolated.",
-    "Rev C is internally inconsistent: the Features list says 95 mA against 180 mA typ in the table; the history's '−40 °C to +125 °C' conflicts with the table's −40 to 85 °C; and the absolute maximum of 150 mA is below the 180 mA typical output current.",
-    "Which exact revisions do the Kyohritsu, Octopart (DGN), DigiKey media and alldatasheet copies hold? Only search-summary hints were available.",
-    "No SLOS451 (Rev *) copy was located.",
-    "When did the E4/G4 variants and the DDAR reel become obsolete, and under which PDN?",
-    "There are no Audio Science Review or other audio-band measurements, and it is unknown whether Japanese adapter vendors now ship Rev C silicon.",
-    "e_n at 1 kHz is not tabulated."
+    "Is Rev C's 'new silicon data' a die, process, fab or leadframe change? Is there a PCN and date code?",
+    "Is the DDA/DGN pad tied to V− on current parts? Rev C pin table and layout text disagree.",
+    "Rev C inconsistencies: Features 95 mA vs 180 mA typ; '−40 to +125 °C' vs 85 °C; 150 mA max.",
+    "Which revisions do Kyohritsu, Octopart, DigiKey and alldatasheet copies hold? Where is a copy of the 2004 original?",
+    "When did E4/G4 variants and DDAR become obsolete? Do Japanese adapter vendors now ship Rev C silicon?"
   ],
   "sources": [
     "https://www.ti.com/lit/ds/symlink/ths4631.pdf",
@@ -644,16 +604,25 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "SLOS451C dated 'December 2004 – revised March 2025' (https://www.ti.com/lit/ds/slos451c/slos451c.pdf).",
+      "TI symlink serves the THS4631 datasheet; no newer revision seen (https://www.ti.com/lit/ds/symlink/ths4631.pdf).",
+      "SLOS451A revised March 2005, SLOS451B August 2011; Octopart copy is SLOS451A (https://datasheet.octopart.com/THS4631D-Texas-Instruments-datasheet-150388.pdf).",
+      "Current layout text: PowerPAD isolated, ground recommended, VS− to VS+ allowed (https://www.ti.com/lit/ds/symlink/ths4631.pdf?ts=1759211980946).",
+      "THS4631D is obsolete (https://www.ti.com/product/THS4631/part-details/THS4631D; https://www.digikey.com/en/products/detail/texas-instruments/THS4631D/715813).",
+      "PDN20230907001 (7 Sep 2023) discontinues THS4631D and THS4631DGN with last-time buy (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5545/PDN20230907001.3.pdf).",
+      "TI offers the THS4631DDAEVM board (https://www.ti.com/tool/THS4631DDAEVM)."
+    ],
     "refuted_claims": [],
     "corrections": [
-      "Found TI discontinuance notice PDN20230907001 (7 Sep 2023, with a last-time buy), which lists THS4631D and THS4631DGN. This answers the open question on their obsolescence date and PCN.",
-      "Added TI's revision-specific Rev C URL https://www.ti.com/lit/ds/slos451c/slos451c.pdf, confirmed by web search.",
-      "Rev A now has a URL. The SLOS451A entry points to an Octopart copy, which the search summary names as the SLOS451A revision (medium confidence).",
-      "Added distributor and third-party mirrors with unconfirmed revisions (Kyohritsu, Octopart DGN, DigiKey media, alldatasheet) at low confidence.",
-      "Downgraded the two GitHub PDF mirrors from high to medium confidence: they were read in an earlier pass but not re-checked by web search here.",
-      "The PowerPAD contradiction is confirmed: the current symlink datasheet's layout text still says 'electrically isolated', recommends ground and allows VS− to VS+.",
-      "Removed the draft's 'no web search could run' statements and replaced them with this pass's results. Dropped the KiCad and werner2101 references from the sources where nothing depended on them.",
-      "Counterfeit notes now warn that D/DGN tube SKUs are obsolete, so new-stock offers under those part numbers are suspect."
+      "Found PDN20230907001 (7 Sep 2023, last-time buy) covering THS4631D and THS4631DGN.",
+      "Added the Rev C revision-pinned URL https://www.ti.com/lit/ds/slos451c/slos451c.pdf.",
+      "SLOS451A now points to an Octopart copy (medium confidence).",
+      "Added distributor and third-party mirrors (Kyohritsu, Octopart DGN, DigiKey, alldatasheet) at low confidence.",
+      "Two third-party PDF mirrors downgraded from high to medium confidence.",
+      "PowerPAD contradiction confirmed: current layout text still says 'electrically isolated'.",
+      "Counterfeit notes warn that D/DGN tube SKUs are obsolete."
     ],
     "unverified_urls": [
       "https://github.com/wirthda/usb-oscilloscope/blob/main/docs/datasheets/ths4631_opamp.pdf",
@@ -679,25 +648,6 @@
       "http://la4.cocolog-nifty.com/blog/2020/07/post-fd950b.html",
       "https://xgender-isao.hatenablog.com/entry/2018/06/13/073106",
       "https://eleshop.jp/shop/g/gD3R413/"
-    ],
-    "claims_confirmed": [
-      "The THS4631 datasheet SLOS451C is dated 'DECEMBER 2004 – REVISED MARCH 2025' (https://www.ti.com/lit/ds/slos451c/slos451c.pdf).",
-      "The TI symlink serves the THS4631 'High-Voltage, High-Slew-Rate, Wideband FET-Input Operational Amplifier' datasheet; no newer revision was seen (https://www.ti.com/lit/ds/symlink/ths4631.pdf).",
-      "SLOS451A is 'REVISED MARCH 2005' and SLOS451B is 'REVISED AUGUST 2011'; the search summary names an Octopart copy as SLOS451A (https://datasheet.octopart.com/THS4631D-Texas-Instruments-datasheet-150388.pdf).",
-      "The current datasheet's layout text says the PowerPAD is electrically isolated from all pins and the active circuitry, recommends a ground connection and allows VS− to VS+ (https://www.ti.com/lit/ds/symlink/ths4631.pdf?ts=1759211980946).",
-      "THS4631D is discontinued/obsolete (https://www.ti.com/product/THS4631/part-details/THS4631D; https://www.digikey.com/en/products/detail/texas-instruments/THS4631D/715813).",
-      "TI PDN20230907001 (7 Sep 2023) lists THS4631D and THS4631DGN for discontinuance, with a last-time buy (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5545/PDN20230907001.3.pdf).",
-      "TI offers the THS4631DDAEVM evaluation board, which uses the DDA package (https://www.ti.com/tool/THS4631DDAEVM)."
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "high-speed-video-crossover",
-  "product_pages": [
-    "https://www.ti.com/product/THS4631",
-    "https://ie.rs-online.com/web/p/op-amps/8144010",
-    "https://uk.rs-online.com/web/p/op-amps/2525583",
-    "https://uk.rs-online.com/web/p/op-amps/1977544"
-  ],
-  "revision_chain_notes": "TI SLOS451 (sole vendor; no second sources found; the alldatasheet 'NSC' entry 578401 is a mislabel), oldest to newest: (1) SLOS451 original, December 2004. The date is known but no copy was found; this is the main missing link. The early RadioLocman entries di=82332 and di=82549 and the Octopart 10255746 cache are candidates, but none shows its revision. (2) SLOS451A, 'DECEMBER 2004 – REVISED MARCH 2005'. A copy is at datasheet.octopart.com …-150388.pdf; a search summary again confirmed this header. No TI revision-specific URL was found. (3) SLOS451B, 'DECEMBER 2004 – REVISED AUGUST 2011'. Copies are at kyohritsu.com and GitHub studyHooligen. A search summary also attributes a SLOS451B copy to datasheetspdf.com (low confidence). No TI revision-specific URL was found. (4) SLOS451C, 'DECEMBER 2004 – REVISED MARCH 2025', 'new silicon data'. Copies are ti.com symlink and ti.com/lit/ds/slos451c/slos451c.pdf. Still missing: any copy of the unlettered December 2004 original, and confirmed revision-specific copies of Rev A and B on TI or on archive.org (focus.ti.com legacy symlink added as an archive seed). No new revision dates or change summaries appeared in the search summaries, so revision_history has no additions."
+    ]
+  }
 }

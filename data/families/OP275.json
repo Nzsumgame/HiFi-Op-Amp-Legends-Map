@@ -1,188 +1,150 @@
 {
   "id": "OP275",
-  "name": "OP275 (dual 'Butler' bipolar/JFET audio op-amp, Analog Devices)",
-  "tagline": "ADI's audio dual with its 'Butler' bipolar+JFET input. China's classic 'warm, tube-like' op-amp and Musiland's house part; ADI says music fans rate it.",
-  "technology": "Dual voltage-feedback op-amp with ADI's 'Butler Amplifier' input stage, which combines bipolar and JFET transistors. It is unity-gain stable. The datasheet says the design combines 'the accuracy and low noise performance of bipolar transistors, and the speed and sound quality of JFETs', and calls its 22 V/µs slew rate the fastest of any standard audio amplifier. ADI's claim that it was the first op-amp with a Butler front-end is repeated on a 1999 German product page and in EEVblog #738. The design came from the PMI (Precision Monolithics) group: the SPICE macro-models are credited 'JCB / PMI' and carry an Analog Devices copyright of 1992 and 1995. Analog Devices is the only maker; there are no second sources.",
+  "name": "OP275",
+  "type": "Bipolar/JFET 'Butler' audio op-amp, dual",
+  "tier": "B",
+  "category": "bipolar-classic",
+  "tagline": "ADI's 'Butler' bipolar+JFET audio dual: China's classic 'warm, tube-like' op-amp and Musiland's house part.",
   "manufacturers": [
-    "Analog Devices (PMI division heritage)"
+    "Analog Devices"
+  ],
+  "lineage": [
+    {
+      "vendor": "Precision Monolithics (PMI), within Analog Devices",
+      "role": "originator",
+      "period": "c. 1992",
+      "note": "SPICE models credited 'JCB / PMI', © ADI 1992/1995; G-grade model Rev. B dated 10/92. No PMI-branded OP275."
+    },
+    {
+      "vendor": "Analog Devices",
+      "role": "current",
+      "period": "1992–present",
+      "note": "Sole maker, no second sources. Digi-Key labels one datasheet page 'Rochester Electronics' (aftermarket distributor)."
+    }
   ],
   "part_numbers": [
     {
       "pn": "OP275GP",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "legacy pre-RoHS code; lifecycle not confirmed (probably obsolete, replaced by OP275GPZ)",
-      "notes": "PDIP-8, G grade, leaded. Its existence is now confirmed: alldatasheet (ID 49048), Futurlec (OP275GP.pdf, REV. A) and Datasheet Archive list datasheets under this code."
+      "status": "unknown",
+      "note": "PDIP-8, leaded G grade; probably obsolete, replaced by OP275GPZ. alldatasheet 49048, Futurlec REV. A."
     },
     {
       "pn": "OP275GPZ",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "production (Octopart shows manufacturer lifecycle 'PRODUCTION')",
-      "notes": "PDIP-8 (ADI package N-8), RoHS. An Altium managed-component record (2025 ECO log) uses it, with DatasheetVersion 'Rev. C'. The top mark reads 'OP275G' (Soomal MD12 photo; EEVblog reads '275G')."
+      "status": "active",
+      "note": "PDIP-8 (ADI N-8), RoHS; lifecycle 'PRODUCTION'. Top mark 'OP275G'."
     },
     {
       "pn": "OP275GS",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "obsolete (distributor lifecycle code, Worldway listing)",
-      "notes": "SOIC-8, G grade, pre-RoHS. Alldatasheet has a 12-page datasheet under this code (ID 49049)."
+      "status": "obsolete",
+      "note": "SOIC-8, leaded G grade (Worldway lifecycle code). alldatasheet ID 49049."
     },
     {
       "pn": "OP275GSZ",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "active (Digi-Key 625165; Octopart lifecycle 'Active')",
-      "notes": "SOIC-8, RoHS. LCSC C147933 parametrics: ±4.5 V to ±22 V, −40 °C to +85 °C, 5 mA quiescent."
+      "status": "active",
+      "note": "SOIC-8, RoHS (Digi-Key 625165, LCSC C147933). −40 to +85 °C."
     },
     {
       "pn": "OP275GSZ-REEL",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "listed (Octopart; LCSC C161797); lifecycle not confirmed",
-      "notes": "Tape-and-reel form of OP275GSZ."
+      "status": "unknown",
+      "note": "Tape-and-reel OP275GSZ (Octopart; LCSC C161797); lifecycle unconfirmed."
     },
     {
       "pn": "OP275GSZ-REEL7",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "active (per a Digi-Key BOM export on GitHub; also LCSC C213179)",
-      "notes": "7-inch reel form of OP275GSZ. The Digi-Key row reads 'Active, RoHS Compliant, IC OPAMP AUDIO 9MHZ 8SOIC'."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "Precision Monolithics Inc. (PMI), part of Analog Devices",
-      "role": "originator (design)",
-      "period": "about 1992 (the OP275G SPICE model Rev. B is dated 10/92)",
-      "notes": "The SPICE macro-models are credited 'JCB / PMI' and copyright Analog Devices 1992/1995, so PMI was already inside ADI when the part appeared. No PMI-branded OP275 was found."
-    },
-    {
-      "vendor": "Analog Devices",
-      "role": "sole manufacturer",
-      "period": "1990s to present",
-      "notes": "There are no second sources. In KiCad, OP275 is one of about 55 aliases of the generic LM358 dual-op-amp symbol, which is a pinout match only. A Digi-Key datasheet page for OP275 is labelled 'Rochester Electronics' (the aftermarket distributor); this does not make Rochester a second source."
+      "status": "active",
+      "note": "7-inch reel OP275GSZ (LCSC C213179); Digi-Key lists it Active."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input stage",
-      "value": "'Butler Amplifier' front-end combining bipolar and JFET transistors",
-      "condition": "architecture",
-      "source": "ADI datasheet front page (https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf); Startrack 1999 page; EEVblog #738"
+      "parameter": "Input noise (1 kHz)",
+      "value": "6 nV/√Hz typ",
+      "condition": "frequency not seen (probably 1 kHz)",
+      "source": "ADI datasheet Rev. C"
     },
     {
-      "parameter": "Voltage noise e_n",
-      "value": "6 nV/√Hz",
-      "condition": "typical; datasheet headline figure (frequency, probably 1 kHz, not seen)",
-      "source": "ADI datasheet front page (web search snippet); ATE-25 table; Startrack 1999"
-    },
-    {
-      "parameter": "THD+N",
-      "value": "0.0006%",
-      "condition": "typical, at 3 V rms (datasheet headline); load and frequency not seen",
-      "source": "ADI datasheet front page ('THD + Noise at 3 V rms is 0.0006%'). LCSC's parametric '0.006%' does not match the datasheet."
-    },
-    {
-      "parameter": "Gain-bandwidth",
-      "value": "9 MHz",
-      "condition": "typical",
-      "source": "ADI datasheet ('Wide Bandwidth: 9 MHz'); ATE-25 table; Digi-Key description '9MHZ'"
+      "parameter": "GBW",
+      "value": "9 MHz typ",
+      "condition": "",
+      "source": "ADI datasheet; ATE-25"
     },
     {
       "parameter": "Slew rate",
-      "value": "22 V/µs",
-      "condition": "typical",
-      "source": "ADI datasheet ('fastest of any standard audio amplifier'); ATE-25 table"
+      "value": "22 V/µs typ",
+      "condition": "ADI: fastest standard audio amp",
+      "source": "ADI datasheet; ATE-25"
+    },
+    {
+      "parameter": "THD+N",
+      "value": "0.0006% typ",
+      "condition": "3 V rms; load and frequency not seen",
+      "source": "ADI datasheet front page"
     },
     {
       "parameter": "Supply range",
-      "value": "±4.5 V to ±22 V (9 V to 44 V total)",
+      "value": "±4.5 V to ±22 V (9–44 V total)",
       "condition": "operating",
-      "source": "ATE-25 '9-44'; Altium 'V Span Min 9V / Max 44V'; LCSC; third-party note citing datasheet Rev. C p.2"
+      "source": "ATE-25; datasheet Rev. C p.2"
     },
     {
       "parameter": "Supply current",
-      "value": "about 2 mA per amplifier typical; 2.5 mA per amplifier (5 mA per package), probably the maximum",
-      "condition": "not read from the datasheet table",
-      "source": "ATE-25; Altium 'Iq/Amp 2.5mA'; LCSC '5mA'. SPICE models use ISY 1.85 mA (typical) and 2.35 mA (worst-case G) per amplifier."
+      "value": "~2 mA/amp typ; 2.5 mA/amp (5 mA/pkg), likely max",
+      "condition": "SPICE: 1.85 mA typ, 2.35 mA worst case",
+      "source": "ATE-25; ADI component record"
     },
     {
-      "parameter": "Offset voltage",
-      "value": "1 mV (maximum, G grade)",
-      "condition": "25 °C",
-      "source": "Altium 'Input Offset Voltage 1mV'; OP275G worst-case SPICE model EOS = 1.0 mV (typical model 0.5 mV)"
-    },
-    {
-      "parameter": "Input bias current",
-      "value": "100 nA",
-      "condition": "typical or maximum not confirmed",
-      "source": "Altium ADI component record; ATE-25 column (heading inferred)"
-    },
-    {
-      "parameter": "Input offset current (model)",
-      "value": "25 nA worst-case G grade; 1 nA typical model",
-      "condition": "SPICE macro-model parameters, not datasheet limits",
-      "source": "ADI OP275G Rev. B (10/92) and OP275 Rev. C (3/95) SPICE macro-models"
-    },
-    {
-      "parameter": "Capacitive-load drive",
-      "value": "up to 1000 pF",
-      "condition": "listed as stable into this load",
+      "parameter": "Output current",
+      "value": "No figure captured; stable into 1000 pF",
+      "condition": "",
       "source": "ADI ATE-25 table"
     },
     {
-      "parameter": "Operating temperature",
-      "value": "−40 °C to +85 °C",
-      "condition": "G grade",
-      "source": "LCSC parametric listing for OP275GSZ (distributor data)"
+      "parameter": "Offset voltage",
+      "value": "1 mV max (G grade)",
+      "condition": "25 °C; typical model 0.5 mV",
+      "source": "ADI component record; OP275G model"
     },
     {
-      "parameter": "Channels and packages",
-      "value": "dual; PDIP-8 (GP/GPZ, ADI N-8), SOIC-8 (GS/GSZ)",
-      "condition": "",
-      "source": "Altium record; Digi-Key; alldatasheet OP275GP/OP275GS listings"
+      "parameter": "Input bias current",
+      "value": "100 nA (typ or max unconfirmed)",
+      "condition": "IOS 25 nA worst case, 1 nA typ (models)",
+      "source": "ADI component record; ATE-25"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "'Butler' front-end: bipolar plus JFET",
+      "condition": "ADI: first op-amp with this input",
+      "source": "ADI datasheet; EEVblog #738"
     }
   ],
   "reputation": {
-    "summary": "OP275 was ADI's audio-targeted dual; its own datasheet pitches JFET 'sound quality'. ADI's AN-1429 (Rev. 0, David Guo) says ADI op-amps 'are reputable with music fans, like the AD797, OP275, AD8620, and ADA4627-1'. In the Chinese community (Soomal) it is the textbook 'warm, tube-like' op-amp and Musiland's signature part: Long March II (2007), MD10 (2007), Monitor 01 US and 02 US (2009), 01 PS (2010, with TPA6120), MD11 (2010), HP11 (2010/11, ahead of LME49600 buffers), MD30 (2011) and MD12 (2014, marked OP275G). In 2009 it cost nearly 20 RMB, about 20x an NE5532. Soomal's RMAA plots show a spray of low-level harmonics; Soomal links them to the warm sound but says it has no direct proof, and notes some OP275 cards sounded neutral. Other OEM uses: Denon DVD-A1 and DVD-2900, Yamaha DME32, Apogee Mini-DAC, HiFiMAN HM-602 filter stage, TempoTec DAII Plus. Japanese hobbyist rankings (nabe, Zigsow) reportedly praise a balanced, 'straight' sound; not verified.",
+    "summary": "ADI's audio dual, pitched on JFET 'sound quality'; ADI's AN-1429 says it is 'reputable with music fans'. On Soomal it is the textbook 'warm, tube-like' op-amp and Musiland's signature part (2007–2014). Soomal's RMAA plots show many low-level harmonics, possibly the source of the warmth (unproven). OEM uses include Denon DVD-A1, Yamaha DME32 and Apogee Mini-DAC.",
     "sonic_descriptors": [
       "warm (偏暖 / 暖色调)",
-      "tube-like, valve-amp style (胆味 / 胆机风格)",
-      "rich and mellow (醇厚柔和)",
+      "tube-like (胆味)",
+      "rich, mellow (醇厚柔和)",
       "musical (很有音乐味道)",
-      "warmth without losing treble (Soomal, Monitor 01 US)",
-      "'straight' or balanced (Japanese reviews; unverified)"
+      "warm, treble intact",
+      "'straight', balanced (JP, unconfirmed)"
     ],
     "typical_uses": [
-      "DAC post-filter and output stage in Chinese USB DACs and sound cards (Musiland Monitor and MD series)",
-      "headphone-amp gain stage in front of a current buffer (Musiland HP11 with LME49600; Monitor 01 PS and TempoTec DAII Plus with TPA6120)",
-      "analog stages of DVD-Audio/SACD players (Denon DVD-A1, DVD-2900)",
-      "pro-audio DSP and converters (Yamaha DME32, Apogee Mini-DAC)",
-      "DAP analog filter (HiFiMAN HM-602)",
-      "op-amp rolling in socketed sound cards and motherboards",
-      "guitar pedals (a forum trace of MXR MC402 Rev E, via third-party notes)"
+      "Musiland (2007–2014): Long March II, Monitor, MD, HP series",
+      "Gain stage before LME49600/TPA6120 buffers (HP11, TempoTec DAII Plus)",
+      "DVD-Audio/SACD players (Denon DVD-A1, DVD-2900); HiFiMAN HM-602 filter",
+      "Pro audio: Yamaha DME32, Apogee Mini-DAC",
+      "Socket rolling in sound cards; MXR MC402 pedal (reportedly)"
     ],
     "caveats": [
-      "Needs at least ±4.5 V (9 V total) supplies, so it does not suit low-voltage single-cell circuits.",
-      "Weak as a headphone driver on its own: Soomal says one OP275 cannot drive a 300 Ω HD580 with authority, so products pair it with buffers.",
-      "Measurements show a series of low-level harmonics (Soomal RMAA), so it is not a lowest-distortion choice by modern standards.",
-      "The sound depends on the implementation: Soomal found some OP275 cards neutral.",
-      "Expensive relative to NE5532/4580. Musiland used CLC2059 in the 01 Mini (2009) and MC33079 in 03 US and 03 PS (2011), but still used OP275G in the MD12 (2014).",
-      "'Warm/tube-like' is subjective community reputation; Soomal says it has no direct proof that the harmonics cause it.",
-      "Counterfeits are rumoured, but no specific report was confirmed."
+      "Needs at least ±4.5 V (9 V total); unsuited to low-voltage circuits.",
+      "Weak headphone driver alone: Soomal says it cannot drive a 300 Ω HD580 with authority.",
+      "Many low-level harmonics (Soomal RMAA); not a lowest-distortion choice by modern standards.",
+      "'Warm' is subjective and implementation-dependent; Soomal found some OP275 cards neutral.",
+      "Pricey vs NE5532/4580; Musiland later used CLC2059 (01 Mini, 2009) and MC33079 (03 US/PS, 2011)."
     ],
     "sources": [
       "https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf",
@@ -214,9 +176,62 @@
       "https://github.com/marte1337/holdsworth-engine/blob/11926f91e82d9f1ddf86b57b7a068eabc954b25e/HoldsworthEngine/references/pedals/mc402/sources.md",
       "https://nabe.adiary.jp/opamp-compare",
       "https://zigsow.jp/item/321962/review/319726",
-      "https://www.analog.com/en/products/op275.html"
+      "https://www.analog.com/en/products/op275.html",
+      "https://www.diyaudio.com/community/threads/op275-dual-opa-might-be-many-fake-source-originated-in-china.309442/"
     ]
   },
+  "counterfeit_notes": "No confirmed counterfeit report, though a diyAudio thread alleges Chinese fakes. Its premium price (~20× an NE5532 in 2009) invites remarking. Genuine parts read 'OP275G'; check ~2–2.5 mA/amp supply current, 22 V/µs and 9 MHz. Buy OP275GPZ/GSZ from authorized distributors.",
+  "alternatives": [
+    "ADA4075-2 (AN-1429 pick for I/V)",
+    "CLC2059 ('improved replacement for OP275')",
+    "AD8620 (precision JFET dual)",
+    "ADA4627-1 / AD797",
+    "OPA1642 / OPA2134",
+    "LM4562 / LME49720 / OPA1612",
+    "MC33078 / MC33079"
+  ],
+  "silicon_changes": [
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices",
+      "when": "2007+ · PCN 07_0024 Rev. E",
+      "part_numbers_affected": [
+        "OP275 PDIP and SOIC codes (exact list not read)"
+      ],
+      "identification": "Not visible in the part number. Compare date or lot code with the effective date in the PCN 07_0024 Rev. E parts list.",
+      "summary": "Sumitomo discontinued mold compounds 6300H, 6650RL, 6710S, 6730B and 7050B, so ADI changed mold compound, and sometimes die-attach, for PDIP, SOIC and other packages, with a polyimide implementation. OP275 is linked to this PCN, but its parts-list row was not seen.",
+      "spec_deltas": [],
+      "audio_impact": "None expected; materials only, no electrical change reported.",
+      "compatibility_risk": "low – die, pinout and datasheet unchanged; only materials changed.",
+      "sources": [
+        "https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf",
+        "https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Parts%20List.pdf"
+      ],
+      "confidence": "low",
+      "verification": "Rev. E form and parts list found; no OP275 row seen, so inclusion is unconfirmed."
+    },
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices",
+      "when": "RoHS transition (date unconfirmed)",
+      "part_numbers_affected": [
+        "OP275GP → OP275GPZ",
+        "OP275GS → OP275GSZ"
+      ],
+      "identification": "RoHS parts carry a Z suffix in the ordering code. The top mark on recent parts reads 'OP275G'.",
+      "summary": "Lead-free ordering codes replaced the leaded GP and GS codes. Distributors list OP275GS as obsolete and OP275GPZ/OP275GSZ as active. No die change was reported.",
+      "spec_deltas": [],
+      "audio_impact": "None reported.",
+      "compatibility_risk": "low – new ordering code; same pinout and datasheet.",
+      "sources": [
+        "https://www.worldwayelec.com/pro/analog-devices/op275gs/160728",
+        "https://octopart.com/part/analog-devices/OP275GPZ",
+        "https://www.digikey.com/en/products/detail/analog-devices-inc/OP275GSZ/625165"
+      ],
+      "confidence": "medium",
+      "verification": "Based on distributor listings (Worldway, Octopart, Digi-Key)."
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Analog Devices",
@@ -228,7 +243,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current ADI URL, seen in search results. Rev. C as current is supported by RadioLocman's 'Revision: C' listing, the Altium ADI component record (DatasheetVersion 'Rev. C') and a third-party citation. No Rev. D was found."
+      "note": "Current; Rev. C per RadioLocman and Altium record. No Rev. D found."
     },
     {
       "vendor": "Analog Devices",
@@ -240,7 +255,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "probable",
-      "note": "Short link seen in search results, with the same page title as the current PDF."
+      "note": "Short link; same title as the current PDF."
     },
     {
       "vendor": "Analog Devices",
@@ -252,7 +267,7 @@
       "url_kind": "vendor_legacy",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed by web search. Seen as ComponentLink2URL in an Altium component record (Niclasapdk/esd6_project ECO log, 05-03-2025). A Wayback copy may hold an older revision."
+      "note": "Legacy URL from a 2025 Altium record; may hold an older revision."
     },
     {
       "vendor": "Analog Devices (Futurlec copy)",
@@ -264,7 +279,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Search-result title begins 'REV. A Information furnished by Analog Devices…', so this copy freezes REV. A."
+      "note": "Title begins 'REV. A Information furnished by Analog Devices'."
     },
     {
       "vendor": "Analog Devices (pken.net copy)",
@@ -276,7 +291,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Search-result title begins 'REV. A Information furnished by Analog Devices…'. A second REV. A copy."
+      "note": "Second REV. A copy."
     },
     {
       "vendor": "Analog Devices (RadioLocman copy)",
@@ -288,7 +303,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Labelled 'Revision: C'. A second RadioLocman entry (di=351501) exists; its revision is not shown."
+      "note": "Labelled 'Revision: C'."
     },
     {
       "vendor": "Analog Devices (RadioLocman copy)",
@@ -300,7 +315,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Separate RadioLocman upload; the revision was not shown in search results."
+      "note": "Separate RadioLocman upload (di=351501); revision not shown."
     },
     {
       "vendor": "Analog Devices (alldatasheet copy)",
@@ -312,7 +327,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The pre-RoHS GP/GS ordering codes suggest an older revision (REV. A or B)."
+      "note": "12 pages, 189 KB; pre-RoHS GP/GS codes suggest REV. A or B."
     },
     {
       "vendor": "Analog Devices (Octopart copy)",
@@ -324,7 +339,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The 'OP275*' title style matches older ADI datasheets, so this may be an older revision."
+      "note": "'OP275*' title style suggests an older revision."
     },
     {
       "vendor": "Analog Devices (Digi-Key datasheet page)",
@@ -336,7 +351,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The digikey.ca version of this page is titled 'OP275 Datasheet by Rochester Electronics, LLC'."
+      "note": "The digikey.ca version is labelled 'Rochester Electronics, LLC'."
     },
     {
       "vendor": "Analog Devices (Internet Archive item)",
@@ -348,7 +363,7 @@
       "url_kind": "archive",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Internet Archive upload from 2015."
+      "note": "Internet Archive upload, 2015-10-17."
     },
     {
       "vendor": "Analog Devices (datasheet4u copy)",
@@ -360,7 +375,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Seen in search results; the revision was not shown."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices (Datasheet Archive)",
@@ -372,7 +387,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Index of old OP275GP datasheet copies; it may hold REV. A or B."
+      "note": "Index of old OP275GP copies; may hold REV. A or B."
     },
     {
       "vendor": "Analog Devices (copy bundled with KiCad)",
@@ -384,7 +399,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed. The URL is evidence only: a FreeBSD KiCad packing list includes %%DOCSDIR%%/analog-dev/op275.pdf. The PDF itself was not obtained."
+      "note": "Evidence only: KiCad packing list includes analog-dev/op275.pdf; PDF not obtained."
     },
     {
       "vendor": "Analog Devices",
@@ -396,7 +411,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Vendor model, not a datasheet. The header reads 'JCB / PMI … Copyright 1995 by Analog Devices'. Parameters: ISY 1.85 mA per amplifier, common-mode zero at 1 kHz (C7 = 159.15 pF)."
+      "note": "Vendor model (not datasheet), 'JCB / PMI', © 1995; ISY 1.85 mA/amp."
     },
     {
       "vendor": "Analog Devices",
@@ -408,7 +423,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Vendor model, not a datasheet. It models the datasheet's worst-case G-grade limits and is copyright 1992, so a G-grade datasheet existed by October 1992. Parameters: EOS 1.0 mV, IOS 25 nA, ISY 2.35 mA per amplifier."
+      "note": "Worst-case G-grade model: EOS 1.0 mV, IOS 25 nA, ISY 2.35 mA/amp."
     },
     {
       "vendor": "Analog Devices (OrCAD/PSpice anlg_dev.lib copy)",
@@ -420,7 +435,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Identical to Rev. C except C7 = 1.59 pF (common-mode zero near 100 kHz), which matches Rev. C's note 'Corrected common-mode zero location'."
+      "note": "OrCAD copy: as Rev. C but C7 1.59 pF (zero ~100 kHz)."
     },
     {
       "vendor": "Analog Devices (Reichelt Elektronik copy)",
@@ -432,7 +447,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The search result's title text reads 'REV. B Information furnished by Analog Devices is believed to be accurate and...', which is the page-1 footer of the old ADI layout. This is the first copy found of the Rev. B edition, which fills the gap between the Rev. A copies (Futurlec, pken.net) and the current Rev. C. Worth archiving before the distributor replaces it."
+      "note": "Footer reads 'REV. B'; only Rev. B copy found. Archive it."
     },
     {
       "vendor": "Analog Devices (Octopart datasheet cache, OP275GPZ entry)",
@@ -444,7 +459,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the OP275GPZ URL for the same cache ID (9742324) as the OP275GSZ copy already listed. The title keeps the patent asterisk ('OP275*'). The snippet shows only 'Information furnished by Analog Devices...' without the revision letter."
+      "note": "OP275GPZ URL for cache ID 9742324; revision letter not shown."
     },
     {
       "vendor": "Analog Devices (datasheetcatalog.com copy)",
@@ -456,7 +471,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "datasheetcatalog mostly holds editions from before about 2005, so this is probably an early (Rev. A or B) copy, but the summary does not show the revision."
+      "note": "Probably an early (Rev. A or B) copy; revision not shown."
     },
     {
       "vendor": "Analog Devices (datasheetcatalog.com copy)",
@@ -468,7 +483,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "OP275GS (SOIC, before the lead-free Z suffix) entry. The revision is not shown."
+      "note": "OP275GS (pre-RoHS SOIC) entry; revision not shown."
     },
     {
       "vendor": "Analog Devices (alldatasheet copy, OP275GS entry)",
@@ -480,7 +495,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Summary: 189 KB, 12 pages. This is the same alldatasheet file set as ID 49047, which is already listed. It is listed here because this URL was not recorded before."
+      "note": "Same 12-page, 189 KB file set as ID 49047."
     },
     {
       "vendor": "Analog Devices (alldatasheet copy, OP275G entry)",
@@ -492,7 +507,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the OP275G entry (ID 49052) of the alldatasheet 12-page copy. The revision is not shown."
+      "note": "OP275G entry (ID 49052) of the 12-page copy."
     },
     {
       "vendor": "Analog Devices (DatasheetBank copy)",
@@ -504,7 +519,11 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The index page. The viewer is at https://www.datasheetbank.com/en/pdf-view/OP275-ADI and the download is at https://pdf.datasheetbank.com/datasheet-download/71480/1/ADI/OP275. The revision is not shown."
+      "note": "Index page; viewer and download (ID 71480) also exist. Revision not shown.",
+      "also_urls": [
+        "https://www.datasheetbank.com/en/pdf-view/OP275-ADI",
+        "https://pdf.datasheetbank.com/datasheet-download/71480/1/ADI/OP275"
+      ]
     },
     {
       "vendor": "Analog Devices (DatasheetBank download)",
@@ -516,7 +535,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Direct download (ID 71480). The revision is not shown."
+      "note": "Direct download (ID 71480); revision not shown."
     },
     {
       "vendor": "Analog Devices (DatasheetQ copy)",
@@ -528,7 +547,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the 'OP275_' entry, which may be a different file from the 'OP275' entry at https://www.datasheetq.com/en/OP275-ADI. Neither shows its revision."
+      "note": "'OP275_' entry; may differ from the 'OP275' entry. Revision not shown."
     },
     {
       "vendor": "Analog Devices (DatasheetQ copy)",
@@ -540,7 +559,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The revision is not shown."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices (datasheetspdf.com copy)",
@@ -552,7 +571,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "It has the same ID (475420) as the datasheet4u copy already listed, so it is probably the same file. The revision is not shown."
+      "note": "Same ID 475420 as the datasheet4u copy."
     },
     {
       "vendor": "Analog Devices (datasheet4u copy, new-style page)",
@@ -564,7 +583,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the newer datasheet4u URL for ID 475420; the old pdf.php URL is already listed. The revision is not shown."
+      "note": "Newer datasheet4u URL for ID 475420."
     },
     {
       "vendor": "Analog Devices (Datasheet Archive, OP275GPZ entry)",
@@ -576,7 +595,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the OP275GPZ (lead-free) index. The OP275GP index is already listed. The revision is not shown."
+      "note": "OP275GPZ (lead-free) index; revision not shown."
     },
     {
       "vendor": "Analog Devices (Datasheets.com)",
@@ -588,7 +607,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The revision is not shown. It is probably the current Rev. C, because it is a lead-free (Z) part entry."
+      "note": "Lead-free entry, so probably Rev. C; not shown."
     },
     {
       "vendor": "Analog Devices (circuits-diy.com hobby page)",
@@ -600,98 +619,96 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A hobby-site page that reproduces or links the OP275GP datasheet. The revision is not shown."
+      "note": "Hobby page reproducing the OP275GP datasheet; revision not shown."
     }
+  ],
+  "product_pages": [
+    "https://www.analog.com/en/products/op275.html"
   ],
   "revision_history": [
     {
       "vendor": "Analog Devices",
       "doc_number": "OP275 data sheet",
-      "revision": "REV. A",
-      "date": "unknown (pre-RoHS; lists OP275GP)",
-      "changes": "Early edition preserved by Futurlec (OP275GP.pdf) and pken.net copies. The change log was not seen."
+      "revision": "original",
+      "date": "",
+      "changes": "PMI-era first edition (c. 1992–93) not found; a G-grade sheet existed by October 1992."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "OP275 data sheet",
-      "revision": "Rev. C",
-      "date": "unknown",
-      "changes": "Current revision (RadioLocman 'Revision: C'; Altium DatasheetVersion 'Rev. C'). The change log and date were not seen. Rev. B was not seen in any source."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "OP275G SPICE macro-model",
-      "revision": "Rev. B",
-      "date": "10/92",
-      "changes": "Model only: added common-mode input capacitance and corrected the output short-circuit current. It models worst-case G-grade limits (EOS 1.0 mV, IOS 25 nA)."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "OP275 SPICE macro-model",
-      "revision": "Rev. C",
-      "date": "3/95",
-      "changes": "Model only: corrected the common-mode zero location (C7 = 159.15 pF, 1 kHz, versus 1.59 pF in the older OrCAD copy). Typical values: EOS 0.5 mV, IOS 1 nA."
+      "revision": "A",
+      "date": "",
+      "changes": "Pre-RoHS; lists OP275GP. Held by Futurlec and pken.net copies; changes not seen."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "OP275 data sheet",
-      "revision": "REV. B",
-      "date": "unknown (not shown in the search summary)",
-      "changes": "This edition is now confirmed by a Reichelt distributor copy (cdn-reichelt.de .../DATASHEET_OP275-AD-EN.pdf) whose page-1 footer reads 'REV. B'. It comes between the pre-RoHS REV. A (Futurlec OP275GP.pdf, pken.net) and the current Rev. C. The change log was not seen."
-    }
-  ],
-  "silicon_changes": [
-    {
-      "kind": "package-or-assembly",
-      "vendor": "Analog Devices",
-      "when": "2007 onward (PCN 07_0024; the Rev. E reissue date was not seen)",
-      "part_numbers_affected": [
-        "OP275 PDIP and SOIC codes (exact list not read)"
-      ],
-      "identification": "Not visible in the part number. Compare the date code or lot with the PCN effective date in the PCN 07_0024 Rev. E parts list.",
-      "summary": "An assembly-material change. Sumitomo discontinued mold compounds 6300H, 6650RL, 6710S, 6730B and 7050B, so ADI changed the mold compound, and in some cases the die-attach material, for PDIP, SOIC and other packages, together with a polyimide implementation. Two earlier searches linked OP275 to this PCN, but the parts list was not read.",
-      "spec_deltas": [],
-      "audio_impact": "None expected. Only package and die-coat materials changed, and no electrical spec change was reported.",
-      "compatibility_risk": "low - die design, pinout and data sheet are unchanged; only materials changed.",
-      "sources": [
-        "https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf",
-        "https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Parts%20List.pdf"
-      ],
-      "confidence": "low",
-      "verification": "A combined search on '07_0024' with OP275 returned the Rev. E form and parts list but did not show an OP275 row, so the listing is still unconfirmed. Package kind, so no further searches were spent."
+      "revision": "B",
+      "date": "",
+      "changes": "Reichelt copy, footer 'REV. B'. Sits between REV. A and Rev. C; changes not seen."
     },
     {
-      "kind": "package-or-assembly",
       "vendor": "Analog Devices",
-      "when": "RoHS transition (date not confirmed)",
-      "part_numbers_affected": [
-        "OP275GP → OP275GPZ",
-        "OP275GS → OP275GSZ"
-      ],
-      "identification": "RoHS parts carry a Z suffix in the ordering code. The top mark on recent parts reads 'OP275G'.",
-      "summary": "Lead-free ordering codes replaced the leaded GP and GS codes. Distributors list OP275GS as obsolete and OP275GPZ/OP275GSZ as active. No die change was reported.",
-      "spec_deltas": [],
-      "audio_impact": "None reported.",
-      "compatibility_risk": "low - the ordering code differs, but the pinout and data sheet are the same.",
-      "sources": [
-        "https://www.worldwayelec.com/pro/analog-devices/op275gs/160728",
-        "https://octopart.com/part/analog-devices/OP275GPZ",
-        "https://www.digikey.com/en/products/detail/analog-devices-inc/OP275GSZ/625165"
-      ],
-      "confidence": "medium",
-      "verification": "Not re-searched (lead-finish entry backed by distributor listings)."
+      "doc_number": "OP275 data sheet",
+      "revision": "C",
+      "date": "",
+      "changes": "Current (RadioLocman; ADI component record). Date and change log not seen."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "op275g.cir (SPICE model)",
+      "revision": "B",
+      "date": "1992-10",
+      "changes": "Model only: added common-mode input capacitance, corrected short-circuit current. Worst-case G grade (EOS 1.0 mV, IOS 25 nA)."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "op275.cir (SPICE model)",
+      "revision": "C",
+      "date": "1995-03",
+      "changes": "Model only: corrected common-mode zero (C7 = 159.15 pF, 1 kHz vs 1.59 pF in OrCAD copy). EOS 0.5 mV, IOS 1 nA."
     }
   ],
-  "counterfeit_notes": "No concrete counterfeit report was found. The discovery hint that counterfeits 'have been reported' was not confirmed. A full-text search of 29 Soomal posts found no fake or remarked-part report. OP275 was sold in China as a premium upgrade op-amp (nearly 20 RMB in 2009, about 20x an NE5532), which is the usual profile for remarked parts. Genuine current parts are marked 'OP275G' on top. Buy OP275GPZ (DIP) or OP275GSZ (SOIC) from authorized distributors. A heuristic, not from a vendor: a relabelled NE5532/4558-class die would measure differently, so check supply current (about 2 to 2.5 mA per amplifier), slew rate (22 V/µs) and GBW (9 MHz). The GP-to-GPZ and GS-to-GSZ change is the RoHS transition, with no evidence of a die change. ADI PCN 07_0024 (mold compound) may also apply to OP275.",
-  "alternatives": [
-    "ADA4075-2 (ADI low-noise audio dual with the standard dual pinout; AN-1429 recommends it for I-to-V stages)",
-    "CLC2059 (Cadeka; pitched as an 'Improved replacement for OP275', 4–36 V supply; used in the Musiland Monitor 01 Mini)",
-    "AD8620 (ADI precision JFET dual; AN-1429 lists it next to OP275)",
-    "ADA4627-1 (ADI JFET; also named in AN-1429)",
-    "AD797 (ADI low-noise single; named in AN-1429)",
-    "OPA1642 / OPA2134 (TI JFET audio duals)",
-    "LM4562 / LME49720 / OPA1612 (low-distortion bipolar audio duals)",
-    "MC33078 / MC33079 (MC33079 replaced OP275 in the Musiland Monitor 03 US and 03 PS)"
+  "revision_chains": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "OP275 data sheet",
+      "known": [
+        {
+          "rev": "A",
+          "date": ""
+        },
+        {
+          "rev": "B",
+          "date": ""
+        },
+        {
+          "rev": "C",
+          "date": ""
+        }
+      ],
+      "missing": [
+        "original (PMI era)",
+        "dates of A, B, C"
+      ],
+      "note": "Unknown whether Rev. C added the lead-free Z codes. Undated mirrors may hold A or B."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "op275.cir / op275g.cir",
+      "known": [
+        {
+          "rev": "B",
+          "date": "1992-10"
+        },
+        {
+          "rev": "C",
+          "date": "1995-03"
+        }
+      ],
+      "missing": [],
+      "note": "SPICE macro-models, not datasheets."
+    }
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -710,16 +727,11 @@
     "https://www.pken.net/ish_mm/datasheet/ad/op275.pdf"
   ],
   "open_questions": [
-    "What is the Rev. C datasheet date, and what does its change log say? Was there a Rev. B (none seen)? No Rev. D was found.",
-    "Is OP275 actually on the PCN 07_0024 Rev. E parts list, and with what effective date? Are there other OP275 PCNs (fab or assembly transfer)?",
-    "Which revisions do the alldatasheet 12-page copy, the Octopart 'OP275*' copy, the Digi-Key and datasheet4u copies, and the 2015 Internet Archive item hold?",
-    "Is 6 nV/√Hz specified at 1 kHz? What are the THD+N test load and frequency? Are 100 nA I_B and 2.5 mA/amp I_Q typical or maximum figures?",
-    "Why is the Digi-Key datasheet page for OP275 labelled 'Rochester Electronics'? Does Rochester supply OP275 die or aftermarket stock?",
-    "OP275GP's lifecycle status is not confirmed (probably obsolete).",
-    "Can the rumoured counterfeits be substantiated?",
-    "The nabe and Zigsow Japanese reviews were not verified.",
-    "The archive_seed_urls entries UploadedFiles, en/prod/0,,OP275,00.html, audiovideo-products and productSelection/pdf/OP275_b.pdf are inferred from ADI URL patterns and were not seen.",
-    "The designer behind 'JCB / PMI' and the origin of the 'Butler' name are unconfirmed."
+    "Dates of datasheet revisions A, B and C, and Rev. C's change log? Did Rev. C add the Z codes?",
+    "Is OP275 on the PCN 07_0024 Rev. E parts list, and when? Any fab or assembly PCNs?",
+    "Which revisions do undated mirrors hold (alldatasheet 49047, Octopart 9742324, datasheet4u 475420, Internet Archive 2015)?",
+    "Is 6 nV/√Hz at 1 kHz? THD+N load and frequency? Are 100 nA and 2.5 mA/amp typical or maximum?",
+    "Why does Digi-Key label OP275 'Rochester Electronics'? Who is 'JCB / PMI', and where does 'Butler' come from?"
   ],
   "sources": [
     "https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf",
@@ -756,21 +768,35 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 6,
+    "claims_confirmed": [
+      "PCN 07_0024 Rev. E covers the Sumitomo mold-compound discontinuation (PDIP/SOIC mold and die-attach, polyimide); reportedly covers OP275 (https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf)",
+      "Current OP275 datasheet is Revision C (https://www.radiolocman.com/datasheet/pdf.html?di=121467)",
+      "REV. A copies exist (https://www.futurlec.com/Datasheet/Linear/OP275GP.pdf; https://www.pken.net/ish_mm/datasheet/ad/op275.pdf)",
+      "OP275GP and OP275GS datasheets on alldatasheet, 12 pages, 189 KB (https://www.alldatasheet.com/datasheet-pdf/pdf/49048/ad/op275gp.html; https://www.alldatasheet.com/datasheet-pdf/pdf/49049/AD/OP275GS.html)",
+      "0.0006% THD+N at 3 V rms, 6 nV/√Hz, 22 V/µs, 9 MHz, bipolar+JFET input (https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf)",
+      "ADI product page exists (https://www.analog.com/en/products/op275.html)",
+      "OP275GPZ lifecycle PRODUCTION (https://octopart.com/part/analog-devices/OP275GPZ)",
+      "OP275GSZ active at Digi-Key (https://www.digikey.com/en/products/detail/analog-devices-inc/OP275GSZ/625165)",
+      "OP275GS lifecycle Obsolete (https://www.worldwayelec.com/pro/analog-devices/op275gs/160728)",
+      "Internet Archive datasheet copy uploaded 2015-10-17 (https://archive.org/details/20151017DatasheetOP275)",
+      "digikey.ca datasheet page labelled Rochester Electronics (https://digikey.ca/en/datasheets/analogdevicesinc/analog-devices-inc-op275)"
+    ],
     "refuted_claims": [
-      "LCSC's THD+N of 0.006% is refuted as the datasheet figure. The ADI datasheet front page gives 0.0006% at 3 V rms.",
-      "The draft said OP275GS was 'not seen in any source'. It is refuted: alldatasheet (ID 49049) and Worldway list OP275GS, and Worldway marks it obsolete.",
-      "The draft said OP275GP's existence was only inferred. It is refuted: alldatasheet (ID 49048), Futurlec (OP275GP.pdf, REV. A) and Datasheet Archive list it."
+      "LCSC's 0.006% THD+N is not the datasheet figure; ADI gives 0.0006% at 3 V rms.",
+      "OP275GS 'not seen in any source': refuted; alldatasheet (ID 49049) and Worldway list it, Worldway as obsolete.",
+      "OP275GP existence only inferred: refuted; alldatasheet (ID 49048), Futurlec (REV. A) and Datasheet Archive list it."
     ],
     "corrections": [
-      "Added a silicon_changes entry for ADI PCN 07_0024 Rev. E: mold compound and die-attach changes for PDIP and SOIC packages, done with a polyimide implementation. OP275 inclusion is low confidence because the parts list was not read.",
-      "Added a silicon_changes entry for the RoHS transition (GP→GPZ, GS→GSZ; packaging only, no die change reported).",
-      "Added datasheet REV. A copies (Futurlec OP275GP.pdf and pken.net) and a revision_history row. No Rev. B or Rev. D was seen.",
-      "Rev. C is confirmed as current (RadioLocman 'Revision: C'). Added the RadioLocman, alldatasheet, Octopart, Digi-Key, datasheet4u, Datasheet Archive and Internet Archive (2015-10-17) copies and the ADI short link analog.com/OP275/datasheet.",
-      "The product page URL is now confirmed, so its confidence was raised to high.",
-      "The legacy static/imported-files URL was downgraded to low and marked unconfirmed, because it was not seen in web search.",
-      "Part statuses: OP275GPZ is PRODUCTION (Octopart), OP275GSZ is Active (Digi-Key 625165), and OP275GS is Obsolete (Worldway). OP275GSZ-REEL is listed on Octopart.",
-      "Key specs 6 nV/√Hz, 0.0006% THD+N at 3 V rms, 22 V/µs and 9 MHz are confirmed from the datasheet front page. The THD+N condition was updated.",
-      "The discovery hint that counterfeits 'have been reported' could not be confirmed and is kept as a rumour only."
+      "Added PCN 07_0024 Rev. E change entry (mold compound, die-attach, polyimide); OP275 inclusion low confidence.",
+      "Added RoHS transition entry (GP→GPZ, GS→GSZ; packaging only).",
+      "Added REV. A copies (Futurlec, pken.net) and a revision-history row; later found a Rev. B copy (Reichelt).",
+      "Rev. C confirmed current; added RadioLocman, alldatasheet, Octopart, Digi-Key, datasheet4u, Datasheet Archive, Internet Archive copies and the ADI short link.",
+      "Product page confirmed; confidence raised to high.",
+      "Legacy static/imported-files URL lowered to low confidence (unconfirmed URL).",
+      "Statuses: OP275GPZ PRODUCTION (Octopart), OP275GSZ Active (Digi-Key 625165), OP275GS Obsolete (Worldway), OP275GSZ-REEL listed.",
+      "6 nV/√Hz, 0.0006% THD+N at 3 V rms, 22 V/µs and 9 MHz confirmed from the datasheet front page.",
+      "Reported counterfeits could not be confirmed; kept as a rumour."
     ],
     "unverified_urls": [
       "http://www.analog.com/static/imported-files/data_sheets/OP275.pdf",
@@ -782,26 +808,6 @@
       "http://www.analog.com/en/prod/0,,OP275,00.html",
       "http://www.analog.com/en/audiovideo-products/audio-amplifiers/op275/products/product.html",
       "http://www.analog.com/productSelection/pdf/OP275_b.pdf"
-    ],
-    "claims_confirmed": [
-      "PCN 07_0024 Rev. E covers the Sumitomo mold-compound discontinuation, with mold and die-attach changes for PDIP and SOIC packages alongside polyimide; OP275 was associated with it in search (https://www.analog.com/media/en/pcn/ADI_PCN_07_0024_Rev_E_Form.pdf)",
-      "The current OP275 datasheet is Revision C (https://www.radiolocman.com/datasheet/pdf.html?di=121467)",
-      "A REV. A OP275 datasheet copy exists (https://www.futurlec.com/Datasheet/Linear/OP275GP.pdf; https://www.pken.net/ish_mm/datasheet/ad/op275.pdf)",
-      "OP275GP and OP275GS datasheets are on alldatasheet, 12 pages and 189 KB (https://www.alldatasheet.com/datasheet-pdf/pdf/49048/ad/op275gp.html; https://www.alldatasheet.com/datasheet-pdf/pdf/49049/AD/OP275GS.html)",
-      "THD+N is 0.0006% at 3 V rms, noise 6 nV/√Hz, slew rate 22 V/µs and bandwidth 9 MHz, with a bipolar+JFET input (https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf)",
-      "The ADI product page exists (https://www.analog.com/en/products/op275.html)",
-      "OP275GPZ has manufacturer lifecycle PRODUCTION (https://octopart.com/part/analog-devices/OP275GPZ)",
-      "OP275GSZ is active at Digi-Key (https://www.digikey.com/en/products/detail/analog-devices-inc/OP275GSZ/625165)",
-      "OP275GS has lifecycle code Obsolete (https://www.worldwayelec.com/pro/analog-devices/op275gs/160728)",
-      "An Internet Archive copy of the OP275 datasheet was uploaded on 2015-10-17 (https://archive.org/details/20151017DatasheetOP275)",
-      "The digikey.ca datasheet page is labelled Rochester Electronics (https://digikey.ca/en/datasheets/analogdevicesinc/analog-devices-inc-op275)"
-    ],
-    "web_searches_used": 6
-  },
-  "tier": "B",
-  "category": "bipolar-classic",
-  "product_pages": [
-    "https://www.analog.com/en/products/op275.html"
-  ],
-  "revision_chain_notes": "I used all 6 of 6 WebSearch calls.\n\nAnalog Devices OP275 is the only vendor document; there are no second sources.\n\n**Revision chain known now (oldest to newest):**\n1. **Rev. 0 / original PMI-era edition (about 1992–93):** still missing. No copy or date was found. The SPICE model Rev. B dated 10/92 suggests the part existed by late 1992.\n2. **REV. A:** undated and pre-RoHS (lists OP275GP). Held by the Futurlec OP275GP.pdf and pken.net copies.\n3. **REV. B:** NEW. Held by the Reichelt copy at https://cdn-reichelt.de/documents/datenblatt/A200/DATASHEET_OP275-AD-EN.pdf. Its page-1 footer 'REV. B Information furnished by Analog Devices...' shows in the search result title. Date not seen.\n4. **Rev. C:** current. Held by analog.com/media/.../OP275.pdf and RadioLocman di=121467. Date not seen.\n\n**Still missing:**\n- The dates of Rev. A, B and C. The old-layout ADI sheets carry no revision-history table, and no footer date showed in any snippet.\n- Any Rev. 0 or PMI-branded original.\n- Whether Rev. C (or an unlabelled later reprint) added the lead-free Z part numbers. This matters for the RoHS-era change.\n\n**Where to look next:** Several third-party copies may hold Rev. A or B, but their revision was not shown: datasheetcatalog OP275 and OP275GS, alldatasheet IDs 49047/49049/49052 (12 pages, 189 KB), DatasheetBank 71480, DatasheetQ, datasheet4u/datasheetspdf 475420, and Octopart 9742324. Opening them would identify the editions.\n\nNo silicon change under the same part number was documented. A diyAudio thread ('OP275 dual OPA, might be many fake source originated in China', https://www.diyaudio.com/community/threads/op275-dual-opa-might-be-many-fake-source-originated-in-china.309442/) covers counterfeits, not a real die revision."
+    ]
+  }
 }

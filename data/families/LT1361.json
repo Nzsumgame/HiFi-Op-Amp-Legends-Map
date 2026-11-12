@@ -1,147 +1,128 @@
 {
   "id": "LT1361",
-  "name": "LT1360 / LT1361 / LT1362 (50MHz, 800V/us C-Load bipolar single/dual/quad)",
-  "tagline": "Linear Tech's 50MHz/800V/us C-Load bipolar op amp. Sound-card op-amp swappers rate it for DAC I/V stages and describe it as 'extremely clear and airy'.",
-  "technology": "A voltage-feedback op amp built on Linear Technology's complementary bipolar process. It is unity-gain stable and belongs to LTC's C-Load high-speed family (LT1354 to LT1365). The C-Load design keeps it stable with any capacitive load: it senses the pole the load puts on the output and adds compensation at the gain node. The input stage is matched and high-impedance and the part slews like a current-feedback amplifier; that part of the description comes from the family text in the LT1364/LT1365 datasheet.",
+  "name": "LT1360 / LT1361 / LT1362",
+  "type": "Bipolar C-Load high-speed op-amp, 1/2/4 channels",
+  "tier": "C",
+  "category": "high-speed-video-crossover",
+  "tagline": "Linear Tech's 50 MHz, 800 V/µs C-Load op-amp; sound-card swappers call it 'extremely clear and airy' for DAC I/V.",
   "manufacturers": [
     "Linear Technology",
     "Analog Devices"
+  ],
+  "lineage": [
+    {
+      "vendor": "Linear Technology",
+      "role": "originator",
+      "period": "c. 1994–2017",
+      "note": "C-Load family (LT1354–LT1365) on complementary bipolar; 1994 copyright. Lower-power version of LT1364/LT1365. No second source."
+    },
+    {
+      "vendor": "Analog Devices",
+      "role": "acquirer",
+      "period": "2017–present",
+      "note": "Serves 1360fa and 13612fa. Marking-only PCNs 21_0060 and 24_0236; no die or fab change found."
+    }
   ],
   "part_numbers": [
     {
       "pn": "LT1360 (LT1360CN8 / LT1360CS8; #PBF, #TRPBF)",
       "channels": 1,
-      "vendors": [
-        "Linear Technology",
-        "Analog Devices"
-      ],
-      "status": "Production (per ADI product page, 2026 search)",
-      "notes": "Single, with its own datasheet (1360fa). CN8 is PDIP-8 and CS8 is SO-8 (from the Fonduer gold data). The orderable suffixes come from a part sitemap and KiCad libs; they were not web-confirmed."
+      "status": "active",
+      "note": "Single, own datasheet 1360fa. CN8 PDIP-8, CS8 SO-8. ADI shows Production."
     },
     {
       "pn": "LT1361 (LT1361CS8#PBF, LT1361CS8#TRPBF, LT1361CN8#PBF)",
       "channels": 2,
-      "vendors": [
-        "Linear Technology",
-        "Analog Devices"
-      ],
-      "status": "active (ADI product page live; LT1361CS8#PBF is listed in ADI PCN 24_0236, Oct 2024); ADI lifecycle label not explicitly confirmed",
-      "notes": "Dual; this is the part the audio community praises. LT1361CS8 variants are named in ADI PCN 21_0060 (8-SOIC marking). Forum posts say it comes only in SOIC-8. The LT1361CN8#PBF (DIP-8) orderable comes from a part sitemap only and is unconfirmed."
+      "status": "active",
+      "note": "The audio favourite. Reportedly SOIC-8 only; DIP-8 CN8#PBF unconfirmed. In PCN 24_0236."
     },
     {
-      "pn": "LT1361CS8 / LT1361CS8#TR (non-#PBF)",
+      "pn": "LT1361CS8 / LT1361CS8#TR",
       "channels": 2,
-      "vendors": [
-        "Linear Technology"
-      ],
-      "status": "unknown (legacy leaded orderables, probably superseded by #PBF)",
-      "notes": "From a part sitemap (GitHub-hosted); unconfirmed on the web."
+      "status": "unknown",
+      "note": "Legacy leaded (non-#PBF) orderables, probably superseded by #PBF. Unconfirmed."
     },
     {
       "pn": "LT1362 (LT1362CN#PBF, LT1362CS#PBF, LT1362CS#TRPBF)",
       "channels": 4,
-      "vendors": [
-        "Linear Technology",
-        "Analog Devices"
-      ],
-      "status": "ADI product page live; lifecycle label not confirmed",
-      "notes": "Quad; shares the 13612fa datasheet with the LT1361. kicad-adi gives the S package as SOIC-16. The N package pin count was not verified."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "Linear Technology Corporation",
-      "role": "originator / designer / manufacturer",
-      "period": "c.1994 to 2017",
-      "notes": "A 'Linear Technology Corporation 1994' copyright appears in the family datasheet text returned by search (LT1361/LT1362 or LT1364/LT1365 datasheet; medium confidence as an introduction date). In the C-Load family, the LT1357 (25MHz, 600V/us) and LT1363 (70MHz, 1000V/us) have separate datasheets, and the LT1364/LT1365 datasheet names the LT1361/LT1362 as the 'Lower Power Version of LT1364/LT1365, VOS = 1mV, 4mA/Amplifier'. No second source."
-    },
-    {
-      "vendor": "Analog Devices",
-      "role": "acquirer / current supplier",
-      "period": "2017 to present",
-      "notes": "Datasheets are served from analog.com (1360fa.pdf, 13612fa.pdf). ADI has issued two marking-only PCNs covering the LT1361CS8 (21_0060: ink to laser top mark on 8-SOIC; 24_0236: bottom trace code moved to top laser mark). No die or wafer-fab change PCN was found."
+      "status": "active",
+      "note": "Quad; shares 13612fa. S package SOIC-16; N pin count unverified. Lifecycle label unconfirmed."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Gain-bandwidth product",
-      "value": "50 MHz typ (LT1360 annotation: 50 MHz at +/-15 V, 37 MHz at +/-5 V, 32 MHz at +/-2.5 V)",
-      "condition": "typical",
-      "source": "LT1361/LT1362 datasheet 13612fa and LT1360 page (analog.com). The per-supply split comes from the Fonduer gold annotation of 1360fa (GitHub) and was not web-confirmed."
+      "parameter": "Input noise (1 kHz)",
+      "value": "9 nV/√Hz typ",
+      "condition": "frequency not confirmed",
+      "source": "13612fa / ADI LT1360 page"
+    },
+    {
+      "parameter": "GBW",
+      "value": "50 MHz typ (37 MHz at ±5 V, 32 MHz at ±2.5 V)",
+      "condition": "±15 V; split unconfirmed",
+      "source": "13612fa; split from 1360fa"
     },
     {
       "parameter": "Slew rate",
-      "value": "800 V/us",
-      "condition": "typical headline figure (exact test condition not confirmed)",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/13612fa.pdf"
+      "value": "800 V/µs typ",
+      "condition": "test condition not confirmed",
+      "source": "13612fa"
     },
     {
-      "parameter": "Supply current per amplifier",
-      "value": "5 mA max; about 4 mA typ",
-      "condition": "max from the datasheet feature list; typ from the LT1364/5 related-parts table and the Fonduer annotation (4.0 mA at +/-15 V)",
-      "source": "13612fa.pdf and 1360fa.pdf feature lists (analog.com); LT1364/LT1365 datasheet 13645fa"
+      "parameter": "Supply range",
+      "value": "±2.5 V to ±15 V",
+      "condition": "unconfirmed; C grade −40 to 85 °C",
+      "source": "1360fa; ARRL Handbook table"
     },
     {
-      "parameter": "Input voltage noise",
-      "value": "9 nV/rtHz",
-      "condition": "typical (frequency condition not confirmed in search)",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/13612fa.pdf ; https://www.analog.com/en/products/lt1360.html"
-    },
-    {
-      "parameter": "Input offset voltage",
-      "value": "1 mV max",
-      "condition": "LT1361/LT1362",
-      "source": "13612fa.pdf feature list ('1mV Maximum Input Offset Voltage'); LT1364/5 related-parts table"
-    },
-    {
-      "parameter": "Capacitive-load stability",
-      "value": "Unity-gain stable; C-Load op amp, stable with any capacitive load",
-      "condition": "design feature",
-      "source": "13612fa.pdf and 1360fa.pdf (analog.com)"
-    },
-    {
-      "parameter": "Supply voltage range",
-      "value": "+/-2.5 V to +/-15 V",
-      "condition": "specified range (not web-confirmed)",
-      "source": "Fonduer gold annotation of 1360fa (GitHub); ARRL Handbook op-amp table (GitHub, Russian translation)"
-    },
-    {
-      "parameter": "Operating temperature",
-      "value": "-40 C to 85 C",
-      "condition": "C-grade parts per annotation (not web-confirmed)",
-      "source": "Fonduer gold annotation of 1360fa (GitHub)"
-    },
-    {
-      "parameter": "Input bias current",
-      "value": "300 nA",
-      "condition": "LCSC parametric field for LT1361CS8#PBF; typ or max not stated (not web-confirmed)",
-      "source": "Altium schematic metadata in github.com/moerjie/2023-C-nuedc (LCSC C579720)"
+      "parameter": "Supply current",
+      "value": "5 mA max, about 4 mA typ per amplifier",
+      "condition": "4.0 mA typ at ±15 V",
+      "source": "13612fa, 1360fa, 13645fa"
     },
     {
       "parameter": "Output current",
       "value": "34 mA",
-      "condition": "LCSC parametric field; test condition not stated (not web-confirmed)",
-      "source": "Altium schematic metadata in github.com/moerjie/2023-C-nuedc (LCSC C579720)"
+      "condition": "test condition not stated; unconfirmed",
+      "source": "LCSC parametric (C579720)"
+    },
+    {
+      "parameter": "Offset voltage",
+      "value": "1 mV max",
+      "condition": "LT1361/LT1362",
+      "source": "13612fa; 13645fa related parts"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "300 nA",
+      "condition": "typ or max not stated; unconfirmed",
+      "source": "LCSC parametric (C579720)"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "Bipolar VFB, unity-gain stable, any capacitive load",
+      "condition": "C-Load gain-node compensation",
+      "source": "13612fa, 1360fa, 13645fa"
     }
   ],
   "reputation": {
-    "summary": "A niche favourite of sound-card op-amp swappers (mostly Asus Xonar Essence ST/STX), used mainly in the I/V stage after current-output DACs. One user paired it with an LME49720 and described the result as an 'extremely clear and airy sound'. Some Xonar/Head-Fi threads list it with the LT1028, OPA627, OPA827, LT1364 and LT1469 as I/V or DAC-output choices. Users also call it forgiving of poor bypassing. All of this is subjective forum opinion from a handful of posts; no bench measurements (Audio Science Review, Samuel Groner or similar) were found.",
+    "summary": "A niche favourite of sound-card op-amp swappers (mostly Asus Xonar Essence ST/STX) for the I/V stage after current-output DACs. One user paired it with an LME49720 for an 'extremely clear and airy sound'. Threads list it with the LT1028, OPA627, OPA827, LT1364 and LT1469 as I/V choices, and call it forgiving of poor bypassing. No bench measurements found.",
     "sonic_descriptors": [
       "extremely clear",
       "airy"
     ],
     "typical_uses": [
-      "I/V conversion after current-output DACs (Asus Xonar Essence ST/STX)",
-      "DAC output buffer / filter stage",
-      "sound-card op-amp swapping",
-      "wideband amplifiers, buffers, active filters, cable drivers (vendor applications)"
+      "I/V after current-output DACs (Xonar Essence ST/STX)",
+      "DAC output buffer and filter stage",
+      "Sound-card op-amp swapping",
+      "Wideband amps, buffers, active filters, cable drivers"
     ],
     "caveats": [
-      "Forum posts say the dual comes only in SOIC-8, so DIP-8 sockets need an adapter. A DIP-8 LT1361CN8#PBF appears only in a part sitemap and is unconfirmed.",
-      "Bipolar inputs with fairly high bias current (LCSC parametric: 300 nA) and up to 1 mV offset: expect DC offset with high source or feedback impedances.",
-      "A 50MHz, 800V/us part: needs a tight layout and short decoupling. Socket adapters add parasitics, although the C-Load design is stable with capacitive loads.",
-      "Up to 5 mA per amplifier. The 34 mA output-current figure (distributor data) suggests it should not drive low-impedance headphones directly.",
-      "Descriptors come from a small number of subjective posts; no measurements were found."
+      "Dual reportedly SOIC-8 only, so DIP-8 sockets need an adapter; the DIP-8 LT1361CN8#PBF is unconfirmed.",
+      "Bipolar inputs with about 300 nA bias and up to 1 mV offset: expect DC offset with high impedances.",
+      "50 MHz, 800 V/µs: needs tight layout and short decoupling; socket adapters add parasitics.",
+      "Up to 5 mA per amp and about 34 mA output; not for driving low-impedance headphones directly.",
+      "Sound descriptions come from a few subjective posts; no measurements found."
     ],
     "sources": [
       "https://www.hifivision.com/threads/changing-opamps-in-asus-xonar-essense-st-stx.21045/",
@@ -151,6 +132,98 @@
       "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-114"
     ]
   },
+  "counterfeit_notes": "No family-specific counterfeit reports. Genuine LT1361CS8 parts carry ink top marks (older), laser marks (after PCN 21_0060), or top-side trace codes (after PCN 24_0236), so marking style alone proves nothing. Treat DIP-8 'LT1361' parts and grey-market pulls with suspicion.",
+  "alternatives": [
+    "LT1364/LT1365 (70 MHz, 1000 V/µs)",
+    "LT1358/LT1359 (25 MHz, 600 V/µs, lower power)",
+    "LT1363 (single 70 MHz, 1000 V/µs)",
+    "LT1813 (dual 100 MHz, 700 V/µs)",
+    "LT1469 (dual 90 MHz precision)"
+  ],
+  "silicon_changes": [
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices (Linear Technology)",
+      "when": "2021-11 · PCN 21_0060 (Rev -, A, B)",
+      "part_numbers_affected": [
+        "LT1361CS8",
+        "LT1361CS8#PBF",
+        "LT1361CS8#TRPBF"
+      ],
+      "summary": "Marking only, not a die change. On legacy Linear 8-SOICN products the top mark changed from ink to laser. Both marking styles are genuine. Rev B dated 11 Nov 2021.",
+      "identification": "Older parts have an ink top mark, newer a laser top mark. Applies to 8-SOICN assembled at ADPG, UTAC and Carsem.",
+      "spec_deltas": [
+        {
+          "parameter": "Top-side mark method",
+          "before": "ink",
+          "after": "laser"
+        }
+      ],
+      "audio_impact": "None expected (package marking only).",
+      "compatibility_risk": "low: marking change only; same die and package.",
+      "sources": [
+        "https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_-_Form.pdf",
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5335/PCN_21_0060_Rev_A.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf"
+      ],
+      "confidence": "medium",
+      "verification": "PCN 21_0060 Rev B confirmed for Linear 8-SOIC parts; LT1361CS8 listing and ink-to-laser detail unconfirmed from the PDF."
+    },
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices (Linear Technology)",
+      "when": "2023-12 · PCN 22_0241 Rev A",
+      "part_numbers_affected": [
+        "LT1361 (variants not itemised)",
+        "LT1362 (variants not itemised)"
+      ],
+      "summary": "Assembly material change: epoxy from Henkel 8290 to Henkel 8290A (Ablestik 8290 die-attach paste). Effective from date code 2242. ADI states no fit, form or function impact, improved reliability. Die and wafer process unchanged.",
+      "identification": "By date code: 2242 or later uses the new epoxy. No visible marking difference.",
+      "spec_deltas": [
+        {
+          "parameter": "Die-attach epoxy",
+          "before": "Henkel 8290",
+          "after": "Henkel 8290A"
+        }
+      ],
+      "audio_impact": "None expected (assembly material only).",
+      "compatibility_risk": "low: assembly material change; same die.",
+      "sources": [
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5781/PCN_22_0241_Rev_A.pdf",
+        "https://www.mouser.com/PCN/ADI_PCN_22_0241.pdf"
+      ],
+      "confidence": "medium",
+      "verification": "PCN 22_0241 reportedly lists LT1361, LT1362 and LT1364; PDF not read."
+    },
+    {
+      "kind": "package-or-assembly",
+      "vendor": "Analog Devices (Linear Technology)",
+      "when": "2024-10 · PCN 24_0236 / PCN 24_0234",
+      "part_numbers_affected": [
+        "LT1361CS8#PBF",
+        "LT1362 (variants reported)"
+      ],
+      "summary": "Marking only, not a die change. The bottom-side trace code moved into the top-side laser mark to standardise ADI marking. PCN 24_0236 Rev - dated 8 Oct 2024. ADI states no form, fit, function or reliability impact.",
+      "identification": "Older parts carry the trace code on the package bottom, newer parts in the top-side laser mark. Identify by date code.",
+      "spec_deltas": [
+        {
+          "parameter": "Trace code location",
+          "before": "package bottom",
+          "after": "top-side laser mark"
+        }
+      ],
+      "audio_impact": "None expected (marking only).",
+      "compatibility_risk": "low: marking change only.",
+      "sources": [
+        "https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf",
+        "https://www.analog.com/media/en/PCN/ADI_PCN_24_0236_Rev_-_Form.pdf",
+        "https://www.mouser.com/PCN/ADI_PCN_24_0234.pdf",
+        "https://www.farnell.com/datasheets/4419216.pdf"
+      ],
+      "confidence": "medium",
+      "verification": "PCN 24_0234 and 24_0236 confirmed as trace-code migration; LT1361CS8#PBF listing unconfirmed from the per-part list."
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Analog Devices (Linear Technology legacy doc)",
@@ -162,7 +235,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Confirmed by web search as the current ADI-hosted LT1361/LT1362 datasheet. The file code confirms the earlier inference '13612fa'. The printed footer date was not seen."
+      "note": "Current ADI-hosted LT1361/LT1362 datasheet; printed footer date not seen."
     },
     {
       "vendor": "Analog Devices (Linear Technology legacy doc)",
@@ -174,7 +247,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Confirmed by web search as the current ADI-hosted LT1360 datasheet."
+      "note": "Current ADI-hosted LT1360 datasheet; date is ADI listing date."
     },
     {
       "vendor": "Linear Technology (Alldatasheet mirror)",
@@ -186,7 +259,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Low alldatasheet ID, so an early upload. It may hold a pre-ADI or original (non-A) revision; the revision was not shown in search."
+      "note": "Early upload; may hold pre-ADI original (non-A) revision."
     },
     {
       "vendor": "Linear Technology (Alldatasheet mirror)",
@@ -198,7 +271,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "A second, later alldatasheet upload of the LT1361; it may be a different revision from ID 70422. Revision not shown in search."
+      "note": "Later upload; may differ from ID 70422."
     },
     {
       "vendor": "Linear Technology (Alldatasheet mirror, mis-attributed)",
@@ -210,7 +283,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Alldatasheet files this under Linear Integrated Systems, which looks like a manufacturer mis-attribution. Contents not viewed."
+      "note": "Filed under Linear Integrated Systems, likely mis-attributed; not viewed."
     },
     {
       "vendor": "Linear Technology (Alldatasheet mirror)",
@@ -222,7 +295,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Early alldatasheet upload of the LT1360; it may hold a pre-Rev A copy. Revision not shown."
+      "note": "Early upload; may hold a pre-Rev A copy."
     },
     {
       "vendor": "Linear Technology (Radiolocman mirror)",
@@ -234,7 +307,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Linear Technology-branded copy (pre-ADI). Revision not shown."
+      "note": "Linear Technology-branded copy (pre-ADI)."
     },
     {
       "vendor": "Analog Devices (Radiolocman mirror)",
@@ -282,7 +355,10 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Linear-branded copy; revision not shown."
+      "note": "Linear-branded copy; revision not shown.",
+      "also_urls": [
+        "https://datasheet4u.com/datasheet/Linear-Technology/LT1361-51475"
+      ]
     },
     {
       "vendor": "Linear Technology (Datasheet4U mirror)",
@@ -306,7 +382,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "An old mirror site that often holds early-2000s copies. Revision not shown."
+      "note": "Old mirror often holding early-2000s copies."
     },
     {
       "vendor": "Analog Devices / Linear Technology (LCSC mirror)",
@@ -318,7 +394,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed. From Altium schematic metadata (github.com/moerjie/2023-C-nuedc). Probably a 2020 frozen copy of 13612fa."
+      "note": "Probably a 2020 frozen copy of 13612fa; unconfirmed."
     },
     {
       "vendor": "Linear Technology (Alldatasheet mirror)",
@@ -330,7 +406,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This alldatasheet entry (70423) sits next to the known LT1360 (70421) and LT1361 (70422) entries, which points to an early scrape of Linear datasheets. The search summary did not show the footer or doc code, so it is unknown whether this holds the original 13612f or 13612fa."
+      "note": "Early Linear scrape next to IDs 70421/70422; 13612f or 13612fa."
     },
     {
       "vendor": "Linear Technology (DatasheetQ mirror)",
@@ -342,7 +418,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A mirror of the Linear-era LT1361/LT1362 document. The search summary showed no revision or footer."
+      "note": "Linear-era LT1361/LT1362 document; revision not shown."
     },
     {
       "vendor": "Linear Technology (Datasheet4U mirror)",
@@ -354,7 +430,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The same Datasheet4U id (51475) as the known entry at datasheet4u.com/datasheets/Linear-Technology/LT1361/51475, but this is the direct PDF viewer URL. It is probably the same file, not a separate revision. A third URL form, https://datasheet4u.com/datasheet/Linear-Technology/LT1361-51475, also appeared in search."
+      "note": "Direct viewer for Datasheet4U id 51475; likely same file."
     },
     {
       "vendor": "Linear Technology / Analog Devices (Scribd upload)",
@@ -366,7 +442,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A user upload of the LT1360 datasheet. The search summary did not show which revision it is."
+      "note": "User upload; revision not shown."
     },
     {
       "vendor": "Linear Technology (Carnegie Observatories instrumentation lab copy)",
@@ -378,130 +454,76 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A lab copy kept in the Carnegie Observatories CCD parts library. Lab copies like this are often older downloads and may hold the pre-'A' 13612f original, but the search summary showed only the title 'LT1361/LT1362', with no revision or footer. It should be opened to check the footer code."
+      "note": "Lab copy, possibly the pre-A 13612f original; check footer."
     }
   ],
+  "product_pages": [
+    "https://www.analog.com/en/products/lt1361.html",
+    "https://www.analog.com/en/products/lt1362.html",
+    "https://www.analog.com/en/products/lt1360.html",
+    "http://www.linear.com/product/LT1361",
+    "http://www.linear.com/product/LT1362",
+    "https://www.digikey.com/en/products/base-product/analog-devices-inc/505/LT1360/3404"
+  ],
   "revision_history": [
+    {
+      "vendor": "Linear Technology",
+      "doc_number": "1360f",
+      "revision": "original",
+      "date": "1994",
+      "changes": "Original LT1360 edition (1994 copyright). Related parts list LT1361 as 'Dual and Quad Versions of LT1360'."
+    },
     {
       "vendor": "Linear Technology / Analog Devices",
       "doc_number": "13612fa",
       "revision": "A",
-      "date": "not seen (original Linear copyright 1994 per search snippet)",
-      "changes": "The current LT1361/LT1362 datasheet on analog.com. The 'fa' suffix means Rev A, which implies an original 13612f existed. No change log was seen; Linear-era datasheets usually carry no revision table."
+      "date": "",
+      "changes": "Current LT1361/LT1362 datasheet; 'fa' implies an original 13612f (c. 1994). No change log seen."
     },
     {
       "vendor": "Linear Technology / Analog Devices",
       "doc_number": "1360fa",
       "revision": "A",
-      "date": "08/28/2007 (ADI web listing date, not necessarily the printed date)",
-      "changes": "The current LT1360 datasheet. Change content unknown; the original (non-A) revision is presumed but unconfirmed."
+      "date": "2007-08-28",
+      "changes": "Current LT1360 datasheet; date is ADI web listing, not necessarily printed. Changes unknown."
     },
     {
       "vendor": "Analog Devices (LTspice)",
       "doc_number": "LTspice ChangeLog.txt",
-      "revision": "n/a",
-      "date": "2023-06-22 (printed as 06/22/23)",
-      "changes": "'LT1360 revised application circuit'. A simulation example change only, not a silicon or datasheet change (from a GitHub copy)."
-    },
-    {
-      "vendor": "Linear Technology",
-      "doc_number": "1360f / 1360fa (LT1360 datasheet)",
-      "revision": "original Linear edition (copyright line)",
-      "date": "1994 (copyright 'LINEAR TECHNOLOGY CORPORATION 1994' as shown in the search summary)",
-      "changes": "The search summary shows the LT1360 datasheet carries a 'LINEAR TECHNOLOGY CORPORATION 1994' copyright. Its related-parts table lists the LT1361 as 'Dual and Quad Versions of LT1360'. This confirms the family dates from 1994. No revision table or change content was shown, and the date of the 'A' re-issue is still unknown."
+      "revision": "",
+      "date": "2023-06-22",
+      "changes": "'LT1360 revised application circuit'. Simulation example only, not a silicon or datasheet change."
     }
   ],
-  "silicon_changes": [
+  "revision_chains": [
     {
-      "kind": "package-or-assembly",
-      "vendor": "Analog Devices (Linear Technology)",
-      "when": "PCN 21_0060, 11 Nov 2021 (Rev -, Rev A and Rev B exist)",
-      "part_numbers_affected": [
-        "LT1361CS8",
-        "LT1361CS8#PBF",
-        "LT1361CS8#TRPBF"
-      ],
-      "identification": "Older parts have an ink top mark and newer parts have a laser top mark. This applies to 8-SOICN packages assembled at ADPG, UTAC and Carsem.",
-      "summary": "Marking only, not a die change. On legacy Linear 8-SOICN products the top mark changed from ink to laser. This entry records both marking styles as genuine. The completeness-sweep mention of 21_0060 is merged here.",
-      "spec_deltas": [
+      "vendor": "Linear Technology / Analog Devices",
+      "doc_number": "13612f",
+      "known": [
         {
-          "parameter": "Top-side mark method",
-          "before": "ink",
-          "after": "laser"
+          "rev": "A",
+          "date": ""
         }
       ],
-      "audio_impact": "None expected (package marking only).",
-      "compatibility_risk": "low - marking change only; same die and package.",
-      "sources": [
-        "https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_-_Form.pdf",
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5335/PCN_21_0060_Rev_A.pdf",
-        "https://www.analog.com/media/en/PCN/ADI_PCN_21_0060_Rev_B_Form.pdf"
+      "missing": [
+        "original"
       ],
-      "confidence": "medium",
-      "verification": "WebSearch confirms that PCN 21_0060 Rev B (11 Nov 2021) is an ADI notice covering Linear 8-SOIC parts (LT1363CS8, LT1364CS8). The LT1361CS8 listing and the ink-to-laser detail come from an earlier pass. The PDF itself was not read."
+      "note": "Original c. 1994. Check Carnegie lab PDF and alldatasheet 70422/70423 for pre-A content."
     },
     {
-      "kind": "package-or-assembly",
-      "vendor": "Analog Devices (Linear Technology)",
-      "when": "PCN 22_0241 (Rev - and Rev A; Rev A dated 18 Dec 2023 per search summary). Effective from date code 2242.",
-      "part_numbers_affected": [
-        "LT1361 (variants not itemised)",
-        "LT1362 (variants not itemised)"
-      ],
-      "identification": "By date code: parts coded 2242 or later use the new epoxy. There is no visible marking difference.",
-      "summary": "Assembly material change. The epoxy formulation changed from Henkel 8290 to Henkel 8290A (Ablestik 8290 is a die-attach paste). ADI states no impact to fit, form or function, with improved reliability. The die and wafer process are unchanged.",
-      "spec_deltas": [
+      "vendor": "Linear Technology / Analog Devices",
+      "doc_number": "1360f",
+      "known": [
         {
-          "parameter": "Die-attach epoxy",
-          "before": "Henkel 8290",
-          "after": "Henkel 8290A"
+          "rev": "A",
+          "date": "2007-08-28"
         }
       ],
-      "audio_impact": "None expected (assembly material only).",
-      "compatibility_risk": "low - assembly material change; same die.",
-      "sources": [
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5781/PCN_22_0241_Rev_A.pdf",
-        "https://www.mouser.com/PCN/ADI_PCN_22_0241.pdf"
+      "missing": [
+        "original"
       ],
-      "confidence": "medium",
-      "verification": "A WebSearch summary of PCN 22_0241 lists LT1361, LT1362 and LT1364 among the affected LT13xx/LT14xx op amps. It gives the change as Henkel 8290 to 8290A epoxy, effective from date code 2242, with no fit, form or function impact. The PDF itself was not read."
-    },
-    {
-      "kind": "package-or-assembly",
-      "vendor": "Analog Devices (Linear Technology)",
-      "when": "October 2024 (PCN 24_0236 Rev -, 8 Oct 2024; companion PCN 24_0234 Rev -)",
-      "part_numbers_affected": [
-        "LT1361CS8#PBF",
-        "LT1362 (variants per search summary)"
-      ],
-      "identification": "Older parts carry the trace code on the bottom of the package. Newer parts carry it in the top-side laser mark. The change is identified by date code.",
-      "summary": "Marking only, not a die change. The bottom-side trace-code mark moved into the top-side laser mark to standardise marking across ADI packages. ADI states no impact to form, fit, function or reliability. The completeness-sweep mentions of 24_0234 and 24_0236 are merged here.",
-      "spec_deltas": [
-        {
-          "parameter": "Trace code location",
-          "before": "package bottom",
-          "after": "top-side laser mark"
-        }
-      ],
-      "audio_impact": "None expected (marking only).",
-      "compatibility_risk": "low - marking change only.",
-      "sources": [
-        "https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf",
-        "https://www.analog.com/media/en/PCN/ADI_PCN_24_0236_Rev_-_Form.pdf",
-        "https://www.mouser.com/PCN/ADI_PCN_24_0234.pdf",
-        "https://www.farnell.com/datasheets/4419216.pdf"
-      ],
-      "confidence": "medium",
-      "verification": "WebSearch confirms that PCN 24_0234 and 24_0236 are the bottom-to-top trace-code marking migration, with no form, fit, function or reliability impact. The LT1361CS8#PBF listing comes from an earlier pass. The per-part list was not read."
+      "note": "Original dated 1994 by copyright, but no copy found; Scribd 695059610 and alldatasheet 70421 are candidates."
     }
-  ],
-  "counterfeit_notes": "No counterfeit or remarking reports specific to the LT1360/LT1361/LT1362 were found. Genuine LT1361CS8 parts come in several marking styles: an ink top mark on older parts, a laser top mark after ADI PCN 21_0060, and, after PCN 24_0236 (Oct 2024), the trace code on top instead of the bottom. A marking-style difference alone does not prove a fake. Buy from ADI or authorized distributors; pulled or grey-market high-speed LTC parts are common on marketplace sites. A DIP-8 'LT1361' deserves scrutiny: the DIP-8 orderable LT1361CN8#PBF appears only in a part sitemap and is unconfirmed.",
-  "alternatives": [
-    "LT1364/LT1365 (same topology, 70MHz, 1000V/us; also rated by the audio community)",
-    "LT1358/LT1359 (same family, lower power, 25MHz, 600V/us; dual/quad of the LT1357)",
-    "LT1363 (single 70MHz, 1000V/us)",
-    "LT1813 (dual 100MHz, 700V/us, 3mA/amp, low-voltage)",
-    "LT1469 (dual 90MHz precision; an audio-community favourite for I/V)"
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -523,12 +545,11 @@
     "https://www.datasheetcatalog.com/datasheets_pdf/L/T/1/3/LT1360.shtml"
   ],
   "open_questions": [
-    "Printed revision dates and change content for 13612fa and 1360fa are unknown, and so is whether original non-A revisions (13612f, 1360f) exist on the mirrors. Alldatasheet IDs 70421/70422 are early uploads and are the best candidates.",
-    "The cds.linear.com datasheet URLs and linear.com/product/LT1360 are inferred URL patterns (archive seeds only).",
-    "The frequency condition for the 9 nV/rtHz noise figure was not seen; i_n, output swing, THD and settling were not verified.",
-    "The ADI lifecycle label (Production/NRND) for the LT1361 and LT1362 was not explicitly seen; the LT1360 shows Production.",
-    "Does a DIP-8 LT1361CN8#PBF really exist? This conflicts with forum claims that the dual is SOIC-8 only.",
-    "The exact dates and full affected-part lists of PCN 21_0060 and PCN 24_0236 were not read (search summaries only)."
+    "What are the printed dates and changes for 13612fa and 1360fa? Do original 13612f/1360f copies survive?",
+    "At what frequency is the 9 nV/√Hz noise specified? Current noise, swing, THD and settling unverified.",
+    "What is ADI's lifecycle label for the LT1361 and LT1362? (LT1360 shows Production.)",
+    "Does a DIP-8 LT1361CN8#PBF exist, despite forum claims that the dual is SOIC-8 only?",
+    "What are the exact dates and affected-part lists of PCN 21_0060 and PCN 24_0236?"
   ],
   "sources": [
     "https://www.analog.com/media/en/technical-documentation/data-sheets/13612fa.pdf",
@@ -557,23 +578,36 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "LT1361/LT1362 'Dual and Quad 50MHz, 800V/us Op Amps' datasheet is 13612fa.pdf: https://www.analog.com/media/en/technical-documentation/data-sheets/13612fa.pdf",
+      "LT1360 '50MHz, 800V/us Op Amp' datasheet is 1360fa.pdf: https://www.analog.com/media/en/technical-documentation/data-sheets/1360fa.pdf",
+      "LT1360 is in Production at ADI, datasheet listed 08/28/2007: https://www.analog.com/en/products/lt1360.html",
+      "50 MHz, 800 V/µs, 5 mA max per amp, 9 nV/√Hz, unity-gain stable, any capacitive load: https://www.analog.com/media/en/technical-documentation/data-sheets/13612fa.pdf",
+      "1 mV max offset; LT1364/5 datasheet calls LT1361/LT1362 its lower-power version (VOS = 1mV, 4mA/amp): https://www.analog.com/media/en/technical-documentation/data-sheets/13645fa.pdf",
+      "ADI product pages for LT1361 and LT1362 exist: https://www.analog.com/en/products/lt1361.html , https://www.analog.com/en/products/lt1362.html",
+      "PCN 21_0060 (ink to laser, LTC 8-SOICN at ADPG/UTAC/Carsem) covers LT1361CS8: https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5335/PCN_21_0060_Rev_A.pdf",
+      "PCN 24_0236 (Oct 2024, trace code to top laser mark) lists LT1361CS8#PBF: https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf",
+      "Mirrors exist: https://www.alldatasheet.com/datasheet-pdf/pdf/70422/LINER/LT1361.html , https://www.radiolocman.com/datasheet/data.html?di=339517&%2FLT1361= , https://datasheet4u.com/datasheets/Linear-Technology/LT1361/51475",
+      "Family datasheet text carries a Linear Technology Corporation 1994 copyright: https://www.analog.com/media/en/technical-documentation/data-sheets/13645fa.pdf"
+    ],
     "refuted_claims": [
-      "Draft lineage said 'No die, fab or PCN change under ADI was found'. ADI PCN 21_0060 (ink to laser top mark, 8-SOICN) and PCN 24_0236 (Oct 2024, trace code moved to the top laser mark) both list LT1361CS8 variants. Both change marking only, not the die.",
-      "[change register] The completeness-sweep watch item (LT1361 in PCNs 21_0060, 22_0241, 24_0234 and 24_0236, change type unknown) was resolved and merged. 21_0060 is merged into the ink-to-laser entry, 24_0234 and 24_0236 into the trace-code entry, and 22_0241 becomes the new die-attach epoxy entry. None is a die or process change.",
-      "[change register] No fab-transfer entry is created. Searches found no PCN tying LT1360, LT1361 or LT1362 to the Hillview fab closure (PCN 19_0067 covers only 0.35 um BCD products moved to Vanguard) or to the 2025 Camas bipolar qualification (PCN 25_0091 names AD624, AD712 and AD8221)."
+      "Earlier claim 'no die, fab or PCN change under ADI' was wrong: PCN 21_0060 and PCN 24_0236 list LT1361CS8 variants, both marking-only.",
+      "PCNs 21_0060, 22_0241, 24_0234 and 24_0236 all list LT1361; none is a die or process change.",
+      "No fab-transfer change found: PCN 19_0067 (Hillview closure) covers 0.35 µm BCD only; PCN 25_0091 (Camas bipolar) names AD624, AD712, AD8221."
     ],
     "corrections": [
-      "The LT1361/LT1362 datasheet file code '13612fa' was confirmed; its analog.com URL was promoted from an inferred archive seed to a high-confidence vendor_current datasheet entry.",
-      "1360fa URL confirmed; date set to the ADI listing date 08/28/2007 (web listing date, not the printed date).",
-      "Input noise, previously 'not verified', is now 9 nV/rtHz typ.",
-      "Supply current now states 5 mA max per amplifier (plus about 4 mA typ).",
-      "Input offset is now '1 mV max' (confirmed from the datasheet feature list).",
-      "C-Load wording confirmed for the LT1361/LT1362: 'stable with any capacitive load'.",
-      "LT1360 status set to Production. LT1361 marked active (ADI page live, listed in the Oct 2024 PCN).",
-      "Introduction dated c.1994 (Linear copyright 1994 in family datasheet text).",
-      "linear.com product-page entries were downgraded to low confidence and marked unconfirmed.",
-      "Added mirrors: alldatasheet (70421, 70422, 698014, 561597), radiolocman (339517, 525769, 525761, 525799), datasheet4u (51475, 51472) and datasheetcatalog. Their revisions are unknown.",
-      "Added two marking-only PCN entries to silicon_changes. Both are low risk with no die change."
+      "Datasheet code 13612fa confirmed; analog.com URL promoted to a high-confidence current datasheet.",
+      "1360fa URL confirmed; date set to ADI listing date 08/28/2007.",
+      "Input noise now 9 nV/√Hz typ.",
+      "Supply current now 5 mA max per amplifier, about 4 mA typ.",
+      "Input offset now 1 mV max, from the datasheet feature list.",
+      "C-Load wording confirmed: 'stable with any capacitive load'.",
+      "LT1360 set to Production; LT1361 active (ADI page live, in Oct 2024 PCN).",
+      "Introduction dated c. 1994 from Linear copyright.",
+      "linear.com product pages downgraded to low confidence.",
+      "Added mirrors: alldatasheet (70421, 70422, 698014, 561597), radiolocman (339517, 525769, 525761, 525799), datasheet4u (51475, 51472), datasheetcatalog.",
+      "Added marking-only PCN entries to silicon changes; low risk, no die change."
     ],
     "unverified_urls": [
       "http://www.linear.com/product/LT1361",
@@ -585,30 +619,6 @@
       "https://www.head-fi.org/threads/the-xonar-essence-stx-q-a-tweaking-impressions-thread.421890/page-114",
       "https://www.diyaudio.com/community/threads/choosing-op-amps-for-essence-stx-i-v-stage.216694/",
       "https://www.diyaudio.com/community/threads/the-best-sounding-audio-integrated-opamps.154106/page-114"
-    ],
-    "claims_confirmed": [
-      "The LT1361/LT1362 'Dual and Quad 50MHz, 800V/us Op Amps' datasheet is 13612fa.pdf on analog.com: https://www.analog.com/media/en/technical-documentation/data-sheets/13612fa.pdf",
-      "The LT1360 '50MHz, 800V/us Op Amp' datasheet is 1360fa.pdf on analog.com: https://www.analog.com/media/en/technical-documentation/data-sheets/1360fa.pdf",
-      "The LT1360 is in Production at ADI, with the datasheet listed as 08/28/2007: https://www.analog.com/en/products/lt1360.html",
-      "Specs 50MHz GBW, 800V/us, 5mA max supply per amp, 9nV/rtHz, unity-gain stable, stable with any capacitive load: https://www.analog.com/media/en/technical-documentation/data-sheets/13612fa.pdf",
-      "1mV maximum input offset; the LT1364/5 datasheet calls the LT1361/LT1362 its lower-power version (VOS = 1mV, 4mA/amp): https://www.analog.com/media/en/technical-documentation/data-sheets/13645fa.pdf",
-      "The ADI product pages for the LT1361 and LT1362 exist: https://www.analog.com/en/products/lt1361.html , https://www.analog.com/en/products/lt1362.html",
-      "PCN 21_0060 (ink to laser top mark, legacy LTC 8-SOICN at ADPG/UTAC/Carsem) covers the LT1361CS8 variants: https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5335/PCN_21_0060_Rev_A.pdf",
-      "PCN 24_0236 (Oct 2024; bottom trace code moved to the top laser mark) lists the LT1361CS8#PBF: https://www.mouser.com/PCN/ADI_PCN_24_0236.pdf",
-      "Third-party mirrors of the LT1360/LT1361 datasheets exist: https://www.alldatasheet.com/datasheet-pdf/pdf/70422/LINER/LT1361.html , https://www.radiolocman.com/datasheet/data.html?di=339517&%2FLT1361= , https://datasheet4u.com/datasheets/Linear-Technology/LT1361/51475",
-      "The family datasheet text carries a Linear Technology Corporation 1994 copyright (per search snippet): https://www.analog.com/media/en/technical-documentation/data-sheets/13645fa.pdf"
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "high-speed-video-crossover",
-  "product_pages": [
-    "https://www.analog.com/en/products/lt1361.html",
-    "https://www.analog.com/en/products/lt1362.html",
-    "https://www.analog.com/en/products/lt1360.html",
-    "http://www.linear.com/product/LT1361",
-    "http://www.linear.com/product/LT1362",
-    "https://www.digikey.com/en/products/base-product/analog-devices-inc/505/LT1360/3404"
-  ],
-  "revision_chain_notes": "LINEAR TECHNOLOGY / ADI 13612f (LT1361/LT1362): the chain runs from the original 13612f (not found; c.1994 per the copyright line) to 13612fa, the current copy at analog.com (date not shown). The missing link is any copy clearly identified as the original 13612f, and the printed date of the 'fa' re-issue. The copies to check first for pre-A content are the Carnegie Observatories lab PDF (instrumentation.obs.carnegiescience.edu/ccd/parts/LT1361.pdf) and the old low-numbered alldatasheet entries 70422 (LT1361) and 70423 (LT1362). No search summary showed a revision for them. LINEAR TECHNOLOGY / ADI 1360f (LT1360): the chain runs from the original 1360f (copyright 1994 confirmed in the search summary; the copy itself was not found) to 1360fa, the current analog.com copy, which the ADI web listing dates 08/28/2007. The missing link is a copy that holds the original 1360f; the Scribd upload 695059610 and alldatasheet 70421 are candidates, revision not shown. The family had no second sources and no TI, National or other vendor editions. Five archive seed URLs are unverified guesses I built from Linear's usual file-name patterns (www.linear.com/pdf/<code>.pdf and cds.linear.com/docs/en/datasheet/<code>.pdf) plus the /product/LT1360 page. No search result showed them; they are only candidates for a Wayback lookup. The linear.com/pdf/13612f.pdf and 1360f.pdf forms of the original edition would be the key Wayback lookups. None of the 4 search summaries showed any footer print code (LT/TP or LT/GP), so no revision letter could be pinned to any mirror."
+    ]
+  }
 }

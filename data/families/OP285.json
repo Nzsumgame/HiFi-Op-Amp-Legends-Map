@@ -1,169 +1,130 @@
 {
   "id": "OP285",
-  "name": "OP285 (ADI dual 9 MHz precision 'Butler' bipolar/JFET audio op-amp)",
-  "tagline": "The laser-trimmed precision sibling of the OP275 (same Butler bipolar/JFET input, 9 MHz, 22 V/us). CN upgrade guides and Head-Fi users praise its sweet, resolving midrange.",
-  "technology": "Dual voltage-feedback op-amp with ADI's 'Butler Amplifier' input stage, which pairs bipolar transistors (for accuracy and low noise) with JFETs (for speed). Its headline specs (9 MHz GBW, 22 V/us, 6 nV/rtHz, 0.0006% THD, 5 mA) match the OP275's. What sets it apart is a laser-trimmed input offset guaranteed below 250 uV. It is not faster than the OP275. Whether the two share a die is unconfirmed.",
+  "name": "OP285 / OP285GP / OP285GS / OP285GSZ",
+  "type": "Bipolar/JFET 'Butler' precision dual, 9 MHz",
+  "tier": "B",
+  "category": "bipolar-classic",
+  "tagline": "The laser-trimmed precision twin of the OP275, praised in Chinese upgrade guides for a sweet, resolving midrange.",
   "manufacturers": [
     "Analog Devices"
+  ],
+  "lineage": [
+    {
+      "vendor": "Precision Monolithics (PMI)",
+      "role": "originator",
+      "period": "1990s",
+      "note": "Unconfirmed: inferred from the OP prefix and OP275/OP285 Butler family. ADI bought PMI in 1990."
+    },
+    {
+      "vendor": "Analog Devices",
+      "role": "current",
+      "period": "1990s–present",
+      "note": "Owns the Rev. C datasheet. Non-Z SOIC parts discontinued by PDN 17_0038 (2017)."
+    }
   ],
   "part_numbers": [
     {
       "pn": "OP285",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "family (ADI product page live)",
-      "notes": "Dual. 8-lead SOIC_N today. The current Rev. C datasheet still prints the 8-lead PDIP (N-8) outline."
+      "status": "active",
+      "note": "Family; ADI product page live. SOIC-8 today; Rev. C still shows PDIP outline."
     },
     {
       "pn": "OP285GP",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
       "status": "obsolete",
-      "notes": "8-lead PDIP. A broker page (worldwayelec.com) says it has been obsolete since April 2002. That date is unconfirmed from an ADI source."
+      "note": "8-lead PDIP. Reportedly obsolete since April 2002 (broker page only)."
     },
     {
-      "pn": "OP285GS",
+      "pn": "OP285GS / OP285GS-REEL / OP285GS-REEL7",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "discontinued (ADI PDN 17_0038)",
-      "notes": "8-lead SOIC, non-Z (not RoHS). The PDN names OP285GSZ as its replacement. DigiKey still has a catalog page."
+      "status": "obsolete",
+      "note": "Non-RoHS SOIC-8 and reels; discontinued by PDN 17_0038, replaced by OP285GSZ."
     },
     {
-      "pn": "OP285GS-REEL",
+      "pn": "OP285GSZ / OP285GSZ-REEL / OP285GSZ-REEL7",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "discontinued (ADI PDN 17_0038)",
-      "notes": "Tape-and-reel version of OP285GS."
-    },
-    {
-      "pn": "OP285GS-REEL7",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "discontinued (ADI PDN 17_0038)",
-      "notes": "7-inch reel version of OP285GS."
-    },
-    {
-      "pn": "OP285GSZ",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "listed by distributors (Arrow); ADI lifecycle state not confirmed",
-      "notes": "RoHS 8-lead SOIC. Named replacement for OP285GS."
-    },
-    {
-      "pn": "OP285GSZ-REEL",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unconfirmed",
-      "notes": "Reel version. Has an alldatasheet listing; lifecycle not confirmed."
-    },
-    {
-      "pn": "OP285GSZ-REEL7",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "listed by distributors (Arrow); ADI lifecycle not confirmed",
-      "notes": "7-inch reel version of OP285GSZ."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "Precision Monolithics Inc. (PMI), acquired by ADI in 1990",
-      "role": "design heritage (OP-prefix line)",
-      "period": "1990s",
-      "notes": "Unconfirmed. Inferred from the OP-prefix and Butler-front-end family (OP275/OP285). No web source found this round."
-    },
-    {
-      "vendor": "Analog Devices",
-      "role": "manufacturer / datasheet owner",
-      "period": "1990s-present",
-      "notes": "Current datasheet is ADI 'OP285 Rev. C'. SOIC non-Z parts were discontinued via PDN 17_0038 (2017) in favour of OP285GSZ."
+      "status": "unknown",
+      "note": "RoHS SOIC-8 and reels. Arrow lists GSZ and -REEL7; ADI lifecycle unconfirmed."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Gain-bandwidth",
+      "parameter": "Input noise (1 kHz)",
+      "value": "6 nV/√Hz typ",
+      "condition": "frequency assumed 1 kHz",
+      "source": "OP285 Rev. C"
+    },
+    {
+      "parameter": "GBW",
       "value": "9 MHz",
-      "condition": "datasheet headline feature",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf"
+      "condition": "",
+      "source": "OP285 Rev. C"
     },
     {
       "parameter": "Slew rate",
-      "value": "22 V/us",
-      "condition": "datasheet headline feature",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf"
+      "value": "22 V/µs",
+      "condition": "",
+      "source": "OP285 Rev. C"
     },
     {
-      "parameter": "Input voltage noise density",
-      "value": "6 nV/rtHz",
-      "condition": "datasheet headline feature (typ; frequency not shown in the search summary, likely 1 kHz)",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf"
+      "parameter": "THD+N",
+      "value": "0.0006% (THD)",
+      "condition": "",
+      "source": "OP285 Rev. C"
     },
     {
-      "parameter": "THD",
-      "value": "0.0006%",
-      "condition": "datasheet headline feature",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf"
-    },
-    {
-      "parameter": "Input offset voltage",
-      "value": "250 uV max",
-      "condition": "laser-trimmed, guaranteed",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf"
-    },
-    {
-      "parameter": "Input offset current",
-      "value": "2 nA",
-      "condition": "datasheet headline feature",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf"
+      "parameter": "Supply range",
+      "value": "±22 V abs. max (supply or input unconfirmed)",
+      "condition": "operating range not captured",
+      "source": "OP285 Rev. C"
     },
     {
       "parameter": "Supply current",
       "value": "5 mA",
-      "condition": "headline feature. Unconfirmed whether this is per amplifier or total. The Rev. C revision history notes a change to this parameter.",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf"
+      "condition": "per amp or total unconfirmed",
+      "source": "OP285 Rev. C"
     },
     {
-      "parameter": "Absolute maximum voltage rating",
-      "value": "+/-22 V",
-      "condition": "The search summary called it the input voltage rating. Unconfirmed whether it is the supply or input absolute maximum.",
-      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf"
+      "parameter": "Offset voltage",
+      "value": "250 µV max (laser-trimmed)",
+      "condition": "",
+      "source": "OP285 Rev. C"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "2 nA input offset current",
+      "condition": "bias current itself not captured",
+      "source": "OP285 Rev. C"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "Butler: bipolar (accuracy, noise) + JFET (speed)",
+      "condition": "die shared with OP275 unconfirmed",
+      "source": "OP285 Rev. C"
     }
   ],
   "reputation": {
-    "summary": "A long-standing Chinese upgrade favourite that is almost always mentioned with the OP275. Reprinted CN op-amp guides (CSDN, ZOL, PCPOP, 21ic) credit OP275/OP285 with a soft, 'tube-like' midrange, intimate vocals and high resolution. One CN comparison says the OP285G sounds like the OP275G but with more colour saturation and a wider soundstage, and slightly less bass. Car-audio shops (sounting.com) list it as a 'fever-grade' op-amp. Head-Fi's 'I like the OP285' thread reports good resolution, a refined but resolving treble, and a sound that is 'right' overall, but posters say it needs care in the circuit. diyAudio's best-sounding-dual thread suggests it as a budget alternative to try alongside the OPA627/OPA637. All of this is enthusiast opinion, not measurement.",
+    "summary": "A long-time Chinese upgrade favourite, usually named with the OP275. CN guides credit it with a soft, tube-like midrange, intimate vocals and high resolution. Head-Fi posters like its resolving treble but say it needs care in the circuit. diyAudio suggests it as a budget alternative to the OPA627/OPA637. All opinion, not measurement.",
     "sonic_descriptors": [
-      "soft, 'tube-like' midrange (CN guides)",
-      "intimate vocals (CN guides)",
-      "high resolution / clear outlines",
-      "refined but resolving treble (Head-Fi)",
-      "more colour saturation and wider soundstage than OP275 (one CN comparison)",
-      "slightly less bass than OP275 (one CN comparison)"
+      "soft, tube-like midrange",
+      "intimate vocals",
+      "high resolution",
+      "refined, resolving treble",
+      "wider soundstage than OP275",
+      "slightly less bass"
     ],
     "typical_uses": [
-      "op-amp rolling in DIY and Chinese DACs, preamps and headphone amps",
-      "car-audio head-unit / DSP op-amp upgrades",
-      "I/V and output stages as a precision alternative to the OP275"
+      "Op-amp rolling in DIY and Chinese DACs and preamps",
+      "Headphone amp upgrades",
+      "Car-audio head-unit and DSP upgrades",
+      "I/V and output stages; precision alternative to OP275"
     ],
     "caveats": [
-      "The praise mostly comes from reprinted CN guides and forum anecdotes, not measured comparisons.",
-      "Head-Fi posters say it needs careful circuit conditions (decoupling, loading) to sound its best.",
-      "The DIP-8 OP285GP was reportedly obsolete by about 2002. Socketed rolling today usually means SOIC OP285GSZ on an adapter, old stock or remarked parts.",
-      "Its headline specs are the same as the OP275's. Claims that it is 'faster' than the OP275 are wrong."
+      "Praise comes from reprinted CN guides and forum anecdotes, not measurements.",
+      "Head-Fi posters say it needs careful decoupling and loading to sound its best.",
+      "DIP-8 OP285GP reportedly obsolete since about 2002; socket rolling today means SOIC on adapter, old stock or remarks.",
+      "Headline specs match the OP275; it is not 'faster' than the OP275."
     ],
     "sources": [
       "https://blog.csdn.net/muyuyuzhong/article/details/1856599",
@@ -176,6 +137,37 @@
       "https://www.head-fi.org/threads/the-opamp-thread.432749/page-368"
     ]
   },
+  "counterfeit_notes": "No ADI advisory found. Marketplace listings lumping OP285G/GS/GSZ/GSZ-REEL into one product suggest mixed or remarked stock. Fresh-looking DIP OP285GP parts are likely old stock or remarks. Buy OP285GSZ from authorized distributors such as Arrow.",
+  "alternatives": [
+    "OP275 (same front end, 1 mV offset grade)",
+    "OPA2134",
+    "OPA1642",
+    "AD8620"
+  ],
+  "silicon_changes": [
+    {
+      "kind": "lifecycle",
+      "vendor": "Analog Devices",
+      "when": "2017 · PDN 17_0038 (Rev. -, B, C)",
+      "part_numbers_affected": [
+        "OP285GS",
+        "OP285GS-REEL",
+        "OP285GS-REEL7"
+      ],
+      "summary": "ADI discontinued the non-RoHS OP285GS variants and named the pin-compatible OP285GSZ as replacement. No die change is documented; this is a part-number and lead-finish transition.",
+      "identification": "Non-Z SOIC part numbers are discontinued; the replacement carries the Z suffix (OP285GSZ, -REEL, -REEL7).",
+      "spec_deltas": [],
+      "audio_impact": "None expected; no electrical or die change documented.",
+      "compatibility_risk": "low: pin-compatible Z-suffix replacement named in the PDN.",
+      "confidence": "medium",
+      "sources": [
+        "https://www.analog.com/media/en/PCN/ADI_PDN_17_0038_Rev_C_Form.pdf",
+        "https://www.mouser.com/PCN/ADI_ADI_PDN_17_0038_Rev_B_Form.pdf",
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2206/PDN_17_0038_Rev-.pdf"
+      ],
+      "verification": "PDN revisions -, B and C located on ADI, Mouser and DigiKey."
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Analog Devices",
@@ -187,7 +179,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current revision. The same file is also indexed at .../data-sheets/OP285.pdf (upper case). Its revision history lists changes to the General Description and Pin Connection, the Supply Current parameter and the Absolute Maximum Ratings."
+      "note": "Current revision; also indexed at upper-case .../OP285.pdf."
     },
     {
       "vendor": "Analog Devices",
@@ -199,7 +191,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Third-party copy labelled Revision C. Page 14 is the 8-lead PDIP (N-8) outline and page 13 is the simplified schematic."
+      "note": "Mirror labelled Rev. C; page 14 PDIP outline, page 13 schematic."
     },
     {
       "vendor": "Analog Devices",
@@ -211,7 +203,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Copy seen in search results. The revision was not shown in the summary."
+      "note": "Octopart copy filed under OP285GSZ; revision not shown."
     },
     {
       "vendor": "Analog Devices",
@@ -223,7 +215,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Revision not shown in the summary. It may hold an older revision (A/B)."
+      "note": "Revision not shown; may hold an older revision (A/B)."
     },
     {
       "vendor": "Analog Devices",
@@ -235,7 +227,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "PDIP part-number entry. Revision not shown."
+      "note": "PDIP part-number entry; revision not shown."
     },
     {
       "vendor": "Analog Devices",
@@ -247,7 +239,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Newer upload. It may hold Rev. B or C. Revision not shown."
+      "note": "Newer upload; may hold Rev. B or C."
     },
     {
       "vendor": "Analog Devices",
@@ -259,7 +251,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Revision not shown in the summary."
+      "note": "Revision not shown."
     },
     {
       "vendor": "Analog Devices",
@@ -271,53 +263,45 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Possible holder of an older revision. Revision not shown."
+      "note": "Possible older revision; revision not shown."
     }
+  ],
+  "product_pages": [
+    "https://www.analog.com/en/products/op285.html"
   ],
   "revision_history": [
     {
       "vendor": "Analog Devices",
       "doc_number": "OP285",
       "revision": "C",
-      "date": "unknown",
-      "changes": "The search summary of the revision history lists changes to the General Description section and Pin Connection, the Supply Current parameter (Specifications) and the Absolute Maximum Ratings. Unconfirmed whether these entries belong to the B-to-C step or to an earlier one."
+      "date": "",
+      "changes": "Changed General Description, Pin Connection, Supply Current and Absolute Maximum Ratings; which step (B→C or earlier) is unconfirmed."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "OP285",
       "revision": "B and earlier (0/A)",
-      "date": "unknown",
-      "changes": "Their existence is implied by the Rev. C letter. Dates and contents were not found. Mirrors on alldatasheet (#49049/#49050) and datasheetcatalog may hold these older copies."
+      "date": "",
+      "changes": "Implied by the Rev. C letter; dates and contents not found. Older mirrors may hold them."
     }
   ],
-  "silicon_changes": [
+  "revision_chains": [
     {
       "vendor": "Analog Devices",
-      "when": "2017 (PDN 17_0038 issued as Rev. -, later revised to Rev. B and Rev. C)",
-      "part_numbers_affected": [
-        "OP285GS",
-        "OP285GS-REEL",
-        "OP285GS-REEL7"
+      "doc_number": "OP285",
+      "known": [
+        {
+          "rev": "C",
+          "date": ""
+        }
       ],
-      "identification": "Non-Z SOIC part numbers are discontinued. The replacement carries the Z suffix: OP285GSZ (and its -REEL/-REEL7 versions).",
-      "summary": "Product discontinuance of the non-RoHS OP285GS variants, with OP285GSZ named as the pin-compatible replacement. The sources found document no die change. This is a part-number/lead-finish transition, not a case of the same part number with different silicon.",
-      "spec_deltas": [],
-      "audio_impact": "None expected. No electrical or die change is documented.",
-      "compatibility_risk": "low - pin-compatible Z-suffix replacement named in the PDN",
-      "sources": [
-        "https://www.analog.com/media/en/PCN/ADI_PDN_17_0038_Rev_C_Form.pdf",
-        "https://www.mouser.com/PCN/ADI_ADI_PDN_17_0038_Rev_B_Form.pdf",
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2206/PDN_17_0038_Rev-.pdf"
+      "missing": [
+        "0",
+        "A",
+        "B"
       ],
-      "confidence": "medium",
-      "kind": "lifecycle"
+      "note": "Rev. C print date unknown; alldatasheet and datasheetcatalog mirrors may hold older revisions."
     }
-  ],
-  "counterfeit_notes": "No ADI counterfeit advisory was found. Marketplace listings (e.g. Amazon '5PCS OP285G OP285 OP285GS OP285GSZ OP285GSZ-REEL SOP8') lump several part numbers into one product, which is a common sign of remarked or mixed stock. The DIP-8 OP285GP is reportedly obsolete since about 2002, so fresh-looking DIP 'OP285GP' parts sold for op-amp rolling are likely old stock or remarked. Buy OP285GSZ through authorized distributors such as Arrow.",
-  "alternatives": [
-    "OP275 (same Butler front end and headline specs, 1 mV offset grade, audio-marketed sibling)",
-    "OPA2134 / OPA1642 (TI JFET-input audio duals)",
-    "AD8620 (ADI precision JFET dual)"
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -329,12 +313,11 @@
     "https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf"
   ],
   "open_questions": [
-    "Print date of Rev. C, and the dates and contents of Rev. 0/A/B.",
-    "Does the OP285 share the OP275 die (trim/test selection), or is it a separate die? The draft claimed a separate die, but no web evidence was found.",
-    "Current ADI lifecycle state of OP285GSZ, -REEL and -REEL7, and whether an OP285GPZ (RoHS PDIP) ever existed.",
-    "Confirm the OP285GP obsolescence date (April 2002 comes from a broker page only).",
-    "Is the +/-22 V rating the supply or the input absolute maximum? What is the operating supply range? Is the 5 mA supply current per amplifier or total?",
-    "Which revisions do the alldatasheet #49049/#49050/#603022 and datasheetcatalog copies hold?"
+    "Print date of Rev. C, and dates and contents of Rev. 0, A and B.",
+    "Does the OP285 share the OP275 die (trim/test selection), or is it a separate die?",
+    "Current ADI lifecycle of OP285GSZ and reels; did an OP285GPZ (RoHS PDIP) ever exist?",
+    "Is ±22 V the supply or input absolute maximum? Is 5 mA per amplifier or total?",
+    "Which revisions do the alldatasheet and datasheetcatalog copies hold? Confirm OP285GP's April 2002 obsolescence."
   ],
   "sources": [
     "https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf",
@@ -360,38 +343,33 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 8,
+    "claims_confirmed": [
+      "Current ADI datasheet is 'Dual 9 MHz Precision Operational Amplifier OP285 Rev. C' (https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf).",
+      "250 µV offset, 6 nV/√Hz, 0.0006% THD, 22 V/µs, 9 MHz, 5 mA, 2 nA offset current (https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf).",
+      "Butler front end combines bipolar accuracy and low noise with JFET speed (https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf).",
+      "Rev. C history: General Description/Pin Connection, Supply Current, Absolute Maximum Ratings (https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf).",
+      "RadioLocman copy labelled Revision C, with PDIP outline (https://www.radiolocman.com/datasheet/pdf.html?di=121465&p=14).",
+      "PDN 17_0038 covers OP285GS and reels, replacement OP285GSZ; Rev. -, B, C exist (https://www.analog.com/media/en/PCN/ADI_PDN_17_0038_Rev_C_Form.pdf, https://www.mouser.com/PCN/ADI_ADI_PDN_17_0038_Rev_B_Form.pdf, https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2206/PDN_17_0038_Rev-.pdf).",
+      "OP285GP reported obsolete since April 2002; broker source, medium confidence (https://www.worldwayelec.com/pro/analog-devices/op285gp/5048499).",
+      "Arrow lists OP285GSZ and OP285GSZ-REEL7 (https://www.arrow.com/en/products/op285gsz/analog-devices, https://www.arrow.com/en/products/op285gsz-reel7/analog-devices).",
+      "OP275 is also 9 MHz, same GBW as OP285 (https://uk.rs-online.com/web/p/op-amps/1832628)."
+    ],
     "refuted_claims": [
-      "The draft called the OP285 the 'faster sibling of the OP275 (about 9 MHz GBW)'. This is refuted: the OP285's 9 MHz / 22 V/us match the OP275's (the OP275 is also listed as 9 MHz, e.g. https://uk.rs-online.com/web/p/op-amps/1832628). The OP285's distinction is its trimmed 250 uV max offset."
+      "OP285 as 'faster sibling of the OP275' is refuted: both are 9 MHz / 22 V/µs (https://uk.rs-online.com/web/p/op-amps/1832628). Its distinction is the 250 µV trimmed offset."
     ],
     "corrections": [
-      "Rewrote the technology text: the OP285 is the precision (laser-trimmed offset) sibling of the OP275, not a faster one. The 'separate die, not a grade' claim is unconfirmed and was moved to open_questions.",
-      "Set channels to 2 for all part numbers and filled in statuses. Added OP285GS-REEL/-REEL7 and OP285GSZ/-REEL/-REEL7.",
-      "Marked OP285GS and its reel versions as discontinued under ADI PDN 17_0038 (replacement OP285GSZ). Marked OP285GP (PDIP) obsolete, per a broker page.",
-      "Added the current ADI datasheet (Rev. C), the product page, a RadioLocman Rev. C mirror and other third-party copies whose revisions are unknown.",
-      "Added key specs from the datasheet: 9 MHz, 22 V/us, 6 nV/rtHz, 0.0006% THD, 250 uV max offset, 2 nA offset current, 5 mA supply current.",
-      "Added a PDN 17_0038 entry as a part-number/lead-finish transition, with no documented die change.",
-      "Manufacturer simplified to 'Analog Devices'. The PMI lineage is kept but marked unconfirmed."
+      "OP285 is the precision (trimmed-offset) sibling of the OP275, not a faster one; 'separate die' claim moved to open questions.",
+      "Channels set to 2; added OP285GS reels and OP285GSZ/-REEL/-REEL7.",
+      "OP285GS and reels marked discontinued (PDN 17_0038); OP285GP marked obsolete per a broker page.",
+      "Added Rev. C datasheet, product page, RadioLocman Rev. C mirror and other copies.",
+      "Added key specs from the datasheet.",
+      "Added PDN 17_0038 as a part-number/lead-finish transition with no die change.",
+      "Manufacturer simplified to Analog Devices; PMI lineage kept as unconfirmed."
     ],
     "unverified_urls": [
       "http://www.analog.com/static/imported-files/data_sheets/OP285.pdf",
       "http://www.analog.com/UploadedFiles/Data_Sheets/OP285.pdf"
-    ],
-    "claims_confirmed": [
-      "The current ADI datasheet is titled 'Dual 9 MHz Precision Operational Amplifier Data Sheet OP285 Rev. C' - https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf",
-      "Headline specs: 250 uV offset, 6 nV/rtHz, 0.0006% distortion, 22 V/us, 9 MHz, 5 mA supply current, 2 nA offset current - https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf",
-      "The Butler Amplifier front end combines bipolar accuracy and low noise with JFET speed - https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf",
-      "The Rev. C revision history lists changes to General Description/Pin Connection, Supply Current and Absolute Maximum Ratings - https://www.analog.com/media/en/technical-documentation/data-sheets/op285.pdf",
-      "A RadioLocman third-party copy is labelled Revision C and includes the 8-lead PDIP outline - https://www.radiolocman.com/datasheet/pdf.html?di=121465&p=14",
-      "ADI PDN 17_0038 covers OP285GS, OP285GS-REEL and OP285GS-REEL7, with OP285GSZ as replacement. Rev. -, B and C exist - https://www.analog.com/media/en/PCN/ADI_PDN_17_0038_Rev_C_Form.pdf, https://www.mouser.com/PCN/ADI_ADI_PDN_17_0038_Rev_B_Form.pdf, https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2206/PDN_17_0038_Rev-.pdf",
-      "OP285GP (8-pin PDIP) reported obsolete since April 2002; this is broker-sourced, medium confidence - https://www.worldwayelec.com/pro/analog-devices/op285gp/5048499",
-      "Arrow lists OP285GSZ and OP285GSZ-REEL7 - https://www.arrow.com/en/products/op285gsz/analog-devices, https://www.arrow.com/en/products/op285gsz-reel7/analog-devices",
-      "OP275 is also a 9 MHz part, the same GBW as the OP285 - https://uk.rs-online.com/web/p/op-amps/1832628"
-    ],
-    "web_searches_used": 8
-  },
-  "tier": "B",
-  "category": "bipolar-classic",
-  "product_pages": [
-    "https://www.analog.com/en/products/op285.html"
-  ]
+    ]
+  }
 }

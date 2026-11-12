@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from normalize_data import norm_url  # noqa: E402
 from schema import check_family  # noqa: E402
 
-URL = re.compile(r"https?://[^\s\"'<>)\]]+")
+URL = re.compile(r"https?://[^\s\"'<>)\]\\]+")  # stops at JSON escapes such as \n
 IDENTIFIERS = [
     re.compile(r"\b(?:19|20)\d{9}(?:\.\d)?\b"),        # TI PCN 20231219018.1
     re.compile(r"\bP[CD]N\s*#?\s*\d{2}_\d{4}\b"),     # ADI PCN 26_0029 / PDN 10_0081

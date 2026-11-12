@@ -1,125 +1,103 @@
 {
   "id": "BA15218",
-  "name": "BA15218 (ROHM dual low-noise, high-slew-rate bipolar)",
-  "tagline": "ROHM's M5218-class dual op-amp (10 MHz GBW, 3 V/us). Japanese op-amp rollers say its highs sound cleaner and more extended than the M5218 or NJM4580.",
-  "technology": "Monolithic dual op-amp with internal phase compensation, listed by ROHM as a low-noise, low-distortion, high-slew-rate part (bipolar; ROHM does not state the process in the search summaries). Runs from single 4-32 V or dual supplies. It is a consumer/audio catalogue part and is now end-of-life: the DIP8 version is obsolete, and the BA15218F-E2 had a Last Time Buy date of 2026-03-31.",
+  "name": "BA15218 / BA15218F / BA15218N",
+  "type": "Bipolar dual, low-noise, high slew rate",
+  "tier": "C",
+  "category": "japanese-audio-series",
+  "tagline": "ROHM's M5218-class dual (10 MHz, 3 V/µs); Japanese rollers hear cleaner, more extended highs than M5218 or NJM4580.",
   "manufacturers": [
     "ROHM"
+  ],
+  "lineage": [
+    {
+      "vendor": "Mitsubishi Electric",
+      "role": "originator",
+      "period": "unknown",
+      "note": "M5218/M5218A low-noise dual, about 7 MHz GBW per Japanese hobbyist sources; unconfirmed by vendor document."
+    },
+    {
+      "vendor": "ROHM",
+      "role": "second source",
+      "period": "unknown–2026",
+      "note": "Reportedly a faster M5218 second source (GBW 7 → 10 MHz). EOL; BA15218F-E2 last-time buy 2026-03-31."
+    }
   ],
   "part_numbers": [
     {
       "pn": "BA15218",
       "channels": 2,
-      "vendors": [
-        "ROHM"
-      ],
       "status": "obsolete",
-      "notes": "DIP8. DigiKey lists it as obsolete / no longer manufactured."
+      "note": "DIP8. DigiKey lists it as obsolete."
     },
     {
       "pn": "BA15218N",
       "channels": 2,
-      "vendors": [
-        "ROHM"
-      ],
-      "status": "unknown (likely discontinued; unconfirmed)",
-      "notes": "SIP8 (single-in-line). It will not fit a DIP8 op-amp socket. DigiKey and Mouser still have listings, but they do not show a lifecycle status."
+      "status": "unknown",
+      "note": "SIP8; will not fit a DIP8 socket. Likely discontinued, unconfirmed."
     },
     {
-      "pn": "BA15218F",
+      "pn": "BA15218F / BA15218F-E2",
       "channels": 2,
-      "vendors": [
-        "ROHM"
-      ],
-      "status": "EOL announced (Last Time Buy)",
-      "notes": "SOP8. It is the only package covered by the 2013 TSZ-format datasheet and the ROHM product page."
-    },
-    {
-      "pn": "BA15218F-E2",
-      "channels": 2,
-      "vendors": [
-        "ROHM"
-      ],
-      "status": "Last Time Buy (LTB 2026-03-31 per distributor); effectively discontinued as of 2026-09",
-      "notes": "Orderable tape-and-reel code for the BA15218F (DigiKey, Mouser, LCSC C79618). A marketplace suffix 'BA15218F-T1' also appears in listings but has not been confirmed by ROHM."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "Mitsubishi Electric",
-      "role": "original design (M5218/M5218A)",
-      "period": "unknown",
-      "notes": "Japanese low-noise dual op-amp with about 7 MHz GBW, per Japanese hobbyist sources. Unconfirmed from a vendor document."
-    },
-    {
-      "vendor": "ROHM",
-      "role": "second source / faster derivative (BA15218)",
-      "period": "legacy 'Standard ICs' catalogue (date unknown) through EOL (BA15218F-E2 LTB 2026-03-31)",
-      "notes": "Japanese hobbyist sources describe it as ROHM's second source for the M5218 with GBW raised from about 7 to 10 MHz. The numbering follows ROHM's BA1xxxx pattern for second-sourced parts. The hobbyist claim has not been checked against a vendor document."
+      "status": "obsolete",
+      "note": "SOP8; -E2 tape-and-reel (LCSC C79618). EOL, last-time buy 2026-03-31."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Channels",
-      "value": "2",
+      "parameter": "Input noise (1 kHz)",
+      "value": "1.0 µVrms typ (RIAA-weighted)",
+      "condition": "RIAA-weighted, not spot noise",
+      "source": "ROHM legacy datasheet"
+    },
+    {
+      "parameter": "GBW",
+      "value": "10 MHz typ",
       "condition": "",
-      "source": "ROHM legacy datasheet (alldatasheet mirror 35931)"
-    },
-    {
-      "parameter": "Supply voltage",
-      "value": "4 to 32 V single; +/-3 to +/-16 V dual (as summarized)",
-      "condition": "operating range",
-      "source": "ROHM legacy datasheet (alldatasheet 35931 / octopart mirror); the dual-supply lower limit is from a search summary and should be checked against the PDF"
-    },
-    {
-      "parameter": "Input noise voltage",
-      "value": "1.0 uVrms typ",
-      "condition": "RIAA-weighted",
-      "source": "ROHM legacy datasheet (alldatasheet 35931)"
+      "source": "ROHM legacy datasheet"
     },
     {
       "parameter": "Slew rate",
-      "value": "3 V/us typ",
+      "value": "3 V/µs typ",
       "condition": "",
-      "source": "ROHM legacy datasheet (alldatasheet 35931)"
+      "source": "ROHM legacy datasheet"
     },
     {
-      "parameter": "Gain-bandwidth product",
-      "value": "10 MHz typ",
-      "condition": "",
-      "source": "ROHM legacy datasheet (alldatasheet 35931)"
+      "parameter": "Supply range",
+      "value": "4–32 V single; ±3 to ±16 V dual (dual limit unconfirmed)",
+      "condition": "operating range",
+      "source": "ROHM legacy datasheet"
     },
     {
-      "parameter": "Input offset voltage",
+      "parameter": "Offset voltage",
       "value": "0.5 mV typ",
       "condition": "",
-      "source": "ROHM legacy datasheet (alldatasheet 35931)"
+      "source": "ROHM legacy datasheet"
     },
     {
-      "parameter": "Compensation",
-      "value": "internal phase compensation",
+      "parameter": "Input stage",
+      "value": "Bipolar, internally compensated",
       "condition": "",
       "source": "ROHM legacy datasheet"
     }
   ],
   "reputation": {
-    "summary": "This is a niche Japanese op-amp-rolling favourite, not a widely known audiophile legend. The C-Area wiki (atwiki) has a dedicated BA15218 listening page. In a comparison with the M5218 and NJM4580, the BA15218 was heard as having clean, open, extended highs, while the M5218 sounded slightly veiled and the NJM4580 had sluggish bass. A note.com headphone-amp write-up reports a firm, low-noise sound with solid lows. Another hobbyist comparison surfaced by search found it somewhat hard and less spacious than dedicated audio op-amps. All of these are single-listener subjective reports.",
+    "summary": "A niche Japanese op-amp-rolling favourite rather than a legend. The C-Area wiki heard clean, open, extended highs versus a slightly veiled M5218 and sluggish-bass NJM4580. A note.com headphone-amp test reports firm, low-noise sound. Another hobbyist found it somewhat hard and less spacious. All single-listener impressions.",
     "sonic_descriptors": [
       "clear, extended highs",
-      "clean / natural, not harsh",
+      "clean, natural",
       "firm, solid lows",
       "low noise",
-      "somewhat hard, less spacious than audio-grade op-amps (one hobbyist comparison)"
+      "somewhat hard (one report)"
     ],
     "typical_uses": [
-      "Japanese consumer audio equipment (M5218-class sockets)",
-      "phono/RIAA and line stages (datasheet quotes RIAA noise)",
-      "op-amp rolling in headphone amps and DIY kits"
+      "Japanese consumer audio (M5218-class sockets)",
+      "Phono/RIAA and line stages",
+      "Op-amp rolling in headphone amps and kits"
     ],
     "caveats": [
-      "EOL: the DIP8 BA15218 is obsolete, and the BA15218F-E2 LTB was 2026-03-31. Remaining supply is old stock or marketplace lots.",
-      "The BA15218N is SIP8 and the BA15218F is SOP8. Only the plain BA15218 drops into a DIP8 socket without an adapter.",
-      "The praise comes from a few Japanese hobbyist pages and is subjective. There are no measured audio comparisons."
+      "EOL: DIP8 BA15218 obsolete, BA15218F-E2 last-time buy 2026-03-31. Remaining supply is old stock.",
+      "BA15218N is SIP8 and BA15218F is SOP8; only the plain BA15218 fits a DIP8 socket directly.",
+      "Praise comes from a few Japanese hobbyist pages; no measured audio comparisons exist."
     ],
     "sources": [
       "https://w.atwiki.jp/higemouse/pages/104.html",
@@ -127,6 +105,13 @@
       "https://www.rohm.com/products/amplifiers-and-linear/operational-amplifiers/low-noise/dual-supply-voltage/ba15218f-product"
     ]
   },
+  "counterfeit_notes": "No counterfeit reports found. As an EOL part, marketplace lots (e.g. Amazon '5PCS 15218 BA15218 BA15218F BA15218F-T1 BA15218F-E2 SOP8') are of unknown provenance. Buy from authorised distributors while stock lasts.",
+  "alternatives": [
+    "Mitsubishi M5218 / M5218A (discontinued)",
+    "NJR NJM4580",
+    "NE5532 / NJM5532"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "ROHM",
@@ -138,7 +123,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Current ROHM TSZ-format datasheet (SOP8 BA15218F). The header shows 10.SEP.2013 Rev.001. It is not known whether a later revision exists."
+      "note": "Current TSZ-format sheet, SOP8 only; header 10.SEP.2013 Rev.001."
     },
     {
       "vendor": "ROHM",
@@ -150,7 +135,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "probable",
-      "note": "ROHM's canonical datasheet redirector. It resolves to the current PDF. Found in search results."
+      "note": "ROHM redirect link to the current PDF."
     },
     {
       "vendor": "ROHM (via DigiKey)",
@@ -162,7 +147,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "unconfirmed. Probably the 2013 TSZ datasheet; the revision was not shown."
+      "note": "HTML rendering, probably the 2013 TSZ sheet; revision not shown."
     },
     {
       "vendor": "ROHM (via alldatasheet)",
@@ -174,85 +159,79 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "unconfirmed. Probably the newer TSZ-format BA15218F sheet; the revision was not shown."
+      "note": "Probably the TSZ-format BA15218F sheet; revision not shown."
     },
     {
       "vendor": "ROHM (via Octopart)",
       "title": "Standard ICs - Dual high slew rate, low noise operational amplifier BA15218 / BA15218F / BA15218N",
       "doc_number": "none printed (legacy catalogue sheet)",
-      "revision": "",
+      "revision": "original",
       "date": "",
       "url": "https://datasheet.octopart.com/BA15218-Rohm-datasheet-14139886.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "revision_text": "legacy (undated)",
-      "note": "Old ROHM catalogue-style sheet covering all three packages (DIP8/SOP8/SIP8). The PDF title contains the typo 'Standaed ICs'. It preserves the pre-2013 content."
+      "note": "Undated legacy catalogue sheet, all three packages; PDF title typo 'Standaed ICs'."
     },
     {
       "vendor": "ROHM (via alldatasheet)",
       "title": "BA15218 - Dual high slew rate, low noise operational amplifier (5 pages)",
       "doc_number": "none printed (legacy catalogue sheet)",
-      "revision": "",
+      "revision": "original",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/35931/ROHM/BA15218.html",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "revision_text": "legacy (undated)",
-      "note": "Legacy 5-page sheet. The key specs in this record come from it: 1.0 uVrms RIAA, 3 V/us, 10 MHz, 0.5 mV."
+      "note": "Undated legacy 5-page sheet; source of this record's key specs."
     },
     {
       "vendor": "ROHM (via datasheetcatalog)",
       "title": "BA15218 Datasheet pdf - Dual high slew rate/ low noise operational amplifier",
       "doc_number": "",
-      "revision": "",
+      "revision": "original",
       "date": "",
       "url": "https://www.datasheetcatalog.com/datasheets_pdf/B/A/1/5/BA15218.shtml",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "revision_text": "legacy (presumed)",
-      "note": "unconfirmed revision. Probably the same legacy sheet."
+      "note": "Presumed the same undated legacy sheet."
     },
     {
       "vendor": "ROHM (via datasheetcatalog)",
       "title": "BA15218N Datasheet pdf - Dual high slew rate/ low noise operational amplifier",
       "doc_number": "",
-      "revision": "",
+      "revision": "original",
       "date": "",
       "url": "https://www.datasheetcatalog.com/datasheets_pdf/B/A/1/5/BA15218N.shtml",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "revision_text": "legacy (presumed)",
-      "note": "unconfirmed revision."
+      "note": "Presumed the undated legacy sheet."
     },
     {
       "vendor": "ROHM (via ChipFind)",
       "title": "BA15218 Rohm Dual High Slew Rate, Low Noise Operational Amplifier",
       "doc_number": "",
-      "revision": "",
+      "revision": "original",
       "date": "",
       "url": "https://www.chipfind.net/datasheet/rohm/ba15218.htm",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "revision_text": "legacy (presumed)",
-      "note": "unconfirmed revision."
+      "note": "Presumed the undated legacy sheet."
     },
     {
       "vendor": "ROHM (via datasheet4u)",
       "title": "BA15218 Dual high slew rate/ low noise operational amplifier (Rohm)",
       "doc_number": "",
-      "revision": "",
+      "revision": "original",
       "date": "",
       "url": "https://www.datasheet4u.com/datasheet-pdf/Rohm/BA15218/pdf.php?id=233243",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "revision_text": "legacy (presumed)",
-      "note": "unconfirmed revision. Sibling pages exist for the BA15218F (id 233244) and BA15218N (id 233245)."
+      "note": "Presumed legacy sheet; BA15218F (id 233244) and BA15218N (id 233245) pages exist."
     },
     {
       "vendor": "ROHM (via Datasheet Archive)",
@@ -264,31 +243,53 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "unconfirmed. May hold several versions."
+      "note": "May hold several versions."
     }
+  ],
+  "product_pages": [
+    "https://www.rohm.com/products/amplifiers-and-linear/operational-amplifiers/low-noise/dual-supply-voltage/ba15218f-product"
   ],
   "revision_history": [
     {
       "vendor": "ROHM",
-      "doc_number": "(legacy 'Standard ICs' catalogue sheet, no doc number)",
-      "revision": "legacy",
-      "date": "unknown (pre-2013)",
-      "changes": "Original sheet covering the BA15218 (DIP8), BA15218F (SOP8) and BA15218N (SIP8): 4-32 V single / dual supply, 1.0 uVrms RIAA noise, 3 V/us, 10 MHz GBW."
+      "doc_number": "legacy 'Standard ICs' sheet (no number)",
+      "revision": "original",
+      "date": "pre-2013",
+      "changes": "Covers BA15218 (DIP8), BA15218F (SOP8), BA15218N (SIP8): 4–32 V supply, 1.0 µVrms RIAA noise, 3 V/µs, 10 MHz GBW."
     },
     {
       "vendor": "ROHM",
       "doc_number": "TSZ02201-0RAR1G200050-1-2",
-      "revision": "Rev.001",
+      "revision": "Rev. 001",
       "date": "2013-09-10",
-      "changes": "Re-issued in ROHM's TSZ datasheet format for the BA15218F (SOP8). It is unconfirmed whether the DIP8/SIP8 versions were dropped from this document. No later revision was found."
+      "changes": "Reissued in TSZ format for the SOP8 BA15218F. Unconfirmed whether DIP8/SIP8 were dropped. No later revision found."
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No documented counterfeit reports were found. Because the part is EOL, marketplace lots (e.g. Amazon '5PCS 15218 BA15218 BA15218F BA15218F-T1 BA15218F-E2 SOP8') are of unknown provenance, and remarked or reclaimed parts are a generic risk. Buy from authorised distributors while old stock lasts.",
-  "alternatives": [
-    "Mitsubishi M5218 / M5218A (original; also discontinued)",
-    "NJR NJM4580",
-    "NE5532 / NJM5532"
+  "revision_chains": [
+    {
+      "vendor": "ROHM",
+      "doc_number": "legacy 'Standard ICs' sheet",
+      "known": [
+        {
+          "rev": "original",
+          "date": ""
+        }
+      ],
+      "missing": [],
+      "note": "Undated catalogue sheet, pre-2013, covering DIP8, SOP8 and SIP8."
+    },
+    {
+      "vendor": "ROHM",
+      "doc_number": "TSZ02201-0RAR1G200050-1-2",
+      "known": [
+        {
+          "rev": "Rev. 001",
+          "date": "2013-09-10"
+        }
+      ],
+      "missing": [],
+      "note": "Whether a later revision exists is unknown."
+    }
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -299,12 +300,11 @@
     "https://www.rohm.com/products/amplifiers-and-linear/operational-amplifiers/low-noise/dual-supply-voltage/ba15218f-product"
   ],
   "open_questions": [
-    "Which ROHM PDN/EOL notice covers the BA15218F-E2 (LTB 2026-03-31)? TTI's ROHM PDN-1025006 came up in searches but has not been tied to this part.",
-    "What is the exact lifecycle status and discontinuation date of the BA15218N (SIP8) and the DIP8 BA15218?",
-    "Does a TSZ02201-0RAR1G200050 revision later than Rev.001 (2013-09-10) exist? What is the date of the legacy 'Standard ICs' sheet?",
-    "Is the dual-supply lower limit +/-3 V or +/-2 V? Check this against the legacy PDF.",
-    "No die/process change was documented. Is 'BA15218F-T1' a genuine older ROHM tape code?",
-    "Which page is the source of the 'M5218 second source, GBW 7 to 10 MHz' claim and of the 'slightly hard' listening note (C-Area wiki vs mineden.net / nanghi.net)?"
+    "Which ROHM PDN covers the BA15218F-E2 LTB (2026-03-31)? TTI's ROHM PDN-1025006 is not yet tied to it.",
+    "What are the lifecycle status and discontinuation dates of the BA15218N (SIP8) and DIP8 BA15218?",
+    "Is there a TSZ02201-0RAR1G200050 revision after Rev.001, and when was the legacy sheet issued?",
+    "Is the dual-supply lower limit ±3 V or ±2 V? Check the legacy PDF.",
+    "Is 'BA15218F-T1' a genuine older ROHM tape code? Which page sources the M5218 second-source claim?"
   ],
   "sources": [
     "https://w.atwiki.jp/higemouse/pages/104.html",
@@ -320,16 +320,28 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "Legacy ROHM sheet covers BA15218/F/N: 4–32 V supply, 1.0 µVrms RIAA, 3 V/µs, 10 MHz, 0.5 mV (https://www.alldatasheet.com/datasheet-pdf/pdf/35931/ROHM/BA15218.html).",
+      "Packages: DIP8 (BA15218), SOP8 (BA15218F), SIP8 (BA15218N) (https://datasheet.octopart.com/BA15218-Rohm-datasheet-14139886.pdf).",
+      "Current datasheet TSZ02201-0RAR1G200050-1-2 Rev.001, 10.SEP.2013 (https://fscdn.rohm.com/en/products/databook/datasheet/ic/amp_linear/opamp/ba15218f-e.pdf).",
+      "ROHM product page shows BA15218F-E2 as EOL / Last Time Buy (https://www.rohm.com/products/amplifiers-and-linear/operational-amplifiers/low-noise/dual-supply-voltage/ba15218f-product).",
+      "BA15218F-E2 last-time buy 2026-03-31 per distributor (https://www.digikey.co.uk/en/products/detail/rohm-semiconductor/BA15218F-E2/658252).",
+      "DigiKey lists the DIP8 BA15218 as obsolete (https://www.digikey.com/product-detail/en/rohm-semiconductor/BA15218/BA15218-ND/658251).",
+      "C-Area wiki: clearer, more open highs than M5218 (veiled) and NJM4580 (sluggish bass) (https://w.atwiki.jp/higemouse/pages/104.html).",
+      "A note.com headphone-amp BA15218 trial exists (https://note.com/jamjamjamw_w/n/n905ff5d7b92c).",
+      "Japanese hobbyists reportedly call it ROHM's faster M5218 second source (GBW 7 → 10 MHz); exact page not pinned (https://w.atwiki.jp/higemouse/pages/104.html)."
+    ],
     "refuted_claims": [],
     "corrections": [
       "Channel count corrected from 0 to 2 for all part numbers.",
-      "Packages added: BA15218 = DIP8, BA15218F = SOP8, BA15218N = SIP8.",
-      "Statuses filled in: BA15218 obsolete. BA15218F/-E2 EOL with Last Time Buy (LTB 2026-03-31). BA15218N unknown.",
+      "Packages added: BA15218 DIP8, BA15218F SOP8, BA15218N SIP8.",
+      "Statuses: BA15218 obsolete; BA15218F/-E2 EOL, last-time buy 2026-03-31; BA15218N unknown.",
       "Added orderable code BA15218F-E2.",
-      "Added key_specs from the legacy ROHM datasheet (1.0 uVrms RIAA, 3 V/us, 10 MHz GBW, 0.5 mV VIO, 4-32 V single supply).",
-      "Added the current ROHM datasheet TSZ02201-0RAR1G200050-1-2 Rev.001 (10.SEP.2013) and legacy mirror copies.",
-      "Added lineage: hobbyist-reported M5218 second source / faster derivative.",
-      "Reputation softened to single-listener subjective reports. No silicon changes were found, so silicon_changes stays empty."
+      "Key specs added from the legacy ROHM datasheet (1.0 µVrms RIAA, 3 V/µs, 10 MHz, 0.5 mV, 4–32 V).",
+      "Added current datasheet TSZ02201-0RAR1G200050-1-2 Rev.001 (10.SEP.2013) and legacy mirrors.",
+      "Added lineage: hobbyist-reported M5218 second source.",
+      "Reputation softened to single-listener reports; no silicon changes found."
     ],
     "unverified_urls": [
       "https://www.digikey.com/htmldatasheets/production/1815274/0/0/1/ba15218f.html",
@@ -339,23 +351,6 @@
       "https://www.chipfind.net/datasheet/rohm/ba15218.htm",
       "https://www.datasheet4u.com/datasheet-pdf/Rohm/BA15218/pdf.php?id=233243",
       "https://datasheetarchive.com/BA15218F-datasheet.html"
-    ],
-    "claims_confirmed": [
-      "The legacy ROHM sheet 'Dual high slew rate, low noise operational amplifier' covers the BA15218/F/N and lists 4-32 V single / dual supply, Vn 1.0 uVrms (RIAA), SR 3 V/us, GBW 10 MHz and VIO 0.5 mV (https://www.alldatasheet.com/datasheet-pdf/pdf/35931/ROHM/BA15218.html).",
-      "Packages are DIP8 (BA15218), SOP8 (BA15218F) and SIP8 (BA15218N) (https://datasheet.octopart.com/BA15218-Rohm-datasheet-14139886.pdf).",
-      "The current ROHM datasheet is TSZ02201-0RAR1G200050-1-2, Rev.001, dated 10.SEP.2013 (https://fscdn.rohm.com/en/products/databook/datasheet/ic/amp_linear/opamp/ba15218f-e.pdf).",
-      "The ROHM product page shows the BA15218F-E2 as EOL announced / Last Time Buy (https://www.rohm.com/products/amplifiers-and-linear/operational-amplifiers/low-noise/dual-supply-voltage/ba15218f-product).",
-      "The BA15218F-E2 Last Time Buy date is 2026-03-31 per a distributor listing (https://www.digikey.co.uk/en/products/detail/rohm-semiconductor/BA15218F-E2/658252).",
-      "DigiKey lists the DIP8 BA15218 as obsolete (https://www.digikey.com/product-detail/en/rohm-semiconductor/BA15218/BA15218-ND/658251).",
-      "C-Area wiki listening notes: clearer, more open highs than the M5218 (slightly veiled) and NJM4580 (sluggish bass) (https://w.atwiki.jp/higemouse/pages/104.html).",
-      "A note.com headphone-amp BA15218 trial exists (https://note.com/jamjamjamw_w/n/n905ff5d7b92c).",
-      "Japanese hobbyist sources call the BA15218 ROHM's faster second source for the M5218 (GBW 7 to 10 MHz). This came from a search summary and the exact page was not pinned (https://w.atwiki.jp/higemouse/pages/104.html)."
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "japanese-audio-series",
-  "product_pages": [
-    "https://www.rohm.com/products/amplifiers-and-linear/operational-amplifiers/low-noise/dual-supply-voltage/ba15218f-product"
-  ]
+    ]
+  }
 }

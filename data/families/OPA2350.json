@@ -1,212 +1,129 @@
 {
   "id": "OPA2350",
-  "name": "OPA350 / OPA2350 / OPA4350 (Burr-Brown CMOS rail-to-rail single-supply)",
-  "tagline": "Burr-Brown 38 MHz rail-to-rail CMOS op-amp for 5 V rails. Japanese low-voltage CMoy builders say the OPA2350 sounds thick and 'BB-like', with solid bass.",
-  "technology": "CMOS, rail-to-rail input and output (output within 10 mV of the rails), unity-gain stable, 2.7-5.5 V single supply, 38 MHz GBW, 22 V/us, 5 nV/rtHz (high-frequency spot figure)",
+  "name": "OPA350 / OPA2350 / OPA4350",
+  "type": "CMOS rail-to-rail single-supply op-amp, 1/2/4 channels",
+  "tier": "C",
+  "category": "cmos-input",
+  "tagline": "Burr-Brown 38 MHz rail-to-rail CMOS amp for 5 V rails; Japanese CMoy builders call it thick and 'BB-like'.",
   "manufacturers": [
     "Burr-Brown",
     "Texas Instruments"
+  ],
+  "lineage": [
+    {
+      "vendor": "Burr-Brown",
+      "role": "originator",
+      "period": "late 1990s–2000",
+      "note": "Single-supply CMOS design; exact introduction year unconfirmed. Old mirrors carry the Burr-Brown-style title."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "acquirer / current",
+      "period": "2000–present",
+      "note": "Acquired Burr-Brown in 2000. SBOS099 dated September 2000, latest rev D December 2015."
+    }
   ],
   "part_numbers": [
     {
       "pn": "OPA350",
       "channels": 1,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "unknown (TI product page is live; lifecycle not confirmed)",
-      "notes": "Single. Comes in MSOP-8, SO-8 and DIP-8."
+      "status": "unknown",
+      "note": "Single; TI product page live, lifecycle unconfirmed."
+    },
+    {
+      "pn": "OPA350PA / OPA350UA / OPA350EA",
+      "channels": 1,
+      "status": "unknown",
+      "note": "DIP-8 / SO-8 / MSOP-8. PA and EA names inferred from suffix convention."
     },
     {
       "pn": "OPA2350",
       "channels": 2,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
       "status": "active",
-      "notes": "Dual. Comes in MSOP-8 (VSSOP), SO-8 and DIP-8. TI product page shows ACTIVE."
+      "note": "Dual; TI product page shows ACTIVE."
+    },
+    {
+      "pn": "OPA2350PA / OPA2350UA / OPA2350EA",
+      "channels": 2,
+      "status": "unknown",
+      "note": "DIP-8 (socketed CMoy builds) / SO-8 / MSOP-8 (VSSOP); reel part OPA2350EA/250."
     },
     {
       "pn": "OPA4350",
       "channels": 4,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "unknown (TI product page is live; lifecycle not confirmed)",
-      "notes": "Quad. Comes in SO-14 and SSOP-16."
-    },
-    {
-      "pn": "OPA350PA",
-      "channels": 1,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
       "status": "unknown",
-      "notes": "DIP-8. Name inferred from the PA=DIP suffix convention; not individually confirmed."
+      "note": "Quad; TI product page live, lifecycle unconfirmed."
     },
     {
-      "pn": "OPA350UA",
-      "channels": 1,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "SO-8. An Octopart datasheet copy exists."
-    },
-    {
-      "pn": "OPA350EA",
-      "channels": 1,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "MSOP-8. Name inferred from the EA=MSOP suffix convention; not individually confirmed."
-    },
-    {
-      "pn": "OPA2350PA",
-      "channels": 2,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "DIP-8, the version used in socketed CMoy builds. Datasheet mirrors exist on alldatasheet and radiolocman."
-    },
-    {
-      "pn": "OPA2350UA",
-      "channels": 2,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "SO-8."
-    },
-    {
-      "pn": "OPA2350EA",
-      "channels": 2,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "MSOP-8 (VSSOP-8). TI has an orderable part page for OPA2350EA/250 (/250 is the reel quantity)."
-    },
-    {
-      "pn": "OPA4350UA",
+      "pn": "OPA4350UA / OPA4350EA",
       "channels": 4,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
       "status": "unknown",
-      "notes": "SO-14. An Octopart datasheet copy exists."
-    },
-    {
-      "pn": "OPA4350EA",
-      "channels": 4,
-      "vendors": [
-        "Burr-Brown",
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "SSOP-16. TI has an orderable part page for OPA4350EA/2K5."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "Burr-Brown",
-      "role": "originator / designer",
-      "period": "late 1990s-2000 (exact introduction year unconfirmed)",
-      "notes": "Designed as a Burr-Brown single-supply CMOS op-amp. Old mirrors use the Burr-Brown-style title 'High-Speed, Single-Supply, Rail-to-Rail OPERATIONAL AMPLIFIERS'."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "role": "current manufacturer (acquired Burr-Brown in 2000)",
-      "period": "2000-present",
-      "notes": "TI datasheet SBOS099 is dated September 2000 and was last revised in December 2015 (rev D). The OPA2350 shows as ACTIVE."
+      "note": "SO-14 / SSOP-16; reel part OPA4350EA/2K5."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Gain-bandwidth product",
+      "parameter": "Input noise (1 kHz)",
+      "value": "5 nV/√Hz HF spot (reportedly 100 kHz); 1 kHz likely higher",
+      "condition": "typ",
+      "source": "TI product page"
+    },
+    {
+      "parameter": "GBW",
       "value": "38 MHz",
       "condition": "typ",
-      "source": "https://www.ti.com/product/OPA2350"
+      "source": "TI product page"
     },
     {
       "parameter": "Slew rate",
-      "value": "22 V/us",
+      "value": "22 V/µs",
       "condition": "typ",
-      "source": "https://www.ti.com/product/OPA2350"
-    },
-    {
-      "parameter": "Input voltage noise density",
-      "value": "5 nV/rtHz",
-      "condition": "typ; a high-frequency spot figure (believed f = 100 kHz, unconfirmed). CMOS 1/f noise likely makes the audio-band figure higher.",
-      "source": "https://www.ti.com/product/OPA2350"
+      "source": "TI product page"
     },
     {
       "parameter": "THD+N",
       "value": "0.0006%",
       "condition": "typ, datasheet test conditions",
-      "source": "https://www.ti.com/product/OPA2350"
+      "source": "TI product page"
     },
     {
-      "parameter": "Supply voltage",
-      "value": "2.7 V to 5.5 V single supply",
-      "condition": "fully specified range",
-      "source": "https://www.ti.com/product/OPA2350"
+      "parameter": "Supply range",
+      "value": "2.7–5.5 V single supply (fully specified)",
+      "condition": "spec −40/+85 °C; operating −55/+150 °C",
+      "source": "TI product page; SBOS099 mirror"
     },
     {
-      "parameter": "Output swing",
-      "value": "within 10 mV of the rails",
-      "condition": "rail-to-rail output, datasheet front-page condition",
-      "source": "https://www.ti.com/lit/ds/symlink/opa2350.pdf"
-    },
-    {
-      "parameter": "Input common-mode range",
-      "value": "rail-to-rail",
-      "condition": "",
-      "source": "https://www.ti.com/lit/ds/symlink/opa2350.pdf"
-    },
-    {
-      "parameter": "Temperature range",
-      "value": "-40 C to +85 C specified; -55 C to +150 C operating",
-      "condition": "",
-      "source": "https://www.kontest.ru/datasheet/ti/opa2350.pdf"
-    },
-    {
-      "parameter": "Quiescent current",
-      "value": "about 5.2 mA per amplifier typ (unconfirmed)",
+      "parameter": "Supply current",
+      "value": "~5.2 mA per amplifier (unconfirmed)",
       "condition": "typ",
-      "source": "model memory; not confirmed in this check"
+      "source": "Unconfirmed; check SBOS099D"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "CMOS, rail-to-rail in; output within 10 mV of rails",
+      "condition": "datasheet front-page condition",
+      "source": "SBOS099 (TI symlink PDF)"
     }
   ],
   "reputation": {
-    "summary": "Praise for this family comes mainly from Japanese hobbyist writing. On nabe's blog (nabe.adiary.jp), in the op-amp spec/sound list and the low-voltage headphone-amp articles, the OPA2350 is said to sound thick (音に厚みがあり), with solid bass and a 'BB-like' character. The blog says it has more body than the AD822, works even without an output buffer, and is a recommended DIP choice for 5 V CMoy-style builds. It also comes up in a kakaku.com thread on small 3 V headphone amps. The OPA2353 praise cited here is for the sibling part, not the OPA2350. Western audiophile coverage is thin.",
+    "summary": "Praise comes mainly from Japanese hobbyists. nabe's blog calls the OPA2350 thick (音に厚み), with solid bass and a 'BB-like' character, fuller than the AD822, and a recommended DIP pick for 5 V CMoy builds, even without an output buffer. It also appears in a kakaku.com thread on 3 V headphone amps. Western audiophile coverage is thin.",
     "sonic_descriptors": [
-      "thick / full-bodied (音に厚み)",
+      "thick (音に厚み)",
+      "full-bodied",
       "solid bass",
       "'BB-like' character"
     ],
     "typical_uses": [
-      "5 V / battery CMoy-style headphone amplifiers",
-      "low-voltage portable headphone amps (per nabe, can run without an output buffer)",
-      "single-supply audio processing and ADC driving (TI's stated applications)"
+      "5 V and battery CMoy-style headphone amplifiers",
+      "Low-voltage portable headphone amps, even without output buffer",
+      "Single-supply audio processing and ADC driving (TI)"
     ],
     "caveats": [
-      "The absolute maximum supply is only about 5.5 V. Do not drop it into a +/-12 V or +/-15 V op-amp socket, where it will be destroyed.",
-      "The praise is subjective and comes from a few Japanese hobbyist sources.",
-      "The 5 nV/rtHz headline is a high-frequency figure. Being CMOS, noise in the audio band is likely higher.",
-      "Rail-to-rail input uses complementary input pairs, so behavior can change in the input crossover region. See the datasheet.",
-      "Quiescent current is relatively high for battery use (about 5 mA per amplifier, unconfirmed)."
+      "Absolute maximum supply is about 5.5 V: a ±12 V or ±15 V socket will destroy it.",
+      "Praise is subjective and comes from a few Japanese hobbyist sources.",
+      "The 5 nV/√Hz headline is a high-frequency figure; CMOS audio-band noise is likely higher.",
+      "Rail-to-rail input uses complementary pairs; behaviour can shift in the input crossover region.",
+      "Fairly high quiescent current for battery use (about 5 mA per amplifier, unconfirmed)."
     ],
     "sources": [
       "https://nabe.adiary.jp/opamp-speclist",
@@ -215,6 +132,13 @@
       "http://designideas.cocolog-nifty.com/blog/2008/10/opa2353-cmoy-li.html"
     ]
   },
+  "counterfeit_notes": "No family-specific counterfeit reports. Take usual care with DIP-8 OPA2350PA from marketplace sellers: a remarked non-rail-to-rail part shows poor output swing near the rails at 5 V.",
+  "alternatives": [
+    "OPA2353 (lower-power sibling, praised in CMoy builds)",
+    "OPA2354 (100 MHz rail-to-rail CMOS, 2.5–5.5 V)",
+    "AD822 (JFET single-supply dual; nabe's comparison)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "Texas Instruments",
@@ -226,7 +150,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current TI datasheet (one shared document for all three parts). A symlink always serves the latest revision."
+      "note": "Current TI datasheet shared by all three parts; symlink serves latest."
     },
     {
       "vendor": "Texas Instruments",
@@ -238,7 +162,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Literature-number link. It resolves to the latest revision."
+      "note": "Literature-number link; resolves to the latest revision."
     },
     {
       "vendor": "Texas Instruments",
@@ -249,8 +173,8 @@
       "url": "https://www.ti.com/lit/ds/symlink/opa350.pdf",
       "url_kind": "vendor_current",
       "confidence": "low",
-      "revision_status": "confirmed",
-      "note": "unconfirmed. URL follows the TI symlink pattern but was not seen in search results."
+      "revision_status": "probable",
+      "note": "Follows TI symlink pattern; not yet confirmed to resolve."
     },
     {
       "vendor": "Texas Instruments",
@@ -261,8 +185,8 @@
       "url": "https://www.ti.com/lit/ds/symlink/opa4350.pdf",
       "url_kind": "vendor_current",
       "confidence": "low",
-      "revision_status": "confirmed",
-      "note": "unconfirmed. URL follows the TI symlink pattern but was not seen in search results."
+      "revision_status": "probable",
+      "note": "Follows TI symlink pattern; not yet confirmed to resolve."
     },
     {
       "vendor": "Texas Instruments",
@@ -274,7 +198,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Mouser copy frozen at rev C. The filename carries the revision letter."
+      "note": "Mouser copy frozen at rev C; filename carries the letter."
     },
     {
       "vendor": "Texas Instruments",
@@ -286,7 +210,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "The search summary tied the header 'SBOS099C - SEPTEMBER 2000 - REVISED JANUARY 2005' to this radiolocman copy."
+      "note": "Header reads 'SBOS099C – SEPTEMBER 2000 – REVISED JANUARY 2005'."
     },
     {
       "vendor": "Texas Instruments",
@@ -298,7 +222,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision held is unconfirmed. The low di number suggests an older upload."
+      "note": "Low di number suggests an older upload."
     },
     {
       "vendor": "Texas Instruments",
@@ -310,7 +234,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision unconfirmed. The title style matches the rev C-era PDF title."
+      "note": "Title style matches the rev C-era PDF."
     },
     {
       "vendor": "Texas Instruments",
@@ -322,7 +246,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision unconfirmed."
+      "note": ""
     },
     {
       "vendor": "Texas Instruments",
@@ -334,7 +258,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision unconfirmed."
+      "note": ""
     },
     {
       "vendor": "Texas Instruments",
@@ -346,7 +270,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision unconfirmed."
+      "note": ""
     },
     {
       "vendor": "Texas Instruments",
@@ -358,7 +282,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision unconfirmed. The legacy 'FEATURES: RAIL-TO-RAIL INPUT...' layout means it predates rev D and could be rev A, B or C."
+      "note": "Legacy Burr-Brown layout; predates rev D, possibly rev A–C."
     },
     {
       "vendor": "Burr-Brown / Texas Instruments",
@@ -370,7 +294,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision unconfirmed. The Burr-Brown-style title means it is an older, pre-2015 revision."
+      "note": "Burr-Brown-style title: an older, pre-2015 revision."
     },
     {
       "vendor": "Texas Instruments",
@@ -382,7 +306,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "University mirror. Revision unconfirmed. The title style suggests a pre-2015 revision."
+      "note": "University mirror; title style suggests a pre-2015 revision."
     },
     {
       "vendor": "Texas Instruments",
@@ -394,7 +318,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "probable",
-      "note": "The current-format TI title points to rev D, but this is unconfirmed."
+      "note": "Current-format TI title suggests rev D."
     },
     {
       "vendor": "Texas Instruments",
@@ -406,7 +330,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "probable",
-      "note": "The current-format title points to rev D, but this is unconfirmed."
+      "note": "Current-format title suggests rev D."
     },
     {
       "vendor": "Burr-Brown (TI)",
@@ -418,7 +342,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Listed under Burr-Brown. Revision unconfirmed. Sibling pages exist for OPA2350UA (229276) and OPA2350PA (229278)."
+      "note": "Listed under Burr-Brown; sibling pages for OPA2350UA (229276), OPA2350PA (229278)."
     },
     {
       "vendor": "Burr-Brown (TI)",
@@ -430,52 +354,78 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision unconfirmed. The low entry number suggests an older upload, possibly rev A or earlier."
+      "note": "Low entry number suggests an older upload, possibly rev A."
     }
+  ],
+  "product_pages": [
+    "https://www.ti.com/product/OPA2350",
+    "https://www.ti.com/product/OPA350",
+    "https://www.ti.com/product/OPA4350"
   ],
   "revision_history": [
     {
-      "vendor": "Texas Instruments (ex Burr-Brown)",
+      "vendor": "Texas Instruments",
       "doc_number": "SBOS099",
-      "revision": "(original)",
-      "date": "September 2000",
-      "changes": "First SBOS099-numbered release at the time of the Burr-Brown/TI transition. Any earlier Burr-Brown document is not identified."
+      "revision": "original",
+      "date": "2000-09",
+      "changes": "First SBOS099 release at the Burr-Brown/TI transition. No earlier Burr-Brown document identified."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SBOS099",
       "revision": "A",
-      "date": "July 2001",
-      "changes": "Changes not found. The date comes from a search summary; the mirror holding it was not identified."
+      "date": "2001-07",
+      "changes": "Changes unknown; no mirror holding this revision identified."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SBOS099",
       "revision": "B",
-      "date": "unknown",
-      "changes": "Must exist between A and C, but its date and changes were not found."
+      "date": "",
+      "changes": "Must exist between A and C; date and changes unknown."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SBOS099",
       "revision": "C",
-      "date": "January 2005",
-      "changes": "Changes not found. A Mouser copy (sbos099c) preserves this revision."
+      "date": "2005-01",
+      "changes": "Changes unknown. Preserved in a Mouser copy (sbos099c)."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SBOS099",
       "revision": "D",
-      "date": "December 2015",
-      "changes": "Current revision. Probably a conversion to TI's modern datasheet format (ESD ratings, pin-function tables, application/layout sections), but the change list was not confirmed. No die change is indicated."
+      "date": "2015-12",
+      "changes": "Current revision. Probably a move to TI's modern format (ESD ratings, pin tables, layout sections); unconfirmed. No die change indicated."
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No counterfeit reports specific to this family were found. Take generic care with DIP-8 OPA2350PA bought from marketplace sellers. A remarked non-rail-to-rail part would show up as poor output swing near the rails at 5 V.",
-  "alternatives": [
-    "OPA2353 (lower-power CMOS rail-to-rail sibling, also praised in Japanese CMoy builds)",
-    "OPA2354 (TI 100 MHz rail-to-rail CMOS, 2.5-5.5 V)",
-    "AD822 (JFET-input single-supply dual; nabe's comparison point)"
+  "revision_chains": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS099",
+      "known": [
+        {
+          "rev": "original",
+          "date": "2000-09"
+        },
+        {
+          "rev": "A",
+          "date": "2001-07"
+        },
+        {
+          "rev": "C",
+          "date": "2005-01"
+        },
+        {
+          "rev": "D",
+          "date": "2015-12"
+        }
+      ],
+      "missing": [
+        "B"
+      ],
+      "note": "Rev C frozen at Mouser; rev A date reported but no copy located; any pre-2000 Burr-Brown document unknown."
+    }
   ],
   "ti_literature_numbers": [
     "SBOS099"
@@ -492,11 +442,11 @@
     "https://www.ti.com/product/OPA4350"
   ],
   "open_questions": [
-    "Introduction year of the OPA350 family and any pre-September-2000 Burr-Brown datasheet (pre-SBOS numbering) were not found.",
-    "The date of SBOS099B and the change lists for revs A-D were not found. It is also unknown which mirror holds rev A (July 2001).",
-    "It is not established whether any TI RFAB fab-transfer or die-revision PCN covers OPA350/OPA2350/OPA4350. Such PCNs exist for other TI amplifiers (2021-2023), but none was linked to this family.",
-    "Lifecycle status of OPA350, OPA4350 and of the DIP OPA2350PA is not confirmed; only the OPA2350 base part was confirmed ACTIVE.",
-    "Check the frequency behind the 5 nV/rtHz figure (believed 100 kHz), the noise at 1 kHz, and quiescent current against SBOS099D."
+    "When was the OPA350 family introduced, and was there a pre-September-2000 Burr-Brown datasheet?",
+    "Date of SBOS099B, change lists for revs A–D, and which mirror holds rev A (July 2001)?",
+    "Does any TI RFAB fab-transfer or die-revision PCN (2021–2023 era) cover OPA350/OPA2350/OPA4350?",
+    "Lifecycle status of OPA350, OPA4350 and DIP OPA2350PA; only the OPA2350 base part is confirmed ACTIVE.",
+    "Confirm the 5 nV/√Hz frequency (believed 100 kHz), 1 kHz noise and quiescent current against SBOS099D."
   ],
   "sources": [
     "https://nabe.adiary.jp/opamp-speclist",
@@ -518,40 +468,32 @@
   ],
   "verification": {
     "status": "partially-verified",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "SBOS099D, dated September 2000 and revised December 2015, covers all three parts: https://www.ti.com/lit/ds/symlink/opa2350.pdf and https://datasheets.b-cdn.net/files/250-Texas-Instruments-datasheet-10254417.pdf",
+      "SBOS099C dated September 2000, revised January 2005: https://www.mouser.com/datasheet/2/405/sbos099c-92750.pdf and https://www.radiolocman.com/datasheet/data.html?di=279149&%2FOPA350=",
+      "SBOS099A reportedly dated July 2001; no mirror holding it identified.",
+      "38 MHz GBW, 22 V/µs, 5 nV/√Hz, 0.0006% THD+N, 2.7–5.5 V, output within 10 mV of rails: https://www.ti.com/product/OPA2350",
+      "OPA2350 status is ACTIVE: https://www.ti.com/product/OPA2350",
+      "Single and dual in MSOP-8/SO-8/DIP-8; quad in SSOP-16/SO-14: https://users.ece.utexas.edu/~valvano/Datasheets/OPA4350.pdf",
+      "Specified −40 to 85 °C, operating −55 to 150 °C: https://www.kontest.ru/datasheet/ti/opa2350.pdf",
+      "Orderable pages for OPA2350EA/250 and OPA4350EA/2K5: https://www.ti.com/product/OPA2350/part-details/OPA2350EA/250 and https://www.ti.com/product/OPA4350/part-details/OPA4350EA/2K5",
+      "Burr-Brown mirrors exist for OPA2350, OPA2350UA and OPA2350PA: https://www.alldatasheet.com/datasheet-pdf/pdf/229267/BURR-BROWN/OPA2350.html"
+    ],
     "refuted_claims": [],
     "corrections": [
-      "Set channel counts to 1/2/4; the draft had 0 for all.",
-      "Changed OPA2350 status from unknown to active (TI product page).",
-      "Added part numbers OPA350PA/UA/EA and OPA4350UA/EA. OPA350PA and OPA350EA are inferred from the suffix convention.",
-      "Added the TI datasheet SBOS099 (current rev D, December 2015) and a revision history (original September 2000; A July 2001; B date unknown; C January 2005; D December 2015).",
-      "Added mirror entries, including a Mouser copy frozen at rev C (sbos099c).",
-      "Added key specs, lineage, tagline, caveats (5.5 V supply limit) and alternatives.",
-      "Made clear that the cocolog OPA2353 praise is for the sibling part, not the OPA2350.",
-      "silicon_changes stays empty: no family-specific PCN or die change was found."
+      "Channel counts set to 1/2/4 (previously 0).",
+      "OPA2350 status changed from unknown to active, per the TI product page.",
+      "Added OPA350PA/UA/EA and OPA4350UA/EA; OPA350PA and OPA350EA inferred from the suffix convention.",
+      "Added SBOS099 (rev D, December 2015) and its revision history back to September 2000.",
+      "Added mirrors, including a Mouser copy frozen at rev C (sbos099c).",
+      "Cocolog OPA2353 praise attributed to the sibling part, not the OPA2350.",
+      "No family-specific PCN or die change found, so silicon_changes is empty."
     ],
     "unverified_urls": [
       "https://www.ti.com/lit/ds/symlink/opa350.pdf",
       "https://www.ti.com/lit/ds/symlink/opa4350.pdf",
       "http://www.burr-brown.com/"
-    ],
-    "claims_confirmed": [
-      "Datasheet SBOS099D is dated September 2000 and revised December 2015, covering OPA350/OPA2350/OPA4350: https://www.ti.com/lit/ds/symlink/opa2350.pdf and https://datasheets.b-cdn.net/files/250-Texas-Instruments-datasheet-10254417.pdf",
-      "SBOS099C is dated September 2000, revised January 2005: https://www.mouser.com/datasheet/2/405/sbos099c-92750.pdf and https://www.radiolocman.com/datasheet/data.html?di=279149&%2FOPA350=",
-      "A search summary reported SBOS099A dated July 2001; the specific mirror was not identified (search on SBOS099 revision history).",
-      "Specs 38 MHz GBW, 22 V/us, 5 nV/rtHz, 0.0006% THD+N, fully specified 2.7-5.5 V, rail-to-rail output within 10 mV: https://www.ti.com/product/OPA2350",
-      "OPA2350 status is ACTIVE: https://www.ti.com/product/OPA2350",
-      "Single and dual come in MSOP-8/SO-8/DIP-8; quad in SSOP-16/SO-14: https://users.ece.utexas.edu/~valvano/Datasheets/OPA4350.pdf",
-      "Specified -40 C to 85 C, operating -55 C to 150 C: https://www.kontest.ru/datasheet/ti/opa2350.pdf",
-      "Orderable part pages exist for OPA2350EA/250 and OPA4350EA/2K5: https://www.ti.com/product/OPA2350/part-details/OPA2350EA/250 and https://www.ti.com/product/OPA4350/part-details/OPA4350EA/2K5",
-      "Burr-Brown datasheet mirrors for OPA2350, OPA2350UA and OPA2350PA exist: https://www.alldatasheet.com/datasheet-pdf/pdf/229267/BURR-BROWN/OPA2350.html"
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "cmos-input",
-  "product_pages": [
-    "https://www.ti.com/product/OPA2350",
-    "https://www.ti.com/product/OPA350",
-    "https://www.ti.com/product/OPA4350"
-  ]
+    ]
+  }
 }

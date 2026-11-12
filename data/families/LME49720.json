@@ -1,249 +1,183 @@
 {
   "id": "LME49720",
-  "name": "LM4562 / LME49720 / LME49710 / LME49740 (National ultra-low-distortion bipolar audio op-amps)",
-  "tagline": "National's 2006-07 audio op-amp with 2.7 nV/rtHz noise and 0.00003% THD+N; the standard NE5532 'upgrade', with the metal-can HA versions as collector items.",
-  "technology": "Bipolar input, voltage feedback, unity-gain stable; 55 MHz GBW, ±2.5 V to ±17 V supply. LM4562 (dual) and LME49720 (dual) are one die sold under two part numbers (per TI E2E). LME49710 is the single and LME49740 the quad of the same series. Inputs have differential protection diodes. Packages: SOIC (MA), PDIP (NA), TO-99 metal can (HA; dual and single only). Under TI PCN 20180308002 (March 2018), LM4562/LME49720 wafer production moved from a 150 mm line to TI's RFAB (Richardson, TX), on a newer process with a die-shrink redesign. Part numbers did not change.",
+  "name": "LM4562 / LME49720 / LME49710 / LME49740",
+  "type": "Bipolar ultra-low-distortion audio op-amp, 1/2/4 channels",
+  "tier": "A",
+  "category": "bipolar-modern-low-noise",
+  "tagline": "National's 2006–07 audio op-amp: 2.7 nV/√Hz, 0.00003% THD+N; the standard NE5532 upgrade, TO-99 cans collectable.",
   "manufacturers": [
-    "National Semiconductor (originator, 2006-2011)",
-    "Texas Instruments (acquirer, 2011-present)"
-  ],
-  "part_numbers": [
-    {
-      "pn": "LM4562MA/NOPB, LM4562MAX/NOPB (SOIC-8)",
-      "channels": 2,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "active: in TI E2E 565489 (c.2017), TI said it would keep producing LM4562MAX (SOIC). Moved to RFAB under PCN 20180308002. 2026 orderable status not re-checked.",
-      "notes": "Original name, released Aug 2006. Same silicon as LME49720 (TI E2E). Post-2018 production uses the RFAB die-shrink die."
-    },
-    {
-      "pn": "LM4562NA/NOPB (PDIP-8)",
-      "channels": 2,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "unknown: sources conflict",
-      "notes": "The E2E 565489 summaries are ambiguous about whether PDIP stayed active or went to lifebuy. Community notes say TI dropped DIP. Fake LM4562NA parts are documented (JE6LVE; diyAudio thread 266368)."
-    },
-    {
-      "pn": "LM4562HA/NOPB (TO-99 metal can)",
-      "channels": 2,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "lifebuy c.2017 per TI E2E 565489 (confirmed by web search); presumed obsolete now",
-      "notes": "TO-99 cans were put on lifebuy."
-    },
-    {
-      "pn": "LME49720MA/NOPB, LME49720MAX/NOPB (SOIC-8)",
-      "channels": 2,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "Active (the LME49720 product status was reported Active in a Sept 2026 web search summary; orderable-level status not seen)",
-      "notes": "Renamed LM4562. The LME49720 datasheet (SNAS393) was first issued March 2007. Covered by PCN 20180308002 (moved to RFAB)."
-    },
-    {
-      "pn": "LME49720NA/NOPB (PDIP-8)",
-      "channels": 2,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "unknown: sources conflict",
-      "notes": "Listed in the c.2015 TI EOL parts list discussed on diyAudio (thread 280990, 'TI to discontinue many ICs'). Later reported active (E2E c.2017). A fake 'LME49720NA' is documented on diyAudio (thread 386852)."
-    },
-    {
-      "pn": "LME49720HA/NOPB (TO-99)",
-      "channels": 2,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "lifebuy c.2017 per TI E2E 565489; presumed obsolete (not re-checked)",
-      "notes": "The most prized variant. A National-attributed comment on diyAudio says the can puts much less stress on the die than plastic DIP (forum claim)."
-    },
-    {
-      "pn": "LME49710MA/NOPB (SOIC-8)",
-      "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "active c.2017: per TI E2E 565489, LME49710 'remains without changes' and is Active on all three packages. 2026 not re-checked.",
-      "notes": "Single version, 2.5 nV/rtHz. Datasheet SNAS376 was first issued Nov 2006. PCN 20180308002 is not known to cover it."
-    },
-    {
-      "pn": "LME49710NA/NOPB (PDIP-8)",
-      "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "active c.2017 per TI E2E 565489; 2026 not re-checked",
-      "notes": "A 2015 E2E thread (457875) had announced a process-node end of life, later reversed."
-    },
-    {
-      "pn": "LME49710HA/NOPB (TO-99)",
-      "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "active c.2017 per TI E2E 565489 ('three packages'); now likely obsolete (resellers sold out; not re-checked)",
-      "notes": "Fake LME49710 parts are documented (tinytransistors, 2022)."
-    },
-    {
-      "pn": "LME49740MA/NOPB (SOIC-14)",
-      "channels": 4,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "unknown: appeared in the c.2015 TI EOL list (diyAudio thread 280990); current status not re-checked",
-      "notes": "Quad version, 2.7 nV/rtHz. Datasheet SNAS377 was first issued Feb 2007."
-    },
-    {
-      "pn": "LME49740NA/NOPB (PDIP-14)",
-      "channels": 4,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "discontinued (the LME49740 DIP was reported discontinued in diyAudio thread 280990, c.2015)",
-      "notes": "A National datasheet copy is reported on Octopart (unconfirmed URL)."
-    }
+    "National Semiconductor",
+    "Texas Instruments"
   ],
   "lineage": [
     {
       "vendor": "National Semiconductor",
       "role": "originator",
-      "period": "2006-2011",
-      "notes": "LM4562 released Aug 2006 (National document number 201572 per alldatasheet summaries). LME49710 followed in Nov 2006 and the LME49740 quad in Feb 2007. The LME49720 was a marketing rename in Mar 2007. National also offered the LME49860 (±22 V) in the same series. National-era parts with lot codes starting 'JR' came from the Greenock (UK) wafer fab, with assembly in Malaysia (per diyAudio)."
+      "period": "2006–2011",
+      "note": "LM4562 Aug 2006 (DS201572), LME49710 Nov 2006, LME49740 Feb 2007; LME49720 rename Mar 2007. Greenock-fabbed."
     },
     {
       "vendor": "Texas Instruments",
       "role": "acquirer",
-      "period": "2011-present",
-      "notes": "TI reissued the datasheets in TI format in April 2013 (SNAS326J, SNAS393C, SNAS376C, SNAS377B), then SNAS326K (Dec 2013) and SNAS393D (Nov 2016). In 2015 TI announced a process-node end of life and suggested OPA1611/OPA1602 as replacements. Forum and E2E accounts say the 6-inch wafer line went away and the part was resurrected on an 8-inch line. PCN 20180308002 (March 2018) moved LM4562/LME49720 to RFAB, Richardson TX, with a die-shrink redesign. The E2E answer names the source fab as SFAB, Sherman TX; a diyAudio thread title says 'GB to US'. Forum posts say LM4562 prices dropped sharply in early 2019. TO-99 packages were on lifebuy from c.2017."
+      "period": "2011–present",
+      "note": "TI-format reissues 2013–2016; 2015 EOL scare; PCN 20180308002 moved wafers Greenock→Dallas DL-LIN; TO-99 lifebuy c.2017."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "LM4562MA/NOPB, LM4562MAX/NOPB (SOIC-8)",
+      "channels": 2,
+      "status": "active",
+      "note": "Original name (Aug 2006); same die as LME49720. TI kept LM4562MAX in production."
+    },
+    {
+      "pn": "LM4562NA/NOPB (PDIP-8)",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Sources conflict on active vs lifebuy. Fakes documented (JE6LVE; diyAudio 266368)."
+    },
+    {
+      "pn": "LM4562HA/NOPB (TO-99 metal can)",
+      "channels": 2,
+      "status": "obsolete",
+      "note": "Lifebuy c.2017 (TI E2E 565489); presumed obsolete."
+    },
+    {
+      "pn": "LME49720MA/NOPB, LME49720MAX/NOPB (SOIC-8)",
+      "channels": 2,
+      "status": "active",
+      "note": "Renamed LM4562; datasheet SNAS393 from March 2007. Covered by PCN 20180308002."
+    },
+    {
+      "pn": "LME49720NA/NOPB (PDIP-8)",
+      "channels": 2,
+      "status": "unknown",
+      "note": "On c.2015 EOL list (diyAudio 280990), later reported active. Fake documented (diyAudio 386852)."
+    },
+    {
+      "pn": "LME49720HA/NOPB (TO-99)",
+      "channels": 2,
+      "status": "obsolete",
+      "note": "Most prized variant; lifebuy c.2017, presumed obsolete. Can reportedly stresses the die less."
+    },
+    {
+      "pn": "LME49710MA/NOPB (SOIC-8)",
+      "channels": 1,
+      "status": "obsolete",
+      "note": "Single, 2.5 nV/√Hz; datasheet SNAS376 (Nov 2006). EOL under PDN 20170721000C."
+    },
+    {
+      "pn": "LME49710NA/NOPB (PDIP-8)",
+      "channels": 1,
+      "status": "obsolete",
+      "note": "EOL under PDN 20170721000C after a reversed 2015 EOL notice (E2E 457875)."
+    },
+    {
+      "pn": "LME49710HA/NOPB (TO-99)",
+      "channels": 1,
+      "status": "obsolete",
+      "note": "EOL under PDN 20170721000C. Fakes documented (tinytransistors, 2022)."
+    },
+    {
+      "pn": "LME49740MA/NOPB (SOIC-14)",
+      "channels": 4,
+      "status": "unknown",
+      "note": "Quad, 2.7 nV/√Hz; datasheet SNAS377 (Feb 2007). On c.2015 EOL list."
+    },
+    {
+      "pn": "LME49740NA/NOPB (PDIP-14)",
+      "channels": 4,
+      "status": "obsolete",
+      "note": "Reported discontinued c.2015 (diyAudio 280990)."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise density",
-      "value": "2.7 nV/rtHz typ (LM4562, LME49720, LME49740); 2.5 nV/rtHz typ (LME49710)",
-      "condition": "f = 1 kHz",
-      "source": "LME49720 value from a Sept 2026 web search summary of the SNAS393 Mouser copies; others from datasheet front pages (SNAS326, SNAS377, SNAS376) in prior passes"
+      "parameter": "Input noise (1 kHz)",
+      "value": "2.7 nV/√Hz (LM4562/LME49720/LME49740); 2.5 (LME49710)",
+      "condition": "f = 1 kHz, typ",
+      "source": "SNAS393, SNAS326, SNAS376, SNAS377"
     },
     {
       "parameter": "THD+N",
       "value": "0.00003% typ",
-      "condition": "datasheet headline condition (AV = 1, 1 kHz, audio BW); exact VOUT/RL condition not re-verified",
-      "source": "LME49720 SNAS393 (web search summary Sept 2026); LM4562/LME49710/LME49740 datasheets (prior-pass summaries)"
+      "condition": "AV = 1, 1 kHz; VOUT/RL unconfirmed",
+      "source": "SNAS393 and family datasheets"
     },
     {
-      "parameter": "Gain-bandwidth product",
+      "parameter": "GBW",
       "value": "55 MHz typ",
-      "condition": "typical",
-      "source": "SNAS326K (cited in dshills/KiCadAI audio_opamps.json); RS catalogue text 'LME49720MA/NOPB ... 55MHz' (not re-checked on the web this pass)"
+      "condition": "typ",
+      "source": "SNAS326K; RS catalogue"
     },
     {
       "parameter": "Slew rate",
-      "value": "±20 V/us typ; 15 V/us guaranteed min",
+      "value": "±20 V/µs typ; 15 V/µs min",
       "condition": "VS = ±15 V",
-      "source": "typ: LME49720 SNAS393 (web search summary Sept 2026); min: SNAS326K via KiCadAI extract"
+      "source": "SNAS393 (typ); SNAS326K (min)"
     },
     {
       "parameter": "Supply range",
-      "value": "±2.5 V to ±17 V; absolute max VS = 36 V",
-      "condition": "",
-      "source": "LME49720 SNAS393 (web search summary Sept 2026); LM4562/LME49710 National datasheets; KiCadAI SNAS326K extract"
+      "value": "±2.5 V to ±17 V; abs max 36 V",
+      "condition": "storage −65 to +150 °C",
+      "source": "SNAS393; SNAS326K"
     },
     {
-      "parameter": "Total supply current (dual, whole package)",
-      "value": "12 mA max",
-      "condition": "test condition not seen",
-      "source": "SNAS326K via KiCadAI extract (supply_current max 12 mA)"
-    },
-    {
-      "parameter": "Input offset voltage / input bias current",
-      "value": "0.1 mV typ / 10 nA typ",
-      "condition": "VS = ±15 V (assumed from table context)",
-      "source": "nimaid/Sonic-Athame-eurorack PCL.md table linking snas326k (third-party)"
-    },
-    {
-      "parameter": "Open-loop gain",
-      "value": "140 dB typ",
-      "condition": "",
-      "source": "National LME49720 datasheet (op316.com copy, prior-pass search summary)"
+      "parameter": "Supply current",
+      "value": "12 mA max (dual, whole package)",
+      "condition": "test condition unknown",
+      "source": "SNAS326K"
     },
     {
       "parameter": "Output current",
-      "value": "23 mA guaranteed (magnitude)",
-      "condition": "RL = 600 ohm, 25 C",
-      "source": "SNAS326K via KiCadAI extract"
+      "value": "23 mA guaranteed; swing within 2.5 V of rails",
+      "condition": "600 Ω, ±15 V, 25 °C; ±14.1 V into 10 kΩ",
+      "source": "SNAS326K"
     },
     {
-      "parameter": "Output swing / input CM range",
-      "value": "output within 2.5 V of the rails into 600 ohm at ±15 V (guaranteed); ±14.1 V into 10 kohm (typ, third-party table); input CM range within 2 V of the rails (guaranteed)",
-      "condition": "VS = ±15 V",
-      "source": "SNAS326K via KiCadAI extract; nimaid PCL.md for the 10 kohm figure"
+      "parameter": "Offset voltage",
+      "value": "0.1 mV typ",
+      "condition": "±15 V (assumed)",
+      "source": "SNAS326K (third-party table)"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "10 nA typ",
+      "condition": "±15 V (assumed)",
+      "source": "SNAS326K (third-party table)"
     },
     {
       "parameter": "Input stage",
-      "value": "bipolar, with differential input protection diodes",
-      "condition": "",
-      "source": "TI E2E thread 337068 'LME49710, LME49720 and LME49860 Differential Input Diodes'"
-    },
-    {
-      "parameter": "Storage temperature",
-      "value": "-65 C to +150 C",
-      "condition": "absolute max",
-      "source": "National LME49710 datasheet (prior-pass search summary)"
-    },
-    {
-      "parameter": "Input current noise; per-channel quiescent current typ",
-      "value": "not verified",
-      "condition": "",
-      "source": "open question: read SNAS393D / SNAS326K tables"
+      "value": "Bipolar, differential input diodes; Aol 140 dB typ",
+      "condition": "input CM within 2 V of rails",
+      "source": "TI E2E 337068; LME49720 datasheet"
     }
   ],
   "reputation": {
-    "summary": "Hi-Fi op-amp rollers and DIY builders treat this as the default 'better than NE5532' part. Its distortion measures near the limits of test equipment. NwAvGuy's 2011 op-amp measurements are often cited in its favour; the discovery sweep paraphrases him as saying it matches 'any elite part' (wording not re-checked). It is reported as a stock or socketed part in Asus Xonar and Creative Sound Blaster cards (exact part per card not re-checked), and it is widely used in Chinese DACs. Listeners call it neutral, clear, transparent and detailed, and sometimes 'clinical'. Japanese folklore holds that the LME49720 marking sounds brighter and the LM4562 bassier, although TI says the silicon is the same. Forum posters single out the TO-99 HA versions. All of these are subjective, unblinded reports.",
+    "summary": "The default 'better than NE5532' upgrade, with distortion near test-equipment limits; NwAvGuy's 2011 measurements are often cited for it. Reportedly stock or socketed in Asus Xonar and Creative cards and common in Chinese DACs. Listeners call it neutral, clear and detailed, sometimes clinical. LM4562 vs LME49720 'voicing' is folklore: TI says same silicon.",
     "sonic_descriptors": [
       "neutral",
-      "clear / transparent",
+      "clear, transparent",
       "detailed",
       "clean, tight bass",
-      "clinical / analytical (some listeners)",
-      "'too clear' on violins (diyAudio, comparing it with LME49723)",
-      "LME49720: brighter, glossier; LM4562: bassier, denser (Japanese folklore, same die)",
-      "cleaner treble than a discrete stage (Soomal)"
+      "clinical, analytical (some)",
+      "'too clear' on violins",
+      "cleaner treble than discrete",
+      "brighter/bassier marking folklore"
     ],
     "typical_uses": [
-      "NE5532/4580 replacement in CD players, DACs and sound cards",
+      "NE5532/4580 replacement in CD players, DACs, sound cards",
       "DAC I/V and output stages",
-      "headphone amplifier gain stages",
-      "phono and mic preamps (LME49710HA prized)",
-      "pro-audio line stages (±17 V max)",
-      "low-noise RF/SDR audio and IQ stages (seen in GitHub SDR projects)"
+      "Headphone amplifier gain stages",
+      "Phono and mic preamps (LME49710HA prized)",
+      "Pro-audio line stages; SDR audio/IQ stages"
     ],
     "caveats": [
-      "55 MHz GBW: can oscillate in some sockets, adapters and layouts; needs good local decoupling",
-      "Maximum supply is ±17 V (36 V abs max); for ±18 V to ±22 V rails use LME49860",
-      "Differential input protection diodes limit use with large differential inputs (TI E2E 337068)",
-      "Low-frequency (1/f / popcorn) noise questions raised on TI E2E 415907",
-      "Start-up behaviour of LM4562/LME49710/LME49720 is discussed on the Pro Audio Design Forum (topic 641; details not re-checked)",
-      "Sensitivity to air-coupled EM/RF fields reported for the LM4562/LME497x0 family (ASR thread 10687)",
-      "Since 2018 (PCN 20180308002), LM4562/LME49720 use a die-shrink die from RFAB under the same part number. Old-vs-new sound or measurement claims are unverified.",
-      "DIP and TO-99 stock on marketplaces is often counterfeit",
-      "Pricing has often differed between the LM4562 and LME49720 despite identical silicon",
-      "Sonic descriptors are forum impressions, not controlled listening tests"
+      "55 MHz GBW: may oscillate in some sockets and layouts; needs good local decoupling.",
+      "Max supply ±17 V (36 V abs max); use LME49860 for ±18–22 V rails.",
+      "Input protection diodes (E2E 337068); 1/f noise (E2E 415907), start-up (PADF 641), RF susceptibility (ASR 10687) discussed.",
+      "Made in TI Dallas, not Greenock, since 2018 under the same part number; old-vs-new claims unverified.",
+      "Marketplace DIP and TO-99 stock is often fake; prices differ between identical LM4562 and LME49720."
     ],
     "sources": [
       "http://nwavguy.blogspot.com/2011/08/op-amp-measurements.html",
@@ -269,6 +203,90 @@
       "https://je6lve.tom-system.com/archives/453"
     ]
   },
+  "counterfeit_notes": "Marketplace DIP and TO-99 parts are often fake: LME49710 (tinytransistors, 2022-09-24), LME49720NA (diyAudio 386852), LM4562NA (diyAudio 266368; JE6LVE measured ~0.001% vs 0.0006% THD). Buy SOIC from authorised distributors; check THD, 12 mA supply current, era-correct logo. 'JR' lots = Greenock.",
+  "alternatives": [
+    "LME49860 (same series, up to ±22 V)",
+    "OPA1611 (TI's suggested LME49710 replacement)",
+    "OPA1602 / OPA1612 (TI's suggested LME49720 replacement)",
+    "OPA1656 (modern CMOS, very low distortion)",
+    "AD8599 (low-noise bipolar dual)",
+    "NE5532 (the cheaper classic it upgrades)"
+  ],
+  "silicon_changes": [
+    {
+      "kind": "fab-or-process-transfer",
+      "vendor": "Texas Instruments",
+      "when": "2018-03-09 · PCN 20180308002",
+      "part_numbers_affected": [
+        "LM4562 (SOIC MA/MAX confirmed; full PCN list not seen)",
+        "LME49720 (SOIC MA/MAX confirmed; full PCN list not seen)"
+      ],
+      "identification": "Part number and marking unchanged; only lot/date code shows the fab. Forum claims: 2019+ date codes are Dallas; 'JR' lots are Greenock-fab, Malaysia-assembled.",
+      "summary": "PCN 20180308002, 'Transfer of select VIP3 devices from GFAB to DFAB (DL-LIN) Wafer Fab site', moved LM4562/LME49720 wafers from closing TI Greenock to TI Dallas, same VIP3 process. First ship 2018-06-09; reissued as -001 (2018-03-26, first ship 2018-09-26). Stock reached distribution early 2019. No die redesign documented.",
+      "spec_deltas": [
+        {
+          "parameter": "Wafer fab site",
+          "before": "GFAB (TI Greenock, Scotland; ex-National)",
+          "after": "DFAB / DL-LIN (TI Dallas, TX)"
+        },
+        {
+          "parameter": "Process",
+          "before": "VIP3 (National complementary bipolar)",
+          "after": "VIP3 (same process family, per the PCN title)"
+        },
+        {
+          "parameter": "Wafer diameter (unresolved)",
+          "before": "150 mm / 6-inch (per diyAudio posters)",
+          "after": "200 mm / 8-inch per diyAudio posters and one search summary of the PCN. However, TI's LM6172 PCN 20241217001.1 describes DL-LIN VIP3 as a 150 mm line, so this is not confirmed."
+        },
+        {
+          "parameter": "Datasheet electrical limits",
+          "before": "SNAS326K (Dec 2013) / SNAS393D (Nov 2016)",
+          "after": "No datasheet revision tied to the PCN was found, so there is no published spec delta."
+        }
+      ],
+      "audio_impact": "No spec change or old-vs-new data. One diyAudio report: 2019+ parts lack popcorn noise seen in some earlier LM4562 lots (anecdotal).",
+      "compatibility_risk": "low: same part, pinout, process family and limits; unspecified noise or RF behaviour could shift.",
+      "sources": [
+        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/754/PCN20180308002.pdf",
+        "https://www.mouser.com/PCN/Texas_Instruments_PCN20180308002_2018032619395130.pdf",
+        "https://www.diyaudio.com/community/threads/lm4562-aka-lme49720-fab-moved-from-gb-to-us.326045/",
+        "https://www.diyaudio.com/forums/parts/326045-lm4562-aka-lme49720-fab-moved-gb.html",
+        "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why",
+        "https://www.diyaudio.com/community/threads/lme49720-vs-lm4562.107344/page-7",
+        "https://hackaday.com/2026/06/03/texas-instruments-changes-the-ne5532-and-others-into-incompatible-versions/"
+      ],
+      "confidence": "high",
+      "verification": "PCN title and -001 date confirmed; wafer size conflicts. Earlier SFAB-to-RFAB die-shrink claim was an NE5532-PCN mix-up."
+    },
+    {
+      "kind": "lifecycle",
+      "vendor": "Texas Instruments",
+      "when": "2017 · PDN 20170721000C",
+      "part_numbers_affected": [
+        "LME49710HA/NOPB",
+        "LME49710MAX/NOPB",
+        "LME49710NA/NOPB",
+        "LM4562HA (TO-99 metal can)",
+        "LME49720HA (TO-99 metal can; the TI E2E reply spells it 'LME49270')"
+      ],
+      "identification": "Discontinuance, not silicon. All LME49710 packages and LM4562/LME49720 TO-99 are EOL; SOIC/PDIP returned to Active after the fab transfer. Such parts today are old stock or fakes.",
+      "summary": "TI discontinued GFAB-sourced devices as Greenock closed (PDN 20170721000C; last order 2018-08-07, last ship 2019-02-07): LME49710HA/MAX/NA, replaced by OPA1611AID/AIDR. LM4562/LME49720 TO-99 went lifebuy c.2015–2017. Around 2025-01 stock tightened; one LME49720 1k price rose GBP 1.48→3.78, with no notice found.",
+      "spec_deltas": [],
+      "audio_impact": "None to the silicon; post-EOL buyers get remaining stock or possible fakes.",
+      "compatibility_risk": "low: discontinuance only; the OPA1611 substitute differs in input structure, noise and bias.",
+      "sources": [
+        "https://media.digikey.com/pdf/PCNs/Texas%20Instruments/PCN20170721000C.pdf",
+        "https://www.farnell.com/datasheets/2608286.pdf",
+        "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why",
+        "https://www.diyaudio.com/community/threads/ti-to-discontinue-many-ics.280990/page-5",
+        "https://gearspace.com/board/geekzone/1035492-lme49710-lme49720-end-life.html",
+        "https://www.diyaudio.com/community/threads/lm4562-lme49720-eol-again.422319/"
+      ],
+      "confidence": "high",
+      "verification": "PDN contents confirmed; TI E2E reply (spelled 'LME49270') confirmed. No 2025 notice found."
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Texas Instruments",
@@ -280,7 +298,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current TI symlink. The KiCadAI provenance registry records it as SNAS326K. No revision later than K was found in a Sept 2026 web search. https://www.ti.com/lit/gpn/LM4562 is unconfirmed."
+      "note": "Current TI symlink, SNAS326K; no later revision found."
     },
     {
       "vendor": "Texas Instruments",
@@ -292,7 +310,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "probable",
-      "note": "TI literature-number link, seen in a Sept 2026 web search. The revision it serves was not shown."
+      "note": "TI literature-number link; revision served not shown."
     },
     {
       "vendor": "Texas Instruments",
@@ -304,7 +322,7 @@
       "url_kind": "vendor_revision_specific",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Cited by several GitHub projects. A web search summary confirms SNAS326K is dated Aug 2006, revised Dec 2013."
+      "note": "Header: August 2006, revised December 2013."
     },
     {
       "vendor": "Texas Instruments",
@@ -316,7 +334,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The web search result title shows the SNAS326J header. First TI-format revision; this Octopart copy freezes rev J."
+      "note": "Header SNAS326J; first TI-format revision."
     },
     {
       "vendor": "Texas Instruments (National content)",
@@ -328,31 +346,31 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "confirmed",
-      "note": "Unconfirmed URL: its mapping to rev I was not checked. Revision I itself (Jan 26, 2010) is confirmed by TI WEBENCH SPICE model headers. Believed to be the last National revision."
+      "note": "Rev I (2010-01-26) confirmed by SPICE headers; this URL's mapping unchecked."
     },
     {
       "vendor": "National Semiconductor",
       "title": "October 2007 LM4562 Dual High Performance, High Fidelity Audio Operational Amplifier",
-      "doc_number": "201572 (National DS number)",
+      "doc_number": "DS201572 (National)",
       "revision": "",
       "date": "2007-10",
       "url": "http://ohm.bu.edu/~pbohn/STM-Z-BERKELEY/Data_Sheets/stm_zbox/PCB/LM4562.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed URL. Boston University copy of the National-era datasheet."
+      "note": "Boston University copy of National October 2007 edition; URL unconfirmed."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LM4562 Datasheet(PDF) - National Semiconductor (TI)",
-      "doc_number": "201572 (National DS number, per alldatasheet summaries)",
+      "doc_number": "DS201572 (National)",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/156190/NSC/LM4562.html",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "URL seen in a Sept 2026 web search. A 33-page NSC copy; the HTML view is at alldatasheet.net/html-pdf/156190/NSC/LM4562/. Revision not shown. LM4562NA variant: alldatasheet 156192 (unconfirmed)."
+      "note": "33-page NSC copy; HTML view on alldatasheet.net; also LM4562NA 156192."
     },
     {
       "vendor": "Texas Instruments or National (unclear)",
@@ -364,7 +382,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Copy hosted by Qobuz, seen in a Sept 2026 web search; revision not shown. Other copies of unknown revision were also seen: radiolocman (di=298963, di=274487 for LM4562NA/NOPB), digchip and datasheet4u (National)."
+      "note": "Qobuz copy; maybe SNAS326I. Also radiolocman di=298963, di=274487."
     },
     {
       "vendor": "National Semiconductor",
@@ -376,7 +394,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed URL. Hobby-site copy from the National era."
+      "note": "National-era hobby-site copy; URL unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -388,7 +406,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed URL. Mouser TI folder (405)."
+      "note": "Mouser TI folder copy; URL unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -400,7 +418,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Web search (Sept 2026) confirms SNAS393D, revised Nov 2016, as the latest revision found. No SNAS393E was found. The datasheet was apparently not revised after the 2018 fab-move PCN."
+      "note": "Current; no SNAS393E. Not revised after the 2018 fab move."
     },
     {
       "vendor": "Texas Instruments",
@@ -412,7 +430,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Found in a Sept 2026 web search. The file name carries rev C; the header date was not shown in the result."
+      "note": "Filename carries rev C; header date not seen."
     },
     {
       "vendor": "Texas Instruments",
@@ -424,7 +442,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "probable",
-      "note": "URL seen in a Sept 2026 web search. It belongs to the same Mouser 2240xx batch as SNAS376C and SNAS377B (both confirmed Apr 2013), but its own header was not shown. Alternate path: /datasheet/2/282/lme49720-224067.pdf."
+      "note": "Same Mouser batch as SNAS376C/SNAS377B; also /datasheet/2/282/ path."
     },
     {
       "vendor": "Texas Instruments (National content)",
@@ -436,20 +454,19 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The web search result title shows the SNAS393B header. National-content revision."
+      "note": "Header SNAS393B; National-content revision."
     },
     {
       "vendor": "National Semiconductor",
       "title": "October 2007 LME49720 Dual High Performance, High Fidelity Audio Operational Amplifier",
-      "doc_number": "300038 (per prior-pass search summary)",
-      "revision": "",
+      "doc_number": "300038 (National DS number, unconfirmed)",
+      "revision": "B",
       "date": "2007-10",
       "url": "http://www.op316.com/pdf/ic/lme49720.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "low",
-      "revision_status": "unknown",
-      "revision_text": "Oct 2007 issue (matches SNAS393B)",
-      "note": "Unconfirmed URL. Original National layout on op316.com. The DS number 300038 is not independently confirmed."
+      "revision_status": "probable",
+      "note": "October 2007 National layout matching SNAS393B; URL unconfirmed."
     },
     {
       "vendor": "National Semiconductor",
@@ -461,7 +478,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "confirmed",
-      "note": "Unconfirmed URL. Forum-hosted copy of the first National issue."
+      "note": "Forum-hosted copy of the first National issue; URL unconfirmed."
     },
     {
       "vendor": "National Semiconductor",
@@ -473,7 +490,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "National-branded copy, seen in a Sept 2026 web search; revision not shown. Also reported but unconfirmed: octopart LME49720MA-National-Semiconductor-datasheet-15941894.pdf and alldatasheet NSC 174238."
+      "note": "National-branded; also Octopart 15941894 and alldatasheet NSC 174238."
     },
     {
       "vendor": "Texas Instruments",
@@ -485,7 +502,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "TI copy seen in a Sept 2026 web search; revision not shown. Radiolocman also hosts an LME49720NA/NOPB copy (di=147131)."
+      "note": "TI copy; revision not shown. Also radiolocman di=147131."
     },
     {
       "vendor": "Texas Instruments",
@@ -497,7 +514,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "TI-branded copy seen in a Sept 2026 web search; revision not shown. Other copies of unknown revision were seen: datasheetcatalog.com and pdf.ic37.com (a 36-page TI copy)."
+      "note": "TI-branded; also datasheetcatalog and ic37 (36-page TI copy)."
     },
     {
       "vendor": "Texas Instruments",
@@ -509,7 +526,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Copy from the PartsConnexion retailer, seen in a Sept 2026 web search; revision not shown."
+      "note": "PartsConnexion retailer copy; revision not shown."
     },
     {
       "vendor": "Texas Instruments (Japan)",
@@ -521,7 +538,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed URL. Japanese-language TI datasheet hosted by Marutsu."
+      "note": "Japanese TI datasheet hosted by Marutsu; URL unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -533,7 +550,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Unconfirmed URL. Other reported copies (also unconfirmed): electrokit.com LME49720MA.pdf and digikey htmldatasheets 252145."
+      "note": "URL unconfirmed; also electrokit LME49720MA.pdf, DigiKey HTML 252145."
     },
     {
       "vendor": "Texas Instruments",
@@ -545,7 +562,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The web search result title shows the SNAS376C header. Latest LME49710 revision found."
+      "note": "Header SNAS376C; latest LME49710 revision found."
     },
     {
       "vendor": "Texas Instruments (National content)",
@@ -557,20 +574,19 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The web search result title shows the SNAS376B header. Last National-content revision."
+      "note": "Header SNAS376B; last National-content revision."
     },
     {
       "vendor": "National Semiconductor",
       "title": "March 2007 LME49710 High Performance, High Fidelity Audio Operational Amplifier",
       "doc_number": "unknown (National DS number)",
-      "revision": "",
+      "revision": "B",
       "date": "2007-03",
       "url": "https://www.pken.net/ish_mm/datasheet/ns/lme49710.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "high",
-      "revision_status": "unknown",
-      "revision_text": "Mar 2007 issue (matches SNAS376B)",
-      "note": "Original National layout; the web search result title confirms 'March 2007'. The alldatasheet NSC copy (229221) was also seen. Octopart NSC 9706660 is unconfirmed."
+      "revision_status": "probable",
+      "note": "March 2007 National layout matching SNAS376B."
     },
     {
       "vendor": "Texas Instruments",
@@ -582,7 +598,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Seen in a Sept 2026 web search; revision not shown. Radiolocman also hosts a TI copy (di=300405)."
+      "note": "34-page TI copy; also radiolocman di=300405."
     },
     {
       "vendor": "Texas Instruments",
@@ -594,7 +610,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The web search result title shows the SNAS377B header. Latest LME49740 revision found."
+      "note": "Header SNAS377B; latest LME49740 revision found."
     },
     {
       "vendor": "Texas Instruments",
@@ -606,7 +622,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "confirmed",
-      "note": "Unconfirmed URL: neither the file nor its revision was checked this pass."
+      "note": "File and revision not checked."
     },
     {
       "vendor": "National Semiconductor",
@@ -618,8 +634,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "revision_text": "A? (a prior-pass search summary cites SNAS377A dated Feb 8, 2008)",
-      "note": "Unconfirmed URL. National-branded copy. Also reported (unconfirmed): alldatasheet NSC 190918."
+      "note": "National-branded; possibly SNAS377A (2008-02-08). Also alldatasheet NSC 190918."
     },
     {
       "vendor": "National Semiconductor",
@@ -631,8 +646,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "revision_text": "May 2007 edition (title reads 'May 2007 LM4562 ...'; probably National internal rev 1.4 of 05/03/07, inferred from the date)",
-      "note": "New National edition not listed before. It sits between the Sept 2006 revs and the Oct 2007 edition (BU copy)."
+      "note": "May 2007 edition, probably National rev 1.4 (05/03/07)."
     },
     {
       "vendor": "National Semiconductor",
@@ -644,7 +658,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This could be the original Aug 2006 edition. Check the header date and the revision-history table."
+      "note": "Possibly the original Aug 2006 edition; check header."
     },
     {
       "vendor": "National Semiconductor",
@@ -668,7 +682,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Same file id as datasheet4u 559726. It came up in the search that returned the National rev history 1.0 (08/16/06) through 1.5 (10/17/07)."
+      "note": "Same file as datasheet4u 559726; holds National rev table 1.0–1.5."
     },
     {
       "vendor": "National Semiconductor",
@@ -692,7 +706,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "33-page HTML view of alldatasheet file 156190, which is already listed under its .com pdf URL."
+      "note": "33-page HTML view of alldatasheet file 156190."
     },
     {
       "vendor": "Texas Instruments",
@@ -704,7 +718,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Filed under TI; probably J or K, not confirmed."
+      "note": "Filed under TI; probably J or K."
     },
     {
       "vendor": "National Semiconductor or Texas Instruments (unclear)",
@@ -752,7 +766,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The doubled 'LM4562 LM4562' title is the same pattern as the qobuz copy. That pattern matches TI's 2011-2012 rewrap of National datasheets with a 'Literature Number: SNAS326x' footer, so this may be SNAS326I (Jan 2010). Not confirmed."
+      "note": "TI rewrap of National sheet, like the Qobuz copy; maybe SNAS326I."
     },
     {
       "vendor": "Texas Instruments",
@@ -781,15 +795,14 @@
     {
       "vendor": "National Semiconductor",
       "title": "October 2007 LME49720 Dual High Performance, High Fidelity Audio Operational Amplifier",
-      "doc_number": "SNAS393 (National DS number unconfirmed; 300038 per prior pass)",
-      "revision": "",
+      "doc_number": "SNAS393 (National DS 300038 unconfirmed)",
+      "revision": "B",
       "date": "2007-10",
       "url": "https://www.electrokit.com/upload/product/40359/40359720/LME49720.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
-      "revision_status": "unknown",
-      "revision_text": "October 2007 edition (National internal rev 1.2, 10/22/07; matches SNAS393B)",
-      "note": "Electrokit (Swedish distributor) copy. The title shows the October 2007 date."
+      "revision_status": "probable",
+      "note": "October 2007 edition (National rev 1.2, 10/22/07)."
     },
     {
       "vendor": "National Semiconductor",
@@ -801,7 +814,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Octopart datasheet cache. This is a different file id from the listed 9818030."
+      "note": "Octopart cache; different file ID from 9818030."
     },
     {
       "vendor": "National Semiconductor",
@@ -825,7 +838,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Filed under TI. The low file id suggests an early TI rewrap of National content. Unconfirmed."
+      "note": "Low ID suggests an early TI rewrap of National content."
     },
     {
       "vendor": "Texas Instruments",
@@ -854,7 +867,7 @@
     {
       "vendor": "Texas Instruments (Japan)",
       "title": "LME49720 Dual High Performance Hi-Fi Audio Op Amp (Japanese translation)",
-      "doc_number": "SNAS393 (Japanese translation; JA literature number not shown)",
+      "doc_number": "SNAS393 (Japanese translation)",
       "revision": "",
       "date": "",
       "url": "https://www.ti.com/jp/lit/ds/symlink/lme49720.pdf",
@@ -866,14 +879,14 @@
     {
       "vendor": "National Semiconductor",
       "title": "LME49710 High Performance, High Fidelity Audio Operational Amplifier (Octopart LME49710MA/NOPB, National)",
-      "doc_number": "SNAS376 (National DS number probably 202104, inferred from graphic numbers 20210489/90)",
+      "doc_number": "SNAS376 (National DS probably 202104)",
       "revision": "",
       "date": "",
       "url": "https://datasheet.octopart.com/LME49710MA/NOPB-National-Semiconductor-datasheet-9706660.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "National-era copy in the Octopart cache. It came up in the search that returned the LME49710 rev history 1.0-1.3."
+      "note": "National-era Octopart copy; linked to LME49710 rev table 1.0–1.3."
     },
     {
       "vendor": "National Semiconductor",
@@ -981,7 +994,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Filed under NSC. It came up in the search that returned the LME49740 rev history 1.0 and 1.01. It could be the original Feb 2007 edition or the Feb 2008 one."
+      "note": "Filed under NSC; Feb 2007 original or Feb 2008 edition."
     },
     {
       "vendor": "National Semiconductor or Texas Instruments (unclear)",
@@ -1020,301 +1033,266 @@
       "note": "Filed under TI."
     }
   ],
+  "product_pages": [
+    "https://www.ti.com/product/LM4562",
+    "https://www.ti.com/product/LME49720",
+    "https://www.ti.com/product/LME49710"
+  ],
   "revision_history": [
     {
       "vendor": "National Semiconductor",
-      "doc_number": "201572 / SNAS326",
-      "revision": "original",
-      "date": "August 2006",
-      "changes": "First LM4562 datasheet."
+      "doc_number": "DS201572 / SNAS326 (LM4562)",
+      "revision": "National rev 1.0–1.3",
+      "date": "2006-08-16",
+      "changes": "1.0 initial (2006-08-16); 1.1 short-circuit current spec (08-22); 1.2 ±15 V CMRR curves (09-12); 1.3 application capacitor values (09-26)."
     },
     {
       "vendor": "National Semiconductor",
-      "doc_number": "201572 / SNAS326",
-      "revision": "Oct 2007 issue (letter unknown)",
-      "date": "October 2007",
-      "changes": "Revised National issue (BU copy, unconfirmed). Changes not seen."
+      "doc_number": "DS201572 / SNAS326 (LM4562)",
+      "revision": "National rev 1.4",
+      "date": "2007-05-03",
+      "changes": "Added general note under Electrical Characteristics table (May 2007 edition, radio-hobby.org copy)."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "doc_number": "DS201572 / SNAS326 (LM4562)",
+      "revision": "National rev 1.5",
+      "date": "2007-10-17",
+      "changes": "Replaced all PSRR curves (October 2007 edition, BU copy)."
     },
     {
       "vendor": "National Semiconductor",
       "doc_number": "SNAS326",
       "revision": "I",
-      "date": "January 26, 2010",
-      "changes": "Believed to be the last National revision; the date comes from TI WEBENCH SPICE model headers. Changes not seen."
+      "date": "2010-01-26",
+      "changes": "Believed last National revision; date from TI WEBENCH SPICE headers. Changes not seen."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SNAS326",
       "revision": "J",
-      "date": "April 2013",
-      "changes": "First TI-format revision (confirmed by the Octopart copy header). Change list not seen."
+      "date": "2013-04",
+      "changes": "First TI-format revision (Octopart header). Changes not seen."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SNAS326",
       "revision": "K",
-      "date": "December 2013",
-      "changes": "Current; no later revision found (Sept 2026). The datasheet was not re-issued for the 2018 RFAB move. Change list not seen."
+      "date": "2013-12",
+      "changes": "Current; not reissued for the 2018 fab move. Changes not seen."
     },
     {
       "vendor": "National Semiconductor",
-      "doc_number": "SNAS393",
-      "revision": "original",
-      "date": "March 2007",
-      "changes": "First LME49720 datasheet (the LM4562 renamed)."
+      "doc_number": "SNAS393 (LME49720)",
+      "revision": "original (National rev 1.0)",
+      "date": "2007-03-30",
+      "changes": "First LME49720 datasheet (LM4562 renamed)."
     },
     {
       "vendor": "National Semiconductor",
-      "doc_number": "SNAS393",
-      "revision": "B",
-      "date": "October 2007",
-      "changes": "National-content revision, confirmed by the Mouser snas393b copy header. Changes not seen."
+      "doc_number": "SNAS393 (LME49720)",
+      "revision": "National rev 1.1",
+      "date": "2007-05-03",
+      "changes": "Changes not shown; same date as LM4562 rev 1.4. Probably SNAS393A (unconfirmed)."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "doc_number": "SNAS393 (LME49720)",
+      "revision": "B (National rev 1.2)",
+      "date": "2007-10-22",
+      "changes": "Replaced all PSRR curves; October 2007 edition (Mouser snas393b header)."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SNAS393",
       "revision": "C",
-      "date": "April 2013 (date per prior pass)",
-      "changes": "TI-format revision; the Mouser file snas393c-316845.pdf exists. Change list not seen."
+      "date": "2013-04",
+      "changes": "TI-format revision (Mouser snas393c-316845.pdf). Changes not seen."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SNAS393",
       "revision": "D",
-      "date": "November 2016",
-      "changes": "Current; confirmed by web search. Change list not seen. It predates the March 2018 PCN 20180308002 fab move, so it does not describe the RFAB die."
+      "date": "2016-11",
+      "changes": "Current. Predates PCN 20180308002 (March 2018). Changes not seen."
     },
     {
       "vendor": "National Semiconductor",
-      "doc_number": "SNAS376",
-      "revision": "original",
-      "date": "November 2006",
-      "changes": "First LME49710 datasheet."
+      "doc_number": "SNAS376 (LME49710)",
+      "revision": "National rev 1.0–1.2",
+      "date": "2006-11-16",
+      "changes": "1.0 initial (printed 11/16/07, likely typo for 2006); 1.1 curves added (2006-12-12); 1.2 more curves, text edits (2007-01-15)."
     },
     {
       "vendor": "National Semiconductor",
-      "doc_number": "SNAS376",
-      "revision": "B",
-      "date": "March 2007",
-      "changes": "Last National-content revision (confirmed by the capi-gear copy header). Changes not seen."
+      "doc_number": "SNAS376 (LME49710)",
+      "revision": "B (National rev 1.3)",
+      "date": "2007-03-09",
+      "changes": "Fixed graphics 20210489/20210490 (suggests National DS 202104). Last National content (capi-gear header)."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SNAS376",
       "revision": "C",
-      "date": "April 2013",
-      "changes": "TI-format revision; latest found (confirmed by the Mouser copy header). Changes not seen."
+      "date": "2013-04",
+      "changes": "TI-format revision; latest found (Mouser header). Changes not seen."
     },
     {
       "vendor": "National Semiconductor",
-      "doc_number": "SNAS377",
-      "revision": "original",
-      "date": "February 2007",
-      "changes": "First LME49740 datasheet."
+      "doc_number": "SNAS377 (LME49740)",
+      "revision": "original (National rev 1.0)",
+      "date": "2007-02-28",
+      "changes": "Initial web release."
     },
     {
       "vendor": "National Semiconductor",
-      "doc_number": "SNAS377",
-      "revision": "A",
-      "date": "February 8, 2008 (per prior-pass search summary; unconfirmed)",
-      "changes": "Changes not seen."
+      "doc_number": "SNAS377 (LME49740)",
+      "revision": "A (National rev 1.01)",
+      "date": "2008-02-08",
+      "changes": "Fixed package captions (printed 'LME4970MA', sic) from Dual-In-Line to Molded Package (SO)."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SNAS377",
       "revision": "B",
-      "date": "April 2013",
-      "changes": "TI-format revision; latest found (confirmed by the Mouser copy header). Changes not seen."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "201572 / SNAS326 (LM4562)",
-      "revision": "National rev 1.0",
-      "date": "08/16/06",
-      "changes": "Initial release (per the datasheet's own revision-history table)."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "201572 / SNAS326 (LM4562)",
-      "revision": "National rev 1.1",
-      "date": "08/22/06",
-      "changes": "Updated the Instantaneous Short Circuit Current specification."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "201572 / SNAS326 (LM4562)",
-      "revision": "National rev 1.2",
-      "date": "09/12/06",
-      "changes": "Updated the three ±15V CMRR Typical Performance Curves."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "201572 / SNAS326 (LM4562)",
-      "revision": "National rev 1.3",
-      "date": "09/26/06",
-      "changes": "Updated the interstage filter capacitor values in the page-1 Typical Application schematic."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "201572 / SNAS326 (LM4562)",
-      "revision": "National rev 1.4",
-      "date": "05/03/07",
-      "changes": "Added the 'general note' under the Electrical Characteristics table. This is the May 2007 edition (radio-hobby.org copy)."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "201572 / SNAS326 (LM4562)",
-      "revision": "National rev 1.5",
-      "date": "10/17/07",
-      "changes": "Replaced all the PSRR curves. This is the October 2007 edition (BU copy)."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "SNAS393 (LME49720)",
-      "revision": "National rev 1.0",
-      "date": "03/30/07",
-      "changes": "Initial release (the March 2007 original)."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "SNAS393 (LME49720)",
-      "revision": "National rev 1.1",
-      "date": "05/03/07",
-      "changes": "Change text not shown in the summary. It has the same date as LM4562 rev 1.4 (EC-table general note). Probably SNAS393A, unconfirmed."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "SNAS393 (LME49720)",
-      "revision": "National rev 1.2",
-      "date": "10/22/07",
-      "changes": "Replaced all the PSRR curves. This is the October 2007 edition and matches SNAS393B."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "SNAS376 (LME49710)",
-      "revision": "National rev 1.0",
-      "date": "11/16/07 as printed (very likely a typo for 11/16/06, since the datasheet is dated Nov 2006 and rev 1.1 is 12/12/06)",
-      "changes": "Initial release."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "SNAS376 (LME49710)",
-      "revision": "National rev 1.1",
-      "date": "12/12/06",
-      "changes": "Added Typical Performance curves."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "SNAS376 (LME49710)",
-      "revision": "National rev 1.2",
-      "date": "01/15/07",
-      "changes": "Added more curves and made some text edits."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "SNAS376 (LME49710)",
-      "revision": "National rev 1.3",
-      "date": "03/09/07",
-      "changes": "Fixed graphics 20210489 and 20210490. This is the March 2007 edition and matches SNAS376B. The graphic numbering suggests National DS number 202104 (inference)."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "SNAS377 (LME49740)",
-      "revision": "National rev 1.0",
-      "date": "02/28/07",
-      "changes": "Initial WEB release."
-    },
-    {
-      "vendor": "National Semiconductor",
-      "doc_number": "SNAS377 (LME49740)",
-      "revision": "National rev 1.01",
-      "date": "02/08/08",
-      "changes": "Fixed the package captions (printed as 'LME4970MA', sic) from Dual-In-Line to Molded Package (SO). This corroborates the prior-pass SNAS377A date of Feb 8, 2008."
+      "date": "2013-04",
+      "changes": "TI-format revision; latest found (Mouser header). Changes not seen."
     }
   ],
-  "silicon_changes": [
+  "revision_chains": [
     {
-      "kind": "fab-or-process-transfer",
-      "vendor": "Texas Instruments",
-      "when": "PCN 20180308002 dated 2018-03-09 (proposed first ship 2018-06-09). Reissued as PCN 20180308002-001 dated 2018-03-26 (proposed first ship 2018-09-26). Stock from the new fab reached distribution around early 2019.",
-      "part_numbers_affected": [
-        "LM4562 (SOIC MA/MAX confirmed; other orderables are on the PCN list, which was not seen in full)",
-        "LME49720 (SOIC MA/MAX confirmed; other orderables are on the PCN list, which was not seen in full)"
-      ],
-      "identification": "The part number and marking are unchanged, so only the lot or date code identifies the fab. diyAudio posters say that date codes from 2019 onward come from the new Dallas fab. They also say lots starting 'JR' were fabbed in Greenock and assembled in Malaysia, which would mark pre-transfer stock (forum claim only). No die-revision letter or marking change was found. The PCN lists the affected orderables and first-ship dates, but the full list was not seen.",
-      "summary": "PCN 20180308002 is titled 'Transfer of select VIP3 devices from GFAB to DFAB (DL-LIN) Wafer Fab site'. It moved LM4562/LME49720 wafer fabrication from TI Greenock, Scotland (closing) to TI Dallas DL-LIN, keeping the same VIP3 bipolar process family. The move brought the parts back to Active after c.2015-2017 EOL and lifebuy scares. The diyAudio thread on it is titled 'LM4562 (aka LME49720) Fab moved from GB to US'. Forum posters also report a sharp price drop in early 2019. The PCN text found describes a fab-site transfer only. No die redesign and no datasheet change is documented. An earlier-pass claim of an SFAB-to-RFAB die-shrink redesign was a conflation with the NE5532-family PCN and has been removed (see dropped).",
-      "spec_deltas": [
+      "vendor": "National Semiconductor / Texas Instruments",
+      "doc_number": "SNAS326 (LM4562, National DS201572)",
+      "known": [
         {
-          "parameter": "Wafer fab site",
-          "before": "GFAB (TI Greenock, Scotland; ex-National)",
-          "after": "DFAB / DL-LIN (TI Dallas, TX)"
+          "rev": "National 1.0",
+          "date": "2006-08-16"
         },
         {
-          "parameter": "Process",
-          "before": "VIP3 (National complementary bipolar)",
-          "after": "VIP3 (same process family, per the PCN title)"
+          "rev": "National 1.1",
+          "date": "2006-08-22"
         },
         {
-          "parameter": "Wafer diameter (unresolved)",
-          "before": "150 mm / 6-inch (per diyAudio posters)",
-          "after": "200 mm / 8-inch per diyAudio posters and one search summary of the PCN. However, TI's LM6172 PCN 20241217001.1 describes DL-LIN VIP3 as a 150 mm line, so this is not confirmed."
+          "rev": "National 1.2",
+          "date": "2006-09-12"
         },
         {
-          "parameter": "Datasheet electrical limits",
-          "before": "SNAS326K (Dec 2013) / SNAS393D (Nov 2016)",
-          "after": "No datasheet revision tied to the PCN was found, so there is no published spec delta."
+          "rev": "National 1.3",
+          "date": "2006-09-26"
+        },
+        {
+          "rev": "National 1.4",
+          "date": "2007-05-03"
+        },
+        {
+          "rev": "National 1.5",
+          "date": "2007-10-17"
+        },
+        {
+          "rev": "I",
+          "date": "2010-01-26"
+        },
+        {
+          "rev": "J",
+          "date": "2013-04"
+        },
+        {
+          "rev": "K",
+          "date": "2013-12"
         }
       ],
-      "audio_impact": "No published spec change. No old-vs-new measurement comparison was found. One diyAudio report says 2019+ date-code parts from the new fab have not shown the popcorn (burst) noise seen in some earlier LM4562 lots. This is anecdotal, not systematically tested, and is plausibly a fab-cleanliness effect. Claims that LM4562 and LME49720 sound different are folklore: they are the same die under two part numbers (Hackaday 2026), and many such claims predate the transfer.",
-      "compatibility_risk": "low: same part number, pinout, process family and datasheet limits. A fab move can still shift unspecified behaviour such as 1/f or popcorn noise, RF susceptibility and overload recovery. No old-vs-new data exists.",
-      "sources": [
-        "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/754/PCN20180308002.pdf",
-        "https://www.mouser.com/PCN/Texas_Instruments_PCN20180308002_2018032619395130.pdf",
-        "https://www.diyaudio.com/community/threads/lm4562-aka-lme49720-fab-moved-from-gb-to-us.326045/",
-        "https://www.diyaudio.com/forums/parts/326045-lm4562-aka-lme49720-fab-moved-gb.html",
-        "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why",
-        "https://www.diyaudio.com/community/threads/lme49720-vs-lm4562.107344/page-7",
-        "https://hackaday.com/2026/06/03/texas-instruments-changes-the-ne5532-and-others-into-incompatible-versions/"
+      "missing": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
       ],
-      "confidence": "high",
-      "verification": "Two WebSearches confirmed the PCN 20180308002 title ('Transfer of select VIP3 devices from GFAB to DFAB (DL-LIN)') and the -001 first ship date of 2018-09-26. The wafer-size change is unconfirmed because the sources conflict. Four searches for an LM4562-specific SFAB-to-RFAB or 2024-2025 PCN found nothing, so the pass-1 and completeness-sweep entries were merged into this one."
+      "note": "No SNAS326A–H letter seen; not mapped to National revs. Any 2008–2009 edition unknown."
     },
     {
-      "kind": "lifecycle",
-      "vendor": "Texas Instruments",
-      "when": "c.2015-2016: EOL/lifebuy notices (LM4562/LME49720 TO-99 lifebuy per TI E2E). PDN 20170721000C (2017): last order 2018-08-07, last ship 2019-02-07. Around January 2025: supply tightness and price rises, with no notice found.",
-      "part_numbers_affected": [
-        "LME49710HA/NOPB",
-        "LME49710MAX/NOPB",
-        "LME49710NA/NOPB",
-        "LM4562HA (TO-99 metal can)",
-        "LME49720HA (TO-99 metal can; the TI E2E reply spells it 'LME49270')"
+      "vendor": "National Semiconductor / Texas Instruments",
+      "doc_number": "SNAS393 (LME49720)",
+      "known": [
+        {
+          "rev": "original (1.0)",
+          "date": "2007-03-30"
+        },
+        {
+          "rev": "A? (1.1)",
+          "date": "2007-05-03"
+        },
+        {
+          "rev": "B (1.2)",
+          "date": "2007-10-22"
+        },
+        {
+          "rev": "C",
+          "date": "2013-04"
+        },
+        {
+          "rev": "D",
+          "date": "2016-11"
+        }
       ],
-      "identification": "Discontinuance, not a silicon change. After the PDN, all LME49710 packages (SOIC, PDIP, TO-99) went EOL. The LM4562/LME49720 TO-99 went lifebuy/EOL. LM4562/LME49720 SOIC and PDIP were briefly reported as EOL and then returned to Active through the GFAB-to-DFAB transfer (PCN 20180308002). Any LME49710 or TO-99 LM4562/LME49720 sold today is old stock or a possible counterfeit.",
-      "summary": "TI discontinued select devices sourced from GFAB because the Greenock site was closing (PDN 20170721000C). The list includes LME49710HA/NOPB, LME49710MAX/NOPB and LME49710NA/NOPB, with OPA1611AID/OPA1611AIDR as recommended replacements. This superseded an earlier TI E2E statement that LME49710 'remains without changes' and was Active in all three packages. The LM4562 and LME49720 TO-99 packages were in lifebuy. Around January 2025, diyAudio posters reported LM4562/LME49720 out of stock at TI with steep price rises (one post: LME49720 at 1k quantity from GBP 1.48 to GBP 3.78). No new PDN or PCN was found for that episode. No LME49740 lifecycle notice was found.",
-      "spec_deltas": [],
-      "audio_impact": "None to the silicon. Buyers of LME49710 or TO-99 parts after EOL are buying remaining stock, or possibly remarked or counterfeit parts.",
-      "compatibility_risk": "low: discontinuance only. The suggested substitute, OPA1611, has a different input structure and different noise and bias trade-offs, so it is not a drop-in sonic or electrical equivalent. Check before substituting.",
-      "sources": [
-        "https://media.digikey.com/pdf/PCNs/Texas%20Instruments/PCN20170721000C.pdf",
-        "https://www.farnell.com/datasheets/2608286.pdf",
-        "https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why",
-        "https://www.diyaudio.com/community/threads/ti-to-discontinue-many-ics.280990/page-5",
-        "https://gearspace.com/board/geekzone/1035492-lme49710-lme49720-end-life.html",
-        "https://www.diyaudio.com/community/threads/lm4562-lme49720-eol-again.422319/"
+      "missing": [
+        "A"
       ],
-      "confidence": "high",
-      "verification": "WebSearch confirmed PDN 20170721000C: GFAB closure, LME49710HA/MAX/NA with OPA1611 replacement, last order 2018-08-07, last ship 2019-02-07. A search confirmed the TI E2E reply (LME49710 then Active; LM4562/'LME49270' TO-99 lifebuy). No 2025 PDN was found."
+      "note": "No copy of the May 2007 edition; National DS number (300038?) unconfirmed."
+    },
+    {
+      "vendor": "National Semiconductor / Texas Instruments",
+      "doc_number": "SNAS376 (LME49710)",
+      "known": [
+        {
+          "rev": "original (1.0)",
+          "date": "2006-11-16"
+        },
+        {
+          "rev": "1.1",
+          "date": "2006-12-12"
+        },
+        {
+          "rev": "1.2",
+          "date": "2007-01-15"
+        },
+        {
+          "rev": "B (1.3)",
+          "date": "2007-03-09"
+        },
+        {
+          "rev": "C",
+          "date": "2013-04"
+        }
+      ],
+      "missing": [
+        "A"
+      ],
+      "note": "No SNAS376A or Nov 2006–Jan 2007 copies; National DS probably 202104."
+    },
+    {
+      "vendor": "National Semiconductor / Texas Instruments",
+      "doc_number": "SNAS377 (LME49740)",
+      "known": [
+        {
+          "rev": "original (1.0)",
+          "date": "2007-02-28"
+        },
+        {
+          "rev": "A (1.01)",
+          "date": "2008-02-08"
+        },
+        {
+          "rev": "B",
+          "date": "2013-04"
+        }
+      ],
+      "missing": [],
+      "note": "Original copy unconfirmed (alldatasheet 190918 may be it); National DS number unknown."
     }
-  ],
-  "counterfeit_notes": "The evidence comes from blogs and forums and was not re-verified on the web this pass. Marketplace DIP (NA) and TO-99 (HA) parts are frequently fake. Documented cases: a fake LME49710 (tinytransistors.net, 2022-09-24); a fake 'LME49720NA' (diyAudio thread 386852); a suspected fake LM4562NA (diyAudio thread 266368); and a Chinese 'LM4562NA' that JE6LVE measured at about 0.001% THD, against about 0.0006% for a genuine Akizuki-sourced part (je6lve.tom-system.com/archives/453). How to spot fakes: buy SOIC from authorized distributors; be suspicious of cheap TO-99 cans and National-logo NA parts; compare THD and quiescent current (12 mA max for the dual) with a known-good part; check that the marking and logo match the package era (National logo before 2011, TI after). Lot codes starting 'JR' indicate genuine Greenock-fab, Malaysia-assembled production (per diyAudio). A same-part-number die change (PCN 20180308002, 2018) is not counterfeiting, so a genuine new-production part may differ internally from vintage stock. The LM4562 vs LME49720 'voicing' claims are a separate matter: per TI E2E, both are the same silicon.",
-  "alternatives": [
-    "LME49860 (same series, up to ±22 V supply)",
-    "OPA1611 (TI's suggested LME49710 replacement per E2E 2015)",
-    "OPA1602 / OPA1612 (TI's suggested LME49720 replacement per E2E 2015)",
-    "OPA1656 (modern CMOS, very low distortion)",
-    "AD8599 (low-noise bipolar dual)",
-    "NE5532 (the cheaper classic it upgrades)"
   ],
   "ti_literature_numbers": [
     "SNAS326",
@@ -1367,18 +1345,11 @@
     "https://www.ti.com/product/LME49740"
   ],
   "open_questions": [
-    "PCN 20180308002: which fab was the source? The E2E answer says SFAB (Sherman, TX); a diyAudio thread says 'GB to US', i.e. Greenock. What is the destination wafer size (200 mm per the summaries, 300 mm per a discovery hint)? The PDF was not read. Also unknown: which orderables it covers (NA? LME49740?) and the first new-die date code.",
-    "Did the 2018 die-shrink change any unpublished behaviour (1/f or popcorn noise, EM susceptibility, start-up), or any real performance? No old-vs-new measurements were found.",
-    "TI E2E 565489 (c.2017) summaries are ambiguous on whether the SOIC and PDIP packages stayed Active or went to lifebuy. Only the TO-99 lifebuy is clear.",
-    "Current 2026 lifecycle status of each orderable, especially LM4562NA, LME49720NA, all HA parts and LME49740MA. LME49720 is reported Active at product level.",
-    "A Hackaday article (2026-06-03) on TI's NE5532/LM833/MC33078/RC4580 die consolidation turned up in searches for LM4562. No evidence was found that the LM4562/LME497x0 are included, but this was not confirmed.",
-    "The change-log contents of SNAS326 J/K, SNAS393 C/D, SNAS376 C and SNAS377 B were not seen.",
-    "Not verified: the headers of the Farnell LME49740 copy and the op316, BU, elitesecurity and circuits-diy mirrors. SNAS377A (Feb 2008) is also unconfirmed.",
-    "National DS numbers are unverified: LME49720 '300038' comes from a search summary only; LME49710 and LME49740 are unknown.",
-    "Not verified: the exact THD+N headline condition (VOUT and RL), input current noise, per-channel quiescent current typ, and the GBW on the web.",
-    "Per a TI E2E answer, the LM4562 and LME49720 datasheets differ only in Vn (by 0.2). Which parameter row is it?",
-    "Which op-amp does each sound card ship with (Xonar Essence STX/ST, X-Fi Titanium HD, ZxR, X7)? Not re-verified.",
-    "NwAvGuy's exact statement about the LM4562 in the Aug 2011 post was not re-read."
+    "PCN 20180308002: source fab SFAB (TI E2E) or Greenock (diyAudio)? Wafer size? Which orderables, first date code?",
+    "Did the 2018 fab move change unpublished behaviour (1/f or popcorn noise, EM susceptibility, start-up)?",
+    "Current lifecycle of LM4562NA, LME49720NA, HA parts, LME49740MA? Are they in the 2026 NE5532-family die consolidation?",
+    "Change logs of SNAS326 J/K, SNAS393 C/D, SNAS376 C, SNAS377 B? Which Vn row differs between LM4562 and LME49720 sheets?",
+    "Missing specs: exact THD+N condition, current noise, per-channel Iq. Which op-amp ships in each sound card?"
   ],
   "sources": [
     "https://www.ti.com/lit/ds/symlink/lme49720.pdf",
@@ -1435,23 +1406,42 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 9,
+    "claims_confirmed": [
+      "TI PCN 20180308002 covers the LM4562/LME49720 wafer-fab transfer (https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/754/PCN20180308002.pdf ; https://www.mouser.com/PCN/Texas_Instruments_PCN20180308002_2018032619395130.pdf ; https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why).",
+      "diyAudio thread 'LM4562 (aka LME49720) Fab moved from GB to US' exists (https://www.diyaudio.com/forums/parts/326045-lm4562-aka-lme49720-fab-moved-gb.html).",
+      "'JR' lots = Greenock fab, Malaysia assembly; LM4562 = LME49720 apart from order number and marking (https://www.diyaudio.com/community/threads/lme49720-vs-lm4562.107344/page-7).",
+      "SNAS393D (March 2007, revised November 2016) is the current LME49720 datasheet (https://www.ti.com/lit/ds/symlink/lme49720.pdf).",
+      "SNAS393B, revised October 2007 (https://www.mouser.com/datasheet/2/282/snas393b-38880.pdf).",
+      "SNAS393C copy exists (https://www.mouser.com/datasheet/2/405/snas393c-316845.pdf).",
+      "SNAS326J, August 2006, revised April 2013 (https://datasheet.octopart.com/LM4562HA-NOPB-Texas-Instruments-datasheet-21221798.pdf).",
+      "SNAS326K revised December 2013; TI lit link (https://www.ti.com/lit/pdf/snas326).",
+      "SNAS376C, November 2006, revised April 2013 (https://www.mouser.com/datasheet/2/282/lme49710-224174.pdf).",
+      "SNAS376B, November 2006, revised March 2007 (https://www.capi-gear.com/catalog/images/gallery/opamps/IC/LME49710-data.pdf).",
+      "National LME49710 datasheet dated March 2007 (https://www.pken.net/ish_mm/datasheet/ns/lme49710.pdf).",
+      "SNAS377B, February 2007, revised April 2013 (https://www.mouser.com/datasheet/2/282/lme49740-224076.pdf).",
+      "LME49720: ±2.5 to ±17 V, 0.00003% THD+N, 2.7 nV/√Hz, ±20 V/µs (https://www.mouser.com/datasheet/2/405/snas393c-316845.pdf).",
+      "TI E2E c.2017: LME49710 Active on three packages, LM4562 TO-99 lifebuy, LM4562MAX still produced (https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why).",
+      "LME49740 DIP discontinued; LME49720NA/LME49740MA on a c.2015 TI EOL list (https://www.diyaudio.com/community/threads/ti-to-discontinue-many-ics.280990/).",
+      "LME49720 reported Active at product level (https://www.ti.com/product/LME49720)."
+    ],
     "refuted_claims": [
-      "The draft's silicon_changes was empty with 'no PCN found'. That is refuted: TI PCN 20180308002 (March 2018) moved LM4562/LME49720 to RFAB with a die-shrink redesign (digikey/mouser PCN copies, TI E2E 565489).",
-      "Discovery hint 'SFAB to RFAB, 150 mm to 300 mm': the 300 mm figure is not supported. Search summaries of the PCN and forum give 150 mm (6-inch) to 200 mm (8-inch).",
-      "[change register] The pass-1 claim that LM4562/LME49720 moved from SFAB (Sherman, 150 mm) to RFAB (Richardson) with a die-shrink redesign under PCN 20180308002 is refuted and was merged away. The PCN title found by two searches is 'Transfer of select VIP3 devices from GFAB to DFAB (DL-LIN)', with no die redesign stated. The SFAB-to-RFAB die-shrink wording matches TI's NE5532/LM833/RC4580/MC33078 PCN 20231114002.1 (Hackaday, June 2026). No LM4562/LME49720 document linking the parts to that PCN was found.",
-      "[change register] Source https://mouser.com/PCN/Texas_Instruments_PCN20180308002_20180309162016256[1].pdf was not carried forward. It looks like a mangled local-download filename; the valid Mouser -001 copy and the DigiKey copy are kept.",
-      "[change register] Source https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1255412/lm4562-lm4562-oscillation was not carried forward. It is an application-oscillation thread, not evidence of a silicon change."
+      "'No PCN found' is wrong: TI PCN 20180308002 (March 2018) moved LM4562/LME49720 wafer fabrication (DigiKey and Mouser PCN copies, TI E2E 565489).",
+      "'SFAB to RFAB, 150 mm to 300 mm' is unsupported; sources give 150 mm (6-inch) to 200 mm (8-inch), itself unconfirmed.",
+      "SFAB-to-RFAB die-shrink under PCN 20180308002 is refuted: the PCN is 'GFAB to DFAB (DL-LIN)'. That wording matches NE5532-family PCN 20231114002.1 (Hackaday, June 2026).",
+      "Source https://mouser.com/PCN/Texas_Instruments_PCN20180308002_20180309162016256[1].pdf dropped: mangled download filename; valid Mouser -001 and DigiKey copies kept.",
+      "Source https://e2e.ti.com/support/audio-group/audio/f/audio-forum/1255412/lm4562-lm4562-oscillation dropped: an application-oscillation thread, not a silicon change."
     ],
     "corrections": [
-      "Added a silicon_changes entry for PCN 20180308002 (medium confidence). Source fab is uncertain: the E2E answer says SFAB Sherman; a diyAudio title says GB, i.e. Greenock. Identification uses lot/date code; 'JR' lots = Greenock fab, Malaysia assembly.",
-      "Upgraded to high confidence (headers seen in search titles): SNAS326J Octopart copy (Apr 2013), SNAS393B Mouser copy (Oct 2007), SNAS393D symlink (Nov 2016), SNAS376C Mouser (Apr 2013), SNAS376B capi-gear (Mar 2007), National Mar 2007 LME49710 on pken.net, SNAS377B Mouser lme49740-224076 (Apr 2013).",
-      "Added newly found copies: Mouser snas393c-316845.pdf (rev C), ti.com/lit/pdf/snas326, Octopart LME49720NA TI copy 10848032, alldatasheet 611621 TI1 LME49720, alldatasheet 841141 TI1 LME49710, PartsConnexion SEMI-75860.pdf, and a Qobuz-hosted LM4562 copy. LM4562 and LME49720 product pages are confirmed. The PCN URLs were added as archive seeds.",
-      "The Mouser lme49720-224067 URL was seen under the /ds/ path. It is now medium confidence as probably SNAS393C, but its header was not shown.",
-      "Farnell 1994351 is no longer credited with the SNAS377B confirmation; that confirmation belongs to the Mouser lme49740-224076 copy. Farnell stays low.",
-      "Statuses updated: LME49710 Active on its three packages (E2E c.2017); LM4562 TO-99 on lifebuy, with TI saying it would keep producing LM4562MAX; LME49740 DIP reported discontinued and LME49740MA/LME49720NA on the c.2015 EOL list (diyAudio 280990); LME49720 reported Active at product level.",
-      "Key specs: LME49720 ±2.5 to ±17 V, 0.00003% THD+N, 2.7 nV/rtHz and ±20 V/us are confirmed via the SNAS393 search summary.",
-      "Resolved the earlier open question on the 2015 EOL reversal: the part was moved to a new wafer line and die (PCN 20180308002).",
-      "Reputation left hedged; no web re-check was spent on it. Added a Pro Audio Design Forum start-up behaviour caveat."
+      "Added silicon change for PCN 20180308002. Source fab uncertain (E2E: SFAB Sherman; diyAudio: GB/Greenock). Identification by lot/date code; 'JR' = Greenock fab, Malaysia assembly.",
+      "Raised to high confidence (headers seen): SNAS326J Octopart, SNAS393B Mouser, SNAS393D symlink, SNAS376C Mouser, SNAS376B capi-gear, National LME49710 pken.net, SNAS377B Mouser.",
+      "Added copies: Mouser snas393c-316845.pdf, ti.com/lit/pdf/snas326, Octopart 10848032, alldatasheet 611621 and 841141, PartsConnexion, Qobuz LM4562. Product pages and PCN seeds added.",
+      "Mouser lme49720-224067 set to medium, probably SNAS393C; header not shown.",
+      "SNAS377B confirmation credited to Mouser lme49740-224076, not Farnell 1994351 (stays low).",
+      "Statuses: LME49710 Active c.2017 (later EOL); LM4562 TO-99 lifebuy; LME49740 DIP discontinued; LME49740MA/LME49720NA on c.2015 EOL list; LME49720 Active.",
+      "LME49720 key specs (±2.5 to ±17 V, 0.00003%, 2.7 nV/√Hz, ±20 V/µs) confirmed from SNAS393.",
+      "The 2015 EOL reversal is explained by the move to a new wafer fab (PCN 20180308002).",
+      "Reputation left hedged; added Pro Audio Design Forum start-up caveat."
     ],
     "unverified_urls": [
       "https://www.ti.com/lit/gpn/LM4562",
@@ -1476,33 +1466,6 @@
       "https://www.farnell.com/datasheets/1994351.pdf",
       "https://datasheet.octopart.com/LME49740NA-National-Semiconductor-datasheet-15941898.pdf",
       "https://www.alldatasheet.com/datasheet-pdf/pdf/190918/NSC/LME49740.html"
-    ],
-    "claims_confirmed": [
-      "TI PCN 20180308002 covers the LM4562/LME49720 fab move to RFAB (Richardson TX), with a newer process and die-shrink redesign, and 150 mm to 200 mm wafers: https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/754/PCN20180308002.pdf ; https://www.mouser.com/PCN/Texas_Instruments_PCN20180308002_2018032619395130.pdf ; https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why",
-      "A diyAudio thread titled 'LM4562 (aka LME49720) Fab moved from GB to US' exists: https://www.diyaudio.com/forums/parts/326045-lm4562-aka-lme49720-fab-moved-gb.html",
-      "Lot codes starting 'JR' mean Greenock wafer fab with Malaysia assembly, and LM4562 = LME49720 apart from ordering number and marking: https://www.diyaudio.com/community/threads/lme49720-vs-lm4562.107344/page-7",
-      "SNAS393D, March 2007, revised November 2016, is the current LME49720 datasheet: https://www.ti.com/lit/ds/symlink/lme49720.pdf",
-      "SNAS393B, revised October 2007, is frozen at https://www.mouser.com/datasheet/2/282/snas393b-38880.pdf",
-      "The SNAS393C copy exists at https://www.mouser.com/datasheet/2/405/snas393c-316845.pdf",
-      "SNAS326J, August 2006, revised April 2013, is at https://datasheet.octopart.com/LM4562HA-NOPB-Texas-Instruments-datasheet-21221798.pdf",
-      "SNAS326K is revised December 2013; the TI lit link is https://www.ti.com/lit/pdf/snas326",
-      "SNAS376C, November 2006, revised April 2013: https://www.mouser.com/datasheet/2/282/lme49710-224174.pdf",
-      "SNAS376B, November 2006, revised March 2007: https://www.capi-gear.com/catalog/images/gallery/opamps/IC/LME49710-data.pdf",
-      "The National LME49710 datasheet dated March 2007: https://www.pken.net/ish_mm/datasheet/ns/lme49710.pdf",
-      "SNAS377B, February 2007, revised April 2013: https://www.mouser.com/datasheet/2/282/lme49740-224076.pdf",
-      "LME49720 specs: ±2.5 V to ±17 V, 0.00003% THD+N, 2.7 nV/rtHz, ±20 V/us: https://www.mouser.com/datasheet/2/405/snas393c-316845.pdf",
-      "Per TI E2E c.2017: LME49710 Active on three packages, LM4562 TO-99 on lifebuy, LM4562MAX still produced: https://e2e.ti.com/support/audio-group/audio/f/audio-forum/565489/lm4562-lm4562-lme49720---eol-really-why",
-      "The LME49740 DIP was discontinued, and LME49720NA/LME49740MA appeared on a c.2015 TI EOL list: https://www.diyaudio.com/community/threads/ti-to-discontinue-many-ics.280990/",
-      "LME49720 is reported Active at product level (TI product page seen): https://www.ti.com/product/LME49720"
-    ],
-    "web_searches_used": 9
-  },
-  "tier": "A",
-  "category": "bipolar-modern-low-noise",
-  "product_pages": [
-    "https://www.ti.com/product/LM4562",
-    "https://www.ti.com/product/LME49720",
-    "https://www.ti.com/product/LME49710"
-  ],
-  "revision_chain_notes": "LM4562 (National DS201572 / TI SNAS326). The datasheet's own National revision table gives rev 1.0 (08/16/06, initial) -> 1.1 (08/22/06, short-circuit current spec) -> 1.2 (09/12/06, CMRR curves) -> 1.3 (09/26/06, application schematic capacitor values) -> 1.4 (05/03/07, EC-table general note; May 2007 edition at radio-hobby.org) -> 1.5 (10/17/07, all PSRR curves replaced; Oct 2007 edition, BU copy). The chain then jumps to SNAS326I (Jan 2010). Search summaries tie SNAS326I to the qobuz copy (already listed, not re-added); raffia.ch has the same doubled-title TI-rewrap pattern. TI revisions follow: J (Apr 2013) -> K (Dec 2013). Still missing: how TI letters A-H map onto National revs 1.0-1.5 (no summary showed a SNAS326A-H letter); any 2008-2009 National edition (rev 1.6+); a confirmed copy of the Aug/Sept 2006 editions (datasheet4u/datasheetspdf id 559726 may be one, per an 'August 2006' summary, unconfirmed). LME49720 (SNAS393). Rev 1.0 03/30/07 (Mar 2007 original; elitesecurity copy) -> 1.1 05/03/07 (probably SNAS393A; no copy found) -> 1.2 10/22/07 (PSRR curves; = SNAS393B Oct 2007: Mouser snas393b, op316, electrokit, and the kyohritsu Japanese copy, whose title reads '2007年10月') -> C Apr 2013 -> D Nov 2016. Still missing: a copy of the May 2007 edition and a confirmed National DS number. LME49710 (SNAS376). Rev 1.0 (table prints 11/16/07, surely Nov 2006) -> 1.1 12/12/06 -> 1.2 01/15/07 -> 1.3 03/09/07 (= SNAS376B Mar 2007) -> C Apr 2013 (new copies: Mouser snas376c, rcscomponents, Octopart 102491025). Still missing: copies of the Nov 2006, Dec 2006 and Jan 2007 editions, and the letter for SNAS376A. The National DS number is probably 202104, inferred from graphic IDs 20210489/90. LME49740 (SNAS377). Rev 1.0 02/28/07 (initial web release) -> 1.01 02/08/08 (SO package caption fix; = SNAS377A, now corroborated; Octopart 15941898 National copy) -> B Apr 2013 (new copies: DigiKey, audioXpress). Still missing: a confirmed copy of the Feb 2007 original (alldatasheet 190918 NSC may be it) and the National DS number. The archive seeds follow the standard national.com/ds/LM/ and ti.com symlink patterns; no search result confirmed them. No SNAS393A, SNAS376A or SNAS326A-H letter appeared in any search result."
+    ]
+  }
 }

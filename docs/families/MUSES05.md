@@ -1,30 +1,29 @@
-# MUSES05 (J-FET single, two-chip MUSES flagship, DFN12-CA8)
+# MUSES05
 
-New Japan Radio Co., Ltd. (NJR) (2021 (mass production announced 2021-06-23; EN release 2021-07-02) - end of 2021) → Nisshinbo Micro Devices Inc. (2022 - present) · Tier A (legend / revision hazard)
+**Two-chip J-FET input audio op-amp, single, DFN12-CA8** · New Japan Radio (2021) → Nisshinbo Micro Devices (2022–present) · Tier A (legend / revision hazard)
 
-*The current MUSES flagship: a two-chip JFET single on an oxygen-free copper frame, which some Head-Fi rollers rank among the most resolving op-amps they have tried.*
+*MUSES flagship: a two-chip JFET single on an oxygen-free copper frame, rated among the most resolving on Head-Fi.*
 
-| Slew rate |
-|---|
-| 40 V/us (typ) |
+| Input noise (1 kHz) | GBW | Slew rate | THD+N | Supply range | Supply current |
+|---|---|---|---|---|---|
+| 7.5 nV/√Hz typ | 12 MHz typ | 40 V/µs typ (MUSES03: 35 V/µs) | 0.00003% THD typ | ±3.5 V to ±18 V operating; ±19 V (probably abs max) | 5.8 mA typ |
 
 ## Why it's rated
 
-NJR/Nisshinbo position it as the MUSES op-amp with the highest sound quality. EE Times Japan headlined it as a new flagship of sound-first op-amps made 'regardless of productivity' (生産性度外視). PHILE WEB's 2021 listening report says it shows left-right staging and renders three-dimensional depth 'even more deeply'. On Head-Fi's Opamp thread (pages 490-497), a roller calls it roughly twice as fast as MUSES03 and a refinement of the MUSES sound, with more speed, resolution, air and reverb but less vocal body. The same roller ranks it with the Burson V7 Vivid as the most resolving parts tried, and says MUSES03 still wins on some tracks because of its physicality and weight. That poster adds that people who dislike MUSES03 will probably dislike MUSES05 too. Japanese DIY blogs use it in Quad405-clone op-amp swaps, T.b.sound amp builds, KORG HA-K headphone amps and DUO dual adapters. One Quad405-clone comparison could not clearly tell MUSES03D and MUSES05 apart. No independent measurements (ASR, diyAudio, Samuel Groner) were found.
+Billed by NJR/Nisshinbo as the best-sounding MUSES. PHILE WEB praised its staging and 3D depth. A Head-Fi roller found it about twice as fast as MUSES03, with more resolution, air and reverb but less vocal body, ranking it with the Burson V7 Vivid. Japanese DIY blogs use it widely; one could not tell it from MUSES03D. No independent measurements found.
 
-**Described as:** highly resolving (Head-Fi, single poster), fast (about 2x MUSES03 per the same poster), sharp / tight, sharper focus and microdynamics, airy, more reverb/ambience; less body than MUSES03, left-right staging with deeper 3D depth (PHILE WEB)
+**Described as:** highly resolving, fast, sharp focus, microdynamics, airy, more reverb, less body than MUSES03, deep 3D staging
 
-**Used in:** I/V converters after DACs (datasheet application), preamplifiers / line amplifiers, active filters, headphone amplifiers, op-amp rolling via DIP8 conversion modules or kits (Akizuki g117651 / g117650) or two on a DUO-style dual adapter
+**Used in:** I/V converters after DACs, Preamplifiers and line amplifiers, Active filters, Headphone amplifiers (e.g. KORG HA-K, T.b.sound builds), Rolling via DIP8 modules or DUO dual adapters
 
 ## Watch out
 
-- SMD-only DFN12-CA8 package. Socket rolling needs a DIP8 conversion module, and results then depend on the adapter (community practice; no stability data found).
-- It is a single, so a dual-op-amp socket needs two parts on an adapter such as the MUSES05 DUO.
-- 5.8 mA typ supply current matters in battery gear.
-- Supply has been intermittent: customer-only allocation in 2021, open-market sale apparently only from about December 2022, then a production suspension over material availability before the restart. Resellers have listed it as discontinued (廃版 / 生産終了品).
-- Praise comes from a few listeners and is subjective. At least one blogger could not reliably tell it from MUSES03D, and its headline datasheet specs are nearly identical to MUSES03.
-- No independent THD or noise measurements were located.
-- **Counterfeits:** No MUSES05-specific counterfeit reports were found. new_western_elec's counterfeit survey covers DIP parts (OPA2604, OPA627, MUSES01), not MUSES05. The SMD DFN12-CA8 package is harder to fake convincingly than the DIP8 MUSES01, MUSES02, MUSES8820 and MUSES8920. The practical risk is DIP-converted or dualised modules resold on Yahoo Auctions, Yahoo Flea Market and Mercari, often labelled 廃版 or 生産終了品 (discontinued) at high prices, where the chip cannot be inspected. Buy bare MUSES05-TE3 from authorised channels (Mouser, DigiKey, Farnell/element14), or from Akizuki (bare chip g117512, kit g117650 or finished module g117651), and check that the DFN marking and date code look consistent.
+- SMD-only DFN12-CA8: rolling needs a DIP8 module; results depend on the adapter.
+- Single: a dual socket needs two parts on an adapter such as MUSES05 DUO.
+- 5.8 mA supply current matters in battery gear.
+- Supply intermittent: customer-only 2021, open sale ~2022-12, suspended, then restarted; resellers list it 廃版.
+- Praise is subjective; headline specs nearly match MUSES03 (new_western_elec comparison, 2022-12).
+- **Counterfeits:** No MUSES05 fakes reported; DFN is harder to fake than DIP. Risk: converted or dual modules resold on Yahoo Auctions, Yahoo Flea Market, Mercari as 廃版. Buy from Mouser, DigiKey, element14 or Akizuki (g117512, g117650, g117651); check marking, date code.
 
 ## Silicon changes
 
@@ -33,7 +32,7 @@ None documented. Compare datasheet revisions before assuming old and new parts a
 <details>
 <summary>Other change notes: lifecycle, packaging, renumbering, lore (1)</summary>
 
-- **Lifecycle** · Nisshinbo Micro Devices, General sale began February 2022. Production was suspended by June 2024 at the latest (new_western_elec factory-visit post, 2024-06). Restart: the JA MUSES05 page says production has resumed, while the EN spec page still says the timing will be announced (both re-checked Sept 2026). A @NisshinboMicro X post 'MUSES05 シリーズ' (2026-06-29 UTC) promotes it again, and Akizuki's DIP kit was reported in stock on 2026-07-31 (X stock-alert post, 2026-08-01 UTC). No source gives the exact restart date.: The vendor documents a halt and a restart under the same part number. The EN spec page says the suspended MUSES05 will resume production as MUSES05 after adjustments to production materials. An earlier sweep reported new_western_elec's 2024 factory-visit account that the scarce material is a process material, not a part of the finished op-amp; this pass did not re-confirm that. The vendor does not say whether the die, die attach, mould or OFC frame/assembly is affected. This 'production material adjustment' is the only possible same-part-number silicon or process risk in the family, and it is undocumented. [[1]](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses05) [[2]](https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES05.html) [[3]](https://nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html) [[4]](https://x.com/NisshinboMicro/status/2071398037201850657) [[5]](https://x.com/LeoUila/status/2083370920455143845) [[6]](https://prtimes.jp/main/html/rd/p/000000037.000071712.html)
+- **Lifecycle** · Nisshinbo Micro Devices, 2024-06 halt · restart by 2026 (undated): Production halted (by 2024-06 at the latest) because production materials were hard to obtain; the EN page says it resumes as MUSES05 after material adjustments. new_western_elec reportedly says a process material, not part of the chip. Die, attach, mould or OFC frame impact is undisclosed. Only known process risk. [[1]](https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses05) [[2]](https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES05.html) [[3]](https://nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html) [[4]](https://x.com/NisshinboMicro/status/2071398037201850657) [[5]](https://x.com/LeoUila/status/2083370920455143845) [[6]](https://prtimes.jp/main/html/rd/p/000000037.000071712.html)
 
 </details>
 
@@ -44,6 +43,14 @@ None documented. Compare datasheet revisions before assuming old and new parts a
 | Rev | Date | Best copy | More | Status |
 |---|---|---|---|---|
 | Ver. 1.0 |  | [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES05_J.pdf) |  | confirmed |
+
+**Nisshinbo Micro Devices MUSES05_J / MUSES05_E**
+
+| Rev | Date | Best copy | More | Status |
+|---|---|---|---|---|
+| Ver. 1.0 |  | no copy found |  | confirmed |
+
+Only Ver.1.0 known. Unknown whether a 2021 preliminary sheet or post-restart version exists.
 
 **Nisshinbo Micro Devices (Farnell copy) MUSES05_E**
 
@@ -60,11 +67,11 @@ None documented. Compare datasheet revisions before assuming old and new parts a
 <details>
 <summary>Other copies, revision not identified (5)</summary>
 
-- [components101.com](https://components101.com/sites/default/files/2022-12/MUSES05_E.pdf) · Nisshinbo Micro Devices (components101 copy) MUSES05_E — Unconfirmed in this pass (components101 news page seen, PDF URL not). If real, it is a December 2022 pre-suspension snapshot.
-- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/2271955/NISSHINBO/MUSES05.html) · Nisshinbo Micro Devices (alldatasheet copy) MUSES05_E — URL seen in several Sept 2026 search results. A summary gives the file as 16 pages and 795 KB, apparently from this listing. Revision not visible.
-- [datasheet4u.com](https://datasheet4u.com/datasheets/Nisshinbo/MUSES05/1557876) · Nisshinbo Micro Devices (datasheet4u copy) MUSES05_E — URL seen in Sept 2026 search results. Revision not visible.
-- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2021/semi_20211201-MUSES05-DUO.html) · New Japan Radio (news archived by Nisshinbo) - — NJR general-sale and DUO campaign release, seen in search results. The legacy njr.co.jp copy (njr.co.jp/news/2021/semi_20211201-MUSES05-DUO.html) was not re-seen in this pass.
-- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2021/semi_20210623-MUSES05.html) · New Japan Radio (news archived by Nisshinbo) - — Mass-production release. The English release (2021-07-02) is at /en/about/info/njr/2021/semi_20210702-MUSES05-E.html. Both seen in search results.
+- [components101.com](https://components101.com/sites/default/files/2022-12/MUSES05_E.pdf) · Nisshinbo Micro Devices (components101 copy) MUSES05_E — PDF not confirmed; if real, a December 2022 snapshot.
+- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/2271955/NISSHINBO/MUSES05.html) · Nisshinbo Micro Devices (alldatasheet copy) MUSES05_E — 16 pages, 795 KB; revision not visible.
+- [datasheet4u.com](https://datasheet4u.com/datasheets/Nisshinbo/MUSES05/1557876) · Nisshinbo Micro Devices (datasheet4u copy) MUSES05_E — Revision not visible.
+- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2021/semi_20211201-MUSES05-DUO.html) · New Japan Radio (news archived by Nisshinbo) - — NJR general-sale and DUO campaign release.
+- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2021/semi_20210623-MUSES05.html) · New Japan Radio (news archived by Nisshinbo) - — Mass-production release; English version dated 2021-07-02.
 
 </details>
 
@@ -76,13 +83,13 @@ Download every revision: `python tools/fetch_datasheets.py --family MUSES05`
 
 | Part number | Ch | Status | Note |
 |---|---|---|---|
-| MUSES05 | 1 | Production restarted according to the Nisshinbo JA MUSES05 page (re-checked Sept 2026). The EN spec page still describes the suspension and says the restart timing will be announced. Akizuki lists the bare chip (g117512). |  |
-| MUSES05-TE3 | 1 | Listed by Mouser, DigiKey, Microchip USA, Ovaga and Xecor (and element14 per the earlier sweep); stock levels not verified |  |
-| MUSES05 DUO | 2 | Seen only as a promotional item in a present campaign announced 2021-12-01; no catalogue listing found |  |
-| MUSES05 DIP化モジュール (完成品) - Akizuki g117651 | 1 | Listed by Akizuki (akizukidenshi.com/catalog/g/g117651); stock not verified |  |
-| MUSES05 DIP化キット - Akizuki g117650 | 1 | Listed by Akizuki (akizukidenshi.com/catalog/g/g117650). An X stock-alert post dated 2026-08-01 UTC reports it in stock on 2026-07-31. |  |
+| MUSES05 | 1 | active | DFN12-CA8 (ESON12-CA8), OFC frame, no DIP. JA page: restarted; EN page: TBA. |
+| MUSES05-TE3 | 1 | active | Tape-and-reel code at Mouser, DigiKey, element14, Microchip USA, Ovaga, Xecor; stock unverified. |
+| MUSES05 DUO | 2 | unknown | Two MUSES05 on a dual adapter; only a promo item from the 2021-12-01 campaign. |
+| MUSES05 DIP化モジュール (完成品) - Akizuki g117651 | 1 | unknown | Finished DIP8 conversion module sold by Akizuki; assembler unknown; resold in pairs. |
+| MUSES05 DIP化キット - Akizuki g117650 | 1 | active | Unassembled DIP8 kit from Akizuki; reported in stock 2026-07-31 (X post 2026-08-01 UTC). |
 
-**Related / alternatives:** MUSES03 (predecessor two-chip JFET single; nearly identical headline specs except SR 35 V/us; reported discontinued around Oct 2023, low confidence; scarce), MUSES01 (NJR/Nisshinbo JFET dual, DIP8), MUSES02 (NJR/Nisshinbo bipolar dual, DIP8), MUSES8921 (Nisshinbo J-FET input dual, reported released Dec 2025 per search summary), MUSES8920 / MUSES8820 (lower-cost MUSES duals), TI OPA1641 / OPA1655 or OPA828 (JFET/CMOS singles; suggestion only, not a direct equivalent)
+**Related / alternatives:** MUSES03 (predecessor; SR 35 V/µs; reportedly discontinued ~2023-10), MUSES01 (JFET dual, DIP8), MUSES02 (bipolar dual, DIP8), MUSES8921 (J-FET dual, reportedly released 2025-12), MUSES8920 / MUSES8820 (lower-cost MUSES duals), OPA1641 / OPA1655 / OPA828 (not direct equivalents)
 
 ## Evidence
 
@@ -91,19 +98,15 @@ Download every revision: `python tools/fetch_datasheets.py --family MUSES05`
 
 | Parameter | Value | Conditions | Source |
 |---|---|---|---|
-| Input voltage noise e_n | 7.5 nV/rtHz (typ) | f = 1 kHz | Nisshinbo MUSES05 datasheet Ver.1.0 (search summary); DigiKey product highlight |
-| THD | 0.00003% (typ) | f = 1 kHz (other test conditions not seen) | Nisshinbo MUSES05 datasheet (search summary); DigiKey highlight |
-| Gain bandwidth product | 12 MHz (typ) | datasheet typical | Nisshinbo MUSES05_J.pdf (search summary); DigiKey highlight |
-| Slew rate | 40 V/us (typ) | datasheet typical | Nisshinbo MUSES05_J.pdf (search summary); DigiKey highlight |
-| Input bias current | 5 pA (typ) | datasheet typical | Nisshinbo MUSES05 datasheet (search summary); DigiKey highlight |
-| Input offset voltage | 1 mV | typ or max not stated in the extract | DigiKey product highlight |
-| Operating supply voltage | +/-3.5 V to +/-18 V | operating range | Nisshinbo MUSES05_J.pdf Ver.1.0 (search summary) |
-| Supply voltage (distributor figure) | +/-19 V | Probably the absolute maximum: MUSES03 Ver.4.2 gives +/-19 V abs max with +/-3.5 to +/-18 V operating. Not confirmed for MUSES05. | DigiKey product highlight |
-| Supply current (single channel) | 5.8 mA (typ) | datasheet typical | Nisshinbo MUSES05_J.pdf Ver.1.0 (search summary) |
-| Input stage / construction | J-FET; separate input-stage and output-stage chips | - | NJR 2021-06-23 release; EE Times Japan 2021-06-24; Nisshinbo datasheet |
-| Package | DFN12-CA8 (ESON12-CA8) with exposed pad, oxygen-free copper frame | - | Nisshinbo MUSES05_J.pdf and product pages (search summaries) |
-| Operating temperature range | Conflicting: -40 to +105 degC (search summary of Akizuki/Nisshinbo JA pages) vs -40 to +125 degC (element14 listing title) | Unconfirmed. Neither figure was seen in raw datasheet text. MUSES03 Ver.4.2 gives Topr -40 to +85 degC. | Search summary (akizukidenshi.com g117512 / nisshinbo JA page); element14 MUSES05-TE3 listing |
-| Difference vs MUSES03 datasheet | SR 40 vs 35 V/us; e_n, I_b, GBW, supply range and I_q match | typical values | MUSES05 extracts vs MUSES03 datasheet Ver.4.2; new_western_elec 'MUSES05とMUSES03のスペック比較' (2022-12) |
+| Input noise (1 kHz) | 7.5 nV/√Hz typ | f = 1 kHz | MUSES05 datasheet Ver.1.0 |
+| THD+N | 0.00003% THD typ | f = 1 kHz; other conditions not seen | MUSES05 datasheet Ver.1.0 |
+| GBW | 12 MHz typ | typ | MUSES05 datasheet Ver.1.0 |
+| Slew rate | 40 V/µs typ (MUSES03: 35 V/µs) | typ | MUSES05 datasheet Ver.1.0 |
+| Input bias current | 5 pA typ | typ | MUSES05 datasheet Ver.1.0 |
+| Offset voltage | 1 mV (typ or max not stated) |  | DigiKey product highlight |
+| Supply range | ±3.5 V to ±18 V operating; ±19 V (probably abs max) | ±19 V from DigiKey, unconfirmed | MUSES05 datasheet Ver.1.0 |
+| Supply current | 5.8 mA typ | single channel | MUSES05 datasheet Ver.1.0 |
+| Input stage | J-FET; separate input- and output-stage chips | DFN12-CA8, exposed pad, OFC frame | NJR release 2021-06-23; datasheet |
 
 
 </details>
@@ -113,8 +116,8 @@ Download every revision: `python tools/fetch_datasheets.py --family MUSES05`
 
 | Vendor | Role | Period | Note |
 |---|---|---|---|
-| New Japan Radio Co., Ltd. (NJR) | originator / designer | 2021 (mass production announced 2021-06-23; EN release 2021-07-02) - end of 2021 |  |
-| Nisshinbo Micro Devices Inc. | successor (formed when NJR merged with Ricoh Electronic Devices) | 2022 - present |  |
+| New Japan Radio | originator | 2021 | Mass production announced 2021-06-23 (EN 2021-07-02). Customer-only at first; 2021-12-01 announced general sale from 2022-02. |
+| Nisshinbo Micro Devices | current | 2022–present | NJR–Ricoh merger successor. Sale notice 2022-12-19; open sale about 2022-12. Suspended, reported discontinued 2024-06, now restarted. |
 
 
 </details>
@@ -124,7 +127,7 @@ Download every revision: `python tools/fetch_datasheets.py --family MUSES05`
 
 | Vendor | Document | Rev | Date | Changes |
 |---|---|---|---|---|
-| Nisshinbo Micro Devices | MUSES05_J / MUSES05_E | Ver.1.0 | not shown (an English copy was reportedly mirrored by 2022-12) | The only version seen. The vendor JA PDF title shows Ver.1.0 (re-seen Sept 2026, after the reported restart), and a search summary gives Ver.1.0 for the Mouser EN copy. No change-log entries were visible, and no later version (for example for material-adjusted post-restart lots) has been seen. |
+| Nisshinbo Micro Devices | MUSES05_J / MUSES05_E | Ver. 1.0 |  | Only version seen (EN copy mirrored by 2022-12; JA still Ver.1.0 in Sept 2026). No change log; no post-restart version. |
 
 
 </details>
@@ -136,38 +139,38 @@ Status: **verified-with-corrections**, 9 web searches.
 
 **Confirmed:**
 
-- The vendor JA datasheet title shows Ver.1.0 (still in Sept 2026) - https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES05_J.pdf
-- The EN spec page says production was suspended and will resume as MUSES05 after production-material adjustments, timing TBA - https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses05
-- The JA MUSES05 page says production has restarted - https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES05.html
-- General sale was announced for February 2022 (2021-12-01 release) - https://prtimes.jp/main/html/rd/p/000000037.000071712.html
-- General-sale notice dated 2022-12-19; a summary says general sale began December 2022 - https://www.nisshinbo-microdevices.co.jp/ja/about/info/20221219.html
-- Mass production announced 2021-06-23 - https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2021/semi_20210623-MUSES05.html
-- Specs +/-3.5 to +/-18 V, 5 pA, 5.8 mA, 0.00003% at 1 kHz, 12 MHz, 40 V/us, DFN12-CA8 (ESON12-CA8) - https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES05_J.pdf
-- 7.5 nV/rtHz at 1 kHz and 5 pA; Mouser copy of the EN datasheet - https://www.mouser.com/datasheet/2/294/MUSES05_E-3082691.pdf
-- OFC frame for sound quality and heat dissipation - https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES05.html
-- Akizuki lists the bare chip, a DIP kit and a finished DIP module - https://akizukidenshi.com/catalog/g/g117512/ ; https://akizukidenshi.com/catalog/g/g117650/ ; https://akizukidenshi.com/catalog/g/g117651/
-- The DIP kit was reported in stock on 2026-07-31 (post decodes to 2026-08-01 UTC) - https://x.com/LeoUila/status/2083370920455143845
-- @NisshinboMicro posted 'MUSES05 シリーズ' on 2026-06-29 UTC - https://x.com/NisshinboMicro/status/2071398037201850657
-- new_western_elec's 2024-06 factory-visit post exists - https://nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html
-- Head-Fi: faster than MUSES03, more air and reverb, less body, more resolution - https://www.head-fi.org/threads/the-opamp-thread.432749/page-494
-- MUSES05-TE3 is listed at DigiKey, Mouser, Microchip USA, Ovaga and Xecor - https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES05-TE3/17399602
-- The alldatasheet and datasheet4u MUSES05 copies exist - https://www.alldatasheet.com/datasheet-pdf/pdf/2271955/NISSHINBO/MUSES05.html
+- JA datasheet title shows Ver.1.0, still in Sept 2026 (https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES05_J.pdf).
+- EN spec page: production suspended, resumes as MUSES05 after material adjustments, timing TBA (https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses05).
+- JA MUSES05 page says production has restarted (https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES05.html).
+- General sale announced for February 2022 in the 2021-12-01 release (https://prtimes.jp/main/html/rd/p/000000037.000071712.html).
+- General-sale notice dated 2022-12-19; sale reportedly began December 2022 (https://www.nisshinbo-microdevices.co.jp/ja/about/info/20221219.html).
+- Mass production announced 2021-06-23 (https://www.nisshinbo-microdevices.co.jp/ja/about/info/njr/2021/semi_20210623-MUSES05.html).
+- ±3.5 to ±18 V, 5 pA, 5.8 mA, 0.00003% at 1 kHz, 12 MHz, 40 V/µs, DFN12-CA8 (ESON12-CA8) (https://www.nisshinbo-microdevices.co.jp/ja/pdf/datasheet/MUSES05_J.pdf).
+- 7.5 nV/√Hz at 1 kHz and 5 pA; Mouser EN copy (https://www.mouser.com/datasheet/2/294/MUSES05_E-3082691.pdf).
+- OFC frame for sound quality and heat dissipation (https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES05.html).
+- Akizuki lists bare chip, DIP kit and finished module (https://akizukidenshi.com/catalog/g/g117512/ ; https://akizukidenshi.com/catalog/g/g117650/ ; https://akizukidenshi.com/catalog/g/g117651/).
+- DIP kit reported in stock 2026-07-31 (post 2026-08-01 UTC) (https://x.com/LeoUila/status/2083370920455143845).
+- @NisshinboMicro posted 'MUSES05 シリーズ' on 2026-06-29 UTC (https://x.com/NisshinboMicro/status/2071398037201850657).
+- new_western_elec's 2024-06 factory-visit post exists (https://nw-electric.way-nifty.com/blog/2024/06/post-6f35c5.html).
+- Head-Fi: faster than MUSES03, more air, reverb and resolution, less body (https://www.head-fi.org/threads/the-opamp-thread.432749/page-494).
+- MUSES05-TE3 listed at DigiKey, Mouser, Microchip USA, Ovaga, Xecor (https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES05-TE3/17399602).
+- alldatasheet and datasheet4u copies exist (https://www.alldatasheet.com/datasheet-pdf/pdf/2271955/NISSHINBO/MUSES05.html).
 
 **Refuted or corrected:**
 
-- Discovery praise_summary says MUSES05 has been 'on general sale since February 2022'. February 2022 was only the date announced on 2021-12-01. Vendor notice 20221219 and a search summary put the actual general sale at December 2022.
+- 'On general sale since February 2022' is wrong: that was only the date announced on 2021-12-01; notice 20221219 puts actual general sale at December 2022.
 
 **Corrections:**
 
-- Operating temperature row rewritten as a conflict: a search summary gives -40 to +105 degC, element14 gives -40 to +125 degC, and MUSES03 gives -40 to +85 degC. All unconfirmed.
-- MUSES05 part status: the vendor's JA page (restart done) and EN spec page (restart timing TBA) still disagree in Sept 2026. Added the Akizuki bare-chip listing g117512.
-- Added Akizuki DIP化キット g117650 as a listing, with an X stock-alert post (2026-08-01 UTC) reporting it in stock on 2026-07-31. This supports the post-restart availability.
-- MUSES05-TE3 confirmed as the tape-and-reel orderable code (per search summary); added Xecor to the distributors.
-- Farnell and components101 PDF copies downgraded to low / unconfirmed because they were not re-seen in this pass. alldatasheet (16 pages, 795 KB per summary) and datasheet4u raised or kept at medium because both were seen in results.
-- The DUO news entry now points to the Nisshinbo-archived NJR release, which was seen. The legacy njr.co.jp copy is kept in archive_seed_urls only.
-- Added the 2021-06-23 and 2021-07-02 NJR releases and the Seiwa, Endrich, components101 news, s-electron and WMR Tokyo pages.
-- Silicon-change entry: the new_western_elec 'process material' detail is marked as not re-confirmed; the vendor wording 'adjustments in production materials' is confirmed. Added the 2026-06-29 NisshinboMicro promo post and the 2026-07-31 kit stock report as restart evidence.
-- Reputation: added Head-Fi page 497 and the poster's 'about twice as fast as MUSES03 / refinement of the MUSES sound' and 'MUSES03 still wins on some tracks' remarks. No ASR or diyAudio MUSES05 measurements exist in results.
+- Operating temperature recorded as a conflict: −40 to +105 °C vs −40 to +125 °C (element14) vs MUSES03's −40 to +85 °C.
+- Part status: JA page (restarted) and EN page (timing TBA) still disagree in Sept 2026. Added Akizuki bare chip g117512.
+- Added Akizuki DIP kit g117650, reported in stock 2026-07-31 (X post 2026-08-01 UTC), supporting post-restart availability.
+- MUSES05-TE3 confirmed as the tape-and-reel code; Xecor added to distributors.
+- Farnell and components101 PDFs downgraded to low; alldatasheet (16 pages, 795 KB) and datasheet4u kept at medium.
+- DUO news now points to the Nisshinbo-archived NJR release; legacy njr.co.jp copy kept as archive seed.
+- Added 2021-06-23 and 2021-07-02 NJR releases and Seiwa, Endrich, components101, s-electron, WMR Tokyo pages.
+- Vendor wording 'adjustments in production materials' confirmed; 'process material' detail unconfirmed. Added 2026-06-29 promo post and 2026-07-31 stock report.
+- Reputation: added Head-Fi page 497 remarks ('twice as fast as MUSES03', 'MUSES03 still wins on some tracks'). No ASR or diyAudio measurements.
 - Added MUSES8921 (J-FET dual, reported Dec 2025) to alternatives.
 
 **Links not confirmed:**
@@ -182,16 +185,11 @@ Status: **verified-with-corrections**, 9 web searches.
 
 **Open questions:**
 
-- Verification pass limits: 9 fresh web searches (Sept 2026). Search summaries only; no MUSES05 PDF header or footer was read directly.
-- Inferred URLs, not seen in results and kept only in archive_seed_urls: .../en/pdf/datasheet/MUSES05_E.pdf, njr.co.jp/products/semicon/PDF/MUSES05_J.pdf and njr.com/semicon/PDF/MUSES05_E.pdf.
-- Did NJR issue a preliminary datasheet in 2021, before Ver.1.0, for the customer-only phase?
-- Is there a datasheet version after Ver.1.0 for post-restart lots, and do specs or absolute maximum ratings change? The JA PDF was still titled Ver.1.0 in Sept 2026.
-- Exact dates of the suspension and restart, and which material changed? The vendor says production materials; new_western_elec (per the earlier sweep) says a process material. Is there a PCN?
-- Content of the @NisshinboMicro X post 'MUSES05 シリーズ' (2026-06-29 UTC): a search summary reads it as promotion of MUSES05; confirm whether it announces the restart.
-- Operating temperature range conflicts: -40 to +105 degC (search summary) vs -40 to +125 degC (element14), vs MUSES03's -40 to +85 degC. Also not extracted: input current noise, output current, THD test conditions and absolute maximum supply.
-- Who assembles the Akizuki 'MUSES05 DIP化モジュール (完成品)' (g117651)?
-- new_western_elec's 2025-12 post '日清紡HDのニュースに衝撃' reportedly concerns cutbacks at Nisshinbo (search summary only). Any effect on MUSES supply is unverified.
-- No ASR, diyAudio or Samuel Groner measurements of MUSES05 were found.
+- Is there a 2021 preliminary datasheet, or a post-restart version with changed specs or ratings?
+- Exact suspension and restart dates; which material changed; any PCN? Does Nisshinbo's reported 2025-12 cutback affect supply?
+- Operating temperature: −40 to +105 °C or −40 to +125 °C? (MUSES03: −40 to +85 °C.)
+- Missing specs: current noise, output current, THD test conditions, absolute maximum supply.
+- Who assembles the Akizuki DIP module (g117651)? Any ASR, diyAudio or Samuel Groner measurements?
 
 
 </details>

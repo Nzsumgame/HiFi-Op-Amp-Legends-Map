@@ -1,38 +1,45 @@
-# MUSES01 / NJM5720 (New JRC / Nisshinbo J-FET-input dual, OFC lead frame)
+# MUSES01 / NJM5720
 
-New Japan Radio Co., Ltd. (New JRC / NJR) (2009 (mass production of NJM5720 announced May 2009) - 2021) → Nisshinbo Micro Devices Inc. (2022 - present) · Tier A (legend / revision hazard)
+**J-FET-input dual audio op-amp, OFC lead frame, DIP8** · New JRC (2009–2021) → Nisshinbo Micro Devices (2022–present) · Tier A (legend / revision hazard)
 
-*New JRC's flagship JFET-input dual, the first op-amp with an OFC lead frame. Japanese listeners compare it to the OPA627 for its wide soundstage and smooth, refined treble.*
+*New JRC's JFET flagship and the first op-amp with an OFC lead frame; Japan's answer to the OPA627.*
 
-| Slew rate | Supply current |
-|---|---|
-| +12 V/us / -13 V/us typ | 8.5 mA typ / 12.0 mA max |
+| Input noise (1 kHz) | GBW | Slew rate | THD+N | Supply range | Supply current |
+|---|---|---|---|---|---|
+| 9.5 nV/√Hz typ (RIAA: 1.2 µVrms typ, 3.0 µVrms max) | 3.3 MHz typ; unity-gain 3.0 MHz, 60° phase margin | +12 / −13 V/µs typ | 0.002% THD typ | ±9 V to ±16 V recommended; ±18 V absolute max | 8.5 mA typ / 12.0 mA max |
 
 ## Why it's rated
 
-One of the most highly regarded Japanese audio op-amps. Japanese enthusiasts often treat it as a domestic counterpart to the OPA627 and compare the two directly, for example in the e-earphone 'strongest op-amp' listening shoot-out, a mixi 'op-amp summit' (MUSES01 vs MUSES02 vs OPA627) and a 'MUSES01/02 vs OPA627BP' blog comparison. Listeners describe a wide soundstage and very smooth, refined, extended treble; one comparison notes slightly weak impact. Genre folklore is inconsistent: some describe MUSES01 as suited to classical music and MUSES02 to jazz vocals and pop, while others say the reverse. The rankings from these shoot-outs were not re-verified. No independent bench measurements (ASR, Samuel Groner) were found, so the praise rests on listening impressions.
+One of Japan's most admired audio op-amps, often treated as a domestic OPA627 and compared head-to-head in e-earphone, mixi and blog shoot-outs. Listeners report a wide soundstage and very smooth, refined, extended treble; one notes slightly weak impact. Genre folklore is inconsistent. No independent bench measurements exist, so the praise rests on listening.
 
-**Described as:** wide, spacious soundstage, very smooth, refined treble, high resolution, neutral / natural, deep rather than punchy (slightly weak impact, per one comparison)
+**Described as:** wide, spacious soundstage, very smooth, refined treble, high resolution, neutral / natural, deep rather than punchy, slightly weak impact
 
-**Used in:** audio preamplifiers, active filters and line amplifiers (datasheet application list), op-amp rolling in DACs, car audio and headphone amps with +/-9 V or higher rails, high-end Japanese DIY headphone amps and I/V or buffer stages
+**Used in:** Audio preamps, active filters and line amps (datasheet), Op-amp rolling in DACs, car audio, headphone amps (±9 V+), High-end Japanese DIY headphone amps, I/V and buffers
 
 ## Watch out
 
-- The vendor has confirmed NRND status (datasheet 20250321), and DigiKey and Mouser list it as NRND, so long-term supply is uncertain. The bipolar sibling MUSES02 is also NRND. MUSES03 and MUSES05 are reported discontinued (not re-verified).
-- The recommended supply is +/-9 V to +/-16 V. Single 5 V, +/-5 V or battery rails, as in many portable DAPs and headphone amps, are outside the recommended range. MUSES02, by contrast, is specified from +/-3.5 V.
-- Input bias current is 200 pA typ / 800 pA max at 25 C, high for a JFET-input part, and JFET bias current rises with temperature. Input offset is 5 mV max. Check DC coupling and high-impedance inputs.
-- The input common-mode range is only +/-8 V min (+/-9.5 V typ) on +/-15 V rails, which limits headroom in large-swing unity-gain buffers.
-- It is very expensive and widely counterfeited (see counterfeit_notes).
-- The soft OFC leads reportedly bend easily (not re-verified). Take care with repeated socket swaps.
-- DIP8 only; SOIC/SMD boards need an adapter.
-- The evidence is subjective listening only; no measurement shows it to be better.
-- **Counterfeits:** Counterfeits are common and documented. The fakecomponents account on X has posted several fake MUSES01 listings on Japanese marketplaces (e.g. https://x.com/fakecomponents/status/895845393963012096, https://x.com/fakecomponents/status/1506883625526218760), and Japanese blogs (blog.luispc.com, ameblo) describe receiving fakes. Head-fi's saying is 'almost all [marketplace] sellers are selling fake MUSES'. Identification tells confirmed on the maimai-audio blog, for the MUSES01/02/03 goddess logo: - Genuine marking is laser-engraved and slightly grey-white, flat with little relief. - Fakes use pure white ink that you can feel, with thick or blurred characters. - On genuine parts the goddess profile (forehead, nose, mouth, chin), the back-hair lines and the thin, evenly spaced wing slits stay sharp; on fakes they are filled in. Unverified folklore: a misplaced pin-1 dot, and stiff non-copper leads instead of soft copper-coloured OFC leads. Vendor-documented tell: MUSES01 is made only as a DIP8 dual, so any SMD, single-channel or 'MUSE01' single part on a DIP adapter is not genuine. Maimai-audio also warns that print, logo position and lead finish vary by lot, so one difference alone does not prove a fake. Buy from Akizuki, Mouser, DigiKey or other authorised distributors. NRND status may make genuine stock scarcer.
+- NRND per vendor datasheet, DigiKey and Mouser; MUSES02 too. MUSES03/05 reportedly discontinued.
+- Needs ±9 to ±16 V, ruling out 5 V, ±5 V and battery rails (MUSES02 runs from ±3.5 V).
+- Bias 200 pA typ / 800 pA max is high for JFET and rises with heat; offset 5 mV max.
+- Common-mode range only ±8 V min on ±15 V rails, limiting large-swing unity-gain buffers.
+- Costly, widely faked and DIP8 only; soft OFC leads reportedly bend easily. Praise is listening-only.
+- **Counterfeits:** Fakes are common (fakecomponents on X, Japanese blogs). Genuine: flat grey-white laser marking, sharp goddess logo. Fakes: raised white ink, blurred logo; reportedly stiff leads, misplaced pin-1 dot. Only DIP8 duals exist. Marking varies by lot; buy authorised.
 
 ## Silicon changes
 
 None documented. Compare datasheet revisions before assuming old and new parts are identical.
 
 ## Datasheet timeline
+
+**Nisshinbo Micro Devices MUSES01_E**
+
+| Rev | Date | Best copy | More | Status |
+|---|---|---|---|---|
+| Ver. 2009-12-18 | 2009-12-18 | no copy found |  | confirmed |
+| Ver. 2015-04-13 | 2015-04-13 | no copy found |  | confirmed |
+| 20250321 | 2025-03-21 | [github.com](https://github.com/indare/pcb_work/blob/main/Audio/datasheets/opamps/NJR_MUSES01.pdf) |  | confirmed |
+
+Missing revisions: 2010–2014 versions, 2015–2022 New JRC versions, pre-2025 Nisshinbo reissue. Unidentified: Mouser 1917225, alldatasheet.jp 2278441, alldatasheet 808059, dtsheet 1304583, SlideShare 16286764. No PCN found.
 
 **New JRC MUSES01_E**
 
@@ -41,35 +48,37 @@ None documented. Compare datasheet revisions before assuming old and new parts a
 | Ver. 2009-12-18 | 2009-12-18 | [static.qobuz.com](https://static.qobuz.com/info/IMG/pdf/MUSES01_E.pdf) |  | confirmed |
 | Ver. 2015-04-13 | 2015-04-13 | [mouser.com](https://www.mouser.com/datasheet/2/294/MUSES01_E-259020.pdf) | +1 | confirmed |
 
+**JRC/Nisshinbo MUSES01 (Japanese)**
+
+| Rev | Date | Best copy | More | Status |
+|---|---|---|---|---|
+| Ver. 2009-12-11 | 2009-12-11 | no copy found |  | confirmed |
+
+Missing revisions: later Japanese versions. Known only from an Akizuki file name; unconfirmed.
+
 **New JRC MUSES01 (JP)**
 
 | Rev | Date | Best copy | More | Status |
 |---|---|---|---|---|
-| Ver. 2009-12-11 | 2009-12-11 | [akizukidenshi.com](https://akizukidenshi.com/goodsaffix/muses01_ver20091211.pdf) |  | confirmed |
-
-**Nisshinbo Micro Devices MUSES01_E**
-
-| Rev | Date | Best copy | More | Status |
-|---|---|---|---|---|
-| Ver. 2025-03-21 | 2025-03-21 | [github.com](https://github.com/indare/pcb_work/blob/main/Audio/datasheets/opamps/NJR_MUSES01.pdf) |  | confirmed |
+| Ver. 2009-12-11 | 2009-12-11 | [akizukidenshi.com](https://akizukidenshi.com/goodsaffix/muses01_ver20091211.pdf) |  | probable |
 
 <details>
 <summary>Other copies, revision not identified (14)</summary>
 
-- [njr.com](https://www.njr.com/electronic_device/PDF/MUSES01_E.pdf) · New JRC MUSES01_E — Confirmed: the legacy NJR URL is indexed by the search engine. The revision was not visible in the summary; it is probably Ver.2015-04-13 or later (inference).
-- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES01_E.pdf) · Nisshinbo Micro Devices MUSES01_E — Unconfirmed URL: not surfaced by web search. It follows the Nisshinbo path pattern seen for other MUSES parts. Probably serves revision 20250321 (inference).
-- [mouser.com](https://www.mouser.com/datasheet/2/294/MUSES01_E-1917225.pdf) · New JRC or Nisshinbo (unknown) MUSES01_E — Unconfirmed: a targeted search for 'MUSES01_E-1917225' returned nothing. It may be a later (possibly Nisshinbo-era) Mouser upload.
-- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/347303/NJRC/MUSES01.html) · New JRC MUSES01 — Confirmed indexed as 12 pages, 528 KB, under the NJRC maker. The page view is https://www.alldatasheet.com/html-pdf/347303/NJRC/MUSES01/96/1/MUSES01.html (unconfirmed).
-- [alldatasheet.jp](https://www.alldatasheet.jp/datasheet-pdf/pdf/2278441/NISSHINBO/MUSES01.html) · Nisshinbo Micro Devices MUSES01 — Unconfirmed URL: not surfaced by web search. An earlier pass reported 12 pages, 656 KB, under the NISSHINBO maker. It may or may not be the 20250321 revision.
-- [datasheet4u.com](https://datasheet4u.com/datasheets/New-Japan-Radio/MUSES01/679182) · New JRC MUSES01 — Confirmed indexed. The same file ID 679182 is also indexed at https://datasheetspdf.com/pdf/679182/NewJapanRadio/MUSES01/1 and http://www.datasheet.jp/pdf/679182/MUSES01.html. Revision not visible.
-- [yumpu.com](https://www.yumpu.com/en/document/view/39394172/muses01-semiconductor-product-information) · New JRC MUSES01 — Confirmed indexed. Yumpu copy; revision not visible.
-- [ic-hongda.com](https://www.ic-hongda.com/pdf/muses01-datasheet/4166560.html) · New JRC MUSES01 — Confirmed indexed. Chinese datasheet-site copy; revision not visible.
-- [digikey.com](https://www.digikey.com/htmldatasheets/production/663073/0/0/1/muses01.html) · New JRC MUSES01 — Unconfirmed URL: not surfaced by web search. A DigiKey HTML datasheet from the NJR era; revision not visible.
-- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/808059/NJRC/MUSES01_15.html) · New JRC MUSES01 (alldatasheet part name MUSES01_15) — This is a second alldatasheet entry, separate from 347303, which is already listed. The '_15' suffix hints at a 2015 issue, possibly Ver.2015-04-13, but the search summary did not show the Ver. date. Not confirmed.
-- [dtsheet.com](https://dtsheet.com/doc/1304583/muses01-data-sheet) · New JRC MUSES01 — The search summary shows only the title and no Ver. date.
-- [datasheet.jp](http://www.datasheet.jp/pdf/679182/MUSES01.html) · New JRC MUSES01 — This is a Japanese-language portal page. It uses the same ID, 679182, as the datasheet4u copy already listed, so it is probably the same file. The search summary does not show whether the file is the Japanese or the English datasheet, or its Ver. date.
-- [datasheetspdf.com](https://datasheetspdf.com/pdf/679182/NewJapanRadio/MUSES01/1) · New JRC MUSES01 — It uses the same ID, 679182, as the datasheet4u copy already listed and is probably the same file. The Ver. date is not shown.
-- [slideshare.net](https://www.slideshare.net/slideshow/muses01-e/16286764) · New JRC MUSES01_E — This is a user upload of MUSES01_E, going by the title 'muses01-e'. The upload date and Ver. date are not shown in the summary. If it was uploaded before April 2015, it would hold Ver.2009-12-18 or some later revision before 2015. Needs checking.
+- [njr.com](https://www.njr.com/electronic_device/PDF/MUSES01_E.pdf) · New JRC MUSES01_E — Legacy NJR URL; probably Ver.2015-04-13 or later.
+- [nisshinbo-microdevices.co.jp](https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/MUSES01_E.pdf) · Nisshinbo Micro Devices MUSES01_E — Follows Nisshinbo path pattern; probably serves 20250321.
+- [mouser.com](https://www.mouser.com/datasheet/2/294/MUSES01_E-1917225.pdf) · New JRC or Nisshinbo (unknown) MUSES01_E — Possibly a later, Nisshinbo-era Mouser upload.
+- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/347303/NJRC/MUSES01.html) · New JRC MUSES01 — 12 pages, 528 KB, under NJRC.
+- [alldatasheet.jp](https://www.alldatasheet.jp/datasheet-pdf/pdf/2278441/NISSHINBO/MUSES01.html) · Nisshinbo Micro Devices MUSES01 — 12 pages, 656 KB, under NISSHINBO; may be 20250321.
+- [datasheet4u.com](https://datasheet4u.com/datasheets/New-Japan-Radio/MUSES01/679182) · New JRC MUSES01 — File ID 679182, also on datasheetspdf and datasheet.jp.
+- [yumpu.com](https://www.yumpu.com/en/document/view/39394172/muses01-semiconductor-product-information) · New JRC MUSES01 — Yumpu copy.
+- [ic-hongda.com](https://www.ic-hongda.com/pdf/muses01-datasheet/4166560.html) · New JRC MUSES01 — Chinese datasheet-site copy.
+- [digikey.com](https://www.digikey.com/htmldatasheets/production/663073/0/0/1/muses01.html) · New JRC MUSES01 — NJR-era DigiKey HTML datasheet.
+- [alldatasheet.com](https://www.alldatasheet.com/datasheet-pdf/pdf/808059/NJRC/MUSES01_15.html) · New JRC MUSES01 (alldatasheet part name MUSES01_15) — '_15' suffix hints at the 2015 issue.
+- [dtsheet.com](https://dtsheet.com/doc/1304583/muses01-data-sheet) · New JRC MUSES01
+- [datasheet.jp](http://www.datasheet.jp/pdf/679182/MUSES01.html) · New JRC MUSES01 — Same file ID 679182 as datasheet4u; language unknown.
+- [datasheetspdf.com](https://datasheetspdf.com/pdf/679182/NewJapanRadio/MUSES01/1) · New JRC MUSES01 — Same file ID 679182 as datasheet4u.
+- [slideshare.net](https://www.slideshare.net/slideshow/muses01-e/16286764) · New JRC MUSES01_E — User upload; upload date would show whether it predates 2015.
 
 </details>
 
@@ -81,11 +90,11 @@ Download every revision: `python tools/fetch_datasheets.py --family MUSES01`
 
 | Part number | Ch | Status | Note |
 |---|---|---|---|
-| MUSES01 | 2 | NRND. The vendor confirms it: every page of the Nisshinbo datasheet 20250321 says 'MUSES01 is the NRND product.' DigiKey and Mouser listings also show NRND; DigiKey says it is not normally stocked and lead times apply. |  |
-| MUSES01D | 2 | distributor catalogue designation (Akizuki), same product |  |
-| NJM5720 | 2 | legacy / original internal part number for the same product |  |
+| MUSES01 | 2 | NRND | DIP8 dual only; 150 dB channel separation. DigiKey 2202385, LCSC/JLCPCB C4548949. |
+| MUSES01D | 2 | NRND | Akizuki's name for the same part (catalogue g103416); absent from vendor datasheet. |
+| NJM5720 | 2 | unknown | Original NJM number of the same product; Akizuki lists 'MUSES01D (NJM5720)'. |
 
-**Related / alternatives:** MUSES02 (bipolar-input sibling with the same OFC construction; specified from +/-3.5 V; also NRND), MUSES8920 / MUSES8920A (lower-cost JFET-input MUSES; how the variants replace each other was not verified), OPA2627 / OPA627 on an adapter (the traditional rival; OPA2627 is a true dual), OPA1642 / OPA1656 (modern low-distortion JFET/CMOS-input duals), MUSES03 (single-channel JFET flagship; reported discontinued, not verified)
+**Related / alternatives:** MUSES02 (bipolar sibling, from ±3.5 V; NRND), MUSES8920 / MUSES8920A (cheaper JFET MUSES), OPA2627 / OPA627 on an adapter, OPA1642 / OPA1656 (modern JFET/CMOS duals), MUSES03 (single JFET flagship; reportedly discontinued)
 
 ## Evidence
 
@@ -94,25 +103,16 @@ Download every revision: `python tools/fetch_datasheets.py --family MUSES01`
 
 | Parameter | Value | Conditions | Source |
 |---|---|---|---|
-| Input stage | J-FET input, dual. The datasheet features list also says 'Bipolar Technology'. | - | Nisshinbo MUSES01 datasheet 20250321 (GitHub mirror, read in full) |
-| Equivalent input noise voltage e_n | 9.5 nV/rtHz typ | f = 1 kHz, AV = +100, RS = 100 ohm, V+/V- = +/-15 V | Nisshinbo datasheet 20250321. Distributor listing summaries (microchipusa.com, endrich.com) also give 9.5 nV/rtHz. |
-| Input noise voltage (RIAA) | 1.2 uVrms typ / 3.0 uVrms max | RIAA, RS = 2.2 kohm, 30 kHz LPF | Nisshinbo datasheet 20250321 |
-| Slew rate | +12 V/us / -13 V/us typ | AV = 1, VIN = 2 Vp-p, RL = 2 kohm, CL = 10 pF | Nisshinbo datasheet 20250321. Distributor summaries give 12 V/us. |
-| Gain-bandwidth product | 3.3 MHz typ | f = 10 kHz | Nisshinbo datasheet 20250321. Distributor summaries give 3.3 MHz. |
-| Unity-gain frequency / phase margin | 3.0 MHz typ / 60 deg typ | AV = +100, RS = 100 ohm, RL = 2 kohm, CL = 10 pF | Nisshinbo datasheet 20250321 |
-| THD | 0.002 % typ | f = 1 kHz, AV = +10, RL = 2 kohm, Vo = 5 Vrms | Nisshinbo datasheet 20250321 |
-| Channel separation | 150 dB typ | f = 1 kHz, AV = 100, RS = 1 kohm, RL = 2 kohm | Nisshinbo datasheet 20250321 |
-| Input offset voltage | 0.8 mV typ / 5.0 mV max | VICM = 0 V, Ta = 25 C | Nisshinbo datasheet 20250321 |
-| Input bias current / offset current | 200 pA typ, 800 pA max / 100 pA typ, 400 pA max | Ta = 25 C, VICM = 0 V | Nisshinbo datasheet 20250321. Distributor summaries give 200 pA. |
-| Open-loop voltage gain | 105 dB typ (90 dB min) | RL >= 2 kohm, Vo = 10 V | Nisshinbo datasheet 20250321 |
-| CMR / SVR | 75 dB typ (60 dB min) / 83 dB typ (70 dB min) | CMR: VICM 0 to +/-8 V. SVR: supply +/-9 to +/-16 V | Nisshinbo datasheet 20250321 |
-| Input common-mode range | +/-9.5 V typ (+/-8 V min) | CMR >= 60 dB, V+/V- = +/-15 V | Nisshinbo datasheet 20250321 |
-| Max output voltage | +/-13.5 V typ (12 V min) into 10 kohm; +/-12.5 V typ (10 V min) into 2 kohm | V+/V- = +/-15 V | Nisshinbo datasheet 20250321 |
-| Supply current | 8.5 mA typ / 12.0 mA max | No signal, RL = infinity, +/-15 V (presumably the package total) | Nisshinbo datasheet 20250321 |
-| Recommended supply voltage | +/-9 V to +/-16 V (Vopr = 9 V to 16 V) | Ta = 25 C | Nisshinbo datasheet 20250321. Distributor summaries (microchipusa.com, endrich.com) also give +/-9 V to +/-16 V. |
-| Absolute maximum ratings | Supply +/-18 V; VID 30 V; VICM 15 V; output current 25 mA; PD 910 mW (DIP8); Topr -40 to +85 C; Tstg -50 to +150 C | Ta = 25 C | Nisshinbo datasheet 20250321 |
-| Package / pinout | DIP8 only; standard dual pinout (1 A out, 2 A-in, 3 A+in, 4 V-, 5 B+in, 6 B-in, 7 B out, 8 V+) | - | Nisshinbo datasheet 20250321. PHILE WEB 2009-05-20 also says the package is limited to DIP8. |
-| Per-revision differences | No spec change found. The 20250321 Nisshinbo revision repeats the headline figures of Ver.2009-12-18 and Ver.2015-04-13 as seen in search summaries (e_n, SR, GBW, Ib). The only visible addition is the NRND marking. The older revisions were not read in full. | - | Nisshinbo datasheet 20250321 vs web search summaries of the 2009 and 2015 PDFs |
+| Input noise (1 kHz) | 9.5 nV/√Hz typ (RIAA: 1.2 µVrms typ, 3.0 µVrms max) | RS 100 Ω; RIAA: RS 2.2 kΩ, 30 kHz LPF | Datasheet 20250321 |
+| GBW | 3.3 MHz typ; unity-gain 3.0 MHz, 60° phase margin | GBW at f = 10 kHz | Datasheet 20250321 |
+| Slew rate | +12 / −13 V/µs typ | AV 1, 2 Vp-p, RL 2 kΩ, CL 10 pF | Datasheet 20250321 |
+| THD+N | 0.002% THD typ | 1 kHz, AV +10, RL 2 kΩ, 5 Vrms | Datasheet 20250321 |
+| Supply range | ±9 V to ±16 V recommended; ±18 V absolute max | abs. max: VID 30 V, VICM 15 V | Datasheet 20250321 |
+| Supply current | 8.5 mA typ / 12.0 mA max | no signal, ±15 V; likely package total | Datasheet 20250321 |
+| Output current | 25 mA abs. max; swing ±13.5 V (10 kΩ), ±12.5 V (2 kΩ) | ±15 V; swing min 12 V / 10 V | Datasheet 20250321 |
+| Offset voltage | 0.8 mV typ / 5.0 mV max | VICM 0 V, 25 °C | Datasheet 20250321 |
+| Input bias current | 200 pA typ / 800 pA max (Ios 100 / 400 pA) | 25 °C, VICM 0 V | Datasheet 20250321 |
+| Input stage | J-FET on bipolar process; CM range ±9.5 V typ (±8 V min) | Av 105 dB, CMR 75 dB, SVR 83 dB typ | Datasheet 20250321 |
 
 
 </details>
@@ -122,8 +122,8 @@ Download every revision: `python tools/fetch_datasheets.py --family MUSES01`
 
 | Vendor | Role | Period | Note |
 |---|---|---|---|
-| New Japan Radio Co., Ltd. (New JRC / NJR) | originator | 2009 (mass production of NJM5720 announced May 2009) - 2021 |  |
-| Nisshinbo Micro Devices Inc. | successor / current vendor (corporate merger and rebrand, same product line) | 2022 - present |  |
+| New JRC | originator | 2009–2021 | NJM5720 mass production announced May 2009 (PHILE WEB); English datasheet and hobby sales followed December 2009. |
+| Nisshinbo Micro Devices | current | 2022–present | Took over New JRC's semiconductor business; the 2025-03-21 datasheet marks MUSES01 NRND. |
 
 
 </details>
@@ -133,12 +133,12 @@ Download every revision: `python tools/fetch_datasheets.py --family MUSES01`
 
 | Vendor | Document | Rev | Date | Changes |
 |---|---|---|---|---|
-| New JRC | (press release / NJM5720) | - | 2009-05-20 | PHILE WEB reports that mass production of NJM5720 began (MUSES series, J-FET dual, OFC lead frame, DIP8 only). This is a product event, not a datasheet revision. |
-| New JRC | MUSES01 (Japanese) | Ver.2009-12-11 | 2009-12-11 | Reported Japanese launch datasheet (Akizuki file name). Not re-verified in this pass. JRC datasheets carry no change log. |
-| New JRC | MUSES01_E | Ver.2009-12-18 | 2009-12-18 | English launch version, confirmed on the Qobuz mirror. No change log. |
-| New JRC | MUSES01_E | Ver.2015-04-13 | 2015-04-13 | Later English revision, confirmed on Mouser (259020) and a yibeiic mirror. Search summaries show the same headline specs (9.5 nV/rtHz, 12 V/us, 3.3 MHz, 200 pA). The actual change content is unknown. |
-| Nisshinbo Micro Devices | MUSES01_E / MUSES01 | unknown | unknown (2022 or later) | The alldatasheet.jp 2278441 Nisshinbo-branded copy (656 KB, 12 pages, unconfirmed). It could be an earlier Nisshinbo reissue or the same as 20250321; not determined. |
-| Nisshinbo Micro Devices | MUSES01_E ('MUSES01 Datasheet(E)') | 20250321 | 2025-03-21 | NRND reissue. Every page says 'MUSES01 is the NRND product.' and page 1 carries an NRND stamp. The MUSES trademark is credited to Nisshinbo. The footer uses a bare YYYYMMDD code instead of 'Ver.'. Headline specs are unchanged, and the recommended supply is stated as +/-9 V to +/-16 V. The MUSES02 datasheet (20250319) was reissued with the same NRND wording. No PCN was found. |
+| New JRC | NJM5720 press report (PHILE WEB) |  | 2009-05-20 | Mass production of NJM5720 began: MUSES J-FET dual, OFC lead frame, DIP8 only. A product event, not a datasheet. |
+| New JRC | MUSES01 (Japanese) | Ver. 2009-12-11 | 2009-12-11 | Reported Japanese launch datasheet (Akizuki file name); unconfirmed. JRC datasheets carry no change log. |
+| New JRC | MUSES01_E | Ver. 2009-12-18 | 2009-12-18 | English launch version (Qobuz mirror). No change log. |
+| New JRC | MUSES01_E | Ver. 2015-04-13 | 2015-04-13 | Mouser 259020 and yibeiic copies; same headline specs (9.5 nV/√Hz, 12 V/µs, 3.3 MHz, 200 pA). Changes unknown. |
+| Nisshinbo Micro Devices | MUSES01_E / MUSES01 |  |  | alldatasheet.jp 2278441 Nisshinbo copy (2022 or later; 656 KB, 12 pages); may equal 20250321. |
+| Nisshinbo Micro Devices | MUSES01_E ('MUSES01 Datasheet(E)') | 20250321 | 2025-03-21 | NRND reissue: NRND notice on every page, Nisshinbo MUSES trademark, bare YYYYMMDD footer. Specs unchanged. MUSES02 (20250319) reissued likewise. |
 
 
 </details>
@@ -150,43 +150,39 @@ Status: **verified-with-corrections**, 9 web searches.
 
 **Confirmed:**
 
-- MUSES01 is NRND on the DigiKey and Mouser listings; DigiKey says it is not normally stocked (https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES01/2202385, https://www.mouser.com/ProductDetail/Nisshinbo/MUSES01?qs=yQ3iditm8N7pF0xkkmEW4g%3D%3D).
-- MUSES02 is also NRND (https://www.mouser.com/ProductDetail/Nisshinbo/MUSES02?qs=lTIKtKbByhhPORZIYvXQtw%3D%3D).
-- Nisshinbo publishes an NRND list page (https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/).
-- New JRC began mass production of NJM5720, a MUSES-series J-FET dual with the world's first high-purity OFC lead frame and a DIP8-only package (https://www.phileweb.com/news/audio/200905/20/8964.html).
-- Akizuki sells the part as 'MUSES01D (NJM5720)' (https://akizukidenshi.com/catalog/g/g103416/).
-- The English datasheet Ver.2009-12-18 is hosted at https://static.qobuz.com/info/IMG/pdf/MUSES01_E.pdf.
-- The English datasheet Ver.2015-04-13 is hosted at https://www.mouser.com/datasheet/2/294/MUSES01_E-259020.pdf and at https://yibeiic-shop.oss-cn-hangzhou.aliyuncs.com/media/store/1/file/20250709/1752052554394709.pdf.
-- The legacy NJR datasheet URL is indexed (https://www.njr.com/electronic_device/PDF/MUSES01_E.pdf).
-- The Nisshinbo English product page 'MUSES01 Series' exists (https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses01).
-- LCSC/JLCPCB list MUSES01 as C4548949 (https://www.lcsc.com/product-detail/C4548949.html, https://jlcpcb.com/partdetail/5120042-MUSES01/C4548949).
-- alldatasheet 347303 holds a 12-page, 528 KB NJRC copy (https://www.alldatasheet.com/datasheet-pdf/pdf/347303/NJRC/MUSES01.html).
-- Copies of file 679182 exist on datasheet4u, datasheetspdf and datasheet.jp (https://datasheet4u.com/datasheets/New-Japan-Radio/MUSES01/679182).
-- Specs from distributor summaries: e_n 9.5 nV/rtHz, SR 12 V/us, GBW 3.3 MHz, Ib 200 pA, operating supply +/-9 V to +/-16 V (https://www.microchipusa.com/product/nisshinbo-micro-devices-inc/instrumentation-op-amps-buffer-amps/MUSES01, https://www.endrich.com/en/product-categories/active-components/analog-and-discrete/operational-amplifier/muses01).
-- Counterfeit tells: genuine MUSES marking is laser-engraved, grey-white and flat, while fakes use thick white ink and show a blurred goddess logo (https://maimai-audio.blog.jp/archives/40081909.html).
-- Fake MUSES01 listings are documented on Japanese marketplaces (https://x.com/fakecomponents/status/895845393963012096).
-- The e-earphone 'strongest op-amp' shoot-out and the mixi MUSES01 / MUSES02 / OPA627 'summit' comparison exist; MUSES01 is described as having a wide soundstage and very smooth sound (https://e-earphone.blog/?p=46602, https://mixi.jp/view_diary.pl?id=1952300790&owner_id=340485).
+- MUSES01 is NRND at DigiKey (not normally stocked) and Mouser: https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES01/2202385, https://www.mouser.com/ProductDetail/Nisshinbo/MUSES01?qs=yQ3iditm8N7pF0xkkmEW4g%3D%3D
+- MUSES02 is also NRND: https://www.mouser.com/ProductDetail/Nisshinbo/MUSES02?qs=lTIKtKbByhhPORZIYvXQtw%3D%3D
+- Nisshinbo publishes an NRND list page: https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/
+- NJM5720 mass production: MUSES J-FET dual, world's first high-purity OFC lead frame, DIP8 only: https://www.phileweb.com/news/audio/200905/20/8964.html
+- Akizuki sells the part as 'MUSES01D (NJM5720)': https://akizukidenshi.com/catalog/g/g103416/
+- English datasheet Ver.2009-12-18 hosted at https://static.qobuz.com/info/IMG/pdf/MUSES01_E.pdf
+- Ver.2015-04-13 hosted at https://www.mouser.com/datasheet/2/294/MUSES01_E-259020.pdf and https://yibeiic-shop.oss-cn-hangzhou.aliyuncs.com/media/store/1/file/20250709/1752052554394709.pdf
+- Legacy NJR datasheet URL indexed: https://www.njr.com/electronic_device/PDF/MUSES01_E.pdf
+- Nisshinbo English product page 'MUSES01 Series' exists: https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses01
+- LCSC/JLCPCB list MUSES01 as C4548949: https://www.lcsc.com/product-detail/C4548949.html, https://jlcpcb.com/partdetail/5120042-MUSES01/C4548949
+- alldatasheet 347303 holds a 12-page, 528 KB NJRC copy: https://www.alldatasheet.com/datasheet-pdf/pdf/347303/NJRC/MUSES01.html
+- File 679182 exists on datasheet4u, datasheetspdf and datasheet.jp: https://datasheet4u.com/datasheets/New-Japan-Radio/MUSES01/679182
+- Distributors list 9.5 nV/√Hz, 12 V/µs, 3.3 MHz, 200 pA, ±9 to ±16 V: https://www.microchipusa.com/product/nisshinbo-micro-devices-inc/instrumentation-op-amps-buffer-amps/MUSES01, https://www.endrich.com/en/product-categories/active-components/analog-and-discrete/operational-amplifier/muses01
+- Genuine marking is flat grey-white laser engraving; fakes use thick white ink and a blurred goddess logo: https://maimai-audio.blog.jp/archives/40081909.html
+- Fake MUSES01 listings documented on Japanese marketplaces: https://x.com/fakecomponents/status/895845393963012096
+- e-earphone shoot-out and mixi MUSES01/MUSES02/OPA627 comparison describe a wide soundstage and very smooth sound: https://e-earphone.blog/?p=46602, https://mixi.jp/view_diary.pl?id=1952300790&owner_id=340485
 
 **Refuted or corrected:**
 
-- The claim that 'MUSES01D may not be a real orderable name' is refuted: Akizuki Denshi's catalogue sells the part as 'MUSES01D (NJM5720)' (https://akizukidenshi.com/catalog/g/g103416/).
-- The genre folklore 'MUSES01 for J-POP/anime/vocals, MUSES02 for jazz/classical' is contradicted: a search summary of Japanese comparisons describes MUSES01 as suited to classical and MUSES02 to jazz vocals and pop. It was removed as unreliable, and the summary now says genre folklore is inconsistent.
-- The claim that NJM5720 was 'renamed MUSES01 when MUSES02 launched' (Dec 2009) framed NJM5720 as a pre-MUSES name. In fact PHILE WEB 2009-05-20 already announced NJM5720 mass production as a MUSES-series part. NJM5720 is the NJM number of the same product, and Akizuki still lists it.
+- 'MUSES01D may not be a real orderable name' is refuted: Akizuki sells 'MUSES01D (NJM5720)' (https://akizukidenshi.com/catalog/g/g103416/).
+- 'MUSES01 for J-POP/vocals, MUSES02 for jazz/classical' is contradicted by other Japanese comparisons; genre folklore is inconsistent.
+- NJM5720 was not a pre-MUSES name renamed in December 2009: PHILE WEB announced it as a MUSES part in May 2009.
 
 **Corrections:**
 
-- NJM5720 is confirmed via PHILE WEB 2009-05-20 and the Akizuki catalogue. Its status changed from 'obsolete earlier name' to 'legacy / original internal part number for the same product'. The lineage now starts at the May 2009 mass-production announcement.
-- MUSES01D: status changed to 'distributor catalogue designation (Akizuki), same product'.
-- The OFC lead frame ('world first') and the DIP8-only package are now attributed to PHILE WEB 2009-05-20.
-- Datasheet Ver.2009-12-18 (Qobuz) and Ver.2015-04-13 (Mouser 259020) raised from low to high confidence; the PDF header titles were confirmed in search results.
-- Added a new mirror of Ver.2015-04-13: yibeiic-shop.oss-cn-hangzhou.aliyuncs.com (uploaded 2025-07-09).
-- The legacy NJR URL njr.com/electronic_device/PDF/MUSES01_E.pdf is confirmed indexed; confidence raised to medium (revision unknown).
-- The Nisshinbo English product page ('MUSES01 Series') is confirmed; confidence raised to high.
-- alldatasheet 347303 (12 pages, 528 KB), datasheet4u / datasheetspdf / datasheet.jp 679182, Yumpu and ic-hongda are confirmed indexed; confidence raised to medium. Their revisions are still unknown.
-- NRND is also confirmed on the DigiKey and Mouser listings. LCSC/JLCPCB C4548949 confirmed; the LCSC URL was normalised to https://www.lcsc.com/product-detail/C4548949.html.
-- Counterfeit tells (laser grey-white flat marking vs thick white ink; goddess-logo detail) are confirmed via maimai-audio. Added the fakecomponents X posts as evidence of fakes.
-- Reputation: added the kazamit 'MUSES01/02 vs OPA627BP' comparison and the descriptors 'very smooth' and 'slightly weak impact'. Removed the unverified 'tops the shoot-outs' ranking.
-- Removed the stale open question about the exhausted search budget. Added the PHILE WEB 2009-05-20 and Akizuki catalogue URLs to archive_seed_urls.
+- NJM5720 recorded as the original NJM number of the same product; lineage now starts May 2009.
+- MUSES01D recorded as Akizuki's catalogue name for the same product.
+- OFC lead frame ('world first') and DIP8-only package attributed to PHILE WEB 2009-05-20.
+- Ver.2009-12-18 (Qobuz) and Ver.2015-04-13 (Mouser 259020) raised to high confidence; added yibeiic mirror.
+- Legacy NJR URL raised to medium and Nisshinbo product page to high confidence.
+- NRND confirmed at DigiKey and Mouser; LCSC URL normalised to https://www.lcsc.com/product-detail/C4548949.html.
+- Counterfeit tells confirmed via maimai-audio; fakecomponents X posts added as evidence.
+- Added the kazamit 'MUSES01/02 vs OPA627BP' comparison; removed an unconfirmed 'tops the shoot-outs' ranking.
 
 **Links not confirmed:**
 
@@ -218,15 +214,11 @@ Status: **verified-with-corrections**, 9 web searches.
 
 **Open questions:**
 
-- Some archive_seed_urls were inferred, not seen: nisshinbo .../ja/pdf/datasheet/MUSES01_J.pdf, the nisshinbo .../en/pdf/datasheet/MUSES01_E.pdf, mouser.com/pdfdocs/MUSES01_E.PDF, njr.com/.../MUSES01_J.pdf, semicon.njr.co.jp/eng/PDF/MUSES01_E.pdf and njr.co.jp/products/semicon/PDF/MUSES01_E.pdf.
-- Which revision does the legacy njr.com/electronic_device/PDF/MUSES01_E.pdf hold? Also unknown: the revisions in Mouser MUSES01_E-1917225, alldatasheet 347303 and 2278441, and the datasheet4u / datasheetspdf / datasheet.jp copies of file 679182. Any Ver. between 2009-12-18 and 2015-04-13, or between 2015 and 2025, is still missing.
-- Does a Japanese datasheet Ver.2009-12-11 exist on Akizuki as reported? The Akizuki MUSES01D (NJM5720) catalogue page is confirmed, but the PDF link was not.
-- Did the 2009 and 2015 JRC revisions also specify +/-9 V to +/-16 V operation? Distributor summaries give +/-9 V to +/-16 V but do not name which revision they used.
-- When was NRND declared, and is there a last-time-buy date? Check the MUSES01 entry on https://www.nisshinbo-microdevices.co.jp/en/design-support/discon/.
-- When did MUSES01 become the primary name over NJM5720 (reportedly at the Dec 2009 MUSES02 launch, PHILE WEB 2009-12-08)?
-- No die, fab or process change was found for MUSES01, but there is no positive vendor statement. Did any Nisshinbo-era lot change marking style (laser vs ink, logo)? That would affect counterfeit identification.
-- No independent bench measurements (ASR, Samuel Groner, etc.) were located.
-- Tooling note: Nisshinbo-era footers use a bare YYYYMMDD code (e.g. '- 1 - 20250321'), not 'Ver.'. A revision regex that only matches 'Ver.' will miss them.
+- Which revisions do the legacy njr.com PDF, Mouser 1917225, alldatasheet 347303/2278441 and file 679182 copies hold?
+- Does the Japanese Ver.2009-12-11 exist on Akizuki? The catalogue page is confirmed, the PDF link is not.
+- Did the 2009 and 2015 revisions also specify ±9 V to ±16 V operation?
+- When was NRND declared, and is there a last-time-buy date? Check Nisshinbo's discontinued-products page.
+- When did MUSES01 supersede NJM5720 as the main name? Did any Nisshinbo-era lot change its marking style?
 
 
 </details>

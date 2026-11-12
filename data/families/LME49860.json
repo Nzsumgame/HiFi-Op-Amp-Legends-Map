@@ -1,239 +1,153 @@
 {
   "id": "LME49860",
-  "name": "LME49860 / LME49870 (±22 V, 44 V bipolar dual / single)",
-  "tagline": "National's 44 V member of the LM4562/LME49720 audio series: 2.7 nV/√Hz, 0.00003% THD+N, ±22 V rails. Used in Sony PHA-2/PHA-3 and Gustard DACs and preamps.",
-  "technology": "Bipolar voltage-feedback op-amp, unity-gain stable. LME49860 is the dual. LME49870 is the single: distributor and datasheet mirrors title it '44V Single High Performance, High Fidelity Audio Operational Amplifier' (National, later TI). Whether it uses the same die as the LME49860 is not confirmed. Supply is ±2.5 V to ±22 V, with a 46 V absolute maximum. Inputs are bipolar: IB 10 nA typ, differential input impedance 30 kΩ. A TI E2E thread titled 'LME49710, LME49720 and LME49860 Differential Input Diodes' covers the input clamp diodes. The datasheet lists SOIC-8 (D) and PDIP-8 (P) packages; TI's Nov-2025 addendum lists only the SOIC. SNAS389C does not use National's 'Overture' brand for this part.",
+  "name": "LME49860 / LME49870",
+  "type": "Bipolar audio op-amp, ±22 V, dual / single",
+  "tier": "B",
+  "category": "bipolar-modern-low-noise",
+  "tagline": "The 44 V member of National's LM4562/LME49720 series: 2.7 nV/√Hz, 0.00003% THD+N, ±22 V rails. In Sony PHA-2/PHA-3.",
   "manufacturers": [
-    "National Semiconductor (originator, 2007-2011)",
-    "Texas Instruments (after the 2011 acquisition)"
-  ],
-  "part_numbers": [
-    {
-      "pn": "LME49860MAX/NOPB",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active per TI Package Option Addendum 11-Nov-2025 ('Active Production'). It is not on the Sep-2016 LTB list reported from TI E2E 456802. Its 2026 status was not web-checked. One search summary said the whole 44 V line was discontinued; that conflicts with the addendum and was not adopted.",
-      "notes": "SOIC-8 (D), 2500-piece tape and reel, MSL1-260C, -40 to 85 °C. Marking 'L49860 / MA'. The addendum also lists .A and .B material-set variants of the same orderable. Mouser P/N 926-LME49860MAX/NOPB (seen in a KiCad PCB file)."
-    },
-    {
-      "pn": "LME49860MA/NOPB",
-      "channels": 2,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "obsolete. DigiKey lists it as obsolete. A TI E2E 456802 search summary gives a lifetime-buy (LTB) date of 28 Sep 2016, the same list as the LME49710/LME49720 MA/NA parts. The PCN number was not found.",
-      "notes": "SOIC-8 tube. SNAS389C rev 1.1 (06/11/07) added its top mark. A distributor cross-reference suggests OPA1612AID as a replacement."
-    },
-    {
-      "pn": "LME49860NA/NOPB",
-      "channels": 2,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "obsolete. DigiKey lists it as obsolete. A TI E2E 456802 search summary gives an LTB date of 28 Sep 2016. It is absent from TI's Nov-2025 addendum, and Gustard's P26 text says the DIP8 was discontinued. The PCN number was not found.",
-      "notes": "PDIP-8 (θJA 102 °C/W). It was the op-amp rollers' favourite and is now old stock only. Gustard says new P26 batches use the SO-8 part on a socket adapter. A distributor cross-reference suggests OPA2227P, which is ±18 V class."
-    },
-    {
-      "pn": "LME49860MABD / LME49860NABD",
-      "channels": 2,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "Demonstration boards (SOIC and PDIP) named in the SNAS389C header; a search summary of the TI page confirms them. They are not ICs."
-    },
-    {
-      "pn": "LME49870MA/NOPB",
-      "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "obsolete. A TI E2E thread titled 'LME49870 EOL?' (456802) gives an LTB date of 28 Sep 2016 per the search summary.",
-      "notes": "44 V single sibling ('44V Single High Performance, High Fidelity Audio Operational Amplifier'). The TI literature number was not found. The TI-format datasheet mirror is about 35 pages. A PDIP LME49870NA/NOPB orderable is plausible but unconfirmed."
-    }
+    "National Semiconductor",
+    "Texas Instruments"
   ],
   "lineage": [
     {
       "vendor": "National Semiconductor",
       "role": "originator",
-      "period": "2007-2011",
-      "notes": "Datasheet rev 1.0 is dated 06/01/07 and rev 1.1 06/11/07 (adds MA/NA top marks), per the SNAS389C revision history. The datasheet says it is 'part of the ultra-low distortion, low noise, high slew rate operational amplifier series', alongside LM4562, LME49720, LME49710 and LME49740. The single LME49870 was also released by National; mirrors exist under the NSC name."
+      "period": "2007–2011",
+      "note": "Rev 1.0 06/01/07, rev 1.1 06/11/07. Part of the LM4562/LME49720/LME49710/LME49740 ultra-low-distortion series."
     },
     {
       "vendor": "Texas Instruments",
-      "role": "acquirer / current source",
-      "period": "2011-present",
-      "notes": "Reissued as SNAS389 rev C ('JUNE 2007-REVISED APRIL 2013': 'Changed layout of National Data Sheet to TI format'). Sibling LME49810 SNAS391C carries the same 'REVISED APRIL 2013' reformat date. The LTB for LME49860MA/NOPB, LME49860NA/NOPB and LME49870MA/NOPB was 28 Sep 2016, alongside the LME49710/LME49720 EOL (E2E 456802, per search summary). As of the 11-Nov-2025 addendum, only the SOIC tape-and-reel LME49860MAX/NOPB is active. There is no second source."
+      "role": "acquirer",
+      "period": "2011–present",
+      "note": "SNAS389C reformat April 2013. LTB 28 Sep 2016 for MA/NA and LME49870; only MAX/NOPB active (Nov 2025)."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "LME49860MAX/NOPB",
+      "channels": 2,
+      "status": "active",
+      "note": "SOIC-8 reel (2500), marking 'L49860 / MA'; .A/.B variants. Mouser 926-LME49860MAX/NOPB."
+    },
+    {
+      "pn": "LME49860MA/NOPB",
+      "channels": 2,
+      "status": "obsolete",
+      "note": "SOIC-8 tube; LTB 28 Sep 2016 (E2E 456802). Distributor replacement: OPA1612AID."
+    },
+    {
+      "pn": "LME49860NA/NOPB",
+      "channels": 2,
+      "status": "obsolete",
+      "note": "PDIP-8, the rollers' favourite; LTB 28 Sep 2016. Distributor replacement: OPA2227P (±18 V)."
+    },
+    {
+      "pn": "LME49860MABD / LME49860NABD",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Demonstration boards (SOIC, PDIP) named in SNAS389C; not ICs."
+    },
+    {
+      "pn": "LME49870MA/NOPB",
+      "channels": 1,
+      "status": "obsolete",
+      "note": "44 V single; LTB 28 Sep 2016. TI literature number unknown; PDIP version unconfirmed."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise density e_n",
-      "value": "2.7 nV/√Hz typ, 4.7 nV/√Hz max; 6.4 nV/√Hz typ at 10 Hz",
-      "condition": "f = 1 kHz, VS = ±18 V / ±22 V, TA = 25 °C",
-      "source": "TI SNAS389C p.3 (read from GitHub copy; headline 2.7 nV/√Hz matches mirror titles)"
+      "parameter": "Input noise (1 kHz)",
+      "value": "2.7 nV/√Hz typ, 4.7 max; 0.34 µVrms (20 Hz–20 kHz)",
+      "condition": "±18/±22 V, 25 °C; 6.4 nV/√Hz at 10 Hz",
+      "source": "SNAS389C"
     },
     {
-      "parameter": "Equivalent input noise voltage",
-      "value": "0.34 µVrms typ, 0.65 µVrms max",
-      "condition": "20 Hz-20 kHz",
-      "source": "TI SNAS389C p.3"
-    },
-    {
-      "parameter": "Input current noise i_n",
-      "value": "1.6 pA/√Hz at 1 kHz; 3.1 pA/√Hz at 10 Hz",
+      "parameter": "Current noise",
+      "value": "1.6 pA/√Hz (1 kHz); 3.1 pA/√Hz (10 Hz)",
       "condition": "typ",
-      "source": "TI SNAS389C p.3"
+      "source": "SNAS389C"
     },
     {
-      "parameter": "Gain-bandwidth product",
-      "value": "55 MHz typ, 45 MHz min",
-      "condition": "VS = ±18/±22 V",
-      "source": "TI SNAS389C p.3"
+      "parameter": "GBW",
+      "value": "55 MHz typ, 45 MHz min; FPBW 10 MHz",
+      "condition": "±18/±22 V",
+      "source": "SNAS389C"
     },
     {
       "parameter": "Slew rate",
       "value": "±20 V/µs typ, ±15 V/µs min",
-      "condition": "",
-      "source": "TI SNAS389C p.3"
-    },
-    {
-      "parameter": "Full-power bandwidth / settling time",
-      "value": "10 MHz (1 Vp-p, -3 dB); 1.2 µs to 0.1%",
-      "condition": "Settling: AV = -1, 10 V step, CL = 100 pF",
-      "source": "TI SNAS389C p.3"
+      "condition": "settling 1.2 µs to 0.1% (10 V step)",
+      "source": "SNAS389C"
     },
     {
       "parameter": "THD+N",
-      "value": "0.00003% typ (RL 2 kΩ and 600 Ω); 0.00009% max (600 Ω)",
-      "condition": "AV = 1, VOUT = 3 Vrms, 1 kHz",
-      "source": "TI SNAS389C p.1, p.3"
+      "value": "0.00003% typ, 0.00009% max (600 Ω); IMD 0.00005%",
+      "condition": "AV = 1, 3 Vrms, 1 kHz",
+      "source": "SNAS389C"
     },
     {
-      "parameter": "IMD",
-      "value": "0.00005% typ",
-      "condition": "AV = 1, 3 Vrms, 60 Hz + 7 kHz at 4:1",
-      "source": "TI SNAS389C p.3"
+      "parameter": "Supply range",
+      "value": "±2.5 V to ±22 V (46 V absolute max)",
+      "condition": "−40 to 85 °C",
+      "source": "SNAS389C"
     },
     {
-      "parameter": "DC gain linearity error",
-      "value": "0.000009%",
-      "condition": "key-specifications list",
-      "source": "TI SNAS389C p.1"
-    },
-    {
-      "parameter": "Supply voltage range",
-      "value": "±2.5 V to ±22 V operating; absolute max VS = 46 V; operating TA -40 to 85 °C",
-      "condition": "",
-      "source": "TI SNAS389C p.3. For comparison, LM4562/LME49720 are ±2.5 to ±17 V (sibling-family research)."
-    },
-    {
-      "parameter": "Quiescent current",
-      "value": "10.2 mA typ at ±18 V; 10.5 mA typ / 13 mA max at ±22 V (total for both channels)",
-      "condition": "IOUT = 0",
-      "source": "TI SNAS389C p.4"
+      "parameter": "Supply current",
+      "value": "10.2 mA typ (±18 V); 10.5 typ / 13 max mA (±22 V)",
+      "condition": "total, both channels, IOUT = 0",
+      "source": "SNAS389C"
     },
     {
       "parameter": "Output current",
-      "value": "±37 mA typ / ±30 mA min at ±22 V; ±31 mA typ at ±20 V; instantaneous short circuit +53/-42 mA. The description text says ±26 mA.",
-      "condition": "RL = 600 Ω",
-      "source": "TI SNAS389C p.2, p.4"
+      "value": "±37 mA typ / ±30 mA min (±22 V); text says ±26 mA",
+      "condition": "RL 600 Ω; swing ±20.4 V typ",
+      "source": "SNAS389C"
     },
     {
-      "parameter": "Output swing",
-      "value": "±20.4 V typ / ±19.0 V min into 600 Ω; ±21.0 V into 2 kΩ; ±21.2 V into 10 kΩ",
-      "condition": "VS = ±22 V",
-      "source": "TI SNAS389C p.4"
-    },
-    {
-      "parameter": "Output impedance",
-      "value": "0.01 Ω closed-loop; 13 Ω open-loop",
-      "condition": "f = 10 kHz",
-      "source": "TI SNAS389C p.4"
-    },
-    {
-      "parameter": "Open-loop gain",
-      "value": "140 dB typ, 125 dB min",
-      "condition": "VS = ±22 V, RL = 600 Ω, -15 V ≤ VOUT ≤ 15 V",
-      "source": "TI SNAS389C p.4"
-    },
-    {
-      "parameter": "Offset / bias",
-      "value": "VOS ±0.12 mV typ (±18 V), ±0.14 mV typ (±22 V), ±0.7 mV max; drift 0.2 µV/°C; IB 10 nA typ / 72 nA max; IB drift 0.1 nA/°C; IOS 11 nA typ / 65 nA max",
+      "parameter": "Offset voltage",
+      "value": "±0.12–0.14 mV typ, ±0.7 mV max; 0.2 µV/°C",
       "condition": "VCM = 0 V",
-      "source": "TI SNAS389C p.3-4"
+      "source": "SNAS389C"
     },
     {
-      "parameter": "CMRR / PSRR / channel separation",
-      "value": "CMRR 120 dB typ (110 min); PSRR 120 dB typ (110 min); 118 dB at 1 kHz, 112 dB at 20 kHz",
-      "condition": "VS = ±22 V",
-      "source": "TI SNAS389C p.4"
+      "parameter": "Input bias current",
+      "value": "10 nA typ / 72 nA max; IOS 11 / 65 nA",
+      "condition": "VCM = 0 V",
+      "source": "SNAS389C"
     },
     {
-      "parameter": "Input common-mode range",
-      "value": "Within 2.0 V of each rail (min); +21.0/-20.8 V typ at ±22 V",
-      "condition": "",
-      "source": "TI SNAS389C p.4"
-    },
-    {
-      "parameter": "Capacitive load",
-      "value": "100 pF gives 16% overshoot. Loads above 100 pF 'must be isolated from the output' with a series resistor.",
-      "condition": "",
-      "source": "TI SNAS389C p.4, p.23"
-    },
-    {
-      "parameter": "Input stage / input impedance",
-      "value": "Bipolar; differential input impedance 30 kΩ; common-mode input impedance 1000 MΩ",
-      "condition": "-10 V < VCM < 10 V",
-      "source": "TI SNAS389C p.4; input diodes: TI E2E thread 337068"
-    },
-    {
-      "parameter": "Thermal / ESD",
-      "value": "θJA 145 °C/W (SOIC), 102 °C/W (PDIP); ESD 2000 V HBM; MM 200 V (pins 1, 4, 7, 8) / 100 V (pins 2, 3, 5, 6)",
-      "condition": "",
-      "source": "TI SNAS389C p.3"
-    },
-    {
-      "parameter": "Per-revision differences",
-      "value": "None known. Rev C only changed the layout to TI format, and rev 1.1 added top marks only. National-era mirrors exist (alldatasheet NSC 182890) but were not compared.",
-      "condition": "",
-      "source": "TI SNAS389C revision history p.30"
+      "parameter": "Input stage",
+      "value": "Bipolar; Zdiff 30 kΩ, Zcm 1000 MΩ; input clamp diodes",
+      "condition": "open-loop gain 140 dB; CMRR 120 dB",
+      "source": "SNAS389C; TI E2E 337068"
     }
   ],
   "reputation": {
-    "summary": "Seen as the high-voltage (±22 V) member of National's LM4562/LME49720 audio series, with the same headline numbers (2.7 nV/√Hz, 0.00003% THD+N, 55 MHz) and more rail headroom. Forum summaries describe it as refined, detailed and wide-staged: in a head-fi round-up it sat between OPA2604 and AD823 in character, with a better soundstage than either. On diyAudio it is a 'very good all-rounder' with slightly 'synthetic' highs. In a VentureCraft Vantam swap test, Soomal found it firmer and more tense than MUSES02 while still warm, with springier bass, no muddy mid-bass, a wider upper-mid stage and more 3D vocals, and recommended it for speaker systems. Japanese blog summaries praise its clarity across the whole band and its refined highs; others find it plain. Opinion is split on whether it differs audibly from LME49720/LM4562. Nearly all of this is forum and blog opinion, not controlled listening tests.",
+    "summary": "The ±22 V member of the LM4562/LME49720 series with the same headline numbers. Forums call it refined and detailed with a wide stage; diyAudio a 'very good all-rounder' with slightly 'synthetic' highs. Soomal found it firmer than MUSES02 yet warm. Japanese blogs praise its clarity; some find it plain. Opinion splits on whether it differs from the LME49720.",
     "sonic_descriptors": [
-      "between OPA2604 and AD823 in character, more refined and detailed, better soundstage than either (head-fi round-up, via search summary)",
-      "very good all-rounder: powerful bass, good soundstage, detailed highs (diyAudio 'Best Sounding DUAL opamps', via search summary)",
-      "slightly 'synthetic' highs (same diyAudio thread)",
-      "更硬朗，有张力 (firmer, more tension) but still warm; springier bass and no muddy mid-bass vs MUSES02; wider upper-mid stage, more 3D vocals (Soomal Vantam review)",
-      "clarity across the whole band, good coherence and resolution, refined highs that are never unpleasant (JP blogs, via search summary)",
-      "flat or plain with decent resolution; 'lacking' to some (JP, via search summary)",
-      "less coloured than NJM2114DD; one JP review heard little difference from LME49990 (JP search summaries)",
-      "some rank it LM4562 < LME49720HA < LME49860; others hear no difference (head-fi)"
+      "refined, detailed",
+      "wide soundstage",
+      "powerful bass",
+      "slightly synthetic highs",
+      "firmer, more tension (更硬朗，有张力)",
+      "springy bass, 3D vocals",
+      "clear across the band",
+      "plain to some"
     ],
     "typical_uses": [
-      "DAC output and filter stages (Gustard A18: four LME49860 duals, per the Frieve-A review)",
-      "Balanced preamps (Gustard P26: two socketed duals, moved to SO-8 on a socket adapter after DIP-8 was discontinued)",
-      "Portable DAC/amp voltage-gain stages: Sony PHA-2 (final analog output) and Sony PHA-3 (voltage gain and gain switch), per Soomal",
-      "Socketed pre stage in VentureCraft SoundDroid Vantam (stock LME49860; a MUSES02 version was also offered), per Soomal",
-      "Input op-amp in the Luxman/Stereo LXA-OT1 kit (low confidence: the sara-mac page title reads as a swap to LME49860NA)",
-      "Op-amp rolling in DIP-8 sockets; pro-audio line drivers and receivers on ±18 to ±22 V rails; RIAA phono preamps and active filters (datasheet applications)"
+      "DAC output and filter stages (Gustard A18)",
+      "Balanced preamps (Gustard P26, now SO-8 on adapter)",
+      "Sony PHA-2/PHA-3 and VentureCraft Vantam gain stages",
+      "Luxman LXA-OT1 input op-amp (low confidence)",
+      "Op-amp rolling; ±22 V line drivers, RIAA preamps, filters"
     ],
     "caveats": [
-      "55 MHz GBW: capacitive loads above 100 pF must be isolated with a series resistor (datasheet). DIY notes flag socket parasitics, decoupling and CL peaking.",
-      "The 1.6 pA/√Hz current noise means the 2.7 nV/√Hz advantage is lost in high-impedance (≈20 kΩ) networks (i_n × R ≈ 32 nV/√Hz), so it needs low-impedance feedback. IB of 10 nA typ / 72 nA max also adds DC offset there.",
-      "Quiescent current of about 10.5 mA per package at ±22 V means heat and battery drain in portables.",
-      "DIP-8 (NA/NOPB) and SOIC tube (MA/NOPB) went obsolete after a 28-Sep-2016 LTB (per E2E summary). Only SOIC tape-and-reel remains, and DIP sockets need an adapter.",
-      "Differential input diodes (TI E2E 337068) conduct under large differential input, so it is not suitable as a comparator.",
-      "Popcorn/low-frequency noise (TI E2E 415907) and EM-field sensitivity reports concern the sibling LM4562/LME49720, not specifically the LME49860.",
-      "Sound reports are subjective and often whole-device impressions. Soomal found the PHA-3 soft and restrained despite its LME49860s."
+      "Isolate capacitive loads above 100 pF with a series resistor; mind socket parasitics and decoupling.",
+      "1.6 pA/√Hz current noise erases its voltage-noise edge in ≈20 kΩ networks; use low-impedance feedback.",
+      "About 10.5 mA per package at ±22 V: heat and battery drain in portables.",
+      "DIP-8 and SOIC tube obsolete since 2016; DIP sockets now need an SO-8 adapter.",
+      "Input diodes conduct on large differential input, so not a comparator. Popcorn-noise reports concern LM4562/LME49720."
     ],
     "sources": [
       "https://github.com/h2dcc/soomal.github.io/blob/bbafb346e96b43958a852c61113c04c0150b4b85/content/posts/10100005777.md",
@@ -255,6 +169,18 @@
       "https://www.ti.com/product/LME49870"
     ]
   },
+  "counterfeit_notes": "No specific reports, but NA/NOPB, MA/NOPB and LME49870 are obsolete, so 'new' DIPs are old stock; sibling fakes exist. Genuine SOIC reads 'L49860 / MA'. Check Iq (~10.5 mA), noise and GBW; don't first power suspects at ±22 V.",
+  "alternatives": [
+    "LME49720 / LM4562 (±17 V max)",
+    "OPA1602 (±18 V)",
+    "OPA1612 (±18 V)",
+    "OPA2227P (±18 V)",
+    "OPA2604 (about ±24 V)",
+    "OPA1656 (±18 V)",
+    "LME49870 (single, obsolete)",
+    "NE5532 (±22 V is its absolute max)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "Texas Instruments",
@@ -266,7 +192,7 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current TI symlink. The header 'SNAS389C - JUNE 2007 - REVISED APRIL 2013' was confirmed by a web search summary. The content was read from a GitHub copy of this download. The addendum lists only LME49860MAX/NOPB."
+      "note": "Current symlink; addendum lists only LME49860MAX/NOPB."
     },
     {
       "vendor": "Texas Instruments (third-party copy)",
@@ -278,20 +204,19 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Frozen GitHub copy (1,870,670 bytes) of the late-2025 TI symlink download. It preserves the Nov-2025 addendum without the PDIP and SOIC tube orderables."
+      "note": "Frozen copy (1,870,670 bytes) with the Nov-2025 addendum."
     },
     {
       "vendor": "National Semiconductor (third-party copy)",
       "title": "LME49860 Datasheet (NSC)",
-      "doc_number": "National DS (pre-SNAS389)",
+      "doc_number": "National DS",
       "revision": "",
       "date": "",
       "url": "http://www.alldatasheet.com/datasheet-pdf/pdf/182890/NSC/LME49860.html",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "revision_text": "National-era, probably 1.0 or 1.1 (unconfirmed)",
-      "note": "alldatasheet copy under the NSC label, seen in search results. It is the most likely surviving pre-TI revision, but the revision it holds was not shown."
+      "note": "NSC-labelled; likely National rev 1.0 or 1.1, unconfirmed."
     },
     {
       "vendor": "Texas Instruments (third-party copy)",
@@ -303,7 +228,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "probable",
-      "note": "alldatasheet copy of the TI-format datasheet, seen in search results. Revision not shown."
+      "note": "TI-format copy; revision not shown."
     },
     {
       "vendor": "Texas Instruments (third-party copy)",
@@ -315,7 +240,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "alldatasheet copy indexed under the obsolete PDIP orderable. Seen in search results; revision not shown."
+      "note": "Indexed under the obsolete PDIP orderable; revision unknown."
     },
     {
       "vendor": "Texas Instruments (third-party copy)",
@@ -327,7 +252,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "datasheetcatalog copy, seen in search results. Revision not shown."
+      "note": "Revision unknown."
     },
     {
       "vendor": "Texas Instruments (third-party copy)",
@@ -339,7 +264,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Seen in search results. Revision not shown."
+      "note": "Revision unknown."
     },
     {
       "vendor": "National Semiconductor (third-party copy)",
@@ -351,7 +276,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Labelled National Semiconductor in search results. Revision not shown."
+      "note": "Labelled National Semiconductor; revision unknown."
     },
     {
       "vendor": "Unknown (third-party copy)",
@@ -363,20 +288,19 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Other copies were seen in search results: https://www.scribd.com/document/444533633/lme49860-pdf and https://manualzz.com/doc/19778898/lme49860-44v-dual-high-performance--high-fidelity-audio-o... (truncated URL). Revisions not shown."
+      "note": "Revision unknown; Scribd and Manualzz copies listed separately."
     },
     {
       "vendor": "National Semiconductor (third-party copy)",
       "title": "LME49870 44V Single High Performance, High Fidelity Audio Operational Amplifier (NSC)",
-      "doc_number": "National DS (TI SNAS number not found)",
+      "doc_number": "National DS",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/219107/NSC/LME49870.html",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "revision_text": "National-era (unknown)",
-      "note": "Seen in search results. It confirms that the single LME49870 exists."
+      "note": "National-era LME49870, 34 pages, 957 KB; confirms the single exists."
     },
     {
       "vendor": "Texas Instruments (third-party copy)",
@@ -388,8 +312,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "revision_text": "TI-format (unknown letter)",
-      "note": "Search summaries give its size as about 34-35 pages and 957-985 KB. The same copy is also at alldatasheet.net/.../841155/TI1/LME49870.html."
+      "note": "TI-format LME49870, about 35 pages, 985 KB."
     },
     {
       "vendor": "Texas Instruments (third-party copy)",
@@ -401,92 +324,94 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Seen in search results. Other copies: https://datasheetspdf.com/datasheet/LME49870.html (National) and https://www.datasheetarchive.com/LME49870-datasheet.html."
+      "note": "Revision unknown."
     },
     {
       "vendor": "National Semiconductor (third-party copy, Octopart datasheet cache)",
       "title": "June 2007 LME49860 44V Dual High Performance, High Fidelity Audio Operational Amplifier",
-      "doc_number": "National DS number not shown (later TI SNAS389)",
+      "doc_number": "National DS (later SNAS389)",
       "revision": "",
       "date": "2007-06",
       "url": "https://datasheet.octopart.com/LM4562HA/NOPB-National-Semiconductor-datasheet-502379.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "revision_text": "National-era edition with 'June 2007' header; revision number not shown (1.0 of 06/01/07 and 1.1 of 06/11/07 are both June 2007)",
-      "note": "Octopart files this under LM4562HA/NOPB, but the result title shows the LME49860 National datasheet with a 'June 2007' header. It is the strongest lead so far for the original National edition (pre-TI reformat)."
+      "note": "Filed under LM4562HA but shows 'June 2007' LME49860 National header."
     },
     {
       "vendor": "National Semiconductor (third-party copy)",
       "title": "LME49860 Datasheet, Operational Amplifier (National Semiconductor)",
-      "doc_number": "National DS (not shown)",
+      "doc_number": "National DS",
       "revision": "",
       "date": "",
       "url": "https://datasheetspdf.com/pdf/588381/NationalSemiconductor/LME49860/1",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the PDF viewer page behind the datasheetspdf.com/datasheet/LME49860.html page already listed, attributed to National Semiconductor."
+      "note": "PDF viewer behind the datasheetspdf page; National-attributed."
     },
     {
       "vendor": "National Semiconductor (third-party copy)",
       "title": "LME49860 Datasheet - Operational Amplifier | National Semiconductor",
-      "doc_number": "National DS (not shown)",
+      "doc_number": "National DS",
       "revision": "",
       "date": "",
       "url": "https://datasheet4u.com/datasheets/National-Semiconductor/LME49860/588381",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "datasheet4u copy attributed to National. It shares the same 588381 ID as the datasheetspdf.com copy, so it is probably the same file."
+      "note": "Same ID 588381 as datasheetspdf, probably same file.",
+      "also_urls": [
+        "https://datasheet4u.com/datasheet/National-Semiconductor/LME49860-588381"
+      ]
     },
     {
       "vendor": "National Semiconductor (third-party copy)",
       "title": "LME49860 High Fidelity Audio Operational Amplifier (National Semiconductor)",
-      "doc_number": "National DS (not shown)",
+      "doc_number": "National DS",
       "revision": "",
       "date": "",
       "url": "https://datasheet4u.com/datasheet/National-Semiconductor/LME49860-588381",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is an alternate datasheet4u URL for the same ID, 588381."
+      "note": "Alternate datasheet4u URL for ID 588381."
     },
     {
       "vendor": "Texas Instruments (third-party copy, Octopart datasheet cache)",
       "title": "LME49860NA Texas Instruments datasheet",
-      "doc_number": "SNAS389 (probable)",
+      "doc_number": "SNAS389",
       "revision": "",
       "date": "",
       "url": "https://datasheet.octopart.com/LME49860NA-Texas-Instruments-datasheet-20683281.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is Octopart's cache for the PDIP LME49860NA under the TI name. Its high cache ID suggests a TI-era copy, probably SNAS389C, but that is not confirmed."
+      "note": "TI-era cache; probably SNAS389C, unconfirmed."
     },
     {
       "vendor": "Texas Instruments (third-party copy)",
       "title": "LME49860MAX/NOPB datasheet (37 pages) TI1 | LME49860 44V Dual High Performance, High Fidelity Audio Operational Amplifier",
-      "doc_number": "SNAS389 (probable)",
+      "doc_number": "SNAS389",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/html-pdf/841156/TI1/LME49860MAXSLASHNOPB/286/4/LME49860MAXSLASHNOPB.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "alldatasheet HTML view (ID 841156) of the TI edition, 37 pages. It is a separate entry from the 841154 and 841157 copies already listed."
+      "note": "HTML view of TI edition, 37 pages."
     },
     {
       "vendor": "Texas Instruments (distributor copy, HESTORE Hungary)",
       "title": "EN: This Datasheet/Document is presented by the manufacturer.",
-      "doc_number": "SNAS389 (probable)",
+      "doc_number": "SNAS389",
       "revision": "",
       "date": "",
       "url": "https://www.hestore.hu/prod_getfile.php?id=14772",
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This copy came up in a search for SNAS389 LME49860. The summary does not show its revision."
+      "note": "HESTORE Hungary copy; revision unknown."
     },
     {
       "vendor": "Unknown (third-party copy, Scribd)",
@@ -498,7 +423,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "User upload from about 2020 (the Scribd ID range suggests this). The edition is unknown."
+      "note": "User upload, about 2020; edition unknown."
     },
     {
       "vendor": "Unknown (third-party copy)",
@@ -510,7 +435,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This URL is exactly as the search returned it, but its slug looks truncated ('...'). The doc ID 19778898 should still resolve."
+      "note": "Slug truncated as found; doc ID 19778898 should resolve."
     },
     {
       "vendor": "Unknown (third-party copy)",
@@ -522,19 +447,19 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "datasheetdir index page. The edition is unknown."
+      "note": "Index page; edition unknown."
     },
     {
       "vendor": "National Semiconductor (third-party copy)",
       "title": "LME49870 Datasheet | National Semiconductor - Datasheetspdf.com",
-      "doc_number": "National DS (not shown); TI SNAS number for LME49870 still not found",
+      "doc_number": "National DS",
       "revision": "",
       "date": "",
       "url": "https://datasheetspdf.com/datasheet/LME49870.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is a National-era LME49870 (single) copy. For comparison, the alldatasheet NSC LME49870 (219107) is 34 pages and 957 KB, and the TI one (841155) is 35 pages and 985 KB. The page-count difference fits a National edition versus the TI-format reissue."
+      "note": "National-era LME49870 copy."
     },
     {
       "vendor": "Texas Instruments (third-party copy)",
@@ -546,7 +471,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the alldatasheet.net mirror of alldatasheet.com ID 841155 (TI edition, 35 pages, 985 KB). It is the same file as the .com entry already listed."
+      "note": "alldatasheet.net mirror of ID 841155, same file."
     },
     {
       "vendor": "Texas Instruments (third-party index)",
@@ -558,7 +483,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This parts index page lists TI as the manufacturer."
+      "note": "Parts index listing TI as manufacturer."
     },
     {
       "vendor": "Unknown (third-party copy)",
@@ -570,76 +495,105 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "datasheetarchive index. It may hold both National and TI editions."
+      "note": "Index; may hold National and TI editions."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LME49860 44V Dual High Performance, High Fidelity Audio Operational Amplifier (rev 1.0)",
-      "doc_number": "National DS number not seen (later TI SNAS389)",
+      "doc_number": "National DS (later SNAS389)",
       "revision": "1.0",
-      "date": "",
+      "date": "2007-06-01",
       "url": "",
       "url_kind": "vendor_legacy",
       "confidence": "high",
       "revision_status": "confirmed",
-      "date_text": "06/01/07",
-      "note": "Initial release, known only from the SNAS389C revision history. The alldatasheet NSC copy (182890) may hold this or rev 1.1."
+      "note": "Initial release, known from SNAS389C history; may be alldatasheet 182890."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LME49860 44V Dual High Performance, High Fidelity Audio Operational Amplifier (rev 1.1)",
-      "doc_number": "National DS number not seen (later TI SNAS389)",
+      "doc_number": "National DS (later SNAS389)",
       "revision": "1.1",
-      "date": "",
+      "date": "2007-06-11",
       "url": "",
       "url_kind": "vendor_legacy",
       "confidence": "high",
       "revision_status": "confirmed",
-      "date_text": "06/11/07",
-      "note": "Added LME49860MA and LME49860NA top-mark information. This is the last National content before the TI reformat."
+      "note": "Added MA/NA top marks; last National content before TI reformat."
     }
+  ],
+  "product_pages": [
+    "https://www.ti.com/product/LME49860",
+    "http://www.ti.com/lit/gpn/lme49860",
+    "https://www.ti.com/product/LME49870",
+    "https://www.digikey.com/en/products/detail/texas-instruments/LME49860NA-NOPB/1647710",
+    "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LME49860MAX-NOPB?qs=7lkVKPoqpbYDt5Sw0CH1Cw%3D%3D",
+    "https://www.digikey.com/en/products/base-product/texas-instruments/296/LME49870/62142"
   ],
   "revision_history": [
     {
       "vendor": "National Semiconductor",
-      "doc_number": "LME49860 datasheet (National; later TI SNAS389)",
+      "doc_number": "LME49860 (later SNAS389)",
       "revision": "1.0",
-      "date": "06/01/07",
+      "date": "2007-06-01",
       "changes": "Initial release."
     },
     {
       "vendor": "National Semiconductor",
-      "doc_number": "LME49860 datasheet (National; later TI SNAS389)",
+      "doc_number": "LME49860 (later SNAS389)",
       "revision": "1.1",
-      "date": "06/11/07",
-      "changes": "Added the LME49860MA and LME49860NA top-mark information. No electrical changes listed."
+      "date": "2007-06-11",
+      "changes": "Added LME49860MA and LME49860NA top marks. No electrical changes."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SNAS389",
       "revision": "C",
-      "date": "04/05/13 (header: JUNE 2007 - REVISED APRIL 2013)",
-      "changes": "'Changed layout of National Data Sheet to TI format.' No spec, absolute-max or pinout changes listed. Revisions -, A and B do not appear in the change log. The sibling LME49810 SNAS391C carries the same April-2013 reformat date."
+      "date": "2013-04-05",
+      "changes": "'Changed layout of National Data Sheet to TI format.' No spec changes. Header: JUNE 2007 – REVISED APRIL 2013."
     },
     {
       "vendor": "Texas Instruments",
-      "doc_number": "SNAS389 (Package Option Addendum only)",
-      "revision": "C (addendum refresh, not a text revision)",
-      "date": "11-Nov-2025",
-      "changes": "Lists only LME49860MAX/NOPB and its .A/.B material variants as Active Production (SOIC-8, marking L49860/MA). The PDIP (NA) and SOIC tube (MA) orderables are gone after their 28-Sep-2016 LTB (per E2E summary)."
+      "doc_number": "SNAS389 (Package Option Addendum)",
+      "revision": "C",
+      "date": "2025-11-11",
+      "changes": "Addendum refresh: only LME49860MAX/NOPB (.A/.B) Active, marking L49860/MA. NA and MA orderables gone after 2016 LTB."
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No counterfeit report specific to the LME49860 was found, so the risk here is inferred. LME49860NA/NOPB (PDIP), LME49860MA/NOPB and LME49870MA/NOPB are obsolete: DigiKey lists them so, and a TI E2E 456802 summary gives an LTB of 28 Sep 2016. Any 'new' DIP LME49860NA or LME49870 is therefore old stock at best. Fakes of sibling parts are documented: a fake 'LME49720NA' (diyAudio 386852) and a fake LME49710 (tinytransistors.net, 2022). The discovery note that remarked LME49860s have been reported was not confirmed. How to check:\n(1) Genuine current SOIC parts are marked 'L49860' over 'MA' (TI addendum) with a logo and lot code. National-logo parts are older stock.\n(2) Total Iq should be about 10.2-10.5 mA per package at ±18-22 V.\n(3) THD+N should sit near analyzer residual, e_n about 2.7 nV/√Hz and GBW about 55 MHz.\n(4) Do not first power-test suspect parts at ±22 V: a remarked 36 V-class part would exceed its absolute maximum.\n(5) Buy SOIC LME49860MAX/NOPB from authorized distributors.",
-  "alternatives": [
-    "LME49720 / LM4562 (same National series and headline specs, but ±17 V max; the LME49720 MA/NA also went EOL in 2016)",
-    "OPA1602 (TI's suggested replacement for LME49720 in the EOL discussion; OPA1611 was suggested for LME49710). ±18 V class, so it does not suit ±22 V rails.",
-    "OPA1612 (dual of OPA1611; a distributor cross-reference names OPA1612AID as the LME49860MA/NOPB replacement; ±18 V class)",
-    "OPA2227P (a distributor cross-reference names it as the LME49860NA/NOPB PDIP replacement; ±18 V class)",
-    "OPA2604 (FET-input dual rated to about ±24 V, one of the few rolling candidates that tolerates ±22 V rails)",
-    "OPA1656 (modern CMOS-input low-distortion dual, ±18 V class)",
-    "LME49870 (the 44 V single sibling; obsolete since the 2016 LTB)",
-    "NE5532 (the classic it replaces in sockets; ±22 V is its absolute maximum, not its operating rating)"
+  "revision_chains": [
+    {
+      "vendor": "National Semiconductor / Texas Instruments",
+      "doc_number": "SNAS389",
+      "known": [
+        {
+          "rev": "1.0",
+          "date": "2007-06-01"
+        },
+        {
+          "rev": "1.1",
+          "date": "2007-06-11"
+        },
+        {
+          "rev": "C",
+          "date": "2013-04-05"
+        }
+      ],
+      "missing": [
+        "-",
+        "A",
+        "B"
+      ],
+      "note": "-, A, B absent from change log, maybe never issued. Sibling LME49810 SNAS391C shares the April 2013 reformat."
+    },
+    {
+      "vendor": "National Semiconductor / Texas Instruments",
+      "doc_number": "LME49870 (TI number unknown)",
+      "known": [],
+      "missing": [
+        "all revision letters and dates"
+      ],
+      "note": "National copy (34 pages) and TI-format copy (35 pages) exist on alldatasheet."
+    }
   ],
   "ti_literature_numbers": [
     "SNAS389"
@@ -665,15 +619,11 @@
     "https://www.ti.com/product/LME49870"
   ],
   "open_questions": [
-    "This run used 6 WebSearch calls. Key specs and reputation were not re-searched; specs rest on the SNAS389C text read from the GitHub copy.",
-    "LME49870 TI literature number and last revision: not found. It is confirmed to exist and to be obsolete (LTB 28 Sep 2016 per the E2E 456802 summary). Did a PDIP LME49870NA/NOPB exist?",
-    "The 28-Sep-2016 LTB date and the list of affected orderables come from a search summary of TI E2E 456802, not the TI PCN itself. The PCN number is unknown.",
-    "Is LME49860MAX/NOPB still Active in 2026? The Nov-2025 addendum says Active, but one search summary claimed the whole 44 V line was discontinued.",
-    "Which National revision (1.0 or 1.1) is held by the alldatasheet NSC copy (182890) and datasheetspdf.com? Do SNAS389 (-), A or B exist? The rev C change log lists only 1.0, 1.1 and C.",
-    "Same die as LME49720? Forum summaries say it 'is just a LME49720 that passed a higher voltage test'. Supply range and output specs differ, and neither National nor TI has confirmed it. Is LME49870 the single version of the LME49860 die?",
-    "Inferred and never seen: the TI revision-specific URLs snas389*, the lme49870 symlink and GPN, and every national.com URL in archive_seed_urls.",
-    "LXA-OT1 stock op-amp needs a primary source (Luxman, Stereo magazine or the kit BOM).",
-    "No direct bench measurement of the LME49860 alone was found. The head-fi round-up (thread 870832) reportedly includes measurements, but its content was not read."
+    "What are the LME49870's TI literature number and last revision? Did a PDIP LME49870NA/NOPB exist?",
+    "Which TI PCN set the 28 Sep 2016 LTB, and is LME49860MAX/NOPB still active in 2026?",
+    "Which National revision do the NSC mirrors hold? Did SNAS389 -, A or B ever exist?",
+    "Is it the same die as LME49720 ('a LME49720 that passed a higher voltage test')? Is LME49870 the single version?",
+    "What did the head-fi round-up (thread 870832) measure? What op-amp did the LXA-OT1 kit ship with?"
   ],
   "sources": [
     "https://www.ti.com/product/LME49860",
@@ -719,18 +669,18 @@
   "verification": {
     "status": "partially-verified",
     "refuted_claims": [
-      "The draft doubted the LME49870 existed (unverified, 0 GitHub hits). That is refuted: alldatasheet (NSC 219107, TI 841155), datasheetcatalog and DigiKey list the 'LME49870 44V Single High Performance, High Fidelity Audio Operational Amplifier' (National, later TI).",
-      "One search summary said TI 'discontinued the entire 44V LME operational amplifier line'. This is not adopted: the TI Nov-2025 addendum lists LME49860MAX/NOPB as Active, and the LTB list names only the MA/NOPB and NA/NOPB orderables."
+      "Doubt that LME49870 exists is refuted: alldatasheet (NSC 219107, TI 841155), datasheetcatalog and DigiKey list the 44 V single (https://www.alldatasheet.com/datasheet-pdf/pdf/219107/NSC/LME49870.html).",
+      "Claim that TI 'discontinued the entire 44V LME line' not adopted: the Nov-2025 addendum lists LME49860MAX/NOPB as Active."
     ],
     "corrections": [
-      "LME49860MA/NOPB and LME49860NA/NOPB: status changed from 'presumed discontinued' to obsolete. DigiKey lists both as obsolete, and the E2E 456802 summary gives an LTB of 28 Sep 2016, on the same list as the LME49710/LME49720 MA/NA parts.",
-      "LME49870 part entry: renamed to LME49870MA/NOPB, confirmed as the 44 V single, status obsolete (LTB 28 Sep 2016 per E2E 456802 'LME49870 EOL?'). The technology and alternatives text was updated to match.",
-      "The https://www.ti.com/product/LME49860 datasheet entry was raised from low to high confidence because it was seen in search results.",
-      "Added third-party mirrors: the National-era alldatasheet NSC copy of LME49860 (182890), the TI-format alldatasheet copies (841154, 841157), datasheetcatalog, RadioLocman, datasheetspdf, digchip, Scribd and Manualzz, plus LME49870 mirrors (alldatasheet NSC 219107 and TI 841155, datasheetcatalog, datasheetspdf, datasheetarchive) and DigiKey product pages.",
-      "Added the distributor cross-reference replacements (OPA1612AID for MA/NOPB, OPA2227P for NA/NOPB) to the alternatives, noting both are ±18 V class.",
-      "Lineage: added the 2016 LTB event, and noted that the sibling LME49810 SNAS391C carries the same 'REVISED APRIL 2013' TI reformat date.",
-      "Added http://www.ti.com/lit/gpn/lme49870 to archive_seed_urls as an inferred seed.",
-      "silicon_changes stays empty: none of the searches found a die change, process change or PCN for the LME49860."
+      "LME49860MA/NOPB and NA/NOPB set to obsolete: DigiKey lists both obsolete; E2E 456802 gives LTB 28 Sep 2016 with LME49710/LME49720 MA/NA.",
+      "LME49870 entry renamed LME49870MA/NOPB, confirmed as the 44 V single, obsolete (LTB 28 Sep 2016).",
+      "TI product-page datasheet entry raised from low to high confidence.",
+      "Added mirrors: alldatasheet NSC 182890 and TI 841154/841157, datasheetcatalog, RadioLocman, datasheetspdf, digchip, Scribd, Manualzz, LME49870 mirrors, DigiKey pages.",
+      "Added distributor replacements OPA1612AID (MA/NOPB) and OPA2227P (NA/NOPB), both ±18 V class.",
+      "Lineage: added the 2016 LTB; sibling LME49810 SNAS391C shares the April 2013 reformat date.",
+      "Added http://www.ti.com/lit/gpn/lme49870 as an inferred archive seed.",
+      "No die change, process change or PCN found."
     ],
     "unverified_urls": [
       "https://www.ti.com/product/LME49870",
@@ -741,26 +691,15 @@
       "https://manualzz.com/doc/19778898/lme49860-44v-dual-high-performance--high-fidelity-audio-o... (truncated in search results)"
     ],
     "claims_confirmed": [
-      "TI product page exists: 'LME49860 data sheet, product information and support | TI.com' (https://www.ti.com/product/LME49860)",
-      "The datasheet is SNAS389C, 'JUNE 2007 - REVISED APRIL 2013', and covers LME49860, LME49860MABD and LME49860NABD (https://www.ti.com/product/LME49860; https://www.scribd.com/document/444533633/lme49860-pdf)",
-      "LME49870 exists as the '44V Single High Performance, High Fidelity Audio Operational Amplifier' from National/TI (https://www.alldatasheet.com/datasheet-pdf/pdf/219107/NSC/LME49870.html; https://www.datasheetcatalog.com/datasheets_pdf/L/M/E/4/LME49870.shtml)",
-      "LME49870MA/NOPB had an LTB of 28 Sep 2016 (https://e2e.ti.com/support/audio-group/audio/f/audio-forum/456802/lme49870-eol)",
-      "LME49860MA/NOPB and LME49860NA/NOPB were on the 28-Sep-2016 LTB list with the LME49710/LME49720 MA/NA parts (https://e2e.ti.com/support/audio-group/audio/f/audio-forum/456802/lme49870-eol, via search summary)",
-      "DigiKey lists LME49860NA/NOPB and LME49860MA/NOPB as obsolete (https://www.digikey.com/en/products/detail/texas-instruments/LME49860NA-NOPB/1647710; https://www.digikey.com/en/products/detail/texas-instruments/LME49860MA-NOPB/1647709)",
-      "A National-era LME49860 datasheet copy survives on alldatasheet under NSC (http://www.alldatasheet.com/datasheet-pdf/pdf/182890/NSC/LME49860.html)",
-      "Sibling LME49810 SNAS391C is 'MAY 2007-REVISED APRIL 2013', consistent with the April-2013 TI reformat batch (https://media.digikey.com/pdf/data%20sheets/texas%20instruments%20pdfs/lme49810.pdf)"
+      "TI product page exists (https://www.ti.com/product/LME49860)",
+      "Datasheet is SNAS389C, 'JUNE 2007 - REVISED APRIL 2013', covering LME49860, MABD and NABD (https://www.ti.com/product/LME49860; https://www.scribd.com/document/444533633/lme49860-pdf)",
+      "LME49870 is the 44V Single High Performance audio op-amp from National/TI (https://www.alldatasheet.com/datasheet-pdf/pdf/219107/NSC/LME49870.html; https://www.datasheetcatalog.com/datasheets_pdf/L/M/E/4/LME49870.shtml)",
+      "LME49870MA/NOPB LTB 28 Sep 2016 (https://e2e.ti.com/support/audio-group/audio/f/audio-forum/456802/lme49870-eol)",
+      "LME49860MA/NOPB and NA/NOPB on the 28-Sep-2016 LTB list with LME49710/LME49720 MA/NA (https://e2e.ti.com/support/audio-group/audio/f/audio-forum/456802/lme49870-eol)",
+      "DigiKey lists LME49860NA/NOPB and MA/NOPB as obsolete (https://www.digikey.com/en/products/detail/texas-instruments/LME49860NA-NOPB/1647710; https://www.digikey.com/en/products/detail/texas-instruments/LME49860MA-NOPB/1647709)",
+      "National-era LME49860 datasheet survives on alldatasheet (http://www.alldatasheet.com/datasheet-pdf/pdf/182890/NSC/LME49860.html)",
+      "Sibling LME49810 SNAS391C is 'MAY 2007-REVISED APRIL 2013' (https://media.digikey.com/pdf/data%20sheets/texas%20instruments%20pdfs/lme49810.pdf)"
     ],
     "web_searches_used": 6
-  },
-  "tier": "B",
-  "category": "bipolar-modern-low-noise",
-  "product_pages": [
-    "https://www.ti.com/product/LME49860",
-    "http://www.ti.com/lit/gpn/lme49860",
-    "https://www.ti.com/product/LME49870",
-    "https://www.digikey.com/en/products/detail/texas-instruments/LME49860NA-NOPB/1647710",
-    "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LME49860MAX-NOPB?qs=7lkVKPoqpbYDt5Sw0CH1Cw%3D%3D",
-    "https://www.digikey.com/en/products/base-product/texas-instruments/296/LME49870/62142"
-  ],
-  "revision_chain_notes": "LME49860 (dual), one document (National datasheet, reissued by TI as SNAS389):\n- National rev 1.0, 06/01/07: initial release.\n- National rev 1.1, 06/11/07: adds the MA/NA top marks.\n- TI SNAS389 rev -, A, B: missing. They are not in the rev C change log, and no copies or dates were found. They may never have been issued, since TI's first letter here is C.\n- TI SNAS389C, 'JUNE 2007 - REVISED APRIL 2013' (change log 04/05/13): reformatted to TI layout.\n- Package Option Addendum refresh, 11-Nov-2025.\n\nNew lead: an Octopart cache copy (ID 502379, filed under LM4562HA/NOPB) whose title shows the 'June 2007 LME49860' National header. It is probably the National 1.0 or 1.1 edition. The National DS number, any 2008-2010 National editions and a legacy national.com/ds URL are still unconfirmed.\n\nLME49870 (single): the TI SNAS literature number is still not found. A direct search for ti.com/lit/ds/symlink/lme49870.pdf returned nothing. There are two editions:\n- National-era copy: alldatasheet 219107, 34 pages, 957 KB; plus datasheetspdf.\n- TI-format copy: alldatasheet 841155, 35 pages, 985 KB.\nThe revision letters, dates and change log are missing.\n\nSibling context: LME49810 SNAS391C ('MAY 2007-REVISED APRIL 2013', DigiKey copy) points to the same April-2013 TI reformat batch.\n\nThere is no second source for LME49860 or LME49870. Every new copy found is marked 'revision not shown' because no search summary showed its header or footer.\n\nBudget: 6 of 6 searches used (one wasted on a symlink query that returned nothing relevant)."
+  }
 }

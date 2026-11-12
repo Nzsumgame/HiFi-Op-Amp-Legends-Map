@@ -1,232 +1,171 @@
 {
   "id": "AD744",
-  "name": "AD744 / AD746 (precision 500 ns-settling BiFET single / dual)",
-  "tagline": "ADI's c.1990 fast-settling JFET-input single/dual, pitched by ADI for audio (0.0003% THD), now best known as the die found inside fake OPA627s.",
-  "technology": "BiFET (JFET-input) op-amp by Analog Devices. ADI describes the AD744 as having the DC characteristics of the AD711 BiFET family with faster settling, slew and bandwidth. The AD744 single has an external compensation/decompensation pin and offset-null pins. The AD746 dual is two AD744 amplifiers on one chip (ADI datasheet wording) and has no compensation pin. The AD744 datasheet lists plastic mini-DIP, SOIC, cerdip, TO-99 metal can and chip (bare die) form. Datasheet titles: \"Precision, 500 ns Settling BiFET Op Amp\" (AD744) and \"Dual Precision, 500 ns Settling, BiFET Op Amp\" (AD746).",
+  "name": "AD744 / AD746",
+  "type": "JFET-input (BiFET) fast-settling op-amp, 1/2 channels",
+  "tier": "C",
+  "category": "jfet-input",
+  "tagline": "ADI's c. 1990 fast-settling BiFET, pitched for audio at 0.0003% THD, now best known as the die inside fake OPA627s.",
   "manufacturers": [
     "Analog Devices"
-  ],
-  "part_numbers": [
-    {
-      "pn": "AD744JNZ",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "J grade (0 to +70 C), plastic DIP; Z = RoHS. A non-Z AD744JN appears on Futurlec's datasheet page."
-    },
-    {
-      "pn": "AD744KN / AD744KNZ",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "K grade (0 to +70 C, tighter offset), plastic DIP. Octopart hosts an AD744KNZ datasheet copy. Digi-Key stocked AD744KNZ in 2019 (ibxII BOM)."
-    },
-    {
-      "pn": "AD744JR / AD744JR-REEL / AD744JR-REEL7 / AD744JRZ / AD744JRZ-REEL / AD744JRZ-REEL7",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "J grade SOIC-8, plus reel and RoHS (Z) variants. Non-Z reel codes are listed on the manualmachine datasheet copy."
-    },
-    {
-      "pn": "AD744KR / AD744KR-REEL / AD744KR-REEL7 / AD744KRZ / AD744KRZ-REEL / AD744KRZ-REEL7",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "K grade SOIC-8, plus reel and RoHS variants."
-    },
-    {
-      "pn": "AD744AQ / AD744BQ",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "A/B industrial grades (-40 to +85 C), hermetic cerdip. No RoHS (Z) version was seen."
-    },
-    {
-      "pn": "AD744AH",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "A grade, TO-99 metal can (H)."
-    },
-    {
-      "pn": "AD744TH/883B",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "T military grade (-55 to +125 C), TO-99, MIL-STD-883B screened. Listed on Octopart."
-    },
-    {
-      "pn": "AD744C / AD744S (grades)",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "The datasheet defines C as an industrial grade (-40 to +85 C) and S as a military grade (-55 to +125 C). ADI's 1991 SPICE grade models exist for both. No orderable part number was seen."
-    },
-    {
-      "pn": "AD744 chip form (die)",
-      "channels": 1,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "The datasheet lists chip form, which fits ZeptoBars' theory that a counterfeiter bought AD744 dies. The order code was not seen."
-    },
-    {
-      "pn": "AD746JN / AD746JNZ",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "Dual, J grade, plastic DIP; Z = RoHS."
-    },
-    {
-      "pn": "AD746JR / AD746JRZ / AD746JRZ-REEL / AD746JRZ-REEL7",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "AD746JRZ-REEL obsolete (Digi-Key); others unknown",
-      "notes": "Dual, J grade SOIC-8. Digi-Key lists AD746JRZ-REEL as obsolete and no longer manufactured. GlobalSpec hosts an AD746JRZ datasheet."
-    },
-    {
-      "pn": "AD746AQ / AD746BQ",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "Dual, A/B grades, cerdip."
-    },
-    {
-      "pn": "AD746SQ / AD746SQ/883B",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown",
-      "notes": "Dual, S military grade, cerdip, 883B. ADI added an AD746 LTspice model in 2018 and revised it in 2019."
-    }
   ],
   "lineage": [
     {
       "vendor": "Analog Devices",
-      "role": "originator and sole manufacturer",
-      "period": "by 1991 at the latest (SPICE macro-models dated 1/91 and 3/91); ADI still hosts both product pages and datasheets in 2026",
-      "notes": "No second sources were found. The 1991 macro-models are credited 'JLW / PMI' (Precision Monolithics, then part of ADI). The LTspice library added an AD746 model on 02/23/18 and revised it on 05/23/19. At least one AD746 order code (JRZ-REEL) is obsolete."
+      "role": "originator",
+      "period": "c. 1990–present",
+      "note": "Sole source; AD711-family DC performance with faster AC. Existed by 1/91 (SPICE models credited JLW/PMI)."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "AD744JN / AD744JNZ",
+      "channels": 1,
+      "status": "unknown",
+      "note": "J grade (0 to +70 °C), plastic mini-DIP; Z = RoHS."
+    },
+    {
+      "pn": "AD744KN / AD744KNZ",
+      "channels": 1,
+      "status": "unknown",
+      "note": "K grade (tighter offset), plastic DIP; Digi-Key stocked KNZ in 2019."
+    },
+    {
+      "pn": "AD744JR / AD744JR-REEL / AD744JR-REEL7 / AD744JRZ / AD744JRZ-REEL / AD744JRZ-REEL7",
+      "channels": 1,
+      "status": "unknown",
+      "note": "J grade SOIC-8 with reel and RoHS (Z) variants."
+    },
+    {
+      "pn": "AD744KR / AD744KR-REEL / AD744KR-REEL7 / AD744KRZ / AD744KRZ-REEL / AD744KRZ-REEL7",
+      "channels": 1,
+      "status": "unknown",
+      "note": "K grade SOIC-8 with reel and RoHS (Z) variants."
+    },
+    {
+      "pn": "AD744AQ / AD744BQ",
+      "channels": 1,
+      "status": "unknown",
+      "note": "A/B industrial grades (−40 to +85 °C), hermetic cerdip; no Z version seen."
+    },
+    {
+      "pn": "AD744AH",
+      "channels": 1,
+      "status": "unknown",
+      "note": "A grade, TO-99 metal can (H)."
+    },
+    {
+      "pn": "AD744TH/883B",
+      "channels": 1,
+      "status": "unknown",
+      "note": "T military grade (−55 to +125 °C), TO-99, MIL-STD-883B; listed on Octopart."
+    },
+    {
+      "pn": "AD744C / AD744S (grades)",
+      "channels": 1,
+      "status": "unknown",
+      "note": "C industrial, S military grades with 1991 SPICE models; no orderable code seen."
+    },
+    {
+      "pn": "AD744 chip form (die)",
+      "channels": 1,
+      "status": "unknown",
+      "note": "Datasheet lists bare die, fitting ZeptoBars' bought-dies theory; order code not seen."
+    },
+    {
+      "pn": "AD746JN / AD746JNZ",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Dual (two AD744s, no comp pin), J grade, plastic DIP; Z = RoHS."
+    },
+    {
+      "pn": "AD746JR / AD746JRZ / AD746JRZ-REEL7",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Dual, J grade SOIC-8; GlobalSpec hosts an AD746JRZ datasheet."
+    },
+    {
+      "pn": "AD746JRZ-REEL",
+      "channels": 2,
+      "status": "obsolete",
+      "note": "Digi-Key lists it obsolete, no longer manufactured."
+    },
+    {
+      "pn": "AD746AQ / AD746BQ",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Dual, A/B grades, cerdip."
+    },
+    {
+      "pn": "AD746SQ / AD746SQ/883B",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Dual, S military grade, cerdip, 883B screened."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Settling time",
-      "value": "500 ns to 0.01%",
-      "condition": "10 V step",
-      "source": "ADI AD744 datasheet features (ad744.pdf; radiolocman Rev. D copy)"
+      "parameter": "Input noise (1 kHz)",
+      "value": "~16 nV/√Hz (SPICE model; ~3× OPA627 per ZeptoBars)",
+      "condition": "model en=16n; 1/f corner ~100 Hz",
+      "source": "ADI LTspice AD746 model"
+    },
+    {
+      "parameter": "GBW",
+      "value": "13 MHz",
+      "condition": "internal comp.; AD744 can decompensate",
+      "source": "AD744 datasheet Rev. D"
     },
     {
       "parameter": "Slew rate",
-      "value": "75 V/us",
-      "condition": "typical",
-      "source": "ADI AD744 datasheet features (radiolocman Rev. D copy)"
+      "value": "75 V/µs; 500 ns settling to 0.01% (10 V step)",
+      "condition": "typ",
+      "source": "AD744 datasheet Rev. D"
     },
     {
-      "parameter": "Gain-bandwidth",
-      "value": "13 MHz",
-      "condition": "internal compensation (AD744 can be externally decompensated for higher gain)",
-      "source": "ADI AD744 datasheet features"
-    },
-    {
-      "parameter": "Quiescent current",
-      "value": "AD744 3.5 mA; AD746 7 mA (both amplifiers)",
-      "condition": "typical",
-      "source": "ADI AD744 / AD746 datasheets (web search summary)"
-    },
-    {
-      "parameter": "THD",
-      "value": "0.0003%",
+      "parameter": "THD+N",
+      "value": "0.0003% THD",
       "condition": "conditions not captured",
-      "source": "ADI AD744 product description (analog.com/en/products/ad744.html, via search summary)"
+      "source": "ADI AD744 product page"
     },
     {
-      "parameter": "Temperature grades",
-      "value": "J/K 0 to +70 C; A/B/C -40 to +85 C; S/T -55 to +125 C",
-      "condition": "AD744",
-      "source": "ADI AD744 datasheet"
+      "parameter": "Supply current",
+      "value": "AD744 3.5 mA; AD746 7 mA (both amplifiers)",
+      "condition": "typ",
+      "source": "AD744 / AD746 datasheets"
     },
     {
-      "parameter": "Input stage",
-      "value": "JFET (BiFET)",
-      "condition": "-",
-      "source": "ADI datasheet titles AD744/AD746"
-    },
-    {
-      "parameter": "Offset voltage, typical",
-      "value": "AD744 0.1 mV; AD746 0.25 mV",
-      "condition": "25 C, typical",
-      "source": "ADI SPICE macro-model Rev. B 3/91. Model-derived."
-    },
-    {
-      "parameter": "Offset voltage, max by grade (AD744)",
-      "value": "J/A/S 1.0 mV; K/B/T 0.5 mV; C 0.25 mV",
-      "condition": "25 C, worst case",
-      "source": "ADI 1991 worst-case grade macro-models Rev. A 1/91. Model-derived; confirm against the datasheet."
-    },
-    {
-      "parameter": "Offset voltage, max by grade (AD746)",
-      "value": "J/A 1.5 mV; S 1.0 mV; B 0.5 mV",
-      "condition": "25 C, worst case",
-      "source": "ADI 1991 worst-case grade macro-models Rev. A 1/91. Model-derived."
+      "parameter": "Offset voltage",
+      "value": "Typ 0.1 mV (AD744), 0.25 mV (AD746); max 0.25–1.5 mV",
+      "condition": "25 °C; SPICE-model values by grade",
+      "source": "ADI SPICE macro-models, 1991"
     },
     {
       "parameter": "Input bias current",
-      "value": "AD744 typ ~30 pA (worst case 100 pA, C grade 50 pA); AD746 typ ~110 pA",
-      "condition": "25 C",
-      "source": "ADI 1991 macro-models and LTspice AD746 model. Model-derived."
+      "value": "AD744 ~30 pA (max 100 pA; C grade 50 pA); AD746 ~110 pA",
+      "condition": "25 °C; SPICE-model values",
+      "source": "ADI 1991 and LTspice models"
     },
     {
-      "parameter": "Voltage noise density",
-      "value": "~16 nV/rtHz flat band, 1/f corner ~100 Hz",
-      "condition": "Model parameters en=16n, enk=100",
-      "source": "ADI LTspice ADI1.lib AD746 model; ZeptoBars says ~3x the OPA627's noise. Not confirmed from the datasheet."
-    },
-    {
-      "parameter": "Compensation / trim",
-      "value": "AD744: external compensation pin plus offset null. AD746: neither.",
-      "condition": "-",
-      "source": "ZeptoBars teardown; ADI macro-model node lists"
+      "parameter": "Input stage",
+      "value": "JFET (BiFET); AD744 adds comp and offset-null pins",
+      "condition": "AD746 has neither",
+      "source": "ADI datasheets; ZeptoBars teardown"
     }
   ],
   "reputation": {
-    "summary": "A niche part for Hi-Fi hobbyists. ADI itself pitched the AD744 for demanding audio applications (0.0003% THD, 13 MHz GBW) and as a fast-settling buffer for 12/14-bit DACs and ADCs. Tangent's CMoy op-amp survey (read via the Soomal translation) measured the AD744: $4.52 at Digi-Key, minimum supply 6.8 V for 0.5 V into 33 ohms; no listening verdict was found. Its main notoriety is as the donor die in counterfeit OPA627s (ZeptoBars, April 2014, covered by Hackaday, Head-Fi and diyAudio). The discovery note calling it a '1990s DIY I/V favourite' has no primary community source.",
+    "summary": "A niche hobbyist part. ADI pitched the AD744 for demanding audio (0.0003% THD, 13 MHz) and as a fast-settling buffer for 12/14-bit DACs and ADCs. Tangent's CMoy survey (via Soomal) lists it at $4.52, needing 6.8 V for 0.5 V into 33 Ω, with no listening verdict. It is best known as the donor die in fake OPA627s.",
     "sonic_descriptors": [],
     "typical_uses": [
-      "Fast-settling buffers for 12/14-bit DACs and ADCs (ADI positioning)",
-      "Audio stages (ADI marketing cites 0.0003% THD)",
-      "DAC I/V and line stages (discovery note; not verified)",
+      "Fast-settling buffers for 12/14-bit DACs and ADCs",
+      "Audio stages (ADI cites 0.0003% THD)",
+      "DAC I/V and line stages (reportedly; no community source)",
       "Precision current drivers and instrumentation"
     ],
     "caveats": [
-      "The AD744's compensation pin has no counterpart on the OPA627 (ZeptoBars), so it is not a clean pin-for-pin OPA627 substitute. Check the pin function before op-amp rolling.",
-      "Noise is about 3x the OPA627's (ZeptoBars); ADI's LTspice model uses ~16 nV/rtHz.",
-      "Offset is higher than the OPA627's (0.5 mV vs 0.1 mV, per ZeptoBars).",
-      "Weaker headphone driver in Tangent's table (6.8 V needed for 0.5 V into 33 ohms).",
+      "AD744 compensation pin has no OPA627 counterpart: not a clean OPA627 substitute. Check pin function before rolling.",
+      "Noise about 3× the OPA627's (ZeptoBars); ADI's LTspice model uses ~16 nV/√Hz.",
+      "Offset higher than the OPA627: 0.5 mV vs 0.1 mV (ZeptoBars).",
+      "Weak headphone driver in Tangent's table: 6.8 V needed for 0.5 V into 33 Ω.",
       "Some order codes are obsolete (AD746JRZ-REEL)."
     ],
     "sources": [
@@ -240,150 +179,166 @@
       "https://www.head-fi.org/threads/fake-audiophile-omaps.714257/"
     ]
   },
+  "counterfeit_notes": "Genuine AD744 dies get remarked as OPA627: ZeptoBars (April 2014) found one, with a single laser-trimmed resistor, in a ~$2 eBay 'OPA627'. Spot them by ~3× noise, 0.5 mV offset, 3.5 mA supply current (OPA627 ~7 mA) or decap.",
+  "alternatives": [
+    "AD8610 / AD8620 (precision JFET)",
+    "ADA4627-1 / ADA4625-1 / ADA4625-2 (modern JFET)",
+    "AD845 (same-era fast BiFET)",
+    "AD711 / AD712 (slower siblings, same DC)",
+    "OPA627 / OPA828 (buy genuine)",
+    "OPA1641 / OPA1642 (audio JFET)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "Analog Devices",
       "title": "AD744: Precision, 500 ns Settling BiFET Op Amp",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "D",
       "date": "",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ad744.pdf",
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Current ADI URL, confirmed by web search (the uppercase AD744.pdf path is also indexed). The revision letter comes from the radiolocman copy; the date was not captured."
+      "note": "Current ADI URL (uppercase AD744.pdf also indexed); Rev. D per radiolocman.",
+      "also_urls": [
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/AD744.pdf"
+      ]
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 datasheet, Revision D (mirror)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "D",
       "date": "",
       "url": "https://www.radiolocman.com/datasheet/pdf.html?di=120133",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Radiolocman labels this copy 'Revision: D'. The search summary also says an older Rev. C is mentioned; no copy was pinned to it."
+      "note": "Labelled 'Revision: D'; capture postdates ADI's 02/23/2017 quick-links page."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 datasheet (legacy ADI path)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "http://www.analog.com/static/imported-files/data_sheets/AD744.pdf",
       "url_kind": "vendor_legacy",
       "confidence": "high",
       "revision_status": "unknown",
-      "note": "Still indexed by search engines (title 'CONNECTION DIAGRAMS TO-99 (H) Package FEATURES AC PERFORMANCE'). ZeptoBars linked it in 2014. A good Wayback seed for older revisions."
+      "note": "Legacy path, still indexed; linked by ZeptoBars in 2014. Good Wayback seed."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 datasheet (alldatasheet copy, 12 pages)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48210/AD/AD744.html",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "12-page copy. The revision was not visible in the search summary."
+      "note": "12-page copy; revision not shown."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 datasheet (Octopart copy, AD744KNZ)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://datasheet.octopart.com/AD744KNZ-Analog-Devices-datasheet-9746244.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Tied to the RoHS AD744KNZ order code, so probably a post-2005 revision. Not confirmed."
+      "note": "Tied to RoHS AD744KNZ, so probably a post-2005 revision."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 datasheet (datasheetcatalog copy)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://www.datasheetcatalog.com/datasheets_pdf/A/D/7/4/AD744.shtml",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "An older aggregator that often freezes pre-RoHS revisions. The revision was not seen."
+      "note": "Older aggregator that often freezes pre-RoHS revisions."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 datasheet (manualmachine copy listing non-RoHS codes)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://manualmachine.com/datasheet/ad744krreel/4000928-datasheet-analog-devices/",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Lists AD744KR-REEL, KR, KN, JR-REEL7 and JR-REEL (no Z codes), which suggests a pre-RoHS revision. Unconfirmed."
+      "note": "Lists only non-Z codes, suggesting a pre-RoHS revision."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 datasheet (other mirrors)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://doc.platan.ru/pdf/datasheets/analogdevices/AD744-877391.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Also at radiolocman di=334911, datasheet4u (AD744-1302151), digchip, futurlec (AD744JN) and datasheetbank. Their revisions were not seen."
+      "note": "Also on radiolocman, datasheet4u, digchip, futurlec, datasheetbank."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD746: Dual Precision, 500 ns Settling, BiFET Op Amp",
-      "doc_number": "AD746 data sheet",
+      "doc_number": "AD746",
       "revision": "B",
       "date": "",
       "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD746.pdf",
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current ADI URL, confirmed by search (the lowercase ad746.pdf path is also indexed). The ADI product page lists 'Data Sheet (Rev. B)', 8 pages, ~428 KB."
+      "note": "Current; product page lists Rev. B, 8 pages, ~428 KB.",
+      "also_urls": [
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/ad746.pdf"
+      ]
     },
     {
       "vendor": "Analog Devices",
       "title": "AD746 datasheet (legacy ADI path)",
-      "doc_number": "AD746 data sheet",
+      "doc_number": "AD746",
       "revision": "",
       "date": "",
       "url": "http://www.analog.com/static/imported-files/data_sheets/AD746.pdf",
       "url_kind": "vendor_legacy",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Seen in an Eagle library description; not seen in web search this pass. Unconfirmed."
+      "note": "Legacy path seen in an Eagle library description only."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD746 datasheet (alldatasheet copy)",
-      "doc_number": "AD746 data sheet",
+      "doc_number": "AD746",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/48213/AD/AD746.html",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The revision was not seen. Other copies: datasheetcatalog (A/D/7/4/AD746.shtml), digchip, datasheetspdf, datasheetq, datasheet4u (1392143), datasheetdir."
+      "note": "Also on datasheetcatalog, digchip, datasheetspdf, datasheetq, datasheet4u, datasheetdir."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD746JRZ datasheet (GlobalSpec copy)",
-      "doc_number": "AD746 data sheet",
+      "doc_number": "AD746",
       "revision": "",
       "date": "",
       "url": "https://datasheets.globalspec.com/ds/analog-devices/ad746jrz/d8907686-99f0-4b98-bcd7-57bbc4b0023b",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The revision was not seen."
+      "note": ""
     },
     {
       "vendor": "Analog Devices - distributor mirror (Farnell)",
@@ -395,7 +350,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "confirmed",
-      "note": "Returned for an AD744 revision-history query and titled 'REV. C'. The summary did not state the part number, so this may not be the AD744 document."
+      "note": "Titled 'REV. C'; may not be the AD744 document."
     },
     {
       "vendor": "Analog Devices - third-party mirror (misfiled)",
@@ -407,279 +362,293 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "An AD744 datasheet filed under an unrelated International Rectifier file name. The revision was not shown."
+      "note": "AD744 datasheet misfiled under an International Rectifier file name."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 Precision, 500 ns Settling BiFET Op Amp (radiolocman mirror, second copy)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "D",
       "date": "",
       "url": "https://www.radiolocman.com/datasheet/pdf.html?di=171881",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "The radiolocman page title reads 'Datasheet AD744 Analog Devices, Revision: D'. This is a separate upload from the known di=120133 copy. The di=120133 copy starts with ADI's 'PRODUCT PAGE QUICK LINKS Last Content Update: 02/23/2017' page, so that capture is from 2017 or later. Page 5 of di=171881 is 'Typical Characteristics'."
+      "note": "Separate radiolocman upload of Rev. D."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 Datasheet Analog Devices (radiolocman download page)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://www.radiolocman.com/datasheet/data.html?di=334911",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A third radiolocman entry for AD744. It may be a different edition from di=120133 and di=171881. The search summary did not show its revision."
+      "note": "Third radiolocman entry; may be a different edition."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744JN datasheet (alldatasheet, 12 pages)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/html-pdf/48211/AD/AD744JN/47/2/AD744JN.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "alldatasheet file ID 48211 (12 pages), separate from the known 48210 entry. The search summary said alldatasheet holds a 'REV.C' version of AD744 but did not say which ID (48210, 48211 or 553783). This older ID is a likely candidate. The text lists five grades: J/K at 0 to +70 C, A/B at -40 to +85 C, and T at -55 to +125 C. The 1/91 SPICE models also list C and S grades."
+      "note": "File ID 48211; likely the alldatasheet 'REV.C' copy. Lists J/K/A/B/T grades."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 Datasheet(PDF) - Analog Devices (alldatasheet, later upload)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/553783/AD/AD744.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A later alldatasheet upload (ID 553783) than 48210 and 48211. It may hold a different revision, probably Rev. D, but the summary did not show it."
+      "note": "Later upload (ID 553783); probably Rev. D."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 pdf view (alldatasheet.net)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.net/datasheet-pdf/view/553783/AD/AD744.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "alldatasheet.net view of the same ID 553783 file."
+      "note": "alldatasheet.net view of file ID 553783."
     },
     {
       "vendor": "Analog Devices",
       "title": "ANALOG DEVICES AD744 Precision 500 ns Settling BiFET Op Amp handbook (Internet Archive, manuallib)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://archive.org/details/manuallib-id-2647508",
       "url_kind": "archive",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "An Internet Archive item from the manuallib collection. It is a stable archived copy, but its revision was not shown."
+      "note": "Stable Internet Archive copy from the manuallib collection."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 Datasheet PDF, Analog Devices (datasheetbank)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://www.datasheetbank.com/preview/AD744-ADI",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision not shown in the search summary."
+      "note": ""
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 - Precision/ 500 ns Settling BiFET Op Amp (metadatasheet)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://www.metadatasheet.com/entry/190495-AD744-data-sheet-pdf",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The title has a slash where the comma should be ('Precision/ 500 ns'). This conversion artifact is typical of older ADI PDFs from the 1990s, before the later reformatting, so it may be a pre-Rev. D edition. Revision not shown."
+      "note": "'Precision/ 500 ns' artifact suggests a 1990s pre-Rev. D edition."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD744 Datasheet (Futurlec, AD744JN)",
-      "doc_number": "AD744 data sheet",
+      "doc_number": "AD744",
       "revision": "",
       "date": "",
       "url": "https://www.futurlec.com/AnalogDevices/AD744JN.shtml",
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Hobby-distributor page for the AD744JN (the non-RoHS DIP order code). An older edition is likely but was not shown."
+      "note": "Page for non-RoHS AD744JN; likely an older edition."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD746 - Dual Precision, 500 NS Settling, BiFET op Amp (digchip)",
-      "doc_number": "AD746 data sheet",
+      "doc_number": "AD746",
       "revision": "",
       "date": "",
       "url": "https://www.digchip.com/datasheets/parts/datasheet/041/AD746.php",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision not shown in the search summary."
+      "note": ""
     },
     {
       "vendor": "Analog Devices",
       "title": "AD746 Datasheet PDF - Analog Devices (datasheetq)",
-      "doc_number": "AD746 data sheet",
+      "doc_number": "AD746",
       "revision": "",
       "date": "",
       "url": "https://www.datasheetq.com/AD746-doc-ADI",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision not shown in the search summary."
+      "note": ""
     },
     {
       "vendor": "Analog Devices",
       "title": "AD746 datasheet, Pinout, application circuits (datasheetdir)",
-      "doc_number": "AD746 data sheet",
+      "doc_number": "AD746",
       "revision": "",
       "date": "",
       "url": "http://www.datasheetdir.com/AD746+Precision-Amplifiers",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision not shown in the search summary."
+      "note": ""
     },
     {
       "vendor": "Analog Devices",
       "title": "AD746 Datasheet pdf - Dual Precision, 500 ns Settling, BiFET Op Amp (datasheetcatalog)",
-      "doc_number": "AD746 data sheet",
+      "doc_number": "AD746",
       "revision": "",
       "date": "",
       "url": "https://www.datasheetcatalog.com/datasheets_pdf/A/D/7/4/AD746.shtml",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "datasheetcatalog mostly holds files from around 2000–2005, so this is probably a pre-Rev. B (older) AD746 edition. Revision not shown."
+      "note": "Aggregator mostly from c. 2000–2005; probably pre-Rev. B."
     },
     {
       "vendor": "Analog Devices",
       "title": "AD746 Datasheet(PDF) & Specifications - ADI (FindIC)",
-      "doc_number": "AD746 data sheet",
+      "doc_number": "AD746",
       "revision": "",
       "date": "1995-10-31",
       "url": "https://www.findic.us/price/ad746-MLNDp7nBz.html",
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Per the search summary, FindIC lists several AD746 documents. One is the 'main datasheet (429 KB, dated 1995-10-31)'. That date is probably the file or edition date of an older AD746 edition from 1995, before Rev. B. The revision letter was not shown."
+      "note": "Main datasheet, 429 KB, file-dated 1995-10-31; probably pre-Rev. B."
     }
+  ],
+  "product_pages": [
+    "https://www.analog.com/en/products/ad744.html",
+    "https://www.analog.com/en/products/ad746.html"
   ],
   "revision_history": [
     {
       "vendor": "Analog Devices",
-      "doc_number": "AD744 data sheet",
-      "revision": "Rev. C",
-      "date": "unknown",
-      "changes": "An earlier revision, mentioned only in a search summary. Changes unknown; unconfirmed."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD744 data sheet",
-      "revision": "Rev. D",
-      "date": "unknown",
-      "changes": "Current revision per the radiolocman mirror label. Changes unknown (likely RoHS order codes and format)."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD746 data sheet",
-      "revision": "Rev. B",
-      "date": "unknown",
-      "changes": "Current revision per the ADI product page (8 pages). Earlier revisions are unknown."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD744 SPICE macro-models, grades A/B/C/J/K/S/T (not the datasheet)",
-      "revision": "Rev. A",
-      "date": "1/91",
-      "changes": "Initial worst-case grade models by JLW/PMI. Offset: J/A/S 1 mV, K/B/T 0.5 mV, C 0.25 mV."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD744 SPICE macro-model, typical (not the datasheet)",
-      "revision": "Rev. B",
-      "date": "3/91",
-      "changes": "'Corrected VOS to be 0.1mV'."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD746 SPICE macro-models, grades A/B/J/S (not the datasheet)",
-      "revision": "Rev. A",
-      "date": "1/91",
-      "changes": "Initial worst-case grade models. Offset: J/A 1.5 mV, S 1 mV, B 0.5 mV."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD746 SPICE macro-model, typical (not the datasheet)",
-      "revision": "Rev. B",
-      "date": "3/91",
-      "changes": "'Corrected VOS to be 0.25mV'."
-    },
-    {
-      "vendor": "Analog Devices (LTspice)",
-      "doc_number": "LTspice ChangeLog",
-      "revision": "-",
-      "date": "02/23/18",
-      "changes": "Added symbols and models for the AD746 and others."
-    },
-    {
-      "vendor": "Analog Devices (LTspice)",
-      "doc_number": "LTspice ChangeLog",
-      "revision": "-",
-      "date": "05/23/19",
-      "changes": "'Revised the model of the AD713 and AD746.'"
-    },
-    {
-      "vendor": "Analog Devices",
       "doc_number": "AD744",
       "revision": "C",
-      "date": "unknown",
-      "changes": "Frozen copies exist at Platan and probably Farnell. The changes were not captured."
+      "date": "",
+      "changes": "Older revision; copies probably at Platan and Farnell. Changes unknown."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD744",
       "revision": "D",
-      "date": "unknown",
-      "changes": "Current revision. The PDF has a Revision History section, but the search summaries did not show its entries."
+      "date": "",
+      "changes": "Current. Its Revision History table is not yet read; likely RoHS order codes and reformatting."
     },
     {
       "vendor": "Analog Devices",
-      "doc_number": "AD746 data sheet",
-      "revision": "unknown (pre-Rev. B edition, probable)",
-      "date": "1995-10-31 (file date on FindIC listing; low confidence)",
-      "changes": "A 429 KB AD746 datasheet dated 1995-10-31 is listed on FindIC. The revision letter and changes were not shown. It is evidence of an AD746 edition from 1995."
+      "doc_number": "AD746",
+      "revision": "",
+      "date": "1995-10-31",
+      "changes": "429 KB edition listed on FindIC (file date, low confidence); probably pre-Rev. B."
     },
     {
       "vendor": "Analog Devices",
-      "doc_number": "AD744 data sheet",
-      "revision": "Rev. D (distributed form)",
-      "date": "on or after 02/23/2017 (radiolocman di=120133 copy)",
-      "changes": "The radiolocman di=120133 copy of Rev. D starts with ADI's 'PRODUCT PAGE QUICK LINKS, Last Content Update: 02/23/2017' page. That page carries the product-page date, not the datasheet's revision date. The Rev. D revision-history entries were not shown."
+      "doc_number": "AD746",
+      "revision": "B",
+      "date": "",
+      "changes": "Current per the ADI product page (8 pages). Earlier revisions unknown."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD744 SPICE grade models (A/B/C/J/K/S/T)",
+      "revision": "A",
+      "date": "1991-01",
+      "changes": "Worst-case grade models by JLW/PMI. Offset: J/A/S 1 mV, K/B/T 0.5 mV, C 0.25 mV."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD744 SPICE typical model",
+      "revision": "B",
+      "date": "1991-03",
+      "changes": "'Corrected VOS to be 0.1mV'."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD746 SPICE grade models (A/B/J/S)",
+      "revision": "A",
+      "date": "1991-01",
+      "changes": "Worst-case grade models. Offset: J/A 1.5 mV, S 1 mV, B 0.5 mV."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD746 SPICE typical model",
+      "revision": "B",
+      "date": "1991-03",
+      "changes": "'Corrected VOS to be 0.25mV'."
+    },
+    {
+      "vendor": "Analog Devices (LTspice)",
+      "doc_number": "LTspice ChangeLog",
+      "revision": "",
+      "date": "2018-02-23",
+      "changes": "Added symbols and models for the AD746 and others."
+    },
+    {
+      "vendor": "Analog Devices (LTspice)",
+      "doc_number": "LTspice ChangeLog",
+      "revision": "",
+      "date": "2019-05-23",
+      "changes": "'Revised the model of the AD713 and AD746.'"
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No fakes sold as AD744 were found. The hazard runs the other way: genuine AD744 dies have been remarked as OPA627. In April 2014 ZeptoBars decapped a cheap eBay DIP 'OPA627' (about $2 per Hackaday; $2.70 with shipping per the Habr text). It held an ADI AD744 die with only one laser-trimmed resistor, against several on a genuine metal-can OPA627. ZeptoBars thought a Chinese packager had bought AD744 dies or wafers; ADI's datasheet lists chip (die) form. The AD744's frequency-compensation feature was unused because the OPA627 has no matching pin. The 'AD'/'B744' die markings come from the Habr text and were not re-confirmed here. How to spot an AD744-based fake: (1) about 3x the noise and higher offset (0.5 mV vs 0.1 mV) than a genuine OPA627; (2) lower supply current, 3.5 mA for the AD744 (ADI datasheet) against about 7 mA for the OPA627 (TI figure, not re-checked here); (3) a decap. Discussed on Hackaday, Head-Fi and diyAudio ('more fake eBay semis (OPA627=AD744)'). Buy genuine AD744/AD746 through authorized distribution.",
-  "alternatives": [
-    "ADI AD8610 / AD8620 (precision JFET single/dual)",
-    "ADI ADA4627-1 / ADA4625-1 / ADA4625-2 (modern low-noise JFET)",
-    "ADI AD845 (same-era fast BiFET single)",
-    "ADI AD711 / AD712 (slower BiFET siblings; ADI says the AD744 shares the AD711 family's DC performance)",
-    "TI OPA627 / OPA828 (Difet / JFET; buy genuine)",
-    "TI OPA1641 / OPA1642 (audio JFET single/dual)"
+  "revision_chains": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD744",
+      "known": [
+        {
+          "rev": "C",
+          "date": ""
+        },
+        {
+          "rev": "D",
+          "date": ""
+        }
+      ],
+      "missing": [
+        "0",
+        "A",
+        "B"
+      ],
+      "note": "Rev. C likely on alldatasheet 48211, Platan or Farnell. C/S grades dropped at an unknown revision."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD746",
+      "known": [
+        {
+          "rev": "pre-B edition",
+          "date": "1995-10-31"
+        },
+        {
+          "rev": "B",
+          "date": ""
+        }
+      ],
+      "missing": [
+        "0",
+        "A"
+      ],
+      "note": "Wayback captures (2008–2016) of static/imported-files seeds and 1990–1992 ADI databooks may hold older editions."
+    }
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -699,13 +668,11 @@
     "https://zeptobars.com/en/read/OPA627-AD744-real-vs-fake-china-ebay"
   ],
   "open_questions": [
-    "Dates of AD744 Rev. D and AD746 Rev. B, and their Revision History tables, were not captured. Rev. C of the AD744 is only mentioned; which mirror holds it is unknown.",
-    "It is unknown which revisions the alldatasheet, datasheetcatalog, manualmachine and Octopart copies hold. Check them, and check Wayback copies of the static/imported-files URLs.",
-    "Lifecycle status per order code: only AD746JRZ-REEL is confirmed obsolete (Digi-Key). ADI PDN 10_0081 and PDN 14_0014 appeared in search results, but no link to AD744/AD746 was shown; check them.",
-    "The datasheet values for noise (model 16 nV/rtHz), bias current and offset by grade are still model-derived.",
-    "No ADI die revision, fab move or PCN was found. It is unknown whether the 'B744' die mark means a mask revision.",
-    "Tangent's original English text on the AD744 was not retrieved.",
-    "The AD744 pin 8 (compensation) function versus OPA627 pin 8 has not been confirmed from a datasheet pinout."
+    "Dates and revision-history tables of AD744 Rev. D and AD746 Rev. B; which mirror holds AD744 Rev. C?",
+    "Which revisions do the alldatasheet, datasheetcatalog, manualmachine, Octopart and Wayback static/imported-files copies hold?",
+    "Lifecycle status per order code; do ADI PDN 10_0081 or PDN 14_0014 cover AD744/AD746?",
+    "Confirm noise, bias current and offset by grade from the datasheet; current values come from SPICE models.",
+    "Does the 'B744' die mark (Habr) mean a mask revision? Confirm AD744 pin 8 versus OPA627 pin 8."
   ],
   "sources": [
     "https://www.analog.com/en/products/ad744.html",
@@ -734,17 +701,31 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "Current AD744 datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/ad744.pdf",
+      "AD744 datasheet copy labelled Revision D: https://www.radiolocman.com/datasheet/pdf.html?di=120133",
+      "AD746 product page lists Data Sheet Rev. B: https://www.analog.com/en/products/ad746.html",
+      "Legacy static/imported-files AD744.pdf still indexed: https://www.analog.com/static/imported-files/data_sheets/AD744.pdf",
+      "500 ns settling to 0.01% (10 V step), 75 V/µs, 13 MHz GBW internal compensation: https://www.radiolocman.com/datasheet/pdf.html?di=120133",
+      "AD744 quiescent current 3.5 mA; AD746 7 mA: https://www.analog.com/media/en/technical-documentation/data-sheets/ad744.pdf",
+      "AD746 is two AD744 op-amps on one chip: https://www.analog.com/media/en/technical-documentation/data-sheets/AD746.pdf",
+      "AD746JRZ-REEL is obsolete: https://www.digikey.com/en/products/detail/analog-devices-inc/AD746JRZ-REEL/760246",
+      "Grades: J/K 0–70 °C, A/B/C −40 to +85 °C, S/T −55 to +125 °C: https://www.analog.com/media/en/technical-documentation/data-sheets/ad744.pdf",
+      "ZeptoBars (April 2014): AD744 die with one laser-trimmed resistor in a cheap 'OPA627'; ~3× noise, 0.5 vs 0.1 mV offset: https://zeptobars.com/en/read/OPA627-AD744-real-vs-fake-china-ebay; https://hackaday.com/2014/04/10/fake-audiophile-opamps-revealed/",
+      "diyAudio thread 'more fake eBay semis (OPA627=AD744)' exists: https://www.diyaudio.com/forums/parts/254473-fake-ebay-semis-opa627-ad744.html"
+    ],
     "refuted_claims": [],
     "corrections": [
-      "The current ADI datasheet URLs are confirmed at /media/en/technical-documentation/data-sheets/ (ad744.pdf and AD746.pdf; both letter cases are indexed). They were only inferred before.",
-      "AD744 current datasheet revision: Rev. D (radiolocman mirror label). Rev. C is mentioned as older. The AD746 current revision is Rev. B (ADI product page, 8 pages).",
-      "Supply current is now datasheet-confirmed: AD744 3.5 mA, AD746 7 mA (it was model-derived).",
-      "GBW 13 MHz (internal compensation), 75 V/us slew and 500 ns settling to 0.01% for a 10 V step are now confirmed.",
-      "Grade definitions: C is an industrial (-40 to +85 C) grade and S/T are military grades. J/K are commercial.",
-      "AD746JRZ-REEL is obsolete (Digi-Key). The ad746.html product page is confirmed to exist; it was previously inferred.",
-      "The AD744 datasheet offers chip (die) form, which supports ZeptoBars' bare-die theory. Hackaday gives the fake's price as about $2 (the draft had $2.70, from the Habr text).",
-      "AD746 = two AD744 amplifiers on a single chip (ADI wording). ADI pitches the AD744 for audio with 0.0003% THD.",
-      "Added many third-party and distributor datasheet mirrors, plus diyAudio and Head-Fi sources. silicon_changes stays empty: no ADI die change or PCN was found, and the AD744-in-OPA627 hazard is covered in counterfeit_notes."
+      "Current ADI datasheet URLs confirmed under /media/en/technical-documentation/data-sheets/ (both letter cases indexed).",
+      "AD744 current revision is Rev. D (Rev. C older); AD746 current revision is Rev. B.",
+      "Supply current now datasheet-confirmed: AD744 3.5 mA, AD746 7 mA.",
+      "Confirmed 13 MHz GBW, 75 V/µs and 500 ns settling to 0.01% (10 V step).",
+      "Grades: J/K commercial, A/B/C industrial, S/T military.",
+      "AD746JRZ-REEL obsolete; ad746.html product page confirmed.",
+      "Datasheet offers chip form, supporting ZeptoBars' bare-die theory. Hackaday gives the fake's price as ~$2; Habr gave $2.70 with shipping.",
+      "Habr also reports 'AD'/'B744' die markings and a Chinese packager buying dies; both unconfirmed.",
+      "No ADI die change or PCN found, so silicon_changes is empty; the fake-OPA627 hazard sits in counterfeit_notes."
     ],
     "unverified_urls": [
       "http://www.analog.com/static/imported-files/data_sheets/AD746.pdf",
@@ -753,27 +734,6 @@
       "https://manualmachine.com/datasheet/ad744krreel/4000928-datasheet-analog-devices/",
       "https://tangentsoft.com/audio/opamps.html",
       "https://habr.com/ru/post/218571/"
-    ],
-    "claims_confirmed": [
-      "Current AD744 datasheet at analog.com/media/en/technical-documentation/data-sheets/ad744.pdf (https://www.analog.com/media/en/technical-documentation/data-sheets/ad744.pdf)",
-      "AD744 datasheet copy labeled Revision D (https://www.radiolocman.com/datasheet/pdf.html?di=120133)",
-      "AD746 product page lists Data Sheet Rev. B (https://www.analog.com/en/products/ad746.html)",
-      "The legacy static/imported-files AD744.pdf is still indexed (https://www.analog.com/static/imported-files/data_sheets/AD744.pdf)",
-      "500 ns settling to 0.01% for a 10 V step, 75 V/us, 13 MHz GBW internal compensation (https://www.radiolocman.com/datasheet/pdf.html?di=120133)",
-      "AD744 quiescent current 3.5 mA; AD746 7 mA (https://www.analog.com/media/en/technical-documentation/data-sheets/ad744.pdf)",
-      "AD746 is two AD744 op-amps on one chip (https://www.analog.com/media/en/technical-documentation/data-sheets/AD746.pdf)",
-      "AD746JRZ-REEL is obsolete (https://www.digikey.com/en/products/detail/analog-devices-inc/AD746JRZ-REEL/760246)",
-      "Grades: J/K 0-70 C, A/B/C -40 to +85 C, S/T -55 to +125 C (https://www.analog.com/media/en/technical-documentation/data-sheets/ad744.pdf)",
-      "ZeptoBars (April 2014) found an AD744 die with one laser-trimmed resistor in a cheap eBay 'OPA627'; ~3x the noise, 0.5 vs 0.1 mV offset; compensation feature unused (https://zeptobars.com/en/read/OPA627-AD744-real-vs-fake-china-ebay; https://hackaday.com/2014/04/10/fake-audiophile-opamps-revealed/)",
-      "A diyAudio thread 'more fake eBay semis (OPA627=AD744)' exists (https://www.diyaudio.com/forums/parts/254473-fake-ebay-semis-opa627-ad744.html)"
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "jfet-input",
-  "product_pages": [
-    "https://www.analog.com/en/products/ad744.html",
-    "https://www.analog.com/en/products/ad746.html"
-  ],
-  "revision_chain_notes": "Only Analog Devices made the AD744. No second sources or acquirer re-issues were found, so the chain is ADI 'REV.' letters only. The four searches did not show the Revision History table inside Rev. D, so the dates of Rev. C and Rev. D are still unknown. AD744 chain, oldest to newest: 1) Original edition(s), Rev. 0/A/B: MISSING. No copy or date found. The part existed by 1/91, when the SPICE macro-models were made, and those models include grades A/B/C/J/K/S/T. 2) Rev. C: a search summary says alldatasheet holds a 'REV.C' copy, but not which ID. Candidates are 48210, 48211 (AD744JN) and 553783. The Platan and Farnell copies are also probably Rev. C. The date is unknown. 3) Rev. D: current. Copies are on analog.com, radiolocman di=120133 (with ADI's 02/23/2017 quick-links page in front) and radiolocman di=171881. The date is unknown. The datasheet text lists five grades (J/K/A/B/T), but the 1991 models also had C and S grades, so a grade cull happened at an unknown revision. AD746 chain: 1) An edition dated 1995-10-31 (file date on the FindIC listing, low confidence), letter unknown, probably Rev. A or earlier. 2) Rev. B: current on analog.com, date unknown. Rev. 0 and Rev. A are MISSING. Still missing: every revision date, the contents of the Rev. D (AD744) and Rev. B (AD746) revision-history tables, a confirmed pre-Rev. C AD744 copy, and pre-Rev. B AD746 copies with visible letters. Next step: pull Wayback captures of the static/imported-files seeds (2008-2016), which probably hold Rev. C (AD744) and Rev. A or B (AD746). A 1990-1992 ADI Linear Products or Amplifier Reference databook scan would hold the original edition."
+    ]
+  }
 }

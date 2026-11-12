@@ -1,199 +1,130 @@
 {
   "id": "AD826",
-  "name": "AD826 (ADI high-speed, low-power dual video op-amp)",
-  "tagline": "ADI's 50 MHz, 350 V/µs video dual. CD-player tweakers found it cleaner and more open than the AD827, and 'almost as good' as an OPA637.",
-  "technology": "Bipolar high-speed voltage-feedback dual op-amp. ADI's macro-model uses an NPN input pair. It is unity-gain stable and ADI rates it to drive unlimited capacitive load. It runs from a single +5 V to +36 V supply or split ±2.5 V to ±18 V, drawing 15 mA max for both amplifiers. ADI's headline specs match the single-channel AD817.",
+  "name": "AD826",
+  "type": "Bipolar high-speed low-power dual video op-amp",
+  "tier": "C",
+  "category": "high-speed-video-crossover",
+  "tagline": "ADI's 50 MHz, 350 V/µs video dual; CD-player tweakers found it cleaner than the AD827, 'almost as good' as an OPA637.",
   "manufacturers": [
     "Analog Devices"
+  ],
+  "lineage": [
+    {
+      "vendor": "Analog Devices",
+      "role": "originator",
+      "period": "c. 1992–present",
+      "note": "Sole source. SPICE model 'Rev. A, 11/92', ©1993. Presumably the dual of the AD817 (inferred from matching specs)."
+    }
   ],
   "part_numbers": [
     {
       "pn": "AD826AN",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "discontinued (a web search summary says ADI PDN 10_0081 Rev. B lists it; the PDN text was not read)",
-      "notes": "8-pin plastic DIP (leaded, non-RoHS), A grade, −40 °C to +85 °C. ADI also shipped an 'AD826A' SPICE model of the A-grade worst-case datasheet limits."
-    },
-    {
-      "pn": "AD826AR",
-      "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "unknown (leaded SOIC; probably replaced by AD826ARZ; still listed by brokers such as avaq.com)",
-      "notes": "SOIC-8 version, A grade."
+      "status": "obsolete",
+      "note": "Leaded PDIP-8, A grade, −40 to +85 °C. Reportedly in PDN 10_0081 Rev. B."
     },
     {
       "pn": "AD826ANZ",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "possibly discontinued (a search summary says PDN 10_0081 Rev. B also lists it; unconfirmed). Earlier seen as Digi-Key AD826ANZ-ND in 2018–19 KiCad BOMs and in an Oct 2025 Altium project.",
-      "notes": "Lead-free PDIP (N-8). The Altium record carries LCSC C21069 (not confirmed)."
+      "status": "obsolete",
+      "note": "Lead-free PDIP (N-8), Digi-Key AD826ANZ-ND. Possibly discontinued per PDN 10_0081 (unconfirmed)."
     },
     {
-      "pn": "AD826ARZ",
+      "pn": "AD826AR",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "likely active (named among current variants on distributor pages; ADI status not read directly)",
-      "notes": "Lead-free SOIC-8 (R-8), −40 °C to +85 °C."
+      "status": "unknown",
+      "note": "Leaded SOIC-8, A grade; probably replaced by AD826ARZ; still at brokers."
     },
     {
-      "pn": "AD826ARZ-REEL7",
+      "pn": "AD826ARZ / ARZ-REEL7",
       "channels": 2,
-      "vendors": [
-        "Analog Devices"
-      ],
-      "status": "likely active (stocked by Mouser, Digi-Key AD826ARZ-REEL7CT-ND, Newark 60AK7396 and LCSC C114171 as of 2026 searches)",
-      "notes": "7-inch tape-and-reel of the AD826ARZ. A 13-inch -REEL variant was not verified."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "Analog Devices",
-      "role": "originator and sole manufacturer (no second source found)",
-      "period": "c.1992–present (SOIC ARZ variants still distributed; DIP variants reportedly discontinued)",
-      "notes": "ADI's SPICE macro-model is 'Rev. A, 11/92', with 'Copyright 1993', which puts the launch around 1992–93. ADI's Ask-the-Applications-Engineer-25 table gives the AD826 the same specs as the single AD817, so the AD826 is presumably the dual version. That is inferred from matching specs, not from an ADI statement. The AD827 is a separate, older ADI 50 MHz dual."
+      "status": "active",
+      "note": "Lead-free SOIC-8 (R-8); REEL7 = 7-inch reel (LCSC C114171, Newark 60AK7396). Likely active."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Unity-gain bandwidth",
-      "value": "50 MHz typ (45 min) at ±15 V; 35 MHz typ (30 min) at ±5 V; 29 MHz typ (25 min) at 0/+5 V",
-      "condition": "G=+1",
-      "source": "50 MHz was confirmed on the ADI product page and datasheet (web search). The ±5 V and single-supply values are ADI datasheet figures quoted in the IIST student report (github.com/nptyagi920/Comparative-study-of-AD8034-and-AD826A)."
+      "parameter": "Input noise (1 kHz)",
+      "value": "15 nV/√Hz typ",
+      "condition": "",
+      "source": "AD826 datasheet; ADI AAE-25"
+    },
+    {
+      "parameter": "Current noise",
+      "value": "1.5 pA/√Hz typ (table shows 1500, read as fA)",
+      "condition": "column heading inferred",
+      "source": "ADI AAE-25 table"
+    },
+    {
+      "parameter": "GBW",
+      "value": "50 MHz (±15 V); 35 MHz (±5 V); 29 MHz (+5 V)",
+      "condition": "unity-gain, G = +1, typ",
+      "source": "AD826 datasheet Rev. C"
     },
     {
       "parameter": "Slew rate",
-      "value": "350 V/µs typ (300 min) at ±15 V; 250 typ (200 min) at ±5 V; 200 typ (150 min) at 0/+5 V",
-      "condition": "RL=1 kΩ, G=−1",
-      "source": "350 V/µs was confirmed in the ADI datasheet (web search). The other values come from the ADI datasheet via the IIST report."
-    },
-    {
-      "parameter": "Settling time",
-      "value": "45 ns to 0.1%; 70 ns to 0.01%",
-      "condition": "±5 V (−2.5 V to +2.5 V step) and ±15 V (0–10 V step), AV=−1",
-      "source": "ADI datasheet via the IIST report"
-    },
-    {
-      "parameter": "Input voltage noise",
-      "value": "15 nV/√Hz",
-      "condition": "typ",
-      "source": "ADI datasheet (confirmed by web search) and the ADI AAE-25 table"
-    },
-    {
-      "parameter": "Input current noise",
-      "value": "1.5 pA/√Hz (table shows 1500, read as fA/√Hz)",
-      "condition": "typ",
-      "source": "ADI AAE-25 table (column heading inferred; not re-confirmed)"
-    },
-    {
-      "parameter": "Input offset voltage",
-      "value": "0.5 mV typ, 2 mV max, 3 mV max over Tmin–Tmax",
-      "condition": "±5 V to ±15 V",
-      "source": "ADI datasheet via the IIST report. ADI SPICE models use 0.5 mV (typ) and 2 mV (worst case)."
-    },
-    {
-      "parameter": "Input bias current",
-      "value": "3.3 µA typ, 6.6 µA max (up to 10 µA at Tmin)",
-      "condition": "±5 V, ±15 V",
-      "source": "ADI datasheet via the IIST report"
-    },
-    {
-      "parameter": "Input offset current",
-      "value": "25 nA typ, 150 nA worst case",
-      "condition": "model values",
-      "source": "ADI SPICE macro-models: AD826 (IOS 25E-9) and AD826A (IOS 150E-9)"
-    },
-    {
-      "parameter": "Input stage type",
-      "value": "NPN bipolar differential pair",
-      "condition": "macro-model topology",
-      "source": "ADI AD826 SPICE macro-model Rev. A 11/92"
-    },
-    {
-      "parameter": "Open-loop gain",
-      "value": "3.5 V/mV min, 6 V/mV typ",
-      "condition": "±15 V, VOUT=±10 V, RL=1 kΩ",
-      "source": "ADI datasheet via the IIST report"
-    },
-    {
-      "parameter": "CMRR / PSRR",
-      "value": "CMRR 100 dB typ (±5 V), 120 dB typ (±15 V, VCM=±12 V); PSRR 86 dB typ (75 min)",
-      "condition": "Vs=±5 V to ±15 V, Tmin–Tmax",
-      "source": "ADI datasheet via the IIST report"
-    },
-    {
-      "parameter": "Output swing / drive",
-      "value": "±13.7 V typ (±13.3 min) into 1 kΩ, ±13.4 V typ into 500 Ω at ±15 V; open-loop gain specified at 50 mA output into 150 Ω; short-circuit current 90 mA",
-      "condition": "±15 V",
-      "source": "ADI datasheet via the IIST report"
-    },
-    {
-      "parameter": "Open-loop output resistance",
-      "value": "8 Ω",
-      "condition": "typ",
-      "source": "ADI AAE-25 table (column heading inferred)"
-    },
-    {
-      "parameter": "Capacitive load drive",
-      "value": "unlimited",
-      "condition": "ADI 'unlimited cap load' class, with AD817, AD827 and AD847",
-      "source": "ADI AAE-25 (analog.com Ask the Applications Engineer 25)"
+      "value": "350 V/µs (±15 V); 250 (±5 V); 200 (+5 V) typ",
+      "condition": "RL = 1 kΩ, G = −1",
+      "source": "AD826 datasheet Rev. C"
     },
     {
       "parameter": "Supply range",
-      "value": "±2.5 V to ±18 V dual; +5 V to +36 V single",
+      "value": "±2.5 V to ±18 V; +5 V to +36 V single",
       "condition": "operating",
-      "source": "ADI datasheet via the IIST report. The AAE-25 table and Altium parameters agree."
+      "source": "AD826 datasheet Rev. C"
     },
     {
       "parameter": "Supply current",
-      "value": "15 mA max for both amplifiers (7.5 mA max per amplifier); 6.8 mA per amplifier in the AAE-25 table (presumably typical)",
-      "condition": "total package / per amplifier",
-      "source": "ADI datasheet text ('low power supply current of 15 mA max for both amplifiers'), confirmed by web search; ADI AAE-25 table"
+      "value": "15 mA max both amps (7.5 mA max each); 6.8 mA/amp",
+      "condition": "6.8 mA from AAE-25, presumably typ",
+      "source": "AD826 datasheet; ADI AAE-25"
     },
     {
-      "parameter": "Operating temperature",
-      "value": "−40 °C to +85 °C (storage −65 °C to +125 °C)",
-      "condition": "A grade",
-      "source": "Distributor listings (−40 to +85 °C, confirmed by web search); IIST report"
+      "parameter": "Output current",
+      "value": "90 mA short circuit; AOL spec'd at 50 mA into 150 Ω",
+      "condition": "±15 V; swing ±13.7 V into 1 kΩ",
+      "source": "AD826 datasheet Rev. C"
     },
     {
-      "parameter": "THD+N",
-      "value": "not captured",
-      "condition": "n/a",
-      "source": "Not found in the search summaries"
+      "parameter": "Offset voltage",
+      "value": "0.5 mV typ, 2 mV max (3 mV over temp)",
+      "condition": "±5 V to ±15 V",
+      "source": "AD826 datasheet Rev. C"
+    },
+    {
+      "parameter": "Input bias current",
+      "value": "3.3 µA typ, 6.6 µA max (10 µA at Tmin)",
+      "condition": "Ios 25 nA typ (SPICE model)",
+      "source": "AD826 datasheet; ADI SPICE model"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "NPN bipolar pair; unlimited capacitive-load drive",
+      "condition": "macro-model topology; Ro 8 Ω",
+      "source": "ADI SPICE model Rev. A 11/92; AAE-25"
     }
   ],
   "reputation": {
-    "summary": "This is a niche op-amp for rolling in CD players, not a mainstream audio legend. ADI designed it for video, CATV, copiers, LCDs, scanners and fax machines. In the Audio Asylum 'tweaks' forum and on diyAudio, a few users who swapped it into CD-player output and I/V stages called the sound 'much cleaner, more open, and more detailed'. They also reported more precise instrument placement than the AD827, and one Audio Asylum poster found it 'almost as good' as the OPA637. Its appeal is video-class speed (50 MHz, 350 V/µs) combined with stability into capacitive loads. No independent measurements (Audio Science Review, Samuel Groner) were found. A 2005 translation of Tangent's op-amp notes (DiyEden/Soomal) put the AD826 on its list to test, but no review followed.",
+    "summary": "A niche CD-player rolling part, not a mainstream legend; ADI designed it for video, CATV, copiers, scanners and fax. A few Audio Asylum and diyAudio users heard it as cleaner, more open and more detailed than the AD827, one 'almost as good' as an OPA637. No independent measurements exist.",
     "sonic_descriptors": [
       "cleaner",
       "more open",
       "more detailed",
       "precise instrument placement",
-      "close to OPA637 (per one listener)"
+      "close to OPA637"
     ],
     "typical_uses": [
-      "CD-player analog output stage op-amp swap",
+      "CD-player analog output stage swap",
       "DAC current-to-voltage (I/V) converter",
-      "Video and line drivers (the designed use)",
+      "Video and line drivers (designed use)",
       "Buffers driving cables or capacitive loads"
     ],
     "caveats": [
-      "The evidence is thin: a few forum posts from the discovery notes, which were not re-read in this pass. There are no published measurements.",
-      "This is a 50 MHz video part. Tight decoupling and short leads are sensible when socket-rolling, although ADI rates it stable into any capacitive load. This is engineering inference, not a reported failure.",
-      "Input bias current is high (3.3 µA typ, 6.6 µA max), which can cause DC offset with large feedback or source resistances.",
-      "Voltage noise is moderate at 15 nV/√Hz, well above NE5532- or AD797-class parts.",
-      "It draws up to 15 mA per package (7.5 mA max per amplifier), so it runs warmer and drains batteries faster than audio duals.",
-      "The DIP versions (AD826AN/ANZ) are reportedly discontinued, so DIP socket-rollers depend on old stock or SOIC-to-DIP adapters.",
-      "The Tangent/DiyEden headphone-amp notes argued that ultra-high-speed op-amps are generally a poor fit for simple headphone amps."
+      "Thin evidence: a few forum posts, no published measurements. Soomal/DiyEden listed it for testing in 2005; no review followed.",
+      "High bias current (3.3 µA typ) causes DC offset with large resistances; noise 15 nV/√Hz.",
+      "Draws up to 15 mA per package; runs warmer than audio duals.",
+      "DIP versions reportedly discontinued; rollers need old stock or SOIC adapters.",
+      "50 MHz part: decouple tightly. Tangent's notes call ultra-fast op-amps a poor fit for simple headphone amps."
     ],
     "sources": [
       "https://www.audioasylum.com/cgi/t.mpl?f=tweaks&m=83181",
@@ -203,6 +134,15 @@
       "https://www.analog.com/en/resources/analog-dialogue/articles/ask-the-applications-engineer-25.html"
     ]
   },
+  "counterfeit_notes": "No AD826 counterfeit reports. DIP versions are discontinued (reportedly PDN 10_0081 Rev. B), so 'new' DIP stock is old or suspect. Buy from Mouser, Digi-Key or Newark, not loose SOP-8 marketplace lots; check ADI logo, date code, Z suffix.",
+  "alternatives": [
+    "AD817 (single-channel sibling)",
+    "AD827",
+    "AD828",
+    "LM6172",
+    "AD8065 / AD8066"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "Analog Devices",
@@ -214,7 +154,10 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current ADI datasheet. The search result title reads 'AD826 (Rev. C)'. The footer date 4/10(C) comes from a mirror of the revision-history page. A lowercase ad826.pdf path is also indexed."
+      "note": "Current ADI datasheet, footer 4/10(C). Lowercase ad826.pdf alias also exists.",
+      "also_urls": [
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/ad826.pdf"
+      ]
     },
     {
       "vendor": "Analog Devices",
@@ -226,7 +169,7 @@
       "url_kind": "vendor_legacy",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Legacy ADI 'static/imported-files' URL, paired with DatasheetVersion 'Rev. C' in an Altium vault record and found in Eagle and KiCad libraries. The URL pattern fits the 2010 Rev. C. Unconfirmed: not observed in web search."
+      "note": "Legacy ADI URL tied to Rev. C in an Altium record; unconfirmed."
     },
     {
       "vendor": "Analog Devices",
@@ -238,7 +181,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "RadioLocman copy labelled Revision C. Page 14 (…&p=14) shows the revision history with 'Updated Outline Dimensions' and date 4/10(C)."
+      "note": "RadioLocman Rev. C copy; page 14 has the revision history."
     },
     {
       "vendor": "Analog Devices",
@@ -250,7 +193,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "A second RadioLocman copy labelled Revision C."
+      "note": "Second RadioLocman copy labelled Revision C."
     },
     {
       "vendor": "Analog Devices",
@@ -262,7 +205,10 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "probable",
-      "note": "Alldatasheet entry 48429 (14 pages). A search summary said Alldatasheet holds the REV. B version; the page was not seen directly. Unconfirmed. HTML view: https://www.alldatasheet.com/html-pdf/48429/AD/AD826/19/1/AD826.html"
+      "note": "Alldatasheet doc 48429, 14 pages; reportedly Rev. B, footer unseen.",
+      "also_urls": [
+        "https://www.alldatasheet.com/html-pdf/48429/AD/AD826/19/1/AD826.html"
+      ]
     },
     {
       "vendor": "Analog Devices",
@@ -274,7 +220,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Later Alldatasheet upload. Revision unconfirmed."
+      "note": "Later Alldatasheet upload."
     },
     {
       "vendor": "Analog Devices",
@@ -286,7 +232,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Broker-hosted PDF copy. It may be an older revision. Unconfirmed."
+      "note": "Broker-hosted copy; may be an older revision."
     },
     {
       "vendor": "Analog Devices",
@@ -298,7 +244,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "ChipDip (Russian distributor) PDF copy. Revision unconfirmed."
+      "note": "ChipDip (Russian distributor) copy."
     },
     {
       "vendor": "Analog Devices",
@@ -310,7 +256,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A third RadioLocman entry. Revision not shown in the search summary. Unconfirmed."
+      "note": "Third RadioLocman entry."
     },
     {
       "vendor": "Analog Devices - third-party mirror (Octopart)",
@@ -322,7 +268,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "The revision was not shown. This copy could be Rev. B or C."
+      "note": "Could be Rev. B or C."
     },
     {
       "vendor": "Analog Devices",
@@ -333,8 +279,8 @@
       "url": "https://www.alldatasheet.com/html-pdf/48429/AD/AD826/19/1/AD826.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
-      "revision_status": "confirmed",
-      "note": "This is the HTML page view of the same Alldatasheet document (ID 48429) already listed as the PDF page. The search summary lists it as 14 pages, 231 KB. The Rev. C file is 15 pages, so this looks like an earlier edition. One search summary again says the Alldatasheet copy is Rev. B, but the footer revision was not seen in the snippet."
+      "revision_status": "probable",
+      "note": "HTML view of doc 48429: 14 pages, 231 KB (Rev. C: 15)."
     },
     {
       "vendor": "Analog Devices",
@@ -346,7 +292,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This entry sits next to doc 48429 (the probable Rev. B copy), so it is probably the same older upload filed under the DIP part number. That is inferred, not shown. The DIP AD826AN is a discontinued variant, so this copy may be the pre-2010 edition."
+      "note": "Next to doc 48429; probably the same pre-2010 edition."
     },
     {
       "vendor": "Analog Devices",
@@ -358,7 +304,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is a later upload under the RoHS SOIC part number. The search summary gives 15 pages and 725 KB, which matches the size and page count of the Rev. C copies (RadioLocman shows 15 pages for Rev. C). The revision itself was not shown."
+      "note": "15 pages, 725 KB; matches Rev. C size, probably Rev. C."
     },
     {
       "vendor": "Analog Devices",
@@ -370,7 +316,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "This is a deep link to the REVISION HISTORY page of the RadioLocman Rev. C mirror. The document itself (di=171829) is already listed. The page title reads 'AD826. REVISION HISTORY - Datasheet AD826 Analog Devices, Revision: C'. Search summaries give RadioLocman upload dates of 15 Aug 2017 and 1 Mar 2021 for Rev. C copies. Those are upload dates, not revision dates."
+      "note": "Revision History page of the Rev. C mirror di=171829."
     },
     {
       "vendor": "Analog Devices",
@@ -382,68 +328,73 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A mirror that has not been listed before. The search snippet did not show a revision or a footer."
+      "note": "Mirror; revision not shown."
     }
+  ],
+  "product_pages": [
+    "https://www.analog.com/en/products/ad826.html",
+    "https://www-cce.cldnet.analog.com/en/products/ad826.html",
+    "https://www.mouser.com/en/ProductDetail/Analog-Devices/AD826ARZ?qs=%2FtpEQrCGXCzIMdqTsT%2FCVA%3D%3D",
+    "https://www.digikey.com/en/products/detail/analog-devices-inc/AD826ARZ/620949",
+    "https://www.allaboutcircuits.com/electronic-components/datasheet/AD826ARZ-REEL7--Analog-Devices/"
   ],
   "revision_history": [
     {
       "vendor": "Analog Devices",
-      "doc_number": "AD826 data sheet",
-      "revision": "Rev. C",
-      "date": "4/10 (April 2010)",
-      "changes": "'Updated Outline Dimensions' (from the revision-history page of the RadioLocman mirror, via a search summary; this may partly echo the query wording). Still the current revision as of 2026."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD826 data sheet",
-      "revision": "Rev. B",
-      "date": "unknown (before 4/10)",
-      "changes": "Existence reported by search summaries (an Alldatasheet copy). Content and date not captured."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD826 data sheet",
-      "revision": "original / Rev. A",
-      "date": "unknown (c.1992–93)",
-      "changes": "Unverified. Presumed to exist from the 11/92 SPICE model date."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD826 / AD826A SPICE macro-model",
-      "revision": "Rev. A",
-      "date": "11/92",
-      "changes": "Original ADI macro-model, 'Copyright 1993'. The AD826A variant models worst-case A-grade datasheet limits: Vos 2 mV, Ios 150 nA, dominant pole moved to 12.5 kHz."
-    },
-    {
-      "vendor": "Analog Devices",
-      "doc_number": "AD826 SPICE macro-model",
-      "revision": "1.0 (header update)",
-      "date": "08/10/2012",
-      "changes": "'Updated to new header style'. The netlist is identical to the 11/92 model. This is not a datasheet or silicon change."
+      "doc_number": "AD826",
+      "revision": "original",
+      "date": "",
+      "changes": "Presumed c. 1992–93 from the 11/92 SPICE model; no copy found."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "AD826",
       "revision": "B",
-      "date": "unknown",
-      "changes": "A search summary says Rev. B references exist in datasheet archives. No copy URL was confirmed."
+      "date": "",
+      "changes": "Before 4/10. Reportedly held by an Alldatasheet copy; content and date unknown."
     },
     {
       "vendor": "Analog Devices",
       "doc_number": "D08950-0-4/10(C)",
       "revision": "C",
-      "date": "4/10",
-      "changes": "Rev. B to Rev. C: the Power Supply Bypassing section became the Power Supply Considerations section, that section was changed, the Outline Dimensions were updated, and the Ordering Guide was changed."
+      "date": "2010-04",
+      "changes": "Power Supply Bypassing became Power Supply Considerations; updated Outline Dimensions; changed Ordering Guide. Still current in 2026."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD826 / AD826A SPICE macro-model",
+      "revision": "A",
+      "date": "1992-11",
+      "changes": "Original macro-model, ©1993. AD826A models worst-case A grade: Vos 2 mV, Ios 150 nA, pole at 12.5 kHz."
+    },
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD826 SPICE macro-model",
+      "revision": "1.0",
+      "date": "2012-08-10",
+      "changes": "Header style update only; netlist identical to 11/92. Not a datasheet or silicon change."
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No reports of fake or remarked AD826 parts were found. The leaded DIP (AD826AN) and reportedly the AD826ANZ are discontinued per ADI PDN 10_0081 Rev. B (search summary). Any 'new' DIP stock is therefore old inventory or suspect. Loose 'AD826ARZ/AD826AR SOP-8, 10 pcs/lot' marketplace listings exist. Buy from authorised distributors (Mouser, Digi-Key, Newark) and check the ADI logo, the lot/date-code format and the Z (RoHS) suffix.",
-  "alternatives": [
-    "AD817 (ADI single-channel sibling with identical headline specs in ADI's AAE-25 table)",
-    "AD827 (older ADI 50 MHz, unlimited-CL dual; also audio-praised)",
-    "AD828 (later ADI low-power dual video op-amp; audio suitability not verified here)",
-    "LM6172 (TI/National dual high-speed low-power voltage-feedback amp; similar class and pinout)",
-    "AD8065/AD8066 (ADI FastFET high-speed op-amps with pA bias current, more widely praised for audio)"
+  "revision_chains": [
+    {
+      "vendor": "Analog Devices",
+      "doc_number": "AD826",
+      "known": [
+        {
+          "rev": "B",
+          "date": ""
+        },
+        {
+          "rev": "C",
+          "date": "2010-04"
+        }
+      ],
+      "missing": [
+        "original",
+        "A"
+      ],
+      "note": "Original c. 1992–93 inferred from SPICE model. Pre-2010 Wayback captures of static/imported-files URL may hold Rev. B."
+    }
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -456,14 +407,11 @@
     "https://www.analog.com/media/en/technical-documentation/data-sheets/ad826.pdf"
   ],
   "open_questions": [
-    "Rev. B date and content, and the original/Rev. A (c.1992–93) datasheets, are not captured. Wayback captures of the static/imported-files and UploadedFiles URLs from before 2010 may hold Rev. B.",
-    "Confirm that the Rev. C change log is exactly 'Updated Outline Dimensions' (4/10). The search summary may have echoed the query.",
-    "Lifecycle: a search summary says PDN 10_0081 Rev. B lists AD826AN and AD826ANZ. The same summary also claimed the whole family is obsolete, which conflicts with current distributor stock of AD826ARZ-REEL7. Read the PDN and the ADI product-page status table.",
-    "The AAE-25 column headings (current noise, Ro) were inferred and still need confirming against the original article.",
-    "THD, differential gain/phase and 0.1 dB-flatness figures were not captured.",
-    "No PCN was found for any fab or die change. No silicon-change hazard is known.",
-    "Do the AD826 and AD817 share a die? This is suggested only by identical specs in ADI's table.",
-    "The Audio Asylum and diyAudio praise quotes come from the discovery notes and were not re-read."
+    "Find Rev. B (date, content) and the original c. 1992–93 datasheet, e.g. via pre-2010 Wayback captures.",
+    "Read PDN 10_0081 Rev. B: does it cover AD826AN/ANZ only, or the whole family despite AD826ARZ-REEL7 stock?",
+    "Confirm the AAE-25 column headings (current noise, Ro) against the original article.",
+    "Capture THD, differential gain/phase and 0.1 dB flatness figures.",
+    "Do the AD826 and AD817 share a die? No PCN or die change is known."
   ],
   "sources": [
     "https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf",
@@ -491,18 +439,32 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "Current ADI datasheet is Rev. C: https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf",
+      "A RadioLocman mirror holds Revision C: https://www.radiolocman.com/datasheet/pdf.html?di=171829",
+      "Rev. C revision history dated 4/10(C), lists 'Updated Outline Dimensions': https://www.radiolocman.com/datasheet/pdf.html?di=171829&p=14",
+      "A Rev. B datasheet existed, reportedly on Alldatasheet: https://www.alldatasheet.com/datasheet-pdf/pdf/48429/AD/AD826.html",
+      "50 MHz bandwidth, 350 V/µs, 15 nV/√Hz: https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf",
+      "15 mA max supply current for both amplifiers: https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf",
+      "ADI product page exists: https://www.analog.com/en/products/ad826.html",
+      "AD826ARZ-REEL7 stocked: https://www.mouser.com/ProductDetail/Analog-Devices/AD826ARZ-REEL7?qs=/tpEQrCGXCyWa40FAHNo7g%3D%3D ; https://www.digikey.com/en/products/detail/analog-devices-inc/AD826ARZ-REEL7/620951 ; https://lcsc.com/product-detail/Low-Power-OpAmps_Analog-Devices_AD826ARZ-REEL7_Analog-Devices-ADI-AD826ARZ-REEL7_C114171.html",
+      "−40 to +85 °C range: https://www.newark.com/analog-devices/ad826arz-reel7/op-amp-50mhz-40-to-85deg-c-nsoic/dp/60AK7396",
+      "PDN 10_0081 Rev. B reportedly lists AD826AN and AD826ANZ (PDN not read): https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf",
+      "ADI target uses: video, CATV, copiers, LCDs, scanners, fax: https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf"
+    ],
     "refuted_claims": [
-      "AD826ANZ status 'likely active': a search summary says ADI PDN 10_0081 Rev. B lists AD826ANZ (with AD826AN) as discontinued. Changed to 'possibly discontinued' pending a read of the PDN."
+      "AD826ANZ 'likely active': PDN 10_0081 Rev. B reportedly lists it as discontinued; now 'possibly discontinued' pending reading the PDN."
     ],
     "corrections": [
-      "Current datasheet revision set to Rev. C, dated 4/10 (April 2010). It was 'unknown'.",
-      "Rev. B added to the revision history, with an Alldatasheet copy reportedly holding it. The Rev. C change 'Updated Outline Dimensions' was added.",
-      "AD826AN status set to discontinued (PDN 10_0081 Rev. B, per search summary).",
-      "Added part number AD826ARZ-REEL7, stocked at Mouser, Digi-Key, Newark and LCSC C114171.",
-      "Supply current resolved: 15 mA max for both amplifiers, 7.5 mA max per amplifier. The Altium 7.5 mA figure is a maximum.",
-      "Open-loop gain unit typo fixed ('3.5 V/V/mV' to '3.5 V/mV').",
-      "Product page https://www.analog.com/en/products/ad826.html is now observed, not inferred.",
-      "Added third-party and distributor mirrors (RadioLocman ×3, Alldatasheet ×2, pccomponents, ChipDip) and the PDN archive seed."
+      "Current datasheet revision set to Rev. C, April 2010.",
+      "Rev. B added to revision history; Rev. C changes added.",
+      "AD826AN set to discontinued (PDN 10_0081 Rev. B, reportedly).",
+      "Added AD826ARZ-REEL7 (Mouser, Digi-Key, Newark, LCSC C114171).",
+      "Supply current: 15 mA max both amplifiers, 7.5 mA max per amplifier.",
+      "Open-loop gain unit typo fixed to 3.5 V/mV.",
+      "Product page https://www.analog.com/en/products/ad826.html now observed.",
+      "Added mirrors (RadioLocman ×3, Alldatasheet ×2, pccomponents, ChipDip) and the PDN archive seed."
     ],
     "unverified_urls": [
       "http://www.analog.com/static/imported-files/data_sheets/AD826.pdf",
@@ -513,30 +475,6 @@
       "https://static.chipdip.ru/lib/827/DOC031827006.pdf",
       "https://www.radiolocman.com/datasheet/data.html?di=351355",
       "https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf"
-    ],
-    "claims_confirmed": [
-      "The current ADI datasheet is Rev. C (search title 'AD826 (Rev. C)'): https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf",
-      "A RadioLocman mirror holds Revision C: https://www.radiolocman.com/datasheet/pdf.html?di=171829",
-      "The Rev. C revision history is dated 4/10(C) and lists 'Updated Outline Dimensions': https://www.radiolocman.com/datasheet/pdf.html?di=171829&p=14",
-      "A Rev. B datasheet existed; search summaries place a copy on Alldatasheet: https://www.alldatasheet.com/datasheet-pdf/pdf/48429/AD/AD826.html",
-      "50 MHz unity-gain bandwidth, 350 V/µs slew rate and 15 nV/√Hz noise: https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf",
-      "15 mA max supply current for both amplifiers (7.5 mA max per amplifier): https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf",
-      "The ADI product page exists: https://www.analog.com/en/products/ad826.html",
-      "AD826ARZ-REEL7 is stocked by distributors: https://www.mouser.com/ProductDetail/Analog-Devices/AD826ARZ-REEL7?qs=/tpEQrCGXCyWa40FAHNo7g%3D%3D ; https://www.digikey.com/en/products/detail/analog-devices-inc/AD826ARZ-REEL7/620951 ; https://lcsc.com/product-detail/Low-Power-OpAmps_Analog-Devices_AD826ARZ-REEL7_Analog-Devices-ADI-AD826ARZ-REEL7_C114171.html",
-      "The −40 °C to +85 °C range for AD826 variants: https://www.newark.com/analog-devices/ad826arz-reel7/op-amp-50mhz-40-to-85deg-c-nsoic/dp/60AK7396",
-      "PDN 10_0081 Rev. B reportedly lists AD826AN and AD826ANZ (search summary only; PDN not read): https://www.analog.com/media/en/pcn/ADI_PDN_10_0081_Rev_B_Form.pdf",
-      "ADI's stated target uses are video, CATV, copiers, LCDs, image scanners and fax machines: https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf"
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "high-speed-video-crossover",
-  "product_pages": [
-    "https://www.analog.com/en/products/ad826.html",
-    "https://www-cce.cldnet.analog.com/en/products/ad826.html",
-    "https://www.mouser.com/en/ProductDetail/Analog-Devices/AD826ARZ?qs=%2FtpEQrCGXCzIMdqTsT%2FCVA%3D%3D",
-    "https://www.digikey.com/en/products/detail/analog-devices-inc/AD826ARZ/620949",
-    "https://www.allaboutcircuits.com/electronic-components/datasheet/AD826ARZ-REEL7--Analog-Devices/"
-  ],
-  "revision_chain_notes": "The only vendor is Analog Devices. No second source or acquirer re-issue was found. The known chain, oldest to newest:\n\n(1) Original edition (Rev. 0 or Rev. A), c.1992–93. It is inferred from the SPICE model marked 'Rev. A 11/92, (c)1993'. No datasheet copy, footer or date was found, including by the targeted 'REV. A'/'REV. 0' 1993–96 search. MISSING.\n\n(2) Rev. B, date unknown (before 4/10). The only candidate copy is Alldatasheet doc 48429: the PDF page is already listed and the HTML view has been added. It is 14 pages and 231 KB, against 15 pages for Rev. C, and a search summary again calls it Rev. B. The footer was not seen, so confidence is low. The adjacent Alldatasheet doc 48430 (AD826AN) may be the same edition. The Rev. B date and change list are MISSING.\n\n(3) Rev. C, 4/10 (April 2010), footer D08950-0-4/10(C). Changes from Rev. B: Power Supply Bypassing became Power Supply Considerations, updated Outline Dimensions, changed Ordering Guide. It is still current in 2026 at analog.com (both the AD826.pdf and ad826.pdf aliases) and on RadioLocman (di=171829, whose revision-history page is at p=14, and di=121451). Alldatasheet doc 520354 (AD826ARZ, 15 pages) is probably also Rev. C.\n\nStill missing: the original edition's letter and date, the Rev. B date and a copy whose footer confirms it, and any Rev. A between them. The best next step is Wayback captures of http://www.analog.com/static/imported-files/data_sheets/AD826.pdf from 2000–2009, which should hold Rev. B. Older ADI URL patterns (1990s) are not known and were not guessed."
+    ]
+  }
 }

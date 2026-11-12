@@ -1,160 +1,120 @@
 {
   "id": "MUSES8832",
-  "name": "MUSES8832 (dual low-voltage bipolar, rail-to-rail output)",
-  "tagline": "The low-voltage MUSES: a 2.1 nV/rtHz bipolar dual with rail-to-rail output that drives 600 ohms. Liked for battery headphone amps and heard as gentler than the OPA2134.",
-  "technology": "Bipolar-input dual op amp with a rail-to-rail ('output full-swing') output. It runs from low voltages: +/-1.35 V (+2.7 V single supply) minimum. Distributors list an operating range of 2.7 V to 13 V total. New JRC says it uses circuit and layout techniques from the MUSES flagship parts. It is one of the 'mass-production' MUSES models, alongside MUSES8820 and MUSES8920.",
+  "name": "MUSES8832",
+  "type": "Low-voltage bipolar dual, rail-to-rail output",
+  "tier": "C",
+  "category": "japanese-audio-series",
+  "tagline": "The low-voltage MUSES: 2.1 nV/√Hz, rail-to-rail output into 600 Ω from 2.7 V, for battery headphone amps.",
   "manufacturers": [
-    "New Japan Radio Co., Ltd. (New JRC / NJR)",
-    "Nisshinbo Micro Devices Inc."
+    "JRC/Nisshinbo"
+  ],
+  "lineage": [
+    {
+      "vendor": "New JRC",
+      "role": "originator",
+      "period": "2014–2021",
+      "note": "Announced Sep 2014, mass production Oct 2014; leadless KW1 added 2016. No second source."
+    },
+    {
+      "vendor": "Nisshinbo Micro Devices",
+      "role": "current",
+      "period": "2022–present",
+      "note": "New JRC merged into Nisshinbo 2022. No die change, PCN or 'A' successor found."
+    }
   ],
   "part_numbers": [
     {
       "pn": "MUSES8832",
       "channels": 2,
-      "vendors": [
-        "New JRC",
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "active (Nisshinbo EN spec page and JA MUSES page are live in 2026; no vendor NRND/EOL notice seen)",
-      "notes": "Base type. New JRC introduced it in Sept 2014: samples Sept 2014, mass production Oct 2014 per the itersnews press item. There is no vendor DIP8 version."
+      "status": "active",
+      "note": "Base type, introduced Sep 2014. No vendor DIP8 version."
     },
     {
-      "pn": "MUSES8832E",
+      "pn": "MUSES8832E / MUSES8832E-TE1",
       "channels": 2,
-      "vendors": [
-        "New JRC",
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "active (stocked and listed by Mouser, DigiKey #10671753 and JLCPCB/LCSC C4548935 in 2026 search results)",
-      "notes": "Surface-mount SOP-8 version, as distributors list it. NJR's E suffix denotes the EMP8 package outline."
-    },
-    {
-      "pn": "MUSES8832E-TE1",
-      "channels": 2,
-      "vendors": [
-        "New JRC",
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "active (retail listings at Audiophonics and Banzai Music)",
-      "notes": "Tape-and-reel ordering code of MUSES8832E (SOP8). The die is the same."
+      "status": "active",
+      "note": "SOP-8 (EMP8 outline); -TE1 is tape and reel. Stocked at Mouser, DigiKey, LCSC."
     },
     {
       "pn": "MUSES8832KW1",
       "channels": 2,
-      "vendors": [
-        "New JRC",
-        "Nisshinbo Micro Devices"
-      ],
-      "status": "unknown (announced for mass production in 2016; current distributor stock not checked)",
-      "notes": "Small leadless-package version, added in 2016 together with MUSES8920KX7 (Nikkei xtech / New JRC news). The exact package outline name (DFN/ESON type) was not captured."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "New Japan Radio Co., Ltd. (New JRC / NJR)",
-      "role": "originator: designer and manufacturer",
-      "period": "2014 (announced Sept 2014; mass production Oct 2014) to 2021",
-      "notes": "Introduced as a low-voltage high-quality audio op amp in the MUSES series. The leadless MUSES8832KW1 was added in 2016. There was no second source."
-    },
-    {
-      "vendor": "Nisshinbo Micro Devices Inc.",
-      "role": "successor company and current owner of the MUSES line",
-      "period": "2022 to present",
-      "notes": "New JRC became part of Nisshinbo Micro Devices in 2022. Product pages moved to nisshinbo-microdevices.co.jp (JA MUSES page and EN spec page). No die change, PCN or 'A' successor was found for MUSES8832. This differs from MUSES8920, which became MUSES8920A."
+      "status": "unknown",
+      "note": "Small leadless package added 2016; outline name and current stock unconfirmed."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise e_n",
-      "value": "2.1 nV/rtHz typ",
-      "condition": "f = 1 kHz (per vendor headline)",
-      "source": "Nisshinbo product description / datasheet summary (search results for nisshinbo-microdevices.co.jp and alldatasheet 808063)"
+      "parameter": "Input noise (1 kHz)",
+      "value": "2.1 nV/√Hz",
+      "condition": "typ",
+      "source": "Nisshinbo product page"
     },
     {
-      "parameter": "Gain bandwidth product",
-      "value": "10 MHz typ",
-      "condition": "conditions not captured",
-      "source": "Vendor product description; alldatasheet/datasheet4u parametric summary"
-    },
-    {
-      "parameter": "THD",
-      "value": "0.0009% typ",
-      "condition": "conditions not captured",
-      "source": "Vendor product description (search summary)"
-    },
-    {
-      "parameter": "Supply voltage (operating)",
-      "value": "+/-1.35 V (+2.7 V) min; 2.7 V to 13 V total range listed",
-      "condition": "The 13 V upper figure comes from the Mouser listing and was not checked against the datasheet table",
-      "source": "Vendor description (min); Mouser MUSES8832E product listing via search summary (range)"
-    },
-    {
-      "parameter": "Supply voltage (maximum)",
-      "value": "15 V (total; probably the absolute maximum)",
-      "condition": "third-party parametric figure, unverified",
-      "source": "alldatasheet / datasheet4u parametric summary"
+      "parameter": "GBW",
+      "value": "10 MHz",
+      "condition": "typ; conditions not stated",
+      "source": "Nisshinbo product page"
     },
     {
       "parameter": "Slew rate",
-      "value": "1 V/us",
-      "condition": "typ/max and conditions not stated; unverified against the datasheet",
-      "source": "Third-party parametric summary (alldatasheet / datasheet4u)"
+      "value": "1 V/µs (unverified)",
+      "condition": "conditions not stated",
+      "source": "Third-party parametric data"
+    },
+    {
+      "parameter": "THD+N",
+      "value": "0.0009% (THD)",
+      "condition": "typ; conditions not stated",
+      "source": "Nisshinbo product page"
+    },
+    {
+      "parameter": "Supply range",
+      "value": "2.7–13 V total (±1.35 V min); 15 V max (unverified)",
+      "condition": "13/15 V from Mouser / parametric data",
+      "source": "Nisshinbo; Mouser listing"
     },
     {
       "parameter": "Output current",
-      "value": "32 mA",
-      "condition": "conditions not stated; unverified",
-      "source": "Third-party parametric summary"
+      "value": "32 mA (unverified); drives 600 Ω",
+      "condition": "conditions not stated",
+      "source": "Third-party parametric data"
     },
     {
-      "parameter": "Input offset voltage / input bias current / CMRR",
-      "value": "500 uV / 6.5 uA / 90 dB",
-      "condition": "whether each is typ or max was not stated; unverified",
-      "source": "Third-party parametric summary (datasheet4u / alldatasheet)"
+      "parameter": "Offset voltage",
+      "value": "500 µV (unverified)",
+      "condition": "typ or max not stated",
+      "source": "Third-party parametric data"
     },
     {
-      "parameter": "Output",
-      "value": "Rail-to-rail (full-swing) output; drives 600 ohm loads",
-      "condition": "",
-      "source": "Datasheet titles: EN Ver.10 'Rail-to-Rail Output, High Quality Audio, Dual Operational Amplifier'; JP Ver.5 '2回路入り出力フルスイング高音質オペアンプ'"
+      "parameter": "Input bias current",
+      "value": "6.5 µA (unverified)",
+      "condition": "typ or max not stated",
+      "source": "Third-party parametric data"
     },
     {
       "parameter": "Input stage",
-      "value": "Bipolar",
+      "value": "Bipolar; rail-to-rail (full-swing) output",
       "condition": "",
-      "source": "Vendor product description; community comparison"
-    },
-    {
-      "parameter": "Operating temperature",
-      "value": "-40 to +125 C",
-      "condition": "",
-      "source": "Vendor product description (search summary)"
-    },
-    {
-      "parameter": "Channels / packages",
-      "value": "2 (dual); SOP8 (E), leadless (KW1)",
-      "condition": "",
-      "source": "Datasheet title; distributor listings; Nikkei xtech 2016 news"
+      "source": "Datasheet EN Ver. 10 / JP Ver. 5"
     }
   ],
   "reputation": {
-    "summary": "A niche but well-regarded MUSES model in the Japanese DIY and portable-audio community. It is the MUSES pick when a low-voltage or battery supply rules out the higher-voltage parts. A Zigsow user review ('低電圧で使えて優しい音質', 'usable at low voltage, gentle sound') finds it gentler than the OPA2134 while keeping MUSES-like transparency. A Stereo magazine blog article groups it with MUSES8820 and MUSES8920 as the mass-production MUSES models. No English-language objective measurements (ASR, Groner) were found.",
+    "summary": "A niche but well-liked MUSES in the Japanese DIY and portable scene, chosen when a low-voltage or battery supply rules out the others. A Zigsow review ('低電圧で使えて優しい音質') finds it gentler than the OPA2134 with MUSES-like transparency. Stereo magazine groups it with MUSES8820 and MUSES8920 as mass-production MUSES. No ASR or other measurements found.",
     "sonic_descriptors": [
-      "gentle / soft (優しい音質), per a Zigsow review",
-      "gentler than OPA2134 (same review)",
-      "sufficient MUSES-like transparency (same review)"
+      "gentle (優しい音質)",
+      "gentler than OPA2134",
+      "MUSES-like transparency"
     ],
     "typical_uses": [
-      "battery-powered portable headphone amplifiers",
-      "portable audio devices and smartphones (vendor-stated targets; leadless KW1 aimed at mobile)",
-      "high-end audio equipment (vendor-stated)",
-      "low-voltage single-supply (+2.7 V and up) audio stages",
-      "Audio-Technica AT-PHA100 portable DAC/amp, reportedly (only from an AI-generated review repo; low confidence)"
+      "battery-powered portable headphone amps",
+      "portable devices and smartphones (vendor target; KW1)",
+      "high-end audio equipment (vendor target)",
+      "low-voltage single-supply audio stages from +2.7 V"
     ],
     "caveats": [
-      "There is no vendor DIP8 version. DIP8 'units' (for example Audiophonics) are SOP8 dies on adapter boards, and adapters add their own layout and stability risk.",
-      "It is a low-voltage part. The listed operating range tops out at about 13 V total, and the maximum is about 15 V per parametric data. Do not roll it into +/-15 V equipment.",
-      "Almost all praise comes from Japanese subjective reviews. No independent measurement data was located."
+      "No vendor DIP8; DIP8 'units' are SOP8 on adapters, with layout and stability risk.",
+      "Low-voltage part: about 13 V operating, 15 V max. Not for ±15 V rails.",
+      "Praise is almost all Japanese subjective reviews; no independent measurements."
     ],
     "sources": [
       "https://zigsow.jp/item/325036/review/325014",
@@ -165,30 +125,38 @@
       "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/muses8832.pdf"
     ]
   },
+  "counterfeit_notes": "No counterfeit reports. As a low-volume SMD-only part it is likely a lesser target. Buy from Mouser, DigiKey or Kyohritsu eleshop. Any 'MUSES8832 DIP8' is SOP8 on an adapter; buy those from known vendors such as Audiophonics.",
+  "alternatives": [
+    "MUSES8820 / MUSES8920A (need higher supplies)",
+    "OPA1622",
+    "OPA1662 / OPA1664",
+    "LME49726 (5 V rail-to-rail)"
+  ],
+  "silicon_changes": [],
   "datasheets": [
     {
       "vendor": "New JRC (New Japan Radio)",
       "title": "MUSES8832 Rail-to-Rail Output, High Quality Audio, Dual Operational Amplifier (English datasheet)",
-      "doc_number": "MUSES8832_E (English edition)",
+      "doc_number": "MUSES8832_E",
       "revision": "Ver. 10",
       "date": "",
       "url": "https://www.endrich.com/Datenbl%C3%A4tter/Aktive%20Komponenten/MUSES8832_E.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Endrich distributor copy. The search-result title reads 'MUSES8832 - 1 - Ver.10 Rail-to-Rail Output, High Quality Audio,'. This is the newest NJR-format revision seen; it is unknown whether a later Nisshinbo re-issue supersedes it."
+      "note": "Endrich copy; newest English revision seen."
     },
     {
       "vendor": "New JRC (New Japan Radio)",
       "title": "MUSES8832 Rail-to-Rail Output, High Quality Audio, Dual Operational Amplifier (English datasheet)",
-      "doc_number": "MUSES8832_E (English edition)",
+      "doc_number": "MUSES8832_E",
       "revision": "Ver. 10",
       "date": "",
       "url": "https://file.bettlink.com/product/datasheet/5048863/muses8832.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Third-party copy with the same Ver.10 title as the Endrich copy."
+      "note": "Same Ver. 10 as the Endrich copy."
     },
     {
       "vendor": "New JRC / Nisshinbo (via Mouser)",
@@ -200,19 +168,19 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Mouser-hosted datasheet. The revision was not shown in the summary. The file ID differs from the older Mouser NJR naming (e.g. MUSES8920_E-259012.pdf), so this may be a later re-issue; unconfirmed."
+      "note": "Mouser copy; revision unknown, possibly a post-merger re-issue."
     },
     {
       "vendor": "New JRC (New Japan Radio)",
       "title": "MUSES8832 2回路入り出力フルスイング高音質オペアンプ (Japanese datasheet)",
-      "doc_number": "MUSES8832 (Japanese edition)",
+      "doc_number": "MUSES8832_J",
       "revision": "Ver. 5",
       "date": "",
       "url": "https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/muses8832.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "Frozen copy from the retailer Kyohritsu (eleshop). Title confirmed: 'MUSES8832 - 1 - Ver.5 2 回路入り出力フルスイング高音質オペアンプ ■概要 ■外形'. The Japanese and English editions number their versions separately, so Ver.5 JP vs Ver.10 EN cannot be ordered in time."
+      "note": "Kyohritsu copy. JP and EN versions are numbered separately."
     },
     {
       "vendor": "New Japan Radio (via alldatasheet)",
@@ -224,7 +192,10 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "An 11-page, 441 KB PDF (Rail-to-Rail Output, High Quality Audio, Dual Op Amp). The revision it holds was not shown."
+      "note": "11 pages, 441 KB; revision not shown.",
+      "also_urls": [
+        "https://www.alldatasheet.jp/datasheet-pdf/pdf/808063/NJRC/MUSES8832.html"
+      ]
     },
     {
       "vendor": "New Japan Radio (via datasheet4u / datasheetspdf)",
@@ -236,31 +207,34 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "The same document ID is also at https://datasheetspdf.com/pdf/1007644/NewJapanRadio/MUSES8832/1. The revision was not shown."
+      "note": "Revision not shown.",
+      "also_urls": [
+        "https://datasheetspdf.com/pdf/1007644/NewJapanRadio/MUSES8832/1"
+      ]
     },
     {
       "vendor": "New JRC (New Japan Radio)",
       "title": "高音質オペアンプ MUSES8832 | MUSES オフィシャル Webサイト",
-      "doc_number": "n/a (product page)",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.njr.co.jp/products/MUSES/series/MUSES8832.html",
       "url_kind": "vendor_legacy",
       "confidence": "high",
       "revision_status": "unknown",
-      "note": "Legacy New JRC MUSES official site page from before the Nisshinbo merger. A good Wayback seed for older datasheet links."
+      "note": "Legacy New JRC MUSES page; Wayback seed for older datasheets."
     },
     {
       "vendor": "New Japan Radio Co., Ltd. (New JRC / NJR)",
       "title": "MUSES8832 Rail-to-Rail Output, High Quality Audio Dual Operational Amplifier (English datasheet, legacy NJR-hosted copy)",
-      "doc_number": "MUSES8832_E (English edition)",
+      "doc_number": "MUSES8832_E",
       "revision": "",
       "date": "",
       "url": "http://www.njr.com/semicon/PDF/MUSES8832_E.pdf",
       "url_kind": "vendor_legacy",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Legacy NJR datasheet URL. It appears in the product description of an Amazon.co.jp listing (https://www.amazon.co.jp/MUSES8832-Quality-Output-Operational-Amplifier/dp/B01MR0O1UB), which came from a search. The URL was not opened. It is a good seed for Wayback Machine captures, which may hold earlier English revisions (before Ver.10)."
+      "note": "Legacy NJR URL; Wayback captures may hold pre-Ver. 10 revisions."
     },
     {
       "vendor": "New Japan Radio (via alldatasheet.jp)",
@@ -272,7 +246,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "This is the Japanese-domain page for the same alldatasheet entry (ID 808063) as the alldatasheet.com page already listed. Alldatasheet describes that file as 441 KB and 11 pages. The Ver. is not shown in the summary."
+      "note": "Japanese-domain page for alldatasheet 808063."
     },
     {
       "vendor": "New Japan Radio (via datasheetspdf.com)",
@@ -284,58 +258,99 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Has the same database ID (1007644) as the datasheet4u entry already listed, so it is probably the same file. The Ver. is not shown in the summary."
+      "note": "Same ID as datasheet4u 1007644; probably the same file."
     },
     {
       "vendor": "New Japan Radio (link index on Pro Audio Design Forum)",
       "title": "JRC MUSES Datasheet Links - The Pro Audio Design Forum",
-      "doc_number": "n/a (forum thread of datasheet links, f=12 t=605)",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.proaudiodesignforum.com/forum/php/viewtopic.php?f=12&t=605",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A forum thread that indexes links to JRC MUSES datasheets. It may point to older NJR-hosted MUSES8832 PDF URLs that are useful as archive seeds. Its contents were not shown in the summary."
+      "note": "Forum index of JRC MUSES datasheet links; possible archive seeds."
     }
+  ],
+  "product_pages": [
+    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8832",
+    "https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8832.html",
+    "https://www.mouser.com/ProductDetail/Nisshinbo/MUSES8832E?qs=VAB4DzKv5wX3tGeW5n2JGg%3D%3D",
+    "https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES8832E/10671753",
+    "https://eleshop.jp/shop/g/gF22126/",
+    "https://metoree.com/products/131080/"
   ],
   "revision_history": [
     {
       "vendor": "New JRC",
-      "doc_number": "News release (MUSES8832 introduction)",
-      "revision": "n/a",
+      "doc_number": "News release",
+      "revision": "",
       "date": "2014-09-11",
-      "changes": "Product introduction ('New JRC introduces the MUSES8832'), with engineering samples in Sept 2014 and mass production from Oct 2014 (itersnews). The Olinas distributor topic is dated 2014-09-25."
+      "changes": "MUSES8832 introduced: samples Sep 2014, mass production Oct 2014. Olinas distributor notice dated 2014-09-25."
     },
     {
       "vendor": "New JRC",
-      "doc_number": "News release (leadless package addition)",
-      "revision": "n/a",
-      "date": "2016-09 (NJR news 2016-09-02; Nikkei xtech report)",
-      "changes": "Small leadless-package versions were added: MUSES8920KX7 and MUSES8832KW1, in mass production in 2016. The datasheet was presumably revised to add KW1; which version did so is not confirmed."
+      "doc_number": "News release",
+      "revision": "",
+      "date": "2016-09-02",
+      "changes": "Leadless MUSES8832KW1 and MUSES8920KX7 in mass production. Datasheet presumably revised for KW1; version unknown."
     },
     {
       "vendor": "New JRC",
-      "doc_number": "MUSES8832 (Japanese edition)",
-      "revision": "Ver.5",
-      "date": "unknown",
-      "changes": "Seen only as the Kyohritsu mirror. NJR datasheets of this era carry no change log."
+      "doc_number": "MUSES8832_J",
+      "revision": "Ver. 5",
+      "date": "",
+      "changes": "Japanese edition, Kyohritsu copy. No change log."
     },
     {
       "vendor": "New JRC",
-      "doc_number": "MUSES8832_E (English edition)",
-      "revision": "Ver.10",
-      "date": "unknown",
-      "changes": "Seen as the Endrich and Bettlink mirrors. It is the latest NJR-numbered English revision seen; Ver.1 to Ver.9 were not located. No PCN was found."
+      "doc_number": "MUSES8832_E",
+      "revision": "Ver. 10",
+      "date": "",
+      "changes": "English edition, Endrich and Bettlink copies. Latest NJR-numbered revision seen. No change log."
     }
   ],
-  "silicon_changes": [],
-  "counterfeit_notes": "No counterfeit or remarking reports for MUSES8832 were found. It is a low-volume SMD-only part (SOP8 and leadless), so it is a less likely counterfeit target than DIP MUSES01/02, but that is inference. Buy from authorized distributors (Mouser, DigiKey) or established retailers (Kyohritsu eleshop). Any 'MUSES8832 DIP8' is an SOP8 on an adapter board, since no vendor DIP exists. Buy such modules from known vendors such as Audiophonics, not anonymous marketplace sellers.",
-  "alternatives": [
-    "MUSES8820 / MUSES8920A (Nisshinbo siblings for higher supplies; not low-voltage replacements)",
-    "TI OPA1622 (bipolar audio headphone-driver op amp that can run from low split supplies)",
-    "TI OPA1662/OPA1664 (low-power bipolar audio op amp that runs from low supplies)",
-    "TI LME49726 (low-voltage rail-to-rail audio op amp for 5 V-class portable designs)"
+  "revision_chains": [
+    {
+      "vendor": "New JRC",
+      "doc_number": "MUSES8832_E",
+      "known": [
+        {
+          "rev": "Ver. 10",
+          "date": ""
+        }
+      ],
+      "missing": [
+        "Ver. 1",
+        "Ver. 2",
+        "Ver. 3",
+        "Ver. 4",
+        "Ver. 5",
+        "Ver. 6",
+        "Ver. 7",
+        "Ver. 8",
+        "Ver. 9"
+      ],
+      "note": "Wayback captures (2014–2016) of the legacy njr.com PDF are the best route to earlier revisions."
+    },
+    {
+      "vendor": "New JRC",
+      "doc_number": "MUSES8832_J",
+      "known": [
+        {
+          "rev": "Ver. 5",
+          "date": ""
+        }
+      ],
+      "missing": [
+        "Ver. 1",
+        "Ver. 2",
+        "Ver. 3",
+        "Ver. 4"
+      ],
+      "note": "Revisions after Ver. 5 unknown. No Nisshinbo-format revision found; downloads may need myNISD login."
+    }
   ],
   "ti_literature_numbers": [],
   "archive_seed_urls": [
@@ -363,13 +378,11 @@
     "https://xtech.nikkei.com/dm/atcl/news/15yk/090600479/"
   ],
   "open_questions": [
-    "Vendor PDF and product-page URLs in archive_seed_urls from nisshinbo-microdevices.co.jp/.../pdf/datasheet/ onward are INFERRED from sibling-part URL patterns. None was seen for MUSES8832.",
-    "The current Nisshinbo datasheet revision is not known. Is the Mouser copy (njrc_s_a0002371654) a post-merger re-issue newer than EN Ver.10? EN Ver.1 to Ver.9 and JP versions other than Ver.5 were not located.",
-    "The exact package outline name of MUSES8832KW1, and whether it is still stocked, are not confirmed.",
-    "Slew rate (1 V/us), output current (32 mA), Vos/Ib/CMRR and the 13 V / 15 V supply limits come from third-party parametric summaries. Confirm them against the datasheet tables, and give the THD and GBW conditions.",
-    "No objective measurements (ASR, Groner, etc.) were found.",
-    "Use in the Audio-Technica AT-PHA100 comes only from an AI-generated review repository (Frieve-A/audioreview). Confirm it against Audio-Technica documentation.",
-    "A Yahoo Chiebukuro question claims an SSOP version exists. No SSOP ordering code was seen; the only codes found are E (SOP8) and KW1 (leadless)."
+    "Nisshinbo PDF and page URLs in archive seeds are inferred from sibling parts; confirm them.",
+    "Current Nisshinbo revision? Is the Mouser copy newer than EN Ver. 10? Find EN Ver. 1–9, other JP versions.",
+    "Confirm KW1 package outline and stock, and whether an SSOP version exists (Yahoo Chiebukuro claim).",
+    "Confirm SR 1 V/µs, 32 mA, 500 µV, 6.5 µA, CMRR 90 dB, 13/15 V limits, THD and GBW conditions.",
+    "Is it used in the Audio-Technica AT-PHA100? Only an AI-generated review says so. Any measurements?"
   ],
   "sources": [
     "https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8832.html",
@@ -395,23 +408,38 @@
     "https://stereo.jp/?p=3614",
     "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14174220154",
     "https://github.com/GoatWang/companyEmbedding_Labeled%20(cached%20New%20JRC%20news%20listing)",
-    "https://github.com/Frieve-A/audioreview/blob/main/_products/en/audio-technica/audio-technica-at-pha100.md"
+    "https://github.com/Frieve-A/audioreview/blob/main/_products/en/audio-technica/audio-technica-at-pha100.md",
+    "https://www.amazon.co.jp/MUSES8832-Quality-Output-Operational-Amplifier/dp/B01MR0O1UB"
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "English datasheet is Ver. 10 'Rail-to-Rail Output, High Quality Audio, Dual Operational Amplifier' (https://www.endrich.com/Datenbl%C3%A4tter/Aktive%20Komponenten/MUSES8832_E.pdf; https://file.bettlink.com/product/datasheet/5048863/muses8832.pdf).",
+      "Japanese datasheet Ver. 5 on the Kyohritsu mirror (https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/muses8832.pdf).",
+      "A Mouser-hosted datasheet exists (https://www.mouser.com/datasheet/2/294/njrc_s_a0002371654_1-2279492.pdf).",
+      "2.1 nV/√Hz, 10 MHz, 0.0009% THD, 600 Ω drive, −40 to +125 °C (https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8832; https://www.alldatasheet.com/datasheet-pdf/pdf/808063/NJRC/MUSES8832.html).",
+      "Min supply 1.35 V, 1 V/µs, 32 mA per parametric summary (https://datasheet4u.com/datasheets/New-Japan-Radio/MUSES8832/1007644).",
+      "MUSES8832E is SOP-8 and distributed (https://jlcpcb.com/partdetail/5120028-MUSES8832E/C4548935; https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES8832E/10671753; https://www.mouser.com/ProductDetail/Nisshinbo/MUSES8832E?qs=VAB4DzKv5wX3tGeW5n2JGg%3D%3D).",
+      "MUSES8832E-TE1 sold as a SOP8 unit (https://www.audiophonics.fr/en/opa/muses8832e-p-18950.html).",
+      "Leadless MUSES8920KX7 and MUSES8832KW1 added in 2016 (https://xtech.nikkei.com/dm/atcl/news/15yk/090600479/).",
+      "Samples Sep 2014, mass production Oct 2014 (http://itersnews.com/?p=85688).",
+      "Legacy NJR and current Nisshinbo pages exist (https://www.njr.co.jp/products/MUSES/series/MUSES8832.html; https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8832.html).",
+      "semi_20160902 is the MUSES03 sample announcement (https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2016/semi_20160902.html)."
+    ],
     "refuted_claims": [
-      "The draft said the leadless-variant suffix was unknown and possibly KX7 by analogy with MUSES8920. The 2016 New JRC / Nikkei xtech news names it MUSES8832KW1 (MUSES8920KX7 is the MUSES8920 version).",
-      "The draft used nisshinbo-microdevices.co.jp/en/about/info/njr/2016/semi_20160902.html as the MUSES8832 leadless-package news. Its page title is the MUSES03 sample-release announcement, so it was removed from sources and archive seeds.",
-      "The draft said production status was unknown. The part is actively listed and stocked (Mouser, DigiKey, JLCPCB/LCSC), and vendor pages are live."
+      "Leadless suffix is KW1, not KX7; KX7 is the MUSES8920 version.",
+      "The semi_20160902 news page is about MUSES03, not the MUSES8832 leadless package; removed from sources.",
+      "Not 'status unknown': actively stocked at Mouser, DigiKey and JLCPCB/LCSC; vendor pages live."
     ],
     "corrections": [
-      "Added part numbers MUSES8832KW1 (leadless, 2016) and MUSES8832E-TE1 (SOP8 tape and reel). MUSES8832E is confirmed as SOP-8 by distributors.",
-      "Added the English datasheet 'MUSES8832_E' Ver.10 (Endrich and Bettlink mirrors), a Mouser-hosted copy (njrc_s_a0002371654, revision unknown) and the alldatasheet 808063 / datasheet4u 1007644 mirrors.",
-      "Timeline: samples Sept 2014, mass production Oct 2014 (itersnews).",
-      "The Nisshinbo EN spec page (?product=muses8832) is confirmed, no longer inferred.",
-      "Added supply range 2.7 V to 13 V (Mouser listing) and a 15 V maximum (parametric), plus third-party parametric values for slew rate (1 V/us), output current (32 mA), Vos/Ib/CMRR. All are flagged as unverified against the datasheet.",
-      "The caveat now warns that the part is not suitable for +/-15 V rails. The DIP8 note now covers vendor-sold adapter 'units'.",
-      "The NJR legacy page is reclassified as vendor_legacy."
+      "Added MUSES8832KW1 (leadless, 2016) and MUSES8832E-TE1; MUSES8832E confirmed SOP-8.",
+      "Added English Ver. 10 mirrors, the Mouser copy and the alldatasheet 808063 / datasheet4u 1007644 mirrors.",
+      "Timeline: samples Sep 2014, mass production Oct 2014.",
+      "Nisshinbo EN spec page confirmed, no longer inferred.",
+      "Added 2.7–13 V range, 15 V max, 1 V/µs, 32 mA, Vos/Ib/CMRR, all flagged unverified.",
+      "Caveats now warn against ±15 V rails and cover DIP8 adapter units.",
+      "NJR legacy page reclassified as vendor_legacy."
     ],
     "unverified_urls": [
       "https://eleshop.jp/shop/g/gF22126/",
@@ -432,31 +460,6 @@
       "https://www.njr.com/semicon/products/MUSES8832.html",
       "https://www.njr.com/electronic_device/products/MUSES8832.html",
       "http://www.mouser.com/pdfdocs/MUSES8832_E.PDF"
-    ],
-    "claims_confirmed": [
-      "The English datasheet is 'MUSES8832 Ver.10 Rail-to-Rail Output, High Quality Audio, Dual Operational Amplifier' (https://www.endrich.com/Datenbl%C3%A4tter/Aktive%20Komponenten/MUSES8832_E.pdf; https://file.bettlink.com/product/datasheet/5048863/muses8832.pdf)",
-      "The Japanese datasheet Ver.5 '2 回路入り出力フルスイング高音質オペアンプ' is on the Kyohritsu mirror (https://www.kyohritsu.com/eclib/OTHER/DATASHEET/JRC/muses8832.pdf)",
-      "A Mouser-hosted MUSES8832 datasheet exists (https://www.mouser.com/datasheet/2/294/njrc_s_a0002371654_1-2279492.pdf)",
-      "Specs 2.1 nV/rtHz, 10 MHz GBW, 0.0009% THD, 600 ohm drive, -40 to +125 C (https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8832; https://www.alldatasheet.com/datasheet-pdf/pdf/808063/NJRC/MUSES8832.html)",
-      "Min supply 1.35 V, SR 1 V/us, output current 32 mA per parametric summary (https://datasheet4u.com/datasheets/New-Japan-Radio/MUSES8832/1007644)",
-      "MUSES8832E is SOP-8 and actively distributed (https://jlcpcb.com/partdetail/5120028-MUSES8832E/C4548935; https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES8832E/10671753; https://www.mouser.com/ProductDetail/Nisshinbo/MUSES8832E?qs=VAB4DzKv5wX3tGeW5n2JGg%3D%3D)",
-      "MUSES8832E-TE1 is sold as a SOP8 unit (https://www.audiophonics.fr/en/opa/muses8832e-p-18950.html)",
-      "The leadless versions MUSES8920KX7 and MUSES8832KW1 were added in 2016 (https://xtech.nikkei.com/dm/atcl/news/15yk/090600479/)",
-      "'New JRC introduces the MUSES8832': samples Sept 2014, mass production Oct 2014 (http://itersnews.com/?p=85688)",
-      "The legacy NJR and current Nisshinbo JA MUSES8832 pages exist (https://www.njr.co.jp/products/MUSES/series/MUSES8832.html; https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8832.html)",
-      "The semi_20160902 page is the MUSES03 sample-release announcement (https://www.nisshinbo-microdevices.co.jp/en/about/info/njr/2016/semi_20160902.html)"
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "japanese-audio-series",
-  "product_pages": [
-    "https://www.nisshinbo-microdevices.co.jp/en/products/operational-amplifier/spec/?product=muses8832",
-    "https://www.nisshinbo-microdevices.co.jp/ja/MUSES/series/MUSES8832.html",
-    "https://www.mouser.com/ProductDetail/Nisshinbo/MUSES8832E?qs=VAB4DzKv5wX3tGeW5n2JGg%3D%3D",
-    "https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/MUSES8832E/10671753",
-    "https://eleshop.jp/shop/g/gF22126/",
-    "https://metoree.com/products/131080/"
-  ],
-  "revision_chain_notes": "New JRC / Nisshinbo, MUSES8832 English edition (MUSES8832_E): only Ver.10 is known, with no date, from the Endrich and Bettlink mirrors. Ver.1 to Ver.9 are still missing. This round found a new legacy vendor URL, http://www.njr.com/semicon/PDF/MUSES8832_E.pdf (revision not shown; cited on an Amazon.co.jp listing). Its Wayback captures, especially from 2014 to 2016 before and after KW1 was added, are the best route to the earlier English revisions.\n\nMUSES8832 Japanese edition: only Ver.5 is known, with no date, from the Kyohritsu mirror. Ver.1 to Ver.4 and any Japanese revision after Ver.5 are still missing.\n\nCopies with no revision shown: the Mouser copy (njrc_s_a0002371654), alldatasheet 808063 (.com and now .jp; 441 KB, 11 pages), and datasheet4u / datasheetspdf 1007644.\n\nNo revision dates or change logs were found. NJR datasheets of this era carry none. Known anchors are the introduction (2014-09-11, mass production from Oct 2014) and the addition of MUSES8832KW1 (2016-09), which probably caused a revision that has not been identified.\n\nNisshinbo re-issue: no Nisshinbo-format datasheet revision number was found. The product page says downloads may need a myNISD login, and the PDF URL did not appear in the search results.\n\nNo second source and no TI, Burr-Brown or other vendor documents exist for this part. Searches used: 4 of 4."
+    ]
+  }
 }

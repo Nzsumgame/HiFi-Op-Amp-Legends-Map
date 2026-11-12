@@ -1,164 +1,136 @@
 {
   "id": "THS4032",
-  "name": "THS4032 (TI dual high-speed low-noise voltage-feedback op-amp)",
-  "tagline": "1.6 nV/rtHz, 100 MHz TI video/comms dual that Head-Fi op-amp rollers praise for detail and imaging, despite heat and oscillation risk.",
-  "technology": "Dual high-speed, ultra-low-voltage-noise voltage-feedback op-amp on TI's 30-V dielectrically isolated complementary bipolar process (NPN/PNP fT of several GHz). Made for communications, imaging and ADC buffering, not for audio.",
+  "name": "THS4032 / THS4031 / THS4032-EP",
+  "type": "High-speed low-noise VFB op-amp, 1/2 channels",
+  "tier": "C",
+  "category": "high-speed-video-crossover",
+  "tagline": "TI's 1.6 nV/√Hz, 100 MHz comms dual that Head-Fi rollers praise for detail and imaging, despite heat and oscillation.",
   "manufacturers": [
     "Texas Instruments"
-  ],
-  "part_numbers": [
-    {
-      "pn": "THS4032",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active",
-      "notes": "Base dual part number. The TI product page is live and THS4032IDGNR is listed as ACTIVE on TI.com. It shares datasheet SLOS224 with the single THS4031."
-    },
-    {
-      "pn": "THS4032IDGNR",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active",
-      "notes": "Industrial temperature range, DGN (8-pin MSOP/HVSSOP PowerPAD), tape and reel. TI.com part-details page shows ACTIVE."
-    },
-    {
-      "pn": "THS4032IDGN",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "A TI.com part-details page exists. Status not confirmed in this pass."
-    },
-    {
-      "pn": "THS4032ID",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "SOIC-8, industrial range. Order code taken from TI's standard suffix scheme and not confirmed by web search."
-    },
-    {
-      "pn": "THS4032CD",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "SOIC-8, commercial range. Unconfirmed for THS4032, but the matching THS4031CD appears on DigiKey's datasheet page."
-    },
-    {
-      "pn": "THS4032CDGN",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "MSOP PowerPAD, commercial range. Unconfirmed; the THS4031CDGNR sibling is listed by resellers."
-    },
-    {
-      "pn": "THS4032-EP",
-      "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "listed on TI.com (status not confirmed)",
-      "notes": "Enhanced-product (defense/aerospace) version with its own datasheet (ths4032-ep.pdf). Orderable code and document number not confirmed."
-    },
-    {
-      "pn": "THS4031",
-      "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "listed on TI.com (status not confirmed)",
-      "notes": "Single-channel sibling covered by the same SLOS224 datasheet."
-    }
   ],
   "lineage": [
     {
       "vendor": "Texas Instruments",
-      "role": "originator / sole manufacturer",
-      "period": "1999 to present",
-      "notes": "SLOS224 was first issued in July 1999 (per mirror listings) and is still in production with a THS4032-EP variant and the THS4032EVM evaluation board. It is a TI in-house THS part, not an acquired Burr-Brown or National design."
+      "role": "originator",
+      "period": "1999–present",
+      "note": "In-house TI THS design on a 30 V dielectrically isolated complementary bipolar process (multi-GHz fT). SLOS224 since July 1999."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "THS4032IDGNR",
+      "channels": 2,
+      "status": "active",
+      "note": "Industrial, DGN (8-pin MSOP PowerPAD), tape and reel. ACTIVE on TI.com."
+    },
+    {
+      "pn": "THS4032IDGN",
+      "channels": 2,
+      "status": "unknown",
+      "note": "TI part-details page exists; status unconfirmed."
+    },
+    {
+      "pn": "THS4032ID",
+      "channels": 2,
+      "status": "unknown",
+      "note": "SOIC-8, industrial. Code inferred from TI's suffix scheme."
+    },
+    {
+      "pn": "THS4032CD / THS4032CDGN",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Commercial SOIC-8 / MSOP PowerPAD. Unconfirmed; THS4031CD and THS4031CDGNR siblings are listed."
+    },
+    {
+      "pn": "THS4032-EP",
+      "channels": 2,
+      "status": "unknown",
+      "note": "Enhanced product (defense/aerospace) with its own datasheet; orderable and document number unconfirmed."
+    },
+    {
+      "pn": "THS4031",
+      "channels": 1,
+      "status": "unknown",
+      "note": "Single-channel sibling on the same SLOS224 datasheet."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise",
-      "value": "1.6 nV/rtHz",
-      "condition": "Front-page headline figure",
-      "source": "TI SLOS224C (Apr 2000) via alldatasheet mirror. A search summary of the current datasheet quoted 1.2 nV/rtHz; unconfirmed and possibly confused with the 1.2 pA/rtHz current noise."
+      "parameter": "Input noise (1 kHz)",
+      "value": "1.6 nV/√Hz (Rev C); current datasheet reportedly 1.2",
+      "condition": "front-page headline",
+      "source": "SLOS224C; SLOS224L (reported)"
     },
     {
-      "parameter": "Bandwidth",
-      "value": "100 MHz (G = +2); 275 MHz unity-gain bandwidth",
-      "condition": "-3 dB, unity-gain stable",
-      "source": "TI SLOS224C via alldatasheet; current ti.com datasheet"
+      "parameter": "Current noise",
+      "value": "1.2 pA/√Hz (reported)",
+      "condition": "",
+      "source": "SLOS224 (reported)"
+    },
+    {
+      "parameter": "GBW",
+      "value": "100 MHz −3 dB (G = +2); 275 MHz unity-gain",
+      "condition": "unity-gain stable",
+      "source": "SLOS224C; SLOS224L"
     },
     {
       "parameter": "Slew rate",
-      "value": "100 V/us",
-      "condition": "Typical",
-      "source": "TI SLOS224C and current ti.com datasheet"
+      "value": "100 V/µs typ",
+      "condition": "",
+      "source": "SLOS224C; SLOS224L"
     },
     {
-      "parameter": "Settling time (0.1%)",
-      "value": "60 ns (SLOS224C, 2000); 70 ns (current datasheet)",
-      "condition": "Typical, front page",
-      "source": "alldatasheet SLOS224C mirror vs https://www.ti.com/lit/ds/symlink/ths4032.pdf"
+      "parameter": "THD+N",
+      "value": "−90 dBc (Rev C) → −96 dBc (current, reported)",
+      "condition": "THD, f = 1 MHz",
+      "source": "SLOS224C; SLOS224L"
     },
     {
-      "parameter": "THD",
-      "value": "-90 dBc (SLOS224C); current datasheet reportedly -96 dBc",
-      "condition": "f = 1 MHz",
-      "source": "SLOS224C via alldatasheet; the -96 dBc figure comes from a search summary of the current ti.com datasheet (unconfirmed)"
-    },
-    {
-      "parameter": "Output drive",
-      "value": "90 mA",
-      "condition": "Typical",
-      "source": "TI SLOS224C"
+      "parameter": "Supply range",
+      "value": "±4.5 V to ±16 V",
+      "condition": "dual supply",
+      "source": "TI and distributor listings"
     },
     {
       "parameter": "Supply current",
-      "value": "8.5 mA per channel",
-      "condition": "Typical",
-      "source": "TI SLOS224C"
+      "value": "8.5 mA per channel typ",
+      "condition": "",
+      "source": "SLOS224C"
     },
     {
-      "parameter": "Supply voltage range",
-      "value": "+/-4.5 V to +/-16 V",
-      "condition": "Dual supply",
-      "source": "Search summary of TI and distributor listings (medium confidence)"
+      "parameter": "Output current",
+      "value": "90 mA typ",
+      "condition": "",
+      "source": "SLOS224C"
+    },
+    {
+      "parameter": "Input stage",
+      "value": "Bipolar, voltage feedback",
+      "condition": "30 V complementary bipolar process",
+      "source": "TI datasheet"
     }
   ],
   "reputation": {
-    "summary": "Head-Fi has a dedicated thread on the THS4032, and it comes up across the long-running 'The Opamp thread'. Posters there call it 'highly recommended for audio although it was not designed with audio in mind', 'bright, detailed, clean, well separated', and one says it has 'probably the best imaging' next to the AD797. These are forum impressions from op-amp rolling, not measurements.",
+    "summary": "Head-Fi has a dedicated THS4032 thread, and it recurs in 'The Opamp thread'. Posters call it 'highly recommended for audio although it was not designed with audio in mind' and 'bright, detailed, clean, well separated'; one rates its imaging next to the AD797. These are rolling impressions, not measurements.",
     "sonic_descriptors": [
       "bright",
       "detailed",
       "clean",
       "well separated",
-      "strong imaging (per one Head-Fi comparison vs AD797)",
+      "strong imaging (vs AD797)",
       "thin mids (one reviewer)"
     ],
     "typical_uses": [
-      "Op-amp rolling in DACs and headphone amps (e.g., Beresford TC7520 DAC thread)",
+      "Op-amp rolling in DACs and headphone amps (Beresford TC7520)",
       "I/V and output stages in DIY audio",
-      "Designed for: communications, imaging, low-noise ADC buffering"
+      "Designed for communications, imaging, low-noise ADC buffering"
     ],
     "caveats": [
-      "Runs hot (about 8.5 mA per channel quiescent)",
-      "Can oscillate in sockets or poor layouts: 275 MHz unity-gain bandwidth needs tight decoupling",
-      "Surface-mount only (SOIC-8 / MSOP PowerPAD), so rolling needs a DIP adapter",
-      "Datasheet headline specs changed between revisions (settling 60 ns to 70 ns)",
-      "One reviewer found it thin in the mids"
+      "Runs hot: about 8.5 mA per channel quiescent.",
+      "Can oscillate in sockets or poor layouts; 275 MHz needs tight decoupling.",
+      "SMD only (SOIC-8 / MSOP PowerPAD); rolling needs a DIP adapter.",
+      "Headline specs changed between revisions (settling 60 → 70 ns).",
+      "One reviewer found the mids thin."
     ],
     "sources": [
       "https://www.head-fi.org/threads/texas-instruments-ths4032-opamps.435209/",
@@ -167,18 +139,65 @@
       "https://www.head-fi.org/threads/beresford-tc7520-opamp-rolling.426598/"
     ]
   },
+  "counterfeit_notes": "No THS4032-specific counterfeit reports found. It is SMD-only and often sold pre-mounted on DIP adapters by marketplace sellers; buy from authorized distributors and check TI markings and date codes.",
+  "alternatives": [
+    "THS4031 (single, same datasheet)",
+    "THS4032-EP (enhanced product)",
+    "AD797 (Head-Fi comparison point)",
+    "OPA1612 / LME49720 (audio-targeted duals)"
+  ],
+  "silicon_changes": [
+    {
+      "kind": "datasheet-respec",
+      "vendor": "Texas Instruments",
+      "when": "Post-SLOS224C (2000-04), rev unknown",
+      "part_numbers_affected": [
+        "THS4031",
+        "THS4032"
+      ],
+      "identification": "None known. No PCN, new-die note or marking change was found; compare the datasheet revision in use.",
+      "summary": "No evidence of a die change; only headline specs moved. Current documents quote 70 ns settling, −96 dBc THD at 1 MHz and 1.2 nV/√Hz; older revisions gave 60 ns (confirmed), −90 dBc and 1.6 nV/√Hz (unconfirmed). Looks like re-characterisation, not new silicon.",
+      "spec_deltas": [
+        {
+          "parameter": "Settling time (0.1%)",
+          "before": "60 ns",
+          "after": "70 ns"
+        },
+        {
+          "parameter": "THD at 1 MHz",
+          "before": "-90 dBc (unconfirmed)",
+          "after": "-96 dBc"
+        },
+        {
+          "parameter": "Voltage noise headline",
+          "before": "1.6 nV/rtHz (unconfirmed)",
+          "after": "1.2 nV/rtHz"
+        }
+      ],
+      "audio_impact": "Likely negligible for audio. Settling in the tens of ns is far beyond audio bandwidth.",
+      "compatibility_risk": "low – pinout and package unchanged; no PCN; datasheet-level differences only.",
+      "sources": [
+        "https://www.alldatasheet.com/html-pdf/28740/TI/THS4032EVM/227/8/THS4032EVM.html",
+        "https://www.ti.com/lit/ds/symlink/ths4032.pdf",
+        "https://amplifiers118.rssing.com/chan-14134185/article18055.html",
+        "https://www.ti.com/product/THS4032"
+      ],
+      "confidence": "medium",
+      "verification": "Current 70 ns, −96 dBc and 1.2 nV/√Hz figures and older 60 ns confirmed; no PCN or die-change evidence."
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Texas Instruments",
       "title": "THS403x 100MHz, Low-Noise, High-Speed Amplifiers",
       "doc_number": "SLOS224",
       "revision": "L",
-      "date": "",
+      "date": "2024-07",
       "url": "https://www.ti.com/lit/ds/symlink/ths4032.pdf",
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Current new-format TI datasheet covering THS4031/THS4032. Front page gives 70 ns settling. A TI E2E user referred to revisions I through L, so L is the latest known."
+      "note": "Current THS4031/THS4032 sheet: 70 ns settling. TI E2E user cited revisions I–L."
     },
     {
       "vendor": "Texas Instruments",
@@ -190,7 +209,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "alldatasheet copy filed under THS4032EVM that holds the early SLOS224C revision (60 ns settling, -90 dBc THD, 1.6 nV/rtHz). A search summary tied it to SLOS224C Apr 2000."
+      "note": "Filed under THS4032EVM: Rev C (60 ns, −90 dBc), 38 pages."
     },
     {
       "vendor": "Texas Instruments",
@@ -202,7 +221,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Separate enhanced-product datasheet. Document number and revision not confirmed."
+      "note": "Separate enhanced-product datasheet; number and revision unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -214,7 +233,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision held is unconfirmed. Search summaries mentioned SLOS224I (May 2018) and H (June 2016) in mirror listings without saying which host holds which."
+      "note": "Possibly SLOS224I (May 2018); not confirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -262,7 +281,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision unconfirmed. The higher alldatasheet ID suggests a later upload than the 28740 SLOS224C copy."
+      "note": "Higher ID suggests a later upload than the rev C copy."
     },
     {
       "vendor": "Texas Instruments",
@@ -274,7 +293,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Revision unconfirmed. Its low upload ID is close to the SLOS224C copy, so it may be an early revision."
+      "note": "Low ID near the rev C copy; maybe an early revision."
     },
     {
       "vendor": "Texas Instruments",
@@ -310,7 +329,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Chinese translation of the new-format datasheet; revision unconfirmed."
+      "note": "Chinese translation of the new-format sheet; revision unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -322,7 +341,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "confirmed",
-      "note": "Search-result listing page on datasheetarchive.com titled 'SLOS224C datasheets'. It points to archived rev-C copies (the original 1999-2000 edition, before any later spec changes). This is a query page, not a single PDF."
+      "note": "Listing page for SLOS224C copies, not a single PDF."
     },
     {
       "vendor": "Texas Instruments",
@@ -334,7 +353,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "A different alldatasheet entry from the ones already listed (555714, 28721). Its ID sits next to 28721 (THS4031) and 28740 (THS4032EVM, rev C, April 2000), so it probably comes from the same early upload batch and may be rev C. That is not shown, so it stays unverified."
+      "note": "ID next to the rev C copy; probably rev C, unconfirmed."
     },
     {
       "vendor": "Texas Instruments",
@@ -346,7 +365,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Chinese mirror, page 8 of 38; page 32 is at .../THS4031_32.html. It is a 38-page combined THS4031/THS4032 document, the same page count as the alldatasheet rev-C copy (THS4032EVM, 8/38 pages). The revision letter is not shown."
+      "note": "38-page combined copy like the rev C copy; revision not shown."
     },
     {
       "vendor": "Texas Instruments",
@@ -358,7 +377,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "THS4031 entry for the shared SLOS224 document; the THS4032 entry di=327591 is already listed. A search summary quoted 'SLOS224H, revised June 2016' from one of the mirrors returned (RadioLocman, ManualMachine, etc.) but did not say which one, so no revision is recorded here."
+      "note": "THS4031 entry; one mirror holds SLOS224H (June 2016), host unknown."
     },
     {
       "vendor": "Texas Instruments",
@@ -370,7 +389,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Part page with a datasheet copy; the revision is not visible in the search summary."
+      "note": "Part page with a datasheet copy; revision not visible."
     },
     {
       "vendor": "Texas Instruments",
@@ -382,7 +401,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Mirror of the THS4032-EP Enhanced Product datasheet (listed under 'TI1'). The search summary quotes 100 MHz (G=2), 100 V/us, 60 ns settling, 90 mA drive, 8.5 mA/ch, -90 dBc THD at 1 MHz and 1.6 nV/rtHz."
+      "note": "EP quotes 100 MHz, 100 V/µs, 60 ns, −90 dBc, 1.6 nV/√Hz."
     },
     {
       "vendor": "Texas Instruments",
@@ -394,7 +413,7 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Combined THS4031-EP/THS4032-EP document. The all-caps title matches TI's older (pre-2010s) datasheet style."
+      "note": "Combined THS4031-EP/THS4032-EP; older all-caps TI title style."
     },
     {
       "vendor": "Texas Instruments",
@@ -406,134 +425,130 @@
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "THS4031-EP entry on datasheet4u. It likely holds the same combined EP document as ID 1488360, but that is not confirmed."
+      "note": "THS4031-EP entry; likely the same EP document as 1488360."
     }
+  ],
+  "product_pages": [
+    "https://www.ti.com/product/THS4032",
+    "https://www.ti.com/product/THS4032-EP",
+    "https://www.ti.com/product/THS4031",
+    "https://www.ti.com/product/THS4032-EP/part-details/THS4032MDGNREP",
+    "https://www.ti.com/tool/THS4032EVM"
   ],
   "revision_history": [
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS224",
-      "revision": "(original)",
-      "date": "July 1999",
-      "changes": "First release (per search summary of mirror listings)."
+      "revision": "original",
+      "date": "1999-07",
+      "changes": "First release; known only from the 'July 1999' base date on later headers."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS224",
       "revision": "C",
-      "date": "April 2000",
-      "changes": "Earliest revision found on a mirror (alldatasheet). Front page: 100 MHz (G=2), 275 MHz unity-gain, 100 V/us, 60 ns settling, -90 dBc THD at 1 MHz, 1.6 nV/rtHz, 90 mA, 8.5 mA/ch."
+      "date": "2000-04",
+      "changes": "Earliest mirrored revision: 100 MHz (G=2), 275 MHz, 100 V/µs, 60 ns, −90 dBc at 1 MHz, 1.6 nV/√Hz, 90 mA, 8.5 mA/ch."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS224",
       "revision": "G",
-      "date": "March 2010",
-      "changes": "Date from search summary; changes not captured."
+      "date": "2010-03",
+      "changes": "Date reported; changes not captured."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS224",
       "revision": "H",
-      "date": "June 2016",
-      "changes": "Date from search summary; changes not captured."
+      "date": "2016-06",
+      "changes": "Date reported; changes not captured."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS224",
       "revision": "I",
-      "date": "May 2018",
-      "changes": "Date from search summary; changes not captured."
+      "date": "2018-05",
+      "changes": "Header 'SLOS224I – July 1999 – Revised May 2018' (likely DigiKey copy); front page still 60 ns, 90 mA."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS224",
       "revision": "J",
-      "date": "February 2024",
-      "changes": "Date reported by two search summaries (medium-low confidence). A TI E2E user said J was hard to find."
+      "date": "2024-02",
+      "changes": "Header 'SLOS224J – July 1999' confirmed; Feb 2024 date reported. An E2E user found J hard to find."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS224",
       "revision": "K",
-      "date": "unknown",
-      "changes": "Existence inferred from an E2E post referring to revisions I through L; date and changes unknown."
+      "date": "",
+      "changes": "Inferred from an E2E post; falls between February and July 2024."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS224",
       "revision": "L",
-      "date": "unknown",
-      "changes": "Latest known revision (per E2E post). The current front page gives 70 ns settling (was 60 ns in rev C). Which revision made the change is unknown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS224",
-      "revision": "L",
-      "date": "July 2024",
-      "changes": "A search summary gives the current TI symlink (ti.com/lit/ds/symlink/ths4032.pdf) as 'SLOS224L, revised July 2024'. The changes are not shown. This dates the last known revision five months after rev J (February 2024), so rev K falls between February and July 2024 (date not found)."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS224",
-      "revision": "I",
-      "date": "May 2018",
-      "changes": "A search summary confirms the header 'SLOS224I – JULY 1999 – REVISED MAY 2018' (probably from the DigiKey HTML datasheet copy). Its front-page text still reads 100 MHz (G=2), 100 V/us, 60 ns settling (0.1%), 90 mA drive, 8.5 mA/ch. The changes are not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS224",
-      "revision": "J",
-      "date": "unknown (February 2024 per earlier summaries)",
-      "changes": "A search summary shows the header 'SLOS224J – JULY 1999 – ...', which confirms rev J exists and keeps the July 1999 original-release date. The revised date and changes were not in the summary."
+      "date": "2024-07",
+      "changes": "Current symlink ('SLOS224L, revised July 2024'). Front page gives 70 ns settling; changes not shown."
     }
   ],
-  "silicon_changes": [
+  "revision_chains": [
     {
-      "kind": "datasheet-respec",
       "vendor": "Texas Instruments",
-      "when": "Between SLOS224C (Apr 2000) and the current new-format revision (exact revision unknown)",
-      "part_numbers_affected": [
-        "THS4031",
-        "THS4032"
-      ],
-      "identification": "None known. No PCN, new-die note or marking change was found; compare the datasheet revision in use.",
-      "summary": "There is no evidence of a die change; only the datasheet headline specs moved. The current datasheet and product pages quote 70 ns 0.1% settling, -96 dBc THD at 1 MHz and 1.2 nV/rtHz, where older revisions gave 60 ns settling (confirmed). The older -90 dBc THD and 1.6 nV/rtHz figures are unconfirmed. This looks like re-characterisation rather than new silicon.",
-      "spec_deltas": [
+      "doc_number": "SLOS224",
+      "known": [
         {
-          "parameter": "Settling time (0.1%)",
-          "before": "60 ns",
-          "after": "70 ns"
+          "rev": "original",
+          "date": "1999-07"
         },
         {
-          "parameter": "THD at 1 MHz",
-          "before": "-90 dBc (unconfirmed)",
-          "after": "-96 dBc"
+          "rev": "C",
+          "date": "2000-04"
         },
         {
-          "parameter": "Voltage noise headline",
-          "before": "1.6 nV/rtHz (unconfirmed)",
-          "after": "1.2 nV/rtHz"
+          "rev": "G",
+          "date": "2010-03"
+        },
+        {
+          "rev": "H",
+          "date": "2016-06"
+        },
+        {
+          "rev": "I",
+          "date": "2018-05"
+        },
+        {
+          "rev": "J",
+          "date": "2024-02"
+        },
+        {
+          "rev": "K",
+          "date": ""
+        },
+        {
+          "rev": "L",
+          "date": "2024-07"
         }
       ],
-      "audio_impact": "Likely negligible for audio. Settling in the tens of ns is far beyond audio bandwidth.",
-      "compatibility_risk": "low: pinout and package unchanged; no PCN found; the differences appear to be datasheet-level only",
-      "sources": [
-        "https://www.alldatasheet.com/html-pdf/28740/TI/THS4032EVM/227/8/THS4032EVM.html",
-        "https://www.ti.com/lit/ds/symlink/ths4032.pdf",
-        "https://amplifiers118.rssing.com/chan-14134185/article18055.html",
-        "https://www.ti.com/product/THS4032"
+      "missing": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F"
       ],
-      "confidence": "medium",
-      "verification": "Search confirmed that the current THS4032 documentation quotes 70 ns settling (0.1%), -96 dBc THD at 1 MHz and 1.2 nV/rtHz, and that older revisions list 60 ns. The older THD and noise values were not confirmed, and no PCN or die-change evidence was found."
+      "note": "No copies matched to the original, G or K. Which revision moved settling 60 → 70 ns is unknown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "THS4031-EP / THS4032-EP datasheet",
+      "known": [],
+      "missing": [
+        "all revisions"
+      ],
+      "note": "Literature number unknown, probably SGLS-series. Copies: alldatasheet 463260, datasheet4u 1488360/1488359."
     }
-  ],
-  "counterfeit_notes": "No THS4032-specific counterfeit reports were found in this pass. It is a surface-mount-only part often bought pre-mounted on DIP adapters from marketplace sellers, so buy from authorized distributors and check TI markings and date codes.",
-  "alternatives": [
-    "THS4031 (single-channel sibling, same datasheet)",
-    "THS4032-EP (enhanced-product version)",
-    "AD797 (single; the comparison point in Head-Fi posts)",
-    "OPA1612 / LME49720 (modern audio-targeted low-noise duals, editorial suggestion)"
   ],
   "ti_literature_numbers": [
     "SLOS224"
@@ -556,12 +571,11 @@
     "https://www.ti.com/tool/THS4032EVM"
   ],
   "open_questions": [
-    "Dates and change lists for SLOS224J, K and L. J is reportedly Feb 2024; K and L are undated.",
-    "Which SLOS224 revision changed settling from 60 to 70 ns? Did noise and THD headlines really change to 1.2 nV/rtHz and -96 dBc?",
-    "Was any spec change backed by a silicon or fab change? No PCN was found.",
-    "Document number and orderable code for the THS4032-EP datasheet.",
-    "Confirm the status of THS4032CD / CDGN / ID / IDGN order codes and the full package list.",
-    "Which SLOS224 revision each mirror (DigiKey, radiolocman, manualmachine, archive.org, datasheet4u, digchip, alldatasheet 555714/28721) holds."
+    "Dates and change lists for SLOS224J, K and L; copies of the original, A, B and D–F?",
+    "Which revision changed settling from 60 to 70 ns? Some summaries of the current sheet still quote 60 ns.",
+    "Did the noise and THD headlines really change (1.2 nV/√Hz, −96 dBc), and was silicon behind it?",
+    "THS4032-EP document number and orderable code; status of THS4032CD/CDGN/ID/IDGN codes?",
+    "Which SLOS224 revision does each mirror hold (DigiKey, RadioLocman, ManualMachine, archive.org, alldatasheet)?"
   ],
   "sources": [
     "https://www.ti.com/lit/ds/symlink/ths4032.pdf",
@@ -581,13 +595,24 @@
   ],
   "verification": {
     "status": "partially-verified",
+    "web_searches_used": 6,
+    "claims_confirmed": [
+      "SLOS224C (April 2000) mirrored: 100 MHz (G=2), 275 MHz, 100 V/µs, 60 ns, 90 mA, 8.5 mA/ch, −90 dBc, 1.6 nV/√Hz - https://www.alldatasheet.com/html-pdf/28740/TI/THS4032EVM/227/8/THS4032EVM.html",
+      "Current TI datasheet 'THS403x 100MHz, Low-Noise, High-Speed Amplifiers' gives 70 ns settling - https://www.ti.com/lit/ds/symlink/ths4032.pdf",
+      "TI E2E user discussed changes from SLOS224I to SLOS224L (J missing) - https://amplifiers118.rssing.com/chan-14134185/article18055.html",
+      "SLOS224 dates (hosts not pinned): original July 1999, G March 2010, H June 2016, I May 2018, J February 2024 - https://www.digikey.com/en/htmldatasheets/production/26719/0/0/1/ths4031cd",
+      "THS4032IDGNR is ACTIVE on TI.com - https://www.ti.com/product/THS4032/part-details/THS4032IDGNR",
+      "THS4032-EP exists with its own datasheet - https://www.ti.com/product/THS4032-EP",
+      "Built on a 30 V dielectrically isolated complementary bipolar process - https://www.ti.com/lit/ds/symlink/ths4032.pdf",
+      "THS4032EVM evaluation board exists - https://www.ti.com/tool/THS4032EVM"
+    ],
     "refuted_claims": [],
     "corrections": [
-      "THS4032 channels corrected from 0 to 2; status changed from unknown to active (THS4032IDGNR is ACTIVE on TI.com).",
-      "Technology refined: 30-V dielectrically isolated complementary bipolar process (per TI datasheet).",
-      "Filled the empty datasheets, revision history, key specs, lineage, alternatives, TI literature number (SLOS224) and archive seeds.",
+      "THS4032 channels corrected from 0 to 2; status set to active (THS4032IDGNR ACTIVE on TI.com).",
+      "Process refined: 30 V dielectrically isolated complementary bipolar (TI datasheet).",
+      "Filled datasheets, revision history, key specs, lineage, alternatives, literature number (SLOS224) and archive seeds.",
       "Added the THS4031 single sibling and the THS4032-EP variant.",
-      "Added a low-confidence spec-change entry (settling 60 ns to 70 ns) with an explicit note that no PCN or die change was found."
+      "Added a spec-change entry (settling 60 → 70 ns) noting that no PCN or die change was found."
     ],
     "unverified_urls": [
       "https://www.digikey.com/en/htmldatasheets/production/26719/0/0/1/ths4031cd",
@@ -599,27 +624,6 @@
       "https://www.digchip.com/datasheets/parts/datasheet/477/THS4032.php",
       "https://datasheet4u.com/datasheets/etcTI/THS4032/1528520",
       "https://datasheet.sisoog.com/file/7a657573/datasheet/a3d3b2f7370aea1168c6ef6f89424ebfa1536a7f.pdf"
-    ],
-    "claims_confirmed": [
-      "SLOS224C, revised April 2000, is mirrored with the old front page: 100 MHz (G=2), 275 MHz unity-gain, 100 V/us, 60 ns settling, 90 mA, 8.5 mA/ch, -90 dBc THD at 1 MHz, 1.6 nV/rtHz - https://www.alldatasheet.com/html-pdf/28740/TI/THS4032EVM/227/8/THS4032EVM.html",
-      "The current TI datasheet is titled 'THS403x 100MHz, Low-Noise, High-Speed Amplifiers' and gives 70 ns settling - https://www.ti.com/lit/ds/symlink/ths4032.pdf",
-      "TI E2E user discussed changes from SLOS224I to SLOS224L (J missing), so revisions reach at least L - https://amplifiers118.rssing.com/chan-14134185/article18055.html",
-      "SLOS224 dates from search summaries of mirror listings (host of each not pinned): original July 1999, G March 2010, H June 2016, I May 2018, J February 2024 - https://www.digikey.com/en/htmldatasheets/production/26719/0/0/1/ths4031cd",
-      "THS4032IDGNR is ACTIVE on TI.com - https://www.ti.com/product/THS4032/part-details/THS4032IDGNR",
-      "A THS4032-EP enhanced-product variant exists with its own datasheet - https://www.ti.com/product/THS4032-EP",
-      "Built on a 30-V dielectrically isolated complementary bipolar process - https://www.ti.com/lit/ds/symlink/ths4032.pdf",
-      "THS4032EVM evaluation board exists - https://www.ti.com/tool/THS4032EVM"
-    ],
-    "web_searches_used": 6
-  },
-  "tier": "C",
-  "category": "high-speed-video-crossover",
-  "product_pages": [
-    "https://www.ti.com/product/THS4032",
-    "https://www.ti.com/product/THS4032-EP",
-    "https://www.ti.com/product/THS4031",
-    "https://www.ti.com/product/THS4032-EP/part-details/THS4032MDGNREP",
-    "https://www.ti.com/tool/THS4032EVM"
-  ],
-  "revision_chain_notes": "Texas Instruments SLOS224 (THS4031/THS4032; TI is the only vendor, with no second sources or acquirer re-issues). Chain, oldest to newest:\n- Original: July 1999, known only as the 'JULY 1999' base date on every later header. No copy of it has been found.\n- A and B: missing; no dates or copies.\n- C: April 2000, alldatasheet THS4032EVM copy (38 pages). A datasheetarchive SLOS224C listing was added. alldatasheet 28722 and ic37 735153 (38 pages) may also be rev C but do not show it.\n- D, E, F: missing; not found in the search index (one query for D/E/F/B returned nothing).\n- G: March 2010. No copy has been matched to it.\n- H: June 2016. It is quoted by a mirror, but which of RadioLocman or ManualMachine was not stated.\n- I: May 2018, confirmed header 'SLOS224I – JULY 1999 – REVISED MAY 2018'; the DigiKey HTML copy is likely.\n- J: February 2024 per earlier summaries; header 'SLOS224J – JULY 1999' confirmed.\n- K: exists but undated; it must fall between February and July 2024 if the J and L dates are right.\n- L: July 2024 (new). This is the current ti.com symlink.\nStill missing: dates and copies for the original, A, B, D, E, F and K; the exact copy that holds G; and which revision changed the 0.1% settling time from 60 ns to 70 ns. Note that the search summaries of the current symlink still quote 60 ns, which conflicts with the earlier note of 70 ns.\nSeparate THS4031-EP/THS4032-EP Enhanced Product datasheet: its literature number (probably SGLSxxx, not confirmed) and revisions are unknown. Copies with no revision shown were added: alldatasheet 463260 and datasheet4u 1488360/1488359.\nArchive seeds for Wayback have been added to recover early revisions: focus.ti.com symlinks, www-s.ti.com/sc/ds and ti.com/lit/gpn."
+    ]
+  }
 }

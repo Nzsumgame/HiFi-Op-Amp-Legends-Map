@@ -1,241 +1,162 @@
 {
   "id": "OPA827",
-  "name": "OPA827 (single low-noise precision JFET-input)",
-  "tagline": "TI's 2006 single JFET op-amp (4 nV/√Hz, 22 MHz) that DIYers treat as the modern OPA627: a DAC I/V favourite, called 'successor to the legendary stone' in a Japanese review.",
-  "technology": "JFET-input precision voltage-feedback op-amp. Supply ±4 V to ±18 V (8 to 36 V total), abs max 40 V. Specified from -40 °C to +125 °C. Packages: SOIC-8 (D) and VSSOP/MSOP-8 (DGK). Input common-mode range and output swing are not rail-to-rail: both reach only to within 3 V of each rail. Only the single ever reached production. Early SBOS376 revisions (2006 to 2008) were titled 'OPA827, OPA2827' and announced a dual OPA2827 as Product Preview. That is why the datasheet says 'OPA827 series' and carried 'Mixed Status'. The 2013 orderables list has no OPA2827, and no evidence was found that it ever shipped. Before Rev G (Feb 2012) the datasheet also listed a high grade, OPA827I. TI's later dual in this line is OPA2828, in production since Dec 2022.",
+  "name": "OPA827 / OPA827AID",
+  "type": "JFET-input precision single, low-noise",
+  "tier": "B",
+  "category": "jfet-input",
+  "tagline": "TI's 2006 JFET single (4 nV/√Hz, 22 MHz) that DIYers treat as the modern OPA627, a DAC I/V favourite.",
   "manufacturers": [
     "Texas Instruments"
+  ],
+  "lineage": [
+    {
+      "vendor": "Burr-Brown",
+      "role": "predecessor (OPA627, different part)",
+      "period": "c. 1989–",
+      "note": "Benchmark OPA627 Difet: a different part and die (16 MHz). The OPA827 datasheet never mentions it."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "originator",
+      "period": "2006–present",
+      "note": "Sole source; SBOS376 first issued Nov 2006. Early mirror copies labelled Burr-Brown. Dual OPA2827 stayed in preview."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "successor (OPA828, different part)",
+      "period": "2018–present",
+      "note": "Successor OPA828/OPA2828 (SBOS671D), 'next generation OPA627 and OPA827': 45 MHz, 150 V/µs, 4 nV/√Hz."
+    }
   ],
   "part_numbers": [
     {
       "pn": "OPA827AID",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "Active. Listed on TI's part-details page, at Mouser and at TME (search, Sep 2026) and named in TI PCN#20240628012.1 (2024). TI's lifecycle label was not read.",
-      "notes": "A grade, SOIC-8 (D), tube of 75. Marking 'OPA / 827 / A'. NiPdAu finish, MSL2/260C. This is the part usually put on DIP-8 adapters for socket rolling."
+      "status": "active",
+      "note": "SOIC-8 tube of 75, marked 'OPA / 827 / A'. In PCN 20240628012.1. Adapter favourite."
     },
     {
       "pn": "OPA827AIDR",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "ACTIVE (Oct-2013 addendum); current status not re-verified",
-      "notes": "A grade, SOIC-8, reel of 2500. Marking 'OPA / 827 / A'."
+      "status": "active",
+      "note": "SOIC-8 reel of 2500. ACTIVE in Oct-2013 addendum."
     },
     {
-      "pn": "OPA827AIDGKR",
+      "pn": "OPA827AIDGKR / OPA827AIDGKT",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "ACTIVE (Oct-2013 addendum); current status not re-verified",
-      "notes": "A grade, VSSOP-8 (DGK), reel of 2500. Marking 'NSP'. Lead finish is listed as NiPdAu or NiPdAuAg. 'OPA827AIDGK', as written in shops, is shorthand: TI's DGK orderables carry an R or T suffix."
-    },
-    {
-      "pn": "OPA827AIDGKT",
-      "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "Listed by Mouser (search, Sep 2026); ACTIVE in the Oct-2013 addendum; TI lifecycle label not read",
-      "notes": "A grade, VSSOP-8 (DGK), small reel of 250. Marking 'NSP'."
+      "status": "active",
+      "note": "VSSOP-8 (DGK) reels, marked 'NSP'. AIDGKT (250) listed at Mouser."
     },
     {
       "pn": "OPA827AIDG4 / OPA827AIDRG4",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "ACTIVE in the Oct-2013 addendum; current status unknown",
-      "notes": "'G4' Green (RoHS, no Sb/Br) duplicate orderables of the SOIC tube and reel. Same marking and die."
+      "status": "unknown",
+      "note": "'G4' Green duplicates of SOIC tube and reel; same marking and die."
     },
     {
-      "pn": "OPA827I (high grade)",
+      "pn": "OPA827I",
       "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "deleted from datasheet in Rev G (Feb 2012)",
-      "notes": "A high-grade option in pre-2012 revisions (Rev F, March 2009, and earlier). A web search summary of the revision history confirms the deletion. Its orderable names and specs were not retrieved, and it probably never shipped (unconfirmed)."
+      "status": "obsolete",
+      "note": "High grade in Rev F and earlier; deleted in Rev G (Feb 2012); probably unshipped."
     },
     {
       "pn": "OPA2827",
       "channels": 2,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "Product Preview only (early SBOS376 revisions); never in the orderables list, and apparently never released",
-      "notes": "A dual announced in 'OPA827 OPA2827 ... PRODUCT PREVIEW' datasheet copies (Octopart 153423; dzsc.com upload 2008-07-21; alldatasheet 195279, labelled Burr-Brown (TI)). The revision that removed it is unknown. A chip sold as 'OPA2827' should be treated as suspect."
-    },
-    {
-      "pn": "OPA827",
-      "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "active (family name)",
-      "notes": "Generic family name. Single source (TI). No production dual or quad. The OPA2827 dual stayed in preview."
-    }
-  ],
-  "lineage": [
-    {
-      "vendor": "Burr-Brown (later TI)",
-      "role": "predecessor / benchmark (different part and die)",
-      "period": "c. 1989 onward (date not re-verified)",
-      "notes": "OPA627 is the Difet JFET part that OPA827 is compared against. OPA827 is a separate TI product (22 MHz vs 16 MHz), not an OPA627 die change. The OPA827 datasheet (Rev H) never mentions OPA627."
-    },
-    {
-      "vendor": "Texas Instruments (Burr-Brown product line)",
-      "role": "originator and sole source",
-      "period": "November 2006 (datasheet original date) to present",
-      "notes": "Datasheet SBOS376: original Nov 2006, Rev C Aug 2007, Rev E Sep 2008, Rev F Mar 2009, Rev G Feb 2012, Rev H May 2012, Rev I Jul 2016 (still current in 2026). Several mirrors label early copies 'Burr-Brown', which suggests BB-branded early datasheets (unconfirmed). No second source."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "role": "successor (different part number and die)",
-      "period": "2018 onward (dual OPA2828 since Dec 2022)",
-      "notes": "TI's OPAx828 datasheet (SBOS671D, Sep 2018, revised Dec 2022) calls OPA828/OPA2828 'the next generation OPA627 and OPA827' (from a local extract; not re-searched this run). 45 MHz GBW, 150 V/us, 4 nV/√Hz. OPA2828 comes in DGN only."
+      "status": "unknown",
+      "note": "Dual announced as Product Preview only; apparently never released. Treat any for sale as suspect."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Input voltage noise density e_n",
-      "value": "4 nV/√Hz (3.8 nV/√Hz at 10 kHz)",
-      "condition": "f = 1 kHz, VS = ±18 V, VCM = 0 V, typ",
-      "source": "TI SBOS376H (GitHub mirror ep092/server_lader)"
+      "parameter": "Input noise (1 kHz)",
+      "value": "4 nV/√Hz typ (3.8 at 10 kHz); 250 nVpp 0.1–10 Hz",
+      "condition": "VS = ±18 V, VCM = 0 V",
+      "source": "SBOS376H"
     },
     {
-      "parameter": "0.1 Hz to 10 Hz voltage noise",
-      "value": "250 nVpp",
-      "condition": "VS = ±18 V, typ",
-      "source": "TI SBOS376H; TI product description (web search, ti.com/product/OPA827)"
+      "parameter": "Current noise",
+      "value": "2.2 fA/√Hz typ",
+      "condition": "f = 1 kHz",
+      "source": "SBOS376H"
     },
     {
-      "parameter": "Input current noise i_n",
-      "value": "2.2 fA/√Hz",
-      "condition": "f = 1 kHz, typ",
-      "source": "TI SBOS376H"
-    },
-    {
-      "parameter": "Gain-bandwidth product",
-      "value": "22 MHz",
-      "condition": "G = +1, typ",
-      "source": "TI SBOS376H; TI description (web search)"
+      "parameter": "GBW",
+      "value": "22 MHz typ",
+      "condition": "G = +1",
+      "source": "SBOS376H / TI product page"
     },
     {
       "parameter": "Slew rate",
-      "value": "28 V/us typ, 20 V/us min",
-      "condition": "G = -1 (the min was added in Rev G)",
-      "source": "TI SBOS376H; TI description (web search)"
+      "value": "28 V/µs typ, 20 V/µs min (min added Rev G)",
+      "condition": "G = −1; settles 550 ns to 0.01%",
+      "source": "SBOS376H"
     },
     {
       "parameter": "THD+N",
-      "value": "0.00004 % (-128 dB)",
-      "condition": "G = +1, f = 1 kHz, VO = 3 Vrms, RL = 600 Ω, typ",
-      "source": "TI SBOS376H"
+      "value": "0.00004% (−128 dB) typ",
+      "condition": "G = +1, 1 kHz, 3 Vrms, RL = 600 Ω",
+      "source": "SBOS376H"
     },
     {
-      "parameter": "Input offset voltage",
-      "value": "75 uV typ / 150 uV max",
-      "condition": "VS = ±15 V, VCM = 0 V, 25 °C (A grade)",
-      "source": "TI SBOS376H; 150 uV max confirmed in TI description (web search)"
+      "parameter": "Supply range",
+      "value": "±4 V to ±18 V (8 to 36 V); abs max 40 V",
+      "condition": "−40 to +125 °C",
+      "source": "SBOS376H / TI product page"
     },
     {
-      "parameter": "Offset voltage drift",
-      "value": "2.0 uV/°C max; 0.5 uV/°C typ (Description text)",
-      "condition": "-40 to +125 °C. Rev H is inconsistent: the EC table typ reads 0.1 uV/°C, while the Description, still used on TI's product page, says 0.5 uV/°C.",
-      "source": "TI SBOS376H; TI description (web search)"
+      "parameter": "Supply current",
+      "value": "4.8 mA typ, 5.2 mA max (6 mA over temp)",
+      "condition": "IOUT = 0",
+      "source": "SBOS376H"
+    },
+    {
+      "parameter": "Output current",
+      "value": "30 mA; ISC ±55 mA min, ±65 mA typ",
+      "condition": "25 °C; swing to within 3 V of rails",
+      "source": "SBOS376H"
+    },
+    {
+      "parameter": "Offset voltage",
+      "value": "75 µV typ / 150 µV max; drift 2.0 µV/°C max",
+      "condition": "±15 V, 25 °C; typ drift 0.1 or 0.5",
+      "source": "SBOS376H"
     },
     {
       "parameter": "Input bias current",
-      "value": "±3 pA typ / ±10 pA max (25 °C); ±500 pA max (-40 to +85 °C); ±5 nA max (-40 to +125 °C)",
-      "condition": "VS = ±4 to ±18 V",
-      "source": "TI SBOS376H; 3 pA typ confirmed in TI description (web search)"
+      "value": "±3 pA typ / ±10 pA max; ±5 nA max at 125 °C",
+      "condition": "±500 pA max to 85 °C",
+      "source": "SBOS376H"
     },
     {
-      "parameter": "Open-loop gain",
-      "value": "120 dB min / 126 dB typ",
-      "condition": "(V-)+3 V ≤ VO ≤ (V+)-3 V, RL = 1 kΩ",
-      "source": "TI SBOS376H"
-    },
-    {
-      "parameter": "CMRR",
-      "value": "114 dB min / 126 dB typ",
-      "condition": "VS ≥ 10 V, VCM within 3 V of rails",
-      "source": "TI SBOS376H"
-    },
-    {
-      "parameter": "Input impedance",
-      "value": "10^13 Ω ∥ 9 pF differential and common-mode",
-      "condition": "typ",
-      "source": "TI SBOS376H"
-    },
-    {
-      "parameter": "Common-mode range / output swing",
-      "value": "(V-)+3 V to (V+)-3 V",
-      "condition": "output at RL = 1 kΩ",
-      "source": "TI SBOS376H"
-    },
-    {
-      "parameter": "Output current / short-circuit current",
-      "value": "30 mA (|VS - VOUT| < 3 V); ISC ±55 mA min, ±65 mA typ",
-      "condition": "25 °C",
-      "source": "TI SBOS376H (ISC min added in Rev G)"
-    },
-    {
-      "parameter": "Settling time",
-      "value": "550 ns to 0.01 %; 850 ns to 16-bit",
-      "condition": "10 V step, G = -1, CL = 100 pF",
-      "source": "TI SBOS376H"
-    },
-    {
-      "parameter": "Supply voltage range",
-      "value": "±4 V to ±18 V (8 to 36 V); abs max 40 V",
-      "condition": "specified",
-      "source": "TI SBOS376H; TI description (web search)"
-    },
-    {
-      "parameter": "Quiescent current per channel",
-      "value": "4.8 mA typ / 5.2 mA max (6 mA max over temperature)",
-      "condition": "IOUT = 0",
-      "source": "TI SBOS376H; 4.8 mA/ch confirmed in TI description (web search)"
-    },
-    {
-      "parameter": "Pinout",
-      "value": "Standard single op-amp: -IN 2, +IN 3, V- 4, OUT 6, V+ 7; pins 1, 5, 8 NC",
-      "condition": "SOIC-8 / VSSOP-8",
-      "source": "TI SBOS376H pin configuration"
+      "parameter": "Input stage",
+      "value": "JFET; 10^13 Ω ∥ 9 pF; Aol 126 dB, CMRR 126 dB typ",
+      "condition": "CM range to within 3 V of rails",
+      "source": "SBOS376H"
     }
   ],
   "reputation": {
-    "summary": "Hi-Fi DIYers treat it as the cheaper modern successor to the OPA627. They use it mostly as a DAC I/V converter and in socket-rolled line and headphone stages on SOIC-to-DIP adapters. In Xonar Essence ST/STX I/V discussions it is named with LT1361, LT1028 and OPA627 as the best I/V choices. Impressions conflict. English-forum posts gathered by an earlier sweep (not re-read) call it almost neutral, clean and more dynamic and less fickle than the OPA627. A diyAudio 'Best Sounding DUAL opamps' thread describes it as bass-centric, dark, warm and laid-back, with an impressive soundstage. In Japan two Zigsow reviews carry the titles 'The strongest lineage' and 'Successor to the legendary stone', the stone being the OPA627. TI's datasheet supports audio use (-128 dB THD+N at 3 Vrms/600 Ω; 'professional audio applications'). No ASR or Samuel Groner measurement was found.",
+    "summary": "DIYers treat it as the cheaper modern OPA627, mostly as a DAC I/V converter and in socket-rolled stages on adapters. Xonar Essence threads rank it with LT1361, LT1028 and OPA627 for I/V. Impressions conflict: neutral, clean and more dynamic than OPA627, or dark, warm and bass-centric (diyAudio). Zigsow reviews call it 'Successor to the legendary stone'. No ASR measurement found.",
     "sonic_descriptors": [
-      "almost neutral (lens note)",
-      "very clean, clear and fluid (lens note)",
-      "more dynamic and less fickle than OPA627 (lens note)",
-      "bass-centric; deep, dark, warm, laid-back (diyAudio dual-opamps thread)",
+      "almost neutral",
+      "clean, clear, fluid",
+      "more dynamic than OPA627",
+      "bass-centric, dark, warm",
       "impressive soundstage",
-      "transparent, orderly low-mids (Zigsow, lens note)",
-      "more assertive low end than OPA2111 (one Japanese swap report)"
+      "transparent low-mids (Zigsow)",
+      "assertive low end"
     ],
     "typical_uses": [
-      "DAC current-to-voltage (I/V) stage, e.g. socket rolling in Asus Xonar Essence ST/STX I/V positions",
-      "Portable DAC/headphone-amp op-amp swaps on DIP-8 adapters (e.g. a 2015 Fostex HP-A4 OPA827 swap blog)",
+      "DAC I/V stage (Asus Xonar Essence ST/STX)",
+      "Portable DAC/amp swaps on DIP-8 adapters (Fostex HP-A4)",
       "Line-level buffers and preamps",
-      "Engineering (datasheet application list): 16- to 18-bit ADC drivers, DAC output buffers, transimpedance amps, filters, precision ±10 V front ends, professional audio"
+      "16–18-bit ADC drivers, transimpedance amps, professional audio"
     ],
     "caveats": [
-      "SMD only (SOIC-8 / VSSOP-8), so socket use needs a DIP-8 adapter. It is single channel, so a dual socket needs two parts on a 2-in-1 adapter.",
-      "Not rail-to-rail: input CM range and output swing reach only to within 3 V of each rail. On ±5 V rails usable swing is only about ±2 V.",
-      "4.8 mA typ (5.2 mA max) quiescent current per channel, and it needs at least ±4 V (8 V total).",
-      "22 MHz GBW on adapter boards: keep supply decoupling at the chip (general practice, not a documented failure report).",
-      "Listener impressions conflict (neutral/clean vs dark/warm/bass-centric). Several descriptors come from lens summaries, not first-hand re-reads.",
-      "DC precision: a PhD thesis (PatrickBaus) saw non-symmetric cubic INL with OPA827 as an ADC buffer, and a 2019 blog shows higher 1/f noise than the OPA227 near DC.",
-      "JFET bias current rises steeply with temperature (±5 nA max at 125 °C vs ±10 pA at 25 °C).",
-      "Costs much more than common audio duals."
+      "SMD single only; DIP-8 sockets need an adapter, dual sockets two parts on a 2-in-1 board.",
+      "Not rail-to-rail: input and output reach only within 3 V of each rail (about ±2 V on ±5 V).",
+      "Needs at least ±4 V and draws 4.8 mA; keep decoupling at the chip on adapters.",
+      "DC precision: non-symmetric INL as ADC buffer (PatrickBaus thesis); higher near-DC 1/f noise than OPA227.",
+      "JFET bias rises steeply with heat (±5 nA at 125 °C). Costs more than common audio duals."
     ],
     "sources": [
       "https://github.com/ep092/server_lader/blob/master/Datenbl%C3%A4tter/Operational%20Amplifier%20OPA827.pdf%20(TI%20SBOS376H:%20THD+N,%20applications)",
@@ -255,372 +176,24 @@
       "https://zigsow.jp/item/261371/review/225220"
     ]
   },
-  "datasheets": [
-    {
-      "vendor": "Texas Instruments",
-      "title": "OPA827 Low-Noise, High-Precision, JFET-Input Operational Amplifier",
-      "doc_number": "SBOS376",
-      "revision": "I",
-      "date": "2016-07",
-      "url": "https://www.ti.com/lit/ds/symlink/opa827.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "Canonical symlink, shown in search results. TI's revision-specific sbos376i link was indexed with a 2026 timestamp and no SBOS376J was found, so the symlink should serve Rev I. Its contents were not opened."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "OPA827 Low-Noise, High-Precision, JFET-Input Operational Amplifier (Rev. I)",
-      "doc_number": "SBOS376I",
-      "revision": "I",
-      "date": "2016-07",
-      "url": "https://www.ti.com/lit/ds/sbos376i/sbos376i.pdf",
-      "url_kind": "vendor_revision_specific",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "Seen in search results as a ti.com PDF with a ?ts= parameter (about June 2026). The date matches the header in TI's PSpice model."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "OPA827 Low-Noise, High-Precision, JFET-Input ... (generic part-number redirect)",
-      "doc_number": "SBOS376",
-      "revision": "I",
-      "date": "2016-07",
-      "url": "https://www.ti.com/lit/gpn/OPA827",
-      "url_kind": "vendor_current",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "This URL appeared as a search result this run. It redirects to the current datasheet."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "OPA827 低ノイズ、高精度、JFET入力 オペアンプ (Japanese translation)",
-      "doc_number": "SBOS376 (JA translation; number/revision not read)",
-      "revision": "",
-      "date": "",
-      "url": "https://www.ti.com/jp/lit/ds/symlink/opa827.pdf",
-      "url_kind": "vendor_current",
-      "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "TI Japanese-language datasheet, seen in search results. TI translations can lag the English revision."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "Low-Noise, High-Precision, JFET-Input, Op Amp (Rev. H)",
-      "doc_number": "SBOS376H",
-      "revision": "H",
-      "date": "2012-05",
-      "url": "https://github.com/ep092/server_lader/blob/master/Datenbl%C3%A4tter/Operational%20Amplifier%20OPA827.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "high",
-      "revision_status": "confirmed",
-      "note": "Genuine 28-page TI PDF, read in an earlier run. Package addendum dated 18-Oct-2013. Contains the F to G to H revision history. Raw: https://raw.githubusercontent.com/ep092/server_lader/master/Datenbl%C3%A4tter/Operational%20Amplifier%20OPA827.pdf"
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "OPA827 datasheet (Rev. E)",
-      "doc_number": "SBOS376E",
-      "revision": "E",
-      "date": "2008-09",
-      "url": "https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-5394927.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "A search summary tied SBOS376E (Sep 2008) to this Octopart copy. Freezes a pre-Rev G (pre-production-data) edition."
-    },
-    {
-      "vendor": "Texas Instruments / Burr-Brown",
-      "title": "OPA827 OPA2827 ... PRODUCT PREVIEW",
-      "doc_number": "SBOS376",
-      "revision": "A",
-      "date": "2006-11",
-      "url": "https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-153423.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "medium",
-      "revision_status": "confirmed",
-      "note": "PDF title shows the Product Preview edition that includes the OPA2827 dual. The revision letter is unconfirmed."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "OPA827 datasheet (Octopart copy)",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-10745194.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Unconfirmed revision. The title starts like later TI editions ('OPA827 Voltage Noise Density...')."
-    },
-    {
-      "vendor": "Texas Instruments / Burr-Brown",
-      "title": "OPA827 OPA2827 Low-Noise, High-Precision, JFET-Input ...",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "2008-07-21",
-      "url": "https://pdf.dzsc.com/2008721/200807211004511485.pdf",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "revision_text": "likely C or D (unconfirmed)",
-      "note": "Unconfirmed revision. The upload predates Rev E (Sep 2008) and the edition still includes OPA2827."
-    },
-    {
-      "vendor": "Burr-Brown (TI)",
-      "title": "OPA2827 datasheet (alldatasheet)",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/195279/BURR-BROWN/OPA2827.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Unconfirmed revision. Listed under the OPA2827 name, so a pre-2009 edition is likely."
-    },
-    {
-      "vendor": "Burr-Brown (TI)",
-      "title": "OPA827 datasheet (alldatasheet, Burr-Brown label)",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/163366/BURR-BROWN/OPA827.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Unconfirmed revision. The lower alldatasheet ID and the Burr-Brown label suggest an early copy."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "OPA827 datasheet (alldatasheet, TI label)",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/250011/TI/OPA827.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Unconfirmed revision."
-    },
-    {
-      "vendor": "Burr-Brown (TI)",
-      "title": "OPA827 datasheet (datasheetspdf)",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheetspdf.com/pdf/562973/Burr-Brown/OPA827/1",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Unconfirmed revision. Burr-Brown label."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "OPA827 datasheet (radiolocman)",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "",
-      "url": "https://www.radiolocman.com/datasheet/data.html?di=306313",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Unconfirmed revision. A second entry is at https://radiolocman.com/datasheet/data.html?%2FOPA827AID=&di=82299 (lower ID, possibly older)."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "Datasheet Archive: OPA827 / OPA2827 datasheets",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheetarchive.com/OPA827-datasheet.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "revision_text": "multiple (not read)",
-      "note": "Unconfirmed contents. Also https://datasheetarchive.com/OPA2827-datasheet.html"
-    },
-    {
-      "vendor": "Burr-Brown (TI)",
-      "title": "OPA2827 Datasheet PDF - Burr-Brown (datasheetspdf.com)",
-      "doc_number": "SBOS376 (possibly SBOS376A)",
-      "revision": "A",
-      "date": "2006-11",
-      "url": "https://datasheetspdf.com/datasheet-pdf/562972/OPA2827.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "probable",
-      "note": "This URL came up for the query \"SBOS376A\". The summary described SBOS376A as the Nov 2006 OPA827/OPA2827 document with preview-era specs (250 uV max offset, 1 uV/C drift, 18 MHz, 22 V/us, 4.5 mA/ch, +4 V to +18 V). The summary did not say which result carried that text. It is the Burr-Brown-labelled sister of the already-listed OPA827 page 562973."
-    },
-    {
-      "vendor": "Burr-Brown (TI)",
-      "title": "OPA2827 datasheet | Specifications & PDF Download (datasheetspdf.com)",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "",
-      "url": "https://datasheetspdf.com/datasheet/OPA2827.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Index page for the OPA2827 (the dual only appears in preview-era SBOS376 editions). Came up for the query \"SBOS376A\"; the revision is not shown."
-    },
-    {
-      "vendor": "Burr-Brown (TI)",
-      "title": "OPA827 Datasheet(PDF) - Burr-Brown (TI) (alldatasheet 195278)",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/195278/BURR-BROWN/OPA827.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "New alldatasheet entry, different from the listed 163366 and 250011. Its ID is next to the listed OPA2827 page 195279, so it is probably from the same upload, but the revision is not shown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "OPA827 Datasheet(PDF) - Texas Instruments (alldatasheet 849336, TI1)",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "",
-      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/849336/TI1/OPA827.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "A third alldatasheet OPA827 upload under the 'TI1' label, separate from 163366, 195278 and 250011. The revision is not shown."
-    },
-    {
-      "vendor": "Burr-Brown (TI)",
-      "title": "OPA827A (BB) PDF datasheet, page 4 of 8 (ic37.com)",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "",
-      "url": "https://pdf.ic37.com/BB/OPA827_datasheet_5676975/OPA827_4.html",
-      "url_kind": "third_party_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Came up for the query \"SBOS376D\" OR \"SBOS376C\", but the summary tied no revision to it. It is Burr-Brown labelled and only 8 pages long. Short BB-labelled copies are typical of the preview-era editions (orig/A/B/C), but this is not confirmed."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "title": "OPA827 Voltage Noise Density ... (Mouser datasheet cache)",
-      "doc_number": "SBOS376",
-      "revision": "",
-      "date": "",
-      "url": "https://www.mouser.com/datasheet/2/405/opa827-406900.pdf",
-      "url_kind": "distributor_mirror",
-      "confidence": "low",
-      "revision_status": "unknown",
-      "note": "Mouser's own copy of the datasheet, separate from ti.com. The title text matches the ti.com Rev I PDF and Octopart 10745194, so it is probably a post-2012 edition (G, H or I). The revision is not shown in the summary."
-    }
-  ],
-  "revision_history": [
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SBOS376",
-      "revision": "original (no letter)",
-      "date": "NOVEMBER 2006",
-      "changes": "Initial release as Product Preview. Preview-era copies are titled 'OPA827 OPA2827 ... PRODUCT PREVIEW', so the edition covered a single and a dual."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SBOS376A",
-      "revision": "A",
-      "date": "unknown (between Nov 2006 and Aug 2007)",
-      "changes": "A search summary shows it exists. Contents unknown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SBOS376",
-      "revision": "B",
-      "date": "unknown",
-      "changes": "Implied by the letter sequence. Contents unknown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SBOS376C",
-      "revision": "C",
-      "date": "AUGUST 2007",
-      "changes": "Date from a web search summary ('Nov 2006, revised Aug 2007'). Contents unknown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SBOS376",
-      "revision": "D",
-      "date": "unknown (between Aug 2007 and Sep 2008)",
-      "changes": "Implied by the letter sequence. Contents unknown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SBOS376E",
-      "revision": "E",
-      "date": "SEPTEMBER 2008",
-      "changes": "Date from a web search summary. A copy survives on Octopart (datasheet-5394927). Contents unknown."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SBOS376F",
-      "revision": "F",
-      "date": "MARCH 2009",
-      "changes": "Status still 'Mixed Status'. The OPA827I high grade was listed next to OPA827AI."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SBOS376G",
-      "revision": "G",
-      "date": "FEBRUARY 2012",
-      "changes": "Mixed Status changed to Production Data. High grade OPA827I deleted. Vos, drift and Ib specs changed. SR min 20 V/us and ISC min ±55 mA added. Offset and Ib figures updated."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SBOS376H",
-      "revision": "H",
-      "date": "MAY 2012",
-      "changes": "THD+N Figures 3 and 4 updated."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SBOS376I",
-      "revision": "I",
-      "date": "JULY 2016",
-      "changes": "Latest revision on ti.com as of 2026; no Rev J found. The Rev H to Rev I change list was not retrieved."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "OPA827 PSpice macro-model (not a datasheet)",
-      "revision": "Final 1.3",
-      "date": "21FEB2022",
-      "changes": "Model changes only (convergence fix, Aol matched to GBW). Says nothing about silicon."
-    },
-    {
-      "vendor": "Texas Instruments (Burr-Brown product line)",
-      "doc_number": "SBOS376A",
-      "revision": "A",
-      "date": "NOVEMBER 2006 (original date given; revised date not shown)",
-      "changes": "Search summary for SBOS376A: document for OPA827 and OPA2827, preview-era specs. Offset 250 uV max (text elsewhere says 100 uV), drift 1 uV/C, 4.5 nV/rtHz at 1 kHz, 18 MHz bandwidth, 22 V/us slew, 3 pA bias, 4.5 mA/ch, +4 V to +18 V supply, 400 nVpp 0.1-10 Hz noise, SO-8 and MSOP-8, -40 C to +125 C. Production Rev I lists 150 uV max offset, 0.5 uV/C typ drift, 250 nVpp noise and 22 MHz, so the specs changed from preview to production."
-    },
-    {
-      "vendor": "Texas Instruments (Burr-Brown product line)",
-      "doc_number": "SBOS376C",
-      "revision": "C",
-      "date": "NOVEMBER 2006 - REVISED AUGUST 2007",
-      "changes": "Search summary shows the header 'SBOS376C-NOVEMBER 2006-REVISED AUGUST 2007' and says it appears to come from a PRODUCT PREVIEW datasheet for OPA827 and OPA2827. So Rev C was probably still a preview edition covering the dual (compare the listed Octopart copy datasheet-153423 titled 'OPA827 OPA2827 PRODUCT PREVIEW')."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SBOS376G",
-      "revision": "G",
-      "date": "FEBRUARY 2012",
-      "changes": "More of the 'Changes from Revision F (March 2009) to Revision G' list, beyond what was already recorded: the Input bias current and Input offset drift Features bullets were modified, and the unit of the -40 C to +85 C Input Bias Current parameter was changed. This list appears in the already-listed Octopart copy datasheet-10745194, so that copy is Rev G or later."
-    }
+  "counterfeit_notes": "No OPA827-specific fake reports. Genuine marks: SOIC 'OPA / 827 / A', VSSOP 'NSP'. TI never made DIP-8 or shipped OPA2827, so both are suspect. Buy from authorised distributors; check Iq (4.8 mA) and slew (≥20 V/µs).",
+  "alternatives": [
+    "OPA828 / OPA2828 (TI's next generation)",
+    "OPA627 (Burr-Brown Difet benchmark)",
+    "OPA1641 / OPA1642 / OPA1644",
+    "OPA140 / OPA2140 / OPA4140",
+    "ADA4627-1 / ADA4625-1"
   ],
   "silicon_changes": [
     {
       "kind": "package-or-assembly",
       "vendor": "Texas Instruments",
-      "when": "PCN#20240628012.1 dated 28 Jun 2024; sample requests until 28 Jul 2024; proposed first ship 26 Sep 2024",
+      "when": "2024-06 · PCN 20240628012.1",
       "part_numbers_affected": [
         "OPA827AID"
       ],
-      "identification": "Same part number and die. Change type is Assembly Site / Assembly Materials (alternate mount and mold compound). No marking change is documented, so post-Sep-2024 lots may use either material set. A separate claim that OPA827 is on a TI Cu-wire PCN was not confirmed.",
-      "summary": "TI PCN#20240628012.1, 'Qualification alternate Mount & Mold Compound material for select devices', lists OPA827AID among several op-amp and reference devices. It qualifies an alternate die-attach (mount) and mold-compound material set. No die, fab or datasheet change is involved; the datasheet was not revised afterwards.",
+      "summary": "TI PCN#20240628012.1 ('Qualification alternate Mount & Mold Compound material for select devices', 28 Jun 2024) lists OPA827AID. Samples until 28 Jul 2024; first ship 26 Sep 2024. No die, fab or datasheet change.",
+      "identification": "Same part number and die; no marking change documented, so post-Sep 2024 lots may use either material set. No Cu-wire PCN found.",
       "spec_deltas": [
         {
           "parameter": "Die-attach (mount) and mold compound",
@@ -628,28 +201,28 @@
           "after": "alternate qualified material set added"
         }
       ],
-      "audio_impact": "Negligible. Mount and mold-compound changes have no datasheet-level electrical effect. Mold stress can shift precision offset slightly, but no such effect is documented.",
-      "compatibility_risk": "low - assembly-material change only; no datasheet, die or pinout change",
+      "audio_impact": "Negligible. Mold stress could shift precision offset slightly, but no such effect is documented.",
+      "compatibility_risk": "low: assembly-material change only; no datasheet, die or pinout change.",
       "sources": [
         "https://www.farnell.com/datasheets/4381537.pdf",
         "https://www.mouser.com/PCN/Texas_Instruments_PCN_20240628012.1_Notification.pdf",
         "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA827AID?qs=iSMark9AYDVjkY2y4BYwEw%3D%3D"
       ],
       "confidence": "medium",
-      "verification": "WebSearch identified the PCN title (alternate Mount & Mold Compound), dates and change type (Assembly Site/Materials), so it is reclassified from unknown to package-or-assembly. A search for OPA827 on TI Cu-wire PCNs found none listing it."
+      "verification": "PCN title, dates and change type (Assembly Site/Materials) confirmed; no Cu-wire PCN lists OPA827."
     },
     {
       "kind": "datasheet-respec",
       "vendor": "Texas Instruments",
-      "when": "SBOS376G, 2012 (the prior pass gives February 2012; the Rev G document is copyright 2006-2012). Rev F was March 2009.",
+      "when": "2012-02 · SBOS376G (Rev F was 2009-03)",
       "part_numbers_affected": [
         "OPA827AID",
         "OPA827AIDR",
         "OPA827AIDGKR",
         "OPA827AIDGKT"
       ],
-      "identification": "None known on the part. Parts sold before 2012 were sold against the Rev F (Mixed Status) and earlier specs.",
-      "summary": "At Rev G the datasheet moved from Mixed Status to Production Data. TI changed the input bias current and input offset drift Features bullets and the drift/bias text in the Description, and deleted the planned high-grade option (and its footnote) from the ordering table. Offset, drift and bias limits were set, and SR and short-circuit current minimums were added. This was a datasheet change, most likely final characterisation. No PCN or die change was found, so it is a spec hazard, not a confirmed silicon change.",
+      "summary": "Rev G moved from Mixed Status to Production Data, deleted the planned high grade, revised bias and drift text, set offset/drift/bias limits, and added SR and short-circuit minimums. Likely final characterisation; datasheet change only, no PCN or die change found.",
+      "identification": "None on the part. Pre-2012 parts were sold against Rev F (Mixed Status) and earlier specs.",
       "spec_deltas": [
         {
           "parameter": "Product status",
@@ -677,24 +250,409 @@
           "after": "±55 mA"
         }
       ],
-      "audio_impact": "Negligible for audio. It matters only for DC-precision designs that relied on preview limits or the dropped high grade.",
-      "compatibility_risk": "low - same pinout and packages, and no known die change",
+      "audio_impact": "Negligible for audio; matters only for DC-precision designs relying on preview limits or the dropped high grade.",
+      "compatibility_risk": "low: same pinout and packages; no known die change.",
       "sources": [
         "https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-10745194.pdf",
         "https://github.com/ep092/server_lader/blob/master/Datenbl%C3%A4tter/Operational%20Amplifier%20OPA827.pdf",
         "https://www.ti.com/product/OPA827"
       ],
       "confidence": "medium",
-      "verification": "WebSearch found the Rev G revision history (Mixed Status to Production Data, Ib/drift bullets changed, high-grade option deleted; Rev F = March 2009), which confirms a datasheet-only respec. Confidence raised from low to medium; the exact Rev F limits were not retrieved."
+      "verification": "Rev G revision history confirms a datasheet-only respec; exact Rev F limits not retrieved."
     }
   ],
-  "counterfeit_notes": "No OPA827-specific counterfeit or remarking report surfaced, but no search this run targeted counterfeits. Genuine TI markings per the SBOS376H package addendum (Oct 2013): SOIC-8 (D) reads 'OPA / 827 / A' plus logo and lot/date code; VSSOP-8 (DGK) reads 'NSP'. DGK lead finish may be NiPdAu or NiPdAuAg. TI has only ever listed the D and DGK packages, so a DIP-8 'OPA827' is not a genuine TI package. The OPA2827 dual never went beyond Product Preview, so any 'OPA2827' offered for sale is suspect. The part is often sold pre-soldered on adapters by marketplace sellers, and its benchmark OPA627 is among the most-faked audio op-amps. Buy from TI or authorised distributors, and check Iq (4.8 mA typ) and slew rate (at least 20 V/us).",
-  "alternatives": [
-    "TI OPA828 (single) / OPA2828 (dual, DGN only): TI's declared 'next generation OPA627 and OPA827' (SBOS671), 4 nV/√Hz, 45 MHz, 150 V/us",
-    "TI OPA627 (Burr-Brown Difet): the predecessor benchmark",
-    "TI OPA1641 / OPA1642 / OPA1644: lower-cost TI audio JFET-input single/dual/quad",
-    "TI OPA140 / OPA2140 / OPA4140: lower-power precision JFET-input family with dual/quad options (specs not re-verified)",
-    "ADI ADA4627-1 / ADA4625-1: JFET-input precision alternatives"
+  "datasheets": [
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA827 Low-Noise, High-Precision, JFET-Input Operational Amplifier",
+      "doc_number": "SBOS376",
+      "revision": "I",
+      "date": "2016-07",
+      "url": "https://www.ti.com/lit/ds/symlink/opa827.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Canonical symlink; should serve Rev I (no SBOS376J found)."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA827 Low-Noise, High-Precision, JFET-Input Operational Amplifier (Rev. I)",
+      "doc_number": "SBOS376I",
+      "revision": "I",
+      "date": "2016-07",
+      "url": "https://www.ti.com/lit/ds/sbos376i/sbos376i.pdf",
+      "url_kind": "vendor_revision_specific",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Revision-specific Rev I PDF; date matches TI PSpice model header."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA827 Low-Noise, High-Precision, JFET-Input ... (generic part-number redirect)",
+      "doc_number": "SBOS376",
+      "revision": "I",
+      "date": "2016-07",
+      "url": "https://www.ti.com/lit/gpn/OPA827",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Generic part-number redirect to the current datasheet."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA827 低ノイズ、高精度、JFET入力 オペアンプ (Japanese translation)",
+      "doc_number": "SBOS376 (Japanese translation)",
+      "revision": "",
+      "date": "",
+      "url": "https://www.ti.com/jp/lit/ds/symlink/opa827.pdf",
+      "url_kind": "vendor_current",
+      "confidence": "medium",
+      "revision_status": "unknown",
+      "note": "Japanese translation; may lag the English revision."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "Low-Noise, High-Precision, JFET-Input, Op Amp (Rev. H)",
+      "doc_number": "SBOS376H",
+      "revision": "H",
+      "date": "2012-05",
+      "url": "https://github.com/ep092/server_lader/blob/master/Datenbl%C3%A4tter/Operational%20Amplifier%20OPA827.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "high",
+      "revision_status": "confirmed",
+      "note": "Genuine 28-page TI PDF; addendum 18-Oct-2013; F→G→H history.",
+      "also_urls": [
+        "https://raw.githubusercontent.com/ep092/server_lader/master/Datenbl%C3%A4tter/Operational%20Amplifier%20OPA827.pdf"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA827 datasheet (Rev. E)",
+      "doc_number": "SBOS376E",
+      "revision": "E",
+      "date": "2008-09",
+      "url": "https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-5394927.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "confirmed",
+      "note": "Freezes the pre-production-data Rev E edition."
+    },
+    {
+      "vendor": "Texas Instruments / Burr-Brown",
+      "title": "OPA827 OPA2827 ... PRODUCT PREVIEW",
+      "doc_number": "SBOS376",
+      "revision": "A",
+      "date": "2006-11",
+      "url": "https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-153423.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "medium",
+      "revision_status": "probable",
+      "note": "Product Preview edition including OPA2827; letter unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA827 datasheet (Octopart copy)",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-10745194.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Later-style title; contains F-to-G change list, so Rev G or later."
+    },
+    {
+      "vendor": "Texas Instruments / Burr-Brown",
+      "title": "OPA827 OPA2827 Low-Noise, High-Precision, JFET-Input ...",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "2008-07-21",
+      "url": "https://pdf.dzsc.com/2008721/200807211004511485.pdf",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Upload predates Rev E and includes OPA2827; likely Rev C or D."
+    },
+    {
+      "vendor": "Burr-Brown (TI)",
+      "title": "OPA2827 datasheet (alldatasheet)",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/195279/BURR-BROWN/OPA2827.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Filed under OPA2827, so likely pre-2009."
+    },
+    {
+      "vendor": "Burr-Brown (TI)",
+      "title": "OPA827 datasheet (alldatasheet, Burr-Brown label)",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/163366/BURR-BROWN/OPA827.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Low ID and Burr-Brown label suggest an early copy."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA827 datasheet (alldatasheet, TI label)",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/250011/TI/OPA827.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Revision unconfirmed."
+    },
+    {
+      "vendor": "Burr-Brown (TI)",
+      "title": "OPA827 datasheet (datasheetspdf)",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/pdf/562973/Burr-Brown/OPA827/1",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Burr-Brown label; revision unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA827 datasheet (radiolocman)",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "",
+      "url": "https://www.radiolocman.com/datasheet/data.html?di=306313",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Second entry di=82299 has a lower ID, possibly older.",
+      "also_urls": [
+        "https://radiolocman.com/datasheet/data.html?%2FOPA827AID=&di=82299"
+      ]
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "Datasheet Archive: OPA827 / OPA2827 datasheets",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetarchive.com/OPA827-datasheet.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Index pages; may hold multiple editions.",
+      "also_urls": [
+        "https://datasheetarchive.com/OPA2827-datasheet.html"
+      ]
+    },
+    {
+      "vendor": "Burr-Brown (TI)",
+      "title": "OPA2827 Datasheet PDF - Burr-Brown (datasheetspdf.com)",
+      "doc_number": "SBOS376 (possibly SBOS376A)",
+      "revision": "A",
+      "date": "2006-11",
+      "url": "https://datasheetspdf.com/datasheet-pdf/562972/OPA2827.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "probable",
+      "note": "Possibly SBOS376A, Nov 2006 preview specs; sister of 562973."
+    },
+    {
+      "vendor": "Burr-Brown (TI)",
+      "title": "OPA2827 datasheet | Specifications & PDF Download (datasheetspdf.com)",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "",
+      "url": "https://datasheetspdf.com/datasheet/OPA2827.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "OPA2827 index page; preview-era editions only; revision not shown."
+    },
+    {
+      "vendor": "Burr-Brown (TI)",
+      "title": "OPA827 Datasheet(PDF) - Burr-Brown (TI) (alldatasheet 195278)",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/195278/BURR-BROWN/OPA827.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "ID next to OPA2827 page 195279; likely same upload."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA827 Datasheet(PDF) - Texas Instruments (alldatasheet 849336, TI1)",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/849336/TI1/OPA827.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Third alldatasheet OPA827 upload, TI1 label; revision not shown."
+    },
+    {
+      "vendor": "Burr-Brown (TI)",
+      "title": "OPA827A (BB) PDF datasheet, page 4 of 8 (ic37.com)",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "",
+      "url": "https://pdf.ic37.com/BB/OPA827_datasheet_5676975/OPA827_4.html",
+      "url_kind": "third_party_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "8-page Burr-Brown copy, typical of preview editions; unconfirmed."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "title": "OPA827 Voltage Noise Density ... (Mouser datasheet cache)",
+      "doc_number": "SBOS376",
+      "revision": "",
+      "date": "",
+      "url": "https://www.mouser.com/datasheet/2/405/opa827-406900.pdf",
+      "url_kind": "distributor_mirror",
+      "confidence": "low",
+      "revision_status": "unknown",
+      "note": "Mouser's own copy; title matches post-2012 editions (G, H or I)."
+    }
+  ],
+  "product_pages": [
+    "https://www.ti.com/product/OPA827",
+    "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA827AID?qs=iSMark9AYDVjkY2y4BYwEw%3D%3D",
+    "https://www.digikey.com/en/products/base-product/texas-instruments/296/OPA827/66008",
+    "https://at.rs-online.com/web/p/operationsverstarker/7093267"
+  ],
+  "revision_history": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS376",
+      "revision": "original",
+      "date": "2006-11",
+      "changes": "Product Preview titled 'OPA827 OPA2827 … PRODUCT PREVIEW', covering single and dual."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS376A",
+      "revision": "A",
+      "date": "",
+      "changes": "Preview specs: 250 µV max, 1 µV/°C, 4.5 nV/√Hz, 18 MHz, 22 V/µs, 4.5 mA/ch, 400 nVpp. Revised date unknown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS376",
+      "revision": "B",
+      "date": "",
+      "changes": "Implied by letter sequence; contents unknown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS376C",
+      "revision": "C",
+      "date": "2007-08",
+      "changes": "Header 'SBOS376C-NOVEMBER 2006-REVISED AUGUST 2007'. Probably still a preview edition covering the dual."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS376D",
+      "revision": "D",
+      "date": "",
+      "changes": "Implied by letter sequence (Aug 2007–Sep 2008); an exact search found nothing. Contents unknown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS376E",
+      "revision": "E",
+      "date": "2008-09",
+      "changes": "Copy survives on Octopart (5394927). Contents unknown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS376F",
+      "revision": "F",
+      "date": "2009-03",
+      "changes": "Still 'Mixed Status'; OPA827I high grade listed next to OPA827AI."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS376G",
+      "revision": "G",
+      "date": "2012-02",
+      "changes": "Production Data; OPA827I deleted; Vos, drift, Ib specs and bullets changed; SR min 20 V/µs, ISC min ±55 mA added."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS376H",
+      "revision": "H",
+      "date": "2012-05",
+      "changes": "THD+N Figures 3 and 4 updated."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS376I",
+      "revision": "I",
+      "date": "2016-07",
+      "changes": "Latest revision; no Rev J found. H-to-I changes not retrieved."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "OPA827 PSpice macro-model",
+      "revision": "Final 1.3",
+      "date": "2022-02-21",
+      "changes": "Model only: convergence fix, Aol matched to GBW. Says nothing about silicon."
+    }
+  ],
+  "revision_chains": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SBOS376",
+      "known": [
+        {
+          "rev": "original",
+          "date": "2006-11"
+        },
+        {
+          "rev": "A",
+          "date": ""
+        },
+        {
+          "rev": "C",
+          "date": "2007-08"
+        },
+        {
+          "rev": "E",
+          "date": "2008-09"
+        },
+        {
+          "rev": "F",
+          "date": "2009-03"
+        },
+        {
+          "rev": "G",
+          "date": "2012-02"
+        },
+        {
+          "rev": "H",
+          "date": "2012-05"
+        },
+        {
+          "rev": "I",
+          "date": "2016-07"
+        }
+      ],
+      "missing": [
+        "B",
+        "D"
+      ],
+      "note": "Need A's revised date, a firm F copy, H→I changes. Candidates: datasheetspdf 562972, Mouser opa827-406900."
+    }
   ],
   "ti_literature_numbers": [
     "SBOS376"
@@ -722,14 +680,11 @@
     "https://www.tij.co.jp/product/jp/OPA827"
   ],
   "open_questions": [
-    "Dates and contents of SBOS376 Revs A, B and D are unknown. Which revision dropped the OPA2827 dual, and did OPA2827 ever sample?",
-    "Which revision each mirror holds: Octopart 153423 (preview) and 10745194, dzsc (2008), alldatasheet 163366/195279/250011, datasheetspdf 562973 and radiolocman 82299/306313 were not opened.",
-    "Rev H to Rev I change list not retrieved. Does Rev I fix the 0.1 vs 0.5 uV/°C typical drift inconsistency?",
-    "What change does TI PCN#20240628012.1 describe? Which other PCNs (about three on Mouser) cover OPA827, and is there a Cu-wire PCN?",
-    "Rev F values for Vos, drift and Ib, and the OPA827I specs, were not retrieved.",
-    "TI lifecycle labels for AIDR, AIDGKR and the G4 variants not read.",
-    "Several sonic descriptors come from lens summaries; the diyAudio pages 34324/page-14 and 82610/page-3 were not confirmed.",
-    "Pattern-guessed archive seeds (sbos376h, the sbos376 base, /lit/pdf/, focus.ti.com, the opa2827 print folder, tij.co.jp) were never observed."
+    "When were SBOS376 Revs A, B and D issued? Which revision dropped OPA2827, and did it ever sample?",
+    "Which revision does each mirror hold (Octopart 153423/10745194, dzsc, alldatasheet, datasheetspdf, radiolocman)?",
+    "What changed from Rev H to I, and does Rev I fix the 0.1 vs 0.5 µV/°C drift inconsistency?",
+    "Which other PCNs (about three on Mouser) cover OPA827, and is there a Cu-wire PCN?",
+    "What were the Rev F Vos, drift and Ib limits and the OPA827I specs?"
   ],
   "sources": [
     "https://www.ti.com/product/OPA827",
@@ -760,18 +715,31 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 6,
+    "claims_confirmed": [
+      "SBOS376I (July 2016) is current; no SBOS376J: https://www.ti.com/lit/ds/sbos376i/sbos376i.pdf, https://www.ti.com/product/OPA827",
+      "TI gpn redirect exists: https://www.ti.com/lit/gpn/OPA827",
+      "TI Japanese datasheet exists: https://www.ti.com/jp/lit/ds/symlink/opa827.pdf",
+      "SBOS376E dated Nov 2006, revised Sep 2008: https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-5394927.pdf",
+      "SBOS376C revised Aug 2007; SBOS376A exists (Octopart and alldatasheet copies).",
+      "OPA2827 appeared in the Product Preview datasheet: https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-153423.pdf, https://pdf.dzsc.com/2008721/200807211004511485.pdf, https://www.alldatasheet.com/datasheet-pdf/pdf/195279/BURR-BROWN/OPA2827.html",
+      "Revision history records deleting OPA827I and changing Vos, drift and Ib specs.",
+      "150 µV max, 0.5 µV/°C, 3 pA, 250 nVpp, ±4 to ±18 V, 4.8 mA, 22 MHz, 28 V/µs, SOIC/VSSOP: https://www.ti.com/product/OPA827",
+      "OPA827AID listed in TI PCN#20240628012.1: https://www.farnell.com/datasheets/4381537.pdf",
+      "OPA827AID and OPA827AIDGKT at Mouser: https://www.mouser.com/ProductDetail/Texas-Instruments/OPA827AID?qs=iSMark9AYDVjkY2y4BYwEw%3D%3D, https://www.mouser.com/ProductDetail/Texas-Instruments/OPA827AIDGKT?qs=ToK3%2FczOkx91SPdLtRkOow%3D%3D"
+    ],
     "refuted_claims": [
-      "'No dual or quad OPA827 variant exists / only a single exists' (as stated): early SBOS376 editions are titled 'OPA827 OPA2827 ... PRODUCT PREVIEW', announcing a dual OPA2827. Corrected to: a dual was previewed but never reached production.",
-      "'Revs A through E: individual dates not retrieved / contents unknown' is partly superseded: Rev C is Aug 2007 and Rev E is Sep 2008, and Rev A is confirmed to exist."
+      "'Only a single exists' is incomplete: early SBOS376 editions announce a dual OPA2827 as Product Preview; it never reached production.",
+      "Revs A–E are not all undated: Rev C is Aug 2007, Rev E Sep 2008, and Rev A exists."
     ],
     "corrections": [
-      "Added the OPA2827 part-number entry (Product Preview only) and explained that the 'OPA827 series' wording and 'Mixed Status' come from it.",
-      "Revision history: added SBOS376A (exists), C (Aug 2007) and E (Sep 2008). Rev I (Jul 2016) confirmed as still current on ti.com in 2026, with no Rev J found.",
-      "Datasheets: added the TI revision-specific sbos376i URL (high), the Japanese TI datasheet, and mirrors that hold older editions (Octopart 5394927 = Rev E; Octopart 153423 = Product Preview; dzsc 2008 copy; alldatasheet, datasheetspdf and radiolocman copies with revision unknown). The gpn URL was seen in search results, so it moved from low to medium.",
-      "silicon_changes: added TI PCN#20240628012.1, which lists OPA827AID (change type unknown, low), and a low-confidence spec-hazard entry for the Rev G (Feb 2012) spec change, which is not a proven die change.",
-      "Part statuses: OPA827AID confirmed on TI's part-details page, Mouser, TME and a 2024 PCN; OPA827AIDGKT listed at Mouser.",
-      "counterfeit_notes: removed the claim that web search was unavailable, and added a warning that any 'OPA2827' is suspect.",
-      "archive_seed_urls: added the confirmed sbos376i, the Japanese symlink, the Octopart, dzsc and Farnell PCN URLs, and an opa2827 print-folder guess."
+      "Added OPA2827 (Product Preview only), explaining 'OPA827 series' and 'Mixed Status' wording.",
+      "Revision history: added A, C (Aug 2007), E (Sep 2008); Rev I (Jul 2016) still current, no Rev J.",
+      "Added sbos376i URL, Japanese datasheet, older-edition mirrors (Octopart 5394927 = E, 153423 = preview, dzsc 2008); gpn raised to medium.",
+      "Silicon changes: added TI PCN#20240628012.1 (OPA827AID) and the Rev G (Feb 2012) datasheet respec.",
+      "OPA827AID confirmed on TI, Mouser, TME and a 2024 PCN; OPA827AIDGKT at Mouser.",
+      "Counterfeit notes: any 'OPA2827' is suspect.",
+      "Archive seeds: added sbos376i, Japanese symlink, Octopart, dzsc and Farnell PCN URLs, opa2827 print-folder guess."
     ],
     "unverified_urls": [
       "https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-10745194.pdf (exists; revision unconfirmed)",
@@ -786,28 +754,6 @@
       "https://www.tij.co.jp/product/jp/OPA827",
       "https://www.diyaudio.com/community/threads/best-opamp-for-i-v-conversion-dac.34324/page-14",
       "https://www.diyaudio.com/community/threads/the-best-sounding-dual-opamps.82610/page-3"
-    ],
-    "claims_confirmed": [
-      "SBOS376I, revised July 2016, is the current TI revision; no SBOS376J was found: https://www.ti.com/lit/ds/sbos376i/sbos376i.pdf, https://www.ti.com/product/OPA827",
-      "TI gpn redirect exists: https://www.ti.com/lit/gpn/OPA827",
-      "TI Japanese datasheet exists: https://www.ti.com/jp/lit/ds/symlink/opa827.pdf",
-      "SBOS376E is dated Nov 2006, revised Sep 2008: https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-5394927.pdf",
-      "SBOS376C was revised Aug 2007 and SBOS376A exists (search summaries covering the Octopart and alldatasheet copies)",
-      "OPA2827 dual appeared in the Product Preview datasheet: https://datasheet.octopart.com/OPA827AID-Texas-Instruments-datasheet-153423.pdf, https://pdf.dzsc.com/2008721/200807211004511485.pdf, https://www.alldatasheet.com/datasheet-pdf/pdf/195279/BURR-BROWN/OPA2827.html",
-      "The revision history includes deleting the high grade OPA827I and changing the Vos, drift and Ib specs (search summary of the TI datasheet)",
-      "Headline specs 150 uV max, 0.5 uV/°C typ, 3 pA typ, 250 nVpp, ±4 to ±18 V, 4.8 mA/ch, 22 MHz, 28 V/us, SOIC-8/VSSOP-8, -40 to 125 °C: https://www.ti.com/product/OPA827",
-      "OPA827AID is listed in TI PCN#20240628012.1: https://www.farnell.com/datasheets/4381537.pdf",
-      "OPA827AID and OPA827AIDGKT are listed at Mouser: https://www.mouser.com/ProductDetail/Texas-Instruments/OPA827AID?qs=iSMark9AYDVjkY2y4BYwEw%3D%3D, https://www.mouser.com/ProductDetail/Texas-Instruments/OPA827AIDGKT?qs=ToK3%2FczOkx91SPdLtRkOow%3D%3D"
-    ],
-    "web_searches_used": 6
-  },
-  "tier": "B",
-  "category": "jfet-input",
-  "product_pages": [
-    "https://www.ti.com/product/OPA827",
-    "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA827AID?qs=iSMark9AYDVjkY2y4BYwEw%3D%3D",
-    "https://www.digikey.com/en/products/base-product/texas-instruments/296/OPA827/66008",
-    "https://at.rs-online.com/web/p/operationsverstarker/7093267"
-  ],
-  "revision_chain_notes": "TI SBOS376 (OPA827; OPA2827 in the preview editions). Chain, oldest to newest: original, Nov 2006 (Product Preview, OPA827/OPA2827) -> A, Nov 2006 original date, revised date not shown (preview specs: 250 uV max offset, 18 MHz, 22 V/us) -> B, date unknown, still no evidence it exists -> C, Aug 2007 (a summary shows the header 'SBOS376C-NOVEMBER 2006-REVISED AUGUST 2007' and ties it to a PRODUCT PREVIEW OPA827/OPA2827 edition, probably the listed Octopart datasheet-153423) -> D, date unknown (an exact search for \"SBOS376D\" returned nothing) -> E, Sep 2008 (Octopart 5394927) -> F, Mar 2009 -> G, Feb 2012 (Octopart 10745194 contains the F-to-G change list, so it is G or later) -> H, May 2012 -> I, Jul 2016 (current). Still missing: a copy of B and its date, a copy of D and its date, the revised date of A, the H-to-I change list, and a copy firmly tied to F (a search for 'REVISED MARCH 2009' found nothing). New unverified copies worth reading: datasheetspdf 562972 (OPA2827, maybe Rev A), alldatasheet 195278 (BB, probably preview), ic37 5676975 (BB), alldatasheet 849336 (TI1) and Mouser opa827-406900.pdf. The archive seeds are built from the standard focus.ti.com / ti.com symlink and product-folder URL patterns and have not been checked. No other vendor or second source has ever made the OPA827. Searches used: 6 of 6."
+    ]
+  }
 }

@@ -1,214 +1,176 @@
 {
   "id": "LM318",
-  "name": "LM118 / LM218 / LM318 (fast bipolar single op-amp, 15 MHz / 50 V/us)",
-  "tagline": "Fast 1970s bipolar op-amp (15 MHz, 50 V/us min) that high-slew advocates favoured in the late-70s TIM debate. Now a niche pick for fast buffers and DAC I/V stages.",
-  "technology": "Bipolar with NPN differential input and an input differential clamp (per LTC SPICE model comments). Internally compensated for unity gain, and external compensation can be added: feed-forward compensation in inverting use gives >150 V/us and nearly double the bandwidth (TI datasheet). Pins 1/5/8 are compensation/balance pins. Single channel, ±5 V to ±20 V supplies.",
+  "name": "LM118 / LM218 / LM318",
+  "type": "Fast bipolar single op-amp, 15 MHz / 50 V/µs",
+  "tier": "C",
+  "category": "high-speed-video-crossover",
+  "tagline": "Fast 1970s bipolar op-amp (15 MHz, 50 V/µs min) from the TIM-debate era; now a niche pick for fast buffers and DAC I/V.",
   "manufacturers": [
-    "National Semiconductor (originator of the LM118/LM218/LM318 datasheet line; now TI LM118-N/LM318-N, SNOSBS8)",
-    "Texas Instruments (own LM118/LM218/LM318 line, datasheet SLOS063 originally June 1976; also owns ex-National parts since 2011)",
-    "Linear Technology (LM318, LM318S8, improved LT118A/LT318A; now Analog Devices) - web-unverified",
-    "STMicroelectronics (named in discovery notes only; not verified)"
-  ],
-  "part_numbers": [
-    {
-      "pn": "LM318N/NOPB (LM318N)",
-      "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "unknown (TI part-details page under LM318-N and a Digi-Key listing exist)",
-      "notes": "PDIP-8, ex-National LM318-N line, datasheet SNOSBS8."
-    },
-    {
-      "pn": "LM318M / LM318M/NOPB / LM318MX/NOPB",
-      "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "LM318M: obsolete (Digi-Key, via search summary). /NOPB and MX (tape and reel) variants: unknown.",
-      "notes": "SOIC-8, ex-National LM318-N line. Datasheet copies for LM318M/NOPB (octopart) and LM318MX/NOPB (radiolocman) exist."
-    },
-    {
-      "pn": "LM318H",
-      "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "unknown",
-      "notes": "TO-99 metal can (KiCad symbol)."
-    },
-    {
-      "pn": "LM318J",
-      "channels": 1,
-      "vendors": [
-        "National Semiconductor"
-      ],
-      "status": "unknown (probably obsolete)",
-      "notes": "Ceramic DIP (KiCad symbol)."
-    },
-    {
-      "pn": "LM318D / LM318DR / LM318P / LM318PSR / LM318PE4 (and .A variants)",
-      "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "Active (TI part-details pages, via search summary)",
-      "notes": "TI's own LM318 line (ti.com/product/LM318, datasheet SLOS063B). D = SOIC (R suffix = tape and reel), P = PDIP, PS = SOP. These are a separate product line from the ex-National LM318-N."
-    },
-    {
-      "pn": "LM118H (LM118H/NOPB)",
-      "channels": 1,
-      "vendors": [
-        "National Semiconductor",
-        "Texas Instruments"
-      ],
-      "status": "Active per distributor listing (octopart/Arrow via search summary); TI part-details page under LM118-N exists",
-      "notes": "Military-temperature grade (-55 C to 125 C), TO-99, ex-National LM118-N line."
-    },
-    {
-      "pn": "LM118 / LM218 (TI SLOS063 line)",
-      "channels": 1,
-      "vendors": [
-        "Texas Instruments"
-      ],
-      "status": "Obsolete. TI lm318.pdf says 'The LM118 and LM218 are obsolete and are no longer supplied.'",
-      "notes": "LM218 = -25 C to 85 C grade. The status of the ex-National LM218-N was not checked."
-    },
-    {
-      "pn": "LM318 / LM318S8 (LTC)",
-      "channels": 1,
-      "vendors": [
-        "Linear Technology"
-      ],
-      "status": "unknown",
-      "notes": "LTC second source. S8 = SO-8. Cited in the LTC 1990 Linear Databook p2-311 (per LTC SPICE library); not web-verified."
-    },
-    {
-      "pn": "LT118A / LT318A",
-      "channels": 1,
-      "vendors": [
-        "Linear Technology"
-      ],
-      "status": "unknown",
-      "notes": "LTC improved grade (LTC 1990 databook p2-311 per SPICE library comments). LTspice ships an LT318A symbol. Not web-verified."
-    }
+    "National Semiconductor",
+    "Texas Instruments",
+    "Linear Technology",
+    "STMicroelectronics"
   ],
   "lineage": [
     {
       "vendor": "National Semiconductor",
       "role": "originator",
-      "period": "1970s (exact intro not verified) - 2011",
-      "notes": "TI's ex-National document SNOSBS8 carries an original date of MARCH 1998. That date refers to the document version, not to when the part was introduced. The legacy URL national.com/ds/LM/LM318.pdf is known only from the spicelib index. National macromodel: 15 MHz, 50 V/us min, ±5 V to ±20 V."
+      "period": "1970s–2011",
+      "note": "Intro year unverified. Datasheet DS007766; now TI LM118-N/LM318-N (SNOSBS8, original date March 1998)."
     },
     {
       "vendor": "Texas Instruments",
-      "role": "own second-source line (LM118/LM218/LM318, SLOS063) and acquirer of National (2011)",
-      "period": "datasheet SLOS063 dated June 1976 - present; ex-National LM118-N/LM318-N from 2011",
-      "notes": "Two separate TI product pages and datasheets: LM318 (SLOS063B 'High-Performance Operational Amplifiers', Rev. B, revised Dec 2002, lm318.pdf; orderables D/DR/P/PSR) and LM318-N / LM118-N (SNOSBS8C 'LM118-N/LM218-N/LM318-N Operational Amplifiers', revised March 2013, lm318-n.pdf)."
+      "role": "second source",
+      "period": "1976–present",
+      "note": "Own LM118/LM218/LM318 line, datasheet SLOS063 (June 1976). Separate from the ex-National LM318-N."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "role": "acquirer",
+      "period": "2011–present",
+      "note": "Acquired National; sells LM318-N/LM118-N under SNOSBS8 alongside its own SLOS063 LM318."
     },
     {
       "vendor": "Linear Technology (now Analog Devices)",
-      "role": "second source + improved grade",
-      "period": "c. 1989-1990 onward (status after ADI merger unknown)",
-      "notes": "Evidence comes only from the LTC SPICE library (models dated 11-21-1989 and 05-22-1990, citing the LTC 1990 Databook p2-311). Not web-verified."
+      "role": "second source",
+      "period": "c. 1989–1990 onward",
+      "note": "LM318, LM318S8 and improved LT118A/LT318A per LTC SPICE library (1990 Databook p2-311). Unverified."
+    },
+    {
+      "vendor": "Unisonic Technologies (UTC)",
+      "role": "second source",
+      "period": "unknown",
+      "note": "SOIC LM318 datasheet on datasheet4u; document number and revision unknown."
     },
     {
       "vendor": "STMicroelectronics",
-      "role": "possible second source",
+      "role": "second source",
       "period": "unknown",
-      "notes": "Named in discovery notes only. No ST document or URL seen."
+      "note": "Possible second source; no ST document or URL seen."
+    }
+  ],
+  "part_numbers": [
+    {
+      "pn": "LM318N/NOPB (LM318N)",
+      "channels": 1,
+      "status": "unknown",
+      "note": "PDIP-8, ex-National LM318-N line (SNOSBS8); TI part-details and Digi-Key pages exist."
+    },
+    {
+      "pn": "LM318M / LM318M/NOPB / LM318MX/NOPB",
+      "channels": 1,
+      "status": "unknown",
+      "note": "SOIC-8, ex-National. LM318M obsolete per Digi-Key; /NOPB and MX (reel) status unknown."
+    },
+    {
+      "pn": "LM318H",
+      "channels": 1,
+      "status": "unknown",
+      "note": "TO-99 metal can, ex-National."
+    },
+    {
+      "pn": "LM318J",
+      "channels": 1,
+      "status": "obsolete",
+      "note": "Ceramic DIP, National; probably obsolete."
+    },
+    {
+      "pn": "LM318D / DR / P / PSR / PE4 (and .A variants)",
+      "channels": 1,
+      "status": "active",
+      "note": "TI's own line (SLOS063B). D=SOIC, R=reel, P=PDIP, PS=SOP. 0–70 °C."
+    },
+    {
+      "pn": "LM118H (LM118H/NOPB)",
+      "channels": 1,
+      "status": "active",
+      "note": "Military grade (−55 to 125 °C), TO-99, ex-National LM118-N. Active per distributor."
+    },
+    {
+      "pn": "LM118 / LM218 (TI SLOS063 line)",
+      "channels": 1,
+      "status": "obsolete",
+      "note": "TI: 'no longer supplied'. LM218 is −25 to 85 °C. LM218-N status unchecked."
+    },
+    {
+      "pn": "LM318 / LM318S8 (LTC)",
+      "channels": 1,
+      "status": "unknown",
+      "note": "Linear Technology second source; S8 = SO-8. Unverified."
+    },
+    {
+      "pn": "LT118A / LT318A",
+      "channels": 1,
+      "status": "unknown",
+      "note": "Linear Technology improved grade; LTspice ships an LT318A symbol. Unverified."
     }
   ],
   "key_specs": [
     {
-      "parameter": "Small-signal bandwidth",
-      "value": "15 MHz typ",
+      "parameter": "GBW",
+      "value": "15 MHz typ (small-signal); ~2× with feed-forward",
       "condition": "unity-gain internal compensation",
-      "source": "TI LM318 datasheet (SLOS063B) text via web search; National macromodel"
+      "source": "SLOS063B; National macromodel"
     },
     {
       "parameter": "Slew rate",
-      "value": "50 V/us min; >150 V/us with feed-forward compensation (inverting only); 70 V/us typ unconfirmed",
-      "condition": "±15 V",
-      "source": "Min and feed-forward figures: TI lm318.pdf / soemtron mirror text via web search. 70 V/us typ: Lessons in Electric Circuits table and voltdocs wiki (low confidence)."
-    },
-    {
-      "parameter": "Operating temperature",
-      "value": "LM118 -55 C to 125 C; LM218 -25 C to 85 C; LM318 0 C to 70 C",
-      "condition": "",
-      "source": "TI LM318 datasheet text via web search"
+      "value": "50 V/µs min; >150 V/µs feed-forward (inverting only)",
+      "condition": "±15 V; 70 V/µs typ unconfirmed",
+      "source": "SLOS063B"
     },
     {
       "parameter": "Supply range",
-      "value": "±5 V to ±20 V (10-40 V total)",
+      "value": "±5 V to ±20 V (10–40 V total)",
       "condition": "",
-      "source": "National macromodel comments; Lessons in Electric Circuits table. Not web-verified."
+      "source": "National macromodel; Lessons in EC"
     },
     {
-      "parameter": "Input bias current",
-      "value": "150 nA typ / 500 nA max (LM318); a model comment lists 250 nA",
-      "condition": "25 C",
-      "source": "voltdocs wiki (low confidence); Lessons in Electric Circuits; National macromodel comment. Not web-verified."
-    },
-    {
-      "parameter": "Input offset voltage",
-      "value": "4 mV typ / 10 mV max",
-      "condition": "LM318",
-      "source": "voltdocs wiki (third party, low confidence)"
-    },
-    {
-      "parameter": "Supply current (Iq per channel)",
+      "parameter": "Supply current",
       "value": "5 mA typ / 10 mA max",
-      "condition": "±15 V",
-      "source": "voltdocs wiki (third party, low confidence)"
+      "condition": "±15 V, per channel",
+      "source": "third-party wiki (low confidence)"
     },
     {
       "parameter": "Output current",
       "value": "20 mA",
-      "condition": "",
-      "source": "Lessons in Electric Circuits op-amp table (low confidence)"
+      "condition": "settling ~1 µs to 0.1% (unconfirmed)",
+      "source": "Lessons in Electric Circuits (low conf.)"
     },
     {
-      "parameter": "Settling time",
-      "value": "about 1 us to 0.1% (unconfirmed)",
-      "condition": "10 V step",
-      "source": "voltdocs wiki (low confidence)"
+      "parameter": "Offset voltage",
+      "value": "4 mV typ / 10 mV max",
+      "condition": "LM318",
+      "source": "third-party wiki (low confidence)"
     },
     {
-      "parameter": "Voltage noise e_n / current noise i_n / THD+N",
-      "value": "not specified in any source seen",
-      "condition": "",
-      "source": "none found"
+      "parameter": "Input bias current",
+      "value": "150 nA typ / 500 nA max (model comment: 250 nA)",
+      "condition": "LM318, 25 °C",
+      "source": "Lessons in EC; National macromodel"
     },
     {
-      "parameter": "Per-revision differences",
-      "value": "none documented in sources seen",
-      "condition": "",
-      "source": "n/a"
+      "parameter": "Input stage",
+      "value": "NPN pair with input differential clamp",
+      "condition": "comp./balance pins 1, 5, 8",
+      "source": "LTC SPICE model; SLOS063B"
     }
   ],
   "reputation": {
-    "summary": "A fast 1970s bipolar op-amp (15 MHz, 50 V/us min). It is reportedly among the high-slew parts favoured in the late-1970s slew-induced-distortion/TIM debate (Walter Jung et al., Audio magazine), but the specific articles were not verified. Today it is a niche part in DIY circles for fast buffers and DAC I/V stages. Community evidence is thin: there are no published noise specs and no measured reviews were found. It is not a low-noise audio design. Some hobby write-ups wrongly call it a dedicated audio op-amp.",
+    "summary": "A fast 1970s bipolar op-amp, reportedly among the high-slew parts favoured in the late-1970s TIM / slew-induced-distortion debate (Walter Jung et al., Audio magazine). Today a niche DIY pick for fast buffers and DAC I/V. Evidence is thin: no noise specs, no measured reviews. Not a low-noise audio design, despite some hobby write-ups.",
     "sonic_descriptors": [],
     "typical_uses": [
       "DAC output buffer / I-V stage (DIY)",
-      "fast line buffers",
-      "active video filters and video receivers",
-      "function generators / oscillators",
-      "fast D/A output amplifiers, pulse amplifiers",
-      "class-D amplifier control loop (academic paper)"
+      "Fast line buffers",
+      "Active video filters and video receivers",
+      "Function generators, pulse and fast D/A amplifiers",
+      "Class-D amplifier control loop (academic paper)"
     ],
     "caveats": [
-      "High-speed part: bypass pins 4 and 7 with 0.1 uF capacitors placed right at the pins. It is prone to oscillation with stray capacitance on the inverting input and with long socket/adaptor leads.",
-      "Pins 1/5/8 are compensation/balance pins, so feed-forward-compensated circuits are not drop-in with parts that use pin 8 as NC or pins 1/5 as offset null.",
-      "Feed-forward compensation (>150 V/us) applies only to inverting configurations.",
-      "Quiescent current is about 5 mA typ per amp (third-party figure).",
-      "Needs at least ±5 V supplies.",
-      "No noise specification. Not a low-noise part compared with NE5534/LME49710-class devices.",
-      "TI sells two separate LM318 lines (LM318 / SLOS063 and LM318-N / SNOSBS8), and LTC made its own version, so behaviour may differ by maker."
+      "Bypass pins 4 and 7 with 0.1 µF at the pins; oscillates with stray inverting-input capacitance or long socket leads.",
+      "Pins 1/5/8 are compensation/balance pins: not drop-in where pin 8 is NC or 1/5 are offset null.",
+      "Feed-forward compensation (>150 V/µs) works only in inverting configurations. Needs at least ±5 V; ~5 mA per amp.",
+      "No noise specification; not low-noise compared with NE5534/LME49710-class parts.",
+      "Two TI lines (SLOS063 and SNOSBS8) plus an LTC version: behaviour may differ by maker."
     ],
     "sources": [
       "http://waltjung.org",
@@ -219,6 +181,71 @@
       "https://github.com/fabianobie/luppar/blob/9abddd4af4e3720b8efc7716c8d1f22c6e76354e/data/artigos/CBA_2012_99340.txt"
     ]
   },
+  "counterfeit_notes": "No LM318-specific counterfeit reports. Cheap marketplace DIP-8 'LM318N' may be remarked slow op-amps: a unity-gain ±15 V square-wave test shows ≥50 V/µs for genuine parts versus 1–2 V/µs for 741/4558 class. LM318M is obsolete, so scrutinise new stock.",
+  "alternatives": [
+    "LM6171",
+    "AD847 / AD826",
+    "LT1363 / LT1364",
+    "AD825 / AD8065",
+    "LME49710 (lower slew, much lower noise)",
+    "OPA1611"
+  ],
+  "silicon_changes": [
+    {
+      "kind": "second-source-difference",
+      "vendor": "Texas Instruments (TI-legacy) vs National Semiconductor (now TI LM318-N)",
+      "when": "1976 onward; both TI-sold since 2011",
+      "part_numbers_affected": [
+        "LM318",
+        "LM318D",
+        "LM318DR",
+        "LM318P",
+        "LM318PSR",
+        "LM318N/NOPB",
+        "LM318M",
+        "LM318MX/NOPB",
+        "LM118H"
+      ],
+      "summary": "TI sells two separately documented LM318 lines under one number: its own second source (SLOS063, since June 1976) and National's original (LM318-N, SNOSBS8). A die difference is inferred from separate origins; one audio SPICE modeller keeps distinct models. No vendor comparison exists.",
+      "spec_deltas": [],
+      "identification": "Datasheet: SLOS063 'High-Performance' (product LM318) vs SNOSBS8 (LM318-N). Package codes D/DR/P/PSR are TI-legacy; N/M/MX/H/J and /NOPB are ex-National.",
+      "audio_impact": "Unknown. Compensation, slew and stability margins may differ in fast or feed-forward circuits.",
+      "compatibility_risk": "medium: same pinout and headline specs, separate designs; check which datasheet covers your orderable.",
+      "confidence": "medium",
+      "verification": "Two TI product pages and datasheets confirmed; electrical differences not compared.",
+      "sources": [
+        "https://www.ti.com/product/LM318",
+        "https://www.ti.com/product/LM318-N",
+        "https://www.ti.com/lit/gpn/LM318",
+        "https://www.ti.com/lit/ds/symlink/lm318-n.pdf",
+        "https://www.radiolocman.com/datasheet/data.html?di=297739",
+        "https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/Manufacturer/Texas%20Instruments/lm318.mod",
+        "https://github.com/dunkelstern/electret_preamp/blob/main/ltspice/LM318_SN.lib"
+      ]
+    },
+    {
+      "kind": "second-source-difference",
+      "vendor": "Linear Technology",
+      "when": "c. 1989–1990 · LTC 1990 Linear Databook",
+      "part_numbers_affected": [
+        "LM318",
+        "LM318S8",
+        "LT118A",
+        "LT318A"
+      ],
+      "summary": "LTC made its own LM318 second source plus an improved LT118A/LT318A. SPICE models give LT318A different parameters from National's LM318. Datasheet deltas unknown.",
+      "spec_deltas": [],
+      "identification": "LTC logo and marking; LT prefix = improved grade; S8 suffix = SO-8.",
+      "audio_impact": "Unknown.",
+      "compatibility_risk": "low: intended drop-in second source; datasheet deltas unverified.",
+      "confidence": "low",
+      "verification": "Rests only on LTC SPICE library headers.",
+      "sources": [
+        "https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/OPLTC.LIB",
+        "https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/lin_tech.lib"
+      ]
+    }
+  ],
   "datasheets": [
     {
       "vendor": "Texas Instruments (ex-National)",
@@ -230,32 +257,31 @@
       "url_kind": "vendor_current",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "The symlink serves the latest revision. A third-party citation dates Rev C to 2013-03-20. Revs A and B are implied but were not seen."
+      "note": "Latest revision; dated 2013-03-20 by a third-party citation."
     },
     {
       "vendor": "Texas Instruments (ex-National)",
       "title": "LM118/LM218/LM318 Operational Amplifiers datasheet (TI gpn landing, LM118-N)",
-      "doc_number": "SNOSBS8 (inferred: same title)",
+      "doc_number": "SNOSBS8",
       "revision": "",
       "date": "",
       "url": "https://www.ti.com/lit/gpn/LM118-N",
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "unknown",
-      "revision_text": "latest",
-      "note": "The TI gpn link for LM118-N resolves to the LM118/LM218/LM318 document, so LM118-N shares SNOSBS8."
+      "note": "Serves the latest revision; LM118-N shares SNOSBS8 (inferred)."
     },
     {
       "vendor": "Texas Instruments (ex-National)",
       "title": "LM118-N datasheet symlink",
-      "doc_number": "SNOSBS8 (presumed)",
+      "doc_number": "SNOSBS8",
       "revision": "",
       "date": "",
       "url": "http://www.ti.com/lit/ds/symlink/lm118-n.pdf",
       "url_kind": "vendor_current",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "unconfirmed. Seen in hzeller/stuff-org as the datasheet for LM318N."
+      "note": "Unconfirmed; doc number presumed."
     },
     {
       "vendor": "Texas Instruments",
@@ -267,7 +293,7 @@
       "url_kind": "vendor_current",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "TI's own LM318 line (orderables LM318D/DR/P/PSR). It states that LM118 and LM218 are obsolete and no longer supplied. The gpn landing ti.com/lit/gpn/LM318 is titled 'High-Performance Operational Amplifiers datasheet (Rev. B)'. The SLOS063B date comes from a search summary and the header was not seen directly."
+      "note": "TI's own line; states LM118 and LM218 obsolete. Header date unseen."
     },
     {
       "vendor": "Texas Instruments",
@@ -291,7 +317,7 @@
       "url_kind": "distributor_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "Distributor copy of Rev C."
+      "note": "Distributor copy of Rev. C."
     },
     {
       "vendor": "University of Nebraska-Lincoln EE shop (TI)",
@@ -303,24 +329,24 @@
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "University copy of Rev C."
+      "note": "University copy of Rev. C."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LM118/LM218/LM318 Operational Amplifiers (National edition, 'General Description' layout)",
-      "doc_number": "unknown (National DS number not seen)",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.egr.msu.edu/eceshop/Parts_Inventory/datasheets/lm318n.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Michigan State University copy that appears to freeze a National-era edition."
+      "note": "Michigan State University copy of a National-era edition."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LM118/LM218/LM318 Operational Amplifiers (National edition)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.mit.edu/~6.301/LM118.pdf",
@@ -332,7 +358,7 @@
     {
       "vendor": "National Semiconductor",
       "title": "LM118/LM218/LM318 Operational Amplifiers (National edition)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.futurlec.com/Datasheet/Linear/LM318N.pdf",
@@ -344,19 +370,19 @@
     {
       "vendor": "National Semiconductor",
       "title": "LM118/LM218/LM318 Operational Amplifiers (National, LM318N)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://datasheet.octopart.com/LM318N-National-Semiconductor-datasheet-92465.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Octopart copy attributed to National; likely an older edition."
+      "note": "Octopart National copy; likely an older edition."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LM118/LM218/LM318 Operational Amplifiers (National, LM318N/NOPB)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://datasheet.octopart.com/LM318N/NOPB-National-Semiconductor-datasheet-9881884.pdf",
@@ -368,7 +394,7 @@
     {
       "vendor": "National Semiconductor",
       "title": "LM118 datasheet (NSC)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/8602/NSC/LM118.html",
@@ -380,7 +406,7 @@
     {
       "vendor": "National Semiconductor",
       "title": "LM118/LM218/LM318 Operational Amplifiers (Scribd upload)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.scribd.com/document/541229692/LM118",
@@ -392,122 +418,122 @@
     {
       "vendor": "Texas Instruments",
       "title": "LM118, LM218, LM318 HIGH-PERFORMANCE OPERATIONAL AMPLIFIERS",
-      "doc_number": "SLOS063 (presumed)",
-      "revision": "",
+      "doc_number": "SLOS063",
+      "revision": "B",
       "date": "",
       "url": "https://www.soemtron.org/downloads/disposals/lm318.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
-      "revision_status": "unknown",
-      "note": "TI-legacy layout. Its revision letter was not visible in the search summary."
+      "revision_status": "probable",
+      "note": "TI-legacy layout with all-caps Rev. B title."
     },
     {
       "vendor": "Texas Instruments",
       "title": "LM118, LM218, LM318 FAST GENERAL-PURPOSE OPERATIONAL AMPLIFIERS",
-      "doc_number": "unknown (possibly an earlier SLOS063 edition)",
-      "revision": "",
-      "date": "",
+      "doc_number": "SLOS063",
+      "revision": "A",
+      "date": "1994-04",
       "url": "https://www.unikeyic.com/media/datasheet/28/22/21de/282221de0a02c53abdc278ebb27e49c4.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "low",
-      "revision_status": "unknown",
-      "note": "unconfirmed. Its title differs from SLOS063B ('High-Performance'), so it may be an older TI edition; the revision was not seen."
+      "revision_status": "probable",
+      "note": "Same file hash as the pf.unikeyic.com Rev. A copy."
     },
     {
       "vendor": "Texas Instruments",
       "title": "LM318 datasheet (TI) mirror",
-      "doc_number": "SLOS063 (presumed)",
+      "doc_number": "SLOS063",
       "revision": "",
       "date": "",
       "url": "https://www.radiolocman.com/datasheet/data.html?di=297739",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Possibly the source of the SLOS063B June 1976 / Dec 2002 dating seen in the search summary."
+      "note": "Possibly the source of SLOS063B June 1976 / Dec 2002 dating."
     },
     {
       "vendor": "Texas Instruments",
       "title": "LM318N/NOPB datasheet mirror",
-      "doc_number": "SNOSBS8 (presumed)",
+      "doc_number": "SNOSBS8",
       "revision": "",
       "date": "",
       "url": "https://www.radiolocman.com/datasheet/data.html?di=276483",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Revision not seen."
+      "note": "Doc number presumed."
     },
     {
       "vendor": "Texas Instruments",
       "title": "LM318-N datasheet (alldatasheet)",
-      "doc_number": "SNOSBS8 (presumed)",
+      "doc_number": "SNOSBS8",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/545609/TI/LM318-N.html",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Revision not seen. May freeze an earlier TI revision (A or B)."
+      "note": "May hold an earlier TI revision (A or B)."
     },
     {
       "vendor": "Texas Instruments",
       "title": "LM318P datasheet (alldatasheet)",
-      "doc_number": "SLOS063 (presumed)",
+      "doc_number": "SLOS063",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/176910/TI/LM318P.html",
       "url_kind": "third_party_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Revision not seen. May freeze an older SLOS063 edition."
+      "note": "May hold an older SLOS063 edition."
     },
     {
       "vendor": "Texas Instruments",
       "title": "LM318P datasheet (Octopart)",
-      "doc_number": "SLOS063 (presumed)",
+      "doc_number": "SLOS063",
       "revision": "",
       "date": "",
       "url": "https://datasheet.octopart.com/LM318P-Texas-Instruments-datasheet-8321076.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Revision not seen."
+      "note": "Doc number presumed."
     },
     {
       "vendor": "Texas Instruments",
       "title": "LM318M/NOPB datasheet (Octopart)",
-      "doc_number": "SNOSBS8 (presumed)",
+      "doc_number": "SNOSBS8",
       "revision": "",
       "date": "",
       "url": "https://datasheet.octopart.com/LM318M-NOPB-Texas-Instruments-datasheet-7552042.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "unknown",
-      "note": "Revision not seen."
+      "note": "Doc number presumed."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LM118/LM218/LM318 Operational Amplifiers (National legacy URL)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "http://www.national.com/ds/LM/LM318.pdf",
       "url_kind": "vendor_legacy",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "unconfirmed. Taken from the werner2101/spicelib index. The domain is dead, so retrieve it only through an archive."
+      "note": "From a SPICE library index; dead domain, use an archive."
     },
     {
       "vendor": "National Semiconductor",
       "title": "Operational Amplifiers LM318 (cited as a 1998 National edition)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "1998-03",
       "url": "https://www.sigmaelectronica.net/manuals/LM318.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "unconfirmed. Header not seen."
+      "note": "Cited as 1998 National edition; header unseen."
     },
     {
       "vendor": "Texas Instruments",
@@ -519,19 +545,19 @@
       "url_kind": "distributor_mirror",
       "confidence": "medium",
       "revision_status": "confirmed",
-      "note": "In a search for the National title, this was the only TI result, and the summary for that search gave 'SLOS063A – June 1976 – Revised April 1994', so that header is attributed to this copy. It has an older title ('FAST GENERAL-PURPOSE OPERATIONAL AMPLIFIERS') than Rev B ('High-Performance Operational Amplifiers'). The file hash is the same as the already-listed www.unikeyic.com/media/datasheet/... copy, so that copy is very likely SLOS063A too."
+      "note": "Header 'SLOS063A – June 1976 – Revised April 1994'; older title."
     },
     {
       "vendor": "Texas Instruments",
       "title": "LM118, LM218, LM318 Fast General-Purpose Operational Amplifiers",
-      "doc_number": "SLOS063 (presumed)",
+      "doc_number": "SLOS063",
       "revision": "A",
       "date": "1994-04",
       "url": "https://pdf.dzsc.com/LM3/LM318.pdf",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "probable",
-      "note": "Chinese mirror (dzsc). It came up in a search for 'SLOS063A' 'APRIL 1994' and has the same pre-Rev-B title 'FAST GENERAL-PURPOSE' as the unikeyic Rev A copy. Its header was not shown in the summary."
+      "note": "Chinese mirror with the pre-Rev. B title; header unseen."
     },
     {
       "vendor": "Texas Instruments (ex-National)",
@@ -543,238 +569,249 @@
       "url_kind": "third_party_mirror",
       "confidence": "high",
       "revision_status": "confirmed",
-      "note": "UCSB ECE137B course copy. The summary shows 'SNOSBS8C – March 1998–Revised March 2013'."
+      "note": "UCSB course copy: 'SNOSBS8C – March 1998 – Revised March 2013'."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LM118/LM218/LM318 Operational Amplifiers",
-      "doc_number": "DS007766 (presumed from the search match)",
+      "doc_number": "DS007766",
       "revision": "",
       "date": "",
       "url": "https://www.jameco.com/Jameco/Products/ProdDS/23608.pdf",
       "url_kind": "distributor_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Jameco distributor copy of the National edition. It came up in a search for 'DS007766', but the edition date was not shown."
+      "note": "Jameco copy of the National edition; doc number presumed."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LM118/LM218/LM318 Operational Amplifiers",
-      "doc_number": "DS007766 (figure numbers 007766xx, e.g. 00776613/00776614)",
+      "doc_number": "DS007766",
       "revision": "",
       "date": "",
       "url": "https://dokumen.tips/documents/lm118lm218lm318-operational-amplifiers-fast-voltage-follower-note-11-00776613.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "National-format figure IDs '00776613' / '00776614' confirm the DS007766 document family. The edition date was not shown."
+      "note": "Figure IDs 00776613/00776614 confirm the DS007766 family."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LM118/LM218/LM318 Operational Amplifiers",
-      "doc_number": "unknown (likely DS007766)",
+      "doc_number": "DS007766",
       "revision": "",
       "date": "",
       "url": "https://studylib.net/doc/18691110/lm118-lm218-lm318-operational-amplifiers",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Studylib copy of the National datasheet. The edition was not shown."
+      "note": "Studylib copy; doc number likely."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LM318N National Semiconductor datasheet",
-      "doc_number": "unknown (likely DS007766)",
+      "doc_number": "DS007766",
       "revision": "",
       "date": "",
       "url": "https://elcodis.com/parts/2211907/LM318N.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Elcodis part page with a National LM318N datasheet. It came up in a search for 'DS007766'."
+      "note": "Elcodis part page with National LM318N datasheet."
     },
     {
       "vendor": "National Semiconductor",
       "title": "LM318 Datasheet - PDIP Amplifiers | National Semiconductor",
-      "doc_number": "unknown (likely DS007766)",
+      "doc_number": "DS007766",
       "revision": "",
       "date": "",
       "url": "https://datasheet4u.com/datasheet-pdf/NationalSemiconductor/LM318/pdf.php?id=1136708",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Datasheet4u copy of the National datasheet. The edition was not shown."
+      "note": "Datasheet4u copy of the National datasheet."
     },
     {
       "vendor": "Texas Instruments",
       "title": "LM318 Datasheet(PDF) - Texas Instruments",
-      "doc_number": "SLOS063 (presumed)",
+      "doc_number": "SLOS063",
       "revision": "",
       "date": "",
       "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/176909/TI/LM318.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Alldatasheet entry 176909 for TI LM318, separate from the already-listed 176910 (LM318P) entry. The revision was not shown."
+      "note": "Alldatasheet 176909, separate from 176910 (LM318P)."
     },
     {
       "vendor": "Texas Instruments",
       "title": "LM318 (TI) datasheet (ic37 page 2/5)",
-      "doc_number": "SLOS063 (presumed)",
+      "doc_number": "SLOS063",
       "revision": "",
       "date": "",
       "url": "https://pdf.ic37.com/TI/LM318_datasheet_807308/LM318_2.html",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Chinese mirror (ic37) of a 5-page TI LM318 datasheet. It came up in the SLOS063A/April 1994 search, but the header was not shown."
+      "note": "Chinese mirror of a 5-page TI datasheet; possibly Rev. A."
     },
     {
       "vendor": "unknown",
       "title": "LM 318 (Scribd)",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://www.scribd.com/document/13867132/LM-318",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "Scribd upload that came up in the SLOS063A search. Its vendor and edition are not shown."
+      "note": "Scribd upload; vendor and edition unknown."
     },
     {
       "vendor": "Unisonic Technologies (UTC)",
       "title": "LM318 Datasheet - SOIC Amplifier | Unisonic Technologies",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "",
       "url": "https://datasheet4u.com/datasheets/UTC/LM318/576850",
       "url_kind": "third_party_mirror",
       "confidence": "low",
       "revision_status": "unknown",
-      "note": "New second source not in the chain file: Unisonic Technologies (Taiwan) LM318 in SOIC. The UTC document number (usually QW-Rxxx-xxx) and its revision were not shown."
+      "note": "UTC (Taiwan) SOIC LM318; UTC document number unknown."
     },
     {
       "vendor": "Linear Technology",
       "title": "LT118A/LT318A (and LM318) data sheet, LTC 1990 Linear Databook p2-311",
-      "doc_number": "unknown",
+      "doc_number": "",
       "revision": "",
       "date": "1990",
       "url": "",
       "url_kind": "vendor_legacy",
       "confidence": "low",
       "revision_status": "unknown",
-      "revision_text": "1990 databook edition",
-      "note": "unconfirmed. Print databook only, referenced in LTC SPICE library comments."
+      "note": "1990 print databook edition, cited by LTC SPICE library. Unconfirmed."
     }
+  ],
+  "product_pages": [
+    "https://www.ti.com/product/LM318-N",
+    "https://www.ti.com/product/LM318",
+    "https://www.ti.com/product/LM118-N",
+    "https://www.digikey.com/en/products/detail/texas-instruments/LM318N-NOPB/6180",
+    "https://www.digikey.com/en/products/detail/texas-instruments/LM318P/379832",
+    "https://www.digikey.com/product-detail/en/texas-instruments/LM318M/LM318M-ND/3695180",
+    "https://www.mouser.com/ProductDetail/Texas-Instruments/LM318D?qs=0OT4q4QBUTJFgTgvvehd3Q%3D%3D",
+    "https://www.mouser.com/ProductDetail/Texas-Instruments/LM318N?qs=X1J7HmVL2ZFYqJXaVDf3Tw%3D%3D",
+    "https://www.mouser.com/ProductDetail/Texas-Instruments/LM118H?qs=X1J7HmVL2ZEOFQ1XxDEKbg%3D%3D"
   ],
   "revision_history": [
     {
-      "vendor": "Texas Instruments (ex-National)",
-      "doc_number": "SNOSBS8",
-      "revision": "(original)",
-      "date": "1998-03",
-      "changes": "Original National-era document date as carried in the TI header."
-    },
-    {
-      "vendor": "Texas Instruments (ex-National)",
-      "doc_number": "SNOSBS8",
-      "revision": "C",
-      "date": "2013-03 (third-party citation: 2013-03-20)",
-      "changes": "Change log not seen. Revs A and B are implied but their dates are unknown."
-    },
-    {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS063",
-      "revision": "(original)",
+      "revision": "original",
       "date": "1976-06",
-      "changes": "Original TI LM118/LM218/LM318 datasheet date as carried in the SLOS063B header (via search summary)."
-    },
-    {
-      "vendor": "Texas Instruments",
-      "doc_number": "SLOS063",
-      "revision": "B",
-      "date": "2002-12",
-      "changes": "Change log not seen. Rev A is implied but unseen. The current document states that LM118 and LM218 are obsolete."
+      "changes": "Original TI LM118/LM218/LM318 datasheet date, as carried in later headers."
     },
     {
       "vendor": "Texas Instruments",
       "doc_number": "SLOS063",
       "revision": "A",
       "date": "1994-04",
-      "changes": "Header reads 'SLOS063A – JUNE 1976 – REVISED APRIL 1994' (search summary). This edition is titled 'LM118, LM218, LM318 FAST GENERAL-PURPOSE OPERATIONAL AMPLIFIERS'. By Rev B (Dec 2002) the title had become 'HIGH-PERFORMANCE OPERATIONAL AMPLIFIERS'. The detailed change log was not seen."
+      "changes": "Header 'SLOS063A – June 1976 – Revised April 1994'; titled 'Fast General-Purpose Operational Amplifiers'. Change log unknown."
+    },
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS063",
+      "revision": "B",
+      "date": "2002-12",
+      "changes": "Retitled 'High-Performance Operational Amplifiers'; states LM118 and LM218 obsolete. Change log unknown."
     },
     {
       "vendor": "National Semiconductor",
       "doc_number": "DS007766",
-      "revision": "(August 2000 edition)",
+      "revision": "Aug 2000 edition",
       "date": "2000-08",
-      "changes": "A search summary gives a National LM118/LM218/LM318 datasheet dated August 2000 with document number DS007766. It is not known which copy (MIT, octopart, jameco or others) holds this edition. The change log was not seen."
-    }
-  ],
-  "silicon_changes": [
-    {
-      "kind": "second-source-difference",
-      "vendor": "Texas Instruments (TI-legacy) vs National Semiconductor (now TI LM318-N)",
-      "when": "Concurrent since 1976 (TI SLOS063 original date) and within the TI catalogue since the 2011 National acquisition",
-      "part_numbers_affected": [
-        "LM318",
-        "LM318D",
-        "LM318DR",
-        "LM318P",
-        "LM318PSR",
-        "LM318N/NOPB",
-        "LM318M",
-        "LM318MX/NOPB",
-        "LM118H"
-      ],
-      "identification": "By datasheet: SLOS063 ('High-Performance Operational Amplifiers', ti.com/product/LM318, lm318.pdf) versus SNOSBS8 ('LM118-N/LM218-N/LM318-N Operational Amplifiers', ti.com/product/LM318-N, lm318-n.pdf). By package code: TI-style D/DR/P/PSR are TI-legacy; National-style N/M/MX/H/J and /NOPB are ex-National.",
-      "summary": "TI sells two separately documented LM318 product lines under the same generic number: its own second source (datasheet since June 1976) and National's original (now LM318-N). The die difference is inferred from their separate origins. A third-party audio SPICE modeller also keeps separate National and TI models with different parameters. No vendor document compares the two.",
-      "spec_deltas": [],
-      "audio_impact": "Unknown. Compensation, slew and stability margins may differ, so a part swap can change behaviour in fast or feed-forward-compensated circuits.",
-      "compatibility_risk": "medium: same pinout and headline specs (15 MHz, 50 V/us min), but separate designs and datasheets. Check which datasheet (SLOS063 or SNOSBS8) applies to the orderable you buy.",
-      "sources": [
-        "https://www.ti.com/product/LM318",
-        "https://www.ti.com/product/LM318-N",
-        "https://www.ti.com/lit/gpn/LM318",
-        "https://www.ti.com/lit/ds/symlink/lm318-n.pdf",
-        "https://www.radiolocman.com/datasheet/data.html?di=297739",
-        "https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/Manufacturer/Texas%20Instruments/lm318.mod",
-        "https://github.com/dunkelstern/electret_preamp/blob/main/ltspice/LM318_SN.lib"
-      ],
-      "confidence": "medium",
-      "verification": "Not web-searched; second-source differences were outside the priority kinds, and no PCN, die-change or respec claim needed checking."
+      "changes": "National edition dated August 2000; which mirror holds it is unknown."
     },
     {
-      "kind": "second-source-difference",
-      "vendor": "Linear Technology",
-      "when": "c. 1989-1990 (LTC 1990 Linear Databook)",
-      "part_numbers_affected": [
-        "LM318",
-        "LM318S8",
-        "LT118A",
-        "LT318A"
-      ],
-      "identification": "LTC logo and marking. The LT prefix marks the improved grade; the S8 suffix means SO-8.",
-      "summary": "LTC made its own LM318 second source plus an improved LT118A/LT318A. The SPICE models give LT318A different parameters from the National LM318. Datasheet deltas were not seen, and nothing was web-verified.",
-      "spec_deltas": [],
-      "audio_impact": "Unknown.",
-      "compatibility_risk": "low: intended as a drop-in second source, but datasheet deltas are unverified.",
-      "sources": [
-        "https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/OPLTC.LIB",
-        "https://github.com/kicad-spice-library/KiCad-Spice-Library/blob/a8688952bcaab19f567bc4db237b60bde03ef310/Models/uncategorized/spice_complete/lin_tech.lib"
-      ],
-      "confidence": "low",
-      "verification": "Not web-searched; second-source differences were outside the priority kinds. It rests only on LTC SPICE library headers."
+      "vendor": "Texas Instruments (ex-National)",
+      "doc_number": "SNOSBS8",
+      "revision": "original",
+      "date": "1998-03",
+      "changes": "Original National-era document date carried in the TI header."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "doc_number": "SNOSBS8",
+      "revision": "C",
+      "date": "2013-03-20",
+      "changes": "Change log unknown. Revs A and B implied, dates unknown."
     }
   ],
-  "counterfeit_notes": "No specific LM318 counterfeit reports were found. General precaution for cheap marketplace DIP-8 LM318N parts: they may be remarked slower op-amps. As a quick check, run a unity-gain square wave at ±15 V. A genuine part slews at least 50 V/us, while a remarked 741/4558-class part slews under about 1-2 V/us. This is generic advice, not a documented LM318 case. Note also that LM318M (National SOIC) is reported obsolete, so new-stock offers of it deserve extra scrutiny.",
-  "alternatives": [
-    "LM6171 (TI/National, high-slew voltage-feedback single)",
-    "AD847 / AD826 (ADI fast bipolar)",
-    "LT1363 / LT1364 (ADI/Linear, very high slew)",
-    "AD825 / AD8065 (ADI FET-input fast)",
-    "LME49710 (TI, audio-grade bipolar single; lower slew, much lower noise)",
-    "OPA1611 (TI, modern low-noise audio bipolar single)"
+  "revision_chains": [
+    {
+      "vendor": "Texas Instruments",
+      "doc_number": "SLOS063",
+      "known": [
+        {
+          "rev": "original",
+          "date": "1976-06"
+        },
+        {
+          "rev": "A",
+          "date": "1994-04"
+        },
+        {
+          "rev": "B",
+          "date": "2002-12"
+        }
+      ],
+      "missing": [],
+      "note": "No copy of the June 1976 original or 1970s/80s TI data book editions found."
+    },
+    {
+      "vendor": "National Semiconductor",
+      "doc_number": "DS007766",
+      "known": [
+        {
+          "rev": "1998 edition",
+          "date": "1998-03"
+        },
+        {
+          "rev": "Aug 2000 edition",
+          "date": "2000-08"
+        }
+      ],
+      "missing": [
+        "pre-1998 editions"
+      ],
+      "note": "1998 edition implied by SNOSBS8 header. Post-2000 NOPB editions unknown; mirror for 2000 edition unknown."
+    },
+    {
+      "vendor": "Texas Instruments (ex-National)",
+      "doc_number": "SNOSBS8",
+      "known": [
+        {
+          "rev": "original",
+          "date": "1998-03"
+        },
+        {
+          "rev": "C",
+          "date": "2013-03-20"
+        }
+      ],
+      "missing": [
+        "A",
+        "B"
+      ],
+      "note": "Rev. C copies at ti.com, Farnell, UNL and UCSB."
+    },
+    {
+      "vendor": "Unisonic Technologies (UTC)",
+      "doc_number": "",
+      "known": [],
+      "missing": [],
+      "note": "LM318 SOIC datasheet exists; document number and revisions unknown."
+    }
   ],
   "ti_literature_numbers": [
     "SLOS063"
@@ -796,17 +833,11 @@
     "https://www.ti.com/product/LM318-N"
   ],
   "open_questions": [
-    "Dates of SNOSBS8 Revs A and B, and the Rev C change log.",
-    "SLOS063 Rev A date and change log. The SLOS063B June 1976 / Dec 2002 dating comes from a search summary; confirm it against the printed header.",
-    "Is the 'FAST GENERAL-PURPOSE OPERATIONAL AMPLIFIERS' copy (unikeyic) an earlier SLOS063 edition, and which revision?",
-    "Original National DS number and revision chain (1970s-2011). SNOSBS8 carries an original date of March 1998.",
-    "Revision letters held by the alldatasheet, octopart and radiolocman TI copies (they may freeze SNOSBS8A/B or SLOS063/A).",
-    "Is there any documented electrical difference between the TI-legacy LM318 (SLOS063) and the ex-National LM318-N (SNOSBS8)? A spec-table comparison is needed.",
-    "Are STMicroelectronics (or Signetics/Fairchild/Motorola/Raytheon) second sources real?",
-    "LTC LM318/LT118A/LT318A datasheet URL and current ADI status.",
-    "Lifecycle status of LM318N/NOPB, LM318H, LM318M/NOPB, LM318MX/NOPB and LM218-N was not confirmed.",
-    "Noise (e_n, i_n) and THD figures: none found.",
-    "Which Jung et al. Audio magazine articles discuss the LM318, and how do they rate it? No community sonic descriptors or measurements were found."
+    "Dates of SNOSBS8 Revs A/B; change logs for SNOSBS8 C and SLOS063 A/B; National DS007766 editions before 1998.",
+    "Any documented electrical difference between TI-legacy LM318 (SLOS063) and ex-National LM318-N (SNOSBS8)?",
+    "Are STMicroelectronics or other (Signetics, Fairchild, Motorola, Raytheon) second sources real? LTC datasheet URL and ADI status?",
+    "Lifecycle of LM318N/NOPB, LM318H, LM318M/NOPB, LM318MX/NOPB and LM218-N. Any noise or THD figures?",
+    "Which Jung et al. Audio magazine articles discuss the LM318, and how do they rate it?"
   ],
   "sources": [
     "https://www.ti.com/lit/ds/symlink/lm318-n.pdf",
@@ -840,20 +871,36 @@
   ],
   "verification": {
     "status": "verified-with-corrections",
+    "web_searches_used": 5,
+    "claims_confirmed": [
+      "Ex-National header 'SNOSBS8C – March 1998 – Revised March 2013' at https://www.ti.com/lit/ds/symlink/lm318-n.pdf",
+      "Farnell hosts Rev. C: https://www.farnell.com/datasheets/1767343.pdf",
+      "UNL EE shop hosts Rev. C: http://eeshop.unl.edu/pdf/lm318.pdf",
+      "TI product LM318 datasheet is 'High-Performance Operational Amplifiers (Rev. B)': https://www.ti.com/lit/gpn/LM318",
+      "SLOS063B dated June 1976, revised December 2002: https://www.radiolocman.com/datasheet/data.html?di=297739",
+      "TI lm318.pdf: 'The LM118 and LM218 are obsolete and are no longer supplied.' https://www.ti.com/lit/ds/symlink/lm318.pdf",
+      "15 MHz, 50 V/µs min, >150 V/µs feed-forward, temperature ranges per grade: https://www.soemtron.org/downloads/disposals/lm318.pdf",
+      "LM118-N gpn resolves to the LM118/LM218/LM318 datasheet: https://www.ti.com/lit/gpn/LM118-N",
+      "LM318D/DR/P/PSR/PE4 active on TI part-details pages: https://www.ti.com/product/LM318/part-details/LM318P",
+      "LM318M obsolete at Digi-Key: https://www.digikey.com/product-detail/en/texas-instruments/LM318M/LM318M-ND/3695180",
+      "LM118H active (distributor): https://octopart.com/lm118h-texas+instruments-24843856",
+      "Separate TI product pages: https://www.ti.com/product/LM318 and https://www.ti.com/product/LM318-N",
+      "National-edition copies at MSU/MIT/Futurlec/Octopart: https://www.egr.msu.edu/eceshop/Parts_Inventory/datasheets/lm318n.pdf"
+    ],
     "refuted_claims": [
-      "The TI literature number for lm318-n.pdf is not SNOSBS6 (recalled from memory); it is SNOSBS8.",
-      "The guessed header 'SNOSBS6C - MAY 1999 - REVISED MARCH 2013' is wrong; the actual header is 'SNOSBS8C -MARCH 1998-REVISED MARCH 2013'."
+      "TI literature number for lm318-n.pdf is SNOSBS8, not SNOSBS6.",
+      "Header is 'SNOSBS8C – March 1998 – Revised March 2013', not 'SNOSBS6C – May 1999 – Revised March 2013'."
     ],
     "corrections": [
-      "ti_literature_numbers set to SNOSBS8 (ex-National LM118-N/LM218-N/LM318-N) and SLOS063 (TI's own LM118/LM218/LM318).",
-      "TI's own LM318 dates from a June 1976 datasheet (SLOS063), not merely 'by 1989'. Rev B was revised December 2002 (via search summary).",
-      "The ti.com lm318.pdf / product LM318 identity is resolved: it is TI's own SLOS063B 'High-Performance Operational Amplifiers' (Rev. B), a separate document from SNOSBS8.",
-      "Part statuses added: LM318D/DR/P/PSR/PE4 Active; LM318M obsolete; LM118H Active per distributor; TI-legacy LM118/LM218 obsolete.",
-      "Part numbers added: LM318PSR, LM318PE4, LM318MX/NOPB, LM318M/NOPB, LM118H/NOPB.",
-      "Silicon-change confidence raised from low to medium for the two separately documented TI LM318 lines (the die difference itself is still inferred).",
-      "Added mirrors: Rev C copies (Farnell, UNL) and National-edition copies (MSU, MIT, Futurlec, Octopart, alldatasheet, Scribd).",
-      "Removed the pattern-guessed st.com/resource/en/datasheet/lm318.pdf from archive seeds (no ST LM318 evidence).",
-      "Downgraded the unverified '70 V/us typ' slew figure and removed it from the tagline. Temperature ranges were added from the TI datasheet."
+      "Literature numbers: SNOSBS8 (ex-National LM118-N/LM218-N/LM318-N) and SLOS063 (TI's own line).",
+      "TI's own LM318 dates from June 1976 (SLOS063), not 'by 1989'; Rev. B revised December 2002.",
+      "ti.com lm318.pdf is TI's own SLOS063B, separate from SNOSBS8.",
+      "Statuses added: LM318D/DR/P/PSR/PE4 active; LM318M obsolete; LM118H active; TI LM118/LM218 obsolete.",
+      "Added LM318PSR, LM318PE4, LM318MX/NOPB, LM318M/NOPB, LM118H/NOPB.",
+      "Second-source difference confidence raised to medium (die difference still inferred).",
+      "Added Rev. C copies (Farnell, UNL) and National-edition copies (MSU, MIT, Futurlec, Octopart, alldatasheet, Scribd).",
+      "Removed guessed ST datasheet URL https://www.st.com/resource/en/datasheet/lm318.pdf from archive seeds.",
+      "Unverified 70 V/µs typ slew removed from tagline; temperature ranges added."
     ],
     "unverified_urls": [
       "http://www.ti.com/lit/ds/symlink/lm118-n.pdf",
@@ -867,36 +914,6 @@
       "https://www.mouser.com/ProductDetail/Texas-Instruments/LM118H?qs=X1J7HmVL2ZEOFQ1XxDEKbg%3D%3D",
       "https://www.unikeyic.com/media/datasheet/28/22/21de/282221de0a02c53abdc278ebb27e49c4.pdf",
       "https://www.st.com/resource/en/datasheet/lm318.pdf"
-    ],
-    "claims_confirmed": [
-      "ex-National datasheet header 'LM118-N, LM218-N, LM318-N ... SNOSBS8C -MARCH 1998-REVISED MARCH 2013' at https://www.ti.com/lit/ds/symlink/lm318-n.pdf",
-      "Farnell hosts 'LM118/LM218/LM318 Operational Amplifiers (Rev. C)': https://www.farnell.com/datasheets/1767343.pdf",
-      "UNL EE shop hosts the Rev. C copy: http://eeshop.unl.edu/pdf/lm318.pdf",
-      "TI product LM318 datasheet titled 'High-Performance Operational Amplifiers datasheet (Rev. B)': https://www.ti.com/lit/gpn/LM318",
-      "SLOS063B dated June 1976, revised December 2002 (search summary): https://www.radiolocman.com/datasheet/data.html?di=297739",
-      "TI lm318.pdf states 'The LM118 and LM218 are obsolete and are no longer supplied.': https://www.ti.com/lit/ds/symlink/lm318.pdf",
-      "15 MHz typ small-signal BW, 50 V/us min slew, feed-forward >150 V/us and almost double bandwidth in inverting use; temperature ranges LM118 -55..125 C, LM218 -25..85 C, LM318 0..70 C: https://www.soemtron.org/downloads/disposals/lm318.pdf",
-      "LM118-N gpn resolves to the LM118/LM218/LM318 Operational Amplifiers datasheet: https://www.ti.com/lit/gpn/LM118-N",
-      "LM318D/DR/P/PSR/PE4 Active on TI part-details pages: https://www.ti.com/product/LM318/part-details/LM318P",
-      "LM318M obsolete (Digi-Key via search summary): https://www.digikey.com/product-detail/en/texas-instruments/LM318M/LM318M-ND/3695180",
-      "LM118H lifecycle ACTIVE (distributor listing): https://octopart.com/lm118h-texas+instruments-24843856",
-      "Separate TI product pages exist for LM318 and LM318-N: https://www.ti.com/product/LM318 and https://www.ti.com/product/LM318-N",
-      "National-edition 'General Description' copies are hosted at MSU/MIT/Futurlec/Octopart: https://www.egr.msu.edu/eceshop/Parts_Inventory/datasheets/lm318n.pdf"
-    ],
-    "web_searches_used": 5
-  },
-  "tier": "C",
-  "category": "high-speed-video-crossover",
-  "product_pages": [
-    "https://www.ti.com/product/LM318-N",
-    "https://www.ti.com/product/LM318",
-    "https://www.ti.com/product/LM118-N",
-    "https://www.digikey.com/en/products/detail/texas-instruments/LM318N-NOPB/6180",
-    "https://www.digikey.com/en/products/detail/texas-instruments/LM318P/379832",
-    "https://www.digikey.com/product-detail/en/texas-instruments/LM318M/LM318M-ND/3695180",
-    "https://www.mouser.com/ProductDetail/Texas-Instruments/LM318D?qs=0OT4q4QBUTJFgTgvvehd3Q%3D%3D",
-    "https://www.mouser.com/ProductDetail/Texas-Instruments/LM318N?qs=X1J7HmVL2ZFYqJXaVDf3Tw%3D%3D",
-    "https://www.mouser.com/ProductDetail/Texas-Instruments/LM118H?qs=X1J7HmVL2ZEOFQ1XxDEKbg%3D%3D"
-  ],
-  "revision_chain_notes": "TI SLOS063 (TI's own LM118/LM218/LM318 line). Known links: original JUNE 1976 (no copy found) -> A, APRIL 1994, titled 'Fast General-Purpose Operational Amplifiers' (copy at pf.unikeyic.com; the already-listed www.unikeyic.com/media copy has the same file hash; the pdf.dzsc.com copy is probably the same edition) -> B, DECEMBER 2002, retitled 'High-Performance Operational Amplifiers' (copies at ti.com lm318.pdf and ti.com/lit/gpn/LM318; the soemtron.org copy has the all-caps Rev B title, so probably Rev B). Missing: any copy of the June 1976 original, and 1970s/80s TI Linear Circuits Data Book editions. National DS007766 (the originator line; figure numbers 007766xx). An edition dated AUGUST 2000 is confirmed by search summary, but which mirror holds it is unknown (candidates: MIT, octopart 92465/9881884, jameco 23608, dokumen.tips, studylib, elcodis, datasheet4u id=1136708). The TI SNOSBS8 header carries 'MARCH 1998', which implies an earlier National DS007766 edition from 1998. Missing: pre-1998 National editions (1970s-1990s Linear Databook printings), the 1998 edition copy, and any post-2000 National NOPB editions. TI SNOSBS8 (ex-National LM118-N/LM318-N). Known: original MARCH 1998 -> C, MARCH 2013 (copies at ti.com, farnell 1767343, eeshop.unl.edu, and now web.ece.ucsb.edu). Missing: Rev A and Rev B (dates unknown, no copies found). Linear Technology: only 1990 Databook p2-311 evidence; no datasheet copy found. New second source Unisonic Technologies (UTC): LM318 SOIC datasheet on datasheet4u; document number and revision not shown; its revision chain is entirely unknown. STMicroelectronics: still unverified; no document found. Budget used: all 4 WebSearch calls. No WebFetch or downloads."
+    ]
+  }
 }
